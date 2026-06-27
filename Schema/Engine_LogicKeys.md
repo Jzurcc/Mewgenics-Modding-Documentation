@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: Engine: Logic Keys
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 ## Engine: Logic Keys
 
@@ -8,7 +8,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 
 > **Note:** Because many of these contexts accept arbitrary nested Logic Blocks, any entry marked `{Logic Keys}` recursively refers back to this same document.
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-effects), [`temporary_effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-temporary_effects), [`Else` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-else), [`ApplyToSource` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytosource), [`Conditional_HasTag` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_Enemy` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_enemy), [`Conditional_Ally` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_ally), [`Consumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-consumed), [`Conditional_Boss` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_boss), [`ApplyToSourceOnKill` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytosourceonkill), [`CanApplyToInanimate` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Conditional_NotBoss` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_notboss), [`Conditional_HasStatus` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_GoodRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_Speculative` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_speculative), [`Conditional_FormulaIsPositive` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_formulaispositive), [`Conditional_Corpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_corpse), [`Conditional_InForm` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_inform), [`Conditional_HealthThreshold` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Conditional_Object` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_object), [`Conditional_PlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_playercat), [`ApplyToConsumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytoconsumed), [`TimeDelayStatusApplication` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`post_spawn_statuses` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-post_spawn_statuses), [`Conditional_AffectedByElement` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_affectedbyelement), [`Conditional_FirstApplicationThisTurn` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn), [`Conditional_LastHit` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_lasthit), [`ApplyToRandomPartyMemberIfPossible` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible), [`ApplyToTile` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytotile), [`Conditional_BadRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_badroll), [`Conditional_DestructibleCorpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_destructiblecorpse), [`Conditional_Displaceable` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_displaceable), [`Conditional_IsSelf` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_isself), [`Conditional_OncePerBattle` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_onceperbattle), [`Conditional_Shielded` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_shielded), [`ApplyToRandomClosestAlly` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-applytorandomclosestally), [`Conditional_Backstab` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_backstab), [`Conditional_FinishedSpawning` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_finishedspawning), [`Conditional_HasCleansableDebuffs` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_hascleansabledebuffs), [`Conditional_IsTrample` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_istrample), [`Conditional_LivingPlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_livingplayercat), [`Conditional_NotBig` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_notbig), [`Conditional_RandomChance` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-conditional_randomchance), [`NextBattleStatusStacks` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-nextbattlestatusstacks), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root), [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root), [`effects` (Cat_Mutations)](./Cat_Mutations.md#context-effects), [`Conditional_RandomChance` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_randomchance), [`Conditional_FirstApplicationThisTurn` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_firstapplicationthisturn), [`Conditional_GoodRoll` (Cat_Mutations)](./Cat_Mutations.md#context-conditional_goodroll), [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-root), [`FormChanger` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-formchanger), [`effects` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-effects), [`Consumed` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-consumed), [`Conditional_GoodRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_goodroll), [`Conditional_BadRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_badroll), [`Conditional_HasKnockback` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_hasknockback), [`Conditional_IsPhysicalAttack` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-conditional_isphysicalattack), [`Else` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-else), [`FinalBossBecomeTheChild` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-finalbossbecomethechild), [`InfiniteRebirth` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-infiniterebirth), [`TVBotScreen` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-tvbotscreen), [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root), [`ROOT` (Difficulties)](./Difficulties.md#context-root), [`ROOT` (Elite_Buffs)](./Elite_Buffs.md#context-root), [`effects` (Elite_Buffs)](./Elite_Buffs.md#context-effects), [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`global_effect_next_fight` (Events_and_Encounters)](./Events_and_Encounters.md#context-global_effect_next_fight), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#context-root), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`effects` (House_and_Environment)](./House_and_Environment.md#context-effects), [`Else` (House_and_Environment)](./House_and_Environment.md#context-else), [`StatusCharactersOnRoundEnd` (House_and_Environment)](./House_and_Environment.md#context-statuscharactersonroundend), [`Conditional_GoodRoll` (House_and_Environment)](./House_and_Environment.md#context-conditional_goodroll), [`Conditional_Corpse` (House_and_Environment)](./House_and_Environment.md#context-conditional_corpse), [`Conditional_HasTag` (House_and_Environment)](./House_and_Environment.md#context-conditional_hastag), [`Conditional_PartyMember` (House_and_Environment)](./House_and_Environment.md#context-conditional_partymember), [`ROOT` (Injuries)](./Injuries.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`effects` (Items_and_Equipment)](./Items_and_Equipment.md#context-effects), [`Conditional_GoodRoll` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_goodroll), [`ApplyToSource` (Items_and_Equipment)](./Items_and_Equipment.md#context-applytosource), [`Conditional_HasStatus` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hasstatus), [`Else` (Items_and_Equipment)](./Items_and_Equipment.md#context-else), [`StatusOnTakeHealthOrShieldDamage` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`Conditional_PartyMember` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_partymember), [`Conditional_Adjacent` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_adjacent), [`Conditional_BadRoll` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_badroll), [`Conditional_Boss` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_boss), [`Conditional_HasTag` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hastag), [`Conditional_OncePerBattle` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_onceperbattle), [`ApplyToRandomPartyMemberIfPossible` (Items_and_Equipment)](./Items_and_Equipment.md#context-applytorandompartymemberifpossible), [`CastAgainWithStatus` (Items_and_Equipment)](./Items_and_Equipment.md#context-castagainwithstatus), [`Conditional_Ally` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_ally), [`Conditional_Corpse` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_corpse), [`Conditional_Enemy` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_enemy), [`Conditional_HasCleansableDebuffs` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_hascleansabledebuffs), [`Conditional_HealthThreshold` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_healththreshold), [`Conditional_PlayerCat` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_playercat), [`Conditional_RandomChance` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_randomchance), [`Conditional_Shielded` (Items_and_Equipment)](./Items_and_Equipment.md#context-conditional_shielded), [`CyborgTurns` (Items_and_Equipment)](./Items_and_Equipment.md#context-cyborgturns), [`ScaldingOrbMoonBossOneShot` (Items_and_Equipment)](./Items_and_Equipment.md#context-scaldingorbmoonbossoneshot), [`StatusAdjacentOnTheirTurnEnd` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusadjacentontheirturnend), [`StatusOnFallAsleep` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusonfallasleep), [`StatusOnTurnEndIfCastNSpells` (Items_and_Equipment)](./Items_and_Equipment.md#context-statusonturnendifcastnspells), [`ROOT` (Item_Pools)](./Item_Pools.md#context-root), [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`ROOT` (Miscellaneous)](./Miscellaneous.md#context-root), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root), [`effects` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-effects), [`StatusOnStanceSwitch` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonstanceswitch), [`Conditional_Ally` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_ally), [`Conditional_Enemy` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_enemy), [`Else` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-else), [`StatusOnOverHealed` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonoverhealed), [`Conditional_FirstApplicationThisTurn` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_firstapplicationthisturn), [`StatusOnTurnEndIfCastNSpells` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonturnendifcastnspells), [`StatusOnTurnEndIfManaExact` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusonturnendifmanaexact), [`Conditional_BadRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_badroll), [`Conditional_HasStatus` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_hasstatus), [`AddStatusToBasicAttackWithCooldown` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-addstatustobasicattackwithcooldown), [`AddStatusToMeleeDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-addstatustomeleedamage), [`ApplyToSource` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-applytosource), [`Conditional_Adjacent` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_adjacent), [`Conditional_Boss` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_boss), [`Conditional_Corpse` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_corpse), [`Conditional_HasTag` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_hastag), [`Conditional_NotBoss` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_notboss), [`Conditional_PartyMember` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_partymember), [`Conditional_Shielded` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_shielded), [`EscapeSequence` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-escapesequence), [`InfiniteRebirth` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-infiniterebirth), [`StatusOnDealtDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusondealtdamage), [`on_throw` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-on_throw), [`Conditional_GoodRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-conditional_goodroll), [`StatusAdjacentOnTheirTurnBegin` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-statusadjacentontheirturnbegin), [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root), [`ROOT` (Shops)](./Shops.md#context-root), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root), [`effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-effects), [`temporary_effects` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-temporary_effects), [`Else` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-else), [`ApplyToSource` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytosource), [`Conditional_HasTag` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_hastag), [`Conditional_Enemy` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_enemy), [`Conditional_Ally` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_ally), [`Consumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-consumed), [`Conditional_Boss` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_boss), [`ApplyToSourceOnKill` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytosourceonkill), [`CanApplyToInanimate` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-canapplytoinanimate), [`Conditional_NotBoss` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_notboss), [`Conditional_HasStatus` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_hasstatus), [`Conditional_GoodRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_goodroll), [`Conditional_Speculative` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_speculative), [`Conditional_FormulaIsPositive` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_formulaispositive), [`Conditional_Corpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_corpse), [`Conditional_InForm` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_inform), [`Conditional_HealthThreshold` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_healththreshold), [`Conditional_Object` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_object), [`Conditional_PlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_playercat), [`ApplyToConsumed` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytoconsumed), [`TimeDelayStatusApplication` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`post_spawn_statuses` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-post_spawn_statuses), [`Conditional_AffectedByElement` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_affectedbyelement), [`Conditional_FirstApplicationThisTurn` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_firstapplicationthisturn), [`Conditional_LastHit` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_lasthit), [`ApplyToRandomPartyMemberIfPossible` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible), [`ApplyToTile` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytotile), [`Conditional_BadRoll` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_badroll), [`Conditional_DestructibleCorpse` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_destructiblecorpse), [`Conditional_Displaceable` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_displaceable), [`Conditional_IsSelf` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_isself), [`Conditional_OncePerBattle` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_onceperbattle), [`Conditional_Shielded` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_shielded), [`ApplyToRandomClosestAlly` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-applytorandomclosestally), [`Conditional_Backstab` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_backstab), [`Conditional_FinishedSpawning` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_finishedspawning), [`Conditional_HasCleansableDebuffs` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_hascleansabledebuffs), [`Conditional_IsTrample` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_istrample), [`Conditional_LivingPlayerCat` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_livingplayercat), [`Conditional_NotBig` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_notbig), [`Conditional_RandomChance` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-conditional_randomchance), [`NextBattleStatusStacks` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-nextbattlestatusstacks), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#object-root), [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root), [`effects` (Cat_Mutations)](./Cat_Mutations.md#object-effects), [`Conditional_RandomChance` (Cat_Mutations)](./Cat_Mutations.md#object-conditional_randomchance), [`Conditional_FirstApplicationThisTurn` (Cat_Mutations)](./Cat_Mutations.md#object-conditional_firstapplicationthisturn), [`Conditional_GoodRoll` (Cat_Mutations)](./Cat_Mutations.md#object-conditional_goodroll), [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-root), [`FormChanger` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-formchanger), [`effects` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-effects), [`Consumed` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-consumed), [`Conditional_GoodRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-conditional_goodroll), [`Conditional_BadRoll` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-conditional_badroll), [`Conditional_HasKnockback` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-conditional_hasknockback), [`Conditional_IsPhysicalAttack` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-conditional_isphysicalattack), [`Else` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-else), [`FinalBossBecomeTheChild` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-finalbossbecomethechild), [`InfiniteRebirth` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-infiniterebirth), [`TVBotScreen` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-tvbotscreen), [`ROOT` (Custom_Cats)](./Custom_Cats.md#object-root), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root), [`ROOT` (Difficulties)](./Difficulties.md#object-root), [`ROOT` (Elite_Buffs)](./Elite_Buffs.md#object-root), [`effects` (Elite_Buffs)](./Elite_Buffs.md#object-effects), [`ROOT` (Enemy_AI)](./Enemy_AI.md#object-root), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`global_effect_next_fight` (Events_and_Encounters)](./Events_and_Encounters.md#object-global_effect_next_fight), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#object-root), [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`effects` (House_and_Environment)](./House_and_Environment.md#object-effects), [`Else` (House_and_Environment)](./House_and_Environment.md#object-else), [`StatusCharactersOnRoundEnd` (House_and_Environment)](./House_and_Environment.md#object-statuscharactersonroundend), [`Conditional_GoodRoll` (House_and_Environment)](./House_and_Environment.md#object-conditional_goodroll), [`Conditional_Corpse` (House_and_Environment)](./House_and_Environment.md#object-conditional_corpse), [`Conditional_HasTag` (House_and_Environment)](./House_and_Environment.md#object-conditional_hastag), [`Conditional_PartyMember` (House_and_Environment)](./House_and_Environment.md#object-conditional_partymember), [`ROOT` (Injuries)](./Injuries.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), [`effects` (Items_and_Equipment)](./Items_and_Equipment.md#object-effects), [`Conditional_GoodRoll` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_goodroll), [`ApplyToSource` (Items_and_Equipment)](./Items_and_Equipment.md#object-applytosource), [`Conditional_HasStatus` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_hasstatus), [`Else` (Items_and_Equipment)](./Items_and_Equipment.md#object-else), [`StatusOnTakeHealthOrShieldDamage` (Items_and_Equipment)](./Items_and_Equipment.md#object-statusontakehealthorshielddamage), [`Conditional_PartyMember` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_partymember), [`Conditional_Adjacent` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_adjacent), [`Conditional_BadRoll` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_badroll), [`Conditional_Boss` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_boss), [`Conditional_HasTag` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_hastag), [`Conditional_OncePerBattle` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_onceperbattle), [`ApplyToRandomPartyMemberIfPossible` (Items_and_Equipment)](./Items_and_Equipment.md#object-applytorandompartymemberifpossible), [`CastAgainWithStatus` (Items_and_Equipment)](./Items_and_Equipment.md#object-castagainwithstatus), [`Conditional_Ally` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_ally), [`Conditional_Corpse` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_corpse), [`Conditional_Enemy` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_enemy), `Conditional_HasCleansableDebuffs` (Items_and_Equipment), [`Conditional_HealthThreshold` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_healththreshold), [`Conditional_PlayerCat` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_playercat), [`Conditional_RandomChance` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_randomchance), [`Conditional_Shielded` (Items_and_Equipment)](./Items_and_Equipment.md#object-conditional_shielded), `CyborgTurns` (Items_and_Equipment), [`ScaldingOrbMoonBossOneShot` (Items_and_Equipment)](./Items_and_Equipment.md#object-scaldingorbmoonbossoneshot), [`StatusAdjacentOnTheirTurnEnd` (Items_and_Equipment)](./Items_and_Equipment.md#object-statusadjacentontheirturnend), [`StatusOnFallAsleep` (Items_and_Equipment)](./Items_and_Equipment.md#object-statusonfallasleep), `StatusOnTurnEndIfCastNSpells` (Items_and_Equipment), [`ROOT` (Item_Pools)](./Item_Pools.md#object-root), [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`ROOT` (Miscellaneous)](./Miscellaneous.md#object-root), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root), [`effects` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-effects), [`StatusOnStanceSwitch` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusonstanceswitch), [`Conditional_Ally` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_ally), [`Conditional_Enemy` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_enemy), [`Else` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-else), [`StatusOnOverHealed` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusonoverhealed), [`Conditional_FirstApplicationThisTurn` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_firstapplicationthisturn), [`StatusOnTurnEndIfCastNSpells` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusonturnendifcastnspells), [`StatusOnTurnEndIfManaExact` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusonturnendifmanaexact), [`Conditional_BadRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_badroll), [`Conditional_HasStatus` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_hasstatus), [`AddStatusToBasicAttackWithCooldown` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-addstatustobasicattackwithcooldown), [`AddStatusToMeleeDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-addstatustomeleedamage), [`ApplyToSource` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-applytosource), [`Conditional_Adjacent` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_adjacent), [`Conditional_Boss` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_boss), [`Conditional_Corpse` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_corpse), [`Conditional_HasTag` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_hastag), [`Conditional_NotBoss` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_notboss), [`Conditional_PartyMember` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_partymember), [`Conditional_Shielded` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_shielded), [`EscapeSequence` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-escapesequence), [`InfiniteRebirth` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-infiniterebirth), [`StatusOnDealtDamage` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusondealtdamage), [`on_throw` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-on_throw), [`Conditional_GoodRoll` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-conditional_goodroll), [`StatusAdjacentOnTheirTurnBegin` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-statusadjacentontheirturnbegin), [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root), [`ROOT` (Shops)](./Shops.md#object-root), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 ### Valid Property Keys
 
@@ -24,67 +24,67 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Monk`](./Engine_LogicKeys.md#object-monk) | Object  | Defines a list of quotes for the Monk class. | 66 | `{ . . . }` |
 | [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`ChangeTile`](./Passives_and_Statuses.md#object-changetile) | Enum / Object  | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 62 | `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 50 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 50 | `.1`<br>`.16666666`<br>`.3` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 47 | `{ . . . }` |
 | `rock` | Variable | A variable used in logic contexts. | 46 ||
-| [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 42 | `{ . . . }` |
-| [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 38 | `{ . . . }` |
+| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 42 | `{ . . . }` |
+| [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 38 | `{ . . . }` |
 | [`VisualFXTile`](./Enums.md#enum-visualfxtile) | Enum | Specifies the name of the visual effect to play on the target tile. | 36 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
 | [`BounceObject`](./Miscellaneous.md#object-bounceobject) | Enum / Object  | Specifies the object or projectile to spawn and bounce from the target. | 35 | `{ . . . }`<br>`AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 29 | `1`<br>`2`<br>`[1 .01]` |
 | [`Petrify`](./Arrays.md#array-petrify) | Array / Integer | The amount of petrify stacks applied, or an [stacks, probability] array. | 28 | `1`<br>`[1 .15]`<br>`[1 .1]` |
-| [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 27 | `{ . . . }` |
+| [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 27 | `{ . . . }` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 26 | `-1`<br>`-2`<br>`1` |
 | [`EvolveAbilityFromPool`](./Miscellaneous.md#object-evolveabilityfrompool) | Enum / Object  | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 26 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
 | [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 23 | `{ . . . }` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 21 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`Sleep`](./Arrays.md#array-sleep) | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 21 | `1`<br>`2`<br>`3` |
-| [`Conditional_Boss`](./Engine_LogicKeys.md#conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 17 | `{ . . . }` |
+| [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 17 | `{ . . . }` |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Specifies the name of the ability the consumed unit uses to attempt escape. | 17 | `CHuskStruggle`<br>`CaveWomanEscape`<br>`LennyStruggle` |
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 15 | `{ . . . }`<br>`1` |
 | `force_contact` | Boolean | If true, the consumed unit is forced into contact with the consumer. | 15 | `true` |
 | [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 14 | `{ . . . }` |
-| [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 14 | `{ . . . }` |
-| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 12 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 14 | `{ . . . }` |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 12 | `{ . . . }` |
 | `instant` | Boolean | If true, the consumption happens immediately without a timer. | 12 | `true` |
 | [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | Specifies the mounting mode; values include 'auto' or 'true'. | 12 | `auto`<br>`true` |
 | `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 11 | `true` |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 11 | `deferred`<br>`false`<br>`true` |
-| [`Conditional_FormulaIsPositive`](./Engine_LogicKeys.md#conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
+| [`Conditional_FormulaIsPositive`](./Abilities_and_Spells.md#object-conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
 | `X` | Variable | A generic variable placeholder often used for coordinates or unknown values. | 10 ||
 | [`Nuke`](./Miscellaneous.md#object-nuke) | Object  | Defines a nuke form with no attack or movement options. | 10 | `{ . . . }` |
 | `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 9 | `0`<br>`1`<br>`10` |
-| [`Conditional_Corpse`](./Engine_LogicKeys.md#conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 8 | `{ . . . }` |
-| [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
+| [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 8 | `{ . . . }` |
+| `formula` | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
 | [`SpreadDisease`](./Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 8 | `{ . . . }` |
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer | The amount of tarred stacks applied, or an [stacks, probability] array. | 8 | `1`<br>`2`<br>`[1 .1]` |
 | `wet` | Boolean | If true, the consumed unit is considered wet (e.g., for elemental interactions). | 8 | `false`<br>`true` |
 | [`BlackShard`](./Engine_LogicKeys.md#object-blackshard) | Object  | Defines the BlackShard object, likely a collectible item or a specific entity in the game. | 8 | `{ . . . }` |
-| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 7 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 7 | `{ . . . }` |
+| [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 7 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Items_and_Equipment.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 7 | `{ . . . }` |
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 7 | `1`<br>`8` |
 | [`ForceAttack`](./Miscellaneous.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 7 | `{ . . . }`<br>`1` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 7 | `-1`<br>`1`<br>`2` |
 | `TempRangeUp` | Integer | The amount of temporary range increase applied. | 7 | `1`<br>`2`<br>`20` |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 6 | `{ . . . }` |
-| [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 6 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 6 | `{ . . . }` |
+| [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 6 | `{ . . . }` |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 6 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
 | [`PopAndSpawn`](./Miscellaneous.md#object-popandspawn) | Enum / Object  | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 6 | `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
 | `RandomInjury` | Integer | The number of random injuries applied. | 6 | `1` |
 | `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 6 | `1`<br>`2`<br>`4` |
-| [`TempSpeedUp`](./Enums.md#enum-tempspeedup) | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 6 | `10`<br>`4`<br>`X` |
+| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 6 | `10`<br>`4`<br>`X` |
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 6 | `0`<br>`10`<br>`3` |
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 6 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-| [`Conditional_IsSelf`](./Engine_LogicKeys.md#conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 5 | `{ . . . }` |
+| [`Conditional_IsSelf`](./Abilities_and_Spells.md#object-conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 5 | `{ . . . }` |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 5 | `{ . . . }` |
 | `LavaTile` | Variable | Represents a tile of lava on the map, which deals damage to units standing on it. | 5 ||
 | `MovementUp` | Integer | The amount of movement increase or decrease applied. | 5 | `-2`<br>`1`<br>`2` |
 | `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 5 | `1` |
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array / Integer | The number of coins stolen from the target, or an array of `[number, probability]`. | 4 | `1`<br>`3`<br>`[1 .5]` |
-| [`Conditional_Familiar`](./Engine_LogicKeys.md#conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
+| [`Conditional_Familiar`](./Abilities_and_Spells.md#object-conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
 | `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 4 | `1`<br>`2` |
 | `moonhand` | Variable | A variable representing the Moon Hand, likely a limb or entity type associated with lunar or cosmic themes. | 4 ||
 | [`Reanimate`](./Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object  | The percentage chance to reanimate the target. | 4 | `{ . . . }`<br>`100%`<br>`33%`<br>`50%` |
@@ -94,10 +94,10 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`BirthSquirrel`](./Engine_LogicKeys.md#object-birthsquirrel) | Object  | Defines the Birth Squirrel ability, which spawns a squirrel ally when used. | 4 | `{ . . . }` |
 | `WaterTile_Current` | Variable | Represents a water tile with a current, pushing units in a specific direction. | 4 ||
 | `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 3 | `1` |
-| [`Conditional_AffectedByElement`](./Engine_LogicKeys.md#conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
-| [`Conditional_FirstApplicationThisTurn`](./Engine_LogicKeys.md#conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
-| [`Conditional_LastHit`](./Engine_LogicKeys.md#conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
-| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 3 | `{ . . . }` |
+| [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
+| [`Conditional_LastHit`](./Abilities_and_Spells.md#object-conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 3 | `{ . . . }` |
 | [`DoDamage`](./Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 3 | `{ . . . }` |
 | `drop_on_self_death` | Boolean | If true, the consumed unit is dropped when the consumer dies. | 3 | `true` |
 | `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 3 | `1` |
@@ -118,13 +118,13 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`poop`](./Miscellaneous.md#object-poop) | Object  | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 2 | `{ . . . }` |
 | `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 2 | `100%`<br>`50%` |
-| [`Conditional_BossOrBig`](./Engine_LogicKeys.md#conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
-| [`Conditional_DestructibleCorpse`](./Engine_LogicKeys.md#conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
-| [`Conditional_Displaceable`](./Engine_LogicKeys.md#conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 2 | `{ . . . }` |
-| [`Conditional_NotAlly`](./Engine_LogicKeys.md#conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
-| [`Conditional_NotBossOrBig`](./Engine_LogicKeys.md#conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_NotShielded`](./Engine_LogicKeys.md#conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
+| [`Conditional_BossOrBig`](./Abilities_and_Spells.md#object-conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_Buddy`](./Abilities_and_Spells.md#object-conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
+| [`Conditional_DestructibleCorpse`](./Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
+| [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 2 | `{ . . . }` |
+| [`Conditional_NotAlly`](./Abilities_and_Spells.md#object-conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
+| [`Conditional_NotBossOrBig`](./Abilities_and_Spells.md#object-conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_NotShielded`](./Abilities_and_Spells.md#object-conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
 | `FireTile` | Variable | Represents a tile of fire on the map, which deals damage to units on it over time. | 2 ||
 | [`GainDisorderFromPool`](./Miscellaneous.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 2 | `{ . . . }`<br>`all_disorders` |
 | `gamewin` | Variable | A variable that triggers the end of the game, typically set to true when victory conditions are met. | 2 ||
@@ -136,7 +136,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `Ostracized` | Integer | The number of stacks of Ostracized applied. | 2 | `1`<br>`2`<br>`4` |
 | `PartyExplosion` | Variable | A variable that triggers a large explosive effect, often an event-based mechanic. | 2 ||
 | `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 2 | `1`<br>`2` |
-| [`Pilfer`](Events_and_Encounters.md#object-pilfer) | Object | Defines the Pilfer ability, which steals an item or resource from the target. | 2 | `{ . . . }` |
+| `Pilfer` | Object | Defines the Pilfer ability, which steals an item or resource from the target. | 2 | `{ . . . }` |
 | `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. | 2 | `1` |
 | `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. | 2 | `1` |
 | [`Pulp2`](./Miscellaneous.md#object-pulp2) | Object  | Form state for the second stage of pulping, with no attacks or movement. | 2 | `{ . . . }` |
@@ -169,8 +169,8 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`TigerSwipes`](./Engine_LogicKeys.md#object-tigerswipes) | Object  | Defines the Tiger Swipes ability, a rapid series of claw attacks. | 2 | `{ . . . }` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Rain`](./Miscellaneous.md#object-rain) | Object  | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
-| [`megadino`](#object-megadino) | Variable | A variable representing a Mega Dinosaur, likely a large, powerful enemy or form. | 1 ||
-| [`moonhead`](#object-moonhead) | Variable | A variable representing the Moon Head, likely a head type or entity associated with lunar themes. | 1 ||
+| [`megadino`](./Engine_LogicKeys.md#object-megadino) | Variable | A variable representing a Mega Dinosaur, likely a large, powerful enemy or form. | 1 ||
+| [`moonhead`](./Engine_LogicKeys.md#object-moonhead) | Variable | A variable representing the Moon Head, likely a head type or entity associated with lunar themes. | 1 ||
 | `alien` | Variable | A variable indicating the unit is an alien, affecting its type and interactions. | 1 ||
 | [`AllyInfested`](./Miscellaneous.md#object-allyinfested) | Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 | `{ . . . }` |
 | `angeljunk` | Variable | A variable representing angel junk, likely a cosmetic or mechanical part of an angelic character. | 1 ||
@@ -183,20 +183,20 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `chapter_corpse_medium` | Variable | A variable representing a medium-sized corpse prop used in chapter environments. | 1 ||
 | [`Chitter`](./Engine_LogicKeys.md#object-chitter) | Object  | Defines the Chitter ability, a spell that deals magical damage or applies a status effect. | 1 | `{ . . . }` |
 | [`cm_RaptorEggSpawn`](./Engine_LogicKeys.md#object-cm_raptoreggspawn) | Object  | Defines the template and meta properties for spawning a raptor egg entity. | 1 | `{ . . . }` |
-| [`Conditional_AbilityTargetIsSelf`](./Engine_LogicKeys.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
-| [`Conditional_ActiveWeather_Any`](./Engine_LogicKeys.md#conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
-| [`Conditional_Backstab`](./Engine_LogicKeys.md#conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
-| [`Conditional_CanBeHealed`](./Engine_LogicKeys.md#conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
-| [`Conditional_DebuffRoll`](./Engine_LogicKeys.md#conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
-| [`Conditional_FinishedSpawning`](./Engine_LogicKeys.md#conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
-| [`Conditional_HasCleansableDebuffs`](./Engine_LogicKeys.md#conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
-| [`Conditional_HasKnockback`](./Engine_LogicKeys.md#conditional_hasknockback) | Object  | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
-| [`Conditional_IsPhysicalAttack`](./Engine_LogicKeys.md#conditional_isphysicalattack) | Object  | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 | `{ . . . }` |
-| [`Conditional_IsTrample`](./Engine_LogicKeys.md#conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
-| [`Conditional_LivingPlayerCat`](./Engine_LogicKeys.md#conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
-| [`Conditional_NotBig`](./Engine_LogicKeys.md#conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
-| [`Conditional_SourceAbilityHasTag`](./Engine_LogicKeys.md#conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
-| [`Conditional_SourceHasStatus`](./Engine_LogicKeys.md#conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
+| `Conditional_AbilityTargetIsSelf` | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
+| [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#object-conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
+| [`Conditional_Backstab`](./Abilities_and_Spells.md#object-conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
+| [`Conditional_CanBeHealed`](./Abilities_and_Spells.md#object-conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
+| [`Conditional_DebuffRoll`](./Abilities_and_Spells.md#object-conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_FinishedSpawning`](./Engine_LogicKeys.md#object-conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](./Engine_StatusAndPassiveKeys.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`Conditional_HasKnockback`](./Characters_and_Bosses.md#object-conditional_hasknockback) | Object  | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
+| [`Conditional_IsPhysicalAttack`](./Characters_and_Bosses.md#object-conditional_isphysicalattack) | Object  | A conditional block that executes its child actions only if the triggering event is a physical attack. | 1 | `{ . . . }` |
+| [`Conditional_IsTrample`](./Abilities_and_Spells.md#object-conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
+| [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#object-conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
+| [`Conditional_NotBig`](./Abilities_and_Spells.md#object-conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
+| [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
+| [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
 | `container` | Variable | A variable representing a generic container or inventory slot for items. | 1 ||
 | [`DeathWormEat`](./Engine_LogicKeys.md#object-deathwormeat) | Object  | Defines the eat ability for Death Worm, using the return template and specifying its name and movement flag. | 1 | `{ . . . }` |
 | `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 | `true` |
@@ -248,7 +248,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`Tease2`](./Engine_LogicKeys.md#object-tease2) | Object  | Defines an upgraded variant of the Tease ability, using a different description. | 1 | `{ . . . }` |
 | `the_nuke_bearer` | Variable | A variable representing the entity that carries the nuke. | 1 ||
 | `themotherspike` | Variable | A variable representing the Mother Spike entity. | 1 ||
-| [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+| `threshold_expr` | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
 | [`TigerSwipes2`](./Engine_LogicKeys.md#object-tigerswipes2) | Object  | An object defining the upgraded Tiger Swipes ability. | 1 | `{ . . . }` |
 | [`Timber`](./Engine_LogicKeys.md#object-timber) | Object  | Defines the Timber trample dash ability, an alt basic attack for Tree Form. | 1 | `{ . . . }` |
 | [`TinaFlail`](./Engine_LogicKeys.md#object-tinaflail) | Object  | An object defining the Tina Flail ability or item. | 1 | `{ . . . }` |
@@ -306,7 +306,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. || `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
@@ -339,7 +339,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -384,7 +384,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -409,7 +409,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#context-addstatustoelementabilities), [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent), [`Conditional_SourceHasTag`](./Miscellaneous.md#context-conditional_sourcehastag), [`ExtraStatusWhenDealingDamage`](./Miscellaneous.md#context-extrastatuswhendealingdamage), [`StatusKilledCharacters`](./Miscellaneous.md#context-statuskilledcharacters), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#object-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#object-addstatustoelementabilities), `Conditional_Adjacent`, `Conditional_SourceHasTag`, [`ExtraStatusWhenDealingDamage`](./Miscellaneous.md#object-extrastatuswhendealingdamage), [`StatusKilledCharacters`](./Miscellaneous.md#object-statuskilledcharacters), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -433,7 +433,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -457,11 +457,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Miscellaneous.md#context-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`StatusEachTurnBegin`](./Miscellaneous.md#object-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#object-statuseachturnend), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Engine_LogicKeys.md#valid-property-keys) | Variable | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 8 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 
@@ -482,7 +482,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag), [`StatusAllCharactersOnSpawn`](./Miscellaneous.md#context-statusallcharactersonspawn), [`StatusKillers`](./Miscellaneous.md#context-statuskillers), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_HasTag`, [`StatusAllCharactersOnSpawn`](./Miscellaneous.md#object-statusallcharactersonspawn), [`StatusKillers`](./Miscellaneous.md#object-statuskillers), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -567,7 +567,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToElementDamage`](./Miscellaneous.md#context-addstatustoelementdamage), [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally), [`Conditional_GoodRoll`](./Miscellaneous.md#context-conditional_goodroll), [`StatusOnBattleEnd`](./Miscellaneous.md#context-statusonbattleend), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`AddStatusToElementDamage`](./Miscellaneous.md#object-addstatustoelementdamage), `Conditional_Ally`, `Conditional_GoodRoll`, [`StatusOnBattleEnd`](./Miscellaneous.md#object-statusonbattleend), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -651,7 +651,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#context-addstatustoelementabilities), [`AddStatusToSpells`](./Miscellaneous.md#context-addstatustospells), [`Conditional_Corpse`](./Miscellaneous.md#context-conditional_corpse), [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#object-addstatustobasicattack), [`AddStatusToElementAbilities`](./Miscellaneous.md#object-addstatustoelementabilities), [`AddStatusToSpells`](./Miscellaneous.md#object-addstatustospells), `Conditional_Corpse`, `Conditional_NotBoss`, [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -675,7 +675,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -699,7 +699,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnEndMove`](./Miscellaneous.md#context-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#context-statusonkill), [`StatusOnUseAbilityWithTag`](./Miscellaneous.md#context-statusonuseabilitywithtag), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`StatusOnEndMove`](./Miscellaneous.md#object-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#object-statusonkill), [`StatusOnUseAbilityWithTag`](./Miscellaneous.md#object-statusonuseabilitywithtag), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -744,7 +744,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`Else`](./Miscellaneous.md#context-else), [`StatusCharactersOnRoundEnd`](./Miscellaneous.md#context-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./Miscellaneous.md#context-statuscharactersonroundstart), [`StatusEachTurnBegin`](./Miscellaneous.md#context-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`StatusOnBattleEnd`](./Miscellaneous.md#context-statusonbattleend), [`StatusOnEndMove`](./Miscellaneous.md#context-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#context-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Miscellaneous.md#context-statusontakehealthorshielddamage), [`ally_rewards`](./Miscellaneous.md#context-ally_rewards), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#object-addstatustobasicattack), [`Else`](./Miscellaneous.md#object-else), [`StatusCharactersOnRoundEnd`](./Miscellaneous.md#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./Miscellaneous.md#object-statuscharactersonroundstart), [`StatusEachTurnBegin`](./Miscellaneous.md#object-statuseachturnbegin), [`StatusEachTurnEnd`](./Miscellaneous.md#object-statuseachturnend), [`StatusOnBattleEnd`](./Miscellaneous.md#object-statusonbattleend), [`StatusOnEndMove`](./Miscellaneous.md#object-statusonendmove), [`StatusOnKill`](./Miscellaneous.md#object-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Miscellaneous.md#object-statusontakehealthorshielddamage), [`ally_rewards`](./Miscellaneous.md#object-ally_rewards), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -769,7 +769,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Miscellaneous.md#context-else)
+> **Referenced by:** [`Else`](./Miscellaneous.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -793,7 +793,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#context-addstatustoalldamage), [`Conditional_Boss`](./Miscellaneous.md#context-conditional_boss), [`CritsApplyStatus`](./Miscellaneous.md#context-critsapplystatus), [`Else`](./Miscellaneous.md#context-else), [`StatusOnTookDamage`](./Miscellaneous.md#context-statusontookdamage), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#object-addstatustoalldamage), `Conditional_Boss`, [`CritsApplyStatus`](./Miscellaneous.md#object-critsapplystatus), [`Else`](./Miscellaneous.md#object-else), [`StatusOnTookDamage`](./Miscellaneous.md#object-statusontookdamage), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -818,7 +818,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#context-addstatustoalldamage), [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack), [`Conditional_Object`](./Miscellaneous.md#context-conditional_object), [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects), [`extra_statuses`](./Miscellaneous.md#context-extra_statuses)
+> **Referenced by:** [`AddStatusToAllDamage`](./Miscellaneous.md#object-addstatustoalldamage), [`AddStatusToBasicAttack`](./Miscellaneous.md#object-addstatustobasicattack), `Conditional_Object`, [`Else`](./Miscellaneous.md#object-else), [`effects`](./Miscellaneous.md#object-effects), [`extra_statuses`](./Miscellaneous.md#object-extra_statuses)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -843,7 +843,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_NotBoss`](./Miscellaneous.md#context-conditional_notboss), [`Conditional_Speculative`](./Miscellaneous.md#context-conditional_speculative), [`Else`](./Miscellaneous.md#context-else), [`StatusOnTookDamage`](./Miscellaneous.md#context-statusontookdamage), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_NotBoss`, `Conditional_Speculative`, [`Else`](./Miscellaneous.md#object-else), [`StatusOnTookDamage`](./Miscellaneous.md#object-statusontookdamage), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -851,7 +851,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
 | `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
-| [`threshold_expr`](./Math_Equations.md) | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+| `threshold_expr` | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
 
 </details>
 
@@ -870,7 +870,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Buddy`](./Miscellaneous.md#context-conditional_buddy), [`Conditional_HasTag`](./Miscellaneous.md#context-conditional_hastag), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_Buddy`, `Conditional_HasTag`, [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -895,7 +895,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToReceivedDamage`](./Miscellaneous.md#context-addstatustoreceiveddamage)
+> **Referenced by:** [`AddStatusToReceivedDamage`](./Miscellaneous.md#object-addstatustoreceiveddamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -959,7 +959,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1003,7 +1003,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#object-statuseachturnend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1028,7 +1028,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1112,7 +1112,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1136,7 +1136,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`Else`](./Miscellaneous.md#object-else), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1160,7 +1160,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HealthThreshold`](./Miscellaneous.md#context-conditional_healththreshold), [`StatusOnFullMana`](./Miscellaneous.md#context-statusonfullmana), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_HealthThreshold`, [`StatusOnFullMana`](./Miscellaneous.md#object-statusonfullmana), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1205,7 +1205,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Adjacent`](./Miscellaneous.md#context-conditional_adjacent), [`Conditional_Ally`](./Miscellaneous.md#context-conditional_ally), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_Adjacent`, `Conditional_Ally`, [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1269,7 +1269,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1294,7 +1294,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1319,7 +1319,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Miscellaneous.md#object-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1344,7 +1344,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_AffectedByElement`](./Miscellaneous.md#context-conditional_affectedbyelement), [`Else`](./Miscellaneous.md#context-else), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** `Conditional_AffectedByElement`, [`Else`](./Miscellaneous.md#object-else), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1375,21 +1375,21 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
-| [`Conditional_HasStatus`](./Engine_LogicKeys.md#conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 | [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
-| [`Conditional_Displaceable`](./Engine_LogicKeys.md#conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
-| [`Conditional_GoodRoll`](./Engine_LogicKeys.md#conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
-| [`Conditional_HasKnockback`](./Engine_LogicKeys.md#conditional_hasknockback) | Object  | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
-| [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
-| [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
+| [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
+| [`Conditional_HasKnockback`](./Characters_and_Bosses.md#object-conditional_hasknockback) | Object  | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
+| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | Default<br>FormChange<br>Druid |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | [`AllyInfested`](./Miscellaneous.md#object-allyinfested) | Array / Float / Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. || `{ . . . }` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
@@ -1426,56 +1426,56 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
+| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `1`<br>`2`<br>`3` |
-| [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
+| [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
-| [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
+| [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Conditional_GoodRoll`](./Engine_LogicKeys.md#conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 14 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 14 | `{ . . . }` |
 | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` |
-| [`Conditional_Boss`](./Engine_LogicKeys.md#conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
-| [`Conditional_FormulaIsPositive`](./Engine_LogicKeys.md#conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
-| [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 | `{ . . . }` |
+| [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
+| [`Conditional_FormulaIsPositive`](./Abilities_and_Spells.md#object-conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
+| [`Conditional_Speculative`](./Abilities_and_Spells.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 10 | `{ . . . }` |
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` |
 | [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
-| [`Conditional_Corpse`](./Engine_LogicKeys.md#conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
+| [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
 | [`Blind`](./Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` |
 | [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `1`<br>`2`<br>`3` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
-| [`Conditional_HasStatus`](./Engine_LogicKeys.md#conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
-| [`Conditional_InForm`](./Engine_LogicKeys.md#conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 5 | `{ . . . }` |
-| [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
-| [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
-| [`Conditional_Familiar`](./Engine_LogicKeys.md#conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
+| [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 5 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
+| [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Items_and_Equipment.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
+| [`Conditional_Familiar`](./Abilities_and_Spells.md#object-conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 | [`Reanimate`](./Engine_StatusAndPassiveKeys.md#object-reanimate) | Integer / Object  | The percentage chance to reanimate the target. | 4 | `{ . . . }`<br>`100%`<br>`33%`<br>`50%` |
 | `SizeScale` | Float | The multiplier applied to the unit's visual and hitbox size. | 4 | `.4`<br>`.6`<br>`.7` |
-| [`Conditional_AffectedByElement`](./Engine_LogicKeys.md#conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
-| [`Conditional_FirstApplicationThisTurn`](./Engine_LogicKeys.md#conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
-| [`Conditional_LastHit`](./Engine_LogicKeys.md#conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
+| [`Conditional_LastHit`](./Abilities_and_Spells.md#object-conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
 | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` |
 | [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Enum / Integer / Object  | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 | `DrinkWater` | Integer | The number of water-drink actions performed. | 2 | `1` |
 | [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_BadRoll`](./Engine_LogicKeys.md#conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
-| [`Conditional_BossOrBig`](./Engine_LogicKeys.md#conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
-| [`Conditional_DestructibleCorpse`](./Engine_LogicKeys.md#conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
-| [`Conditional_IsSelf`](./Engine_LogicKeys.md#conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
-| [`Conditional_NotAlly`](./Engine_LogicKeys.md#conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
-| [`Conditional_NotBossOrBig`](./Engine_LogicKeys.md#conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
-| [`Conditional_NotShielded`](./Engine_LogicKeys.md#conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
-| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
-| [`Conditional_Shielded`](./Engine_LogicKeys.md#conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
+| [`Conditional_BossOrBig`](./Abilities_and_Spells.md#object-conditional_bossorbig) | Object  | An object containing effects that are only applied if the target is a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_Buddy`](./Abilities_and_Spells.md#object-conditional_buddy) | Object  | An object containing effects that are only applied if the caster has a buddy (follower) unit. | 2 | `{ . . . }` |
+| [`Conditional_DestructibleCorpse`](./Abilities_and_Spells.md#object-conditional_destructiblecorpse) | Object  | An object containing effects that are only applied if the corpse is destructible. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_IsSelf`](./Abilities_and_Spells.md#object-conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
+| [`Conditional_NotAlly`](./Abilities_and_Spells.md#object-conditional_notally) | Object  | An object containing effects that are only applied if the target is not an ally of the source. | 2 | `{ . . . }` |
+| [`Conditional_NotBossOrBig`](./Abilities_and_Spells.md#object-conditional_notbossorbig) | Object  | An object containing effects that are only applied if the target is not a boss or large unit. | 2 | `{ . . . }` |
+| [`Conditional_NotShielded`](./Abilities_and_Spells.md#object-conditional_notshielded) | Object  | An object containing effects that are only applied if the target does not have a shield active. | 2 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
+| [`Conditional_Shielded`](./Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer  | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
 | [`PoisonLace`](./Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String  | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
 | [`Purge`](./Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object  | The number of status effects to purge from the target. | 2 | `{ . . . }`<br>`0`<br>`3` |
@@ -1484,19 +1484,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`SoulLink`](./Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object  | The number of soul link stacks applied. | 2 | `{ . . . }`<br>`1` |
 | [`Infested`](./Engine_StatusAndPassiveKeys.md#object-infested) | Integer / Object  | The number of stacks of Infested applied. | 1 | `{ . . . }`<br>`1` |
-| [`Conditional_AbilityTargetIsSelf`](./Engine_LogicKeys.md#conditional_abilitytargetisself) | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
-| [`Conditional_ActiveWeather_Any`](./Engine_LogicKeys.md#conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
-| [`Conditional_Backstab`](./Engine_LogicKeys.md#conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
-| [`Conditional_CanBeHealed`](./Engine_LogicKeys.md#conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
-| [`Conditional_DebuffRoll`](./Engine_LogicKeys.md#conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
-| [`Conditional_Displaceable`](./Engine_LogicKeys.md#conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
-| [`Conditional_HasCleansableDebuffs`](./Engine_LogicKeys.md#conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
-| [`Conditional_IsTrample`](./Engine_LogicKeys.md#conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
-| [`Conditional_LivingPlayerCat`](./Engine_LogicKeys.md#conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
-| [`Conditional_NotBig`](./Engine_LogicKeys.md#conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
-| [`Conditional_RandomChance`](./Engine_LogicKeys.md#conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
-| [`Conditional_SourceAbilityHasTag`](./Engine_LogicKeys.md#conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
-| [`Conditional_SourceHasStatus`](./Engine_LogicKeys.md#conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
+| `Conditional_AbilityTargetIsSelf` | Object | An object containing effects that execute only if the ability's target is the source unit. | 1 | `{ . . . }` |
+| [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#object-conditional_activeweather_any) | Object  | An object containing effects that execute only if any of the specified weather types are active. | 1 | `{ . . . }` |
+| [`Conditional_Backstab`](./Abilities_and_Spells.md#object-conditional_backstab) | Object  | An object containing effects that execute only if the attack lands on the target's back. | 1 | `{ . . . }` |
+| [`Conditional_CanBeHealed`](./Abilities_and_Spells.md#object-conditional_canbehealed) | Object  | An object containing effects that execute only if the target can be healed. | 1 | `{ . . . }` |
+| [`Conditional_DebuffRoll`](./Abilities_and_Spells.md#object-conditional_debuffroll) | Object  | An object containing effects that execute if a debuff roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](./Engine_StatusAndPassiveKeys.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`Conditional_IsTrample`](./Abilities_and_Spells.md#object-conditional_istrample) | Object  | An object containing effects that execute only if the ability is a trample attack. | 1 | `{ . . . }` |
+| [`Conditional_LivingPlayerCat`](./Abilities_and_Spells.md#object-conditional_livingplayercat) | Object  | An object containing effects that execute only if the source is a living player-owned cat. | 1 | `{ . . . }` |
+| [`Conditional_NotBig`](./Abilities_and_Spells.md#object-conditional_notbig) | Object  | An object containing effects that execute only if the target is not a 'big' unit. | 1 | `{ . . . }` |
+| [`Conditional_RandomChance`](./Items_and_Equipment.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#object-conditional_sourceabilityhastag) | Object  | An object containing effects that execute only if the source ability has the specified tag. | 1 | `{ . . . }` |
+| [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#object-conditional_sourcehasstatus) | Object  | An object containing effects that execute only if the source unit has the specified status. | 1 | `{ . . . }` |
 | [`Rain`](./Miscellaneous.md#object-rain) | Object  | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 624 | Default<br>FormChange<br>Druid |
 | `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `1` |
@@ -1722,10 +1722,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| `name_reference_applier` | String | A localization key for the name displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
-| `tooltip_reference_applier` | String | A localization key for the tooltip description displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
-| `tooltip_stackless` | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name_reference_applier`](./Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
+| [`tooltip_reference_applier`](./Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. || `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
+| [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. || `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
 
@@ -2527,7 +2527,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Stealth`](./Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
@@ -3250,7 +3250,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -3317,7 +3317,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. || `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| `tooltip_stacks` | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks`](./Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. || `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 </details>
 
@@ -7483,13 +7483,13 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `aux` | Number | An auxiliary integer value used for item properties, such as hunger value. | 1 | `-1`<br>`1`<br>`10` |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`desc`](./Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
 | `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
 | `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
 | `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
@@ -7590,10 +7590,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`desc`](./Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
@@ -7685,10 +7685,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`desc`](./Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
@@ -8263,7 +8263,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | `BOSS_MEGADINO_QUOTE_1` | String | The first boss quote spoken by Megadino. | 1 ||
 | `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
 </details>
@@ -8284,7 +8284,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `BOSS_MOONHEAD_QUOTE_3` | String | The third boss quote spoken by Moonhead. | 1 ||
 | `BOSS_MOONHEAD_QUOTE_4` | String | The fourth boss quote spoken by Moonhead. | 1 ||
 | `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
-| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
 
 </details>#### ``Conditional_HasCleansableDebuffs`
@@ -8296,7 +8296,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#context-statuseachturnend), [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`StatusEachTurnEnd`](./Miscellaneous.md#object-statuseachturnend), [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

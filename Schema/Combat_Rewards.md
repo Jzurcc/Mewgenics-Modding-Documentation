@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -21,9 +21,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
 | [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| [`consumable_chance`](./Math_Equations.md) | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
 | `item_chance` | Float | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
@@ -45,10 +45,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
 | [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| [`consumable_chance`](./Math_Equations.md) | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -69,10 +69,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
 | [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| [`consumable_chance`](./Math_Equations.md) | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -93,10 +93,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`coins`](./Arrays.md#array-coins) | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
 | [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| [`consumable_chance`](./Math_Equations.md) | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| [`item_chance`](./Math_Equations.md) | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
 
 </details>
 

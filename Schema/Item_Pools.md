@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -19,20 +19,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 883 | `common`<br>`rare`<br>`cha` |
-| [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
+| `rare` | Integer | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | Specifies the item pool identifier used by a chapter or boss to determine which items can be found. | 19 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 12 | `10`<br>`20`<br>`30` |
-| `very_rare` | Variable | The weight value for very rare items in a random pool distribution. | 11 | `.01`<br>`1`<br>`15` |
-| [`common`](./Enums.md) | Integer | Defines the common reward block for a boss encounter. | 11 | `100`<br>`14`<br>`5` |
+| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 11 | `.01`<br>`1`<br>`15` |
+| `common` | Integer | Defines the common reward block for a boss encounter. | 11 | `100`<br>`14`<br>`5` |
 | `chapter_rare` | Number | An integer or variable controlling the number of rare item drops for the current chapter. | 5 | `1` |
 | `chapter_common` | Number | The weight or probability for this entry to appear in the common loot pool for its chapter. | 3 | `1` |
 | [`chapter`](./Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 3 | `1`<br>`alley` |
 | `Chicken` | Equation | The number of chicken pickups spawned. | 3 | `.01`<br>`.1`<br>`2` |
 | `consumables` | Number | The number of consumable items provided or available in this context. | 3 | `10`<br>`60` |
-| `current_chapter_common` | Variable | A variable controlling the number of common item drops for the current chapter. | 2 | `55`<br>`auto` |
-| `current_chapter_rare` | Variable | A variable controlling the number of rare item drops for the current chapter. | 2 | `10`<br>`auto` |
-| `current_chapter_uncommon` | Variable | The weight or value for uncommon items specific to the current chapter. | 2 | `35`<br>`auto` |
-| `current_chapter_very_rare` | Variable | The weight or value for very rare items specific to the current chapter. | 2 | `1`<br>`auto` |
+| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Integer / Enum | A variable controlling the number of common item drops for the current chapter. | 2 | `55`<br>`auto` |
+| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Integer / Enum | A variable controlling the number of rare item drops for the current chapter. | 2 | `10`<br>`auto` |
+| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Integer / Enum | The weight or value for uncommon items specific to the current chapter. | 2 | `35`<br>`auto` |
+| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Integer / Enum | The weight or value for very rare items specific to the current chapter. | 2 | `1`<br>`auto` |
 | `basic_consumables` | Number | The weight value for basic consumable items in a random pool distribution. | 2 | `100`<br>`90` |
 | [`FoodBig`](./Engine_LogicKeys.md#object-foodbig) | Object  | Specifies the definition and weight for a large food item in item pools. | 2 | `{ . . . }` |
 | [`FoodMedium`](./Engine_LogicKeys.md#object-foodmedium) | Object  | Specifies the definition and weight for a medium food item in item pools. | 2 | `{ . . . }` |

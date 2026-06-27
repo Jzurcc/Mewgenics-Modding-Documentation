@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -517,26 +517,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`idle`](./Arrays.md#array-idle) | Array | List of animation states used for the idle state. | 10 | `["idle" "blocking" "gone"]`<br>`["idle" "blocking"]`<br>`["idle"]` |
-| [`closeup`](./Arrays.md#array-closeup) | Array | List of animation states used for the closeup camera view. | 3 | `["closeup"]` |
-| [`verycloseup`](./Arrays.md#array-verycloseup) | Array | List of animation states used for the very closeup camera view. | 3 | `["verycloseup"]` |
-| [`zoomedout`](./Arrays.md#array-zoomedout) | Array | List of animation states used for the zoomed out camera view. | 3 | `["zoomedout"]` |
-| [`beanies_intensestatic`](./Arrays.md#array-beanies_intensestatic) | Array | List of animation states for Beanie's intense static effect. | 1 | `["beanies_intensestatic"]` |
-| [`beanies_right`](./Arrays.md#array-beanies_right) | Array | List of animation states for Beanie's right-facing pose. | 1 | `["beanies_right"]` |
-| [`butch_left`](./Arrays.md#array-butch_left) | Array | List of animation states for Butch's left-facing pose and associated pointing gestures. | 1 ||
-| [`butch_right`](./Arrays.md#array-butch_right) | Array | List of animation states for Butch's right-facing pose and associated pointing gestures. | 1 ||
-| [`choosecats`](./Arrays.md#array-choosecats) | Array | List of animation states for the cat selection screen. | 1 | `["choosecats"]` |
-| [`closerup`](./Arrays.md#array-closerup) | Array | List of animation states for an even closer camera view. | 1 | `["closerup"]` |
-| [`frank_right`](./Arrays.md#array-frank_right) | Array | List of animation states for Frank's right-facing pose and pipe point. | 1 | `["frank_right", "frank_point_pipe"]` |
-| [`jack_right`](./Arrays.md#array-jack_right) | Array | List of animation states for Jack's right-facing pose and furniture point. | 1 | `["jack_right", "jack_point_furniture"]` |
-| [`offscreen`](./Arrays.md#array-offscreen) | Array | List of animation states for when the character is off screen. | 1 | `["offscreen"]` |
-| [`steven_center`](./Arrays.md#array-steven_center) | Array | List of animation states for Steven's center position and cat animation. | 1 | `["steven_center", "steven_cat"]` |
-| [`tink_left`](./Arrays.md#array-tink_left) | Array | List of animation states for Tink's left-facing pose and associated pointing gestures. | 1 ||
-| [`tink_right`](./Arrays.md#array-tink_right) | Array | List of animation states for Tink's right-facing pose and stray point. | 1 | `["tink_right", "tink_point_strays"]` |
+| `idle` | Array | List of animation states used for the idle state. | 10 | `["idle" "blocking" "gone"]`<br>`["idle" "blocking"]`<br>`["idle"]` |
+| `closeup` | Array | List of animation states used for the closeup camera view. | 3 | `["closeup"]` |
+| `verycloseup` | Array | List of animation states used for the very closeup camera view. | 3 | `["verycloseup"]` |
+| `zoomedout` | Array | List of animation states used for the zoomed out camera view. | 3 | `["zoomedout"]` |
+| `beanies_intensestatic` | Array | List of animation states for Beanie's intense static effect. | 1 | `["beanies_intensestatic"]` |
+| `beanies_right` | Array | List of animation states for Beanie's right-facing pose. | 1 | `["beanies_right"]` |
+| `butch_left` | Array | List of animation states for Butch's left-facing pose and associated pointing gestures. | 1 ||
+| `butch_right` | Array | List of animation states for Butch's right-facing pose and associated pointing gestures. | 1 ||
+| `choosecats` | Array | List of animation states for the cat selection screen. | 1 | `["choosecats"]` |
+| `closerup` | Array | List of animation states for an even closer camera view. | 1 | `["closerup"]` |
+| `frank_right` | Array | List of animation states for Frank's right-facing pose and pipe point. | 1 | `["frank_right", "frank_point_pipe"]` |
+| `jack_right` | Array | List of animation states for Jack's right-facing pose and furniture point. | 1 | `["jack_right", "jack_point_furniture"]` |
+| `offscreen` | Array | List of animation states for when the character is off screen. | 1 | `["offscreen"]` |
+| `steven_center` | Array | List of animation states for Steven's center position and cat animation. | 1 | `["steven_center", "steven_cat"]` |
+| `tink_left` | Array | List of animation states for Tink's left-facing pose and associated pointing gestures. | 1 ||
+| `tink_right` | Array | List of animation states for Tink's right-facing pose and stray point. | 1 | `["tink_right", "tink_point_strays"]` |
 
 </details>
 
@@ -553,32 +553,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`beanies_intensestatic_to_offscreen`](./Arrays.md#array-beanies_intensestatic_to_offscreen) | Array | A transition array that moves Beanie from the intensestatic state to offscreen. | 1 | `[beanies_intensestatic offscreen]` |
-| [`beanies_offscreen_to_intensestatic`](./Arrays.md#array-beanies_offscreen_to_intensestatic) | Array | A transition array that moves Beanie from offscreen to the intensestatic state. | 1 | `[offscreen beanies_intensestatic]` |
-| [`beanies_offscreen_to_right`](./Arrays.md#array-beanies_offscreen_to_right) | Array | A transition array that moves Beanie from offscreen to the right position. | 1 | `[offscreen beanies_right]` |
-| [`beanies_right_to_offscreen`](./Arrays.md#array-beanies_right_to_offscreen) | Array | A transition array that moves Beanie from the right position to offscreen. | 1 | `[beanies_right offscreen]` |
-| [`butch_left_to_offscreen`](./Arrays.md#array-butch_left_to_offscreen) | Array | A transition array that moves Butch from the left position to offscreen. | 1 | `[butch_left offscreen]` |
-| [`butch_left_to_right`](./Arrays.md#array-butch_left_to_right) | Array | A transition array that moves Butch from the left position to the right position. | 1 | `[butch_left butch_right]` |
-| [`butch_offscreen_to_left`](./Arrays.md#array-butch_offscreen_to_left) | Array | A transition array that moves Butch from offscreen to the left position. | 1 | `[offscreen butch_left]` |
-| [`butch_offscreen_to_right`](./Arrays.md#array-butch_offscreen_to_right) | Array | A transition array that moves Butch from offscreen to the right position. | 1 | `[offscreen butch_right]` |
-| [`butch_right_to_left`](./Arrays.md#array-butch_right_to_left) | Array | A transition array that moves Butch from the right position to the left position. | 1 | `[butch_right butch_left]` |
-| [`butch_right_to_offscreen`](./Arrays.md#array-butch_right_to_offscreen) | Array | A transition array that moves Butch from the right position to offscreen. | 1 | `[butch_right offscreen]` |
-| [`frank_offscreen_to_right`](./Arrays.md#array-frank_offscreen_to_right) | Array | A transition array that moves Frank from offscreen to the right position. | 1 | `[offscreen frank_right]` |
-| [`frank_right_to_offscreen`](./Arrays.md#array-frank_right_to_offscreen) | Array | A transition array that moves Frank from the right position to offscreen. | 1 | `[frank_right offscreen]` |
-| [`jack_offscreen_to_right`](./Arrays.md#array-jack_offscreen_to_right) | Array | A transition array that moves Jack from offscreen to the right position. | 1 | `[offscreen jack_right]` |
-| [`jack_right_to_offscreen`](./Arrays.md#array-jack_right_to_offscreen) | Array | A transition array that moves Jack from the right position to offscreen. | 1 | `[jack_right offscreen]` |
-| [`steven_center_to_offscreen`](./Arrays.md#array-steven_center_to_offscreen) | Array | A transition array that moves Steven from the center position to offscreen. | 1 | `[steven_center offscreen]` |
-| [`steven_offscreen_to_center`](./Arrays.md#array-steven_offscreen_to_center) | Array | A transition array that moves Steven from offscreen to the center position. | 1 | `[offscreen steven_center]` |
-| [`tink_left_to_offscreen`](./Arrays.md#array-tink_left_to_offscreen) | Array | A transition array that moves Tink from the left position to offscreen. | 1 | `[tink_left offscreen]` |
-| [`tink_left_to_right`](./Arrays.md#array-tink_left_to_right) | Array | A transition array that moves Tink from the left position to the right position. | 1 | `[tink_left tink_right]` |
-| [`tink_offscreen_to_left`](./Arrays.md#array-tink_offscreen_to_left) | Array | A transition array that moves Tink from offscreen to the left position. | 1 | `[offscreen tink_left]` |
-| [`tink_offscreen_to_right`](./Arrays.md#array-tink_offscreen_to_right) | Array | A transition array that moves Tink from offscreen to the right position. | 1 | `[offscreen tink_right]` |
-| [`tink_right_to_left`](./Arrays.md#array-tink_right_to_left) | Array | A transition array that moves Tink from the right position to the left position. | 1 | `[tink_right tink_left]` |
-| [`tink_right_to_offscreen`](./Arrays.md#array-tink_right_to_offscreen) | Array | A transition array that moves Tink from the right position to offscreen. | 1 | `[tink_right offscreen]` |
+| `beanies_intensestatic_to_offscreen` | Array | A transition array that moves Beanie from the intensestatic state to offscreen. | 1 | `[beanies_intensestatic offscreen]` |
+| `beanies_offscreen_to_intensestatic` | Array | A transition array that moves Beanie from offscreen to the intensestatic state. | 1 | `[offscreen beanies_intensestatic]` |
+| `beanies_offscreen_to_right` | Array | A transition array that moves Beanie from offscreen to the right position. | 1 | `[offscreen beanies_right]` |
+| `beanies_right_to_offscreen` | Array | A transition array that moves Beanie from the right position to offscreen. | 1 | `[beanies_right offscreen]` |
+| `butch_left_to_offscreen` | Array | A transition array that moves Butch from the left position to offscreen. | 1 | `[butch_left offscreen]` |
+| `butch_left_to_right` | Array | A transition array that moves Butch from the left position to the right position. | 1 | `[butch_left butch_right]` |
+| `butch_offscreen_to_left` | Array | A transition array that moves Butch from offscreen to the left position. | 1 | `[offscreen butch_left]` |
+| `butch_offscreen_to_right` | Array | A transition array that moves Butch from offscreen to the right position. | 1 | `[offscreen butch_right]` |
+| `butch_right_to_left` | Array | A transition array that moves Butch from the right position to the left position. | 1 | `[butch_right butch_left]` |
+| `butch_right_to_offscreen` | Array | A transition array that moves Butch from the right position to offscreen. | 1 | `[butch_right offscreen]` |
+| `frank_offscreen_to_right` | Array | A transition array that moves Frank from offscreen to the right position. | 1 | `[offscreen frank_right]` |
+| `frank_right_to_offscreen` | Array | A transition array that moves Frank from the right position to offscreen. | 1 | `[frank_right offscreen]` |
+| `jack_offscreen_to_right` | Array | A transition array that moves Jack from offscreen to the right position. | 1 | `[offscreen jack_right]` |
+| `jack_right_to_offscreen` | Array | A transition array that moves Jack from the right position to offscreen. | 1 | `[jack_right offscreen]` |
+| `steven_center_to_offscreen` | Array | A transition array that moves Steven from the center position to offscreen. | 1 | `[steven_center offscreen]` |
+| `steven_offscreen_to_center` | Array | A transition array that moves Steven from offscreen to the center position. | 1 | `[offscreen steven_center]` |
+| `tink_left_to_offscreen` | Array | A transition array that moves Tink from the left position to offscreen. | 1 | `[tink_left offscreen]` |
+| `tink_left_to_right` | Array | A transition array that moves Tink from the left position to the right position. | 1 | `[tink_left tink_right]` |
+| `tink_offscreen_to_left` | Array | A transition array that moves Tink from offscreen to the left position. | 1 | `[offscreen tink_left]` |
+| `tink_offscreen_to_right` | Array | A transition array that moves Tink from offscreen to the right position. | 1 | `[offscreen tink_right]` |
+| `tink_right_to_left` | Array | A transition array that moves Tink from the right position to the left position. | 1 | `[tink_right tink_left]` |
+| `tink_right_to_offscreen` | Array | A transition array that moves Tink from the right position to offscreen. | 1 | `[tink_right offscreen]` |
 
 </details>
 
@@ -595,15 +595,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 5 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 5 ||
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 3 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 3 | `1` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 2 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 2 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -620,11 +620,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 8 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 8 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -641,13 +641,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 8 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 8 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 3 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 8 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 8 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 3 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 3 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 3 | `1` |
 
@@ -666,12 +666,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 4 | `true` |
-| [`dialog_and_autopass`](./Strings.md#string-dialog_and_autopass) | String | Specifies the dialog string to display, and automatically proceeds past it. | 4 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | String | Specifies the dialog string to display, and automatically proceeds past it. | 4 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 
 </details>
 
@@ -688,14 +688,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 3 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 3 | `1` |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -712,12 +712,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 4 | `true` |
-| [`tooltip_dialog`](./Enums.md#enum-tooltip_dialog) | Enum | Determines which tooltip dialog string to display, referenced by a unique NPC shop identifier. | 4 | `NPC_JACK_SHOP_TOOLTIP`<br>`NPC_ORGANGRINDER_SHOP_TOOLTIP`<br>`NPC_TRACY_SHOP_TOOLTIP` |
+| `tooltip_dialog` | Enum | Determines which tooltip dialog string to display, referenced by a unique NPC shop identifier. | 4 | `NPC_JACK_SHOP_TOOLTIP`<br>`NPC_ORGANGRINDER_SHOP_TOOLTIP`<br>`NPC_TRACY_SHOP_TOOLTIP` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 4 | `1` |
 
 </details>
@@ -735,12 +735,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -757,12 +757,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -779,12 +779,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -801,12 +801,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -823,12 +823,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -845,12 +845,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -867,12 +867,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -889,12 +889,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -911,12 +911,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 4 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -933,14 +933,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 2 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 2 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 2 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 2 | `1` |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -957,11 +957,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 3 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 3 ||
 
 </details>
 
@@ -978,12 +978,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 3 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 3 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 3 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 3 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1000,13 +1000,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
 
@@ -1023,12 +1023,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1045,13 +1045,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1068,13 +1068,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1091,13 +1091,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1114,13 +1114,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1137,13 +1137,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1160,13 +1160,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1183,13 +1183,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1206,12 +1206,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1228,12 +1228,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1250,13 +1250,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1273,11 +1273,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -1294,14 +1294,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -1318,12 +1318,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1340,15 +1340,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`play_cutscene`](./Enums.md#enum-play_cutscene) | Enum | Specifies the name of the cutscene to play. | 1 | `credits_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `play_cutscene` | Enum | Specifies the name of the cutscene to play. | 1 | `credits_1` |
 | `restart_npc_music` | Number | The number of times to restart the NPC's music track. | 1 | `1` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1365,12 +1365,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
+| `do_sidequest_sequence` | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
+| `gather_questitem_info` | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
 
 </details>
 
@@ -1387,12 +1387,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
+| `do_sidequest_sequence` | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
+| `gather_questitem_info` | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
 
 </details>
 
@@ -1409,15 +1409,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `do_sidequest_sequence` | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
+| `gather_questitem_info` | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1434,15 +1434,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `do_sidequest_sequence` | Enum | Specifies the name of the sidequest sequence to run. | 1 | `beaniesquest_complete`<br>`beaniesquest_fail`<br>`beaniesquest_intro` |
+| `gather_questitem_info` | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1459,14 +1459,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -1483,13 +1483,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
+| `screenshake` | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
 
 </details>
 
@@ -1506,12 +1506,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1528,12 +1528,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1550,13 +1550,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1573,13 +1573,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1596,12 +1596,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1618,12 +1618,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1640,13 +1640,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `trigger_unlock` | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
 
@@ -1663,12 +1663,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -1686,12 +1686,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -1709,12 +1709,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -1732,14 +1732,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`force_current_cat_use_ability`](./Enums.md#enum-force_current_cat_use_ability) | Enum | Specifies the ability ID that the current cat is forced to use. | 1 | `neck_NukeBonus_remote` |
+| `force_current_cat_use_ability` | Enum | Specifies the ability ID that the current cat is forced to use. | 1 | `neck_NukeBonus_remote` |
 
 </details>
 
@@ -1756,12 +1756,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -1779,13 +1779,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1802,13 +1802,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1825,13 +1825,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1848,13 +1848,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1871,13 +1871,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1894,13 +1894,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1917,13 +1917,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -1940,13 +1940,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1963,13 +1963,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -1986,13 +1986,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2009,13 +2009,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2032,13 +2032,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2055,12 +2055,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2077,13 +2077,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2100,13 +2100,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2123,13 +2123,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2146,13 +2146,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2169,13 +2169,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2192,13 +2192,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2215,13 +2215,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2238,13 +2238,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2261,13 +2261,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2284,13 +2284,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2307,13 +2307,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2330,13 +2330,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2353,13 +2353,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2376,13 +2376,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2399,13 +2399,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2422,13 +2422,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2445,13 +2445,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2468,13 +2468,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2491,13 +2491,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2514,13 +2514,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2537,13 +2537,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2560,13 +2560,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2583,13 +2583,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -2606,13 +2606,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2629,13 +2629,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2652,13 +2652,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2675,13 +2675,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2698,12 +2698,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2720,13 +2720,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2743,13 +2743,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2766,13 +2766,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2789,13 +2789,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2812,13 +2812,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2835,13 +2835,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2858,13 +2858,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2881,13 +2881,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2904,12 +2904,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2926,13 +2926,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2949,13 +2949,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2972,13 +2972,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -2995,13 +2995,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3018,13 +3018,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3041,13 +3041,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3064,13 +3064,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3087,13 +3087,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3110,13 +3110,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3133,13 +3133,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3156,13 +3156,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3179,13 +3179,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3202,13 +3202,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3225,13 +3225,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3248,13 +3248,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3271,13 +3271,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3294,13 +3294,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3317,13 +3317,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3340,13 +3340,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3363,13 +3363,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3386,13 +3386,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3409,13 +3409,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3432,13 +3432,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3455,13 +3455,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -3478,12 +3478,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3500,12 +3500,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3522,12 +3522,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3544,12 +3544,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3566,12 +3566,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3588,12 +3588,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3610,12 +3610,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3632,12 +3632,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3654,12 +3654,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3676,12 +3676,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3698,12 +3698,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3720,12 +3720,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3742,11 +3742,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -3763,12 +3763,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3785,12 +3785,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3807,12 +3807,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3829,12 +3829,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3851,12 +3851,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3873,12 +3873,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3895,12 +3895,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3917,12 +3917,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3939,12 +3939,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3961,12 +3961,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -3983,12 +3983,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4005,12 +4005,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4027,12 +4027,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4049,12 +4049,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4071,12 +4071,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4093,12 +4093,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4115,12 +4115,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4137,12 +4137,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4159,12 +4159,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4181,12 +4181,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4203,12 +4203,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4225,11 +4225,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4246,12 +4246,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4268,12 +4268,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4290,14 +4290,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
 
@@ -4314,12 +4314,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -4337,13 +4337,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
 
@@ -4360,12 +4360,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4382,12 +4382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4404,12 +4404,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4426,12 +4426,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -4448,11 +4448,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4469,11 +4469,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4490,11 +4490,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4511,11 +4511,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4532,11 +4532,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4553,11 +4553,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4574,11 +4574,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4595,11 +4595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4616,11 +4616,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4637,11 +4637,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4658,11 +4658,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4679,12 +4679,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -4701,11 +4701,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4722,11 +4722,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4743,11 +4743,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4764,11 +4764,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4785,11 +4785,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4806,11 +4806,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4827,11 +4827,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4848,11 +4848,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4869,11 +4869,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -4890,17 +4890,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get_token` | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -4917,17 +4917,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get_token` | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -4944,12 +4944,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -4967,12 +4967,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -4990,12 +4990,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5013,12 +5013,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5036,12 +5036,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5059,12 +5059,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5082,12 +5082,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5105,12 +5105,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -5128,13 +5128,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5151,12 +5151,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5173,13 +5173,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5196,13 +5196,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5219,13 +5219,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5242,13 +5242,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5265,13 +5265,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5288,13 +5288,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5311,13 +5311,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `unlock_class` | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
 
@@ -5334,14 +5334,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -5360,13 +5360,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -5385,14 +5385,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 
 </details>
 
@@ -5409,12 +5409,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5432,12 +5432,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5455,12 +5455,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5478,12 +5478,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5501,13 +5501,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
+| `screenshake` | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
 
 </details>
 
@@ -5524,12 +5524,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5547,17 +5547,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `set_mood` | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -5575,12 +5575,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5598,12 +5598,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -5621,12 +5621,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -5643,12 +5643,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -5665,13 +5665,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5688,13 +5688,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5711,13 +5711,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5734,13 +5734,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5757,13 +5757,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5780,13 +5780,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -5803,11 +5803,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -5824,12 +5824,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -5846,11 +5846,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5867,11 +5867,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5888,11 +5888,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5909,11 +5909,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5930,11 +5930,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5951,11 +5951,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5972,11 +5972,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -5993,11 +5993,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -6014,11 +6014,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -6035,11 +6035,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -6056,11 +6056,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -6077,17 +6077,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -6104,12 +6104,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6127,12 +6127,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6150,12 +6150,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6173,12 +6173,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6196,13 +6196,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -6219,12 +6219,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6242,18 +6242,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Specifies the type of cat information to request (e.g., 'stray'). | 1 | `stray` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `request_cat_info` | Enum | Specifies the type of cat information to request (e.g., 'stray'). | 1 | `stray` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -6270,13 +6270,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6293,13 +6293,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6316,12 +6316,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6338,12 +6338,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6360,12 +6360,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6382,12 +6382,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6404,12 +6404,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6426,13 +6426,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6449,13 +6449,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -6472,16 +6472,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_mood` | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 | `default`<br>`happy`<br>`pondering` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
@@ -6501,12 +6501,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6524,13 +6524,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6549,12 +6549,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6573,12 +6573,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6597,18 +6597,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`get_random_furniture_piece`](./Arrays.md#array-get_random_furniture_piece) | Array | An array of furniture piece names; one is chosen at random to spawn. | 1 | `[small_trash_cans small_trash_can2]` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `get_random_furniture_piece` | Array | An array of furniture piece names; one is chosen at random to spawn. | 1 | `[small_trash_cans small_trash_can2]` |
 
 </details>
 
@@ -6625,13 +6625,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6650,13 +6650,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6675,13 +6675,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6700,13 +6700,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6725,13 +6725,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6750,13 +6750,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6775,11 +6775,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -6796,13 +6796,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6821,13 +6821,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6846,13 +6846,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6871,13 +6871,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6896,12 +6896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -6920,12 +6920,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6943,16 +6943,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_mouse` | Number | If non-zero, locks the mouse cursor in place. | 1 | `1` |
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
 
@@ -6971,12 +6971,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -6994,13 +6994,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -7017,15 +7017,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7042,16 +7042,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7068,16 +7068,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7094,17 +7094,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get_token` | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7121,16 +7121,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7147,16 +7147,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7173,16 +7173,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7199,16 +7199,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7225,17 +7225,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7252,16 +7252,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7278,15 +7278,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
 
 </details>
@@ -7304,17 +7304,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7331,16 +7331,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -7357,13 +7357,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -7380,12 +7380,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7404,16 +7404,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
-| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | The name to assign to the organ in this sequence. | 1 | `"Tyler"` |
+| `set_organ_name` | String | The name to assign to the organ in this sequence. | 1 | `"Tyler"` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -7431,13 +7431,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7456,13 +7456,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7481,13 +7481,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7506,13 +7506,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7531,13 +7531,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7556,13 +7556,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7581,11 +7581,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -7602,14 +7602,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
-| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | The name to assign to the organ in this sequence. | 1 | `"Tyler"` |
+| `set_organ_name` | String | The name to assign to the organ in this sequence. | 1 | `"Tyler"` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -7627,12 +7627,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7651,12 +7651,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7675,13 +7675,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7700,13 +7700,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7725,13 +7725,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7750,13 +7750,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7775,13 +7775,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7800,13 +7800,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7825,13 +7825,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -7850,12 +7850,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7873,12 +7873,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7896,12 +7896,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7919,12 +7919,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7942,12 +7942,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7965,12 +7965,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -7988,12 +7988,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -8011,12 +8011,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -8034,12 +8034,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8057,12 +8057,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8080,12 +8080,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8103,12 +8103,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8126,15 +8126,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -8151,12 +8151,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8174,12 +8174,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8197,12 +8197,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8220,12 +8220,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8243,12 +8243,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8266,12 +8266,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8289,12 +8289,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -8312,16 +8312,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -8338,16 +8338,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -8364,16 +8364,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -8390,12 +8390,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -8414,13 +8414,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`blocking`](./Enums.md#enum-blocking) | Boolean | If true, the unit blocks movement and line-of-sight. | 1 | `false`<br>`idlenoani` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `blocking` | Boolean | If true, the unit blocks movement and line-of-sight. | 1 | `false`<br>`idlenoani` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -8439,13 +8439,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -8462,12 +8462,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -8486,11 +8486,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -8509,11 +8509,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8530,13 +8530,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8553,13 +8553,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8576,13 +8576,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8599,13 +8599,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8622,11 +8622,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8643,13 +8643,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8666,13 +8666,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8689,13 +8689,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8712,11 +8712,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8733,13 +8733,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8756,13 +8756,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8779,13 +8779,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8802,11 +8802,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8823,13 +8823,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8846,13 +8846,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8869,13 +8869,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8892,13 +8892,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8915,13 +8915,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8938,13 +8938,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8961,13 +8961,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -8984,13 +8984,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -9007,13 +9007,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `autosave` | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
 
@@ -9030,12 +9030,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9054,12 +9054,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9078,12 +9078,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9102,12 +9102,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9126,12 +9126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9150,12 +9150,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9174,12 +9174,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9198,12 +9198,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -9222,14 +9222,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9246,11 +9246,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dialog` | Variable | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9267,13 +9267,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9290,13 +9290,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9313,13 +9313,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
 
@@ -9336,13 +9336,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9359,13 +9359,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9382,13 +9382,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9405,13 +9405,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9428,13 +9428,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9451,13 +9451,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9474,13 +9474,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9497,12 +9497,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9519,13 +9519,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -9542,13 +9542,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9565,13 +9565,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9588,13 +9588,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9611,11 +9611,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -9632,13 +9632,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9655,13 +9655,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9678,13 +9678,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9701,13 +9701,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -9724,12 +9724,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -9746,12 +9746,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -9768,11 +9768,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9789,11 +9789,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9810,11 +9810,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9831,11 +9831,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9852,11 +9852,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9873,11 +9873,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9894,12 +9894,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `do_sequence` | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
 
@@ -9916,11 +9916,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9937,11 +9937,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9958,11 +9958,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -9979,13 +9979,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10004,13 +10004,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10029,13 +10029,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10054,13 +10054,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10079,13 +10079,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10104,13 +10104,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10129,13 +10129,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10154,13 +10154,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10179,13 +10179,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10204,13 +10204,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10229,13 +10229,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10254,13 +10254,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10279,13 +10279,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10304,13 +10304,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10329,13 +10329,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10354,13 +10354,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10379,13 +10379,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10404,13 +10404,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10429,13 +10429,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10454,13 +10454,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10479,13 +10479,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10504,13 +10504,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `begin_accepting_cats` | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10529,12 +10529,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10553,13 +10553,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10578,13 +10578,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10603,13 +10603,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10628,13 +10628,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10653,13 +10653,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10678,13 +10678,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
@@ -10703,11 +10703,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10724,18 +10724,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 | `act`<br>`both` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `reset_turn` | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 | `act`<br>`both` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -10752,15 +10752,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
-| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 | `act`<br>`both` |
+| `clear_token` | Enum | Specifies the token name to clear from the sequence's state. | 1 | `do_not_end_turn`<br>`map_equip_items2`<br>`melee_cat_spit_ignore` |
+| `reset_turn` | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 | `act`<br>`both` |
 
 </details>
 
@@ -10777,12 +10777,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
@@ -10800,11 +10800,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10821,11 +10821,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10842,11 +10842,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10863,11 +10863,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10884,11 +10884,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10905,11 +10905,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
 
@@ -10926,13 +10926,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -10949,13 +10949,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -10972,13 +10972,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -10995,13 +10995,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11018,13 +11018,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11041,13 +11041,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11064,13 +11064,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11087,13 +11087,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
 
@@ -11110,12 +11110,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11132,13 +11132,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11155,13 +11155,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11178,13 +11178,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11201,11 +11201,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -11222,11 +11222,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -11243,11 +11243,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -11264,13 +11264,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
-| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `get` | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
 
@@ -11287,11 +11287,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
+| `do_random_sequence` | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -11308,17 +11308,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get_token` | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -11335,17 +11335,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
+| `set_state` | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `get_token` | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 | `can_still_use_attack`<br>`can_still_use_attack_didntspell`<br>`ranged_cat_attack` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
+| `wait_for` | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
 
@@ -11362,14 +11362,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11387,14 +11387,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11412,14 +11412,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11437,14 +11437,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11462,13 +11462,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11486,14 +11486,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11511,13 +11511,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11535,13 +11535,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11559,14 +11559,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11584,13 +11584,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11608,14 +11608,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11633,14 +11633,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11658,13 +11658,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11682,14 +11682,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11707,15 +11707,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
-| [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Specifies which NPC's voice preset to apply for the current sequence's dialog. | 1 | `beanies` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog` | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `set_npc_voice` | Enum | Specifies which NPC's voice preset to apply for the current sequence's dialog. | 1 | `beanies` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11733,13 +11733,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
@@ -11757,13 +11757,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./NPC_Scripts.md#context-root)
+> **Referenced by:** [`ROOT`](./NPC_Scripts.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 | `true` |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
+| `dialog_and_autopass` | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>

@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -43,7 +43,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common_item`](./Shops.md#context-common_item), [`consumable`](./Shops.md#context-consumable), [`empty`](./Shops.md#context-empty), [`item`](./Shops.md#context-item), [`mandatory`](./Shops.md#context-mandatory), [`mostly_food`](./Shops.md#context-mostly_food), [`pool`](./Shops.md#context-pool), [`treasure`](./Shops.md#context-treasure)
+> **Referenced by:** [`common_item`](./Shops.md#object-common_item), [`consumable`](./Shops.md#object-consumable), [`empty`](./Shops.md#object-empty), [`item`](./Shops.md#object-item), [`mandatory`](./Shops.md#object-mandatory), [`mostly_food`](./Shops.md#object-mostly_food), [`pool`](./Shops.md#object-pool), [`treasure`](./Shops.md#object-treasure)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -51,7 +51,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
 | `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `1`<br>`3`<br>`6` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
-| [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
+| `weight` | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -68,7 +68,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -97,7 +97,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -126,7 +126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -135,7 +135,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mandatory`](./Shops.md#object-mandatory) | Object  | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 5 | `{ . . . }` |
 | [`levelup`](./Shops.md#object-levelup) | Object  | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `{ . . . }` |
 | [`common_item`](./Shops.md#object-common_item) | Object  | The number of common items offered, or an object defining their pool and cost. | 2 | `{ . . . }` |
-| [`consumable`](./Shops.md#context-consumable) | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | [`guaranteed_food`](./Shops.md#object-guaranteed_food) | Object  | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `{ . . . }` |
 | [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
 | [`mostly_food`](./Shops.md#object-mostly_food) | Object  | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `{ . . . }` |
@@ -156,7 +156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -177,7 +177,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -188,8 +188,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
 | `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 9 | `common`<br>`rare`<br>`cha` |
-| [`common`](./Enums.md) | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
-| [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
+| `common` | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
+| `rare` | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
 
 </details>
 
@@ -206,7 +206,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -227,7 +227,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -248,7 +248,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -270,7 +270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`guaranteed_food`](./Shops.md#context-guaranteed_food), [`mostly_food`](./Shops.md#context-mostly_food)
+> **Referenced by:** [`guaranteed_food`](./Shops.md#object-guaranteed_food), [`mostly_food`](./Shops.md#object-mostly_food)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -278,7 +278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
-| [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
+| `weight` | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -295,7 +295,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`levelup`](./Shops.md#context-levelup)
+> **Referenced by:** [`levelup`](./Shops.md#object-levelup)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -316,7 +316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -337,7 +337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -362,7 +362,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -386,7 +386,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#context-root)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -410,7 +410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -431,7 +431,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -452,7 +452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -473,7 +473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -494,7 +494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -516,7 +516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#context-item_groups)
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

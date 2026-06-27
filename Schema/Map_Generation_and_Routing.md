@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -20,7 +20,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 883 | `common`<br>`rare`<br>`cha` |
 | [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 131 | `{ . . . }` |
-| [`rare`](./Arrays.md#array-rare) | `Array`  | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
+| `rare` | `Array`  | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
 | [`repeat`](./Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 33 | `1`<br>`2`<br>`20` |
 | [`special`](./Arrays.md#array-special) | Array | An array or boolean indicating that an item or entry is a special container or category. | 29 | `[special]`<br>`true` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 27 | `[attack move spell]`<br>`attack`<br>`battle` |
@@ -33,7 +33,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`folder`](./Enums.md#enum-folder) | Enum | The subdirectory or group name used to organize related levels or content. | 20 | `alley`<br>`boneyard`<br>`bunker` |
 | [`easy`](./Arrays.md#array-easy) | Array | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `[easy bigsharklevels]`<br>`[easy]` |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | Specifies the item pool identifier used by a chapter or boss to determine which items can be found. | 19 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
-| [`include`](./Strings.md#string-include) | String | Specifies the path to another file to include and merge into the current schema definition. | 19 ||
+| `include` | String | Specifies the path to another file to include and merge into the current schema definition. | 19 ||
 | [`large`](./Arrays.md#array-large) | Array | An array of enemy unit identifiers used as the large enemy pool for an area or boss encounter. | 19 | `[Carnibulb]`<br>`[KillDozer]`<br>`[MegaFetus]` |
 | [`medium`](./Arrays.md#array-medium) | Array | An array of enemy unit identifiers used as the medium enemy pool for an area or boss encounter. | 19 | `[Rat Leaper Pooter Kitten TomTom Mangy CatCaller]` |
 | [`small`](./Arrays.md#array-small) | Array | An array of enemy unit identifiers used as the small enemy pool for an area or boss encounter. | 19 | `[Amoeba]`<br>`[Flea Wisp Fly Maggot]`<br>`[Maggot Fly Flea Pinky]` |
@@ -166,7 +166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#context-genflag_boss_spewer), [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#object-genflag_boss_spewer), [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#object-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -193,7 +193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#context-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#context-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#context-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#context-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#context-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#context-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#context-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#context-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#context-theendunlocked)
+> **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#object-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#object-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#object-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#object-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#object-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#object-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#object-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#object-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#object-theendunlocked)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -218,7 +218,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#context-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#context-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#context-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#context-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#context-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#context-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#context-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#context-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#context-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#context-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#context-walloffleshdone)
+> **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#object-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#object-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#object-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#object-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#object-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#object-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#object-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#object-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#object-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#object-walloffleshdone)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -241,7 +241,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#context-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#context-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#object-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#object-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -265,7 +265,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#context-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#object-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -310,7 +310,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -331,7 +331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -352,7 +352,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -373,7 +373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -394,7 +394,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -416,7 +416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#context-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#object-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -438,7 +438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -460,7 +460,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -484,7 +484,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -506,7 +506,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -528,7 +528,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -551,7 +551,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -573,7 +573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -597,7 +597,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#context-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -619,7 +619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -640,7 +640,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -661,7 +661,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -682,7 +682,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -703,7 +703,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -724,7 +724,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -745,7 +745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -766,7 +766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -787,7 +787,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -808,7 +808,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -829,7 +829,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -850,7 +850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -872,7 +872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -897,7 +897,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -922,7 +922,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -943,7 +943,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -964,7 +964,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -985,7 +985,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1007,7 +1007,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1028,7 +1028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1049,7 +1049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1070,7 +1070,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1091,7 +1091,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1112,7 +1112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1133,7 +1133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1161,7 +1161,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1182,7 +1182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1203,7 +1203,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1226,7 +1226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1247,7 +1247,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1270,7 +1270,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1293,7 +1293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1314,7 +1314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1335,7 +1335,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1356,7 +1356,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1377,7 +1377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1399,7 +1399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1420,7 +1420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

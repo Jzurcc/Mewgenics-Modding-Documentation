@@ -1,6 +1,6 @@
 # Mewgenics Mod Developer Documentation: String Dictionary
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document provides exhaustive lists of all pure string values found in the base game's `.gon` files for every applicable property key.
 
@@ -15,7 +15,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root), [`meta`](./Cat_Classes.md#context-meta), [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`BlackHole`](./Characters_and_Bosses.md#context-blackhole), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`Grown`](./Characters_and_Bosses.md#context-grown), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`Washer`](./Characters_and_Bosses.md#context-washer), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`hot`](./Characters_and_Bosses.md#context-hot), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`3`](./Passives_and_Statuses.md#context-3), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root), [`editor`](./Miscellaneous.md#context-editor)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#object-root), [`meta`](./Cat_Classes.md#object-meta), [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`BlackHole`](./Characters_and_Bosses.md#object-blackhole), [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#object-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#object-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#object-cultist), [`Grown`](./Characters_and_Bosses.md#object-grown), [`Mutant`](./Characters_and_Bosses.md#object-mutant), [`Washer`](./Characters_and_Bosses.md#object-washer), [`WereMan`](./Characters_and_Bosses.md#object-wereman), [`Zealot`](./Characters_and_Bosses.md#object-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#object-zealotbomb), [`graphics`](./Characters_and_Bosses.md#object-graphics), [`hot`](./Characters_and_Bosses.md#object-hot), [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), `3`, [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root), [`editor`](./Spawns_and_Enemy_Pools.md#object-editor), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root), `editor`
 
 **Confirmed Values:**
 
@@ -4101,7 +4101,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta), [`-2`](./Cat_Mutations.md#context--2), [`1026`](./Cat_Mutations.md#context-1026), [`1029`](./Cat_Mutations.md#context-1029), [`1500`](./Cat_Mutations.md#context-1500), [`300`](./Cat_Mutations.md#context-300), [`301`](./Cat_Mutations.md#context-301), [`302`](./Cat_Mutations.md#context-302), [`303`](./Cat_Mutations.md#context-303), [`304`](./Cat_Mutations.md#context-304), [`305`](./Cat_Mutations.md#context-305), [`306`](./Cat_Mutations.md#context-306), [`307`](./Cat_Mutations.md#context-307), [`308`](./Cat_Mutations.md#context-308), [`309`](./Cat_Mutations.md#context-309), [`310`](./Cat_Mutations.md#context-310), [`311`](./Cat_Mutations.md#context-311), [`312`](./Cat_Mutations.md#context-312), [`313`](./Cat_Mutations.md#context-313), [`314`](./Cat_Mutations.md#context-314), [`315`](./Cat_Mutations.md#context-315), [`316`](./Cat_Mutations.md#context-316), [`317`](./Cat_Mutations.md#context-317), [`318`](./Cat_Mutations.md#context-318), [`319`](./Cat_Mutations.md#context-319), [`320`](./Cat_Mutations.md#context-320), [`321`](./Cat_Mutations.md#context-321), [`322`](./Cat_Mutations.md#context-322), [`323`](./Cat_Mutations.md#context-323), [`324`](./Cat_Mutations.md#context-324), [`325`](./Cat_Mutations.md#context-325), [`326`](./Cat_Mutations.md#context-326), [`327`](./Cat_Mutations.md#context-327), [`328`](./Cat_Mutations.md#context-328), [`329`](./Cat_Mutations.md#context-329), [`330`](./Cat_Mutations.md#context-330), [`331`](./Cat_Mutations.md#context-331), [`332`](./Cat_Mutations.md#context-332), [`333`](./Cat_Mutations.md#context-333), [`334`](./Cat_Mutations.md#context-334), [`335`](./Cat_Mutations.md#context-335), [`336`](./Cat_Mutations.md#context-336), [`337`](./Cat_Mutations.md#context-337), [`338`](./Cat_Mutations.md#context-338), [`339`](./Cat_Mutations.md#context-339), [`340`](./Cat_Mutations.md#context-340), [`341`](./Cat_Mutations.md#context-341), [`342`](./Cat_Mutations.md#context-342), [`343`](./Cat_Mutations.md#context-343), [`344`](./Cat_Mutations.md#context-344), [`345`](./Cat_Mutations.md#context-345), [`346`](./Cat_Mutations.md#context-346), [`347`](./Cat_Mutations.md#context-347), [`348`](./Cat_Mutations.md#context-348), [`349`](./Cat_Mutations.md#context-349), [`351`](./Cat_Mutations.md#context-351), [`352`](./Cat_Mutations.md#context-352), [`353`](./Cat_Mutations.md#context-353), [`442`](./Cat_Mutations.md#context-442), [`702`](./Cat_Mutations.md#context-702), [`703`](./Cat_Mutations.md#context-703), [`704`](./Cat_Mutations.md#context-704), [`705`](./Cat_Mutations.md#context-705), [`706`](./Cat_Mutations.md#context-706), [`707`](./Cat_Mutations.md#context-707), [`750`](./Cat_Mutations.md#context-750), [`751`](./Cat_Mutations.md#context-751), [`752`](./Cat_Mutations.md#context-752), [`753`](./Cat_Mutations.md#context-753), [`754`](./Cat_Mutations.md#context-754), [`755`](./Cat_Mutations.md#context-755), [`756`](./Cat_Mutations.md#context-756), [`757`](./Cat_Mutations.md#context-757), [`758`](./Cat_Mutations.md#context-758), [`759`](./Cat_Mutations.md#context-759), [`760`](./Cat_Mutations.md#context-760), [`761`](./Cat_Mutations.md#context-761), [`762`](./Cat_Mutations.md#context-762), [`763`](./Cat_Mutations.md#context-763), [`900`](./Cat_Mutations.md#context-900), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`1`](./Passives_and_Statuses.md#context-1), [`10`](./Passives_and_Statuses.md#context-10), [`2`](./Passives_and_Statuses.md#context-2), [`3`](./Passives_and_Statuses.md#context-3), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta), `-2`, `1026`, `1029`, `1500`, `300`, `301`, `302`, `303`, `304`, `305`, `306`, `307`, `308`, `309`, `310`, `311`, `312`, `313`, `314`, `315`, `316`, `317`, `318`, `319`, `320`, `321`, `322`, `323`, `324`, `325`, `326`, `327`, `328`, `329`, `330`, `331`, `332`, `333`, `334`, `335`, `336`, `337`, `338`, `339`, `340`, `341`, `342`, `343`, `344`, `345`, `346`, `347`, `348`, `349`, `351`, `352`, `353`, `442`, `702`, `703`, `704`, `705`, `706`, `707`, `750`, `751`, `752`, `753`, `754`, `755`, `756`, `757`, `758`, `759`, `760`, `761`, `762`, `763`, `900`, [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), `1`, `10`, `2`, `3`, [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -8049,7 +8049,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Miscellaneous.md#context-common), [`else`](./Miscellaneous.md#context-else), [`rare`](./Miscellaneous.md#context-rare), [`reward`](./Miscellaneous.md#context-reward), [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`bad`](./Events_and_Encounters.md#context-bad), [`buy1`](./Events_and_Encounters.md#context-buy1), [`common`](./Events_and_Encounters.md#context-common), [`conditional_reward`](./Events_and_Encounters.md#context-conditional_reward), [`else`](./Events_and_Encounters.md#context-else), [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool), [`good`](./Events_and_Encounters.md#context-good), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward), [`traverse`](./Events_and_Encounters.md#context-traverse)
+> **Referenced by:** `ROOT`, [`common`](./Miscellaneous.md#object-common), [`else`](./Miscellaneous.md#object-else), [`rare`](./Miscellaneous.md#object-rare), [`reward`](./Miscellaneous.md#object-reward), `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`bad`](./Events_and_Encounters.md#object-bad), [`buy1`](./Events_and_Encounters.md#object-buy1), [`common`](./Events_and_Encounters.md#object-common), [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward), [`else`](./Events_and_Encounters.md#object-else), [`get_item_from_pool`](./Events_and_Encounters.md#object-get_item_from_pool), [`good`](./Events_and_Encounters.md#object-good), [`main`](./Events_and_Encounters.md#object-main), [`options`](./Events_and_Encounters.md#object-options), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward), [`traverse`](./Events_and_Encounters.md#object-traverse)
 
 **Confirmed Values:**
 
@@ -9642,7 +9642,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`BlackHole`](./Characters_and_Bosses.md#context-blackhole), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`DualSword`](./Characters_and_Bosses.md#context-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed), [`HumanDead`](./Characters_and_Bosses.md#context-humandead), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`Up`](./Characters_and_Bosses.md#context-up), [`Washer`](./Characters_and_Bosses.md#context-washer), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`BlackHole`](./Characters_and_Bosses.md#object-blackhole), [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#object-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#object-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#object-cultist), [`DualSword`](./Characters_and_Bosses.md#object-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#object-dualsword_primed), [`HumanDead`](./Characters_and_Bosses.md#object-humandead), [`Mutant`](./Characters_and_Bosses.md#object-mutant), [`Up`](./Characters_and_Bosses.md#object-up), [`Washer`](./Characters_and_Bosses.md#object-washer), [`WereMan`](./Characters_and_Bosses.md#object-wereman), [`Zealot`](./Characters_and_Bosses.md#object-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#object-zealotbomb), [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -10193,7 +10193,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`a`](./Events_and_Encounters.md#context-a), [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice), [`arm`](./Events_and_Encounters.md#context-arm), [`attack`](./Events_and_Encounters.md#context-attack), [`b`](./Events_and_Encounters.md#context-b), [`bash`](./Events_and_Encounters.md#context-bash), [`bash_past_alt`](./Events_and_Encounters.md#context-bash_past_alt), [`bite_it_off`](./Events_and_Encounters.md#context-bite_it_off), [`blue`](./Events_and_Encounters.md#context-blue), [`blue_needle`](./Events_and_Encounters.md#context-blue_needle), [`boogers`](./Events_and_Encounters.md#context-boogers), [`book`](./Events_and_Encounters.md#context-book), [`brace`](./Events_and_Encounters.md#context-brace), [`break_ice`](./Events_and_Encounters.md#context-break_ice), [`break_lock`](./Events_and_Encounters.md#context-break_lock), [`button`](./Events_and_Encounters.md#context-button), [`buy1`](./Events_and_Encounters.md#context-buy1), [`c`](./Events_and_Encounters.md#context-c), [`catch`](./Events_and_Encounters.md#context-catch), [`challenge_to_game`](./Events_and_Encounters.md#context-challenge_to_game), [`chaos_ending`](./Events_and_Encounters.md#context-chaos_ending), [`chapter_cutscene`](./Events_and_Encounters.md#context-chapter_cutscene), [`charm`](./Events_and_Encounters.md#context-charm), [`charm_past_alt`](./Events_and_Encounters.md#context-charm_past_alt), [`climb`](./Events_and_Encounters.md#context-climb), [`comfort`](./Events_and_Encounters.md#context-comfort), [`communicate`](./Events_and_Encounters.md#context-communicate), [`concheck`](./Events_and_Encounters.md#context-concheck), [`copy`](./Events_and_Encounters.md#context-copy), [`counter`](./Events_and_Encounters.md#context-counter), [`crack_open`](./Events_and_Encounters.md#context-crack_open), [`cross`](./Events_and_Encounters.md#context-cross), [`cut_wires`](./Events_and_Encounters.md#context-cut_wires), [`d`](./Events_and_Encounters.md#context-d), [`damage`](./Events_and_Encounters.md#context-damage), [`damage_1`](./Events_and_Encounters.md#context-damage_1), [`damage_full`](./Events_and_Encounters.md#context-damage_full), [`damage_half`](./Events_and_Encounters.md#context-damage_half), [`desert_cutscene`](./Events_and_Encounters.md#context-desert_cutscene), [`destroy`](./Events_and_Encounters.md#context-destroy), [`dexcheck`](./Events_and_Encounters.md#context-dexcheck), [`dig`](./Events_and_Encounters.md#context-dig), [`disarm`](./Events_and_Encounters.md#context-disarm), [`dive`](./Events_and_Encounters.md#context-dive), [`donate`](./Events_and_Encounters.md#context-donate), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`double`](./Events_and_Encounters.md#context-double), [`drink`](./Events_and_Encounters.md#context-drink), [`eat`](./Events_and_Encounters.md#context-eat), [`eat_meat`](./Events_and_Encounters.md#context-eat_meat), [`enter`](./Events_and_Encounters.md#context-enter), [`enter_crater`](./Events_and_Encounters.md#context-enter_crater), [`examine`](./Events_and_Encounters.md#context-examine), [`face`](./Events_and_Encounters.md#context-face), [`fight`](./Events_and_Encounters.md#context-fight), [`find`](./Events_and_Encounters.md#context-find), [`find_another_way`](./Events_and_Encounters.md#context-find_another_way), [`fire`](./Events_and_Encounters.md#context-fire), [`flush_yourself`](./Events_and_Encounters.md#context-flush_yourself), [`follow`](./Events_and_Encounters.md#context-follow), [`free`](./Events_and_Encounters.md#context-free), [`give_parasite`](./Events_and_Encounters.md#context-give_parasite), [`go_around`](./Events_and_Encounters.md#context-go_around), [`hack`](./Events_and_Encounters.md#context-hack), [`head`](./Events_and_Encounters.md#context-head), [`holy`](./Events_and_Encounters.md#context-holy), [`hp`](./Events_and_Encounters.md#context-hp), [`ice`](./Events_and_Encounters.md#context-ice), [`ignore`](./Events_and_Encounters.md#context-ignore), [`inspect`](./Events_and_Encounters.md#context-inspect), [`intcheck`](./Events_and_Encounters.md#context-intcheck), [`intimidation`](./Events_and_Encounters.md#context-intimidation), [`investigate`](./Events_and_Encounters.md#context-investigate), [`itchies`](./Events_and_Encounters.md#context-itchies), [`join`](./Events_and_Encounters.md#context-join), [`jump`](./Events_and_Encounters.md#context-jump), [`jump_over`](./Events_and_Encounters.md#context-jump_over), [`keep_going`](./Events_and_Encounters.md#context-keep_going), [`kiss`](./Events_and_Encounters.md#context-kiss), [`kiss_meat`](./Events_and_Encounters.md#context-kiss_meat), [`knife`](./Events_and_Encounters.md#context-knife), [`leave`](./Events_and_Encounters.md#context-leave), [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in), [`leg`](./Events_and_Encounters.md#context-leg), [`lever`](./Events_and_Encounters.md#context-lever), [`lick`](./Events_and_Encounters.md#context-lick), [`lick_alt`](./Events_and_Encounters.md#context-lick_alt), [`lightning`](./Events_and_Encounters.md#context-lightning), [`listen`](./Events_and_Encounters.md#context-listen), [`loot`](./Events_and_Encounters.md#context-loot), [`makeup`](./Events_and_Encounters.md#context-makeup), [`move_closer`](./Events_and_Encounters.md#context-move_closer), [`neck`](./Events_and_Encounters.md#context-neck), [`nothanks`](./Events_and_Encounters.md#context-nothanks), [`open`](./Events_and_Encounters.md#context-open), [`outsmart`](./Events_and_Encounters.md#context-outsmart), [`patch_up`](./Events_and_Encounters.md#context-patch_up), [`pick_lock`](./Events_and_Encounters.md#context-pick_lock), [`pilfer`](./Events_and_Encounters.md#context-pilfer), [`pirouette`](./Events_and_Encounters.md#context-pirouette), [`play`](./Events_and_Encounters.md#context-play), [`poop`](./Events_and_Encounters.md#context-poop), [`print`](./Events_and_Encounters.md#context-print), [`protection`](./Events_and_Encounters.md#context-protection), [`pull`](./Events_and_Encounters.md#context-pull), [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out), [`pull_lever`](./Events_and_Encounters.md#context-pull_lever), [`purify`](./Events_and_Encounters.md#context-purify), [`push_buttons`](./Events_and_Encounters.md#context-push_buttons), [`push_through`](./Events_and_Encounters.md#context-push_through), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins), [`put_out_of_misery`](./Events_and_Encounters.md#context-put_out_of_misery), [`reach_inside`](./Events_and_Encounters.md#context-reach_inside), [`read`](./Events_and_Encounters.md#context-read), [`receive`](./Events_and_Encounters.md#context-receive), [`red`](./Events_and_Encounters.md#context-red), [`red_needle`](./Events_and_Encounters.md#context-red_needle), [`reflect`](./Events_and_Encounters.md#context-reflect), [`remove`](./Events_and_Encounters.md#context-remove), [`remove_the_nail`](./Events_and_Encounters.md#context-remove_the_nail), [`repair`](./Events_and_Encounters.md#context-repair), [`repell`](./Events_and_Encounters.md#context-repell), [`rest`](./Events_and_Encounters.md#context-rest), [`revive`](./Events_and_Encounters.md#context-revive), [`rub`](./Events_and_Encounters.md#context-rub), [`run`](./Events_and_Encounters.md#context-run), [`run_again`](./Events_and_Encounters.md#context-run_again), [`run_away`](./Events_and_Encounters.md#context-run_away), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`scale`](./Events_and_Encounters.md#context-scale), [`scream`](./Events_and_Encounters.md#context-scream), [`shake`](./Events_and_Encounters.md#context-shake), [`skip`](./Events_and_Encounters.md#context-skip), [`slip_through`](./Events_and_Encounters.md#context-slip_through), [`smash`](./Events_and_Encounters.md#context-smash), [`sneak`](./Events_and_Encounters.md#context-sneak), [`sneak_by`](./Events_and_Encounters.md#context-sneak_by), [`sneak_past_alt`](./Events_and_Encounters.md#context-sneak_past_alt), [`speed`](./Events_and_Encounters.md#context-speed), [`surprise`](./Events_and_Encounters.md#context-surprise), [`sweet_talk`](./Events_and_Encounters.md#context-sweet_talk), [`swim`](./Events_and_Encounters.md#context-swim), [`tail`](./Events_and_Encounters.md#context-tail), [`take`](./Events_and_Encounters.md#context-take), [`talk_to`](./Events_and_Encounters.md#context-talk_to), [`tappytoes`](./Events_and_Encounters.md#context-tappytoes), [`teleport`](./Events_and_Encounters.md#context-teleport), [`thorns`](./Events_and_Encounters.md#context-thorns), [`throw`](./Events_and_Encounters.md#context-throw), [`timemachine`](./Events_and_Encounters.md#context-timemachine), [`touch`](./Events_and_Encounters.md#context-touch), [`traverse`](./Events_and_Encounters.md#context-traverse), [`turnon`](./Events_and_Encounters.md#context-turnon), [`upgrade_yourself`](./Events_and_Encounters.md#context-upgrade_yourself), [`use_item`](./Events_and_Encounters.md#context-use_item), [`use_toilet_con`](./Events_and_Encounters.md#context-use_toilet_con), [`use_toilet_str`](./Events_and_Encounters.md#context-use_toilet_str), [`use_weapon`](./Events_and_Encounters.md#context-use_weapon), [`w1`](./Events_and_Encounters.md#context-w1), [`w2`](./Events_and_Encounters.md#context-w2), [`w3`](./Events_and_Encounters.md#context-w3), [`w4`](./Events_and_Encounters.md#context-w4), [`w5`](./Events_and_Encounters.md#context-w5), [`w6`](./Events_and_Encounters.md#context-w6), [`wheezies`](./Events_and_Encounters.md#context-wheezies), [`wish_genes`](./Events_and_Encounters.md#context-wish_genes), [`wish_items`](./Events_and_Encounters.md#context-wish_items), [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#context-wish_strength), [`withstand`](./Events_and_Encounters.md#context-withstand), [`yank_it_out`](./Events_and_Encounters.md#context-yank_it_out), [`yellow_needle`](./Events_and_Encounters.md#context-yellow_needle)
+> **Referenced by:** `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`a`](./Events_and_Encounters.md#object-a), [`altar_sacrifice`](./Events_and_Encounters.md#object-altar_sacrifice), [`arm`](./Events_and_Encounters.md#object-arm), [`attack`](./Events_and_Encounters.md#object-attack), [`b`](./Events_and_Encounters.md#object-b), [`bash`](./Events_and_Encounters.md#object-bash), [`bash_past_alt`](./Events_and_Encounters.md#object-bash_past_alt), [`bite_it_off`](./Events_and_Encounters.md#object-bite_it_off), [`blue`](./Events_and_Encounters.md#object-blue), [`blue_needle`](./Events_and_Encounters.md#object-blue_needle), [`boogers`](./Events_and_Encounters.md#object-boogers), [`book`](./Events_and_Encounters.md#object-book), [`brace`](./Events_and_Encounters.md#object-brace), [`break_ice`](./Events_and_Encounters.md#object-break_ice), [`break_lock`](./Events_and_Encounters.md#object-break_lock), [`button`](./Events_and_Encounters.md#object-button), [`buy1`](./Events_and_Encounters.md#object-buy1), [`c`](./Events_and_Encounters.md#object-c), [`catch`](./Events_and_Encounters.md#object-catch), [`challenge_to_game`](./Events_and_Encounters.md#object-challenge_to_game), [`chaos_ending`](./Events_and_Encounters.md#object-chaos_ending), [`chapter_cutscene`](./Events_and_Encounters.md#object-chapter_cutscene), [`charm`](./Events_and_Encounters.md#object-charm), [`charm_past_alt`](./Events_and_Encounters.md#object-charm_past_alt), [`climb`](./Events_and_Encounters.md#object-climb), [`comfort`](./Events_and_Encounters.md#object-comfort), [`communicate`](./Events_and_Encounters.md#object-communicate), [`concheck`](./Events_and_Encounters.md#object-concheck), [`copy`](./Events_and_Encounters.md#object-copy), [`counter`](./Events_and_Encounters.md#object-counter), [`crack_open`](./Events_and_Encounters.md#object-crack_open), [`cross`](./Events_and_Encounters.md#object-cross), [`cut_wires`](./Events_and_Encounters.md#object-cut_wires), [`d`](./Events_and_Encounters.md#object-d), [`damage`](./Events_and_Encounters.md#object-damage), [`damage_1`](./Events_and_Encounters.md#object-damage_1), [`damage_full`](./Events_and_Encounters.md#object-damage_full), [`damage_half`](./Events_and_Encounters.md#object-damage_half), [`desert_cutscene`](./Events_and_Encounters.md#object-desert_cutscene), [`destroy`](./Events_and_Encounters.md#object-destroy), [`dexcheck`](./Events_and_Encounters.md#object-dexcheck), [`dig`](./Events_and_Encounters.md#object-dig), [`disarm`](./Events_and_Encounters.md#object-disarm), [`dive`](./Events_and_Encounters.md#object-dive), [`donate`](./Events_and_Encounters.md#object-donate), [`donate_10`](./Events_and_Encounters.md#object-donate_10), [`donate_15`](./Events_and_Encounters.md#object-donate_15), [`donate_20`](./Events_and_Encounters.md#object-donate_20), [`donate_5`](./Events_and_Encounters.md#object-donate_5), [`double`](./Events_and_Encounters.md#object-double), [`drink`](./Events_and_Encounters.md#object-drink), [`eat`](./Events_and_Encounters.md#object-eat), [`eat_meat`](./Events_and_Encounters.md#object-eat_meat), [`enter`](./Events_and_Encounters.md#object-enter), [`enter_crater`](./Events_and_Encounters.md#object-enter_crater), [`examine`](./Events_and_Encounters.md#object-examine), [`face`](./Events_and_Encounters.md#object-face), [`fight`](./Events_and_Encounters.md#object-fight), [`find`](./Events_and_Encounters.md#object-find), [`find_another_way`](./Events_and_Encounters.md#object-find_another_way), [`fire`](./Events_and_Encounters.md#object-fire), [`flush_yourself`](./Events_and_Encounters.md#object-flush_yourself), [`follow`](./Events_and_Encounters.md#object-follow), [`free`](./Events_and_Encounters.md#object-free), [`give_parasite`](./Events_and_Encounters.md#object-give_parasite), [`go_around`](./Events_and_Encounters.md#object-go_around), [`hack`](./Events_and_Encounters.md#object-hack), [`head`](./Events_and_Encounters.md#object-head), [`holy`](./Events_and_Encounters.md#object-holy), [`hp`](./Events_and_Encounters.md#object-hp), [`ice`](./Events_and_Encounters.md#object-ice), [`ignore`](./Events_and_Encounters.md#object-ignore), [`inspect`](./Events_and_Encounters.md#object-inspect), [`intcheck`](./Events_and_Encounters.md#object-intcheck), [`intimidation`](./Events_and_Encounters.md#object-intimidation), [`investigate`](./Events_and_Encounters.md#object-investigate), [`itchies`](./Events_and_Encounters.md#object-itchies), [`join`](./Events_and_Encounters.md#object-join), [`jump`](./Events_and_Encounters.md#object-jump), [`jump_over`](./Events_and_Encounters.md#object-jump_over), [`keep_going`](./Events_and_Encounters.md#object-keep_going), [`kiss`](./Events_and_Encounters.md#object-kiss), [`kiss_meat`](./Events_and_Encounters.md#object-kiss_meat), [`knife`](./Events_and_Encounters.md#object-knife), [`leave`](./Events_and_Encounters.md#object-leave), [`leave_it_in`](./Events_and_Encounters.md#object-leave_it_in), [`leg`](./Events_and_Encounters.md#object-leg), [`lever`](./Events_and_Encounters.md#object-lever), [`lick`](./Events_and_Encounters.md#object-lick), [`lick_alt`](./Events_and_Encounters.md#object-lick_alt), [`lightning`](./Events_and_Encounters.md#object-lightning), [`listen`](./Events_and_Encounters.md#object-listen), [`loot`](./Events_and_Encounters.md#object-loot), [`makeup`](./Events_and_Encounters.md#object-makeup), [`move_closer`](./Events_and_Encounters.md#object-move_closer), [`neck`](./Events_and_Encounters.md#object-neck), [`nothanks`](./Events_and_Encounters.md#object-nothanks), [`open`](./Events_and_Encounters.md#object-open), [`outsmart`](./Events_and_Encounters.md#object-outsmart), [`patch_up`](./Events_and_Encounters.md#object-patch_up), [`pick_lock`](./Events_and_Encounters.md#object-pick_lock), [`pilfer`](./Events_and_Encounters.md#object-pilfer), [`pirouette`](./Events_and_Encounters.md#object-pirouette), [`play`](./Events_and_Encounters.md#object-play), [`poop`](./Events_and_Encounters.md#object-poop), [`print`](./Events_and_Encounters.md#object-print), [`protection`](./Events_and_Encounters.md#object-protection), [`pull`](./Events_and_Encounters.md#object-pull), [`pull_it_out`](./Events_and_Encounters.md#object-pull_it_out), [`pull_lever`](./Events_and_Encounters.md#object-pull_lever), [`purify`](./Events_and_Encounters.md#object-purify), [`push_buttons`](./Events_and_Encounters.md#object-push_buttons), [`push_through`](./Events_and_Encounters.md#object-push_through), [`put_in_coins`](./Events_and_Encounters.md#object-put_in_coins), [`put_out_of_misery`](./Events_and_Encounters.md#object-put_out_of_misery), [`reach_inside`](./Events_and_Encounters.md#object-reach_inside), [`read`](./Events_and_Encounters.md#object-read), [`receive`](./Events_and_Encounters.md#object-receive), [`red`](./Events_and_Encounters.md#object-red), [`red_needle`](./Events_and_Encounters.md#object-red_needle), [`reflect`](./Events_and_Encounters.md#object-reflect), [`remove`](./Events_and_Encounters.md#object-remove), [`remove_the_nail`](./Events_and_Encounters.md#object-remove_the_nail), [`repair`](./Events_and_Encounters.md#object-repair), [`repell`](./Events_and_Encounters.md#object-repell), [`rest`](./Events_and_Encounters.md#object-rest), [`revive`](./Events_and_Encounters.md#object-revive), [`rub`](./Events_and_Encounters.md#object-rub), [`run`](./Events_and_Encounters.md#object-run), [`run_again`](./Events_and_Encounters.md#object-run_again), [`run_away`](./Events_and_Encounters.md#object-run_away), [`sacrifice`](./Events_and_Encounters.md#object-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#object-sacrifice_full_favor), [`sacrifice_partial_favor`](./Events_and_Encounters.md#object-sacrifice_partial_favor), [`scale`](./Events_and_Encounters.md#object-scale), [`scream`](./Events_and_Encounters.md#object-scream), [`shake`](./Events_and_Encounters.md#object-shake), [`skip`](./Events_and_Encounters.md#object-skip), [`slip_through`](./Events_and_Encounters.md#object-slip_through), [`smash`](./Events_and_Encounters.md#object-smash), [`sneak`](./Events_and_Encounters.md#object-sneak), [`sneak_by`](./Events_and_Encounters.md#object-sneak_by), [`sneak_past_alt`](./Events_and_Encounters.md#object-sneak_past_alt), [`speed`](./Events_and_Encounters.md#object-speed), [`surprise`](./Events_and_Encounters.md#object-surprise), [`sweet_talk`](./Events_and_Encounters.md#object-sweet_talk), [`swim`](./Events_and_Encounters.md#object-swim), [`tail`](./Events_and_Encounters.md#object-tail), [`take`](./Events_and_Encounters.md#object-take), [`talk_to`](./Events_and_Encounters.md#object-talk_to), [`tappytoes`](./Events_and_Encounters.md#object-tappytoes), [`teleport`](./Events_and_Encounters.md#object-teleport), [`thorns`](./Events_and_Encounters.md#object-thorns), [`throw`](./Events_and_Encounters.md#object-throw), [`timemachine`](./Events_and_Encounters.md#object-timemachine), [`touch`](./Events_and_Encounters.md#object-touch), [`traverse`](./Events_and_Encounters.md#object-traverse), [`turnon`](./Events_and_Encounters.md#object-turnon), [`upgrade_yourself`](./Events_and_Encounters.md#object-upgrade_yourself), [`use_item`](./Events_and_Encounters.md#object-use_item), [`use_toilet_con`](./Events_and_Encounters.md#object-use_toilet_con), [`use_toilet_str`](./Events_and_Encounters.md#object-use_toilet_str), [`use_weapon`](./Events_and_Encounters.md#object-use_weapon), [`w1`](./Events_and_Encounters.md#object-w1), [`w2`](./Events_and_Encounters.md#object-w2), [`w3`](./Events_and_Encounters.md#object-w3), [`w4`](./Events_and_Encounters.md#object-w4), [`w5`](./Events_and_Encounters.md#object-w5), [`w6`](./Events_and_Encounters.md#object-w6), [`wheezies`](./Events_and_Encounters.md#object-wheezies), [`wish_genes`](./Events_and_Encounters.md#object-wish_genes), [`wish_items`](./Events_and_Encounters.md#object-wish_items), [`wish_levelups`](./Events_and_Encounters.md#object-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#object-wish_strength), [`withstand`](./Events_and_Encounters.md#object-withstand), [`yank_it_out`](./Events_and_Encounters.md#object-yank_it_out), [`yellow_needle`](./Events_and_Encounters.md#object-yellow_needle)
 
 **Confirmed Values:**
 
@@ -10428,7 +10428,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -10460,7 +10460,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -10651,7 +10651,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -10739,7 +10739,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`beanies_quests_intro`](./Progression_Unlocks.md#context-beanies_quests_intro), [`beanies_quests_repeat`](./Progression_Unlocks.md#context-beanies_quests_repeat), [`frank_max_intro`](./Progression_Unlocks.md#context-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#context-frank_max_repeating), [`house_upgrade_4throom`](./Progression_Unlocks.md#context-house_upgrade_4throom), [`house_upgrade_attic`](./Progression_Unlocks.md#context-house_upgrade_attic), [`house_upgrade_largehouse`](./Progression_Unlocks.md#context-house_upgrade_largehouse), [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#context-house_upgrade_mediumhouse), [`jack_max_intro`](./Progression_Unlocks.md#context-jack_max_intro), [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating), [`jack_shopupgrade1`](./Progression_Unlocks.md#context-jack_shopupgrade1), [`jack_shopupgrade2`](./Progression_Unlocks.md#context-jack_shopupgrade2), [`jack_shopupgrade3`](./Progression_Unlocks.md#context-jack_shopupgrade3), [`jack_shopupgrade4`](./Progression_Unlocks.md#context-jack_shopupgrade4), [`organ_max_intro`](./Progression_Unlocks.md#context-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#context-organ_max_repeating), [`organ_unlock`](./Progression_Unlocks.md#context-organ_unlock), [`organ_upgrade1`](./Progression_Unlocks.md#context-organ_upgrade1), [`organ_upgrade2`](./Progression_Unlocks.md#context-organ_upgrade2), [`organ_upgrade3`](./Progression_Unlocks.md#context-organ_upgrade3), [`organ_upgrade4`](./Progression_Unlocks.md#context-organ_upgrade4), [`organ_upgrade5`](./Progression_Unlocks.md#context-organ_upgrade5), [`organ_upgrade6`](./Progression_Unlocks.md#context-organ_upgrade6), [`tink_aggression`](./Progression_Unlocks.md#context-tink_aggression), [`tink_basestats`](./Progression_Unlocks.md#context-tink_basestats), [`tink_inbreeding`](./Progression_Unlocks.md#context-tink_inbreeding), [`tink_max_intro`](./Progression_Unlocks.md#context-tink_max_intro), [`tink_max_repeating`](./Progression_Unlocks.md#context-tink_max_repeating), [`tink_prettybow`](./Progression_Unlocks.md#context-tink_prettybow), [`tink_relationships`](./Progression_Unlocks.md#context-tink_relationships), [`tink_sexuality`](./Progression_Unlocks.md#context-tink_sexuality), [`tink_tags`](./Progression_Unlocks.md#context-tink_tags), [`tracy_blankcollar1`](./Progression_Unlocks.md#context-tracy_blankcollar1), [`tracy_blankcollar2`](./Progression_Unlocks.md#context-tracy_blankcollar2), [`tracy_blankcollar3`](./Progression_Unlocks.md#context-tracy_blankcollar3), [`tracy_foodstorage1`](./Progression_Unlocks.md#context-tracy_foodstorage1), [`tracy_foodstorage10`](./Progression_Unlocks.md#context-tracy_foodstorage10), [`tracy_foodstorage2`](./Progression_Unlocks.md#context-tracy_foodstorage2), [`tracy_foodstorage3`](./Progression_Unlocks.md#context-tracy_foodstorage3), [`tracy_foodstorage4`](./Progression_Unlocks.md#context-tracy_foodstorage4), [`tracy_foodstorage5`](./Progression_Unlocks.md#context-tracy_foodstorage5), [`tracy_foodstorage6`](./Progression_Unlocks.md#context-tracy_foodstorage6), [`tracy_foodstorage7`](./Progression_Unlocks.md#context-tracy_foodstorage7), [`tracy_foodstorage8`](./Progression_Unlocks.md#context-tracy_foodstorage8), [`tracy_foodstorage9`](./Progression_Unlocks.md#context-tracy_foodstorage9), [`tracy_idol1`](./Progression_Unlocks.md#context-tracy_idol1), [`tracy_idol2`](./Progression_Unlocks.md#context-tracy_idol2), [`tracy_idol3`](./Progression_Unlocks.md#context-tracy_idol3), [`tracy_idol4`](./Progression_Unlocks.md#context-tracy_idol4), [`tracy_idol5`](./Progression_Unlocks.md#context-tracy_idol5), [`tracy_idol6`](./Progression_Unlocks.md#context-tracy_idol6), [`tracy_idol7`](./Progression_Unlocks.md#context-tracy_idol7), [`tracy_max_intro`](./Progression_Unlocks.md#context-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating), [`upgrade_storage_1`](./Progression_Unlocks.md#context-upgrade_storage_1), [`upgrade_storage_2`](./Progression_Unlocks.md#context-upgrade_storage_2), [`upgrade_storage_3`](./Progression_Unlocks.md#context-upgrade_storage_3), [`upgrade_storage_4`](./Progression_Unlocks.md#context-upgrade_storage_4), [`upgrade_storage_5`](./Progression_Unlocks.md#context-upgrade_storage_5), [`upgrade_storage_6`](./Progression_Unlocks.md#context-upgrade_storage_6), [`upgrade_storage_7`](./Progression_Unlocks.md#context-upgrade_storage_7), [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#context-upgrade_storage_repeating_crazy), [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#context-upgrade_storage_repeating_hard), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#context-upgrade_storage_repeating_impossible), [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#context-upgrade_storage_repeating_intro), [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#context-upgrade_storage_repeating_normal)
+> **Referenced by:** [`beanies_quests_intro`](./Progression_Unlocks.md#object-beanies_quests_intro), [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat), [`frank_max_intro`](./Progression_Unlocks.md#object-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating), [`house_upgrade_4throom`](./Progression_Unlocks.md#object-house_upgrade_4throom), [`house_upgrade_attic`](./Progression_Unlocks.md#object-house_upgrade_attic), [`house_upgrade_largehouse`](./Progression_Unlocks.md#object-house_upgrade_largehouse), [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#object-house_upgrade_mediumhouse), [`jack_max_intro`](./Progression_Unlocks.md#object-jack_max_intro), [`jack_max_repeating`](./Progression_Unlocks.md#object-jack_max_repeating), [`jack_shopupgrade1`](./Progression_Unlocks.md#object-jack_shopupgrade1), [`jack_shopupgrade2`](./Progression_Unlocks.md#object-jack_shopupgrade2), [`jack_shopupgrade3`](./Progression_Unlocks.md#object-jack_shopupgrade3), [`jack_shopupgrade4`](./Progression_Unlocks.md#object-jack_shopupgrade4), [`organ_max_intro`](./Progression_Unlocks.md#object-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating), [`organ_unlock`](./Progression_Unlocks.md#object-organ_unlock), [`organ_upgrade1`](./Progression_Unlocks.md#object-organ_upgrade1), [`organ_upgrade2`](./Progression_Unlocks.md#object-organ_upgrade2), [`organ_upgrade3`](./Progression_Unlocks.md#object-organ_upgrade3), [`organ_upgrade4`](./Progression_Unlocks.md#object-organ_upgrade4), [`organ_upgrade5`](./Progression_Unlocks.md#object-organ_upgrade5), [`organ_upgrade6`](./Progression_Unlocks.md#object-organ_upgrade6), [`tink_aggression`](./Progression_Unlocks.md#object-tink_aggression), [`tink_basestats`](./Progression_Unlocks.md#object-tink_basestats), [`tink_inbreeding`](./Progression_Unlocks.md#object-tink_inbreeding), [`tink_max_intro`](./Progression_Unlocks.md#object-tink_max_intro), [`tink_max_repeating`](./Progression_Unlocks.md#object-tink_max_repeating), [`tink_prettybow`](./Progression_Unlocks.md#object-tink_prettybow), [`tink_relationships`](./Progression_Unlocks.md#object-tink_relationships), [`tink_sexuality`](./Progression_Unlocks.md#object-tink_sexuality), [`tink_tags`](./Progression_Unlocks.md#object-tink_tags), [`tracy_blankcollar1`](./Progression_Unlocks.md#object-tracy_blankcollar1), [`tracy_blankcollar2`](./Progression_Unlocks.md#object-tracy_blankcollar2), [`tracy_blankcollar3`](./Progression_Unlocks.md#object-tracy_blankcollar3), [`tracy_foodstorage1`](./Progression_Unlocks.md#object-tracy_foodstorage1), [`tracy_foodstorage10`](./Progression_Unlocks.md#object-tracy_foodstorage10), [`tracy_foodstorage2`](./Progression_Unlocks.md#object-tracy_foodstorage2), [`tracy_foodstorage3`](./Progression_Unlocks.md#object-tracy_foodstorage3), [`tracy_foodstorage4`](./Progression_Unlocks.md#object-tracy_foodstorage4), [`tracy_foodstorage5`](./Progression_Unlocks.md#object-tracy_foodstorage5), [`tracy_foodstorage6`](./Progression_Unlocks.md#object-tracy_foodstorage6), [`tracy_foodstorage7`](./Progression_Unlocks.md#object-tracy_foodstorage7), [`tracy_foodstorage8`](./Progression_Unlocks.md#object-tracy_foodstorage8), [`tracy_foodstorage9`](./Progression_Unlocks.md#object-tracy_foodstorage9), [`tracy_idol1`](./Progression_Unlocks.md#object-tracy_idol1), [`tracy_idol2`](./Progression_Unlocks.md#object-tracy_idol2), [`tracy_idol3`](./Progression_Unlocks.md#object-tracy_idol3), [`tracy_idol4`](./Progression_Unlocks.md#object-tracy_idol4), [`tracy_idol5`](./Progression_Unlocks.md#object-tracy_idol5), [`tracy_idol6`](./Progression_Unlocks.md#object-tracy_idol6), [`tracy_idol7`](./Progression_Unlocks.md#object-tracy_idol7), [`tracy_max_intro`](./Progression_Unlocks.md#object-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating), [`upgrade_storage_1`](./Progression_Unlocks.md#object-upgrade_storage_1), [`upgrade_storage_2`](./Progression_Unlocks.md#object-upgrade_storage_2), [`upgrade_storage_3`](./Progression_Unlocks.md#object-upgrade_storage_3), [`upgrade_storage_4`](./Progression_Unlocks.md#object-upgrade_storage_4), [`upgrade_storage_5`](./Progression_Unlocks.md#object-upgrade_storage_5), [`upgrade_storage_6`](./Progression_Unlocks.md#object-upgrade_storage_6), [`upgrade_storage_7`](./Progression_Unlocks.md#object-upgrade_storage_7), [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#object-upgrade_storage_repeating_crazy), [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#object-upgrade_storage_repeating_hard), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#object-upgrade_storage_repeating_impossible), [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#object-upgrade_storage_repeating_intro), [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#object-upgrade_storage_repeating_normal)
 
 **Confirmed Values:**
 
@@ -10780,7 +10780,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Big`](./Characters_and_Bosses.md#context-big), [`BigHolding`](./Characters_and_Bosses.md#context-bigholding), [`BigHoldingCat`](./Characters_and_Bosses.md#context-bigholdingcat), [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`BlackHole`](./Characters_and_Bosses.md#context-blackhole), [`Boris`](./Characters_and_Bosses.md#context-boris), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`Down`](./Characters_and_Bosses.md#context-down), [`DualSword`](./Characters_and_Bosses.md#context-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed), [`Empty`](./Characters_and_Bosses.md#context-empty), [`Explosive`](./Characters_and_Bosses.md#context-explosive), [`Flop`](./Characters_and_Bosses.md#context-flop), [`Flop2`](./Characters_and_Bosses.md#context-flop2), [`Full`](./Characters_and_Bosses.md#context-full), [`HalfDead`](./Characters_and_Bosses.md#context-halfdead), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat), [`HasRock`](./Characters_and_Bosses.md#context-hasrock), [`Headless`](./Characters_and_Bosses.md#context-headless), [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#context-hint_crackedvisuals), [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#context-hint_crackedvisuals2), [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#context-hint_crackedvisuals3), [`Holy`](./Characters_and_Bosses.md#context-holy), [`Insane_Ceiling`](./Characters_and_Bosses.md#context-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#context-insane_ground), [`Joystick`](./Characters_and_Bosses.md#context-joystick), [`Lifted`](./Characters_and_Bosses.md#context-lifted), [`Mounted`](./Characters_and_Bosses.md#context-mounted), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`NoEyes`](./Characters_and_Bosses.md#context-noeyes), [`Normal`](./Characters_and_Bosses.md#context-normal), [`OneEye`](./Characters_and_Bosses.md#context-oneeye), [`Possessing`](./Characters_and_Bosses.md#context-possessing), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Small`](./Characters_and_Bosses.md#context-small), [`SmallHolding`](./Characters_and_Bosses.md#context-smallholding), [`SmallHoldingCat`](./Characters_and_Bosses.md#context-smallholdingcat), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed), [`Up`](./Characters_and_Bosses.md#context-up), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb), [`hot`](./Characters_and_Bosses.md#context-hot)
+> **Referenced by:** [`Big`](./Characters_and_Bosses.md#object-big), [`BigHolding`](./Characters_and_Bosses.md#object-bigholding), [`BigHoldingCat`](./Characters_and_Bosses.md#object-bigholdingcat), [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`BlackHole`](./Characters_and_Bosses.md#object-blackhole), [`Boris`](./Characters_and_Bosses.md#object-boris), [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#object-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#object-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat), [`Cultist`](./Characters_and_Bosses.md#object-cultist), [`Down`](./Characters_and_Bosses.md#object-down), [`DualSword`](./Characters_and_Bosses.md#object-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#object-dualsword_primed), [`Empty`](./Characters_and_Bosses.md#object-empty), [`Explosive`](./Characters_and_Bosses.md#object-explosive), [`Flop`](./Characters_and_Bosses.md#object-flop), [`Flop2`](./Characters_and_Bosses.md#object-flop2), [`Full`](./Characters_and_Bosses.md#object-full), [`HalfDead`](./Characters_and_Bosses.md#object-halfdead), [`HasCat`](./Characters_and_Bosses.md#object-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#object-hasdeadcat), [`HasRock`](./Characters_and_Bosses.md#object-hasrock), [`Headless`](./Characters_and_Bosses.md#object-headless), [`Hint_CrackedVisuals`](./Characters_and_Bosses.md#object-hint_crackedvisuals), [`Hint_CrackedVisuals2`](./Characters_and_Bosses.md#object-hint_crackedvisuals2), [`Hint_CrackedVisuals3`](./Characters_and_Bosses.md#object-hint_crackedvisuals3), [`Holy`](./Characters_and_Bosses.md#object-holy), [`Insane_Ceiling`](./Characters_and_Bosses.md#object-insane_ceiling), [`Insane_Ground`](./Characters_and_Bosses.md#object-insane_ground), [`Joystick`](./Characters_and_Bosses.md#object-joystick), [`Lifted`](./Characters_and_Bosses.md#object-lifted), [`Mounted`](./Characters_and_Bosses.md#object-mounted), [`Mutant`](./Characters_and_Bosses.md#object-mutant), [`NoEyes`](./Characters_and_Bosses.md#object-noeyes), [`Normal`](./Characters_and_Bosses.md#object-normal), [`OneEye`](./Characters_and_Bosses.md#object-oneeye), [`Possessing`](./Characters_and_Bosses.md#object-possessing), [`Rage`](./Characters_and_Bosses.md#object-rage), [`Small`](./Characters_and_Bosses.md#object-small), [`SmallHolding`](./Characters_and_Bosses.md#object-smallholding), [`SmallHoldingCat`](./Characters_and_Bosses.md#object-smallholdingcat), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#object-swordandshield_primed), [`Up`](./Characters_and_Bosses.md#object-up), [`WereMan`](./Characters_and_Bosses.md#object-wereman), [`Zealot`](./Characters_and_Bosses.md#object-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#object-zealotbomb), [`hot`](./Characters_and_Bosses.md#object-hot)
 
 **Confirmed Values:**
 
@@ -10840,7 +10840,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChange`](./Abilities_and_Spells.md#context-formchange)
+> **Referenced by:** [`FormChange`](./Abilities_and_Spells.md#object-formchange)
 
 **Confirmed Values:**
 
@@ -10900,7 +10900,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -10972,7 +10972,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`cutscene`](./Events_and_Encounters.md#context-cutscene), [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** `ROOT`, [`cutscene`](./Events_and_Encounters.md#object-cutscene), [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -11010,7 +11010,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -11042,7 +11042,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -11062,7 +11062,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root), [`RefreshEquipmentAbilityOnElement`](./Items_and_Equipment.md#context-refreshequipmentabilityonelement)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root), [`RefreshEquipmentAbilityOnElement`](./Items_and_Equipment.md#object-refreshequipmentabilityonelement)
 
 **Confirmed Values:**
 
@@ -11095,7 +11095,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Cat_Classes.md#context-meta)
+> **Referenced by:** [`meta`](./Cat_Classes.md#object-meta)
 
 **Confirmed Values:**
 
@@ -11128,7 +11128,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Angry`](./Characters_and_Bosses.md#context-angry), [`BellyFull`](./Characters_and_Bosses.md#context-bellyfull), [`Charging`](./Characters_and_Bosses.md#context-charging), [`Default`](./Characters_and_Bosses.md#context-default), [`Guarding`](./Characters_and_Bosses.md#context-guarding), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`Holding`](./Characters_and_Bosses.md#context-holding), [`MouthFull`](./Characters_and_Bosses.md#context-mouthfull), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Washer`](./Characters_and_Bosses.md#context-washer), [`Water`](./Characters_and_Bosses.md#context-water)
+> **Referenced by:** [`Angry`](./Characters_and_Bosses.md#object-angry), [`BellyFull`](./Characters_and_Bosses.md#object-bellyfull), [`Charging`](./Characters_and_Bosses.md#object-charging), [`Default`](./Characters_and_Bosses.md#object-default), [`Guarding`](./Characters_and_Bosses.md#object-guarding), [`HasCat`](./Characters_and_Bosses.md#object-hascat), [`Holding`](./Characters_and_Bosses.md#object-holding), [`MouthFull`](./Characters_and_Bosses.md#object-mouthfull), [`Rage`](./Characters_and_Bosses.md#object-rage), [`Washer`](./Characters_and_Bosses.md#object-washer), [`Water`](./Characters_and_Bosses.md#object-water)
 
 **Confirmed Values:**
 
@@ -11158,7 +11158,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11190,7 +11190,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11222,7 +11222,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11252,7 +11252,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`2`](./Passives_and_Statuses.md#context-2), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** `2`, [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -11281,7 +11281,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -11310,7 +11310,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11339,7 +11339,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11367,7 +11367,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -11393,7 +11393,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -11417,7 +11417,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -11438,7 +11438,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#context-conditional_ally), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle)
+> **Referenced by:** [`Conditional_Ally`](./Abilities_and_Spells.md#object-conditional_ally), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll), [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle)
 
 **Confirmed Values:**
 
@@ -11460,7 +11460,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11482,7 +11482,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11504,7 +11504,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11526,7 +11526,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -11547,7 +11547,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -11568,7 +11568,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -11589,7 +11589,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`editor`](./Miscellaneous.md#context-editor)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root), `editor`
 
 **Confirmed Values:**
 
@@ -11609,7 +11609,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -11629,7 +11629,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11650,7 +11650,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -11670,7 +11670,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -11690,7 +11690,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance)
 
 **Confirmed Values:**
 
@@ -11710,7 +11710,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11730,7 +11730,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11750,7 +11750,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#team-names)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11770,7 +11770,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -11808,7 +11808,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight)
+> **Referenced by:** [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight)
 
 **Confirmed Values:**
 
@@ -11828,7 +11828,7 @@ This document provides exhaustive lists of all pure string values found in the b
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Confirmed Values:**
 

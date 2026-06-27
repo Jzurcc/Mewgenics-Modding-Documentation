@@ -1,6 +1,6 @@
 # Engine: Uncategorized & Structural Resources
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 > These identifiers appear in the `Passive Identifiers.txt` list but are **not** part of the standard `passive_pool`. They exist as structural property contexts or known scalar values in other sections. Entries with a full property table have their own structured block; others are listed with the contexts where they appear as a property key value.
 
@@ -37,7 +37,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,7 +58,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -80,7 +80,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -101,7 +101,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -121,7 +121,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -142,7 +142,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -162,12 +162,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
 
@@ -183,7 +183,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -204,11 +204,11 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LaunchOffScreen`](./Math_Equations.md) | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 1 | `10+bonus_melee_ability_damage` |
+| `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 1 | `10+bonus_melee_ability_damage` |
 | `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 1 | `1` |
 | `TempInitiativeChange` | Integer | The flat change to the unit's initiative value. | 1 | `-100`<br>`-999`<br>`100` |
 
@@ -226,7 +226,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -288,17 +288,17 @@
 
 > **Total Count:** 10
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`formula`](./Math_Equations.md) | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
+| `formula` | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
-| [`Slow`](./Arrays.md#array-slow) | Equation | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `-1`<br>`1`<br>`2` |
-| [`Burn`](./Math_Equations.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| `Slow` | Equation | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `-1`<br>`1`<br>`2` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .01]` |
-| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 1 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
+| `OverrideKnockbackDamage` | Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 1 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
@@ -316,7 +316,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -338,7 +338,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`Else`](./Characters_and_Bosses.md#context-else)
+> **Referenced by:** [`Else`](./Characters_and_Bosses.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -360,7 +360,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss), [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss), [`Conditional_Speculative`](./Engine_LogicKeys.md#conditional_speculative), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -368,15 +368,15 @@
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 | `1` |
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
 | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
 | `FactionConversion` | Integer | Converts the target to the caster's faction. | 1 | `1` |
 | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 1 | `1`<br>`10`<br>`2` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
-| [`Instakill`](./Arrays.md#array-instakill) | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
-| [`threshold_expr`](./Math_Equations.md) | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
+| `threshold_expr` | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 
 </details>
@@ -393,7 +393,7 @@
 
 > **Total Count:** 7
 
-> **Referenced by:** [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy), [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy), [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -420,7 +420,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`AddStatusToReceivedDamage`](./Characters_and_Bosses.md#context-addstatustoreceiveddamage)
+> **Referenced by:** [`AddStatusToReceivedDamage`](./Characters_and_Bosses.md#object-addstatustoreceiveddamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -442,7 +442,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -462,7 +462,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -482,7 +482,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -505,7 +505,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -527,7 +527,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -548,7 +548,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -569,7 +569,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -589,7 +589,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -609,7 +609,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -629,7 +629,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -651,7 +651,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -673,7 +673,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -700,12 +700,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
 
@@ -721,7 +721,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -743,7 +743,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -764,7 +764,7 @@
 
 > **Total Count:** 12
 
-> **Referenced by:** [`Conditional_AffectedByElement`](./Engine_LogicKeys.md#conditional_affectedbyelement), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_AffectedByElement`](./Engine_LogicKeys.md#conditional_affectedbyelement), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -871,7 +871,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -892,7 +892,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -953,7 +953,7 @@
 
 > **Total Count:** 15
 
-> **Referenced by:** [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally), [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy), [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_Ally`](./Engine_LogicKeys.md#conditional_ally), [`Conditional_Enemy`](./Engine_LogicKeys.md#conditional_enemy), [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -969,7 +969,7 @@
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
+| `WeaponAuxMultiplier` | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
 
@@ -985,7 +985,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1006,7 +1006,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1087,7 +1087,7 @@
 
 > **Total Count:** 7
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1131,7 +1131,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1232,7 +1232,7 @@
 
 > **Total Count:** 10
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1253,7 +1253,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1434,7 +1434,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1600,7 +1600,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
+> **Referenced by:** [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1621,7 +1621,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1702,7 +1702,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1786,7 +1786,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1846,7 +1846,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1866,7 +1866,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2087,7 +2087,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#context-statusoncollectpickup)
+> **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#object-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#object-statusoncollectpickup)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2111,7 +2111,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2132,7 +2132,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2154,7 +2154,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2175,7 +2175,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2196,7 +2196,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
+> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2358,7 +2358,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2379,7 +2379,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2522,7 +2522,7 @@
 
 > **Total Count:** 12
 
-> **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#context-root), [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`ROOT`](./Characters_and_Bosses.md#object-root), [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2532,7 +2532,7 @@
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 5 | `false`<br>`true` |
 | `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 | `true` |
 | `also_use_if_buddy_is_dead` | Boolean | If true, the ability is also triggered when the unit's buddy is dead. | 1 | `true` |
-| [`threshold_min`](./Math_Equations.md) | Equation | The minimum health threshold formula (e.g., X) for the ability to trigger. | 1 | `X` |
+| `threshold_min` | Equation | The minimum health threshold formula (e.g., X) for the ability to trigger. | 1 | `X` |
 
 </details>
 
@@ -2568,7 +2568,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2690,7 +2690,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2731,7 +2731,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2751,7 +2751,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2771,7 +2771,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2791,7 +2791,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2971,7 +2971,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2992,7 +2992,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3034,7 +3034,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Float | A multiplier applied to the unit's base stats. | 6 | `.25`<br>`.5`<br>`.666` |
+| `BaseStatMultiply` | Float | A multiplier applied to the unit's base stats. | 6 | `.25`<br>`.5`<br>`.666` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3372,7 +3372,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#context-addtemporaryeffectstobasicattack)
+> **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#object-addtemporaryeffectstobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3393,7 +3393,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3413,14 +3413,14 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 358 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 354 | `-1`<br>`-2`<br>`1` |
-| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
 
 </details>
 
@@ -3436,7 +3436,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
+> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3499,7 +3499,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3560,7 +3560,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3701,7 +3701,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`Else`](./Abilities_and_Spells.md#object-else), [`post_spawn_statuses`](./Abilities_and_Spells.md#object-post_spawn_statuses)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3865,7 +3865,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3887,7 +3887,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3946,7 +3946,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3966,7 +3966,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3987,7 +3987,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4168,7 +4168,7 @@
 
 > **Total Count:** 21
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Conditional_LastHit`](./Engine_LogicKeys.md#conditional_lasthit), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`Conditional_LastHit`](./Engine_LogicKeys.md#conditional_lasthit), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4191,7 +4191,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4232,7 +4232,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
+> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#object-statuseachturnbegin)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4394,7 +4394,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4416,7 +4416,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4497,7 +4497,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4539,7 +4539,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4560,7 +4560,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4661,7 +4661,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`StatusOnEatPill`](./Miscellaneous.md#context-statusoneatpill)
+> **Referenced by:** [`StatusOnEatPill`](./Miscellaneous.md#object-statusoneatpill)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4961,7 +4961,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5040,7 +5040,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`Else`](./Abilities_and_Spells.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5121,11 +5121,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Additional damage added to the basic attack, either as a flat value or formula. | 4 | `1`<br>`2`<br>`4` |
+| `AddDamageToBasicAttack` | Equation | Additional damage added to the basic attack, either as a flat value or formula. | 4 | `1`<br>`2`<br>`4` |
 
 </details>
 
@@ -5141,7 +5141,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5161,7 +5161,7 @@
 
 > **Total Count:** 9
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5183,7 +5183,7 @@
 
 > **Total Count:** 8
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5203,7 +5203,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5223,7 +5223,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5248,7 +5248,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5268,7 +5268,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5289,11 +5289,11 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Math_Equations.md) | Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `1`<br>`2`<br>`X` |
+| [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `1`<br>`2`<br>`X` |
 | [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
 
 </details>
@@ -5310,7 +5310,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5331,7 +5331,7 @@
 
 > **Total Count:** 22
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5365,7 +5365,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5385,7 +5385,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5405,7 +5405,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5425,12 +5425,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`FillMana`](./Arrays.md#array-fillmana) | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
+| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
 
 </details>
@@ -5447,7 +5447,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5466,7 +5466,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5494,7 +5494,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5554,7 +5554,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5758,11 +5758,11 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`delay`](./Enums.md#enum-delay) | Float | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
+| `delay` | Float | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
@@ -5771,7 +5771,7 @@
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 1 | `0`<br>`1` |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
+| `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 
 </details>
@@ -5928,7 +5928,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -5950,7 +5950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 2 | `.5` |
+| `WeaponAuxMultiplier` | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 2 | `.5` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6048,11 +6048,11 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`Conditional_Boss`](./Engine_LogicKeys.md#conditional_boss), [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`Conditional_Boss`](./Engine_LogicKeys.md#conditional_boss), [`Else`](./Abilities_and_Spells.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 2 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 2 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
 
@@ -6330,7 +6330,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6590,7 +6590,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6650,7 +6650,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6672,7 +6672,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | String | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 7 | `""`<br>`AdvancedAlloy`<br>`Alloy` |
+| [`SetBrittleImmune`](./Strings.md#string-setbrittleimmune) | String | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 7 | `""`<br>`AdvancedAlloy`<br>`Alloy` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6692,7 +6692,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | String | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 8 | `""`<br>`Bionic`<br>`Cardboard` |
+| [`SetFragileImmune`](./Strings.md#string-setfragileimmune) | String | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 8 | `""`<br>`Bionic`<br>`Cardboard` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6750,7 +6750,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6770,7 +6770,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6791,7 +6791,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6973,7 +6973,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -6995,12 +6995,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7016,11 +7016,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -7037,7 +7037,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7077,7 +7077,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7181,7 +7181,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7223,7 +7223,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7445,12 +7445,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 3 | `Blessing`<br>`Death`<br>`Tragedy` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7789,7 +7789,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowardsEnemies` | Variable | Specifies the ability or distance to force the target to move towards enemies. | 6 | `1`<br>`DumbMove_Impl`<br>`MoveOne` |
+| [`ForceMoveTowardsEnemies`](./Enums.md#enum-forcemovetowardsenemies) | Integer / Enum | Specifies the ability or distance to force the target to move towards enemies. | 6 | `1`<br>`DumbMove_Impl`<br>`MoveOne` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7807,7 +7807,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -7848,12 +7848,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -7911,7 +7911,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KnockbackDirectionIsFacingDirection` | Variable | Specifies how to alter knockback direction relative to the unit's facing: 1 (same), flip (opposite), rotate_right. | 10 | `1`<br>`flip`<br>`rotate_right` |
+| [`KnockbackDirectionIsFacingDirection`](./Enums.md#enum-knockbackdirectionisfacingdirection) | Integer / Enum | Specifies how to alter knockback direction relative to the unit's facing: 1 (same), flip (opposite), rotate_right. | 10 | `1`<br>`flip`<br>`rotate_right` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7929,7 +7929,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
+> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#object-addstatustoalldamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8050,7 +8050,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8070,7 +8070,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8092,7 +8092,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8133,7 +8133,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8216,7 +8216,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Float | The fade-out duration in seconds for ambient light effects. | 4 | `.5`<br>`4` |
+| `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 4 | `.5`<br>`4` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8354,7 +8354,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8455,7 +8455,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8556,7 +8556,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8576,7 +8576,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8617,7 +8617,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8738,7 +8738,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8759,7 +8759,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8860,7 +8860,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8883,7 +8883,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8905,7 +8905,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -8988,7 +8988,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
+> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9228,7 +9228,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9309,7 +9309,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9331,7 +9331,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9455,7 +9455,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9536,7 +9536,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Cat_Mutations.md#context-root)
+> **Referenced by:** [`ROOT`](./Cat_Mutations.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9577,7 +9577,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9638,7 +9638,7 @@
 
 > **Total Count:** 79
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9680,7 +9680,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9741,13 +9741,13 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 
 </details>
 
@@ -9763,13 +9763,13 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
@@ -9827,7 +9827,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9847,7 +9847,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9868,7 +9868,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9888,7 +9888,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -9990,7 +9990,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10031,7 +10031,7 @@
 
 > **Total Count:** 18
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10052,7 +10052,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10134,7 +10134,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10279,7 +10279,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10300,7 +10300,7 @@
 
 > **Total Count:** 16
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10344,7 +10344,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10405,7 +10405,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10428,7 +10428,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10489,12 +10489,12 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`Conditional_SourceAbilityHasTag`](./Engine_LogicKeys.md#conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`Conditional_SourceAbilityHasTag`](./Engine_LogicKeys.md#conditional_sourceabilityhastag), [`Else`](./Abilities_and_Spells.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stackable` | Boolean | If true, the scatter coins effect can stack with multiple applications. | 2 | `true` |
-| [`stacks`](./Math_Equations.md) | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -10672,19 +10672,19 @@
 
 > **Total Count:** 14
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`head`](./Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 422 | `-1`<br>`1`<br>`1000` |
 | [`palette`](./Enums.md#enum-palette) | Enum / Integer | Specifies the color palette index for the ability's visuals. | 420 | `-1`<br>`0`<br>`1` |
-| [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 386 | `-1`<br>`-2`<br>`1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 362 | `-1`<br>`1000`<br>`1001` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 358 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 354 | `-1`<br>`-2`<br>`1` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 348 | `-1`<br>`-2`<br>`1` |
-| [`body`](./Arrays.md#array-body) | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
+| `body` | Float | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
 | `leg2` | Integer | The catalog ID for the cat's second leg part. | 344 | `-1`<br>`1`<br>`10` |
 | `ear1` | Integer | The catalog ID for the cat's first ear part. | 10 | `-2`<br>`1005`<br>`1013` |
 | `ear2` | Integer | The catalog ID for the cat's second ear part. | 9 | `1005`<br>`1013`<br>`1036` |
@@ -10707,11 +10707,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
@@ -10748,7 +10748,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10770,7 +10770,7 @@
 
 > **Total Count:** 7
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10791,12 +10791,12 @@
 
 > **Total Count:** 16
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`RandomStatusFromPool`](./Abilities_and_Spells.md#context-randomstatusfrompool)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 75 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -10812,7 +10812,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10833,7 +10833,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10856,7 +10856,7 @@
 
 > **Total Count:** 8
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10877,7 +10877,7 @@
 
 > **Total Count:** 9
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10921,7 +10921,7 @@
 
 > **Total Count:** 35
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10943,7 +10943,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -10964,7 +10964,7 @@
 
 > **Total Count:** 106
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11141,7 +11141,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11183,7 +11183,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11204,7 +11204,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11285,7 +11285,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11306,14 +11306,14 @@
 
 > **Total Count:** 9
 
-> **Referenced by:** [`RandomPassivePool`](./Characters_and_Bosses.md#context-randompassivepool), [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`RandomPassivePool`](./Characters_and_Bosses.md#object-randompassivepool), [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`initiative`](./Enums.md#enum-initiative) | Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
+| `initiative` | Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
@@ -11330,7 +11330,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11392,7 +11392,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11413,7 +11413,7 @@
 
 > **Total Count:** 9
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11434,7 +11434,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11455,7 +11455,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11477,7 +11477,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill)
+> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11620,7 +11620,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11640,7 +11640,7 @@
 
 > **Total Count:** 20
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11701,7 +11701,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11842,7 +11842,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11864,7 +11864,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -11886,11 +11886,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
+| `icon` | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
@@ -11909,11 +11909,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
+| `icon` | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
@@ -11932,11 +11932,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
+| `icon` | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
@@ -11954,16 +11954,16 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | A 3D vector offset from the head position that the pupils should look at. | 1 | `[0 2.5 0]` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Float | The half-life for the pupil position to reset to center when no target is available. | 1 | `.1` |
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Float | The half-life for the pupil position to reset to center during an animation. | 1 | `.05` |
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Float | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 | `.01` |
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Float | The half-life for the pupil tracking to smoothly acquire a new target. | 1 | `.1` |
+| `reset_center_because_no_target_halflife` | Float | The half-life for the pupil position to reset to center when no target is available. | 1 | `.1` |
+| `reset_center_because_of_animation_halflife` | Float | The half-life for the pupil position to reset to center during an animation. | 1 | `.05` |
+| `teleport_tracking_halflife` | Float | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 | `.01` |
+| `tracking_acquisition_halflife` | Float | The half-life for the pupil tracking to smoothly acquire a new target. | 1 | `.1` |
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | A 3D vector representing the virtual position of the head for pupil tracking. | 1 | `[11 2 11]` |
 
 </details>
@@ -12020,7 +12020,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12041,7 +12041,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12062,7 +12062,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12084,7 +12084,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12187,7 +12187,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12428,7 +12428,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12479,7 +12479,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12539,7 +12539,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`Else`](./Miscellaneous.md#context-else)
+> **Referenced by:** [`Else`](./Miscellaneous.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12640,7 +12640,7 @@
 
 > **Total Count:** 10
 
-> **Referenced by:** [`Conditional_RandomChance`](./Engine_LogicKeys.md#conditional_randomchance), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_RandomChance`](./Engine_LogicKeys.md#conditional_randomchance), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12649,7 +12649,7 @@
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 8 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 6 | `1` |
 | [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 6 | `{ . . . }` |
-| [`YOffset`](./Enums.md#enum-yoffset) | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
+| `YOffset` | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 | `Plant` | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 1 | `1` |
@@ -12668,7 +12668,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12689,7 +12689,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12709,7 +12709,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12729,7 +12729,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`Conditional_GoodRoll`](./Engine_LogicKeys.md#conditional_goodroll), [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`Conditional_GoodRoll`](./Engine_LogicKeys.md#conditional_goodroll), [`Else`](./Abilities_and_Spells.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -12770,14 +12770,14 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 4 | `false`<br>`true` |
 | `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 | `1`<br>`2`<br>`3` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
 
 </details>
@@ -13034,7 +13034,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13235,7 +13235,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13259,7 +13259,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13302,7 +13302,7 @@
 
 > **Total Count:** 15
 
-> **Referenced by:** [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss), [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_HasTag`](./Engine_LogicKeys.md#conditional_hastag), [`Conditional_NotBoss`](./Engine_LogicKeys.md#conditional_notboss), [`Conditional_Object`](./Engine_LogicKeys.md#conditional_object), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13428,7 +13428,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13470,7 +13470,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13511,7 +13511,7 @@
 
 > **Total Count:** 11
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13653,7 +13653,7 @@
 
 > **Total Count:** 16
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13835,7 +13835,7 @@
 
 > **Total Count:** 18
 
-> **Referenced by:** [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy), [`Conditional_LivingPlayerCat`](./Engine_LogicKeys.md#conditional_livingplayercat), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_Buddy`](./Engine_LogicKeys.md#conditional_buddy), [`Conditional_LivingPlayerCat`](./Engine_LogicKeys.md#conditional_livingplayercat), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13926,7 +13926,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -13987,7 +13987,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14028,7 +14028,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Miscellaneous.md#context-passives)
+> **Referenced by:** [`passives`](./Miscellaneous.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14129,7 +14129,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14291,11 +14291,11 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`Conditional_ActiveWeather_Any`](./Engine_LogicKeys.md#conditional_activeweather_any), [`Conditional_DebuffRoll`](./Engine_LogicKeys.md#conditional_debuffroll), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_ActiveWeather_Any`](./Engine_LogicKeys.md#conditional_activeweather_any), [`Conditional_DebuffRoll`](./Engine_LogicKeys.md#conditional_debuffroll), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -14392,7 +14392,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14433,7 +14433,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
+> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14494,7 +14494,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14515,7 +14515,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -14715,12 +14715,12 @@
 
 > **Total Count:** 12
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 10 | `-1`<br>`-2`<br>`1` |
-| `time` | Variable | The duration in seconds of the screen shake effect. | 10 | `.5`<br>`.75`<br>`1` |
+| `time` | Float | The duration in seconds of the screen shake effect. | 10 | `.5`<br>`.75`<br>`1` |
 
 </details>
 
@@ -14876,7 +14876,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`Else`](./Abilities_and_Spells.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -15077,7 +15077,7 @@
 
 > **Total Count:** 21
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -15638,11 +15638,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Characters_and_Bosses.md#object-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
@@ -15879,7 +15879,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
+> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16080,7 +16080,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16124,7 +16124,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreSelf` | Variable | If set to 1 or true, the damage instance ignores the source unit (does not affect itself). | 150 | `1`<br>`true` |
+| `IgnoreSelf` | Boolean / Integer | If set to 1 or true, the damage instance ignores the source unit (does not affect itself). | 150 | `1`<br>`true` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16162,7 +16162,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16285,7 +16285,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Instakill`](./Arrays.md#array-instakill) | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 24 | `25`<br>`50`<br>`999` |
+| `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 24 | `25`<br>`50`<br>`999` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16343,7 +16343,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16444,7 +16444,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#context-global_effect_next_fight)
+> **Referenced by:** [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16525,7 +16525,7 @@
 
 > **Total Count:** 5
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects)
+> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16585,7 +16585,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`CreateGlobalModifiers`](./Abilities_and_Spells.md#context-createglobalmodifiers)
+> **Referenced by:** [`CreateGlobalModifiers`](./Abilities_and_Spells.md#object-createglobalmodifiers)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16746,7 +16746,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16828,7 +16828,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16889,7 +16889,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16950,7 +16950,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16971,7 +16971,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -16996,7 +16996,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17117,12 +17117,12 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -17198,12 +17198,12 @@
 
 > **Total Count:** 7
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
-| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
+| `value` | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
 
 </details>
 
@@ -17219,7 +17219,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17239,7 +17239,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17259,7 +17259,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17439,7 +17439,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17659,12 +17659,12 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -17820,7 +17820,7 @@
 
 > **Total Count:** 9
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -17840,7 +17840,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18101,7 +18101,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus)
+> **Referenced by:** [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18162,7 +18162,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18208,7 +18208,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Enum | A multiplier for the percentage of armor value salvaged when the unit takes damage. | 1 | `.75` |
+| `RockyArmorSalvage` | Enum | A multiplier for the percentage of armor value salvaged when the unit takes damage. | 1 | `.75` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18266,7 +18266,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18327,7 +18327,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18448,7 +18448,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18488,11 +18488,11 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`Conditional_Shielded`](./Engine_LogicKeys.md#conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`Conditional_Shielded`](./Engine_LogicKeys.md#conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
+| `value` | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
 
 </details>
@@ -18611,7 +18611,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 6 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
+| [`ShowText`](./Strings.md#string-showtext) | String | Specifies the localization key for a popup text displayed on the target. | 6 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18629,7 +18629,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18650,7 +18650,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18693,7 +18693,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18734,7 +18734,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#context-root)
+> **Referenced by:** [`ROOT`](./Miscellaneous.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18758,7 +18758,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18800,7 +18800,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`effects`](./Miscellaneous.md#context-effects)
+> **Referenced by:** [`effects`](./Miscellaneous.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18840,7 +18840,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18925,7 +18925,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19086,7 +19086,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19106,7 +19106,7 @@
 
 > **Total Count:** 6
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19208,7 +19208,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19313,7 +19313,7 @@
 
 > **Total Count:** 3
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19534,7 +19534,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19575,7 +19575,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives)
+> **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19596,7 +19596,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19720,7 +19720,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrailBlazer` | Variable | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 | `1`<br>`mov` |
+| `TrailBlazer` | Integer / Enum | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 | `1`<br>`mov` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -19738,7 +19738,7 @@
 
 > **Total Count:** 4
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19781,11 +19781,11 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
 
@@ -19823,7 +19823,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Float | Specifies the delay in seconds before the unit regains turn control. | 2 | `.25` |
+| `TurnControlDelay` | Float | Specifies the delay in seconds before the unit regains turn control. | 2 | `.25` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -20120,7 +20120,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -20165,7 +20165,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Webbed`](./Arrays.md#array-webbed) | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 23 | `1`<br>`2`<br>`[1 .1]` |
+| `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 23 | `1`<br>`2`<br>`[1 .1]` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -20223,7 +20223,7 @@
 
 > **Total Count:** 1
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#context-root)
+> **Referenced by:** [`ROOT`](./Miscellaneous.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -20387,7 +20387,7 @@
 
 > **Total Count:** 2
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -20410,7 +20410,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`YOffset`](./Enums.md#enum-yoffset) | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
+| `YOffset` | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 

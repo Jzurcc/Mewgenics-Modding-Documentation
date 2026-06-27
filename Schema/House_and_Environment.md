@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -30,7 +30,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
+| `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
 | [`Default`](./Miscellaneous.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
 | `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
 | [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
@@ -51,7 +51,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`SmallAttic`](./Miscellaneous.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
 | [`SmallHouse_Attic`](./Miscellaneous.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
-| [`p`](./Arrays.md#array-p) | Array | A coordinate pair [x, y] representing a position. | 1 | `[18 0]`<br>`[35 0]` |
+| `p` | Array | A coordinate pair [x, y] representing a position. | 1 | `[18 0]`<br>`[35 0]` |
 | [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
 
 </details>
@@ -191,7 +191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Math_Equations.md) | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 
@@ -459,7 +459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
@@ -690,7 +690,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| [`min_radius`](./Enums.md#enum-min_radius) | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
@@ -1331,7 +1331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
-| [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 1 | `[-1 -2]`<br>`[1 -2]` |
+| `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 1 | `[-1 -2]`<br>`[1 -2]` |
 
 </details>
 

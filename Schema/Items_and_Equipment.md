@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -37,7 +37,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`int`](./Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 66 | `-1`<br>`-10`<br>`-2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 64 | `1`<br>`2`<br>`true` |
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 53 | `-1`<br>`-2`<br>`-3` |
-| [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | The Strength stat value or modifier. | 45 | `-1`<br>`-2`<br>`-3` |
+| `str` | Integer | The Strength stat value or modifier. | 45 | `-1`<br>`-2`<br>`-3` |
 | `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 40 | `false`<br>`true` |
 | `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 36 | `true` |
 | `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. | 33 | `-1`<br>`1`<br>`10` |
@@ -97,18 +97,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveAfterXKills`](./Items_and_Equipment.md#context-passiveafterxkills), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#context-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold), [`PassiveIfStrAuxEquals`](./Items_and_Equipment.md#context-passiveifstrauxequals), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#context-passivewhenaffectedbyelement), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile), [`ROOT`](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`PassiveAfterXKills`](./Items_and_Equipment.md#object-passiveafterxkills), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#object-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#object-passiveatstatthreshold), [`PassiveIfStrAuxEquals`](./Items_and_Equipment.md#object-passiveifstrauxequals), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#object-passivewhenaffectedbyelement), [`PassiveWhenOnTile`](./Items_and_Equipment.md#object-passivewhenontile), [`ROOT`](./Items_and_Equipment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2628 | passives<br>class<br>	ag |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 133 | `{ . . . }` |
-| [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 94 | `1`<br>`10`<br>`2` |
-| [`Metal`](./Enums.md) | Integer | The number of armor stacks or metal keyword effects. | 90 | `1` |
-| [`Trample`](./Enums.md) | Integer | The amount of bonus damage dealt when moving through an enemy. | 88 | `1`<br>`3`<br>`4` |
-| [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 65 | `1`<br>`2`<br>`3` |
+| `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 94 | `1`<br>`10`<br>`2` |
+| `Metal` | Integer | The number of armor stacks or metal keyword effects. | 90 | `1` |
+| `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 88 | `1`<br>`3`<br>`4` |
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 65 | `1`<br>`2`<br>`3` |
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 59 | `{ . . . }` |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 52 | `1`<br>`2`<br>`3` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 52 | `1`<br>`2`<br>`3` |
 | [`StatusEachTurnEnd`](./Passives_and_Statuses.md#object-statuseachturnend) | Object  | Specifies status effects applied to the unit at the end of each of its turns. | 49 | `{ . . . }` |
 | [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 45 | `{ . . . }` |
 | [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 39 | `Creep`<br>`Electric`<br>`Fire` |
@@ -119,116 +119,116 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusOnKill`](./Passives_and_Statuses.md#object-statusonkill) | Object  | Specifies status effects or actions triggered when the unit kills an enemy. | 29 | `{ . . . }` |
 | [`StatusOnTookDamage`](./Passives_and_Statuses.md#object-statusontookdamage) | Object  | Specifies status effects or actions triggered when the unit takes damage. | 29 | `{ . . . }` |
 | [`SpawnThingOnDamage`](./Passives_and_Statuses.md#object-spawnthingondamage) | Object  | Specifies an object that spawns on the tile when the unit takes damage. | 28 | `{ . . . }` |
-| [`Undead`](./Enums.md) | Integer | If set, flags the unit as undead (e.g., 1) with associated mechanics. | 25 | `1` |
-| [`Brittle`](./Enums.md) | Integer | The number of stacks of the Brittle status, or an object defining its properties. | 24 | `1` |
+| `Undead` | Integer | If set, flags the unit as undead (e.g., 1) with associated mechanics. | 25 | `1` |
+| `Brittle` | Integer | The number of stacks of the Brittle status, or an object defining its properties. | 24 | `1` |
 | [`AbilityReaction`](./Enums.md#enum-abilityreaction) | Enum  | Specifies the ability used as a reaction when the unit is targeted by an ability. | 23 | `AnkyloSpin`<br>`GSOpen`<br>`Gassy_AssBlast` |
-| [`Fragile`](./Enums.md) | Integer | The number of stacks of the Fragile status, causing increased damage taken. | 22 | `1` |
+| `Fragile` | Integer | The number of stacks of the Fragile status, causing increased damage taken. | 22 | `1` |
 | [`StatusOnBreak`](./Passives_and_Statuses.md#object-statusonbreak) | Object | An object defining statuses or effects applied when an item or object breaks. | 22 | `{ . . . }` |
 | [`AddPassivesToMinions`](./Passives_and_Statuses.md#object-addpassivestominions) | Object | An object containing passives that are granted to all minions spawned by the unit. | 21 | `{ . . . }` |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 21 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 21 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`SpawnOnDeath`](./Passives_and_Statuses.md#object-spawnondeath) | Object  | Specifies an object and its faction to spawn when the unit dies. | 21 | `{ . . . }` |
-| [`ArmorDodgeChance`](./Enums.md) | Integer | The percentage chance to dodge incoming attacks when wearing this armor. | 19 | `10%`<br>`15%`<br>`20%` |
+| `ArmorDodgeChance` | Integer | The percentage chance to dodge incoming attacks when wearing this armor. | 19 | `10%`<br>`15%`<br>`20%` |
 | [`StatusEachTurnBegin`](./Passives_and_Statuses.md#object-statuseachturnbegin) | Object  | Specifies status effects applied to the unit at the start of each of its turns. | 18 | `{ . . . }` |
-| [`CritChanceUp`](./Enums.md) | Integer | The amount of critical hit chance added as a flat percentage. | 16 | `1`<br>`10`<br>`100` |
-| [`AddBonusRange`](./Enums.md) | Integer | The number of additional tiles of range added to the unit's abilities. | 15 | `1`<br>`10`<br>`2` |
-| [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 15 | `1`<br>`2`<br>`3` |
+| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 16 | `1`<br>`10`<br>`100` |
+| `AddBonusRange` | Integer | The number of additional tiles of range added to the unit's abilities. | 15 | `1`<br>`10`<br>`2` |
+| `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 15 | `1`<br>`2`<br>`3` |
 | [`RevengeDamage`](./Passives_and_Statuses.md#object-revengedamage) | Object  | An object defining the damage and effects that trigger when the unit is attacked. | 15 | `{ . . . }` |
 | [`SpawnEachTurn`](./Passives_and_Statuses.md#object-spawneachturn) | Object  | Specifies an object that spawns on a random adjacent tile each turn, with optional chance. | 15 | `{ . . . }` |
 | [`StatusOnBattleStart`](./Passives_and_Statuses.md#object-statusonbattlestart) | Object | An object containing status effects to apply to the unit at the start of every battle. | 15 | `{ . . . }` |
-| [`AddCorpseHealth`](./Enums.md) | Integer | The amount of bonus health the unit's corpse has before it can be resurrected. | 14 | `-999`<br>`-999999`<br>`100` |
-| [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | `-1`<br>`-2`<br>`1` |
-| [`DodgeChance`](./Enums.md) | Integer | The percentage chance the unit has to dodge incoming attacks. | 14 | `10%`<br>`15%`<br>`2%` |
+| `AddCorpseHealth` | Integer | The amount of bonus health the unit's corpse has before it can be resurrected. | 14 | `-999`<br>`-999999`<br>`100` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | `-1`<br>`-2`<br>`1` |
+| `DodgeChance` | Integer | The percentage chance the unit has to dodge incoming attacks. | 14 | `10%`<br>`15%`<br>`2%` |
 | [`InnateElement`](./Enums.md#enum-innateelement) | Enum  | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 14 | `Earth`<br>`Electric`<br>`Fire` |
-| [`AddManaRegen`](./Enums.md) | Integer | The flat amount of mana regenerated per turn. | 13 | `1`<br>`2`<br>`3` |
+| `AddManaRegen` | Integer | The flat amount of mana regenerated per turn. | 13 | `1`<br>`2`<br>`3` |
 | [`DeathRattleRevive`](./Enums.md#enum-deathrattlerevive) | Enum  | Specifies an ability or effect that revives the unit upon death, with options for stunning behavior. | 13 | `DoNothing`<br>`HCHumanDie`<br>`ToxPuff` |
-| [`Flammable`](./Enums.md) | Integer | The number of stacks of Flammable, or an object defining its properties. | 13 | `1`<br>`2` |
+| `Flammable` | Integer | The number of stacks of Flammable, or an object defining its properties. | 13 | `1`<br>`2` |
 | [`AbilityHealthThreshold`](./Passives_and_Statuses.md#object-abilityhealththreshold) | Object  | Defines an ability and conditions for its activation when the unit's health reaches a threshold. | 12 | `{ . . . }` |
-| [`ReflectProjectiles`](./Enums.md) | Integer | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 12 | `1`<br>`10%`<br>`100%` |
+| `ReflectProjectiles` | Integer | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 12 | `1`<br>`10%`<br>`100%` |
 | [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum  | Specifies the name of an object to spawn upon death. | 12 | `Boulder`<br>`CharmedDemonKitten`<br>`CharmedFlySwarm` |
 | [`AbilityOnBattleStart`](./Enums.md#enum-abilityonbattlestart) | Enum | Casts the specified ability when the battle begins. | 11 | `Flush`<br>`Heathens`<br>`Heathens2` |
 | [`AddStatusToAllDamage`](./Passives_and_Statuses.md#object-addstatustoalldamage) | Object | Adds the contained status effects to all damage dealt by the unit. | 11 | `{ . . . }` |
-| [`BleedThorns`](./Enums.md) | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 11 | `1`<br>`2`<br>`3` |
-| [`ExtraBasicAttacks`](./Enums.md) | Integer | The number of additional basic attacks the unit can perform per turn. | 11 | `1`<br>`2` |
+| `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 11 | `1`<br>`2`<br>`3` |
+| `ExtraBasicAttacks` | Integer | The number of additional basic attacks the unit can perform per turn. | 11 | `1`<br>`2` |
 | [`ReplaceBasicMove`](./Enums.md#enum-replacebasicmove) | Enum  | Specifies an alternative movement ability that replaces the unit's default move. | 11 | `BasicDashAttackMove`<br>`BasicJump`<br>`BellyFlop_BasicMove` |
-| [`AddLevelUpRerolls`](./Enums.md) | Integer | The number of additional rerolls the unit gets when leveling up. | 10 | `1`<br>`2`<br>`3` |
+| `AddLevelUpRerolls` | Integer | The number of additional rerolls the unit gets when leveling up. | 10 | `1`<br>`2`<br>`3` |
 | [`MoveTowardsDamageSource`](./Enums.md#enum-movetowardsdamagesource) | Enum  | Determines the movement behavior when moving towards the unit that dealt damage to it. | 10 | `MoveOne` |
 | [`StatusOnKillEnemy`](./Passives_and_Statuses.md#object-statusonkillenemy) | Object | Specifies the effects applied when the unit kills an enemy. | 10 | `{ . . . }` |
 | [`AddSelfStatusToBasicAttack`](./Passives_and_Statuses.md#object-addselfstatustobasicattack) | Object | Applies the contained status effects to the unit when it uses its basic attack. | 9 | `{ . . . }` |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum  | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 9 | `bug`<br>`cat`<br>`fetus` |
-| [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 9 | `1`<br>`2`<br>`3` |
-| [`DepressionAura`](./Enums.md) | Integer | The number of stacks of Depression status applied to nearby enemies each turn; can be an object with range and ally settings. | 9 | `1`<br>`2` |
-| [`Flying`](./Enums.md) | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 9 | `1` |
-| [`MissChance`](./Enums.md) | Integer | The flat percentage chance that the unit's attacks will miss. | 9 | `10`<br>`15`<br>`20` |
+| `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 9 | `1`<br>`2`<br>`3` |
+| `DepressionAura` | Integer | The number of stacks of Depression status applied to nearby enemies each turn; can be an object with range and ally settings. | 9 | `1`<br>`2` |
+| `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 9 | `1` |
+| `MissChance` | Integer | The flat percentage chance that the unit's attacks will miss. | 9 | `10`<br>`15`<br>`20` |
 | [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 9 | `{ . . . }` |
-| [`PoisonThorns`](./Enums.md) | Integer | The number of stacks of Poison applied to melee attackers when they hit this unit. | 9 | `1`<br>`2`<br>`3` |
+| `PoisonThorns` | Integer | The number of stacks of Poison applied to melee attackers when they hit this unit. | 9 | `1`<br>`2`<br>`3` |
 | [`StatusAlliesOnBattleStart`](./Passives_and_Statuses.md#object-statusalliesonbattlestart) | Object | An object containing status effects to apply to all allies at the start of battle. | 9 | `{ . . . }` |
-| [`TrinketPassiveMultiplierBonus`](./Enums.md) | Integer | Bonus multiplier to the passive effects of equipped trinkets. | 9 | `1`<br>`2` |
-| [`BoostHeals`](./Enums.md) | Integer | The number of stacks that increase healing received or dealt. | 8 | `-2`<br>`1`<br>`2` |
+| `TrinketPassiveMultiplierBonus` | Integer | Bonus multiplier to the passive effects of equipped trinkets. | 9 | `1`<br>`2` |
+| `BoostHeals` | Integer | The number of stacks that increase healing received or dealt. | 8 | `-2`<br>`1`<br>`2` |
 | [`ChanceToRevive`](./Passives_and_Statuses.md#object-chancetorevive) | Integer / Object | The percentage chance or an object defining chance, health, and statuses on revival. | 8 | `{ . . . }`<br>`100`<br>`25` |
-| [`PermanentMadness`](./Enums.md) | Integer | The number of permanent madness stacks applied. | 8 | `1` |
+| `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 8 | `1` |
 | [`StatusOnDie`](./Passives_and_Statuses.md#object-statusondie) | Object  | Specifies status effects or actions triggered when the unit dies. | 8 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`AddElementsToBasicAttack`](./Enums.md) | Enum | Specifies an elemental damage type that is added to the unit's basic attacks. | 174 | Default<br>FormChange<br>Druid |
-| [`AddInitiative`](./Enums.md) | Integer | The amount of bonus or penalty to the unit's turn order initiative value. | 7 | `-10`<br>`-100`<br>`-20` |
-| [`AlphaTurns`](./Enums.md) | Integer | The number of turns the unit acts first in battle; negative values may indicate last. | 7 | `-1`<br>`1` |
-| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 7 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | `AddElementsToBasicAttack` | Enum | Specifies an elemental damage type that is added to the unit's basic attacks. | 174 | Default<br>FormChange<br>Druid |
+| `AddInitiative` | Integer | The amount of bonus or penalty to the unit's turn order initiative value. | 7 | `-10`<br>`-100`<br>`-20` |
+| `AlphaTurns` | Integer | The number of turns the unit acts first in battle; negative values may indicate last. | 7 | `-1`<br>`1` |
+| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 7 | `1`<br>`10`<br>`2` |
 | [`BonusAbility`](./Enums.md#enum-bonusability) | Enum  | Specifies the name of a bonus ability granted. | 7 | `Bloodzerk`<br>`BonusToss`<br>`BonusToss2` |
 | [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Makes the unit brittle while in contact with the specified element. | 7 | `water` |
-| [`DebuffImmunity`](./Enums.md) | Integer | If 1, the unit is immune to debuffs. | 7 | `1` |
+| `DebuffImmunity` | Integer | If 1, the unit is immune to debuffs. | 7 | `1` |
 | [`DurabilityTransform`](./Passives_and_Statuses.md#object-durabilitytransform) | Object | Transforms the item into another when durability reaches specified thresholds. | 7 | `{ . . . }` |
-| [`ManaCostReduction`](./Enums.md) | Integer | The amount or percentage by which ability mana costs are reduced for this unit. | 7 | `-2`<br>`1`<br>`2` |
+| `ManaCostReduction` | Integer | The amount or percentage by which ability mana costs are reduced for this unit. | 7 | `-2`<br>`1`<br>`2` |
 | [`OverrideBasicAttack`](./Enums.md#enum-overridebasicattack) | Enum | Replaces the unit's basic attack with the specified ability. | 7 | `BasicExplosiveShot`<br>`BasicMelee`<br>`BasicMetronome` |
 | [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#object-passiveathealththreshold) | Object | An object that grants additional passives when the unit's health meets a specified threshold, with sub-keys for threshold, mode, and passives. | 7 | `{ . . . }` |
 | [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#object-passiveatstatthreshold) | Object | An object defining passives granted when a unit's stat meets a specified threshold. | 7 | `{ . . . }` |
-| [`SetFragileImmune`](./Enums.md) | Variable | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 7 | `""`<br>`Bionic`<br>`Cardboard` |
-| [`SetSpellCosts`](./Enums.md) | Integer | Overrides the cost of all spells to this value. | 7 | `0`<br>`1`<br>`3` |
+| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | Enum | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 7 | `""`<br>`Bionic`<br>`Cardboard` |
+| `SetSpellCosts` | Integer | Overrides the cost of all spells to this value. | 7 | `0`<br>`1`<br>`3` |
 | [`StatusOnEndMove`](./Passives_and_Statuses.md#object-statusonendmove) | Object  | Specifies status effects or actions triggered when the unit finishes moving. | 7 | `{ . . . }` |
 | [`AddDamageToElementDamage`](./Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 6 | `{ . . . }` |
 | [`AmplifyStatus`](./Enums.md#enum-amplifystatus) | Enum | Specifies the status effect to amplify, or an object with the status and number of stacks to add. | 6 | `Bleed`<br>`Burn`<br>`Poison` |
 | [`DelayedAutoRevive`](./Passives_and_Statuses.md#object-delayedautorevive) | Object  | Configures an automatic revival after a delay, with specified rounds and health percentage. | 6 | `{ . . . }` |
-| [`DodgeChance_Status`](./Enums.md) | Integer | The flat percentage increase to dodge chance applied as a status effect. | 6 | `1`<br>`10`<br>`100` |
-| [`ExtraWeaponAttacks`](./Enums.md) | Integer | The number of additional weapon attacks the unit can perform. | 6 | `1`<br>`2` |
-| [`IgnoreTiles`](./Enums.md) | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 6 | `1` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 6 | `1`<br>`10`<br>`100` |
+| `ExtraWeaponAttacks` | Integer | The number of additional weapon attacks the unit can perform. | 6 | `1`<br>`2` |
+| `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 6 | `1` |
 | [`ItemAuxTransform`](./Passives_and_Statuses.md#object-itemauxtransform) | Object | Transforms the item into another when its auxiliary value reaches specified thresholds. | 6 | `{ . . . }` |
 | [`PassiveWhenOnTile`](./Passives_and_Statuses.md#object-passivewhenontile) | Object | Grants the contained passive effects while the unit is standing on one of the specified tile types. | 6 | `{ . . . }` |
-| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
+| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`2`<br>`5` |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 6 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
-| [`SetBrittleImmune`](./Enums.md) | Variable | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 6 | `""`<br>`AdvancedAlloy`<br>`Alloy` |
+| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | Enum | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 6 | `""`<br>`AdvancedAlloy`<br>`Alloy` |
 | [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#object-spawnonbattlestartrandomemptytile) | Object  | Specifies an object that spawns on a random empty tile at the start of battle. | 6 | `{ . . . }` |
-| [`AddBonusMeleeRange`](./Enums.md) | Integer | The number of additional tiles of range added to the unit's melee attacks. | 5 | `1`<br>`10`<br>`2` |
+| `AddBonusMeleeRange` | Integer | The number of additional tiles of range added to the unit's melee attacks. | 5 | `1`<br>`10`<br>`2` |
 | [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum  | A hidden tag applied to the unit for internal logic and triggers. | 5 | `bowling_ball`<br>`grown_hitler_clone`<br>`hitler_clone_fetus` |
-| [`BackstabCritChance`](./Enums.md) | Float | A multiplier for critical hit chance on backstab attacks. | 5 | `.25`<br>`1` |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 5 | `1`<br>`10`<br>`2` |
+| `BackstabCritChance` | Float | A multiplier for critical hit chance on backstab attacks. | 5 | `.25`<br>`1` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 5 | `1`<br>`10`<br>`2` |
 | [`ClassManaCostReduction`](./Passives_and_Statuses.md#object-classmanacostreduction) | Object  | Defines a reduction in mana cost for abilities of a specific class. | 5 | `{ . . . }` |
 | [`CritsApplyStatus`](./Passives_and_Statuses.md#object-critsapplystatus) | Object | An object containing statuses applied to the target when the unit lands a critical hit. | 5 | `{ . . . }` |
-| [`FaceShield`](./Enums.md) | Integer | If 1, the unit has a face shield that protects it from certain attacks or effects. | 5 | `0`<br>`1` |
-| [`HeadArmorPassiveMultiplierBonus`](./Enums.md) | Integer | A multiplier bonus applied to passive effects granted by head armor. | 5 | `1`<br>`2` |
-| [`InjuryImmunity`](./Enums.md) | Integer | The number of turns the unit is immune to injuries. | 5 | `1` |
-| [`KnockbackImmunity`](./Enums.md) | Integer | If set to 1, the unit cannot be knocked back. | 5 | `1` |
-| [`SharkySmellsBlood`](./Enums.md) | Integer | If 1, the unit is attracted to damaged units and may prioritize them. | 5 | `1` |
-| [`SpellDamageUp`](./Enums.md) | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 5 | `1`<br>`3` |
+| `FaceShield` | Integer | If 1, the unit has a face shield that protects it from certain attacks or effects. | 5 | `0`<br>`1` |
+| `HeadArmorPassiveMultiplierBonus` | Integer | A multiplier bonus applied to passive effects granted by head armor. | 5 | `1`<br>`2` |
+| `InjuryImmunity` | Integer | The number of turns the unit is immune to injuries. | 5 | `1` |
+| `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 5 | `1` |
+| `SharkySmellsBlood` | Integer | If 1, the unit is attracted to damaged units and may prioritize them. | 5 | `1` |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 5 | `1`<br>`3` |
 | [`StatusIfUnusedMovePoints`](./Passives_and_Statuses.md#object-statusifunusedmovepoints) | Object  | Specifies status effects applied if the unit ends its turn with unused movement points. | 5 | `{ . . . }` |
 | [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Passives_and_Statuses.md#object-statusonturnendifdidntcastabilitytypes) | Object | Applies the contained status effects at turn end if the unit did not cast an ability of the specified type(s). | 5 | `{ . . . }` |
 | [`TransformItemOnElementInfluence`](./Passives_and_Statuses.md#object-transformitemonelementinfluence) | Object | Transforms the item into the specified one when influenced by the given element, optionally fully repairing it. | 5 | `{ . . . }` |
-| [`TrinketActiveEffectsMultiplierBonus`](./Enums.md) | Integer | Bonus multiplier to the active effects of equipped trinkets. | 5 | `1`<br>`2` |
-| [`AddCritMultiplier`](./Enums.md) | Integer | The percentage added to the critical hit damage multiplier. | 4 | `100%`<br>`125%`<br>`150%` |
-| [`AddKnockbackDamage`](./Enums.md) | Integer | The amount of additional knockback damage applied. | 4 | `1`<br>`2`<br>`3` |
+| `TrinketActiveEffectsMultiplierBonus` | Integer | Bonus multiplier to the active effects of equipped trinkets. | 5 | `1`<br>`2` |
+| `AddCritMultiplier` | Integer | The percentage added to the critical hit damage multiplier. | 4 | `100%`<br>`125%`<br>`150%` |
+| `AddKnockbackDamage` | Integer | The amount of additional knockback damage applied. | 4 | `1`<br>`2`<br>`3` |
 | [`AddStatusToElementDamage`](./Passives_and_Statuses.md#object-addstatustoelementdamage) | Object | An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply. | 4 | `{ . . . }` |
 | [`AddStatusToWeapons`](./Passives_and_Statuses.md#object-addstatustoweapons) | Object  | Specifies status effects to add to the unit's weapon attacks, with their stack counts. | 4 | `{ . . . }` |
 | [`AddTemporaryEffectsToBasicAttack`](./Passives_and_Statuses.md#object-addtemporaryeffectstobasicattack) | Object  | A container object that lists temporary status effects applied to the unit's basic attack. | 4 | `{ . . . }` |
 | [`BoostWeaponDamage`](./Passives_and_Statuses.md#object-boostweapondamage) | Object  | The amount of bonus weapon damage applied, or an object with `damage` and `crit_chance` fields. | 4 | `{ . . . }` |
-| [`BreakAtAux`](./Enums.md) | Integer | The number of auxiliary item uses before this item breaks. | 4 | `0` |
+| `BreakAtAux` | Integer | The number of auxiliary item uses before this item breaks. | 4 | `0` |
 | [`BuffImmunity`](./Passives_and_Statuses.md#object-buffimmunity) | Object  | If 1, the unit is immune to buffs. An optional object can list buffs to exclude from immunity. | 4 | `{ . . . }` |
 | [`CatchProjectiles`](./Passives_and_Statuses.md#object-catchprojectiles) | Object | An object defining chance to catch projectiles and optionally apply statuses. | 4 | `{ . . . }` |
 | [`ChanceToBackflip`](./Passives_and_Statuses.md#object-chancetobackflip) | Object  | An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit. | 4 | `{ . . . }` |
 | [`ExtraStatusWhenDealingDamage`](./Passives_and_Statuses.md#object-extrastatuswhendealingdamage) | Object | Defines additional statuses applied to the target or source when dealing damage, with conditionals. | 4 | `{ . . . }` |
-| [`FaceArmorPassiveMultiplierBonus`](./Enums.md) | Integer | A multiplier bonus applied to the effects of face armor passives. | 4 | `1`<br>`2` |
+| `FaceArmorPassiveMultiplierBonus` | Integer | A multiplier bonus applied to the effects of face armor passives. | 4 | `1`<br>`2` |
 | [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Specifies an element during which the unit becomes fragile, taking increased damage. | 4 | `water` |
-| [`FreezePiercing`](./Enums.md) | Integer | The number of stacks of freeze resistance that are ignored when applying freeze. | 4 | `1` |
-| [`IncreaseExplosionDamage`](./Enums.md) | Integer | The flat amount by which explosion damage is increased. | 4 | `1`<br>`2`<br>`3` |
-| [`IncreaseExplosionSize`](./Enums.md) | Integer | The number of extra tiles added to the radius of explosions. | 4 | `1`<br>`2`<br>`7` |
+| `FreezePiercing` | Integer | The number of stacks of freeze resistance that are ignored when applying freeze. | 4 | `1` |
+| `IncreaseExplosionDamage` | Integer | The flat amount by which explosion damage is increased. | 4 | `1`<br>`2`<br>`3` |
+| `IncreaseExplosionSize` | Integer | The number of extra tiles added to the radius of explosions. | 4 | `1`<br>`2`<br>`7` |
 | [`LevelUpClassOverride`](./Enums.md#enum-levelupclassoverride) | Enum | Specifies which class the unit gains upon leveling up, overriding the default class. | 4 | `Colorless`<br>`Jester` |
-| [`MakeSpellsRequireCharge`](./Enums.md) | Integer | If true, spells require a charge-up turn before casting. | 4 | `1` |
+| `MakeSpellsRequireCharge` | Integer | If true, spells require a charge-up turn before casting. | 4 | `1` |
 | [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#object-passivewhenaffectedbyelement) | Object  | An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element. | 4 | `{ . . . }` |
 | [`PassiveWhenDead`](./Passives_and_Statuses.md#object-passivewhendead) | Object  | Passive effects that remain active while the unit is dead. | 4 | `{ . . . }` |
 | [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | An array defining a random, seeded modifier to stats, typically in the format [modifier, offset]. | 4 | `[2 -1]` |
@@ -240,36 +240,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusOnPopCorpse`](./Passives_and_Statuses.md#object-statusonpopcorpse) | Object | Specifies the effects applied when the unit pops a corpse. | 4 | `{ . . . }` |
 | [`StatusOnTakeHealthOrShieldDamage`](./Passives_and_Statuses.md#object-statusontakehealthorshielddamage) | Object | An object that applies a status effect when the unit takes damage to either health or shields. | 4 | `{ . . . }` |
 | [`StatusRandomEnemiesOnBattleStart`](./Passives_and_Statuses.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 4 | `{ . . . }` |
-| [`AddEndOfCombatRegen`](./Enums.md) | Integer | The amount of health regenerated after combat ends. | 3 | `12`<br>`999999` |
+| `AddEndOfCombatRegen` | Integer | The amount of health regenerated after combat ends. | 3 | `12`<br>`999999` |
 | [`AddPassivesToCharmed`](./Passives_and_Statuses.md#object-addpassivestocharmed) | Object | Grants the contained passive effects to units under the charm status. | 3 | `{ . . . }` |
 | [`AddStatusToSpells`](./Passives_and_Statuses.md#object-addstatustospells) | Object  | Specifies status effects added to all spell attacks used by this unit. | 3 | `{ . . . }` |
-| [`AllStatsUpPerDisorder`](./Enums.md) | Integer | The amount by which all stats increase for each disorder (negative status) the unit has. | 3 | `1` |
-| [`AmplifyKnockback`](./Enums.md) | Integer | The additional distance (in tiles) a unit is knocked back. | 3 | `10`<br>`2` |
+| `AllStatsUpPerDisorder` | Integer | The amount by which all stats increase for each disorder (negative status) the unit has. | 3 | `1` |
+| `AmplifyKnockback` | Integer | The additional distance (in tiles) a unit is knocked back. | 3 | `10`<br>`2` |
 | [`ApplyStatusesToRandomEnemiesEachTurn`](./Passives_and_Statuses.md#object-applystatusestorandomenemieseachturn) | Object | An object specifying statuses to apply to random enemies each turn, with an optional 'count' field. | 3 | `{ . . . }` |
-| [`AutoEquipConsumables`](./Enums.md) | Integer | The number of consumables automatically equipped per turn. | 3 | `1` |
-| [`BasicAttackCritChance`](./Enums.md) | Float | A multiplier for the critical hit chance of basic attacks, either as a float or percentage. | 3 | `.1`<br>`100%` |
-| [`BoneArmorPassive`](./Enums.md) | Integer | The number of stacks of bone armor granted, which absorbs damage. | 3 | `1` |
+| `AutoEquipConsumables` | Integer | The number of consumables automatically equipped per turn. | 3 | `1` |
+| `BasicAttackCritChance` | Float | A multiplier for the critical hit chance of basic attacks, either as a float or percentage. | 3 | `.1`<br>`100%` |
+| `BoneArmorPassive` | Integer | The number of stacks of bone armor granted, which absorbs damage. | 3 | `1` |
 | [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Specifies an element that, when dealt to the unit, causes its armor or item to break. | 3 | `water` |
-| [`CantCatchDiseases`](./Enums.md) | Integer | The number of stacks that prevent the unit from contracting diseases. | 3 | `1` |
-| [`CantSpreadDiseases`](./Enums.md) | Integer | The number of stacks that prevent the unit from spreading diseases. | 3 | `1` |
-| [`ChanceToBlock`](./Enums.md) | Integer | The percentage chance to block incoming damage. | 3 | `10%` |
+| `CantCatchDiseases` | Integer | The number of stacks that prevent the unit from contracting diseases. | 3 | `1` |
+| `CantSpreadDiseases` | Integer | The number of stacks that prevent the unit from spreading diseases. | 3 | `1` |
+| `ChanceToBlock` | Integer | The percentage chance to block incoming damage. | 3 | `10%` |
 | [`ChanceToBlockAndCounter`](./Passives_and_Statuses.md#object-chancetoblockandcounter) | Integer / Object | The percentage chance or an object defining chance and conditions to block and counter an attack. | 3 | `{ . . . }`<br>`15%`<br>`25%`<br>`33%` |
-| [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
+| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Specifies the familiar type to drop onto the tile when this status holder's armor breaks. | 3 | `FaceGrubFamiliar`<br>`HeadGrubFamiliar`<br>`NeckGrubFamiliar` |
 | [`ElementalManaCostReduction`](./Passives_and_Statuses.md#object-elementalmanacostreduction) | Object | An object that reduces the mana cost of spells of specified elements, with sub-keys for element and reduction amount. | 3 | `{ . . . }` |
-| [`ExtraBasicMoves_Status`](./Enums.md) | Integer | The number of extra basic moves per turn granted. | 3 | `1` |
-| [`ExtraMovePoints`](./Enums.md) | Integer | The number of additional movement points granted to this unit. | 3 | `1` |
-| [`FlowersOnEndTurn`](./Enums.md) | Integer | The number of flowers spawned on the unit's tile at the end of each turn. | 3 | `1`<br>`3`<br>`4` |
-| [`IncreaseSpellRange`](./Enums.md) | Integer | The number of extra tiles added to the range of spells. | 3 | `10`<br>`2`<br>`20` |
+| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 3 | `1` |
+| `ExtraMovePoints` | Integer | The number of additional movement points granted to this unit. | 3 | `1` |
+| `FlowersOnEndTurn` | Integer | The number of flowers spawned on the unit's tile at the end of each turn. | 3 | `1`<br>`3`<br>`4` |
+| `IncreaseSpellRange` | Integer | The number of extra tiles added to the range of spells. | 3 | `10`<br>`2`<br>`20` |
 | [`KillsToMeat`](./Enums.md#enum-killstomeat) | Enum | Specifies the type of meat item spawned when killing certain enemies. | 3 | `Food` |
-| [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 3 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 3 | `-1`<br>`-2`<br>`-4` |
 | [`MoveAndUseAbilityEachTurnBeginIfPossible`](./Enums.md#enum-moveanduseabilityeachturnbeginifpossible) | Enum | Specifies the name of the ability the unit will move and attempt to use at the start of each of its turns. | 3 | `Cannibalize`<br>`EatShit`<br>`face_EatNeverstone` |
-| [`MoveQuivered`](./Enums.md) | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 3 | `1`<br>`2`<br>`[1, 0.1]` |
-| [`NeckArmorPassiveMultiplierBonus`](./Enums.md) | Integer | A multiplier bonus applied to the passives of the unit's neck armor slot. | 3 | `1`<br>`2` |
+| `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 3 | `1`<br>`2`<br>`[1, 0.1]` |
+| `NeckArmorPassiveMultiplierBonus` | Integer | A multiplier bonus applied to the passives of the unit's neck armor slot. | 3 | `1`<br>`2` |
 | [`PassiveAfterXKills`](./Passives_and_Statuses.md#object-passiveafterxkills) | Object | Activates a set of passive effects (e.g., extra attacks, stat boosts) after the unit achieves a certain number of kills defined by the 'stacks' sub-key. | 3 | `{ . . . }` |
-| [`RangedTrueShot`](./Enums.md) | Integer | Ranged attacks cannot miss or be dodged, guaranteeing a hit. Value acts as a binary flag. | 3 | `1` |
+| `RangedTrueShot` | Integer | Ranged attacks cannot miss or be dodged, guaranteeing a hit. Value acts as a binary flag. | 3 | `1` |
 | [`ReplaceSpawnedObjects`](./Arrays.md#array-replacespawnedobjects) | Array | An array of [original_object replacement_object] pairs for swapping spawned objects. | 3 | `[Boulder AnimatedBoulder]`<br>`[Boulder AnimatedLavaBoulder]`<br>`[Crow Crow2]` |
-| [`RockyArmorPassive`](./Enums.md) | Integer | The number of stacks of the Rocky Armor status effect granted. | 3 | `1` |
+| `RockyArmorPassive` | Integer | The number of stacks of the Rocky Armor status effect granted. | 3 | `1` |
 | [`SetDefaultFacePassive`](./Enums.md#enum-setdefaultfacepassive) | Enum | Specifies the name of the default face passive to be assigned to this unit. | 3 | `euphoric`<br>`insane` |
 | [`SpawnExtraThingsOnBattleStart`](./Passives_and_Statuses.md#object-spawnextrathingsonbattlestart) | Object  | An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start. | 3 | `{ . . . }` |
 | [`SpawnObjectOnPopCorpse`](./Passives_and_Statuses.md#object-spawnobjectonpopcorpse) | Enum / Object | Specifies an object (as a string or an object with 'object', 'count', 'except_tiny' keys) to spawn on a corpse when it is popped. | 3 | `{ . . . }`<br>`Catnip`<br>`Coin`<br>`Food` |
@@ -278,36 +278,36 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusAllCharactersOnSpawn`](./Passives_and_Statuses.md#object-statusallcharactersonspawn) | Object  | Defines status effects applied to all characters when they spawn into the battlefield. | 3 | `{ . . . }` |
 | [`StatusOnBreakItem`](./Passives_and_Statuses.md#object-statusonbreakitem) | Object | An object containing status effects to apply when the unit breaks a weapon or armor item. | 3 | `{ . . . }` |
 | [`StatusOnEatFood`](./Passives_and_Statuses.md#object-statusoneatfood) | Object  | An object listing status effects applied to the unit when it eats food. | 3 | `{ . . . }` |
-| [`TrueShot`](./Enums.md) | Integer | The number of stacks of a buff that makes the unit's attacks unmissable. | 3 | `1` |
+| `TrueShot` | Integer | The number of stacks of a buff that makes the unit's attacks unmissable. | 3 | `1` |
 | [`AddSelfStatusToWeapons`](./Passives_and_Statuses.md#object-addselfstatustoweapons) | Object | An object whose nested keys define status effects applied to the unit's own weapons. | 2 | `{ . . . }` |
 | [`AddStatusToKnockbackDamage`](./Passives_and_Statuses.md#object-addstatustoknockbackdamage) | Object | An object whose nested keys define statuses applied to damage caused by knockback. | 2 | `{ . . . }` |
-| [`AllyDamageReduction`](./Enums.md) | Integer | The amount by which damage dealt to allies is reduced. | 2 | `0` |
+| `AllyDamageReduction` | Integer | The amount by which damage dealt to allies is reduced. | 2 | `0` |
 | [`ArmorBreakOnHit`](./Passives_and_Statuses.md#object-armorbreakonhit) | Object | An object defining durability loss and chance for armor to break when hit. | 2 | `{ . . . }` |
 | [`BouncyProjectiles`](./Passives_and_Statuses.md#object-bouncyprojectiles) | Object | An object with 'max_bounces' and 'max_range' defining projectile bounciness behavior. | 2 | `{ . . . }` |
-| [`BreakWhenNoShield`](./Enums.md) | Integer | If 1, the armor breaks when the unit has no shield remaining. | 2 | `1` |
-| [`CanLevelUpWhenDead`](./Enums.md) | Integer | If 1, allows the unit to gain experience and level up while dead. | 2 | `1` |
-| [`CanRemoveCursedItems`](./Enums.md) | Integer | If nonzero, allows the unit to remove cursed items from equipment slots. | 2 | `1` |
-| [`CapMovementAbilityRange`](./Enums.md) | Integer | The maximum range allowed for movement abilities. | 2 | `1` |
-| [`ConsumableEffectsMultiplierBonus`](./Enums.md) | Integer | A multiplier bonus applied to the effects of consumable items. | 2 | `1` |
-| [`CopyPassiveSlot`](./Enums.md) | Integer | An index (0-based) specifying which equipment slot's passive to copy onto this unit. | 2 | `0`<br>`1` |
+| `BreakWhenNoShield` | Integer | If 1, the armor breaks when the unit has no shield remaining. | 2 | `1` |
+| `CanLevelUpWhenDead` | Integer | If 1, allows the unit to gain experience and level up while dead. | 2 | `1` |
+| `CanRemoveCursedItems` | Integer | If nonzero, allows the unit to remove cursed items from equipment slots. | 2 | `1` |
+| `CapMovementAbilityRange` | Integer | The maximum range allowed for movement abilities. | 2 | `1` |
+| `ConsumableEffectsMultiplierBonus` | Integer | A multiplier bonus applied to the effects of consumable items. | 2 | `1` |
+| `CopyPassiveSlot` | Integer | An index (0-based) specifying which equipment slot's passive to copy onto this unit. | 2 | `0`<br>`1` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 2 | `{ . . . }` |
 | [`DisableAbilities`](./Enums.md#enum-disableabilities) | Enum | Specifies which category of abilities to disable, such as 'all_items' or 'basic_attack'. | 2 | `all_items`<br>`all_spells`<br>`basic_attack` |
-| [`DoubleCastWeapons`](./Enums.md) | Integer | The number of additional weapon casts per attack. | 2 | `1`<br>`2` |
+| `DoubleCastWeapons` | Integer | The number of additional weapon casts per attack. | 2 | `1`<br>`2` |
 | [`Eternal`](./Passives_and_Statuses.md#object-eternal) | Object | Defines the Eternal revival effect, setting stacks and the health percentage restored. | 2 | `{ . . . }` |
 | [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum  | Specifies the item pool from which an extra item is granted at the end of combat. | 2 | `combat_reward_easy`<br>`pills` |
 | [`FlyDamageIncrease`](./Passives_and_Statuses.md#object-flydamageincrease) | Object | The number of stacks or alias for damage increase against flying units. | 2 | `{ . . . }` |
-| [`GainExtraShield`](./Enums.md) | Integer | The amount of shield gained on turn start. | 2 | `2`<br>`4` |
-| [`HPGainBlock`](./Enums.md) | Integer | If true, the unit cannot gain health from any source. | 2 | `1` |
+| `GainExtraShield` | Integer | The amount of shield gained on turn start. | 2 | `2`<br>`4` |
+| `HPGainBlock` | Integer | If true, the unit cannot gain health from any source. | 2 | `1` |
 | [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Specifies the object left behind on the tile once per move. | 2 | `Poop`<br>`Scrap` |
-| [`MoveSpeedMultiplier`](./Enums.md) | Float | A multiplier for the unit's movement speed. | 2 | `.5` |
+| `MoveSpeedMultiplier` | Float | A multiplier for the unit's movement speed. | 2 | `.5` |
 | [`PassiveIfWeaponIsUsable`](./Passives_and_Statuses.md#object-passiveifweaponisusable) | Object | Activates a set of passive effects (e.g., Brace) only if the unit's current weapon is in a usable condition (not broken or disabled). | 2 | `{ . . . }` |
 | [`PassiveWhileInMonkMeleeStance`](./Passives_and_Statuses.md#object-passivewhileinmonkmeleestance) | Object | Applies specific passive effects (e.g., Brace, HealthRegenUp) while the unit is in the Monk's melee combat stance. | 2 | `{ . . . }` |
 | [`PoopWhenHit`](./Passives_and_Statuses.md#object-poopwhenhit) | Object  | Specifies the object (e.g., Poop) spawned when the unit is hit, or an object with `chance` and `object`. | 2 | `{ . . . }` |
 | [`RefreshEquipmentAbilityOnElement`](./Passives_and_Statuses.md#object-refreshequipmentabilityonelement) | Object | Refreshes the cooldown of the unit's equipment ability when the unit's attack matches the specified element (e.g., Electric), displaying a recharge popup. | 2 | `{ . . . }` |
-| [`RemoveLineOfSightRestrictions`](./Enums.md) | Integer | Line of sight requirements for targeting are ignored, allowing the unit to target any visible cell regardless of obstacles. | 2 | `1` |
+| `RemoveLineOfSightRestrictions` | Integer | Line of sight requirements for targeting are ignored, allowing the unit to target any visible cell regardless of obstacles. | 2 | `1` |
 | [`ScaledStatusOnSpendMana`](./Passives_and_Statuses.md#object-scaledstatusonspendmana) | Object | An object containing status effect definitions to apply when the unit spends mana, with the number of stacks scaled by the amount of mana spent. | 2 | `{ . . . }` |
 | [`SpawnItemLinkedFamiliar`](./Passives_and_Statuses.md#object-spawnitemlinkedfamiliar) | Object | An object defining a familiar to spawn that is linked to a specific item, which breaks when the familiar is defeated. | 2 | `{ . . . }` |
-| [`SpawnNearEnemies`](./Enums.md) | Integer | The number of units to spawn near each enemy at the start of battle. | 2 | `1` |
+| `SpawnNearEnemies` | Integer | The number of units to spawn near each enemy at the start of battle. | 2 | `1` |
 | [`StatusAfterXTurns`](./Passives_and_Statuses.md#object-statusafterxturns) | Object  | Applies a status effect or forces an ability usage after a set number of turns. | 2 | `{ . . . }` |
 | [`StatusEachTurnEndForEachTurn`](./Passives_and_Statuses.md#object-statuseachturnendforeachturn) | Object  | Statuses applied at the end of each turn, with the number of turns as nested values. | 2 | `{ . . . }` |
 | [`StatusIfUnusedActPoints`](./Passives_and_Statuses.md#object-statusifunusedactpoints) | Object | An object containing status effects to apply to the unit if it has unused action points at the end of its turn. | 2 | `{ . . . }` |
@@ -317,75 +317,75 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusOnPickupCoins`](./Passives_and_Statuses.md#object-statusonpickupcoins) | Object | Specifies the effects applied when the unit picks up coins. | 2 | `{ . . . }` |
 | [`StatusOnUseBasicAttack`](./Passives_and_Statuses.md#object-statusonusebasicattack) | Object | Specifies the effects applied when the unit performs a basic attack. | 2 | `{ . . . }` |
 | [`StatusWhenAllySpendsMana`](./Passives_and_Statuses.md#object-statuswhenallyspendsmana) | Object | Specifies the effects applied when an ally spends mana. | 2 | `{ . . . }` |
-| [`TauntAlways`](./Enums.md) | Integer | If non-zero, the unit is always taunted, forcing it to target the first enemy in range. | 2 | `1` |
-| [`Uncontrollable`](./Enums.md) | Integer | If non-zero, the unit becomes uncontrollable by the player. | 2 | `1` |
-| [`WeaponDamageMultiplierBonus`](./Enums.md) | Integer | Bonus multiplier to weapon damage. | 2 | `1`<br>`2` |
+| `TauntAlways` | Integer | If non-zero, the unit is always taunted, forcing it to target the first enemy in range. | 2 | `1` |
+| `Uncontrollable` | Integer | If non-zero, the unit becomes uncontrollable by the player. | 2 | `1` |
+| `WeaponDamageMultiplierBonus` | Integer | Bonus multiplier to weapon damage. | 2 | `1`<br>`2` |
 | [`AIControlNextTurn`](./Passives_and_Statuses.md#object-aicontrolnextturn) | Object | An object that causes the unit to be controlled by the AI on its next turn, with configurable stacks and spell usage. | 1 | `{ . . . }` |
-| [`AOEBonus`](./Enums.md) | Integer | The bonus number of additional targets or tiles affected by an area-of-effect ability. | 1 | `1` |
+| `AOEBonus` | Integer | The bonus number of additional targets or tiles affected by an area-of-effect ability. | 1 | `1` |
 | [`AbilityOnRoundEndOnce`](./Passives_and_Statuses.md#object-abilityonroundendonce) | Object | Specifies an ability to be used once at the end of the round. | 1 | `{ . . . }` |
 | [`AddAdvantageToEvent`](./Passives_and_Statuses.md#object-addadvantagetoevent) | Object | Specifies additional advantage options to add to a specific event type. | 1 | `{ . . . }` |
 | [`AddStatusToBackstabs`](./Passives_and_Statuses.md#object-addstatustobackstabs) | Object | An object defining statuses applied to the target when the unit performs a backstab attack. | 1 | `{ . . . }` |
-| [`AllSpellsCostCharge`](./Enums.md) | Integer | The number of charges required to cast any spell, adding a universal charge cost. | 1 | `1` |
-| [`AllUnitsExplodeOnDeath`](./Enums.md) | Integer | The radius of the explosion that triggers when any unit dies. | 1 | `5` |
-| [`AlliesScrambleSpellAfterCast`](./Enums.md) | Integer | The number of times an ally's next spell cast will be scrambled (randomly redirected or modified) after the owner casts a spell. | 1 | `1` |
+| `AllSpellsCostCharge` | Integer | The number of charges required to cast any spell, adding a universal charge cost. | 1 | `1` |
+| `AllUnitsExplodeOnDeath` | Integer | The radius of the explosion that triggers when any unit dies. | 1 | `5` |
+| `AlliesScrambleSpellAfterCast` | Integer | The number of times an ally's next spell cast will be scrambled (randomly redirected or modified) after the owner casts a spell. | 1 | `1` |
 | [`AlluringDoodieEater`](./Passives_and_Statuses.md#object-alluringdoodieeater) | Object | An object defining the chance and damage instance for a unit that consumes an alluring doodie. | 1 | `{ . . . }` |
 | [`AllyDodgeChanceAura`](./Passives_and_Statuses.md#object-allydodgechanceaura) | Object | An object granting allies within a specified range a percentage chance to dodge incoming attacks. | 1 | `{ . . . }` |
-| [`AlphaAllStatsUp`](./Enums.md) | Integer | The amount by which all of the unit's stats are increased if it is the alpha (highest stat total or designated leader). | 1 | `1` |
-| [`AlphaCat`](./Enums.md) | Integer | The number of AlphaCat stacks applied to the source on kill. | 1 | `1` |
-| [`AlwaysChosenForLevelUp`](./Enums.md) | Integer | If set to 1, this unit is always presented as a level-up option when gaining a level. | 1 | `1` |
+| `AlphaAllStatsUp` | Integer | The amount by which all of the unit's stats are increased if it is the alpha (highest stat total or designated leader). | 1 | `1` |
+| `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 1 | `1` |
+| `AlwaysChosenForLevelUp` | Integer | If set to 1, this unit is always presented as a level-up option when gaining a level. | 1 | `1` |
 | [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Enum / Object  | The number of backflip charges, or an object defining its ability. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
-| [`BalanceStats`](./Enums.md) | Integer | If set to 1, the unit's stats are balanced (redistributed) towards an average value. | 1 | `1` |
-| [`BasicAttackCantMiss`](./Enums.md) | Integer | If nonzero, the unit's basic attack cannot miss. | 1 | `1` |
-| [`Blind`](./Enums.md) | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 1 | `-1`<br>`1`<br>`2` |
-| [`BlockDamageUnderThreshold`](./Enums.md) | Integer | The maximum amount of damage from a single hit that will be completely blocked. | 1 | `1` |
-| [`BlockNegativeStatus`](./Enums.md) | Integer | The percentage chance to completely block the application of a negative status effect. | 1 | `30%` |
-| [`BoostReceivedHealing`](./Enums.md) | Integer | The amount of bonus healing received from all sources. | 1 | `2` |
-| [`CapBasicAttackDamage`](./Enums.md) | Integer | The maximum amount of damage that can be dealt by a basic attack. | 1 | `1` |
+| `BalanceStats` | Integer | If set to 1, the unit's stats are balanced (redistributed) towards an average value. | 1 | `1` |
+| `BasicAttackCantMiss` | Integer | If nonzero, the unit's basic attack cannot miss. | 1 | `1` |
+| `Blind` | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 1 | `-1`<br>`1`<br>`2` |
+| `BlockDamageUnderThreshold` | Integer | The maximum amount of damage from a single hit that will be completely blocked. | 1 | `1` |
+| `BlockNegativeStatus` | Integer | The percentage chance to completely block the application of a negative status effect. | 1 | `30%` |
+| `BoostReceivedHealing` | Integer | The amount of bonus healing received from all sources. | 1 | `2` |
+| `CapBasicAttackDamage` | Integer | The maximum amount of damage that can be dealt by a basic attack. | 1 | `1` |
 | [`CatPartsSizeScale`](./Passives_and_Statuses.md#object-catpartssizescale) | Object | A multiplier for the size of specific cat parts (e.g., head, body). | 1 | `{ . . . }` |
-| [`ChanceToAmbush`](./Enums.md) | Integer | The percentage chance for the unit to ambush an enemy. | 1 | `25%` |
+| `ChanceToAmbush` | Integer | The percentage chance for the unit to ambush an enemy. | 1 | `25%` |
 | [`ChanceToForceEvent`](./Passives_and_Statuses.md#object-chancetoforceevent) | Object | Defines the chance and the specific event to force to occur. | 1 | `{ . . . }` |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
-| [`CharismaIsMaxStat`](./Enums.md) | Integer | Treats the Charisma stat as the character's maximum stat for calculations. | 1 | `1` |
-| [`CharmImmunity`](./Enums.md) | Integer | If true, the unit is immune to the Charmed status effect. | 1 | `1` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `CharismaIsMaxStat` | Integer | Treats the Charisma stat as the character's maximum stat for calculations. | 1 | `1` |
+| `CharmImmunity` | Integer | If true, the unit is immune to the Charmed status effect. | 1 | `1` |
 | [`ConvertDamageToScaledStatus`](./Passives_and_Statuses.md#object-convertdamagetoscaledstatus) | Object | Converts a portion of incoming damage into a specified status effect with a given number of stacks. | 1 | `{ . . . }` |
-| [`CounterNextAttacks`](./Enums.md) | Integer | The number of incoming attacks the unit will counterattack. | 1 | `2` |
-| [`DisablePassiveSlot`](./Enums.md) | Integer | If non-zero, disables the specified passive slot index (0 or 1). | 1 | `0`<br>`1` |
-| [`DoubleCastSpellIfManaCostUnderThreshold`](./Enums.md) | Integer | If a spell's mana cost is under this threshold, it will be cast twice. | 1 | `3` |
+| `CounterNextAttacks` | Integer | The number of incoming attacks the unit will counterattack. | 1 | `2` |
+| `DisablePassiveSlot` | Integer | If non-zero, disables the specified passive slot index (0 or 1). | 1 | `0`<br>`1` |
+| `DoubleCastSpellIfManaCostUnderThreshold` | Integer | If a spell's mana cost is under this threshold, it will be cast twice. | 1 | `3` |
 | [`DoubleCastTaggedSpells`](./Enums.md#enum-doublecasttaggedspells) | Enum | Specifies the spell tag (e.g., musical) that causes spells to be cast twice. | 1 | `musical` |
-| [`DoubleReceivedNegativeStatus`](./Enums.md) | Integer | If true, the unit receives double the stacks of negative status effects applied to it. | 1 | `1` |
-| [`DoubleReceivedPositiveStatus`](./Enums.md) | Integer | If true, the unit receives double the stacks of positive status effects applied to it. | 1 | `1` |
+| `DoubleReceivedNegativeStatus` | Integer | If true, the unit receives double the stacks of negative status effects applied to it. | 1 | `1` |
+| `DoubleReceivedPositiveStatus` | Integer | If true, the unit receives double the stacks of positive status effects applied to it. | 1 | `1` |
 | [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Specifies the familiar type to be dropped when the unit takes damage. | 1 | `PhantomMaskRock` |
 | [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Specifies the type of soul jar to be dropped when the unit dies. | 1 | `SoulJar_Full` |
 | [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Specifies the event type (e.g., Tragedy) that this unit is excluded from participating in. | 1 | `Tragedy` |
-| [`ExplosionImmunity`](./Enums.md) | Integer | If non-zero, grants immunity to explosion damage. | 1 | `1` |
-| [`ExtraBasicAttacks_Status`](./Enums.md) | Integer | The number of additional basic attacks the unit can perform each turn. | 1 | `1` |
-| [`ExtraTrinketUses`](./Enums.md) | Integer | The number of additional uses granted to trinkets. | 1 | `1`<br>`10` |
-| [`FrankBolts`](./Enums.md) | Integer | The number of Frank Bolts applied or available. | 1 | `1` |
+| `ExplosionImmunity` | Integer | If non-zero, grants immunity to explosion damage. | 1 | `1` |
+| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 1 | `1` |
+| `ExtraTrinketUses` | Integer | The number of additional uses granted to trinkets. | 1 | `1`<br>`10` |
+| `FrankBolts` | Integer | The number of Frank Bolts applied or available. | 1 | `1` |
 | [`GlobalMeleeRevengeDamage`](./Passives_and_Statuses.md#object-globalmeleerevengedamage) | Object | Defines revenge damage properties (e.g., knockback) when hit by a melee attack. | 1 | `{ . . . }` |
-| [`HideSomeHudStuff`](./Enums.md) | Integer | If set to 1, hides certain HUD elements. | 1 | `1` |
-| [`JesterLevelUpRerolls`](./Enums.md) | Integer | The number of additional rerolls granted when leveling up. | 1 | `1` |
-| [`Lifesteal`](./Enums.md) | Integer | The amount of lifesteal stacks applied. | 1 | `1`<br>`3` |
-| [`MakeBasicAttackPull`](./Enums.md) | Integer | If nonzero, the unit's basic attack pulls the target closer. | 1 | `1` |
-| [`ModelingClayPassive`](./Enums.md) | Integer | If set to 1, enables the passive that duplicates the equipped item on the unit. | 1 | `1` |
-| [`MultiplyCoinsOnBattleStart`](./Enums.md) | Integer | The multiplier applied to the unit's coin count at the start of battle. | 1 | `2` |
-| [`MultiplyReceivedHealing`](./Enums.md) | Integer | The multiplier applied to all healing the unit receives. | 1 | `2` |
+| `HideSomeHudStuff` | Integer | If set to 1, hides certain HUD elements. | 1 | `1` |
+| `JesterLevelUpRerolls` | Integer | The number of additional rerolls granted when leveling up. | 1 | `1` |
+| `Lifesteal` | Integer | The amount of lifesteal stacks applied. | 1 | `1`<br>`3` |
+| `MakeBasicAttackPull` | Integer | If nonzero, the unit's basic attack pulls the target closer. | 1 | `1` |
+| `ModelingClayPassive` | Integer | If set to 1, enables the passive that duplicates the equipped item on the unit. | 1 | `1` |
+| `MultiplyCoinsOnBattleStart` | Integer | The multiplier applied to the unit's coin count at the start of battle. | 1 | `2` |
+| `MultiplyReceivedHealing` | Integer | The multiplier applied to all healing the unit receives. | 1 | `2` |
 | [`ObjectDetector`](./Passives_and_Statuses.md#object-objectdetector) | Object | An object that grants a chance to detect a specific item (e.g., CharmedDip) when loot is evaluated. | 1 | `{ . . . }` |
 | [`PassiveIfStrAuxEquals`](./Passives_and_Statuses.md#object-passiveifstrauxequals) | Object | Grants the contained passive effects when the unit's specified auxiliary stat equals the given value. | 1 | `{ . . . }` |
 | [`PassiveWhileHasDurability`](./Passives_and_Statuses.md#object-passivewhilehasdurability) | Object | An object containing passives that are active only while the item has remaining durability. | 1 | `{ . . . }` |
 | [`PassiveWhileShielded`](./Passives_and_Statuses.md#object-passivewhileshielded) | Object | An object containing passives that are active only while the unit has a shield. | 1 | `{ . . . }` |
-| [`PhysicalAttacksMiss`](./Enums.md) | Integer | If set to 1, all physical attacks against the unit automatically miss. | 1 | `1` |
-| [`PreventSpecificInjury`](./Enums.md) | Enum | Specifies a body part tag (e.g., 'int' for head) that cannot receive injuries. | 1 | `int` |
-| [`ReclaimItemOnBreak`](./Enums.md) | Integer | If set to 1, the item returns to the inventory when it breaks instead of being lost. | 1 | `1` |
-| [`ReduceManaCost`](./Enums.md) | Integer | The number of stacks reducing mana cost of abilities. | 1 | `1`<br>`2` |
-| [`ReduceSpellCostsPerDisorder`](./Enums.md) | Integer | The amount of mana cost reduction per disorder the unit has. | 1 | `1` |
-| [`ReduceSpellCostsPerParasite`](./Enums.md) | Integer | The amount of mana cost reduction per parasite the unit is hosting. | 1 | `1` |
+| `PhysicalAttacksMiss` | Integer | If set to 1, all physical attacks against the unit automatically miss. | 1 | `1` |
+| `PreventSpecificInjury` | Enum | Specifies a body part tag (e.g., 'int' for head) that cannot receive injuries. | 1 | `int` |
+| `ReclaimItemOnBreak` | Integer | If set to 1, the item returns to the inventory when it breaks instead of being lost. | 1 | `1` |
+| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 1 | `1`<br>`2` |
+| `ReduceSpellCostsPerDisorder` | Integer | The amount of mana cost reduction per disorder the unit has. | 1 | `1` |
+| `ReduceSpellCostsPerParasite` | Integer | The amount of mana cost reduction per parasite the unit is hosting. | 1 | `1` |
 | [`ReplaceBlankTilesOnBattleStart`](./Enums.md#enum-replaceblanktilesonbattlestart) | Enum | Specifies a tile type (e.g., GlassTile) that replaces all blank tiles on the battle grid at the start of combat. | 1 | `GlassTile` |
-| [`RerollItemsOnBattleEnd`](./Enums.md) | Integer | If set to 1, all items in the unit's inventory are rerolled to new random items at the end of battle. | 1 | `1` |
+| `RerollItemsOnBattleEnd` | Integer | If set to 1, all items in the unit's inventory are rerolled to new random items at the end of battle. | 1 | `1` |
 | [`ScaldingOrbMoonBossOneShot`](./Passives_and_Statuses.md#object-scaldingorbmoonbossoneshot) | Object | An object that completes the ScaldingOrb quest and removes the item from the unit's inventory. | 1 | `{ . . . }` |
 | [`ScaledStatusAlliesOnSpendMana`](./Passives_and_Statuses.md#object-scaledstatusalliesonspendmana) | Object | An object that applies a scaled status (e.g., ManaGain) to adjacent allies whenever the unit spends mana. | 1 | `{ . . . }` |
 | [`ScaledStatusOnHolyShieldBlock`](./Passives_and_Statuses.md#object-scaledstatusonholyshieldblock) | Object | An object that applies a scaled status (e.g., RandomMagicMissile) when the unit blocks an attack with a holy shield. | 1 | `{ . . . }` |
 | [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Specifies the faction the unit belongs to (e.g., 'enemies'). | 1 | `enemies` |
-| [`SpawnCatCloneOnCorpsePopped`](./Enums.md) | Integer | The number of cat clones spawned when a corpse is popped (destroyed) by the unit. | 1 | `1` |
+| `SpawnCatCloneOnCorpsePopped` | Integer | The number of cat clones spawned when a corpse is popped (destroyed) by the unit. | 1 | `1` |
 | [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum  | Specifies the character or object spawned when the unit is downed. | 1 | `CharmedFly`<br>`CharmedKitten`<br>`CharmedSpookie` |
 | [`SpawnRandomPickupsOnTaggedUnitKilled`](./Passives_and_Statuses.md#object-spawnrandompickupsontaggedunitkilled) | Object | Defines a pool of random pickups (items) spawned when a unit with a specific tag is killed, with a count range. | 1 | `{ . . . }` |
 | [`StatDependentPassive`](./Passives_and_Statuses.md#object-statdependentpassive) | Object | An object containing formulas that dynamically modify passive effects based on the unit's stats (e.g., str, dex, int). | 1 | `{ . . . }` |
@@ -395,8 +395,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`StatusOnEnemyDeath`](./Passives_and_Statuses.md#object-statusonenemydeath) | Object | Defines a status effect applied to the unit each time an enemy dies. | 1 | `{ . . . }` |
 | [`StatusOnFallAsleep`](./Passives_and_Statuses.md#object-statusonfallasleep) | Object | Defines one or more beneficial status effects applied to the unit when it falls asleep. | 1 | `{ . . . }` |
 | [`StatusOnFullMana`](./Passives_and_Statuses.md#object-statusonfullmana) | Object | Defines a status effect applied to the unit when its mana is full, with an optional once-per-battle conditional. | 1 | `{ . . . }` |
-| [`StevenBolts`](./Enums.md) | Integer | The number of Steven Bolts (a special resource or charge) the unit has for a unique ability. | 1 | `1` |
-| [`StripKnockback`](./Enums.md) | Integer | If non-zero, removes all knockback effects from the unit's attacks or abilities. | 1 | `1` |
+| `StevenBolts` | Integer | The number of Steven Bolts (a special resource or charge) the unit has for a unique ability. | 1 | `1` |
+| `StripKnockback` | Integer | If non-zero, removes all knockback effects from the unit's attacks or abilities. | 1 | `1` |
 | [`TintItem`](./Passives_and_Statuses.md#object-tintitem) | Object | Defines additive and multiplicative color tint adjustments applied to an item's appearance, with an optional ignore condition. | 1 | `{ . . . }` |
 | [`TunnelVision`](./Passives_and_Statuses.md#object-tunnelvision) | Object | If present, grants the TunnelVision status, which modifies crit_chance as defined in its sub-properties. | 1 | `{ . . . }` |
 
@@ -415,41 +415,41 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Items_and_Equipment.md#context-addpassivestominions), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`AddPassivesToMinions`](./Items_and_Equipment.md#object-addpassivestominions), [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 121 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 45 | Default<br>FormChange<br>Druid |
-| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 29 | `1`<br>`10`<br>`2` |
-| [`Knockback`](./Enums.md) | Equation | The number of tiles the target is pushed away from the source on hit. | 24 | `1`<br>`10`<br>`2` |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 16 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` | `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 45 | Default<br>FormChange<br>Druid |
+| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 29 | `1`<br>`10`<br>`2` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 24 | `1`<br>`10`<br>`2` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 16 | `1`<br>`10`<br>`2` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 13 | `1`<br>`10`<br>`2` |
-| [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 12 | `1`<br>`2`<br>`3` |
+| `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 12 | `1`<br>`2`<br>`3` |
 | [`ChangeTile`](./Enums.md#enum-changetile) | Enum  | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 10 | `BlankTile`<br>`BrambleTile`<br>`CreepTile` |
-| [`Slow`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 10 | `-1`<br>`1`<br>`2` |
+| `Slow` | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 10 | `-1`<br>`1`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`2`<br>`3` |
-| [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 7 | `1`<br>`10`<br>`2` |
-| [`Weakness`](./Enums.md) | Integer | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 7 | `1`<br>`2`<br>`3` |
-| [`Leech`](./Enums.md) | Integer | The amount of health leeched from the target (heals the attacker). | 5 | `1`<br>`2` |
-| [`Rot`](./Enums.md) | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 5 | `-999999`<br>`1`<br>`2` |
-| [`DamageOrHealConditionally`](./Enums.md) | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 4 | `1` |
+| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 7 | `1`<br>`10`<br>`2` |
+| `Weakness` | Integer | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 7 | `1`<br>`2`<br>`3` |
+| `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 5 | `1`<br>`2` |
+| `Rot` | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 5 | `-999999`<br>`1`<br>`2` |
+| `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 4 | `1` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 4 | `1`<br>`2`<br>`[1 .01]` |
-| [`Leeches`](./Enums.md) | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 4 | `1`<br>`2`<br>`3` |
-| [`SoulLink`](./Enums.md) | Integer | The number of soul link stacks applied. | 4 | `1` |
+| `Leeches` | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 4 | `1`<br>`2`<br>`3` |
+| `SoulLink` | Integer | The number of soul link stacks applied. | 4 | `1` |
 | [`Tangled`](./Arrays.md#array-tangled) | Array  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 4 | `1`<br>`2`<br>`[1, .05]` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 3 | `{ . . . }` |
-| [`MagicWeakness`](./Enums.md) | Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`3` |
+| `MagicWeakness` | Integer | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`3` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 2 | `{ . . . }` |
-| [`Blind`](./Enums.md) | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 2 | `-1`<br>`1`<br>`2` |
-| [`KnockOutCoin`](./Enums.md) | Integer | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 2 | `1`<br>`[1 .5]` |
-| [`ManaLeeches`](./Enums.md) | Integer | The number of mana leech stacks applied. | 2 | `1`<br>`2` |
-| [`OverrideChainKnockback`](./Enums.md) | Integer | The custom number of tiles for chain knockback, overriding the default. | 2 | `0`<br>`1`<br>`10` |
-| [`SpiderInfested`](./Enums.md) | Integer | The number of spider infestation stacks applied. | 2 | `1`<br>`2`<br>`4` |
+| `Blind` | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 2 | `-1`<br>`1`<br>`2` |
+| `KnockOutCoin` | Integer | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 2 | `1`<br>`[1 .5]` |
+| `ManaLeeches` | Integer | The number of mana leech stacks applied. | 2 | `1`<br>`2` |
+| `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 2 | `0`<br>`1`<br>`10` |
+| `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 2 | `1`<br>`2`<br>`4` |
 | [`ForceUseAbilityOnTarget`](./Miscellaneous.md#object-forceuseabilityontarget) | Object | Defines a chance to force the unit to use a specified ability on the target. | 1 | `{ . . . }` |
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
-| [`Marked`](./Enums.md) | Integer | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
-| [`PullSourceToTarget`](./Enums.md) | Integer | The amount of tiles the source is pulled towards the target after the attack. | 1 | `1` |
+| `Marked` | Integer | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
+| `PullSourceToTarget` | Integer | The amount of tiles the source is pulled towards the target after the attack. | 1 | `1` |
 
 </details>
 
@@ -466,7 +466,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnKill`](./Items_and_Equipment.md#context-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`effects`](./Items_and_Equipment.md#context-effects)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend), [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend), [`StatusOnKill`](./Items_and_Equipment.md#object-statusonkill), [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#object-statusontakehealthorshielddamage), [`effects`](./Items_and_Equipment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -475,9 +475,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>	ag |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`2`<br>`[1 .01]` |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 5 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`ForceUseAbility_NonStack`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 4 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` |
+| `ForceUseAbility_NonStack` | `String` | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 4 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 3 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`RandomMutation`](./Enums.md) | Integer | The number of random mutations to apply. | 3 | `1`<br>`3` |
+| `RandomMutation` | Integer | The number of random mutations to apply. | 3 | `1`<br>`3` |
 | `DestroyTrinket` | `Number` | The number of trinkets destroyed. | 1 | `1` |
 
 </details>
@@ -495,27 +495,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DoDamage`](./Items_and_Equipment.md#context-dodamage), [`MeleeRevengeDamage`](./Items_and_Equipment.md#context-meleerevengedamage), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`damage_instance`](./Items_and_Equipment.md#context-damage_instance)
+> **Referenced by:** [`DoDamage`](./Items_and_Equipment.md#object-dodamage), [`MeleeRevengeDamage`](./Items_and_Equipment.md#object-meleerevengedamage), [`RevengeDamage`](./Items_and_Equipment.md#object-revengedamage), [`damage_instance`](./Items_and_Equipment.md#object-damage_instance)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1085 | passives<br>class<br>	ag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 624 | Default<br>FormChange<br>Druid |
 | [`Stun`](./Arrays.md#array-stun) | Array  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 98 | `1`<br>`2`<br>`3` |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 85 | `1`<br>`10`<br>`2` |
-| [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 79 | `1`<br>`2`<br>`3` |
-| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 67 | `1`<br>`10`<br>`2` |
-| [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 37 | `1`<br>`10`<br>`2` |
-| [`VisualFXTile`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the visual effect to play on the target tile. | 34 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 85 | `1`<br>`10`<br>`2` |
+| `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 79 | `1`<br>`2`<br>`3` |
+| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 67 | `1`<br>`10`<br>`2` |
+| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 37 | `1`<br>`10`<br>`2` |
+| `VisualFXTile` | `String` | Specifies the name of the visual effect to play on the target tile. | 34 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 31 | `1`<br>`10`<br>`2` |
-| [`Slow`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 29 | `-1`<br>`1`<br>`2` |
-| [`BounceObject`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the object or projectile to spawn and bounce from the target. | 26 | `AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
-| [`Blind`](./Enums.md) | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 24 | `-1`<br>`1`<br>`2` |
-| [`Immobile`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 24 | `0`<br>`1`<br>`10%` |
+| `Slow` | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 29 | `-1`<br>`1`<br>`2` |
+| `BounceObject` | `String` | Specifies the object or projectile to spawn and bounce from the target. | 26 | `AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
+| `Blind` | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 24 | `-1`<br>`1`<br>`2` |
+| `Immobile` | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 24 | `0`<br>`1`<br>`10%` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 19 | `1`<br>`2`<br>`[1 .01]` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 14 | `{ . . . }` |
-| [`Cleave`](./Enums.md) | Integer | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 12 | `1` |
-| [`VisualFX`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of the visual effect to play. | 10 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
+| `Cleave` | Integer | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 12 | `1` |
+| `VisualFX` | `String` | Specifies the name of the visual effect to play. | 10 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
 | [`Grappled`](./Arrays.md#array-grappled) | Array  | The number of stacks and probability of applying the Grappled status, in format [stacks, probability] or just stacks. | 8 | `1`<br>`[1, .50]`<br>`[1, .75]` |
 | `DestroyTrinket` | Integer | The number of trinkets destroyed. | 3 | `1` |
 
@@ -534,7 +534,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -558,24 +558,24 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./Items_and_Equipment.md#context-applypassives), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`ApplyPassives`](./Items_and_Equipment.md#object-applypassives), [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 56 | passives<br>class<br>	ag |
 | `even_if_dead` | Boolean | If true, the effect triggers even if the unit is dead. | 25 | `true` |
-| [`RandomMutation`](./Enums.md) | Integer | The number of random mutations to apply. | 9 | `1`<br>`3` |
+| `RandomMutation` | Integer | The number of random mutations to apply. | 9 | `1`<br>`3` |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 8 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`RandomPermanentStat`](./Enums.md) | Integer | The amount of a random permanent stat change (positive or negative). | 8 | `-1`<br>`-2`<br>`-3` |
+| `RandomPermanentStat` | Integer | The amount of a random permanent stat change (positive or negative). | 8 | `-1`<br>`-2`<br>`-3` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 6 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | [`PermanentIntelligence`](./Enums.md) | Integer | The permanent amount of intelligence added or removed. | 8 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. | 8 | Default<br>FormChange<br>Druid |
 | [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer  | The amount of coins gained, or a [min, max] range. | 2 | `-5`<br>`1`<br>`2` |
-| [`PermanentConstitution`](./Enums.md) | Integer | The amount of permanent Constitution stat added or removed. | 2 | `-1`<br>`-2`<br>`1` |
-| [`RepairTrinket`](./Enums.md) | Integer | The number of stacks of the Repair Trinket status effect to apply. | 2 | `1`<br>`99` |
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 2 | `-1`<br>`-2`<br>`1` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 2 | `1`<br>`99` |
 | [`SetItemAux`](./Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 2 | `{ . . . }` |
 | [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
 | [`Conditional_Shielded`](./Passives_and_Statuses.md#object-conditional_shielded) | Object | An object containing effects that are only applied if the target has a shield active. | 1 | `{ . . . }` |
-| [`RepairAll`](./Enums.md) | Integer | The amount of durability restored to all equipped items. | 1 | `1`<br>`10` |
+| `RepairAll` | Integer | The amount of durability restored to all equipped items. | 1 | `1`<br>`10` |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
 
@@ -594,22 +594,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 42 | passives<br>class<br>	ag |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 12 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 5 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | `Default`<br>`FormChange`<br>`Druid` | [`PartialCleanse`](./Enums.md) | Integer | The number of stacks of temporary status effects to remove from the target. | 7 | Default<br>FormChange<br>Druid |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 5 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | `Default`<br>`FormChange`<br>`Druid` | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 7 | Default<br>FormChange<br>Druid |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 2 | `{ . . . }` |
 | [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 2 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
-| [`SpawnCoinAnywhere`](./Enums.md) | Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 2 | `1`<br>`[1 .5]` |
-| [`AddWeaponAux`](./Enums.md) | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 1 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [`Conditional_ManaThreshold`](./Engine_LogicKeys.md#conditional_manathreshold) | Object | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
-| [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`PreEmptiveCounterNextAttacks`](./Enums.md) | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 1 | `1` |
+| `SpawnCoinAnywhere` | Integer | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 2 | `1`<br>`[1 .5]` |
+| `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 1 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [`Conditional_ManaThreshold`](./Items_and_Equipment.md#object-conditional_manathreshold) | Object | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
+| `ConstitutionUp` | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
+| `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 1 | `1` |
 | [`Stealth`](./Arrays.md#array-stealth) | Array  | The number of stealth stacks applied. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
 </details>
@@ -627,26 +627,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 11 | passives<br>class<br>	ag |
 | [`GainCoinsRange`](./Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 5 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 4 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 4 | Default<br>FormChange<br>Druid |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 3 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 3 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 3 | `1`<br>`2`<br>`3` |
-| [`PermanentConstitution`](./Enums.md) | Integer | The amount of permanent Constitution stat added or removed. | 3 | `-1`<br>`-2`<br>`1` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 3 | `1`<br>`2`<br>`3` |
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 3 | `-1`<br>`-2`<br>`1` |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
-| [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`DexterityUp`](./Enums.md) | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
+| `ConstitutionUp` | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
+| `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum  | The name of the specific item to find and add to the source's inventory. | 1 | `BoneClub`<br>`Molars`<br>`Pearl` |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Specifies the name of the disorder gained. | 1 | `Chungus`<br>`Psychosis` |
-| [`IntelligenceUp`](./Enums.md) | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -663,7 +663,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -685,29 +685,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 20 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 8 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | `HealthGain` | Integer | The amount of health restored to the source. | 8 | Default<br>FormChange<br>Druid |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 4 | `{ . . . }` |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum  | The name of the item to permanently equip to the source. | 3 | `BoneClub`<br>`Kidney` |
-| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 3 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
-| [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
-| [`BrittleCharismaUp`](./Enums.md) | Integer | The number of stacks of temporary Charisma gained on kill. | 1 | `2` |
-| [`BrittleConstitutionUp`](./Enums.md) | Integer | The number of stacks of temporary Constitution gained on kill. | 1 | `2` |
-| [`BrittleDexterityUp`](./Enums.md) | Integer | The number of stacks of temporary Dexterity gained on kill. | 1 | `2` |
-| [`BrittleIntelligenceUp`](./Enums.md) | Integer | The number of stacks of temporary Intelligence gained on kill. | 1 | `2` |
-| [`BrittleLuckUp`](./Enums.md) | Integer | The number of stacks of temporary Luck gained on kill. | 1 | `2` |
-| [`BrittleSpeedUp`](./Enums.md) | Integer | The number of stacks of temporary Speed gained on kill. | 1 | `2` |
-| [`BrittleStrengthUp`](./Enums.md) | Integer | The number of stacks of temporary Strength gained on kill. | 1 | `2` |
-| [`CharismaUp`](./Enums.md) | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 1 | `-1`<br>`-2`<br>`1` |
-| [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`DexterityUp`](./Enums.md) | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
-| [`IntelligenceUp`](./Enums.md) | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 3 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
+| `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 1 | `2` |
+| `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 1 | `2` |
+| `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 1 | `2` |
+| `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 1 | `2` |
+| `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 1 | `2` |
+| `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 1 | `2` |
+| `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 1 | `2` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 1 | `-1`<br>`-2`<br>`1` |
+| `ConstitutionUp` | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
+| `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -724,21 +724,21 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 30 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | `Default`<br>`FormChange`<br>`Druid` | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 13 | Default<br>FormChange<br>Druid |
-| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 4 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 3 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | `Default`<br>`FormChange`<br>`Druid` | `Charge` | Integer | The number of charge stacks applied. | 13 | Default<br>FormChange<br>Druid |
+| `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 4 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 3 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 3 | `{ . . . }` |
-| [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 3 | `1`<br>`2`<br>`3` |
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 3 | `1`<br>`2`<br>`3` |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
-| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
-| [`Conditional_HealthThreshold`](./Engine_LogicKeys.md#conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
+| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
-| [`DodgeChance_Status`](./Enums.md) | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 | [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum  | The name of the status effect to remove from the source. | 1 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 
 </details>
@@ -756,22 +756,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 7 | `Default`<br>`FormChange`<br>`Druid` | [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Specifies the loot pool and slot to craft an item for the source. | 3 | Default<br>FormChange<br>Druid |
-| [`SafeDie`](./Enums.md) | Integer | The number of times the unit can survive a fatal hit. | 2 | `1` |
-| [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
+| `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 2 | `1` |
+| `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
 | [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 1 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
+| `RandomMagicMissile` | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
 | [`ReviveNextRound`](./Miscellaneous.md#object-revivenextround) | Object  | The number of revives granted, or an object defining revive properties. | 1 | `{ . . . }` |
-| [`SetHealth`](./Enums.md) | Integer | Sets the target's health to a specific flat value or percentage. | 1 | `1`<br>`100%`<br>`50%` |
-| [`StealthUntilBasicAttack`](./Enums.md) | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. | 1 | `1` |
+| `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 1 | `1`<br>`100%`<br>`50%` |
+| `StealthUntilBasicAttack` | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. | 1 | `1` |
 
 </details>
 
@@ -788,13 +788,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 20 | `false`<br>`true` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 | `spawn_on_death_hit` | Boolean | If true, spawning only occurs when the damage is lethal. | 10 | `false` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
@@ -813,12 +813,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 22 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A probability (decimal or percentage) for a form change or other effect to occur. | 20 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 20 | `.02`<br>`.1`<br>`.15` |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 5 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 
 </details>
@@ -836,23 +836,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#object-passivewhendead), [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
 | [`Conditional_BadRoll`](./Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 5 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 10 | Default<br>FormChange<br>Druid |
-| [`BlessingOfPeace`](./Enums.md) | Integer | The number of stacks of the Blessing of Peace status applied to the unit each turn. | 1 | `1` |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [`DestroyTrinket`](./Enums.md) | Integer | The number of trinkets destroyed. | 1 | `1` |
-| [`DoubleCastSpellThisTurn`](./Enums.md) | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 1 | `1` |
-| [`DrinkWater`](./Enums.md) | Integer | The number of water-drink actions performed. | 1 | `1` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 10 | Default<br>FormChange<br>Druid |
+| `BlessingOfPeace` | Integer | The number of stacks of the Blessing of Peace status applied to the unit each turn. | 1 | `1` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| `DestroyTrinket` | Integer | The number of trinkets destroyed. | 1 | `1` |
+| `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 1 | `1` |
+| `DrinkWater` | Integer | The number of water-drink actions performed. | 1 | `1` |
 | [`ManaGainRange`](./Miscellaneous.md#object-managainrange) | Object | Defines the minimum and maximum mana gained per turn. | 1 | `{ . . . }` |
-| [`Revive`](./Enums.md) | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 1 | `1`<br>`100%`<br>`50%` |
+| `Revive` | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 1 | `1`<br>`100%`<br>`50%` |
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum  | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-| [`Wet`](./Enums.md) | Integer | The number of stacks of the Wet status effect applied. | 1 | `1` |
+| `Wet` | Integer | The number of stacks of the Wet status effect applied. | 1 | `1` |
 
 </details>
 
@@ -869,7 +869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -893,16 +893,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
-| [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 7 | `1`<br>`10`<br>`2` |
-| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
+| `RandomMagicMissile` | Integer | The number of random magic missiles fired, or an object defining its properties. | 7 | `1`<br>`10`<br>`2` |
+| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -920,7 +920,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -942,11 +942,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 7 | `.5`<br>`0`<br>`1` |
+| `value` | Equation | The numeric value or formula associated with the buff. | 7 | `.5`<br>`0`<br>`1` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 7 | `{ . . . }` |
 
@@ -965,16 +965,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 10 | passives<br>class<br>	ag |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 4 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`ManaGain`](./Enums.md) | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 4 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
 | [`ForceUseAbility`](./Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -992,7 +992,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1001,7 +1001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 3 | `{ . . . }` |
 | [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`KnockbackIfCrit`](Engine_StatusAndPassiveKeys.md#object-knockbackifcrit) | Object || 3 | Default<br>FormChange<br>Druid |
-| [`Rot`](./Enums.md) | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 1 | `-999999`<br>`1`<br>`2` |
+| `Rot` | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 1 | `-999999`<br>`1`<br>`2` |
 
 </details>
 
@@ -1018,16 +1018,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus), [`Else`](./Items_and_Equipment.md#context-else)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`Conditional_HasStatus`](./Items_and_Equipment.md#object-conditional_hasstatus), [`Else`](./Items_and_Equipment.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 22 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 20 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | Default<br>FormChange<br>Druid |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 6 | `1`<br>`10`<br>`2` |
-| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 6 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
-| [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 20 | `Default`<br>`FormChange`<br>`Druid` | `AllStatsUp` | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | Default<br>FormChange<br>Druid |
+| `HealthGain` | Integer | The amount of health restored to the source. | 6 | `1`<br>`10`<br>`2` |
+| `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 6 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `Charge` | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -1044,7 +1044,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
+> **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#object-statusondie)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1066,7 +1066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1089,7 +1089,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1112,16 +1112,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
-| [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`Brace`](./Enums.md) | Enum / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 2 | Default<br>FormChange<br>Druid |
-| [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 2 | `-1`<br>`-2`<br>`-4` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | `Brace` | Enum / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 2 | Default<br>FormChange<br>Druid |
+| `ConstitutionUp` | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -1138,16 +1138,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
-| [`Conditional_RandomChance`](./Engine_LogicKeys.md#conditional_randomchance) | Object | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_RandomChance`](./Items_and_Equipment.md#object-conditional_randomchance) | Object | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
 | [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 1 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`GainCoinsRange`](./Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
-| [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
+| `RandomMagicMissile` | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -1166,7 +1166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1186,7 +1186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_BadRoll`](./Items_and_Equipment.md#context-conditional_badroll), [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
+> **Referenced by:** [`Conditional_BadRoll`](./Items_and_Equipment.md#object-conditional_badroll), [`StatusEachTurnBegin`](./Items_and_Equipment.md#object-statuseachturnbegin), [`StatusOnTookDamage`](./Items_and_Equipment.md#object-statusontookdamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1211,7 +1211,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1234,7 +1234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1256,16 +1256,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 41 | passives<br>class<br>	ag |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 7 | `1`<br>`10`<br>`2` |
-| [`AddMaxHealth`](./Enums.md) | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 6 | `-25`<br>`10`<br>`2` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 7 | `1`<br>`10`<br>`2` |
+| `AddMaxHealth` | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 6 | `-25`<br>`10`<br>`2` |
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 4 | `{ . . . }` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | Default<br>FormChange<br>Druid |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | `AllStatsUp` | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | Default<br>FormChange<br>Druid |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
 
@@ -1282,7 +1282,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1304,7 +1304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
+> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#object-addstatustoalldamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#object-statusontookdamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1331,17 +1331,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HealthThreshold`](./Items_and_Equipment.md#context-conditional_healththreshold), [`StatusOnFullMana`](./Items_and_Equipment.md#context-statusonfullmana)
+> **Referenced by:** [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold), [`StatusOnFullMana`](./Items_and_Equipment.md#object-statusonfullmana)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
-| [`ShowText`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the localization key for a popup text displayed on the target. | 1 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
-| [`ReduceManaCost`](./Enums.md) | Integer | The number of stacks reducing mana cost of abilities. | 1 | `1`<br>`2` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`SpellDamageUp`](./Enums.md) | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
+| `ShowText` | `String` | Specifies the localization key for a popup text displayed on the target. | 1 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
+| `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 1 | `1`<br>`2` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
 
 </details>
 
@@ -1358,7 +1358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusIfUnusedActPoints`](./Items_and_Equipment.md#context-statusifunusedactpoints), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
+> **Referenced by:** [`StatusIfUnusedActPoints`](./Items_and_Equipment.md#object-statusifunusedactpoints), [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1381,7 +1381,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1403,7 +1403,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1427,7 +1427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1451,7 +1451,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1474,7 +1474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1499,15 +1499,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 7 | `0`<br>`1`<br>`10` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
-| [`Charmed`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
-| [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
+| `Charmed` | Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
+| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .01]` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -1526,7 +1526,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1550,7 +1550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1572,7 +1572,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ExtraStatusWhenDealingDamage`](./Items_and_Equipment.md#context-extrastatuswhendealingdamage)
+> **Referenced by:** [`ExtraStatusWhenDealingDamage`](./Items_and_Equipment.md#object-extrastatuswhendealingdamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1594,7 +1594,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1617,7 +1617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_PartyMember`](./Items_and_Equipment.md#context-conditional_partymember)
+> **Referenced by:** [`Conditional_PartyMember`](./Items_and_Equipment.md#object-conditional_partymember)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1639,7 +1639,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1659,7 +1659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1679,12 +1679,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Shielded`](./Items_and_Equipment.md#context-conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`Conditional_Shielded`](./Items_and_Equipment.md#object-conditional_shielded), [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
-| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
+| `value` | Equation | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
 
 </details>
 
@@ -1701,7 +1701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1723,7 +1723,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1745,7 +1745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1767,13 +1767,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`Conditional_Boss`](Abilities_and_Spells.md#object-conditional_boss) | Object || 0 | Default<br>FormChange<br>Druid |
-| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
+| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1790,14 +1790,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`Charge`](./Enums.md) | Integer | The number of charge stacks applied. | 3 | Default<br>FormChange<br>Druid |
-| [`IntelligenceUp`](./Enums.md) | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | `Charge` | Integer | The number of charge stacks applied. | 3 | Default<br>FormChange<br>Druid |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 
 </details>
@@ -1815,13 +1815,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
-| [`RepairTrinket`](./Enums.md) | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 
 </details>
@@ -1839,18 +1839,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`SpellDamageUp`](./Enums.md) | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
-| [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -1868,14 +1868,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 6 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>	ag |
-| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 3 | `1`<br>`10`<br>`2` |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`Stun`](./Enums.md) | Array | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | Default<br>FormChange<br>Druid |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 3 | `1`<br>`10`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | `Stun` | Array | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -1892,7 +1892,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1912,7 +1912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1932,14 +1932,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
-| [`Bounty`](./Enums.md) | Integer | The number of bounty stacks applied to enemies, increasing rewards on defeat. | 3 | `1`<br>`3` |
+| `Bounty` | Integer | The number of bounty stacks applied to enemies, increasing rewards on defeat. | 3 | `1`<br>`3` |
 | [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
-| [`Marked`](./Enums.md) | Integer | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
+| `Marked` | Integer | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -1957,7 +1957,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1979,7 +1979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`str_aux_is_copy_ability`](./Items_and_Equipment.md#context-str_aux_is_copy_ability)
+> **Referenced by:** [`str_aux_is_copy_ability`](./Items_and_Equipment.md#object-str_aux_is_copy_ability)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2001,7 +2001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2024,7 +2024,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2046,7 +2046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2068,14 +2068,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ScaledStatusAlliesOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusalliesonspendmana), [`StatusAlliesEachTurn`](./Items_and_Equipment.md#context-statusallieseachturn)
+> **Referenced by:** [`ScaledStatusAlliesOnSpendMana`](./Items_and_Equipment.md#object-scaledstatusalliesonspendmana), [`StatusAlliesEachTurn`](./Items_and_Equipment.md#object-statusallieseachturn)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>	ag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Engine_LogicKeys.md#conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Items_and_Equipment.md#object-conditional_playercat) | Object | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2092,11 +2092,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
+> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#object-statuseachturnbegin)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Enums.md#enum-odds) | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 8 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 8 | Default<br>FormChange<br>Druid |
 
@@ -2115,12 +2115,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusAllCharactersOnSpawn`](./Items_and_Equipment.md#context-statusallcharactersonspawn)
+> **Referenced by:** [`StatusAllCharactersOnSpawn`](./Items_and_Equipment.md#object-statusallcharactersonspawn)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | `AllStatsUp` | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2137,7 +2137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
+> **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#object-modifyability)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2159,7 +2159,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#object-statusondie), [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2182,7 +2182,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachRoundEnd`](./Items_and_Equipment.md#context-statuseachroundend), [`StatusOnBreakItem`](./Items_and_Equipment.md#context-statusonbreakitem)
+> **Referenced by:** [`StatusEachRoundEnd`](./Items_and_Equipment.md#object-statuseachroundend), [`StatusOnBreakItem`](./Items_and_Equipment.md#object-statusonbreakitem)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2208,7 +2208,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2230,7 +2230,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2252,13 +2252,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 11 | passives<br>class<br>	ag |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
-| [`Immobile`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
+| `Immobile` | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -2276,7 +2276,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#context-modifyability)
+> **Referenced by:** [`ModifyAbility`](./Items_and_Equipment.md#object-modifyability)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2298,7 +2298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Items_and_Equipment.md#object-bonus_passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2320,7 +2320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhileHasDurability`](./Items_and_Equipment.md#context-passivewhilehasdurability), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`PassiveWhileHasDurability`](./Items_and_Equipment.md#object-passivewhilehasdurability), [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2344,13 +2344,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEveryXSpellCasts`](./Items_and_Equipment.md#context-statuseveryxspellcasts), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
+> **Referenced by:** [`StatusEveryXSpellCasts`](./Items_and_Equipment.md#object-statuseveryxspellcasts), [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | passives<br>class<br>	ag |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 7 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -2367,12 +2367,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
-| [`Metal`](./Enums.md) | Integer | The number of armor stacks or metal keyword effects. | 2 | `1` |
+| `Metal` | Integer | The number of armor stacks or metal keyword effects. | 2 | `1` |
 
 </details>
 
@@ -2389,7 +2389,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2413,12 +2413,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
-| [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 2 | `1`<br>`10`<br>`2` |
+| `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2435,7 +2435,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2457,7 +2457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2479,13 +2479,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 4 | `Default`<br>`FormChange`<br>`Druid` | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | Default<br>FormChange<br>Druid |
-| [`TempMeleeRangeUp`](./Enums.md) | Integer | The number of tiles added to the unit's melee attack range as a temporary buff. | 1 | `1` |
-| [`TempRangeUp`](./Enums.md) | Integer | The amount of temporary range increase applied. | 1 | `1`<br>`2`<br>`20` |
+| `TempMeleeRangeUp` | Integer | The number of tiles added to the unit's melee attack range as a temporary buff. | 1 | `1` |
+| `TempRangeUp` | Integer | The amount of temporary range increase applied. | 1 | `1`<br>`2`<br>`20` |
 | [`UseAbility`](./Enums.md#enum-useability) | Enum  | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
@@ -2503,7 +2503,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#context-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#context-statusoncollectpickup)
+> **Referenced by:** [`ScaledStatusOnSpendMana`](./Items_and_Equipment.md#object-scaledstatusonspendmana), [`StatusOnCollectPickup`](./Items_and_Equipment.md#object-statusoncollectpickup)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2511,8 +2511,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 1 | `true` |
-| [`ExtraBasicMoves_Status`](./Enums.md) | Integer | The number of extra basic moves per turn granted. | 1 | `1` |
-| [`RefreshActPoints`](./Enums.md) | Integer | The amount of action points restored to the source. | 1 | `1` |
+| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 1 | `1` |
+| `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 | `1` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -2530,7 +2530,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2550,13 +2550,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
-| [`RepairTrinket`](./Enums.md) | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
 
 </details>
 
@@ -2573,13 +2573,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `SerratedClaws` | Integer | The number of stacks of the SerratedClaws status applied, or an object defining its display strings. | 1 | `1` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2596,12 +2596,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`DoDamage`](./Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -2620,13 +2620,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>	ag |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Charge` | Equation | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -2644,13 +2644,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
-| [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -2668,7 +2668,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT`](./Items_and_Equipment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2689,7 +2689,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold)
+> **Referenced by:** [`PassiveAtStatThreshold`](./Items_and_Equipment.md#object-passiveatstatthreshold)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2711,7 +2711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2737,7 +2737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2759,7 +2759,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2782,12 +2782,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 9 | passives<br>class<br>	ag |
-| [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -2805,7 +2805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2825,12 +2825,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
+| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2847,12 +2847,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | [`Leech`](./Enums.md) | Integer | The amount of health leeched from the target (heals the attacker). | 3 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | `Default`<br>`FormChange`<br>`Druid` | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 3 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -2869,7 +2869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2890,7 +2890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2912,7 +2912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2934,7 +2934,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2956,7 +2956,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_RandomChance`](./Items_and_Equipment.md#context-conditional_randomchance)
+> **Referenced by:** [`Conditional_RandomChance`](./Items_and_Equipment.md#object-conditional_randomchance)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2978,7 +2978,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
+> **Referenced by:** [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -2998,7 +2998,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead)
+> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#object-passivewhendead)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3020,7 +3020,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3042,7 +3042,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3064,7 +3064,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3085,7 +3085,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#context-addtemporaryeffectstobasicattack)
+> **Referenced by:** [`AddTemporaryEffectsToBasicAttack`](./Items_and_Equipment.md#object-addtemporaryeffectstobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3109,7 +3109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3130,7 +3130,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3152,12 +3152,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
+> **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#object-conditional_adjacent)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 21 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`ManaGain`](./Enums.md) | Integer | The amount of mana restored to the source, which can be an expression. | 4 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | `ManaGain` | Integer | The amount of mana restored to the source, which can be an expression. | 4 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3174,12 +3174,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`RandomMutation`](./Enums.md) | Integer | The number of random mutations to apply. | 1 | `1`<br>`3` |
+| `RandomMutation` | Integer | The number of random mutations to apply. | 1 | `1`<br>`3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -3197,12 +3197,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToSpells`](./Items_and_Equipment.md#context-addstatustospells)
+> **Referenced by:** [`AddStatusToSpells`](./Items_and_Equipment.md#object-addstatustospells)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 6 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | [`Leeches`](./Enums.md) | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 8 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | `Leeches` | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 8 | Default<br>FormChange<br>Druid |
 
 </details>
 
@@ -3219,14 +3219,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
+> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#object-addstatustoalldamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 49 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 11 | `Default`<br>`FormChange`<br>`Druid` | [`BonusKnockbackDamage`](./Enums.md) | Integer || 43 | Default<br>FormChange<br>Druid |
-| [`OverrideChainKnockback`](./Enums.md) | Integer | The custom number of tiles for chain knockback, overriding the default. | 1 | `0`<br>`1`<br>`10` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 11 | `Default`<br>`FormChange`<br>`Druid` | `BonusKnockbackDamage` | Integer || 43 | Default<br>FormChange<br>Druid |
+| `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -3243,14 +3243,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
+> **Referenced by:** [`StatusOnTookDamage`](./Items_and_Equipment.md#object-statusontookdamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>	ag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 7 | Default<br>FormChange<br>Druid |
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 5 | `0`<br>`10`<br>`3` |
-| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3267,13 +3267,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 | `0`<br>`10`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`RepairTrinket`](./Enums.md) | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -3291,13 +3291,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#context-conditional_adjacent)
+> **Referenced by:** [`Conditional_Adjacent`](./Items_and_Equipment.md#object-conditional_adjacent)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3314,7 +3314,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
+> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#object-statusondie)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3338,7 +3338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3360,13 +3360,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`DelayedPain`](./Enums.md) | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 1 | `1` |
+| `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 1 | `1` |
 
 </details>
 
@@ -3383,7 +3383,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3405,7 +3405,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AlluringDoodieEater`](./Items_and_Equipment.md#context-alluringdoodieeater)
+> **Referenced by:** [`AlluringDoodieEater`](./Items_and_Equipment.md#object-alluringdoodieeater)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3591,12 +3591,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
+> **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
-| [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
+| `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 4 | `.02`<br>`.1`<br>`.15` |
 
 </details>
 
@@ -3613,7 +3613,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3635,7 +3635,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3657,7 +3657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3679,7 +3679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3700,7 +3700,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#context-addstatustoalldamage)
+> **Referenced by:** [`AddStatusToAllDamage`](./Items_and_Equipment.md#object-addstatustoalldamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3722,7 +3722,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3744,7 +3744,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
+> **Referenced by:** [`StatusEachTurnBegin`](./Items_and_Equipment.md#object-statuseachturnbegin)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3766,7 +3766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3788,7 +3788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3811,7 +3811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3834,7 +3834,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3854,12 +3854,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`Brace`](./Enums.md) | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 3 | `1`<br>`10`<br>`2` |
+| `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 3 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -3876,12 +3876,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3898,7 +3898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3920,18 +3920,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie)
+> **Referenced by:** [`StatusOnDie`](./Items_and_Equipment.md#object-statusondie)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 31 | passives<br>class<br>	ag |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | [`PermanentCharisma`](./Enums.md) | Integer | The amount of permanent Charisma added to the unit's base stats. | 24 | Default<br>FormChange<br>Druid |
-| [`PermanentConstitution`](./Enums.md) | Integer | The amount of permanent Constitution stat added or removed. | 1 | `-1`<br>`-2`<br>`1` |
-| [`PermanentDexterity`](./Enums.md) | Integer | The permanent amount of dexterity added or removed. | 1 | `1`<br>`2` |
-| [`PermanentIntelligence`](./Enums.md) | Integer | The permanent amount of intelligence added or removed. | 1 | `-1`<br>`1`<br>`2` |
-| [`PermanentLuck`](./Enums.md) | Integer | The amount of permanent Luck added to the unit's base stats. | 1 | `1`<br>`2` |
-| [`PermanentSpeed`](./Enums.md) | Integer | The permanent amount of speed added or removed. | 1 | `-1`<br>`1`<br>`2` |
-| [`PermanentStrength`](./Enums.md) | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 1 | `1`<br>`2` |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 12 | `Default`<br>`FormChange`<br>`Druid` | `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 24 | Default<br>FormChange<br>Druid |
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 1 | `-1`<br>`-2`<br>`1` |
+| `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 1 | `1`<br>`2` |
+| `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. | 1 | `-1`<br>`1`<br>`2` |
+| `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 1 | `1`<br>`2` |
+| `PermanentSpeed` | Integer | The permanent amount of speed added or removed. | 1 | `-1`<br>`1`<br>`2` |
+| `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 1 | `1`<br>`2` |
 
 </details>
 
@@ -3948,7 +3948,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus)
+> **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#object-conditional_hasstatus)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -3971,13 +3971,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart)
+> **Referenced by:** [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `revive_health` | Integer | The amount of health (as a flat integer or percentage) the unit revives with. | 4 | `1`<br>`100%`<br>`50%` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>	ag |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 3 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 3 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -3995,12 +3995,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the item quest ID to mark as complete on kill. | 1 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
-| [`RemoveItem`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the item ID to remove from the source on kill. | 1 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` |
+| `CompleteItemQuest` | `String` | Specifies the item quest ID to mark as complete on kill. | 1 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
+| `RemoveItem` | `String` | Specifies the item ID to remove from the source on kill. | 1 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -4018,7 +4018,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4038,12 +4038,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`RandomMagicMissile`](./Enums.md) | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
+| `RandomMagicMissile` | Integer | The number of random magic missiles fired, or an object defining its properties. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -4060,7 +4060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4082,7 +4082,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4104,7 +4104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4126,12 +4126,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`AddDamageToBasicAttack`](./Enums.md) | Enum | Additional damage added to the basic attack, either as a flat value or formula. | 1 | `1`<br>`2`<br>`4` |
+| `AddDamageToBasicAttack` | Enum | Additional damage added to the basic attack, either as a flat value or formula. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
 
@@ -4148,7 +4148,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4170,7 +4170,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4193,7 +4193,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4213,7 +4213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4235,7 +4235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#context-passivewhendead)
+> **Referenced by:** [`PassiveWhenDead`](./Items_and_Equipment.md#object-passivewhendead)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4257,7 +4257,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4279,13 +4279,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>	ag |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 4 | `1`<br>`10`<br>`2` |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 4 | `1`<br>`10`<br>`2` |
+| `Charge` | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4302,7 +4302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4324,12 +4324,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`DodgeChance_Status`](./Enums.md) | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 
 </details>
 
@@ -4346,12 +4346,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>	ag |
-| [`RepairTrinket`](./Enums.md) | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 | `1`<br>`99` |
 | [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -4370,12 +4370,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4392,13 +4392,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Enums.md) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`FillMana`](./Enums.md) | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
-| [`HealRandomInjury`](./Enums.md) | Integer | The number of random injuries healed on the target. | 1 | `1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -4416,11 +4416,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_OncePerBattle`](./Engine_LogicKeys.md#conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -4438,12 +4438,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`Shield`](./Enums.md) | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -4461,7 +4461,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4483,13 +4483,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`DamageUp`](./Enums.md) | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -4506,12 +4506,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>	ag |
-| [`Charge`](./Enums.md) | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4528,12 +4528,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnEatFood`](./Items_and_Equipment.md#context-statusoneatfood)
+> **Referenced by:** [`StatusOnEatFood`](./Items_and_Equipment.md#object-statusoneatfood)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>	ag |
-| [`LimitHeal`](./Enums.md) | Integer | If 1, prevents the unit from being healed. | 1 | `0`<br>`1` |
+| `LimitHeal` | Integer | If 1, prevents the unit from being healed. | 1 | `0`<br>`1` |
 
 </details>
 
@@ -4550,7 +4550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4573,7 +4573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -4595,7 +4595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

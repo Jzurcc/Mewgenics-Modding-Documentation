@@ -1,5 +1,5 @@
 # Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
 
@@ -41,7 +41,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`complete_act_difficulty`](./Arrays.md#array-complete_act_difficulty) | Array | An array containing the act number and difficulty level that must be completed. | 9 | `[1 0]`<br>`[1 1]`<br>`[1 2]` |
 | [`unlock_act_difficulty`](./Arrays.md#array-unlock_act_difficulty) | Array | An array containing the act number and difficulty level to unlock. | 9 | `[1 1]`<br>`[1 2]`<br>`[1 3]` |
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum | Determines which cutscene to play immediately upon queueing. | 8 | `caves_intro`<br>`core_intro`<br>`desert_intro` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 6 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 6 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum | Determines which boss encounter to unlock. | 6 | `bumblefoot`<br>`gambit`<br>`infestedduo` |
 | [`preempt_npc_sequence`](./Enums.md#enum-preempt_npc_sequence) | Enum | Specifies the NPC sequence to run before the current one. | 4 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_amnesia` |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum | Determines which item quest is marked as failed. | 4 | `JarOfChaos`<br>`JarOfRadiatedBlood`<br>`JarOfRadiation` |
@@ -129,7 +129,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`destinations`](./Progression_Unlocks.md#object-destinations) | Object | Specifies the list of areas and their associated coin rewards for Beanie's quest destinations. | 1 | `{ . . . }` |
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum | Specifies a trigger that causes the current adventure to fail, with a location parameter (e.g., 'anywhere'). | 1 | `anywhere` |
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum | Specifies the name of the quest to mark as finished. | 1 | `JarOfChaos` |
-| [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String | Specifies the GameStat counter to increment when this sequence completes. | 1 | `GameStat_CountNukeQuestCompletions` |
+| `increment_savefile_counter` | String | Specifies the GameStat counter to increment when this sequence completes. | 1 | `GameStat_CountNukeQuestCompletions` |
 | [`prereqs`](./Progression_Unlocks.md#object-prereqs) | Object | Object mapping quest or unlock names to their prerequisite mapflags or conditions. | 1 | `{ . . . }` |
 | `requires_hard_path` | Boolean | If true, this unlock requires the player to be on the hard path. | 1 | `true` |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum | Specifies the unlock key to reset upon completing this unlock chain. | 1 | `nuke_quest_begin` |
@@ -157,7 +157,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 266 | `common`<br>`rare`<br>`cha` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 221 | `false`<br>`true` |
-| [`frame`](./Enums.md#enum-frame) | Integer | The sprite frame index to display. | 159 | `1`<br>`10`<br>`100` |
+| `frame` | Integer | The sprite frame index to display. | 159 | `1`<br>`10`<br>`100` |
 
 </details>
 
@@ -765,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -788,7 +788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -811,7 +811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -929,7 +929,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -952,7 +952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 

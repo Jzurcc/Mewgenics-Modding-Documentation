@@ -11,7 +11,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`editor`](./Miscellaneous.md#context-editor)
+> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#object-editor), `editor`
 
 **Accepted Elements:**
 - List of [Enum: `image`](./Enums.md#enum-image)
@@ -33,7 +33,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage), [`properties`](./Characters_and_Bosses.md#context-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#context-meleerevengedamage), [`SolarFlare`](./House_and_Environment.md#context-solarflare), [`RevengeDamage`](./Items_and_Equipment.md#context-revengedamage), [`AddStatusesIfPersistentWeatherElement`](./Passives_and_Statuses.md#context-addstatusesifpersistentweatherelement), [`AddStatusesToReceivedElementalDamage`](./Passives_and_Statuses.md#context-addstatusestoreceivedelementaldamage), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#context-meleerevengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack)
+> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#object-dodamage), [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance), [`self_damage`](./Abilities_and_Spells.md#object-self_damage), [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#object-meleerevengedamage), [`properties`](./Characters_and_Bosses.md#object-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#object-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#object-meleerevengedamage), [`SolarFlare`](./House_and_Environment.md#object-solarflare), [`RevengeDamage`](./Items_and_Equipment.md#object-revengedamage), [`AddStatusesIfPersistentWeatherElement`](./Passives_and_Statuses.md#object-addstatusesifpersistentweatherelement), [`AddStatusesToReceivedElementalDamage`](./Passives_and_Statuses.md#object-addstatusestoreceivedelementaldamage), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#object-damageneighborsaftermove), [`GravityWell`](./Passives_and_Statuses.md#object-gravitywell), [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#object-smiteenemieswhokill), [`fire`](./Passives_and_Statuses.md#object-fire), [`ice`](./Passives_and_Statuses.md#object-ice), [`lightning`](./Passives_and_Statuses.md#object-lightning), [`triattack`](./Passives_and_Statuses.md#object-triattack)
 
 **Accepted Elements:**
 - [Enum: `element`](./Enums.md#enum-element)
@@ -50,7 +50,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`abilities`](./Characters_and_Bosses.md#context-abilities)
+> **Referenced by:** [`abilities`](./Characters_and_Bosses.md#object-abilities)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -67,7 +67,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`properties`](./Characters_and_Bosses.md#context-properties), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root), [`properties`](./Characters_and_Bosses.md#object-properties), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - [Enum: `tags`](./Enums.md#enum-tags)
@@ -84,10 +84,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor), [`editor`](./Miscellaneous.md#context-editor)
+> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#object-editor), `editor`
 
 **Accepted Elements:**
-- [Enum: `image_tint`](./Enums.md#enum-image-tint)
+- Enum: `image_tint`
 
 </details>
 
@@ -101,7 +101,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Array`
@@ -124,7 +124,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - [Enum: `restrictions`](./Enums.md#enum-restrictions)
@@ -141,7 +141,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - [Enum: `tag`](./Enums.md#enum-tag)
@@ -158,7 +158,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern), [`round_start_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_start_bonusturn_pattern)
+> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#object-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#object-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#object-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#object-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern), [`round_start_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_start_bonusturn_pattern)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -180,7 +180,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: class`](./Enums.md#enum-class)
@@ -202,7 +202,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: set`](./Enums.md#enum-set)
@@ -224,7 +224,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -252,7 +252,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
+> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#object-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#object-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#object-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#object-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -274,7 +274,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`outcome`](./Events_and_Encounters.md#context-outcome), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`outcome`](./Events_and_Encounters.md#object-outcome), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - List of [`Enum: play_animation`](./Enums.md#enum-play_animation)
@@ -296,7 +296,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -318,7 +318,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -340,7 +340,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`outcome`](./Events_and_Encounters.md#context-outcome), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`outcome`](./Events_and_Encounters.md#object-outcome), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Accepted Elements:**
 - `Block`
@@ -362,7 +362,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Array`
@@ -385,7 +385,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#context-takebonusturnwithstatus), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`AddStatusToElementDamage`](./Items_and_Equipment.md#context-addstatustoelementdamage), [`AddStatusToKnockbackDamage`](./Items_and_Equipment.md#context-addstatustoknockbackdamage), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#context-addstatustobasicmeleeattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#context-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`Electric`](./Passives_and_Statuses.md#context-electric), [`effects`](./Passives_and_Statuses.md#context-effects)
+> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional_enemy), [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#object-takebonusturnwithstatus), [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`AddStatusToElementDamage`](./Items_and_Equipment.md#object-addstatustoelementdamage), [`AddStatusToKnockbackDamage`](./Items_and_Equipment.md#object-addstatustoknockbackdamage), [`effects`](./Items_and_Equipment.md#object-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Passives_and_Statuses.md#object-addstatustobasicmeleeattack), [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy), [`CritsApplyStatus`](./Passives_and_Statuses.md#object-critsapplystatus), [`Electric`](./Passives_and_Statuses.md#object-electric), [`effects`](./Passives_and_Statuses.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -407,7 +407,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -429,7 +429,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -451,7 +451,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Accepted Elements:**
 - `Array`
@@ -475,7 +475,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - List of [`Enum: aoe_restrictions`](./Enums.md#enum-aoe_restrictions)
@@ -497,7 +497,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics), [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Accepted Elements:**
 - `Array`
@@ -521,7 +521,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -543,7 +543,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -565,7 +565,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
+> **Referenced by:** [`boss`](./Combat_Rewards.md#object-boss), [`hard`](./Combat_Rewards.md#object-hard), [`miniboss`](./Combat_Rewards.md#object-miniboss), [`normal`](./Combat_Rewards.md#object-normal)
 
 **Accepted Elements:**
 - `Integer`
@@ -587,7 +587,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Combat_Rewards.md#context-boss), [`hard`](./Combat_Rewards.md#context-hard), [`miniboss`](./Combat_Rewards.md#context-miniboss), [`normal`](./Combat_Rewards.md#context-normal)
+> **Referenced by:** [`boss`](./Combat_Rewards.md#object-boss), [`hard`](./Combat_Rewards.md#object-hard), [`miniboss`](./Combat_Rewards.md#object-miniboss), [`normal`](./Combat_Rewards.md#object-normal)
 
 **Accepted Elements:**
 - `Integer`
@@ -609,7 +609,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -631,7 +631,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - `Unknown`
@@ -666,7 +666,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn), [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns), [`ROOT`](./Miscellaneous.md#event-reward-samples), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn), [`SpawnEachTurn`](./Passives_and_Statuses.md#context-spawneachturn), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn), [`TransformInXTurns`](./Characters_and_Bosses.md#object-transforminxturns), `ROOT`, [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#object-spawnextrathingsonbattlestart), [`SpawnEachTurn`](./Items_and_Equipment.md#object-spawneachturn), [`SpawnEachTurn`](./Passives_and_Statuses.md#object-spawneachturn), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#object-spawnonbattlestart)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -688,7 +688,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#context-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStart`](./Items_and_Equipment.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#context-spawnonbattlestartrandomemptytile), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#context-spawnonbattlestartrandomemptytile)
+> **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#object-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#object-spawnonbattlestartrandomemptytile), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#object-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#object-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#object-spawnvolcanoonbattlestart), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#object-spawnextrathingsonbattlestart), [`SpawnOnBattleStart`](./Items_and_Equipment.md#object-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#object-spawnonbattlestartrandomemptytile), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#object-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#object-spawnonbattlestartrandomemptytile)
 
 **Accepted Elements:**
 - `Integer`
@@ -710,7 +710,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Accepted Elements:**
 - `Integer`
@@ -732,7 +732,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter)
@@ -754,7 +754,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Accepted Elements:**
 - `Integer`
@@ -776,7 +776,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#object-characterlightsource), [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Accepted Elements:**
 - `Float`
@@ -834,7 +834,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 **Accepted Elements:**
 - `Float`
@@ -856,7 +856,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#context-conditional_notboss), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`StatusDamagers`](./Passives_and_Statuses.md#context-statusdamagers), [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
+> **Referenced by:** [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional_notboss), [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`effects`](./Cat_Mutations.md#object-effects), [`Else`](./House_and_Environment.md#object-else), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#object-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack), [`StatusDamagers`](./Passives_and_Statuses.md#object-statusdamagers), [`StatusEachTurnBegin`](./Passives_and_Statuses.md#object-statuseachturnbegin)
 
 **Accepted Elements:**
 - `Integer` *(stacks)*
@@ -879,7 +879,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -901,7 +901,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -923,7 +923,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: status`](./Enums.md#enum-status)
@@ -945,7 +945,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter)
@@ -967,7 +967,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -989,7 +989,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite), [`PoolMetronome`](./Abilities_and_Spells.md#context-poolmetronome), [`SwapWeapon`](./Abilities_and_Spells.md#context-swapweapon), [`DestroyEquipmentAndAttachParasite`](./Items_and_Equipment.md#context-destroyequipmentandattachparasite), [`TourettesMeows`](./Passives_and_Statuses.md#context-tourettesmeows), [`Item`](./Shops.md#context-item)
+> **Referenced by:** [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite), [`PoolMetronome`](./Abilities_and_Spells.md#object-poolmetronome), [`SwapWeapon`](./Abilities_and_Spells.md#object-swapweapon), [`DestroyEquipmentAndAttachParasite`](./Items_and_Equipment.md#object-destroyequipmentandattachparasite), [`TourettesMeows`](./Passives_and_Statuses.md#object-tourettesmeows), [`Item`](./Shops.md#object-item)
 
 **Accepted Elements:**
 - `Unknown`
@@ -1064,10 +1064,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
-- List of [Enum: `combo_effect`](./Enums.md#enum-combo-effect)
+- List of Enum: `combo_effect`
 
 **Examples:**
 `[ FevaporateLight FevaporateDark ]`
@@ -1086,7 +1086,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -1116,7 +1116,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - `Integer`
@@ -1138,7 +1138,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ArmorPickup`](./Characters_and_Bosses.md#context-armorpickup), [`HealthPickup`](./Characters_and_Bosses.md#context-healthpickup), [`ManaPickup`](./Characters_and_Bosses.md#context-manapickup)
+> **Referenced by:** [`ArmorPickup`](./Characters_and_Bosses.md#object-armorpickup), [`HealthPickup`](./Characters_and_Bosses.md#object-healthpickup), [`ManaPickup`](./Characters_and_Bosses.md#object-manapickup)
 
 **Accepted Elements:**
 - `Integer`
@@ -1160,7 +1160,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -1182,7 +1182,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl), [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#object-rocket_swirl), `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -1204,7 +1204,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: type`](./Enums.md#enum-type)
@@ -1226,7 +1226,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup)
@@ -1248,7 +1248,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: type`](./Enums.md#enum-type)
@@ -1270,7 +1270,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: type`](./Enums.md#enum-type)
@@ -1292,10 +1292,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
-- List of [Enum: `event_file`](./Enums.md#enum-event-file)
+- List of Enum: `event_file`
 
 **Examples:**
 `[ common alley_events.gon ]`
@@ -1314,7 +1314,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: pool`](./Enums.md#enum-pool)
@@ -1336,7 +1336,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#context-particletornadoforce)
+> **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#object-particletornadoforce)
 
 **Accepted Elements:**
 - `Float`
@@ -1358,7 +1358,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter)
@@ -1380,7 +1380,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -1402,7 +1402,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - `Integer`
@@ -1424,7 +1424,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -1446,7 +1446,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#context-particletornadoforce)
+> **Referenced by:** [`ParticleTornadoForce`](./Miscellaneous.md#object-particletornadoforce)
 
 **Accepted Elements:**
 - `Float`
@@ -1468,7 +1468,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - [Enum: `object`](./Enums.md#enum-object)
@@ -1485,7 +1485,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: animation`](./Enums.md#enum-animation)
@@ -1507,7 +1507,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Accepted Elements:**
 - `Float`
@@ -1529,7 +1529,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -1551,7 +1551,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit)
@@ -1573,7 +1573,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -1595,7 +1595,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -1617,7 +1617,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - `Integer`
@@ -1639,7 +1639,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -1661,7 +1661,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -1683,7 +1683,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: attack`](./Enums.md#enum-attack)
@@ -1705,7 +1705,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#context-multispawnondeath), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#context-spawnrandompickupsontaggedunitkilled), [`Cockroach`](./Miscellaneous.md#context-cockroach), [`Firefly`](./Miscellaneous.md#context-firefly), [`Fly`](./Miscellaneous.md#context-fly)
+> **Referenced by:** [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#object-multispawnondeath), [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#object-spawnrandompickupsontaggedunitkilled), [`Cockroach`](./Miscellaneous.md#object-cockroach), [`Firefly`](./Miscellaneous.md#object-firefly), [`Fly`](./Miscellaneous.md#object-fly)
 
 **Accepted Elements:**
 - `Integer`
@@ -1727,7 +1727,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - `Unknown`
@@ -1761,10 +1761,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
+- Enum: `passive_pool`
 
 </details>
 
@@ -1778,7 +1778,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Accepted Elements:**
 - `Float`
@@ -1800,7 +1800,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`MeleeRevengeDamage`](./Cat_Mutations.md#object-meleerevengedamage), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`effects`](./Items_and_Equipment.md#object-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -1822,7 +1822,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scripts`](./Miscellaneous.md#context-scripts), [`scripts`](./Miscellaneous.md#context-scripts)
+> **Referenced by:** [`scripts`](./Miscellaneous.md#object-scripts), [`scripts`](./Miscellaneous.md#object-scripts)
 
 **Accepted Elements:**
 - `Array`
@@ -1845,7 +1845,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
+> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#object-fallback), [`pattern`](./Characters_and_Bosses.md#object-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -1867,7 +1867,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#object-bonusturn_pattern), [`mainturn_pattern`](./Characters_and_Bosses.md#object-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -1889,7 +1889,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool)
+> **Referenced by:** [`get_item_from_pool`](./Events_and_Encounters.md#object-get_item_from_pool)
 
 **Accepted Elements:**
 - [Enum: `restrict`](./Enums.md#enum-restrict)
@@ -1906,7 +1906,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#context-conditional_enemy), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects)
+> **Referenced by:** [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional_enemy), [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`effects`](./Cat_Mutations.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -1928,7 +1928,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
+> **Referenced by:** [`ability_groups`](./Cat_Classes.md#object-ability_groups)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -1950,10 +1950,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Accepted Elements:**
-- List of [Enum: `global_tags`](./Enums.md#enum-global-tags)
+- List of Enum: `global_tags`
 
 **Examples:**
 `[ all_cats_are_jester ]`
@@ -1972,7 +1972,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root)
+> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack)
@@ -1994,7 +1994,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
+> **Referenced by:** [`ability_groups`](./Cat_Classes.md#object-ability_groups)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -2016,7 +2016,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
+> **Referenced by:** [`ability_groups`](./Cat_Classes.md#object-ability_groups)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -2038,7 +2038,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - [Enum: `do`](./Enums.md#enum-do)
@@ -2055,7 +2055,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`effects`](./Cat_Mutations.md#object-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack), [`effects`](./Passives_and_Statuses.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -2077,7 +2077,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 **Accepted Elements:**
 - `Float`
@@ -2099,7 +2099,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Cat_Mutations.md#context-effects), [`effects`](./Passives_and_Statuses.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`effects`](./Cat_Mutations.md#object-effects), [`effects`](./Passives_and_Statuses.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -2121,7 +2121,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#context-durabilitytransform)
+> **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#object-durabilitytransform)
 
 **Accepted Elements:**
 - `Integer`
@@ -2153,10 +2153,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
-- List of [Enum: `global_particles`](./Enums.md#enum-global-particles)
+- List of Enum: `global_particles`
 
 **Examples:**
 `[ CaveDrip ]`
@@ -2175,7 +2175,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Accepted Elements:**
 - `Integer`
@@ -2197,7 +2197,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_BossOrBig`](./Abilities_and_Spells.md#context-conditional_bossorbig), [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#context-addstatustobasicmeleeattack)
+> **Referenced by:** [`Conditional_BossOrBig`](./Abilities_and_Spells.md#object-conditional_bossorbig), [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`AddStatusToBasicMeleeAttack`](./Cat_Mutations.md#object-addstatustobasicmeleeattack)
 
 **Accepted Elements:**
 - `Integer` *(stacks)*
@@ -2220,7 +2220,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ability_groups`](./Cat_Classes.md#context-ability_groups)
+> **Referenced by:** [`ability_groups`](./Cat_Classes.md#object-ability_groups)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -2242,7 +2242,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -2264,7 +2264,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - `Integer`
@@ -2286,7 +2286,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -2308,7 +2308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -2330,7 +2330,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Accepted Elements:**
 - `Integer`
@@ -2352,7 +2352,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -2374,7 +2374,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Accepted Elements:**
 - `Enum`
@@ -2402,7 +2402,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - `Integer`
@@ -2424,7 +2424,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`Else`](./House_and_Environment.md#context-else), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`Else`](./House_and_Environment.md#object-else), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -2446,7 +2446,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - `Block`
@@ -2468,7 +2468,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** `1`, `2`, [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: EquipTemporaryItem`](./Enums.md#enum-equiptemporaryitem)
@@ -2490,7 +2490,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Accepted Elements:**
 - List of [`Enum: cat_has_item_equipped`](./Enums.md#enum-cat_has_item_equipped)
@@ -2512,7 +2512,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -2534,7 +2534,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** `ROOT`, [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -2556,7 +2556,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#context-characterlightsource)
+> **Referenced by:** [`CharacterLightSource`](./Characters_and_Bosses.md#object-characterlightsource)
 
 **Accepted Elements:**
 - `Float`
@@ -2578,7 +2578,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit)
@@ -2600,7 +2600,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -2622,7 +2622,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#context-changetile), [`PassiveWhenOnTile`](./Items_and_Equipment.md#context-passivewhenontile)
+> **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#object-changetile), [`PassiveWhenOnTile`](./Items_and_Equipment.md#object-passivewhenontile)
 
 **Accepted Elements:**
 - [Enum: `tile`](./Enums.md#enum-tile)
@@ -2639,7 +2639,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -2661,7 +2661,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#context-particlerandomforce)
+> **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#object-particlerandomforce)
 
 **Accepted Elements:**
 - `Array`
@@ -2684,7 +2684,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Array`
@@ -2707,7 +2707,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#context-particlerandomforce)
+> **Referenced by:** [`ParticleRandomForce`](./Miscellaneous.md#object-particlerandomforce)
 
 **Accepted Elements:**
 - `Array`
@@ -2730,7 +2730,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - `Integer`
@@ -2752,7 +2752,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - List of [`Enum: tag`](./Enums.md#enum-tag)
@@ -2774,7 +2774,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Shops.md#context-meta)
+> **Referenced by:** [`meta`](./Shops.md#object-meta)
 
 **Accepted Elements:**
 - `Unknown`
@@ -2802,7 +2802,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleAttractor`](./Miscellaneous.md#context-particleattractor)
+> **Referenced by:** [`ParticleAttractor`](./Miscellaneous.md#object-particleattractor)
 
 **Accepted Elements:**
 - `Float`
@@ -2824,7 +2824,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`Conditional_DoesDamage`](./Passives_and_Statuses.md#context-conditional_doesdamage)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`Conditional_DoesDamage`](./Passives_and_Statuses.md#object-conditional_doesdamage)
 
 **Accepted Elements:**
 - `Float`
@@ -2846,7 +2846,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks)
+> **Referenced by:** [`complete_checkmarks`](./Miscellaneous.md#object-complete_checkmarks)
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -2868,7 +2868,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
+> **Referenced by:** [`Lighting`](./Miscellaneous.md#object-lighting)
 
 **Accepted Elements:**
 - `Integer`
@@ -2890,7 +2890,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`complete_checkmarks`](./Miscellaneous.md#context-complete_checkmarks)
+> **Referenced by:** [`complete_checkmarks`](./Miscellaneous.md#object-complete_checkmarks)
 
 **Accepted Elements:**
 - List of [`Enum: class`](./Enums.md#enum-class)
@@ -2912,7 +2912,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -2934,10 +2934,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
+- Enum: `passive_pool`
 
 **Examples:**
 `[ ShoulderCheck DumbMuscle ThickSkull MostValuableCat HitMe ]`
@@ -2956,7 +2956,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Array`
@@ -2979,7 +2979,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#context-durabilitytransform), [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
+> **Referenced by:** [`DurabilityTransform`](./Items_and_Equipment.md#object-durabilitytransform), [`ItemAuxTransform`](./Items_and_Equipment.md#object-itemauxtransform)
 
 **Accepted Elements:**
 - List of [`Enum: item`](./Enums.md#enum-item)
@@ -3001,7 +3001,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scars`](./Injuries.md#context-scars)
+> **Referenced by:** [`scars`](./Injuries.md#object-scars)
 
 **Accepted Elements:**
 - `Float`
@@ -3023,7 +3023,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
+> **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#object-itemauxtransform)
 
 **Accepted Elements:**
 - `Integer`
@@ -3053,7 +3053,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Accepted Elements:**
 - `Integer`
@@ -3075,7 +3075,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** `ROOT`, [`good`](./Events_and_Encounters.md#object-good)
 
 **Accepted Elements:**
 - `Block`
@@ -3097,7 +3097,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot)
+> **Referenced by:** [`lock_item_slot`](./Passives_and_Statuses.md#object-lock_item_slot)
 
 **Accepted Elements:**
 - [Enum: `slot`](./Enums.md#enum-slot)
@@ -3114,7 +3114,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
+> **Referenced by:** [`Lighting`](./Miscellaneous.md#object-lighting)
 
 **Accepted Elements:**
 - `Integer`
@@ -3136,7 +3136,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`effects`](./Cat_Mutations.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`effects`](./Cat_Mutations.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3158,7 +3158,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3180,7 +3180,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnDie`](./Cat_Mutations.md#context-statusondie)
+> **Referenced by:** [`StatusOnDie`](./Cat_Mutations.md#object-statusondie)
 
 **Accepted Elements:**
 - `Float`
@@ -3202,7 +3202,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -3224,7 +3224,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`GlobalFlowerTrapperAura`](./Items_and_Equipment.md#context-globalflowertrapperaura)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), `GlobalFlowerTrapperAura`
 
 **Accepted Elements:**
 - `Integer` *(stacks)*
@@ -3247,7 +3247,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3269,7 +3269,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
+> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#object-fallback), [`pattern`](./Characters_and_Bosses.md#object-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
 - `Unknown`
@@ -3291,7 +3291,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - List of [Enum: `parasite`](./Enums.md#enum-parasite)
@@ -3313,7 +3313,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Accepted Elements:**
 - `Integer`
@@ -3335,7 +3335,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Items_and_Equipment.md#context-effects)
+> **Referenced by:** [`effects`](./Items_and_Equipment.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3357,7 +3357,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Accepted Elements:**
 - `Integer`
@@ -3379,7 +3379,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3401,7 +3401,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3423,7 +3423,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence), [`ElementalManaCostReduction`](./Items_and_Equipment.md#context-elementalmanacostreduction), [`ElementalManaCostReduction`](./Passives_and_Statuses.md#context-elementalmanacostreduction)
+> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence), [`ElementalManaCostReduction`](./Items_and_Equipment.md#object-elementalmanacostreduction), [`ElementalManaCostReduction`](./Passives_and_Statuses.md#object-elementalmanacostreduction)
 
 **Accepted Elements:**
 - List of [`Enum: AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack)
@@ -3445,7 +3445,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -3467,7 +3467,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Float`
@@ -3489,7 +3489,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Rain`](./House_and_Environment.md#context-rain), [`Snow`](./House_and_Environment.md#context-snow), [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm), [`Windy`](./House_and_Environment.md#context-windy)
+> **Referenced by:** [`Rain`](./House_and_Environment.md#object-rain), [`Snow`](./House_and_Environment.md#object-snow), [`Thunderstorm`](./House_and_Environment.md#object-thunderstorm), [`Windy`](./House_and_Environment.md#object-windy)
 
 **Accepted Elements:**
 - List of [`Enum: adventure_weather`](./Enums.md#enum-adventure_weather)
@@ -3511,7 +3511,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#context-rocket_swirl)
+> **Referenced by:** [`rocket_swirl`](./Abilities_and_Spells.md#object-rocket_swirl)
 
 **Accepted Elements:**
 - `Float`
@@ -3533,7 +3533,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** `ROOT`, [`good`](./Events_and_Encounters.md#object-good)
 
 **Accepted Elements:**
 - [Enum: `item`](./Enums.md#enum-item)
@@ -3550,7 +3550,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - `Block`
@@ -3572,7 +3572,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Integer`
@@ -3594,10 +3594,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#context-statusontakehealthorshielddamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
+> **Referenced by:** [`StatusOnTakeHealthOrShieldDamage`](./Items_and_Equipment.md#object-statusontakehealthorshielddamage), [`StatusOnTookDamage`](./Items_and_Equipment.md#object-statusontookdamage)
 
 **Accepted Elements:**
-- [Equation: `aoe_chance`](./Math_Equations.md#equation-aoe-chance)
+- Equation: `aoe_chance`
 
 **Examples:**
 `[ 1 .33 ]`
@@ -3616,7 +3616,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -3638,7 +3638,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Integer`
@@ -3660,7 +3660,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#context-statuscharactersonroundstart)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#object-statuscharactersonroundstart)
 
 **Accepted Elements:**
 - `Float`
@@ -3682,7 +3682,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#context-addselfstatustobasicattack)
+> **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#object-statuseachturnbegin), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#object-addselfstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -3704,7 +3704,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -3726,7 +3726,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Float`
@@ -3748,7 +3748,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Float`
@@ -3770,7 +3770,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Float`
@@ -3792,7 +3792,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`aux_positions`](./House_and_Environment.md#context-aux_positions)
+> **Referenced by:** `aux_positions`
 
 **Accepted Elements:**
 - `Integer`
@@ -3814,7 +3814,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Accepted Elements:**
 - `Integer`
@@ -3836,7 +3836,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`LowerAmbientLight`](./Abilities_and_Spells.md#context-lowerambientlight), [`LowerAmbientLight`](./Characters_and_Bosses.md#context-lowerambientlight)
+> **Referenced by:** [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight), [`LowerAmbientLight`](./Characters_and_Bosses.md#object-lowerambientlight)
 
 **Accepted Elements:**
 - `Integer`
@@ -3858,7 +3858,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scars`](./Injuries.md#context-scars)
+> **Referenced by:** [`scars`](./Injuries.md#object-scars)
 
 **Accepted Elements:**
 - `Integer`
@@ -3880,7 +3880,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveTowardsKillers`](./Characters_and_Bosses.md#context-movetowardskillers)
+> **Referenced by:** [`MoveTowardsKillers`](./Characters_and_Bosses.md#object-movetowardskillers)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -3902,7 +3902,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -3924,7 +3924,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: adventure_weather`](./Enums.md#enum-adventure_weather)
@@ -3946,7 +3946,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - List of [`Enum: do`](./Enums.md#enum-do)
@@ -3968,7 +3968,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -3990,7 +3990,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#context-setcrazyeyebackgroundweights)
+> **Referenced by:** [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#object-setcrazyeyebackgroundweights)
 
 **Accepted Elements:**
 - `Integer`
@@ -4012,7 +4012,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4033,7 +4033,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4054,7 +4054,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4075,7 +4075,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4096,7 +4096,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4117,7 +4117,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4138,7 +4138,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4159,7 +4159,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -4180,7 +4180,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - `Integer`
@@ -4201,7 +4201,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#context-statuseachturnbegin)
+> **Referenced by:** [`StatusEachTurnBegin`](./Passives_and_Statuses.md#object-statuseachturnbegin)
 
 **Accepted Elements:**
 - `Float`
@@ -4222,7 +4222,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4243,7 +4243,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -4264,7 +4264,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4285,7 +4285,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4306,7 +4306,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4327,7 +4327,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4348,7 +4348,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4369,7 +4369,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4390,7 +4390,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: status`](./Enums.md#enum-status)
@@ -4411,7 +4411,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -4432,7 +4432,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#context-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#context-chaosbosspieces)
+> **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#object-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#object-chaosbosspieces)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -4453,7 +4453,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -4474,7 +4474,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`LargeAttic`](./House_and_Environment.md#context-largeattic), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
+> **Referenced by:** `LargeAttic`, [`SmallAttic`](./House_and_Environment.md#object-smallattic)
 
 **Accepted Elements:**
 - `Array`
@@ -4496,7 +4496,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - List of [`Enum: attack`](./Enums.md#enum-attack)
@@ -4517,7 +4517,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#context-fallback), [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`fallback`](./Characters_and_Bosses.md#object-fallback), [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - List of [`Enum: do`](./Enums.md#enum-do)
@@ -4538,7 +4538,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
+> **Referenced by:** [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern)
 
 **Accepted Elements:**
 - `Unknown`
@@ -4568,7 +4568,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`LargeAttic`](./House_and_Environment.md#context-largeattic), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
+> **Referenced by:** `LargeAttic`, [`SmallAttic`](./House_and_Environment.md#object-smallattic)
 
 **Accepted Elements:**
 - `Block`
@@ -4589,7 +4589,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** `ROOT`, [`good`](./Events_and_Encounters.md#object-good)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -4610,7 +4610,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** `ROOT`, [`good`](./Events_and_Encounters.md#object-good)
 
 **Accepted Elements:**
 - List of [`Enum: learn_passive`](./Enums.md#enum-learn_passive)
@@ -4631,7 +4631,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath)
+> **Referenced by:** [`SpawnOnDeath`](./Characters_and_Bosses.md#object-spawnondeath)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -4652,7 +4652,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Accepted Elements:**
 - List of [Enum: `disorder`](./Enums.md#enum-disorder)
@@ -4673,7 +4673,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#context-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#context-chaosbosspieces)
+> **Referenced by:** [`ChaosBossFormChangeGuide`](./Characters_and_Bosses.md#object-chaosbossformchangeguide), [`ChaosBossPieces`](./Characters_and_Bosses.md#object-chaosbosspieces)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -4694,7 +4694,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Big`](./House_and_Environment.md#context-big)
+> **Referenced by:** [`Big`](./House_and_Environment.md#object-big)
 
 **Accepted Elements:**
 - `Float`
@@ -4715,7 +4715,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -4736,7 +4736,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - [Enum: `element`](./Enums.md#enum-element)
@@ -4753,7 +4753,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#context-hpaltstates), [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation)
+> **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#object-hpaltstates), [`ScalingAttackAnimation`](./Characters_and_Bosses.md#object-scalingattackanimation)
 
 **Accepted Elements:**
 - `Array`
@@ -4776,7 +4776,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - `Float`
@@ -4796,7 +4796,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -4816,7 +4816,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#context-conditional_ally)
+> **Referenced by:** [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally)
 
 **Accepted Elements:**
 - `Float`
@@ -4854,7 +4854,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: status`](./Enums.md#enum-status)
@@ -4874,7 +4874,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -4930,7 +4930,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -4968,7 +4968,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -4988,7 +4988,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -5008,7 +5008,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: type`](./Enums.md#enum-type)
@@ -5028,7 +5028,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -5048,7 +5048,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - `Integer`
@@ -5068,7 +5068,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5088,7 +5088,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -5108,7 +5108,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -5128,7 +5128,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root)
+> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root)
 
 **Accepted Elements:**
 - `Block`
@@ -5148,7 +5148,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend)
+> **Referenced by:** [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend)
 
 **Accepted Elements:**
 - `Integer`
@@ -5168,7 +5168,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -5188,7 +5188,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -5208,7 +5208,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -5228,7 +5228,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - `Integer`
@@ -5248,7 +5248,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives)
+> **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives)
 
 **Accepted Elements:**
 - List of [`Enum: ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack)
@@ -5268,7 +5268,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#context-statuseachturnbegin)
+> **Referenced by:** [`StatusEachTurnBegin`](./Cat_Mutations.md#object-statuseachturnbegin)
 
 **Accepted Elements:**
 - `Float`
@@ -5288,7 +5288,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 **Accepted Elements:**
 - List of [`Enum: adventure_weather`](./Enums.md#enum-adventure_weather)
@@ -5308,7 +5308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: RemoveStatus`](./Enums.md#enum-removestatus)
@@ -5328,7 +5328,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnDie`](./Characters_and_Bosses.md#context-statusondie)
+> **Referenced by:** [`StatusOnDie`](./Characters_and_Bosses.md#object-statusondie)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -5348,7 +5348,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddSelfStatusToWeapons`](./Items_and_Equipment.md#context-addselfstatustoweapons)
+> **Referenced by:** [`AddSelfStatusToWeapons`](./Items_and_Equipment.md#object-addselfstatustoweapons)
 
 **Accepted Elements:**
 - `Float`
@@ -5368,7 +5368,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -5388,7 +5388,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`room_positions`](./House_and_Environment.md#context-room_positions)
+> **Referenced by:** [`room_positions`](./House_and_Environment.md#object-room_positions)
 
 **Accepted Elements:**
 - `Integer`
@@ -5408,7 +5408,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -5428,7 +5428,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
 - `Float`
@@ -5448,7 +5448,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend)
 
 **Accepted Elements:**
 - `Float`
@@ -5468,7 +5468,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `disorder`](./Enums.md#enum-disorder)
@@ -5488,7 +5488,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveLevelScaledStatus`](./Passives_and_Statuses.md#context-passivelevelscaledstatus)
+> **Referenced by:** [`PassiveLevelScaledStatus`](./Passives_and_Statuses.md#object-passivelevelscaledstatus)
 
 **Accepted Elements:**
 - `Integer`
@@ -5514,7 +5514,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -5534,10 +5534,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Accepted Elements:**
-- [Equation: `aoe_chance`](./Math_Equations.md#equation-aoe-chance)
+- Equation: `aoe_chance`
 
 **Examples:**
 `[ 1 .33 ]`
@@ -5554,7 +5554,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack)
+> **Referenced by:** [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack)
 
 **Accepted Elements:**
 - `Float`
@@ -5574,7 +5574,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
+> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#object-tintitem)
 
 **Accepted Elements:**
 - `Float`
@@ -5594,7 +5594,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -5614,7 +5614,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Unknown`
@@ -5634,7 +5634,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5654,7 +5654,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -5674,7 +5674,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5694,7 +5694,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5714,7 +5714,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scars`](./Injuries.md#context-scars)
+> **Referenced by:** [`scars`](./Injuries.md#object-scars)
 
 **Accepted Elements:**
 - `Integer`
@@ -5734,7 +5734,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Metronome`](./Abilities_and_Spells.md#context-metronome)
+> **Referenced by:** [`Metronome`](./Abilities_and_Spells.md#object-metronome)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -5754,7 +5754,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5774,7 +5774,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5794,7 +5794,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `disorder`](./Enums.md#enum-disorder)
@@ -5814,7 +5814,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5834,7 +5834,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5854,7 +5854,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5874,7 +5874,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: projectile`](./Enums.md#enum-projectile)
@@ -5894,7 +5894,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: projectile`](./Enums.md#enum-projectile)
@@ -5914,7 +5914,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: projectile`](./Enums.md#enum-projectile)
@@ -5934,7 +5934,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5954,7 +5954,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -5974,7 +5974,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: FindItem`](./Enums.md#enum-finditem)
@@ -5994,7 +5994,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6014,7 +6014,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6034,7 +6034,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6054,7 +6054,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate)
@@ -6074,7 +6074,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6094,7 +6094,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements)
 
 **Accepted Elements:**
 - List of [`Enum: cat_has_item_equipped`](./Enums.md#enum-cat_has_item_equipped)
@@ -6114,7 +6114,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6134,7 +6134,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6154,7 +6154,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - `Unknown`
@@ -6181,10 +6181,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
-- List of [Enum: `class_seals`](./Enums.md#enum-class-seals)
+- List of Enum: `class_seals`
 
 **Examples:**
 `[ FighterSeal HunterSeal TankSeal ClericSeal ThiefSeal MageSeal ColorlessSeal PsychicSeal JesterSeal TinkererSeal ButcherSeal DruidSeal MonkSeal NecromancerSeal ]`
@@ -6202,7 +6202,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <summary><b>Expand</b></summary>
 
 **Accepted Elements:**
-- List of [Enum: `event_file`](./Enums.md#enum-event-file)
+- List of Enum: `event_file`
 
 **Examples:**
 `[ dead_body.gon monster.gon misc_events.gon npc_events.gon treasure_box.gon legacy_events.gon ]`
@@ -6219,7 +6219,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: FindItem`](./Enums.md#enum-finditem)
@@ -6239,7 +6239,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive)
+> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive)
 
 **Accepted Elements:**
 - List of [`Enum: FormChange`](./Enums.md#enum-formchange)
@@ -6259,7 +6259,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TourettesMeows`](./Passives_and_Statuses.md#context-tourettesmeows)
+> **Referenced by:** [`TourettesMeows`](./Passives_and_Statuses.md#object-tourettesmeows)
 
 **Accepted Elements:**
 - `Integer`
@@ -6279,7 +6279,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6299,7 +6299,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6319,7 +6319,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: get_parasite`](./Enums.md#enum-get_parasite)
@@ -6339,7 +6339,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: get_parasite`](./Enums.md#enum-get_parasite)
@@ -6359,7 +6359,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Array`
@@ -6380,7 +6380,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Accepted Elements:**
 - `Array`
@@ -6401,7 +6401,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Accepted Elements:**
 - `Array`
@@ -6422,7 +6422,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6442,7 +6442,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Unknown`
@@ -6480,7 +6480,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6500,7 +6500,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Unknown`
@@ -6520,7 +6520,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
+> **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
 **Accepted Elements:**
 - [Enum: `spells`](./Enums.md#enum-spells)
@@ -6540,7 +6540,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6560,7 +6560,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: disease`](./Enums.md#enum-disease)
@@ -6580,7 +6580,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - `Unknown`
@@ -6613,7 +6613,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -6633,7 +6633,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6653,7 +6653,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -6673,7 +6673,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -6693,7 +6693,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6713,7 +6713,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart)
+> **Referenced by:** [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#object-killenemyoftypeatbattlestart)
 
 **Accepted Elements:**
 - List of [`Enum: object`](./Enums.md#enum-object)
@@ -6733,7 +6733,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6753,7 +6753,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: get_item`](./Enums.md#enum-get_item)
@@ -6773,7 +6773,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -6793,7 +6793,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `disorder`](./Enums.md#enum-disorder)
@@ -6813,7 +6813,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -6833,7 +6833,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6853,7 +6853,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6873,7 +6873,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6893,7 +6893,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `parasite`](./Enums.md#enum-parasite)
@@ -6913,7 +6913,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6933,7 +6933,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TerminatorSkin`](./Characters_and_Bosses.md#context-terminatorskin)
+> **Referenced by:** [`TerminatorSkin`](./Characters_and_Bosses.md#object-terminatorskin)
 
 **Accepted Elements:**
 - `Block`
@@ -6953,7 +6953,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6973,7 +6973,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -6993,7 +6993,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Integer`
@@ -7013,7 +7013,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -7033,7 +7033,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - List of [`Enum: tag_restriction`](./Enums.md#enum-tag_restriction)
@@ -7053,7 +7053,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7073,7 +7073,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -7093,7 +7093,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Accepted Elements:**
 - List of [`Enum: status`](./Enums.md#enum-status)
@@ -7113,7 +7113,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -7133,7 +7133,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7153,7 +7153,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter`](./Enums.md#enum-chapter)
@@ -7173,7 +7173,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7193,7 +7193,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -7213,7 +7213,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Unknown`
@@ -7233,7 +7233,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scars`](./Injuries.md#context-scars)
+> **Referenced by:** [`scars`](./Injuries.md#object-scars)
 
 **Accepted Elements:**
 - `Integer`
@@ -7253,7 +7253,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`scars`](./Injuries.md#context-scars)
+> **Referenced by:** [`scars`](./Injuries.md#object-scars)
 
 **Accepted Elements:**
 - `Integer`
@@ -7363,7 +7363,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
+> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#object-finalbosspupils)
 
 **Accepted Elements:**
 - `Float`
@@ -7383,7 +7383,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -7403,7 +7403,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#context-itemauxtransform)
+> **Referenced by:** [`ItemAuxTransform`](./Items_and_Equipment.md#object-itemauxtransform)
 
 **Accepted Elements:**
 - List of [`Enum: quest_item_alias`](./Enums.md#enum-quest_item_alias)
@@ -7423,7 +7423,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -7443,7 +7443,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7463,7 +7463,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: hint_destination`](./Enums.md#enum-hint_destination)
@@ -7483,7 +7483,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7503,7 +7503,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -7523,7 +7523,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `disorder`](./Enums.md#enum-disorder)
@@ -7543,7 +7543,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: get_item`](./Enums.md#enum-get_item)
@@ -7563,7 +7563,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -7583,7 +7583,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -7603,7 +7603,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Accepted Elements:**
 - List of [`Enum: attack`](./Enums.md#enum-attack)
@@ -7623,7 +7623,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Accepted Elements:**
 - List of [Enum: `animation`](./Enums.md#enum-animation)
@@ -7643,7 +7643,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
+> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#object-tintitem)
 
 **Accepted Elements:**
 - `Float`
@@ -7663,7 +7663,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Accepted Elements:**
 - `Unknown`
@@ -7689,7 +7689,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Accepted Elements:**
 - `Enum`
@@ -7716,7 +7716,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddAdvantageToEvent`](./Items_and_Equipment.md#context-addadvantagetoevent)
+> **Referenced by:** [`AddAdvantageToEvent`](./Items_and_Equipment.md#object-addadvantagetoevent)
 
 **Accepted Elements:**
 - List of [`Enum: animation`](./Enums.md#enum-animation)
@@ -7736,7 +7736,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Accepted Elements:**
 - `Integer`
@@ -7756,7 +7756,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `parasite`](./Enums.md#enum-parasite)
@@ -7776,7 +7776,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7796,7 +7796,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: gain_disorder`](./Enums.md#enum-gain_disorder)
@@ -7816,7 +7816,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7836,7 +7836,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -7856,7 +7856,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart)
+> **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#object-spawnvolcanoonbattlestart)
 
 **Accepted Elements:**
 - List of [`Enum: ChangeTile`](./Enums.md#enum-changetile)
@@ -7876,10 +7876,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `raptor_nest_eggs`](./Enums.md#enum-raptor-nest-eggs)
+- Enum: `raptor_nest_eggs`
 
 </details>
 
@@ -7893,7 +7893,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7913,7 +7913,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7933,7 +7933,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7953,7 +7953,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -7973,7 +7973,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter`](./Enums.md#enum-chapter)
@@ -7993,10 +7993,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `sludge_armor`](./Enums.md#enum-sludge-armor)
+- Enum: `sludge_armor`
 
 </details>
 
@@ -8010,7 +8010,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Accepted Elements:**
 - `Float`
@@ -8030,7 +8030,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Float`
@@ -8050,7 +8050,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`T3HitlerSpawningPhase`](./Characters_and_Bosses.md#context-t3hitlerspawningphase)
+> **Referenced by:** [`T3HitlerSpawningPhase`](./Characters_and_Bosses.md#object-t3hitlerspawningphase)
 
 **Accepted Elements:**
 - `Array`
@@ -8071,10 +8071,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#context-finalbossshieldhealth)
+> **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#object-finalbossshieldhealth)
 
 **Accepted Elements:**
-- [Enum: `state_health`](./Enums.md#enum-state-health)
+- Enum: `state_health`
 
 </details>
 
@@ -8088,7 +8088,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`RandomPermanentStatsDistinct`](./Items_and_Equipment.md#context-randompermanentstatsdistinct)
+> **Referenced by:** `RandomPermanentStatsDistinct`
 
 **Accepted Elements:**
 - `Integer`
@@ -8108,7 +8108,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8128,7 +8128,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8148,7 +8148,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8168,7 +8168,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8188,10 +8188,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `gain_disorder`](./Enums.md#enum-gain-disorder)
+- Enum: `gain_disorder`
 
 </details>
 
@@ -8205,7 +8205,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ShowFakeDamage`](./Abilities_and_Spells.md#context-showfakedamage)
+> **Referenced by:** [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage)
 
 **Accepted Elements:**
 - `Unknown`
@@ -8231,7 +8231,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8251,7 +8251,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - List of [`Enum: chapter_id`](./Enums.md#enum-chapter_id)
@@ -8271,7 +8271,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8291,7 +8291,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8311,7 +8311,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8331,7 +8331,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8351,7 +8351,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8371,7 +8371,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8391,7 +8391,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8411,7 +8411,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns)
+> **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#object-transforminxturns)
 
 **Accepted Elements:**
 - `Integer`
@@ -8431,7 +8431,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Accepted Elements:**
 - `Unknown`
@@ -8451,7 +8451,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - List of [`Enum: variant_of`](./Enums.md#enum-variant_of)
@@ -8471,7 +8471,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
 - [Enum: `do`](./Enums.md#enum-do)
@@ -8488,10 +8488,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#context-root)
+> **Referenced by:** [`ROOT` (Cat_Classes)](./Cat_Classes.md#object-root)
 
 **Accepted Elements:**
-- [Enum: `passive_pool`](./Enums.md#enum-passive-pool)
+- Enum: `passive_pool`
 
 **Examples:**
 `[ Furious PressurePoints LateBloomer ZenkaiBoost ]`
@@ -8508,7 +8508,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#context-statusonturnendifdidntcastabilitytypes)
+> **Referenced by:** [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#object-statusonturnendifdidntcastabilitytypes)
 
 **Accepted Elements:**
 - [Enum: `type`](./Enums.md#enum-type)
@@ -8525,7 +8525,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8545,7 +8545,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#context-finalbosspupils)
+> **Referenced by:** [`FinalBossPupils`](./Characters_and_Bosses.md#object-finalbosspupils)
 
 **Accepted Elements:**
 - `Integer`
@@ -8565,7 +8565,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Accepted Elements:**
 - List of [Enum: `item`](./Enums.md#enum-item)
@@ -8585,10 +8585,10 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#context-conditional_activeweather_any)
+> **Referenced by:** [`Conditional_ActiveWeather_Any`](./Abilities_and_Spells.md#object-conditional_activeweather_any)
 
 **Accepted Elements:**
-- [Enum: `add_weather`](./Enums.md#enum-add-weather)
+- Enum: `add_weather`
 
 </details>
 
@@ -8602,7 +8602,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`outcome`](./Events_and_Encounters.md#context-outcome)
+> **Referenced by:** [`outcome`](./Events_and_Encounters.md#object-outcome)
 
 **Accepted Elements:**
 - `Block`
@@ -8622,7 +8622,7 @@ This document provides exhaustive lists of all array properties found in the bas
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`prompt`](./Engine_EventKeys.md#context-prompt)
+> **Referenced by:** `prompt`
 
 **Accepted Elements:**
 - List of [Enum: `TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer)

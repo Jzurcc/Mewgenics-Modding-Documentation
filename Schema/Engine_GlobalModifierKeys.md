@@ -1,12 +1,12 @@
 # Mewgenics Mod Developer Documentation: Engine: Global Modifier IDs
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see [AUDIT_GAPS.md](./AUDIT_GAPS.md). For enum values, see [Enums.md](./Enums.md).
+> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
 ## Engine: Global Modifier IDs
 
 This document lists every confirmed Global Modifier ID. These are game-state flags that affect the entire battle or run (e.g. `BloodRain`, `NoCorpses`, `LowerAmbientLight`). Used as keys in `CreateGlobalModifiers {}`.
 
-> **Referenced by:** [`CreateGlobalModifiers` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-createglobalmodifiers), [`CreateGlobalModifiers` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-createglobalmodifiers), [`global_passives` (Items_and_Equipment)](./Items_and_Equipment.md#context-global_passives), [`CreateGlobalModifiers` (Items_and_Equipment)](./Items_and_Equipment.md#context-createglobalmodifiers)
+> **Referenced by:** [`CreateGlobalModifiers` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-createglobalmodifiers), [`CreateGlobalModifiers` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-createglobalmodifiers), [`global_passives` (Items_and_Equipment)](./Items_and_Equipment.md#object-global_passives), [`CreateGlobalModifiers` (Items_and_Equipment)](./Items_and_Equipment.md#object-createglobalmodifiers)
 
 ### Valid Property Keys
 

@@ -13,7 +13,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -79,7 +79,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics), [`meta`](./Abilities_and_Spells.md#context-meta), [`Cat`](./Characters_and_Bosses.md#context-cat), [`NonCat`](./Characters_and_Bosses.md#context-noncat), [`Nothing`](./Characters_and_Bosses.md#context-nothing), [`StatusEachTurnBeginIfHasStatus`](./Characters_and_Bosses.md#context-statuseachturnbeginifhasstatus), [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns), [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`a`](./Events_and_Encounters.md#context-a), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`b`](./Events_and_Encounters.md#context-b), [`bite`](./Events_and_Encounters.md#context-bite), [`blue`](./Events_and_Encounters.md#context-blue), [`boogers`](./Events_and_Encounters.md#context-boogers), [`book`](./Events_and_Encounters.md#context-book), [`brace`](./Events_and_Encounters.md#context-brace), [`button`](./Events_and_Encounters.md#context-button), [`buy1`](./Events_and_Encounters.md#context-buy1), [`c`](./Events_and_Encounters.md#context-c), [`counter`](./Events_and_Encounters.md#context-counter), [`d`](./Events_and_Encounters.md#context-d), [`damage`](./Events_and_Encounters.md#context-damage), [`donate`](./Events_and_Encounters.md#context-donate), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`double`](./Events_and_Encounters.md#context-double), [`enter`](./Events_and_Encounters.md#context-enter), [`examine`](./Events_and_Encounters.md#context-examine), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), [`find_another_way`](./Events_and_Encounters.md#context-find_another_way), [`fire`](./Events_and_Encounters.md#context-fire), [`future`](./Events_and_Encounters.md#context-future), [`go_around`](./Events_and_Encounters.md#context-go_around), [`holy`](./Events_and_Encounters.md#context-holy), [`home`](./Events_and_Encounters.md#context-home), [`hp`](./Events_and_Encounters.md#context-hp), [`ice`](./Events_and_Encounters.md#context-ice), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`intimidation`](./Events_and_Encounters.md#context-intimidation), [`itchies`](./Events_and_Encounters.md#context-itchies), [`knife`](./Events_and_Encounters.md#context-knife), [`leave`](./Events_and_Encounters.md#context-leave), [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in), [`lever`](./Events_and_Encounters.md#context-lever), [`lick`](./Events_and_Encounters.md#context-lick), [`lightning`](./Events_and_Encounters.md#context-lightning), [`loot`](./Events_and_Encounters.md#context-loot), [`loot_heart`](./Events_and_Encounters.md#context-loot_heart), [`makeup`](./Events_and_Encounters.md#context-makeup), [`nothanks`](./Events_and_Encounters.md#context-nothanks), [`past`](./Events_and_Encounters.md#context-past), [`pirouette`](./Events_and_Encounters.md#context-pirouette), [`place_gristle`](./Events_and_Encounters.md#context-place_gristle), [`poop`](./Events_and_Encounters.md#context-poop), [`protection`](./Events_and_Encounters.md#context-protection), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins), [`receive`](./Events_and_Encounters.md#context-receive), [`red`](./Events_and_Encounters.md#context-red), [`reflect`](./Events_and_Encounters.md#context-reflect), [`run`](./Events_and_Encounters.md#context-run), [`run_again`](./Events_and_Encounters.md#context-run_again), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor), [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest), [`skip`](./Events_and_Encounters.md#context-skip), [`speed`](./Events_and_Encounters.md#context-speed), [`surprise`](./Events_and_Encounters.md#context-surprise), [`take`](./Events_and_Encounters.md#context-take), [`take_blood`](./Events_and_Encounters.md#context-take_blood), [`tappytoes`](./Events_and_Encounters.md#context-tappytoes), [`thorns`](./Events_and_Encounters.md#context-thorns), [`touch`](./Events_and_Encounters.md#context-touch), [`w1`](./Events_and_Encounters.md#context-w1), [`w2`](./Events_and_Encounters.md#context-w2), [`w3`](./Events_and_Encounters.md#context-w3), [`w4`](./Events_and_Encounters.md#context-w4), [`w5`](./Events_and_Encounters.md#context-w5), [`w6`](./Events_and_Encounters.md#context-w6), [`wheezies`](./Events_and_Encounters.md#context-wheezies), [`CatAPultAnimation`](./Passives_and_Statuses.md#context-catapultanimation)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics), [`meta`](./Abilities_and_Spells.md#object-meta), [`Cat`](./Characters_and_Bosses.md#object-cat), [`NonCat`](./Characters_and_Bosses.md#object-noncat), [`Nothing`](./Characters_and_Bosses.md#object-nothing), [`StatusEachTurnBeginIfHasStatus`](./Characters_and_Bosses.md#object-statuseachturnbeginifhasstatus), [`TransformInXTurns`](./Characters_and_Bosses.md#object-transforminxturns), `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`a`](./Events_and_Encounters.md#object-a), [`activate_p`](./Events_and_Encounters.md#object-activate_p), [`activate_z`](./Events_and_Encounters.md#object-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#object-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#object-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#object-attach_leech), [`b`](./Events_and_Encounters.md#object-b), [`bite`](./Events_and_Encounters.md#object-bite), [`blue`](./Events_and_Encounters.md#object-blue), [`boogers`](./Events_and_Encounters.md#object-boogers), [`book`](./Events_and_Encounters.md#object-book), [`brace`](./Events_and_Encounters.md#object-brace), [`button`](./Events_and_Encounters.md#object-button), [`buy1`](./Events_and_Encounters.md#object-buy1), [`c`](./Events_and_Encounters.md#object-c), [`counter`](./Events_and_Encounters.md#object-counter), [`d`](./Events_and_Encounters.md#object-d), [`damage`](./Events_and_Encounters.md#object-damage), [`donate`](./Events_and_Encounters.md#object-donate), [`donate_10`](./Events_and_Encounters.md#object-donate_10), [`donate_15`](./Events_and_Encounters.md#object-donate_15), [`donate_20`](./Events_and_Encounters.md#object-donate_20), [`donate_5`](./Events_and_Encounters.md#object-donate_5), [`double`](./Events_and_Encounters.md#object-double), [`enter`](./Events_and_Encounters.md#object-enter), [`examine`](./Events_and_Encounters.md#object-examine), [`fill_jar`](./Events_and_Encounters.md#object-fill_jar), [`find_another_way`](./Events_and_Encounters.md#object-find_another_way), [`fire`](./Events_and_Encounters.md#object-fire), [`future`](./Events_and_Encounters.md#object-future), [`go_around`](./Events_and_Encounters.md#object-go_around), [`holy`](./Events_and_Encounters.md#object-holy), [`home`](./Events_and_Encounters.md#object-home), [`hp`](./Events_and_Encounters.md#object-hp), [`ice`](./Events_and_Encounters.md#object-ice), [`ignore`](./Events_and_Encounters.md#object-ignore), [`infinite`](./Events_and_Encounters.md#object-infinite), [`intimidation`](./Events_and_Encounters.md#object-intimidation), [`itchies`](./Events_and_Encounters.md#object-itchies), [`knife`](./Events_and_Encounters.md#object-knife), [`leave`](./Events_and_Encounters.md#object-leave), [`leave_it_in`](./Events_and_Encounters.md#object-leave_it_in), [`lever`](./Events_and_Encounters.md#object-lever), [`lick`](./Events_and_Encounters.md#object-lick), [`lightning`](./Events_and_Encounters.md#object-lightning), [`loot`](./Events_and_Encounters.md#object-loot), [`loot_heart`](./Events_and_Encounters.md#object-loot_heart), [`makeup`](./Events_and_Encounters.md#object-makeup), [`nothanks`](./Events_and_Encounters.md#object-nothanks), [`past`](./Events_and_Encounters.md#object-past), [`pirouette`](./Events_and_Encounters.md#object-pirouette), [`place_gristle`](./Events_and_Encounters.md#object-place_gristle), [`poop`](./Events_and_Encounters.md#object-poop), [`protection`](./Events_and_Encounters.md#object-protection), [`put_in_coins`](./Events_and_Encounters.md#object-put_in_coins), [`receive`](./Events_and_Encounters.md#object-receive), [`red`](./Events_and_Encounters.md#object-red), [`reflect`](./Events_and_Encounters.md#object-reflect), [`run`](./Events_and_Encounters.md#object-run), [`run_again`](./Events_and_Encounters.md#object-run_again), [`sacrifice`](./Events_and_Encounters.md#object-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#object-sacrifice_full_favor), [`sacrifice_normal`](./Events_and_Encounters.md#object-sacrifice_normal), [`sacrifice_partial_favor`](./Events_and_Encounters.md#object-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#object-sacrifice_quest), [`skip`](./Events_and_Encounters.md#object-skip), [`speed`](./Events_and_Encounters.md#object-speed), [`surprise`](./Events_and_Encounters.md#object-surprise), [`take`](./Events_and_Encounters.md#object-take), [`take_blood`](./Events_and_Encounters.md#object-take_blood), [`tappytoes`](./Events_and_Encounters.md#object-tappytoes), [`thorns`](./Events_and_Encounters.md#object-thorns), [`touch`](./Events_and_Encounters.md#object-touch), [`w1`](./Events_and_Encounters.md#object-w1), [`w2`](./Events_and_Encounters.md#object-w2), [`w3`](./Events_and_Encounters.md#object-w3), [`w4`](./Events_and_Encounters.md#object-w4), [`w5`](./Events_and_Encounters.md#object-w5), [`w6`](./Events_and_Encounters.md#object-w6), [`wheezies`](./Events_and_Encounters.md#object-wheezies), [`CatAPultAnimation`](./Passives_and_Statuses.md#object-catapultanimation)
 
 **Confirmed Values:**
 
@@ -503,7 +503,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`meta`](./Abilities_and_Spells.md#context-meta), [`ClassManaCostReduction`](./Cat_Mutations.md#context-classmanacostreduction), [`ClassManaCostReduction`](./Items_and_Equipment.md#context-classmanacostreduction), [`ClassManaCostReduction`](./Passives_and_Statuses.md#context-classmanacostreduction), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root), [`meta`](./Abilities_and_Spells.md#object-meta), [`ClassManaCostReduction`](./Cat_Mutations.md#object-classmanacostreduction), [`ClassManaCostReduction`](./Items_and_Equipment.md#object-classmanacostreduction), [`ClassManaCostReduction`](./Passives_and_Statuses.md#object-classmanacostreduction), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -566,7 +566,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root), [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root), [`ROOT` (Characters_and_Bosses)](./Characters_and_Bosses.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), `ROOT`
 
 **Confirmed Values:**
 
@@ -1541,7 +1541,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -1570,7 +1570,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -1599,7 +1599,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AfterImage`](./Abilities_and_Spells.md#context-afterimage), [`DustOnHit`](./Abilities_and_Spells.md#context-dustonhit), [`LeaveBehind`](./Abilities_and_Spells.md#context-leavebehind), [`ObjectOnHit`](./Abilities_and_Spells.md#context-objectonhit), [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#context-objectonhitcharacter), [`PopAndSpawn`](./Abilities_and_Spells.md#context-popandspawn), [`spawn`](./Abilities_and_Spells.md#context-spawn), [`SpawnEachTurn`](./Cat_Mutations.md#context-spawneachturn), [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#context-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#context-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Cat_Mutations.md#context-spawnthingondamage), [`SpawnThingOnDamage`](./Characters_and_Bosses.md#context-spawnthingondamage), [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns), [`TransformOnElementInfluence`](./Characters_and_Bosses.md#context-transformonelementinfluence), [`TransformOnElementInfluencex`](./Characters_and_Bosses.md#context-transformonelementinfluencex), [`TransformOnStatusThreshold`](./Characters_and_Bosses.md#context-transformonstatusthreshold), [`SpawnOnBattleStart`](./Elite_Buffs.md#context-spawnonbattlestart), [`ROOT`](./Miscellaneous.md#event-reward-samples), [`gain_clone_familiar`](./Events_and_Encounters.md#context-gain_clone_familiar), [`gain_familiar`](./Events_and_Encounters.md#context-gain_familiar), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight), [`AllyInfested`](./House_and_Environment.md#context-allyinfested), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#context-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart), [`ObjectDetector`](./Items_and_Equipment.md#context-objectdetector), [`ObjectOnHitCharacter`](./Items_and_Equipment.md#context-objectonhitcharacter), [`PoopWhenHit`](./Items_and_Equipment.md#context-poopwhenhit), [`SpawnCatCopyOnBattleStart`](./Items_and_Equipment.md#context-spawncatcopyonbattlestart), [`SpawnCatCopyWhenDowned`](./Items_and_Equipment.md#context-spawncatcopywhendowned), [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#context-spawnextrathingsonbattlestart), [`SpawnItemLinkedFamiliar`](./Items_and_Equipment.md#context-spawnitemlinkedfamiliar), [`SpawnObjectOnPopCorpse`](./Items_and_Equipment.md#context-spawnobjectonpopcorpse), [`SpawnOnBattleStart`](./Items_and_Equipment.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#context-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Items_and_Equipment.md#context-spawnthingondamage), [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#context-objectonhitcharacter), [`SpawnCatCopyOnBattleStart`](./Passives_and_Statuses.md#context-spawncatcopyonbattlestart), [`SpawnEachTurn`](./Passives_and_Statuses.md#context-spawneachturn), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#context-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#context-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Passives_and_Statuses.md#context-spawnthingondamage), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`weather_element_alt`](./Spawns_and_Enemy_Pools.md#context-weather_element_alt)
+> **Referenced by:** [`AfterImage`](./Abilities_and_Spells.md#object-afterimage), [`DustOnHit`](./Abilities_and_Spells.md#object-dustonhit), [`LeaveBehind`](./Abilities_and_Spells.md#object-leavebehind), [`ObjectOnHit`](./Abilities_and_Spells.md#object-objectonhit), [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#object-objectonhitcharacter), [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn), [`spawn`](./Abilities_and_Spells.md#object-spawn), [`SpawnEachTurn`](./Cat_Mutations.md#object-spawneachturn), [`SpawnExtraThingsOnBattleStart`](./Cat_Mutations.md#object-spawnextrathingsonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Cat_Mutations.md#object-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Cat_Mutations.md#object-spawnthingondamage), [`SpawnThingOnDamage`](./Characters_and_Bosses.md#object-spawnthingondamage), [`TransformInXTurns`](./Characters_and_Bosses.md#object-transforminxturns), [`TransformOnElementInfluence`](./Characters_and_Bosses.md#object-transformonelementinfluence), [`TransformOnElementInfluencex`](./Characters_and_Bosses.md#object-transformonelementinfluencex), [`TransformOnStatusThreshold`](./Characters_and_Bosses.md#object-transformonstatusthreshold), [`SpawnOnBattleStart`](./Elite_Buffs.md#object-spawnonbattlestart), `ROOT`, [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain_clone_familiar), [`gain_familiar`](./Events_and_Encounters.md#object-gain_familiar), [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight), [`AllyInfested`](./House_and_Environment.md#object-allyinfested), [`GlobalSpawnOnRoundEnd`](./House_and_Environment.md#object-globalspawnonroundend), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#object-spawnextrathingsonbattlestart), [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#object-spawnvolcanoonbattlestart), [`ObjectDetector`](./Items_and_Equipment.md#object-objectdetector), [`ObjectOnHitCharacter`](./Items_and_Equipment.md#object-objectonhitcharacter), [`PoopWhenHit`](./Items_and_Equipment.md#object-poopwhenhit), `SpawnCatCopyOnBattleStart`, `SpawnCatCopyWhenDowned`, [`SpawnEachTurn`](./Items_and_Equipment.md#object-spawneachturn), [`SpawnExtraThingsOnBattleStart`](./Items_and_Equipment.md#object-spawnextrathingsonbattlestart), [`SpawnItemLinkedFamiliar`](./Items_and_Equipment.md#object-spawnitemlinkedfamiliar), [`SpawnObjectOnPopCorpse`](./Items_and_Equipment.md#object-spawnobjectonpopcorpse), [`SpawnOnBattleStart`](./Items_and_Equipment.md#object-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Items_and_Equipment.md#object-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Items_and_Equipment.md#object-spawnthingondamage), [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter), [`SpawnCatCopyOnBattleStart`](./Passives_and_Statuses.md#object-spawncatcopyonbattlestart), [`SpawnEachTurn`](./Passives_and_Statuses.md#object-spawneachturn), [`SpawnOnBattleStart`](./Passives_and_Statuses.md#object-spawnonbattlestart), [`SpawnOnBattleStartRandomEmptyTile`](./Passives_and_Statuses.md#object-spawnonbattlestartrandomemptytile), [`SpawnThingOnDamage`](./Passives_and_Statuses.md#object-spawnthingondamage), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root), [`weather_element_alt`](./Spawns_and_Enemy_Pools.md#object-weather_element_alt)
 
 **Confirmed Values:**
 
@@ -2315,7 +2315,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`StatusOnSetPieceBreak`](./Items_and_Equipment.md#context-statusonsetpiecebreak)
+> **Referenced by:** [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), `StatusOnSetPieceBreak`
 
 **Confirmed Values:**
 
@@ -2456,7 +2456,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#context-conditional_sourceabilityhastag), [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#context-forcemovetowardstaggedobject), [`-2`](./Cat_Mutations.md#context--2), [`1026`](./Cat_Mutations.md#context-1026), [`1500`](./Cat_Mutations.md#context-1500), [`300`](./Cat_Mutations.md#context-300), [`301`](./Cat_Mutations.md#context-301), [`302`](./Cat_Mutations.md#context-302), [`303`](./Cat_Mutations.md#context-303), [`304`](./Cat_Mutations.md#context-304), [`306`](./Cat_Mutations.md#context-306), [`307`](./Cat_Mutations.md#context-307), [`308`](./Cat_Mutations.md#context-308), [`309`](./Cat_Mutations.md#context-309), [`310`](./Cat_Mutations.md#context-310), [`311`](./Cat_Mutations.md#context-311), [`313`](./Cat_Mutations.md#context-313), [`314`](./Cat_Mutations.md#context-314), [`315`](./Cat_Mutations.md#context-315), [`316`](./Cat_Mutations.md#context-316), [`318`](./Cat_Mutations.md#context-318), [`319`](./Cat_Mutations.md#context-319), [`321`](./Cat_Mutations.md#context-321), [`322`](./Cat_Mutations.md#context-322), [`325`](./Cat_Mutations.md#context-325), [`327`](./Cat_Mutations.md#context-327), [`328`](./Cat_Mutations.md#context-328), [`329`](./Cat_Mutations.md#context-329), [`336`](./Cat_Mutations.md#context-336), [`337`](./Cat_Mutations.md#context-337), [`339`](./Cat_Mutations.md#context-339), [`343`](./Cat_Mutations.md#context-343), [`345`](./Cat_Mutations.md#context-345), [`353`](./Cat_Mutations.md#context-353), [`400`](./Cat_Mutations.md#context-400), [`401`](./Cat_Mutations.md#context-401), [`402`](./Cat_Mutations.md#context-402), [`403`](./Cat_Mutations.md#context-403), [`404`](./Cat_Mutations.md#context-404), [`405`](./Cat_Mutations.md#context-405), [`406`](./Cat_Mutations.md#context-406), [`407`](./Cat_Mutations.md#context-407), [`408`](./Cat_Mutations.md#context-408), [`409`](./Cat_Mutations.md#context-409), [`410`](./Cat_Mutations.md#context-410), [`411`](./Cat_Mutations.md#context-411), [`412`](./Cat_Mutations.md#context-412), [`413`](./Cat_Mutations.md#context-413), [`414`](./Cat_Mutations.md#context-414), [`415`](./Cat_Mutations.md#context-415), [`416`](./Cat_Mutations.md#context-416), [`417`](./Cat_Mutations.md#context-417), [`418`](./Cat_Mutations.md#context-418), [`419`](./Cat_Mutations.md#context-419), [`420`](./Cat_Mutations.md#context-420), [`421`](./Cat_Mutations.md#context-421), [`422`](./Cat_Mutations.md#context-422), [`423`](./Cat_Mutations.md#context-423), [`424`](./Cat_Mutations.md#context-424), [`425`](./Cat_Mutations.md#context-425), [`426`](./Cat_Mutations.md#context-426), [`427`](./Cat_Mutations.md#context-427), [`428`](./Cat_Mutations.md#context-428), [`429`](./Cat_Mutations.md#context-429), [`430`](./Cat_Mutations.md#context-430), [`431`](./Cat_Mutations.md#context-431), [`432`](./Cat_Mutations.md#context-432), [`433`](./Cat_Mutations.md#context-433), [`434`](./Cat_Mutations.md#context-434), [`435`](./Cat_Mutations.md#context-435), [`436`](./Cat_Mutations.md#context-436), [`437`](./Cat_Mutations.md#context-437), [`438`](./Cat_Mutations.md#context-438), [`439`](./Cat_Mutations.md#context-439), [`440`](./Cat_Mutations.md#context-440), [`441`](./Cat_Mutations.md#context-441), [`442`](./Cat_Mutations.md#context-442), [`700`](./Cat_Mutations.md#context-700), [`701`](./Cat_Mutations.md#context-701), [`702`](./Cat_Mutations.md#context-702), [`703`](./Cat_Mutations.md#context-703), [`704`](./Cat_Mutations.md#context-704), [`705`](./Cat_Mutations.md#context-705), [`706`](./Cat_Mutations.md#context-706), [`707`](./Cat_Mutations.md#context-707), [`750`](./Cat_Mutations.md#context-750), [`752`](./Cat_Mutations.md#context-752), [`753`](./Cat_Mutations.md#context-753), [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#context-abilitywhentaggedcharactermovesnear), [`AbilityWhenTaggedCharacterMovesNear`](./Characters_and_Bosses.md#context-abilitywhentaggedcharactermovesnear), [`CaveFamilyEnrage`](./Characters_and_Bosses.md#context-cavefamilyenrage), [`ChaosHeadDropIn`](./Characters_and_Bosses.md#context-chaosheaddropin), [`HitlerExecute`](./Characters_and_Bosses.md#context-hitlerexecute), [`properties`](./Characters_and_Bosses.md#context-properties), [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#context-charactertypegainsstatusatbattlestart), [`ROOT`](./Miscellaneous.md#event-reward-samples), [`CharacterTypeGainsStatusAtBattleStart`](./Events_and_Encounters.md#context-charactertypegainsstatusatbattlestart), [`random_mutation`](./Events_and_Encounters.md#context-random_mutation), [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#context-charactertypegainsstatusatbattlestart), [`Conditional_HasTag`](./House_and_Environment.md#context-conditional_hastag), [`FactionUprising`](./House_and_Environment.md#context-factionuprising), [`Conditional_HasTag`](./Items_and_Equipment.md#context-conditional_hastag), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#context-spawnrandompickupsontaggedunitkilled), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#context-abilitywhentaggedcharactermovesnear), [`Conditional_HasTag`](./Passives_and_Statuses.md#context-conditional_hastag), [`Conditional_SourceHasTag`](./Passives_and_Statuses.md#context-conditional_sourcehastag), [`ManaCostReductionTagged`](./Passives_and_Statuses.md#context-manacostreductiontagged), [`StatusOnUseAbilityWithTag`](./Passives_and_Statuses.md#context-statusonuseabilitywithtag), [`TaggedPickupEffectReplacement`](./Passives_and_Statuses.md#context-taggedpickupeffectreplacement)
+> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag), [`Conditional_SourceAbilityHasTag`](./Abilities_and_Spells.md#object-conditional_sourceabilityhastag), [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#object-forcemovetowardstaggedobject), `-2`, `1026`, `1500`, `300`, `301`, `302`, `303`, `304`, `306`, `307`, `308`, `309`, `310`, `311`, `313`, `314`, `315`, `316`, `318`, `319`, `321`, `322`, `325`, `327`, `328`, `329`, `336`, `337`, `339`, `343`, `345`, `353`, `400`, `401`, `402`, `403`, `404`, `405`, `406`, `407`, `408`, `409`, `410`, `411`, `412`, `413`, `414`, `415`, `416`, `417`, `418`, `419`, `420`, `421`, `422`, `423`, `424`, `425`, `426`, `427`, `428`, `429`, `430`, `431`, `432`, `433`, `434`, `435`, `436`, `437`, `438`, `439`, `440`, `441`, `442`, `700`, `701`, `702`, `703`, `704`, `705`, `706`, `707`, `750`, `752`, `753`, [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#object-abilitywhentaggedcharactermovesnear), [`AbilityWhenTaggedCharacterMovesNear`](./Characters_and_Bosses.md#object-abilitywhentaggedcharactermovesnear), [`CaveFamilyEnrage`](./Characters_and_Bosses.md#object-cavefamilyenrage), [`ChaosHeadDropIn`](./Characters_and_Bosses.md#object-chaosheaddropin), [`HitlerExecute`](./Characters_and_Bosses.md#object-hitlerexecute), [`properties`](./Characters_and_Bosses.md#object-properties), [`CharacterTypeGainsStatusAtBattleStart`](./Miscellaneous.md#object-charactertypegainsstatusatbattlestart), `ROOT`, [`CharacterTypeGainsStatusAtBattleStart`](./Events_and_Encounters.md#object-charactertypegainsstatusatbattlestart), [`random_mutation`](./Events_and_Encounters.md#object-random_mutation), [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#object-charactertypegainsstatusatbattlestart), [`Conditional_HasTag`](./House_and_Environment.md#object-conditional_hastag), [`FactionUprising`](./House_and_Environment.md#object-factionuprising), [`Conditional_HasTag`](./Items_and_Equipment.md#object-conditional_hastag), [`SpawnRandomPickupsOnTaggedUnitKilled`](./Items_and_Equipment.md#object-spawnrandompickupsontaggedunitkilled), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#object-abilitywhentaggedcharactermovesnear), [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag), [`Conditional_SourceHasTag`](./Passives_and_Statuses.md#object-conditional_sourcehastag), [`ManaCostReductionTagged`](./Passives_and_Statuses.md#object-manacostreductiontagged), [`StatusOnUseAbilityWithTag`](./Passives_and_Statuses.md#object-statusonuseabilitywithtag), [`TaggedPickupEffectReplacement`](./Passives_and_Statuses.md#object-taggedpickupeffectreplacement)
 
 **Confirmed Values:**
 
@@ -2545,7 +2545,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`damage`](./Abilities_and_Spells.md#context-damage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`self_damage`](./Abilities_and_Spells.md#context-self_damage), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage), [`MeleeRevengeDamage`](./Cat_Mutations.md#context-meleerevengedamage), [`RevengeDamage`](./Cat_Mutations.md#context-revengedamage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#context-meleerevengedamage), [`RevengeDamage`](./Characters_and_Bosses.md#context-revengedamage), [`eat_damage`](./Characters_and_Bosses.md#context-eat_damage), [`properties`](./Characters_and_Bosses.md#context-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#context-damageneighborsaftermove), [`AddAdvantageToEvent`](./Items_and_Equipment.md#context-addadvantagetoevent), [`DoDamage`](./Items_and_Equipment.md#context-dodamage), [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#context-statusonturnendifdidntcastabilitytypes), [`damage_instance`](./Items_and_Equipment.md#context-damage_instance), [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`battle`](./Map_Generation_and_Routing.md#context-battle), [`boss`](./Map_Generation_and_Routing.md#context-boss), [`event`](./Map_Generation_and_Routing.md#context-event), [`exit0`](./Map_Generation_and_Routing.md#context-exit0), [`exit1`](./Map_Generation_and_Routing.md#context-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#context-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#context-exit_lab), [`hard_initial`](./Map_Generation_and_Routing.md#context-hard_initial), [`home`](./Map_Generation_and_Routing.md#context-home), [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event), [`mw_altar`](./Map_Generation_and_Routing.md#context-mw_altar), [`mw_battle1`](./Map_Generation_and_Routing.md#context-mw_battle1), [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss), [`mw_earlyhome`](./Map_Generation_and_Routing.md#context-mw_earlyhome), [`mw_event1`](./Map_Generation_and_Routing.md#context-mw_event1), [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1), [`mw_home`](./Map_Generation_and_Routing.md#context-mw_home), [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event), [`mw_treasure`](./Map_Generation_and_Routing.md#context-mw_treasure), [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water), [`start`](./Map_Generation_and_Routing.md#context-start), [`time_machine`](./Map_Generation_and_Routing.md#context-time_machine), [`treasure`](./Map_Generation_and_Routing.md#context-treasure), [`weather_event`](./Map_Generation_and_Routing.md#context-weather_event), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#context-damageneighborsaftermove), [`DamageNeighborsOnEndMove`](./Passives_and_Statuses.md#context-damageneighborsonendmove), [`GravityWell`](./Passives_and_Statuses.md#context-gravitywell), [`SelfDamageWhenDealDamage`](./Passives_and_Statuses.md#context-selfdamagewhendealdamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#context-smiteenemieswhokill), [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Passives_and_Statuses.md#context-statusonturnendifdidntcastabilitytypes), [`fire`](./Passives_and_Statuses.md#context-fire), [`ice`](./Passives_and_Statuses.md#context-ice), [`lightning`](./Passives_and_Statuses.md#context-lightning), [`triattack`](./Passives_and_Statuses.md#context-triattack), [`tracy_special_item`](./Progression_Unlocks.md#context-tracy_special_item)
+> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#object-dodamage), [`damage`](./Abilities_and_Spells.md#object-damage), [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance), [`self_damage`](./Abilities_and_Spells.md#object-self_damage), [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage), [`MeleeRevengeDamage`](./Cat_Mutations.md#object-meleerevengedamage), [`RevengeDamage`](./Cat_Mutations.md#object-revengedamage), [`MeleeRevengeDamage`](./Characters_and_Bosses.md#object-meleerevengedamage), [`RevengeDamage`](./Characters_and_Bosses.md#object-revengedamage), [`eat_damage`](./Characters_and_Bosses.md#object-eat_damage), [`properties`](./Characters_and_Bosses.md#object-properties), [`DamageNeighborsAfterMove`](./Elite_Buffs.md#object-damageneighborsaftermove), [`AddAdvantageToEvent`](./Items_and_Equipment.md#object-addadvantagetoevent), [`DoDamage`](./Items_and_Equipment.md#object-dodamage), [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Items_and_Equipment.md#object-statusonturnendifdidntcastabilitytypes), [`damage_instance`](./Items_and_Equipment.md#object-damage_instance), [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`battle`](./Map_Generation_and_Routing.md#object-battle), [`boss`](./Map_Generation_and_Routing.md#object-boss), [`event`](./Map_Generation_and_Routing.md#object-event), [`exit0`](./Map_Generation_and_Routing.md#object-exit0), [`exit1`](./Map_Generation_and_Routing.md#object-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#object-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#object-exit_lab), [`hard_initial`](./Map_Generation_and_Routing.md#object-hard_initial), [`home`](./Map_Generation_and_Routing.md#object-home), [`miniboss_event`](./Map_Generation_and_Routing.md#object-miniboss_event), [`mw_altar`](./Map_Generation_and_Routing.md#object-mw_altar), [`mw_battle1`](./Map_Generation_and_Routing.md#object-mw_battle1), [`mw_boss`](./Map_Generation_and_Routing.md#object-mw_boss), [`mw_earlyhome`](./Map_Generation_and_Routing.md#object-mw_earlyhome), [`mw_event1`](./Map_Generation_and_Routing.md#object-mw_event1), [`mw_hard1`](./Map_Generation_and_Routing.md#object-mw_hard1), [`mw_home`](./Map_Generation_and_Routing.md#object-mw_home), [`mw_quest_event`](./Map_Generation_and_Routing.md#object-mw_quest_event), [`mw_treasure`](./Map_Generation_and_Routing.md#object-mw_treasure), [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#object-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#object-shop_water), [`start`](./Map_Generation_and_Routing.md#object-start), [`time_machine`](./Map_Generation_and_Routing.md#object-time_machine), [`treasure`](./Map_Generation_and_Routing.md#object-treasure), [`weather_event`](./Map_Generation_and_Routing.md#object-weather_event), [`DamageNeighborsAfterMove`](./Passives_and_Statuses.md#object-damageneighborsaftermove), [`DamageNeighborsOnEndMove`](./Passives_and_Statuses.md#object-damageneighborsonendmove), [`GravityWell`](./Passives_and_Statuses.md#object-gravitywell), [`SelfDamageWhenDealDamage`](./Passives_and_Statuses.md#object-selfdamagewhendealdamage), [`SmiteEnemiesWhoKill`](./Passives_and_Statuses.md#object-smiteenemieswhokill), [`StatusOnTurnEndIfDidntCastAbilityTypes`](./Passives_and_Statuses.md#object-statusonturnendifdidntcastabilitytypes), [`fire`](./Passives_and_Statuses.md#object-fire), [`ice`](./Passives_and_Statuses.md#object-ice), [`lightning`](./Passives_and_Statuses.md#object-lightning), [`triattack`](./Passives_and_Statuses.md#object-triattack), [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item)
 
 **Confirmed Values:**
 
@@ -2602,7 +2602,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta), [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#object-root), [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -3382,7 +3382,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`301`](./Cat_Mutations.md#context-301), [`306`](./Cat_Mutations.md#context-306), [`307`](./Cat_Mutations.md#context-307), [`309`](./Cat_Mutations.md#context-309), [`310`](./Cat_Mutations.md#context-310), [`311`](./Cat_Mutations.md#context-311), [`313`](./Cat_Mutations.md#context-313), [`314`](./Cat_Mutations.md#context-314), [`315`](./Cat_Mutations.md#context-315), [`900`](./Cat_Mutations.md#context-900), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#context-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** `301`, `306`, `307`, `309`, `310`, `311`, `313`, `314`, `315`, `900`, [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (Furniture_and_Metaprogression)](./Furniture_and_Metaprogression.md#object-root), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -4103,7 +4103,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics), [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`SmallAttic`](./House_and_Environment.md#context-smallattic), [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d), [`meta`](./Shops.md#context-meta)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics), [`Floor1_Large`](./House_and_Environment.md#object-floor1_large), [`Floor1_Small`](./House_and_Environment.md#object-floor1_small), [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`SmallAttic`](./House_and_Environment.md#object-smallattic), `ROOT`, `ROOT`, [`meta`](./Shops.md#object-meta)
 
 **Confirmed Values:**
 
@@ -4985,7 +4985,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AutocastEachRound`](./Abilities_and_Spells.md#context-autocasteachround), [`BackflipWhenTargeted`](./Abilities_and_Spells.md#context-backflipwhentargeted), [`BodyGuard`](./Abilities_and_Spells.md#context-bodyguard), [`ChanceToBreakFree`](./Abilities_and_Spells.md#context-chancetobreakfree), [`ConjureBonusAbility`](./Abilities_and_Spells.md#context-conjurebonusability), [`DelayCastAbility`](./Abilities_and_Spells.md#context-delaycastability), [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#context-forceimmediatemoveandattack), [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#context-forcemovetowardstaggedobject), [`ReplaceSpell`](./Abilities_and_Spells.md#context-replacespell), [`TeamCastAbility`](./Abilities_and_Spells.md#context-teamcastability), [`UseAbility`](./Abilities_and_Spells.md#context-useability), [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#context-usemoveabilitywithai), [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#context-abilitywhentaggedcharactermovesnear), [`BackflipWhenTargeted`](./Cat_Mutations.md#context-backflipwhentargeted), [`ChanceToBackflip`](./Cat_Mutations.md#context-chancetobackflip), [`CounterAttack`](./Cat_Mutations.md#context-counterattack), [`AbilityHealthThreshold`](./Characters_and_Bosses.md#context-abilityhealththreshold), [`AbilityOnRoundEnd`](./Characters_and_Bosses.md#context-abilityonroundend), [`AbilityReaction`](./Characters_and_Bosses.md#context-abilityreaction), [`AbilityWhenTaggedCharacterMovesNear`](./Characters_and_Bosses.md#context-abilitywhentaggedcharactermovesnear), [`AutocastEachRound`](./Characters_and_Bosses.md#context-autocasteachround), [`BackflipWhenTargeted`](./Characters_and_Bosses.md#context-backflipwhentargeted), [`BungaEntrance`](./Characters_and_Bosses.md#context-bungaentrance), [`CaveFamilyEnrage`](./Characters_and_Bosses.md#context-cavefamilyenrage), [`CerberubsJumpBlind`](./Characters_and_Bosses.md#context-cerberubsjumpblind), [`CerberubsJumpNormal`](./Characters_and_Bosses.md#context-cerberubsjumpnormal), [`ChanceToBackflip`](./Characters_and_Bosses.md#context-chancetobackflip), [`ChanceToSpitOnDamage`](./Characters_and_Bosses.md#context-chancetospitondamage), [`ChaosHeadDropIn`](./Characters_and_Bosses.md#context-chaosheaddropin), [`CloseConvert`](./Characters_and_Bosses.md#context-closeconvert), [`CounterAttack`](./Characters_and_Bosses.md#context-counterattack), [`DashRandomly`](./Characters_and_Bosses.md#context-dashrandomly), [`DeathRattle`](./Characters_and_Bosses.md#context-deathrattle), [`DeathRattleRevive`](./Characters_and_Bosses.md#context-deathrattlerevive), [`DodgeWhenTargeted`](./Characters_and_Bosses.md#context-dodgewhentargeted), [`Escape`](./Characters_and_Bosses.md#context-escape), [`FoodMove`](./Characters_and_Bosses.md#context-foodmove), [`ForceTrample`](./Characters_and_Bosses.md#context-forcetrample), [`ForceUseAbility`](./Characters_and_Bosses.md#context-forceuseability), [`HitlerExecute`](./Characters_and_Bosses.md#context-hitlerexecute), [`ImmediateAbilityReaction`](./Characters_and_Bosses.md#context-immediateabilityreaction), [`LeapClose`](./Characters_and_Bosses.md#context-leapclose), [`MoveAway`](./Characters_and_Bosses.md#context-moveaway), [`MoveCenter`](./Characters_and_Bosses.md#context-movecenter), [`MoveClose`](./Characters_and_Bosses.md#context-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#context-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#context-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#context-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#context-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#context-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#context-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#context-moveoneforpuke), [`MoveSpaced`](./Characters_and_Bosses.md#context-movespaced), [`MoveToHead`](./Characters_and_Bosses.md#context-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#context-movetowards), [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource), [`MovementReaction`](./Characters_and_Bosses.md#context-movementreaction), [`NCGravecrawlFAR`](./Characters_and_Bosses.md#context-ncgravecrawlfar), [`ProtectTargetedAllies`](./Characters_and_Bosses.md#context-protecttargetedallies), [`ReturnA`](./Characters_and_Bosses.md#context-returna), [`RunFar`](./Characters_and_Bosses.md#context-runfar), [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect), [`SpearRun`](./Characters_and_Bosses.md#context-spearrun), [`SuckMF`](./Characters_and_Bosses.md#context-suckmf), [`SupportFormChangeInsteadOfRun`](./Characters_and_Bosses.md#context-supportformchangeinsteadofrun), [`TF_TargetAllies`](./Characters_and_Bosses.md#context-tf_targetallies), [`TF_TargetEnemies`](./Characters_and_Bosses.md#context-tf_targetenemies), [`TerminatorChase`](./Characters_and_Bosses.md#context-terminatorchase), [`Trapper`](./Characters_and_Bosses.md#context-trapper), [`Unflip`](./Characters_and_Bosses.md#context-unflip), [`UnlimitedDeathRattleRevive`](./Characters_and_Bosses.md#context-unlimiteddeathrattlerevive), [`UseAbility`](./Characters_and_Bosses.md#context-useability), [`UseAbilityWhenOutOfStatus`](./Characters_and_Bosses.md#context-useabilitywhenoutofstatus), [`AbilityHealthThreshold`](./Items_and_Equipment.md#context-abilityhealththreshold), [`AbilityOnRoundEndOnce`](./Items_and_Equipment.md#context-abilityonroundendonce), [`AutocastEachRound`](./Items_and_Equipment.md#context-autocasteachround), [`BackflipWhenTargeted`](./Items_and_Equipment.md#context-backflipwhentargeted), [`ChanceToBackflip`](./Items_and_Equipment.md#context-chancetobackflip), [`CounterAttack`](./Items_and_Equipment.md#context-counterattack), [`DeathRattle`](./Items_and_Equipment.md#context-deathrattle), [`ForceUseAbilityOnTarget`](./Items_and_Equipment.md#context-forceuseabilityontarget), [`ImmediateUseAbility`](./Items_and_Equipment.md#context-immediateuseability), [`MovementReaction`](./Items_and_Equipment.md#context-movementreaction), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root), [`AbilityReaction`](./Passives_and_Statuses.md#context-abilityreaction), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#context-abilitywhentaggedcharactermovesnear), [`AllyBonusAbilityAura`](./Passives_and_Statuses.md#context-allybonusabilityaura), [`AutocastEachRound`](./Passives_and_Statuses.md#context-autocasteachround), [`AutocastEachTurnBegin`](./Passives_and_Statuses.md#context-autocasteachturnbegin), [`CatAPultAnimation`](./Passives_and_Statuses.md#context-catapultanimation), [`ChanceToBackflip`](./Passives_and_Statuses.md#context-chancetobackflip), [`DamageIfDidntUseSpecificAbility`](./Passives_and_Statuses.md#context-damageifdidntusespecificability), [`DeathRattle`](./Passives_and_Statuses.md#context-deathrattle), [`ForceUseAbility`](./Passives_and_Statuses.md#context-forceuseability), [`MovementReaction`](./Passives_and_Statuses.md#context-movementreaction), [`SecurityBotProtect`](./Passives_and_Statuses.md#context-securitybotprotect)
+> **Referenced by:** [`AutocastEachRound`](./Abilities_and_Spells.md#object-autocasteachround), [`BackflipWhenTargeted`](./Abilities_and_Spells.md#object-backflipwhentargeted), [`BodyGuard`](./Abilities_and_Spells.md#object-bodyguard), [`ChanceToBreakFree`](./Abilities_and_Spells.md#object-chancetobreakfree), [`ConjureBonusAbility`](./Abilities_and_Spells.md#object-conjurebonusability), [`DelayCastAbility`](./Abilities_and_Spells.md#object-delaycastability), [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack), [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#object-forcemovetowardstaggedobject), [`ReplaceSpell`](./Abilities_and_Spells.md#object-replacespell), [`TeamCastAbility`](./Abilities_and_Spells.md#object-teamcastability), [`UseAbility`](./Abilities_and_Spells.md#object-useability), [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#object-usemoveabilitywithai), [`AbilityWhenTaggedCharacterMovesNear`](./Cat_Mutations.md#object-abilitywhentaggedcharactermovesnear), [`BackflipWhenTargeted`](./Cat_Mutations.md#object-backflipwhentargeted), [`ChanceToBackflip`](./Cat_Mutations.md#object-chancetobackflip), [`CounterAttack`](./Cat_Mutations.md#object-counterattack), [`AbilityHealthThreshold`](./Characters_and_Bosses.md#object-abilityhealththreshold), [`AbilityOnRoundEnd`](./Characters_and_Bosses.md#object-abilityonroundend), [`AbilityReaction`](./Characters_and_Bosses.md#object-abilityreaction), [`AbilityWhenTaggedCharacterMovesNear`](./Characters_and_Bosses.md#object-abilitywhentaggedcharactermovesnear), [`AutocastEachRound`](./Characters_and_Bosses.md#object-autocasteachround), [`BackflipWhenTargeted`](./Characters_and_Bosses.md#object-backflipwhentargeted), [`BungaEntrance`](./Characters_and_Bosses.md#object-bungaentrance), [`CaveFamilyEnrage`](./Characters_and_Bosses.md#object-cavefamilyenrage), [`CerberubsJumpBlind`](./Characters_and_Bosses.md#object-cerberubsjumpblind), [`CerberubsJumpNormal`](./Characters_and_Bosses.md#object-cerberubsjumpnormal), [`ChanceToBackflip`](./Characters_and_Bosses.md#object-chancetobackflip), [`ChanceToSpitOnDamage`](./Characters_and_Bosses.md#object-chancetospitondamage), [`ChaosHeadDropIn`](./Characters_and_Bosses.md#object-chaosheaddropin), [`CloseConvert`](./Characters_and_Bosses.md#object-closeconvert), [`CounterAttack`](./Characters_and_Bosses.md#object-counterattack), [`DashRandomly`](./Characters_and_Bosses.md#object-dashrandomly), [`DeathRattle`](./Characters_and_Bosses.md#object-deathrattle), [`DeathRattleRevive`](./Characters_and_Bosses.md#object-deathrattlerevive), [`DodgeWhenTargeted`](./Characters_and_Bosses.md#object-dodgewhentargeted), [`Escape`](./Characters_and_Bosses.md#object-escape), [`FoodMove`](./Characters_and_Bosses.md#object-foodmove), [`ForceTrample`](./Characters_and_Bosses.md#object-forcetrample), [`ForceUseAbility`](./Characters_and_Bosses.md#object-forceuseability), [`HitlerExecute`](./Characters_and_Bosses.md#object-hitlerexecute), [`ImmediateAbilityReaction`](./Characters_and_Bosses.md#object-immediateabilityreaction), [`LeapClose`](./Characters_and_Bosses.md#object-leapclose), [`MoveAway`](./Characters_and_Bosses.md#object-moveaway), [`MoveCenter`](./Characters_and_Bosses.md#object-movecenter), [`MoveClose`](./Characters_and_Bosses.md#object-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#object-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#object-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#object-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#object-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#object-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#object-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#object-moveoneforpuke), [`MoveSpaced`](./Characters_and_Bosses.md#object-movespaced), [`MoveToHead`](./Characters_and_Bosses.md#object-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#object-movetowards), [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#object-movetowardsdamagesource), [`MovementReaction`](./Characters_and_Bosses.md#object-movementreaction), [`NCGravecrawlFAR`](./Characters_and_Bosses.md#object-ncgravecrawlfar), [`ProtectTargetedAllies`](./Characters_and_Bosses.md#object-protecttargetedallies), [`ReturnA`](./Characters_and_Bosses.md#object-returna), [`RunFar`](./Characters_and_Bosses.md#object-runfar), [`SecurityBotProtect`](./Characters_and_Bosses.md#object-securitybotprotect), [`SpearRun`](./Characters_and_Bosses.md#object-spearrun), [`SuckMF`](./Characters_and_Bosses.md#object-suckmf), [`SupportFormChangeInsteadOfRun`](./Characters_and_Bosses.md#object-supportformchangeinsteadofrun), [`TF_TargetAllies`](./Characters_and_Bosses.md#object-tf_targetallies), [`TF_TargetEnemies`](./Characters_and_Bosses.md#object-tf_targetenemies), [`TerminatorChase`](./Characters_and_Bosses.md#object-terminatorchase), [`Trapper`](./Characters_and_Bosses.md#object-trapper), [`Unflip`](./Characters_and_Bosses.md#object-unflip), [`UnlimitedDeathRattleRevive`](./Characters_and_Bosses.md#object-unlimiteddeathrattlerevive), [`UseAbility`](./Characters_and_Bosses.md#object-useability), [`UseAbilityWhenOutOfStatus`](./Characters_and_Bosses.md#object-useabilitywhenoutofstatus), [`AbilityHealthThreshold`](./Items_and_Equipment.md#object-abilityhealththreshold), [`AbilityOnRoundEndOnce`](./Items_and_Equipment.md#object-abilityonroundendonce), [`AutocastEachRound`](./Items_and_Equipment.md#object-autocasteachround), [`BackflipWhenTargeted`](./Items_and_Equipment.md#object-backflipwhentargeted), [`ChanceToBackflip`](./Items_and_Equipment.md#object-chancetobackflip), [`CounterAttack`](./Items_and_Equipment.md#object-counterattack), `DeathRattle`, [`ForceUseAbilityOnTarget`](./Items_and_Equipment.md#object-forceuseabilityontarget), [`ImmediateUseAbility`](./Items_and_Equipment.md#object-immediateuseability), [`MovementReaction`](./Items_and_Equipment.md#object-movementreaction), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root), [`AbilityReaction`](./Passives_and_Statuses.md#object-abilityreaction), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#object-abilitywhentaggedcharactermovesnear), [`AllyBonusAbilityAura`](./Passives_and_Statuses.md#object-allybonusabilityaura), [`AutocastEachRound`](./Passives_and_Statuses.md#object-autocasteachround), [`AutocastEachTurnBegin`](./Passives_and_Statuses.md#object-autocasteachturnbegin), [`CatAPultAnimation`](./Passives_and_Statuses.md#object-catapultanimation), [`ChanceToBackflip`](./Passives_and_Statuses.md#object-chancetobackflip), [`DamageIfDidntUseSpecificAbility`](./Passives_and_Statuses.md#object-damageifdidntusespecificability), [`DeathRattle`](./Passives_and_Statuses.md#object-deathrattle), [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability), [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction), [`SecurityBotProtect`](./Passives_and_Statuses.md#object-securitybotprotect)
 
 **Confirmed Values:**
 
@@ -5512,7 +5512,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain), [`ai`](./Characters_and_Bosses.md#context-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#context-replacebrain)
+> **Referenced by:** [`ReplaceBrain`](./Characters_and_Bosses.md#object-replacebrain), [`ai`](./Characters_and_Bosses.md#object-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#object-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain)
 
 **Confirmed Values:**
 
@@ -5537,7 +5537,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`spawn`](./Abilities_and_Spells.md#context-spawn), [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath), [`properties`](./Characters_and_Bosses.md#context-properties), [`AllyInfested`](./House_and_Environment.md#context-allyinfested), [`SpawnOnDeath`](./Items_and_Equipment.md#context-spawnondeath)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance), [`spawn`](./Abilities_and_Spells.md#object-spawn), [`SpawnOnDeath`](./Characters_and_Bosses.md#object-spawnondeath), [`properties`](./Characters_and_Bosses.md#object-properties), [`AllyInfested`](./House_and_Environment.md#object-allyinfested), [`SpawnOnDeath`](./Items_and_Equipment.md#object-spawnondeath)
 
 **Confirmed Values:**
 
@@ -5570,7 +5570,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#context-usemoveabilitywithai), [`CloseConvert`](./Characters_and_Bosses.md#context-closeconvert), [`Escape`](./Characters_and_Bosses.md#context-escape), [`FoodMove`](./Characters_and_Bosses.md#context-foodmove), [`LeapClose`](./Characters_and_Bosses.md#context-leapclose), [`MoveAway`](./Characters_and_Bosses.md#context-moveaway), [`MoveCenter`](./Characters_and_Bosses.md#context-movecenter), [`MoveClose`](./Characters_and_Bosses.md#context-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#context-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#context-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#context-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#context-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#context-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#context-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#context-moveoneforpuke), [`MoveSpaced`](./Characters_and_Bosses.md#context-movespaced), [`MoveToHead`](./Characters_and_Bosses.md#context-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#context-movetowards), [`NCGravecrawlFAR`](./Characters_and_Bosses.md#context-ncgravecrawlfar), [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain), [`ReturnA`](./Characters_and_Bosses.md#context-returna), [`RunFar`](./Characters_and_Bosses.md#context-runfar), [`SpearRun`](./Characters_and_Bosses.md#context-spearrun), [`SuckMF`](./Characters_and_Bosses.md#context-suckmf), [`Terminator2Run`](./Characters_and_Bosses.md#context-terminator2run), [`Unflip`](./Characters_and_Bosses.md#context-unflip), [`ai`](./Characters_and_Bosses.md#context-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#context-replacebrain)
+> **Referenced by:** [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#object-usemoveabilitywithai), [`CloseConvert`](./Characters_and_Bosses.md#object-closeconvert), [`Escape`](./Characters_and_Bosses.md#object-escape), [`FoodMove`](./Characters_and_Bosses.md#object-foodmove), [`LeapClose`](./Characters_and_Bosses.md#object-leapclose), [`MoveAway`](./Characters_and_Bosses.md#object-moveaway), [`MoveCenter`](./Characters_and_Bosses.md#object-movecenter), [`MoveClose`](./Characters_and_Bosses.md#object-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#object-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#object-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#object-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#object-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#object-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#object-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#object-moveoneforpuke), [`MoveSpaced`](./Characters_and_Bosses.md#object-movespaced), [`MoveToHead`](./Characters_and_Bosses.md#object-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#object-movetowards), [`NCGravecrawlFAR`](./Characters_and_Bosses.md#object-ncgravecrawlfar), [`ReplaceBrain`](./Characters_and_Bosses.md#object-replacebrain), [`ReturnA`](./Characters_and_Bosses.md#object-returna), [`RunFar`](./Characters_and_Bosses.md#object-runfar), [`SpearRun`](./Characters_and_Bosses.md#object-spearrun), [`SuckMF`](./Characters_and_Bosses.md#object-suckmf), [`Terminator2Run`](./Characters_and_Bosses.md#object-terminator2run), [`Unflip`](./Characters_and_Bosses.md#object-unflip), [`ai`](./Characters_and_Bosses.md#object-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#object-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain)
 
 **Confirmed Values:**
 
@@ -5638,7 +5638,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`705`](./Cat_Mutations.md#context-705), [`2`](./Characters_and_Bosses.md#context-2), [`3`](./Characters_and_Bosses.md#context-3), [`4`](./Characters_and_Bosses.md#context-4), [`5`](./Characters_and_Bosses.md#context-5), [`Big`](./Characters_and_Bosses.md#context-big), [`Bishop`](./Characters_and_Bosses.md#context-bishop), [`CaveBaby`](./Characters_and_Bosses.md#context-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#context-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#context-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#context-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#context-cavewomanhascat), [`Charging`](./Characters_and_Bosses.md#context-charging), [`Cultist`](./Characters_and_Bosses.md#context-cultist), [`Default`](./Characters_and_Bosses.md#context-default), [`Down`](./Characters_and_Bosses.md#context-down), [`DualSword`](./Characters_and_Bosses.md#context-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#context-dualsword_primed), [`Explody`](./Characters_and_Bosses.md#context-explody), [`FightPhase`](./Characters_and_Bosses.md#context-fightphase), [`Fire`](./Characters_and_Bosses.md#context-fire), [`FireFull`](./Characters_and_Bosses.md#context-firefull), [`Full`](./Characters_and_Bosses.md#context-full), [`Grown`](./Characters_and_Bosses.md#context-grown), [`HalfDead`](./Characters_and_Bosses.md#context-halfdead), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#context-hasdeadcat), [`HasRock`](./Characters_and_Bosses.md#context-hasrock), [`HumanDead`](./Characters_and_Bosses.md#context-humandead), [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase), [`Lifted`](./Characters_and_Bosses.md#context-lifted), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities), [`Mutant`](./Characters_and_Bosses.md#context-mutant), [`NoStick`](./Characters_and_Bosses.md#context-nostick), [`Normal`](./Characters_and_Bosses.md#context-normal), [`NormalFull`](./Characters_and_Bosses.md#context-normalfull), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`Open`](./Characters_and_Bosses.md#context-open), [`Primed`](./Characters_and_Bosses.md#context-primed), [`Pulp2`](./Characters_and_Bosses.md#context-pulp2), [`Pulp3`](./Characters_and_Bosses.md#context-pulp3), [`Pulp4`](./Characters_and_Bosses.md#context-pulp4), [`Pulp5`](./Characters_and_Bosses.md#context-pulp5), [`Pulp6`](./Characters_and_Bosses.md#context-pulp6), [`Pulp7`](./Characters_and_Bosses.md#context-pulp7), [`Rage`](./Characters_and_Bosses.md#context-rage), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`Small`](./Characters_and_Bosses.md#context-small), [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform), [`Standing`](./Characters_and_Bosses.md#context-standing), [`Standing2`](./Characters_and_Bosses.md#context-standing2), [`SwordAndShield`](./Characters_and_Bosses.md#context-swordandshield), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#context-swordandshield_primed), [`Tar`](./Characters_and_Bosses.md#context-tar), [`TarFull`](./Characters_and_Bosses.md#context-tarfull), [`Turtled`](./Characters_and_Bosses.md#context-turtled), [`Washer`](./Characters_and_Bosses.md#context-washer), [`WereMan`](./Characters_and_Bosses.md#context-wereman), [`Zealot`](./Characters_and_Bosses.md#context-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#context-zealotbomb), [`abilities`](./Characters_and_Bosses.md#context-abilities), [`ai`](./Characters_and_Bosses.md#context-ai), [`passive`](./Characters_and_Bosses.md#context-passive), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** `705`, `2`, `3`, `4`, `5`, [`Big`](./Characters_and_Bosses.md#object-big), [`Bishop`](./Characters_and_Bosses.md#object-bishop), [`CaveBaby`](./Characters_and_Bosses.md#object-cavebaby), [`CaveMan`](./Characters_and_Bosses.md#object-caveman), [`CaveManSpear`](./Characters_and_Bosses.md#object-cavemanspear), [`CaveWoman`](./Characters_and_Bosses.md#object-cavewoman), [`CaveWomanHasCat`](./Characters_and_Bosses.md#object-cavewomanhascat), [`Charging`](./Characters_and_Bosses.md#object-charging), [`Cultist`](./Characters_and_Bosses.md#object-cultist), [`Default`](./Characters_and_Bosses.md#object-default), [`Down`](./Characters_and_Bosses.md#object-down), [`DualSword`](./Characters_and_Bosses.md#object-dualsword), [`DualSword_Primed`](./Characters_and_Bosses.md#object-dualsword_primed), [`Explody`](./Characters_and_Bosses.md#object-explody), [`FightPhase`](./Characters_and_Bosses.md#object-fightphase), [`Fire`](./Characters_and_Bosses.md#object-fire), [`FireFull`](./Characters_and_Bosses.md#object-firefull), [`Full`](./Characters_and_Bosses.md#object-full), [`Grown`](./Characters_and_Bosses.md#object-grown), [`HalfDead`](./Characters_and_Bosses.md#object-halfdead), [`HasCat`](./Characters_and_Bosses.md#object-hascat), [`HasDeadCat`](./Characters_and_Bosses.md#object-hasdeadcat), [`HasRock`](./Characters_and_Bosses.md#object-hasrock), [`HumanDead`](./Characters_and_Bosses.md#object-humandead), [`InitialPhase`](./Characters_and_Bosses.md#object-initialphase), [`Lifted`](./Characters_and_Bosses.md#object-lifted), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#object-monkcatreactionabilities), [`Mutant`](./Characters_and_Bosses.md#object-mutant), [`NoStick`](./Characters_and_Bosses.md#object-nostick), [`Normal`](./Characters_and_Bosses.md#object-normal), [`NormalFull`](./Characters_and_Bosses.md#object-normalfull), [`Nuke`](./Characters_and_Bosses.md#object-nuke), [`Open`](./Characters_and_Bosses.md#object-open), [`Primed`](./Characters_and_Bosses.md#object-primed), [`Pulp2`](./Characters_and_Bosses.md#object-pulp2), [`Pulp3`](./Characters_and_Bosses.md#object-pulp3), [`Pulp4`](./Characters_and_Bosses.md#object-pulp4), [`Pulp5`](./Characters_and_Bosses.md#object-pulp5), [`Pulp6`](./Characters_and_Bosses.md#object-pulp6), [`Pulp7`](./Characters_and_Bosses.md#object-pulp7), [`Rage`](./Characters_and_Bosses.md#object-rage), [`Sitting`](./Characters_and_Bosses.md#object-sitting), [`Small`](./Characters_and_Bosses.md#object-small), [`SquirrelForm`](./Characters_and_Bosses.md#object-squirrelform), [`Standing`](./Characters_and_Bosses.md#object-standing), [`Standing2`](./Characters_and_Bosses.md#object-standing2), [`SwordAndShield`](./Characters_and_Bosses.md#object-swordandshield), [`SwordAndShield_Primed`](./Characters_and_Bosses.md#object-swordandshield_primed), [`Tar`](./Characters_and_Bosses.md#object-tar), [`TarFull`](./Characters_and_Bosses.md#object-tarfull), [`Turtled`](./Characters_and_Bosses.md#object-turtled), [`Washer`](./Characters_and_Bosses.md#object-washer), [`WereMan`](./Characters_and_Bosses.md#object-wereman), [`Zealot`](./Characters_and_Bosses.md#object-zealot), [`ZealotBomb`](./Characters_and_Bosses.md#object-zealotbomb), [`abilities`](./Characters_and_Bosses.md#object-abilities), [`ai`](./Characters_and_Bosses.md#object-ai), [`passive`](./Characters_and_Bosses.md#object-passive), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -5938,7 +5938,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CerberubsJumpBlind`](./Characters_and_Bosses.md#context-cerberubsjumpblind), [`CerberubsJumpNormal`](./Characters_and_Bosses.md#context-cerberubsjumpnormal), [`DashRandomly`](./Characters_and_Bosses.md#context-dashrandomly), [`ForceTrample`](./Characters_and_Bosses.md#context-forcetrample), [`ReplaceBrain`](./Characters_and_Bosses.md#context-replacebrain), [`SuckMF`](./Characters_and_Bosses.md#context-suckmf), [`TF_TargetAllies`](./Characters_and_Bosses.md#context-tf_targetallies), [`TF_TargetEnemies`](./Characters_and_Bosses.md#context-tf_targetenemies), [`ai`](./Characters_and_Bosses.md#context-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#context-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#context-replacebrain)
+> **Referenced by:** [`CerberubsJumpBlind`](./Characters_and_Bosses.md#object-cerberubsjumpblind), [`CerberubsJumpNormal`](./Characters_and_Bosses.md#object-cerberubsjumpnormal), [`DashRandomly`](./Characters_and_Bosses.md#object-dashrandomly), [`ForceTrample`](./Characters_and_Bosses.md#object-forcetrample), [`ReplaceBrain`](./Characters_and_Bosses.md#object-replacebrain), [`SuckMF`](./Characters_and_Bosses.md#object-suckmf), [`TF_TargetAllies`](./Characters_and_Bosses.md#object-tf_targetallies), [`TF_TargetEnemies`](./Characters_and_Bosses.md#object-tf_targetenemies), [`ai`](./Characters_and_Bosses.md#object-ai), [`ai_if_spawned_as_enemy`](./Characters_and_Bosses.md#object-ai_if_spawned_as_enemy), [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain)
 
 **Confirmed Values:**
 
@@ -5984,7 +5984,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -6010,7 +6010,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence), [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence), [`spell_graphics_override`](./Passives_and_Statuses.md#object-spell_graphics_override)
 
 **Confirmed Values:**
 
@@ -6083,7 +6083,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Default`](./Characters_and_Bosses.md#context-default), [`Down`](./Characters_and_Bosses.md#context-down), [`Explody`](./Characters_and_Bosses.md#context-explody), [`FightPhase`](./Characters_and_Bosses.md#context-fightphase), [`HasCat`](./Characters_and_Bosses.md#context-hascat), [`InitialPhase`](./Characters_and_Bosses.md#context-initialphase), [`Lifted`](./Characters_and_Bosses.md#context-lifted), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`Pulp2`](./Characters_and_Bosses.md#context-pulp2), [`Pulp3`](./Characters_and_Bosses.md#context-pulp3), [`Pulp4`](./Characters_and_Bosses.md#context-pulp4), [`Pulp5`](./Characters_and_Bosses.md#context-pulp5), [`Pulp6`](./Characters_and_Bosses.md#context-pulp6), [`Pulp7`](./Characters_and_Bosses.md#context-pulp7), [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`Standing`](./Characters_and_Bosses.md#context-standing), [`Standing2`](./Characters_and_Bosses.md#context-standing2), [`TerminatorChase`](./Characters_and_Bosses.md#context-terminatorchase), [`Turtled`](./Characters_and_Bosses.md#context-turtled), [`abilities`](./Characters_and_Bosses.md#context-abilities), [`SecurityBotProtect`](./Passives_and_Statuses.md#context-securitybotprotect)
+> **Referenced by:** [`Default`](./Characters_and_Bosses.md#object-default), [`Down`](./Characters_and_Bosses.md#object-down), [`Explody`](./Characters_and_Bosses.md#object-explody), [`FightPhase`](./Characters_and_Bosses.md#object-fightphase), [`HasCat`](./Characters_and_Bosses.md#object-hascat), [`InitialPhase`](./Characters_and_Bosses.md#object-initialphase), [`Lifted`](./Characters_and_Bosses.md#object-lifted), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#object-monkcatreactionabilities), [`Nuke`](./Characters_and_Bosses.md#object-nuke), [`Pulp2`](./Characters_and_Bosses.md#object-pulp2), [`Pulp3`](./Characters_and_Bosses.md#object-pulp3), [`Pulp4`](./Characters_and_Bosses.md#object-pulp4), [`Pulp5`](./Characters_and_Bosses.md#object-pulp5), [`Pulp6`](./Characters_and_Bosses.md#object-pulp6), [`Pulp7`](./Characters_and_Bosses.md#object-pulp7), [`SecurityBotProtect`](./Characters_and_Bosses.md#object-securitybotprotect), [`Sitting`](./Characters_and_Bosses.md#object-sitting), [`Standing`](./Characters_and_Bosses.md#object-standing), [`Standing2`](./Characters_and_Bosses.md#object-standing2), [`TerminatorChase`](./Characters_and_Bosses.md#object-terminatorchase), [`Turtled`](./Characters_and_Bosses.md#object-turtled), [`abilities`](./Characters_and_Bosses.md#object-abilities), [`SecurityBotProtect`](./Passives_and_Statuses.md#object-securitybotprotect)
 
 **Confirmed Values:**
 
@@ -6129,7 +6129,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -6173,7 +6173,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward), [`popup`](./Progression_Unlocks.md#context-popup)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`main`](./Events_and_Encounters.md#object-main), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward), [`popup`](./Progression_Unlocks.md#object-popup)
 
 **Confirmed Values:**
 
@@ -6437,7 +6437,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -6497,7 +6497,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -6535,7 +6535,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`a`](./Events_and_Encounters.md#context-a), [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`altar_sacrifice`](./Events_and_Encounters.md#context-altar_sacrifice), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`b`](./Events_and_Encounters.md#context-b), [`blue`](./Events_and_Encounters.md#context-blue), [`body`](./Events_and_Encounters.md#context-body), [`boogers`](./Events_and_Encounters.md#context-boogers), [`book`](./Events_and_Encounters.md#context-book), [`brace`](./Events_and_Encounters.md#context-brace), [`button`](./Events_and_Encounters.md#context-button), [`buy1`](./Events_and_Encounters.md#context-buy1), [`c`](./Events_and_Encounters.md#context-c), [`chaos_ending`](./Events_and_Encounters.md#context-chaos_ending), [`chapter_cutscene`](./Events_and_Encounters.md#context-chapter_cutscene), [`counter`](./Events_and_Encounters.md#context-counter), [`d`](./Events_and_Encounters.md#context-d), [`damage`](./Events_and_Encounters.md#context-damage), [`desert_cutscene`](./Events_and_Encounters.md#context-desert_cutscene), [`donate`](./Events_and_Encounters.md#context-donate), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`double`](./Events_and_Encounters.md#context-double), [`enter`](./Events_and_Encounters.md#context-enter), [`fiddle`](./Events_and_Encounters.md#context-fiddle), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), [`find`](./Events_and_Encounters.md#context-find), [`fire`](./Events_and_Encounters.md#context-fire), [`future`](./Events_and_Encounters.md#context-future), [`go_around`](./Events_and_Encounters.md#context-go_around), [`holy`](./Events_and_Encounters.md#context-holy), [`home`](./Events_and_Encounters.md#context-home), [`hp`](./Events_and_Encounters.md#context-hp), [`ice`](./Events_and_Encounters.md#context-ice), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`intimidation`](./Events_and_Encounters.md#context-intimidation), [`itchies`](./Events_and_Encounters.md#context-itchies), [`knife`](./Events_and_Encounters.md#context-knife), [`leave`](./Events_and_Encounters.md#context-leave), [`leave_it_in`](./Events_and_Encounters.md#context-leave_it_in), [`lever`](./Events_and_Encounters.md#context-lever), [`lick`](./Events_and_Encounters.md#context-lick), [`lightning`](./Events_and_Encounters.md#context-lightning), [`looks`](./Events_and_Encounters.md#context-looks), [`loot_heart`](./Events_and_Encounters.md#context-loot_heart), [`makeup`](./Events_and_Encounters.md#context-makeup), [`mind`](./Events_and_Encounters.md#context-mind), [`nothanks`](./Events_and_Encounters.md#context-nothanks), [`past`](./Events_and_Encounters.md#context-past), [`pirouette`](./Events_and_Encounters.md#context-pirouette), [`place_gristle`](./Events_and_Encounters.md#context-place_gristle), [`poop`](./Events_and_Encounters.md#context-poop), [`power`](./Events_and_Encounters.md#context-power), [`protection`](./Events_and_Encounters.md#context-protection), [`pull_it_out`](./Events_and_Encounters.md#context-pull_it_out), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins), [`receive`](./Events_and_Encounters.md#context-receive), [`red`](./Events_and_Encounters.md#context-red), [`reflect`](./Events_and_Encounters.md#context-reflect), [`repair`](./Events_and_Encounters.md#context-repair), [`repair_quest`](./Events_and_Encounters.md#context-repair_quest), [`sacrifice`](./Events_and_Encounters.md#context-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#context-sacrifice_full_favor), [`sacrifice_partial_favor`](./Events_and_Encounters.md#context-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest), [`scream`](./Events_and_Encounters.md#context-scream), [`skip`](./Events_and_Encounters.md#context-skip), [`smash`](./Events_and_Encounters.md#context-smash), [`soul`](./Events_and_Encounters.md#context-soul), [`speed`](./Events_and_Encounters.md#context-speed), [`surprise`](./Events_and_Encounters.md#context-surprise), [`take_blood`](./Events_and_Encounters.md#context-take_blood), [`tappytoes`](./Events_and_Encounters.md#context-tappytoes), [`thorns`](./Events_and_Encounters.md#context-thorns), [`timemachine`](./Events_and_Encounters.md#context-timemachine), [`touch`](./Events_and_Encounters.md#context-touch), [`w1`](./Events_and_Encounters.md#context-w1), [`w2`](./Events_and_Encounters.md#context-w2), [`w3`](./Events_and_Encounters.md#context-w3), [`w4`](./Events_and_Encounters.md#context-w4), [`w5`](./Events_and_Encounters.md#context-w5), [`w6`](./Events_and_Encounters.md#context-w6), [`wealth`](./Events_and_Encounters.md#context-wealth), [`wheezies`](./Events_and_Encounters.md#context-wheezies), [`wish_genes`](./Events_and_Encounters.md#context-wish_genes), [`wish_items`](./Events_and_Encounters.md#context-wish_items), [`wish_levelups`](./Events_and_Encounters.md#context-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#context-wish_strength)
+> **Referenced by:** `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`a`](./Events_and_Encounters.md#object-a), [`activate_p`](./Events_and_Encounters.md#object-activate_p), [`activate_z`](./Events_and_Encounters.md#object-activate_z), [`altar_sacrifice`](./Events_and_Encounters.md#object-altar_sacrifice), [`attach_amplifier`](./Events_and_Encounters.md#object-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#object-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#object-attach_leech), [`b`](./Events_and_Encounters.md#object-b), [`blue`](./Events_and_Encounters.md#object-blue), [`body`](./Events_and_Encounters.md#object-body), [`boogers`](./Events_and_Encounters.md#object-boogers), [`book`](./Events_and_Encounters.md#object-book), [`brace`](./Events_and_Encounters.md#object-brace), [`button`](./Events_and_Encounters.md#object-button), [`buy1`](./Events_and_Encounters.md#object-buy1), [`c`](./Events_and_Encounters.md#object-c), [`chaos_ending`](./Events_and_Encounters.md#object-chaos_ending), [`chapter_cutscene`](./Events_and_Encounters.md#object-chapter_cutscene), [`counter`](./Events_and_Encounters.md#object-counter), [`d`](./Events_and_Encounters.md#object-d), [`damage`](./Events_and_Encounters.md#object-damage), [`desert_cutscene`](./Events_and_Encounters.md#object-desert_cutscene), [`donate`](./Events_and_Encounters.md#object-donate), [`donate_10`](./Events_and_Encounters.md#object-donate_10), [`donate_15`](./Events_and_Encounters.md#object-donate_15), [`donate_20`](./Events_and_Encounters.md#object-donate_20), [`donate_5`](./Events_and_Encounters.md#object-donate_5), [`double`](./Events_and_Encounters.md#object-double), [`enter`](./Events_and_Encounters.md#object-enter), [`fiddle`](./Events_and_Encounters.md#object-fiddle), [`fill_jar`](./Events_and_Encounters.md#object-fill_jar), [`find`](./Events_and_Encounters.md#object-find), [`fire`](./Events_and_Encounters.md#object-fire), [`future`](./Events_and_Encounters.md#object-future), [`go_around`](./Events_and_Encounters.md#object-go_around), [`holy`](./Events_and_Encounters.md#object-holy), [`home`](./Events_and_Encounters.md#object-home), [`hp`](./Events_and_Encounters.md#object-hp), [`ice`](./Events_and_Encounters.md#object-ice), [`ignore`](./Events_and_Encounters.md#object-ignore), [`infinite`](./Events_and_Encounters.md#object-infinite), [`intimidation`](./Events_and_Encounters.md#object-intimidation), [`itchies`](./Events_and_Encounters.md#object-itchies), [`knife`](./Events_and_Encounters.md#object-knife), [`leave`](./Events_and_Encounters.md#object-leave), [`leave_it_in`](./Events_and_Encounters.md#object-leave_it_in), [`lever`](./Events_and_Encounters.md#object-lever), [`lick`](./Events_and_Encounters.md#object-lick), [`lightning`](./Events_and_Encounters.md#object-lightning), [`looks`](./Events_and_Encounters.md#object-looks), [`loot_heart`](./Events_and_Encounters.md#object-loot_heart), [`makeup`](./Events_and_Encounters.md#object-makeup), [`mind`](./Events_and_Encounters.md#object-mind), [`nothanks`](./Events_and_Encounters.md#object-nothanks), [`past`](./Events_and_Encounters.md#object-past), [`pirouette`](./Events_and_Encounters.md#object-pirouette), [`place_gristle`](./Events_and_Encounters.md#object-place_gristle), [`poop`](./Events_and_Encounters.md#object-poop), [`power`](./Events_and_Encounters.md#object-power), [`protection`](./Events_and_Encounters.md#object-protection), [`pull_it_out`](./Events_and_Encounters.md#object-pull_it_out), [`put_in_coins`](./Events_and_Encounters.md#object-put_in_coins), [`receive`](./Events_and_Encounters.md#object-receive), [`red`](./Events_and_Encounters.md#object-red), [`reflect`](./Events_and_Encounters.md#object-reflect), [`repair`](./Events_and_Encounters.md#object-repair), [`repair_quest`](./Events_and_Encounters.md#object-repair_quest), [`sacrifice`](./Events_and_Encounters.md#object-sacrifice), [`sacrifice_full_favor`](./Events_and_Encounters.md#object-sacrifice_full_favor), [`sacrifice_partial_favor`](./Events_and_Encounters.md#object-sacrifice_partial_favor), [`sacrifice_quest`](./Events_and_Encounters.md#object-sacrifice_quest), [`scream`](./Events_and_Encounters.md#object-scream), [`skip`](./Events_and_Encounters.md#object-skip), [`smash`](./Events_and_Encounters.md#object-smash), [`soul`](./Events_and_Encounters.md#object-soul), [`speed`](./Events_and_Encounters.md#object-speed), [`surprise`](./Events_and_Encounters.md#object-surprise), [`take_blood`](./Events_and_Encounters.md#object-take_blood), [`tappytoes`](./Events_and_Encounters.md#object-tappytoes), [`thorns`](./Events_and_Encounters.md#object-thorns), [`timemachine`](./Events_and_Encounters.md#object-timemachine), [`touch`](./Events_and_Encounters.md#object-touch), [`w1`](./Events_and_Encounters.md#object-w1), [`w2`](./Events_and_Encounters.md#object-w2), [`w3`](./Events_and_Encounters.md#object-w3), [`w4`](./Events_and_Encounters.md#object-w4), [`w5`](./Events_and_Encounters.md#object-w5), [`w6`](./Events_and_Encounters.md#object-w6), [`wealth`](./Events_and_Encounters.md#object-wealth), [`wheezies`](./Events_and_Encounters.md#object-wheezies), [`wish_genes`](./Events_and_Encounters.md#object-wish_genes), [`wish_items`](./Events_and_Encounters.md#object-wish_items), [`wish_levelups`](./Events_and_Encounters.md#object-wish_levelups), [`wish_strength`](./Events_and_Encounters.md#object-wish_strength)
 
 **Confirmed Values:**
 
@@ -6557,7 +6557,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -6650,7 +6650,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -6670,7 +6670,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -6690,7 +6690,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -6710,7 +6710,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -6913,7 +6913,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root)
+> **Referenced by:** [`ROOT` (Custom_Cats)](./Custom_Cats.md#object-root)
 
 **Confirmed Values:**
 
@@ -6992,7 +6992,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`dispersed_bonusturn_pattern`](./Characters_and_Bosses.md#context-dispersed_bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#context-round_end_bonusturn_pattern)
+> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#object-bonusturn_pattern), [`dispersed_bonusturn_pattern`](./Characters_and_Bosses.md#object-dispersed_bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#object-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#object-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#object-pattern), [`round_end_bonusturn_pattern`](./Characters_and_Bosses.md#object-round_end_bonusturn_pattern)
 
 **Confirmed Values:**
 
@@ -7116,7 +7116,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`options`](./Events_and_Encounters.md#context-options), [`random_chance`](./Events_and_Encounters.md#context-random_chance), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`options`](./Events_and_Encounters.md#object-options), [`random_chance`](./Events_and_Encounters.md#object-random_chance), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -7183,7 +7183,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`popup`](./Progression_Unlocks.md#context-popup)
+> **Referenced by:** [`popup`](./Progression_Unlocks.md#object-popup)
 
 **Confirmed Values:**
 
@@ -7232,7 +7232,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -7253,7 +7253,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -7273,7 +7273,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -7293,7 +7293,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -7338,7 +7338,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#context-conditional_sourcehasstatus), [`RemoveStatusStacks`](./Abilities_and_Spells.md#context-removestatusstacks), [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#context-temppassivewhilehasstatus), [`Temporary`](./Abilities_and_Spells.md#context-temporary), [`PassiveWhileHasStatus`](./Cat_Mutations.md#context-passivewhilehasstatus), [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#context-formchangewhilehasstatus), [`PassiveWhileHasStatus`](./Characters_and_Bosses.md#context-passivewhilehasstatus), [`PassiveWhileNotHasStatus`](./Characters_and_Bosses.md#context-passivewhilenothasstatus), [`RemoveStatusStacks`](./Characters_and_Bosses.md#context-removestatusstacks), [`StatusEachTurnBeginIfHasStatus`](./Characters_and_Bosses.md#context-statuseachturnbeginifhasstatus), [`StatusWhenStatusCompletelyRemoved`](./Characters_and_Bosses.md#context-statuswhenstatuscompletelyremoved), [`TerminatorSkin`](./Characters_and_Bosses.md#context-terminatorskin), [`TransformOnStatusThreshold`](./Characters_and_Bosses.md#context-transformonstatusthreshold), [`UseAbilityWhenOutOfStatus`](./Characters_and_Bosses.md#context-useabilitywhenoutofstatus), [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus), [`RemoveStatusStacks`](./Items_and_Equipment.md#context-removestatusstacks), [`Temporary`](./Items_and_Equipment.md#context-temporary), [`AmplifyStatus`](./Passives_and_Statuses.md#context-amplifystatus), [`Conditional_HasStatus`](./Passives_and_Statuses.md#context-conditional_hasstatus), [`Temporary`](./Passives_and_Statuses.md#context-temporary)
+> **Referenced by:** [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus), [`Conditional_SourceHasStatus`](./Abilities_and_Spells.md#object-conditional_sourcehasstatus), [`RemoveStatusStacks`](./Abilities_and_Spells.md#object-removestatusstacks), [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus), [`Temporary`](./Abilities_and_Spells.md#object-temporary), [`PassiveWhileHasStatus`](./Cat_Mutations.md#object-passivewhilehasstatus), [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#object-formchangewhilehasstatus), [`PassiveWhileHasStatus`](./Characters_and_Bosses.md#object-passivewhilehasstatus), [`PassiveWhileNotHasStatus`](./Characters_and_Bosses.md#object-passivewhilenothasstatus), [`RemoveStatusStacks`](./Characters_and_Bosses.md#object-removestatusstacks), [`StatusEachTurnBeginIfHasStatus`](./Characters_and_Bosses.md#object-statuseachturnbeginifhasstatus), [`StatusWhenStatusCompletelyRemoved`](./Characters_and_Bosses.md#object-statuswhenstatuscompletelyremoved), [`TerminatorSkin`](./Characters_and_Bosses.md#object-terminatorskin), [`TransformOnStatusThreshold`](./Characters_and_Bosses.md#object-transformonstatusthreshold), [`UseAbilityWhenOutOfStatus`](./Characters_and_Bosses.md#object-useabilitywhenoutofstatus), [`Conditional_HasStatus`](./Items_and_Equipment.md#object-conditional_hasstatus), [`RemoveStatusStacks`](./Items_and_Equipment.md#object-removestatusstacks), [`Temporary`](./Items_and_Equipment.md#object-temporary), [`AmplifyStatus`](./Passives_and_Statuses.md#object-amplifystatus), [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus), [`Temporary`](./Passives_and_Statuses.md#object-temporary)
 
 **Confirmed Values:**
 
@@ -7402,7 +7402,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -7542,7 +7542,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -7688,7 +7688,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -7722,7 +7722,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Craft`](./Abilities_and_Spells.md#context-craft), [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#context-destroyequipmentandattachparasite), [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#context-evolveabilityfrompool), [`FindItemFromPool`](./Abilities_and_Spells.md#context-finditemfrompool), [`GainDisorderFromPool`](./Characters_and_Bosses.md#context-gaindisorderfrompool), [`ROOT`](./Miscellaneous.md#event-reward-samples), [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool), [`Craft`](./Items_and_Equipment.md#context-craft), [`Craft`](./Passives_and_Statuses.md#context-craft), [`FindItemFromPool`](./Passives_and_Statuses.md#context-finditemfrompool), [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#context-repressedmemoriesmetronome), [`Item`](./Shops.md#context-item)
+> **Referenced by:** [`Craft`](./Abilities_and_Spells.md#object-craft), [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite), [`EvolveAbilityFromPool`](./Abilities_and_Spells.md#object-evolveabilityfrompool), [`FindItemFromPool`](./Abilities_and_Spells.md#object-finditemfrompool), [`GainDisorderFromPool`](./Characters_and_Bosses.md#object-gaindisorderfrompool), `ROOT`, [`get_item_from_pool`](./Events_and_Encounters.md#object-get_item_from_pool), [`Craft`](./Items_and_Equipment.md#object-craft), [`Craft`](./Passives_and_Statuses.md#object-craft), [`FindItemFromPool`](./Passives_and_Statuses.md#object-finditemfrompool), [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#object-repressedmemoriesmetronome), [`Item`](./Shops.md#object-item)
 
 **Confirmed Values:**
 
@@ -7779,7 +7779,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -7844,7 +7844,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`activate_p`](./Events_and_Encounters.md#context-activate_p), [`activate_z`](./Events_and_Encounters.md#context-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#context-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#context-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#context-attach_leech), [`bite`](./Events_and_Encounters.md#context-bite), [`body`](./Events_and_Encounters.md#context-body), [`bribe`](./Events_and_Encounters.md#context-bribe), [`charm`](./Events_and_Encounters.md#context-charm), [`drink`](./Events_and_Encounters.md#context-drink), [`eat`](./Events_and_Encounters.md#context-eat), [`enter`](./Events_and_Encounters.md#context-enter), [`examine`](./Events_and_Encounters.md#context-examine), [`fiddle`](./Events_and_Encounters.md#context-fiddle), [`fight`](./Events_and_Encounters.md#context-fight), [`fill_jar`](./Events_and_Encounters.md#context-fill_jar), [`future`](./Events_and_Encounters.md#context-future), [`home`](./Events_and_Encounters.md#context-home), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`lick`](./Events_and_Encounters.md#context-lick), [`looks`](./Events_and_Encounters.md#context-looks), [`loot`](./Events_and_Encounters.md#context-loot), [`loot_heart`](./Events_and_Encounters.md#context-loot_heart), [`mind`](./Events_and_Encounters.md#context-mind), [`past`](./Events_and_Encounters.md#context-past), [`place_gristle`](./Events_and_Encounters.md#context-place_gristle), [`power`](./Events_and_Encounters.md#context-power), [`repair`](./Events_and_Encounters.md#context-repair), [`repair_quest`](./Events_and_Encounters.md#context-repair_quest), [`sacrifice_normal`](./Events_and_Encounters.md#context-sacrifice_normal), [`sacrifice_quest`](./Events_and_Encounters.md#context-sacrifice_quest), [`sneak`](./Events_and_Encounters.md#context-sneak), [`soul`](./Events_and_Encounters.md#context-soul), [`take_blood`](./Events_and_Encounters.md#context-take_blood), [`talk`](./Events_and_Encounters.md#context-talk), [`touch`](./Events_and_Encounters.md#context-touch), [`wealth`](./Events_and_Encounters.md#context-wealth)
+> **Referenced by:** [`activate_p`](./Events_and_Encounters.md#object-activate_p), [`activate_z`](./Events_and_Encounters.md#object-activate_z), [`attach_amplifier`](./Events_and_Encounters.md#object-attach_amplifier), [`attach_antenna`](./Events_and_Encounters.md#object-attach_antenna), [`attach_leech`](./Events_and_Encounters.md#object-attach_leech), [`bite`](./Events_and_Encounters.md#object-bite), [`body`](./Events_and_Encounters.md#object-body), [`bribe`](./Events_and_Encounters.md#object-bribe), [`charm`](./Events_and_Encounters.md#object-charm), [`drink`](./Events_and_Encounters.md#object-drink), [`eat`](./Events_and_Encounters.md#object-eat), [`enter`](./Events_and_Encounters.md#object-enter), [`examine`](./Events_and_Encounters.md#object-examine), [`fiddle`](./Events_and_Encounters.md#object-fiddle), [`fight`](./Events_and_Encounters.md#object-fight), [`fill_jar`](./Events_and_Encounters.md#object-fill_jar), [`future`](./Events_and_Encounters.md#object-future), [`home`](./Events_and_Encounters.md#object-home), [`ignore`](./Events_and_Encounters.md#object-ignore), [`infinite`](./Events_and_Encounters.md#object-infinite), [`lick`](./Events_and_Encounters.md#object-lick), [`looks`](./Events_and_Encounters.md#object-looks), [`loot`](./Events_and_Encounters.md#object-loot), [`loot_heart`](./Events_and_Encounters.md#object-loot_heart), [`mind`](./Events_and_Encounters.md#object-mind), [`past`](./Events_and_Encounters.md#object-past), [`place_gristle`](./Events_and_Encounters.md#object-place_gristle), [`power`](./Events_and_Encounters.md#object-power), [`repair`](./Events_and_Encounters.md#object-repair), [`repair_quest`](./Events_and_Encounters.md#object-repair_quest), [`sacrifice_normal`](./Events_and_Encounters.md#object-sacrifice_normal), [`sacrifice_quest`](./Events_and_Encounters.md#object-sacrifice_quest), [`sneak`](./Events_and_Encounters.md#object-sneak), [`soul`](./Events_and_Encounters.md#object-soul), [`take_blood`](./Events_and_Encounters.md#object-take_blood), [`talk`](./Events_and_Encounters.md#object-talk), [`touch`](./Events_and_Encounters.md#object-touch), [`wealth`](./Events_and_Encounters.md#object-wealth)
 
 **Confirmed Values:**
 
@@ -7907,7 +7907,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -7942,7 +7942,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`spawn`](./Abilities_and_Spells.md#context-spawn)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance), [`spawn`](./Abilities_and_Spells.md#object-spawn)
 
 **Confirmed Values:**
 
@@ -7996,7 +7996,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties), [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties), `ROOT`
 
 **Confirmed Values:**
 
@@ -8022,7 +8022,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -8045,7 +8045,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Confirmed Values:**
 
@@ -8101,7 +8101,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -8129,7 +8129,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Elite_Buffs.md#object-passives)
 
 **Confirmed Values:**
 
@@ -8156,7 +8156,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#context-conditional_affectedbyelement), [`AddDamageToElementDamage`](./Cat_Mutations.md#context-adddamagetoelementdamage), [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#context-passivewhenaffectedbyelement), [`DiesToElement`](./Characters_and_Bosses.md#context-diestoelement), [`FormChangeDuringWeatherElement`](./Characters_and_Bosses.md#context-formchangeduringweatherelement), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence), [`PassiveWhenAffectedByElement`](./Characters_and_Bosses.md#context-passivewhenaffectedbyelement), [`TransformOnElementInfluence`](./Characters_and_Bosses.md#context-transformonelementinfluence), [`TransformOnElementInfluencex`](./Characters_and_Bosses.md#context-transformonelementinfluencex), [`AddDamageToElementDamage`](./Items_and_Equipment.md#context-adddamagetoelementdamage), [`AddStatusToElementDamage`](./Items_and_Equipment.md#context-addstatustoelementdamage), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#context-passivewhenaffectedbyelement), [`RefreshEquipmentAbilityOnElement`](./Items_and_Equipment.md#context-refreshequipmentabilityonelement), [`TransformItemOnElementInfluence`](./Items_and_Equipment.md#context-transformitemonelementinfluence), [`AddDamageToElementDamage`](./Passives_and_Statuses.md#context-adddamagetoelementdamage), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities), [`AddStatusToElementDamage`](./Passives_and_Statuses.md#context-addstatustoelementdamage), [`ElementalManaCostReduction`](./Passives_and_Statuses.md#context-elementalmanacostreduction), [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#context-passivewhenaffectedbyelement), [`StatusOnUseElementAbility`](./Passives_and_Statuses.md#context-statusonuseelementability), [`weather_element_alt`](./Spawns_and_Enemy_Pools.md#context-weather_element_alt)
+> **Referenced by:** [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#object-conditional_affectedbyelement), [`AddDamageToElementDamage`](./Cat_Mutations.md#object-adddamagetoelementdamage), [`PassiveWhenAffectedByElement`](./Cat_Mutations.md#object-passivewhenaffectedbyelement), [`DiesToElement`](./Characters_and_Bosses.md#object-diestoelement), [`FormChangeDuringWeatherElement`](./Characters_and_Bosses.md#object-formchangeduringweatherelement), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence), [`PassiveWhenAffectedByElement`](./Characters_and_Bosses.md#object-passivewhenaffectedbyelement), [`TransformOnElementInfluence`](./Characters_and_Bosses.md#object-transformonelementinfluence), [`TransformOnElementInfluencex`](./Characters_and_Bosses.md#object-transformonelementinfluencex), [`AddDamageToElementDamage`](./Items_and_Equipment.md#object-adddamagetoelementdamage), [`AddStatusToElementDamage`](./Items_and_Equipment.md#object-addstatustoelementdamage), [`PassiveWhenAffectedByElement`](./Items_and_Equipment.md#object-passivewhenaffectedbyelement), [`RefreshEquipmentAbilityOnElement`](./Items_and_Equipment.md#object-refreshequipmentabilityonelement), [`TransformItemOnElementInfluence`](./Items_and_Equipment.md#object-transformitemonelementinfluence), [`AddDamageToElementDamage`](./Passives_and_Statuses.md#object-adddamagetoelementdamage), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#object-addstatustoelementabilities), [`AddStatusToElementDamage`](./Passives_and_Statuses.md#object-addstatustoelementdamage), [`ElementalManaCostReduction`](./Passives_and_Statuses.md#object-elementalmanacostreduction), [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#object-passivewhenaffectedbyelement), [`StatusOnUseElementAbility`](./Passives_and_Statuses.md#object-statusonuseelementability), [`weather_element_alt`](./Spawns_and_Enemy_Pools.md#object-weather_element_alt)
 
 **Confirmed Values:**
 
@@ -8207,7 +8207,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -8228,7 +8228,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -8281,7 +8281,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`else`](./Miscellaneous.md#context-else), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`else`](./Miscellaneous.md#object-else), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -8311,7 +8311,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#context-root)
+> **Referenced by:** [`ROOT` (Boss_Cutscene_Info)](./Boss_Cutscene_Info.md#object-root)
 
 **Confirmed Values:**
 
@@ -8397,7 +8397,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform), [`Else`](./Abilities_and_Spells.md#context-else), [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects), [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup), [`alternate_energized_effect`](./Characters_and_Bosses.md#context-alternate_energized_effect)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus), [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform), [`Else`](./Abilities_and_Spells.md#object-else), [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#object-effects), [`PassiveGroup`](./Characters_and_Bosses.md#object-passivegroup), [`alternate_energized_effect`](./Characters_and_Bosses.md#object-alternate_energized_effect)
 
 **Confirmed Values:**
 
@@ -8469,7 +8469,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -8501,7 +8501,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`exit0`](./Map_Generation_and_Routing.md#context-exit0), [`exit1`](./Map_Generation_and_Routing.md#context-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#context-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#context-exit_lab), [`mw_altar`](./Map_Generation_and_Routing.md#context-mw_altar), [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event), [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water), [`time_machine`](./Map_Generation_and_Routing.md#context-time_machine)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`exit0`](./Map_Generation_and_Routing.md#object-exit0), [`exit1`](./Map_Generation_and_Routing.md#object-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#object-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#object-exit_lab), [`mw_altar`](./Map_Generation_and_Routing.md#object-mw_altar), [`mw_quest_event`](./Map_Generation_and_Routing.md#object-mw_quest_event), [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#object-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#object-shop_water), [`time_machine`](./Map_Generation_and_Routing.md#object-time_machine)
 
 **Confirmed Values:**
 
@@ -8570,7 +8570,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -8599,7 +8599,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#context-addstatustobasicattack), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#context-addstatustoelementabilities)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`AddStatusToBasicAttack`](./Items_and_Equipment.md#object-addstatustobasicattack), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack), [`AddStatusToElementAbilities`](./Passives_and_Statuses.md#object-addstatustoelementabilities)
 
 **Confirmed Values:**
 
@@ -8639,7 +8639,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -8702,7 +8702,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -8753,7 +8753,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance), [`spawn`](./Abilities_and_Spells.md#context-spawn), [`splash_damage`](./Abilities_and_Spells.md#context-splash_damage), [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance), [`spawn`](./Abilities_and_Spells.md#object-spawn), [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage), [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -8780,7 +8780,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#context-formchanger)
+> **Referenced by:** [`FormChanger`](./Characters_and_Bosses.md#object-formchanger)
 
 **Confirmed Values:**
 
@@ -8831,7 +8831,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward), [`traverse`](./Events_and_Encounters.md#context-traverse)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`main`](./Events_and_Encounters.md#object-main), [`options`](./Events_and_Encounters.md#object-options), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward), [`traverse`](./Events_and_Encounters.md#object-traverse)
 
 **Confirmed Values:**
 
@@ -8862,7 +8862,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -8938,7 +8938,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root), [`20`](./Miscellaneous.md#context-20)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root), `20`
 
 **Confirmed Values:**
 
@@ -8979,7 +8979,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -9030,7 +9030,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`common`](./Events_and_Encounters.md#context-common), [`main`](./Events_and_Encounters.md#context-main), [`options`](./Events_and_Encounters.md#context-options), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`common`](./Events_and_Encounters.md#object-common), [`main`](./Events_and_Encounters.md#object-main), [`options`](./Events_and_Encounters.md#object-options), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -9077,7 +9077,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives), [`passives`](./Cat_Mutations.md#context-passives), [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire), [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Elite_Buffs.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives), [`passives`](./Cat_Mutations.md#object-passives), [`StacyMutant_Fire`](./Characters_and_Bosses.md#object-stacymutant_fire), [`StacyMutant_Ice`](./Characters_and_Bosses.md#object-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#object-stacymutant_lightning), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Elite_Buffs.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -9102,7 +9102,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9138,7 +9138,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Pulp2`](./Characters_and_Bosses.md#context-pulp2), [`Pulp3`](./Characters_and_Bosses.md#context-pulp3), [`Pulp4`](./Characters_and_Bosses.md#context-pulp4), [`Pulp5`](./Characters_and_Bosses.md#context-pulp5), [`Pulp6`](./Characters_and_Bosses.md#context-pulp6), [`Pulp7`](./Characters_and_Bosses.md#context-pulp7), [`SquirrelForm`](./Characters_and_Bosses.md#context-squirrelform), [`graphics`](./Characters_and_Bosses.md#context-graphics), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`Pulp2`](./Characters_and_Bosses.md#object-pulp2), [`Pulp3`](./Characters_and_Bosses.md#object-pulp3), [`Pulp4`](./Characters_and_Bosses.md#object-pulp4), [`Pulp5`](./Characters_and_Bosses.md#object-pulp5), [`Pulp6`](./Characters_and_Bosses.md#object-pulp6), [`Pulp7`](./Characters_and_Bosses.md#object-pulp7), [`SquirrelForm`](./Characters_and_Bosses.md#object-squirrelform), [`graphics`](./Characters_and_Bosses.md#object-graphics), [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -9170,7 +9170,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -9203,7 +9203,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -9228,7 +9228,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9267,7 +9267,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`boss`](./Map_Generation_and_Routing.md#context-boss), [`event`](./Map_Generation_and_Routing.md#context-event), [`miniboss_event`](./Map_Generation_and_Routing.md#context-miniboss_event), [`mw_altar`](./Map_Generation_and_Routing.md#context-mw_altar), [`mw_quest_event`](./Map_Generation_and_Routing.md#context-mw_quest_event), [`quest_event`](./Map_Generation_and_Routing.md#context-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#context-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#context-shop_water), [`time_machine`](./Map_Generation_and_Routing.md#context-time_machine), [`treasure`](./Map_Generation_and_Routing.md#context-treasure), [`weather_event`](./Map_Generation_and_Routing.md#context-weather_event)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`boss`](./Map_Generation_and_Routing.md#object-boss), [`event`](./Map_Generation_and_Routing.md#object-event), [`miniboss_event`](./Map_Generation_and_Routing.md#object-miniboss_event), [`mw_altar`](./Map_Generation_and_Routing.md#object-mw_altar), [`mw_quest_event`](./Map_Generation_and_Routing.md#object-mw_quest_event), [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event), [`shop_cheapwater`](./Map_Generation_and_Routing.md#object-shop_cheapwater), [`shop_water`](./Map_Generation_and_Routing.md#object-shop_water), [`time_machine`](./Map_Generation_and_Routing.md#object-time_machine), [`treasure`](./Map_Generation_and_Routing.md#object-treasure), [`weather_event`](./Map_Generation_and_Routing.md#object-weather_event)
 
 **Confirmed Values:**
 
@@ -9329,7 +9329,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Miscellaneous.md#context-1), [`20`](./Miscellaneous.md#context-20)
+> **Referenced by:** `1`, `20`
 
 **Confirmed Values:**
 
@@ -9392,7 +9392,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9419,7 +9419,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9446,7 +9446,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#context-changetile), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`SpawnTilePuddleOnBattleStart`](./House_and_Environment.md#context-spawntilepuddleonbattlestart), [`ChangeTile`](./Passives_and_Statuses.md#context-changetile), [`ROOT`](./Miscellaneous.md#tiles)
+> **Referenced by:** [`ChangeTile`](./Abilities_and_Spells.md#object-changetile), [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#object-spawnextrathingsonbattlestart), [`SpawnTilePuddleOnBattleStart`](./House_and_Environment.md#object-spawntilepuddleonbattlestart), [`ChangeTile`](./Passives_and_Statuses.md#object-changetile), `ROOT`
 
 **Confirmed Values:**
 
@@ -9489,7 +9489,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -9536,7 +9536,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Cat_Mutations.md#context-statusonbattleend), [`Conditional_GoodRoll`](./Characters_and_Bosses.md#context-conditional_goodroll), [`StatusGroup`](./Characters_and_Bosses.md#context-statusgroup), [`ally_rewards`](./Characters_and_Bosses.md#context-ally_rewards), [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#context-statusondie), [`StatusOnSetPieceBreak`](./Items_and_Equipment.md#context-statusonsetpiecebreak), [`StatusOnBattleEnd`](./Passives_and_Statuses.md#context-statusonbattleend), [`statuses`](./Passives_and_Statuses.md#context-statuses)
+> **Referenced by:** [`StatusOnBattleEnd`](./Cat_Mutations.md#object-statusonbattleend), [`Conditional_GoodRoll`](./Characters_and_Bosses.md#object-conditional_goodroll), [`StatusGroup`](./Characters_and_Bosses.md#object-statusgroup), [`ally_rewards`](./Characters_and_Bosses.md#object-ally_rewards), [`Conditional_GoodRoll`](./Items_and_Equipment.md#object-conditional_goodroll), [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend), [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart), [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak), [`StatusOnDie`](./Items_and_Equipment.md#object-statusondie), `StatusOnSetPieceBreak`, [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend), [`statuses`](./Passives_and_Statuses.md#object-statuses)
 
 **Confirmed Values:**
 
@@ -9577,7 +9577,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root)
+> **Referenced by:** [`ROOT` (Custom_Cats)](./Custom_Cats.md#object-root)
 
 **Confirmed Values:**
 
@@ -9613,7 +9613,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -9654,7 +9654,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses), [`AddStatusToBasicAttack`](./Cat_Mutations.md#context-addstatustobasicattack), [`effects`](./Elite_Buffs.md#context-effects), [`effects`](./Items_and_Equipment.md#context-effects), [`effects`](./Passives_and_Statuses.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`post_spawn_statuses`](./Abilities_and_Spells.md#object-post_spawn_statuses), [`AddStatusToBasicAttack`](./Cat_Mutations.md#object-addstatustobasicattack), [`effects`](./Elite_Buffs.md#object-effects), [`effects`](./Items_and_Equipment.md#object-effects), [`effects`](./Passives_and_Statuses.md#object-effects)
 
 **Confirmed Values:**
 
@@ -9688,7 +9688,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9713,7 +9713,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -9768,7 +9768,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -9793,7 +9793,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`effects`](./Items_and_Equipment.md#context-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#context-addstatustobasicattack)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`effects`](./Items_and_Equipment.md#object-effects), [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack)
 
 **Confirmed Values:**
 
@@ -9833,7 +9833,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`reverb_empty`](./House_and_Environment.md#context-reverb_empty), [`reverb_full`](./House_and_Environment.md#context-reverb_full), [`battle`](./Miscellaneous.md#context-battle)
+> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`reverb_empty`](./House_and_Environment.md#object-reverb_empty), [`reverb_full`](./House_and_Environment.md#object-reverb_full), [`battle`](./Miscellaneous.md#object-battle)
 
 **Confirmed Values:**
 
@@ -9860,7 +9860,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StacyMutant_Counter`](./Characters_and_Bosses.md#context-stacymutant_counter), [`passives`](./Characters_and_Bosses.md#context-passives), [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#context-passiveifallarmorempty), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`StacyMutant_Counter`](./Characters_and_Bosses.md#object-stacymutant_counter), [`passives`](./Characters_and_Bosses.md#object-passives), [`PassiveIfAllArmorEmpty`](./Passives_and_Statuses.md#object-passiveifallarmorempty), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -9901,7 +9901,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn), [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn), [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -9948,7 +9948,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -9972,7 +9972,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#context-sounds)
+> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#object-sounds)
 
 **Confirmed Values:**
 
@@ -10021,7 +10021,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ParticleBouncePlane`](./Miscellaneous.md#context-particlebounceplane)
+> **Referenced by:** [`ParticleBouncePlane`](./Miscellaneous.md#object-particlebounceplane)
 
 **Confirmed Values:**
 
@@ -10042,7 +10042,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -10083,7 +10083,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -10127,7 +10127,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Confirmed Values:**
 
@@ -10175,7 +10175,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight)
+> **Referenced by:** `ROOT`, [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight)
 
 **Confirmed Values:**
 
@@ -10197,7 +10197,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -10249,7 +10249,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#context-formchangewhilehasstatus)
+> **Referenced by:** [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#object-formchangewhilehasstatus)
 
 **Confirmed Values:**
 
@@ -10280,7 +10280,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -10322,7 +10322,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`SmallAttic`](./House_and_Environment.md#context-smallattic), [`ParticleGlobalForce`](./Miscellaneous.md#context-particleglobalforce)
+> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`SmallAttic`](./House_and_Environment.md#object-smallattic), [`ParticleGlobalForce`](./Miscellaneous.md#object-particleglobalforce)
 
 **Confirmed Values:**
 
@@ -10343,7 +10343,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#context-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#context-passiveatstatthreshold), [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#context-passiveathealththreshold), [`PassiveAtInjuryThreshold`](./Passives_and_Statuses.md#context-passiveatinjurythreshold), [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#context-passiveatstatthreshold)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics), [`PassiveAtHealthThreshold`](./Items_and_Equipment.md#object-passiveathealththreshold), [`PassiveAtStatThreshold`](./Items_and_Equipment.md#object-passiveatstatthreshold), [`PassiveAtHealthThreshold`](./Passives_and_Statuses.md#object-passiveathealththreshold), [`PassiveAtInjuryThreshold`](./Passives_and_Statuses.md#object-passiveatinjurythreshold), [`PassiveAtStatThreshold`](./Passives_and_Statuses.md#object-passiveatstatthreshold)
 
 **Confirmed Values:**
 
@@ -10367,7 +10367,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -10411,7 +10411,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -10459,7 +10459,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -10507,7 +10507,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`VisualCountDownThenApplyStatus`](./Abilities_and_Spells.md#context-visualcountdownthenapplystatus), [`effects`](./Abilities_and_Spells.md#context-effects), [`FinalBossHitCountdownBoris`](./Characters_and_Bosses.md#context-finalbosshitcountdownboris), [`FinalBossHitCountdownExplosive`](./Characters_and_Bosses.md#context-finalbosshitcountdownexplosive), [`StatusAfterXTurns`](./Characters_and_Bosses.md#context-statusafterxturns), [`StatusEachTurnEndIfEnabledAtStartOfTurn`](./Characters_and_Bosses.md#context-statuseachturnendifenabledatstartofturn), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#context-addselfstatustobasicattack), [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll), [`StatusAfterXTurns`](./Items_and_Equipment.md#context-statusafterxturns), [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend), [`StatusEachTurnEndForEachTurn`](./Items_and_Equipment.md#context-statuseachturnendforeachturn), [`StatusOnBattleStart`](./Items_and_Equipment.md#context-statusonbattlestart), [`StatusOnKillEnemy`](./Items_and_Equipment.md#context-statusonkillenemy), [`StatusEachTurnEnd`](./Passives_and_Statuses.md#context-statuseachturnend), [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#context-statusonstanceswitch), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`VisualCountDownThenApplyStatus`](./Abilities_and_Spells.md#object-visualcountdownthenapplystatus), [`effects`](./Abilities_and_Spells.md#object-effects), [`FinalBossHitCountdownBoris`](./Characters_and_Bosses.md#object-finalbosshitcountdownboris), [`FinalBossHitCountdownExplosive`](./Characters_and_Bosses.md#object-finalbosshitcountdownexplosive), [`StatusAfterXTurns`](./Characters_and_Bosses.md#object-statusafterxturns), [`StatusEachTurnEndIfEnabledAtStartOfTurn`](./Characters_and_Bosses.md#object-statuseachturnendifenabledatstartofturn), [`AddSelfStatusToBasicAttack`](./Items_and_Equipment.md#object-addselfstatustobasicattack), [`Conditional_GoodRoll`](./Items_and_Equipment.md#object-conditional_goodroll), [`StatusAfterXTurns`](./Items_and_Equipment.md#object-statusafterxturns), [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend), [`StatusEachTurnEndForEachTurn`](./Items_and_Equipment.md#object-statuseachturnendforeachturn), [`StatusOnBattleStart`](./Items_and_Equipment.md#object-statusonbattlestart), [`StatusOnKillEnemy`](./Items_and_Equipment.md#object-statusonkillenemy), [`StatusEachTurnEnd`](./Passives_and_Statuses.md#object-statuseachturnend), [`StatusOnStanceSwitch`](./Passives_and_Statuses.md#object-statusonstanceswitch), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -10554,7 +10554,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -10587,7 +10587,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -10636,7 +10636,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -10658,7 +10658,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform), [`FormChange`](./Abilities_and_Spells.md#context-formchange), [`ChanceToFormChangeOnAbilityDamage`](./Characters_and_Bosses.md#context-chancetoformchangeonabilitydamage), [`DybbukPossessionFallback`](./Characters_and_Bosses.md#context-dybbukpossessionfallback), [`FormChangeDuringWeatherElement`](./Characters_and_Bosses.md#context-formchangeduringweatherelement), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence)
+> **Referenced by:** [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform), [`FormChange`](./Abilities_and_Spells.md#object-formchange), [`ChanceToFormChangeOnAbilityDamage`](./Characters_and_Bosses.md#object-chancetoformchangeonabilitydamage), [`DybbukPossessionFallback`](./Characters_and_Bosses.md#object-dybbukpossessionfallback), [`FormChangeDuringWeatherElement`](./Characters_and_Bosses.md#object-formchangeduringweatherelement), [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence)
 
 **Confirmed Values:**
 
@@ -10697,7 +10697,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -10721,7 +10721,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Craft`](./Abilities_and_Spells.md#context-craft), [`Craft`](./Items_and_Equipment.md#context-craft), [`SetItemAux`](./Items_and_Equipment.md#context-setitemaux), [`Craft`](./Passives_and_Statuses.md#context-craft), [`lock_item_slot`](./Passives_and_Statuses.md#context-lock_item_slot)
+> **Referenced by:** [`Craft`](./Abilities_and_Spells.md#object-craft), [`Craft`](./Items_and_Equipment.md#object-craft), [`SetItemAux`](./Items_and_Equipment.md#object-setitemaux), [`Craft`](./Passives_and_Statuses.md#object-craft), [`lock_item_slot`](./Passives_and_Statuses.md#object-lock_item_slot)
 
 **Confirmed Values:**
 
@@ -10750,7 +10750,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives), [`PassiveGroup`](./Characters_and_Bosses.md#context-passivegroup), [`StacyMutant_Fire`](./Characters_and_Bosses.md#context-stacymutant_fire), [`StacyMutant_Ice`](./Characters_and_Bosses.md#context-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#context-stacymutant_lightning), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives), [`PassiveGroup`](./Characters_and_Bosses.md#object-passivegroup), [`StacyMutant_Fire`](./Characters_and_Bosses.md#object-stacymutant_fire), [`StacyMutant_Ice`](./Characters_and_Bosses.md#object-stacymutant_ice), [`StacyMutant_Lightning`](./Characters_and_Bosses.md#object-stacymutant_lightning), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -10795,7 +10795,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#context-formchangewhilehasstatus)
+> **Referenced by:** [`FormChangeWhileHasStatus`](./Characters_and_Bosses.md#object-formchangewhilehasstatus)
 
 **Confirmed Values:**
 
@@ -10828,7 +10828,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak), [`CritsApplyStatus`](./Passives_and_Statuses.md#context-critsapplystatus), [`RandomStatusFromPool`](./Passives_and_Statuses.md#context-randomstatusfrompool), [`StatusOnHealed`](./Passives_and_Statuses.md#context-statusonhealed)
+> **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects), [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak), [`CritsApplyStatus`](./Passives_and_Statuses.md#object-critsapplystatus), [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool), [`StatusOnHealed`](./Passives_and_Statuses.md#object-statusonhealed)
 
 **Confirmed Values:**
 
@@ -10862,7 +10862,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -10898,7 +10898,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -10928,7 +10928,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -10967,7 +10967,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Confirmed Values:**
 
@@ -11003,7 +11003,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11023,7 +11023,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -11066,7 +11066,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -11093,7 +11093,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -11130,7 +11130,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`main`](./Events_and_Encounters.md#context-main), [`outcome`](./Events_and_Encounters.md#context-outcome), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`main`](./Events_and_Encounters.md#object-main), [`outcome`](./Events_and_Encounters.md#object-outcome), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -11160,7 +11160,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -11196,7 +11196,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -11233,7 +11233,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -11260,7 +11260,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`else`](./Events_and_Encounters.md#context-else), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`else`](./Events_and_Encounters.md#object-else), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -11288,7 +11288,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -11328,7 +11328,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -11352,7 +11352,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics), [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics), [`spell_graphics_override`](./Passives_and_Statuses.md#object-spell_graphics_override)
 
 **Confirmed Values:**
 
@@ -11384,7 +11384,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11424,7 +11424,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11464,7 +11464,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11501,7 +11501,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11544,7 +11544,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn), [`TransformOnDeathImmediately`](./Characters_and_Bosses.md#context-transformondeathimmediately)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn), [`TransformOnDeathImmediately`](./Characters_and_Bosses.md#object-transformondeathimmediately)
 
 **Confirmed Values:**
 
@@ -11568,7 +11568,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -11592,7 +11592,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11632,7 +11632,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11669,7 +11669,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11707,7 +11707,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11747,7 +11747,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11774,7 +11774,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11811,7 +11811,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -11882,7 +11882,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics), [`spell_graphics_override`](./Passives_and_Statuses.md#context-spell_graphics_override)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics), [`spell_graphics_override`](./Passives_and_Statuses.md#object-spell_graphics_override)
 
 **Confirmed Values:**
 
@@ -11952,7 +11952,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BossRewards`](./Characters_and_Bosses.md#context-bossrewards)
+> **Referenced by:** [`BossRewards`](./Characters_and_Bosses.md#object-bossrewards)
 
 **Confirmed Values:**
 
@@ -11991,7 +11991,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -12070,7 +12070,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`exit0`](./Map_Generation_and_Routing.md#context-exit0), [`exit1`](./Map_Generation_and_Routing.md#context-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#context-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#context-exit_lab)
+> **Referenced by:** [`exit0`](./Map_Generation_and_Routing.md#object-exit0), [`exit1`](./Map_Generation_and_Routing.md#object-exit1), [`exit_desert`](./Map_Generation_and_Routing.md#object-exit_desert), [`exit_lab`](./Map_Generation_and_Routing.md#object-exit_lab)
 
 **Confirmed Values:**
 
@@ -12108,7 +12108,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#context-boss)
+> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#object-boss)
 
 **Confirmed Values:**
 
@@ -12151,7 +12151,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12218,7 +12218,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -12255,7 +12255,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpreadDisease`](./Abilities_and_Spells.md#context-spreaddisease), [`CureDisease`](./Passives_and_Statuses.md#context-curedisease), [`SpreadDisease`](./Passives_and_Statuses.md#context-spreaddisease)
+> **Referenced by:** [`SpreadDisease`](./Abilities_and_Spells.md#object-spreaddisease), [`CureDisease`](./Passives_and_Statuses.md#object-curedisease), [`SpreadDisease`](./Passives_and_Statuses.md#object-spreaddisease)
 
 **Confirmed Values:**
 
@@ -12324,7 +12324,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`keyword_tooltips`](./Abilities_and_Spells.md#context-keyword_tooltips), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`keyword_tooltips`](./Abilities_and_Spells.md#object-keyword_tooltips), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12361,7 +12361,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Elite_Buffs.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Elite_Buffs.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12389,7 +12389,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`get_item_from_pool`](./Events_and_Encounters.md#context-get_item_from_pool)
+> **Referenced by:** `ROOT`, [`get_item_from_pool`](./Events_and_Encounters.md#object-get_item_from_pool)
 
 **Confirmed Values:**
 
@@ -12414,7 +12414,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`party_status_next_fight`](./Events_and_Encounters.md#context-party_status_next_fight), [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight)
+> **Referenced by:** [`party_status_next_fight`](./Events_and_Encounters.md#object-party_status_next_fight), [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight)
 
 **Confirmed Values:**
 
@@ -12439,7 +12439,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`PassiveWhenAtFullMana`](./Passives_and_Statuses.md#context-passivewhenatfullmana), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`PassiveWhenAtFullMana`](./Passives_and_Statuses.md#object-passivewhenatfullmana), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12468,7 +12468,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`Rain`](./House_and_Environment.md#context-rain), [`Snow`](./House_and_Environment.md#context-snow), [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm), [`Windy`](./House_and_Environment.md#context-windy)
+> **Referenced by:** [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`Rain`](./House_and_Environment.md#object-rain), [`Snow`](./House_and_Environment.md#object-snow), [`Thunderstorm`](./House_and_Environment.md#object-thunderstorm), [`Windy`](./House_and_Environment.md#object-windy)
 
 **Confirmed Values:**
 
@@ -12497,7 +12497,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#context-boss), [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss)
+> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#object-boss), [`mw_boss`](./Map_Generation_and_Routing.md#object-mw_boss)
 
 **Confirmed Values:**
 
@@ -12535,7 +12535,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`beanies_quests_repeat`](./Progression_Unlocks.md#context-beanies_quests_repeat), [`frank_max_intro`](./Progression_Unlocks.md#context-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#context-frank_max_repeating), [`jack_max_intro`](./Progression_Unlocks.md#context-jack_max_intro), [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating), [`organ_max_intro`](./Progression_Unlocks.md#context-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#context-organ_max_repeating), [`steven_milliontrashed`](./Progression_Unlocks.md#context-steven_milliontrashed), [`tink_max_intro`](./Progression_Unlocks.md#context-tink_max_intro), [`tink_max_repeating`](./Progression_Unlocks.md#context-tink_max_repeating), [`tracy_max_intro`](./Progression_Unlocks.md#context-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating), [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#context-upgrade_storage_repeating_crazy), [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#context-upgrade_storage_repeating_hard), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#context-upgrade_storage_repeating_impossible), [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#context-upgrade_storage_repeating_intro), [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#context-upgrade_storage_repeating_normal)
+> **Referenced by:** [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat), [`frank_max_intro`](./Progression_Unlocks.md#object-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating), [`jack_max_intro`](./Progression_Unlocks.md#object-jack_max_intro), [`jack_max_repeating`](./Progression_Unlocks.md#object-jack_max_repeating), [`organ_max_intro`](./Progression_Unlocks.md#object-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating), [`steven_milliontrashed`](./Progression_Unlocks.md#object-steven_milliontrashed), [`tink_max_intro`](./Progression_Unlocks.md#object-tink_max_intro), [`tink_max_repeating`](./Progression_Unlocks.md#object-tink_max_repeating), [`tracy_max_intro`](./Progression_Unlocks.md#object-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating), [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#object-upgrade_storage_repeating_crazy), [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#object-upgrade_storage_repeating_hard), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#object-upgrade_storage_repeating_impossible), [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#object-upgrade_storage_repeating_intro), [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#object-upgrade_storage_repeating_normal)
 
 **Confirmed Values:**
 
@@ -12555,7 +12555,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -12578,7 +12578,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed), [`Consumed`](./Characters_and_Bosses.md#context-consumed)
+> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#object-consumed), [`Consumed`](./Characters_and_Bosses.md#object-consumed)
 
 **Confirmed Values:**
 
@@ -12606,7 +12606,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#context-applytorandompartymemberifpossible), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Else`](./Abilities_and_Spells.md#context-else)
+> **Referenced by:** [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible), [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll), [`Else`](./Abilities_and_Spells.md#object-else)
 
 **Confirmed Values:**
 
@@ -12627,7 +12627,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`Conditional_HasStatus`](./Abilities_and_Spells.md#context-conditional_hasstatus), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusOnTookDamage`](./Items_and_Equipment.md#context-statusontookdamage)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional_boss), [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus), [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag), [`effects`](./Abilities_and_Spells.md#object-effects), [`StatusOnTookDamage`](./Items_and_Equipment.md#object-statusontookdamage)
 
 **Confirmed Values:**
 
@@ -12658,7 +12658,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`innate_passives`](./Cat_Classes.md#context-innate_passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12686,7 +12686,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12717,7 +12717,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -12739,7 +12739,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics), [`ROOT` (Custom_Cats)](./Custom_Cats.md#context-root)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics), [`ROOT` (Custom_Cats)](./Custom_Cats.md#object-root)
 
 **Confirmed Values:**
 
@@ -12762,7 +12762,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#context-equipment)
+> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#object-equipment)
 
 **Confirmed Values:**
 
@@ -12797,7 +12797,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -12830,7 +12830,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -12850,7 +12850,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveClose`](./Characters_and_Bosses.md#context-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#context-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#context-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#context-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#context-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#context-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#context-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#context-moveoneforpuke), [`MoveToHead`](./Characters_and_Bosses.md#context-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#context-movetowards), [`SpearRun`](./Characters_and_Bosses.md#context-spearrun), [`Unflip`](./Characters_and_Bosses.md#context-unflip)
+> **Referenced by:** [`MoveClose`](./Characters_and_Bosses.md#object-moveclose), [`MoveForBarrage`](./Characters_and_Bosses.md#object-moveforbarrage), [`MoveForDash`](./Characters_and_Bosses.md#object-movefordash), [`MoveForGrass`](./Characters_and_Bosses.md#object-moveforgrass), [`MoveForPounce`](./Characters_and_Bosses.md#object-moveforpounce), [`MoveForSpin`](./Characters_and_Bosses.md#object-moveforspin), [`MoveForThrow`](./Characters_and_Bosses.md#object-moveforthrow), [`MoveOneForPuke`](./Characters_and_Bosses.md#object-moveoneforpuke), [`MoveToHead`](./Characters_and_Bosses.md#object-movetohead), [`MoveTowards`](./Characters_and_Bosses.md#object-movetowards), [`SpearRun`](./Characters_and_Bosses.md#object-spearrun), [`Unflip`](./Characters_and_Bosses.md#object-unflip)
 
 **Confirmed Values:**
 
@@ -12879,7 +12879,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BossRewards`](./Characters_and_Bosses.md#context-bossrewards)
+> **Referenced by:** [`BossRewards`](./Characters_and_Bosses.md#object-bossrewards)
 
 **Confirmed Values:**
 
@@ -12914,7 +12914,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12948,7 +12948,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -12982,7 +12982,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`AddPassivesToMinions`](./Items_and_Equipment.md#context-addpassivestominions)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`AddPassivesToMinions`](./Items_and_Equipment.md#object-addpassivestominions)
 
 **Confirmed Values:**
 
@@ -13018,7 +13018,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -13052,7 +13052,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#context-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#context-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#context-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#context-pattern)
+> **Referenced by:** [`bonusturn_pattern`](./Characters_and_Bosses.md#object-bonusturn_pattern), [`fallback`](./Characters_and_Bosses.md#object-fallback), [`mainturn_pattern`](./Characters_and_Bosses.md#object-mainturn_pattern), [`pattern`](./Characters_and_Bosses.md#object-pattern)
 
 **Confirmed Values:**
 
@@ -13079,7 +13079,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare), [`traverse`](./Events_and_Encounters.md#context-traverse)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`main`](./Events_and_Encounters.md#object-main), [`rare`](./Events_and_Encounters.md#object-rare), [`traverse`](./Events_and_Encounters.md#object-traverse)
 
 **Confirmed Values:**
 
@@ -13103,7 +13103,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -13131,7 +13131,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -13168,7 +13168,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Elite_Buffs.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Elite_Buffs.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -13200,7 +13200,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -13230,7 +13230,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#context-conditional_boss), [`effects`](./Abilities_and_Spells.md#context-effects), [`Conditional_HasCleansableDebuffs`](./Items_and_Equipment.md#context-conditional_hascleansabledebuffs), [`effects`](./Items_and_Equipment.md#context-effects)
+> **Referenced by:** [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional_boss), [`effects`](./Abilities_and_Spells.md#object-effects), `Conditional_HasCleansableDebuffs`, [`effects`](./Items_and_Equipment.md#object-effects)
 
 **Confirmed Values:**
 
@@ -13259,7 +13259,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Big`](./Characters_and_Bosses.md#context-big), [`Explody`](./Characters_and_Bosses.md#context-explody), [`FireFull`](./Characters_and_Bosses.md#context-firefull), [`Grown`](./Characters_and_Bosses.md#context-grown), [`HumanDead`](./Characters_and_Bosses.md#context-humandead), [`NormalFull`](./Characters_and_Bosses.md#context-normalfull), [`Nuke`](./Characters_and_Bosses.md#context-nuke), [`Off`](./Characters_and_Bosses.md#context-off), [`Open`](./Characters_and_Bosses.md#context-open), [`OpenCat`](./Characters_and_Bosses.md#context-opencat), [`Sitting`](./Characters_and_Bosses.md#context-sitting), [`TarFull`](./Characters_and_Bosses.md#context-tarfull), [`Turtled`](./Characters_and_Bosses.md#context-turtled)
+> **Referenced by:** [`Big`](./Characters_and_Bosses.md#object-big), [`Explody`](./Characters_and_Bosses.md#object-explody), [`FireFull`](./Characters_and_Bosses.md#object-firefull), [`Grown`](./Characters_and_Bosses.md#object-grown), [`HumanDead`](./Characters_and_Bosses.md#object-humandead), [`NormalFull`](./Characters_and_Bosses.md#object-normalfull), [`Nuke`](./Characters_and_Bosses.md#object-nuke), [`Off`](./Characters_and_Bosses.md#object-off), [`Open`](./Characters_and_Bosses.md#object-open), [`OpenCat`](./Characters_and_Bosses.md#object-opencat), [`Sitting`](./Characters_and_Bosses.md#object-sitting), [`TarFull`](./Characters_and_Bosses.md#object-tarfull), [`Turtled`](./Characters_and_Bosses.md#object-turtled)
 
 **Confirmed Values:**
 
@@ -13289,7 +13289,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -13326,7 +13326,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`blue`](./Events_and_Encounters.md#context-blue), [`button`](./Events_and_Encounters.md#context-button), [`examine`](./Events_and_Encounters.md#context-examine), [`open`](./Events_and_Encounters.md#context-open), [`smash`](./Events_and_Encounters.md#context-smash)
+> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`blue`](./Events_and_Encounters.md#object-blue), [`button`](./Events_and_Encounters.md#object-button), [`examine`](./Events_and_Encounters.md#object-examine), [`open`](./Events_and_Encounters.md#object-open), [`smash`](./Events_and_Encounters.md#object-smash)
 
 **Confirmed Values:**
 
@@ -13350,7 +13350,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -13370,7 +13370,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#context-equipment)
+> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#object-equipment)
 
 **Confirmed Values:**
 
@@ -13403,7 +13403,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13430,7 +13430,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13462,7 +13462,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13494,7 +13494,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -13530,7 +13530,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13562,7 +13562,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13594,7 +13594,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -13622,7 +13622,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn)
 
 **Confirmed Values:**
 
@@ -13646,7 +13646,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Confirmed Values:**
 
@@ -13676,7 +13676,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -13696,7 +13696,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`enter`](./Events_and_Encounters.md#context-enter), [`future`](./Events_and_Encounters.md#context-future), [`home`](./Events_and_Encounters.md#context-home), [`ignore`](./Events_and_Encounters.md#context-ignore), [`infinite`](./Events_and_Encounters.md#context-infinite), [`past`](./Events_and_Encounters.md#context-past)
+> **Referenced by:** [`enter`](./Events_and_Encounters.md#object-enter), [`future`](./Events_and_Encounters.md#object-future), [`home`](./Events_and_Encounters.md#object-home), [`ignore`](./Events_and_Encounters.md#object-ignore), [`infinite`](./Events_and_Encounters.md#object-infinite), [`past`](./Events_and_Encounters.md#object-past)
 
 **Confirmed Values:**
 
@@ -13726,7 +13726,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -13759,7 +13759,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveWhenDamaged`](./Cat_Mutations.md#context-movewhendamaged), [`MoveAwayFromDamageSource`](./Characters_and_Bosses.md#context-moveawayfromdamagesource), [`MoveAwayWhenEnemyAdjacent`](./Characters_and_Bosses.md#context-moveawaywhenenemyadjacent), [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource), [`MoveTowardsKillers`](./Characters_and_Bosses.md#context-movetowardskillers), [`MoveWhenDamaged`](./Characters_and_Bosses.md#context-movewhendamaged), [`Terminator2Run`](./Characters_and_Bosses.md#context-terminator2run), [`MoveTowardsDamageSource`](./Passives_and_Statuses.md#context-movetowardsdamagesource)
+> **Referenced by:** [`MoveWhenDamaged`](./Cat_Mutations.md#object-movewhendamaged), [`MoveAwayFromDamageSource`](./Characters_and_Bosses.md#object-moveawayfromdamagesource), [`MoveAwayWhenEnemyAdjacent`](./Characters_and_Bosses.md#object-moveawaywhenenemyadjacent), [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#object-movetowardsdamagesource), [`MoveTowardsKillers`](./Characters_and_Bosses.md#object-movetowardskillers), [`MoveWhenDamaged`](./Characters_and_Bosses.md#object-movewhendamaged), [`Terminator2Run`](./Characters_and_Bosses.md#object-terminator2run), [`MoveTowardsDamageSource`](./Passives_and_Statuses.md#object-movetowardsdamagesource)
 
 **Confirmed Values:**
 
@@ -13788,7 +13788,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13814,7 +13814,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BounceObject`](./Abilities_and_Spells.md#context-bounceobject), [`Buddy`](./Characters_and_Bosses.md#context-buddy), [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#context-multispawnondeath), [`SpawnOnDeath`](./Characters_and_Bosses.md#context-spawnondeath), [`TransformOnDeathImmediately`](./Characters_and_Bosses.md#context-transformondeathimmediately), [`SpawnOnDeath`](./Items_and_Equipment.md#context-spawnondeath)
+> **Referenced by:** [`BounceObject`](./Abilities_and_Spells.md#object-bounceobject), [`Buddy`](./Characters_and_Bosses.md#object-buddy), [`MultiSpawnOnDeath`](./Characters_and_Bosses.md#object-multispawnondeath), [`SpawnOnDeath`](./Characters_and_Bosses.md#object-spawnondeath), [`TransformOnDeathImmediately`](./Characters_and_Bosses.md#object-transformondeathimmediately), [`SpawnOnDeath`](./Items_and_Equipment.md#object-spawnondeath)
 
 **Confirmed Values:**
 
@@ -13847,7 +13847,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Cat_Classes.md#context-graphics)
+> **Referenced by:** [`graphics`](./Cat_Classes.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -13879,7 +13879,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles), [`ROOT`](./Miscellaneous.md#particles-2d)
+> **Referenced by:** `ROOT`, `ROOT`
 
 **Confirmed Values:**
 
@@ -13902,7 +13902,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -13929,7 +13929,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -13965,7 +13965,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#context-applypassives), [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives), [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -13993,7 +13993,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -14026,7 +14026,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`StatusAlliesOnBattleStart`](./Passives_and_Statuses.md#context-statusalliesonbattlestart), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`StatusAlliesOnBattleStart`](./Passives_and_Statuses.md#object-statusalliesonbattlestart), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -14053,7 +14053,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -14080,7 +14080,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -14107,7 +14107,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -14140,7 +14140,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Conditional_InForm`](./Abilities_and_Spells.md#context-conditional_inform), [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusEachRoundEnd`](./Cat_Mutations.md#context-statuseachroundend), [`passives`](./Characters_and_Bosses.md#context-passives), [`statuses_on_enter_form`](./Characters_and_Bosses.md#context-statuses_on_enter_form), [`StatusAfterCastSpell`](./Items_and_Equipment.md#context-statusaftercastspell), [`StatusEachTurnBegin`](./Items_and_Equipment.md#context-statuseachturnbegin)
+> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag), [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform), [`effects`](./Abilities_and_Spells.md#object-effects), [`StatusEachRoundEnd`](./Cat_Mutations.md#object-statuseachroundend), [`passives`](./Characters_and_Bosses.md#object-passives), [`statuses_on_enter_form`](./Characters_and_Bosses.md#object-statuses_on_enter_form), [`StatusAfterCastSpell`](./Items_and_Equipment.md#object-statusaftercastspell), [`StatusEachTurnBegin`](./Items_and_Equipment.md#object-statuseachturnbegin)
 
 **Confirmed Values:**
 
@@ -14169,7 +14169,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`cost`](./Abilities_and_Spells.md#context-cost)
+> **Referenced by:** [`cost`](./Abilities_and_Spells.md#object-cost)
 
 **Confirmed Values:**
 
@@ -14192,7 +14192,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`reward`](./Miscellaneous.md#context-reward), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`reward`](./Miscellaneous.md#object-reward), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -14215,7 +14215,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CatPartsTransform`](./Characters_and_Bosses.md#context-catpartstransform)
+> **Referenced by:** [`CatPartsTransform`](./Characters_and_Bosses.md#object-catpartstransform)
 
 **Confirmed Values:**
 
@@ -14248,7 +14248,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AllStatsAura`](./Characters_and_Bosses.md#context-allstatsaura), [`DepressionAura`](./Elite_Buffs.md#context-depressionaura), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#context-abilitywhentaggedcharactermovesnear), [`AllyHealthRegenAura`](./Passives_and_Statuses.md#context-allyhealthregenaura), [`AllyManaRegenAura`](./Passives_and_Statuses.md#context-allymanaregenaura), [`DamageReductionAura`](./Passives_and_Statuses.md#context-damagereductionaura)
+> **Referenced by:** [`AllStatsAura`](./Characters_and_Bosses.md#object-allstatsaura), [`DepressionAura`](./Elite_Buffs.md#object-depressionaura), [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#object-abilitywhentaggedcharactermovesnear), [`AllyHealthRegenAura`](./Passives_and_Statuses.md#object-allyhealthregenaura), [`AllyManaRegenAura`](./Passives_and_Statuses.md#object-allymanaregenaura), [`DamageReductionAura`](./Passives_and_Statuses.md#object-damagereductionaura)
 
 **Confirmed Values:**
 
@@ -14268,7 +14268,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root), [`tink_aggression`](./Progression_Unlocks.md#context-tink_aggression), [`tink_basestats`](./Progression_Unlocks.md#context-tink_basestats), [`tink_inbreeding`](./Progression_Unlocks.md#context-tink_inbreeding), [`tink_relationships`](./Progression_Unlocks.md#context-tink_relationships), [`tink_sexuality`](./Progression_Unlocks.md#context-tink_sexuality), [`tink_tags`](./Progression_Unlocks.md#context-tink_tags)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root), [`tink_aggression`](./Progression_Unlocks.md#object-tink_aggression), [`tink_basestats`](./Progression_Unlocks.md#object-tink_basestats), [`tink_inbreeding`](./Progression_Unlocks.md#object-tink_inbreeding), [`tink_relationships`](./Progression_Unlocks.md#object-tink_relationships), [`tink_sexuality`](./Progression_Unlocks.md#object-tink_sexuality), [`tink_tags`](./Progression_Unlocks.md#object-tink_tags)
 
 **Confirmed Values:**
 
@@ -14299,7 +14299,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`10coins`](./Events_and_Encounters.md#context-10coins), [`5coins`](./Events_and_Encounters.md#context-5coins), [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`buy1`](./Events_and_Encounters.md#context-buy1), [`donate_10`](./Events_and_Encounters.md#context-donate_10), [`donate_15`](./Events_and_Encounters.md#context-donate_15), [`donate_20`](./Events_and_Encounters.md#context-donate_20), [`donate_5`](./Events_and_Encounters.md#context-donate_5), [`put_in_coins`](./Events_and_Encounters.md#context-put_in_coins)
+> **Referenced by:** `10coins`, `5coins`, [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`buy1`](./Events_and_Encounters.md#object-buy1), [`donate_10`](./Events_and_Encounters.md#object-donate_10), [`donate_15`](./Events_and_Encounters.md#object-donate_15), [`donate_20`](./Events_and_Encounters.md#object-donate_20), [`donate_5`](./Events_and_Encounters.md#object-donate_5), [`put_in_coins`](./Events_and_Encounters.md#object-put_in_coins)
 
 **Confirmed Values:**
 
@@ -14319,7 +14319,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14341,7 +14341,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -14369,7 +14369,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Alert`](./Characters_and_Bosses.md#context-alert), [`Bomb`](./Characters_and_Bosses.md#context-bomb), [`Drunker`](./Characters_and_Bosses.md#context-drunker), [`FlushHost`](./Characters_and_Bosses.md#context-flushhost), [`Grappling`](./Characters_and_Bosses.md#context-grappling), [`JohnnyHost`](./Characters_and_Bosses.md#context-johnnyhost), [`Lit`](./Characters_and_Bosses.md#context-lit), [`Primed`](./Characters_and_Bosses.md#context-primed), [`ThrobHost`](./Characters_and_Bosses.md#context-throbhost), [`Unlit`](./Characters_and_Bosses.md#context-unlit), [`Unwashed`](./Characters_and_Bosses.md#context-unwashed)
+> **Referenced by:** [`Alert`](./Characters_and_Bosses.md#object-alert), [`Bomb`](./Characters_and_Bosses.md#object-bomb), [`Drunker`](./Characters_and_Bosses.md#object-drunker), [`FlushHost`](./Characters_and_Bosses.md#object-flushhost), [`Grappling`](./Characters_and_Bosses.md#object-grappling), [`JohnnyHost`](./Characters_and_Bosses.md#object-johnnyhost), [`Lit`](./Characters_and_Bosses.md#object-lit), [`Primed`](./Characters_and_Bosses.md#object-primed), [`ThrobHost`](./Characters_and_Bosses.md#object-throbhost), [`Unlit`](./Characters_and_Bosses.md#object-unlit), [`Unwashed`](./Characters_and_Bosses.md#object-unwashed)
 
 **Confirmed Values:**
 
@@ -14397,7 +14397,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BasementUpgrade`](./House_and_Environment.md#context-basementupgrade), [`BasementUpgrade2`](./House_and_Environment.md#context-basementupgrade2), [`BasementUpgrade3`](./House_and_Environment.md#context-basementupgrade3), [`BasementUpgrade4`](./House_and_Environment.md#context-basementupgrade4), [`BasementUpgrade5`](./House_and_Environment.md#context-basementupgrade5), [`LargeHouse`](./House_and_Environment.md#context-largehouse), [`LargeHouse_Floor2Large`](./House_and_Environment.md#context-largehouse_floor2large), [`LargeHouse_Floor2Small`](./House_and_Environment.md#context-largehouse_floor2small), [`MediumHouse`](./House_and_Environment.md#context-mediumhouse), [`MediumHouse_SmallRoom`](./House_and_Environment.md#context-mediumhouse_smallroom), [`SmallHouse_Attic`](./House_and_Environment.md#context-smallhouse_attic)
+> **Referenced by:** [`BasementUpgrade`](./House_and_Environment.md#object-basementupgrade), [`BasementUpgrade2`](./House_and_Environment.md#object-basementupgrade2), [`BasementUpgrade3`](./House_and_Environment.md#object-basementupgrade3), [`BasementUpgrade4`](./House_and_Environment.md#object-basementupgrade4), [`BasementUpgrade5`](./House_and_Environment.md#object-basementupgrade5), [`LargeHouse`](./House_and_Environment.md#object-largehouse), [`LargeHouse_Floor2Large`](./House_and_Environment.md#object-largehouse_floor2large), [`LargeHouse_Floor2Small`](./House_and_Environment.md#object-largehouse_floor2small), [`MediumHouse`](./House_and_Environment.md#object-mediumhouse), [`MediumHouse_SmallRoom`](./House_and_Environment.md#object-mediumhouse_smallroom), [`SmallHouse_Attic`](./House_and_Environment.md#object-smallhouse_attic)
 
 **Confirmed Values:**
 
@@ -14423,7 +14423,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`reward`](./Miscellaneous.md#context-reward), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`reward`](./Miscellaneous.md#object-reward), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -14453,7 +14453,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveWhenDamaged`](./Cat_Mutations.md#context-movewhendamaged), [`MoveAfterAnyAttemptedAttack`](./Characters_and_Bosses.md#context-moveafteranyattemptedattack), [`MoveAwayWhenEnemyAdjacent`](./Characters_and_Bosses.md#context-moveawaywhenenemyadjacent), [`MoveWhenDamaged`](./Characters_and_Bosses.md#context-movewhendamaged), [`MoveWhenDamaged`](./Passives_and_Statuses.md#context-movewhendamaged)
+> **Referenced by:** [`MoveWhenDamaged`](./Cat_Mutations.md#object-movewhendamaged), [`MoveAfterAnyAttemptedAttack`](./Characters_and_Bosses.md#object-moveafteranyattemptedattack), [`MoveAwayWhenEnemyAdjacent`](./Characters_and_Bosses.md#object-moveawaywhenenemyadjacent), [`MoveWhenDamaged`](./Characters_and_Bosses.md#object-movewhendamaged), [`MoveWhenDamaged`](./Passives_and_Statuses.md#object-movewhendamaged)
 
 **Confirmed Values:**
 
@@ -14478,7 +14478,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects), [`StatusOnEnemyConfused`](./Characters_and_Bosses.md#context-statusonenemyconfused), [`StatusEachTurnEnd`](./Items_and_Equipment.md#context-statuseachturnend), [`StatusOnEndMove`](./Items_and_Equipment.md#context-statusonendmove)
+> **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll), [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects), [`StatusOnEnemyConfused`](./Characters_and_Bosses.md#object-statusonenemyconfused), [`StatusEachTurnEnd`](./Items_and_Equipment.md#object-statuseachturnend), [`StatusOnEndMove`](./Items_and_Equipment.md#object-statusonendmove)
 
 **Confirmed Values:**
 
@@ -14506,7 +14506,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#context-conditional_healththreshold), [`Else`](./Abilities_and_Spells.md#context-else), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional_healththreshold), [`Else`](./Abilities_and_Spells.md#object-else), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -14531,7 +14531,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14556,7 +14556,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14581,7 +14581,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Confirmed Values:**
 
@@ -14603,7 +14603,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14631,7 +14631,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14655,7 +14655,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14680,7 +14680,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#context-equipment)
+> **Referenced by:** [`equipment`](./Characters_and_Bosses.md#object-equipment)
 
 **Confirmed Values:**
 
@@ -14709,7 +14709,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root), [`ROOT`](./Miscellaneous.md#tiles)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root), `ROOT`
 
 **Confirmed Values:**
 
@@ -14732,7 +14732,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`1`](./Passives_and_Statuses.md#context-1), [`2`](./Passives_and_Statuses.md#context-2), [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** `1`, `2`, [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -14760,7 +14760,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14789,7 +14789,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Confirmed Values:**
 
@@ -14813,7 +14813,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnEachTurn`](./Items_and_Equipment.md#context-spawneachturn), [`StackingFlowerTrail`](./Items_and_Equipment.md#context-stackingflowertrail), [`StatusAfterXStacks`](./Items_and_Equipment.md#context-statusafterxstacks)
+> **Referenced by:** [`SpawnEachTurn`](./Items_and_Equipment.md#object-spawneachturn), [`StackingFlowerTrail`](./Items_and_Equipment.md#object-stackingflowertrail), [`StatusAfterXStacks`](./Items_and_Equipment.md#object-statusafterxstacks)
 
 **Confirmed Values:**
 
@@ -14836,7 +14836,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -14861,7 +14861,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -14893,7 +14893,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BasementUpgrade`](./House_and_Environment.md#context-basementupgrade), [`BasementUpgrade2`](./House_and_Environment.md#context-basementupgrade2), [`BasementUpgrade3`](./House_and_Environment.md#context-basementupgrade3), [`BasementUpgrade4`](./House_and_Environment.md#context-basementupgrade4), [`BasementUpgrade5`](./House_and_Environment.md#context-basementupgrade5), [`Default`](./House_and_Environment.md#context-default), [`LargeHouse_Floor2Large`](./House_and_Environment.md#context-largehouse_floor2large), [`LargeHouse_Floor2Small`](./House_and_Environment.md#context-largehouse_floor2small), [`MediumHouse_SmallRoom`](./House_and_Environment.md#context-mediumhouse_smallroom), [`SmallHouse_Attic`](./House_and_Environment.md#context-smallhouse_attic)
+> **Referenced by:** [`BasementUpgrade`](./House_and_Environment.md#object-basementupgrade), [`BasementUpgrade2`](./House_and_Environment.md#object-basementupgrade2), [`BasementUpgrade3`](./House_and_Environment.md#object-basementupgrade3), [`BasementUpgrade4`](./House_and_Environment.md#object-basementupgrade4), [`BasementUpgrade5`](./House_and_Environment.md#object-basementupgrade5), [`Default`](./House_and_Environment.md#object-default), [`LargeHouse_Floor2Large`](./House_and_Environment.md#object-largehouse_floor2large), [`LargeHouse_Floor2Small`](./House_and_Environment.md#object-largehouse_floor2small), [`MediumHouse_SmallRoom`](./House_and_Environment.md#object-mediumhouse_smallroom), [`SmallHouse_Attic`](./House_and_Environment.md#object-smallhouse_attic)
 
 **Confirmed Values:**
 
@@ -14922,7 +14922,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`innate_items`](./Cat_Classes.md#context-innate_items), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities), [`equipment`](./Characters_and_Bosses.md#context-equipment)
+> **Referenced by:** [`innate_items`](./Cat_Classes.md#object-innate_items), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#object-monkcatreactionabilities), [`equipment`](./Characters_and_Bosses.md#object-equipment)
 
 **Confirmed Values:**
 
@@ -14948,7 +14948,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -14975,7 +14975,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#context-conditional_hastag), [`effects`](./Abilities_and_Spells.md#context-effects), [`Conditional_GoodRoll`](./Cat_Mutations.md#context-conditional_goodroll), [`StatusOnTookDamage`](./Cat_Mutations.md#context-statusontookdamage), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
+> **Referenced by:** [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag), [`effects`](./Abilities_and_Spells.md#object-effects), [`Conditional_GoodRoll`](./Cat_Mutations.md#object-conditional_goodroll), [`StatusOnTookDamage`](./Cat_Mutations.md#object-statusontookdamage), [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak)
 
 **Confirmed Values:**
 
@@ -15001,7 +15001,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -15029,7 +15029,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -15058,7 +15058,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`20`](./Miscellaneous.md#context-20)
+> **Referenced by:** `20`
 
 **Confirmed Values:**
 
@@ -15090,7 +15090,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Confirmed Values:**
 
@@ -15145,7 +15145,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`beanies_quests_repeat`](./Progression_Unlocks.md#context-beanies_quests_repeat), [`frank_max_repeating`](./Progression_Unlocks.md#context-frank_max_repeating), [`jack_max_repeating`](./Progression_Unlocks.md#context-jack_max_repeating), [`organ_max_repeating`](./Progression_Unlocks.md#context-organ_max_repeating), [`steven_milliontrashed`](./Progression_Unlocks.md#context-steven_milliontrashed), [`tink_max_repeating`](./Progression_Unlocks.md#context-tink_max_repeating), [`tracy_max_repeating`](./Progression_Unlocks.md#context-tracy_max_repeating), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#context-upgrade_storage_repeating_impossible)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat), [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating), [`jack_max_repeating`](./Progression_Unlocks.md#object-jack_max_repeating), [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating), [`steven_milliontrashed`](./Progression_Unlocks.md#object-steven_milliontrashed), [`tink_max_repeating`](./Progression_Unlocks.md#object-tink_max_repeating), [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating), [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#object-upgrade_storage_repeating_impossible)
 
 **Confirmed Values:**
 
@@ -15166,7 +15166,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`20`](./Miscellaneous.md#context-20)
+> **Referenced by:** `20`
 
 **Confirmed Values:**
 
@@ -15198,7 +15198,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddStatusToExplosions`](./Passives_and_Statuses.md#context-addstatustoexplosions)
+> **Referenced by:** [`AddStatusToExplosions`](./Passives_and_Statuses.md#object-addstatustoexplosions)
 
 **Confirmed Values:**
 
@@ -15219,7 +15219,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives), [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Characters_and_Bosses.md#object-passives), [`AddPassivesToMinions`](./Passives_and_Statuses.md#object-addpassivestominions), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15242,7 +15242,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15266,7 +15266,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Confirmed Values:**
 
@@ -15293,7 +15293,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Confirmed Values:**
 
@@ -15319,7 +15319,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeOffMap`](./Characters_and_Bosses.md#context-formchangeoffmap)
+> **Referenced by:** [`FormChangeOffMap`](./Characters_and_Bosses.md#object-formchangeoffmap)
 
 **Confirmed Values:**
 
@@ -15343,7 +15343,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeOffMap`](./Characters_and_Bosses.md#context-formchangeoffmap)
+> **Referenced by:** [`FormChangeOffMap`](./Characters_and_Bosses.md#object-formchangeoffmap)
 
 **Confirmed Values:**
 
@@ -15366,7 +15366,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -15390,7 +15390,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -15412,7 +15412,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnOnBattleStart`](./Elite_Buffs.md#context-spawnonbattlestart), [`SpawnCatCopyOnBattleStart`](./Items_and_Equipment.md#context-spawncatcopyonbattlestart), [`SpawnCatCopyWhenDowned`](./Items_and_Equipment.md#context-spawncatcopywhendowned), [`SpawnCatCopyOnBattleStart`](./Passives_and_Statuses.md#context-spawncatcopyonbattlestart)
+> **Referenced by:** [`SpawnOnBattleStart`](./Elite_Buffs.md#object-spawnonbattlestart), `SpawnCatCopyOnBattleStart`, `SpawnCatCopyWhenDowned`, [`SpawnCatCopyOnBattleStart`](./Passives_and_Statuses.md#object-spawncatcopyonbattlestart)
 
 **Confirmed Values:**
 
@@ -15435,7 +15435,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -15462,7 +15462,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -15493,7 +15493,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -15522,7 +15522,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -15549,7 +15549,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15574,7 +15574,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15594,7 +15594,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15622,7 +15622,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TwisterDisplaceWithDamage`](./Abilities_and_Spells.md#context-twisterdisplacewithdamage), [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance)
+> **Referenced by:** [`TwisterDisplaceWithDamage`](./Abilities_and_Spells.md#object-twisterdisplacewithdamage), [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance)
 
 **Confirmed Values:**
 
@@ -15644,7 +15644,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -15668,7 +15668,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`next_event_from_set`](./Events_and_Encounters.md#context-next_event_from_set), [`ChanceToForceEvent`](./Items_and_Equipment.md#context-chancetoforceevent)
+> **Referenced by:** `ROOT`, [`next_event_from_set`](./Events_and_Encounters.md#object-next_event_from_set), [`ChanceToForceEvent`](./Items_and_Equipment.md#object-chancetoforceevent)
 
 **Confirmed Values:**
 
@@ -15692,7 +15692,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -15712,7 +15712,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`20`](./Miscellaneous.md#context-20)
+> **Referenced by:** `20`
 
 **Confirmed Values:**
 
@@ -15738,7 +15738,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -15758,7 +15758,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic), [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic)
+> **Referenced by:** [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic), [`SwitchMusic`](./Characters_and_Bosses.md#object-switchmusic)
 
 **Confirmed Values:**
 
@@ -15782,7 +15782,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Shops.md#context-meta)
+> **Referenced by:** [`meta`](./Shops.md#object-meta)
 
 **Confirmed Values:**
 
@@ -15802,7 +15802,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15828,7 +15828,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15853,7 +15853,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15880,7 +15880,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./Items_and_Equipment.md#context-conditional_goodroll), [`StatusOnOverHealed`](./Passives_and_Statuses.md#context-statusonoverhealed)
+> **Referenced by:** [`Conditional_GoodRoll`](./Items_and_Equipment.md#object-conditional_goodroll), [`StatusOnOverHealed`](./Passives_and_Statuses.md#object-statusonoverhealed)
 
 **Confirmed Values:**
 
@@ -15902,7 +15902,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#context-conditional_finishedspawning), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#object-conditional_finishedspawning), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -15927,7 +15927,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15950,7 +15950,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -15974,7 +15974,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16001,7 +16001,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16025,7 +16025,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -16052,7 +16052,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16074,7 +16074,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16098,7 +16098,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence), [`BuffImmunity`](./Items_and_Equipment.md#context-buffimmunity)
+> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence), [`BuffImmunity`](./Items_and_Equipment.md#object-buffimmunity)
 
 **Confirmed Values:**
 
@@ -16120,7 +16120,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Cat`](./Characters_and_Bosses.md#context-cat), [`NonCat`](./Characters_and_Bosses.md#context-noncat)
+> **Referenced by:** [`Cat`](./Characters_and_Bosses.md#object-cat), [`NonCat`](./Characters_and_Bosses.md#object-noncat)
 
 **Confirmed Values:**
 
@@ -16145,7 +16145,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`house_upgrade_4throom`](./Progression_Unlocks.md#context-house_upgrade_4throom), [`house_upgrade_attic`](./Progression_Unlocks.md#context-house_upgrade_attic), [`house_upgrade_largehouse`](./Progression_Unlocks.md#context-house_upgrade_largehouse), [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#context-house_upgrade_mediumhouse)
+> **Referenced by:** [`house_upgrade_4throom`](./Progression_Unlocks.md#object-house_upgrade_4throom), [`house_upgrade_attic`](./Progression_Unlocks.md#object-house_upgrade_attic), [`house_upgrade_largehouse`](./Progression_Unlocks.md#object-house_upgrade_largehouse), [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#object-house_upgrade_mediumhouse)
 
 **Confirmed Values:**
 
@@ -16170,7 +16170,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -16197,7 +16197,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#context-floor1_large), [`Floor1_Small`](./House_and_Environment.md#context-floor1_small), [`ROOT` (House_and_Environment)](./House_and_Environment.md#context-root), [`SmallAttic`](./House_and_Environment.md#context-smallattic)
+> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#object-floor1_large), [`Floor1_Small`](./House_and_Environment.md#object-floor1_small), [`ROOT` (House_and_Environment)](./House_and_Environment.md#object-root), [`SmallAttic`](./House_and_Environment.md#object-smallattic)
 
 **Confirmed Values:**
 
@@ -16221,7 +16221,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#context-conditional_firstapplicationthisturn), [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#context-conditional_onceperbattle), [`Conditional_OncePerBattle`](./Items_and_Equipment.md#context-conditional_onceperbattle)
+> **Referenced by:** [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#object-conditional_firstapplicationthisturn), [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#object-conditional_onceperbattle), [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle)
 
 **Confirmed Values:**
 
@@ -16245,7 +16245,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SwitchMusic`](./Abilities_and_Spells.md#context-switchmusic), [`SwitchMusic`](./Characters_and_Bosses.md#context-switchmusic)
+> **Referenced by:** [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic), [`SwitchMusic`](./Characters_and_Bosses.md#object-switchmusic)
 
 **Confirmed Values:**
 
@@ -16265,7 +16265,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeWhilePrimingAbility`](./Characters_and_Bosses.md#context-formchangewhileprimingability)
+> **Referenced by:** [`FormChangeWhilePrimingAbility`](./Characters_and_Bosses.md#object-formchangewhileprimingability)
 
 **Confirmed Values:**
 
@@ -16287,7 +16287,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -16311,7 +16311,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeWhilePrimingAbility`](./Characters_and_Bosses.md#context-formchangewhileprimingability)
+> **Referenced by:** [`FormChangeWhilePrimingAbility`](./Characters_and_Bosses.md#object-formchangewhileprimingability)
 
 **Confirmed Values:**
 
@@ -16333,7 +16333,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -16358,7 +16358,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#context-root), [`main`](./Events_and_Encounters.md#context-main)
+> **Referenced by:** [`ROOT` (Events_and_Encounters)](./Events_and_Encounters.md#object-root), [`main`](./Events_and_Encounters.md#object-main)
 
 **Confirmed Values:**
 
@@ -16385,7 +16385,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -16406,7 +16406,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -16433,7 +16433,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -16454,7 +16454,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16475,7 +16475,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill), [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#context-conditional_onceperbattle), [`ScaldingOrbMoonBossOneShot`](./Items_and_Equipment.md#context-scaldingorbmoonbossoneshot)
+> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill), [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#object-conditional_onceperbattle), [`ScaldingOrbMoonBossOneShot`](./Items_and_Equipment.md#object-scaldingorbmoonbossoneshot)
 
 **Confirmed Values:**
 
@@ -16499,7 +16499,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16522,7 +16522,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16544,7 +16544,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`StatusOnKill`](./Items_and_Equipment.md#context-statusonkill), [`StatusOnKill`](./Passives_and_Statuses.md#context-statusonkill)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`StatusOnKill`](./Items_and_Equipment.md#object-statusonkill), [`StatusOnKill`](./Passives_and_Statuses.md#object-statusonkill)
 
 **Confirmed Values:**
 
@@ -16565,7 +16565,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Elite_Buffs.md#context-passives), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Elite_Buffs.md#object-passives), [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16585,7 +16585,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToTile`](./Abilities_and_Spells.md#context-applytotile), [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`ApplyToTile`](./Abilities_and_Spells.md#object-applytotile), [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -16610,7 +16610,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -16636,7 +16636,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16662,7 +16662,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -16686,7 +16686,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -16708,7 +16708,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -16734,7 +16734,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -16754,7 +16754,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -16774,7 +16774,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -16794,7 +16794,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -16814,7 +16814,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`reward`](./Events_and_Encounters.md#context-reward)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`reward`](./Events_and_Encounters.md#object-reward)
 
 **Confirmed Values:**
 
@@ -16835,7 +16835,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SetAnimationAlts`](./Abilities_and_Spells.md#context-setanimationalts), [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts), [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16857,7 +16857,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16880,7 +16880,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed), [`Consumed`](./Characters_and_Bosses.md#context-consumed)
+> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#object-consumed), [`Consumed`](./Characters_and_Bosses.md#object-consumed)
 
 **Confirmed Values:**
 
@@ -16900,7 +16900,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SetAnimationAlts`](./Abilities_and_Spells.md#context-setanimationalts), [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts), [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16922,7 +16922,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -16942,7 +16942,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -16967,7 +16967,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TransformItemOnElementInfluence`](./Items_and_Equipment.md#context-transformitemonelementinfluence)
+> **Referenced by:** [`TransformItemOnElementInfluence`](./Items_and_Equipment.md#object-transformitemonelementinfluence)
 
 **Confirmed Values:**
 
@@ -18128,7 +18128,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18152,7 +18152,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18175,7 +18175,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -18196,7 +18196,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Elite_Buffs)](./Elite_Buffs.md#context-root)
+> **Referenced by:** [`ROOT` (Elite_Buffs)](./Elite_Buffs.md#object-root)
 
 **Confirmed Values:**
 
@@ -18218,7 +18218,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed), [`Consumed`](./Characters_and_Bosses.md#context-consumed)
+> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#object-consumed), [`Consumed`](./Characters_and_Bosses.md#object-consumed)
 
 **Confirmed Values:**
 
@@ -18238,7 +18238,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#context-formchangeonelementinfluence)
+> **Referenced by:** [`FormChangeOnElementInfluence`](./Characters_and_Bosses.md#object-formchangeonelementinfluence)
 
 **Confirmed Values:**
 
@@ -18258,7 +18258,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -18281,7 +18281,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -18306,7 +18306,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TeamCastAbility`](./Abilities_and_Spells.md#context-teamcastability), [`SecurityBotProtect`](./Characters_and_Bosses.md#context-securitybotprotect)
+> **Referenced by:** [`TeamCastAbility`](./Abilities_and_Spells.md#object-teamcastability), [`SecurityBotProtect`](./Characters_and_Bosses.md#object-securitybotprotect)
 
 **Confirmed Values:**
 
@@ -18330,7 +18330,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18351,7 +18351,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -18373,7 +18373,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18394,7 +18394,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18414,7 +18414,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -18436,7 +18436,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#context-canapplytoinanimate)
+> **Referenced by:** [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate)
 
 **Confirmed Values:**
 
@@ -18459,7 +18459,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18483,7 +18483,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18505,7 +18505,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18530,7 +18530,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -18553,7 +18553,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18573,7 +18573,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18596,7 +18596,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18616,7 +18616,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18638,7 +18638,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -18663,7 +18663,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#context-applytosourceonkill), [`ScaldingOrbMoonBossOneShot`](./Items_and_Equipment.md#context-scaldingorbmoonbossoneshot)
+> **Referenced by:** [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill), [`ScaldingOrbMoonBossOneShot`](./Items_and_Equipment.md#object-scaldingorbmoonbossoneshot)
 
 **Confirmed Values:**
 
@@ -18687,7 +18687,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -18712,7 +18712,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects), [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects), [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18737,7 +18737,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -18758,7 +18758,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Rain`](./House_and_Environment.md#context-rain), [`Snow`](./House_and_Environment.md#context-snow), [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm), [`Windy`](./House_and_Environment.md#context-windy)
+> **Referenced by:** [`Rain`](./House_and_Environment.md#object-rain), [`Snow`](./House_and_Environment.md#object-snow), [`Thunderstorm`](./House_and_Environment.md#object-thunderstorm), [`Windy`](./House_and_Environment.md#object-windy)
 
 **Confirmed Values:**
 
@@ -18781,7 +18781,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#context-dodamage), [`DoDamage`](./Items_and_Equipment.md#context-dodamage)
+> **Referenced by:** [`DoDamage`](./Abilities_and_Spells.md#object-dodamage), [`DoDamage`](./Items_and_Equipment.md#object-dodamage)
 
 **Confirmed Values:**
 
@@ -18801,7 +18801,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -18826,7 +18826,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`main`](./Events_and_Encounters.md#context-main)
+> **Referenced by:** [`main`](./Events_and_Encounters.md#object-main)
 
 **Confirmed Values:**
 
@@ -18846,7 +18846,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -18870,7 +18870,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -18891,7 +18891,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#context-transforminxturns)
+> **Referenced by:** [`TransformInXTurns`](./Characters_and_Bosses.md#object-transforminxturns)
 
 **Confirmed Values:**
 
@@ -18911,7 +18911,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18934,7 +18934,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18954,7 +18954,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`main`](./Events_and_Encounters.md#context-main), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`main`](./Events_and_Encounters.md#object-main), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -18979,7 +18979,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -19002,7 +19002,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`leave_party_temporarily`](./Events_and_Encounters.md#context-leave_party_temporarily)
+> **Referenced by:** `ROOT`, [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave_party_temporarily)
 
 **Confirmed Values:**
 
@@ -19022,7 +19022,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#event-reward-samples), [`leave_party_temporarily`](./Events_and_Encounters.md#context-leave_party_temporarily)
+> **Referenced by:** `ROOT`, [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave_party_temporarily)
 
 **Confirmed Values:**
 
@@ -19042,7 +19042,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Rain`](./House_and_Environment.md#context-rain), [`Snow`](./House_and_Environment.md#context-snow), [`Thunderstorm`](./House_and_Environment.md#context-thunderstorm), [`Windy`](./House_and_Environment.md#context-windy)
+> **Referenced by:** [`Rain`](./House_and_Environment.md#object-rain), [`Snow`](./House_and_Environment.md#object-snow), [`Thunderstorm`](./House_and_Environment.md#object-thunderstorm), [`Windy`](./House_and_Environment.md#object-windy)
 
 **Confirmed Values:**
 
@@ -19065,7 +19065,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`EMP`](./Passives_and_Statuses.md#context-emp)
+> **Referenced by:** [`EMP`](./Passives_and_Statuses.md#object-emp)
 
 **Confirmed Values:**
 
@@ -19085,7 +19085,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -19108,7 +19108,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusCharactersOnRoundEnd`](./House_and_Environment.md#context-statuscharactersonroundend), [`AddPassivesToMinions`](./Items_and_Equipment.md#context-addpassivestominions), [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions)
+> **Referenced by:** [`StatusCharactersOnRoundEnd`](./House_and_Environment.md#object-statuscharactersonroundend), [`AddPassivesToMinions`](./Items_and_Equipment.md#object-addpassivestominions), [`AddPassivesToMinions`](./Passives_and_Statuses.md#object-addpassivestominions)
 
 **Confirmed Values:**
 
@@ -19132,7 +19132,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -19152,7 +19152,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AbilityHealthThreshold`](./Characters_and_Bosses.md#context-abilityhealththreshold)
+> **Referenced by:** [`AbilityHealthThreshold`](./Characters_and_Bosses.md#object-abilityhealththreshold)
 
 **Confirmed Values:**
 
@@ -19175,7 +19175,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#context-spawnextrathingsonbattlestart), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`SpawnExtraThingsOnBattleStart`](./House_and_Environment.md#object-spawnextrathingsonbattlestart), [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -19200,7 +19200,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -19223,7 +19223,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -19248,7 +19248,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -19275,7 +19275,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -19300,7 +19300,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -19323,7 +19323,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -19347,7 +19347,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19367,7 +19367,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19387,7 +19387,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19409,7 +19409,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -19433,7 +19433,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19455,7 +19455,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 **Confirmed Values:**
 
@@ -19479,7 +19479,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects), [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects), [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19500,7 +19500,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#context-applytosource), [`StatusOnBattleEnd`](./Items_and_Equipment.md#context-statusonbattleend), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
+> **Referenced by:** [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource), [`StatusOnBattleEnd`](./Items_and_Equipment.md#object-statusonbattleend), [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak)
 
 **Confirmed Values:**
 
@@ -19522,7 +19522,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#context-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#context-effects), [`FinalBossBecomeTheChild`](./Characters_and_Bosses.md#context-finalbossbecomethechild)
+> **Referenced by:** [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication), [`effects`](./Abilities_and_Spells.md#object-effects), [`FinalBossBecomeTheChild`](./Characters_and_Bosses.md#object-finalbossbecomethechild)
 
 **Confirmed Values:**
 
@@ -19542,7 +19542,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -19563,7 +19563,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19585,7 +19585,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19606,7 +19606,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19626,7 +19626,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19646,7 +19646,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19667,7 +19667,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`PassiveGroup`](./Passives_and_Statuses.md#context-passivegroup)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`PassiveGroup`](./Passives_and_Statuses.md#object-passivegroup)
 
 **Confirmed Values:**
 
@@ -19689,7 +19689,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19710,7 +19710,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -19734,7 +19734,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -19755,7 +19755,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnKill`](./Characters_and_Bosses.md#context-statusonkill)
+> **Referenced by:** [`StatusOnKill`](./Characters_and_Bosses.md#object-statusonkill)
 
 **Confirmed Values:**
 
@@ -19776,7 +19776,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -19796,7 +19796,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -19818,7 +19818,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
+> **Referenced by:** [`House1`](./House_and_Environment.md#object-house1), [`House2`](./House_and_Environment.md#object-house2), [`House3`](./House_and_Environment.md#object-house3)
 
 **Confirmed Values:**
 
@@ -19839,7 +19839,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -19861,7 +19861,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TinkererBasicAttackSwitching`](./Cat_Classes.md#context-tinkererbasicattackswitching), [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#context-tinkererbasicattackswitching)
+> **Referenced by:** [`TinkererBasicAttackSwitching`](./Cat_Classes.md#object-tinkererbasicattackswitching), [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#object-tinkererbasicattackswitching)
 
 **Confirmed Values:**
 
@@ -19881,7 +19881,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -19901,7 +19901,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -19921,7 +19921,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -19943,7 +19943,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`properties`](./Characters_and_Bosses.md#context-properties)
+> **Referenced by:** [`properties`](./Characters_and_Bosses.md#object-properties)
 
 **Confirmed Values:**
 
@@ -19964,7 +19964,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#particles)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -19984,7 +19984,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -20006,7 +20006,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChanceToBreakFree`](./Abilities_and_Spells.md#context-chancetobreakfree)
+> **Referenced by:** [`ChanceToBreakFree`](./Abilities_and_Spells.md#object-chancetobreakfree)
 
 **Confirmed Values:**
 
@@ -20028,7 +20028,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#context-formchangehealththreshold)
+> **Referenced by:** [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#object-formchangehealththreshold)
 
 **Confirmed Values:**
 
@@ -20052,7 +20052,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#context-formchangehealththreshold)
+> **Referenced by:** [`FormChangeHealthThreshold`](./Characters_and_Bosses.md#object-formchangehealththreshold)
 
 **Confirmed Values:**
 
@@ -20074,7 +20074,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TransformEquipment`](./Abilities_and_Spells.md#context-transformequipment), [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon), [`TransformWeapon`](./Items_and_Equipment.md#context-transformweapon)
+> **Referenced by:** [`TransformEquipment`](./Abilities_and_Spells.md#object-transformequipment), [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon), [`TransformWeapon`](./Items_and_Equipment.md#object-transformweapon)
 
 **Confirmed Values:**
 
@@ -20098,7 +20098,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -20122,7 +20122,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -20146,7 +20146,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`organ_max_intro`](./Progression_Unlocks.md#context-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#context-organ_max_repeating), [`tink_prettybow`](./Progression_Unlocks.md#context-tink_prettybow)
+> **Referenced by:** [`organ_max_intro`](./Progression_Unlocks.md#object-organ_max_intro), [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating), [`tink_prettybow`](./Progression_Unlocks.md#object-tink_prettybow)
 
 **Confirmed Values:**
 
@@ -20167,7 +20167,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -20187,7 +20187,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -20208,7 +20208,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -20229,7 +20229,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#context-editor)
+> **Referenced by:** [`editor`](./Spawns_and_Enemy_Pools.md#object-editor)
 
 **Confirmed Values:**
 
@@ -20260,7 +20260,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -20282,7 +20282,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -20302,7 +20302,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -20324,7 +20324,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -20347,7 +20347,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -20368,7 +20368,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -20389,7 +20389,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -20411,7 +20411,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
+> **Referenced by:** [`House1`](./House_and_Environment.md#object-house1), [`House2`](./House_and_Environment.md#object-house2), [`House3`](./House_and_Environment.md#object-house3)
 
 **Confirmed Values:**
 
@@ -20433,7 +20433,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`House1`](./House_and_Environment.md#context-house1), [`House2`](./House_and_Environment.md#context-house2), [`House3`](./House_and_Environment.md#context-house3)
+> **Referenced by:** [`House1`](./House_and_Environment.md#object-house1), [`House2`](./House_and_Environment.md#object-house2), [`House3`](./House_and_Environment.md#object-house3)
 
 **Confirmed Values:**
 
@@ -20455,7 +20455,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Miscellaneous.md#context-requirements), [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Miscellaneous.md#object-requirements), [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Confirmed Values:**
 
@@ -20479,7 +20479,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#context-sounds)
+> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#object-sounds)
 
 **Confirmed Values:**
 
@@ -20500,7 +20500,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#context-sounds)
+> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#object-sounds)
 
 **Confirmed Values:**
 
@@ -20521,7 +20521,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#context-boss), [`mw_boss`](./Map_Generation_and_Routing.md#context-mw_boss)
+> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#object-boss), [`mw_boss`](./Map_Generation_and_Routing.md#object-mw_boss)
 
 **Confirmed Values:**
 
@@ -20543,7 +20543,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -20565,7 +20565,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -20589,7 +20589,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good), [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good), [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -20609,7 +20609,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Default`](./House_and_Environment.md#context-default), [`LargeHouse`](./House_and_Environment.md#context-largehouse), [`MediumHouse`](./House_and_Environment.md#context-mediumhouse)
+> **Referenced by:** [`Default`](./House_and_Environment.md#object-default), [`LargeHouse`](./House_and_Environment.md#object-largehouse), [`MediumHouse`](./House_and_Environment.md#object-mediumhouse)
 
 **Confirmed Values:**
 
@@ -20631,7 +20631,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn_unit_next_fight`](./Events_and_Encounters.md#context-spawn_unit_next_fight)
+> **Referenced by:** [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight)
 
 **Confirmed Values:**
 
@@ -20651,7 +20651,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -20675,7 +20675,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`common`](./Events_and_Encounters.md#context-common)
+> **Referenced by:** [`common`](./Events_and_Encounters.md#object-common)
 
 **Confirmed Values:**
 
@@ -20695,7 +20695,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas), [`prereqs`](./Progression_Unlocks.md#context-prereqs)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas), [`prereqs`](./Progression_Unlocks.md#object-prereqs)
 
 **Confirmed Values:**
 
@@ -20717,7 +20717,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TinkererBasicAttackSwitching`](./Cat_Classes.md#context-tinkererbasicattackswitching), [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#context-tinkererbasicattackswitching)
+> **Referenced by:** [`TinkererBasicAttackSwitching`](./Cat_Classes.md#object-tinkererbasicattackswitching), [`TinkererBasicAttackSwitching`](./Characters_and_Bosses.md#object-tinkererbasicattackswitching)
 
 **Confirmed Values:**
 
@@ -20737,7 +20737,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -20759,7 +20759,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TransformEquipment`](./Abilities_and_Spells.md#context-transformequipment), [`TransformWeapon`](./Abilities_and_Spells.md#context-transformweapon), [`TransformWeapon`](./Items_and_Equipment.md#context-transformweapon)
+> **Referenced by:** [`TransformEquipment`](./Abilities_and_Spells.md#object-transformequipment), [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon), [`TransformWeapon`](./Items_and_Equipment.md#object-transformweapon)
 
 **Confirmed Values:**
 
@@ -20783,7 +20783,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Confirmed Values:**
 
@@ -20805,7 +20805,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers), [`BungaEntrance`](./Characters_and_Bosses.md#context-bungaentrance)
+> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#object-bungacheers), [`BungaEntrance`](./Characters_and_Bosses.md#object-bungaentrance)
 
 **Confirmed Values:**
 
@@ -20828,7 +20828,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#context-root)
+> **Referenced by:** [`ROOT` (Injuries)](./Injuries.md#object-root)
 
 **Confirmed Values:**
 
@@ -20850,7 +20850,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -20873,7 +20873,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`PassiveWhileWearingMetal`](./Passives_and_Statuses.md#context-passivewhilewearingmetal)
+> **Referenced by:** [`PassiveWhileWearingMetal`](./Passives_and_Statuses.md#object-passivewhilewearingmetal)
 
 **Confirmed Values:**
 
@@ -20893,7 +20893,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -20914,7 +20914,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -20934,7 +20934,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -20954,7 +20954,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -20977,7 +20977,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -20998,7 +20998,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21019,7 +21019,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -21039,7 +21039,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21059,7 +21059,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -21082,7 +21082,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Elite_Buffs.md#context-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21102,7 +21102,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects), [`post_spawn_statuses`](./Abilities_and_Spells.md#context-post_spawn_statuses)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects), [`post_spawn_statuses`](./Abilities_and_Spells.md#object-post_spawn_statuses)
 
 **Confirmed Values:**
 
@@ -21122,7 +21122,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21143,7 +21143,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#context-addpassivestominions)
+> **Referenced by:** [`AddPassivesToMinions`](./Passives_and_Statuses.md#object-addpassivestominions)
 
 **Confirmed Values:**
 
@@ -21164,7 +21164,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21185,7 +21185,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21206,7 +21206,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -21227,7 +21227,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#context-conditional_goodroll), [`StatusOnBreak`](./Items_and_Equipment.md#context-statusonbreak)
+> **Referenced by:** [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll), [`StatusOnBreak`](./Items_and_Equipment.md#object-statusonbreak)
 
 **Confirmed Values:**
 
@@ -21248,7 +21248,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#context-applytorandompartymemberifpossible)
+> **Referenced by:** [`ApplyToRandomPartyMemberIfPossible`](./Items_and_Equipment.md#object-applytorandompartymemberifpossible)
 
 **Confirmed Values:**
 
@@ -21268,7 +21268,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ApplyPassivesToSpawnerWhileAlive`](./Abilities_and_Spells.md#context-applypassivestospawnerwhilealive), [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
+> **Referenced by:** [`ApplyPassivesToSpawnerWhileAlive`](./Abilities_and_Spells.md#object-applypassivestospawnerwhilealive), [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives)
 
 **Confirmed Values:**
 
@@ -21288,7 +21288,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21311,7 +21311,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -21332,7 +21332,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21355,7 +21355,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CherubimReaction`](./Characters_and_Bosses.md#context-cherubimreaction)
+> **Referenced by:** [`CherubimReaction`](./Characters_and_Bosses.md#object-cherubimreaction)
 
 **Confirmed Values:**
 
@@ -21376,7 +21376,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21399,7 +21399,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21420,7 +21420,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives), [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives), [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21443,7 +21443,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21463,7 +21463,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21484,7 +21484,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusOnBattleEnd`](./Abilities_and_Spells.md#context-statusonbattleend)
+> **Referenced by:** [`StatusOnBattleEnd`](./Abilities_and_Spells.md#object-statusonbattleend)
 
 **Confirmed Values:**
 
@@ -21507,7 +21507,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21527,7 +21527,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CherubimReaction`](./Characters_and_Bosses.md#context-cherubimreaction)
+> **Referenced by:** [`CherubimReaction`](./Characters_and_Bosses.md#object-cherubimreaction)
 
 **Confirmed Values:**
 
@@ -21548,7 +21548,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -21569,7 +21569,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21589,7 +21589,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21612,7 +21612,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21632,7 +21632,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21652,7 +21652,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -21675,7 +21675,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -21696,7 +21696,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21717,7 +21717,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21738,7 +21738,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21759,7 +21759,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21780,7 +21780,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`permanent_stats`](./Events_and_Encounters.md#context-permanent_stats), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`permanent_stats`](./Events_and_Encounters.md#object-permanent_stats), [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -21801,7 +21801,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource)
+> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#object-movetowardsdamagesource)
 
 **Confirmed Values:**
 
@@ -21824,7 +21824,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -21847,7 +21847,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#context-root)
+> **Referenced by:** [`ROOT` (Abilities_and_Spells)](./Abilities_and_Spells.md#object-root)
 
 **Confirmed Values:**
 
@@ -21867,7 +21867,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -21887,7 +21887,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21908,7 +21908,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -21929,7 +21929,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -21950,7 +21950,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#context-killenemyoftypeatbattlestart)
+> **Referenced by:** [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#object-killenemyoftypeatbattlestart)
 
 **Confirmed Values:**
 
@@ -21973,7 +21973,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DybbukPossessed`](./Abilities_and_Spells.md#context-dybbukpossessed), [`DybbukPossessionFallback`](./Characters_and_Bosses.md#context-dybbukpossessionfallback)
+> **Referenced by:** [`DybbukPossessed`](./Abilities_and_Spells.md#object-dybbukpossessed), [`DybbukPossessionFallback`](./Characters_and_Bosses.md#object-dybbukpossessionfallback)
 
 **Confirmed Values:**
 
@@ -21993,7 +21993,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Big`](./House_and_Environment.md#context-big)
+> **Referenced by:** [`Big`](./House_and_Environment.md#object-big)
 
 **Confirmed Values:**
 
@@ -22013,7 +22013,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22034,7 +22034,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`beanies_quests_intro`](./Progression_Unlocks.md#context-beanies_quests_intro), [`beanies_quests_repeat`](./Progression_Unlocks.md#context-beanies_quests_repeat)
+> **Referenced by:** [`beanies_quests_intro`](./Progression_Unlocks.md#object-beanies_quests_intro), [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat)
 
 **Confirmed Values:**
 
@@ -22055,7 +22055,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -22075,7 +22075,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`frank_max_intro`](./Progression_Unlocks.md#context-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#context-frank_max_repeating)
+> **Referenced by:** [`frank_max_intro`](./Progression_Unlocks.md#object-frank_max_intro), [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating)
 
 **Confirmed Values:**
 
@@ -22095,7 +22095,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22116,7 +22116,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`2`](./Passives_and_Statuses.md#context-2), [`3`](./Passives_and_Statuses.md#context-3)
+> **Referenced by:** `2`, `3`
 
 **Confirmed Values:**
 
@@ -22137,7 +22137,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Abilities_and_Spells.md#context-meta)
+> **Referenced by:** [`meta`](./Abilities_and_Spells.md#object-meta)
 
 **Confirmed Values:**
 
@@ -22157,7 +22157,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22178,7 +22178,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22199,7 +22199,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -22219,7 +22219,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -22239,7 +22239,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -22259,7 +22259,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22280,7 +22280,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root), [`mw_hard1`](./Map_Generation_and_Routing.md#context-mw_hard1)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root), [`mw_hard1`](./Map_Generation_and_Routing.md#object-mw_hard1)
 
 **Confirmed Values:**
 
@@ -22300,7 +22300,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#context-root)
+> **Referenced by:** [`ROOT` (Damage_Text_Styles)](./Damage_Text_Styles.md#object-root)
 
 **Confirmed Values:**
 
@@ -22320,7 +22320,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`310`](./Cat_Mutations.md#context-310), [`331`](./Cat_Mutations.md#context-331)
+> **Referenced by:** `310`, `331`
 
 **Confirmed Values:**
 
@@ -22340,7 +22340,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -22360,7 +22360,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -22380,7 +22380,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -22400,7 +22400,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -22420,7 +22420,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -22441,7 +22441,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -22461,7 +22461,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -22484,7 +22484,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -22507,7 +22507,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -22527,7 +22527,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`good`](./Events_and_Encounters.md#context-good)
+> **Referenced by:** [`good`](./Events_and_Encounters.md#object-good)
 
 **Confirmed Values:**
 
@@ -22547,7 +22547,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bad`](./Events_and_Encounters.md#context-bad)
+> **Referenced by:** [`bad`](./Events_and_Encounters.md#object-bad)
 
 **Confirmed Values:**
 
@@ -22570,7 +22570,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum), [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** `ROOT`, [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -22591,7 +22591,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Lighting`](./Miscellaneous.md#context-lighting)
+> **Referenced by:** [`Lighting`](./Miscellaneous.md#object-lighting)
 
 **Confirmed Values:**
 
@@ -22612,7 +22612,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -22635,7 +22635,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ProtectTargetedAllies`](./Characters_and_Bosses.md#context-protecttargetedallies)
+> **Referenced by:** [`ProtectTargetedAllies`](./Characters_and_Bosses.md#object-protecttargetedallies)
 
 **Confirmed Values:**
 
@@ -22656,7 +22656,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AlternateCraftingPools`](./Passives_and_Statuses.md#context-alternatecraftingpools)
+> **Referenced by:** [`AlternateCraftingPools`](./Passives_and_Statuses.md#object-alternatecraftingpools)
 
 **Confirmed Values:**
 
@@ -22676,7 +22676,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AlternateCraftingPools`](./Passives_and_Statuses.md#context-alternatecraftingpools)
+> **Referenced by:** [`AlternateCraftingPools`](./Passives_and_Statuses.md#object-alternatecraftingpools)
 
 **Confirmed Values:**
 
@@ -22696,7 +22696,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#context-root)
+> **Referenced by:** [`ROOT` (Status_Effect_Keywords)](./Status_Effect_Keywords.md#object-root)
 
 **Confirmed Values:**
 
@@ -22717,7 +22717,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`innate_items`](./Cat_Classes.md#context-innate_items), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities)
+> **Referenced by:** [`innate_items`](./Cat_Classes.md#object-innate_items), [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#object-monkcatreactionabilities)
 
 **Confirmed Values:**
 
@@ -22738,7 +22738,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -22758,7 +22758,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -22778,7 +22778,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -22798,7 +22798,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -22818,7 +22818,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`meta`](./Shops.md#context-meta)
+> **Referenced by:** [`meta`](./Shops.md#object-meta)
 
 **Confirmed Values:**
 
@@ -22839,7 +22839,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -22859,7 +22859,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation)
+> **Referenced by:** [`ScalingAttackAnimation`](./Characters_and_Bosses.md#object-scalingattackanimation)
 
 **Confirmed Values:**
 
@@ -22879,7 +22879,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#context-waggleclone)
+> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#object-waggleclone)
 
 **Confirmed Values:**
 
@@ -22899,7 +22899,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#context-waggleclone)
+> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#object-waggleclone)
 
 **Confirmed Values:**
 
@@ -22919,7 +22919,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#context-waggleclone)
+> **Referenced by:** [`WaggleClone`](./Abilities_and_Spells.md#object-waggleclone)
 
 **Confirmed Values:**
 
@@ -22939,7 +22939,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -22959,7 +22959,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -22979,7 +22979,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -22999,7 +22999,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -23019,7 +23019,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23039,7 +23039,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23059,7 +23059,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23079,7 +23079,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -23099,7 +23099,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#context-other_form_change_abilities)
+> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#object-other_form_change_abilities)
 
 **Confirmed Values:**
 
@@ -23119,7 +23119,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23139,7 +23139,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`self_status_next_fight`](./Events_and_Encounters.md#context-self_status_next_fight)
+> **Referenced by:** [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight)
 
 **Confirmed Values:**
 
@@ -23159,7 +23159,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23179,7 +23179,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23199,7 +23199,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23219,7 +23219,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23239,7 +23239,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23259,7 +23259,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`exit_animations`](./Characters_and_Bosses.md#context-exit_animations)
+> **Referenced by:** [`exit_animations`](./Characters_and_Bosses.md#object-exit_animations)
 
 **Confirmed Values:**
 
@@ -23279,7 +23279,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_LastHit`](./Abilities_and_Spells.md#context-conditional_lasthit)
+> **Referenced by:** [`Conditional_LastHit`](./Abilities_and_Spells.md#object-conditional_lasthit)
 
 **Confirmed Values:**
 
@@ -23299,7 +23299,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23319,7 +23319,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23339,7 +23339,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23359,7 +23359,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23379,7 +23379,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23399,7 +23399,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23419,7 +23419,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23439,7 +23439,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23459,7 +23459,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#context-other_form_change_abilities)
+> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#object-other_form_change_abilities)
 
 **Confirmed Values:**
 
@@ -23479,7 +23479,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23499,7 +23499,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23519,7 +23519,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23539,7 +23539,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23559,7 +23559,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#context-other_form_change_abilities)
+> **Referenced by:** [`other_form_change_abilities`](./Characters_and_Bosses.md#object-other_form_change_abilities)
 
 **Confirmed Values:**
 
@@ -23579,7 +23579,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#context-conditional_hasstatus)
+> **Referenced by:** [`Conditional_HasStatus`](./Items_and_Equipment.md#object-conditional_hasstatus)
 
 **Confirmed Values:**
 
@@ -23599,7 +23599,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23619,7 +23619,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects)
+> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects)
 
 **Confirmed Values:**
 
@@ -23639,7 +23639,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Conditional_PlayerCat`](./Abilities_and_Spells.md#context-conditional_playercat)
+> **Referenced by:** [`Conditional_PlayerCat`](./Abilities_and_Spells.md#object-conditional_playercat)
 
 **Confirmed Values:**
 
@@ -23659,7 +23659,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#context-temporary_effects)
+> **Referenced by:** [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects)
 
 **Confirmed Values:**
 
@@ -23679,7 +23679,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23699,7 +23699,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23719,7 +23719,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23739,7 +23739,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23759,7 +23759,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23779,7 +23779,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23799,7 +23799,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23837,7 +23837,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./House_and_Environment.md#context-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23857,7 +23857,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -23877,7 +23877,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -23897,7 +23897,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -23917,7 +23917,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Cat_Mutations.md#context-passives)
+> **Referenced by:** [`passives`](./Cat_Mutations.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23937,7 +23937,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23957,7 +23957,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -23977,7 +23977,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -23997,7 +23997,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24017,7 +24017,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24037,7 +24037,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24057,7 +24057,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24077,7 +24077,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24097,7 +24097,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24117,7 +24117,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24137,7 +24137,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#context-additional_passives)
+> **Referenced by:** [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives)
 
 **Confirmed Values:**
 
@@ -24157,7 +24157,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -24177,7 +24177,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Items_and_Equipment.md#context-passives)
+> **Referenced by:** [`passives`](./Items_and_Equipment.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24197,7 +24197,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24217,7 +24217,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24237,7 +24237,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Passives_and_Statuses.md#context-passives)
+> **Referenced by:** [`passives`](./Passives_and_Statuses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24257,7 +24257,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24277,7 +24277,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24297,7 +24297,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24317,7 +24317,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24337,7 +24337,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24357,7 +24357,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24377,7 +24377,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24397,7 +24397,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24417,7 +24417,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24437,7 +24437,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24457,7 +24457,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24477,7 +24477,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24497,7 +24497,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24517,7 +24517,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`effects`](./Abilities_and_Spells.md#context-effects)
+> **Referenced by:** [`effects`](./Abilities_and_Spells.md#object-effects)
 
 **Confirmed Values:**
 
@@ -24537,7 +24537,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24557,7 +24557,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24577,7 +24577,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`StatusEachTurnEnd`](./Passives_and_Statuses.md#context-statuseachturnend)
+> **Referenced by:** [`StatusEachTurnEnd`](./Passives_and_Statuses.md#object-statuseachturnend)
 
 **Confirmed Values:**
 
@@ -24597,7 +24597,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`passives`](./Characters_and_Bosses.md#context-passives)
+> **Referenced by:** [`passives`](./Characters_and_Bosses.md#object-passives)
 
 **Confirmed Values:**
 
@@ -24617,7 +24617,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#context-bonus_passives)
+> **Referenced by:** [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives)
 
 **Confirmed Values:**
 
@@ -24637,7 +24637,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -24657,7 +24657,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -24677,7 +24677,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -24697,7 +24697,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#context-cerberubsaggrotargetbehavior)
+> **Referenced by:** [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#object-cerberubsaggrotargetbehavior)
 
 **Confirmed Values:**
 
@@ -24735,7 +24735,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -24755,7 +24755,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers)
+> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#object-bungacheers)
 
 **Confirmed Values:**
 
@@ -24775,7 +24775,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers)
+> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#object-bungacheers)
 
 **Confirmed Values:**
 
@@ -24795,7 +24795,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Tangled`](./Abilities_and_Spells.md#context-tangled)
+> **Referenced by:** [`Tangled`](./Abilities_and_Spells.md#object-tangled)
 
 **Confirmed Values:**
 
@@ -24815,7 +24815,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SupportDieInsteadOfRun`](./Characters_and_Bosses.md#context-supportdieinsteadofrun)
+> **Referenced by:** [`SupportDieInsteadOfRun`](./Characters_and_Bosses.md#object-supportdieinsteadofrun)
 
 **Confirmed Values:**
 
@@ -24835,7 +24835,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SupportDieInsteadOfRun`](./Characters_and_Bosses.md#context-supportdieinsteadofrun)
+> **Referenced by:** [`SupportDieInsteadOfRun`](./Characters_and_Bosses.md#object-supportdieinsteadofrun)
 
 **Confirmed Values:**
 
@@ -24873,7 +24873,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -24893,7 +24893,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sound`](./Characters_and_Bosses.md#context-sound)
+> **Referenced by:** [`sound`](./Characters_and_Bosses.md#object-sound)
 
 **Confirmed Values:**
 
@@ -24913,7 +24913,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn)
 
 **Confirmed Values:**
 
@@ -24933,7 +24933,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AllStatsAura`](./Characters_and_Bosses.md#context-allstatsaura)
+> **Referenced by:** [`AllStatsAura`](./Characters_and_Bosses.md#object-allstatsaura)
 
 **Confirmed Values:**
 
@@ -24953,7 +24953,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnThingOnDamage`](./Characters_and_Bosses.md#context-spawnthingondamage)
+> **Referenced by:** [`SpawnThingOnDamage`](./Characters_and_Bosses.md#object-spawnthingondamage)
 
 **Confirmed Values:**
 
@@ -24973,7 +24973,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn)
 
 **Confirmed Values:**
 
@@ -24993,7 +24993,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -25013,7 +25013,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#tilesets)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -25033,7 +25033,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#context-finalbossshieldhealth)
+> **Referenced by:** [`FinalBossShieldHealth`](./Characters_and_Bosses.md#object-finalbossshieldhealth)
 
 **Confirmed Values:**
 
@@ -25053,7 +25053,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25073,7 +25073,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25093,7 +25093,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25113,7 +25113,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`requirements`](./Events_and_Encounters.md#context-requirements)
+> **Referenced by:** [`requirements`](./Events_and_Encounters.md#object-requirements)
 
 **Confirmed Values:**
 
@@ -25133,7 +25133,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25153,7 +25153,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25173,7 +25173,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#context-spawn)
+> **Referenced by:** [`spawn`](./Abilities_and_Spells.md#object-spawn)
 
 **Confirmed Values:**
 
@@ -25193,7 +25193,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource)
+> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#object-movetowardsdamagesource)
 
 **Confirmed Values:**
 
@@ -25213,7 +25213,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`intro`](./Events_and_Encounters.md#context-intro)
+> **Referenced by:** [`intro`](./Events_and_Encounters.md#object-intro)
 
 **Confirmed Values:**
 
@@ -25233,7 +25233,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25253,7 +25253,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#context-hpaltstates)
+> **Referenced by:** [`HPAltStates`](./Characters_and_Bosses.md#object-hpaltstates)
 
 **Confirmed Values:**
 
@@ -25273,7 +25273,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -25293,7 +25293,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#context-graphics)
+> **Referenced by:** [`graphics`](./Abilities_and_Spells.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -25313,7 +25313,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ScalingAttackAnimation`](./Characters_and_Bosses.md#context-scalingattackanimation)
+> **Referenced by:** [`ScalingAttackAnimation`](./Characters_and_Bosses.md#object-scalingattackanimation)
 
 **Confirmed Values:**
 
@@ -25333,7 +25333,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#context-cerberubsaggrotargetbehavior)
+> **Referenced by:** [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#object-cerberubsaggrotargetbehavior)
 
 **Confirmed Values:**
 
@@ -25371,7 +25371,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -25391,7 +25391,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25411,7 +25411,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -25431,7 +25431,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25451,7 +25451,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#context-consumed)
+> **Referenced by:** [`Consumed`](./Abilities_and_Spells.md#object-consumed)
 
 **Confirmed Values:**
 
@@ -25471,7 +25471,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25491,7 +25491,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Mount`](./Characters_and_Bosses.md#context-mount)
+> **Referenced by:** [`Mount`](./Characters_and_Bosses.md#object-mount)
 
 **Confirmed Values:**
 
@@ -25511,7 +25511,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -25531,7 +25531,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -25551,7 +25551,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#house-boss-info)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -25571,7 +25571,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers)
+> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#object-bungacheers)
 
 **Confirmed Values:**
 
@@ -25591,7 +25591,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#context-bungacheers)
+> **Referenced by:** [`BungaCheers`](./Characters_and_Bosses.md#object-bungacheers)
 
 **Confirmed Values:**
 
@@ -25611,7 +25611,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`Mount`](./Characters_and_Bosses.md#context-mount)
+> **Referenced by:** [`Mount`](./Characters_and_Bosses.md#object-mount)
 
 **Confirmed Values:**
 
@@ -25631,7 +25631,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -25651,7 +25651,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
+> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#object-root)
 
 **Confirmed Values:**
 
@@ -25671,7 +25671,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TwisterDisplaceWithDamage`](./Abilities_and_Spells.md#context-twisterdisplacewithdamage)
+> **Referenced by:** [`TwisterDisplaceWithDamage`](./Abilities_and_Spells.md#object-twisterdisplacewithdamage)
 
 **Confirmed Values:**
 
@@ -25691,7 +25691,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -25711,7 +25711,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25731,7 +25731,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -25751,7 +25751,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25771,7 +25771,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SwimmingFormChange`](./Characters_and_Bosses.md#context-swimmingformchange)
+> **Referenced by:** [`SwimmingFormChange`](./Characters_and_Bosses.md#object-swimmingformchange)
 
 **Confirmed Values:**
 
@@ -25791,7 +25791,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SwimmingFormChange`](./Characters_and_Bosses.md#context-swimmingformchange)
+> **Referenced by:** [`SwimmingFormChange`](./Characters_and_Bosses.md#object-swimmingformchange)
 
 **Confirmed Values:**
 
@@ -25811,7 +25811,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`JohnnyNeedsWashing`](./Characters_and_Bosses.md#context-johnnyneedswashing)
+> **Referenced by:** [`JohnnyNeedsWashing`](./Characters_and_Bosses.md#object-johnnyneedswashing)
 
 **Confirmed Values:**
 
@@ -25831,7 +25831,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`JohnnyNeedsWashing`](./Characters_and_Bosses.md#context-johnnyneedswashing)
+> **Referenced by:** [`JohnnyNeedsWashing`](./Characters_and_Bosses.md#object-johnnyneedswashing)
 
 **Confirmed Values:**
 
@@ -25851,7 +25851,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -25871,7 +25871,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -25891,7 +25891,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -25911,7 +25911,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -25931,7 +25931,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Item_Pools)](./Item_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -25969,7 +25969,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#context-root)
+> **Referenced by:** [`ROOT` (Passives_and_Statuses)](./Passives_and_Statuses.md#object-root)
 
 **Confirmed Values:**
 
@@ -25989,7 +25989,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive)
+> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive)
 
 **Confirmed Values:**
 
@@ -26009,7 +26009,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#context-megadinodropcontroller)
+> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#object-megadinodropcontroller)
 
 **Confirmed Values:**
 
@@ -26029,7 +26029,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance)
 
 **Confirmed Values:**
 
@@ -26049,7 +26049,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26069,7 +26069,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26089,7 +26089,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#context-tintitem)
+> **Referenced by:** [`TintItem`](./Items_and_Equipment.md#object-tintitem)
 
 **Confirmed Values:**
 
@@ -26109,7 +26109,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#context-movetowardsdamagesource)
+> **Referenced by:** [`MoveTowardsDamageSource`](./Characters_and_Bosses.md#object-movetowardsdamagesource)
 
 **Confirmed Values:**
 
@@ -26129,7 +26129,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -26149,7 +26149,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26169,7 +26169,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -26189,7 +26189,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#context-damage_instance)
+> **Referenced by:** [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance)
 
 **Confirmed Values:**
 
@@ -26209,7 +26209,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -26229,7 +26229,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -26249,7 +26249,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#context-megadinodropcontroller)
+> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#object-megadinodropcontroller)
 
 **Confirmed Values:**
 
@@ -26269,7 +26269,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#context-megadinodropcontroller)
+> **Referenced by:** [`MegaDinoDropController`](./Characters_and_Bosses.md#object-megadinodropcontroller)
 
 **Confirmed Values:**
 
@@ -26289,7 +26289,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`RunWhenLastPlayerCatIsCharmed`](./Characters_and_Bosses.md#context-runwhenlastplayercatischarmed)
+> **Referenced by:** [`RunWhenLastPlayerCatIsCharmed`](./Characters_and_Bosses.md#object-runwhenlastplayercatischarmed)
 
 **Confirmed Values:**
 
@@ -26309,7 +26309,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26329,7 +26329,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26349,7 +26349,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26369,7 +26369,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26389,7 +26389,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26409,7 +26409,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -26429,7 +26429,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26449,7 +26449,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ChaosHeadDropIn`](./Characters_and_Bosses.md#context-chaosheaddropin)
+> **Referenced by:** [`ChaosHeadDropIn`](./Characters_and_Bosses.md#object-chaosheaddropin)
 
 **Confirmed Values:**
 
@@ -26487,7 +26487,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SyncFormsWithBuddy`](./Characters_and_Bosses.md#context-syncformswithbuddy)
+> **Referenced by:** [`SyncFormsWithBuddy`](./Characters_and_Bosses.md#object-syncformswithbuddy)
 
 **Confirmed Values:**
 
@@ -26507,7 +26507,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`map_areas`](./Miscellaneous.md#context-map_areas)
+> **Referenced by:** [`map_areas`](./Miscellaneous.md#object-map_areas)
 
 **Confirmed Values:**
 
@@ -26527,7 +26527,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#context-sounds)
+> **Referenced by:** [`sounds`](./Abilities_and_Spells.md#object-sounds)
 
 **Confirmed Values:**
 
@@ -26547,7 +26547,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossSyncAnimations`](./Characters_and_Bosses.md#context-finalbosssyncanimations)
+> **Referenced by:** [`FinalBossSyncAnimations`](./Characters_and_Bosses.md#object-finalbosssyncanimations)
 
 **Confirmed Values:**
 
@@ -26567,7 +26567,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -26587,7 +26587,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#context-graphics)
+> **Referenced by:** [`graphics`](./Characters_and_Bosses.md#object-graphics)
 
 **Confirmed Values:**
 
@@ -26661,7 +26661,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive)
+> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive)
 
 **Confirmed Values:**
 
@@ -26681,7 +26681,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`rare`](./Events_and_Encounters.md#context-rare)
+> **Referenced by:** [`rare`](./Events_and_Encounters.md#object-rare)
 
 **Confirmed Values:**
 
@@ -26719,7 +26719,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
+> **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
 **Confirmed Values:**
 
@@ -26739,7 +26739,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#context-root)
+> **Referenced by:** [`ROOT` (Enemy_AI)](./Enemy_AI.md#object-root)
 
 **Confirmed Values:**
 
@@ -26759,7 +26759,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -26779,7 +26779,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26799,7 +26799,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#context-spawnvolcanoonbattlestart)
+> **Referenced by:** [`SpawnVolcanoOnBattleStart`](./House_and_Environment.md#object-spawnvolcanoonbattlestart)
 
 **Confirmed Values:**
 
@@ -26819,7 +26819,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`DybbukPossessed`](./Abilities_and_Spells.md#context-dybbukpossessed)
+> **Referenced by:** [`DybbukPossessed`](./Abilities_and_Spells.md#object-dybbukpossessed)
 
 **Confirmed Values:**
 
@@ -26839,7 +26839,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26859,7 +26859,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#context-finalbossbeamqueue)
+> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#object-finalbossbeamqueue)
 
 **Confirmed Values:**
 
@@ -26879,7 +26879,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26899,7 +26899,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -26919,7 +26919,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -26939,7 +26939,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#context-mothertumorpassive)
+> **Referenced by:** [`MotherTumorPassive`](./Characters_and_Bosses.md#object-mothertumorpassive)
 
 **Confirmed Values:**
 
@@ -26959,7 +26959,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#context-finalbossbeamqueue)
+> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#object-finalbossbeamqueue)
 
 **Confirmed Values:**
 
@@ -26979,7 +26979,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -26999,7 +26999,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -27019,7 +27019,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -27039,7 +27039,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`target`](./Abilities_and_Spells.md#context-target)
+> **Referenced by:** [`target`](./Abilities_and_Spells.md#object-target)
 
 **Confirmed Values:**
 
@@ -27059,7 +27059,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27079,7 +27079,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ai`](./Characters_and_Bosses.md#context-ai)
+> **Referenced by:** [`ai`](./Characters_and_Bosses.md#object-ai)
 
 **Confirmed Values:**
 
@@ -27099,7 +27099,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`AddPostProcessEffect`](./House_and_Environment.md#context-addpostprocesseffect)
+> **Referenced by:** [`AddPostProcessEffect`](./House_and_Environment.md#object-addpostprocesseffect)
 
 **Confirmed Values:**
 
@@ -27119,7 +27119,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -27139,7 +27139,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27159,7 +27159,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ModularPickup`](./Characters_and_Bosses.md#context-modularpickup)
+> **Referenced by:** [`ModularPickup`](./Characters_and_Bosses.md#object-modularpickup)
 
 **Confirmed Values:**
 
@@ -27179,7 +27179,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27199,7 +27199,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -27219,7 +27219,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#context-monkcatreactionabilities)
+> **Referenced by:** [`MonkCatReactionAbilities`](./Characters_and_Bosses.md#object-monkcatreactionabilities)
 
 **Confirmed Values:**
 
@@ -27239,7 +27239,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27259,7 +27259,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27279,7 +27279,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -27299,7 +27299,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#context-root)
+> **Referenced by:** [`ROOT` (Items_and_Equipment)](./Items_and_Equipment.md#object-root)
 
 **Confirmed Values:**
 
@@ -27319,7 +27319,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27339,7 +27339,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27359,7 +27359,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27379,7 +27379,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27399,7 +27399,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
@@ -27419,7 +27419,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#context-finalbossbeamqueue)
+> **Referenced by:** [`FinalBossBeamQueue`](./Characters_and_Bosses.md#object-finalbossbeamqueue)
 
 **Confirmed Values:**
 
@@ -27439,7 +27439,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`MotherGrowController`](./Characters_and_Bosses.md#context-mothergrowcontroller)
+> **Referenced by:** [`MotherGrowController`](./Characters_and_Bosses.md#object-mothergrowcontroller)
 
 **Confirmed Values:**
 
@@ -27459,7 +27459,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Miscellaneous.md#chapter-id-enum)
+> **Referenced by:** `ROOT`
 
 **Confirmed Values:**
 
@@ -27479,7 +27479,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#context-root)
+> **Referenced by:** [`ROOT` (Progression_Unlocks)](./Progression_Unlocks.md#object-root)
 
 **Confirmed Values:**
 
@@ -27499,7 +27499,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#context-boss)
+> **Referenced by:** [`boss`](./Map_Generation_and_Routing.md#object-boss)
 
 **Confirmed Values:**
 
@@ -27519,7 +27519,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#context-root)
+> **Referenced by:** [`ROOT` (Spawns_and_Enemy_Pools)](./Spawns_and_Enemy_Pools.md#object-root)
 
 **Confirmed Values:**
 
@@ -27539,7 +27539,7 @@ This document provides exhaustive lists of all enum and string values found in t
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#context-root)
+> **Referenced by:** [`ROOT` (Map_Generation_and_Routing)](./Map_Generation_and_Routing.md#object-root)
 
 **Confirmed Values:**
 
