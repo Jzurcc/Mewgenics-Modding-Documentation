@@ -478,6 +478,12 @@ This document provides exhaustive lists of all enum and string values found in t
 | `yellb` | |
 | `zombie` | |
 
+| `ClassFromNeutral` | |
+| `ClassToNeutral` | |
+| `HitGround` | |
+| `StartTurn` | |
+| `Victory` | |
+| `bite2` | |
 </details>
 
 
@@ -2265,6 +2271,16 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`movieclip`](#enum-movieclip), [`custom_cat_data`](#enum-custom_cat_data), [`SpawnOnDeath`](#enum-spawnondeath), [`BounceObject`](#enum-bounceobject), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter), [`SpawnOnBattleStart`](#enum-spawnonbattlestart), [`SpawnThingOnDeath`](#enum-spawnthingondeath), [`Buddy`](#enum-buddy), [`obj`](#enum-obj), [`TransformOnDeath`](#enum-transformondeath), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills), [`SpawnOnDowned`](#enum-spawnondowned), [`event`](#enum-event), [`Divide4OnDeath`](#enum-divide4ondeath), [`Imprison`](#enum-imprison), [`ObjectOnHit`](#enum-objectonhit), [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`SpawnObjectOnPopCorpse`](#enum-spawnobjectonpopcorpse), [`BreakIntoRocks`](#enum-breakintorocks), [`gain_immortal_familiar`](#enum-gain_immortal_familiar), [`LeaveBehindOnceEachMove`](#enum-leavebehindonceeachmove).
+| `GiantFly` | |
+| `GooSlime` | |
+| `Grandpa` | |
+| `Legs` | |
+| `MeatGolem` | |
+| `MeowMutant` | |
+| `Mimic` | |
+| `small_trash_cans` | |
+| `x` | |
+| `contextual` | |
 </details>
 
 
@@ -2400,6 +2416,9 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette), [`SetFragileImmune`](#enum-setfragileimmune), [`SetBrittleImmune`](#enum-setbrittleimmune).
+| `Ancestor` | |
+| `Dino` | |
+| `Phoenix` | |
 </details>
 
 
@@ -2485,6 +2504,7 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`target_requires_tag`](#enum-target_requires_tag), [`AddTag`](#enum-addtag), [`AddHiddenTag`](#enum-addhiddentag), [`TagGreed`](#enum-taggreed), [`tag_filter`](#enum-tag_filter), [`FactionUprising`](#enum-factionuprising), [`HolyShieldTransferToTaggedMinions`](#enum-holyshieldtransfertotaggedminions), [`RandomTaggedMutation`](#enum-randomtaggedmutation), [`UpgradeTaggedSpawnsToChampions`](#enum-upgradetaggedspawnstochampions), [`enemy_type`](#enum-enemy_type).
+| `noncopyable` | |
 </details>
 
 
@@ -6379,6 +6399,16 @@ This document provides exhaustive lists of all enum and string values found in t
 | `must_have_line_of_sight_unpurgable` | |
 | `must_have_liquid` | |
 
+| `exclude_blocking` | |
+| `must_be_adjacent_to_ally` | |
+| `must_move` | |
+| `must_not_have_corpse` | |
+| `must_not_have_tag` | |
+| `target_requires_element` | |
+| `must_have_element` | |
+| `must_have_enemy_or_robot` | |
+| `must_have_player_cat` | |
+| `must_be_partially_empty` | |
 </details>
 
 
@@ -8608,6 +8638,10 @@ This document provides exhaustive lists of all enum and string values found in t
 | `resultLeave` | |
 | `resultVeryBad` | |
 
+| `grass` | |
+| `resultBlessing` | |
+| `resultTragedy` | |
+| `resultWeather` | |
 </details>
 
 

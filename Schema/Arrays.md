@@ -7082,3 +7082,19 @@ This document provides exhaustive lists of all array properties found in the bas
 </details>
 
 ---
+### Array: `requires_counter`
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`prompt`](./Engine_EventKeys.md#context-prompt)
+
+**Accepted Elements:**
+- List of [Enum: `TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer)
+- List of `Integer`
+
+**Examples:**
+`[ BonusBirdsKilled 25 ]`
+
+</details>
+
+---

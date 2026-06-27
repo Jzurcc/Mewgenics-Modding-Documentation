@@ -590,6 +590,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hidden_tags`](./Arrays.md#array-hidden_tags) | Array / Enum | A list of hidden tags for internal grouping and behavior. | 14 | `[terminator_mini dc_cat]`<br>`terminator_mini` |
 | [`tags`](./Arrays.md#array-tags) | Array / Enum | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 14 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 | `evenly_dispersed_bonus_turns` | Integer | The number of bonus turns spread evenly across the turn order for this unit. | 13 | `1`<br>`2`<br>`3` |
+| `initiative_adjustment` | Integer | Adjusts the unit's base initiative. | 1 | `5` |
 | `exclude_from_hallucinate` | Boolean | If true, the unit is not included in hallucination effects. | 13 | `true` |
 | `round_end_bonus_turns` | Integer | The number of bonus turns granted at the end of each round. | 13 | `1` |
 | `can_be_overkilled` | Boolean | If true, the unit can be overkilled. | 12 | `false`<br>`true` |
