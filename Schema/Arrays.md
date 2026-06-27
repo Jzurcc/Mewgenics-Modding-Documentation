@@ -5,6 +5,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ## Arrays Dictionary
 
 ### Array: `image`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -24,6 +25,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `elements`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -37,6 +39,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `spells`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -50,6 +53,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tags`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -63,6 +67,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `image_tint`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -76,6 +81,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `emit_direction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -95,6 +101,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `restrictions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -108,6 +115,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tag`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -121,6 +129,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_priority`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -140,6 +149,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `complete_chapter_with_class`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -158,6 +168,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `set`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -176,6 +187,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `live_bounds`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -200,6 +212,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_all`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -219,6 +232,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `play_animation`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -237,6 +251,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `emit_box`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -255,6 +270,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `particle_lifetime`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -273,6 +289,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `random_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -291,6 +308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `custom_aoe`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -310,6 +328,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Stun`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -328,6 +347,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `friction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -346,6 +366,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `speed_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -364,6 +385,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `alt_sounds`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -384,6 +406,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `aoe_restrictions`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -402,6 +425,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `alt_animations`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -422,6 +446,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rotation`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -440,6 +465,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `size`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -458,6 +484,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `coins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -476,6 +503,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `food`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -494,6 +522,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `size_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -512,6 +541,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `banned_elite_buffs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -543,6 +573,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `object`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -561,6 +592,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `number`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -579,6 +611,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `durability`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -597,6 +630,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `counter_range`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -615,6 +649,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `gain_coins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -633,6 +668,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `color`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -687,6 +723,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `EliteTint`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -705,6 +742,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Fear`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -724,6 +762,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `force`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -742,6 +781,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rotation_speed_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -760,6 +800,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `StatusImmunity`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -778,6 +819,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `counter_minimum`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -796,6 +838,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `force_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -814,6 +857,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -885,6 +929,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `combo`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -904,6 +949,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `emit_amount`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -930,6 +976,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `gain_food`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -948,6 +995,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `frame_range`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -966,6 +1014,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `get_item_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -985,6 +1034,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `speed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1003,6 +1053,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `boss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1021,6 +1072,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `easy`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1039,6 +1091,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `hard`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1057,6 +1110,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `miniboss`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1075,6 +1129,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `normal`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1094,6 +1149,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rare`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1112,6 +1168,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `axis`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1130,6 +1187,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `counter_maximum`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1148,6 +1206,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `large`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1166,6 +1225,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `lock_orientation`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1184,6 +1244,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `medium`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1202,6 +1263,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `point`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1220,6 +1282,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `small`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1233,6 +1296,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `special`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1251,6 +1315,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `projectile_spawn_offset`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1269,6 +1334,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `force_end`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1287,6 +1353,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `is_not_chapter`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1305,6 +1372,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `size_end`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1323,6 +1391,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ReplaceSpawnedObjects`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1341,6 +1410,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `damage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1359,6 +1429,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rotation_speed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1377,6 +1448,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ability_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1395,6 +1467,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `attack_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1413,6 +1486,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `count`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1431,6 +1505,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `levelup_stats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1461,6 +1536,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `passive_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1474,6 +1550,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tint`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1492,6 +1569,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Freeze`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1510,6 +1588,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ParticleRandomForce`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1529,6 +1608,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_random`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1548,6 +1628,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_strict`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1567,6 +1648,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `restrict`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1580,6 +1662,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Confusion`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1598,6 +1681,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `attack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1616,6 +1700,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `global_tags`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1635,6 +1720,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `hint_persistent_elements`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1653,6 +1739,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `misc`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1671,6 +1758,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `move`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1689,6 +1777,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `starter_abilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1702,6 +1791,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Charmed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1720,6 +1810,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `EliteFlatTint`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1738,6 +1829,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Petrify`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1756,6 +1848,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `eq`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1784,6 +1877,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `global_particles`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1803,6 +1897,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `party_damage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1821,6 +1916,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Immobile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1840,6 +1936,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `defense`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1858,6 +1955,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `friction_end`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1876,6 +1974,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `complete_act_difficulty`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1894,6 +1993,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `friction_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1912,6 +2012,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `initial_cooldown`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1930,6 +2031,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `random_delay`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1948,6 +2050,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rematch_cooldown`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1966,6 +2069,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tooltip_values`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -1990,6 +2094,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `unlock_act_difficulty`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2008,6 +2113,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Poison`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2026,6 +2132,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RandomizeAIWeightsEachTurn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2044,6 +2151,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bonus_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2062,6 +2170,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `choose_cat_with_item`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2080,6 +2189,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `emit_rate`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2098,6 +2208,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `gain_disorder_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2116,6 +2227,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `glow`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2134,6 +2246,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `is_chapter`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2152,6 +2265,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rotation_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2170,6 +2284,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2183,6 +2298,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Burn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2201,6 +2317,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `begin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2220,6 +2337,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `custom_range`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2239,6 +2357,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `end`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2258,6 +2377,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `held_coins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2276,6 +2396,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `hidden_tag`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2294,6 +2415,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `shopkeeper_fights`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2318,6 +2440,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `towards`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2336,6 +2459,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Bleed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2354,6 +2478,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `areas`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2372,6 +2497,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bigrays`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2390,6 +2516,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `classes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2408,6 +2535,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `complicated_abilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2426,6 +2554,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `complicated_passives`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2445,6 +2574,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `custom_aoe_util`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2464,6 +2594,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ge`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2482,6 +2613,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `head`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2500,6 +2632,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `le`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2526,6 +2659,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `miss_random_delay`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2544,6 +2678,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `random_pool_consider_luck`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2562,6 +2697,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `slot`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2575,6 +2711,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `smallrays`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2593,6 +2730,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Blind`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2611,6 +2749,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Bruise`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2629,6 +2768,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ScatterCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2647,6 +2787,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Slow`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2665,6 +2806,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Tangled`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2684,6 +2826,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `TriggerWerewolfTransform`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2702,6 +2845,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_nothing`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2720,6 +2864,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `get_parasite_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2739,6 +2884,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `self_damage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2757,6 +2903,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Grappled`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2775,6 +2922,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RandomSeededStatModifier`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2793,6 +2941,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ScatterHeldCoin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2811,6 +2960,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Weakness`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2829,6 +2979,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `element`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2847,6 +2998,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `inherit_speed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2865,6 +3017,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `mouse_offset`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2883,6 +3036,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `particles`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2901,6 +3055,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `radius`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2919,6 +3074,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `transform_item`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2932,6 +3088,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `BonusTurnPattern`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2950,6 +3107,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ButchBox`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2968,6 +3126,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `DivineShield`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -2986,6 +3145,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Floor1_Large`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3004,6 +3164,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `HousePipe`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3022,6 +3183,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Madness`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3040,6 +3202,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Quivered`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3058,6 +3221,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RandomStatDown`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3076,6 +3240,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Roof_LeftEdge`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3094,6 +3259,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Roof_RightEdge`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3112,6 +3278,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Roof_Top`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3130,6 +3297,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `StraySpawn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3148,6 +3316,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `XIsMultipliedPercentHealth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3166,6 +3335,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `amount`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3184,6 +3354,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `body`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3202,6 +3373,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `character_filter`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3220,6 +3392,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `complete_chapters`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3238,6 +3411,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `innate_weather`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3256,6 +3430,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `move_then_do_priority`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3274,6 +3449,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `move_then_do_random`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3293,6 +3469,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `weights`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3311,6 +3488,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Basement0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3328,6 +3506,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Basement1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3345,6 +3524,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Basement2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3362,6 +3542,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Basement3`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3379,6 +3560,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Basement4`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3396,6 +3578,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `BounceRock`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3413,6 +3596,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `BurgleCoin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3430,6 +3614,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `CanMutateTo`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3447,6 +3632,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Dyslexia`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3464,6 +3650,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `FillMana`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3481,6 +3668,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Floor1_Small`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3498,6 +3686,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `LargeAttic`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3515,6 +3704,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `MagicWeakness`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3532,6 +3722,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Marked`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3549,6 +3740,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Rot`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3566,6 +3758,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Sleep`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3583,6 +3776,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SpawnFlames`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3600,6 +3794,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SpawnRock`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3617,6 +3812,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `StatusReplacement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3634,6 +3830,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Tarred`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3651,6 +3848,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `active_pieces`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3668,6 +3866,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `alpha_start`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3685,6 +3884,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `built_in_collision`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3703,6 +3903,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_all_shuffle`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3720,6 +3921,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_best`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3737,6 +3939,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_one`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3763,6 +3966,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `extra_bound_planes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3780,6 +3984,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `learn_ability_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3797,6 +4002,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `learn_passive_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3814,6 +4020,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `obj`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3831,6 +4038,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `party_gain_disorder_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3849,6 +4057,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `passive_pieces`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3866,6 +4075,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `position`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3883,6 +4093,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `speed_scale`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3900,6 +4111,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `target_requires_element`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3913,6 +4125,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `thresholds`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3932,6 +4145,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `AdvancedTint`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3948,6 +4162,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `AlienBeastDangerZones`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3965,6 +4180,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `AllStatsUp`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3981,6 +4197,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `BasicAttackPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -3996,6 +4213,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `BasicAttackStatusSwap`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4012,6 +4230,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Bird_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4029,6 +4248,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `CatAbilityPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4044,6 +4264,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `CatGenAbilityPool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4059,6 +4280,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Coin_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4076,6 +4298,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ColorlessAbilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4091,6 +4314,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `CompletionCheckmarkTooltip`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4107,6 +4331,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ConstitutionUp`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4123,6 +4348,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `CounterAttack`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4139,6 +4365,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Crazy_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4155,6 +4382,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `DicerArt`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4171,6 +4399,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Eye_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4188,6 +4417,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Floor2_Large`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4204,6 +4434,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Floor2_Small`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4220,6 +4451,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Forecast`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4236,6 +4468,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `GainCoins`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4252,6 +4485,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ImmediateAbilityReaction`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4268,6 +4502,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Instakill`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4284,6 +4519,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `KnockOutCoin`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4300,6 +4536,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `LockOrientationFaceTile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4316,6 +4553,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `MonkStances`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4332,6 +4570,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `MoveQuivered`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4348,6 +4587,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RandomWeatherEachFight`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4364,6 +4604,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `ReceivedStatusReplacement`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4380,6 +4621,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RemoveGlobalModifiers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4396,6 +4638,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `RepairWeapon`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4412,6 +4655,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SelfStun`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4428,6 +4672,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SmallAttic`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4444,6 +4689,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SmallCompletionCheckmarkTooltip`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4460,6 +4706,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `SpawnCoinAnywhere`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4476,6 +4723,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Stealth`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4492,6 +4740,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Steven_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4509,6 +4758,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Trample`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4531,6 +4781,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `TransformOnDeath`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4547,6 +4798,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `VaporizeCorpseFlipAdvantage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4563,6 +4815,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `Webbed`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4579,6 +4832,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `add`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4595,6 +4849,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `all_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4611,6 +4866,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `alley`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4627,6 +4883,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `allsticks_0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4644,6 +4901,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `allsticks_1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4660,6 +4918,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `allsticks_2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4677,6 +4936,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `allsticks_3`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4694,6 +4954,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `arms`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4710,6 +4971,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `banned_abilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4726,6 +4988,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `barbed_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4743,6 +5006,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `barbed_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4760,6 +5024,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `birth_defects`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4777,6 +5042,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `blood_altar_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4794,6 +5060,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bloody_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4811,6 +5078,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bombs_0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4828,6 +5096,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bombs_1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4844,6 +5113,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bombs_2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4860,6 +5130,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bombs_3`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4876,6 +5147,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bone_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4893,6 +5165,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bone_equipment`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4910,6 +5183,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bone_weapons`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4926,6 +5200,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `boneyard`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4942,6 +5217,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `bunker`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4958,6 +5234,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `can_items_common`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4975,6 +5252,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `can_items_rare`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -4991,6 +5269,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `cat_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5008,6 +5287,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `cat_has_item_equipped`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5024,6 +5304,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `caves`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5040,6 +5321,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `chapter_id_enum`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5056,6 +5338,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `choose_one`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5079,6 +5362,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `class_seals`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5096,6 +5380,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `common`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5112,6 +5397,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `common_bones`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5128,6 +5414,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `considered_forms`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5144,6 +5431,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `cooldown`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5160,6 +5448,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `core`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5176,6 +5465,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `crater`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5192,6 +5482,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `cursed_barbed_wire_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5208,6 +5499,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `cursed_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5224,6 +5516,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `custom_aoe_mirror`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5241,6 +5534,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `custom_aoe_util_mirror`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5258,6 +5552,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `damagescale_thresholds`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5275,6 +5570,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `deadcat_equipment`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5292,6 +5588,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `debug`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5308,6 +5605,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `default_unlocked_classes`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5323,6 +5621,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `demon_themed_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5340,6 +5639,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `desert`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5356,6 +5656,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `dice_abilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5373,6 +5674,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `dimensionx`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5389,6 +5691,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `diseases`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5405,6 +5708,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_best_multiple`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5434,6 +5738,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `do_priority_alternating`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5450,6 +5755,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `eagle_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5467,6 +5773,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `emitshape_scale`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5483,6 +5790,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `endoftime`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5499,6 +5807,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `eyes_nonrare`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5516,6 +5825,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `fallback_spawn`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5532,6 +5842,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `flesh_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5549,6 +5860,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `fleshhead_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5565,6 +5877,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `forbidden_spell_consequences`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5581,6 +5894,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `forbidden_spell_consequences_crippling`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5598,6 +5912,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `future`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5614,6 +5929,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `get_and_equip_item_from_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5631,6 +5947,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `glitched_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5648,6 +5965,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `godly_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5665,6 +5983,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `good_parasites`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5682,6 +6001,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `grass_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5699,6 +6019,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `groups`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5715,6 +6036,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `grub_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5732,6 +6054,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `guts_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5749,6 +6072,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `heal`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5765,6 +6089,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `heal_disorder`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5781,6 +6106,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `hidden_tags`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5797,6 +6123,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `hide_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5814,6 +6141,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `iceage`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5830,6 +6158,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `inanimate_can_receive_specific_statuses`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5846,6 +6175,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `intro`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5862,6 +6192,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `isaac_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5879,6 +6210,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `junkyard`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5895,6 +6227,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `junkyard_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5912,6 +6245,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `jurassic`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5928,6 +6262,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `lab`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5944,6 +6279,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `legs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5960,6 +6296,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `limbs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5976,6 +6313,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `locked_abilities`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -5991,6 +6329,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `locked_bosses`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6006,6 +6345,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `locked_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6021,6 +6361,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `locked_levelgroups`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6036,6 +6377,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `locked_passives`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6051,6 +6393,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `look_at_offset`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6067,6 +6410,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `low_hygeine_in_house_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6083,6 +6427,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `lt`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6099,6 +6444,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `magic_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6115,6 +6461,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `main_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6132,6 +6479,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `major_class_checkmarks`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6148,6 +6496,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `meat_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6165,6 +6514,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `meatworld`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6181,6 +6531,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `mental_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6198,6 +6549,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `mom_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6214,6 +6566,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `moon`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6230,6 +6583,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `move_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6246,6 +6600,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `move_then_do_all`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6262,6 +6617,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `movieclip`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6279,6 +6635,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `mul`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6295,6 +6652,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `nemesis`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6317,6 +6675,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `non_blocking_animations`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6340,6 +6699,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `options`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6356,6 +6716,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `palette`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6372,6 +6733,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `parasites`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6389,6 +6751,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `pelts`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6406,6 +6769,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `physical_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6422,6 +6786,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `pills`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6439,6 +6804,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `poop_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6455,6 +6821,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `puddle_tile`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6471,6 +6838,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `raptor_nest_eggs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6484,6 +6852,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rat_trinkets`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6501,6 +6870,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `recycled_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6518,6 +6888,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rock_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6535,6 +6906,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `rotten_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6552,6 +6924,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `sewers`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6568,6 +6941,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `sludge_armor`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6581,6 +6955,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `spawn_offset`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6597,6 +6972,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `speed_end`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6613,6 +6989,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `spell_use_groups`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6630,6 +7007,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `state_health`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6643,6 +7021,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stats`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6659,6 +7038,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stick_0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6676,6 +7056,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stick_1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6693,6 +7074,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stick_2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6710,6 +7092,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stick_3`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6727,6 +7110,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `stomach_disorders`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6740,6 +7124,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `style`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6762,6 +7147,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tech_items`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6779,6 +7165,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `theend`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6795,6 +7182,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_0`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6812,6 +7200,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_0_bombs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6829,6 +7218,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_1`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6846,6 +7236,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_1_bombs`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6863,6 +7254,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6880,6 +7272,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tinkerer_3`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6897,6 +7290,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tracy_idols`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6914,6 +7308,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `turns`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6930,6 +7325,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tutorial`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6946,6 +7342,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tutorial_levelup_active_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6962,6 +7359,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tutorial_levelup_active_pool_2`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6975,6 +7373,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `tutorial_levelup_passive_pool`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -6992,6 +7391,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `type`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7005,6 +7405,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `unique`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7022,6 +7423,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `virtual_head_position`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7038,6 +7440,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `weapons`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7055,6 +7458,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `weather`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7068,6 +7472,7 @@ This document provides exhaustive lists of all array properties found in the bas
 ---
 
 ### Array: `weather_roll`
+
 <details>
 <summary><b>Expand</b></summary>
 
@@ -7083,6 +7488,7 @@ This document provides exhaustive lists of all array properties found in the bas
 
 ---
 ### Array: `requires_counter`
+
 <details>
 <summary><b>Expand</b></summary>
 
