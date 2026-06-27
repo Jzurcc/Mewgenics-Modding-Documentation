@@ -1718,8 +1718,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TurnControlDelay` | Number | Specifies the delay in seconds before the unit regains turn control. || `.25` |
 | [`VisualFlySwarm`](./Engine_StatusAndPassiveKeys.md#object-visualflyswarm) | Number / Object  | If non-zero, enables the visual fly swarm effect on the unit. || `{ . . . }`<br>`1` |
 
-| [`AddDamageToElementDamage`](./Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 6 | `{ . . . }` | `AddLeechesStatus` | Integer | The number of stacks of Leech status applied to the source, healing when dealing damage. | 0 | `1` | [`AddStatusesIfPersistentWeatherElement`](Miscellaneous.md#object-addstatusesifpersistentweatherelement) | Object | Specifies statuses applied if the persistent weather matches the given elements. | 0 | `{ . . . }` | [`AddStatusesToReceivedElementalDamage`](Miscellaneous.md#object-addstatusestoreceivedelementaldamage) | Object | An object defining statuses applied to the unit when it takes elemental damage of the specified types. | 0 | `{ . . . }` | [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 | `{ . . . }` | [`AddStatusToElementDamage`](Items_and_Equipment.md#object-addstatustoelementdamage) | Object | An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply. | 4 | `{ . . . }` | [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 0 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 0 | `-1`<br>`-2`<br>`1` | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` | [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` | `BigSplashDamage` | Integer | The additional tile radius of the splash damage effect applied by an attack. | 0 | `2` | `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` | `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` | [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` | `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 0 | `100`<br>`25`<br>`50` | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 0 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 0 | `1` | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` | `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 0 | `2` | `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 0 | `2` | `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 0 | `2` | `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 0 | `2` | `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 0 | `2` | `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 0 | `2` | `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 0 | `2` | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 0 | `1` | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 0 | `1` | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 0 | `100`<br>`15`<br>`20` | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 1 | `{ . . . }` | `Charge` | Integer | The number of charge stacks applied. | 0 | `1`<br>`2`<br>`3` | `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` | [`Cleanse`](#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` | `CompleteItemQuest` | Enum | Specifies the item quest ID to mark as complete on kill. | 0 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 0 | `{ . . . }` | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` | `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 0 | `1` | `CrackMoonHead` | Integer | If set, cracks the MoonHead's head, triggering its death sequence. | 0 | `1` | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 0 | `1`<br>`3`<br>`5` | `DeleteObject` | Integer | If set, deletes the target object from the map. | 0 | `1` | `DestroyTrinket` | Integer | The number of trinkets destroyed. | 0 | `1` | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 0 | `{ . . . }`<br>`1`<br>`6` | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 0 | `1` | `DisableWeapon` | Integer | If set, disables the source's weapon, preventing its use. | 0 | `1` | `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 0 | `true` | `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 0 | `1` | `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 0 | `1` | [`DistanceBonusDamage`](#object-distancebonusdamage) | Object | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 0 | `{ . . . }` | `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 0 | `1`<br>`2`<br>`4` | `DontHealEnemies` | Integer | If true, the healing effect does not affect enemy units. | 0 | `1` | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 0 | `1`<br>`2`<br>`3` | `EmptyMana` | Integer | If non-zero, sets the unit's mana to empty when applied. | 0 | `1` | `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 0 | `5` | `ExplodeCharacter` | Integer | The radius (in tiles) of an explosion centered on the character. | 0 | `5` | `ExplodeCharacter_NoDie` | Integer | The damage dealt when a character explodes without dying. | 0 | `1`<br>`5` | `ExplodeCharacter_Party` | Integer | The radius (in tiles) of an explosion centered on the character that also damages party members. | 0 | `5` | `ExplodeCharacter_PartyBoss` | Integer | The damage dealt to the party boss when it explodes. | 0 | `5` | `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 0 | `5`<br>`9` | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | The damage dealt when a petrified RockCrusher explodes. | 0 | `5`<br>`9` | `FaceAway` | Integer | If set, forces the target to face away from the source. | 0 | `1` | `FaceCamera` | Integer | If non-zero, forces the character to rotate and face the camera. | 0 | `1` | `FactionConversion` | Integer | Converts the target to the caster's faction. | 0 | `1` | `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`10`<br>`2` | `Fights` | Number | The number of fights this status or effect persists for. | 4 | `1`<br>`3`<br>`99` | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 0 | `1`<br>`[1 .10]`<br>`[1 .25]` | `FlatAIBonus` | Integer | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 0 | `-999999`<br>`100`<br>`999999` | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 0 | `1`<br>`10`<br>`2` | `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 0 | `1` | `ForceImmediateMove` | Integer | If non-zero, forces the character to move instantly without waiting for normal action order. | 0 | `1` | `ForceMoveAway` | Integer | The distance to force the target away from the source. | 0 | `1` | `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 0 | `1` | `ForceUseAbility_NonStack` | Enum | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 0 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` | [`ForceUseAbilityOnTarget`](#object-forceuseabilityontarget) | Object | Defines a chance to force the unit to use a specified ability on the target. | 0 | `{ . . . }` | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 0 | `0`<br>`1` | `GainDisorder` | Enum | Specifies the name of the disorder gained. | 0 | `Chungus`<br>`Psychosis` | `GainDisorderFromPool_PostCast` | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 0 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` | `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 0 | `1`<br>`10`<br>`100` | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 0 | `1` | `HealthGain` | Integer | The amount of health restored to the source. | 0 | `1`<br>`10`<br>`2` | `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 0 | `1` | [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 0 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` | `ImmediateUseAbility_Instant` | Enum | Specifies the name of an ability to use instantly as a passive effect. | 0 | `head_CrownOfHorns` | `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` | `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 0 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` | `InnateElement` | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 8 | `Earth`<br>`Electric`<br>`Fire` | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 0 | `25`<br>`50`<br>`999` | [`KnockbackIfCrit`](#object-knockbackifcrit) | Object | Defines knockback properties applied when a critical hit occurs. | 0 | `{ . . . }` | `KnockOutClone` | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 0 | `PlayerCat_MiniMiniMe` | `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 0 | `10+bonus_melee_ability_damage` | `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 0 | `1` | `LeaveBehindRockOnKnockback` | Integer | If non-zero, leaves behind a rock on each tile the target is knocked through. | 0 | `1` | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 0 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`Marked`](#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`3`<br>`5` | `NonLethal` | Integer | If set to 1, damage dealt by the unit cannot kill enemies; it leaves them at 1 HP. | 0 | `1` | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 0 | `-10`<br>`0`<br>`1` | [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 0 | `1` | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 0 | `1`<br>`2` | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 0 | `1` | `PurgeAll` | Integer | If non-zero, removes all temporary status effects (buffs, debuffs) from the target. | 0 | `1` | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 0 | `25` | `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 0 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` | `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 0 | `{ . . . }` | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 0 | `1` | `RefreshMovePoints` | Integer | The amount of movement points restored to the source. | 0 | `1` | `RefreshWeaponAbility` | Integer | The number of times the weapon's ability is refreshed. | 0 | `1` | `RemoteFlatLeech` | Integer | The flat amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoteLeech` | Integer | The amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 0 | `.5`<br>`4` | `RemoveGlobalModifiers` | Array | List of global modifier names to remove upon death. | 0 | `[BloodRain]` | `RemoveItem` | Enum | Specifies the item ID to remove from the source on kill. | 0 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 0 | `1` | `RemoveMovePoints` | Integer | The number of move points to remove from the target, preventing them from moving. | 0 | `1` | `RemoveStatus` | Enum | The name of the status effect to remove from the source. | 0 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` | [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object | An object specifying a status name and the number of stacks to remove from the target. | 0 | `{ . . . }` | `RemoveTurnsThisRound` | Integer | The number of turns to remove from the target's turn order this round. | 0 | `1` | `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` | [`Revive`](#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` | `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 0 | `-999999`<br>`1`<br>`2` | `ScatterRandomPickups` | Integer | The number of random pickups scattered around the target's location. | 0 | `2`<br>`5` | `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 0 | `1`<br>`100%`<br>`50%` | [`SetItemAux`](#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 0 | `{ . . . }` | `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 0 | `0` | `SetShield` | Integer | Sets the target's shield value to a specific flat amount. | 0 | `0`<br>`88` | `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`ShowFakeDamage`](Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 0 | `{ . . . }` | `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 0 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` | [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 0 | `1` | `SpawnBearTrapIfHitKills` | Integer | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 0 | `1` | `SpawnBearTrapOnMiss` | Integer | The number of bear traps to spawn on the tile adjacent to the target when the unit misses an attack. | 0 | `1` | `SpawnFlames` | `Array` | An array containing the number of flame tiles to spawn and the chance per tile. | 0 | `[1, .20+.1*level]`<br>`[1, .20]` | `SpawnThingIfHitKills` | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 0 | `Bait`<br>`BigFood`<br>`BiggestFood` | `SpecificInjury` | Enum | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 0 | `int`<br>`spd`<br>`str` | `SpeculativeMoveSelfCorpseOffMap` | Integer | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 0 | `1` | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 0 | `1` | `StackingSandstorm` | Integer | If non-zero, enables the stacking sandstorm mechanic which increases damage per stack. | 0 | `1` | `StanceSwitchToMelee` | Integer | If set, switches the source to melee stance. | 0 | `1` | `StanceSwitchToRanged` | Integer | If set, switches the source to ranged stance. | 0 | `1` | `status` | Enum | Specifies the status effect to apply in a Temporary object. | 0 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` | [`StatusEachRoundEnd`](Cat_Mutations.md#object-statuseachroundend) | Object | An object listing status effects applied to the unit at the end of each round. | 2 | `{ . . . }` | `StatusImmunity` | Array / Enum | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` | [`StatusRandomEnemiesOnBattleStart`](Events_and_Encounters.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 0 | `{ . . . }` | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 0 | `"max(int, 0)"`<br>`-1`<br>`-2` | `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` | `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 0 | `1` | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 0 | `1` | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 0 | `2`<br>`X` | `TempLuckUp` | Integer | The amount of temporary luck increase. | 0 | `2`<br>`99` | [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 0 | `{ . . . }` | [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 0 | `{ . . . }` | [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 0 | `{ . . . }` | `TempStrengthUp` | Equation | The number of stacks of temporary Strength Up applied to the unit. | 0 | `1`<br>`2`<br>`X` | `TempTrampleUntilSettled` | Integer | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 0 | `3` | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` | `UseAbility_Madness` | Enum | Determines which ability type (e.g., weapon) is forcibly used when Madness triggers. | 0 | `weapon` | `UseAbility_NonStack` | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 0 | `1`<br>`20` | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 0 | `1` | `VaporizeCorpseFlipAdvantage` | `Array` | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 0 | `[1 .33]` | `VaporizeInanimate` | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 0 | `1` | `VisualFX` | Enum | Specifies the name of the visual effect to play. | 0 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` | [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `WeaponAuxMultiplier` | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 0 | `.5` </details>
+| [`AddDamageToElementDamage`](./Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 6 | `{ . . . }` | `AddLeechesStatus` | Integer | The number of stacks of Leech status applied to the source, healing when dealing damage. | 0 | `1` | [`AddStatusesIfPersistentWeatherElement`](Miscellaneous.md#object-addstatusesifpersistentweatherelement) | Object | Specifies statuses applied if the persistent weather matches the given elements. | 0 | `{ . . . }` | [`AddStatusesToReceivedElementalDamage`](Miscellaneous.md#object-addstatusestoreceivedelementaldamage) | Object | An object defining statuses applied to the unit when it takes elemental damage of the specified types. | 0 | `{ . . . }` | [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 | `{ . . . }` | [`AddStatusToElementDamage`](Items_and_Equipment.md#object-addstatustoelementdamage) | Object | An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply. | 4 | `{ . . . }` | [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 0 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 0 | `-1`<br>`-2`<br>`1` | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` | [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` | `BigSplashDamage` | Integer | The additional tile radius of the splash damage effect applied by an attack. | 0 | `2` | `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` | `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` | [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` | `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 0 | `100`<br>`25`<br>`50` | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 0 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 0 | `1` | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` | `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 0 | `2` | `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 0 | `2` | `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 0 | `2` | `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 0 | `2` | `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 0 | `2` | `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 0 | `2` | `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 0 | `2` | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 0 | `1` | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 0 | `1` | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 0 | `100`<br>`15`<br>`20` | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 1 | `{ . . . }` | `Charge` | Integer | The number of charge stacks applied. | 0 | `1`<br>`2`<br>`3` | `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` | [`Cleanse`](#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` | `CompleteItemQuest` | Enum | Specifies the item quest ID to mark as complete on kill. | 0 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` | [`Conditional_HasStatus`](Abilities_and_Spells.md#object-conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 0 | `{ . . . }` | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` | `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 0 | `1` | `CrackMoonHead` | Integer | If set, cracks the MoonHead's head, triggering its death sequence. | 0 | `1` | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 0 | `1`<br>`3`<br>`5` | `DeleteObject` | Integer | If set, deletes the target object from the map. | 0 | `1` | `DestroyTrinket` | Integer | The number of trinkets destroyed. | 0 | `1` | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 0 | `{ . . . }`<br>`1`<br>`6` | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 0 | `1` | `DisableWeapon` | Integer | If set, disables the source's weapon, preventing its use. | 0 | `1` | `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 0 | `true` | `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 0 | `1` | `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 0 | `1` | [`DistanceBonusDamage`](#object-distancebonusdamage) | Object | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 0 | `{ . . . }` | `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 0 | `1`<br>`2`<br>`4` | `DontHealEnemies` | Integer | If true, the healing effect does not affect enemy units. | 0 | `1` | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 0 | `1`<br>`2`<br>`3` | `EmptyMana` | Integer | If non-zero, sets the unit's mana to empty when applied. | 0 | `1` | `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 0 | `5` | `ExplodeCharacter` | Integer | The radius (in tiles) of an explosion centered on the character. | 0 | `5` | `ExplodeCharacter_NoDie` | Integer | The damage dealt when a character explodes without dying. | 0 | `1`<br>`5` | `ExplodeCharacter_Party` | Integer | The radius (in tiles) of an explosion centered on the character that also damages party members. | 0 | `5` | `ExplodeCharacter_PartyBoss` | Integer | The damage dealt to the party boss when it explodes. | 0 | `5` | `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 0 | `5`<br>`9` | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | The damage dealt when a petrified RockCrusher explodes. | 0 | `5`<br>`9` | `FaceAway` | Integer | If set, forces the target to face away from the source. | 0 | `1` | `FaceCamera` | Integer | If non-zero, forces the character to rotate and face the camera. | 0 | `1` | `FactionConversion` | Integer | Converts the target to the caster's faction. | 0 | `1` | `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`10`<br>`2` | `Fights` | Number | The number of fights this status or effect persists for. | 4 | `1`<br>`3`<br>`99` | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 0 | `1`<br>`[1 .10]`<br>`[1 .25]` | `FlatAIBonus` | Integer | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 0 | `-999999`<br>`100`<br>`999999` | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 0 | `1`<br>`10`<br>`2` | `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 0 | `1` | `ForceImmediateMove` | Integer | If non-zero, forces the character to move instantly without waiting for normal action order. | 0 | `1` | `ForceMoveAway` | Integer | The distance to force the target away from the source. | 0 | `1` | `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 0 | `1` | `ForceUseAbility_NonStack` | Enum | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 0 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` | [`ForceUseAbilityOnTarget`](#object-forceuseabilityontarget) | Object | Defines a chance to force the unit to use a specified ability on the target. | 0 | `{ . . . }` | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 0 | `0`<br>`1` | `GainDisorder` | Enum | Specifies the name of the disorder gained. | 0 | `Chungus`<br>`Psychosis` | `GainDisorderFromPool_PostCast` | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 0 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` | `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 0 | `1`<br>`10`<br>`100` | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 0 | `1` | `HealthGain` | Integer | The amount of health restored to the source. | 0 | `1`<br>`10`<br>`2` | `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 0 | `1` | [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 0 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` | `ImmediateUseAbility_Instant` | Enum | Specifies the name of an ability to use instantly as a passive effect. | 0 | `head_CrownOfHorns` | `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` | `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 0 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` | `InnateElement` | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 8 | `Earth`<br>`Electric`<br>`Fire` | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 0 | `25`<br>`50`<br>`999` | [`KnockbackIfCrit`](#object-knockbackifcrit) | Object | Defines knockback properties applied when a critical hit occurs. | 0 | `{ . . . }` | `KnockOutClone` | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 0 | `PlayerCat_MiniMiniMe` | `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 0 | `10+bonus_melee_ability_damage` | `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 0 | `1` | `LeaveBehindRockOnKnockback` | Integer | If non-zero, leaves behind a rock on each tile the target is knocked through. | 0 | `1` | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 0 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`Marked`](#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`3`<br>`5` | `NonLethal` | Integer | If set to 1, damage dealt by the unit cannot kill enemies; it leaves them at 1 HP. | 0 | `1` | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 0 | `-10`<br>`0`<br>`1` | [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 0 | `1` | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 0 | `1`<br>`2` | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 0 | `1` | `PurgeAll` | Integer | If non-zero, removes all temporary status effects (buffs, debuffs) from the target. | 0 | `1` | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 0 | `25` | `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 0 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` | `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 0 | `{ . . . }` | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 0 | `1` | `RefreshMovePoints` | Integer | The amount of movement points restored to the source. | 0 | `1` | `RefreshWeaponAbility` | Integer | The number of times the weapon's ability is refreshed. | 0 | `1` | `RemoteFlatLeech` | Integer | The flat amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoteLeech` | Integer | The amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 0 | `.5`<br>`4` | `RemoveGlobalModifiers` | Array | List of global modifier names to remove upon death. | 0 | `[BloodRain]` | `RemoveItem` | Enum | Specifies the item ID to remove from the source on kill. | 0 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 0 | `1` | `RemoveMovePoints` | Integer | The number of move points to remove from the target, preventing them from moving. | 0 | `1` | `RemoveStatus` | Enum | The name of the status effect to remove from the source. | 0 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` | [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object | An object specifying a status name and the number of stacks to remove from the target. | 0 | `{ . . . }` | `RemoveTurnsThisRound` | Integer | The number of turns to remove from the target's turn order this round. | 0 | `1` | `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` | [`Revive`](#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` | `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 0 | `-999999`<br>`1`<br>`2` | `ScatterRandomPickups` | Integer | The number of random pickups scattered around the target's location. | 0 | `2`<br>`5` | `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 0 | `1`<br>`100%`<br>`50%` | [`SetItemAux`](#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 0 | `{ . . . }` | `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 0 | `0` | `SetShield` | Integer | Sets the target's shield value to a specific flat amount. | 0 | `0`<br>`88` | `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`ShowFakeDamage`](Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 0 | `{ . . . }` | `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 0 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` | [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 0 | `1` | `SpawnBearTrapIfHitKills` | Integer | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 0 | `1` | `SpawnBearTrapOnMiss` | Integer | The number of bear traps to spawn on the tile adjacent to the target when the unit misses an attack. | 0 | `1` | `SpawnFlames` | `Array` | An array containing the number of flame tiles to spawn and the chance per tile. | 0 | `[1, .20+.1*level]`<br>`[1, .20]` | `SpawnThingIfHitKills` | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 0 | `Bait`<br>`BigFood`<br>`BiggestFood` | `SpecificInjury` | Enum | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 0 | `int`<br>`spd`<br>`str` | `SpeculativeMoveSelfCorpseOffMap` | Integer | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 0 | `1` | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 0 | `1` | `StackingSandstorm` | Integer | If non-zero, enables the stacking sandstorm mechanic which increases damage per stack. | 0 | `1` | `StanceSwitchToMelee` | Integer | If set, switches the source to melee stance. | 0 | `1` | `StanceSwitchToRanged` | Integer | If set, switches the source to ranged stance. | 0 | `1` | `status` | Enum | Specifies the status effect to apply in a Temporary object. | 0 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` | [`StatusEachRoundEnd`](Cat_Mutations.md#object-statuseachroundend) | Object | An object listing status effects applied to the unit at the end of each round. | 2 | `{ . . . }` | `StatusImmunity` | Array / Enum | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` | [`StatusRandomEnemiesOnBattleStart`](Events_and_Encounters.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 0 | `{ . . . }` | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 0 | `"max(int, 0)"`<br>`-1`<br>`-2` | `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` | `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 0 | `1` | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 0 | `1` | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 0 | `2`<br>`X` | `TempLuckUp` | Integer | The amount of temporary luck increase. | 0 | `2`<br>`99` | [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 0 | `{ . . . }` | [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 0 | `{ . . . }` | [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 0 | `{ . . . }` | `TempStrengthUp` | Equation | The number of stacks of temporary Strength Up applied to the unit. | 0 | `1`<br>`2`<br>`X` | `TempTrampleUntilSettled` | Integer | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 0 | `3` | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` | `UseAbility_Madness` | Enum | Determines which ability type (e.g., weapon) is forcibly used when Madness triggers. | 0 | `weapon` | `UseAbility_NonStack` | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 0 | `1`<br>`20` | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 0 | `1` | `VaporizeCorpseFlipAdvantage` | `Array` | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 0 | `[1 .33]` | `VaporizeInanimate` | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 0 | `1` | `VisualFX` | Enum | Specifies the name of the visual effect to play. | 0 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` | [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `WeaponAuxMultiplier` | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 0 | `.5`
 
+</details>
 ### Valid Nested Objects
 
 The following objects all behave as `{Status and Passive Keys}` containers. Each has its own unique parameters listed below its entry.
@@ -1739,7 +1740,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 
 </details>
-
 ---
 
 #### `AddPassivesToMinions`
@@ -1764,7 +1764,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `AddSelfStatusToBasicAttack`
@@ -1783,7 +1782,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. || `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `AddSelfStatusToWeapons`
@@ -1800,7 +1798,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` |
 
 </details>
-
 ---
 
 #### `AddStatusToAllDamage`
@@ -1825,7 +1822,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` |
 
 </details>
-
 ---
 
 #### `AddStatusToBasicAttack`
@@ -1892,7 +1888,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
-
 ---
 
 #### `AddStatusToBasicMeleeAttack`
@@ -1914,7 +1909,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `AddStatusToElementDamage`
@@ -1933,7 +1927,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `AddStatusToKnockbackDamage`
@@ -1951,7 +1944,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `AddStatusToSpells`
@@ -1969,7 +1961,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` |
 
 </details>
-
 ---
 
 #### `AddStatusToTrampleDamage`
@@ -1987,7 +1978,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 0 | `{ . . . }`<br>`1` |
 
 </details>
-
 ---
 
 #### `AddStatusToWeapons`
@@ -2005,7 +1995,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. || `1` |
 
 </details>
-
 ---
 
 #### `AdventureTokenPassivePool`
@@ -2019,7 +2008,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ---
 
 #### `ApplyPassives`
@@ -2035,7 +2023,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 
 </details>
-
 ---
 
 #### `ApplyStatusIfCrit`
@@ -2053,7 +2040,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `ApplyStatusesToRandomEnemiesEachTurn`
@@ -2070,7 +2056,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`3`<br>`5` |
 
 </details>
-
 ---
 
 #### `CatchProjectiles`
@@ -2090,7 +2075,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 
 </details>
-
 ---
 
 #### `CharacterTypeGainsStatusAtBattleStart`
@@ -2111,7 +2095,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `CritsApplyStatus`
@@ -2135,7 +2118,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `ExtraStatusWhenDealingDamage`
@@ -2151,7 +2133,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 #### `MeleeRevengeDamage`
@@ -2180,7 +2161,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array / Enum  | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` |
 
 </details>
-
 ---
 
 #### `PassiveAfterXKills`
@@ -2196,7 +2176,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
 ---
 
 #### `PassiveAtHealthThreshold`
@@ -2213,7 +2192,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 9 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
-
 ---
 
 #### `PassiveAtStatThreshold`
@@ -2230,7 +2208,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 13 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
-
 ---
 
 #### `PassiveGroup`
@@ -2250,7 +2227,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `PassiveWhenAffectedByElement`
@@ -2266,7 +2242,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
 ---
 
 #### `PassiveWhenAtFullMana`
@@ -2283,7 +2258,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 
 </details>
-
 ---
 
 #### `PassiveWhenDead`
@@ -2302,7 +2276,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AddStatusToTrampleDamage`](./Passives_and_Statuses.md#object-addstatustotrampledamage) | Object  | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 #### `PassiveWhileHasStatus`
@@ -2318,7 +2291,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 6 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
 ---
 
 #### `PassiveWhileInMonkMeleeStance`
@@ -2334,7 +2306,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `RandomPassivePool`
@@ -2349,7 +2320,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`TransformInXTurns`](./Passives_and_Statuses.md#object-transforminxturns) | Object  | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. || `{ . . . }` |
 
 </details>
-
 ---
 
 #### `RandomStatusFromPool`
@@ -2428,7 +2398,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. || `1` |
 
 </details>
-
 ---
 
 #### `RevengeDamage`
@@ -2447,7 +2416,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 | `[`<br>`[Heat Fire]` |
 
 </details>
-
 ---
 
 #### `StatusAfterCastSpell`
@@ -2465,7 +2433,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
-
 ---
 
 #### `StatusAfterXTurns`
@@ -2481,7 +2448,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. || `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
-
 ---
 
 #### `StatusAllCharactersOnSpawn`
@@ -2500,7 +2466,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusAlliesEachTurn`
@@ -2518,7 +2483,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `exclude_self` | Boolean | If true, the effect does not apply to the source unit itself. | 1 | `false` |
 
 </details>
-
 ---
 
 #### `StatusAlliesOnBattleStart`
@@ -2540,7 +2504,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
-
 ---
 
 #### `StatusAlliesOnDeath`
@@ -2559,7 +2522,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
 
 </details>
-
 ---
 
 #### `StatusEachRoundEnd`
@@ -2575,7 +2537,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. || `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
-
 ---
 
 #### `StatusEachTurnBegin`
@@ -2606,7 +2567,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Wet` | Integer | The number of stacks of the Wet status effect applied. || `1` |
 
 </details>
-
 ---
 
 #### `StatusEachTurnEnd`
@@ -2648,7 +2608,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
-
 ---
 
 #### `StatusEachTurnEndForEachTurn`
@@ -2664,7 +2623,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. || `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `StatusEveryXSpellCasts`
@@ -2688,7 +2646,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. || `1`<br>`3` |
 
 </details>
-
 ---
 
 #### `StatusGroup`
@@ -2708,7 +2665,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `StatusIfUnusedMovePoints`
@@ -2730,7 +2686,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
-
 ---
 
 #### `StatusKilledCharacters`
@@ -2748,7 +2703,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 0 | `100%`<br>`50%` |
 
 </details>
-
 ---
 
 #### `StatusKillers`
@@ -2766,7 +2720,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusOnAllyCatDeath`
@@ -2785,7 +2738,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `StatusOnBattleEnd`
@@ -2809,7 +2761,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. || `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusOnBattleStart`
@@ -2834,7 +2785,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StealthUntilBasicAttack` | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. || `1` |
 
 </details>
-
 ---
 
 #### `StatusOnBreak`
@@ -2858,7 +2808,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
-
 ---
 
 #### `StatusOnBreakItem`
@@ -2875,7 +2824,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DoDamage`](./Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. || `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusOnCastSpell`
@@ -2892,7 +2840,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `StatusOnCollectPickup`
@@ -2907,7 +2854,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 
 </details>
-
 ---
 
 #### `StatusOnDie`
@@ -2926,7 +2872,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. || `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusOnEatFood`
@@ -2945,7 +2890,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
-
 ---
 
 #### `StatusOnEatPill`
@@ -2962,7 +2906,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomPermanentStatsDistinct`](./Miscellaneous.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 0 | `{ . . . }` |
 
 </details>
-
 ---
 
 #### `StatusOnEndMove`
@@ -2991,7 +2934,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `StatusOnGainCoins`
@@ -3009,7 +2951,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `StatusOnHealed`
@@ -3026,7 +2967,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. || `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 
 </details>
-
 ---
 
 #### `StatusOnKill`
@@ -3065,7 +3005,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` |
 
 </details>
-
 ---
 
 #### `StatusOnKillEnemy`
@@ -3086,7 +3025,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
-
 ---
 
 #### `StatusOnPickupCoins`
@@ -3103,7 +3041,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `StatusOnPopCorpse`
@@ -3119,7 +3056,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. || `1`<br>`6`<br>`99` |
 
 </details>
-
 ---
 
 #### `StatusOnTookDamage`
@@ -3155,7 +3091,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. || `1`<br>`20`<br>`mov` |
 
 </details>
-
 ---
 
 #### `StatusOnTookDamageFromAbility`
@@ -3174,7 +3109,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. || `1` |
 
 </details>
-
 ---
 
 #### `StatusOnUseBasicAttack`
@@ -3190,7 +3124,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 
 </details>
-
 ---
 
 #### `StatusRandomEnemiesOnBattleStart`
@@ -3210,7 +3143,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .01]` |
 
 </details>
-
 ---
 
 #### `StatusWhenAllySpendsMana`
@@ -3227,7 +3159,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`OneUseSpellDamageUp`](./Engine_StatusAndPassiveKeys.md#object-oneusespelldamageup) | Array / Number / Object  | Increases spell damage by the specified amount, but the effect is consumed after a single use. Alias for SpellDamageUp. || `{ . . . }`<br>`2` |
 
 </details>
-
 ---
 
 #### `TakeBonusTurnWithAIControl`
@@ -3243,7 +3174,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `end_of_round` | Boolean | If true, the effect triggers at the end of the round instead of at the start of the turn. | 1 | `true` |
 
 </details>
-
 ---
 
 #### `TakeBonusTurnWithStatus`
@@ -3260,7 +3190,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
 
 </details>
-
 ---
 
 #### `TempPassiveWhileHasStatus`
@@ -3276,7 +3205,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
 ---
 
 #### `additional_passives`
@@ -3298,7 +3226,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 
 </details>
-
 ---
 
 #### `bonus_passives`
@@ -3320,7 +3247,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`XIsSpellStormRampAndReset`](./Miscellaneous.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. || `{ . . . }`<br>`0` |
 
 </details>
-
 ---
 
 #### `extra_statuses`
@@ -3340,7 +3266,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
-
 ---
 
 #### `party_status_next_fight`
@@ -3364,7 +3289,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
-
 ---
 
 #### `passives`
@@ -3378,7 +3302,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ---
 
 #### `self_status_next_fight`
@@ -3423,7 +3346,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 
 </details>
-
 ---
 
 #### `statuses`
@@ -3437,7 +3359,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ## Discovered Objects
 
 > These tables were auto-generated by the schema audit tool. They document objects found in the `.gon` files that were not previously documented.
@@ -4666,7 +4587,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `WeaponAuxMultiplier` | Number ||| `.5` |
 
 </details>
-
 ---
 
 #### `Consumed`
@@ -4692,7 +4612,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `AcidRain`
@@ -5945,7 +5864,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `BBTransformMutant`
 
 <details>
@@ -5960,7 +5878,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BBTransformZealot`
 
 <details>
@@ -5975,7 +5892,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicButcherMelee`
 
 <details>
@@ -5992,7 +5908,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicDruidAbility`
 
 <details>
@@ -6010,7 +5925,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicMagicMissile`
 
 <details>
@@ -6028,7 +5942,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicMagicShortRanged`
 
 <details>
@@ -6045,7 +5958,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicMedicMelee`
 
 <details>
@@ -6062,7 +5974,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicMelee`
 
 <details>
@@ -6078,7 +5989,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicMelee_4Hits`
 
 <details>
@@ -6092,7 +6002,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `BasicMonkMelee`
 
 <details>
@@ -6109,7 +6018,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicNecroRanged`
 
 <details>
@@ -6126,7 +6034,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicPsychicPull`
 
 <details>
@@ -6144,7 +6051,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicRanged`
 
 <details>
@@ -6160,7 +6066,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicStraightShot`
 
 <details>
@@ -6177,7 +6082,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicSuplex`
 
 <details>
@@ -6197,7 +6101,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BasicTankMelee`
 
 <details>
@@ -6214,7 +6117,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BeefyCharmedLeech`
 
 <details>
@@ -6231,7 +6133,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `Bionic`
 
 <details>
@@ -6247,7 +6148,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
-
 ### Object: `BloatEyeMovement2`
 
 <details>
@@ -6262,7 +6162,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BloatyExplodey`
 
 <details>
@@ -6280,7 +6179,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BoneWormShotMed`
 
 <details>
@@ -6298,7 +6196,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BonusToss`
 
 <details>
@@ -6316,7 +6213,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BonusToss2`
 
 <details>
@@ -6332,7 +6228,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `BoomerCatExplode`
 
 <details>
@@ -6349,7 +6244,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BoyDino`
 
 <details>
@@ -6367,7 +6261,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `BoyDinoCry`
 
 <details>
@@ -6382,7 +6275,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BrambleRandomTileEvent`
 
 <details>
@@ -6398,7 +6290,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `BungaSwipe`
 
 <details>
@@ -6415,7 +6306,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `CatGoop`
 
 <details>
@@ -6432,7 +6322,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `CatapultJump`
 
 <details>
@@ -6449,7 +6338,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CatapultJump2`
 
 <details>
@@ -6464,7 +6352,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CaveCatDad`
 
 <details>
@@ -6483,7 +6370,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `CerberubsStraightReaction`
 
 <details>
@@ -6499,7 +6385,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `CharmedDemonKitten`
 
 <details>
@@ -6515,7 +6400,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedFly`
 
 <details>
@@ -6529,7 +6413,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedFlySwarm`
 
 <details>
@@ -6543,7 +6426,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedLeech`
 
 <details>
@@ -6559,7 +6441,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedPooter`
 
 <details>
@@ -6573,7 +6454,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedReaper`
 
 <details>
@@ -6587,7 +6467,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedTinySpider`
 
 <details>
@@ -6602,7 +6481,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `CharmedTinyTumor`
 
 <details>
@@ -6618,7 +6496,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `Chubs`
 
 <details>
@@ -6636,7 +6513,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `ChubsGoop`
 
 <details>
@@ -6653,7 +6529,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ChubsRage`
 
 <details>
@@ -6668,7 +6543,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `CookedChickenLeg`
 
 <details>
@@ -6682,7 +6556,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CraterCreeperOut`
 
 <details>
@@ -6700,7 +6573,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `DarkOneStrike`
 
 <details>
@@ -6717,7 +6589,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `DecoyExplode`
 
 <details>
@@ -6734,7 +6605,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `DefaultMove`
 
 <details>
@@ -6748,7 +6618,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `DestroyerShieldBash`
 
 <details>
@@ -6763,7 +6632,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `Digest`
 
 <details>
@@ -6783,7 +6651,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `DrMangler`
 
 <details>
@@ -6801,7 +6668,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `EatShit`
 
 <details>
@@ -6819,7 +6685,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `FireExtinguish_Steam`
 
 <details>
@@ -6848,7 +6713,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`speed`](./Arrays.md#array-speed) | Array  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 
 </details>
-
 ### Object: `FlyBuff`
 
 <details>
@@ -6880,7 +6744,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `GirlDino`
 
 <details>
@@ -6898,7 +6761,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `GirlDinoCry`
 
 <details>
@@ -6913,7 +6775,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `GrenadeExplode`
 
 <details>
@@ -6931,7 +6792,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Guillotina2Body`
 
 <details>
@@ -6949,7 +6809,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Guillotina2Head`
 
 <details>
@@ -6967,7 +6826,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Guillotina3Body`
 
 <details>
@@ -6985,7 +6843,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Guillotina3Head`
 
 <details>
@@ -7003,7 +6860,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `HCHumanDie`
 
 <details>
@@ -7018,7 +6874,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Haunt`
 
 <details>
@@ -7036,7 +6891,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `HemBounce`
 
 <details>
@@ -7052,7 +6906,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Hyde`
 
 <details>
@@ -7091,7 +6944,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
 
 </details>
-
 ### Object: `IDSprout`
 
 <details>
@@ -7109,7 +6961,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Lava_Distortion`
 
 <details>
@@ -7142,7 +6993,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`speed_start`](./Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `LennyCatDies`
 
 <details>
@@ -7161,7 +7011,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Maggot`
 
 <details>
@@ -7179,7 +7028,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `ManglerEnrage`
 
 <details>
@@ -7194,7 +7042,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ManglerMonsterDashAttack`
 
 <details>
@@ -7210,7 +7057,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ManglersMonster`
 
 <details>
@@ -7228,7 +7074,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `MechExplode`
 
 <details>
@@ -7246,7 +7091,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `MegaFart`
 
 <details>
@@ -7263,7 +7107,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `MegaGuppy_SummonTheChild`
 
 <details>
@@ -7281,7 +7124,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `MockingbirdForm`
 
 <details>
@@ -7299,7 +7141,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `MoonHead_KillHands`
 
 <details>
@@ -7316,7 +7157,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `MoveOne`
 
 <details>
@@ -7330,7 +7170,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Necro_SoulDagger_Uncharged`
 
 <details>
@@ -7347,7 +7186,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `NoHead`
 
 <details>
@@ -7379,7 +7217,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
 
 </details>
-
 ### Object: `NonChampionFlySwarm`
 
 <details>
@@ -7393,7 +7230,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `NubbyToss`
 
 <details>
@@ -7411,7 +7247,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Nubs`
 
 <details>
@@ -7429,7 +7264,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `NubsGoop`
 
 <details>
@@ -7446,7 +7280,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `Ornstein`
 
 <details>
@@ -7464,7 +7297,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Paper`
 
 <details>
@@ -7480,7 +7312,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
-
 ### Object: `PassiveEnergized`
 
 <details>
@@ -7510,7 +7341,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `unlit` | Boolean | If true, the effect is not affected by scene lighting. | 1 | `true` |
 
 </details>
-
 ### Object: `PassiveTar`
 
 <details>
@@ -7542,7 +7372,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `spurt` | String | The name of the spurt particle effect to play. | 1 | `GibsBloodSpurt`<br>`GibsBloodSpurtHuge`<br>`PassiveTarSplat` |
 
 </details>
-
 ### Object: `PlayerCat_ThiefShade2`
 
 <details>
@@ -7558,7 +7387,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `RatKing`
 
 <details>
@@ -7576,7 +7404,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `ReaperRevenge`
 
 <details>
@@ -7591,7 +7418,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `SandStormBuff`
 
 <details>
@@ -7623,7 +7449,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `Shadowstep`
 
 <details>
@@ -7638,7 +7463,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ShineBuff`
 
 <details>
@@ -7670,7 +7494,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `Shove`
 
 <details>
@@ -7686,7 +7509,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `SleepDart`
 
 <details>
@@ -7704,7 +7526,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `SleepDart2`
 
 <details>
@@ -7722,7 +7543,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `SmokeBuff`
 
 <details>
@@ -7754,7 +7574,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `Smough`
 
 <details>
@@ -7772,7 +7591,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `SparkleBuff`
 
 <details>
@@ -7804,7 +7622,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `SpiderReturn`
 
 <details>
@@ -7822,7 +7639,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `SpikeBuff`
 
 <details>
@@ -7854,7 +7670,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `Spook`
 
 <details>
@@ -7872,7 +7687,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `TC_DashReaction`
 
 <details>
@@ -7889,7 +7703,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`temporary_effects`](./Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `TT_Thrash`
 
 <details>
@@ -7905,7 +7718,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `TVOff`
 
 <details>
@@ -7920,7 +7732,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `TattersFear`
 
 <details>
@@ -7936,7 +7747,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `TheCreator_SpawnCloneTeam`
 
 <details>
@@ -7953,7 +7763,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ThornUp`
 
 <details>
@@ -7969,7 +7778,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ThornUpX`
 
 <details>
@@ -7984,7 +7792,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ThrobbingKing2`
 
 <details>
@@ -8002,7 +7809,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `ToadJump_BasicMove`
 
 <details>
@@ -8020,7 +7826,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `TormentorRuneAbsorb`
 
 <details>
@@ -8038,7 +7843,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ToxPuff`
 
 <details>
@@ -8053,7 +7857,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `ToxicBubbles`
 
 <details>
@@ -8079,7 +7882,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Number | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 
 </details>
-
 ### Object: `TrexSwitchTarget`
 
 <details>
@@ -8095,7 +7897,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `UFO_BigExplode`
 
 <details>
@@ -8111,7 +7912,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `UltraSmough`
 
 <details>
@@ -8129,7 +7929,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Wood`
 
 <details>
@@ -8145,7 +7944,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
-
 ### Object: `cWaggle`
 
 <details>
@@ -8159,7 +7957,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `cWaggle2x2`
 
 <details>
@@ -8177,7 +7974,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `cWaggle3x3`
 
 <details>
@@ -8193,7 +7989,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `face_EatNeverstone`
 
 <details>
@@ -8211,7 +8006,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `face_LeechBrood`
 
 <details>
@@ -8227,7 +8021,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `neck_NukeBonus`
 
 <details>
@@ -8245,7 +8038,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `neck_NukeExplode`
 
 <details>
@@ -8265,7 +8057,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
-
 ### Object: `pyrophina`
 
 <details>
@@ -8293,7 +8084,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `savefile_string` | String | A unique string identifier used to track the save file associated with this encounter. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
 
 </details>
-
 ### Object: `set_WitchJump`
 
 <details>
@@ -8307,7 +8097,6 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `zaratana`
 
 <details>

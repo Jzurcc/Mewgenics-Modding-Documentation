@@ -406,8 +406,8 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | `WorldEventLegacyToken_MonkeyPawStrength` | Variable | The strength modifier for the Monkey Paw legacy event token. | 1 ||
 | `WorldEventLegacyToken_StacyMutant` | Variable | The value associated with the Stacy Mutant legacy event token. | 1 ||
 | `spawn_reflection_next_fight` | Number | The number of reflections to spawn in the next battle, optionally with a mutation. | 0 | `1` |
-</details>
 
+</details>
 ### Valid Nested Objects
 
 The following objects all behave as `{Event Keys}` containers. Each has its own unique parameters listed below its entry.
@@ -447,7 +447,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 
 </details>
-
 ---
 
 #### `common`
@@ -516,7 +515,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 | `[` |
 
 </details>
-
 ---
 
 #### `good`
@@ -587,7 +585,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`transform_item`](./Arrays.md#array-transform_item) | Array | An array specifying source and destination item IDs to transform one into the other. | 0 | `[JarOfRadiatedBlood JarOfChaos]`<br>`[JarOfRadiation JarOfRadiatedBlood]` |
 
 </details>
-
 ---
 
 #### `main`
@@ -621,7 +618,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 1 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
 
 </details>
-
 ---
 
 #### `rare`
@@ -711,7 +707,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 | `[` |
 
 </details>
-
 ---
 
 #### `reward`
@@ -751,9 +746,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 | `[` |
 
 </details>
-
-
-
 ---
 
 ## Auto-Discovered Objects
@@ -774,7 +766,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `AlienOvergrowth`
 
 <details>
@@ -789,7 +780,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `Anxiety`
 
 <details>
@@ -805,7 +795,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Beepis`
 
 <details>
@@ -824,7 +813,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Bottles`
 
 <details>
@@ -843,7 +831,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
-
 ### Object: `BrainDamage`
 
 <details>
@@ -859,7 +846,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `BrainDead`
 
 <details>
@@ -876,7 +862,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Brave`
 
 <details>
@@ -892,7 +877,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Cancer`
 
 <details>
@@ -912,7 +896,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `CharmedMaggot`
 
 <details>
@@ -927,7 +910,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedPinky`
 
 <details>
@@ -941,7 +923,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedRaptorBaby`
 
 <details>
@@ -955,7 +936,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CharmedTarBaby`
 
 <details>
@@ -969,7 +949,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `CryogenicTimeChamber_Empty`
 
 <details>
@@ -993,7 +972,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
-
 ### Object: `CryogenicTimeChamber_Full`
 
 <details>
@@ -1016,7 +994,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
-
 ### Object: `Cunch`
 
 <details>
@@ -1035,7 +1012,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `CursedStickman`
 
 <details>
@@ -1055,7 +1031,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `DeathsScythe`
 
 <details>
@@ -1073,7 +1048,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
-
 ### Object: `Depression`
 
 <details>
@@ -1090,7 +1064,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `EnchantingPoop`
 
 <details>
@@ -1108,7 +1081,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `FecalHood_Cursed`
 
 <details>
@@ -1122,7 +1094,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `FecalMask_Cursed`
 
 <details>
@@ -1136,7 +1107,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
-
 ### Object: `Feebis`
 
 <details>
@@ -1156,7 +1126,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `GeomagneticStorm`
 
 <details>
@@ -1171,7 +1140,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `Gigachad`
 
 <details>
@@ -1187,7 +1155,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `GuillotinasHead`
 
 <details>
@@ -1213,7 +1180,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `HauntedNight`
 
 <details>
@@ -1228,7 +1194,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `Host`
 
 <details>
@@ -1249,7 +1214,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `JarOfChaos`
 
 <details>
@@ -1276,7 +1240,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `JarOfRadiatedBlood`
 
 <details>
@@ -1300,7 +1263,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `JarOfRadiation`
 
 <details>
@@ -1324,7 +1286,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `MomsKnife`
 
 <details>
@@ -1343,7 +1304,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `MysteriousTomb1`
 
 <details>
@@ -1357,7 +1317,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`main`](./Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `MysteriousTomb2`
 
 <details>
@@ -1371,7 +1330,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`main`](./Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `PawShards`
 
 <details>
@@ -1389,7 +1347,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `PuncturedEye`
 
 <details>
@@ -1407,7 +1364,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `PutridLeech`
 
 <details>
@@ -1433,7 +1389,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `PyrophinasCollar`
 
 <details>
@@ -1458,7 +1413,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `ReceiverAntenna`
 
 <details>
@@ -1483,7 +1437,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
-
 ### Object: `RestlessDead`
 
 <details>
@@ -1498,7 +1451,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `Rocks`
 
 <details>
@@ -1518,7 +1470,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `Scatological`
 
 <details>
@@ -1534,7 +1485,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `SignalAmplifier`
 
 <details>
@@ -1559,7 +1509,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `SlagMight`
 
 <details>
@@ -1578,7 +1527,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `SlagTight`
 
 <details>
@@ -1598,7 +1546,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
-
 ### Object: `SludgeHat`
 
 <details>
@@ -1618,7 +1565,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
-
 ### Object: `SludgeMask`
 
 <details>
@@ -1638,7 +1584,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
-
 ### Object: `Soulless`
 
 <details>
@@ -1654,7 +1599,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `Stinky`
 
 <details>
@@ -1670,7 +1614,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `StrangeEggs`
 
 <details>
@@ -1685,7 +1628,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `TheShimmer`
 
 <details>
@@ -1700,7 +1642,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 
 </details>
-
 ### Object: `ThrobbingGristle`
 
 <details>
@@ -1724,7 +1665,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `Touched`
 
 <details>
@@ -1741,7 +1681,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
-
 ### Object: `TransmitterAntenna`
 
 <details>
@@ -1764,7 +1703,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | [`set`](./Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `ZaratanasCollar`
 
 <details>
@@ -1789,7 +1727,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
-
 ### Object: `bleeding`
 
 <details>
@@ -1805,7 +1742,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `text` | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
 
 </details>
-
 ### Object: `burned`
 
 <details>
@@ -1822,7 +1758,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `text` | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
 
 </details>
-
 ### Object: `chapter_specific_item`
 
 <details>
@@ -1838,7 +1773,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `current_chapter_very_rare` | Number | The weight or value for very rare items specific to the current chapter. | 1 | `1`<br>`auto` |
 
 </details>
-
 ### Object: `end_of_time_unlock`
 
 <details>
@@ -1851,7 +1785,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
-
 ### Object: `legacy_event_unlock_momsknife`
 
 <details>
@@ -1865,7 +1798,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `unlock_item` | String | The name of the item unlocked by this event. | 1 | `MomsKnife` |
 
 </details>
-
 ### Object: `map_unlock_dimensionx`
 
 <details>
@@ -1878,7 +1810,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
-
 ### Object: `map_unlock_iceage`
 
 <details>
@@ -1892,7 +1823,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
-
 ### Object: `meat_world_open`
 
 <details>
@@ -1905,7 +1835,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
-
 ### Object: `radiated`
 
 <details>
@@ -1922,7 +1851,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `text` | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
 
 </details>
-
 ### Object: `time_machine_quest_finalstep`
 
 <details>
@@ -1935,7 +1863,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 1 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 
 </details>
-
 ### Object: `time_machine_quest_trigger`
 
 <details>

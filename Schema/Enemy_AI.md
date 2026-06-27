@@ -73,6 +73,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `tall_grass` | Number | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 1 | `5` |
 
 </details>
-
 ---
 

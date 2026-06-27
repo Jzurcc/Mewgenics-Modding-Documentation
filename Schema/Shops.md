@@ -28,7 +28,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`breakdown4`](./Shops.md#object-breakdown4) | Object  | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `Item`
@@ -52,7 +51,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
-
 ---
 
 ### Object: `meta`
@@ -80,7 +78,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `pick_n` | Number | The number of items the player can pick from a selection. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `breakdown`
@@ -108,7 +105,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
-
 ---
 
 ### Object: `item_groups`
@@ -137,7 +133,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`empty`](./Shops.md#object-empty) | Object  | The number of empty items offered, or an object defining their pool and cost. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `treasure`
@@ -157,7 +152,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `item_rarity_costs`
@@ -185,7 +179,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
 
 </details>
-
 ---
 
 ### Object: `button_nav`
@@ -205,7 +198,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
 
 </details>
-
 ---
 
 ### Object: `pool`
@@ -225,7 +217,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 6 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `mandatory`
@@ -246,7 +237,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `Furniture` | Object | Defines the group of furniture items available in a shop. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `Food`
@@ -270,7 +260,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
 </details>
-
 ---
 
 ### Object: `LevelUp`
@@ -290,7 +279,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `levelup`
@@ -310,7 +298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`LevelUp`](./Shops.md#object-levelup) | Object  | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `breakdown2`
@@ -334,7 +321,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
-
 ---
 
 ### Object: `breakdown3`
@@ -357,7 +343,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
-
 ---
 
 ### Object: `breakdown4`
@@ -380,7 +365,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
-
 ---
 
 ### Object: `common_item`
@@ -400,7 +384,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `consumable`
@@ -420,7 +403,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `guaranteed_food`
@@ -440,7 +422,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
 
 </details>
-
 ---
 
 ### Object: `item`
@@ -460,7 +441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `mostly_food`
@@ -481,7 +461,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `empty`
@@ -501,5 +480,4 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
 
 </details>
-
 ---

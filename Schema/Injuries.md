@@ -25,7 +25,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`scars`](./Miscellaneous.md#object-scars) | Object  || 10 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `stats`
@@ -51,7 +50,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`lck`](./Enums.md#enum-lck) | Enum / Integer  || 16 | `-1`<br>`-2`<br>`-3` |
 
 </details>
-
 ---
 
 ### Object: `scars`
@@ -75,6 +73,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`limbs`](./Arrays.md#array-limbs) | Array || 1 | `[21 31]` |
 
 </details>
-
 ---
 

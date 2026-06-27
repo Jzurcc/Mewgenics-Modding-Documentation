@@ -502,7 +502,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`welcome_water_cheap`](./NPC_Scripts.md#object-welcome_water_cheap) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `states`
@@ -537,7 +536,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tink_right`](./Arrays.md#array-tink_right) | Array | List of animation states for Tink's right-facing pose and stray point. | 1 | `["tink_right", "tink_point_strays"]` |
 
 </details>
-
 ---
 
 ### Object: `transitions`
@@ -578,7 +576,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tink_right_to_offscreen`](./Arrays.md#array-tink_right_to_offscreen) | Array | A transition array that moves Tink from the right position to offscreen. | 1 | `[tink_right offscreen]` |
 
 </details>
-
 ---
 
 ### Object: `unprompted`
@@ -602,7 +599,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 2 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `also`
@@ -622,7 +618,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 8 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unknown`
@@ -646,7 +641,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 3 | `1` |
 
 </details>
-
 ---
 
 ### Object: `hide_text`
@@ -667,7 +661,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog_and_autopass`](./Strings.md#string-dialog_and_autopass) | String | Specifies the dialog string to display, and automatically proceeds past it. | 4 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item`
@@ -690,7 +683,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `tooltip`
@@ -712,7 +704,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 4 | `1` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_a`
@@ -733,7 +724,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_b`
@@ -754,7 +744,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_c`
@@ -775,7 +764,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_d`
@@ -796,7 +784,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_e`
@@ -817,7 +804,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_f`
@@ -838,7 +824,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_g`
@@ -859,7 +844,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_h`
@@ -880,7 +864,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `unprompted_i`
@@ -901,7 +884,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford`
@@ -924,7 +906,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `forward_to_tips`
@@ -944,7 +925,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 3 ||
 
 </details>
-
 ---
 
 ### Object: `out_of_stock`
@@ -965,7 +945,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 3 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_begin_accepting_cats`
@@ -987,7 +966,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_2`
@@ -1008,7 +986,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_3`
@@ -1030,7 +1007,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_amnesia`
@@ -1052,7 +1028,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_begin`
@@ -1074,7 +1049,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_fail_jarofblood`
@@ -1096,7 +1070,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_fail_jarofchaos`
@@ -1118,7 +1091,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_fail_jarofradiation`
@@ -1140,7 +1112,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_bombquest_fail_nuke`
@@ -1162,7 +1133,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_future_intro`
@@ -1183,7 +1153,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_hitler3`
@@ -1204,7 +1173,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_hitler3_defeat`
@@ -1226,7 +1194,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_iloveyou`
@@ -1246,7 +1213,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_infinite_intro`
@@ -1269,7 +1235,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
-
 ---
 
 ### Object: `beanies_jurassic_intro`
@@ -1290,7 +1255,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_lab_intro`
@@ -1314,7 +1278,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quest_complete`
@@ -1335,7 +1298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quest_fail`
@@ -1356,7 +1318,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 | `fail`<br>`newest`<br>`success` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quests_intro`
@@ -1380,7 +1341,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quests_repeat`
@@ -1404,7 +1364,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beanies_rift_intro`
@@ -1427,7 +1386,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
-
 ---
 
 ### Object: `beanies_screenshake_test`
@@ -1449,7 +1407,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
 
 </details>
-
 ---
 
 ### Object: `beanies_seefuture`
@@ -1470,7 +1427,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_seetheend`
@@ -1491,7 +1447,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_terminator1_defeat`
@@ -1513,7 +1468,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_terminator2_defeat`
@@ -1535,7 +1489,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_theend_intro`
@@ -1556,7 +1509,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_timemachine_2`
@@ -1577,7 +1529,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beanies_timemachine_intro`
@@ -1599,7 +1550,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 | `nuke_quest_get_nuke`<br>`nuke_quest_loop`<br>`quest_begin_amplifier2` |
 
 </details>
-
 ---
 
 ### Object: `beanies_vscreator1`
@@ -1621,7 +1571,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `beanies_vscreator2`
@@ -1643,7 +1592,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `beanies_vscreator3`
@@ -1665,7 +1613,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `beanies_vscreator4`
@@ -1688,7 +1635,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`force_current_cat_use_ability`](./Enums.md#enum-force_current_cat_use_ability) | Enum | Specifies the ability ID that the current cat is forced to use. | 1 | `neck_NukeBonus_remote` |
 
 </details>
-
 ---
 
 ### Object: `beanies_vscreatorintro`
@@ -1710,7 +1656,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_AI`
@@ -1732,7 +1677,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_AirHorn`
@@ -1754,7 +1698,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_AngryFace`
@@ -1776,7 +1719,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_AnimalHands`
@@ -1798,7 +1740,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_BubbleBoy`
@@ -1820,7 +1761,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_ChadImplant`
@@ -1842,7 +1782,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_ChaosDevice`
@@ -1864,7 +1803,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_DimensionalDivider`
@@ -1886,7 +1824,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_DiseaseJar`
@@ -1908,7 +1845,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_ExperimentalTreatment`
@@ -1930,7 +1866,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_FartFace`
@@ -1952,7 +1887,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_FigLeaf`
@@ -1974,7 +1908,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_Generic`
@@ -1995,7 +1928,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_GlassCannon`
@@ -2017,7 +1949,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_HardPill`
@@ -2039,7 +1970,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_HiveMind`
@@ -2061,7 +1991,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_MagicMirror`
@@ -2083,7 +2012,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_MeStone`
@@ -2105,7 +2033,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_MultilinkCable`
@@ -2127,7 +2054,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_MysteriousDice`
@@ -2149,7 +2075,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_MysteriousGlasses`
@@ -2171,7 +2096,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_NDEDevice`
@@ -2193,7 +2117,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_NuclearKnife`
@@ -2215,7 +2138,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_PartialLobotomy`
@@ -2237,7 +2159,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_PartyDetonator`
@@ -2259,7 +2180,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_PersonalHeater`
@@ -2281,7 +2201,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_PersuasionDevice`
@@ -2303,7 +2222,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_PrincessHat`
@@ -2325,7 +2243,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_RealityScrambler`
@@ -2347,7 +2264,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_Redacted`
@@ -2369,7 +2285,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_SpiderInjector`
@@ -2391,7 +2306,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_Stopwatch`
@@ -2413,7 +2327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_StorageLocker`
@@ -2435,7 +2348,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_TheIOU`
@@ -2457,7 +2369,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_TheLoner`
@@ -2479,7 +2390,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_Trapfest99`
@@ -2501,7 +2411,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_complete_UltraVision3000`
@@ -2523,7 +2432,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_AI`
@@ -2545,7 +2453,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_AirHorn`
@@ -2567,7 +2474,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_AngryFace`
@@ -2589,7 +2495,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_AnimalHands`
@@ -2610,7 +2515,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_BubbleBoy`
@@ -2632,7 +2536,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_ChadImplant`
@@ -2654,7 +2557,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_ChaosDevice`
@@ -2676,7 +2578,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_DimensionalDivider`
@@ -2698,7 +2599,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_DiseaseJar`
@@ -2720,7 +2620,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_ExperimentalTreatment`
@@ -2742,7 +2641,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_FartFace`
@@ -2764,7 +2662,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_FigLeaf`
@@ -2786,7 +2683,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_Generic`
@@ -2807,7 +2703,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_GlassCannon`
@@ -2829,7 +2724,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_HardPill`
@@ -2851,7 +2745,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_HiveMind`
@@ -2873,7 +2766,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_MagicMirror`
@@ -2895,7 +2787,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_MeStone`
@@ -2917,7 +2808,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_MultilinkCable`
@@ -2939,7 +2829,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_MysteriousDice`
@@ -2961,7 +2850,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_MysteriousGlasses`
@@ -2983,7 +2871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_NDEDevice`
@@ -3005,7 +2892,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_NuclearKnife`
@@ -3027,7 +2913,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_PartialLobotomy`
@@ -3049,7 +2934,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_PartyDetonator`
@@ -3071,7 +2955,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_PersonalHeater`
@@ -3093,7 +2976,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_PersuasionDevice`
@@ -3115,7 +2997,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_PrincessHat`
@@ -3137,7 +3018,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_RealityScrambler`
@@ -3159,7 +3039,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_Redacted`
@@ -3181,7 +3060,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_SpiderInjector`
@@ -3203,7 +3081,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_Stopwatch`
@@ -3225,7 +3102,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_StorageLocker`
@@ -3247,7 +3123,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_TheIOU`
@@ -3269,7 +3144,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_TheLoner`
@@ -3291,7 +3165,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_Trapfest99`
@@ -3313,7 +3186,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_fail_UltraVision3000`
@@ -3335,7 +3207,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_AI`
@@ -3356,7 +3227,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_AirHorn`
@@ -3377,7 +3247,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_AngryFace`
@@ -3398,7 +3267,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_AnimalHands`
@@ -3419,7 +3287,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_BubbleBoy`
@@ -3440,7 +3307,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_ChadImplant`
@@ -3461,7 +3327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_ChaosDevice`
@@ -3482,7 +3347,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_DimensionalDivider`
@@ -3503,7 +3367,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_DiseaseJar`
@@ -3524,7 +3387,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_ExperimentalTreatment`
@@ -3545,7 +3407,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_FartFace`
@@ -3566,7 +3427,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_FigLeaf`
@@ -3587,7 +3447,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_Generic`
@@ -3607,7 +3466,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_GlassCannon`
@@ -3628,7 +3486,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_HardPill`
@@ -3649,7 +3506,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_HiveMind`
@@ -3670,7 +3526,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_MagicMirror`
@@ -3691,7 +3546,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_MeStone`
@@ -3712,7 +3566,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_MultilinkCable`
@@ -3733,7 +3586,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_MysteriousDice`
@@ -3754,7 +3606,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_MysteriousGlasses`
@@ -3775,7 +3626,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_NDEDevice`
@@ -3796,7 +3646,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_NuclearKnife`
@@ -3817,7 +3666,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_PartialLobotomy`
@@ -3838,7 +3686,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_PartyDetonator`
@@ -3859,7 +3706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_PersonalHeater`
@@ -3880,7 +3726,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_PersuasionDevice`
@@ -3901,7 +3746,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_PrincessHat`
@@ -3922,7 +3766,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_RealityScrambler`
@@ -3943,7 +3786,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_Redacted`
@@ -3964,7 +3806,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_SpiderInjector`
@@ -3985,7 +3826,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_Stopwatch`
@@ -4006,7 +3846,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_StorageLocker`
@@ -4027,7 +3866,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_TheIOU`
@@ -4048,7 +3886,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_TheLoner`
@@ -4068,7 +3905,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_Trapfest99`
@@ -4089,7 +3925,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `beaniesquest_intro_UltraVision3000`
@@ -4110,7 +3945,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `boss_fight_intro`
@@ -4133,7 +3967,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 | `.05`<br>`.1`<br>`.25` |
 
 </details>
-
 ---
 
 ### Object: `boss_fight_round2`
@@ -4155,7 +3988,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `butch_begin_accepting_cats`
@@ -4177,7 +4009,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
-
 ---
 
 ### Object: `butch_boneyard_intro`
@@ -4198,7 +4029,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `butch_first_house_boss_beat`
@@ -4219,7 +4049,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `butch_pyro`
@@ -4240,7 +4069,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `butch_tina1`
@@ -4261,7 +4089,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_backstab`
@@ -4281,7 +4108,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_charisma`
@@ -4301,7 +4127,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_combat`
@@ -4321,7 +4146,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_disorders`
@@ -4341,7 +4165,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_drafting`
@@ -4361,7 +4184,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_elements`
@@ -4381,7 +4203,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_hard`
@@ -4401,7 +4222,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_headhome`
@@ -4421,7 +4241,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_houseboss`
@@ -4441,7 +4260,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_info`
@@ -4461,7 +4279,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_intelligence`
@@ -4481,7 +4298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_intro`
@@ -4502,7 +4318,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_items`
@@ -4522,7 +4337,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_lesscats`
@@ -4542,7 +4356,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_magicdamage`
@@ -4562,7 +4375,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_passives`
@@ -4582,7 +4394,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_reorient`
@@ -4602,7 +4413,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_rewards`
@@ -4622,7 +4432,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_tacticalview`
@@ -4642,7 +4451,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_turnorder`
@@ -4662,7 +4470,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `butch_tips_wellrounded`
@@ -4682,7 +4489,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `can_still_use_attack`
@@ -4708,7 +4514,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `can_still_use_attack_didntspell`
@@ -4734,7 +4539,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_a`
@@ -4756,7 +4560,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_b`
@@ -4778,7 +4581,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_c`
@@ -4800,7 +4602,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_d`
@@ -4822,7 +4623,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_iceage`
@@ -4844,7 +4644,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_jurassic`
@@ -4866,7 +4665,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_moon`
@@ -4888,7 +4686,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `cant_afford_theend`
@@ -4910,7 +4707,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_butcher`
@@ -4932,7 +4728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_druid`
@@ -4953,7 +4748,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_jester`
@@ -4975,7 +4769,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_medic`
@@ -4997,7 +4790,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_monk`
@@ -5019,7 +4811,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_necromancer`
@@ -5041,7 +4832,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_psychic`
@@ -5063,7 +4853,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_thief`
@@ -5085,7 +4874,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `class_unlock_tinkerer`
@@ -5107,7 +4895,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 | `Butcher`<br>`Druid`<br>`Jester` |
 
 </details>
-
 ---
 
 ### Object: `collected_new_items`
@@ -5132,7 +4919,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `collected_nothing`
@@ -5156,7 +4942,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `do_not_end_turn`
@@ -5179,7 +4964,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 | `""`<br>`NPC_BEANIES_INTRO_15`<br>`NPC_JACK_CANT_AFFORD_1` |
 
 </details>
-
 ---
 
 ### Object: `done_spitting_fail_ally`
@@ -5201,7 +4985,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `done_spitting_fail_miss`
@@ -5223,7 +5006,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `done_spitting_fail_rat`
@@ -5245,7 +5027,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `done_spitting_success`
@@ -5267,7 +5048,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ending`
@@ -5289,7 +5069,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 | `[.5, 10]`<br>`[1, 30]` |
 
 </details>
-
 ---
 
 ### Object: `finish_adventure`
@@ -5311,7 +5090,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `first_fight_intro`
@@ -5338,7 +5116,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `first_house_boss_tomorrow`
@@ -5360,7 +5137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `first_house_hint_retired`
@@ -5382,7 +5158,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `frank_caves_intro`
@@ -5403,7 +5178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `frank_ending`
@@ -5424,7 +5198,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `frank_max1`
@@ -5446,7 +5219,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max2`
@@ -5468,7 +5240,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max3`
@@ -5490,7 +5261,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max4`
@@ -5512,7 +5282,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max5`
@@ -5534,7 +5303,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max_intro`
@@ -5556,7 +5324,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `frank_max_repeating`
@@ -5576,7 +5343,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `frank_terminator2`
@@ -5597,7 +5363,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_1`
@@ -5617,7 +5382,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_10`
@@ -5637,7 +5401,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_2`
@@ -5657,7 +5420,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_3`
@@ -5677,7 +5439,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_4`
@@ -5697,7 +5458,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_5`
@@ -5717,7 +5477,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_6`
@@ -5737,7 +5496,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_7`
@@ -5757,7 +5515,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_8`
@@ -5777,7 +5534,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `frank_tips_9`
@@ -5797,7 +5553,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `gone`
@@ -5817,7 +5572,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `house_intro`
@@ -5843,7 +5597,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `house_kitten_box`
@@ -5865,7 +5618,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `house_pass_day`
@@ -5887,7 +5639,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `house_pass_day2`
@@ -5909,7 +5660,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `house_pipe`
@@ -5931,7 +5681,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `house_retired_cat_box`
@@ -5953,7 +5702,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `house_starred_box`
@@ -5975,7 +5723,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `house_strays`
@@ -6002,7 +5749,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_4throom`
@@ -6024,7 +5770,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_attic`
@@ -6046,7 +5791,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_basement`
@@ -6067,7 +5811,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_basement2`
@@ -6088,7 +5831,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_basement3`
@@ -6109,7 +5851,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_basement4`
@@ -6130,7 +5871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_basement5`
@@ -6151,7 +5891,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_largehouse`
@@ -6173,7 +5912,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_mediumhouse`
@@ -6195,7 +5933,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `intro`
@@ -6223,7 +5960,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `introduce_hard_path`
@@ -6245,7 +5981,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `jack_begin_accepting_cats`
@@ -6269,7 +6004,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_desert_intro`
@@ -6292,7 +6026,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `Jack_Gainaltfurniture`
@@ -6315,7 +6048,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_introduction`
@@ -6342,7 +6074,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get_random_furniture_piece`](./Arrays.md#array-get_random_furniture_piece) | Array | An array of furniture piece names; one is chosen at random to spawn. | 1 | `[small_trash_cans small_trash_can2]` |
 
 </details>
-
 ---
 
 ### Object: `jack_max1`
@@ -6366,7 +6097,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max2`
@@ -6390,7 +6120,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max3`
@@ -6414,7 +6143,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max4`
@@ -6438,7 +6166,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max5`
@@ -6462,7 +6189,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max_intro`
@@ -6486,7 +6212,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_max_repeating`
@@ -6506,7 +6231,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade1`
@@ -6530,7 +6254,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade2`
@@ -6554,7 +6277,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade3`
@@ -6578,7 +6300,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade4`
@@ -6602,7 +6323,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_zara`
@@ -6625,7 +6345,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `level_up_didnt_select_sunburn`
@@ -6647,7 +6366,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `level_up_intro`
@@ -6674,7 +6392,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `level_up_selected_sunburn`
@@ -6696,7 +6413,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `low_on_food`
@@ -6718,7 +6434,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `map_click_node`
@@ -6742,7 +6457,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `map_equip_items`
@@ -6767,7 +6481,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `map_equip_items2`
@@ -6792,7 +6505,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_attack_rat`
@@ -6818,7 +6530,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit`
@@ -6843,7 +6554,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit_fail_ally`
@@ -6868,7 +6578,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit_fail_miss`
@@ -6893,7 +6602,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit_fail_rat`
@@ -6918,7 +6626,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit_ignore`
@@ -6944,7 +6651,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_cat_spit_success`
@@ -6969,7 +6675,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_killed_rat`
@@ -6994,7 +6699,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `melee_move2`
@@ -7020,7 +6724,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `melee_out_of_actions`
@@ -7045,7 +6748,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `new_adventure`
@@ -7067,7 +6769,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `organ_boneyard_intro`
@@ -7090,7 +6791,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_intro`
@@ -7116,7 +6816,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max1`
@@ -7140,7 +6839,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max2`
@@ -7164,7 +6862,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max3`
@@ -7188,7 +6885,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max4`
@@ -7212,7 +6908,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max5`
@@ -7236,7 +6931,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max_intro`
@@ -7260,7 +6954,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max_repeating`
@@ -7280,7 +6973,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `organ_rename`
@@ -7304,7 +6996,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_throbbingdomain_intro`
@@ -7327,7 +7018,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_tina3`
@@ -7350,7 +7040,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_unlock`
@@ -7374,7 +7063,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade1`
@@ -7398,7 +7086,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade2`
@@ -7422,7 +7109,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade3`
@@ -7446,7 +7132,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade4`
@@ -7470,7 +7155,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade5`
@@ -7494,7 +7178,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade6`
@@ -7518,7 +7201,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_a`
@@ -7540,7 +7222,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_b`
@@ -7562,7 +7243,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_c`
@@ -7584,7 +7264,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_d`
@@ -7606,7 +7285,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_iceage`
@@ -7628,7 +7306,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_jurassic`
@@ -7650,7 +7327,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_moon`
@@ -7672,7 +7348,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `purchase_item_theend`
@@ -7694,7 +7369,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `ranged_attack_tomtom`
@@ -7716,7 +7390,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_attack_tomtom_fail_ally`
@@ -7738,7 +7411,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_attack_tomtom_fail_miss`
@@ -7760,7 +7432,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_attack_tomtom_fail_rat`
@@ -7782,7 +7453,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_attack`
@@ -7806,7 +7476,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack2_ally`
@@ -7828,7 +7497,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack2_miss`
@@ -7850,7 +7518,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack2_rat`
@@ -7872,7 +7539,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack_ally`
@@ -7894,7 +7560,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack_miss`
@@ -7916,7 +7581,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_early_attack_rat`
@@ -7938,7 +7602,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_failmove`
@@ -7960,7 +7623,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_intro`
@@ -7985,7 +7647,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_roll`
@@ -8010,7 +7671,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `ranged_cat_rolled_first`
@@ -8035,7 +7695,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `steven_100`
@@ -8058,7 +7717,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_introduction`
@@ -8082,7 +7740,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_milliontrashed`
@@ -8104,7 +7761,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `steven_postendgame`
@@ -8127,7 +7783,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_resummon`
@@ -8149,7 +7804,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_1`
@@ -8169,7 +7823,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_100`
@@ -8191,7 +7844,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_1alt1`
@@ -8213,7 +7865,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_1alt2`
@@ -8235,7 +7886,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_1alt3`
@@ -8257,7 +7907,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_2`
@@ -8277,7 +7926,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_2alt1`
@@ -8299,7 +7947,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_2alt2`
@@ -8321,7 +7968,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_2alt3`
@@ -8343,7 +7989,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_3`
@@ -8363,7 +8008,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_3alt1`
@@ -8385,7 +8029,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_3alt2`
@@ -8407,7 +8050,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_3alt3`
@@ -8429,7 +8071,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_4`
@@ -8449,7 +8090,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_4alt1`
@@ -8471,7 +8111,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_4alt2`
@@ -8493,7 +8132,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_4alt3`
@@ -8515,7 +8153,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_houseboss_1`
@@ -8537,7 +8174,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_houseboss_100`
@@ -8559,7 +8195,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_houseboss_2`
@@ -8581,7 +8216,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_houseboss_3`
@@ -8603,7 +8237,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_intro`
@@ -8625,7 +8258,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_savescum_intro_houseboss`
@@ -8647,7 +8279,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 | `adventure`<br>`housebossprep` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act1_crazy`
@@ -8670,7 +8301,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act1_impossible`
@@ -8693,7 +8323,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act2_crazy`
@@ -8716,7 +8345,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act2_hard`
@@ -8739,7 +8367,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act2_impossible`
@@ -8762,7 +8389,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act3_crazy`
@@ -8785,7 +8411,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act3_hard`
@@ -8808,7 +8433,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_unlock_act3_impossible`
@@ -8831,7 +8455,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `take_cats_inside`
@@ -8854,7 +8477,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `test_gamepad_prompts`
@@ -8874,7 +8496,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `dialog` | Variable | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_aggression`
@@ -8896,7 +8517,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_basestats`
@@ -8918,7 +8538,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_begin_accepting_cats`
@@ -8940,7 +8559,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 | `beanies`<br>`butch`<br>`jack` |
 
 </details>
-
 ---
 
 ### Object: `tink_inbreeding`
@@ -8962,7 +8580,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max1`
@@ -8984,7 +8601,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max10`
@@ -9006,7 +8622,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max2`
@@ -9028,7 +8643,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max3`
@@ -9050,7 +8664,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max4`
@@ -9072,7 +8685,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max5`
@@ -9094,7 +8706,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max6`
@@ -9115,7 +8726,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max7`
@@ -9137,7 +8747,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `tink_max8`
@@ -9159,7 +8768,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max9`
@@ -9181,7 +8789,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max_intro`
@@ -9203,7 +8810,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_max_repeating`
@@ -9223,7 +8829,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `tink_prettybow`
@@ -9245,7 +8850,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_relationships`
@@ -9267,7 +8871,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_sexuality`
@@ -9289,7 +8892,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_tags`
@@ -9311,7 +8913,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `tink_terminator`
@@ -9332,7 +8933,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `tink_tina2`
@@ -9353,7 +8953,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_appeal`
@@ -9373,7 +8972,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_basestats`
@@ -9393,7 +8991,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_cleaning`
@@ -9413,7 +9010,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_comfort`
@@ -9433,7 +9029,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_health`
@@ -9453,7 +9048,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_inbreeding`
@@ -9473,7 +9067,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_intro`
@@ -9494,7 +9087,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 | `butch_tips_intelligence`<br>`forward_to_tips`<br>`tink_tips_comfort` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_multiclassing`
@@ -9514,7 +9106,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_mutation`
@@ -9534,7 +9125,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tink_tips_stimulation`
@@ -9554,7 +9144,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar1`
@@ -9578,7 +9167,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar2`
@@ -9602,7 +9190,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar3`
@@ -9626,7 +9213,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodbonus1`
@@ -9650,7 +9236,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage1`
@@ -9674,7 +9259,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage10`
@@ -9698,7 +9282,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage2`
@@ -9722,7 +9305,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage3`
@@ -9746,7 +9328,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage4`
@@ -9770,7 +9351,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage5`
@@ -9794,7 +9374,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage6`
@@ -9818,7 +9397,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage7`
@@ -9842,7 +9420,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage8`
@@ -9866,7 +9443,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage9`
@@ -9890,7 +9466,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol1`
@@ -9914,7 +9489,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol2`
@@ -9938,7 +9512,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol3`
@@ -9962,7 +9535,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol4`
@@ -9986,7 +9558,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol5`
@@ -10010,7 +9581,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol6`
@@ -10034,7 +9604,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol7`
@@ -10058,7 +9627,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_introduction`
@@ -10082,7 +9650,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_kaijufight`
@@ -10105,7 +9672,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max1`
@@ -10129,7 +9695,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max2`
@@ -10153,7 +9718,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max3`
@@ -10177,7 +9741,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max4`
@@ -10201,7 +9764,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max5`
@@ -10225,7 +9787,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max_intro`
@@ -10249,7 +9810,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max_repeating`
@@ -10269,7 +9829,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `try_again_attack_rat`
@@ -10296,7 +9855,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `try_again_melee_move`
@@ -10320,7 +9878,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 | `act`<br>`both` |
 
 </details>
-
 ---
 
 ### Object: `tutorial_cat_dies`
@@ -10342,7 +9899,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
 
 </details>
-
 ---
 
 ### Object: `unprompted1`
@@ -10362,7 +9918,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unprompted2`
@@ -10382,7 +9937,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unprompted3`
@@ -10402,7 +9956,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unprompted4`
@@ -10422,7 +9975,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unprompted5`
@@ -10442,7 +9994,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `unprompted6`
@@ -10462,7 +10013,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 | `NPC_BEANIES_ALSO_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1`<br>`NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_2` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_1`
@@ -10484,7 +10034,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_2`
@@ -10506,7 +10055,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_3`
@@ -10528,7 +10076,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_4`
@@ -10550,7 +10097,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_5`
@@ -10572,7 +10118,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_6`
@@ -10594,7 +10139,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_7`
@@ -10616,7 +10160,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_max1`
@@ -10638,7 +10181,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 | `beanies_intensestatic`<br>`beanies_right`<br>`blocking` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_max2`
@@ -10659,7 +10201,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_max3`
@@ -10681,7 +10222,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_max4`
@@ -10703,7 +10243,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_max5`
@@ -10725,7 +10264,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_crazy`
@@ -10745,7 +10283,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_hard`
@@ -10765,7 +10302,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_impossible`
@@ -10785,7 +10321,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_intro`
@@ -10807,7 +10342,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 | `npc_reward`<br>`sidequest_fail`<br>`sidequest_reward` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_normal`
@@ -10827,7 +10361,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
-
 ---
 
 ### Object: `use_attack_after_used_weapon`
@@ -10853,7 +10386,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `use_weapon`
@@ -10879,7 +10411,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 | `action_selected`<br>`cat_turn`<br>`choose_cat1` |
 
 </details>
-
 ---
 
 ### Object: `welcome`
@@ -10903,7 +10434,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_boneyard`
@@ -10927,7 +10457,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_bunker`
@@ -10951,7 +10480,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_caves`
@@ -10975,7 +10503,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_core`
@@ -10998,7 +10525,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_crater`
@@ -11022,7 +10548,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_desert`
@@ -11045,7 +10570,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_future`
@@ -11068,7 +10592,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_iceage`
@@ -11092,7 +10615,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_junkyard`
@@ -11115,7 +10637,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_jurassic`
@@ -11139,7 +10660,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_lab`
@@ -11163,7 +10683,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_moon`
@@ -11186,7 +10705,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_sewers`
@@ -11210,7 +10728,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_theend`
@@ -11235,7 +10752,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_water`
@@ -11258,7 +10774,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `welcome_water_cheap`
@@ -11281,6 +10796,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 | `1` |
 
 </details>
-
 ---
 

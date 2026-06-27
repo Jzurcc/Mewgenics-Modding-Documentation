@@ -4088,8 +4088,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Zombie Tombstone"` | |
 
 </details>
-
-
 ---
 
 ### String: `desc`
@@ -8034,8 +8032,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"taunt while at full health"` | |
 
 </details>
-
-
 ---
 
 ### String: `prompt`
@@ -9625,8 +9621,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"{Catname's} passives were scrambled!"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip`
@@ -10174,8 +10168,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Tyler!"` | |
 
 </details>
-
-
 ---
 
 ### String: `label`
@@ -10407,8 +10399,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"upgrade passive"` | |
 
 </details>
-
-
 ---
 
 ### String: `type_icon`
@@ -10437,8 +10427,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"ranged"` | |
 
 </details>
-
-
 ---
 
 ### String: `title`
@@ -10626,8 +10614,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Test Misc"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stacks`
@@ -10712,8 +10698,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Next physical attack inflicts Bleed {stacks}"` | |
 
 </details>
-
-
 ---
 
 ### String: `reward_text`
@@ -10751,8 +10735,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"FAVOR_TINK_TAGS"` | |
 
 </details>
-
-
 ---
 
 ### String: `animation_suffix`
@@ -10809,8 +10791,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"rock"` | |
 
 </details>
-
-
 ---
 
 ### String: `form`
@@ -10867,8 +10847,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"ZealotBomb"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stackless`
@@ -10937,8 +10915,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Next physical attack inflicts Bleed"` | |
 
 </details>
-
-
 ---
 
 ### String: `cutscene`
@@ -10973,8 +10949,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"zara_ending"` | |
 
 </details>
-
-
 ---
 
 ### String: `override_end_option_prompt`
@@ -11003,8 +10977,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Overridden Prompt Text"` | |
 
 </details>
-
-
 ---
 
 ### String: `#include`
@@ -11021,8 +10993,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"standard_nodes.gon"` | |
 
 </details>
-
-
 ---
 
 ### String: `text`
@@ -11052,8 +11022,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"INJURY_NAME_TORNTENDON"` | |
 
 </details>
-
-
 ---
 
 ### String: `description`
@@ -11083,8 +11051,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"CAT_CLASS_TINKERER_DESC"` | |
 
 </details>
-
-
 ---
 
 ### String: `partial_animation_suffix`
@@ -11111,8 +11077,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Water"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stacks_neg`
@@ -11141,8 +11105,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_TEMPINITDOWN_DESC"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stacks_singular`
@@ -11171,8 +11133,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_WEAKNESS_DESC_SINGULAR"` | |
 
 </details>
-
-
 ---
 
 ### String: `name_stacks_neg`
@@ -11199,8 +11159,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_TEMPINITDOWN_NAME"` | |
 
 </details>
-
-
 ---
 
 ### String: `desc_multiclass`
@@ -11226,8 +11184,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"PASSIVE_HOOKED_MULTICLASS_DESC"` | |
 
 </details>
-
-
 ---
 
 ### String: `name_mod`
@@ -11253,8 +11209,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"CAT_NAME_MOD_VEGAN"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stacks_pos`
@@ -11280,8 +11234,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_STRUP_DESC"` | |
 
 </details>
-
-
 ---
 
 ### String: `savefile_string`
@@ -11306,8 +11258,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"SAVE_FILE_FIGHT_HOUSEBOSS_ZARATANA"` | |
 
 </details>
-
-
 ---
 
 ### String: `ability_icon`
@@ -11330,8 +11280,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Thrash"` | |
 
 </details>
-
-
 ---
 
 ### String: `icon_damage_display`
@@ -11352,8 +11300,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"1-6"` | |
 
 </details>
-
-
 ---
 
 ### String: `spawnin_animation`
@@ -11371,8 +11317,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"howl"` | |
 
 </details>
-
-
 ---
 
 ### String: `ShowText`
@@ -11391,8 +11335,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"COMBAT_POPUP_REPAIRED"` | |
 
 </details>
-
-
 ---
 
 ### String: `name_reference_applier`
@@ -11411,8 +11353,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_MANALEECHES_NAME_APPLIER"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_reference_applier`
@@ -11431,8 +11371,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_MANALEECHES_DESC_APPLIER"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stackless_neg`
@@ -11451,8 +11389,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_TEMPINITDOWN_DESC"` | |
 
 </details>
-
-
 ---
 
 ### String: `animation`
@@ -11470,8 +11406,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"rally"` | |
 
 </details>
-
-
 ---
 
 ### String: `battle`
@@ -11489,8 +11423,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"putalevelhere.lvl"` | |
 
 </details>
-
-
 ---
 
 ### String: `icon_damage_display_suffix`
@@ -11508,8 +11440,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"x2"` | |
 
 </details>
-
-
 ---
 
 ### String: `image`
@@ -11526,8 +11456,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"empty.png"` | |
 
 </details>
-
-
 ---
 
 ### String: `primed_alt_animation`
@@ -11544,8 +11472,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"shootPrimed"` | |
 
 </details>
-
-
 ---
 
 ### String: `tooltip_stackless_pos`
@@ -11563,8 +11489,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` | |
 
 </details>
-
-
 ---
 
 ### String: `SetBrittleImmune`
@@ -11581,8 +11505,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `""` | |
 
 </details>
-
-
 ---
 
 ### String: `SetFragileImmune`
@@ -11599,8 +11521,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `""` | |
 
 </details>
-
-
 ---
 
 ### String: `damage`
@@ -11617,8 +11537,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"durability"` | |
 
 </details>
-
-
 ---
 
 ### String: `debug`
@@ -11635,8 +11553,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"Unknown"` | |
 
 </details>
-
-
 ---
 
 ### String: `format`
@@ -11653,8 +11569,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"TEAMNAME_FORMAT"` | |
 
 </details>
-
-
 ---
 
 ### String: `format2`
@@ -11671,8 +11585,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"TEAMNAME_FORMAT2"` | |
 
 </details>
-
-
 ---
 
 ### String: `icon_shell_frame`
@@ -11689,8 +11601,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"attack"` | |
 
 </details>
-
-
 ---
 
 ### String: `next_fight_from_set`
@@ -11705,8 +11615,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"special/ratlevels"` | |
 
 </details>
-
-
 ---
 
 ### String: `spawn_side`
@@ -11723,8 +11631,6 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"cats"` | |
 
 </details>
-
-
 ---
 
 ### String: `suffix`
@@ -11741,6 +11647,4 @@ This document provides exhaustive lists of all pure string values found in the b
 | `"!!!"` | |
 
 </details>
-
-
 ---

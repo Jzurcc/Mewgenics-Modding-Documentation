@@ -25,6 +25,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`suffix`](./Strings.md#string-suffix) | String | A string appended to the damage text. | 1 | `"!!!"` |
 
 </details>
-
 ---
 

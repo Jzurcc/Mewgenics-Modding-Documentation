@@ -97,7 +97,6 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `toss_towards_bottomleft` | Variable | A variable that specifies the direction of a toss towards the bottom-left of the map. | 1 ||
 
 </details>
-
 ### Valid Nested Objects
 
 The following objects all behave as `{Damaging Keys}` containers. Each has its own unique parameters listed below its entry.
@@ -117,7 +116,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
-
 ---
 
 #### `damage_instance`
@@ -170,7 +168,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 | `[`<br>`[Heat Fire]` |
 
 </details>
-
 ---
 
 #### `self_damage`
@@ -194,7 +191,6 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 | `[`<br>`[Heat Fire]` |
 
 </details>
-
 ---
 
 #### `splash_damage`
@@ -220,4 +216,3 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 | `[`<br>`[Heat Fire]` |
 
 </details>
-

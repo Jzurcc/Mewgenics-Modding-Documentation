@@ -22,7 +22,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `hard`
@@ -41,7 +40,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ---
 
 
@@ -61,5 +59,4 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ---

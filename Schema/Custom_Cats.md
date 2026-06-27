@@ -20,7 +20,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
-
 ---
 
 ### Object: `arm1`
@@ -38,7 +37,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
 
 </details>
-
 ---
 
 ### Object: `arm2`
@@ -56,6 +54,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
 
 </details>
-
 ---
 

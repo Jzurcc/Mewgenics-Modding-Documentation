@@ -22,7 +22,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Conditional_ActiveWeather_Any`
@@ -42,8 +41,6 @@
 | [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 | `[FlySwarm FireflySwarm ButterflySwarm]` |
 
 </details>
-
-
 ---
 
 ### `Conditional_AffectedByElement`
@@ -64,8 +61,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Backstab`
@@ -85,8 +80,6 @@
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `Conditional_BossOrBig`
@@ -105,8 +98,6 @@
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Buddy`
@@ -126,8 +117,6 @@
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_CanBeHealed`
@@ -146,8 +135,6 @@
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_DebuffRoll`
@@ -167,8 +154,6 @@
 | [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
-
-
 ---
 
 ### `Conditional_DestructibleCorpse`
@@ -188,8 +173,6 @@
 | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 2 | `1` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Displaceable`
@@ -210,8 +193,6 @@
 | `TempInitiativeChange` | Integer | The flat change to the unit's initiative value. | 1 | `-100`<br>`-999`<br>`100` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Familiar`
@@ -233,8 +214,6 @@
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `Conditional_FinishedSpawning`
@@ -253,8 +232,6 @@
 | [`Imprison`](./Enums.md#enum-imprison) | Enum | Specifies the type of unit or object to summon as a prison. | 1 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Flying`
@@ -271,7 +248,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Conditional_FormulaIsPositive`
@@ -298,8 +274,6 @@
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `Conditional_HasCleansableDebuffs`
@@ -320,8 +294,6 @@
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_HasKnockback`
@@ -342,8 +314,6 @@
 | [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_HealthThreshold`
@@ -375,8 +345,6 @@
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 
 </details>
-
-
 ---
 
 ### `Conditional_InForm`
@@ -402,8 +370,6 @@
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
-
-
 ---
 
 ### `Conditional_IsPhysicalAttack`
@@ -424,8 +390,6 @@
 | [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_IsSelf`
@@ -444,8 +408,6 @@
 | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 | `-10`<br>`0`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `Conditional_IsTrample`
@@ -464,8 +426,6 @@
 | `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 1 | `0` |
 
 </details>
-
-
 ---
 
 ### `Conditional_LastHit`
@@ -487,8 +447,6 @@
 | [`DelayCastAbility`](./Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
 
 </details>
-
-
 ---
 
 ### `Conditional_LivingPlayerCat`
@@ -509,8 +467,6 @@
 | [`TempPassiveWhileHasStatus`](./Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_ManaThreshold`
@@ -530,8 +486,6 @@
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 | `0`<br>`10`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `Conditional_NotAlly`
@@ -551,8 +505,6 @@
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_NotBig`
@@ -571,8 +523,6 @@
 | `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `Conditional_NotBossOrBig`
@@ -591,8 +541,6 @@
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 
 </details>
-
-
 ---
 
 ### `Conditional_NotShielded`
@@ -611,8 +559,6 @@
 | `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Object`
@@ -633,8 +579,6 @@
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 
 </details>
-
-
 ---
 
 ### `Conditional_OncePerBattle`
@@ -655,8 +599,6 @@
 | `TriggerGameEnding` | Integer | If set to 1, triggers the game's ending sequence; 0 disables it. | 2 | `0`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `Conditional_PlayerCat`
@@ -682,8 +624,6 @@
 | `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `Conditional_RandomChance`
@@ -703,8 +643,6 @@
 | [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
-
-
 ---
 
 ### `Conditional_SourceAbilityHasTag`
@@ -725,8 +663,6 @@
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Conditional_SourceHasStatus`
@@ -746,8 +682,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Speculative`
@@ -772,8 +706,6 @@
 | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 1 | `25` |
 
 </details>
-
-
 ---
 
 ### `Conditional_Tiny`
@@ -790,7 +722,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Reactions & Event Triggers (77)
@@ -810,7 +741,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityOnBattleStart_Immediate`
@@ -828,7 +758,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityOnBattleStart_UseAI`
@@ -846,7 +775,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityOnRoundEnd`
@@ -866,8 +794,6 @@
 | `force_display_name` | Boolean | If true, forces the display name to show for the ability. | 2 | `true` |
 
 </details>
-
-
 ---
 
 ### `AbilityOnRoundEndOnce`
@@ -887,8 +813,6 @@
 | `even_of_stunned` | Boolean | If true, the ability triggers only on even rounds and when the unit is stunned. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `AllUnitsExplodeOnDeath`
@@ -906,7 +830,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlliesScrambleSpellAfterCast`
@@ -924,7 +847,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ApplyToSourceOnKill`
@@ -955,8 +877,6 @@
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
-
-
 ---
 
 ### `ArmorBreakOnHit`
@@ -976,8 +896,6 @@
 | `durability_loss` | Integer | The amount of durability lost when the armor break effect triggers. | 2 | `0` |
 
 </details>
-
-
 ---
 
 ### `BackflipWhenTargeted`
@@ -997,8 +915,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `BonusAbility_DelayedApplication`
@@ -1016,7 +932,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BramblesOnHit`
@@ -1034,7 +949,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CanLevelUpWhenDead`
@@ -1052,7 +966,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChanceToSpitOnDamage`
@@ -1075,8 +988,6 @@
 | `even_on_0_damage_if_knockback` | Boolean | If true, the reaction triggers on zero damage if knockback occurs. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `ChangeTileOnDeath`
@@ -1094,7 +1005,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CherubimReaction`
@@ -1114,8 +1024,6 @@
 | [`Leave`](./Engine_LogicKeys.md#object-leave) | Enum / Object  | Specifies the ability used when this unit leaves the field. | 16 | `{ . . . }`<br>`CherubimLeave`<br>`LELeave` |
 
 </details>
-
-
 ---
 
 ### `CounterAttackAfterEnemyCastSpell`
@@ -1133,7 +1041,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CounterNextAttacks`
@@ -1151,7 +1058,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Counterspell`
@@ -1169,7 +1075,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CrackMoonHead`
@@ -1187,7 +1092,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DeathRattleRevive`
@@ -1207,8 +1111,6 @@
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 8 | `true` |
 
 </details>
-
-
 ---
 
 ### `DelayedAutoRevive`
@@ -1228,8 +1130,6 @@
 | `rounds` | Integer | The number of rounds after which the auto-revive triggers. | 1 | `1`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `DelayedFury`
@@ -1247,7 +1147,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DelayedPain`
@@ -1265,7 +1164,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DelayedWindTrail`
@@ -1283,7 +1181,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DieWhenOnlyGolemsLeft`
@@ -1301,7 +1198,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Divide4OnDeath`
@@ -1319,7 +1215,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleCastSpellIfManaCostUnderThreshold`
@@ -1337,7 +1232,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleCastSpellThisTurn`
@@ -1355,7 +1249,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleCastSpellsEachTurn_Status`
@@ -1373,7 +1266,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DustOnHit`
@@ -1392,8 +1284,6 @@
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
-
-
 ---
 
 ### `EnrageOnDamage`
@@ -1411,7 +1301,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FindExtraItemFromPoolOnBattleEnd`
@@ -1429,7 +1318,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FlatHealWhenDealDamage`
@@ -1447,7 +1335,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FlowersOnHit`
@@ -1465,7 +1352,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FreeFirstCastAndAfterSpendMana`
@@ -1483,7 +1369,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GainManaWhenAnythingDies`
@@ -1501,7 +1386,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ImmediateAbilityReaction`
@@ -1526,8 +1410,6 @@
 | `target_furthest_valid` | Boolean | If true, the reaction targets the furthest valid enemy. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `IncAuxCounterClamped`
@@ -1547,8 +1429,6 @@
 | `max` | Integer | The maximum amount of coins that can be gained. | 3 | `10`<br>`2`<br>`25` |
 
 </details>
-
-
 ---
 
 ### `IncAuxCounterCycle`
@@ -1568,8 +1448,6 @@
 | `max` | Integer | The maximum amount of coins that can be gained. | 1 | `10`<br>`2`<br>`25` |
 
 </details>
-
-
 ---
 
 ### `IncreaseItemAuxOnKill`
@@ -1587,7 +1465,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MadnessChanceOnTurnBegin`
@@ -1605,7 +1482,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MiniVolcanoReaction`
@@ -1623,7 +1499,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MonkCatReactionAbilities`
@@ -1646,8 +1521,6 @@
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 26 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
-
-
 ---
 
 ### `MoonHeadCrackedVisual`
@@ -1665,7 +1538,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MoonHeadFinisherEnabler`
@@ -1683,7 +1555,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MutateAfterXTurns`
@@ -1701,7 +1572,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ObjectOnHit`
@@ -1720,8 +1590,6 @@
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
-
-
 ---
 
 ### `ObjectOnHitEmpty`
@@ -1739,7 +1607,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ObjectOnHitFullyEmpty`
@@ -1757,7 +1624,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PassiveWhenDead`
@@ -1776,8 +1642,6 @@
 | [`AddStatusToTrampleDamage`](./Passives_and_Statuses.md#object-addstatustotrampledamage) | Object  | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `PassiveWhenOnTile`
@@ -1797,8 +1661,6 @@
 | [`tile`](./Arrays.md#array-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
-
-
 ---
 
 ### `PreEmptiveCounterNextAttacks`
@@ -1816,7 +1678,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReformMoonHead`
@@ -1834,7 +1695,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnKill`
@@ -1852,7 +1712,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnKillEnemy`
@@ -1870,7 +1729,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnKillTagged`
@@ -1888,7 +1746,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RepairOnKill`
@@ -1906,7 +1763,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReplaceBlankTilesOnBattleStart`
@@ -1924,7 +1780,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RerollItemsOnBattleEnd`
@@ -1942,7 +1797,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReturnBoundItemOnBattleEnd`
@@ -1960,7 +1814,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SoundEventOnHit`
@@ -1978,7 +1831,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatusAfterXStacks`
@@ -2001,8 +1853,6 @@
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `StatusAfterXTurns`
@@ -2022,8 +1872,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `StatusCharactersOnRoundEnd`
@@ -2044,8 +1892,6 @@
 | [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Specifies a tag (e.g., 'crow', 'rock', 'grub_familiar') used to filter which units a status or effect applies to. | 1 | `crow`<br>`grub_familiar`<br>`rock` |
 
 </details>
-
-
 ---
 
 ### `StatusCharactersOnRoundStart`
@@ -2065,8 +1911,6 @@
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `StatusOnEnemyCastSpell`
@@ -2086,8 +1930,6 @@
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `StatusRandomEnemiesOnBattleStart`
@@ -2108,8 +1950,6 @@
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `TempCounterAttack`
@@ -2127,7 +1967,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempPreEmptiveCounterAttack`
@@ -2145,7 +1984,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerBleedOnBleed`
@@ -2163,7 +2001,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerDOTStatuses`
@@ -2181,7 +2018,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerGameEnding`
@@ -2199,7 +2035,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerMotherConsume`
@@ -2217,7 +2052,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerMotherGrow`
@@ -2235,7 +2069,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UnlimitedDeathRattleRevive`
@@ -2255,8 +2088,6 @@
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `UseAbilityWhenOutOfStatus`
@@ -2276,8 +2107,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ## Stat Modifiers & Scaling (180)
@@ -2297,7 +2126,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityDamageMultiplier`
@@ -2315,7 +2143,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledAtHealthThreshold`
@@ -2333,7 +2160,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledIfHasStatus`
@@ -2351,7 +2177,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledIfNotHasStatus`
@@ -2369,7 +2194,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledOncePerFightAtHealthThreshold`
@@ -2387,7 +2211,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityHealthThreshold`
@@ -2412,8 +2235,6 @@
 | [`threshold_min`](./Math_Equations.md) | Equation | The minimum health threshold formula (e.g., X) for the ability to trigger. | 1 | `X` |
 
 </details>
-
-
 ---
 
 ### `AbsorbManaFromOtherSpells`
@@ -2431,7 +2252,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddAdvantageToEvent`
@@ -2452,8 +2272,6 @@
 | [`options`](./Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 1 | `[smash bash open]` |
 
 </details>
-
-
 ---
 
 ### `AddConstitution`
@@ -2471,7 +2289,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddDamage`
@@ -2489,7 +2306,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddElementsToSpells`
@@ -2507,7 +2323,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddEndOfCombatRegen`
@@ -2525,7 +2340,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddLeechesStatus`
@@ -2543,7 +2357,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddPostProcessEffect`
@@ -2563,8 +2376,6 @@
 | [`shader`](./Enums.md#enum-shader) | Enum | Specifies which shader to use for the post-process effect. | 1 | `shimmervignette` |
 
 </details>
-
-
 ---
 
 ### `AddSpiritBombCharges`
@@ -2582,7 +2393,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddStatusToBackstabs`
@@ -2601,8 +2411,6 @@
 | [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `AddStatusToFirstSpellEachTurn`
@@ -2621,8 +2429,6 @@
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `AddStatusToReceivedDamage`
@@ -2641,8 +2447,6 @@
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `AddTilesetObjects`
@@ -2661,8 +2465,6 @@
 | [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `AddWeaponAux`
@@ -2680,7 +2482,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AggroTargetIsLastEnemyThatDealtDamage`
@@ -2698,7 +2499,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AggroTargetIsLowestHealthEnemyTillItDies`
@@ -2716,7 +2516,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AggroTargetIsLowestMaxHealthCat`
@@ -2734,7 +2533,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AllSpellsCostActPoints`
@@ -2752,7 +2550,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AllSpellsCostCharge`
@@ -2770,7 +2567,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AllStatsUpPerDisorder`
@@ -2788,7 +2584,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlwaysChosenForLevelUp`
@@ -2806,7 +2601,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ApplyMultipleTimes`
@@ -2826,8 +2620,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `ApplyStatusesNextTurnBegin`
@@ -2846,8 +2638,6 @@
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | `1`<br>`2`<br>`5` |
 
 </details>
-
-
 ---
 
 ### `BalanceStats`
@@ -2865,7 +2655,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BaseStatMultiply`
@@ -2883,7 +2672,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BonusDamageBasedOnDistance`
@@ -2901,7 +2689,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BonusDamageBasedOnMana`
@@ -2919,7 +2706,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BonusHealthRegenPerDisorder`
@@ -2937,7 +2723,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BonusTurnPattern`
@@ -2955,7 +2740,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BoostReceivedHealing`
@@ -2973,7 +2757,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleCharismaUp`
@@ -2991,7 +2774,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleConstitutionUp`
@@ -3009,7 +2791,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleDexterityUp`
@@ -3027,7 +2808,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleIntelligenceUp`
@@ -3045,7 +2825,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleLuckUp`
@@ -3063,7 +2842,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleSpeedUp`
@@ -3081,7 +2859,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BrittleStrengthUp`
@@ -3099,7 +2876,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CantSpreadDiseases`
@@ -3117,7 +2893,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CapBasicAttackDamage`
@@ -3135,7 +2910,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CapDamage`
@@ -3153,7 +2927,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CapReceivedDamage`
@@ -3171,7 +2944,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CastAgainWithStatus`
@@ -3191,8 +2963,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `CatPartsSizeScale`
@@ -3211,8 +2981,6 @@
 | [`head`](./Enums.md#enum-head) | Enum / Number | The catalog ID for the cat's head part. | 784 | `-1`<br>`1`<br>`1.3` |
 
 </details>
-
-
 ---
 
 ### `CatPartsSizeScaleStatus`
@@ -3234,8 +3002,6 @@
 | [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 346 | `-1`<br>`1`<br>`1.1` |
 
 </details>
-
-
 ---
 
 ### `CharacterTypeGainsStatusAtBattleStart`
@@ -3257,8 +3023,6 @@
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `ChargeFists`
@@ -3276,7 +3040,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CharismaIsMaxStat`
@@ -3294,7 +3057,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ConjureBonusAbility`
@@ -3314,8 +3076,6 @@
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 2 | `true` |
 
 </details>
-
-
 ---
 
 ### `ConjureSingleUseBonusAbility`
@@ -3333,7 +3093,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ContextualHeal`
@@ -3351,7 +3110,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ConvertDamageToScaledStatus`
@@ -3371,8 +3129,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `CurrentWeaponAddElectricElement`
@@ -3390,7 +3146,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CurrentWeaponAddPoison`
@@ -3408,7 +3163,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DamageBasedOnMissingHealth`
@@ -3426,7 +3180,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DamageFromBehindOnly`
@@ -3444,7 +3197,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DamageTrinket`
@@ -3462,7 +3214,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DamageWeapon`
@@ -3480,7 +3231,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoDamage`
@@ -3503,8 +3253,6 @@
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 
 </details>
-
-
 ---
 
 ### `DontHealEnemies`
@@ -3522,7 +3270,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleReceivedNegativeStatus`
@@ -3540,7 +3287,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleReceivedPositiveStatus`
@@ -3558,7 +3304,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleStatus`
@@ -3576,7 +3321,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DuplicateRandomEquippedItem`
@@ -3594,7 +3338,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExistUntilIdleUpkeep`
@@ -3612,7 +3355,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExtraBasicAttacks_Status`
@@ -3630,7 +3372,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FaceAwayLastDamage`
@@ -3651,8 +3392,6 @@
 | `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `FaceLastDamage`
@@ -3671,8 +3410,6 @@
 | `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `FactionUprising`
@@ -3690,8 +3427,6 @@
 | [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object  | An object containing additional status effects (with stack counts) applied to the consumed unit. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `FlatAIBonus`
@@ -3709,7 +3444,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalMeleeRevengeDamage`
@@ -3728,8 +3462,6 @@
 | [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `HPAltStates`
@@ -3749,8 +3481,6 @@
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
-
-
 ---
 
 ### `HealNeighborsEachTurn`
@@ -3770,8 +3500,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `HealPercentMaxHP`
@@ -3789,7 +3517,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HealRandomInjury`
@@ -3807,7 +3534,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HealTo`
@@ -3825,7 +3551,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HealthMultiplier`
@@ -3843,7 +3568,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `IgnoreDamage`
@@ -3861,7 +3585,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `IncreaseCumulativeBlastDamage`
@@ -3879,7 +3602,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `InstantMaxHealthUp`
@@ -3897,7 +3619,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JesterLevelUpRerolls`
@@ -3915,7 +3636,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KnockUpAndAway`
@@ -3937,8 +3657,6 @@
 | `circular_variance` | Integer | The random variance in the knockback direction, in tiles. | 1 | `2` |
 
 </details>
-
-
 ---
 
 ### `LateStatusApplication`
@@ -3958,8 +3676,6 @@
 | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 1 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `LowGravityRangeBoost`
@@ -3977,7 +3693,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManaGainRange`
@@ -3997,8 +3712,6 @@
 | `min` | Integer | The minimum amount of coins that will be gained. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
-
-
 ---
 
 ### `MaxHPUp`
@@ -4016,7 +3729,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MergeDamageInstance`
@@ -4036,8 +3748,6 @@
 | `force_no_hit_animation` | Boolean | If true, suppresses the hit animation when merging damage instances. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `MulticatHeads`
@@ -4055,7 +3765,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MultiplyReceivedHealing`
@@ -4073,7 +3782,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextAbilityHeals`
@@ -4091,7 +3799,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextActionLuckUp`
@@ -4109,7 +3816,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextAttackBonusRange`
@@ -4127,7 +3833,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextAttackSpecialCrit`
@@ -4148,8 +3853,6 @@
 | `luck_increase` | Integer | The flat increase to the unit's luck stat. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `NextBattleStatusStacks`
@@ -4169,8 +3872,6 @@
 | `MadnessChanceOnTurnBegin` | Integer | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 1 | `2` |
 
 </details>
-
-
 ---
 
 ### `NextDamageReduceAndHealAllies`
@@ -4188,7 +3889,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextTurnDoubleRangedDamage`
@@ -4206,7 +3906,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NoHealthRegen`
@@ -4224,7 +3923,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `OverHealToStatuses`
@@ -4245,8 +3943,6 @@
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `OverManaReducesManaCosts`
@@ -4264,7 +3960,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PassiveWhileHasStatus`
@@ -4284,8 +3979,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `PassiveWhileNotHasStatus`
@@ -4305,8 +3998,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 2 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `PermanentUpgradeRandomActive`
@@ -4324,7 +4015,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PermanentUpgradeRandomActiveOrPassive`
@@ -4342,7 +4032,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RNGCannonRandomDamage`
@@ -4360,7 +4049,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomBonusDamage`
@@ -4378,7 +4066,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomPermanentStatsDistinct`
@@ -4397,8 +4084,6 @@
 | [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 982 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `RandomSeededStatModifier`
@@ -4416,7 +4101,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomStatDown`
@@ -4434,7 +4118,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RebukeDamage`
@@ -4452,7 +4135,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReduceManaCostExcludeBrainstorm`
@@ -4470,7 +4152,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReduceSpellCostsPerDisorder`
@@ -4488,7 +4169,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReduceSpellCostsPerParasite`
@@ -4506,7 +4186,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RefreshNonManaItemAbilities`
@@ -4524,7 +4203,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnAnyDamage`
@@ -4542,7 +4220,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnElementalDamageReceived`
@@ -4560,7 +4237,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnSpendMana`
@@ -4578,7 +4254,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnTotalDamageReceived`
@@ -4596,7 +4271,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnUseAbilityWithManaCost`
@@ -4614,7 +4288,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoteFlatLeech`
@@ -4632,7 +4305,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoteLeech`
@@ -4650,7 +4322,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScaledStatusAlliesOnSpendMana`
@@ -4668,8 +4339,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
-
 ---
 
 ### `SelfStatusCarefulness`
@@ -4687,7 +4356,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetHealth`
@@ -4705,7 +4373,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShadowCrit`
@@ -4723,7 +4390,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShowFakeDamage`
@@ -4743,8 +4409,6 @@
 | [`style`](./Arrays.md#array-style) | Array | Specifies the visual styles (e.g., crit) used for the fake damage display. | 1 | `[crit]` |
 
 </details>
-
-
 ---
 
 ### `SpeedUp_WithoutInitiative`
@@ -4762,7 +4426,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StanceSwitchToRanged`
@@ -4780,7 +4443,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatBounty`
@@ -4798,7 +4460,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatDependentPassive`
@@ -4817,8 +4478,6 @@
 | [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Additional damage added to the basic attack, either as a flat value or formula. | 4 | `1`<br>`2`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `StatusAdjacentOnTheirTurnEnd`
@@ -4837,8 +4496,6 @@
 | `ForceMoveAway` | Integer | The distance to force the target away from the source. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `StatusCollector`
@@ -4859,8 +4516,6 @@
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `StatusEachRoundBegin`
@@ -4879,8 +4534,6 @@
 | `NonStackingShield` | Number | The amount of non-stacking shield granted. | 8 | `12`<br>`16`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `StatusEachRoundEnd`
@@ -4899,8 +4552,6 @@
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
-
-
 ---
 
 ### `StatusEachTurnBeginIfHasStatus`
@@ -4924,8 +4575,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `StatusEachTurnEndIfEnabledAtStartOfTurn`
@@ -4944,8 +4593,6 @@
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
-
-
 ---
 
 ### `StatusEveryXSpellCastsEachTurn`
@@ -4965,8 +4612,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `StatusIfUnusedActPoints`
@@ -4986,8 +4631,6 @@
 | [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `StatusOnBackstab`
@@ -5007,8 +4650,6 @@
 | `SerratedClaws` | Integer | The number of stacks of the SerratedClaws status applied, or an object defining its display strings. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `StatusOnBreak`
@@ -5041,8 +4682,6 @@
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `StatusOnDie`
@@ -5061,8 +4700,6 @@
 | [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 6 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `StatusOnEnemyConfused`
@@ -5081,8 +4718,6 @@
 | [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 
 </details>
-
-
 ---
 
 ### `StatusOnEnemyDeath`
@@ -5101,8 +4736,6 @@
 | `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `StatusOnFallAsleep`
@@ -5123,8 +4756,6 @@
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `StatusOnFullMana`
@@ -5142,8 +4773,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
-
 ---
 
 ### `StatusOnSetPieceBreak`
@@ -5170,8 +4799,6 @@
 | `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 1 | `1`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `StatusOverlappingCharactersAndDie`
@@ -5190,8 +4817,6 @@
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `StripStatuses`
@@ -5209,7 +4834,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SwapHighestAndLowestStat`
@@ -5227,7 +4851,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TakeBonusTurnWithAIControl`
@@ -5246,8 +4869,6 @@
 | `include_spells` | Boolean | If true, the AI-controlled bonus turn includes spells as available actions. | 2 | `true` |
 
 </details>
-
-
 ---
 
 ### `TallTumorManaBurn`
@@ -5265,7 +4886,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TeamBonusAbility`
@@ -5283,7 +4903,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempCritChanceUp`
@@ -5301,7 +4920,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempManaCostReduction`
@@ -5319,7 +4937,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempMeleeRangeUp`
@@ -5337,7 +4954,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempNoManaRegen`
@@ -5355,7 +4971,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempPassiveWhileHasStatus`
@@ -5378,8 +4993,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `TempRangeUp`
@@ -5397,7 +5010,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TickDownStatus`
@@ -5415,7 +5027,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TimeDelayStatusApplication`
@@ -5444,8 +5055,6 @@
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 
 </details>
-
-
 ---
 
 ### `TormentorHeal`
@@ -5463,7 +5072,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TowerDefenseStatus`
@@ -5481,7 +5089,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TowerDefenseStatus2`
@@ -5499,7 +5106,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Trapper_Status`
@@ -5517,7 +5123,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UndoDamage`
@@ -5535,7 +5140,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UpTireBehavior`
@@ -5553,7 +5157,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UpgradeRandomAbility`
@@ -5571,7 +5174,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VisualCountDownThenApplyStatus`
@@ -5590,8 +5192,6 @@
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
-
-
 ---
 
 ### `WeaponAuxMultiplier`
@@ -5609,7 +5209,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsCountStatusStacks`
@@ -5627,7 +5226,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsMultipliedPercentHealth`
@@ -5645,7 +5243,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsOtherHealsThisTurn`
@@ -5663,7 +5260,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsRecycleCostReduction`
@@ -5681,7 +5277,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsTargetHealth`
@@ -5700,8 +5295,6 @@
 | [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 2 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
-
-
 ---
 
 ### `XIsTimesDamageTaken`
@@ -5719,7 +5312,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Immunities & Defenses (42)
@@ -5739,7 +5331,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ApplyShieldToApplierBasedOnMaxHealth`
@@ -5757,7 +5348,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlockAllDamage`
@@ -5775,7 +5365,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlockDamageUnderThreshold`
@@ -5793,7 +5382,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlockNegativeStatus`
@@ -5811,7 +5399,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BreakWhenNoShield`
@@ -5829,7 +5416,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CanShield`
@@ -5847,7 +5433,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChanceToBlock`
@@ -5865,7 +5450,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CharmImmunity`
@@ -5883,7 +5467,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DivineShieldPickup`
@@ -5901,7 +5484,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DodgeChanceWithBlindSpot`
@@ -5919,7 +5501,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DodgeChance_Status`
@@ -5937,7 +5518,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DodgeWhenTargeted`
@@ -5956,8 +5536,6 @@
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
-
-
 ---
 
 ### `ForceDodgeEverything`
@@ -5975,7 +5553,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FullBlockEverything`
@@ -5993,7 +5570,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FullBlockEverythingTo0Damage`
@@ -6011,7 +5587,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GoopImmunity`
@@ -6029,7 +5604,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `IceBlockBehavior`
@@ -6047,7 +5621,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Invulnerable`
@@ -6065,7 +5638,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KaijuKnockbackImmune`
@@ -6083,7 +5655,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KnockbackDamageImmuneUntilSettled`
@@ -6101,7 +5672,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MagicDamageImmune`
@@ -6119,7 +5689,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NoHealthOnlyShield`
@@ -6137,7 +5706,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NonStackingShield`
@@ -6155,7 +5723,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `OverHealToShield`
@@ -6173,7 +5740,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PassiveWhileShielded`
@@ -6192,8 +5758,6 @@
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `ReloadOnGainDivineShield`
@@ -6211,7 +5775,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ResetArmorShield`
@@ -6229,7 +5792,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScaledStatusOnHolyShieldBlock`
@@ -6248,8 +5810,6 @@
 | [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `SetBrittleImmune`
@@ -6267,7 +5827,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetFragileImmune`
@@ -6285,7 +5844,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetShield`
@@ -6303,7 +5861,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpellShield`
@@ -6321,7 +5878,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatusOnDodge`
@@ -6340,8 +5896,6 @@
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 
 </details>
-
-
 ---
 
 ### `StatusOnTakeHealthOrShieldDamage`
@@ -6361,8 +5915,6 @@
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 | `1`<br>`2`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `StunImmunity`
@@ -6381,8 +5933,6 @@
 | `cleanse_on_apply` | Boolean | If true, removes any existing stun effect when this immunity is applied. | 1 | `false` |
 
 </details>
-
-
 ---
 
 ### `TempInjuryImmunity`
@@ -6400,7 +5950,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ThornsDamageImmuneUntilSettled`
@@ -6418,7 +5967,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TileDamageImmuneUntilSettled`
@@ -6436,7 +5984,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TileElementDamageImmunity`
@@ -6454,7 +6001,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UseAbilityWhenShieldDepleted`
@@ -6472,7 +6018,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `WispDodge`
@@ -6490,7 +6035,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Auras & Area of Effect (20)
@@ -6510,7 +6054,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlienBeastDangerZones`
@@ -6528,7 +6071,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AllStatsAura`
@@ -6549,8 +6091,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `AlluringDoodieEater`
@@ -6570,8 +6110,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `AllyDodgeChanceAura`
@@ -6591,8 +6129,6 @@
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `BaitAura`
@@ -6611,8 +6147,6 @@
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `BasicAIDangerZone`
@@ -6630,7 +6164,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BattlefieldUniqueRandomPassive`
@@ -6653,8 +6186,6 @@
 | `DemonicGlyph_Summon` | Integer | The weight for the demonic glyph of summon, or its configuration. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `BrittleDuringElement`
@@ -6672,7 +6203,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChargeSpiritBombAura`
@@ -6690,7 +6220,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DamageDistanceAOEFalloff`
@@ -6708,7 +6237,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisplayDangerAOE`
@@ -6726,7 +6254,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoDistortionRing`
@@ -6747,8 +6274,6 @@
 | [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
-
-
 ---
 
 ### `FragileDuringElement`
@@ -6766,7 +6291,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalFlowerTrapperAura`
@@ -6785,8 +6309,6 @@
 | [`Tangled`](./Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 
 </details>
-
-
 ---
 
 ### `GlobalHealthRegenAura`
@@ -6804,7 +6326,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalManaBurnAura`
@@ -6822,7 +6343,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalManaDrainAura`
@@ -6840,7 +6360,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `OrthogonalAIDangerZone`
@@ -6858,7 +6377,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBasicAttackBonusAOE`
@@ -6876,7 +6394,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Movement & Positioning (79)
@@ -6896,7 +6413,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddExtraTurnsBeforeRun`
@@ -6914,7 +6430,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AddMeleeKnockback`
@@ -6932,7 +6447,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BonusKnockbackDamage`
@@ -6950,7 +6464,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BypassRockKnockback`
@@ -6968,7 +6481,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChanceToForceEvent`
@@ -6988,8 +6500,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `CharmedFacingForceAttack`
@@ -7007,7 +6517,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DashFury`
@@ -7025,7 +6534,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DemonicGlyph_Movement`
@@ -7043,7 +6551,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisableTrample`
@@ -7061,7 +6568,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Displace`
@@ -7079,7 +6585,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisplaceToAbilityTarget`
@@ -7097,7 +6602,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisplaceToOriginalPosition`
@@ -7115,7 +6619,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisplaceTowardsSource`
@@ -7133,7 +6636,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FastKnockback`
@@ -7151,7 +6653,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FlingObjectsOnTop`
@@ -7169,7 +6670,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceDisplace`
@@ -7187,7 +6687,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceImmediateMove`
@@ -7205,7 +6704,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceImmediateMoveAndAttack`
@@ -7225,8 +6723,6 @@
 | `even_if_cant_reach` | Boolean | If true, forces the unit to attempt to move and attack even if the target is not reachable. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `ForceMoveAndAttack`
@@ -7244,7 +6740,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceMoveNonAlliesInRangeTowardsTile`
@@ -7262,7 +6757,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceMoveTowards`
@@ -7280,7 +6774,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceMoveTowardsEnemies`
@@ -7298,7 +6791,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceMoveTowardsTaggedObject`
@@ -7318,8 +6810,6 @@
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
-
-
 ---
 
 ### `ForceTransferWeapon`
@@ -7337,7 +6827,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceUseAbilityOnTarget`
@@ -7357,8 +6846,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `InterchangeMoveActPoints`
@@ -7376,7 +6863,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JustInCaseTrample`
@@ -7394,7 +6880,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KnockbackDirectionIsFacingDirection`
@@ -7412,7 +6897,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KnockbackIfCrit`
@@ -7432,8 +6916,6 @@
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 | `10` |
 
 </details>
-
-
 ---
 
 ### `LeaveBehindOnceEachMove`
@@ -7451,7 +6933,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LowGravityKnockbackBoost`
@@ -7469,7 +6950,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MinimumKnockbackFromAllDamage`
@@ -7487,7 +6967,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MinimumKnockbackFromPhysicalAttacks`
@@ -7505,7 +6984,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MotherTumorDebugForcePass`
@@ -7523,7 +7001,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MoveAfterAnyAttemptedAttack`
@@ -7542,8 +7019,6 @@
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
-
-
 ---
 
 ### `MoveAwayWhenEnemyAdjacent`
@@ -7564,8 +7039,6 @@
 | [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
-
-
 ---
 
 ### `MoveTowardsKillers`
@@ -7585,8 +7058,6 @@
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 3 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
-
-
 ---
 
 ### `OverrideKnockbackDamage`
@@ -7604,7 +7075,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomKnockback`
@@ -7624,8 +7094,6 @@
 | `min` | Integer | The minimum amount of coins that will be gained. | 2 | `0`<br>`1`<br>`10` |
 
 </details>
-
-
 ---
 
 ### `RandomKnockbackDirection`
@@ -7643,7 +7111,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RefreshMovePointsIfHit`
@@ -7661,7 +7128,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveActPoints`
@@ -7679,7 +7145,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveAmbientLightEffects`
@@ -7697,7 +7162,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveExtraDispersedTurn`
@@ -7715,7 +7179,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveGlobalModifiers`
@@ -7733,7 +7196,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveItem`
@@ -7751,7 +7213,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveKnockback`
@@ -7769,7 +7230,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveMovePoints`
@@ -7787,7 +7247,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveStatus`
@@ -7805,7 +7264,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RemoveStatusStacks`
@@ -7825,8 +7283,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `RemoveTurnsThisRound`
@@ -7844,7 +7300,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReplaceBasicMove_Mutation`
@@ -7862,7 +7317,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RunInXTurns`
@@ -7880,7 +7334,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RunWhenKittensDead`
@@ -7898,7 +7351,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RunWhenLastPlayerCatIsCharmed`
@@ -7918,8 +7370,6 @@
 | [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | Specifies the save key used to persist a legacy stolen cat ID. | 1 | `Legacy_Marshmallow_StolenCatID` |
 
 </details>
-
-
 ---
 
 ### `SetDistanceDisplace`
@@ -7937,7 +7387,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetKnockback`
@@ -7955,7 +7404,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpeculativeMoveSelfCorpseOffMap`
@@ -7973,7 +7421,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SproutsGrantMovement`
@@ -7991,7 +7438,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatusIfDidntMove`
@@ -8010,8 +7456,6 @@
 | `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `StatusWhenStatusCompletelyRemoved`
@@ -8031,8 +7475,6 @@
 | [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
-
-
 ---
 
 ### `StripKnockback`
@@ -8050,7 +7492,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SupportDieInsteadOfRun`
@@ -8070,8 +7511,6 @@
 | [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | Specifies the alternative dying animation to use. | 1 | `shutdown` |
 
 </details>
-
-
 ---
 
 ### `TVBotDisableMove`
@@ -8089,7 +7528,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBonusKnockback`
@@ -8107,7 +7545,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBonusKnockbackDamage`
@@ -8125,7 +7562,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempTrampleUntilSettled`
@@ -8143,7 +7579,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Terminator2Chase`
@@ -8161,7 +7596,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Terminator2Run`
@@ -8181,8 +7615,6 @@
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
-
-
 ---
 
 ### `TerminatorChase`
@@ -8202,8 +7634,6 @@
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 122 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
-
-
 ---
 
 ### `TilesMovedToCritChance`
@@ -8221,7 +7651,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TilesMovedToMana`
@@ -8239,7 +7668,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TilesMovedToNeighborHeal`
@@ -8257,7 +7685,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TilesMovedToStrength`
@@ -8275,7 +7702,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TwisterDisplaceWithDamage`
@@ -8297,8 +7723,6 @@
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | Specifies a prefix string; units with a matching prefix in their ID are excluded from the displacement effect. | 1 | `Twister` |
 
 </details>
-
-
 ---
 
 ### `TwisterFling`
@@ -8319,8 +7743,6 @@
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `UseMoveAbilityWithAI`
@@ -8340,8 +7762,6 @@
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 10 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 
 </details>
-
-
 ---
 
 ### `ZeroKnockbackDamage`
@@ -8359,7 +7779,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Spawns, Summons & Familiars (50)
@@ -8379,7 +7798,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AggroTargetIsBuddy`
@@ -8397,7 +7815,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ApplyPassivesToSpawnerWhileAlive`
@@ -8416,8 +7833,6 @@
 | [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Specifies which equipment slot is visually hidden. | 1 | `neck` |
 
 </details>
-
-
 ---
 
 ### `Buddy`
@@ -8436,8 +7851,6 @@
 | `reclaim_if_lost` | Boolean | If true, the buddy can be reclaimed after being lost. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `DemonicGlyph_Summon`
@@ -8455,7 +7868,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DieWhenSpawnerDies`
@@ -8473,7 +7885,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisplayBuddyCatOnSpawn`
@@ -8491,7 +7902,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DropAsFamiliarOnArmorBreak`
@@ -8509,7 +7919,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DropAsFamiliarOnTookDamage`
@@ -8527,7 +7936,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EraseSpawnCoins`
@@ -8545,7 +7953,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExpireOnSpawnerTurnEnd`
@@ -8563,7 +7970,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalFamiliarDamageBoost`
@@ -8581,7 +7987,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalFamiliarMoveBoost`
@@ -8599,7 +8004,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalSpawnCharacter`
@@ -8617,7 +8021,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalSpawnOnRoundEnd`
@@ -8637,8 +8040,6 @@
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `InheritSpawnerStats`
@@ -8656,7 +8057,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LegacySpawnSavedCatIfExists`
@@ -8674,7 +8074,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MimicSpawnerAttacks`
@@ -8692,7 +8091,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MotherTumorSpawnInCapture`
@@ -8713,8 +8111,6 @@
 | [`Nothing`](./Miscellaneous.md#object-nothing) | Object  | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `MultiSpawnOnDeath`
@@ -8734,8 +8130,6 @@
 | [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 1 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
-
-
 ---
 
 ### `PopAndSpawn`
@@ -8757,8 +8151,6 @@
 | `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 1 | `false`<br>`true` |
 
 </details>
-
-
 ---
 
 ### `SharePickupsWithSpawner`
@@ -8776,7 +8168,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnBearTrap`
@@ -8794,7 +8185,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnBearTrapIfHitKills`
@@ -8812,7 +8202,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnCatCloneOnCorpsePopped`
@@ -8830,7 +8219,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnCatCopyWhenDowned`
@@ -8850,8 +8238,6 @@
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
-
-
 ---
 
 ### `SpawnCreep`
@@ -8869,7 +8255,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnCreepOnHitKnockback`
@@ -8887,7 +8272,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnCustomTrap`
@@ -8905,7 +8289,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnExtraThingsOnBattleStart`
@@ -8925,8 +8308,6 @@
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `SpawnFlames`
@@ -8944,7 +8325,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnItemLinkedFamiliar`
@@ -8964,8 +8344,6 @@
 | `break_on_pop_only` | Boolean | If true, the linked familiar spawn only breaks when the item is popped. | 2 | `true` |
 
 </details>
-
-
 ---
 
 ### `SpawnNearEnemies`
@@ -8983,7 +8361,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnNeutralWebTrapOnMiss`
@@ -9001,7 +8378,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnOnDeath`
@@ -9022,8 +8398,6 @@
 | [`additional_statuses`](./Miscellaneous.md#object-additional_statuses) | Object  | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `SpawnOnDowned`
@@ -9041,7 +8415,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnRandomPickupsOnTaggedUnitKilled`
@@ -9061,8 +8434,6 @@
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
 
 </details>
-
-
 ---
 
 ### `SpawnRock`
@@ -9080,7 +8451,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnThingIfHitKills`
@@ -9098,7 +8468,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnTilePuddleOnBattleStart`
@@ -9119,8 +8488,6 @@
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 
 </details>
-
-
 ---
 
 ### `SpawnVolcanoOnBattleStart`
@@ -9143,8 +8510,6 @@
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `SpawnWebTrap`
@@ -9162,7 +8527,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpawnerCatDataReference`
@@ -9180,7 +8544,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StatusAllCharactersOnSpawn`
@@ -9199,8 +8562,6 @@
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `StatusOnSpawnIn`
@@ -9220,8 +8581,6 @@
 | `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 1 | `1`<br>`100%`<br>`50%` |
 
 </details>
-
-
 ---
 
 ### `SyncFormsWithBuddy`
@@ -9240,8 +8599,6 @@
 | [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | Specifies an alternative form to use when there is no buddy. | 1 | `Rage` |
 
 </details>
-
-
 ---
 
 ### `T3HitlerSpawningPhase`
@@ -9260,8 +8617,6 @@
 | [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | List of spell use groups that the spawning phase can use. | 1 | `[` |
 
 </details>
-
-
 ---
 
 ### `T3HitlerTriggerInitialSpawns`
@@ -9279,7 +8634,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TakeWeaponFromSpawner`
@@ -9297,7 +8651,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TossTargetIsBuddy`
@@ -9315,7 +8668,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Loot, Rewards & Economy (34)
@@ -9335,7 +8687,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ArmorPickup`
@@ -9355,8 +8706,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `AwardCoinsOnDeath`
@@ -9374,7 +8723,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BirdRewards`
@@ -9394,8 +8742,6 @@
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `ChaosHeadDropIn`
@@ -9416,8 +8762,6 @@
 | [`new_music`](./Enums.md#enum-new_music) | Enum | Specifies the music track to play during the boss's head drop-in animation. | 1 | `chaos_boss_part2` |
 
 </details>
-
-
 ---
 
 ### `CoinPickup`
@@ -9435,7 +8779,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CoinTossBounce`
@@ -9453,7 +8796,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CollectsPickups`
@@ -9471,7 +8813,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CollectsPickupsWithAltEffects`
@@ -9495,8 +8836,6 @@
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
-
-
 ---
 
 ### `DemonicGlyphStealer`
@@ -9514,7 +8853,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleLoot`
@@ -9532,7 +8870,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DropSoulJarOnDeath`
@@ -9550,7 +8887,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FindItem`
@@ -9568,7 +8904,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ForceCollectsPickups`
@@ -9586,7 +8921,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GainCoins`
@@ -9604,7 +8938,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GainCoinsRange`
@@ -9624,8 +8957,6 @@
 | `min` | Integer | The minimum amount of coins that will be gained. | 4 | `0`<br>`1`<br>`10` |
 
 </details>
-
-
 ---
 
 ### `HealthPickup`
@@ -9648,8 +8979,6 @@
 | `force_frame` | Integer | Forces the health pickup to use a specific animation frame. | 1 | `12` |
 
 </details>
-
-
 ---
 
 ### `Lifesteal`
@@ -9667,7 +8996,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManaPickup`
@@ -9687,8 +9015,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `ManaSteal`
@@ -9706,7 +9032,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManaStealToHealth`
@@ -9724,7 +9049,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MegaDinoDropController`
@@ -9746,8 +9070,6 @@
 | `stable_legs` | Integer | The number of legs that must be stable for the head to drop. | 1 | `3` |
 
 </details>
-
-
 ---
 
 ### `ModularPickup`
@@ -9767,8 +9089,6 @@
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum | Specifies the sound event to play when the pickup is used. | 1 | `EatAntidote` |
 
 </details>
-
-
 ---
 
 ### `MultiplyCoinsOnBattleStart`
@@ -9786,7 +9106,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnGainCoins`
@@ -9804,7 +9123,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScatterCoins`
@@ -9824,8 +9142,6 @@
 | [`stacks`](./Math_Equations.md) | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `ScatterHeldCoin`
@@ -9843,7 +9159,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScatterRandomPickups`
@@ -9861,7 +9176,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StealDemonicGlyph`
@@ -9879,7 +9193,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StealEquipment`
@@ -9897,7 +9210,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StealTurn`
@@ -9915,7 +9227,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StealthCritChance`
@@ -9933,7 +9244,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StealthUntilBasicAttack`
@@ -9951,7 +9261,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `WhitelistPickupType`
@@ -9969,7 +9278,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Form Changes & Transformations (34)
@@ -10005,8 +9313,6 @@
 | `eyebrow2` | Integer | The catalog ID for the cat's second eyebrow part. | 1 | `1070` |
 
 </details>
-
-
 ---
 
 ### `ChanceToFormChangeOnAbilityDamage`
@@ -10026,8 +9332,6 @@
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
-
-
 ---
 
 ### `ChaosBossFormChange`
@@ -10045,7 +9349,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChaosBossFormChangeGuide`
@@ -10066,8 +9369,6 @@
 | `passives_health_threshold` | Integer | The health percentage threshold at which the boss's passive abilities change. | 1 | `50%` |
 
 </details>
-
-
 ---
 
 ### `DurabilityTransform`
@@ -10087,8 +9388,6 @@
 | [`ge`](./Arrays.md#array-ge) | Array | An array specifying a [durability, item] pair to transform to when durability is greater than or equal to a specific value. | 4 | `[10 NuclearKnife_Glowing]`<br>`[2 WaterBottle_Full]`<br>`[20 BlackShard_Glowing]` |
 
 </details>
-
-
 ---
 
 ### `FormChange`
@@ -10108,8 +9407,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `FormChangeDuringWeatherElement`
@@ -10129,8 +9426,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `FormChangeHealthThreshold`
@@ -10152,8 +9447,6 @@
 | `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `FormChangeOffMap`
@@ -10173,8 +9466,6 @@
 | [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | Specifies the form name to use when the unit returns to the map. | 8 | `Default`<br>`Default_Ground`<br>`FightPhase` |
 
 </details>
-
-
 ---
 
 ### `FormChangeOnElementInfluence`
@@ -10197,8 +9488,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `FormChangeWhenBuddyDies`
@@ -10216,7 +9505,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FormChangeWhileHasStatus`
@@ -10237,8 +9525,6 @@
 | [`form_has`](./Enums.md#enum-form_has) | Enum | Specifies a form that the unit must be in for the status-triggered form change to occur. | 25 | `BellyFull`<br>`CaveWomanHasCat`<br>`FireFull` |
 
 </details>
-
-
 ---
 
 ### `FormChangeWhilePrimingAbility`
@@ -10258,8 +9544,6 @@
 | [`priming`](./Enums.md#enum-priming) | Enum | Specifies the form name to use while the unit is priming an ability. | 6 | `DualSword_Primed`<br>`Priming`<br>`SwordAndShield_Primed` |
 
 </details>
-
-
 ---
 
 ### `FormChanger`
@@ -10435,8 +9719,6 @@
 | [`ZealotBomb`](./Miscellaneous.md#object-zealotbomb) | Object  | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `ItemAuxTransform`
@@ -10457,8 +9739,6 @@
 | [`lt`](./Arrays.md#array-lt) | Array | An array specifying a [aux value, item] pair to transform to when the aux value is strictly less than a specific value. | 1 | `[10 NuclearKnife]` |
 
 </details>
-
-
 ---
 
 ### `PreventDeathTransforms`
@@ -10476,7 +9756,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SupportFormChangeInsteadOfRun`
@@ -10496,8 +9775,6 @@
 | `wait_till_turn` | Boolean | If true, the form change will not occur until the unit's next turn. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `SwimmingFormChange`
@@ -10517,8 +9794,6 @@
 | [`form_out`](./Enums.md#enum-form_out) | Enum | Determines the form to change into when leaving water. | 1 | `Out` |
 
 </details>
-
-
 ---
 
 ### `TransformAbility`
@@ -10536,7 +9811,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TransformBasicAttack`
@@ -10554,7 +9828,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TransformBasicMove`
@@ -10572,7 +9845,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TransformEquipment`
@@ -10592,8 +9864,6 @@
 | [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 1 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
 </details>
-
-
 ---
 
 ### `TransformInXTurns`
@@ -10616,8 +9886,6 @@
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
-
-
 ---
 
 ### `TransformItemOnElementInfluence`
@@ -10638,8 +9906,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `TransformNow`
@@ -10657,7 +9923,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TransformOnDeath`
@@ -10675,7 +9940,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TransformOnDeathImmediately`
@@ -10695,8 +9959,6 @@
 | [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
-
-
 ---
 
 ### `TransformOnElementInfluence`
@@ -10716,8 +9978,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `TransformOnElementInfluencex`
@@ -10737,8 +9997,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `TransformOnStatusThreshold`
@@ -10759,8 +10017,6 @@
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
-
-
 ---
 
 ### `TransformWeapon`
@@ -10780,8 +10036,6 @@
 | [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 1 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
 </details>
-
-
 ---
 
 ### `TransformWhenBuddyDies`
@@ -10799,7 +10053,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TriggerWerewolfTransform`
@@ -10817,7 +10070,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `WeremanTransformationReceiver`
@@ -10835,7 +10087,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Boss & Special Mechanics (30)
@@ -10855,7 +10106,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlphaAllStatsUp`
@@ -10873,7 +10123,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlphaDodgeChance`
@@ -10891,7 +10140,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlphaStatusOnTurnBegin`
@@ -10910,8 +10158,6 @@
 | `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `BossRewards`
@@ -10931,8 +10177,6 @@
 | [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 | `1`<br>`10`<br>`15` |
 
 </details>
-
-
 ---
 
 ### `ChampionUpgradeNextMinion`
@@ -10950,7 +10194,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChaosBossFlipMidTeleport`
@@ -10968,7 +10211,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChaosBossPieces`
@@ -10988,8 +10230,6 @@
 | [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | An array of piece names that are considered passively part of the current form. | 1 | `[Host Nettle Bubs]` |
 
 </details>
-
-
 ---
 
 ### `ClearFinalBossBattlefield`
@@ -11007,7 +10247,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EliteFlatTint`
@@ -11025,7 +10264,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EliteParticle`
@@ -11043,7 +10281,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EliteTint`
@@ -11061,7 +10298,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EliteUpgradeNextMinion`
@@ -11079,7 +10315,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_PartyBoss`
@@ -11097,7 +10332,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FinalBossBeamQueue`
@@ -11118,8 +10352,6 @@
 | [`transform`](./Enums.md#enum-transform) | Enum | Specifies the ability queued to transform the boss into its next form. | 1 | `TheChild_TransformBoris` |
 
 </details>
-
-
 ---
 
 ### `FinalBossBecomeTheChild`
@@ -11140,8 +10372,6 @@
 | [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `FinalBossHitCountdownBoris`
@@ -11163,8 +10393,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `FinalBossHitCountdownExplosive`
@@ -11186,8 +10414,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `FinalBossHitCountdownHoly`
@@ -11208,8 +10434,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `FinalBossPupils`
@@ -11234,8 +10458,6 @@
 | [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | A 3D vector representing the virtual position of the head for pupil tracking. | 1 | `[11 2 11]` |
 
 </details>
-
-
 ---
 
 ### `FinalBossQueueBeam`
@@ -11253,7 +10475,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FinalBossShield`
@@ -11271,7 +10492,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FinalBossShieldHealth`
@@ -11291,8 +10511,6 @@
 | [`state_health`](./Arrays.md#array-state_health) | Array | An array of health thresholds defining state transitions. | 1 | `[` |
 
 </details>
-
-
 ---
 
 ### `FinalBossSyncAnimations`
@@ -11312,8 +10530,6 @@
 | [`other_form_change_abilities`](./Miscellaneous.md#object-other_form_change_abilities) | Object  | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `NukeQuestFinalBossModifications`
@@ -11334,8 +10550,6 @@
 | [`splash_damage`](./Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 68 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `ScaldingOrbMoonBossOneShot`
@@ -11355,8 +10569,6 @@
 | [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Specifies the item ID to remove from the source on kill. | 1 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` |
 
 </details>
-
-
 ---
 
 ### `SignalFinalBossShieldBroke`
@@ -11374,7 +10586,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpecialBossMultipartInstakill`
@@ -11392,7 +10603,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TutorialBossRiggedFight`
@@ -11410,7 +10620,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UpgradeTaggedSpawnsToChampions`
@@ -11428,7 +10637,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ## Uncategorized (406)
@@ -11450,8 +10658,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `AbilityDisableIfLivingCrow`
@@ -11469,7 +10675,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnableIfConsumedCharacterHasTag`
@@ -11487,7 +10692,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledIfBasicAttackUsedThisTurn`
@@ -11505,7 +10709,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledIfNoAggroTarget`
@@ -11523,7 +10726,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledIfSpecificItemEquipped`
@@ -11541,7 +10743,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledOncePerRound`
@@ -11559,7 +10760,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityEnabledPercentEachTurn`
@@ -11577,7 +10777,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AbilityInheritsWeaponEffects`
@@ -11595,7 +10794,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AcidRain`
@@ -11613,7 +10811,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Adrenaline`
@@ -11631,7 +10828,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AdvancedTint`
@@ -11649,7 +10845,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AdventureTokenPassivePool`
@@ -11679,8 +10874,6 @@
 | [`StacyMutant_Thorns`](./Miscellaneous.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `AggroTargetIsCurrentTurn`
@@ -11698,7 +10891,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AggroTargetIsGovernedByHitEffect`
@@ -11717,8 +10909,6 @@
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 1 | `false`<br>`true` |
 
 </details>
-
-
 ---
 
 ### `AlienBeastEyeStalks`
@@ -11736,7 +10926,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlliesTakeExtraTurn`
@@ -11754,7 +10943,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AllyInfested`
@@ -11774,8 +10962,6 @@
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
 
 </details>
-
-
 ---
 
 ### `AlternateIdleAnimation`
@@ -11793,7 +10979,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AlwaysHitDifferentTargets`
@@ -11811,7 +10996,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Ammo`
@@ -11829,7 +11013,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Angel`
@@ -11847,7 +11030,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ApplyPassives`
@@ -11874,8 +11056,6 @@
 | `Plant` | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `ApplyToConsumed`
@@ -11895,8 +11075,6 @@
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
 
 </details>
-
-
 ---
 
 ### `ApplyToOthersWithSharedTagAndFaction`
@@ -11915,8 +11093,6 @@
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
 
 </details>
-
-
 ---
 
 ### `ApplyToRandomClosestAlly`
@@ -11935,8 +11111,6 @@
 | `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `ApplyToRandomPartyMemberIfPossible`
@@ -11955,8 +11129,6 @@
 | [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 2 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
 
 </details>
-
-
 ---
 
 ### `ApplyToTile`
@@ -11976,8 +11148,6 @@
 | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 2 | `1` |
 
 </details>
-
-
 ---
 
 ### `ArcLightning`
@@ -12000,8 +11170,6 @@
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `Attraction`
@@ -12019,7 +11187,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `AvoidDamagingCharmedEnemies`
@@ -12037,7 +11204,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BackstabAllDirections`
@@ -12055,7 +11221,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BackstabFront`
@@ -12073,7 +11238,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BasicAttackCantMiss`
@@ -12091,7 +11255,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BearTrapTrail`
@@ -12109,7 +11272,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlackHolePassive`
@@ -12127,7 +11289,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlackHoleSuck`
@@ -12145,7 +11306,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BlessingOfPeace`
@@ -12163,7 +11323,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BloatEyePassive2`
@@ -12181,7 +11340,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BloodRain`
@@ -12199,7 +11357,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Bloodzerked`
@@ -12217,7 +11374,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BodyGuard`
@@ -12237,8 +11393,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `BombBehavior`
@@ -12256,7 +11410,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BombRatTurtle`
@@ -12274,7 +11427,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BoneArmorPassive`
@@ -12292,7 +11444,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BounceRock`
@@ -12310,7 +11461,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Bound`
@@ -12328,7 +11478,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BreakAtAux`
@@ -12346,7 +11495,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BreakIntoRocks`
@@ -12364,7 +11512,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BreakOnElement`
@@ -12382,7 +11529,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Brittle`
@@ -12400,7 +11546,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `BungaCheers`
@@ -12423,8 +11568,6 @@
 | [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 1 | `bungawarrior`<br>`finalboss_clonecat` |
 
 </details>
-
-
 ---
 
 ### `BungaEntrance`
@@ -12446,8 +11589,6 @@
 | [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 2 | `bungawarrior`<br>`finalboss_clonecat` |
 
 </details>
-
-
 ---
 
 ### `ButterflySwarm`
@@ -12465,7 +11606,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CanApplyToInanimate`
@@ -12490,8 +11630,6 @@
 | [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `CanMutateTo`
@@ -12509,7 +11647,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CancelPrimedAbilities`
@@ -12527,7 +11664,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CanceledQueuedInput`
@@ -12545,7 +11681,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CantCatchDiseases`
@@ -12563,7 +11698,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CatchBoomerang`
@@ -12581,7 +11715,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CaveFamilyEnrage`
@@ -12602,8 +11735,6 @@
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
 
 </details>
-
-
 ---
 
 ### `CaveWomanBirthControl`
@@ -12621,7 +11752,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CerberubsAggroTargetBehavior`
@@ -12641,8 +11771,6 @@
 | [`default_form`](./Enums.md#enum-default_form) | Enum | Specifies the default form before aggro. | 1 | `Normal` |
 
 </details>
-
-
 ---
 
 ### `ChanceToAmbush`
@@ -12660,7 +11788,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChanceToBreakFree`
@@ -12681,8 +11808,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `ChanceToDisableActionsIfNotCharmed`
@@ -12700,7 +11825,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChangeCatClass`
@@ -12718,7 +11842,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChangeFaction`
@@ -12736,7 +11859,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChangeTileOnPop`
@@ -12754,7 +11876,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChangeTileUnderCharacterAtStart`
@@ -12772,7 +11893,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ChangeTilesUnder`
@@ -12790,7 +11910,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CharacterLightSource`
@@ -12811,8 +11930,6 @@
 | [`size`](./Enums.md#enum-size) | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 3 | `.2`<br>`.5`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `ClearDefaultDebris`
@@ -12830,7 +11947,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ClearStarving`
@@ -12848,7 +11964,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CloneWeaponTemp`
@@ -12866,7 +11981,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CockroachSwarm`
@@ -12884,7 +11998,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CollideWithConsumed`
@@ -12902,7 +12015,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CollideWithThrowTarget`
@@ -12920,7 +12032,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CompleteItemQuest`
@@ -12938,7 +12049,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ConjureRandomAbilityFromCat`
@@ -12956,7 +12066,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Consumed`
@@ -12986,8 +12095,6 @@
 | `use_placeholder` | Boolean | If true, renders the ability using a temporary placeholder animation instead of the final art. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `CopyBasicAttackEffects`
@@ -13005,7 +12112,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CopyCatPassive_Initializer`
@@ -13023,7 +12129,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CopyPassiveSlot`
@@ -13041,7 +12146,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CopySpells`
@@ -13061,8 +12165,6 @@
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `CorpseVaporizer`
@@ -13080,7 +12182,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CountAsCorpse`
@@ -13098,7 +12199,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CreateGlobalModifiers`
@@ -13118,8 +12218,6 @@
 | [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `CrowAttackLink`
@@ -13137,7 +12235,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `CyborgTurns`
@@ -13157,8 +12254,6 @@
 | [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `DeadAltAbility`
@@ -13176,7 +12271,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DeathwormUnderground`
@@ -13194,7 +12288,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DecoySwapper`
@@ -13212,7 +12305,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DeferVaporize`
@@ -13230,7 +12322,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DelayCastAbility`
@@ -13251,8 +12342,6 @@
 | `relative` | Boolean | If true, the delay is calculated relative to the current turn count rather than as an absolute time. | 1 | `false` |
 
 </details>
-
-
 ---
 
 ### `DeleteInanimateObjectsChance`
@@ -13270,7 +12359,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DeleteObject`
@@ -13288,7 +12376,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DeleteTraps`
@@ -13306,7 +12393,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DemonicGlyphFrames`
@@ -13324,7 +12410,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DemonicGlyph_Bite`
@@ -13342,7 +12427,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DemonicGlyph_Bounce`
@@ -13360,7 +12444,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DemonicGlyph_Fire`
@@ -13378,7 +12461,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DestroyEquipmentAndAttachParasite`
@@ -13398,8 +12480,6 @@
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `DestroyNeckArmor`
@@ -13417,7 +12497,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DestroyTrinket`
@@ -13435,7 +12514,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DestroyWeapon`
@@ -13453,7 +12531,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DestroyWeaponThrow`
@@ -13471,7 +12548,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DiceBehavior`
@@ -13491,8 +12567,6 @@
 | `knockback_damage` | Integer | The amount of damage dealt by the knockback. | 1 | `5` |
 
 </details>
-
-
 ---
 
 ### `DicerArt`
@@ -13510,7 +12584,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Die`
@@ -13530,8 +12603,6 @@
 | [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 62 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `DieViaAbilityInternally`
@@ -13549,7 +12620,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DieViolently`
@@ -13567,7 +12637,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DiesToElement`
@@ -13587,8 +12656,6 @@
 | `instant` | Boolean | If true, the consumption happens immediately without a timer. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `DiesToPiercingAndSpikes`
@@ -13607,8 +12674,6 @@
 | `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `DigestDeadBodies`
@@ -13626,7 +12691,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DinoLegAnimation`
@@ -13644,7 +12708,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisablePassiveSlot`
@@ -13662,7 +12725,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisableSpells`
@@ -13680,7 +12742,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisableWeapon`
@@ -13698,7 +12759,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Disguised`
@@ -13716,7 +12776,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DisguisedTrapper`
@@ -13734,7 +12793,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DissolveRandomArmorPiece`
@@ -13752,7 +12810,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DissuadeInstakills`
@@ -13770,7 +12827,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoScreenShake`
@@ -13790,8 +12846,6 @@
 | `time` | Variable | The duration in seconds of the screen shake effect. | 10 | `.5`<br>`.75`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `DoubleCast`
@@ -13809,7 +12863,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DoubleCastTaggedSpells`
@@ -13827,7 +12880,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DrainAllyCatsForFleshGolem`
@@ -13845,7 +12897,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DrinkWater`
@@ -13863,7 +12914,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Drowsy`
@@ -13881,7 +12931,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DustCloudBehavior`
@@ -13899,7 +12948,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Dybbuk1HPTracker`
@@ -13917,7 +12965,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `DybbukPossessed`
@@ -13937,8 +12984,6 @@
 | [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum | Determines the ability used for the possessed unit to attack itself. | 1 | `Dybbuk_StopHittingYourself` |
 
 </details>
-
-
 ---
 
 ### `ElectricArcs`
@@ -13956,7 +13001,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ElementWeakness`
@@ -13974,7 +13018,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EmptyMind`
@@ -13992,7 +13035,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EnableWeather`
@@ -14010,7 +13052,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EndTurn`
@@ -14028,7 +13069,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Enlarge`
@@ -14046,7 +13086,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EnterMount`
@@ -14064,7 +13103,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EventBounterHunterPassive`
@@ -14082,7 +13120,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EventBounty`
@@ -14100,7 +13137,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `EvolveAbilityFromPool`
@@ -14120,8 +13156,6 @@
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `ExcludeFromEvents`
@@ -14139,7 +13173,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter`
@@ -14157,7 +13190,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_DeathBloom`
@@ -14175,7 +13207,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_DeathBloom2`
@@ -14193,7 +13224,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_NoDie`
@@ -14211,7 +13241,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_Party`
@@ -14229,7 +13258,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_RockCrusher`
@@ -14247,7 +13275,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplodeCharacter_RockCrusher_PetrifyBreak`
@@ -14265,7 +13292,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExplosionIfHitSomething`
@@ -14283,7 +13309,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExtraDispersedTurns`
@@ -14301,7 +13326,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ExtraTurnsPerTaggedUnit`
@@ -14319,7 +13343,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FaceCamera`
@@ -14337,7 +13360,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FactionDisguiseSource`
@@ -14355,7 +13377,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FadeInsteadOfDie`
@@ -14373,7 +13394,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FireArmor2`
@@ -14391,7 +13411,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FireStorm`
@@ -14409,7 +13428,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FireflySwarm`
@@ -14427,7 +13445,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Flammable`
@@ -14445,7 +13462,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FloatingRockTrap`
@@ -14463,7 +13479,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FlushmasterCelebration`
@@ -14481,7 +13496,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FlySwarm`
@@ -14499,7 +13513,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Fog`
@@ -14517,7 +13530,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Fragile`
@@ -14535,7 +13547,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FrankBolts`
@@ -14553,7 +13564,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FreeFirstCast`
@@ -14571,7 +13581,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `FreeFirstCastEachMatch`
@@ -14589,7 +13598,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GainDisorder`
@@ -14607,7 +13615,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GainDisorderFromPool`
@@ -14627,8 +13634,6 @@
 | [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `GainDisorderFromPool_PostCast`
@@ -14646,7 +13651,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GasCanBehavior`
@@ -14664,7 +13668,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GasCloudBehavior2`
@@ -14682,7 +13685,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GeminiTwin`
@@ -14700,7 +13702,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GenericBuff`
@@ -14718,7 +13719,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GenericDebuff`
@@ -14736,7 +13736,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GetAggroTarget`
@@ -14754,7 +13753,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GiveBoundItemToTarget`
@@ -14772,7 +13770,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GlobalEnemyAutoRevive`
@@ -14790,7 +13787,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GoopWalk`
@@ -14808,7 +13804,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Grappled`
@@ -14826,7 +13821,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Grappling`
@@ -14846,8 +13840,6 @@
 | [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `GroundFlopper`
@@ -14865,7 +13857,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `GuillotinaDeathHead`
@@ -14883,7 +13874,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HarpoonTrapPassive`
@@ -14901,7 +13891,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HeatWave`
@@ -14919,7 +13908,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HeavyHits`
@@ -14937,7 +13925,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Hex`
@@ -14955,7 +13942,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HiddenDoomed`
@@ -14973,7 +13959,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HideEquipment`
@@ -14991,7 +13976,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HideSomeHudStuff`
@@ -15009,7 +13993,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `HitlerExecute`
@@ -15030,8 +14013,6 @@
 | [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
-
-
 ---
 
 ### `IgnoreDebuffs`
@@ -15049,7 +14030,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `IgnoreSelf`
@@ -15067,7 +14047,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `IllusionTint`
@@ -15085,7 +14064,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ImmediateUseAbility`
@@ -15105,8 +14083,6 @@
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `ImmediateUseAbility_Instant`
@@ -15124,7 +14100,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ImmediateUseDirectionalAbility`
@@ -15142,7 +14117,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ImmobilePassive`
@@ -15160,7 +14134,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Imprison`
@@ -15178,7 +14151,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `InsertIntoBackgroundPlaceholder`
@@ -15196,7 +14168,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Instakill`
@@ -15214,7 +14185,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `InterchangeDisabler`
@@ -15232,7 +14202,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JohnnyCriesForWashers`
@@ -15250,7 +14219,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JohnnyNeedsWashing`
@@ -15270,8 +14238,6 @@
 | [`form_washed`](./Enums.md#enum-form_washed) | Enum | Specifies the form name for the washed state. | 1 | `Washed` |
 
 </details>
-
-
 ---
 
 ### `JohnnyWasher`
@@ -15289,7 +14255,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JudgementDay`
@@ -15307,7 +14272,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `JumpAttackLeaveBehind`
@@ -15325,7 +14289,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KaijuWinCon`
@@ -15343,7 +14306,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `KillEnemyOfTypeAtBattleStart`
@@ -15363,8 +14325,6 @@
 | [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | An array of enemy names to spawn as a fallback if no matching enemy type is present. | 1 | `[TomTom Kitten CatCaller Mangy]` |
 
 </details>
-
-
 ---
 
 ### `KnockOutClone`
@@ -15382,7 +14342,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LaunchOffScreen`
@@ -15400,7 +14359,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LaunchOffScreenInstakill`
@@ -15418,7 +14376,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LeaveBehind`
@@ -15437,8 +14394,6 @@
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
-
-
 ---
 
 ### `LockOrientationFaceTile`
@@ -15456,7 +14411,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LoopingSoundWhileAlive`
@@ -15474,7 +14428,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `LowerAmbientLight`
@@ -15494,8 +14447,6 @@
 | [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
-
-
 ---
 
 ### `MakeBasicAttackPull`
@@ -15513,7 +14464,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MakeWeaponUnbreakable`
@@ -15531,7 +14481,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MamaCatAnimations`
@@ -15549,7 +14498,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManglerAttack`
@@ -15567,7 +14515,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManglerMonsterPassive`
@@ -15585,7 +14532,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ManglerShuffle`
@@ -15603,7 +14549,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MassAttackThis`
@@ -15621,7 +14566,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Math`
@@ -15642,8 +14586,6 @@
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `Meaty`
@@ -15661,7 +14603,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MeteorShower`
@@ -15679,7 +14620,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Meteornado`
@@ -15697,7 +14637,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Metronome`
@@ -15717,8 +14656,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `MimicMetronome`
@@ -15736,7 +14673,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ModelingClayPassive`
@@ -15754,7 +14690,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ModifyAbility`
@@ -15774,8 +14709,6 @@
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3702 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `MonkStanceSwitch`
@@ -15793,7 +14726,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MonkStances`
@@ -15811,7 +14743,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MotherGrowController`
@@ -15831,8 +14762,6 @@
 | [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Specifies the name of the tumor object to spawn. | 1 | `MotherTumor` |
 
 </details>
-
-
 ---
 
 ### `MotherTumorPassive`
@@ -15856,8 +14785,6 @@
 | [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | Specifies the animation played when receiving something from the tumor. | 1 | `receive` |
 
 </details>
-
-
 ---
 
 ### `Mount`
@@ -15877,8 +14804,6 @@
 | [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | Specifies the ability used to enter the mount. | 1 | `EnterMech` |
 
 </details>
-
-
 ---
 
 ### `MutateViaAbility`
@@ -15896,7 +14821,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `MuteDemonicGlyphDisplay`
@@ -15914,7 +14838,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Muted`
@@ -15932,7 +14855,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NextPlayerCatTakesExtraTurn`
@@ -15950,7 +14872,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `NoCorpses`
@@ -15968,7 +14889,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ObjectDetector`
@@ -15988,8 +14908,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `Ostracized`
@@ -16007,7 +14925,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PackHunting`
@@ -16025,7 +14942,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PartialPurge`
@@ -16043,7 +14959,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PassiveIfStrAuxEquals`
@@ -16063,8 +14978,6 @@
 | [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
 
 </details>
-
-
 ---
 
 ### `PassiveIfWeaponIsUsable`
@@ -16083,8 +14996,6 @@
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `PassiveWhileHasDurability`
@@ -16103,8 +15014,6 @@
 | [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 2 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `PassiveWhileNotTakingTurn`
@@ -16123,8 +15032,6 @@
 | [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 178 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `PermanentCharisma`
@@ -16142,7 +15049,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PermanentConfusion`
@@ -16160,7 +15066,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PermanentLuck`
@@ -16178,7 +15083,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PersistentElement`
@@ -16196,7 +15100,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PhysicalAttacksMiss`
@@ -16214,7 +15117,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Plant`
@@ -16232,7 +15134,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PlayBackground`
@@ -16250,7 +15151,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PoisonLace`
@@ -16268,7 +15168,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PoolMetronome`
@@ -16287,8 +15186,6 @@
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `Possessed`
@@ -16306,7 +15203,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PreventSpecificInjury`
@@ -16324,7 +15220,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PrioritizeAggroTarget`
@@ -16342,7 +15237,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PrioritizeFarAwayTargets`
@@ -16360,7 +15254,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PrioritizeHitDifferentTargets`
@@ -16378,7 +15271,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PrioritizePlayerCats`
@@ -16396,7 +15288,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PrioritizeWeakestEnemy`
@@ -16414,7 +15305,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ProbeCharmed`
@@ -16432,7 +15322,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PullSourceToTarget`
@@ -16450,7 +15339,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `PurgeAll`
@@ -16468,7 +15356,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `QuakeAreaChance`
@@ -16488,8 +15375,6 @@
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
-
-
 ---
 
 ### `QueueUseAbility`
@@ -16507,7 +15392,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomLightning`
@@ -16525,7 +15409,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomTaggedMutation`
@@ -16543,7 +15426,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomWeatherEachFight`
@@ -16561,7 +15443,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RandomizeAIWeightsEachTurn`
@@ -16579,7 +15460,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RealTimePressure`
@@ -16597,7 +15477,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReclaimItemOnBreak`
@@ -16615,7 +15494,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReflectProjectiles`
@@ -16634,8 +15512,6 @@
 | [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 
 </details>
-
-
 ---
 
 ### `RefreshEquipmentAbilityOnElement`
@@ -16655,8 +15531,6 @@
 | [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
-
-
 ---
 
 ### `RefreshItemAbilities`
@@ -16674,7 +15548,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RefreshOncePerFightAbilities`
@@ -16692,7 +15565,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RefreshWeaponAbility`
@@ -16710,7 +15582,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Regurge`
@@ -16728,7 +15599,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnAllyCatDies`
@@ -16746,7 +15616,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnAllyDies`
@@ -16764,7 +15633,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReloadOnBackstab`
@@ -16782,7 +15650,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RepairAll`
@@ -16800,7 +15667,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RepairAllCondition`
@@ -16818,7 +15684,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RepairArmorCondition`
@@ -16836,7 +15701,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RepairTrinket`
@@ -16854,7 +15718,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReplaceBasicAttack_Mutation`
@@ -16872,7 +15735,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReplaceSpell`
@@ -16892,8 +15754,6 @@
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `RerollEnemy`
@@ -16911,7 +15771,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReturnDinoLegs`
@@ -16929,7 +15788,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ReviveNextRound`
@@ -16952,8 +15810,6 @@
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `RockyArmorPassive`
@@ -16971,7 +15827,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `RockyArmorSalvage`
@@ -16989,7 +15844,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SafeDie`
@@ -17007,7 +15861,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Sandstorm`
@@ -17025,7 +15878,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScalingAttackAnimation`
@@ -17045,8 +15897,6 @@
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
-
-
 ---
 
 ### `SchizoIllusionAIModifier`
@@ -17064,7 +15914,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScrambleEverything`
@@ -17082,7 +15931,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ScrambleLastUsedSpell`
@@ -17101,8 +15949,6 @@
 | `permanent` | Boolean | If true, the scrambled spell selection persists permanently rather than resetting after use. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `Scrambled`
@@ -17120,7 +15966,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SelfStun`
@@ -17138,7 +15983,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SendRock`
@@ -17156,7 +16000,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SerratedClaws`
@@ -17174,7 +16017,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetAnimationAlts`
@@ -17194,8 +16036,6 @@
 | [`dying`](./Enums.md#enum-dying) | Enum | Determines the animation set used when the unit is in a dying state. | 1 | `shot` |
 
 </details>
-
-
 ---
 
 ### `SetCrazyEyeBackgroundWeights`
@@ -17214,8 +16054,6 @@
 | [`weights`](./Arrays.md#array-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 3 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
-
-
 ---
 
 ### `SetFaction`
@@ -17233,7 +16071,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SetItemAux`
@@ -17253,8 +16090,6 @@
 | [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `SharkySmellsBlood`
@@ -17272,7 +16107,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Shatter`
@@ -17290,7 +16124,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShootHereCommand`
@@ -17308,7 +16141,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShootHereReceiver`
@@ -17326,7 +16158,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShortCircuit`
@@ -17344,7 +16175,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `ShowText`
@@ -17362,7 +16192,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SkipFirstRounds`
@@ -17382,8 +16211,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `SlotMachineRollPool`
@@ -17405,8 +16232,6 @@
 | [`SlotResult_RandomPickup`](./Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object  | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
 
 </details>
-
-
 ---
 
 ### `SmallHitExplosion`
@@ -17424,7 +16249,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SmartMetronome`
@@ -17444,8 +16268,6 @@
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `SmellBlood`
@@ -17463,7 +16285,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Snow`
@@ -17486,8 +16307,6 @@
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
-
-
 ---
 
 ### `SolarFlare`
@@ -17508,8 +16327,6 @@
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
 
 </details>
-
-
 ---
 
 ### `SourceSwapsBackEndOfTurn`
@@ -17527,7 +16344,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpecialGodRays`
@@ -17546,8 +16362,6 @@
 | [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `SpecificInjury`
@@ -17565,7 +16379,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpewerAltGraphics`
@@ -17589,8 +16402,6 @@
 | [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `SpiderInfested`
@@ -17608,7 +16419,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpitConsumed`
@@ -17626,7 +16436,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SpreadWater`
@@ -17644,7 +16453,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StackingFlowerTrail`
@@ -17664,8 +16472,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `StackingSandstorm`
@@ -17683,7 +16489,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StanceSwitchToMelee`
@@ -17701,7 +16506,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StartDead`
@@ -17719,7 +16523,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StartOffMap`
@@ -17737,7 +16540,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `StevenBolts`
@@ -17755,7 +16557,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SurviveAt1HP`
@@ -17773,7 +16574,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SwallowSmallCharacter`
@@ -17791,7 +16591,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `SwapWeapon`
@@ -17810,8 +16609,6 @@
 | [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
-
-
 ---
 
 ### `SwitchMusic`
@@ -17832,8 +16629,6 @@
 | `crossfade_speed` | Integer | The duration in seconds for the crossfade transition between music tracks. | 1 | `1` |
 
 </details>
-
-
 ---
 
 ### `Switcheroo`
@@ -17851,7 +16646,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `T2CopyCat`
@@ -17869,7 +16663,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TVBotDisableAttack`
@@ -17887,7 +16680,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TVBotDisableSpells`
@@ -17905,7 +16697,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TVBotScreen`
@@ -17929,8 +16720,6 @@
 | [`Stop`](./Miscellaneous.md#object-stop) | Integer / Object  | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `TagGreed`
@@ -17948,7 +16737,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TagMetronome`
@@ -17966,7 +16754,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TakeExtraTurnEndOfRound`
@@ -17984,7 +16771,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Tall`
@@ -18002,7 +16788,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Tangled`
@@ -18022,8 +16807,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `TargetedMetronome`
@@ -18041,7 +16824,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Taunting`
@@ -18059,7 +16841,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TeamCastAbility`
@@ -18078,8 +16859,6 @@
 | `same_orientation` | Boolean | If true, the team cast ability only triggers if the caster and target face the same direction. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `TeleportBackAtTurnEnd`
@@ -18097,7 +16876,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBackstab`
@@ -18115,7 +16893,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBackstabBleed`
@@ -18133,7 +16910,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBackstabPiercing`
@@ -18151,7 +16927,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempBackstabPoison`
@@ -18169,7 +16944,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TempPassiveUntilSettled`
@@ -18188,8 +16962,6 @@
 | [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 | `{ . . . }` |
 
 </details>
-
-
 ---
 
 ### `TempPenetrate`
@@ -18207,7 +16979,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TerminatorSkin`
@@ -18227,8 +16998,6 @@
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
-
-
 ---
 
 ### `TileTrail_Ahead`
@@ -18246,7 +17015,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TinkererBasicAttackSwitching`
@@ -18266,8 +17034,6 @@
 | [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 1 | `TinkererThrow` |
 
 </details>
-
-
 ---
 
 ### `TintItem`
@@ -18288,8 +17054,6 @@
 | [`mul`](./Arrays.md#array-mul) | Array | An array of three floats (RGB) used to multiply the item's tint color. | 1 | `[0.45 0.3 0.25]` |
 
 </details>
-
-
 ---
 
 ### `TireBehavior`
@@ -18307,7 +17071,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TossTargetIsAggroTarget`
@@ -18325,7 +17088,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TossTargetIsNotInWater`
@@ -18343,7 +17105,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TrackAmountKilledByPlayer`
@@ -18361,7 +17122,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TradeLife`
@@ -18379,7 +17139,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TrailBlazer`
@@ -18397,7 +17156,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Trapper`
@@ -18419,8 +17177,6 @@
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
-
-
 ---
 
 ### `TrueShot`
@@ -18438,7 +17194,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TunnelVision`
@@ -18457,8 +17212,6 @@
 | [`crit_chance`](./Enums.md#enum-crit_chance) | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
-
-
 ---
 
 ### `TurnAround`
@@ -18476,7 +17229,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TurnControlDelay`
@@ -18494,7 +17246,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `TurnRight`
@@ -18512,7 +17263,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Uncontrollable`
@@ -18530,7 +17280,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Undead`
@@ -18548,7 +17297,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UnlockOrientation`
@@ -18566,7 +17314,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `UseAbility`
@@ -18584,8 +17331,6 @@
 | `respect_prime` | Boolean | If true, the ability will only be used if the unit is primed for it. | 1 | `true` |
 
 </details>
-
-
 ---
 
 ### `UseAbility_NonStack`
@@ -18603,7 +17348,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Vaporize`
@@ -18621,7 +17365,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VaporizeCorpse`
@@ -18639,7 +17382,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VaporizeCorpseFlipAdvantage`
@@ -18657,7 +17399,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VaporizeDice`
@@ -18675,7 +17416,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VaporizeInanimate`
@@ -18693,7 +17433,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VaporizeTarget`
@@ -18711,7 +17450,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VisualFX`
@@ -18729,7 +17467,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `VisualFlySwarm`
@@ -18747,7 +17484,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `WaggleClone`
@@ -18769,8 +17505,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `Wall`
@@ -18788,7 +17522,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Webbed`
@@ -18806,7 +17539,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Wet`
@@ -18824,7 +17556,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `WideBackstab`
@@ -18842,7 +17573,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Windy`
@@ -18865,8 +17595,6 @@
 | [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
-
-
 ---
 
 ### `XIsConsumedCharacterMaxHP`
@@ -18884,7 +17612,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsCountDeaths`
@@ -18902,7 +17629,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsFreeArmorSlots`
@@ -18920,7 +17646,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsIncreaseEachTurn`
@@ -18938,7 +17663,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsLivingAlliesWithTag`
@@ -18956,7 +17680,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsLivingCharactersWithTag`
@@ -18974,7 +17697,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsRampAndReset`
@@ -18992,7 +17714,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `XIsSpellStormRampAndReset`
@@ -19012,8 +17733,6 @@
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
-
-
 ---
 
 ### `YOffset`
@@ -19031,7 +17750,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 ### `Zombie`
@@ -19049,7 +17767,6 @@
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
 </details>
-
 ---
 
 
@@ -19069,7 +17786,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `cWaggle2x2`
 
 <details>
@@ -19081,7 +17797,6 @@
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `cWaggle3x3`
 
 <details>

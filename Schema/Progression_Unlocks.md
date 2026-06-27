@@ -136,7 +136,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`main_pool`](./Arrays.md#array-main_pool) | Array || 1 | `[` |
 
 </details>
-
 ---
 
 ### Object: `popup`
@@ -158,7 +157,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`frame`](./Enums.md#enum-frame) | Integer | The sprite frame index to display. | 159 | `1`<br>`10`<br>`100` |
 
 </details>
-
 ---
 
 ### Object: `tracy_special_item`
@@ -179,7 +177,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 22 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quests_intro`
@@ -201,7 +198,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `beanies_quests_repeat`
@@ -225,7 +221,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `frank_max_intro`
@@ -248,7 +243,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `frank_max_repeating`
@@ -272,7 +266,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_4throom`
@@ -294,7 +287,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_attic`
@@ -316,7 +308,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_largehouse`
@@ -338,7 +329,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `house_upgrade_mediumhouse`
@@ -360,7 +350,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `jack_max_intro`
@@ -383,7 +372,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `jack_max_repeating`
@@ -407,7 +395,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade1`
@@ -429,7 +416,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade2`
@@ -451,7 +437,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade3`
@@ -473,7 +458,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `jack_shopupgrade4`
@@ -495,7 +479,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_max_intro`
@@ -518,7 +501,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `organ_max_repeating`
@@ -542,7 +524,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `organ_unlock`
@@ -564,7 +545,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade1`
@@ -586,7 +566,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade2`
@@ -608,7 +587,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade3`
@@ -630,7 +608,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade4`
@@ -652,7 +629,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade5`
@@ -674,7 +650,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `organ_upgrade6`
@@ -696,7 +671,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `shop_level_up` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `steven_milliontrashed`
@@ -718,7 +692,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`repeat`](./Enums.md#enum-repeat) | Enum || 1 | `1`<br>`2`<br>`20` |
 
 </details>
-
 ---
 
 ### Object: `tink_aggression`
@@ -740,7 +713,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tink_basestats`
@@ -762,7 +734,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tink_inbreeding`
@@ -784,7 +755,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tink_max_intro`
@@ -807,7 +777,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `tink_max_repeating`
@@ -831,7 +800,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `tink_prettybow`
@@ -853,7 +821,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `tink_relationships`
@@ -875,7 +842,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tink_sexuality`
@@ -897,7 +863,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tink_tags`
@@ -919,7 +884,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | String || 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar1`
@@ -943,7 +907,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar2`
@@ -967,7 +930,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_blankcollar3`
@@ -991,7 +953,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage1`
@@ -1015,7 +976,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage10`
@@ -1039,7 +999,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage2`
@@ -1063,7 +1022,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage3`
@@ -1087,7 +1045,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage4`
@@ -1111,7 +1068,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage5`
@@ -1135,7 +1091,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage6`
@@ -1159,7 +1114,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage7`
@@ -1183,7 +1137,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage8`
@@ -1207,7 +1160,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_foodstorage9`
@@ -1231,7 +1183,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol1`
@@ -1255,7 +1206,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol2`
@@ -1279,7 +1229,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol3`
@@ -1303,7 +1252,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol4`
@@ -1327,7 +1275,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol5`
@@ -1351,7 +1298,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol6`
@@ -1375,7 +1321,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_idol7`
@@ -1399,7 +1344,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max_intro`
@@ -1423,7 +1367,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `tracy_max_repeating`
@@ -1448,7 +1391,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_1`
@@ -1472,7 +1414,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_2`
@@ -1496,7 +1437,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_3`
@@ -1520,7 +1460,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_4`
@@ -1544,7 +1483,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_5`
@@ -1568,7 +1506,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_6`
@@ -1592,7 +1529,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_7`
@@ -1616,7 +1552,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `storage_expansion` | Integer || 1 | `1` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_crazy`
@@ -1643,7 +1578,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_hard`
@@ -1670,7 +1604,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_impossible`
@@ -1697,7 +1630,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_intro`
@@ -1723,7 +1655,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 ### Object: `upgrade_storage_repeating_normal`
@@ -1750,7 +1681,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
-
 ---
 
 
@@ -1779,7 +1709,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `theend` | Integer || 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
 
 </details>
-
 ---
 
 ### Object: `prereqs`
@@ -1804,5 +1733,4 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`theend`](./Enums.md#enum-theend) | Enum || 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
 
 </details>
-
 ---

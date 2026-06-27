@@ -66,8 +66,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `template_trample_dash` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animation`
@@ -486,9 +484,8 @@ This document provides exhaustive lists of all enum and string values found in t
 | `StartTurn` | |
 | `Victory` | |
 | `bite2` | |
+
 </details>
-
-
 ---
 
 ### Enum: `class`
@@ -547,9 +544,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette), [`ConjureBonusAbility`](#enum-conjurebonusability), [`LevelUpClassOverride`](#enum-levelupclassoverride).
+
 </details>
-
-
 ---
 
 ### Enum: `variant_of`
@@ -1520,9 +1516,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`unlock_ability`](#enum-unlock_ability), [`TransformAbility`](#enum-transformability), [`DeadAltAbility`](#enum-deadaltability), [`SpawnOnDowned`](#enum-spawnondowned), [`ability_icon`](#enum-ability_icon), [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`learn_ability`](#enum-learn_ability), [`BreakIntoRocks`](#enum-breakintorocks), [`GroundFlopper`](#enum-groundflopper), [`TeamCastAbility`](#enum-teamcastability), [`trap`](#enum-trap), [`SpawnCustomTrap`](#enum-spawncustomtrap), [`MoveAwayFromDamageSource`](#enum-moveawayfromdamagesource).
+
 </details>
-
-
 ---
 
 ### Enum: `kind`
@@ -1547,9 +1542,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`slot`](#enum-slot) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`restrict`](#enum-restrict).
+
 </details>
-
-
 ---
 
 ### Enum: `rarity`
@@ -1575,8 +1569,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `consumable_very_rare` | |
 
 </details>
-
-
 ---
 
 ### Enum: `object`
@@ -2288,9 +2280,8 @@ This document provides exhaustive lists of all enum and string values found in t
 | `small_trash_cans` | |
 | `x` | |
 | `contextual` | |
+
 </details>
-
-
 ---
 
 ### Enum: `set`
@@ -2427,9 +2418,8 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Ancestor` | |
 | `Dino` | |
 | `Phoenix` | |
+
 </details>
-
-
 ---
 
 ### Enum: `tag`
@@ -2514,9 +2504,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 > **Also Used In:** These values are also referenced by [`target_requires_tag`](#enum-target_requires_tag), [`AddTag`](#enum-addtag), [`AddHiddenTag`](#enum-addhiddentag), [`TagGreed`](#enum-taggreed), [`tag_filter`](#enum-tag_filter), [`FactionUprising`](#enum-factionuprising), [`HolyShieldTransferToTaggedMinions`](#enum-holyshieldtransfertotaggedminions), [`RandomTaggedMutation`](#enum-randomtaggedmutation), [`UpgradeTaggedSpawnsToChampions`](#enum-upgradetaggedspawnstochampions), [`enemy_type`](#enum-enemy_type).
 | `noncopyable` | |
+
 </details>
-
-
 ---
 
 ### Enum: `type`
@@ -2569,9 +2558,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`type_icon`](#enum-type_icon), [`new_layer`](#enum-new_layer).
+
 </details>
-
-
 ---
 
 ### Enum: `name`
@@ -3348,8 +3336,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FURNITURE_NAME_WALLMOUNTED_WOODEN_CLOCK` | |
 
 </details>
-
-
 ---
 
 ### Enum: `desc`
@@ -4067,8 +4053,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MUTATION_EYEBROWS_900_DESC` | |
 
 </details>
-
-
 ---
 
 ### Enum: `movieclip`
@@ -4948,8 +4932,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZombieCatFamiliar` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ability`
@@ -5472,9 +5454,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ConjureBonusAbility`](#enum-conjurebonusability), [`DisplayDangerAOE`](#enum-displaydangeraoe), [`AllyMoveAbilityAura`](#enum-allymoveabilityaura).
+
 </details>
-
-
 ---
 
 ### Enum: `brain`
@@ -5496,8 +5477,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MountBrain` | |
 
 </details>
-
-
 ---
 
 ### Enum: `faction`
@@ -5527,8 +5506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `kaiju2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `move_weights`
@@ -5592,9 +5569,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`weights`](#enum-weights).
+
 </details>
-
-
 ---
 
 ### Enum: `attack`
@@ -5890,9 +5866,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ReplaceBasicAttack`](#enum-replacebasicattack), [`OverrideBasicAttack`](#enum-overridebasicattack), [`ability_icon`](#enum-ability_icon), [`DisplayDangerAOE`](#enum-displaydangeraoe).
+
 </details>
-
-
 ---
 
 ### Enum: `decision_weights`
@@ -5935,8 +5910,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `util_target_enemies` | |
 
 </details>
-
-
 ---
 
 ### Enum: `target_mode`
@@ -5959,8 +5932,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random_farthest_tile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `particle`
@@ -6029,9 +6000,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`affected_particle`](#enum-affected_particle), [`VisualFXTile`](#enum-visualfxtile), [`tooltip_stackless`](#enum-tooltip_stackless), [`center_particle`](#enum-center_particle), [`area_particle`](#enum-area_particle), [`VisualFX`](#enum-visualfx).
+
 </details>
-
-
 ---
 
 ### Enum: `move`
@@ -6073,9 +6043,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`GroundFlopper`](#enum-groundflopper), [`MoveAwayFromDamageSource`](#enum-moveawayfromdamagesource).
+
 </details>
-
-
 ---
 
 ### Enum: `aoe_mode`
@@ -6115,9 +6084,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`range_mode`](#enum-range_mode).
+
 </details>
-
-
 ---
 
 ### Enum: `prompt`
@@ -6378,8 +6346,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SONG_UNLOCK_THROBBINGKING` | |
 
 </details>
-
-
 ---
 
 ### Enum: `restrictions`
@@ -6434,9 +6400,8 @@ This document provides exhaustive lists of all enum and string values found in t
 | `must_have_enemy_or_robot` | |
 | `must_have_player_cat` | |
 | `must_be_partially_empty` | |
+
 </details>
-
-
 ---
 
 ### Enum: `knockback_mode`
@@ -6471,8 +6436,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `right_orientation` | |
 
 </details>
-
-
 ---
 
 ### Enum: `stat`
@@ -6491,8 +6454,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `coins` | |
 
 </details>
-
-
 ---
 
 ### Enum: `projectile`
@@ -6581,9 +6542,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ObjectOnHitEmpty`](#enum-objectonhitempty), [`SpawnCustomTrap`](#enum-spawncustomtrap).
+
 </details>
-
-
 ---
 
 ### Enum: `cat_choice`
@@ -6600,8 +6560,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random` | |
 
 </details>
-
-
 ---
 
 ### Enum: `event_clip`
@@ -6618,8 +6576,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NonWheelEvent` | |
 
 </details>
-
-
 ---
 
 ### Enum: `subject_clip`
@@ -6636,8 +6592,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EventSubject` | |
 
 </details>
-
-
 ---
 
 ### Enum: `subject_frame`
@@ -6836,9 +6790,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow), [`requires_unlocked_npc`](#enum-requires_unlocked_npc).
+
 </details>
-
-
 ---
 
 ### Enum: `voice`
@@ -6914,8 +6867,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `spidercat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `do`
@@ -7037,8 +6988,6 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** The [`spells`](#enum-spells) enum is the full master list of all known ability IDs. The values here are a confirmed subset of it.
 
 </details>
-
-
 ---
 
 ### Enum: `get_item_from_pool`
@@ -7101,9 +7050,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`select_item_from_pool_for_cutscene_only`](#enum-select_item_from_pool_for_cutscene_only).
+
 </details>
-
-
 ---
 
 ### Enum: `frame`
@@ -7149,8 +7097,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `UnlockArea_TheEnd` | |
 
 </details>
-
-
 ---
 
 ### Enum: `render_mode`
@@ -7168,8 +7114,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `simulation_space`
@@ -7186,8 +7130,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `global` | |
 
 </details>
-
-
 ---
 
 ### Enum: `projection_matrix`
@@ -7204,8 +7146,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `aoe_restrictions`
@@ -7247,8 +7187,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tile_must_have_element` | |
 
 </details>
-
-
 ---
 
 ### Enum: `status`
@@ -7308,9 +7246,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`RemoveStatus`](#enum-removestatus), [`StatusImmunity`](#enum-statusimmunity), [`AmplifyStatus`](#enum-amplifystatus), [`DoubleStatus`](#enum-doublestatus), [`AbilityEnabledIfHasStatus`](#enum-abilityenabledifhasstatus).
+
 </details>
-
-
 ---
 
 ### Enum: `custom_cat_data`
@@ -7446,9 +7383,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `unlock_item_immediate`
@@ -7591,8 +7527,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZaratanaTurd` | |
 
 </details>
-
-
 ---
 
 ### Enum: `range_mode`
@@ -7622,9 +7556,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`aoe_mode`](#enum-aoe_mode) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `pool`
@@ -7677,9 +7610,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette).
+
 </details>
-
-
 ---
 
 ### Enum: `gain_disorder`
@@ -7741,8 +7673,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `IBS` | |
 
 </details>
-
-
 ---
 
 ### Enum: `label`
@@ -7802,8 +7732,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `QEVENT_WALLOFFLESH_PLACE_ANSW` | |
 
 </details>
-
-
 ---
 
 ### Enum: `X_is`
@@ -7835,8 +7763,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `you_are_the_alpha` | |
 
 </details>
-
-
 ---
 
 ### Enum: `custom_additional_ai_weight`
@@ -7887,8 +7813,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tutorial_boulderdrop_miss_if_one_left` | |
 
 </details>
-
-
 ---
 
 ### Enum: `size`
@@ -7911,8 +7835,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `gemini` | |
 
 </details>
-
-
 ---
 
 ### Enum: `water_mask`
@@ -7932,8 +7854,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `big` | |
 
 </details>
-
-
 ---
 
 ### Enum: `has_token`
@@ -7985,9 +7905,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`clear_adventure_token`](#enum-clear_adventure_token), [`not_has_token`](#enum-not_has_token), [`save_file_flag`](#enum-save_file_flag).
+
 </details>
-
-
 ---
 
 ### Enum: `gain_disorder_from_pool`
@@ -8011,9 +7930,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`heal_disorder`](#enum-heal_disorder).
+
 </details>
-
-
 ---
 
 ### Enum: `SpawnOnDeath`
@@ -8036,9 +7954,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `element`
@@ -8085,9 +8002,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ElementImmune`](#enum-elementimmune), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement).
+
 </details>
-
-
 ---
 
 ### Enum: `move_block`
@@ -8105,8 +8021,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `nothing` | |
 
 </details>
-
-
 ---
 
 ### Enum: `event_now_same_cat`
@@ -8155,9 +8069,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`event`](#enum-event), [`next_event_from_set`](#enum-next_event_from_set).
+
 </details>
-
-
 ---
 
 ### Enum: `increment_legacy_counter`
@@ -8183,9 +8096,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`decrement_legacy_counter`](#enum-decrement_legacy_counter).
+
 </details>
-
-
 ---
 
 ### Enum: `frame_label`
@@ -8267,9 +8179,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`beat_house_boss`](#enum-beat_house_boss), [`boss_cutscene`](#enum-boss_cutscene), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`initial_cutscene_night`](#enum-initial_cutscene_night), [`unlock_boss`](#enum-unlock_boss), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju).
+
 </details>
-
-
 ---
 
 ### Enum: `FormChange`
@@ -8337,9 +8248,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette), [`formchange`](#enum-formchange), [`form_above`](#enum-form_above), [`check_in_form`](#enum-check_in_form).
+
 </details>
-
-
 ---
 
 ### Enum: `dash_animation`
@@ -8368,8 +8278,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `timberDash` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_art`
@@ -8435,8 +8343,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rare_Treasure` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dash_start_animation`
@@ -8462,8 +8368,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `timberStart` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChangeTile`
@@ -8499,9 +8403,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`tile`](#enum-tile) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`TileTrail`](#enum-tiletrail), [`ChangeTilesUnder`](#enum-changetilesunder), [`ChangeTileOnPop`](#enum-changetileonpop), [`TileTrail_Ahead`](#enum-tiletrail_ahead).
+
 </details>
-
-
 ---
 
 ### Enum: `get_item`
@@ -8560,9 +8463,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`get_and_equip_item`](#enum-get_and_equip_item).
+
 </details>
-
-
 ---
 
 ### Enum: `set_adventure_token`
@@ -8609,9 +8511,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`clear_adventure_token`](#enum-clear_adventure_token).
+
 </details>
-
-
 ---
 
 ### Enum: `layer`
@@ -8634,9 +8535,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`level_up`](#enum-level_up), [`make_old`](#enum-make_old).
+
 </details>
-
-
 ---
 
 ### Enum: `initial_form`
@@ -8683,9 +8583,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`form_hasnot`](#enum-form_hasnot), [`form`](#enum-form), [`form_above`](#enum-form_above).
+
 </details>
-
-
 ---
 
 ### Enum: `play_animation`
@@ -8711,9 +8610,8 @@ This document provides exhaustive lists of all enum and string values found in t
 | `resultBlessing` | |
 | `resultTragedy` | |
 | `resultWeather` | |
+
 </details>
-
-
 ---
 
 ### Enum: `trigger_npc_sequence`
@@ -8785,9 +8683,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`reset_npc_sequence`](#enum-reset_npc_sequence), [`preempt_npc_sequence`](#enum-preempt_npc_sequence).
+
 </details>
-
-
 ---
 
 ### Enum: `complete_chapter`
@@ -8824,9 +8721,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`beat_chapter_boss`](#enum-beat_chapter_boss), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `alias`
@@ -8874,8 +8770,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TransformInXTurns` | |
 
 </details>
-
-
 ---
 
 ### Enum: `gain_familiar`
@@ -8918,9 +8812,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`SpawnOnDowned`](#enum-spawnondowned).
+
 </details>
-
-
 ---
 
 ### Enum: `ElementImmune`
@@ -8941,9 +8834,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack), [`InnateElement`](#enum-innateelement) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `affected_particle`
@@ -8975,9 +8867,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`particle`](#enum-particle) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `tooltip`
@@ -9006,8 +8897,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ENTITY_GLOWMUSHROOM_DESC` | |
 
 </details>
-
-
 ---
 
 ### Enum: `beat_house_boss`
@@ -9036,9 +8925,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`frame_label`](#enum-frame_label) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`initial_cutscene_night`](#enum-initial_cutscene_night), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju).
+
 </details>
-
-
 ---
 
 ### Enum: `clear_adventure_token`
@@ -9059,9 +8947,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`has_token`](#enum-has_token), [`set_adventure_token`](#enum-set_adventure_token), [`not_has_token`](#enum-not_has_token) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `dash_attack_animation`
@@ -9096,9 +8983,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`animation`](#enum-animation) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`dash_end_animation`](#enum-dash_end_animation).
+
 </details>
-
-
 ---
 
 ### Enum: `level`
@@ -9157,8 +9043,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `stacy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `adventure_unlock`
@@ -9218,8 +9102,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `time_machine_quest_finalstep` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animation_in`
@@ -9243,8 +9125,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `teleportIn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animation_out`
@@ -9268,8 +9148,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `teleportOut` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tile`
@@ -9308,9 +9186,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ChangeTile`](#enum-changetile), [`TileTrail`](#enum-tiletrail), [`ChangeTilesUnder`](#enum-changetilesunder), [`ChangeTileOnPop`](#enum-changetileonpop), [`TileTrail_Ahead`](#enum-tiletrail_ahead).
+
 </details>
-
-
 ---
 
 ### Enum: `get_parasite`
@@ -9354,8 +9231,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Splinters` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FindItemFromPool`
@@ -9393,8 +9268,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `turkey_pool` | |
 
 </details>
-
-
 ---
 
 ### Enum: `class_anis`
@@ -9426,9 +9299,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette).
+
 </details>
-
-
 ---
 
 ### Enum: `target_requires_tag`
@@ -9465,9 +9337,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`AddHiddenTag`](#enum-addhiddentag), [`TagGreed`](#enum-taggreed).
+
 </details>
-
-
 ---
 
 ### Enum: `VisualFXTile`
@@ -9497,9 +9368,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`particle`](#enum-particle) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`area_particle`](#enum-area_particle), [`VisualFX`](#enum-visualfx).
+
 </details>
-
-
 ---
 
 ### Enum: `jump_attack_animation`
@@ -9521,8 +9391,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `gravitySlamEnd` | |
 
 </details>
-
-
 ---
 
 ### Enum: `set_legacy_token`
@@ -9573,9 +9441,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`not_has_token`](#enum-not_has_token), [`save_file_flag`](#enum-save_file_flag), [`requires_flag`](#enum-requires_flag).
+
 </details>
-
-
 ---
 
 ### Enum: `get_parasite_from_pool`
@@ -9597,8 +9464,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `good_parasites` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BounceObject`
@@ -9634,9 +9499,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`Imprison`](#enum-imprison).
+
 </details>
-
-
 ---
 
 ### Enum: `preset`
@@ -9660,8 +9524,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `StoneRoom` | |
 
 </details>
-
-
 ---
 
 ### Enum: `CounterAttack`
@@ -9699,8 +9561,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `YeticatSnowball_Counter` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spawnin_animation`
@@ -9744,8 +9604,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tinaspawnin` | |
 
 </details>
-
-
 ---
 
 ### Enum: `injury`
@@ -9766,8 +9624,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `burned` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ontrigger`
@@ -9813,8 +9669,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Twister_move` | |
 
 </details>
-
-
 ---
 
 ### Enum: `plane`
@@ -9832,8 +9686,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `right` | |
 
 </details>
-
-
 ---
 
 ### Enum: `beat_chapter_boss`
@@ -9870,9 +9722,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`complete_chapter`](#enum-complete_chapter), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `hidden_tag`
@@ -9912,9 +9763,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`tag_restriction`](#enum-tag_restriction), [`AbilityEnableIfConsumedCharacterHasTag`](#enum-abilityenableifconsumedcharacterhastag), [`warrior_tag`](#enum-warrior_tag).
+
 </details>
-
-
 ---
 
 ### Enum: `not_has_token`
@@ -9958,9 +9808,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`has_token`](#enum-has_token), [`set_legacy_token`](#enum-set_legacy_token) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`clear_adventure_token`](#enum-clear_adventure_token).
+
 </details>
-
-
 ---
 
 ### Enum: `spawn_side`
@@ -9979,8 +9828,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `anywhere` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_ability`
@@ -10028,9 +9875,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `form_hasnot`
@@ -10057,9 +9903,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`initial_form`](#enum-initial_form) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ai_ability`
@@ -10098,8 +9943,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TrembloSmash_AI` | |
 
 </details>
-
-
 ---
 
 ### Enum: `id`
@@ -10117,8 +9960,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Attic` | |
 
 </details>
-
-
 ---
 
 ### Enum: `mode`
@@ -10139,8 +9980,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `greater_or_equal` | |
 
 </details>
-
-
 ---
 
 ### Enum: `music`
@@ -10180,9 +10019,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `unlock_passive`
@@ -10227,8 +10065,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `VoidSoul` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_song`
@@ -10273,8 +10109,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `you_know_who` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ForceUseAbility`
@@ -10318,8 +10152,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tk_WeirdEgg_Spawn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MulticlassLevelUp`
@@ -10348,9 +10180,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`class_anis`](#enum-class_anis), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `TransformAbility`
@@ -10395,9 +10226,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `aoe_symmetry`
@@ -10416,8 +10246,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `eight_way` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form`
@@ -10452,9 +10280,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`initial_form`](#enum-initial_form) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`formchange`](#enum-formchange).
+
 </details>
-
-
 ---
 
 ### Enum: `icon_shell_frame`
@@ -10475,8 +10302,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `nodamage` | |
 
 </details>
-
-
 ---
 
 ### Enum: `slot`
@@ -10501,9 +10326,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`kind`](#enum-kind), [`restrict`](#enum-restrict).
+
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicAttack`
@@ -10544,9 +10368,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`attack`](#enum-attack) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`override_basic_attack`](#enum-override_basic_attack), [`ability_icon`](#enum-ability_icon).
+
 </details>
-
-
 ---
 
 ### Enum: `form_has`
@@ -10576,8 +10399,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Transformed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ObjectOnHitCharacter`
@@ -10607,9 +10428,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`Imprison`](#enum-imprison), [`BreakIntoRocks`](#enum-breakintorocks).
+
 </details>
-
-
 ---
 
 ### Enum: `full_jump_animation`
@@ -10642,8 +10462,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `walk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AddElementsToBasicAttack`
@@ -10669,9 +10487,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`element`](#enum-element) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`ElementImmune`](#enum-elementimmune), [`InnateElement`](#enum-innateelement).
+
 </details>
-
-
 ---
 
 ### Enum: `DeathRattle`
@@ -10707,8 +10524,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `neck_NukeExplode` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cat_has_item_equipped`
@@ -10740,9 +10555,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`lose_specific_item`](#enum-lose_specific_item), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`fail_item_quest`](#enum-fail_item_quest), [`unlock_item_quest`](#enum-unlock_item_quest), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped).
+
 </details>
-
-
 ---
 
 ### Enum: `ownership`
@@ -10759,8 +10573,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `local` | |
 
 </details>
-
-
 ---
 
 ### Enum: `set_mapgen_flag`
@@ -10799,9 +10611,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`require_mapgen_flag`](#enum-require_mapgen_flag).
+
 </details>
-
-
 ---
 
 ### Enum: `shadow`
@@ -10824,9 +10635,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`tooltip_stackless`](#enum-tooltip_stackless).
+
 </details>
-
-
 ---
 
 ### Enum: `title`
@@ -10860,8 +10670,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `QEVENT_VOLCANO_NAME` | |
 
 </details>
-
-
 ---
 
 ### Enum: `add_weather`
@@ -10888,8 +10696,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rain` | |
 
 </details>
-
-
 ---
 
 ### Enum: `chain`
@@ -10922,8 +10728,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `test8` | |
 
 </details>
-
-
 ---
 
 ### Enum: `complete_item_quest`
@@ -10956,9 +10760,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`lose_specific_item`](#enum-lose_specific_item), [`unlock_quest_item`](#enum-unlock_quest_item), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`CompleteItemQuest`](#enum-completeitemquest), [`RemoveItem`](#enum-removeitem), [`fail_item_quest`](#enum-fail_item_quest), [`unlock_item_quest`](#enum-unlock_item_quest), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped).
+
 </details>
-
-
 ---
 
 ### Enum: `dash_end_animation`
@@ -10981,9 +10784,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`dash_attack_animation`](#enum-dash_attack_animation) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `event_now`
@@ -11008,8 +10810,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tragedy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `quest_reward_item`
@@ -11046,8 +10846,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `UltraVision3000_Fixed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tooltip_stackless`
@@ -11067,9 +10865,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`particle`](#enum-particle), [`shadow`](#enum-shadow), [`center_particle`](#enum-center_particle) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `center_particle`
@@ -11097,9 +10894,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`particle`](#enum-particle) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`tooltip_stackless`](#enum-tooltip_stackless).
+
 </details>
-
-
 ---
 
 ### Enum: `combat_background`
@@ -11136,8 +10932,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `theriftBG` | |
 
 </details>
-
-
 ---
 
 ### Enum: `combat_ui_background`
@@ -11174,8 +10968,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `UI_tutoral` | |
 
 </details>
-
-
 ---
 
 ### Enum: `debris`
@@ -11209,8 +11001,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `riftdebris` | |
 
 </details>
-
-
 ---
 
 ### Enum: `event_piece_frame`
@@ -11249,9 +11039,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`music`](#enum-music), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`folder`](#enum-folder), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `first_turn`
@@ -11272,8 +11061,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `next_round` | |
 
 </details>
-
-
 ---
 
 ### Enum: `particle_lifetime`
@@ -11294,8 +11081,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `.35` | |
 
 </details>
-
-
 ---
 
 ### Enum: `static_1x1_a`
@@ -11331,9 +11116,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`static_1x1_c`](#enum-static_1x1_c).
+
 </details>
-
-
 ---
 
 ### Enum: `static_1x1_b`
@@ -11367,8 +11151,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Stump` | |
 
 </details>
-
-
 ---
 
 ### Enum: `static_1x1_c`
@@ -11402,9 +11184,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`static_1x1_a`](#enum-static_1x1_a) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `static_2x2_a`
@@ -11440,9 +11221,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`static_2x2_b`](#enum-static_2x2_b).
+
 </details>
-
-
 ---
 
 ### Enum: `static_2x2_b`
@@ -11465,9 +11245,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`static_2x2_a`](#enum-static_2x2_a) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `static_tall_a`
@@ -11501,8 +11280,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `rifttall1` | |
 
 </details>
-
-
 ---
 
 ### Enum: `static_tall_b`
@@ -11535,8 +11312,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `meattall1` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ambience`
@@ -11568,8 +11343,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `amb_theend.ogg` | |
 
 </details>
-
-
 ---
 
 ### Enum: `area_particle`
@@ -11594,9 +11367,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`particle`](#enum-particle), [`VisualFXTile`](#enum-visualfxtile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `chapter_id`
@@ -11633,9 +11405,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`tileset`](#enum-tileset) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`folder`](#enum-folder), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `common`
@@ -11671,8 +11442,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZodiacsPoncho` | |
 
 </details>
-
-
 ---
 
 ### Enum: `folder`
@@ -11710,9 +11479,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `graphics`
@@ -11746,8 +11514,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Map_Tutorial` | |
 
 </details>
-
-
 ---
 
 ### Enum: `next_map`
@@ -11781,9 +11547,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`begin_chapter`](#enum-begin_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `tileset`
@@ -11822,9 +11587,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`folder`](#enum-folder), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `EliteParticle`
@@ -11852,8 +11616,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ToxicBubbles` | |
 
 </details>
-
-
 ---
 
 ### Enum: `area_name`
@@ -11886,8 +11648,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AREA_NAME_TUTORIAL` | |
 
 </details>
-
-
 ---
 
 ### Enum: `chapter_item_pool`
@@ -11921,8 +11681,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `theinfiniteitems` | |
 
 </details>
-
-
 ---
 
 ### Enum: `disease`
@@ -11948,8 +11706,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Toxoplasmosis` | |
 
 </details>
-
-
 ---
 
 ### Enum: `world_name_frame`
@@ -11985,9 +11741,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit), [`intro_cutscene`](#enum-intro_cutscene), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `BonusAbility`
@@ -12020,9 +11775,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`ChargeSpiritBombAura`](#enum-chargespiritbombaura).
+
 </details>
-
-
 ---
 
 ### Enum: `InnateElement`
@@ -12046,9 +11800,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`element`](#enum-element), [`AddElementsToBasicAttack`](#enum-addelementstobasicattack) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`ElementImmune`](#enum-elementimmune), [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element).
+
 </details>
-
-
 ---
 
 ### Enum: `restrict`
@@ -12069,9 +11822,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`kind`](#enum-kind), [`slot`](#enum-slot) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `AbilityOnBattleStart_Immediate`
@@ -12093,8 +11845,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RocksFallEvent` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicMove`
@@ -12120,8 +11870,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `set_WitchJump` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ambient_sound`
@@ -12147,8 +11895,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `amb_thunderstorm.ogg` | |
 
 </details>
-
-
 ---
 
 ### Enum: `boss_cutscene`
@@ -12182,9 +11928,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `level_display`
@@ -12201,8 +11946,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `max` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lose_item`
@@ -12222,8 +11965,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `struggle_ability`
@@ -12248,8 +11989,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinaFlailRage` | |
 
 </details>
-
-
 ---
 
 ### Enum: `GainDisorderFromPool_PostCast`
@@ -12267,8 +12006,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `forbidden_spell_consequences_crippling` | |
 
 </details>
-
-
 ---
 
 ### Enum: `RemoveStatus`
@@ -12295,9 +12032,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`status`](#enum-status) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `SpawnOnBattleStart`
@@ -12321,9 +12057,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `SpawnThingOnDeath`
@@ -12350,9 +12085,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `auto_run_priority`
@@ -12371,8 +12105,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `default_face`
@@ -12392,8 +12124,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `angry` | |
 
 </details>
-
-
 ---
 
 ### Enum: `face`
@@ -12425,8 +12155,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WesternHat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `hint_destination`
@@ -12455,9 +12183,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`hint_chapter_exit`](#enum-hint_chapter_exit), [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `kill`
@@ -12474,8 +12201,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `move_for_ability`
@@ -12501,8 +12226,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZaratanaVSBombardment` | |
 
 </details>
-
-
 ---
 
 ### Enum: `rare`
@@ -12534,8 +12257,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ZodiacsSixshooter` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityOnBattleStart`
@@ -12566,8 +12287,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `wp_TheLonerAuto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityReaction`
@@ -12598,8 +12317,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `head_EmoSong` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Buddy`
@@ -12631,9 +12348,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `chain_ability`
@@ -12664,8 +12380,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `T3YellB` | |
 
 </details>
-
-
 ---
 
 ### Enum: `move_then_do`
@@ -12689,8 +12403,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SimonFlopper_SpawnMinion` | |
 
 </details>
-
-
 ---
 
 ### Enum: `shop_now`
@@ -12711,8 +12423,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TreasureEasy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `str_aux_initialize`
@@ -12737,8 +12447,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random_stat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChangeCatClass`
@@ -12771,9 +12479,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`complete_checklist_with_class`](#enum-complete_checklist_with_class) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette), [`ConjureBonusAbility`](#enum-conjurebonusability), [`LevelUpClassOverride`](#enum-levelupclassoverride).
+
 </details>
-
-
 ---
 
 ### Enum: `TileTrail`
@@ -12801,9 +12508,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`ChangeTile`](#enum-changetile), [`tile`](#enum-tile) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`TileTrail_Ahead`](#enum-tiletrail_ahead).
+
 </details>
-
-
 ---
 
 ### Enum: `TransformBasicAttack`
@@ -12830,8 +12536,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Timber` | |
 
 </details>
-
-
 ---
 
 ### Enum: `VisualFX`
@@ -12856,9 +12560,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`particle`](#enum-particle), [`VisualFXTile`](#enum-visualfxtile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `animation_suffix`
@@ -12885,8 +12588,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `OpenCat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `complete_checklist_with_class`
@@ -12919,9 +12620,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`ChangeCatClass`](#enum-changecatclass) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool), [`palette`](#enum-palette), [`ConjureBonusAbility`](#enum-conjurebonusability), [`LevelUpClassOverride`](#enum-levelupclassoverride).
+
 </details>
-
-
 ---
 
 ### Enum: `copy_results`
@@ -12942,8 +12642,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `red` | |
 
 </details>
-
-
 ---
 
 ### Enum: `corpse_health`
@@ -12960,8 +12658,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `indestructible` | |
 
 </details>
-
-
 ---
 
 ### Enum: `head`
@@ -12991,8 +12687,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererHat_Terminator` | |
 
 </details>
-
-
 ---
 
 ### Enum: `move_start_animation`
@@ -13016,8 +12710,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `runStart` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ClassFromNeutral,`
@@ -13046,8 +12738,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererFromNeutral` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ClassToNeutral,`
@@ -13076,8 +12766,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererToNeutral` | |
 
 </details>
-
-
 ---
 
 ### Enum: `EvolveAbilityFromPool`
@@ -13109,9 +12797,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`class_anis`](#enum-class_anis), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`MulticlassLevelUp`](#enum-multiclasslevelup), [`palette`](#enum-palette).
+
 </details>
-
-
 ---
 
 ### Enum: `StartTurn,`
@@ -13140,8 +12827,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererStartTurn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Victory,`
@@ -13170,8 +12855,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tinkererVictory` | |
 
 </details>
-
-
 ---
 
 ### Enum: `begin_chapter`
@@ -13195,9 +12878,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`next_map`](#enum-next_map) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `catdata`
@@ -13218,8 +12900,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `teamclone` | |
 
 </details>
-
-
 ---
 
 ### Enum: `deathsound`
@@ -13246,8 +12926,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Shade_Fade` | |
 
 </details>
-
-
 ---
 
 ### Enum: `hidden_tags`
@@ -13264,8 +12942,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `terminator_mini` | |
 
 </details>
-
-
 ---
 
 ### Enum: `hint_chapter_exit`
@@ -13291,9 +12967,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`visit_chapter`](#enum-visit_chapter).
+
 </details>
-
-
 ---
 
 ### Enum: `lose_specific_item`
@@ -13322,9 +12997,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`choose_cat_with_item`](#enum-choose_cat_with_item), [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped).
+
 </details>
-
-
 ---
 
 ### Enum: `move_ability`
@@ -13350,8 +13024,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `move` | |
 
 </details>
-
-
 ---
 
 ### Enum: `move_end_animation`
@@ -13374,8 +13046,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 
 </details>
-
-
 ---
 
 ### Enum: `obj`
@@ -13404,9 +13074,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `portrait_face`
@@ -13435,8 +13104,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tinkerer_portrait` | |
 
 </details>
-
-
 ---
 
 ### Enum: `render_layer`
@@ -13456,8 +13123,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `top` | |
 
 </details>
-
-
 ---
 
 ### Enum: `trigger_adventure_unlock`
@@ -13481,8 +13146,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `time_machine_quest_trigger` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_quest_item`
@@ -13514,9 +13177,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`lose_specific_item`](#enum-lose_specific_item), [`choose_cat_with_item`](#enum-choose_cat_with_item), [`CompleteItemQuest`](#enum-completeitemquest), [`RemoveItem`](#enum-removeitem), [`fail_item_quest`](#enum-fail_item_quest).
+
 </details>
-
-
 ---
 
 ### Enum: `AddTag`
@@ -13540,9 +13202,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `DeadAltAbility`
@@ -13571,9 +13232,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `EquipTemporaryItem`
@@ -13597,8 +13257,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WaterBottle_Full` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ImmediateAbilityReaction`
@@ -13622,8 +13280,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NubsGoop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `StatusImmunity`
@@ -13646,9 +13302,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`status`](#enum-status), [`AmplifyStatus`](#enum-amplifystatus) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`DoubleStatus`](#enum-doublestatus).
+
 </details>
-
-
 ---
 
 ### Enum: `TransformOnDeath`
@@ -13677,9 +13332,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `UseAbility`
@@ -13705,8 +13359,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TormentorRuneAbsorb` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cantrip_group`
@@ -13726,8 +13378,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `THC_CoinRoll` | |
 
 </details>
-
-
 ---
 
 ### Enum: `level_up`
@@ -13746,9 +13396,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`layer`](#enum-layer), [`make_old`](#enum-make_old) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `palette`
@@ -13777,9 +13426,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`class`](#enum-class), [`set`](#enum-set), [`pool`](#enum-pool), [`FormChange`](#enum-formchange), [`class_anis`](#enum-class_anis), [`MulticlassLevelUp`](#enum-multiclasslevelup), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class), [`EvolveAbilityFromPool`](#enum-evolveabilityfrompool) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `range`
@@ -13796,8 +13444,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `global` | |
 
 </details>
-
-
 ---
 
 ### Enum: `set_savefile_flag`
@@ -13825,8 +13471,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `catinfo_unlock_tags` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animation_fail`
@@ -13843,8 +13487,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `choice_no_coins` | |
 
 </details>
-
-
 ---
 
 ### Enum: `chain_movieclip`
@@ -13863,8 +13505,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Bramblechain` | |
 
 </details>
-
-
 ---
 
 ### Enum: `learn_passive`
@@ -13889,8 +13529,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TowerDefense` | |
 
 </details>
-
-
 ---
 
 ### Enum: `partial_animation_suffix`
@@ -13915,8 +13553,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `primed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `prereq`
@@ -13939,8 +13575,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasementUpgrade4` | |
 
 </details>
-
-
 ---
 
 ### Enum: `set_subject`
@@ -13967,8 +13601,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `wall_of_flesh_noartery` | |
 
 </details>
-
-
 ---
 
 ### Enum: `weights`
@@ -13989,9 +13621,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`move_weights`](#enum-move_weights) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ImmediateUseAbility`
@@ -14016,8 +13647,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tk_ButterBean_Normal` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SpawnThingIfHitKills`
@@ -14038,9 +13667,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`ObjectOnHit`](#enum-objectonhit) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `beam_cap`
@@ -14062,8 +13690,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `greenmegalasercap` | |
 
 </details>
-
-
 ---
 
 ### Enum: `beam_clip`
@@ -14085,8 +13711,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `greenmegalaser` | |
 
 </details>
-
-
 ---
 
 ### Enum: `color`
@@ -14105,8 +13729,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `white` | |
 
 </details>
-
-
 ---
 
 ### Enum: `end`
@@ -14130,9 +13752,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`animation`](#enum-animation) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`loop`](#enum-loop), [`start`](#enum-start).
+
 </details>
-
-
 ---
 
 ### Enum: `jump_start_animation`
@@ -14153,8 +13774,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `leapattackwindup` | |
 
 </details>
-
-
 ---
 
 ### Enum: `loop`
@@ -14175,9 +13794,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`animation`](#enum-animation), [`end`](#enum-end), [`start`](#enum-start) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `neck`
@@ -14203,8 +13821,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Slime` | |
 
 </details>
-
-
 ---
 
 ### Enum: `orientation`
@@ -14224,8 +13840,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `west` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_basic_attack`
@@ -14249,9 +13863,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ReplaceBasicAttack`](#enum-replacebasicattack) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `prime_animation`
@@ -14276,9 +13889,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`animation`](#enum-animation) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `right_icon`
@@ -14299,8 +13911,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `heal` | |
 
 </details>
-
-
 ---
 
 ### Enum: `stack_key`
@@ -14320,8 +13930,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FANNY_PACK` | |
 
 </details>
-
-
 ---
 
 ### Enum: `start`
@@ -14342,9 +13950,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`animation`](#enum-animation), [`end`](#enum-end), [`loop`](#enum-loop) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `trigger_house_boss`
@@ -14372,9 +13979,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`complete_house_boss`](#enum-complete_house_boss) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`initial_cutscene_night`](#enum-initial_cutscene_night), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju).
+
 </details>
-
-
 ---
 
 ### Enum: `unlock_room`
@@ -14400,8 +14006,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Floor2_Small` | |
 
 </details>
-
-
 ---
 
 ### Enum: `weapon`
@@ -14424,8 +14028,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `attack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AmplifyStatus`
@@ -14448,9 +14050,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`status`](#enum-status), [`StatusImmunity`](#enum-statusimmunity) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`DoubleStatus`](#enum-doublestatus).
+
 </details>
-
-
 ---
 
 ### Enum: `ChangeTilesUnder`
@@ -14472,9 +14073,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ChangeTile`](#enum-changetile), [`tile`](#enum-tile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `arrival_unlock`
@@ -14499,8 +14099,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `npc_houseboss_intro_zaratana` | |
 
 </details>
-
-
 ---
 
 ### Enum: `choose_cat_with_item`
@@ -14525,9 +14123,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`lose_specific_item`](#enum-lose_specific_item), [`unlock_quest_item`](#enum-unlock_quest_item) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`not_cat_has_item_equipped`](#enum-not_cat_has_item_equipped).
+
 </details>
-
-
 ---
 
 ### Enum: `complete_house_boss`
@@ -14555,9 +14152,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`initial_cutscene_night`](#enum-initial_cutscene_night), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju).
+
 </details>
-
-
 ---
 
 ### Enum: `dead,`
@@ -14581,8 +14177,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `intestinalProlapseLoop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `intro_cutscene`
@@ -14606,9 +14200,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `repeat`
@@ -14626,8 +14219,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `never` | |
 
 </details>
-
-
 ---
 
 ### Enum: `save_file_flag`
@@ -14655,9 +14246,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`has_token`](#enum-has_token), [`set_legacy_token`](#enum-set_legacy_token) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`hint_prerequisite_flag`](#enum-hint_prerequisite_flag).
+
 </details>
-
-
 ---
 
 ### Enum: `AddElement`
@@ -14675,8 +14265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Napalm` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FreePathfindElement`
@@ -14695,9 +14283,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`aoe_tile_requires_element`](#enum-aoe_tile_requires_element) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `SpawnOnDowned`
@@ -14717,9 +14304,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`object`](#enum-object), [`gain_familiar`](#enum-gain_familiar) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `back_icon`
@@ -14743,8 +14329,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `thorns` | |
 
 </details>
-
-
 ---
 
 ### Enum: `deadhit,`
@@ -14767,8 +14351,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `intestinalProlapseHit` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_offmap`
@@ -14789,8 +14371,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Start_Ceiling` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_onmap`
@@ -14810,8 +14390,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FightPhase` | |
 
 </details>
-
-
 ---
 
 ### Enum: `max_range`
@@ -14832,8 +14410,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `5+level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `on_store`
@@ -14852,8 +14428,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `become_rare_furniture` | |
 
 </details>
-
-
 ---
 
 ### Enum: `prevent_chain_tag`
@@ -14873,8 +14447,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `necroset_shade` | |
 
 </details>
-
-
 ---
 
 ### Enum: `queue_cutscene_immediate`
@@ -14898,8 +14470,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `theend_intro` | |
 
 </details>
-
-
 ---
 
 ### Enum: `reset_npc_sequence`
@@ -14926,9 +14496,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`trigger_npc_sequence`](#enum-trigger_npc_sequence) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`preempt_npc_sequence`](#enum-preempt_npc_sequence).
+
 </details>
-
-
 ---
 
 ### Enum: `sub_ability`
@@ -14953,9 +14522,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`TeamCastAbility`](#enum-teamcastability).
+
 </details>
-
-
 ---
 
 ### Enum: `type_icon`
@@ -14978,9 +14546,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`type`](#enum-type) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `AbilityWhenBuddyDies`
@@ -15002,8 +14569,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ManglerMonsterHeartAttack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BrittleDuringElement`
@@ -15020,8 +14585,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 
 </details>
-
-
 ---
 
 ### Enum: `OverrideBasicAttack`
@@ -15045,9 +14608,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`attack`](#enum-attack) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `damage`
@@ -15066,8 +14628,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `decrement_legacy_counter`
@@ -15087,9 +14647,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`increment_legacy_counter`](#enum-increment_legacy_counter) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `event`
@@ -15109,9 +14668,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`event_now_same_cat`](#enum-event_now_same_cat) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `land_animation`
@@ -15128,8 +14686,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `none` | |
 
 </details>
-
-
 ---
 
 ### Enum: `max_npc`
@@ -15152,8 +14708,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tracy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `miss_particle`
@@ -15170,8 +14724,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `fx_tentaclestrangleMiss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `new_layer`
@@ -15191,9 +14743,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`type`](#enum-type) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `npc_script`
@@ -15210,8 +14761,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tracy_adventure_shop_script.gon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AddHiddenTag`
@@ -15233,9 +14782,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag), [`target_requires_tag`](#enum-target_requires_tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ConjureBonusAbility`
@@ -15256,9 +14804,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`class`](#enum-class), [`ability`](#enum-ability), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `Divide4OnDeath`
@@ -15281,9 +14828,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ForceUseAbility_NonStack`
@@ -15302,8 +14848,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Indigestion_Fart2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Imprison`
@@ -15324,9 +14868,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip), [`BounceObject`](#enum-bounceobject), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `LevelUpClassOverride`
@@ -15345,9 +14888,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`class`](#enum-class), [`ChangeCatClass`](#enum-changecatclass), [`complete_checklist_with_class`](#enum-complete_checklist_with_class) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicAttackWhenCastable`
@@ -15368,8 +14910,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Shank2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SetFragileImmune`
@@ -15392,9 +14932,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`set`](#enum-set) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `TagGreed`
@@ -15414,9 +14953,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag), [`target_requires_tag`](#enum-target_requires_tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ability_icon`
@@ -15439,9 +14977,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`attack`](#enum-attack), [`ReplaceBasicAttack`](#enum-replacebasicattack) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `air_animation`
@@ -15460,8 +14997,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `gravitySlam_air` | |
 
 </details>
-
-
 ---
 
 ### Enum: `custom_priming_animation`
@@ -15482,8 +15017,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `idleCommand4` | |
 
 </details>
-
-
 ---
 
 ### Enum: `exclude`
@@ -15502,8 +15035,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `fire` | |
 
 </details>
-
-
 ---
 
 ### Enum: `formchange`
@@ -15524,9 +15055,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`FormChange`](#enum-formchange), [`form`](#enum-form) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `house_upgrade`
@@ -15548,8 +15078,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallHouse_Attic` | |
 
 </details>
-
-
 ---
 
 ### Enum: `initial_cutscene_night`
@@ -15572,9 +15100,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `interstitial_bg_frame`
@@ -15595,8 +15122,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `room4` | |
 
 </details>
-
-
 ---
 
 ### Enum: `key`
@@ -15617,8 +15142,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TaintedOffering2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `new_song`
@@ -15635,8 +15158,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `same` | |
 
 </details>
-
-
 ---
 
 ### Enum: `not_priming`
@@ -15655,8 +15176,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SwordAndShield` | |
 
 </details>
-
-
 ---
 
 ### Enum: `preempt_npc_sequence`
@@ -15676,9 +15195,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`trigger_npc_sequence`](#enum-trigger_npc_sequence), [`reset_npc_sequence`](#enum-reset_npc_sequence) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `priming`
@@ -15697,8 +15215,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SwordAndShield_Primed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `rematch_cutscene_night`
@@ -15720,8 +15236,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `house_boss_returns_tina3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `requires_flag`
@@ -15744,9 +15258,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`set_legacy_token`](#enum-set_legacy_token) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `toss_direction_restriction`
@@ -15764,8 +15277,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `backwards` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_boss`
@@ -15788,9 +15299,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `upgrade_ability`
@@ -15808,8 +15318,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Toss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BlacklistPickupType`
@@ -15827,8 +15335,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `catnip` | |
 
 </details>
-
-
 ---
 
 ### Enum: `CompleteItemQuest`
@@ -15848,9 +15354,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`RemoveItem`](#enum-removeitem) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `DeathRattleRevive`
@@ -15870,8 +15375,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tk_PetrifiedPinky` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DisableAbilitiesWithTag`
@@ -15890,8 +15393,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `meat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `EquipPermanentItem`
@@ -15909,8 +15410,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Kidney` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MoveTowardsDamageSource`
@@ -15927,8 +15426,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoveOne` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ObjectOnHit`
@@ -15949,9 +15446,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip), [`SpawnThingIfHitKills`](#enum-spawnthingifhitkills) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ObjectOnHitEmpty`
@@ -15973,9 +15469,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`object`](#enum-object), [`movieclip`](#enum-movieclip), [`projectile`](#enum-projectile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `SetBrittleImmune`
@@ -15997,9 +15492,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`set`](#enum-set) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `SpawnObjectOnPopCorpse`
@@ -16019,9 +15513,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object), [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `XIsLivingAlliesWithTag`
@@ -16040,8 +15533,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `hitler_clone_fetus` | |
 
 </details>
-
-
 ---
 
 ### Enum: `aoe_tile_requires_element`
@@ -16063,9 +15554,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`InnateElement`](#enum-innateelement) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`FreePathfindElement`](#enum-freepathfindelement).
+
 </details>
-
-
 ---
 
 ### Enum: `current_chapter_common`
@@ -16082,8 +15572,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `current_chapter_rare`
@@ -16100,8 +15588,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `current_chapter_uncommon`
@@ -16118,8 +15604,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `current_chapter_very_rare`
@@ -16136,8 +15620,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cutscene_on_exit`
@@ -16155,8 +15637,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `king_intro` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dead`
@@ -16175,8 +15655,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `empty` | |
 
 </details>
-
-
 ---
 
 ### Enum: `detatched_animation`
@@ -16196,8 +15674,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinaSpear` | |
 
 </details>
-
-
 ---
 
 ### Enum: `drop_on_death`
@@ -16214,8 +15690,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `deferred` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dying`
@@ -16234,8 +15708,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `shot` | |
 
 </details>
-
-
 ---
 
 ### Enum: `empty_animation`
@@ -16252,8 +15724,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `empty` | |
 
 </details>
-
-
 ---
 
 ### Enum: `hint_prerequisite_flag`
@@ -16274,9 +15744,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`save_file_flag`](#enum-save_file_flag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `item`
@@ -17434,8 +16903,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Zukin` | |
 
 </details>
-
-
 ---
 
 ### Enum: `learn_ability`
@@ -17455,9 +16922,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `make_old`
@@ -17476,9 +16942,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`layer`](#enum-layer), [`level_up`](#enum-level_up) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `material`
@@ -17496,8 +16961,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mist` | |
 
 </details>
-
-
 ---
 
 ### Enum: `minion_alt`
@@ -17516,8 +16979,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SubUndying` | |
 
 </details>
-
-
 ---
 
 ### Enum: `mount_mode`
@@ -17534,8 +16995,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `sfx`
@@ -17552,8 +17011,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FireExtinguish` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spurt`
@@ -17573,8 +17030,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `VolcanoSpurt_Trail` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tag_location`
@@ -17595,9 +17050,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **Also Used In:** These values are also referenced by [`special_tile_tag`](#enum-special_tile_tag).
+
 </details>
-
-
 ---
 
 ### Enum: `tag_restriction`
@@ -17617,9 +17071,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`hidden_tag`](#enum-hidden_tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `upgrade_passive`
@@ -17637,8 +17090,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TowerDefense` | |
 
 </details>
-
-
 ---
 
 ### Enum: `walk`
@@ -17657,8 +17108,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `raptorWalk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityAfterEnemyCastSpell_Stackable`
@@ -17676,8 +17125,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThornUp` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Bird`
@@ -17694,8 +17141,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CookedChickenLeg` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BounceRock`
@@ -17714,8 +17159,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SmallRock` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BreakIntoRocks`
@@ -17734,9 +17177,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`object`](#enum-object), [`movieclip`](#enum-movieclip), [`ObjectOnHitCharacter`](#enum-objectonhitcharacter) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ChangeTileOnPop`
@@ -17756,9 +17198,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ChangeTile`](#enum-changetile), [`tile`](#enum-tile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `DisableAbilities`
@@ -17777,8 +17218,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `basic_attack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DisplayDangerAOE`
@@ -17799,9 +17238,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ability`](#enum-ability), [`attack`](#enum-attack), [`do`](#enum-do) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `EnableWeather`
@@ -17821,8 +17259,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `VisualFlySwarm` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FragileDuringElement`
@@ -17839,8 +17275,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 
 </details>
-
-
 ---
 
 ### Enum: `GroundFlopper`
@@ -17859,9 +17293,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`move`](#enum-move) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `KillsToMeat`
@@ -17878,8 +17311,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Food` | |
 
 </details>
-
-
 ---
 
 ### Enum: `LoopingSoundWhileAlive`
@@ -17898,8 +17329,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Twister_loop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `PopAndSpawn`
@@ -17920,9 +17349,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `RemoveItem`
@@ -17942,9 +17370,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`CompleteItemQuest`](#enum-completeitemquest) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `TeamCastAbility`
@@ -17965,9 +17392,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`sub_ability`](#enum-sub_ability) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `TileTrail_Ahead`
@@ -17988,9 +17414,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ChangeTile`](#enum-changetile), [`tile`](#enum-tile), [`TileTrail`](#enum-tiletrail) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `WeremanTransformationReceiver`
@@ -18008,8 +17433,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CaveWomanDropTransform` | |
 
 </details>
-
-
 ---
 
 ### Enum: `adventure_weather`
@@ -18029,8 +17452,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Windy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `damage_tiles`
@@ -18047,8 +17468,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all` | |
 
 </details>
-
-
 ---
 
 ### Enum: `fail_item_quest`
@@ -18069,9 +17488,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`unlock_quest_item`](#enum-unlock_quest_item), [`unlock_item_quest`](#enum-unlock_item_quest) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `goto`
@@ -18088,8 +17506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `end` | |
 
 </details>
-
-
 ---
 
 ### Enum: `heal_disorder`
@@ -18109,9 +17525,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`gain_disorder_from_pool`](#enum-gain_disorder_from_pool) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `hit`
@@ -18129,8 +17544,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `hitDisassembled` | |
 
 </details>
-
-
 ---
 
 ### Enum: `initiative`
@@ -18147,8 +17560,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `keep_turns_end_turn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `learn_ability_from_pool`
@@ -18167,9 +17578,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`learn_passive_from_pool`](#enum-learn_passive_from_pool) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `lose_item_from_inventory`
@@ -18186,8 +17596,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `next_event_from_set`
@@ -18208,9 +17616,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`event_now_same_cat`](#enum-event_now_same_cat) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `post_combat_cutscene`
@@ -18230,8 +17637,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `obelisk2_moon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `return_as`
@@ -18248,8 +17653,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `enemy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `return_during`
@@ -18266,8 +17669,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `boss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `skybox_frame`
@@ -18287,8 +17688,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `day_windy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `status_explosion_override`
@@ -18305,8 +17704,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WaterConduct` | |
 
 </details>
-
-
 ---
 
 ### Enum: `stunned`
@@ -18325,9 +17722,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`weak`](#enum-weak) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `tag_filter`
@@ -18347,9 +17743,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `tags`
@@ -18366,8 +17761,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `consumable` | |
 
 </details>
-
-
 ---
 
 ### Enum: `threshold`
@@ -18387,8 +17780,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `4*champion_multiplier` | |
 
 </details>
-
-
 ---
 
 ### Enum: `trap`
@@ -18409,9 +17800,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `trigger_npc_sequence_tomorrow`
@@ -18431,8 +17821,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `organ_boneyard_intro` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_item_quest`
@@ -18453,9 +17841,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`fail_item_quest`](#enum-fail_item_quest) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `unlock_npc_tomorrow`
@@ -18478,9 +17865,8 @@ This document provides exhaustive lists of all enum and string values found in t
 > **See Also:** Values from [`subject_frame`](#enum-subject_frame) may also be valid here (overlapping enum).
 
 > **Also Used In:** These values are also referenced by [`requires_unlocked_npc`](#enum-requires_unlocked_npc).
+
 </details>
-
-
 ---
 
 ### Enum: `visit_chapter`
@@ -18501,9 +17887,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`complete_chapter`](#enum-complete_chapter), [`beat_chapter_boss`](#enum-beat_chapter_boss), [`music`](#enum-music), [`event_piece_frame`](#enum-event_piece_frame), [`chapter_id`](#enum-chapter_id), [`folder`](#enum-folder), [`tileset`](#enum-tileset), [`world_name_frame`](#enum-world_name_frame), [`hint_destination`](#enum-hint_destination), [`hint_chapter_exit`](#enum-hint_chapter_exit) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `weak`
@@ -18522,9 +17907,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`stunned`](#enum-stunned) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `AbilityEnableIfConsumedCharacterHasTag`
@@ -18544,9 +17928,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`hidden_tag`](#enum-hidden_tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `BreakOnElement`
@@ -18563,8 +17946,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 
 </details>
-
-
 ---
 
 ### Enum: `CobraReflex`
@@ -18581,8 +17962,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicMonkMelee` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DigestDeadBodies`
@@ -18601,8 +17980,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoonHead_Digest` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DoubleStatus`
@@ -18622,9 +17999,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`status`](#enum-status), [`StatusImmunity`](#enum-statusimmunity), [`AmplifyStatus`](#enum-amplifystatus) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `DropAsFamiliarOnArmorBreak`
@@ -18643,8 +18019,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NeckGrubFamiliar` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FactionUprising`
@@ -18664,9 +18038,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `FindExtraItemFromPoolOnBattleEnd`
@@ -18684,8 +18057,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `combat_reward_easy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FindItem`
@@ -18704,8 +18075,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Pearl` | |
 
 </details>
-
-
 ---
 
 ### Enum: `GlobalSpawnCharacter`
@@ -18722,8 +18091,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MegaGuppy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `KnockbackDirectionIsFacingDirection`
@@ -18741,8 +18108,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `rotate_right` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MoveAndUseAbilityEachTurnBeginIfPossible`
@@ -18761,8 +18126,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `face_EatNeverstone` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MoveWhenDamaged`
@@ -18780,8 +18143,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TKNG_Hop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MutateViaAbility`
@@ -18798,8 +18159,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BBTransformMutant` | |
 
 </details>
-
-
 ---
 
 ### Enum: `PoopWhenHit`
@@ -18816,8 +18175,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Poop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicMove_Mutation`
@@ -18835,8 +18192,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicDig` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SetDefaultFace`
@@ -18855,8 +18210,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sad` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SetDefaultFacePassive`
@@ -18874,8 +18227,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `insane` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SpawnCustomTrap`
@@ -18895,9 +18246,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`projectile`](#enum-projectile) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `TowerDefenseReflex`
@@ -18915,8 +18265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicRanged_1DMG` | |
 
 </details>
-
-
 ---
 
 ### Enum: `UseAbility_NonStack`
@@ -18934,8 +18282,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GenericRage` | |
 
 </details>
-
-
 ---
 
 ### Enum: `aoe_pierce_mode`
@@ -18952,8 +18298,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `block` | |
 
 </details>
-
-
 ---
 
 ### Enum: `background_extra_shader`
@@ -18972,8 +18316,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `water` | |
 
 </details>
-
-
 ---
 
 ### Enum: `bg_placements_frame`
@@ -18991,8 +18333,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `small` | |
 
 </details>
-
-
 ---
 
 ### Enum: `core`
@@ -19011,8 +18351,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_IceAgeUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `craft_ability`
@@ -19029,8 +18367,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererCraft` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dash_decelerating_animation`
@@ -19047,8 +18383,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `dashslow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `deadhit`
@@ -19065,8 +18399,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `skeletonCorpseHit` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dimensionx`
@@ -19085,8 +18417,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_IceAgeUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `disallow_items`
@@ -19104,8 +18434,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all` | |
 
 </details>
-
-
 ---
 
 ### Enum: `emit_timespread_curve`
@@ -19122,8 +18450,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ease_out` | |
 
 </details>
-
-
 ---
 
 ### Enum: `endoftime`
@@ -19142,8 +18468,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_EndOfTimeUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `fail_ability`
@@ -19162,8 +18486,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `XXX` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_above`
@@ -19183,9 +18505,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`FormChange`](#enum-formchange), [`initial_form`](#enum-initial_form) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `form_below`
@@ -19204,8 +18525,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Standing2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `from`
@@ -19225,9 +18544,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`to`](#enum-to) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `gain_immortal_familiar`
@@ -19247,9 +18565,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `get_and_equip_item`
@@ -19269,9 +18586,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`get_item`](#enum-get_item) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `gift_item`
@@ -19289,8 +18605,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinksBow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `grab_animation`
@@ -19307,8 +18621,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `grab` | |
 
 </details>
-
-
 ---
 
 ### Enum: `icon_damage_type`
@@ -19326,8 +18638,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `physical` | |
 
 </details>
-
-
 ---
 
 ### Enum: `icon_hint`
@@ -19345,8 +18655,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ability_syringe` | |
 
 </details>
-
-
 ---
 
 ### Enum: `image_tint`
@@ -19374,8 +18682,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `yellow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `initial_cutscene_day`
@@ -19394,8 +18700,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `pyro_intro` | |
 
 </details>
-
-
 ---
 
 ### Enum: `jestercat`
@@ -19412,8 +18716,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `jurassic`
@@ -19432,8 +18734,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_JurassicUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `learn_passive_from_pool`
@@ -19452,9 +18752,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`learn_ability_from_pool`](#enum-learn_ability_from_pool) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `max_aoe`
@@ -19472,8 +18771,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level-1` | |
 
 </details>
-
-
 ---
 
 ### Enum: `min_aoe`
@@ -19491,8 +18788,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `2+size` | |
 
 </details>
-
-
 ---
 
 ### Enum: `moon`
@@ -19511,8 +18806,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_MoonUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `movieclip_bg`
@@ -19531,8 +18824,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HouseBackground3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `movieclip_fg`
@@ -19551,8 +18842,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HouseForeground3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `not_cat_has_item_equipped`
@@ -19572,9 +18861,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`cat_has_item_equipped`](#enum-cat_has_item_equipped), [`complete_item_quest`](#enum-complete_item_quest), [`lose_specific_item`](#enum-lose_specific_item), [`choose_cat_with_item`](#enum-choose_cat_with_item) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `oncast`
@@ -19592,8 +18880,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AbilitySnd_Assassinate` | |
 
 </details>
-
-
 ---
 
 ### Enum: `oncastpoint`
@@ -19611,8 +18897,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Batterup_Swing_Castpoint` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_music`
@@ -19631,8 +18915,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `throbbingking` | |
 
 </details>
-
-
 ---
 
 ### Enum: `rematch_cutscene_day`
@@ -19651,8 +18933,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `house_boss_returns_zara` | |
 
 </details>
-
-
 ---
 
 ### Enum: `requires_unlocked_npc`
@@ -19672,9 +18952,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`subject_frame`](#enum-subject_frame), [`unlock_npc_tomorrow`](#enum-unlock_npc_tomorrow) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `scramble_abilities`
@@ -19691,8 +18970,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all` | |
 
 </details>
-
-
 ---
 
 ### Enum: `set_house`
@@ -19711,8 +18988,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `House3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `side`
@@ -19729,8 +19004,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `enemies` | |
 
 </details>
-
-
 ---
 
 ### Enum: `special_tile_tag`
@@ -19750,9 +19023,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag_location`](#enum-tag_location) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `spin`
@@ -19769,8 +19041,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `again` | |
 
 </details>
-
-
 ---
 
 ### Enum: `theend`
@@ -19789,8 +19059,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_TheEndUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `throw_ability`
@@ -19807,8 +19075,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TinkererThrow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tint`
@@ -19827,8 +19093,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `yellow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `to`
@@ -19848,9 +19112,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`from`](#enum-from) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `walk,`
@@ -19869,8 +19132,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `dislocatedShoulderWalk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `warrior_tag`
@@ -19889,9 +19150,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`hidden_tag`](#enum-hidden_tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `weak,`
@@ -19910,8 +19170,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `dislocatedShoulderIdle` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityEnabledIfHasStatus`
@@ -19930,9 +19188,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`status`](#enum-status) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `AddElementsToWeapon`
@@ -19949,8 +19206,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Electric` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AfterImage`
@@ -19968,8 +19223,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PlayerCat_ThiefShade2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AllyBonusAbilityAura`
@@ -19986,8 +19239,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NubbyToss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AllyDamageReaction`
@@ -20004,8 +19255,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `attack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AllyMoveAbilityAura`
@@ -20024,9 +19273,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`ability`](#enum-ability) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `AutocastEachTurn`
@@ -20044,8 +19292,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ViolentOutburst` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AutocastEachTurnBegin`
@@ -20063,8 +19309,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MindCrack_EldritchVisage2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChangeFaction`
@@ -20081,8 +19325,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sabertooths` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChangeTileOnDeath`
@@ -20099,8 +19341,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WaterTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChargeSpiritBombAura`
@@ -20119,9 +19359,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`BonusAbility`](#enum-bonusability) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `EliteTint`
@@ -20138,8 +19377,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `red` | |
 
 </details>
-
-
 ---
 
 ### Enum: `EnterMount`
@@ -20156,8 +19393,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `enter` | |
 
 </details>
-
-
 ---
 
 ### Enum: `EquipRandomTemporaryItemFromPool`
@@ -20175,8 +19410,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapons` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FamiliarBonusAbility`
@@ -20194,8 +19427,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FamiliarSelfDestruct2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FinalBossShield`
@@ -20213,8 +19444,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `None` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FollowUp`
@@ -20232,8 +19461,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FollowUpDash2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ForceMoveTowardsEnemies`
@@ -20251,8 +19478,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoveOne` | |
 
 </details>
-
-
 ---
 
 ### Enum: `GainDisorder`
@@ -20270,8 +19495,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Psychosis` | |
 
 </details>
-
-
 ---
 
 ### Enum: `GainDisorderFromPool`
@@ -20288,8 +19511,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all_disorders` | |
 
 </details>
-
-
 ---
 
 ### Enum: `HideEquipment`
@@ -20306,8 +19527,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `neck` | |
 
 </details>
-
-
 ---
 
 ### Enum: `HolyShieldTransferToTaggedMinions`
@@ -20326,9 +19545,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ImmediateUseDirectionalAbility`
@@ -20346,8 +19564,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BowlDash2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `KaijuWinCon`
@@ -20366,9 +19582,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `Leave`
@@ -20386,8 +19601,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LELeave` | |
 
 </details>
-
-
 ---
 
 ### Enum: `LeaveBehindOnceEachMove`
@@ -20406,9 +19619,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`object`](#enum-object) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `MiniVolcanoReaction`
@@ -20426,8 +19638,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThrobShot_Reaction` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MoveAwayFromDamageSource`
@@ -20446,9 +19656,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`variant_of`](#enum-variant_of), [`move`](#enum-move) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `MoveTowardsKillers`
@@ -20465,8 +19674,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ReaperRevenge` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ProtectTargetedAllies`
@@ -20484,8 +19691,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SwapPositions_WideLoad2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `RandomTaggedMutation`
@@ -20504,9 +19709,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicAttackWhenDead`
@@ -20523,8 +19727,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Haunt` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Return`
@@ -20542,8 +19744,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LEReturn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_StompLegMove`
@@ -20561,8 +19761,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator2_WalkLeg` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ShovingMatch`
@@ -20579,8 +19777,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `attack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TransformWhenBuddyDies`
@@ -20599,9 +19795,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`movieclip`](#enum-movieclip) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `UpgradeLevelUpClassActives`
@@ -20618,8 +19813,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Colorless` | |
 
 </details>
-
-
 ---
 
 ### Enum: `UpgradeLevelUpClassPassives`
@@ -20636,8 +19829,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Colorless` | |
 
 </details>
-
-
 ---
 
 ### Enum: `UpgradeTaggedSpawnsToChampions`
@@ -20656,9 +19847,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `XIsLivingCharactersWithTag`
@@ -20676,8 +19866,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `rock` | |
 
 </details>
-
-
 ---
 
 ### Enum: `alley`
@@ -20695,8 +19883,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `departed_first_real_adventure` | |
 
 </details>
-
-
 ---
 
 ### Enum: `boneyard`
@@ -20714,8 +19900,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_BoneyardUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `bunker`
@@ -20733,8 +19917,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_BunkerUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `caves`
@@ -20752,8 +19934,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_CavesUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cha`
@@ -20771,8 +19951,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `check_in_form`
@@ -20791,9 +19969,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`FormChange`](#enum-formchange) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `clear_surviving_kaiju`
@@ -20812,9 +19989,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`KaijuWinCon`](#enum-kaijuwincon), [`require_beat_house_boss`](#enum-require_beat_house_boss), [`surviving_kaiju`](#enum-surviving_kaiju) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `cloned_ability`
@@ -20831,8 +20007,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `attack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `complete_adventure`
@@ -20849,8 +20023,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `anywhere` | |
 
 </details>
-
-
 ---
 
 ### Enum: `crater`
@@ -20868,8 +20040,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_CraterUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `default_attack_animation`
@@ -20887,8 +20057,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bite1` | |
 
 </details>
-
-
 ---
 
 ### Enum: `desert`
@@ -20906,8 +20074,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_DesertUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `enemy_type`
@@ -20926,9 +20092,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`tag`](#enum-tag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `exit_ability`
@@ -20945,8 +20110,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DybbukReturn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `follow_character_tag`
@@ -20963,8 +20126,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `zaratana` | |
 
 </details>
-
-
 ---
 
 ### Enum: `future`
@@ -20982,8 +20143,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_FutureUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `generate_beanies_quest`
@@ -21001,8 +20160,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `main_pool` | |
 
 </details>
-
-
 ---
 
 ### Enum: `get_full_item_set_from_pool`
@@ -21019,8 +20176,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `common` | |
 
 </details>
-
-
 ---
 
 ### Enum: `gift_item_from_pool`
@@ -21037,8 +20192,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `parasites` | |
 
 </details>
-
-
 ---
 
 ### Enum: `iceage`
@@ -21056,8 +20209,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_IceAgeUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `icon`
@@ -21075,8 +20226,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DejaVu3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `is_move`
@@ -21093,8 +20242,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `junkyard`
@@ -21112,8 +20259,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_JunkyardUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lab`
@@ -21131,8 +20276,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_LabUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lose_all_equipped_items`
@@ -21149,8 +20292,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `mask_center`
@@ -21167,8 +20308,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpearMaskCenter` | |
 
 </details>
-
-
 ---
 
 ### Enum: `mask_extent`
@@ -21185,8 +20324,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpearMaskExtent` | |
 
 </details>
-
-
 ---
 
 ### Enum: `meatworld`
@@ -21204,8 +20341,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_MeatWorldUnlockedFull` | |
 
 </details>
-
-
 ---
 
 ### Enum: `musiclayer`
@@ -21222,8 +20357,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `boss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `outline_color`
@@ -21240,8 +20373,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `white` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_move`
@@ -21258,8 +20389,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicJump` | |
 
 </details>
-
-
 ---
 
 ### Enum: `particle_mat`
@@ -21276,8 +20405,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `shadow_occluded_spelldissolve` | |
 
 </details>
-
-
 ---
 
 ### Enum: `party_injury`
@@ -21294,8 +20421,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random` | |
 
 </details>
-
-
 ---
 
 ### Enum: `preturn_animation`
@@ -21312,8 +20437,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `alertstart` | |
 
 </details>
-
-
 ---
 
 ### Enum: `pseudoprojectile`
@@ -21330,8 +20453,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RocketFromAbove` | |
 
 </details>
-
-
 ---
 
 ### Enum: `quest_item_alias`
@@ -21349,8 +20470,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NuclearKnife` | |
 
 </details>
-
-
 ---
 
 ### Enum: `range_bonuses`
@@ -21367,8 +20486,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `include_alpha` | |
 
 </details>
-
-
 ---
 
 ### Enum: `require_beat_house_boss`
@@ -21387,9 +20504,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`surviving_kaiju`](#enum-surviving_kaiju) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `require_mapgen_flag`
@@ -21408,9 +20524,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`set_mapgen_flag`](#enum-set_mapgen_flag) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `scramble_basic_attack`
@@ -21427,8 +20542,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all` | |
 
 </details>
-
-
 ---
 
 ### Enum: `scramble_passives`
@@ -21445,8 +20558,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `all` | |
 
 </details>
-
-
 ---
 
 ### Enum: `select_item_from_pool_for_cutscene_only`
@@ -21465,9 +20576,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`get_item_from_pool`](#enum-get_item_from_pool) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `sewers`
@@ -21485,8 +20595,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mapflag_SewersUnlocked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `smallray_clip`
@@ -21504,8 +20612,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `labligtht` | |
 
 </details>
-
-
 ---
 
 ### Enum: `surviving_kaiju`
@@ -21524,9 +20630,8 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 > **See Also:** Values from [`frame_label`](#enum-frame_label), [`beat_house_boss`](#enum-beat_house_boss), [`trigger_house_boss`](#enum-trigger_house_boss), [`complete_house_boss`](#enum-complete_house_boss), [`KaijuWinCon`](#enum-kaijuwincon), [`clear_surviving_kaiju`](#enum-clear_surviving_kaiju), [`require_beat_house_boss`](#enum-require_beat_house_boss) may also be valid here (overlapping enum).
+
 </details>
-
-
 ---
 
 ### Enum: `target_filter`
@@ -21544,8 +20649,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `any` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tinkerer_0`
@@ -21562,8 +20665,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tinkerer_0_bombs` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tinkerer_1`
@@ -21580,8 +20681,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `tinkerer_1_bombs` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tooltip_stacks_singular`
@@ -21599,8 +20698,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `KEYWORD_POSSESSED_DESC_SIGNULAR` | |
 
 </details>
-
-
 ---
 
 ### Enum: `trinket`
@@ -21618,8 +20715,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MonkStyleChanger` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_levelgroup`
@@ -21636,8 +20731,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bigsharklevels` | |
 
 </details>
-
-
 ---
 
 ### Enum: `water_alt_shader`
@@ -21654,8 +20747,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `blood` | |
 
 </details>
-
-
 ---
 
 ### Enum: `water_alt_shroud`
@@ -21672,8 +20763,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BloodShroud` | |
 
 </details>
-
-
 ---
 
 ### Enum: `water_alt_tile`
@@ -21690,8 +20779,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BloodTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `welcome_message`
@@ -21709,8 +20796,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `welcome_water_cheap` | |
 
 </details>
-
-
 ---
 
 ### Enum: `#`
@@ -21727,8 +20812,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ID` | |
 
 </details>
-
-
 ---
 
 ### Enum: `10,`
@@ -21745,8 +20828,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bite3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `1x1_object`
@@ -21763,8 +20844,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cWaggle` | |
 
 </details>
-
-
 ---
 
 ### Enum: `2x2_object`
@@ -21781,8 +20860,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cWaggle2x2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `3x3_object`
@@ -21799,8 +20876,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cWaggle3x3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityEnabledIfNotHasStatus`
@@ -21817,8 +20892,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BackflipWhenTargeted` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityEnabledIfSpecificItemEquipped`
@@ -21835,8 +20908,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Neverstone` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AbilityOnBattleStart_UseAI`
@@ -21853,8 +20924,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheCreator_SpawnCloneTeam` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AddElementsToSpells`
@@ -21871,8 +20940,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Earth` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AlternateIdleAnimation`
@@ -21889,8 +20956,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `berserkIdle` | |
 
 </details>
-
-
 ---
 
 ### Enum: `AutocastEachRound`
@@ -21907,8 +20972,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SpiderReturn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BloatEyePassive2`
@@ -21925,8 +20988,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BloatEyeMovement2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `BonusAbility_DelayedApplication`
@@ -21943,8 +21004,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Slap` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Boris`
@@ -21961,8 +21020,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MegaGuppy_TransformBoris` | |
 
 </details>
-
-
 ---
 
 ### Enum: `CanMutateTo`
@@ -21979,8 +21036,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Hyde` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ChangeTileUnderCharacterAtStart`
@@ -21997,8 +21052,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GlassTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Charmed`
@@ -22015,8 +21068,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ConfusionEffectOnTaggedAbilities`
@@ -22033,8 +21084,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `consumable` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ConjureSingleUseBonusAbility`
@@ -22051,8 +21100,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `random` | |
 
 </details>
-
-
 ---
 
 ### Enum: `CounterAttackAfterEnemyCastSpell`
@@ -22069,8 +21116,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Telekinesis` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DeathwormUnderground`
@@ -22087,8 +21132,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DeathWormEat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Default`
@@ -22105,8 +21148,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `release` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DelayCastAbility`
@@ -22123,8 +21164,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HitlerNuke` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DiesToElement`
@@ -22141,8 +21180,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Wind` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DinoLegAnimation`
@@ -22159,8 +21196,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `poop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DisguisedTrapper`
@@ -22177,8 +21212,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FearMelee` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DoubleCastTaggedSpells`
@@ -22195,8 +21228,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `musical` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DropAsFamiliarOnTookDamage`
@@ -22213,8 +21244,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PhantomMaskRock` | |
 
 </details>
-
-
 ---
 
 ### Enum: `DropSoulJarOnDeath`
@@ -22231,8 +21260,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SoulJar_Full` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ElementWeakness`
@@ -22249,8 +21276,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Fire` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ExcludeFromEvents`
@@ -22267,8 +21292,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Tragedy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Explosive`
@@ -22285,8 +21308,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MegaGuppy_TransformExplosive` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ExtraTurnsPerTaggedUnit`
@@ -22303,8 +21324,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `sprout` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FlushmasterCelebration`
@@ -22321,8 +21340,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `celebrate` | |
 
 </details>
-
-
 ---
 
 ### Enum: `FormChangeWhenBuddyDies`
@@ -22339,8 +21356,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rage` | |
 
 </details>
-
-
 ---
 
 ### Enum: `HarpoonTrapPassive`
@@ -22357,8 +21372,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `HarpoonTrapPull` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Holy`
@@ -22375,8 +21388,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MegaGuppy_TransformHoly` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ImmediateUseAbility_Instant`
@@ -22393,8 +21404,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `head_CrownOfHorns` | |
 
 </details>
-
-
 ---
 
 ### Enum: `JohnnyWasher`
@@ -22411,8 +21420,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BBTransformZealot` | |
 
 </details>
-
-
 ---
 
 ### Enum: `JumpAttackLeaveBehind`
@@ -22429,8 +21436,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BungaThrone` | |
 
 </details>
-
-
 ---
 
 ### Enum: `KnockOutClone`
@@ -22447,8 +21452,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PlayerCat_MiniMiniMe` | |
 
 </details>
-
-
 ---
 
 ### Enum: `LeaveBehind`
@@ -22465,8 +21468,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Bait` | |
 
 </details>
-
-
 ---
 
 ### Enum: `LegacySpawnSavedCatIfExists`
@@ -22483,8 +21484,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Legacy_Marshmallow_StolenCatID` | |
 
 </details>
-
-
 ---
 
 ### Enum: `LimitedTileTrail`
@@ -22501,8 +21500,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FlowerTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Madness`
@@ -22519,8 +21516,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ManglerMonsterPassive`
@@ -22537,8 +21532,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ManglerMonsterDashAttack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `MoonHeadCrackedVisual`
@@ -22555,8 +21548,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Cracked` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ObjectOnHitFullyEmpty`
@@ -22573,8 +21564,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RandomArmorPickup` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Paranoia`
@@ -22591,8 +21580,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ParanoiaBasicMelee` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Peralta`
@@ -22607,8 +21594,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TikaFont` | |
 
 </details>
-
-
 ---
 
 ### Enum: `PersistentElement`
@@ -22625,8 +21610,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Holy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `QueueUseAbility`
@@ -22643,8 +21626,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Spider_GoInsane` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReloadOnElementalDamageReceived`
@@ -22661,8 +21642,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Holy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReloadOnKillTagged`
@@ -22679,8 +21658,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `rock` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBasicAttack_Mutation`
@@ -22697,8 +21674,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FetusSpit` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReplaceBlankTilesOnBattleStart`
@@ -22715,8 +21690,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GlassTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ReplaceSpellsWhenDead`
@@ -22733,8 +21706,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Spook` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_CatSwishThrow`
@@ -22751,8 +21722,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_ThrowGrenade` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_ShadowStepIn`
@@ -22769,8 +21738,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator_ShadowStepIn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_ShadowStepOut`
@@ -22787,8 +21754,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator_ShadowStepOut` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_WeaponLower`
@@ -22805,8 +21770,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator_WeaponLower` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_WeaponRaise`
@@ -22823,8 +21786,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator_WeaponRaise` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_bearHug`
@@ -22841,8 +21802,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_Terminator_bearHug` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_Cat_equipWeapon`
@@ -22859,8 +21818,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_TerminatorSwapWeapon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SE_PetRock_Dash`
@@ -22877,8 +21834,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_PetBoulder_Dash` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SafeDoomed`
@@ -22895,8 +21850,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Set`
@@ -22913,8 +21866,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Monk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SetFaction`
@@ -22931,8 +21882,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `enemies` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SoundEventOnHit`
@@ -22949,8 +21898,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Batterup_Connect` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SourceSwapsBackEndOfTurn`
@@ -22967,8 +21914,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ThiefSwapBack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SpawnMeatOnMove`
@@ -22985,8 +21930,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Food` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SpecialBossMultipartInstakill`
@@ -23003,8 +21946,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `moonboss` | |
 
 </details>
-
-
 ---
 
 ### Enum: `StealEquipment`
@@ -23021,8 +21962,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `any` | |
 
 </details>
-
-
 ---
 
 ### Enum: `SupportFormChangeInsteadOfRun`
@@ -23039,8 +21978,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Attacker` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TagMetronome`
@@ -23057,8 +21994,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `musical` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TallTumorManaBurn`
@@ -23075,8 +22010,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TT_ManaBurn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TeamBonusAbility`
@@ -23093,8 +22026,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ShootHere` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TeleportBackAtTurnEnd`
@@ -23111,8 +22042,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FlashBack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `Terminator2Chase`
@@ -23129,8 +22058,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `move` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TickDownStatus`
@@ -23147,8 +22074,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ShortCircuit` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TileElementDamageImmunity`
@@ -23165,8 +22090,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Ice` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TilesMovedToNeighborHeal`
@@ -23183,8 +22106,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TrackAmountKilledByPlayer`
@@ -23201,8 +22122,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BonusBirdsKilled` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TransformBasicMove`
@@ -23219,8 +22138,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `BasicDashAttackMove_NoKnockback` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TransformNow`
@@ -23237,8 +22154,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Hitler` | |
 
 </details>
-
-
 ---
 
 ### Enum: `TransformOnDeathImmediately`
@@ -23255,8 +22170,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NoHead` | |
 
 </details>
-
-
 ---
 
 ### Enum: `UseAbilityWhenShieldDepleted`
@@ -23273,8 +22186,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `T3Pebbles_PrimeBoulderDrop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `UseAbility_Madness`
@@ -23291,8 +22202,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `WhitelistPickupType`
@@ -23309,8 +22218,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `food` | |
 
 </details>
-
-
 ---
 
 ### Enum: `XIsCountStatusStacks`
@@ -23327,8 +22234,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DodgeChance_Status` | |
 
 </details>
-
-
 ---
 
 ### Enum: `abandonedones`
@@ -23345,8 +22250,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `adjust_target`
@@ -23363,8 +22266,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `stalk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `affected_animation`
@@ -23381,8 +22282,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `statDown` | |
 
 </details>
-
-
 ---
 
 ### Enum: `alert_form`
@@ -23399,8 +22298,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Alert` | |
 
 </details>
-
-
 ---
 
 ### Enum: `allow`
@@ -23415,8 +22312,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `skip` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ally_animation`
@@ -23433,8 +22328,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `lickAttack` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ally_damage`
@@ -23451,8 +22344,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `littleboo` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ally_dead`
@@ -23469,8 +22360,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bigboo` | |
 
 </details>
-
-
 ---
 
 ### Enum: `alt_art`
@@ -23487,8 +22376,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TangledMeat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `alt_dead_ani`
@@ -23505,8 +22392,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `off` | |
 
 </details>
-
-
 ---
 
 ### Enum: `alt_dying_ani`
@@ -23523,8 +22408,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `shutdown` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ambush`
@@ -23539,8 +22422,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `putalevelhere.lvl` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animate_name`
@@ -23557,8 +22438,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `pointout` | |
 
 </details>
-
-
 ---
 
 ### Enum: `animation_prefix`
@@ -23575,8 +22454,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RattleSnake` | |
 
 </details>
-
-
 ---
 
 ### Enum: `appearance`
@@ -23593,8 +22470,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GolemCat` | |
 
 </details>
-
-
 ---
 
 ### Enum: `aura_requires_tag`
@@ -23611,8 +22486,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `humanoid` | |
 
 </details>
-
-
 ---
 
 ### Enum: `auto_cast`
@@ -23629,8 +22502,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Dash_Enemy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `auto_cast_on_spawn`
@@ -23647,8 +22518,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Dash_Enemy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `background_shader`
@@ -23665,8 +22534,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `meatpulse_ground` | |
 
 </details>
-
-
 ---
 
 ### Enum: `boss_background_alt`
@@ -23683,8 +22550,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CoreBossBG` | |
 
 </details>
-
-
 ---
 
 ### Enum: `break_ability`
@@ -23701,8 +22566,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `DestroyerBreakShield` | |
 
 </details>
-
-
 ---
 
 ### Enum: `bumblefoot`
@@ -23719,8 +22582,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `butchercat`
@@ -23737,8 +22598,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cancreeper`
@@ -23755,8 +22614,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cat_has_item_slot_equipped`
@@ -23773,8 +22630,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cavecatfamily`
@@ -23791,8 +22646,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `cerberubs`
@@ -23809,8 +22662,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `chapter`
@@ -23827,8 +22678,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `alley` | |
 
 </details>
-
-
 ---
 
 ### Enum: `check_has_status`
@@ -23845,8 +22694,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `FinalBossHitCountdownBoris` | |
 
 </details>
-
-
 ---
 
 ### Enum: `choose_cat_with_item_slot_equipped`
@@ -23863,8 +22710,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `weapon` | |
 
 </details>
-
-
 ---
 
 ### Enum: `clericcat`
@@ -23881,8 +22726,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `clipname`
@@ -23899,8 +22742,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `poopmain` | |
 
 </details>
-
-
 ---
 
 ### Enum: `con`
@@ -23917,8 +22758,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dash_bonk_animation`
@@ -23935,8 +22774,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bonk` | |
 
 </details>
-
-
 ---
 
 ### Enum: `default`
@@ -23953,8 +22790,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bite1` | |
 
 </details>
-
-
 ---
 
 ### Enum: `default_form`
@@ -23971,8 +22806,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Normal` | |
 
 </details>
-
-
 ---
 
 ### Enum: `default_tileset`
@@ -23987,8 +22820,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `alley` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dex`
@@ -24005,8 +22836,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dinocouple`
@@ -24023,8 +22852,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `dodge`
@@ -24041,8 +22868,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `liquidmetaldodge` | |
 
 </details>
-
-
 ---
 
 ### Enum: `drmangler`
@@ -24059,8 +22884,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `drop_body_ability`
@@ -24077,8 +22900,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MoonHandDrop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `druidcat`
@@ -24095,8 +22916,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `eject_ability`
@@ -24113,8 +22932,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MechSuitEject` | |
 
 </details>
-
-
 ---
 
 ### Enum: `empty!`
@@ -24131,8 +22948,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `editor` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ending_cutscene`
@@ -24149,8 +22964,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `hitler_end` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ending_cutscene2`
@@ -24167,8 +22980,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `credits_3` | |
 
 </details>
-
-
 ---
 
 ### Enum: `enemy_damage`
@@ -24185,8 +22996,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `littlecheer` | |
 
 </details>
-
-
 ---
 
 ### Enum: `enemy_dead`
@@ -24203,8 +23012,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `bigcheer` | |
 
 </details>
-
-
 ---
 
 ### Enum: `enter_ability`
@@ -24221,8 +23028,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EnterMech` | |
 
 </details>
-
-
 ---
 
 ### Enum: `equip_sound`
@@ -24239,8 +23044,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_CatWeaponPoke_Chainsaw` | |
 
 </details>
-
-
 ---
 
 ### Enum: `exclude_characters_tagged`
@@ -24257,8 +23060,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `siren` | |
 
 </details>
-
-
 ---
 
 ### Enum: `exclude_prefix`
@@ -24275,8 +23076,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Twister` | |
 
 </details>
-
-
 ---
 
 ### Enum: `fail_adventure`
@@ -24293,8 +23092,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `anywhere` | |
 
 </details>
-
-
 ---
 
 ### Enum: `fightercat`
@@ -24311,8 +23108,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `finish_quest`
@@ -24329,8 +23124,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `JarOfChaos` | |
 
 </details>
-
-
 ---
 
 ### Enum: `flushmaster`
@@ -24347,8 +23140,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_in`
@@ -24365,8 +23156,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Water` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_out`
@@ -24383,8 +23172,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Out` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_unwashed`
@@ -24401,8 +23188,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Unwashed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `form_washed`
@@ -24419,8 +23204,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Washed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `gambit`
@@ -24437,8 +23220,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `general_common`
@@ -24455,8 +23236,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `general_rare`
@@ -24473,8 +23252,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `general_uncommon`
@@ -24491,8 +23268,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `general_very_rare`
@@ -24509,8 +23284,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `get_and_equip_item_from_pool`
@@ -24525,8 +23298,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `cursed_items` | |
 
 </details>
-
-
 ---
 
 ### Enum: `grant_ability`
@@ -24543,8 +23314,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rest` | |
 
 </details>
-
-
 ---
 
 ### Enum: `grow_ability`
@@ -24561,8 +23330,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MotherTumorGrow` | |
 
 </details>
-
-
 ---
 
 ### Enum: `head_drop`
@@ -24579,8 +23346,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MD_HeadDrop` | |
 
 </details>
-
-
 ---
 
 ### Enum: `hit_animation_alt`
@@ -24597,8 +23362,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `catch` | |
 
 </details>
-
-
 ---
 
 ### Enum: `huntercat`
@@ -24615,8 +23378,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `iceelemental`
@@ -24633,8 +23394,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ignore_if_str_aux_equals`
@@ -24651,8 +23410,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ModelingClay_Default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ignore_tagged_sources`
@@ -24669,8 +23426,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `megadino` | |
 
 </details>
-
-
 ---
 
 ### Enum: `increment_savefile_counter`
@@ -24687,8 +23442,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `GameStat_CountNukeQuestCompletions` | |
 
 </details>
-
-
 ---
 
 ### Enum: `infestedduo`
@@ -24705,8 +23458,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `int`
@@ -24723,8 +23474,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `knockback`
@@ -24741,8 +23490,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `level` | |
 
 </details>
-
-
 ---
 
 ### Enum: `knockback_modifier`
@@ -24759,8 +23506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `rotate_cw` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lck`
@@ -24777,8 +23522,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `leg_leave`
@@ -24795,8 +23538,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MD_LegLeave` | |
 
 </details>
-
-
 ---
 
 ### Enum: `leg_return`
@@ -24813,8 +23554,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MD_LegReturn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `legacy_savekey`
@@ -24831,8 +23570,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Legacy_Marshmallow_StolenCatID` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lenny`
@@ -24849,8 +23586,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `lightningelemental`
@@ -24867,8 +23602,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `magecat`
@@ -24885,8 +23618,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `mamamaggot`
@@ -24903,8 +23634,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `monkcat`
@@ -24921,8 +23650,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `name_mod`
@@ -24939,8 +23666,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `CAT_NAME_MOD_DEMONIC` | |
 
 </details>
-
-
 ---
 
 ### Enum: `necrocat`
@@ -24957,8 +23682,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `new_music`
@@ -24975,8 +23698,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `chaos_boss_part2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `next_fight_from_set`
@@ -24991,8 +23712,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `putalevelhere.lvl` | |
 
 </details>
-
-
 ---
 
 ### Enum: `no_buddy`
@@ -25009,8 +23728,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Rage` | |
 
 </details>
-
-
 ---
 
 ### Enum: `nuke`
@@ -25027,8 +23744,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PlotFlag_FrankBeanies` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ontrigger_intentional`
@@ -25045,8 +23760,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Lenny_HereKitty` | |
 
 </details>
-
-
 ---
 
 ### Enum: `other_character`
@@ -25063,8 +23776,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MegaGuppy` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_end_option_prompt`
@@ -25081,8 +23792,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EVENT_USETHETOILET_AGAIN` | |
 
 </details>
-
-
 ---
 
 ### Enum: `override_portrait`
@@ -25099,8 +23808,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Cherub` | |
 
 </details>
-
-
 ---
 
 ### Enum: `party_gain_disorder_from_pool`
@@ -25115,8 +23822,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mental_disorders` | |
 
 </details>
-
-
 ---
 
 ### Enum: `party_gain_disorder_from_pool_exclude_self`
@@ -25131,8 +23836,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mental_disorders` | |
 
 </details>
-
-
 ---
 
 ### Enum: `party_heal_disorder`
@@ -25147,8 +23850,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `mental_disorders` | |
 
 </details>
-
-
 ---
 
 ### Enum: `pass_ani`
@@ -25165,8 +23866,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `pass` | |
 
 </details>
-
-
 ---
 
 ### Enum: `play_result_animation`
@@ -25183,8 +23882,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `resultVeryGood` | |
 
 </details>
-
-
 ---
 
 ### Enum: `play_sound`
@@ -25199,8 +23896,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PickupCoin` | |
 
 </details>
-
-
 ---
 
 ### Enum: `post_absorb_move_weights`
@@ -25217,8 +23912,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `minimum_move` | |
 
 </details>
-
-
 ---
 
 ### Enum: `preferred_distance`
@@ -25235,8 +23928,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `reach` | |
 
 </details>
-
-
 ---
 
 ### Enum: `prioritize_throw_target_with_passive`
@@ -25253,8 +23944,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `NubbyTossPriority` | |
 
 </details>
-
-
 ---
 
 ### Enum: `psychiccat`
@@ -25271,8 +23960,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `puddle_tile`
@@ -25289,8 +23976,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `LavaTile` | |
 
 </details>
-
-
 ---
 
 ### Enum: `punch_self_ability`
@@ -25307,8 +23992,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Dybbuk_StopHittingYourself` | |
 
 </details>
-
-
 ---
 
 ### Enum: `queenhippo`
@@ -25325,8 +24008,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `queue`
@@ -25343,8 +24024,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheChild_TargetBeam` | |
 
 </details>
-
-
 ---
 
 ### Enum: `radicalrat`
@@ -25361,8 +24040,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `range_symmetry`
@@ -25379,8 +24056,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `eight_way` | |
 
 </details>
-
-
 ---
 
 ### Enum: `ratking`
@@ -25397,8 +24072,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `receive_ani`
@@ -25415,8 +24088,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `receive` | |
 
 </details>
-
-
 ---
 
 ### Enum: `release`
@@ -25433,8 +24104,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheChild_ReleaseBeams` | |
 
 </details>
-
-
 ---
 
 ### Enum: `reserved`
@@ -25451,8 +24120,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `for` | |
 
 </details>
-
-
 ---
 
 ### Enum: `reset_str_aux_on_store`
@@ -25469,8 +24136,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ModelingClay_Default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `reset_unlock`
@@ -25487,8 +24152,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `nuke_quest_begin` | |
 
 </details>
-
-
 ---
 
 ### Enum: `restructions`
@@ -25505,8 +24168,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aoe_must_exist` | |
 
 </details>
-
-
 ---
 
 ### Enum: `rockybobo`
@@ -25523,8 +24184,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `roll_ability`
@@ -25541,8 +24200,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `RollDice` | |
 
 </details>
-
-
 ---
 
 ### Enum: `shader`
@@ -25559,8 +24216,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `shimmervignette` | |
 
 </details>
-
-
 ---
 
 ### Enum: `shield`
@@ -25577,8 +24232,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `slime`
@@ -25595,8 +24248,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `sound_event`
@@ -25613,8 +24264,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `EatAntidote` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spawn_node`
@@ -25631,8 +24280,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `start` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spd`
@@ -25649,8 +24296,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spell`
@@ -25667,8 +24312,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MCHadouken` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spewer`
@@ -25685,8 +24328,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `stacy`
@@ -25703,8 +24344,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `str`
@@ -25721,8 +24360,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `aux` | |
 
 </details>
-
-
 ---
 
 ### Enum: `str_aux`
@@ -25739,8 +24376,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `ModelingClay_Default` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tankcat`
@@ -25757,8 +24392,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `thebloat`
@@ -25775,8 +24408,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `thiefcat`
@@ -25793,8 +24424,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tinkerercat`
@@ -25811,8 +24440,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `trampy`
@@ -25829,8 +24456,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 ### Enum: `transform`
@@ -25847,8 +24472,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheChild_TransformBoris` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tumor_object`
@@ -25865,8 +24488,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MotherTumor` | |
 
 </details>
-
-
 ---
 
 ### Enum: `tutorial`
@@ -25883,8 +24504,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `AREA_NAME_TUTORIAL` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlock_item`
@@ -25901,8 +24520,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `MomsKnife` | |
 
 </details>
-
-
 ---
 
 ### Enum: `unlockcheck_on_complete`
@@ -25919,8 +24536,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `map_unlock_junkyard` | |
 
 </details>
-
-
 ---
 
 ### Enum: `utility`
@@ -25937,8 +24552,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `PlayerSpawn` | |
 
 </details>
-
-
 ---
 
 ### Enum: `zodiac`
@@ -25955,8 +24568,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `auto` | |
 
 </details>
-
-
 ---
 
 
@@ -25978,8 +24589,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `scuffed` | |
 
 </details>
-
-
 ---
 
 ### Enum: `sludge_armor`
@@ -25996,8 +24605,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SludgeNeck` | |
 
 </details>
-
-
 ---
 
 ### Enum: `raptor_nest_eggs`
@@ -26014,8 +24621,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WeirdEgg` | |
 
 </details>
-
-
 ---
 
 ### Enum: `spells`
@@ -29211,8 +27816,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `Zoomzerk2` | |
 
 </details>
-
-
 ---
 
 ### Enum: `passive_pool`
@@ -29750,7 +28353,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WrenchedNeck` | |
 
 </details>
-
 ---
 
 ### Enum: `disorder`
@@ -29827,7 +28429,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WobblyCat` | |
 
 </details>
-
 ---
 
 ### Enum: `parasite`
@@ -29874,7 +28475,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `TheTick` | |
 
 </details>
-
 ---
 
 ### Enum: `image`
@@ -30243,7 +28843,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `zombietombstone.png` | |
 
 </details>
-
 ---
 
 ### Enum: `event_file`
@@ -30282,7 +28881,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `treasure_box.gon` | |
 
 </details>
-
 ---
 
 ### Enum: `combo_effect`
@@ -30360,7 +28958,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WindWisps` | |
 
 </details>
-
 ---
 
 ### Enum: `sound`
@@ -30380,7 +28977,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `SE_BirdSmall_DyingCall` | |
 
 </details>
-
 ---
 
 ### Enum: `global_tags`
@@ -30409,7 +29005,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `zaratana_following` | |
 
 </details>
-
 ---
 
 ### Enum: `global_particles`
@@ -30626,7 +29221,6 @@ This document provides exhaustive lists of all enum and string values found in t
 | `WindWisps` | |
 
 </details>
-
 ---
 
 ### Enum: `class_seals`

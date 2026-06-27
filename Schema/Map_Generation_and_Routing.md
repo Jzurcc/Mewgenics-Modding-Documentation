@@ -151,7 +151,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ---
 
 ### Object: `boss`
@@ -177,7 +176,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`unlockcheck_on_complete`](./Enums.md#enum-unlockcheck_on_complete) | Enum || 1 | `map_unlock_junkyard` |
 
 </details>
-
 ---
 
 ### Object: `exit0`
@@ -201,7 +199,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hidden` | Boolean || 10 | `false`<br>`true` |
 
 </details>
-
 ---
 
 ### Object: `quest_event`
@@ -223,7 +220,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `exit1`
@@ -246,7 +242,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 3 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `hard_initial`
@@ -267,7 +262,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `time_machine`
@@ -289,7 +283,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 4 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `BothObelisksUnlocked`
@@ -309,7 +302,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `DimensionXUnlocked`
@@ -329,7 +321,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `EndOfTimeUnlocked`
@@ -349,7 +340,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `HardPathUnlocked`
@@ -369,7 +359,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`hard_initial`](./Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `MeatWorldUnlocked`
@@ -390,7 +379,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `miniboss_event`
@@ -411,7 +399,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level`](./Enums.md#enum-level) | Enum || 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 
 </details>
-
 ---
 
 ### Object: `mw_battle1`
@@ -432,7 +419,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_boss`
@@ -455,7 +441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_earlyhome`
@@ -476,7 +461,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_event1`
@@ -497,7 +481,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_hard1`
@@ -519,7 +502,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_home`
@@ -540,7 +522,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_quest_event`
@@ -563,7 +544,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `mw_treasure`
@@ -584,7 +564,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `VolcanoAntennaAttached`
@@ -604,7 +583,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `battle`
@@ -624,7 +602,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `BoneyardUnlocked`
@@ -644,7 +621,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `BunkerUnlocked`
@@ -664,7 +640,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `CavesUnlocked`
@@ -684,7 +659,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `ChaosAntennaAttached`
@@ -704,7 +678,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `CoreObeliskUnlocked`
@@ -724,7 +697,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `CoreUnlocked`
@@ -744,7 +716,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `CraterUnlocked`
@@ -764,7 +735,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `dimensionx`
@@ -784,7 +754,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `endoftime`
@@ -804,7 +773,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `event`
@@ -825,7 +793,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `exit_desert`
@@ -849,7 +816,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `exit_lab`
@@ -873,7 +839,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `future`
@@ -893,7 +858,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `FutureUnlocked`
@@ -913,7 +877,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `GenFlag_Boss_Spewer`
@@ -933,7 +896,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `GenFlag_Boss_Stacy`
@@ -954,7 +916,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`miniboss_event`](./Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `home`
@@ -974,7 +935,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `iceage`
@@ -994,7 +954,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `IceAgeUnlocked`
@@ -1014,7 +973,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `JunkyardUnlocked`
@@ -1034,7 +992,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `jurassic`
@@ -1054,7 +1011,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `JurassicUnlocked`
@@ -1074,7 +1030,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `MeatWorldUnlockedFull`
@@ -1101,7 +1056,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`mw_treasure`](./Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `MoonObeliskUnlocked`
@@ -1121,7 +1075,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `MoonUnlocked`
@@ -1141,7 +1094,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `mw_altar`
@@ -1163,7 +1115,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `SewersUnlocked`
@@ -1183,7 +1134,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `shop_cheapwater`
@@ -1205,7 +1155,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `shop_water`
@@ -1227,7 +1176,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `start`
@@ -1247,7 +1195,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `theend`
@@ -1267,7 +1214,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `spin_cats` | Boolean || 1 | `true` |
 
 </details>
-
 ---
 
 ### Object: `TheEndUnlocked`
@@ -1287,7 +1233,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `ThrobbingArteryDone`
@@ -1307,7 +1252,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `treasure`
@@ -1328,7 +1272,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 ### Object: `WallOfFleshDone`
@@ -1348,7 +1291,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
-
 ---
 
 ### Object: `weather_event`
@@ -1369,7 +1311,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
-
 ---
 
 
@@ -1390,7 +1331,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `boneyard`
 
 <details>
@@ -1402,7 +1342,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `bunker`
 
 <details>
@@ -1414,7 +1353,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `caves`
 
 <details>
@@ -1426,7 +1364,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `core`
 
 <details>
@@ -1438,7 +1375,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `crater`
 
 <details>
@@ -1450,7 +1386,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `desert`
 
 <details>
@@ -1462,7 +1397,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `junkyard`
 
 <details>
@@ -1474,7 +1408,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `lab`
 
 <details>
@@ -1486,7 +1419,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `meatworld`
 
 <details>
@@ -1498,7 +1430,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `moon`
 
 <details>
@@ -1510,7 +1441,6 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 
 </details>
-
 ### Object: `sewers`
 
 <details>

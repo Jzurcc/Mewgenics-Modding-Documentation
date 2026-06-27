@@ -22,6 +22,5 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`quotes`](./Arrays.md#array-quotes) | Array | An array of dialogue quotes for the boss cutscene. | 36 | `[` |
 
 </details>
-
 ---
 
