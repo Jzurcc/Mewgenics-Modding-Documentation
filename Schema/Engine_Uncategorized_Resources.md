@@ -38,8 +38,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 ||
-| [`weather`](./Arrays.md#array-weather) | Array | An array of weather states to check against. | 1 ||
+| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 ||
+| [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 ||
 
 </details>
 
@@ -59,9 +59,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. | 2 ||
-| `Burn` | Array / Enum / Integer | Applies or references the 'Burn' effect/state. | 1 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | The specific element type to check for. | 1 ||
+| `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 2 ||
+| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -81,8 +81,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusCritChance` | Integer | Applies or references the 'BonusCritChance' effect/state. | 1 ||
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 1 ||
+| `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 1 ||
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 ||
 
 </details>
 
@@ -102,7 +102,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 ||
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 ||
 
 </details>
 
@@ -122,8 +122,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
+| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
 
 </details>
 
@@ -143,7 +143,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 ||
+| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 1 ||
 
 </details>
 
@@ -163,8 +163,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Removes an equipped item and replaces it with a parasite from a specified pool. | 1 ||
-| [`odds`](./Enums.md#enum-odds) | Number | The probability (0.0 to 1.0) of applying the debuff. | 1 ||
+| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 ||
+| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 ||
 
 </details>
 
@@ -184,8 +184,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyToTile`](Abilities_and_Spells.md#object-applytotile) | Object | Redirects the nested effects to apply to the terrain/tile underneath the target rather than the target itself. | 2 ||
-| `VaporizeCorpse` | Integer | Applies or references the 'VaporizeCorpse' effect/state. | 2 ||
+| [`ApplyToTile`](Abilities_and_Spells.md#object-applytotile) | Object | Defines effects to apply to the target tile. | 2 ||
+| `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 2 ||
 
 </details>
 
@@ -205,9 +205,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LaunchOffScreen`](./Math_Equations.md) | Equation | Applies or references the 'LaunchOffScreen' effect/state. | 1 ||
-| `LaunchOffScreenInstakill` | Integer | Applies or references the 'LaunchOffScreenInstakill' effect/state. | 1 ||
-| `TempInitiativeChange` | Integer | Applies or references the 'TempInitiativeChange' effect/state. | 1 ||
+| [`LaunchOffScreen`](./Math_Equations.md) | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 1 ||
+| `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 1 ||
+| `TempInitiativeChange` | Integer | The flat change to the unit's initiative value. | 1 ||
 
 </details>
 
@@ -227,10 +227,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 ||
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 ||
-| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 ||
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 1 ||
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 ||
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 ||
 
 </details>
 
@@ -250,7 +250,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Imprison`](./Enums.md#enum-imprison) | Enum | Applies or references the 'Imprison' effect/state. | 1 ||
+| [`Imprison`](./Enums.md#enum-imprison) | Enum | Specifies the type of unit or object to summon as a prison. | 1 ||
 
 </details>
 
@@ -287,15 +287,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 ||
-| [`formula`](./Math_Equations.md) | Equation | The math expression to evaluate. | 8 ||
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 ||
-| [`Slow`](./Arrays.md#array-slow) | Equation | Applies or references the 'Slow' effect/state. | 4 ||
-| [`Burn`](./Math_Equations.md) | Equation | Applies or references the 'Burn' effect/state. | 1 ||
-| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | Applies or references the 'Freeze' effect/state. | 1 ||
-| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | Applies or references the 'OverrideKnockbackDamage' effect/state. | 1 ||
-| `SpeedUp` | Enum / Integer | Applies or references the 'SpeedUp' effect/state. | 1 ||
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 1 ||
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 ||
+| [`formula`](./Math_Equations.md) | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 ||
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 ||
+| [`Slow`](./Arrays.md#array-slow) | Equation | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 ||
+| [`Burn`](./Math_Equations.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 1 ||
+| [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 1 ||
+| [`OverrideKnockbackDamage`](./Math_Equations.md) | Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 1 ||
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 ||
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 ||
 
 </details>
 
@@ -315,9 +315,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Integer | Applies or references the 'GenericBuff' effect/state. | 1 ||
-| `PartialCleanse` | Integer | Applies or references the 'PartialCleanse' effect/state. | 1 ||
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 1 ||
+| `GenericBuff` | Integer | A generic buff value applied to the unit. | 1 ||
+| `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 ||
+| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 1 ||
 
 </details>
 
@@ -337,9 +337,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 ||
-| `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. | 1 ||
-| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 ||
+| `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 1 ||
+| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 ||
 
 </details>
 
@@ -359,20 +359,20 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 4 ||
-| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Applies or references the 'SpawnThingIfHitKills' effect/state. | 2 ||
-| `threshold_percent` | Integer | A percentage-based health threshold (e.g. 50%). | 2 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 ||
-| [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 1 ||
-| `CaptureFamiliar` | Integer | Applies or references the 'CaptureFamiliar' effect/state. | 1 ||
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Applies or references the 'Die' effect/state. | 1 ||
-| `DieViolently` | Integer | Applies or references the 'DieViolently' effect/state. | 1 ||
-| `FactionConversion` | Integer | Applies or references the 'FactionConversion' effect/state. | 1 ||
-| `FlatLeech` | Integer | Applies or references the 'FlatLeech' effect/state. | 1 ||
-| `FullHeal` | Integer | Applies or references the 'FullHeal' effect/state. | 1 ||
-| [`Instakill`](./Arrays.md#array-instakill) | Integer | Applies or references the 'Instakill' effect/state. | 1 ||
-| [`threshold_expr`](./Math_Equations.md) | Equation | `item_aux` | 1 ||
-| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 1 ||
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 4 ||
+| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 ||
+| `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 ||
+| [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 ||
+| `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 ||
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 ||
+| `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 ||
+| `FactionConversion` | Integer | Converts the target to the caster's faction. | 1 ||
+| `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 1 ||
+| `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 ||
+| [`Instakill`](./Arrays.md#array-instakill) | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 ||
+| [`threshold_expr`](./Math_Equations.md) | Equation | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 ||
+| `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 ||
 
 </details>
 
@@ -392,14 +392,14 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CritChanceUp` | Integer | Applies or references the 'CritChanceUp' effect/state. | 36 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 7 ||
-| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 ||
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 5 ||
-| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 ||
-| [`ForceImmediateMoveAndAttack`](Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | Forces the character to immediately move to a target and use a specified ability. | 1 ||
-| `SpeedUp` | Enum / Integer | Applies or references the 'SpeedUp' effect/state. | 1 ||
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Forces the character or target to instantly use a specified ability. | 1 ||
+| `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 ||
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 ||
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 ||
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 ||
+| [`ForceImmediateMoveAndAttack`](Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 ||
+| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 ||
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 ||
 
 </details>
 
@@ -419,9 +419,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Logic: Applies vertical and horizontal displacement. | 1 ||
-| `RemoveKnockback` | Integer | Applies or references the 'RemoveKnockback' effect/state. | 1 ||
-| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | Passive: Active only until the physics engine stops moving the character. | 1 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 ||
+| `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 1 ||
+| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 ||
 
 </details>
 
@@ -441,7 +441,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 1 ||
+| `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 ||
 
 </details>
 
@@ -461,7 +461,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetKnockback` | Integer | Applies or references the 'SetKnockback' effect/state. | 1 ||
+| `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 1 ||
 
 </details>
 
@@ -481,10 +481,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 ||
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Displaces the target vertically and horizontally away from the source. | 2 ||
-| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 ||
-| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object | Queues an ability to be cast automatically after a certain delay or trigger. | 1 ||
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 ||
+| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 ||
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 ||
+| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object | Specifies the name of an ability to cast after a delay. | 1 ||
 
 </details>
 
@@ -504,9 +504,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 ||
-| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | State object triggered when this object or entity is eaten/consumed by another character. | 1 ||
-| [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | Grants nested passives only while the character possesses the specified status. | 1 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 ||
+| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 ||
+| [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 ||
 
 </details>
 
@@ -526,8 +526,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Integer | Applies or references the 'RepairTrinket' effect/state. | 1 ||
-| `threshold_flat` | Integer | A flat numerical health value threshold. | 1 ||
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 1 ||
+| `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 1 ||
 
 </details>
 
@@ -547,8 +547,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | Applies or references the 'Confusion' effect/state. | 6 ||
-| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 ||
+| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 ||
+| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 ||
 
 </details>
 
@@ -568,7 +568,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceTowardsSource` | Integer | Applies or references the 'DisplaceTowardsSource' effect/state. | 1 ||
+| `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 1 ||
 
 </details>
 
@@ -588,7 +588,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | Applies or references the 'Immobile' effect/state. | 4 ||
+| [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 ||
 
 </details>
 
@@ -608,7 +608,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 2 ||
+| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 2 ||
 
 </details>
 
@@ -628,9 +628,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CanApplyToInanimate`](Abilities_and_Spells.md#object-canapplytoinanimate) | Object | Modifier object that allows its nested effects to target inanimate objects (like rocks or furniture) instead of just characters. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
-| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | Applies or references the 'RepairWeapon' effect/state. | 1 ||
+| [`CanApplyToInanimate`](Abilities_and_Spells.md#object-canapplytoinanimate) | Object | An object containing effects that can be applied to inanimate objects. | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
+| [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 ||
 
 </details>
 
@@ -650,9 +650,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 ||
-| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier to track this specific application. | 2 ||
-| `TriggerGameEnding` | Integer | Applies or references the 'TriggerGameEnding' effect/state. | 2 ||
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 2 ||
+| [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 2 ||
+| `TriggerGameEnding` | Integer | If set to 1, triggers the game's ending sequence; 0 disables it. | 2 ||
 
 </details>
 
@@ -672,14 +672,14 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 ||
-| `ConjureRandomAbilityFromCat` | Integer | Applies or references the 'ConjureRandomAbilityFromCat' effect/state. | 2 ||
-| `Adrenaline` | Integer | Applies or references the 'Adrenaline' effect/state. | 1 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 ||
-| `GenericDebuff` | Integer | Applies or references the 'GenericDebuff' effect/state. | 1 ||
-| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Applies or references the 'KnockOutClone' effect/state. | 1 ||
-| `Scrambled` | Integer | Applies or references the 'Scrambled' effect/state. | 1 ||
-| `T2CopyCat` | Integer | Applies or references the 'T2CopyCat' effect/state. | 1 ||
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 ||
+| `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 2 ||
+| `Adrenaline` | Integer | The flat amount of Adrenaline (a resource or stat) granted to the unit. | 1 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 ||
+| `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 1 ||
+| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 1 ||
+| `Scrambled` | Integer | The number of stacks of Scrambled applied. | 1 ||
+| `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 1 ||
 
 </details>
 
@@ -699,8 +699,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Grants the nested passive abilities dynamically. | 1 ||
-| [`odds`](./Enums.md#enum-odds) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 1 ||
+| [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 ||
 
 </details>
 
@@ -720,9 +720,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 ||
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | Throws coins out into the level randomly. | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 ||
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 ||
 
 </details>
 
@@ -742,8 +742,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -763,13 +763,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDamage` | Integer | Applies or references the 'IgnoreDamage' effect/state. | 3 ||
-| `BonusDamageBasedOnDistance` | Integer | Applies or references the 'BonusDamageBasedOnDistance' effect/state. | 2 ||
-| `BonusDamage` | Enum / Integer | Applies or references the 'BonusDamage' effect/state. | 1 ||
-| `CapDamage` | Integer | Applies or references the 'CapDamage' effect/state. | 1 ||
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback object that executes if the preceding `Conditional_` block evaluated to false. | 1 ||
-| `Knockback` | Integer | Applies or references the 'Knockback' effect/state. | 1 ||
-| `RandomBonusDamage` | Integer | Applies or references the 'RandomBonusDamage' effect/state. | 1 ||
+| `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 3 ||
+| `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 2 ||
+| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 ||
+| `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
+| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 1 ||
+| `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 1 ||
 
 </details>
 
@@ -805,7 +805,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | Examples: `ThornUpX, ThornUp` | 8 ||
+| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum | The ability to cast after an enemy spell, which can stack in effect. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -823,7 +823,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Examples: `SummonBrambles2, FlowerEventSleep, BrambleRandomTileEvent` | 34 ||
+| [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 34 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -841,7 +841,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum | Examples: `TheCreator_SpawnCloneTeam` | 2 ||
+| [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum | Specifies the ability the unit will use at the start of battle via AI resolution. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -862,8 +862,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `force_display_name` | Boolean | `true` | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `force_display_name` | Boolean | If true, forces the display name to show for the ability. | 2 ||
 
 </details>
 
@@ -883,8 +883,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 730 ||
-| `even_of_stunned` | Boolean | `true` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_of_stunned` | Boolean | If true, the ability triggers only on even rounds and when the unit is stunned. | 1 ||
 
 </details>
 
@@ -901,7 +901,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllUnitsExplodeOnDeath` | Integer | Applies or references the | 2 ||
+| `AllUnitsExplodeOnDeath` | Integer | The radius of the explosion that triggers when any unit dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -919,7 +919,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlliesScrambleSpellAfterCast` | Integer | Applies or references the | 2 ||
+| `AlliesScrambleSpellAfterCast` | Integer | The number of times an ally's next spell cast will be scrambled (randomly redirected or modified) after the owner casts a spell. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -940,19 +940,19 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 3 ||
-| `AlphaCat` | Integer | Applies or references the 'AlphaCat' effect/state. | 2 ||
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 2 ||
-| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 2 ||
-| `ManaGain` | Enum / Integer | Applies or references the 'ManaGain' effect/state. | 2 ||
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Applies or references the 'Revive' effect/state. | 2 ||
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 ||
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Upgrades or transforms an existing ability into a new one from the specified pool. | 1 ||
-| `RefreshActPoints` | Integer | Applies or references the 'RefreshActPoints' effect/state. | 1 ||
-| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 1 ||
-| `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. | 1 ||
-| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | Transforms the equipped weapon into another specific weapon state. | 1 ||
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | Applies or references the 'WeaponAuxMultiplier' effect/state. | 1 ||
+| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Specifies the item ID to remove from the source on kill. | 3 ||
+| `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 ||
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 2 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 2 ||
+| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 2 ||
+| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 ||
+| `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 ||
+| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 ||
+| `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 ||
+| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | An object with `from` and `to` fields specifying the weapon transformation. | 1 ||
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 ||
 
 </details>
 
@@ -972,8 +972,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `chance_to_break` | Integer | Examples: `5, 10` | 2 ||
-| `durability_loss` | Integer | Examples: `0` | 2 ||
+| `chance_to_break` | Integer | The percentage chance that the armor breaks on hit. | 2 ||
+| `durability_loss` | Integer | The amount of durability lost when the armor break effect triggers. | 2 ||
 
 </details>
 
@@ -993,8 +993,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific dodge ability to trigger (e.g., DestroyerDodge). | 730 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 ||
 
 </details>
 
@@ -1011,7 +1011,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BonusAbility_DelayedApplication`](./Enums.md#enum-bonusability_delayedapplication) | Enum | Applies or references the | 2 ||
+| [`BonusAbility_DelayedApplication`](./Enums.md#enum-bonusability_delayedapplication) | Enum | Specifies the name of a bonus ability to apply with a delay. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1029,7 +1029,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BramblesOnHit` | Integer | Applies or references the | 14 ||
+| `BramblesOnHit` | Integer | If set to 1, spawns bramble tiles on the target's location on hit. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1047,7 +1047,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanLevelUpWhenDead` | Integer | Applies or references the | 4 ||
+| `CanLevelUpWhenDead` | Integer | If 1, allows the unit to gain experience and level up while dead. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1068,11 +1068,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `flat_chance` | Integer | Examples: `50, 100` | 5 ||
-| `chance_per_damage` | Integer | Examples: `2, 0` | 3 ||
-| `backstabs_only` | Boolean | `true` | 1 ||
-| `even_on_0_damage_if_knockback` | Boolean | `true` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `flat_chance` | Integer | The base percentage chance to spit when taking damage. | 5 ||
+| `chance_per_damage` | Integer | The additional percentage chance to spit per point of damage taken. | 3 ||
+| `backstabs_only` | Boolean | If true, the reaction only triggers on backstab damage. | 1 ||
+| `even_on_0_damage_if_knockback` | Boolean | If true, the reaction triggers on zero damage if knockback occurs. | 1 ||
 
 </details>
 
@@ -1089,7 +1089,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Applies or references the | 4 ||
+| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum | Specifies the tile type that replaces the current tile when this unit dies. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1110,8 +1110,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Applies or references the 'Return' effect/state. | 26 ||
-| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Applies or references the 'Leave' effect/state. | 16 ||
+| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Specifies the ability used when this unit returns to the field. | 26 ||
+| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Specifies the ability used when this unit leaves the field. | 16 ||
 
 </details>
 
@@ -1128,7 +1128,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | Applies or references the | 2 ||
+| [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum | Specifies the ability the unit uses to counterattack after an enemy casts a spell. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1146,7 +1146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CounterNextAttacks` | Integer | Applies or references the | 2 ||
+| `CounterNextAttacks` | Integer | The number of incoming attacks the unit will counterattack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1164,7 +1164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Counterspell`](Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object | Applies or references the | 4 ||
+| [`Counterspell`](Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1182,7 +1182,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CrackMoonHead` | Integer | Applies or references the | 2 ||
+| `CrackMoonHead` | Integer | If set, cracks the MoonHead's head, triggering its death sequence. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1203,8 +1203,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 8 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 8 ||
 
 </details>
 
@@ -1224,8 +1224,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `health` | Integer | Examples: `16, 2, 7` | 67 ||
-| `rounds` | Integer | Examples: `2, 1` | 1 ||
+| `health` | Integer | The maximum hit points of the unit. | 67 ||
+| `rounds` | Integer | The number of rounds after which the auto-revive triggers. | 1 ||
 
 </details>
 
@@ -1242,7 +1242,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedFury` | Integer | Applies or references the | 4 ||
+| `DelayedFury` | Integer | The percentage of Fury damage that is stored and applied after a delay. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1260,7 +1260,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedPain` | Integer | Applies or references the | 4 ||
+| `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1278,7 +1278,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedWindTrail` | Integer | Applies or references the | 2 ||
+| `DelayedWindTrail` | Integer | If set to 1, creates a delayed wind trail behind the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1296,7 +1296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieWhenOnlyGolemsLeft` | Integer | Applies or references the | 2 ||
+| `DieWhenOnlyGolemsLeft` | Integer | If 1, the unit dies when only golem-type allies remain on the field. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1314,7 +1314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | Examples: `Clot, MedSlime, BiggestFood` | 12 ||
+| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum | The object that spawns in four instances upon this unit's death. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1332,7 +1332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellIfManaCostUnderThreshold` | Integer | Applies or references the | 2 ||
+| `DoubleCastSpellIfManaCostUnderThreshold` | Integer | If a spell's mana cost is under this threshold, it will be cast twice. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1350,7 +1350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Integer | Applies or references the | 4 ||
+| `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1368,7 +1368,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellsEachTurn_Status` | Integer | Applies or references the | 3 ||
+| `DoubleCastSpellsEachTurn_Status` | Integer | The number of turns the unit gains Double Cast for spells each turn. | 3 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1389,7 +1389,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The ID of the object/particle to spawn. | 545 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
 
 </details>
 
@@ -1406,7 +1406,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EnrageOnDamage` | Integer | Applies or references the | 2 ||
+| `EnrageOnDamage` | Integer | If set to 1, the unit gains enrage stacks when taking damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1424,7 +1424,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum | Examples: `combat_reward_easy, pills` | 4 ||
+| [`FindExtraItemFromPoolOnBattleEnd`](./Enums.md#enum-findextraitemfrompoolonbattleend) | Enum | Specifies the item pool from which an extra item is granted at the end of combat. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1442,7 +1442,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlatHealWhenDealDamage` | Number | Examples: `1` | 2 ||
+| `FlatHealWhenDealDamage` | Number | The flat amount of health healed each time damage is dealt. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1460,7 +1460,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlowersOnHit` | Integer | Applies or references the | 4 ||
+| `FlowersOnHit` | Integer | The number of flowers spawned on the tile upon hitting the target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1478,7 +1478,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCastAndAfterSpendMana` | Integer | Applies or references the | 2 ||
+| `FreeFirstCastAndAfterSpendMana` | Integer | If set to 1, the first cast of the ability and each cast after spending mana costs no resources. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1496,7 +1496,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GainManaWhenAnythingDies` | Number | Examples: `1` | 2 ||
+| `GainManaWhenAnythingDies` | Number | The amount of mana gained whenever any unit dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1515,15 +1515,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `ability_damage_only` | Boolean | `true` | 6 ||
-| `backstabs_only` | Boolean | `true` | 2 ||
-| `damage_threshold` | Integer | Examples: `10` | 2 ||
-| `even_if_blocked` | Boolean | `true` | 2 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 ||
-| `health_threshold` | Integer | Examples: `50, 70` | 2 ||
-| `buddy_damage_only` | Boolean | `true` | 1 ||
-| `target_furthest_valid` | Boolean | `true` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `ability_damage_only` | Boolean | If true, the reaction only triggers on ability damage, not basic attacks. | 6 ||
+| `backstabs_only` | Boolean | If true, the reaction only triggers on backstab damage. | 2 ||
+| `damage_threshold` | Integer | The amount of damage that must be dealt to trigger the ability reaction. | 2 ||
+| `even_if_blocked` | Boolean | If true, the reaction triggers even if the damage is blocked. | 2 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 2 ||
+| `health_threshold` | Integer | The health value at or below which the reaction triggers. -1 disables this check. | 2 ||
+| `buddy_damage_only` | Boolean | If true, only damage dealt by the unit's buddy triggers the reaction. | 1 ||
+| `target_furthest_valid` | Boolean | If true, the reaction targets the furthest valid enemy. | 1 ||
 
 </details>
 
@@ -1543,8 +1543,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Integer | Examples: `-2, -1, -3` | 3 ||
-| `max` | Integer | Maximum coins granted. | 3 ||
+| `change` | Integer | The amount to adjust the auxiliary counter by. | 3 ||
+| `max` | Integer | The maximum amount of coins that can be gained. | 3 ||
 
 </details>
 
@@ -1564,8 +1564,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `change` | Integer | Examples: `-2, -1, -3` | 1 ||
-| `max` | Integer | Maximum coins granted. | 1 ||
+| `change` | Integer | The amount to adjust the auxiliary counter by. | 1 ||
+| `max` | Integer | The maximum amount of coins that can be gained. | 1 ||
 
 </details>
 
@@ -1582,7 +1582,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IncreaseItemAuxOnKill` | Integer | Applies or references the | 2 ||
+| `IncreaseItemAuxOnKill` | Integer | If true, increases the item's aux counter on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1600,7 +1600,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MadnessChanceOnTurnBegin` | Integer | Applies or references the | 4 ||
+| `MadnessChanceOnTurnBegin` | Integer | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1618,7 +1618,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Examples: `ThrobShot_Reaction, MiniVolcano_Spurt` | 4 ||
+| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum | Specifies the ability triggered when a mini volcano erupts near this unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1639,11 +1639,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spell`](./Enums.md#enum-spell) | Enum | `MCHadouken` | 924 ||
-| [`trinket`](./Enums.md#enum-trinket) | Enum | `MCHadouken`, `MonkStyleChanger` | 544 ||
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Weapon item constraint. | 474 ||
-| [`move`](./Enums.md#enum-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 ||
-| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 ||
+| [`spell`](./Enums.md#enum-spell) | Enum | Specifies the spell ability to use as a reaction. | 924 ||
+| [`trinket`](./Enums.md#enum-trinket) | Enum | The name of the trinket item the unit starts with. | 544 ||
+| [`weapon`](./Enums.md#enum-weapon) | Enum | The name of the weapon item the unit starts with. | 474 ||
+| [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 122 ||
+| [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 26 ||
 
 </details>
 
@@ -1660,7 +1660,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Applies or references the | 2 ||
+| [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum | Specifies the visual state for the character's cracked head appearance. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1678,7 +1678,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MoonHeadFinisherEnabler` | Integer | Applies or references the | 6 ||
+| `MoonHeadFinisherEnabler` | Integer | Determines the finisher state for MoonHead abilities; negative values may disable. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1696,7 +1696,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MutateAfterXTurns` | Integer | Applies or references the | 2 ||
+| `MutateAfterXTurns` | Integer | The number of turns after which the character automatically mutates (or transforms). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1717,7 +1717,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the object to spawn (e.g., Poop). | 545 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
 
 </details>
 
@@ -1734,7 +1734,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Examples: `SmallRock, AnimalEgg2, AnimalEgg` | 10 ||
+| [`ObjectOnHitEmpty`](./Enums.md#enum-objectonhitempty) | Enum | Specifies the object to spawn on hitting an empty cell. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1752,7 +1752,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Examples: `RandomArmorPickup` | 2 ||
+| [`ObjectOnHitFullyEmpty`](./Enums.md#enum-objectonhitfullyempty) | Enum | Specifies the object (e.g., RandomArmorPickup) to spawn on the target when the attacker's inventory is completely empty. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1773,7 +1773,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | Modifier: Injects a status effect into the character's trample damage. | 2 ||
+| [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 ||
 
 </details>
 
@@ -1793,8 +1793,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Passives granted by equipping this. | 5118 ||
-| [`tile`](./Arrays.md#array-tile) | Array / Enum | The specific tile type to change into (e.g., GlassTile). | 26 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`tile`](./Arrays.md#array-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 ||
 
 </details>
 
@@ -1811,7 +1811,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PreEmptiveCounterNextAttacks` | Integer | Applies or references the | 2 ||
+| `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1829,7 +1829,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReformMoonHead` | Integer | Applies or references the | 2 ||
+| `ReformMoonHead` | Integer | If non-zero, triggers the Moon Head's reformation mechanic (e.g., after it eats a cat). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1847,7 +1847,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnKill` | Integer | Applies or references the | 4 ||
+| `ReloadOnKill` | Integer | If set, this ability's reload charge is restored on kill (any kill). | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1865,7 +1865,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnKillEnemy` | Integer | Applies or references the | 4 ||
+| `ReloadOnKillEnemy` | Integer | If set, this ability's reload charge is restored only when killing an enemy. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1883,7 +1883,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReloadOnKillTagged`](./Enums.md#enum-reloadonkilltagged) | Enum | Applies or references the | 2 ||
+| [`ReloadOnKillTagged`](./Enums.md#enum-reloadonkilltagged) | Enum | Specifies the tag of enemies that, when killed, restore a charge. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1901,7 +1901,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairOnKill` | Integer | Applies or references the | 6 ||
+| `RepairOnKill` | Integer | The number of charges restored to the ability upon killing a target. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1919,7 +1919,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReplaceBlankTilesOnBattleStart`](./Enums.md#enum-replaceblanktilesonbattlestart) | Enum | Applies or references the | 2 ||
+| [`ReplaceBlankTilesOnBattleStart`](./Enums.md#enum-replaceblanktilesonbattlestart) | Enum | Specifies a tile type (e.g., GlassTile) that replaces all blank tiles on the battle grid at the start of combat. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1937,7 +1937,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RerollItemsOnBattleEnd` | Integer | Applies or references the | 2 ||
+| `RerollItemsOnBattleEnd` | Integer | If set to 1, all items in the unit's inventory are rerolled to new random items at the end of battle. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1955,7 +1955,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReturnBoundItemOnBattleEnd` | Integer | Applies or references the | 3 ||
+| `ReturnBoundItemOnBattleEnd` | Integer | If set to 1, items bound to this character are returned to their owner at the end of battle. | 3 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1973,7 +1973,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Examples: `Batterup_Connect` | 2 ||
+| [`SoundEventOnHit`](./Enums.md#enum-soundeventonhit) | Enum | Specifies the sound event ID to play on hit (e.g., "Batterup_Connect"). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1994,11 +1994,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` | 2 ||
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 2 ||
-| `expires_on_end_turn` | Boolean | `true` | 1 ||
-| `ExtraBasicMoves_Status` | Integer | Applies or references the 'ExtraBasicMoves_Status' effect/state. | 1 ||
-| `RefreshActPoints` | Integer | Applies or references the 'RefreshActPoints' effect/state. | 1 ||
+| [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 2 ||
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 ||
+| `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 1 ||
+| `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 1 ||
+| `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 ||
 
 </details>
 
@@ -2018,8 +2018,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -2039,9 +2039,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Thorns` | Integer | Examples: `1` | 36 ||
-| `FloatingRockTrap` | Integer | Examples: `1` | 1 ||
-| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Examples: `rock` | 1 ||
+| `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 ||
+| `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 1 ||
+| [`tag_filter`](./Enums.md#enum-tag_filter) | Enum | Specifies a tag (e.g., 'crow', 'rock', 'grub_familiar') used to filter which units a status or effect applies to. | 1 ||
 
 </details>
 
@@ -2061,8 +2061,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Examples: `{ ... }` | 1 ||
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | Examples: `[ 1 .25 ]` | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
+| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 ||
 
 </details>
 
@@ -2082,8 +2082,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Examples: `1` | 1 ||
-| `HealthGain` | Integer | Examples: `1` | 1 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 ||
 
 </details>
 
@@ -2103,9 +2103,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 ||
-| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 ||
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 2 ||
+| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 ||
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 ||
 
 </details>
 
@@ -2122,7 +2122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempCounterAttack` | Integer | Applies or references the | 6 ||
+| `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2140,7 +2140,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempPreEmptiveCounterAttack` | Integer | Applies or references the | 2 ||
+| `TempPreEmptiveCounterAttack` | Integer | The number of turns of temporary pre-emptive counterattack status. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2158,7 +2158,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerBleedOnBleed` | Number | Examples: `1` | 1 ||
+| `TriggerBleedOnBleed` | Number | If non-zero, causes the unit to trigger additional bleed effects whenever it applies bleed to an enemy. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2176,7 +2176,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerDOTStatuses` | Integer | Applies or references the | 4 ||
+| `TriggerDOTStatuses` | Integer | If set to 1, triggers damage over time statuses on the target immediately. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2194,7 +2194,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerGameEnding` | Integer | Applies or references the | 6 ||
+| `TriggerGameEnding` | Integer | If set to 1, triggers the game's ending sequence; 0 disables it. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2212,7 +2212,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerMotherConsume` | Integer | Applies or references the | 2 ||
+| `TriggerMotherConsume` | Integer | The number of times the Mother consume effect is triggered. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2230,7 +2230,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TriggerMotherGrow` | Integer | Applies or references the | 2 ||
+| `TriggerMotherGrow` | Integer | The number of times the Mother grow effect is triggered. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2251,8 +2251,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 ||
 
 </details>
 
@@ -2272,8 +2272,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -2292,7 +2292,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AIFavorLowHealth` | Integer | Applies or references the | 2 ||
+| `AIFavorLowHealth` | Integer | The AI's favorability weight for targeting low-health units. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2310,7 +2310,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityDamageMultiplier` | Number | Examples: `1.5` | 1 ||
+| `AbilityDamageMultiplier` | Number | Multiplier for all ability damage dealt by the unit. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2328,7 +2328,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledAtHealthThreshold` | Integer | Applies or references the | 2 ||
+| `AbilityEnabledAtHealthThreshold` | Integer | The health percentage threshold at which the ability becomes enabled. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2346,7 +2346,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Examples: `DemonicGlyph_Bite, DemonicGlyph_Summon` | 4 ||
+| [`AbilityEnabledIfHasStatus`](./Enums.md#enum-abilityenabledifhasstatus) | Enum | Specifies the status effect that must be present on the unit for the ability to be enabled. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2364,7 +2364,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityEnabledIfNotHasStatus`](./Enums.md#enum-abilityenabledifnothasstatus) | Enum | Examples: `BackflipWhenTargeted` | 2 ||
+| [`AbilityEnabledIfNotHasStatus`](./Enums.md#enum-abilityenabledifnothasstatus) | Enum | Specifies the status that must be absent for ability to be enabled. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2382,7 +2382,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | Applies or references the | 14 ||
+| `AbilityEnabledOncePerFightAtHealthThreshold` | Integer | The health threshold (absolute or percentage) at which this ability becomes enabled once per fight. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2403,13 +2403,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 11 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 6 ||
-| `immediate` | Boolean | `false`, `true` | 5 ||
-| `use_ai` | Boolean | `true` | 2 ||
-| `also_use_if_buddy_is_dead` | Boolean | `true` | 1 ||
-| [`threshold_min`](./Math_Equations.md) | Equation | `X` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 11 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 6 ||
+| `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 5 ||
+| `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 ||
+| `also_use_if_buddy_is_dead` | Boolean | If true, the ability is also triggered when the unit's buddy is dead. | 1 ||
+| [`threshold_min`](./Math_Equations.md) | Equation | The minimum health threshold formula (e.g., X) for the ability to trigger. | 1 ||
 
 </details>
 
@@ -2426,7 +2426,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbsorbManaFromOtherSpells` | Integer | Applies or references the | 2 ||
+| `AbsorbManaFromOtherSpells` | Integer | If set, this ability absorbs mana from other spells when cast. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2447,9 +2447,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 54 ||
-| [`add`](./Arrays.md#array-add) | Array / Integer | Examples: `5` | 1 ||
-| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| [`add`](./Arrays.md#array-add) | Array / Integer | The amount or an array of values added to the event's advantage or item tint. | 1 ||
+| [`options`](./Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 1 ||
 
 </details>
 
@@ -2466,7 +2466,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddConstitution` | Number | Examples: `2` | 1 ||
+| `AddConstitution` | Number | The amount of constitution added to the unit. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2484,7 +2484,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddDamage` | Integer | Applies or references the | 16 ||
+| `AddDamage` | Integer | The amount of damage added to all attacks. Negative values reduce damage. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2502,7 +2502,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddElementsToSpells`](./Enums.md#enum-addelementstospells) | Enum | Applies or references the | 2 ||
+| [`AddElementsToSpells`](./Enums.md#enum-addelementstospells) | Enum | Specifies which element to add to spells. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2520,7 +2520,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddEndOfCombatRegen` | Integer | Applies or references the | 6 ||
+| `AddEndOfCombatRegen` | Integer | The amount of health regenerated after combat ends. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2538,7 +2538,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddLeechesStatus` | Integer | Applies or references the | 4 ||
+| `AddLeechesStatus` | Integer | The number of stacks of Leech status applied to the source, healing when dealing damage. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2559,8 +2559,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `requires_framebuffer` | Boolean | Examples: `false` | 1 ||
-| [`shader`](./Enums.md#enum-shader) | Enum | Examples: `shimmervignette` | 1 ||
+| `requires_framebuffer` | Boolean | If true, the post-process effect requires a framebuffer to be active. | 1 ||
+| [`shader`](./Enums.md#enum-shader) | Enum | Specifies which shader to use for the post-process effect. | 1 ||
 
 </details>
 
@@ -2577,7 +2577,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddSpiritBombCharges` | Integer | Applies or references the | 4 ||
+| `AddSpiritBombCharges` | Integer | The number of charges added to the Spirit Bomb ability. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2598,7 +2598,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | Applies or references the 'Bleed' effect/state. | 9 ||
+| [`Bleed`](./Arrays.md#array-bleed) | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 ||
 
 </details>
 
@@ -2618,7 +2618,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Examples: `{ ... }` | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
 
 </details>
 
@@ -2638,7 +2638,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Fallback logic block for conditionals. | 1 ||
+| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 ||
 
 </details>
 
@@ -2658,7 +2658,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](Engine_LogicKeys.md#object-floatingdebris) | Object | Examples: `{ ... }` | 1 ||
+| [`FloatingDebris`](Engine_LogicKeys.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 ||
 
 </details>
 
@@ -2675,7 +2675,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddWeaponAux` | Integer / String | Examples: `"-max(min(X+1, item_aux), 0)", 1, -item_aux` | 10 ||
+| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2693,7 +2693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLastEnemyThatDealtDamage` | Integer | Applies or references the | 2 ||
+| `AggroTargetIsLastEnemyThatDealtDamage` | Integer | If 1, the unit's aggro target is the last enemy that damaged it. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2711,7 +2711,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLowestHealthEnemyTillItDies` | Integer | Applies or references the | 2 ||
+| `AggroTargetIsLowestHealthEnemyTillItDies` | Integer | If 1, the unit focuses the lowest health enemy until that enemy dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2729,7 +2729,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsLowestMaxHealthCat` | Integer | Applies or references the | 2 ||
+| `AggroTargetIsLowestMaxHealthCat` | Integer | If 1, the unit targets the cat ally with the lowest maximum health. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2747,7 +2747,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllSpellsCostActPoints` | Integer | Applies or references the | 2 ||
+| `AllSpellsCostActPoints` | Integer | If 1, all spells require action points instead of mana or other resources. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2765,7 +2765,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllSpellsCostCharge` | Integer | Applies or references the | 2 ||
+| `AllSpellsCostCharge` | Integer | The number of charges required to cast any spell, adding a universal charge cost. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2783,7 +2783,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUpPerDisorder` | Integer | Applies or references the | 6 ||
+| `AllStatsUpPerDisorder` | Integer | The amount by which all stats increase for each disorder (negative status) the unit has. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2801,7 +2801,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlwaysChosenForLevelUp` | Integer | Applies or references the | 2 ||
+| `AlwaysChosenForLevelUp` | Integer | If set to 1, this unit is always presented as a level-up option when gaining a level. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2822,8 +2822,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | Selects and applies a random status effect from the provided nested object. | 3 ||
-| `stacks` | Enum / Integer | The number of times the nested effects block should be repeatedly executed. | 3 ||
+| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 3 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 ||
 
 </details>
 
@@ -2843,7 +2843,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 ||
+| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 ||
 
 </details>
 
@@ -2860,7 +2860,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BalanceStats` | Integer | Applies or references the | 2 ||
+| `BalanceStats` | Integer | If set to 1, the unit's stats are balanced (redistributed) towards an average value. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2878,7 +2878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Number | Applies or references the | 6 ||
+| [`BaseStatMultiply`](./Enums.md#enum-basestatmultiply) | Number | A multiplier applied to the unit's base stats. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2896,7 +2896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamageBasedOnDistance` | Integer | Applies or references the | 4 ||
+| `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2914,7 +2914,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusDamageBasedOnMana` | Integer | Applies or references the | 2 ||
+| `BonusDamageBasedOnMana` | Integer | The amount of bonus damage dealt, scaled by the target's current mana. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2932,7 +2932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusHealthRegenPerDisorder` | Number | Examples: `1` | 1 ||
+| `BonusHealthRegenPerDisorder` | Number | The amount of additional health regenerated per turn for each disorder the unit has. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2950,7 +2950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | Examples: `[ { evenly_dispersed_bonus_turns 1 round_end_bonus_turns ..., [ { dispersed_b...` | 6 ||
+| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array | An array defining the pattern of bonus turns granted to this unit. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2968,7 +2968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BoostReceivedHealing` | Integer | Applies or references the | 2 ||
+| `BoostReceivedHealing` | Integer | The amount of bonus healing received from all sources. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2986,7 +2986,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleCharismaUp` | Integer | Applies or references the | 2 ||
+| `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3004,7 +3004,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleConstitutionUp` | Integer | Applies or references the | 2 ||
+| `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3022,7 +3022,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleDexterityUp` | Integer | Applies or references the | 2 ||
+| `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3040,7 +3040,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleIntelligenceUp` | Integer | Applies or references the | 2 ||
+| `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3058,7 +3058,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleLuckUp` | Integer | Applies or references the | 2 ||
+| `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3076,7 +3076,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleSpeedUp` | Integer | Applies or references the | 2 ||
+| `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3094,7 +3094,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BrittleStrengthUp` | Integer | Applies or references the | 2 ||
+| `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3112,7 +3112,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CantSpreadDiseases` | Integer | Applies or references the | 6 ||
+| `CantSpreadDiseases` | Integer | The number of stacks that prevent the unit from spreading diseases. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3130,7 +3130,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapBasicAttackDamage` | Integer | Applies or references the | 2 ||
+| `CapBasicAttackDamage` | Integer | The maximum amount of damage that can be dealt by a basic attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3148,7 +3148,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapDamage` | Integer | Applies or references the | 2 ||
+| `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3166,7 +3166,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CapReceivedDamage` | Integer | Applies or references the | 2 ||
+| `CapReceivedDamage` | Integer | If 1, the unit caps incoming damage to a maximum per hit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3187,8 +3187,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverrideDamage` | Integer | Applies or references the 'OverrideDamage' effect/state. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -3208,7 +3208,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number | Sprite variant ID for the head. | 784 ||
+| [`head`](./Enums.md#enum-head) | Enum / Number | The catalog ID for the cat's head part. | 784 ||
 
 </details>
 
@@ -3228,10 +3228,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 ||
-| `arm2` | Number | Scale multiplier for the back arm. | 358 ||
-| `arm1` | Number | Scale multiplier for the front arm. | 354 ||
-| [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 ||
+| [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 ||
+| `arm2` | Number | The catalog ID for the cat's second arm part. | 358 ||
+| `arm1` | Number | The catalog ID for the cat's first arm part. | 354 ||
+| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 346 ||
 
 </details>
 
@@ -3251,10 +3251,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`Fear`](./Arrays.md#array-fear) | Array / Integer | Applies or references the 'Fear' effect/state. | 2 ||
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 2 ||
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 ||
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
 
 </details>
 
@@ -3271,7 +3271,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChargeFists`](Engine_StatusAndPassiveKeys.md#object-chargefists) | Integer / Object | Applies or references the | 2 ||
+| [`ChargeFists`](Engine_StatusAndPassiveKeys.md#object-chargefists) | Integer / Object | The number of charge stacks applied to unarmed attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3289,7 +3289,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharismaIsMaxStat` | Integer | Applies or references the | 2 ||
+| `CharismaIsMaxStat` | Integer | Treats the Charisma stat as the character's maximum stat for calculations. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3310,8 +3310,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to conjure. | 730 ||
-| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 2 ||
 
 </details>
 
@@ -3328,7 +3328,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Applies or references the | 2 ||
+| [`ConjureSingleUseBonusAbility`](./Enums.md#enum-conjuresingleusebonusability) | Enum | Specifies the bonus ability to conjure for single use (e.g., 'random' for a random one). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3346,7 +3346,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ContextualHeal` | Integer | Applies or references the | 14 ||
+| `ContextualHeal` | Integer | The amount of healing applied contextually (e.g., to allies). | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3367,8 +3367,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DelayedPain` | Integer | Applies or references the 'DelayedPain' effect/state. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -3385,7 +3385,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponAddElectricElement` | Integer | Applies or references the | 2 ||
+| `CurrentWeaponAddElectricElement` | Integer | The number of turns the current weapon gains the electric element. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3403,7 +3403,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponAddPoison` | Integer | Applies or references the | 2 ||
+| `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3421,7 +3421,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageBasedOnMissingHealth` | Integer | Applies or references the | 4 ||
+| `DamageBasedOnMissingHealth` | Integer | The percentage of the target's missing health dealt as additional damage. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3439,7 +3439,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageFromBehindOnly` | Integer | Applies or references the | 2 ||
+| `DamageFromBehindOnly` | Integer | If 1, the unit can only be damaged when attacked from behind. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3457,7 +3457,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageTrinket` | Integer | Applies or references the | 4 ||
+| `DamageTrinket` | Integer | The amount of durability damage dealt to the target's equipped trinket. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3475,7 +3475,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageWeapon` | Integer | Applies or references the | 2 ||
+| `DamageWeapon` | Integer | The amount of durability damage dealt to the equipped weapon. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3496,11 +3496,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`type`](./Enums.md#enum-type) | Enum | The classification of the damage (e.g., spell, melee). | 54 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The flat damage amount. | 2 ||
-| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | `all` | 2 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 2 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | Specifies whether the damage effect applies to tiles; 'all' damages every tile in the area. | 2 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 ||
 
 </details>
 
@@ -3517,7 +3517,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DontHealEnemies` | Integer | Applies or references the | 2 ||
+| `DontHealEnemies` | Integer | If true, the healing effect does not affect enemy units. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3535,7 +3535,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleReceivedNegativeStatus` | Integer | Applies or references the | 2 ||
+| `DoubleReceivedNegativeStatus` | Integer | If true, the unit receives double the stacks of negative status effects applied to it. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3553,7 +3553,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleReceivedPositiveStatus` | Integer | Applies or references the | 2 ||
+| `DoubleReceivedPositiveStatus` | Integer | If true, the unit receives double the stacks of positive status effects applied to it. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3571,7 +3571,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | Examples: `Bleed, Poison, Burn` | 6 ||
+| [`DoubleStatus`](./Enums.md#enum-doublestatus) | Enum | The name of a status effect whose stacks are doubled when applied. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3589,7 +3589,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DuplicateRandomEquippedItem` | Integer | Applies or references the | 2 ||
+| `DuplicateRandomEquippedItem` | Integer | If true, creates a copy of a random equipped item. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3607,7 +3607,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExistUntilIdleUpkeep` | Integer | Applies or references the | 2 ||
+| `ExistUntilIdleUpkeep` | Integer | If true, the entity persists until the source unit enters idle upkeep. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3625,7 +3625,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExtraBasicAttacks_Status` | Integer | Applies or references the | 12 ||
+| `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3646,9 +3646,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability_damage_only` | Boolean | `true` | 1 ||
-| `override_hit_animation` | Boolean | `true` | 1 ||
-| `use_turn_animations` | Boolean | `true` | 1 ||
+| `ability_damage_only` | Boolean | If true, the reaction only triggers on ability damage, not basic attacks. | 1 ||
+| `override_hit_animation` | Boolean | If true, the character's hit animation is overridden by the face-away animation. | 1 ||
+| `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 ||
 
 </details>
 
@@ -3668,7 +3668,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `use_turn_animations` | Boolean | `true` | 1 ||
+| `use_turn_animations` | Boolean | If true, uses turn-based animations for the face change. | 1 ||
 
 </details>
 
@@ -3686,8 +3686,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Examples: `bird` | 981 ||
-| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | Examples: `{ ... }` | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | An object containing additional status effects (with stack counts) applied to the consumed unit. | 1 ||
 
 </details>
 
@@ -3704,7 +3704,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlatAIBonus` | Integer | Applies or references the | 6 ||
+| `FlatAIBonus` | Integer | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3725,7 +3725,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 1 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 ||
 
 </details>
 
@@ -3745,8 +3745,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`clipname`](./Enums.md#enum-clipname) | Enum | `poopmain` | 1 ||
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | Examples: `[ [ 1 0 ]` | 1 ||
+| [`clipname`](./Enums.md#enum-clipname) | Enum | Specifies the animation clip name to use for the alt state. | 1 ||
+| [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 ||
 
 </details>
 
@@ -3766,8 +3766,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | `false`, `true` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `allies_only` | Boolean | If true, the effect only applies to allied units. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -3784,7 +3784,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealPercentMaxHP` | Integer | Applies or references the | 2 ||
+| `HealPercentMaxHP` | Integer | The percentage of max HP healed (e.g., 100 for full heal). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3802,7 +3802,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealRandomInjury` | Integer | Applies or references the | 6 ||
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3820,7 +3820,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealTo` | Integer | Applies or references the | 2 ||
+| `HealTo` | Integer | The target HP percentage to heal the unit to (e.g., '50%' for half max HP). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3838,7 +3838,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthMultiplier` | Float | Examples: `1.5, .5, .8` | 15 ||
+| `HealthMultiplier` | Float | A multiplier applied to the unit's base health. | 15 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3856,7 +3856,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDamage` | Integer | Applies or references the | 18 ||
+| `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3874,7 +3874,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IncreaseCumulativeBlastDamage` | Integer | Applies or references the | 2 ||
+| `IncreaseCumulativeBlastDamage` | Integer | If true, increases the cumulative blast damage counter. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3892,7 +3892,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InstantMaxHealthUp` | Integer | Applies or references the | 6 ||
+| `InstantMaxHealthUp` | Integer | The amount of permanent maximum health increase. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3910,7 +3910,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JesterLevelUpRerolls` | Integer | Applies or references the | 2 ||
+| `JesterLevelUpRerolls` | Integer | The number of additional rerolls granted when leveling up. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3931,10 +3931,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `distance` | Integer | The distance in tiles to knock the target away. | 20 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 18 ||
-| `height` | Integer | Examples: `9, 5, 7` | 16 ||
-| `circular_variance` | Integer | Examples: `2` | 1 ||
+| `distance` | Integer | The number of tiles the target is knocked back or pulled. | 20 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 18 ||
+| `height` | Integer | The height in tiles the target is launched into the air. | 16 ||
+| `circular_variance` | Integer | The random variance in the knockback direction, in tiles. | 1 ||
 
 </details>
 
@@ -3954,8 +3954,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CurrentWeaponDamageUp` | Integer | Applies or references the 'CurrentWeaponDamageUp' effect/state. | 3 ||
-| `AddWeaponAux` | Integer / String | Applies or references the 'AddWeaponAux' effect/state. | 1 ||
+| `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 3 ||
+| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 1 ||
 
 </details>
 
@@ -3972,7 +3972,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `LowGravityRangeBoost` | Number | Examples: `2` | 1 ||
+| `LowGravityRangeBoost` | Number | The increase in attack range under low gravity. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3993,8 +3993,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer | Maximum coins granted. | 1 ||
-| `min` | Integer | Minimum coins granted. | 1 ||
+| `max` | Integer | The maximum amount of coins that can be gained. | 1 ||
+| `min` | Integer | The minimum amount of coins that will be gained. | 1 ||
 
 </details>
 
@@ -4011,7 +4011,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MaxHPUp` | Integer | Applies or references the | 4 ||
+| `MaxHPUp` | Integer | The amount of maximum health permanently increased. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4032,8 +4032,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `can_instapop` | Boolean | If false, prevents the damage from instantly popping the target. | 1 ||
-| `force_no_hit_animation` | Boolean | If true, suppresses the flinch/hit animation. | 1 ||
+| `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 1 ||
+| `force_no_hit_animation` | Boolean | If true, suppresses the hit animation when merging damage instances. | 1 ||
 
 </details>
 
@@ -4050,7 +4050,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MulticatHeads` | Integer | Applies or references the | 2 ||
+| `MulticatHeads` | Integer | The number of additional heads the Multicat has. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4068,7 +4068,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MultiplyReceivedHealing` | Integer | Applies or references the | 2 ||
+| `MultiplyReceivedHealing` | Integer | The multiplier applied to all healing the unit receives. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4086,7 +4086,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextAbilityHeals` | Integer | Applies or references the | 2 ||
+| `NextAbilityHeals` | Integer | The number of stacks causing the next ability to heal instead of damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4104,7 +4104,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextActionLuckUp` | Integer | Applies or references the | 2 ||
+| `NextActionLuckUp` | Integer | The number of stacks increasing luck for the next action. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4122,7 +4122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextAttackBonusRange` | Integer | Applies or references the | 6 ||
+| `NextAttackBonusRange` | Integer | The added range for the unit's next basic attack. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4143,9 +4143,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_multiplier_bonus` | Integer | Flat addition to the critical damage multiplier. | 1 ||
-| `extra_coins_per_stack` | Integer | Grants bonus coins based on stacks. | 1 ||
-| `luck_increase` | Integer | Increases luck stat for the attack. | 1 ||
+| `crit_multiplier_bonus` | Integer | The additional critical hit damage multiplier. | 1 ||
+| `extra_coins_per_stack` | Integer | The number of extra coins gained per stack of the associated status. | 1 ||
+| `luck_increase` | Integer | The flat increase to the unit's luck stat. | 1 ||
 
 </details>
 
@@ -4165,8 +4165,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `fights` | Integer | The number of encounters this buff/debuff persists for. | 4 ||
-| `MadnessChanceOnTurnBegin` | Integer | Applies or references the 'MadnessChanceOnTurnBegin' effect/state. | 1 ||
+| `fights` | Integer | The number of future battles the status effect will be applied at the start of. | 4 ||
+| `MadnessChanceOnTurnBegin` | Integer | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 1 ||
 
 </details>
 
@@ -4183,7 +4183,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextDamageReduceAndHealAllies` | Integer | Applies or references the | 2 ||
+| `NextDamageReduceAndHealAllies` | Integer | The number of stacks reducing next damage and healing nearby allies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4201,7 +4201,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextTurnDoubleRangedDamage` | Integer | Applies or references the | 2 ||
+| `NextTurnDoubleRangedDamage` | Integer | The number of stacks doubling ranged damage on the next turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4219,7 +4219,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NoHealthRegen` | Number | Applies or references the | 10 ||
+| `NoHealthRegen` | Number | Prevents the unit from regenerating health normally. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4240,9 +4240,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 ||
-| `stack_scale` | Integer | Examples: `0` | 1 ||
-| `TakeExtraTurn` | Integer | Applies or references the 'TakeExtraTurn' effect/state. | 1 ||
+| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 ||
+| `stack_scale` | Integer | The scaling factor for how many stacks of the over-heal status are applied. | 1 ||
+| `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 ||
 
 </details>
 
@@ -4259,7 +4259,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverManaReducesManaCosts` | Number | Examples: `1` | 1 ||
+| `OverManaReducesManaCosts` | Number | If set to 1, any mana the unit has above their maximum reduces the cost of abilities. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4280,8 +4280,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Examples: `{ ... }` | 5118 ||
-| [`status`](./Enums.md#enum-status) | Enum | Examples: `Bleed` | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -4301,8 +4301,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Object listing intrinsic passive modifiers. | 5118 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 2 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 2 ||
 
 </details>
 
@@ -4319,7 +4319,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentUpgradeRandomActive` | Integer | Applies or references the | 4 ||
+| `PermanentUpgradeRandomActive` | Integer | The number of random active abilities permanently upgraded. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4337,7 +4337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentUpgradeRandomActiveOrPassive` | Integer | Applies or references the | 2 ||
+| `PermanentUpgradeRandomActiveOrPassive` | Integer | The number of random active or passive abilities permanently upgraded. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4355,7 +4355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RNGCannonRandomDamage` | Integer | Applies or references the | 2 ||
+| `RNGCannonRandomDamage` | Integer | The maximum random damage value for the RNG Cannon attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4373,7 +4373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomBonusDamage` | Integer | Applies or references the | 2 ||
+| `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4394,7 +4394,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Examples: `[ 1 -1 ]` | 982 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 982 ||
 
 </details>
 
@@ -4411,7 +4411,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | Applies or references the | 8 ||
+| [`RandomSeededStatModifier`](./Arrays.md#array-randomseededstatmodifier) | Array | An array defining a random, seeded modifier to stats, typically in the format [modifier, offset]. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4429,7 +4429,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array / Integer / String | Examples: `"ceil(X/3)", "ceil(X/2)"` | 20 ||
+| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4447,7 +4447,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RebukeDamage` | Integer | Applies or references the | 4 ||
+| `RebukeDamage` | Integer | The amount of damage dealt by a rebuke backlash effect. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4465,7 +4465,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceManaCostExcludeBrainstorm` | Integer | Applies or references the | 2 ||
+| `ReduceManaCostExcludeBrainstorm` | Integer | The number of stacks reducing mana cost, excluding Brainstorm. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4483,7 +4483,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceSpellCostsPerDisorder` | Integer | Applies or references the | 2 ||
+| `ReduceSpellCostsPerDisorder` | Integer | The amount of mana cost reduction per disorder the unit has. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4501,7 +4501,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReduceSpellCostsPerParasite` | Integer | Applies or references the | 2 ||
+| `ReduceSpellCostsPerParasite` | Integer | The amount of mana cost reduction per parasite the unit is hosting. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4519,7 +4519,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshNonManaItemAbilities` | Integer | Applies or references the | 2 ||
+| `RefreshNonManaItemAbilities` | Integer | The number of times non-mana item abilities are recharged. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4537,7 +4537,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAnyDamage` | Integer | Applies or references the | 2 ||
+| `ReloadOnAnyDamage` | Integer | If set to 1, restores a charge when any damage is taken. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4555,7 +4555,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReloadOnElementalDamageReceived`](./Enums.md#enum-reloadonelementaldamagereceived) | Enum | Applies or references the | 2 ||
+| [`ReloadOnElementalDamageReceived`](./Enums.md#enum-reloadonelementaldamagereceived) | Enum | Specifies the elemental type of damage that, when received, restores a charge. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4573,7 +4573,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnSpendMana` | Integer | Applies or references the | 2 ||
+| `ReloadOnSpendMana` | Integer | If set to 1, restores a charge when mana is spent. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4591,7 +4591,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnTotalDamageReceived` | Integer | Applies or references the | 4 ||
+| `ReloadOnTotalDamageReceived` | Integer | The threshold of total damage received to restore a reload charge. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4609,7 +4609,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnUseAbilityWithManaCost` | Integer | Applies or references the | 2 ||
+| `ReloadOnUseAbilityWithManaCost` | Integer | Specifies the amount of mana cost that, when used, restores a charge. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4627,7 +4627,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoteFlatLeech` | Integer | Applies or references the | 2 ||
+| `RemoteFlatLeech` | Integer | The flat amount of remote leech applied to the target on basic attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4645,7 +4645,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoteLeech` | Integer | Applies or references the | 4 ||
+| `RemoteLeech` | Integer | The amount of remote leech applied to the target on basic attack. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4682,7 +4682,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SelfStatusCarefulness` | Integer | Applies or references the | 4 ||
+| `SelfStatusCarefulness` | Integer | The carefulness level when applying statuses to self, used to control stacking. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4700,7 +4700,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetHealth` | Integer | Applies or references the | 18 ||
+| `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4718,7 +4718,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShadowCrit` | Integer | Applies or references the | 2 ||
+| `ShadowCrit` | Integer | If non-zero, enables the Shadow Crit mechanic, granting bonus critical hit chance or damage from stealth. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4739,8 +4739,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
-| [`style`](./Arrays.md#array-style) | Array | The visual font style for the text (e.g., [crit]). | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
+| [`style`](./Arrays.md#array-style) | Array | Specifies the visual styles (e.g., crit) used for the fake damage display. | 1 ||
 
 </details>
 
@@ -4757,7 +4757,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpeedUp_WithoutInitiative` | Integer | Applies or references the | 2 ||
+| `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4775,7 +4775,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StanceSwitchToRanged` | Integer | Applies or references the | 2 ||
+| `StanceSwitchToRanged` | Integer | If set, switches the source to ranged stance. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4793,7 +4793,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StatBounty` | Integer | Applies or references the | 2 ||
+| `StatBounty` | Integer | The number of stacks of the StatBounty status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -4814,7 +4814,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Applies or references the 'AddDamageToBasicAttack' effect/state. | 4 ||
+| [`AddDamageToBasicAttack`](./Math_Equations.md) | Equation | Additional damage added to the basic attack, either as a flat value or formula. | 4 ||
 
 </details>
 
@@ -4834,7 +4834,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveAway` | Integer | Applies or references the 'ForceMoveAway' effect/state. | 1 ||
+| `ForceMoveAway` | Integer | The distance to force the target away from the source. | 1 ||
 
 </details>
 
@@ -4854,9 +4854,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 ||
-| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 7 ||
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | Applies or references the 'Slow' effect/state. | 4 ||
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 ||
+| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 7 ||
+| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 ||
 
 </details>
 
@@ -4876,7 +4876,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NonStackingShield` | Number | Examples: `12, 4, 8` | 8 ||
+| `NonStackingShield` | Number | The amount of non-stacking shield granted. | 8 ||
 
 </details>
 
@@ -4896,7 +4896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Examples: `Spit` | 1 ||
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 ||
 
 </details>
 
@@ -4916,12 +4916,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 ||
-| `DamageUp` | Integer / String | Applies or references the 'DamageUp' effect/state. | 6 ||
-| `consume` | Boolean | `true` | 2 ||
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 ||
-| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 1 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 ||
+| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 ||
+| `consume` | Boolean | If true, the status is consumed after triggering. | 2 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -4941,7 +4941,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 1 ||
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 ||
 
 </details>
 
@@ -4961,8 +4961,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthGain` | Integer | Examples: `2` | 1 ||
-| `stacks` | Enum / Integer | Examples: `3` | 1 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -4982,8 +4982,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | Reaction trigger: Executes a backflip dodge maneuver when targeted by an attack. | 2 ||
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Synthesizes or spawns a new item from a specific pool. | 2 ||
+| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | The number of backflip charges, or an object defining its ability. | 2 ||
+| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Specifies the loot pool and slot to craft an item for the source. | 2 ||
 
 </details>
 
@@ -5003,8 +5003,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 1 ||
-| `SerratedClaws` | Integer | Applies or references the 'SerratedClaws' effect/state. | 1 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 ||
+| `SerratedClaws` | Integer | The number of stacks of the SerratedClaws status applied, or an object defining its display strings. | 1 ||
 
 </details>
 
@@ -5024,21 +5024,21 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 ||
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | Applies or references the 'Bruise' effect/state. | 8 ||
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | Grants the player a randomized amount of coins within a min/max range. | 5 ||
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the 'ChangeTilesUnder' effect/state. | 3 ||
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Generates an item drop from the specified loot pool. | 3 ||
-| `HealthGain` | Integer | Applies or references the 'HealthGain' effect/state. | 3 ||
-| `PermanentConstitution` | Integer | Applies or references the 'PermanentConstitution' effect/state. | 3 ||
-| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Redirects the nested effects to apply to a random living member of the player's party. | 1 ||
-| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | Applies or references the 'ConstitutionUp' effect/state. | 1 ||
-| `DexterityUp` | Enum / Integer | Applies or references the 'DexterityUp' effect/state. | 1 ||
-| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the 'FindItem' effect/state. | 1 ||
-| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the 'GainDisorder' effect/state. | 1 ||
-| `IntelligenceUp` | Enum / Integer | Applies or references the 'IntelligenceUp' effect/state. | 1 ||
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 1 ||
-| `StrengthUp` | Enum / Integer | Applies or references the 'StrengthUp' effect/state. | 1 ||
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 ||
+| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 ||
+| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 5 ||
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | The tile type to change the ground tiles under the target to. | 3 ||
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. | 3 ||
+| `HealthGain` | Integer | The amount of health restored to the source. | 3 ||
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 3 ||
+| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Contains an inner effect block that is applied to a random living party member if one exists. | 1 ||
+| [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 ||
+| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 1 ||
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | The name of the specific item to find and add to the source's inventory. | 1 ||
+| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Specifies the name of the disorder gained. | 1 ||
+| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 1 ||
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 ||
+| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 ||
 
 </details>
 
@@ -5058,7 +5058,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | Examples: `5, [ 1 .5 ]` | 6 ||
+| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 6 ||
 
 </details>
 
@@ -5078,7 +5078,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Applies or references the 'ImmediateUseAbility' effect/state. | 1 ||
+| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 1 ||
 
 </details>
 
@@ -5098,7 +5098,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Integer | Applies or references the 'Charge' effect/state. | 1 ||
+| `Charge` | Integer | The number of charge stacks applied. | 1 ||
 
 </details>
 
@@ -5118,9 +5118,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 1 ||
-| [`FillMana`](./Arrays.md#array-fillmana) | Integer | Applies or references the 'FillMana' effect/state. | 1 ||
-| `HealRandomInjury` | Integer | Applies or references the 'HealRandomInjury' effect/state. | 1 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| [`FillMana`](./Arrays.md#array-fillmana) | Integer | The amount of mana restored, or an [amount, probability] array. | 1 ||
+| `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 ||
 
 </details>
 
@@ -5159,15 +5159,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Array / Enum | Examples: `Recycled` | 1504 ||
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Examples: `rare` | 1 ||
-| `PermanentCharisma` | Integer | Examples: `1` | 1 ||
-| `PermanentConstitution` | Integer | Examples: `1` | 1 ||
-| `PermanentDexterity` | Integer | Examples: `1` | 1 ||
-| `PermanentIntelligence` | Integer | Examples: `1` | 1 ||
-| `PermanentLuck` | Integer | Examples: `1` | 1 ||
-| `PermanentSpeed` | Integer | Examples: `1` | 1 ||
-| `PermanentStrength` | Integer | Examples: `1` | 1 ||
+| [`set`](./Enums.md#enum-set) | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. | 1504 ||
+| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. | 1 ||
+| `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 1 ||
+| `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 1 ||
+| `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 1 ||
+| `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. | 1 ||
+| `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 1 ||
+| `PermanentSpeed` | Integer | The permanent amount of speed added or removed. | 1 ||
+| `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 1 ||
 
 </details>
 
@@ -5187,7 +5187,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 ||
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 ||
 
 </details>
 
@@ -5204,7 +5204,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StripStatuses` | Integer | Applies or references the | 20 ||
+| `StripStatuses` | Integer | If 1, removes all status effects from the unit at the beginning of its turn. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5222,7 +5222,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SwapHighestAndLowestStat` | Integer | Applies or references the | 2 ||
+| `SwapHighestAndLowestStat` | Integer | If non-zero, swaps the unit's highest base stat value with its lowest. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5243,7 +5243,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 2 ||
+| `include_spells` | Boolean | If true, the AI-controlled bonus turn includes spells as available actions. | 2 ||
 
 </details>
 
@@ -5260,7 +5260,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Applies or references the | 2 ||
+| [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum | Specifies the mana burn ability used by the TallTumor. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5278,7 +5278,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Applies or references the | 2 ||
+| [`TeamBonusAbility`](./Enums.md#enum-teambonusability) | Enum | Specifies the ability ID granted to allies as a team bonus. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5296,7 +5296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempCritChanceUp` | Integer | Applies or references the | 4 ||
+| `TempCritChanceUp` | Integer | The amount of temporary critical hit chance (in percentage points) added. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5314,7 +5314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempManaCostReduction` | Integer | Applies or references the | 2 ||
+| `TempManaCostReduction` | Integer | The number of stacks of temporary mana cost reduction. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5332,7 +5332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempMeleeRangeUp` | Integer | Applies or references the | 2 ||
+| `TempMeleeRangeUp` | Integer | The number of tiles added to the unit's melee attack range as a temporary buff. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5350,7 +5350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempNoManaRegen` | Integer | Applies or references the | 4 ||
+| `TempNoManaRegen` | Integer | The number of turns the unit cannot regenerate mana. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5371,11 +5371,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 ||
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Reaction trigger: Applies nested status effects to the attacker when hit by a melee attack. | 20 ||
-| `AddManaRegen` | Integer | Applies or references the 'AddManaRegen' effect/state. | 4 ||
-| [`ReplaceSpell`](Abilities_and_Spells.md#object-replacespell) | Object | Replaces a spell in the character's hand/deck with a different one. | 4 ||
-| [`status`](./Enums.md#enum-status) | Enum | The required status effect. | 3 ||
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 ||
+| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 ||
+| `AddManaRegen` | Integer | The flat amount of mana regenerated per turn. | 4 ||
+| [`ReplaceSpell`](Abilities_and_Spells.md#object-replacespell) | Object | Defines which spell slot to replace and with which ability. | 4 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 ||
 
 </details>
 
@@ -5392,7 +5392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempRangeUp` | Integer | Applies or references the | 16 ||
+| `TempRangeUp` | Integer | The amount of temporary range increase applied. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5410,7 +5410,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Applies or references the | 2 ||
+| [`TickDownStatus`](./Enums.md#enum-tickdownstatus) | Enum | Specifies the name of the status effect whose duration is reduced by one tick. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5431,17 +5431,17 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`delay`](./Enums.md#enum-delay) | Number | The float time delay in seconds. | 4 ||
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 ||
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Changes the background music track or layer during combat. | 2 ||
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Generates global map or encounter rules/modifiers. | 1 ||
-| [`DoScreenShake`](Abilities_and_Spells.md#object-doscreenshake) | Integer / Object | Triggers a camera screen shake effect. | 1 ||
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Transforms the character into a different state or form (e.g., Rage, HasCat). | 1 ||
-| `FullHeal` | Integer | Applies or references the 'FullHeal' effect/state. | 1 ||
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 ||
-| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 1 ||
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | Applies or references the 'RemoveAmbientLightEffects' effect/state. | 1 ||
-| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 4 ||
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 ||
+| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 2 ||
+| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. | 1 ||
+| [`DoScreenShake`](Abilities_and_Spells.md#object-doscreenshake) | Integer / Object | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 ||
+| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 ||
+| `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 ||
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 ||
+| `PlayBackground` | Integer | Specifies the background index to play. | 1 ||
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | The fade-out duration in seconds for ambient light effects. | 1 ||
+| `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 ||
 
 </details>
 
@@ -5458,7 +5458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TormentorHeal` | Integer | Applies or references the | 2 ||
+| `TormentorHeal` | Integer | If set to 1, the Tormentor can heal itself. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5476,7 +5476,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TowerDefenseStatus` | Integer | Applies or references the | 2 ||
+| `TowerDefenseStatus` | Integer | The number of stacks of the sentry/tower defense status, granting stationary attack capabilities. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5494,7 +5494,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TowerDefenseStatus2` | Integer | Applies or references the | 2 ||
+| `TowerDefenseStatus2` | Integer | The number of stacks of the enhanced sentry/tower defense status. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5512,7 +5512,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Trapper_Status` | Integer | Applies or references the | 2 ||
+| `Trapper_Status` | Integer | The number of trap-related status stacks applied. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5530,7 +5530,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UndoDamage` | Integer | Applies or references the | 2 ||
+| `UndoDamage` | Integer | The amount of damage reversed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5548,7 +5548,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UpTireBehavior` | Integer | Applies or references the | 2 ||
+| `UpTireBehavior` | Integer | The behavior type integer for the Tire's upward form. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5566,7 +5566,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UpgradeRandomAbility` | Integer | Applies or references the | 10 ||
+| `UpgradeRandomAbility` | Integer | The number of random abilities upgraded upon effect. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5587,7 +5587,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Applies or references the 'ForceUseAbility' effect/state. | 1 ||
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 ||
 
 </details>
 
@@ -5604,7 +5604,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | Applies or references the | 2 ||
+| [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5622,7 +5622,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`XIsCountStatusStacks`](./Enums.md#enum-xiscountstatusstacks) | Enum | Examples: `DodgeChance_Status` | 2 ||
+| [`XIsCountStatusStacks`](./Enums.md#enum-xiscountstatusstacks) | Enum | Specifies the status field whose stacks are counted to set X. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5640,7 +5640,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | Examples: `[ 6 2 ], [ 14 1 ], [ 1 12 ]` | 6 ||
+| [`XIsMultipliedPercentHealth`](./Arrays.md#array-xismultipliedpercenthealth) | Array | The [stacks, probability] for multiplying health by a percentage. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5658,7 +5658,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsOtherHealsThisTurn` | Integer | Applies or references the | 4 ||
+| `XIsOtherHealsThisTurn` | Integer | If set, tracks other heals this turn for some effect. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5676,7 +5676,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsRecycleCostReduction` | Integer | Applies or references the | 2 ||
+| `XIsRecycleCostReduction` | Integer | Specifies the amount of recycle cost reduction applied to X. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5697,7 +5697,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BonusDamage`](./Math_Equations.md) | Equation | Applies or references the 'BonusDamage' effect/state. | 2 ||
+| [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 2 ||
 
 </details>
 
@@ -5714,7 +5714,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsTimesDamageTaken` | Integer | Applies or references the | 4 ||
+| `XIsTimesDamageTaken` | Integer | If set, multiplier for damage taken to apply some effect. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5734,7 +5734,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllDamageImmune_IncludingSpeculative` | Integer | Applies or references the | 4 ||
+| `AllDamageImmune_IncludingSpeculative` | Integer | If set to 1, this unit is immune to all damage, including speculative damage. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5752,7 +5752,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ApplyShieldToApplierBasedOnMaxHealth` | Integer | Applies or references the | 2 ||
+| `ApplyShieldToApplierBasedOnMaxHealth` | Integer | The amount of shield applied to the applier based on a fraction of their max health. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5770,7 +5770,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockAllDamage` | Integer | Applies or references the | 2 ||
+| `BlockAllDamage` | Integer | If 1, the unit blocks all incoming damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5788,7 +5788,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockDamageUnderThreshold` | Integer | Applies or references the | 2 ||
+| `BlockDamageUnderThreshold` | Integer | The maximum amount of damage from a single hit that will be completely blocked. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5806,7 +5806,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlockNegativeStatus` | Integer | Applies or references the | 2 ||
+| `BlockNegativeStatus` | Integer | The percentage chance to completely block the application of a negative status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5824,7 +5824,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BreakWhenNoShield` | Integer | Applies or references the | 4 ||
+| `BreakWhenNoShield` | Integer | If 1, the armor breaks when the unit has no shield remaining. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5842,7 +5842,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanShield` | Integer | Applies or references the | 4 ||
+| `CanShield` | Integer | If set to 1, this unit can generate shields. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5860,7 +5860,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToBlock` | Integer | Applies or references the | 6 ||
+| `ChanceToBlock` | Integer | The percentage chance to block incoming damage. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5878,7 +5878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharmImmunity` | Integer | Applies or references the | 2 ||
+| `CharmImmunity` | Integer | If true, the unit is immune to the Charmed status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5896,7 +5896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DivineShieldPickup` | Integer | Applies or references the | 2 ||
+| `DivineShieldPickup` | Integer | The number of divine shield charges granted on pickup. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5914,7 +5914,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChanceWithBlindSpot` | Integer | Applies or references the | 2 ||
+| `DodgeChanceWithBlindSpot` | Integer | The percentage chance to dodge attacks while a blind spot condition is active. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5932,7 +5932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChance_Status` | Integer | Applies or references the | 2 ||
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5953,7 +5953,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
 
 </details>
 
@@ -5970,7 +5970,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceDodgeEverything` | Integer | Applies or references the | 2 ||
+| `ForceDodgeEverything` | Integer | If set to 1, the unit will always dodge all incoming attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5988,7 +5988,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FullBlockEverything` | Integer | Applies or references the | 2 ||
+| `FullBlockEverything` | Integer | If set to 1, the unit fully blocks all incoming damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6006,7 +6006,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FullBlockEverythingTo0Damage` | Integer | Applies or references the | 2 ||
+| `FullBlockEverythingTo0Damage` | Integer | If set to 1, the unit reduces all incoming damage to 0. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6024,7 +6024,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GoopImmunity` | Integer | Applies or references the | 2 ||
+| `GoopImmunity` | Integer | If set to 1, the unit is immune to goop status effects. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6042,7 +6042,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IceBlockBehavior` | Integer | Applies or references the | 2 ||
+| `IceBlockBehavior` | Integer | An integer flag that controls the behavior mode of an ice block entity. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6060,7 +6060,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Invulnerable` | Integer | Applies or references the | 2 ||
+| `Invulnerable` | Integer | The number of Invulnerable stacks, making the unit immune to damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6078,7 +6078,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KaijuKnockbackImmune` | Integer | Applies or references the | 12 ||
+| `KaijuKnockbackImmune` | Integer | If 1, the unit is immune to knockback from kaiju sources. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6096,7 +6096,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KnockbackDamageImmuneUntilSettled` | Integer | Applies or references the | 20 ||
+| `KnockbackDamageImmuneUntilSettled` | Integer | If non-zero, makes the target immune to damage from knockback until they stop moving. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6114,7 +6114,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MagicDamageImmune` | Integer | Applies or references the | 4 ||
+| `MagicDamageImmune` | Integer | If set to 1, this unit is immune to magic damage. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6132,7 +6132,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NoHealthOnlyShield` | Integer | Applies or references the | 24 ||
+| `NoHealthOnlyShield` | Integer | If set (e.g., 1), the unit has no health and only a shield for damage absorption. | 24 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6150,7 +6150,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NonStackingShield` | Number | Examples: `12, 4, 8` | 16 ||
+| `NonStackingShield` | Number | The amount of non-stacking shield granted. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6168,7 +6168,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverHealToShield` | Integer | Applies or references the | 2 ||
+| `OverHealToShield` | Integer | The amount of excess healing converted into temporary shield points. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6189,7 +6189,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HealthRegenUp` | Integer | Applies or references the 'HealthRegenUp' effect/state. | 26 ||
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 ||
 
 </details>
 
@@ -6206,7 +6206,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnGainDivineShield` | Integer | Applies or references the | 2 ||
+| `ReloadOnGainDivineShield` | Integer | If set to 1, restores a charge when a Divine Shield is gained. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6224,7 +6224,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ResetArmorShield` | Integer | Applies or references the | 4 ||
+| `ResetArmorShield` | Integer | The amount of armor shield restored. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6245,7 +6245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | Fires a randomized number of magic missiles. | 1 ||
+| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, or an object defining its properties. | 1 ||
 
 </details>
 
@@ -6262,7 +6262,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | String | Examples: `JankAlloy, Alloy, Paper` | 7 ||
+| [`SetBrittleImmune`](./Enums.md#enum-setbrittleimmune) | String | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 7 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6280,7 +6280,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | String | Examples: `Cardboard, Paper, Cool` | 8 ||
+| [`SetFragileImmune`](./Enums.md#enum-setfragileimmune) | String | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6298,7 +6298,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetShield` | Integer | Applies or references the | 6 ||
+| `SetShield` | Integer | Sets the target's shield value to a specific flat amount. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6316,7 +6316,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpellShield` | Integer | Applies or references the | 2 ||
+| `SpellShield` | Integer | The number of stacks of SpellShield, which blocks incoming spells. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6337,7 +6337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DodgeChance_Status` | Integer | Applies or references the 'DodgeChance_Status' effect/state. | 2 ||
+| `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 ||
 
 </details>
 
@@ -6357,8 +6357,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Metronome`](Abilities_and_Spells.md#object-metronome) | Integer / Object | Executes a random musical or metronome ability. | 4 ||
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 2 ||
+| [`Metronome`](Abilities_and_Spells.md#object-metronome) | Integer / Object | The number of times Metronome triggers, or an object with stacks and banned abilities. | 4 ||
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 ||
 
 </details>
 
@@ -6378,7 +6378,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cleanse_on_apply` | Boolean | `false` | 1 ||
+| `cleanse_on_apply` | Boolean | If true, removes any existing stun effect when this immunity is applied. | 1 ||
 
 </details>
 
@@ -6395,7 +6395,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempInjuryImmunity` | Integer | Applies or references the | 2 ||
+| `TempInjuryImmunity` | Integer | The number of stacks of temporary immunity to Injuries. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6413,7 +6413,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ThornsDamageImmuneUntilSettled` | Integer | Applies or references the | 4 ||
+| `ThornsDamageImmuneUntilSettled` | Integer | The number of turns the target is immune to thorns damage until it settles. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6431,7 +6431,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TileDamageImmuneUntilSettled` | Integer | Applies or references the | 4 ||
+| `TileDamageImmuneUntilSettled` | Integer | The number of turns the target is immune to tile damage until it settles. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6449,7 +6449,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Applies or references the | 2 ||
+| [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum | Determines which tile element type the character is immune to damage from. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6467,7 +6467,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | Examples: `T3Pebbles_PrimeBoulderDrop` | 2 ||
+| [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum | The ability to use when the unit's shield is fully depleted. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6485,7 +6485,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `WispDodge` | Integer | Applies or references the | 2 ||
+| `WispDodge` | Integer | If 1, the unit gains the Wisp's dodge ability. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6505,7 +6505,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AOEBonus` | Integer | Applies or references the | 2 ||
+| `AOEBonus` | Integer | The bonus number of additional targets or tiles affected by an area-of-effect ability. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6523,7 +6523,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | Examples: `[ AlienBeastScream AlienBeastEat AlienBeastPuke AlienBeas...` | 2 ||
+| [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array | An array of ability names that mark dangerous zones for the Alien Beast fight. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6544,9 +6544,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | `humanoid` | 1 ||
-| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | Specifies the tag that units must have to be affected by this aura. | 1 ||
+| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -6566,8 +6566,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -6587,8 +6587,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
-| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 1 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 ||
 
 </details>
 
@@ -6608,7 +6608,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 4 ||
+| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 4 ||
 
 </details>
 
@@ -6625,7 +6625,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BasicAIDangerZone` | Integer | Applies or references the | 2 ||
+| `BasicAIDangerZone` | Integer | The radius of the danger zone used by the basic AI for area denial. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6646,11 +6646,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Integer | Applies or references the 'DemonicGlyph_Bite' effect/state. | 1 ||
-| `DemonicGlyph_Bounce` | Integer | Applies or references the 'DemonicGlyph_Bounce' effect/state. | 1 ||
-| `DemonicGlyph_Fire` | Integer | Applies or references the 'DemonicGlyph_Fire' effect/state. | 1 ||
-| `DemonicGlyph_Movement` | Integer | Applies or references the 'DemonicGlyph_Movement' effect/state. | 1 ||
-| `DemonicGlyph_Summon` | Integer | Applies or references the 'DemonicGlyph_Summon' effect/state. | 1 ||
+| `DemonicGlyph_Bite` | Integer | The weight for the demonic glyph of bite, or its configuration. | 1 ||
+| `DemonicGlyph_Bounce` | Integer | The weight for the demonic glyph of bounce, or its configuration. | 1 ||
+| `DemonicGlyph_Fire` | Integer | The weight for the demonic glyph of fire, or its configuration. | 1 ||
+| `DemonicGlyph_Movement` | Integer | The weight for the demonic glyph of movement, or its configuration. | 1 ||
+| `DemonicGlyph_Summon` | Integer | The weight for the demonic glyph of summon, or its configuration. | 1 ||
 
 </details>
 
@@ -6667,7 +6667,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Applies or references the | 14 ||
+| [`BrittleDuringElement`](./Enums.md#enum-brittleduringelement) | Enum | Makes the unit brittle while in contact with the specified element. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6685,7 +6685,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Examples: `DonateEnergy2, DonateEnergy` | 4 ||
+| [`ChargeSpiritBombAura`](./Enums.md#enum-chargespiritbombaura) | Enum | Specifies the ability to charge for spirit bomb aura. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6703,7 +6703,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageDistanceAOEFalloff` | Integer | Applies or references the | 4 ||
+| `DamageDistanceAOEFalloff` | Integer | The falloff multiplier applied to AoE damage based on distance from the center of the effect. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6721,7 +6721,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | Examples: `TheChild_Wrath, MoonHead_Blow, attack` | 8 ||
+| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum | The ability whose area of effect is displayed to warn players. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6742,9 +6742,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Integer | Examples: `3, 20, 10` | 6 ||
-| [`radius`](./Arrays.md#array-radius) | Array / Integer | Distance or area of effect in tiles. | 6 ||
-| [`speed`](./Arrays.md#array-speed) | Array / Number | Rotations per second. | 6 ||
+| `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 ||
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 ||
+| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 ||
 
 </details>
 
@@ -6761,7 +6761,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Applies or references the | 8 ||
+| [`FragileDuringElement`](./Enums.md#enum-fragileduringelement) | Enum | Specifies an element during which the unit becomes fragile, taking increased damage. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6782,7 +6782,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | Examples: `[ 1 .1 ]` | 1 ||
+| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 1 ||
 
 </details>
 
@@ -6799,7 +6799,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalHealthRegenAura` | Number | Examples: `3` | 1 ||
+| `GlobalHealthRegenAura` | Number | The amount of health regenerated per turn to all units in range. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6817,7 +6817,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalManaBurnAura` | Number | Examples: `-1` | 2 ||
+| `GlobalManaBurnAura` | Number | The amount of mana burned from all enemies per turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6835,7 +6835,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalManaDrainAura` | Integer | Applies or references the | 2 ||
+| `GlobalManaDrainAura` | Integer | The amount of mana drained per turn from all units in range. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6853,7 +6853,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OrthogonalAIDangerZone` | Integer | Applies or references the | 2 ||
+| `OrthogonalAIDangerZone` | Integer | The range (in tiles) for the AI's orthogonal danger zone detection. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6871,7 +6871,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBasicAttackBonusAOE` | Integer | Applies or references the | 2 ||
+| `TempBasicAttackBonusAOE` | Integer | The amount of temporary area-of-effect bonus on basic attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6891,7 +6891,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfMovementTrapped` | Integer | Applies or references the | 2 ||
+| `AbilityEnabledIfMovementTrapped` | Integer | If set, ability is enabled only when the unit's movement is trapped. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6909,7 +6909,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddExtraTurnsBeforeRun` | Number | Examples: `2` | 1 ||
+| `AddExtraTurnsBeforeRun` | Number | The number of additional turns added before the run ends. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6927,7 +6927,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddMeleeKnockback` | Integer | Applies or references the | 8 ||
+| `AddMeleeKnockback` | Integer | The amount of additional knockback dealt by melee attacks. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6945,7 +6945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BonusKnockbackDamage` | Integer | Applies or references the | 7 ||
+| `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 7 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6963,7 +6963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BypassRockKnockback` | Integer | Applies or references the | 2 ||
+| `BypassRockKnockback` | Integer | If set to a non-zero number, bypasses normal rock knockback behavior. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -6984,8 +6984,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`event`](./Enums.md#enum-event) | Enum | `Blessing`, `Death`, `Tragedy`, `alley/eatinrats_event.ogg`, `boneyard/boneyard_event.ogg` | 3 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`event`](./Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 3 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -7002,7 +7002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CharmedFacingForceAttack` | Integer | Applies or references the | 2 ||
+| `CharmedFacingForceAttack` | Integer | If set to a non-zero number, the charmed target is forced to attack the direction they are facing. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7020,7 +7020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DashFury` | Integer | Applies or references the | 6 ||
+| `DashFury` | Integer | The amount of Fury gained after dashing. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7038,7 +7038,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Movement` | Integer | Applies or references the | 2 ||
+| `DemonicGlyph_Movement` | Integer | The weight for the demonic glyph of movement, or its configuration. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7056,7 +7056,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableTrample` | Integer | Applies or references the | 20 ||
+| `DisableTrample` | Integer | If set to 1, trample damage is disabled for the duration of the effect. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7074,7 +7074,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Displace` | Integer | Applies or references the | 24 ||
+| `Displace` | Integer | If set to 1, the unit is displaced to another location (e.g., teleport). | 24 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7092,7 +7092,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceToAbilityTarget` | Integer | Applies or references the | 6 ||
+| `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7110,7 +7110,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceToOriginalPosition` | Integer | Applies or references the | 4 ||
+| `DisplaceToOriginalPosition` | Integer | If non-zero, returns the unit to its original position after the effect resolves. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7128,7 +7128,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplaceTowardsSource` | Integer | Applies or references the | 10 ||
+| `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7146,7 +7146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FastKnockback` | Integer | Applies or references the | 2 ||
+| `FastKnockback` | Integer | The number of tiles the target is knocked back with fast animation. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7164,7 +7164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FlingObjectsOnTop` | Integer | Applies or references the | 2 ||
+| `FlingObjectsOnTop` | Integer | The number of objects to fling on top of this unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7182,7 +7182,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceDisplace` | Integer | Applies or references the | 6 ||
+| `ForceDisplace` | Integer | The distance the target is forced to displace. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7200,7 +7200,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceImmediateMove` | Integer | Applies or references the | 2 ||
+| `ForceImmediateMove` | Integer | If non-zero, forces the character to move instantly without waiting for normal action order. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7221,8 +7221,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ability to execute after moving. | 730 ||
-| `even_if_cant_reach` | Boolean | If true, executes the attack even if the move fails to reach the target. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_if_cant_reach` | Boolean | If true, forces the unit to attempt to move and attack even if the target is not reachable. | 1 ||
 
 </details>
 
@@ -7239,7 +7239,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveAndAttack` | Integer | Applies or references the | 2 ||
+| `ForceMoveAndAttack` | Integer | If true, forces the target to move and attack its nearest enemy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7257,7 +7257,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveNonAlliesInRangeTowardsTile` | Integer | Applies or references the | 4 ||
+| `ForceMoveNonAlliesInRangeTowardsTile` | Integer | The tile range within which non-allied units are forcibly moved towards a specified tile. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7275,7 +7275,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Integer | Applies or references the | 14 ||
+| `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7293,7 +7293,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowardsEnemies` | Variable | Examples: `DumbMove_Impl, 1, MoveOne` | 6 ||
+| `ForceMoveTowardsEnemies` | Variable | Specifies the ability or distance to force the target to move towards enemies. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7314,8 +7314,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | The entity tag to seek out. | 981 ||
-| [`ability`](./Enums.md#enum-ability) | Enum | The movement ability to use. | 730 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
 
 </details>
 
@@ -7332,7 +7332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceTransferWeapon` | Integer | Applies or references the | 2 ||
+| `ForceTransferWeapon` | Integer | If true, forces the weapon to be transferred to the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7353,8 +7353,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 730 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -7371,7 +7371,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InterchangeMoveActPoints` | Integer | Applies or references the | 2 ||
+| `InterchangeMoveActPoints` | Integer | If true, swaps the unit's remaining move points and action points. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7389,7 +7389,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JustInCaseTrample` | Integer | Applies or references the | 10 ||
+| `JustInCaseTrample` | Integer | If set to a non-zero value, applies a trample effect as a fallback. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7407,7 +7407,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `KnockbackDirectionIsFacingDirection` | Variable | Examples: `rotate_right, flip, 1` | 10 ||
+| `KnockbackDirectionIsFacingDirection` | Variable | Specifies how to alter knockback direction relative to the unit's facing: 1 (same), flip (opposite), rotate_right. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7428,8 +7428,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 1 ||
-| `override_chain_knockback` | Integer | Examples: `10` | 1 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 ||
+| `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 ||
 
 </details>
 
@@ -7446,7 +7446,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Applies or references the | 4 ||
+| [`LeaveBehindOnceEachMove`](./Enums.md#enum-leavebehindonceeachmove) | Enum | Specifies the object left behind on the tile once per move. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7464,7 +7464,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `LowGravityKnockbackBoost` | Number | Examples: `1` | 1 ||
+| `LowGravityKnockbackBoost` | Number | The multiplier or bonus to knockback force under low gravity. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7482,7 +7482,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MinimumKnockbackFromAllDamage` | Integer | Applies or references the | 12 ||
+| `MinimumKnockbackFromAllDamage` | Integer | The minimum knockback distance the unit will suffer from any damage source. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7500,7 +7500,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MinimumKnockbackFromPhysicalAttacks` | Integer | Applies or references the | 6 ||
+| `MinimumKnockbackFromPhysicalAttacks` | Integer | The minimum knockback distance applied when hit by a physical attack. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7518,7 +7518,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MotherTumorDebugForcePass` | Integer | Applies or references the | 2 ||
+| `MotherTumorDebugForcePass` | Integer | If non-zero, forces the Mother Tumor boss to pass its turn, skipping its normal action. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7539,7 +7539,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 ||
+| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 ||
 
 </details>
 
@@ -7559,9 +7559,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 ||
-| `once_per_turn` | Boolean | `true` | 1 ||
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 1 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 ||
+| `once_per_turn` | Boolean | If true, the movement away can only trigger once per turn. | 1 ||
+| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 ||
 
 </details>
 
@@ -7581,8 +7581,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`character_filter`](./Arrays.md#array-character_filter) | Array | Examples: `[ SpiderCat TallSpiderCat ]` | 3 ||
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 3 ||
+| [`character_filter`](./Arrays.md#array-character_filter) | Array | Specifies which characters to consider as killers when moving towards them. | 3 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 3 ||
 
 </details>
 
@@ -7599,7 +7599,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `OverrideKnockbackDamage` | Equation | Applies or references the | 34 ||
+| `OverrideKnockbackDamage` | Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 34 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7620,8 +7620,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer | Maximum knockback distance. | 2 ||
-| `min` | Integer | Minimum knockback distance. | 2 ||
+| `max` | Integer | The maximum amount of coins that can be gained. | 2 ||
+| `min` | Integer | The minimum amount of coins that will be gained. | 2 ||
 
 </details>
 
@@ -7638,7 +7638,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomKnockbackDirection` | Integer | Applies or references the | 2 ||
+| `RandomKnockbackDirection` | Integer | The number of random directions the target can be knocked back (e.g., 4 selects from 4 cardinal directions). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7656,7 +7656,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshMovePointsIfHit` | Integer | Applies or references the | 10 ||
+| `RefreshMovePointsIfHit` | Integer | The amount of movement points restored on hit. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7674,7 +7674,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveActPoints` | Integer | Applies or references the | 8 ||
+| `RemoveActPoints` | Integer | The number of action points removed from the target. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7692,7 +7692,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | Applies or references the | 4 ||
+| [`RemoveAmbientLightEffects`](./Enums.md#enum-removeambientlighteffects) | Number | The fade-out duration in seconds for ambient light effects. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7710,7 +7710,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveExtraDispersedTurn` | Number | Examples: `1` | 1 ||
+| `RemoveExtraDispersedTurn` | Number | If set to 1, the unit's turn order is not delayed by the 'Dispersed' status effect. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7728,7 +7728,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | Applies or references the | 2 ||
+| [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array | List of global modifier names to remove upon death. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7746,7 +7746,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Examples: `BlackShard, BlackShard_Glowing` | 8 ||
+| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Specifies the item ID to remove from the source on kill. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7764,7 +7764,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveKnockback` | Integer | Applies or references the | 4 ||
+| `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7782,7 +7782,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveMovePoints` | Integer | Applies or references the | 6 ||
+| `RemoveMovePoints` | Integer | The number of move points to remove from the target, preventing them from moving. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7800,7 +7800,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | Examples: `DodgeChance_Status, SpeedUp_WithoutInitiative` | 32 ||
+| [`RemoveStatus`](./Enums.md#enum-removestatus) | Enum | The name of the status effect to remove from the source. | 32 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7821,8 +7821,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | The number of stacks to remove. | 1 ||
-| [`status`](./Enums.md#enum-status) | Enum | The specific status effect ID to remove. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -7839,7 +7839,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RemoveTurnsThisRound` | Integer | Applies or references the | 2 ||
+| `RemoveTurnsThisRound` | Integer | The number of turns to remove from the target's turn order this round. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7857,7 +7857,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Examples: `BasicJump, BasicDig` | 6 ||
+| [`ReplaceBasicMove_Mutation`](./Enums.md#enum-replacebasicmove_mutation) | Enum | Replaces the unit's basic movement with the specified mutation-based move. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7875,7 +7875,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RunInXTurns` | Integer | Applies or references the | 6 ||
+| `RunInXTurns` | Integer | The number of turns after which this unit will flee the battle. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7893,7 +7893,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RunWhenKittensDead` | Integer | Applies or references the | 2 ||
+| `RunWhenKittensDead` | Integer | If set to 1, causes the character to attempt to flee when all associated kittens are dead. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7914,8 +7914,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allow_decision_mid_turn` | Boolean | `true` | 1 ||
-| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | `Legacy_Marshmallow_StolenCatID` | 1 ||
+| `allow_decision_mid_turn` | Boolean | If true, allows the decision to run to occur mid-turn instead of at the end. | 1 ||
+| [`legacy_savekey`](./Enums.md#enum-legacy_savekey) | Enum | Specifies the save key used to persist a legacy stolen cat ID. | 1 ||
 
 </details>
 
@@ -7932,7 +7932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetDistanceDisplace` | Integer | Applies or references the | 12 ||
+| `SetDistanceDisplace` | Integer | The fixed distance to displace the target. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7950,7 +7950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SetKnockback` | Integer | Applies or references the | 4 ||
+| `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7968,7 +7968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpeculativeMoveSelfCorpseOffMap` | Integer | Applies or references the | 6 ||
+| `SpeculativeMoveSelfCorpseOffMap` | Integer | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -7986,7 +7986,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SproutsGrantMovement` | Integer | Applies or references the | 2 ||
+| `SproutsGrantMovement` | Integer | If set to 1, sprouts on the character grant additional movement (aliases to MovementUp). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8007,7 +8007,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Integer | Examples: `3` | 1 ||
+| `Charge` | Integer | The number of charge stacks applied. | 1 ||
 
 </details>
 
@@ -8027,8 +8027,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | Logic: Forces execution of an ability. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
+| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 ||
 
 </details>
 
@@ -8045,7 +8045,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StripKnockback` | Integer | Applies or references the | 2 ||
+| `StripKnockback` | Integer | If non-zero, removes all knockback effects from the unit's attacks or abilities. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8066,8 +8066,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum | `off` | 1 ||
-| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | `shutdown` | 1 ||
+| [`alt_dead_ani`](./Enums.md#enum-alt_dead_ani) | Enum | Specifies the alternative death animation to use when the support unit dies instead of running. | 1 ||
+| [`alt_dying_ani`](./Enums.md#enum-alt_dying_ani) | Enum | Specifies the alternative dying animation to use. | 1 ||
 
 </details>
 
@@ -8084,7 +8084,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableMove` | Integer | Applies or references the | 2 ||
+| `TVBotDisableMove` | Integer | If set to 1, disables the TVBot's ability to move. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8102,7 +8102,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBonusKnockback` | Integer | Applies or references the | 2 ||
+| `TempBonusKnockback` | Integer | The number of stacks of temporary bonus knockback distance. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8120,7 +8120,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBonusKnockbackDamage` | Integer | Applies or references the | 2 ||
+| `TempBonusKnockbackDamage` | Integer | The number of stacks of temporary bonus knockback damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8138,7 +8138,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempTrampleUntilSettled` | Integer | Applies or references the | 6 ||
+| `TempTrampleUntilSettled` | Integer | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8156,7 +8156,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Applies or references the | 2 ||
+| [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum | Specifies the movement ability used by Terminator2 when chasing the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8177,8 +8177,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 10 ||
-| [`move_ability`](./Enums.md#enum-move_ability) | Enum | `BirdFly`, `MD_WalkOne`, `MoveOne`, `SpiderReturn`, `T2GoopRun` | 1 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 10 ||
+| [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 ||
 
 </details>
 
@@ -8198,8 +8198,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`move`](./Enums.md#enum-move) | Enum | `BasicJump`, `BungaJumpMove`, `DefaultMove`, `DoNothing`, `DustMove` | 122 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 122 ||
 
 </details>
 
@@ -8216,7 +8216,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToCritChance` | Integer | Applies or references the | 2 ||
+| `TilesMovedToCritChance` | Integer | The number of stacks of a status that grants critical hit chance based on tiles moved. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8234,7 +8234,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToMana` | Integer | Applies or references the | 2 ||
+| `TilesMovedToMana` | Integer | The number of stacks of a status that grants mana based on tiles moved. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8252,7 +8252,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TilesMovedToNeighborHeal`](./Enums.md#enum-tilesmovedtoneighborheal) | Enum | Applies or references the | 2 ||
+| [`TilesMovedToNeighborHeal`](./Enums.md#enum-tilesmovedtoneighborheal) | Enum | Specifies the scaling type for healing neighbors based on tiles moved (e.g., 'level'). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8270,7 +8270,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TilesMovedToStrength` | Integer | Applies or references the | 2 ||
+| `TilesMovedToStrength` | Integer | The number of stacks of a status that grants strength based on tiles moved. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8291,10 +8291,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_dist` | Integer | Maximum displacement distance. | 6 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The damage formula or inherit flag. | 2 ||
-| `min_dist` | Integer | Minimum displacement distance. | 2 ||
-| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | `Twister` | 1 ||
+| `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 6 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 2 ||
+| [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | Specifies a prefix string; units with a matching prefix in their ID are excluded from the displacement effect. | 1 ||
 
 </details>
 
@@ -8314,9 +8314,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 ||
-| `max_dist` | Integer | Maximum displacement distance. | 1 ||
-| `min_dist` | Integer | Minimum displacement distance. | 1 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 1 ||
+| `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 ||
 
 </details>
 
@@ -8336,8 +8336,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 730 ||
-| [`move_weights`](./Enums.md#enum-move_weights) | Enum | The AI positioning logic profile to use. | 10 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 10 ||
 
 </details>
 
@@ -8354,7 +8354,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ZeroKnockbackDamage` | Integer | Applies or references the | 2 ||
+| `ZeroKnockbackDamage` | Integer | If 1, the unit takes no damage from knockback effects. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8374,7 +8374,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Examples: `GirlDinoCry, ChubsRage, Guillotina2Rage` | 14 ||
+| [`AbilityWhenBuddyDies`](./Enums.md#enum-abilitywhenbuddydies) | Enum | Specifies the ability to cast when a nearby allied unit dies. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8392,7 +8392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsBuddy` | Integer | Applies or references the | 4 ||
+| `AggroTargetIsBuddy` | Integer | If set to 1, the unit's aggro target is its buddy (linked partner). | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8413,7 +8413,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the 'HideEquipment' effect/state. | 1 ||
+| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Specifies which equipment slot is visually hidden. | 1 ||
 
 </details>
 
@@ -8431,9 +8431,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `allies_only` | Boolean | `false`, `true` | 3 ||
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 ||
-| `reclaim_if_lost` | Boolean | `true` | 1 ||
+| `allies_only` | Boolean | If true, the effect only applies to allied units. | 3 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 3 ||
+| `reclaim_if_lost` | Boolean | If true, the buddy can be reclaimed after being lost. | 1 ||
 
 </details>
 
@@ -8450,7 +8450,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Summon` | Integer | Applies or references the | 2 ||
+| `DemonicGlyph_Summon` | Integer | The weight for the demonic glyph of summon, or its configuration. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8468,7 +8468,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieWhenSpawnerDies` | Integer | Applies or references the | 2 ||
+| `DieWhenSpawnerDies` | Integer | If 1, the unit dies when its spawner unit dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8486,7 +8486,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisplayBuddyCatOnSpawn` | Integer | Applies or references the | 2 ||
+| `DisplayBuddyCatOnSpawn` | Integer | The number of buddy cat objects to display when the unit spawns. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8504,7 +8504,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Examples: `HeadGrubFamiliar, FaceGrubFamiliar, NeckGrubFamiliar` | 6 ||
+| [`DropAsFamiliarOnArmorBreak`](./Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Specifies the familiar type to drop onto the tile when this status holder's armor breaks. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8522,7 +8522,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Examples: `PhantomMaskRock` | 2 ||
+| [`DropAsFamiliarOnTookDamage`](./Enums.md#enum-dropasfamiliarontookdamage) | Enum | Specifies the familiar type to be dropped when the unit takes damage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8540,7 +8540,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EraseSpawnCoins` | Integer | Applies or references the | 2 ||
+| `EraseSpawnCoins` | Integer | If set to 1, the unit erases spawn coins from the map on spawn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8558,7 +8558,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExpireOnSpawnerTurnEnd` | Integer | Applies or references the | 4 ||
+| `ExpireOnSpawnerTurnEnd` | Integer | If set to 1, this unit is removed from battle at the end of its spawner's turn. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8576,7 +8576,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalFamiliarDamageBoost` | Number | Examples: `1` | 1 ||
+| `GlobalFamiliarDamageBoost` | Number | The amount of damage boost applied to all familiars globally. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8594,7 +8594,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalFamiliarMoveBoost` | Number | Examples: `1` | 1 ||
+| `GlobalFamiliarMoveBoost` | Number | The amount of movement boost applied to all familiars globally. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8612,7 +8612,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the | 6 ||
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8633,8 +8633,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `NeutralZombieKitten, NeutralTwister` | 545 ||
-| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 ||
 
 </details>
 
@@ -8651,7 +8651,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InheritSpawnerStats` | Integer | Applies or references the | 2 ||
+| `InheritSpawnerStats` | Integer | If set to 1, the unit inherits the stats of its spawner. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8669,7 +8669,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Examples: `Legacy_Marshmallow_StolenCatID` | 2 ||
+| [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Specifies the legacy saved cat ID to spawn if it exists in the save data. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8687,7 +8687,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MimicSpawnerAttacks` | Integer | Applies or references the | 6 ||
+| `MimicSpawnerAttacks` | Integer | If positive, the number of attacks mimicked; if -1, mimics all attacks from spawner. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8708,9 +8708,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Character Form: Base form for standard cats. | 10 ||
-| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 2 ||
-| [`Nothing`](Characters_and_Bosses.md#object-nothing) | Object | Character Form: Behavior and stats for the 'Nothing' state. | 1 ||
+| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 10 ||
+| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 2 ||
+| [`Nothing`](Characters_and_Bosses.md#object-nothing) | Object | Defines the behavior when nothing is captured, typically just an animation. | 1 ||
 
 </details>
 
@@ -8730,8 +8730,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`count`](./Arrays.md#array-count) | Array / Integer | The numerical quantity. | 3 ||
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 1 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 1 ||
 
 </details>
 
@@ -8751,10 +8751,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID to spawn in place. | 545 ||
-| `clone_items` | Boolean | If true, transfers inventory to the new entity. | 1 ||
-| `clone_referenced_catdata` | Boolean | If true, copies the genetic data of the popped cat. | 1 ||
-| `no_splatter` | Boolean | Examples: `true` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 1 ||
+| `clone_referenced_catdata` | Boolean | If true, the spawned unit is a clone of the referenced cat data, including its stats and equipment. | 1 ||
+| `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 1 ||
 
 </details>
 
@@ -8771,7 +8771,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SharePickupsWithSpawner` | Integer | Applies or references the | 6 ||
+| `SharePickupsWithSpawner` | Integer | If set to 1, pickups collected by this unit are also given to its spawner. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8789,7 +8789,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnBearTrap` | Integer | Applies or references the | 14 ||
+| `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8807,7 +8807,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnBearTrapIfHitKills` | Integer | Applies or references the | 4 ||
+| `SpawnBearTrapIfHitKills` | Integer | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8825,7 +8825,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCatCloneOnCorpsePopped` | Integer | Applies or references the | 2 ||
+| `SpawnCatCloneOnCorpsePopped` | Integer | The number of cat clones spawned when a corpse is popped (destroyed) by the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8846,8 +8846,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `PlayerCat_AncestralShade, PlayerCat_NecroShade` | 545 ||
-| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | Examples: `necroset_shade, ancestorset_shade` | 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 ||
 
 </details>
 
@@ -8864,7 +8864,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCreep` | Integer | Applies or references the | 18 ||
+| `SpawnCreep` | Integer | If set to 1, spawns a creep tile under the target. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8882,7 +8882,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnCreepOnHitKnockback` | Integer | Applies or references the | 2 ||
+| `SpawnCreepOnHitKnockback` | Integer | If set to 1, spawns creep on the tile where a hit knocks back an enemy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8900,7 +8900,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnCustomTrap`](./Enums.md#enum-spawncustomtrap) | Enum | Examples: `SpikeTrap, EggSackTrap, CharmTrap` | 6 ||
+| [`SpawnCustomTrap`](./Enums.md#enum-spawncustomtrap) | Enum | Specifies the name of a custom trap blueprint to spawn at the target location. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8921,8 +8921,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `RandomPickup` | 545 ||
-| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 1 2 ]` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 ||
 
 </details>
 
@@ -8939,7 +8939,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | Examples: `[ 1 .20 ], [ 1 .20+.1*level ]` | 4 ||
+| [`SpawnFlames`](./Arrays.md#array-spawnflames) | Array | An array containing the number of flame tiles to spawn and the chance per tile. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8960,8 +8960,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| `break_on_pop_only` | Boolean | `true` | 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| `break_on_pop_only` | Boolean | If true, the linked familiar spawn only breaks when the item is popped. | 2 ||
 
 </details>
 
@@ -8978,7 +8978,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnNearEnemies` | Integer | Applies or references the | 4 ||
+| `SpawnNearEnemies` | Integer | The number of units to spawn near each enemy at the start of battle. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -8996,7 +8996,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnNeutralWebTrapOnMiss` | Integer | Applies or references the | 6 ||
+| `SpawnNeutralWebTrapOnMiss` | Integer | The number of neutral web traps spawned on the tile if the attack misses. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9017,9 +9017,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 3 ||
-| [`obj`](./Arrays.md#array-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 3 ||
-| [`additional_statuses`](Characters_and_Bosses.md#object-additional_statuses) | Object | Generic statuses added to the character. | 1 ||
+| [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 3 ||
+| [`obj`](./Arrays.md#array-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 3 ||
+| [`additional_statuses`](Characters_and_Bosses.md#object-additional_statuses) | Object | Additional status effects applied to the spawned unit on death. | 1 ||
 
 </details>
 
@@ -9036,7 +9036,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Examples: `CharmedKitten, CharmedFly` | 14 ||
+| [`SpawnOnDowned`](./Enums.md#enum-spawnondowned) | Enum | Specifies the character or object spawned when the unit is downed. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9057,8 +9057,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 3 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 ||
 
 </details>
 
@@ -9075,7 +9075,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnRock`](./Arrays.md#array-spawnrock) | Array / Integer | Applies or references the | 10 ||
+| [`SpawnRock`](./Arrays.md#array-spawnrock) | Array / Integer | The number of rocks to spawn, or an array with stacks and probability. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9093,7 +9093,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | Examples: `Food, BiggestFood, BigFood` | 20 ||
+| [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9114,9 +9114,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Examples: `OilTile` | 26 ||
-| `max_radius` | Number | Examples: `3.5` | 1 ||
-| [`min_radius`](./Enums.md#enum-min_radius) | Number | Examples: `1.5` | 1 ||
+| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 ||
+| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 1 ||
+| [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 ||
 
 </details>
 
@@ -9136,11 +9136,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `MiniVolcano, Sprout, PunchingBag` | 545 ||
-| `max_radius` | Number | Examples: `2.2` | 2 ||
-| [`min_radius`](./Enums.md#enum-min_radius) | Number | Examples: `1, .2` | 2 ||
-| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | Examples: `[ BrambleTile TallBrambleTile ], LavaTile` | 2 ||
-| [`number`](./Arrays.md#array-number) | Array / Integer | Examples: `[ 3 5 ]` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 2 ||
+| [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 2 ||
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 ||
+| [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 ||
 
 </details>
 
@@ -9157,7 +9157,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnWebTrap` | Integer | Applies or references the | 2 ||
+| `SpawnWebTrap` | Integer | The number of web traps to spawn on the target tile. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9175,7 +9175,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpawnerCatDataReference` | Integer | Applies or references the | 2 ||
+| `SpawnerCatDataReference` | Integer | A reference ID pointing to the spawner cat's data, used by minions to link back to their spawner. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9196,7 +9196,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Poison`](./Arrays.md#array-poison) | Array / Integer | Applies or references the 'Poison' effect/state. | 8 ||
+| [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 ||
 
 </details>
 
@@ -9216,8 +9216,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CaptureFamiliar` | Integer | Applies or references the 'CaptureFamiliar' effect/state. | 1 ||
-| `SetHealth` | Integer | Applies or references the 'SetHealth' effect/state. | 1 ||
+| `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 ||
+| `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 1 ||
 
 </details>
 
@@ -9237,7 +9237,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | `Rage` | 1 ||
+| [`no_buddy`](./Enums.md#enum-no_buddy) | Enum | Specifies an alternative form to use when there is no buddy. | 1 ||
 
 </details>
 
@@ -9257,7 +9257,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | Examples: `[ [ T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T3Spawn_Monk T...` | 1 ||
+| [`spell_use_groups`](./Arrays.md#array-spell_use_groups) | Array | List of spell use groups that the spawning phase can use. | 1 ||
 
 </details>
 
@@ -9274,7 +9274,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `T3HitlerTriggerInitialSpawns` | Integer | Applies or references the | 2 ||
+| `T3HitlerTriggerInitialSpawns` | Integer | If non-zero, triggers the initial spawn sequence for the T3 Hitler boss. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9292,7 +9292,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TakeWeaponFromSpawner` | Integer | Applies or references the | 2 ||
+| `TakeWeaponFromSpawner` | Integer | If set to 1, the minion inherits the weapon from its spawner. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9310,7 +9310,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsBuddy` | Integer | Applies or references the | 2 ||
+| `TossTargetIsBuddy` | Integer | If set to 1, the toss target is the unit's buddy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9330,7 +9330,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddLootMultiplier` | Number | Examples: `1` | 2 ||
+| `AddLootMultiplier` | Number | The multiplier added to loot drops from this unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9351,8 +9351,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 3 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 ||
+| [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 ||
 
 </details>
 
@@ -9369,7 +9369,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AwardCoinsOnDeath` | Integer | Applies or references the | 2 ||
+| `AwardCoinsOnDeath` | Integer | The amount of coins awarded to the killer when this unit dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9390,8 +9390,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](Characters_and_Bosses.md#object-ally_rewards) | Object | Loot logic triggered if an ally dies. | 18 ||
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Status effects possessed by the character. | 5 ||
+| [`ally_rewards`](Characters_and_Bosses.md#object-ally_rewards) | Object | Defines the rewards granted to the ally when the BirdRewards passive triggers. | 18 ||
+| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 5 ||
 
 </details>
 
@@ -9411,9 +9411,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`new_music`](./Enums.md#enum-new_music) | Enum | `chaos_boss_part2` | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`new_music`](./Enums.md#enum-new_music) | Enum | Specifies the music track to play during the boss's head drop-in animation. | 1 ||
 
 </details>
 
@@ -9430,7 +9430,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CoinPickup` | Integer | Applies or references the | 20 ||
+| `CoinPickup` | Integer | The amount of coins awarded when this pickup is collected. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9448,7 +9448,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CoinTossBounce` | Equation | Applies or references the | 2 ||
+| `CoinTossBounce` | Equation | Specifies the ability triggered when the coin lands on its edge after a bounce. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9466,7 +9466,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CollectsPickups` | Integer | Applies or references the | 34 ||
+| `CollectsPickups` | Integer | If set to 1 or greater, the unit collects pickups (e.g., items) on contact. | 34 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9487,12 +9487,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 ||
-| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | Applies or references the 'Quivered' effect/state. | 10 ||
-| `RandomStatUp` | Integer / String | Applies or references the 'RandomStatUp' effect/state. | 2 ||
-| `Tech` | Integer | Applies or references the 'Tech' effect/state. | 2 ||
-| `CurrentWeaponAddPoison` | Integer | Applies or references the 'CurrentWeaponAddPoison' effect/state. | 1 ||
-| `LuckUp` | Enum / Integer | Applies or references the 'LuckUp' effect/state. | 1 ||
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 ||
+| [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 ||
+| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 ||
+| `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 ||
+| `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 1 ||
+| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 ||
 
 </details>
 
@@ -9509,7 +9509,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyphStealer` | Integer | Applies or references the | 2 ||
+| `DemonicGlyphStealer` | Integer | If 1, the unit can steal demonic glyphs from other units. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9527,7 +9527,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoubleLoot`](Engine_StatusAndPassiveKeys.md#object-doubleloot) | Integer / Object | Applies or references the | 2 ||
+| [`DoubleLoot`](Engine_StatusAndPassiveKeys.md#object-doubleloot) | Integer / Object | The multiplier for loot drops, where 1 or 2 doubles the loot. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9545,7 +9545,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Applies or references the | 2 ||
+| [`DropSoulJarOnDeath`](./Enums.md#enum-dropsouljarondeath) | Enum | Specifies the type of soul jar to be dropped when the unit dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9563,7 +9563,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FindItem`](./Enums.md#enum-finditem) | Enum | Applies or references the | 5 ||
+| [`FindItem`](./Enums.md#enum-finditem) | Enum | The name of the specific item to find and add to the source's inventory. | 5 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9581,7 +9581,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceCollectsPickups` | Integer | Applies or references the | 2 ||
+| `ForceCollectsPickups` | Integer | If true, the unit automatically collects nearby pickups. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9599,7 +9599,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer | Applies or references the | 20 ||
+| [`GainCoins`](./Arrays.md#array-gaincoins) | Array / Integer | The amount of coins gained, or a [min, max] range. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9620,8 +9620,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max` | Integer | Maximum coins granted. | 4 ||
-| `min` | Integer | Minimum coins granted. | 4 ||
+| `max` | Integer | The maximum amount of coins that can be gained. | 4 ||
+| `min` | Integer | The minimum amount of coins that will be gained. | 4 ||
 
 </details>
 
@@ -9641,11 +9641,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 15 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 15 ||
-| `stored_food_value` | Integer | Examples: `3, 2, 1` | 15 ||
-| `anything_eats` | Boolean | `true` | 4 ||
-| `force_frame` | Integer | Examples: `12` | 1 ||
+| [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 15 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 15 ||
+| `stored_food_value` | Integer | The amount of food value stored in this pickup. | 15 ||
+| `anything_eats` | Boolean | If true, any unit can consume this health pickup. | 4 ||
+| `force_frame` | Integer | Forces the health pickup to use a specific animation frame. | 1 ||
 
 </details>
 
@@ -9662,7 +9662,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Lifesteal` | Integer | Applies or references the | 10 ||
+| `Lifesteal` | Integer | The amount of lifesteal stacks applied. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9683,8 +9683,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`frame_range`](./Arrays.md#array-frame_range) | Array | Examples: `[ 3 4 ], [ 1 2 ], [ 5 5 ]` | 3 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 ||
+| [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 ||
 
 </details>
 
@@ -9701,7 +9701,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManaSteal` | Integer | Applies or references the | 14 ||
+| `ManaSteal` | Integer | The amount of mana stolen (negative values may drain instead). | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9719,7 +9719,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManaStealToHealth` | Integer | Applies or references the | 2 ||
+| `ManaStealToHealth` | Integer | The amount of mana stolen and converted to health (negative values may drain health). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9740,10 +9740,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head_drop`](./Enums.md#enum-head_drop) | Enum | `MD_HeadDrop` | 1 ||
-| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum | `MD_LegLeave` | 1 ||
-| [`leg_return`](./Enums.md#enum-leg_return) | Enum | `MD_LegReturn` | 1 ||
-| `stable_legs` | Integer | Examples: `3` | 1 ||
+| [`head_drop`](./Enums.md#enum-head_drop) | Enum | Specifies the ability triggered when the head drops down. | 1 ||
+| [`leg_leave`](./Enums.md#enum-leg_leave) | Enum | Specifies the ability triggered when the legs leave the body. | 1 ||
+| [`leg_return`](./Enums.md#enum-leg_return) | Enum | Specifies the ability triggered when the legs return to the body. | 1 ||
+| `stable_legs` | Integer | The number of legs that must be stable for the head to drop. | 1 ||
 
 </details>
 
@@ -9763,8 +9763,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | Applies or references the 'Cleanse' effect/state. | 2 ||
-| [`sound_event`](./Enums.md#enum-sound_event) | Enum | `EatAntidote` | 1 ||
+| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 ||
+| [`sound_event`](./Enums.md#enum-sound_event) | Enum | Specifies the sound event to play when the pickup is used. | 1 ||
 
 </details>
 
@@ -9781,7 +9781,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MultiplyCoinsOnBattleStart` | Integer | Applies or references the | 2 ||
+| `MultiplyCoinsOnBattleStart` | Integer | The multiplier applied to the unit's coin count at the start of battle. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9799,7 +9799,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnGainCoins` | Integer | Applies or references the | 2 ||
+| `ReloadOnGainCoins` | Integer | If set to 1, restores a charge when coins are gained. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9820,8 +9820,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stackable` | Boolean | If true, multiple instances of this trigger can stack. | 2 ||
-| [`stacks`](./Math_Equations.md) | Equation | Number of stacks or intensity to apply. | 2 ||
+| `stackable` | Boolean | If true, the scatter coins effect can stack with multiple applications. | 2 ||
+| [`stacks`](./Math_Equations.md) | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 ||
 
 </details>
 
@@ -9838,7 +9838,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array / Integer | Examples: `1, [ 1 .3 ], [ 1 .5 ]` | 12 ||
+| [`ScatterHeldCoin`](./Arrays.md#array-scatterheldcoin) | Array / Integer | The number of coins scattered, with an optional probability as a second element. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9856,7 +9856,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ScatterRandomPickups` | Integer | Applies or references the | 4 ||
+| `ScatterRandomPickups` | Integer | The number of random pickups scattered around the target's location. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9874,7 +9874,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealDemonicGlyph` | Integer | Applies or references the | 2 ||
+| `StealDemonicGlyph` | Integer | The number of Demonic Glyphs stolen from the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9892,7 +9892,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Applies or references the | 2 ||
+| [`StealEquipment`](./Enums.md#enum-stealequipment) | Enum | Specifies the type of equipment to steal (e.g., "any") from the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9910,7 +9910,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealTurn` | Integer | Applies or references the | 2 ||
+| `StealTurn` | Integer | The number of turns stolen from the target to grant to the attacker. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9928,7 +9928,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealthCritChance` | Integer | Applies or references the | 2 ||
+| `StealthCritChance` | Integer | The percentage chance to critically hit while stealthed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9946,7 +9946,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StealthUntilBasicAttack` | Integer | Applies or references the | 2 ||
+| `StealthUntilBasicAttack` | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9964,7 +9964,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Applies or references the | 2 ||
+| [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum | Specifies the type of pickup that this unit is allowed to collect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9987,22 +9987,22 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Number | Sprite variant ID for the head. | 784 ||
-| `texture` | Integer | Examples: `1050, 1002, 1000` | 422 ||
-| [`palette`](./Enums.md#enum-palette) | Enum / Integer | Swaps the color palette ID. | 420 ||
-| [`mouth`](./Enums.md#enum-mouth) | Number | `closed`, `open`, `smile` | 386 ||
-| `tail` | Integer | Sprite variant ID for the tail. | 362 ||
-| `arm2` | Number | Scale multiplier for the back arm. | 358 ||
-| `arm1` | Number | Sprite variant ID for the front arm. | 354 ||
-| `leg1` | Integer | Sprite variant ID for the front leg. | 348 ||
-| [`body`](./Arrays.md#array-body) | Number | Sprite variant ID for the body. | 346 ||
-| `leg2` | Integer | Examples: `3, 1019, 1001` | 344 ||
-| `ear1` | Integer | Sprite variant ID for the front ear. | 10 ||
-| `ear2` | Integer | Examples: `23, 1036, 1501` | 9 ||
-| `eye1` | Integer | Examples: `1069, 1013, 1057` | 1 ||
-| `eye2` | Integer | Examples: `1069, 1013, 1057` | 1 ||
-| `eyebrow1` | Integer | Examples: `1069` | 1 ||
-| `eyebrow2` | Integer | Examples: `1070` | 1 ||
+| [`head`](./Enums.md#enum-head) | Enum / Number | The catalog ID for the cat's head part. | 784 ||
+| `texture` | Integer | The catalog ID for the cat's texture. | 422 ||
+| [`palette`](./Enums.md#enum-palette) | Enum / Integer | Specifies the color palette index for the ability's visuals. | 420 ||
+| [`mouth`](./Enums.md#enum-mouth) | Number | The catalog ID for the cat's mouth part. | 386 ||
+| `tail` | Integer | The catalog ID for the cat's tail part. | 362 ||
+| `arm2` | Number | The catalog ID for the cat's second arm part. | 358 ||
+| `arm1` | Number | The catalog ID for the cat's first arm part. | 354 ||
+| `leg1` | Integer | The catalog ID for the cat's first leg part. | 348 ||
+| [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 346 ||
+| `leg2` | Integer | The catalog ID for the cat's second leg part. | 344 ||
+| `ear1` | Integer | The catalog ID for the cat's first ear part. | 10 ||
+| `ear2` | Integer | The catalog ID for the cat's second ear part. | 9 ||
+| `eye1` | Integer | The catalog ID for the cat's first eye part. | 1 ||
+| `eye2` | Integer | The catalog ID for the cat's second eye part. | 1 ||
+| `eyebrow1` | Integer | The catalog ID for the cat's first eyebrow part. | 1 ||
+| `eyebrow2` | Integer | The catalog ID for the cat's second eyebrow part. | 1 ||
 
 </details>
 
@@ -10022,8 +10022,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 ||
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 1 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 1 ||
 
 </details>
 
@@ -10040,7 +10040,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChaosBossFormChange` | Integer | Applies or references the | 2 ||
+| `ChaosBossFormChange` | Integer | If set to a non-zero number, triggers a chaos boss form change. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10061,9 +10061,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | Examples: `[ Johnny Throb Flush ]` | 1 ||
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | Examples: `[ Host Nettle Bubs ]` | 1 ||
-| `passives_health_threshold` | Integer | Examples: `50` | 1 ||
+| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | An array of piece names that are considered actively part of the current form. | 1 ||
+| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | An array of piece names that are considered passively part of the current form. | 1 ||
+| `passives_health_threshold` | Integer | The health percentage threshold at which the boss's passive abilities change. | 1 ||
 
 </details>
 
@@ -10083,8 +10083,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eq`](./Arrays.md#array-eq) | Array | Examples: `[ 0 WaterBottle_Empty ], [ 1 WaterBottle_Half ], [ 0 JarOfNothing ]` | 11 ||
-| [`ge`](./Arrays.md#array-ge) | Array | Examples: `[ 2 WaterBottle_Full ], [ 3 EstusFlask_Full ]` | 4 ||
+| [`eq`](./Arrays.md#array-eq) | Array | An array specifying a [durability, item] pair to transform to when durability equals a specific value. | 11 ||
+| [`ge`](./Arrays.md#array-ge) | Array | An array specifying a [durability, item] pair to transform to when durability is greater than or equal to a specific value. | 4 ||
 
 </details>
 
@@ -10104,8 +10104,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 75 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 75 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -10125,8 +10125,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 2 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 2 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -10146,10 +10146,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_above`](./Enums.md#enum-form_above) | Enum | `Default`, `Full`, `Standing` | 3 ||
-| [`form_below`](./Enums.md#enum-form_below) | Enum | `Damaged`, `DesireMech`, `Standing2` | 3 ||
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 3 ||
-| `count_shield` | Boolean | `true` | 1 ||
+| [`form_above`](./Enums.md#enum-form_above) | Enum | The form to change to when health is above the threshold. | 3 ||
+| [`form_below`](./Enums.md#enum-form_below) | Enum | The form to change to when health is below the threshold. | 3 ||
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 ||
+| `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 ||
 
 </details>
 
@@ -10169,8 +10169,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum | `Default_Ceiling`, `Insane_Ceiling`, `OffMap`, `SpawningPhase`, `Start_Ceiling` | 8 ||
-| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | `Default`, `Default_Ground`, `FightPhase`, `Insane_Ground` | 8 ||
+| [`form_offmap`](./Enums.md#enum-form_offmap) | Enum | Specifies the form name to use when the unit is off the map. | 8 ||
+| [`form_onmap`](./Enums.md#enum-form_onmap) | Enum | Specifies the form name to use when the unit returns to the map. | 8 ||
 
 </details>
 
@@ -10190,11 +10190,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form`](./Enums.md#enum-form) | Enum / Integer | The specific form ID to check for. | 9 ||
-| [`exclude`](./Enums.md#enum-exclude) | Enum | `SpellDamageUp`, `fire`, `water` | 5 ||
-| [`particle`](./Enums.md#enum-particle) | Enum | References an impact or cast particle effect. | 5 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | `BeaniesEnding_Banging`, `FireExtinguish`, `Intro_LabDisposal`, `PickupCoin`, `UISFX_BeaniesAppear` | 5 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 9 ||
+| [`exclude`](./Enums.md#enum-exclude) | Enum | Specifies an element or effect that does not trigger the form change. | 5 ||
+| [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 5 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 5 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -10211,7 +10211,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum | Applies or references the | 2 ||
+| [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum | Specifies the form name the unit changes into when its buddy dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10232,9 +10232,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 35 ||
-| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum | `Big`, `CaveWoman`, `Close`, `Default`, `Empty` | 30 ||
-| [`form_has`](./Enums.md#enum-form_has) | Enum | `BellyFull`, `CaveWomanHasCat`, `FireFull`, `Full`, `Grappling` | 25 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 35 ||
+| [`form_hasnot`](./Enums.md#enum-form_hasnot) | Enum | Specifies a form that the unit must not be in for the status-triggered form change to occur. | 30 ||
+| [`form_has`](./Enums.md#enum-form_has) | Enum | Specifies a form that the unit must be in for the status-triggered form change to occur. | 25 ||
 
 </details>
 
@@ -10254,8 +10254,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`not_priming`](./Enums.md#enum-not_priming) | Enum | `DualSword`, `NotPriming`, `SwordAndShield` | 6 ||
-| [`priming`](./Enums.md#enum-priming) | Enum | `DualSword_Primed`, `Priming`, `SwordAndShield_Primed` | 6 ||
+| [`not_priming`](./Enums.md#enum-not_priming) | Enum | Specifies the form name to use when the unit is not priming an ability. | 6 ||
+| [`priming`](./Enums.md#enum-priming) | Enum | Specifies the form name to use while the unit is priming an ability. | 6 ||
 
 </details>
 
@@ -10275,164 +10275,164 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Object listing intrinsic passive modifiers. | 5118 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | Core block defining the AI behavior logic and weights. | 928 ||
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | Character Form: The baseline default behavior state. | 199 ||
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | Baseline configuration. | 199 ||
-| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Applies or references the 'Colorless' effect/state. | 140 ||
-| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Applies or references the 'Druid' effect/state. | 80 ||
-| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Applies or references the 'Fighter' effect/state. | 80 ||
-| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Applies or references the 'Thief' effect/state. | 76 ||
-| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Applies or references the 'Tank' effect/state. | 74 ||
-| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Applies or references the 'Butcher' effect/state. | 72 ||
-| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Applies or references the 'Necromancer' effect/state. | 72 ||
-| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Applies or references the 'Mage' effect/state. | 70 ||
-| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Applies or references the 'Tinkerer' effect/state. | 70 ||
-| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Applies or references the 'Hunter' effect/state. | 68 ||
-| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Applies or references the 'Monk' effect/state. | 66 ||
-| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Applies or references the 'Psychic' effect/state. | 66 ||
-| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Applies or references the 'Medic' effect/state. | 58 ||
-| [`attack`](./Enums.md#enum-attack) | Enum | `AZ_BreakNeck`, `AcidShot`, `AmoebaAttach`, `AmoebaRockBash`, `AngelcatWind` | 26 ||
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | Character Form: Behavior and stats for the \'Normal\' state. | 24 ||
-| [`Cultist`](Characters_and_Bosses.md#object-cultist) | Object | Character Form: Behavior and stats for the \'Cultist\' state. | 11 ||
-| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Character Form: Behavior and stats for the 'Nuke' state. | 10 ||
-| [`Rage`](Characters_and_Bosses.md#object-rage) | Object | Character Form: Behavior and stats for the \'Rage\' state. | 10 ||
-| [`Unlit`](Characters_and_Bosses.md#object-unlit) | Object | Character Form: Behavior and stats for the 'Unlit' state. | 9 ||
-| [`CaveMan`](Characters_and_Bosses.md#object-caveman) | Object | Character Form: Behavior and stats for the \'CaveMan\' state. | 7 ||
-| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 ||
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | `Big`, `Bishop`, `BlackHole`, `CaveBaby`, `CaveMan` | 6 ||
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 ||
-| [`Angry`](Characters_and_Bosses.md#object-angry) | Object | Character Form / AI State: Behavior and stats for the \'Angry\' state. | 5 ||
-| [`HasCat`](Characters_and_Bosses.md#object-hascat) | Object | Character Form: Behavior and stats for the \'HasCat\' state. | 5 ||
-| [`Water`](Characters_and_Bosses.md#object-water) | Object | Character Form: Behavior and stats for the \'Water\' state. | 5 ||
-| [`Flush`](Characters_and_Bosses.md#object-flush) | Object | Character Form: Behavior and stats for the 'Flush' state. | 4 ||
-| [`hot`](Characters_and_Bosses.md#object-hot) | Object | Visual effect indicator. | 4 ||
-| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | Character Form: Behavior and stats for the 'OffMap' state. | 4 ||
-| [`passive`](Characters_and_Bosses.md#object-passive) | Object | Intrinsic passive modifier. | 4 ||
-| [`AllAlive`](Characters_and_Bosses.md#object-allalive) | Object | Encounter State: Logic executed when all specific entities are currently alive. | 3 ||
-| [`CaveBaby`](Characters_and_Bosses.md#object-cavebaby) | Object | Character Form: Behavior and stats for the \'CaveBaby\' state. | 3 ||
-| [`Down`](Characters_and_Bosses.md#object-down) | Object | Character Form: Behavior and stats for the \'Down\' state. | 3 ||
-| [`Full`](Characters_and_Bosses.md#object-full) | Object | Character Form: Behavior and stats for the \'Full\' state. | 3 ||
-| [`OneAlive`](Characters_and_Bosses.md#object-onealive) | Object | Encounter State: Logic executed when exactly one target is alive. | 3 ||
-| [`Open`](Characters_and_Bosses.md#object-open) | Object | Character Form: Behavior and stats for the 'Open' state. | 3 ||
-| [`TwoAlive`](Characters_and_Bosses.md#object-twoalive) | Object | Encounter State: Logic executed when exactly two targets are alive. | 3 ||
-| [`Up`](Characters_and_Bosses.md#object-up) | Object | Character Form: Behavior and stats for the \'Up\' state. | 3 ||
-| [`active`](Characters_and_Bosses.md#object-active) | Object | Defines actively executed abilities. | 2 ||
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Character Form / AI State: Behavior and stats for the \'Big\' state. | 2 ||
-| [`CaveManSpear`](Characters_and_Bosses.md#object-cavemanspear) | Object | Character Form: Behavior and stats for the \'CaveManSpear\' state. | 2 ||
-| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Character Form: Behavior and stats for the \'Explosive\' state. | 2 ||
-| [`Holding`](Characters_and_Bosses.md#object-holding) | Object | Character Form: Behavior and stats for the \'Holding\' state. | 2 ||
-| [`Holy`](Characters_and_Bosses.md#object-holy) | Enum / Object | Character Form: Behavior and stats for the \'Holy\' state. | 2 ||
-| [`LastHit`](Characters_and_Bosses.md#object-lasthit) | Object | Logic: Executes logic on the final hit of a multi-hit attack. | 2 ||
-| [`NeutronStar`](Characters_and_Bosses.md#object-neutronstar) | Object | Character Form: Behavior and stats for the 'NeutronStar' state. | 2 ||
-| [`NotPriming`](Characters_and_Bosses.md#object-notpriming) | Object | Character Form: Behavior and stats when not charging an ability. | 2 ||
-| [`Priming`](Characters_and_Bosses.md#object-priming) | Object | Character Form: Behavior and stats when charging an ability. | 2 ||
-| [`Small`](Characters_and_Bosses.md#object-small) | Object | Character Form: Behavior and stats for the \'Small\' state. | 2 ||
-| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Character Form: Behavior and stats for the 'SquirrelForm' state. | 2 ||
-| [`Turtled`](Characters_and_Bosses.md#object-turtled) | Object | Character Form: Behavior and stats for the 'Turtled' state. | 2 ||
-| `uifloaters_offset` | Number | Examples: `2.2` | 2 ||
-| [`Zealot`](Characters_and_Bosses.md#object-zealot) | Object | Character Form: Behavior and stats for the \'Zealot\' state. | 2 ||
-| [`Alert`](Characters_and_Bosses.md#object-alert) | Object | AI State: The behavior profile used when the character is alerted to enemies. | 1 ||
-| [`Attacker`](Characters_and_Bosses.md#object-attacker) | Object | AI Role: Designates the character as an attacker rather than support. | 1 ||
-| [`BellyFull`](Characters_and_Bosses.md#object-bellyfull) | Object | Character Form / AI State: Behavior and stats for the \'BellyFull\' state. | 1 ||
-| [`BigHolding`](Characters_and_Bosses.md#object-bigholding) | Object | Character Form / AI State: Behavior and stats for the \'BigHolding\' state. | 1 ||
-| [`BigHoldingCat`](Characters_and_Bosses.md#object-bigholdingcat) | Object | Character Form / AI State: Behavior and stats for the \'BigHoldingCat\' state. | 1 ||
-| [`Bishop`](Characters_and_Bosses.md#object-bishop) | Object | Character Form / AI State: Behavior and stats for the \'Bishop\' state. | 1 ||
-| [`BlackHole`](Characters_and_Bosses.md#object-blackhole) | Object | Character Form / AI State: Behavior and stats for the \'BlackHole\' state. | 1 ||
-| [`Bomb`](Characters_and_Bosses.md#object-bomb) | Object | Character Form / AI State: Behavior and stats for the 'Bomb' state. | 1 ||
-| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Character Form / AI State: Behavior and stats for the \'Boris\' state. | 1 ||
-| [`Bully`](Characters_and_Bosses.md#object-bully) | Object | Character Form / AI State: Behavior and stats for the 'Bully' state. | 1 ||
-| [`CaveWoman`](Characters_and_Bosses.md#object-cavewoman) | Object | Character Form: Behavior and stats for the \'CaveWoman\' state. | 1 ||
-| [`CaveWomanHasCat`](Characters_and_Bosses.md#object-cavewomanhascat) | Object | Character Form: Behavior and stats for the \'CaveWomanHasCat\' state. | 1 ||
-| [`Charging`](Characters_and_Bosses.md#object-charging) | Object | Character Form / AI State: Behavior when charging an attack. | 1 ||
-| [`Close`](Characters_and_Bosses.md#object-close) | Object | AI Movement logic: Maneuvers into close/melee range. | 1 ||
-| [`Damaged`](Characters_and_Bosses.md#object-damaged) | Object | Character Form / AI State: Behavior when health is critically low. | 1 ||
-| [`Default_Ceiling`](Characters_and_Bosses.md#object-default_ceiling) | Object | Character Form: The baseline behavior state while attached to the ceiling. | 1 ||
-| [`Default_Ground`](Characters_and_Bosses.md#object-default_ground) | Object | Character Form: The baseline behavior state while on the ground. | 1 ||
-| [`DesireMech`](Characters_and_Bosses.md#object-desiremech) | Object | Character Form: Behavior and stats for the 'DesireMech' state. | 1 ||
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Character Form / Logic: Forces the character to die. | 1 ||
-| [`Drunker`](Characters_and_Bosses.md#object-drunker) | Object | Character Form: Behavior and stats for the 'Drunker' state. | 1 ||
-| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Character Form: Behavior and stats for the \'DualSword\' state. | 1 ||
-| [`DualSword_Primed`](Characters_and_Bosses.md#object-dualsword_primed) | Object | Character Form: Behavior and stats for the \'DualSword_Primed\' state. | 1 ||
-| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 ||
-| [`Empty`](Characters_and_Bosses.md#object-empty) | Object | Character Form: Behavior and stats for the \'Empty\' state. | 1 ||
-| [`Explody`](Characters_and_Bosses.md#object-explody) | Object | Character Form: Behavior and stats for the 'Explody' state. | 1 ||
-| [`FightPhase`](Characters_and_Bosses.md#object-fightphase) | Object | Boss Logic: Main combat phase. | 1 ||
-| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 ||
-| [`Flop`](Characters_and_Bosses.md#object-flop) | Object | Character Form: Behavior and stats for the \'Flop\' state. | 1 ||
-| [`Flop2`](Characters_and_Bosses.md#object-flop2) | Object | Character Form: Behavior and stats for the \'Flop2\' state. | 1 ||
-| [`FlushBubs`](Characters_and_Bosses.md#object-flushbubs) | Object | Character Form: Behavior and stats for the 'FlushBubs' state. | 1 ||
-| [`FlushHost`](Characters_and_Bosses.md#object-flushhost) | Object | Character Form: Behavior and stats for the 'FlushHost' state. | 1 ||
-| [`FlushNettle`](Characters_and_Bosses.md#object-flushnettle) | Object | Character Form: Behavior and stats for the 'FlushNettle' state. | 1 ||
-| [`Grappling`](Characters_and_Bosses.md#object-grappling) | Object | Character Form / AI State: Behavior while grappling an opponent. | 1 ||
-| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Character Form: Behavior and stats for the \'Grown\' state. | 1 ||
-| [`GuaranteedJackpot`](Characters_and_Bosses.md#object-guaranteedjackpot) | Object | Loot Logic: Guarantees a high-tier drop. | 1 ||
-| [`Guarding`](Characters_and_Bosses.md#object-guarding) | Object | Character Form / AI State: Defensive behavior state. | 1 ||
-| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Character Form: Behavior and stats for the \'HalfDead\' state. | 1 ||
-| [`HasDeadCat`](Characters_and_Bosses.md#object-hasdeadcat) | Object | Character Form: Behavior and stats for the \'HasDeadCat\' state. | 1 ||
-| [`HasRock`](Characters_and_Bosses.md#object-hasrock) | Object | Character Form: Behavior and stats for the \'HasRock\' state. | 1 ||
-| [`Headless`](Characters_and_Bosses.md#object-headless) | Object | Character Form: Behavior and stats for the \'Headless\' state. | 1 ||
-| [`Hint_CrackedVisuals`](Characters_and_Bosses.md#object-hint_crackedvisuals) | Object | Visual: Overlay effects for cracked/damaged terrain or objects. | 1 ||
-| [`Hint_CrackedVisuals2`](Characters_and_Bosses.md#object-hint_crackedvisuals2) | Object | Visual: Secondary cracked visual overlay. | 1 ||
-| [`Hint_CrackedVisuals3`](Characters_and_Bosses.md#object-hint_crackedvisuals3) | Object | Visual: Tertiary cracked visual overlay. | 1 ||
-| [`HumanDead`](Characters_and_Bosses.md#object-humandead) | Object | Character Form: Behavior and stats for the \'HumanDead\' state. | 1 ||
-| [`InitialPhase`](Characters_and_Bosses.md#object-initialphase) | Object | Boss Logic: The starting phase of an encounter. | 1 ||
-| [`Insane_Ceiling`](Characters_and_Bosses.md#object-insane_ceiling) | Object | Character Form: Insane behavior state while attached to the ceiling. | 1 ||
-| [`Insane_Ground`](Characters_and_Bosses.md#object-insane_ground) | Object | Character Form: Insane behavior state while on the ground. | 1 ||
-| [`Johnny`](Characters_and_Bosses.md#object-johnny) | Object | Character Form: Behavior and stats for the 'Johnny' state. | 1 ||
-| [`JohnnyBubs`](Characters_and_Bosses.md#object-johnnybubs) | Object | Character Form: Behavior and stats for the 'JohnnyBubs' state. | 1 ||
-| [`JohnnyHost`](Characters_and_Bosses.md#object-johnnyhost) | Object | Character Form: Behavior and stats for the 'JohnnyHost' state. | 1 ||
-| [`JohnnyNettle`](Characters_and_Bosses.md#object-johnnynettle) | Object | Character Form: Behavior and stats for the 'JohnnyNettle' state. | 1 ||
-| [`Joystick`](Characters_and_Bosses.md#object-joystick) | Object | Character Form: Behavior and stats for the \'Joystick\' state. | 1 ||
-| [`Lifted`](Characters_and_Bosses.md#object-lifted) | Object | Character Form: Behavior and stats for the \'Lifted\' state. | 1 ||
-| [`Lit`](Characters_and_Bosses.md#object-lit) | Object | Character Form: Behavior and stats for the 'Lit' state. | 1 ||
-| [`Mounted`](Characters_and_Bosses.md#object-mounted) | Object | Character Form: Behavior and stats for the \'Mounted\' state. | 1 ||
-| [`MouthFull`](Characters_and_Bosses.md#object-mouthfull) | Object | Character Form: Behavior and stats for the \'MouthFull\' state. | 1 ||
-| [`Mutant`](Characters_and_Bosses.md#object-mutant) | Integer / Object | Character Form: Behavior and stats for the \'Mutant\' state. | 1 ||
-| `NoDeathRattle` | Object | Applies or references the 'NoDeathRattle' effect/state. | 1 ||
-| [`NoEyes`](Characters_and_Bosses.md#object-noeyes) | Object | Character Form: Behavior and stats for the \'NoEyes\' state. | 1 ||
-| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 ||
-| [`NoStick`](Characters_and_Bosses.md#object-nostick) | Object | Character Form: Behavior and stats for the 'NoStick' state. | 1 ||
-| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 ||
-| [`Off`](Characters_and_Bosses.md#object-off) | Object | Character Form: Behavior and stats for the 'Off' state. | 1 ||
-| [`OffScreen`](Characters_and_Bosses.md#object-offscreen) | Object | Character Form: Behavior and stats for the 'OffScreen' state. | 1 ||
-| [`OneEye`](Characters_and_Bosses.md#object-oneeye) | Object | Character Form: Behavior and stats for the \'OneEye\' state. | 1 ||
-| [`OpenCat`](Characters_and_Bosses.md#object-opencat) | Object | Character Form: Behavior and stats for the 'OpenCat' state. | 1 ||
-| [`Out`](Characters_and_Bosses.md#object-out) | Object | Character Form: Behavior and stats for the 'Out' state. | 1 ||
-| [`Possessing`](Characters_and_Bosses.md#object-possessing) | Object | Character Form: Behavior and stats for the \'Possessing\' state. | 1 ||
-| [`Primed`](Characters_and_Bosses.md#object-primed) | Object | Character Form: Behavior and stats for the 'Primed' state. | 1 ||
-| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Character Form: Behavior and stats for the 'Pulp2' state. | 1 ||
-| [`Pulp3`](Characters_and_Bosses.md#object-pulp3) | Object | Character Form: Behavior and stats for the 'Pulp3' state. | 1 ||
-| [`Pulp4`](Characters_and_Bosses.md#object-pulp4) | Object | Character Form: Behavior and stats for the 'Pulp4' state. | 1 ||
-| [`Pulp5`](Characters_and_Bosses.md#object-pulp5) | Object | Character Form: Behavior and stats for the 'Pulp5' state. | 1 ||
-| [`Pulp6`](Characters_and_Bosses.md#object-pulp6) | Object | Character Form: Behavior and stats for the 'Pulp6' state. | 1 ||
-| [`Pulp7`](Characters_and_Bosses.md#object-pulp7) | Object | Character Form: Behavior and stats for the 'Pulp7' state. | 1 ||
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Character Form: Behavior and stats for the 'Rain' state. | 1 ||
-| [`Sitting`](Characters_and_Bosses.md#object-sitting) | Object | Character Form: Behavior and stats for the 'Sitting' state. | 1 ||
-| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Character Form: Behavior and stats for the \'SmallHolding\' state. | 1 ||
-| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Character Form: Behavior and stats for the \'SmallHoldingCat\' state. | 1 ||
-| [`SpawningPhase`](Characters_and_Bosses.md#object-spawningphase) | Object | Boss Logic: Phase focused on summoning minions. | 1 ||
-| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Character Form: Behavior and stats for the 'Standing' state. | 1 ||
-| [`Standing2`](Characters_and_Bosses.md#object-standing2) | Object | Character Form: Behavior and stats for the 'Standing2' state. | 1 ||
-| [`Start_Ceiling`](Characters_and_Bosses.md#object-start_ceiling) | Object | Character Form: Behavior and stats for the 'Start_Ceiling' state. | 1 ||
-| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 1 ||
-| [`SwordAndShield`](Characters_and_Bosses.md#object-swordandshield) | Object | Character Form: Behavior and stats for the 'SwordAndShield' state. | 1 ||
-| [`SwordAndShield_Primed`](Characters_and_Bosses.md#object-swordandshield_primed) | Object | Character Form: Behavior and stats for the \'SwordAndShield_Primed\' state. | 1 ||
-| `sync_brain_patterns` | Boolean | `true` | 1 ||
-| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 ||
-| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 ||
-| [`Throb`](Characters_and_Bosses.md#object-throb) | Object | Character Form: Behavior and stats for the 'Throb' state. | 1 ||
-| [`ThrobBubs`](Characters_and_Bosses.md#object-throbbubs) | Object | Character Form: Behavior and stats for the 'ThrobBubs' state. | 1 ||
-| [`ThrobHost`](Characters_and_Bosses.md#object-throbhost) | Object | Character Form: Behavior and stats for the 'ThrobHost' state. | 1 ||
-| [`ThrobNettle`](Characters_and_Bosses.md#object-throbnettle) | Object | Character Form: Behavior and stats for the 'ThrobNettle' state. | 1 ||
-| [`Transformed`](Characters_and_Bosses.md#object-transformed) | Object | Character Form: Behavior and stats for the 'Transformed' state. | 1 ||
-| [`TwoEyes`](Characters_and_Bosses.md#object-twoeyes) | Object | Character Form: Behavior and stats for the 'TwoEyes' state. | 1 ||
-| `Unmounted` | Object | Applies or references the 'Unmounted' effect/state. | 1 ||
-| [`Unwashed`](Characters_and_Bosses.md#object-unwashed) | Object | Character Form: Behavior and stats for the 'Unwashed' state. | 1 ||
-| [`Washed`](Characters_and_Bosses.md#object-washed) | Object | Character Form: Behavior and stats for the 'Washed' state. | 1 ||
-| [`Washer`](Characters_and_Bosses.md#object-washer) | Object | Character Form: Behavior and stats for the \'Washer\' state. | 1 ||
-| [`WereMan`](Characters_and_Bosses.md#object-wereman) | Object | Character Form: Behavior and stats for the \'WereMan\' state. | 1 ||
-| [`ZealotBomb`](Characters_and_Bosses.md#object-zealotbomb) | Object | Character Form: Behavior and stats for the \'ZealotBomb\' state. | 1 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 928 ||
+| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 199 ||
+| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 199 ||
+| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 140 ||
+| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 80 ||
+| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 80 ||
+| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Form identifier for the Thief boss type. | 76 ||
+| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Form identifier for the Tank boss type, used for dialogue references. | 74 ||
+| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 72 ||
+| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Defines a list of quotes for the Necromancer class. | 72 ||
+| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Defines a list of quotes for the Mage class. | 70 ||
+| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Form identifier for the Tinkerer boss type. | 70 ||
+| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Defines a list of quotes for the Hunter class (vs boss, embark, return early). | 68 ||
+| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Defines a list of quotes for the Monk class. | 66 ||
+| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Form identifier for the Psychic boss type, used for dialogue references. | 66 ||
+| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Defines a list of quotes for the Medic class. | 58 ||
+| [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 26 ||
+| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 ||
+| [`Cultist`](Characters_and_Bosses.md#object-cultist) | Object | Defines the 'Cultist' form, a basic melee form with its own name and tooltip. | 11 ||
+| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 10 ||
+| [`Rage`](Characters_and_Bosses.md#object-rage) | Object | The rage form configuration, applied when the unit enters an enraged state. | 10 ||
+| [`Unlit`](Characters_and_Bosses.md#object-unlit) | Object | Form state for an unlit candle, muting demonic glyph display. | 9 ||
+| [`CaveMan`](Characters_and_Bosses.md#object-caveman) | Object | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 7 ||
+| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 ||
+| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | Specifies the starting form name for a unit with FormChanger. | 6 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 6 ||
+| [`Angry`](Characters_and_Bosses.md#object-angry) | Object | Defines the 'Angry' form, an enraged state with its own AI. | 5 ||
+| [`HasCat`](Characters_and_Bosses.md#object-hascat) | Object | The form configuration applied when the unit is holding or has swallowed a cat. | 5 ||
+| [`Water`](Characters_and_Bosses.md#object-water) | Object | Form state for water element, applying a puddle or movement bonus. | 5 ||
+| [`Flush`](Characters_and_Bosses.md#object-flush) | Object | Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name. | 4 ||
+| [`hot`](Characters_and_Bosses.md#object-hot) | Object | The form configuration applied when the unit is in a hot state, granting fire element. | 4 ||
+| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 4 ||
+| [`passive`](Characters_and_Bosses.md#object-passive) | Object | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 4 ||
+| [`AllAlive`](Characters_and_Bosses.md#object-allalive) | Object | The form configuration applied when all family members are alive. | 3 ||
+| [`CaveBaby`](Characters_and_Bosses.md#object-cavebaby) | Object | Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack. | 3 ||
+| [`Down`](Characters_and_Bosses.md#object-down) | Object | The form configuration applied when the unit is in a knocked-down or prone state. | 3 ||
+| [`Full`](Characters_and_Bosses.md#object-full) | Object | The form configuration applied when the unit is in a full state. | 3 ||
+| [`OneAlive`](Characters_and_Bosses.md#object-onealive) | Object | The form configuration applied when only one family member remains alive. | 3 ||
+| [`Open`](Characters_and_Bosses.md#object-open) | Object | Defines an open form with increased movement and a specific attack. | 3 ||
+| [`TwoAlive`](Characters_and_Bosses.md#object-twoalive) | Object | A form that activates when two specific units are alive, granting the contained passives and abilities. | 3 ||
+| [`Up`](Characters_and_Bosses.md#object-up) | Object | Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior. | 3 ||
+| [`active`](Characters_and_Bosses.md#object-active) | Object | Defines the active form, containing passives and abilities that are active while in this form. | 2 ||
+| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 ||
+| [`CaveManSpear`](Characters_and_Bosses.md#object-cavemanspear) | Object | Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation. | 2 ||
+| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 ||
+| [`Holding`](Characters_and_Bosses.md#object-holding) | Object | Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors. | 2 ||
+| [`Holy`](Characters_and_Bosses.md#object-holy) | Enum / Object | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 ||
+| [`LastHit`](Characters_and_Bosses.md#object-lasthit) | Object | Defines a form that grants 2 dispersed bonus turns after the last hit. | 2 ||
+| [`NeutronStar`](Characters_and_Bosses.md#object-neutronstar) | Object | Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode). | 2 ||
+| [`NotPriming`](Characters_and_Bosses.md#object-notpriming) | Object | Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns. | 2 ||
+| [`Priming`](Characters_and_Bosses.md#object-priming) | Object | Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end. | 2 ||
+| [`Small`](Characters_and_Bosses.md#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 ||
+| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 ||
+| [`Turtled`](Characters_and_Bosses.md#object-turtled) | Object | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 ||
+| `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 ||
+| [`Zealot`](Characters_and_Bosses.md#object-zealot) | Object | Form state for the zealot variant of a cultist, with a stabbing attack. | 2 ||
+| [`Alert`](Characters_and_Bosses.md#object-alert) | Object | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 ||
+| [`Attacker`](Characters_and_Bosses.md#object-attacker) | Object | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 ||
+| [`BellyFull`](Characters_and_Bosses.md#object-bellyfull) | Object | Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation. | 1 ||
+| [`BigHolding`](Characters_and_Bosses.md#object-bigholding) | Object | Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status. | 1 ||
+| [`BigHoldingCat`](Characters_and_Bosses.md#object-bigholdingcat) | Object | Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming. | 1 ||
+| [`Bishop`](Characters_and_Bosses.md#object-bishop) | Object | Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation. | 1 ||
+| [`BlackHole`](Characters_and_Bosses.md#object-blackhole) | Object | Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name. | 1 ||
+| [`Bomb`](Characters_and_Bosses.md#object-bomb) | Object | Defines the 'Bomb' form, an explosive state that triggers an ability on death. | 1 ||
+| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 ||
+| [`Bully`](Characters_and_Bosses.md#object-bully) | Object | Defines the 'Bully' form, which allows the unit to take turns and enables its passives. | 1 ||
+| [`CaveWoman`](Characters_and_Bosses.md#object-cavewoman) | Object | Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health. | 1 ||
+| [`CaveWomanHasCat`](Characters_and_Bosses.md#object-cavewomanhascat) | Object | Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap. | 1 ||
+| [`Charging`](Characters_and_Bosses.md#object-charging) | Object | Defines the 'Charging' form, a wind-up state for a powerful attack. | 1 ||
+| [`Close`](Characters_and_Bosses.md#object-close) | Object | Defines the 'Close' form, which triggers GSOpen ability upon reaction. | 1 ||
+| [`Damaged`](Characters_and_Bosses.md#object-damaged) | Object | Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack. | 1 ||
+| [`Default_Ceiling`](Characters_and_Bosses.md#object-default_ceiling) | Object | Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders. | 1 ||
+| [`Default_Ground`](Characters_and_Bosses.md#object-default_ground) | Object | Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack. | 1 ||
+| [`DesireMech`](Characters_and_Bosses.md#object-desiremech) | Object | Defines the 'DesireMech' form, a mech suit form with its own AI pattern. | 1 ||
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 ||
+| [`Drunker`](Characters_and_Bosses.md#object-drunker) | Object | Defines the 'Drunker' form, a drunken state with altered animation. | 1 ||
+| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 ||
+| [`DualSword_Primed`](Characters_and_Bosses.md#object-dualsword_primed) | Object | Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation. | 1 ||
+| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 ||
+| [`Empty`](Characters_and_Bosses.md#object-empty) | Object | Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach). | 1 ||
+| [`Explody`](Characters_and_Bosses.md#object-explody) | Object | Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move. | 1 ||
+| [`FightPhase`](Characters_and_Bosses.md#object-fightphase) | Object | Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns. | 1 ||
+| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 ||
+| [`Flop`](Characters_and_Bosses.md#object-flop) | Object | Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit. | 1 ||
+| [`Flop2`](Characters_and_Bosses.md#object-flop2) | Object | Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover. | 1 ||
+| [`FlushBubs`](Characters_and_Bosses.md#object-flushbubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 ||
+| [`FlushHost`](Characters_and_Bosses.md#object-flushhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 ||
+| [`FlushNettle`](Characters_and_Bosses.md#object-flushnettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 ||
+| [`Grappling`](Characters_and_Bosses.md#object-grappling) | Object | Defines a grappling form with a specific animation suffix and exit animations. | 1 ||
+| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 ||
+| [`GuaranteedJackpot`](Characters_and_Bosses.md#object-guaranteedjackpot) | Object | Defines a form that guarantees a jackpot coin result from slot machine rolls. | 1 ||
+| [`Guarding`](Characters_and_Bosses.md#object-guarding) | Object | Defines a guarding form with a high brace passive. | 1 ||
+| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 ||
+| [`HasDeadCat`](Characters_and_Bosses.md#object-hasdeadcat) | Object | Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active. | 1 ||
+| [`HasRock`](Characters_and_Bosses.md#object-hasrock) | Object | Defines a form where the unit has a rock, with a bash attack. | 1 ||
+| [`Headless`](Characters_and_Bosses.md#object-headless) | Object | Defines a headless form with increased movement. | 1 ||
+| [`Hint_CrackedVisuals`](Characters_and_Bosses.md#object-hint_crackedvisuals) | Object | Defines a visual state with cracked animation suffix. | 1 ||
+| [`Hint_CrackedVisuals2`](Characters_and_Bosses.md#object-hint_crackedvisuals2) | Object | Defines a visual state with charging cracked animation. | 1 ||
+| [`Hint_CrackedVisuals3`](Characters_and_Bosses.md#object-hint_crackedvisuals3) | Object | Defines a visual state with swallowed cracked animation. | 1 ||
+| [`HumanDead`](Characters_and_Bosses.md#object-humandead) | Object | Defines a form when the human half is dead, with a spin attack and custom tooltip. | 1 ||
+| [`InitialPhase`](Characters_and_Bosses.md#object-initialphase) | Object | Defines the initial phase form with a float move, shoot attack, and the ability to take turns. | 1 ||
+| [`Insane_Ceiling`](Characters_and_Bosses.md#object-insane_ceiling) | Object | Defines the insane ceiling form with pattern AI and animation suffix. | 1 ||
+| [`Insane_Ground`](Characters_and_Bosses.md#object-insane_ground) | Object | Defines the insane ground form with pattern AI and animation suffix. | 1 ||
+| [`Johnny`](Characters_and_Bosses.md#object-johnny) | Object | Defines a form that executes a mega blast, side switch, and form switch in sequence. | 1 ||
+| [`JohnnyBubs`](Characters_and_Bosses.md#object-johnnybubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 ||
+| [`JohnnyHost`](Characters_and_Bosses.md#object-johnnyhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 ||
+| [`JohnnyNettle`](Characters_and_Bosses.md#object-johnnynettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 ||
+| [`Joystick`](Characters_and_Bosses.md#object-joystick) | Object | Defines a form with joystick animation and an immediate ability reaction (fumble even/odd). | 1 ||
+| [`Lifted`](Characters_and_Bosses.md#object-lifted) | Object | Defines a lifted form with no attack or movement options. | 1 ||
+| [`Lit`](Characters_and_Bosses.md#object-lit) | Object | Defines a lit form that changes when wind element influence is applied. | 1 ||
+| [`Mounted`](Characters_and_Bosses.md#object-mounted) | Object | Defines a mounted form with 'Cat' animation suffix. | 1 ||
+| [`MouthFull`](Characters_and_Bosses.md#object-mouthfull) | Object | Defines a form with mouth full animation that changes while the Consuming status is active. | 1 ||
+| [`Mutant`](Characters_and_Bosses.md#object-mutant) | Integer / Object | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 ||
+| `NoDeathRattle` | Object | Defines a form that suppresses death rattle and triggers a heart attack when a buddy dies. | 1 ||
+| [`NoEyes`](Characters_and_Bosses.md#object-noeyes) | Object | Defines a form with no eyes animation. | 1 ||
+| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 ||
+| [`NoStick`](Characters_and_Bosses.md#object-nostick) | Object | Defines a form without a stick, using a jab attack with pattern AI. | 1 ||
+| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 ||
+| [`Off`](Characters_and_Bosses.md#object-off) | Object | Defines an off form with a 'Off' animation suffix. | 1 ||
+| [`OffScreen`](Characters_and_Bosses.md#object-offscreen) | Object | Defines an off-screen form that does not take turns and drops in chaos heads. | 1 ||
+| [`OneEye`](Characters_and_Bosses.md#object-oneeye) | Object | Defines a form with one eye that triggers an ability at 40% health threshold. | 1 ||
+| [`OpenCat`](Characters_and_Bosses.md#object-opencat) | Object | Defines an open cat form that changes when the Consuming status is active. | 1 ||
+| [`Out`](Characters_and_Bosses.md#object-out) | Object | Defines a form that is 'out' with a ground flopper movement passive. | 1 ||
+| [`Possessing`](Characters_and_Bosses.md#object-possessing) | Object | Form state when the unit is possessing another entity. | 1 ||
+| [`Primed`](Characters_and_Bosses.md#object-primed) | Object | Form state representing the unit being primed, with specific attack and AI behavior. | 1 ||
+| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 1 ||
+| [`Pulp3`](Characters_and_Bosses.md#object-pulp3) | Object | Form state for the third stage of pulping, with no attacks or movement. | 1 ||
+| [`Pulp4`](Characters_and_Bosses.md#object-pulp4) | Object | Form state for the fourth stage of pulping, with no attacks or movement. | 1 ||
+| [`Pulp5`](Characters_and_Bosses.md#object-pulp5) | Object | Form state for the fifth stage of pulping, with no attacks or movement. | 1 ||
+| [`Pulp6`](Characters_and_Bosses.md#object-pulp6) | Object | Form state for the sixth stage of pulping, with no attacks or movement. | 1 ||
+| [`Pulp7`](Characters_and_Bosses.md#object-pulp7) | Object | Form state for the seventh stage of pulping, with no attacks or movement. | 1 ||
+| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 ||
+| [`Sitting`](Characters_and_Bosses.md#object-sitting) | Object | Form state where the unit is sitting, with no movement or attack. | 1 ||
+| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 ||
+| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 ||
+| [`SpawningPhase`](Characters_and_Bosses.md#object-spawningphase) | Object | Form state for the spawning phase, where the unit is immobile and cannot take turns. | 1 ||
+| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 ||
+| [`Standing2`](Characters_and_Bosses.md#object-standing2) | Object | Form state where the unit is standing with a jumping movement ability. | 1 ||
+| [`Start_Ceiling`](Characters_and_Bosses.md#object-start_ceiling) | Object | Form state for starting on the ceiling, with a form change trigger when entering the map. | 1 ||
+| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 ||
+| [`SwordAndShield`](Characters_and_Bosses.md#object-swordandshield) | Object | Form state with sword and shield, using the DestroyerAttack ability. | 1 ||
+| [`SwordAndShield_Primed`](Characters_and_Bosses.md#object-swordandshield_primed) | Object | Primed form state of SwordAndShield with holy animation and no final boss shield. | 1 ||
+| `sync_brain_patterns` | Boolean | If true, synchronizes brain patterns across form changes. | 1 ||
+| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 ||
+| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 ||
+| [`Throb`](Characters_and_Bosses.md#object-throb) | Object | Form state for the Chaos unit's throb behavior, with a spread pattern. | 1 ||
+| [`ThrobBubs`](Characters_and_Bosses.md#object-throbbubs) | Object | Form state for Chaos unit throb that reacts with a shotgun attack. | 1 ||
+| [`ThrobHost`](Characters_and_Bosses.md#object-throbhost) | Object | Form state for Chaos unit acting as host, reflecting projectiles. | 1 ||
+| [`ThrobNettle`](Characters_and_Bosses.md#object-throbnettle) | Object | Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells. | 1 ||
+| [`Transformed`](Characters_and_Bosses.md#object-transformed) | Object | Form state after transformation, ending the turn on form switch. | 1 ||
+| [`TwoEyes`](Characters_and_Bosses.md#object-twoeyes) | Object | Form state with two eyes, triggering ability at a health threshold. | 1 ||
+| `Unmounted` | Object | Form state when the unit is unmounted from its mech suit, with no additional properties. | 1 ||
+| [`Unwashed`](Characters_and_Bosses.md#object-unwashed) | Object | Form state for the unwashed version of Johnny, with its own AI pattern. | 1 ||
+| [`Washed`](Characters_and_Bosses.md#object-washed) | Object | Form state for the washed version of Johnny, with a blast attack. | 1 ||
+| [`Washer`](Characters_and_Bosses.md#object-washer) | Object | Form state for the washer variant of a cultist, with basic melee attack. | 1 ||
+| [`WereMan`](Characters_and_Bosses.md#object-wereman) | Object | Form state for the were-man transformation, with fury swipe attack and sabertooth faction. | 1 ||
+| [`ZealotBomb`](Characters_and_Bosses.md#object-zealotbomb) | Object | Form state for the bomb zealot variant, with an explosion attack. | 1 ||
 
 </details>
 
@@ -10452,9 +10452,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`le`](./Arrays.md#array-le) | Array | Examples: `[ 10 MoneyBag_Small ], [ 50 MoneyBag_Large ], [ 25 MoneyBag_Medium ]` | 6 ||
-| [`ge`](./Arrays.md#array-ge) | Array | Examples: `[ 2 WaterBottle_Full ], [ 3 EstusFlask_Full ]` | 2 ||
-| [`lt`](./Arrays.md#array-lt) | Array | Examples: `[ 10 NuclearKnife ]` | 1 ||
+| [`le`](./Arrays.md#array-le) | Array | An array specifying a [aux value, item] pair to transform to when the aux value is less than or equal to a specific value. | 6 ||
+| [`ge`](./Arrays.md#array-ge) | Array | An array specifying a [durability, item] pair to transform to when durability is greater than or equal to a specific value. | 2 ||
+| [`lt`](./Arrays.md#array-lt) | Array | An array specifying a [aux value, item] pair to transform to when the aux value is strictly less than a specific value. | 1 ||
 
 </details>
 
@@ -10471,7 +10471,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PreventDeathTransforms` | Integer | Applies or references the | 2 ||
+| `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10492,8 +10492,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `wait_till_turn` | Boolean | `true` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `wait_till_turn` | Boolean | If true, the form change will not occur until the unit's next turn. | 1 ||
 
 </details>
 
@@ -10513,8 +10513,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_in`](./Enums.md#enum-form_in) | Enum | `Water` | 1 ||
-| [`form_out`](./Enums.md#enum-form_out) | Enum | `Out` | 1 ||
+| [`form_in`](./Enums.md#enum-form_in) | Enum | Determines the form to change into when entering water. | 1 ||
+| [`form_out`](./Enums.md#enum-form_out) | Enum | Determines the form to change into when leaving water. | 1 ||
 
 </details>
 
@@ -10531,7 +10531,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Examples: `Pounce2, Pounce, MonkeyThrow` | 56 ||
+| [`TransformAbility`](./Enums.md#enum-transformability) | Enum | Specifies the ability that replaces the current ability. | 56 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10549,7 +10549,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Examples: `ThrowPoop, TigerSwipes, TigerSwipes2` | 28 ||
+| [`TransformBasicAttack`](./Enums.md#enum-transformbasicattack) | Enum | Specifies the ability that replaces the unit's basic attack. | 28 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10567,7 +10567,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Examples: `BasicDashAttackMove_NoKnockback` | 2 ||
+| [`TransformBasicMove`](./Enums.md#enum-transformbasicmove) | Enum | Specifies the name of the basic move to transform into. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10588,8 +10588,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | The original item ID. | 1 ||
-| [`to`](./Enums.md#enum-to) | Enum | The new item ID. | 1 ||
+| [`from`](./Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 1 ||
+| [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 1 ||
 
 </details>
 
@@ -10609,11 +10609,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | The primary flash animation label triggered. | 11 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 8 ||
-| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | `keep_turns_end_turn` | 4 ||
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Turn counter tracking. | 1 ||
+| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 ||
+| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 ||
+| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 ||
 
 </details>
 
@@ -10633,9 +10633,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `full_repair` | Boolean | `true` | 5 ||
-| [`item`](./Enums.md#enum-item) | Enum | Item ID to reference. | 5 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| `full_repair` | Boolean | If true, the item's durability is fully restored when transformed by element influence. | 5 ||
+| [`item`](./Enums.md#enum-item) | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 5 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -10652,7 +10652,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Applies or references the | 2 ||
+| [`TransformNow`](./Enums.md#enum-transformnow) | Enum | Specifies the name of the form to immediately transform into. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10670,7 +10670,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Examples: `SimonFlopper, Carcus, RatKing` | 26 ||
+| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Specifies the unit or list of units to transform into upon death. | 26 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10691,8 +10691,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`first_turn`](./Enums.md#enum-first_turn) | Enum | `end_of_round`, `initiative`, `keep_turns`, `next_round`, `next_turn` | 4 ||
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | The entity ID of the object to spawn (e.g., chapter_corpse_medium). | 4 ||
+| [`first_turn`](./Enums.md#enum-first_turn) | Enum | Determines when the spawned unit takes its first turn relative to the spawn event. | 4 ||
+| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 4 ||
 
 </details>
 
@@ -10712,8 +10712,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -10733,8 +10733,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -10754,9 +10754,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 ||
 
 </details>
 
@@ -10776,8 +10776,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`from`](./Enums.md#enum-from) | Enum | The original weapon ID. | 1 ||
-| [`to`](./Enums.md#enum-to) | Enum | The transformed weapon ID. | 1 ||
+| [`from`](./Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 1 ||
+| [`to`](./Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 1 ||
 
 </details>
 
@@ -10794,7 +10794,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Examples: `UltraOrnstein, UltraSmough` | 4 ||
+| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum | Specifies the form the unit transforms into when its buddy dies. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10812,7 +10812,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Number | Examples: `[ 1 .15 ], .5, [ 1 .5 ]` | 14 ||
+| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Number | The number of stacks and probability of triggering the werewolf transformation. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10830,7 +10830,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Examples: `CaveManTransform, CaveWomanDropTransform` | 8 ||
+| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum | Determines which transformation animation or effect is applied when this unit is turned by a were-creature. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10850,7 +10850,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddRandomEliteBuff` | Number | Examples: `1` | 1 ||
+| `AddRandomEliteBuff` | Number | The number of random elite buffs to apply to the unit. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10868,7 +10868,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlphaAllStatsUp` | Integer | Applies or references the | 2 ||
+| `AlphaAllStatsUp` | Integer | The amount by which all of the unit's stats are increased if it is the alpha (highest stat total or designated leader). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10886,7 +10886,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlphaDodgeChance` | Integer | Applies or references the | 2 ||
+| `AlphaDodgeChance` | Integer | The dodge chance granted to the alpha (leader) unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10907,7 +10907,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCastSpellThisTurn` | Integer | Applies or references the 'DoubleCastSpellThisTurn' effect/state. | 1 ||
+| `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 1 ||
 
 </details>
 
@@ -10927,8 +10927,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Enum | Event Object: Story branch or dialog option representing the \'Common\' action. | 1067 ||
-| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the \'Rare\' action. | 673 ||
+| [`common`](./Enums.md#enum-common) | Enum | Defines the common reward block for a boss encounter. | 1067 ||
+| [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 ||
 
 </details>
 
@@ -10945,7 +10945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChampionUpgradeNextMinion` | Integer | Applies or references the | 2 ||
+| `ChampionUpgradeNextMinion` | Integer | The number of champion upgrades applied to the next spawned minion. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10963,7 +10963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChaosBossFlipMidTeleport` | Integer | Applies or references the | 2 ||
+| `ChaosBossFlipMidTeleport` | Integer | If set to a non-zero number, causes the chaos boss to flip direction mid-teleport. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10984,8 +10984,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | Examples: `[ Johnny Throb Flush ]` | 1 ||
-| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | Examples: `[ Host Nettle Bubs ]` | 1 ||
+| [`active_pieces`](./Arrays.md#array-active_pieces) | Array | An array of piece names that are considered actively part of the current form. | 1 ||
+| [`passive_pieces`](./Arrays.md#array-passive_pieces) | Array | An array of piece names that are considered passively part of the current form. | 1 ||
 
 </details>
 
@@ -11002,7 +11002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ClearFinalBossBattlefield` | Integer | Applies or references the | 2 ||
+| `ClearFinalBossBattlefield` | Integer | If set to a non-zero number, clears the battlefield during the final boss fight. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11020,7 +11020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array | Examples: `[ 1.1 1.1 1.1 ], [ 1.1 1.1 1.3 ], [ 1.1 1.1 1 ]` | 11 ||
+| [`EliteFlatTint`](./Arrays.md#array-eliteflattint) | Array | An RGB or RGBA tint multiplier applied uniformly to an elite unit's sprite. | 11 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11038,7 +11038,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum | Examples: `SpikeBuff, Lava_Distortion, SparkleBuff` | 19 ||
+| [`EliteParticle`](./Enums.md#enum-eliteparticle) | Enum | Specifies the particle effect name attached to an elite unit. | 19 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11056,7 +11056,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EliteTint`](./Arrays.md#array-elitetint) | Array | Examples: `[ .4 .4 .4 ], [ .6 .6 .6 .50 ], red` | 30 ||
+| [`EliteTint`](./Arrays.md#array-elitetint) | Array | An RGBA tint color (r g b a) applied to elite variants of a unit. | 30 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11074,7 +11074,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EliteUpgradeNextMinion` | Integer | Applies or references the | 2 ||
+| `EliteUpgradeNextMinion` | Integer | The number of elite upgrades applied to the next spawned minion. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11092,7 +11092,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_PartyBoss` | Integer | Applies or references the | 4 ||
+| `ExplodeCharacter_PartyBoss` | Integer | The damage dealt to the party boss when it explodes. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11113,9 +11113,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`queue`](./Enums.md#enum-queue) | Enum | `TheChild_TargetBeam` | 1 ||
-| [`release`](./Enums.md#enum-release) | Enum | `TheChild_ReleaseBeams` | 1 ||
-| [`transform`](./Enums.md#enum-transform) | Enum | `TheChild_TransformBoris` | 1 ||
+| [`queue`](./Enums.md#enum-queue) | Enum | Specifies the ability queued to fire the boss's beam. | 1 ||
+| [`release`](./Enums.md#enum-release) | Enum | Specifies the ability queued to release the boss's stored beams. | 1 ||
+| [`transform`](./Enums.md#enum-transform) | Enum | Specifies the ability queued to transform the boss into its next form. | 1 ||
 
 </details>
 
@@ -11135,9 +11135,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Applies or references the 'GlobalSpawnCharacter' effect/state. | 1 ||
-| `PlayBackground` | Integer | Applies or references the 'PlayBackground' effect/state. | 1 ||
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Event Trigger: Changes background music track. | 1 ||
+| [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 ||
+| `PlayBackground` | Integer | Specifies the background index to play. | 1 ||
+| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 1 ||
 
 </details>
 
@@ -11157,10 +11157,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 ||
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 2 ||
-| `icon_ready` | Integer | Examples: `803` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 ||
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 2 ||
+| `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -11180,10 +11180,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 ||
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | Logic: Forces the execution of a specific ability. | 2 ||
-| `icon_ready` | Integer | Examples: `803` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 ||
+| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 2 ||
+| `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -11203,9 +11203,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`icon`](./Enums.md#enum-icon) | Integer | `DejaVu2`, `DejaVu3` | 4 ||
-| `icon_ready` | Integer | Examples: `803` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 ||
+| `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -11225,13 +11225,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | Examples: `[ 0 2.5 0 ]` | 1 ||
-| [`radius`](./Arrays.md#array-radius) | Array / Integer | Distance or area of effect in tiles. | 1 ||
-| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number | Examples: `.1` | 1 ||
-| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number | Examples: `.05` | 1 ||
-| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number | Examples: `.01` | 1 ||
-| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number | Examples: `.1` | 1 ||
-| [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | Examples: `[ 11 2 11 ]` | 1 ||
+| [`look_at_offset`](./Arrays.md#array-look_at_offset) | Array | A 3D vector offset from the head position that the pupils should look at. | 1 ||
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 ||
+| [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number | The half-life for the pupil position to reset to center when no target is available. | 1 ||
+| [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number | The half-life for the pupil position to reset to center during an animation. | 1 ||
+| [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 ||
+| [`tracking_acquisition_halflife`](./Enums.md#enum-tracking_acquisition_halflife) | Number | The half-life for the pupil tracking to smoothly acquire a new target. | 1 ||
+| [`virtual_head_position`](./Arrays.md#array-virtual_head_position) | Array | A 3D vector representing the virtual position of the head for pupil tracking. | 1 ||
 
 </details>
 
@@ -11248,7 +11248,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FinalBossQueueBeam` | Integer | Applies or references the | 2 ||
+| `FinalBossQueueBeam` | Integer | If true, queues the final boss beam attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11266,7 +11266,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | Examples: `None, DestroyerShieldBash` | 4 ||
+| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum | Specifies the shield ability used by a final boss, or None for no shield. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11287,8 +11287,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`break_ability`](./Enums.md#enum-break_ability) | Enum | `DestroyerBreakShield` | 1 ||
-| [`state_health`](./Arrays.md#array-state_health) | Array | Examples: `[ 0 35 35 35 35 0 ]` | 1 ||
+| [`break_ability`](./Enums.md#enum-break_ability) | Enum | Specifies the ability used to break the shield. | 1 ||
+| [`state_health`](./Arrays.md#array-state_health) | Array | An array of health thresholds defining state transitions. | 1 ||
 
 </details>
 
@@ -11308,8 +11308,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`other_character`](./Enums.md#enum-other_character) | Enum | `MegaGuppy` | 1 ||
-| [`other_form_change_abilities`](Characters_and_Bosses.md#object-other_form_change_abilities) | Object | Lists secondary abilities used to change forms. | 1 ||
+| [`other_character`](./Enums.md#enum-other_character) | Enum | Specifies the name of the other boss character whose animations are synced. | 1 ||
+| [`other_form_change_abilities`](Characters_and_Bosses.md#object-other_form_change_abilities) | Object | An object mapping form names to the other character's form change abilities. | 1 ||
 
 </details>
 
@@ -11329,9 +11329,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 ||
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 ||
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 ||
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 ||
+| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Defines additional damage or effects applied to nearby targets around the primary target. | 68 ||
 
 </details>
 
@@ -11351,8 +11351,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the 'CompleteItemQuest' effect/state. | 1 ||
-| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Applies or references the 'RemoveItem' effect/state. | 1 ||
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 1 ||
+| [`RemoveItem`](./Enums.md#enum-removeitem) | Enum | Specifies the item ID to remove from the source on kill. | 1 ||
 
 </details>
 
@@ -11369,7 +11369,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SignalFinalBossShieldBroke` | Integer | Applies or references the | 4 ||
+| `SignalFinalBossShieldBroke` | Integer | If set to a non-zero number, signals that the final boss's shield has been broken. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11387,7 +11387,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Applies or references the | 2 ||
+| [`SpecialBossMultipartInstakill`](./Enums.md#enum-specialbossmultipartinstakill) | Enum | Specifies the boss ID (e.g., "moonboss") whose multipart instakill mechanic is triggered. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11405,7 +11405,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TutorialBossRiggedFight` | Integer | Applies or references the | 2 ||
+| `TutorialBossRiggedFight` | Integer | The turn count at which the tutorial boss fight becomes rigged. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11423,7 +11423,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UpgradeTaggedSpawnsToChampions`](./Enums.md#enum-upgradetaggedspawnstochampions) | Enum | Examples: `worm, bug` | 2 ||
+| [`UpgradeTaggedSpawnsToChampions`](./Enums.md#enum-upgradetaggedspawnstochampions) | Enum | Specifies which tag of spawns are upgraded to champion versions. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11446,8 +11446,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `include_spells` | Boolean | If true, allows the AI to cast spells during this bonus turn. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `include_spells` | Boolean | If true, the AI-controlled bonus turn includes spells as available actions. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -11464,7 +11464,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityDisableIfLivingCrow` | Integer | Applies or references the | 2 ||
+| `AbilityDisableIfLivingCrow` | Integer | If set, disables the ability if there is a living crow on the field. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11482,7 +11482,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Examples: `sp_pill_fire, sp_pill_tar, sp_pill_normal` | 6 ||
+| [`AbilityEnableIfConsumedCharacterHasTag`](./Enums.md#enum-abilityenableifconsumedcharacterhastag) | Enum | Specifies the tag that a consumed character must have for the ability to be enabled. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11500,7 +11500,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfBasicAttackUsedThisTurn` | Integer | Applies or references the | 2 ||
+| `AbilityEnabledIfBasicAttackUsedThisTurn` | Integer | If set, ability is enabled only if the unit used a basic attack this turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11518,7 +11518,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledIfNoAggroTarget` | Integer | Applies or references the | 2 ||
+| `AbilityEnabledIfNoAggroTarget` | Integer | If set, ability is enabled only when the unit has no aggro target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11536,7 +11536,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AbilityEnabledIfSpecificItemEquipped`](./Enums.md#enum-abilityenabledifspecificitemequipped) | Enum | Applies or references the | 2 ||
+| [`AbilityEnabledIfSpecificItemEquipped`](./Enums.md#enum-abilityenabledifspecificitemequipped) | Enum | Specifies the item that must be equipped for ability to be enabled. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11554,7 +11554,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledOncePerRound` | Integer | Applies or references the | 6 ||
+| `AbilityEnabledOncePerRound` | Integer | If set, the ability can only be used once per round. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11572,7 +11572,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityEnabledPercentEachTurn` | Integer | Applies or references the | 12 ||
+| `AbilityEnabledPercentEachTurn` | Integer | The percentage chance each turn that this ability is enabled. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11590,7 +11590,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AbilityInheritsWeaponEffects` | Integer | Applies or references the | 6 ||
+| `AbilityInheritsWeaponEffects` | Integer | If set, the ability inherits properties from the unit's weapon, with higher values indicating different inheritance modes. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11608,7 +11608,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AcidRain` | Number | Examples: `2` | 1 ||
+| `AcidRain` | Number | If non-zero, enables the Acid Rain weather effect dealing damage each turn. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11626,7 +11626,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Adrenaline` | Integer | Applies or references the | 2 ||
+| `Adrenaline` | Integer | The flat amount of Adrenaline (a resource or stat) granted to the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11644,7 +11644,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | Examples: `[ .6 .6 .6 1 .5 .5 .5 0 ]` | 2 ||
+| [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array | An RGBA color array for advanced sprite tinting. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11665,18 +11665,18 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`StacyMutant_Brace`](Characters_and_Bosses.md#object-stacymutant_brace) | Object | Character Form: Behavior and stats for the 'StacyMutant_Brace' state. | 1 ||
-| [`StacyMutant_Counter`](Characters_and_Bosses.md#object-stacymutant_counter) | Object | Character Form: Behavior and stats for the 'StacyMutant_Counter' state. | 1 ||
-| [`StacyMutant_Damage`](Characters_and_Bosses.md#object-stacymutant_damage) | Object | Character Form: Behavior and stats for the 'StacyMutant_Damage' state. | 1 ||
-| [`StacyMutant_DoubleHead`](Characters_and_Bosses.md#object-stacymutant_doublehead) | Object | Character Form: Behavior and stats for the 'StacyMutant_DoubleHead' state. | 1 ||
-| [`StacyMutant_Fire`](Characters_and_Bosses.md#object-stacymutant_fire) | Object | Character Form: Behavior and stats for the 'StacyMutant_Fire' state. | 1 ||
-| [`StacyMutant_Health`](Characters_and_Bosses.md#object-stacymutant_health) | Object | Character Form: Behavior and stats for the 'StacyMutant_Health' state. | 1 ||
-| [`StacyMutant_Holy`](Characters_and_Bosses.md#object-stacymutant_holy) | Object | Character Form: Behavior and stats for the 'StacyMutant_Holy' state. | 1 ||
-| [`StacyMutant_Ice`](Characters_and_Bosses.md#object-stacymutant_ice) | Object | Character Form: Behavior and stats for the 'StacyMutant_Ice' state. | 1 ||
-| [`StacyMutant_Lightning`](Characters_and_Bosses.md#object-stacymutant_lightning) | Object | Character Form: Behavior and stats for the 'StacyMutant_Lightning' state. | 1 ||
-| [`StacyMutant_Mirror`](Characters_and_Bosses.md#object-stacymutant_mirror) | Object | Character Form: Behavior and stats for the 'StacyMutant_Mirror' state. | 1 ||
-| [`StacyMutant_Speed`](Characters_and_Bosses.md#object-stacymutant_speed) | Object | Character Form: Behavior and stats for the 'StacyMutant_Speed' state. | 1 ||
-| [`StacyMutant_Thorns`](Characters_and_Bosses.md#object-stacymutant_thorns) | Object | Character Form: Behavior and stats for the 'StacyMutant_Thorns' state. | 1 ||
+| [`StacyMutant_Brace`](Characters_and_Bosses.md#object-stacymutant_brace) | Object | A passive group granting the Brace ability and cosmetic changes. | 1 ||
+| [`StacyMutant_Counter`](Characters_and_Bosses.md#object-stacymutant_counter) | Object | A passive group granting a counter attack and a bleed effect on basic attacks. | 1 ||
+| [`StacyMutant_Damage`](Characters_and_Bosses.md#object-stacymutant_damage) | Object | A passive group increasing damage and decreasing max health with cosmetic changes. | 1 ||
+| [`StacyMutant_DoubleHead`](Characters_and_Bosses.md#object-stacymutant_doublehead) | Object | A passive group granting an extra dispersed turn and cosmetic changes. | 1 ||
+| [`StacyMutant_Fire`](Characters_and_Bosses.md#object-stacymutant_fire) | Object | A passive group granting fire immunity and a lava shot basic attack. | 1 ||
+| [`StacyMutant_Health`](Characters_and_Bosses.md#object-stacymutant_health) | Object | A passive group increasing max health, reducing speed, and scaling size. | 1 ||
+| [`StacyMutant_Holy`](Characters_and_Bosses.md#object-stacymutant_holy) | Object | A passive group granting a divine shield and cosmetic changes. | 1 ||
+| [`StacyMutant_Ice`](Characters_and_Bosses.md#object-stacymutant_ice) | Object | A passive group granting ice immunity and an ice breath basic attack. | 1 ||
+| [`StacyMutant_Lightning`](Characters_and_Bosses.md#object-stacymutant_lightning) | Object | A passive group granting electric immunity and a lightning dash basic attack. | 1 ||
+| [`StacyMutant_Mirror`](Characters_and_Bosses.md#object-stacymutant_mirror) | Object | A passive group granting projectile reflection and random magic missile each turn. | 1 ||
+| [`StacyMutant_Speed`](Characters_and_Bosses.md#object-stacymutant_speed) | Object | A passive group increasing speed, reducing damage, and scaling size. | 1 ||
+| [`StacyMutant_Thorns`](Characters_and_Bosses.md#object-stacymutant_thorns) | Object | A passive group granting thorns damage and cosmetic changes. | 1 ||
 
 </details>
 
@@ -11693,7 +11693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AggroTargetIsCurrentTurn` | Integer | Applies or references the | 6 ||
+| `AggroTargetIsCurrentTurn` | Integer | If set to 1, the unit's aggro target is the unit currently taking its turn. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11714,7 +11714,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 1 ||
+| `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 1 ||
 
 </details>
 
@@ -11731,7 +11731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlienBeastEyeStalks` | Integer | Applies or references the | 2 ||
+| `AlienBeastEyeStalks` | Integer | The number of eye stalk segments on the Alien Beast. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11749,7 +11749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlliesTakeExtraTurn` | Integer | Applies or references the | 2 ||
+| `AlliesTakeExtraTurn` | Integer | The number of extra turns granted to allies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11770,8 +11770,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Examples: `CharmedMaggot` | 545 ||
-| [`faction`](./Enums.md#enum-faction) | Enum | Examples: `allies` | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 ||
 
 </details>
 
@@ -11788,7 +11788,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Applies or references the | 2 ||
+| [`AlternateIdleAnimation`](./Enums.md#enum-alternateidleanimation) | Enum | Specifies the name of an alternative idle animation to play. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11806,7 +11806,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AlwaysHitDifferentTargets` | Integer | Applies or references the | 4 ||
+| `AlwaysHitDifferentTargets` | Integer | If set to 1, attacks always target different units, never the same target twice. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11824,7 +11824,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Ammo` | Integer | Applies or references the | 26 ||
+| `Ammo` | Integer | The amount of ammo to add or remove (negative values subtract). | 26 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11842,7 +11842,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Angel` | Integer | Applies or references the | 10 ||
+| `Angel` | Integer | If 1, the unit is an angel type, which may affect behavior like reviving. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -11863,15 +11863,15 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Applies or references the 'ElementImmune' effect/state. | 16 ||
-| `IgnoreTiles` | Integer | Applies or references the 'IgnoreTiles' effect/state. | 12 ||
-| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Applies or references the 'ReplaceBasicAttack' effect/state. | 8 ||
-| `KnockbackImmunity` | Integer | Applies or references the 'KnockbackImmunity' effect/state. | 6 ||
-| [`StatusOnBattleEnd`](Abilities_and_Spells.md#object-statusonbattleend) | Object | Applies the nested status effects when the encounter finishes. | 6 ||
-| [`YOffset`](./Enums.md#enum-yoffset) | Number | Applies or references the 'YOffset' effect/state. | 6 ||
-| [`AddTag`](./Enums.md#enum-addtag) | Enum | Applies or references the 'AddTag' effect/state. | 2 ||
-| `Flying` | Integer | Applies or references the 'Flying' effect/state. | 2 ||
-| `Plant` | Integer | Applies or references the 'Plant' effect/state. | 1 ||
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 16 ||
+| `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 12 ||
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 8 ||
+| `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 6 ||
+| [`StatusOnBattleEnd`](Abilities_and_Spells.md#object-statusonbattleend) | Object | An object containing status effects or passives applied to the unit when the battle ends. | 6 ||
+| [`YOffset`](./Enums.md#enum-yoffset) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 ||
+| [`AddTag`](./Enums.md#enum-addtag) | Enum | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 ||
+| `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 ||
+| `Plant` | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 1 ||
 
 </details>
 
@@ -11891,8 +11891,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Integer | Applies or references the 'DeleteObject' effect/state. | 3 ||
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Applies or references the 'Die' effect/state. | 1 ||
+| `DeleteObject` | Integer | If set, deletes the target object from the map. | 3 ||
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 ||
 
 </details>
 
@@ -11912,7 +11912,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | Applies or references the 'Marked' effect/state. | 1 ||
+| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 ||
 
 </details>
 
@@ -11932,7 +11932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ForceMoveTowards` | Integer | Applies or references the 'ForceMoveTowards' effect/state. | 1 ||
+| `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 1 ||
 
 </details>
 
@@ -11952,7 +11952,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Applies or references the 'GainDisorderFromPool_PostCast' effect/state. | 2 ||
+| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 2 ||
 
 </details>
 
@@ -11972,8 +11972,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](Abilities_and_Spells.md#object-objectonhit) | Enum / Object | Spawns a specific physics/item object upon impact. | 2 ||
-| `SpawnBearTrap` | Integer | Applies or references the 'SpawnBearTrap' effect/state. | 2 ||
+| [`ObjectOnHit`](Abilities_and_Spells.md#object-objectonhit) | Enum / Object | Specifies the object to spawn on the hit tile. | 2 ||
+| `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 2 ||
 
 </details>
 
@@ -11993,11 +11993,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `enemies_only` | Boolean | If true, the arc will not bounce to friendly targets. | 4 ||
-| `max_distance` | Integer | The maximum tile range the lightning can jump between bounces. | 4 ||
-| `stacks` | Enum / Integer | The maximum number of targets the lightning can bounce to. | 4 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
-| `ignore_self` | Boolean | If true, prevents the arc from bouncing back to the caster. | 1 ||
+| `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 4 ||
+| `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 ||
 
 </details>
 
@@ -12014,7 +12014,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Attraction` | Integer | Applies or references the | 6 ||
+| `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12032,7 +12032,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AvoidDamagingCharmedEnemies` | Integer | Applies or references the | 2 ||
+| `AvoidDamagingCharmedEnemies` | Integer | If 1, the unit avoids dealing damage to charmed enemies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12050,7 +12050,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BackstabAllDirections` | Integer | Applies or references the | 8 ||
+| `BackstabAllDirections` | Integer | If 1, the unit deals backstab damage from all directions. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12068,7 +12068,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BackstabFront` | Number | Examples: `1` | 2 ||
+| `BackstabFront` | Number | If set to 1, allows backstab bonuses to apply when attacking from the front. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12086,7 +12086,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BasicAttackCantMiss` | Integer | Applies or references the | 2 ||
+| `BasicAttackCantMiss` | Integer | If nonzero, the unit's basic attack cannot miss. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12104,7 +12104,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BearTrapTrail` | Integer | Applies or references the | 4 ||
+| `BearTrapTrail` | Integer | If set to 1, leaves bear traps behind as the unit moves. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12122,7 +12122,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlackHolePassive` | Integer | Applies or references the | 2 ||
+| `BlackHolePassive` | Integer | If 1, the unit has black hole passive mechanics. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12140,7 +12140,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlackHoleSuck` | Integer | Applies or references the | 2 ||
+| `BlackHoleSuck` | Integer | The strength of the black hole's pull effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12158,7 +12158,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BlessingOfPeace` | Integer | Applies or references the | 2 ||
+| `BlessingOfPeace` | Integer | The number of stacks of the Blessing of Peace status applied to the unit each turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12176,7 +12176,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | Examples: `BloatEyeMovement2` | 2 ||
+| [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum | Specifies the movement ability for the Bloat Eye enemy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12194,7 +12194,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | Applies or references the | 2 ||
+| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12212,7 +12212,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bloodzerked` | Integer | Applies or references the | 2 ||
+| `Bloodzerked` | Integer | The number of Bloodzerk stacks applied. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12233,8 +12233,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to use when intercepting (e.g., BodyGuardSwap). | 730 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 ||
 
 </details>
 
@@ -12251,7 +12251,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BombBehavior` | Integer | Applies or references the | 2 ||
+| `BombBehavior` | Integer | If 1, the unit explodes after a set duration or on death. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12269,7 +12269,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BombRatTurtle`](Engine_StatusAndPassiveKeys.md#object-bombratturtle) | Integer / Object | Applies or references the | 2 ||
+| [`BombRatTurtle`](Engine_StatusAndPassiveKeys.md#object-bombratturtle) | Integer / Object | The number of bomb rat turtle spawns triggered. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12287,7 +12287,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BoneArmorPassive` | Integer | Applies or references the | 6 ||
+| `BoneArmorPassive` | Integer | The number of stacks of bone armor granted, which absorbs damage. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12305,7 +12305,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BounceRock`](./Arrays.md#array-bouncerock) | Array / Enum | Examples: `SmallRock, SmallLavaRock, [ 1 .2 ]` | 12 ||
+| [`BounceRock`](./Arrays.md#array-bouncerock) | Array / Enum | Specifies the rock object to bounce. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12323,7 +12323,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Bound` | Integer | Applies or references the | 4 ||
+| `Bound` | Integer | The number of stacks of the Bound status effect applied to the target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12341,7 +12341,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `BreakAtAux` | Integer | Applies or references the | 8 ||
+| `BreakAtAux` | Integer | The number of auxiliary item uses before this item breaks. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12359,7 +12359,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Examples: `SmallRock, Coin` | 8 ||
+| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12377,7 +12377,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Applies or references the | 6 ||
+| [`BreakOnElement`](./Enums.md#enum-breakonelement) | Enum | Specifies an element that, when dealt to the unit, causes its armor or item to break. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12395,7 +12395,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Brittle` | Integer | Applies or references the | 48 ||
+| `Brittle` | Integer | The number of stacks of the Brittle status, or an object defining its properties. | 48 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12416,11 +12416,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum | `littleboo` | 1 ||
-| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum | `bigboo` | 1 ||
-| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum | `littlecheer` | 1 ||
-| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum | `bigcheer` | 1 ||
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | `bungawarrior`, `finalboss_clonecat` | 1 ||
+| [`ally_damage`](./Enums.md#enum-ally_damage) | Enum | Specifies the cheer effect when an ally takes damage. | 1 ||
+| [`ally_dead`](./Enums.md#enum-ally_dead) | Enum | Specifies the cheer effect when an ally dies. | 1 ||
+| [`enemy_damage`](./Enums.md#enum-enemy_damage) | Enum | Specifies the cheer effect when an enemy takes damage. | 1 ||
+| [`enemy_dead`](./Enums.md#enum-enemy_dead) | Enum | Specifies the cheer effect when an enemy dies. | 1 ||
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 1 ||
 
 </details>
 
@@ -12440,10 +12440,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 2 ||
-| `health_threshold` | Integer | Examples: `50, 70` | 2 ||
-| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | `bungawarrior`, `finalboss_clonecat` | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 2 ||
+| `health_threshold` | Integer | The health value at or below which the reaction triggers. -1 disables this check. | 2 ||
+| [`warrior_tag`](./Enums.md#enum-warrior_tag) | Enum | Specifies the tag used to identify allied warriors for this ability. | 2 ||
 
 </details>
 
@@ -12460,7 +12460,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ButterflySwarm` | Number | Examples: `2` | 1 ||
+| `ButterflySwarm` | Number | The number of butterflies spawned for the Butterfly Swarm effect. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12481,13 +12481,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Spawns a specific character or entity upon impact. | 10 ||
-| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Applies or references the 'BreakIntoRocks' effect/state. | 4 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 3 ||
-| `Vaporize` | Integer | Applies or references the 'Vaporize' effect/state. | 3 ||
-| `GetAggroTarget` | Integer | Applies or references the 'GetAggroTarget' effect/state. | 2 ||
-| `PreventDeathTransforms` | Integer | Applies or references the 'PreventDeathTransforms' effect/state. | 1 ||
-| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | A wrapper object for applying status effects that automatically expire. | 1 ||
+| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 ||
+| [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 4 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 ||
+| `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 3 ||
+| `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 2 ||
+| `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 1 ||
+| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 ||
 
 </details>
 
@@ -12504,7 +12504,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array / Enum | Examples: `[ TumorousMaggot ChargeyMaggot SwappyMaggot ], Hyde, [ Lumpy Leaper ]` | 6 ||
+| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array / Enum | Specifies the mutation forms this unit can transform into, either a single form or an array of possible forms. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12522,7 +12522,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CancelPrimedAbilities` | Integer | Applies or references the | 4 ||
+| `CancelPrimedAbilities` | Integer | If non-zero, cancels any primed abilities on the target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12540,7 +12540,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CanceledQueuedInput` | Integer | Applies or references the | 2 ||
+| `CanceledQueuedInput` | Integer | If set to a non-zero number, cancels any queued input from the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12558,7 +12558,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CantCatchDiseases` | Integer | Applies or references the | 6 ||
+| `CantCatchDiseases` | Integer | The number of stacks that prevent the unit from contracting diseases. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12576,7 +12576,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CatchBoomerang` | Integer | Applies or references the | 8 ||
+| `CatchBoomerang` | Integer | If set, allows the ability to catch a boomerang, with the integer representing the number of catches. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12597,9 +12597,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`count`](./Arrays.md#array-count) | Array / Integer | The numerical quantity. | 3 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 ||
 
 </details>
 
@@ -12616,7 +12616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CaveWomanBirthControl` | Integer | Applies or references the | 2 ||
+| `CaveWomanBirthControl` | Integer | If true, restricts or controls the spawning of additional units via birth mechanics. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12637,8 +12637,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alert_form`](./Enums.md#enum-alert_form) | Enum | `Alert` | 1 ||
-| [`default_form`](./Enums.md#enum-default_form) | Enum | `Normal` | 1 ||
+| [`alert_form`](./Enums.md#enum-alert_form) | Enum | Specifies the form to use when the unit is alerted. | 1 ||
+| [`default_form`](./Enums.md#enum-default_form) | Enum | Specifies the default form before aggro. | 1 ||
 
 </details>
 
@@ -12655,7 +12655,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToAmbush` | Integer | Applies or references the | 2 ||
+| `ChanceToAmbush` | Integer | The percentage chance for the unit to ambush an enemy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12676,9 +12676,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ability triggered upon successfully breaking free. | 730 ||
-| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | The ability triggered if the break free attempt fails. | 3 ||
-| `stacks` | Enum / Integer | Percentage base chance to break free. | 3 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | Specifies the ability to be used when the parent condition (e.g., breaking free) fails. | 3 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 ||
 
 </details>
 
@@ -12695,7 +12695,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ChanceToDisableActionsIfNotCharmed` | Integer | Applies or references the | 4 ||
+| `ChanceToDisableActionsIfNotCharmed` | Integer | The percentage chance to disable actions of enemies that are not charmed. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12713,7 +12713,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Examples: `Fighter, Mage, Hunter` | 28 ||
+| [`ChangeCatClass`](./Enums.md#enum-changecatclass) | Enum | Specifies the new class to assign to the unit. | 28 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12731,7 +12731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Applies or references the | 4 ||
+| [`ChangeFaction`](./Enums.md#enum-changefaction) | Enum | Specifies the name of the faction to switch the target to. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12749,7 +12749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | Examples: `CreepTile, GlitchTile, OilTile` | 8 ||
+| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum | The type of tile that appears when this unit is destroyed. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12767,7 +12767,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum | Applies or references the | 2 ||
+| [`ChangeTileUnderCharacterAtStart`](./Enums.md#enum-changetileundercharacteratstart) | Enum | Specifies the tile type to change the tile under the character to at the start of battle. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12785,7 +12785,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | Applies or references the | 18 ||
+| [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | The tile type to change the ground tiles under the target to. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12806,9 +12806,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`color`](./Arrays.md#array-color) | Array | `black`, `gray`, `white` | 10 ||
-| [`glow`](./Arrays.md#array-glow) | Array | Examples: `[ .7 .8 .9 .5 ], [ .3 .7 1 .5 ], [ 1 1 1 .5 ]` | 8 ||
-| [`size`](./Enums.md#enum-size) | Enum / Number | `1x1`, `2x2`, `3x3`, `5x10`, `gemini` | 3 ||
+| [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 10 ||
+| [`glow`](./Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 ||
+| [`size`](./Enums.md#enum-size) | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 3 ||
 
 </details>
 
@@ -12825,7 +12825,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ClearDefaultDebris` | Number | Examples: `1` | 1 ||
+| `ClearDefaultDebris` | Number | If true, removes all default debris from the battlefield. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12843,7 +12843,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ClearStarving` | Integer | Applies or references the | 12 ||
+| `ClearStarving` | Integer | The number of stacks of Starving cleared. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12861,7 +12861,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CloneWeaponTemp` | Integer | Applies or references the | 2 ||
+| `CloneWeaponTemp` | Integer | The number of turns the cloned weapon persists before being removed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12879,7 +12879,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CockroachSwarm` | Number | Examples: `1` | 1 ||
+| `CockroachSwarm` | Number | If true, the unit spawns as a Cockroach Swarm, with its specific mechanics and effects. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12897,7 +12897,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CollideWithConsumed` | Equation | Examples: `1+bonus_melee_damage, 4+bonus_melee_damage, 5+bonus_melee_damage` | 6 ||
+| `CollideWithConsumed` | Equation | Damage formula for collision with consumed objects, e.g., '4+bonus_melee_damage'. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12915,7 +12915,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CollideWithThrowTarget` | Integer | Applies or references the | 4 ||
+| `CollideWithThrowTarget` | Integer | Determines whether the thrown object collides with the primary target (0 disables collision). | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12933,7 +12933,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Applies or references the | 10 ||
+| [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12951,7 +12951,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ConjureRandomAbilityFromCat` | Integer | Applies or references the | 4 ||
+| `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12972,18 +12972,18 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Ability triggered by the consumed entity while inside the consumer. | 13 ||
-| `force_contact` | Boolean | If true, enforces physical overlap. | 11 ||
-| `instant` | Boolean | Examples: `true` | 8 ||
-| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | If true, treats the consumption as riding/mounting instead of eating. | 8 ||
-| `wet` | Boolean | Examples: `false, true` | 8 ||
-| `do_not_pop_corpse` | Boolean | Examples: `true` | 7 ||
-| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Examples: `false, true, deferred` | 7 ||
-| `drop_on_self_death` | Boolean | Examples: `true` | 3 ||
-| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | Additional generic status applications. | 3 ||
-| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Examples: `MoonHandDrop` | 1 ||
-| `kill_on_consume` | Boolean | Examples: `true` | 1 ||
-| `use_placeholder` | Boolean | Examples: `true` | 1 ||
+| [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Specifies the name of the ability the consumed unit uses to attempt escape. | 13 ||
+| `force_contact` | Boolean | If true, the consumed unit is forced into contact with the consumer. | 11 ||
+| `instant` | Boolean | If true, the consumption happens immediately without a timer. | 8 ||
+| [`mount_mode`](./Enums.md#enum-mount_mode) | Boolean / Enum | Specifies the mounting mode; values include 'auto' or 'true'. | 8 ||
+| `wet` | Boolean | If true, the consumed unit is considered wet (e.g., for elemental interactions). | 8 ||
+| `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 7 ||
+| [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 7 ||
+| `drop_on_self_death` | Boolean | If true, the consumed unit is dropped when the consumer dies. | 3 ||
+| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | An object containing additional status effects (with stack counts) applied to the consumed unit. | 3 ||
+| [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Specifies the ability used to drop the consumed body. | 1 ||
+| `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 ||
+| `use_placeholder` | Boolean | If true, renders the ability using a temporary placeholder animation instead of the final art. | 1 ||
 
 </details>
 
@@ -13000,7 +13000,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyBasicAttackEffects` | Integer | Applies or references the | 8 ||
+| `CopyBasicAttackEffects` | Integer | If set, the ability copies the effects from the unit's basic attack. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13018,7 +13018,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyCatPassive_Initializer` | Integer | Applies or references the | 4 ||
+| `CopyCatPassive_Initializer` | Integer | The number of copies of this passive to initialize. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13036,7 +13036,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CopyPassiveSlot` | Integer | Applies or references the | 6 ||
+| `CopyPassiveSlot` | Integer | An index (0-based) specifying which equipment slot's passive to copy onto this unit. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13057,8 +13057,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
-| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
+| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 ||
 
 </details>
 
@@ -13075,7 +13075,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CorpseVaporizer` | Integer | Applies or references the | 6 ||
+| `CorpseVaporizer` | Integer | The number of corpses vaporized on hit. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13093,7 +13093,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CountAsCorpse` | Integer | Applies or references the | 8 ||
+| `CountAsCorpse` | Integer | If 1, the unit counts as a corpse for interactions like raising or necromancy. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13114,8 +13114,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | Applies or references the 'BloodRain' effect/state. | 2 ||
-| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | A visual effect that dims the map's lighting. | 2 ||
+| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 ||
+| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 ||
 
 </details>
 
@@ -13132,7 +13132,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `CrowAttackLink` | Integer | Applies or references the | 2 ||
+| `CrowAttackLink` | Integer | If 1, allows this unit's attacks to chain or link to nearby enemies like a crow. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13153,8 +13153,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Examples: `1` | 1 ||
-| [`TakeBonusTurnWithAIControl`](Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object | Examples: `{ ... }` | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
+| [`TakeBonusTurnWithAIControl`](Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 1 ||
 
 </details>
 
@@ -13171,7 +13171,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Examples: `CarrionShot_Afterlife2, CarrionShot_Afterlife, LifeDrain_Afterlife` | 24 ||
+| [`DeadAltAbility`](./Enums.md#enum-deadaltability) | Enum | Specifies an alternative ability used when the unit is dead. | 24 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13189,7 +13189,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Applies or references the | 2 ||
+| [`DeathwormUnderground`](./Enums.md#enum-deathwormunderground) | Enum | Specifies the ability triggered when the Deathworm emerges from underground. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13207,7 +13207,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DecoySwapper` | Integer | Applies or references the | 2 ||
+| `DecoySwapper` | Integer | If true, the decoy swaps places with the source when spawned. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13225,7 +13225,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeferVaporize` | Integer | Applies or references the | 18 ||
+| `DeferVaporize` | Integer | If set to 1, the unit's vaporize (instant death) is delayed until the end of the current action. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13246,9 +13246,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to cast later. | 730 ||
-| `lingering` | Boolean | Target zone remains active across multiple turns. | 1 ||
-| `relative` | Boolean | `false` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `lingering` | Boolean | If true, the ability effect lingers after the initial cast. | 1 ||
+| `relative` | Boolean | If true, the delay is calculated relative to the current turn count rather than as an absolute time. | 1 ||
 
 </details>
 
@@ -13265,7 +13265,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteInanimateObjectsChance` | Number | Examples: `25` | 1 ||
+| `DeleteInanimateObjectsChance` | Number | The percentage chance per tick to delete all inanimate objects on the battlefield. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13283,7 +13283,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteObject` | Integer | Applies or references the | 14 ||
+| `DeleteObject` | Integer | If set, deletes the target object from the map. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13301,7 +13301,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DeleteTraps` | Integer | Applies or references the | 2 ||
+| `DeleteTraps` | Integer | If true, removes all traps from the map. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13319,7 +13319,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyphFrames` | Integer | Applies or references the | 4 ||
+| `DemonicGlyphFrames` | Integer | The number of animation frames for the demonic glyph effect. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13337,7 +13337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bite` | Integer | Applies or references the | 2 ||
+| `DemonicGlyph_Bite` | Integer | The weight for the demonic glyph of bite, or its configuration. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13355,7 +13355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Bounce` | Integer | Applies or references the | 2 ||
+| `DemonicGlyph_Bounce` | Integer | The weight for the demonic glyph of bounce, or its configuration. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13373,7 +13373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DemonicGlyph_Fire` | Integer | Applies or references the | 2 ||
+| `DemonicGlyph_Fire` | Integer | The weight for the demonic glyph of fire, or its configuration. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13394,8 +13394,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
-| [`pool`](./Arrays.md#array-pool) | Array / Enum | The item pool to draw the parasite from. | 1 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 ||
 
 </details>
 
@@ -13412,7 +13412,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyNeckArmor` | Integer | Applies or references the | 2 ||
+| `DestroyNeckArmor` | Integer | If true, destroys the target's neck armor slot. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13430,7 +13430,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyTrinket` | Integer | Applies or references the | 10 ||
+| `DestroyTrinket` | Integer | The number of trinkets destroyed. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13448,7 +13448,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyWeapon` | Integer | Applies or references the | 6 ||
+| `DestroyWeapon` | Integer | The number of weapons destroyed. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13466,7 +13466,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DestroyWeaponThrow` | Integer | Applies or references the | 6 ||
+| `DestroyWeaponThrow` | Integer | The number of weapons destroyed after being thrown. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13487,8 +13487,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dice_size` | Integer | Examples: `6` | 1 ||
-| `knockback_damage` | Integer | Examples: `5` | 1 ||
+| `dice_size` | Integer | The number of sides on the die. | 1 ||
+| `knockback_damage` | Integer | The amount of damage dealt by the knockback. | 1 ||
 
 </details>
 
@@ -13505,7 +13505,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DicerArt`](./Arrays.md#array-dicerart) | Array | Examples: `[ 59 52 65 50 54 63 64 ]` | 2 ||
+| [`DicerArt`](./Arrays.md#array-dicerart) | Array | An array of art offset values for the Dicer enemy. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13526,8 +13526,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Object listing intrinsic passive modifiers. | 5118 ||
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Forces specific UI tooltips to appear. | 62 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 62 ||
 
 </details>
 
@@ -13544,7 +13544,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieViaAbilityInternally` | Integer | Applies or references the | 4 ||
+| `DieViaAbilityInternally` | Integer | If non-zero, causes the target to die via an internal ability trigger. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13562,7 +13562,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DieViolently` | Integer | Applies or references the | 8 ||
+| `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13583,8 +13583,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
-| `instant` | Boolean | Examples: `true` | 1 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
+| `instant` | Boolean | If true, the consumption happens immediately without a timer. | 1 ||
 
 </details>
 
@@ -13604,7 +13604,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `deferred` | Boolean | `true` | 1 ||
+| `deferred` | Boolean | If true, the destruction is deferred until the character is settled. | 1 ||
 
 </details>
 
@@ -13621,7 +13621,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Examples: `MoonHead_Digest, LennyCatDies, Digest` | 6 ||
+| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum | Specifies the ability or animation used when digesting a dead body. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13639,7 +13639,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DinoLegAnimation`](./Enums.md#enum-dinoleganimation) | Enum | Applies or references the | 2 ||
+| [`DinoLegAnimation`](./Enums.md#enum-dinoleganimation) | Enum | Specifies the animation trigger for the dinosaur leg (e.g., 'poop' for the poop animation). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13657,7 +13657,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisablePassiveSlot` | Integer | Applies or references the | 4 ||
+| `DisablePassiveSlot` | Integer | If non-zero, disables the specified passive slot index (0 or 1). | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13675,7 +13675,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableSpells` | Integer | Applies or references the | 2 ||
+| `DisableSpells` | Integer | If 1, the unit cannot cast spells. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13693,7 +13693,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DisableWeapon` | Integer | Applies or references the | 2 ||
+| `DisableWeapon` | Integer | If set, disables the source's weapon, preventing its use. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13711,7 +13711,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Disguised` | Integer | Applies or references the | 4 ||
+| `Disguised` | Integer | If true, the unit is disguised, appearing as a different faction or model. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13729,7 +13729,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | Applies or references the | 2 ||
+| [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum | Specifies the passive used when disguised as a trapper, e.g. FearMelee. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13747,7 +13747,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DissolveRandomArmorPiece` | Integer | Applies or references the | 2 ||
+| `DissolveRandomArmorPiece` | Integer | If true, destroys a random armor piece (head, body, neck) on the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13765,7 +13765,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DissuadeInstakills` | Integer | Applies or references the | 4 ||
+| `DissuadeInstakills` | Integer | If set to 1, this unit cannot be instantly killed. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13786,8 +13786,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `intensity` | Integer | Examples: `3, 20, 10` | 10 ||
-| `time` | Variable | Examples: `.75, .5, 2` | 10 ||
+| `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 10 ||
+| `time` | Variable | The duration in seconds of the screen shake effect. | 10 ||
 
 </details>
 
@@ -13804,7 +13804,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DoubleCast` | Integer | Applies or references the | 2 ||
+| `DoubleCast` | Integer | The number of double-cast stacks, allowing a spell to be cast twice. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13822,7 +13822,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoubleCastTaggedSpells`](./Enums.md#enum-doublecasttaggedspells) | Enum | Applies or references the | 2 ||
+| [`DoubleCastTaggedSpells`](./Enums.md#enum-doublecasttaggedspells) | Enum | Specifies the spell tag (e.g., musical) that causes spells to be cast twice. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13840,7 +13840,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DrainAllyCatsForFleshGolem` | Integer | Applies or references the | 2 ||
+| `DrainAllyCatsForFleshGolem` | Integer | The amount of health drained from ally cats to heal the Flesh Golem. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13858,7 +13858,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DrinkWater` | Integer | Applies or references the | 2 ||
+| `DrinkWater` | Integer | The number of water-drink actions performed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13876,7 +13876,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Drowsy` | Integer | Applies or references the | 15 ||
+| `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 15 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13894,7 +13894,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DustCloudBehavior` | Integer | Applies or references the | 2 ||
+| `DustCloudBehavior` | Integer | An integer flag that controls the behavior mode of a dust cloud entity. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13912,7 +13912,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Dybbuk1HPTracker` | Integer | Applies or references the | 2 ||
+| `Dybbuk1HPTracker` | Integer | A flag indicating the unit tracks that it has 1 HP remaining for Dybbuk possession mechanics. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13933,8 +13933,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum | `DybbukReturn` | 1 ||
-| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum | `Dybbuk_StopHittingYourself` | 1 ||
+| [`exit_ability`](./Enums.md#enum-exit_ability) | Enum | Determines the ability used when the Dybbuk possession ends. | 1 ||
+| [`punch_self_ability`](./Enums.md#enum-punch_self_ability) | Enum | Determines the ability used for the possessed unit to attack itself. | 1 ||
 
 </details>
 
@@ -13951,7 +13951,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ElectricArcs` | Integer | Applies or references the | 2 ||
+| `ElectricArcs` | Integer | The number of electric arcs emitted by this unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13969,7 +13969,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Applies or references the | 2 ||
+| [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum | Determines which element the unit is weak to, e.g. Fire. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13987,7 +13987,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EmptyMind`](Engine_StatusAndPassiveKeys.md#object-emptymind) | Integer / Object | Applies or references the | 2 ||
+| [`EmptyMind`](Engine_StatusAndPassiveKeys.md#object-emptymind) | Integer / Object | The number of Empty Mind stacks, likely disabling special abilities. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14005,7 +14005,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Examples: `KaijuMeteornado, KaijuFirestorm, KaijuMeteornadoSolo` | 8 ||
+| [`EnableWeather`](./Enums.md#enum-enableweather) | Enum | Specifies the weather effect to enable. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14023,7 +14023,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EndTurn` | Integer | Applies or references the | 28 ||
+| `EndTurn` | Integer | If set to 1, ends the current unit's turn immediately after this effect. | 28 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14041,7 +14041,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Enlarge`](Engine_StatusAndPassiveKeys.md#object-enlarge) | Integer / Object | Applies or references the | 2 ||
+| [`Enlarge`](Engine_StatusAndPassiveKeys.md#object-enlarge) | Integer / Object | The number of turns the unit is enlarged, increasing its size and stats. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14059,7 +14059,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EnterMount`](./Enums.md#enum-entermount) | Enum | Applies or references the | 4 ||
+| [`EnterMount`](./Enums.md#enum-entermount) | Enum | Specifies the name of the mount status to apply to the unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14077,7 +14077,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EventBounterHunterPassive` | Integer | Applies or references the | 2 ||
+| `EventBounterHunterPassive` | Integer | A flag enabling the event bounty hunter passive behavior. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14095,7 +14095,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `EventBounty` | Integer | Applies or references the | 2 ||
+| `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14116,8 +14116,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 13 ||
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | The item pool to draw the parasite from. | 1 ||
+| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 13 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 ||
 
 </details>
 
@@ -14134,7 +14134,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Applies or references the | 2 ||
+| [`ExcludeFromEvents`](./Enums.md#enum-excludefromevents) | Enum | Specifies the event type (e.g., Tragedy) that this unit is excluded from participating in. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14152,7 +14152,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter` | Integer | Applies or references the | 4 ||
+| `ExplodeCharacter` | Integer | The radius (in tiles) of an explosion centered on the character. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14170,7 +14170,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_DeathBloom` | Integer | Applies or references the | 2 ||
+| `ExplodeCharacter_DeathBloom` | Integer | The amount of damage dealt by the DeathBloom explosion. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14188,7 +14188,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_DeathBloom2` | Integer | Applies or references the | 2 ||
+| `ExplodeCharacter_DeathBloom2` | Integer | The amount of damage dealt by the DeathBloom2 explosion. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14206,7 +14206,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_NoDie` | Integer | Applies or references the | 4 ||
+| `ExplodeCharacter_NoDie` | Integer | The damage dealt when a character explodes without dying. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14224,7 +14224,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_Party` | Integer | Applies or references the | 2 ||
+| `ExplodeCharacter_Party` | Integer | The radius (in tiles) of an explosion centered on the character that also damages party members. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14242,7 +14242,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_RockCrusher` | Integer | Applies or references the | 4 ||
+| `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14260,7 +14260,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | Applies or references the | 4 ||
+| `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | The damage dealt when a petrified RockCrusher explodes. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14278,7 +14278,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExplosionIfHitSomething` | Integer | Applies or references the | 8 ||
+| `ExplosionIfHitSomething` | Integer | The radius of explosion triggered if the attack hits an entity. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14296,7 +14296,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ExtraDispersedTurns` | Integer | Applies or references the | 8 ||
+| `ExtraDispersedTurns` | Integer | The number of additional or fewer turns in the dispersed turn order. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14314,7 +14314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Applies or references the | 2 ||
+| [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum | Specifies the tag of units that grant extra turns when present. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14332,7 +14332,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FaceCamera` | Integer | Applies or references the | 10 ||
+| `FaceCamera` | Integer | If non-zero, forces the character to rotate and face the camera. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14350,7 +14350,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FactionDisguiseSource` | Integer | Applies or references the | 2 ||
+| `FactionDisguiseSource` | Integer | If true, the unit adopts the faction of the source unit for disguise. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14368,7 +14368,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FadeInsteadOfDie` | Integer | Applies or references the | 20 ||
+| `FadeInsteadOfDie` | Integer | If non-zero, the unit fades out instead of dying. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14386,7 +14386,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FireArmor2`](Engine_StatusAndPassiveKeys.md#object-firearmor2) | Integer / Object | Applies or references the | 2 ||
+| [`FireArmor2`](Engine_StatusAndPassiveKeys.md#object-firearmor2) | Integer / Object | The number of Fire Armor2 stacks (likely a variant). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14404,7 +14404,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FireStorm` | Number | Examples: `33, 0` | 2 ||
+| `FireStorm` | Number | The percentage chance or combo definition for the Fire Storm effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14422,7 +14422,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FireflySwarm` | Number | Examples: `2` | 1 ||
+| `FireflySwarm` | Number | The number of fireflies in the swarm effect. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14440,7 +14440,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Flammable` | Integer | Applies or references the | 26 ||
+| `Flammable` | Integer | The number of stacks of Flammable, or an object defining its properties. | 26 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14458,7 +14458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FloatingRockTrap` | Integer | Applies or references the | 13 ||
+| `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 13 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14476,7 +14476,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | Applies or references the | 2 ||
+| [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum | Specifies the celebration animation or effect name used by the Flushmaster. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14494,7 +14494,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FlySwarm`](Engine_StatusAndPassiveKeys.md#object-flyswarm) | Object | Examples: `50` | 5 ||
+| [`FlySwarm`](Engine_StatusAndPassiveKeys.md#object-flyswarm) | Object | Summons a fly swarm with the given chance or intensity percentage. | 5 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14512,7 +14512,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fog` | Number | Examples: `1` | 1 ||
+| `Fog` | Number | When an integer, the intensity of fog; when an object, defines the fog particle effect. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14530,7 +14530,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Fragile` | Integer | Applies or references the | 6 ||
+| `Fragile` | Integer | The number of stacks of the Fragile status, causing increased damage taken. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14548,7 +14548,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FrankBolts`](Passives_and_Statuses.md#object-frankbolts) | Integer / Object | Applies or references the | 2 ||
+| [`FrankBolts`](Passives_and_Statuses.md#object-frankbolts) | Integer / Object | The number of Frank Bolts applied or available. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14566,7 +14566,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCast` | Integer | Applies or references the | 12 ||
+| `FreeFirstCast` | Integer | The number of free casts of this ability per battle. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14584,7 +14584,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `FreeFirstCastEachMatch` | Integer | Applies or references the | 2 ||
+| `FreeFirstCastEachMatch` | Integer | If set to 1, the first cast of the ability each match costs no resources. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14602,7 +14602,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Applies or references the | 4 ||
+| [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Specifies the name of the disorder gained. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14623,8 +14623,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0) of executing this action. | 1 ||
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | The item pool to draw the parasite from. | 1 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 ||
 
 </details>
 
@@ -14641,7 +14641,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Examples: `forbidden_spell_consequences_crippling, forbidden_spell_consequences` | 32 ||
+| [`GainDisorderFromPool_PostCast`](./Enums.md#enum-gaindisorderfrompool_postcast) | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 32 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14659,7 +14659,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GasCanBehavior` | Integer | Applies or references the | 2 ||
+| `GasCanBehavior` | Integer | An integer flag that controls the behavior mode of a gas can entity. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14677,7 +14677,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GasCloudBehavior2` | Integer | Applies or references the | 2 ||
+| `GasCloudBehavior2` | Integer | An integer flag that controls a secondary behavior mode of a gas cloud entity. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14695,7 +14695,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GeminiTwin` | Integer | Applies or references the | 2 ||
+| `GeminiTwin` | Integer | If set to 1, this unit is the twin in a Gemini pair. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14713,7 +14713,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericBuff` | Integer | Applies or references the | 4 ||
+| `GenericBuff` | Integer | A generic buff value applied to the unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14731,7 +14731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GenericDebuff` | Integer | Applies or references the | 30 ||
+| `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 30 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14749,7 +14749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GetAggroTarget` | Integer | Applies or references the | 4 ||
+| `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14767,7 +14767,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GiveBoundItemToTarget` | Integer | Applies or references the | 2 ||
+| `GiveBoundItemToTarget` | Integer | If true, gives the source's bound item to the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14785,7 +14785,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GlobalEnemyAutoRevive` | Integer | Applies or references the | 4 ||
+| `GlobalEnemyAutoRevive` | Integer | The percentage chance for all enemies to automatically revive after being defeated. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14803,7 +14803,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GoopWalk` | Integer | Applies or references the | 4 ||
+| `GoopWalk` | Integer | If set to 1, this unit can move through goop tiles without being slowed or damaged. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14821,7 +14821,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Grappled`](./Arrays.md#array-grappled) | Array / Integer | Examples: `1, [ 1 .75 ], [ 1 .50 ]` | 16 ||
+| [`Grappled`](./Arrays.md#array-grappled) | Array / Integer | The number of stacks and probability of applying the Grappled status, in format [stacks, probability] or just stacks. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14842,8 +14842,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | ``, `Alert`, `Angry`, `Belly`, `Button` | 6 ||
-| [`exit_animations`](Characters_and_Bosses.md#object-exit_animations) | Object | Animations played when leaving a form/state. | 1 ||
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 6 ||
+| [`exit_animations`](Characters_and_Bosses.md#object-exit_animations) | Object | An object mapping exit conditions to their corresponding animation names. | 1 ||
 
 </details>
 
@@ -14860,7 +14860,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | Examples: `DefaultMove, MoveOne` | 8 ||
+| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum | The movement ability used when this unit is on the ground. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14878,7 +14878,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `GuillotinaDeathHead` | Integer | Applies or references the | 2 ||
+| `GuillotinaDeathHead` | Integer | If set to 1, the unit spawns a head object upon death via guillotine. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14896,7 +14896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Examples: `HarpoonTrapPull` | 2 ||
+| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum | Specifies the ability name used when the harpoon trap is triggered. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14914,7 +14914,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HeatWave` | Number | Examples: `1` | 1 ||
+| `HeatWave` | Number | When an integer, the intensity of the heat wave; when an object, defines the visual effects or status properties. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14932,7 +14932,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HeavyHits` | Integer | Applies or references the | 2 ||
+| `HeavyHits` | Integer | The number of Heavy Hits stacks increasing attack impact. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14950,7 +14950,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Hex` | Integer | Applies or references the | 8 ||
+| `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14968,7 +14968,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HiddenDoomed` | Integer | Applies or references the | 2 ||
+| `HiddenDoomed` | Integer | The number of stacks of a hidden doomed status effect applied to the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14986,7 +14986,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Applies or references the | 4 ||
+| [`HideEquipment`](./Enums.md#enum-hideequipment) | Enum | Specifies which equipment slot is visually hidden. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15004,7 +15004,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `HideSomeHudStuff` | Integer | Applies or references the | 2 ||
+| `HideSomeHudStuff` | Integer | If set to 1, hides certain HUD elements. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15025,9 +15025,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 981 ||
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | Examples: `4*champion_multiplier, 3*champion_multiplier, 1` | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 ||
 
 </details>
 
@@ -15044,7 +15044,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreDebuffs` | Integer | Applies or references the | 2 ||
+| `IgnoreDebuffs` | Integer | If true, the effect ignores debuffs on the target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15062,7 +15062,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IgnoreSelf` | Variable | Applies or references the | 150 ||
+| `IgnoreSelf` | Variable | If set to 1 or true, the damage instance ignores the source unit (does not affect itself). | 150 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15080,7 +15080,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `IllusionTint` | Integer | Applies or references the | 6 ||
+| `IllusionTint` | Integer | If non-zero, applies an illusionary tint to the unit's sprite. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15101,8 +15101,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | ID of the ability to trigger or reference. | 730 ||
-| `even_if_stunned` | Boolean | If true, bypasses stun and hard-CC restrictions to cast anyway. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 ||
 
 </details>
 
@@ -15119,7 +15119,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Examples: `head_CrownOfHorns` | 2 ||
+| [`ImmediateUseAbility_Instant`](./Enums.md#enum-immediateuseability_instant) | Enum | Specifies the name of an ability to use instantly as a passive effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15137,7 +15137,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Examples: `BowlDash, BowlDash2` | 4 ||
+| [`ImmediateUseDirectionalAbility`](./Enums.md#enum-immediateusedirectionalability) | Enum | Specifies the name of a directional ability to be used immediately by the unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15155,7 +15155,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ImmobilePassive` | Integer | Applies or references the | 4 ||
+| `ImmobilePassive` | Integer | If set to 1, this unit cannot move from its starting position. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15173,7 +15173,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Imprison`](./Enums.md#enum-imprison) | Enum | Examples: `BeefyCharmedLeech, CharmedLeech, Tumor` | 12 ||
+| [`Imprison`](./Enums.md#enum-imprison) | Enum | Specifies the type of unit or object to summon as a prison. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15191,7 +15191,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InsertIntoBackgroundPlaceholder` | Integer | Applies or references the | 2 ||
+| `InsertIntoBackgroundPlaceholder` | Integer | If set to 1, the unit is inserted into a background placeholder slot. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15209,7 +15209,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Instakill`](./Arrays.md#array-instakill) | Integer | Applies or references the | 24 ||
+| [`Instakill`](./Arrays.md#array-instakill) | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 24 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15227,7 +15227,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `InterchangeDisabler` | Integer | Applies or references the | 2 ||
+| `InterchangeDisabler` | Integer | If set to 1, prevents the unit from being interchanged with another unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15245,7 +15245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JohnnyCriesForWashers` | Integer | Applies or references the | 4 ||
+| `JohnnyCriesForWashers` | Integer | The number of washers (currency) requested by the Johnny NPC. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15266,8 +15266,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum | `Unwashed` | 1 ||
-| [`form_washed`](./Enums.md#enum-form_washed) | Enum | `Washed` | 1 ||
+| [`form_unwashed`](./Enums.md#enum-form_unwashed) | Enum | Specifies the form name for the unwashed state. | 1 ||
+| [`form_washed`](./Enums.md#enum-form_washed) | Enum | Specifies the form name for the washed state. | 1 ||
 
 </details>
 
@@ -15284,7 +15284,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum | Examples: `BBTransformZealot` | 2 ||
+| [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum | Specifies the ability name used by the washer form to clean Johnny. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15302,7 +15302,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `JudgementDay` | Number | Examples: `25` | 1 ||
+| `JudgementDay` | Number | When an integer, the turn count or damage for Judgement Day; when an object, defines the weather status. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15320,7 +15320,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | Applies or references the | 2 ||
+| [`JumpAttackLeaveBehind`](./Enums.md#enum-jumpattackleavebehind) | Enum | Specifies the entity to leave behind at the jump attack's landing point. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15338,7 +15338,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Examples: `pyrophina, zaratana` | 4 ||
+| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum | Determines which kaiju victory condition is active for this unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15359,8 +15359,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum | `any`, `cat` | 2 ||
-| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | Examples: `[ TomTom Kitten CatCaller Mangy ]` | 1 ||
+| [`enemy_type`](./Enums.md#enum-enemy_type) | Enum | Specifies the type of enemy to kill at the start of battle. | 2 ||
+| [`fallback_spawn`](./Arrays.md#array-fallback_spawn) | Array | An array of enemy names to spawn as a fallback if no matching enemy type is present. | 1 ||
 
 </details>
 
@@ -15377,7 +15377,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Examples: `PlayerCat_MiniMiniMe` | 2 ||
+| [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15395,7 +15395,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `LaunchOffScreen` | Equation | Examples: `10+bonus_melee_ability_damage` | 2 ||
+| `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15413,7 +15413,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `LaunchOffScreenInstakill` | Integer | Applies or references the | 2 ||
+| `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15434,7 +15434,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID to spawn. | 545 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
 
 </details>
 
@@ -15451,7 +15451,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | Applies or references the | 2 ||
+| [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array | A tile coordinate [x y] that the unit's orientation is locked to face. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15469,7 +15469,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | Examples: `Twister_loop, BigUFO_ambient_looping, Bomb_FuseLoop` | 8 ||
+| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum | The looping sound effect played while the unit is alive. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15490,8 +15490,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`amount`](./Arrays.md#array-amount) | Array | The target opacity/dimness level. | 8 ||
-| [`speed`](./Arrays.md#array-speed) | Array / Number | The transition speed. | 6 ||
+| [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 8 ||
+| [`speed`](./Arrays.md#array-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 ||
 
 </details>
 
@@ -15508,7 +15508,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MakeBasicAttackPull` | Integer | Applies or references the | 2 ||
+| `MakeBasicAttackPull` | Integer | If nonzero, the unit's basic attack pulls the target closer. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15526,7 +15526,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MakeWeaponUnbreakable` | Integer | Applies or references the | 2 ||
+| `MakeWeaponUnbreakable` | Integer | If true, makes the equipped weapon unbreakable. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15544,7 +15544,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MamaCatAnimations` | Integer | Applies or references the | 4 ||
+| `MamaCatAnimations` | Integer | If set to 1, enables special mama cat animations. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15562,7 +15562,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManglerAttack` | Integer | Applies or references the | 2 ||
+| `ManglerAttack` | Integer | If true, the attack triggers the Mangler's attack pattern. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15580,7 +15580,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | Examples: `ManglerMonsterDashAttack` | 2 ||
+| [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum | Specifies the ability name used for the Mangler monster's dash attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15598,7 +15598,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ManglerShuffle` | Boolean | Applies or references the | 2 ||
+| `ManglerShuffle` | Boolean | If true, the order of effects in this damage instance is randomized before application. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15616,7 +15616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MassAttackThis` | Integer | Applies or references the | 2 ||
+| `MassAttackThis` | Integer | The number of additional targets this attack hits via the Mass Attack mechanic. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15637,9 +15637,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
-| [`Stun`](./Arrays.md#array-stun) | Array / Integer | Applies or references the 'Stun' effect/state. | 2 ||
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | Redirects the nested effects to apply to the caster/source of the ability instead of the target. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 ||
+| [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 ||
+| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 ||
 
 </details>
 
@@ -15656,7 +15656,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Meaty` | Integer | Applies or references the | 2 ||
+| `Meaty` | Integer | The number of Meaty stacks increasing health or size. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15674,7 +15674,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MeteorShower` | Number | Examples: `25` | 1 ||
+| `MeteorShower` | Number | The chance (as a percentage) for a meteor shower to occur on a given turn. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15692,7 +15692,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Meteornado` | Number | Examples: `1` | 3 ||
+| `Meteornado` | Number | The number of Meteornado status stacks applied, or an object defining its visual effects. | 3 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15713,8 +15713,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | Examples: `[ BatteryNuke WeAreOne Metronome SmartMetronome BecomeEnt...` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | A list of ability IDs that are excluded from random selection or usage in the Metronome effect. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -15731,7 +15731,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MimicMetronome` | Integer | Applies or references the | 2 ||
+| `MimicMetronome` | Integer | The number of random abilities the Metronome effect selects from this unit's ability pool. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15749,7 +15749,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ModelingClayPassive` | Integer | Applies or references the | 2 ||
+| `ModelingClayPassive` | Integer | If set to 1, enables the passive that duplicates the equipped item on the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15770,8 +15770,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Object defining UI display data (Name, Description, Icon). | 4719 ||
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Currency value in shops/merchants. | 3702 ||
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 4719 ||
+| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3702 ||
 
 </details>
 
@@ -15788,7 +15788,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MonkStanceSwitch` | Integer | Applies or references the | 10 ||
+| `MonkStanceSwitch` | Integer | The number of times to switch monk stance. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15806,7 +15806,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 2 ||
+| [`MonkStances`](./Arrays.md#array-monkstances) | Array | An array of stance ability names the Monk can switch between. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15827,8 +15827,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eat_damage`](Characters_and_Bosses.md#object-eat_damage) | Object | Damage dealt when this entity consumes another. | 1 ||
-| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | `MotherTumor` | 1 ||
+| [`eat_damage`](Characters_and_Bosses.md#object-eat_damage) | Object | An object defining the damage properties of the eat attack. | 1 ||
+| [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Specifies the name of the tumor object to spawn. | 1 ||
 
 </details>
 
@@ -15848,12 +15848,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Character Form: Base form for standard cats. | 10 ||
-| [`considered_forms`](./Arrays.md#array-considered_forms) | Array | Examples: `[ Big BigHolding BigHoldingCat ]` | 1 ||
-| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | `MotherTumorGrow` | 1 ||
-| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Character Form: Behavior and stats for the 'NonCat' state. | 1 ||
-| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | `pass` | 1 ||
-| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | `receive` | 1 ||
+| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 10 ||
+| [`considered_forms`](./Arrays.md#array-considered_forms) | Array | An array of form names the tumor considers for interaction. | 1 ||
+| [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | Specifies the ability used by the tumor to grow. | 1 ||
+| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 1 ||
+| [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | Specifies the animation played when passing something to the tumor. | 1 ||
+| [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | Specifies the animation played when receiving something from the tumor. | 1 ||
 
 </details>
 
@@ -15873,8 +15873,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum | `MechSuitEject` | 1 ||
-| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | `EnterMech` | 1 ||
+| [`eject_ability`](./Enums.md#enum-eject_ability) | Enum | Specifies the ability used to eject the mounted character. | 1 ||
+| [`enter_ability`](./Enums.md#enum-enter_ability) | Enum | Specifies the ability used to enter the mount. | 1 ||
 
 </details>
 
@@ -15891,7 +15891,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Examples: `BBTransformMutant` | 6 ||
+| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum | Specifies the ability that triggers a mutation form change. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15909,7 +15909,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `MuteDemonicGlyphDisplay` | Integer | Applies or references the | 2 ||
+| `MuteDemonicGlyphDisplay` | Integer | If set to 1, suppresses the display of demonic glyphs on the character. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15927,7 +15927,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Muted` | Integer | Applies or references the | 2 ||
+| `Muted` | Integer | The number of Muted stacks, disabling certain abilities. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15945,7 +15945,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NextPlayerCatTakesExtraTurn` | Integer | Applies or references the | 2 ||
+| `NextPlayerCatTakesExtraTurn` | Integer | The number of extra turns the active player cat gains. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15963,7 +15963,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `NoCorpses` | Integer | Applies or references the | 4 ||
+| `NoCorpses` | Integer | If set to 1, corpses are prevented from spawning. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -15984,8 +15984,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | The entity ID of the character to spawn (e.g., CharmedFlea). | 545 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability (0.0 to 1.0 or percentage) of this occurring. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -16002,7 +16002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Ostracized` | Integer | Applies or references the | 6 ||
+| `Ostracized` | Integer | The number of stacks of Ostracized applied. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16020,7 +16020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PackHunting` | Integer | Applies or references the | 2 ||
+| `PackHunting` | Integer | If set to 1, enables pack hunting behavior for the character. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16038,7 +16038,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PartialPurge` | Integer | Applies or references the | 20 ||
+| `PartialPurge` | Integer | The amount of beneficial status effects removed from the target. | 20 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16059,8 +16059,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Passives granted by equipping this. | 5118 ||
-| [`value`](./Math_Equations.md) | Equation | `cha`, `con`, `dex`, `int`, `item_aux+1` | 485 ||
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 ||
+| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 ||
 
 </details>
 
@@ -16080,7 +16080,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | Applies or references the 'Brace' effect/state. | 20 ||
+| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 ||
 
 </details>
 
@@ -16100,7 +16100,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MovementReaction`](Characters_and_Bosses.md#object-movementreaction) | Object | Applies or references the 'MovementReaction' effect/state. | 2 ||
+| [`MovementReaction`](Characters_and_Bosses.md#object-movementreaction) | Object | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 2 ||
 
 </details>
 
@@ -16120,7 +16120,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Injects a status effect payload that applies whenever the character performs a basic attack. | 178 ||
+| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 ||
 
 </details>
 
@@ -16137,7 +16137,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentCharisma` | Integer | Applies or references the | 5 ||
+| `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 5 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16155,7 +16155,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentConfusion` | Number | Applies or references the | 2 ||
+| `PermanentConfusion` | Number | If set to 1, the unit is permanently confused and cannot be cured. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16173,7 +16173,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PermanentLuck` | Integer | Applies or references the | 5 ||
+| `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 5 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16191,7 +16191,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Examples: `Holy` | 1 ||
+| [`PersistentElement`](./Enums.md#enum-persistentelement) | Enum | Specifies the element type that this status effect permanently imbues (e.g., Holy). | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16209,7 +16209,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PhysicalAttacksMiss` | Integer | Applies or references the | 2 ||
+| `PhysicalAttacksMiss` | Integer | If set to 1, all physical attacks against the unit automatically miss. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16227,7 +16227,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Plant` | Integer | Applies or references the | 18 ||
+| `Plant` | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16245,7 +16245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PlayBackground` | Integer | Applies or references the | 10 ||
+| `PlayBackground` | Integer | Specifies the background index to play. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16263,7 +16263,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Examples: `"X/5", 1, "X/3"` | 2 ||
+| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16284,7 +16284,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array / Enum | An array of ability IDs to randomly choose from. | 1 ||
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 ||
 
 </details>
 
@@ -16301,7 +16301,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Possessed` | Integer | Applies or references the | 6 ||
+| `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16319,7 +16319,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PreventSpecificInjury` | Equation | Applies or references the | 2 ||
+| `PreventSpecificInjury` | Equation | Specifies a body part tag (e.g., 'int' for head) that cannot receive injuries. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16337,7 +16337,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeAggroTarget` | Integer | Applies or references the | 4 ||
+| `PrioritizeAggroTarget` | Integer | A priority weight for targeting the current aggro target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16355,7 +16355,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeFarAwayTargets` | Integer | Applies or references the | 8 ||
+| `PrioritizeFarAwayTargets` | Integer | The weight for AI to prioritize targets based on distance; higher values favor farther targets. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16373,7 +16373,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeHitDifferentTargets` | Integer | Applies or references the | 6 ||
+| `PrioritizeHitDifferentTargets` | Integer | If set to 1, the unit's AI prioritizes hitting different targets rather than focusing one. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16391,7 +16391,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizePlayerCats` | Integer | Applies or references the | 4 ||
+| `PrioritizePlayerCats` | Integer | A priority weight for targeting player-controlled cats. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16409,7 +16409,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PrioritizeWeakestEnemy` | Integer | Applies or references the | 4 ||
+| `PrioritizeWeakestEnemy` | Integer | A priority weight for targeting the weakest enemy unit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16427,7 +16427,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ProbeCharmed` | Integer | Applies or references the | 4 ||
+| `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16445,7 +16445,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PullSourceToTarget` | Integer | Applies or references the | 8 ||
+| `PullSourceToTarget` | Integer | The amount of tiles the source is pulled towards the target after the attack. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16463,7 +16463,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `PurgeAll` | Integer | Applies or references the | 22 ||
+| `PurgeAll` | Integer | If non-zero, removes all temporary status effects (buffs, debuffs) from the target. | 22 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16484,8 +16484,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`radius`](./Arrays.md#array-radius) | Array / Integer | The tile radius of the quake. | 2 ||
-| [`chance`](./Enums.md#enum-chance) | Number | Probability of triggering the quake. | 1 ||
+| [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 ||
+| [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
 
 </details>
 
@@ -16502,7 +16502,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Examples: `Spider_GoInsane` | 2 ||
+| [`QueueUseAbility`](./Enums.md#enum-queueuseability) | Enum | Specifies the ability ID to be used immediately after the current action resolves. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16520,7 +16520,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomLightning` | Number | Examples: `50` | 2 ||
+| `RandomLightning` | Number | Chance per turn or action for a random lightning strike to occur, expressed as a percentage (e.g., 50%). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16538,7 +16538,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Applies or references the | 4 ||
+| [`RandomTaggedMutation`](./Enums.md#enum-randomtaggedmutation) | Enum | Specifies the tag to filter random mutations by. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16556,7 +16556,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomWeatherEachFight`](./Arrays.md#array-randomweathereachfight) | Array | Examples: `[ Fog Rain Windy Sandstorm HeatWave Snow Thunderstorm Bli...` | 1 ||
+| [`RandomWeatherEachFight`](./Arrays.md#array-randomweathereachfight) | Array | An array of weather types from which one is randomly selected at the start of each battle. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16574,7 +16574,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | Examples: `[ { decision_weights default move_weights stay_close } { ..., [ { decision_we...` | 16 ||
+| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array | The range of random weights applied to AI actions each turn. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16592,7 +16592,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RealTimePressure` | Integer | Applies or references the | 2 ||
+| `RealTimePressure` | Integer | The number of real-time seconds before a pressure effect or penalty applies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16610,7 +16610,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReclaimItemOnBreak` | Integer | Applies or references the | 2 ||
+| `ReclaimItemOnBreak` | Integer | If set to 1, the item returns to the inventory when it breaks instead of being lost. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16631,7 +16631,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 ||
 
 </details>
 
@@ -16651,8 +16651,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`text`](./Strings.md#string-text) | String | ``, `COMBAT_POPUP_RECHARGED`, `INJURY_NAME_BROKENLEG`, `INJURY_NAME_BROKENPAW`, `INJURY_NAME_BROKENRIB` | 13 ||
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specific element type required or applied. | 1 ||
+| [`text`](./Strings.md#string-text) | String | The localization key for the name of this injury. | 13 ||
+| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 ||
 
 </details>
 
@@ -16669,7 +16669,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshItemAbilities` | Integer | Applies or references the | 2 ||
+| `RefreshItemAbilities` | Integer | The number of times all item abilities are recharged (cooldowns reset). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16687,7 +16687,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshOncePerFightAbilities` | Integer | Applies or references the | 2 ||
+| `RefreshOncePerFightAbilities` | Integer | The number of times abilities limited to once per fight are refreshed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16705,7 +16705,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RefreshWeaponAbility` | Integer | Applies or references the | 8 ||
+| `RefreshWeaponAbility` | Integer | The number of times the weapon's ability is refreshed. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16723,7 +16723,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Regurge`](Engine_StatusAndPassiveKeys.md#object-regurge) | Integer / Object | Applies or references the | 2 ||
+| [`Regurge`](Engine_StatusAndPassiveKeys.md#object-regurge) | Integer / Object | The number of regurgitation triggers. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16741,7 +16741,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAllyCatDies` | Integer | Applies or references the | 2 ||
+| `ReloadOnAllyCatDies` | Integer | If set to 1, restores a charge when an allied cat dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16759,7 +16759,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnAllyDies` | Integer | Applies or references the | 2 ||
+| `ReloadOnAllyDies` | Integer | If set to 1, restores a charge when any ally dies. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16777,7 +16777,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReloadOnBackstab` | Integer | Applies or references the | 2 ||
+| `ReloadOnBackstab` | Integer | If set to 1, restores a charge when performing a backstab. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16795,7 +16795,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairAll` | Integer | Applies or references the | 10 ||
+| `RepairAll` | Integer | The amount of durability restored to all equipped items. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16813,7 +16813,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairAllCondition` | Integer | Applies or references the | 2 ||
+| `RepairAllCondition` | Integer | If non-zero, fully repairs the condition of all equipped items. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16831,7 +16831,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairArmorCondition` | Integer | Applies or references the | 4 ||
+| `RepairArmorCondition` | Integer | The amount of armor condition restored. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16849,7 +16849,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RepairTrinket` | Integer | Applies or references the | 12 ||
+| `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16867,7 +16867,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum | Examples: `FetusSpit` | 2 ||
+| [`ReplaceBasicAttack_Mutation`](./Enums.md#enum-replacebasicattack_mutation) | Enum | Specifies the mutation-based ability (e.g., FetusSpit) that replaces the unit's standard basic attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16888,8 +16888,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The new ability ID to insert. | 730 ||
-| [`slot`](./Enums.md#enum-slot) | Enum / Integer | The spell slot index to replace. | 4 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 ||
 
 </details>
 
@@ -16906,7 +16906,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RerollEnemy` | Integer | Applies or references the | 2 ||
+| `RerollEnemy` | Integer | The number of times the target enemy is re-rolled (transformed into a new random enemy). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16924,7 +16924,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ReturnDinoLegs` | Integer | Applies or references the | 2 ||
+| `ReturnDinoLegs` | Integer | If non-zero, returns the Dino Legs ability to the unit after it is consumed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16945,11 +16945,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | Applies or references the 'Shield' effect/state. | 422 ||
-| `revive_health` | Integer | The flat amount of health to revive with. | 3 ||
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | Applies or references the 'AllStatsUp' effect/state. | 2 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 2 ||
-| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | Applies or references the 'DivineShield' effect/state. | 1 ||
+| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 ||
+| `revive_health` | Integer | The amount of health (as a flat integer or percentage) the unit revives with. | 3 ||
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 ||
+| [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 ||
 
 </details>
 
@@ -16966,7 +16966,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RockyArmorPassive` | Integer | Applies or references the | 6 ||
+| `RockyArmorPassive` | Integer | The number of stacks of the Rocky Armor status effect granted. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16984,7 +16984,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Enum | Examples: `.75` | 1 ||
+| [`RockyArmorSalvage`](./Enums.md#enum-rockyarmorsalvage) | Enum | A multiplier for the percentage of armor value salvaged when the unit takes damage. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17002,7 +17002,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SafeDie` | Integer | Applies or references the | 14 ||
+| `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17020,7 +17020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Sandstorm`](Engine_StatusAndPassiveKeys.md#object-sandstorm) | Object | Examples: `1` | 2 ||
+| [`Sandstorm`](Engine_StatusAndPassiveKeys.md#object-sandstorm) | Object | A self-buff ability that creates a sandstorm, applying a status effect (may be 'Sandstorm 1' or an object definition with a specific template). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17041,8 +17041,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | Baseline configuration. | 199 ||
-| [`thresholds`](./Arrays.md#array-thresholds) | Array | Examples: `[ [ 1 0 ]` | 1 ||
+| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 199 ||
+| [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 ||
 
 </details>
 
@@ -17059,7 +17059,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SchizoIllusionAIModifier` | Integer | Applies or references the | 2 ||
+| `SchizoIllusionAIModifier` | Integer | If non-zero, modifies the AI behavior for schizo illusions. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17077,7 +17077,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ScrambleEverything` | Integer | Applies or references the | 4 ||
+| `ScrambleEverything` | Integer | The percentage chance to scramble all abilities and passives on the target. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17098,7 +17098,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `permanent` | Boolean | If true, the scramble persists for the rest of the run. | 1 ||
+| `permanent` | Boolean | If true, the scrambled spell selection persists permanently rather than resetting after use. | 1 ||
 
 </details>
 
@@ -17115,7 +17115,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Scrambled` | Integer | Applies or references the | 4 ||
+| `Scrambled` | Integer | The number of stacks of Scrambled applied. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17133,7 +17133,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SelfStun`](./Arrays.md#array-selfstun) | Array / Integer | Applies or references the | 4 ||
+| [`SelfStun`](./Arrays.md#array-selfstun) | Array / Integer | The number of stacks of self-stun applied, with an optional probability as a second element. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17151,7 +17151,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SendRock` | Integer | Applies or references the | 8 ||
+| `SendRock` | Integer | The number of rocks to send as projectiles. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17169,7 +17169,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SerratedClaws` | Integer | Applies or references the | 2 ||
+| `SerratedClaws` | Integer | The number of stacks of the SerratedClaws status applied, or an object defining its display strings. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17190,8 +17190,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dead`](./Enums.md#enum-dead) | Enum | Examples: `{ ... }` | 1 ||
-| [`dying`](./Enums.md#enum-dying) | Enum | Examples: `shot` | 1 ||
+| [`dead`](./Enums.md#enum-dead) | Enum | Determines the animation set used when the unit is dead. | 1 ||
+| [`dying`](./Enums.md#enum-dying) | Enum | Determines the animation set used when the unit is in a dying state. | 1 ||
 
 </details>
 
@@ -17211,7 +17211,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Arrays.md#array-weights) | Array / Enum | `bat_chaos_runaway`, `chaotic`, `stay_far_always_move`, `stay_near_allies_always_move` | 3 ||
+| [`weights`](./Arrays.md#array-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 3 ||
 
 </details>
 
@@ -17228,7 +17228,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Applies or references the | 2 ||
+| [`SetFaction`](./Enums.md#enum-setfaction) | Enum | Specifies the faction the unit belongs to (e.g., 'enemies'). | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17249,8 +17249,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`value`](./Math_Equations.md) | Equation | `cha`, `con`, `dex`, `int`, `item_aux+1` | 485 ||
-| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Equipment slot (weapon, hat, face, chest, etc.). | 3 ||
+| [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 ||
+| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 ||
 
 </details>
 
@@ -17267,7 +17267,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SharkySmellsBlood` | Integer | Applies or references the | 10 ||
+| `SharkySmellsBlood` | Integer | If 1, the unit is attracted to damaged units and may prioritize them. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17285,7 +17285,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Shatter`](Engine_StatusAndPassiveKeys.md#object-shatter) | Integer / Object | Applies or references the | 4 ||
+| [`Shatter`](Engine_StatusAndPassiveKeys.md#object-shatter) | Integer / Object | The amount of damage dealt when a frozen or petrified status is shattered, or a template definition for a Shatter ability. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17303,7 +17303,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShootHereCommand` | Integer | Applies or references the | 2 ||
+| `ShootHereCommand` | Integer | If non-zero, commands an allied unit to shoot at this unit's target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17321,7 +17321,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShootHereReceiver` | Integer | Applies or references the | 2 ||
+| `ShootHereReceiver` | Integer | If non-zero, marks this unit as the receiver of a Shoot Here command. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17339,7 +17339,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ShortCircuit`](Engine_StatusAndPassiveKeys.md#object-shortcircuit) | Integer / Object | Applies or references the | 2 ||
+| [`ShortCircuit`](Engine_StatusAndPassiveKeys.md#object-shortcircuit) | Integer / Object | The number of stacks of the ShortCircuit status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17357,7 +17357,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ShowText` | String | Examples: `"COMBAT_POPUP_BRAINSTORM"` | 6 ||
+| `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17378,8 +17378,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `pop_chance` | Integer | Examples: `50` | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `pop_chance` | Integer | The percentage chance that the first round is skipped. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -17399,10 +17399,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | Applies or references the 'SlotResult_Explode' effect/state. | 2 ||
-| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | Applies or references the 'SlotResult_Jackpot_Coins' effect/state. | 2 ||
-| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | Applies or references the 'SlotResult_Nothing' effect/state. | 1 ||
-| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | Applies or references the 'SlotResult_RandomPickup' effect/state. | 1 ||
+| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | The result of an explosion roll, or the weight of that result. | 2 ||
+| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | The result of a jackpot roll that spawns coins, or the weight of that result in the pool. | 2 ||
+| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | The result of a nothing roll, or the weight of that result. | 1 ||
+| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | The result of a random pickup roll, or the weight of that result. | 1 ||
 
 </details>
 
@@ -17419,7 +17419,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SmallHitExplosion` | Integer | Applies or references the | 2 ||
+| `SmallHitExplosion` | Integer | The number of small explosion VFX to spawn on hit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17440,8 +17440,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
-| `upgraded` | Boolean | If true, conjures the upgraded version of the ability. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
+| `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 ||
 
 </details>
 
@@ -17458,7 +17458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SmellBlood`](Engine_StatusAndPassiveKeys.md#object-smellblood) | Integer / Object | Applies or references the | 2 ||
+| [`SmellBlood`](Engine_StatusAndPassiveKeys.md#object-smellblood) | Integer / Object | If non-zero, activates the Smell Blood ability which reveals nearby injured units. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17479,11 +17479,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_snow.ogg` | 13 ||
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Snow` | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ Snow ]` | 1 ||
-| `prewarm` | Number | Examples: `20` | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_snow` | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -17503,9 +17503,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Examples: `{ ... }` | 62 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Examples: `5` | 2 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Examples: `[ Fire ]` | 1 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 ||
 
 </details>
 
@@ -17522,7 +17522,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Applies or references the | 2 ||
+| [`SourceSwapsBackEndOfTurn`](./Enums.md#enum-sourceswapsbackendofturn) | Enum | Specifies the ability ID to use to swap the source unit back at the end of the turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17543,7 +17543,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Examples: `{ ... }` | 2 ||
+| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 ||
 
 </details>
 
@@ -17560,7 +17560,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpecificInjury` | Equation | Applies or references the | 10 ||
+| `SpecificInjury` | Equation | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17581,12 +17581,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | Character Form: Behavior and stats for the 'Normal' state. | 24 ||
-| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Character Form: Behavior and stats for the 'Fire' state. | 6 ||
-| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Character Form: Behavior and stats for the 'FireFull' state. | 1 ||
-| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | Character Form: Behavior and stats for the 'NormalFull' state. | 1 ||
-| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | Character Form: Behavior and stats for the 'Tar' state. | 1 ||
-| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | Character Form: Behavior and stats for the 'TarFull' state. | 1 ||
+| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 ||
+| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 ||
+| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 ||
+| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 ||
+| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 ||
+| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 ||
 
 </details>
 
@@ -17603,7 +17603,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpiderInfested` | Integer | Applies or references the | 18 ||
+| `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 18 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17621,7 +17621,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpitConsumed` | Integer | Applies or references the | 2 ||
+| `SpitConsumed` | Integer | If non-zero, marks the object consumed by the Spit ability as having been used. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17639,7 +17639,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SpreadWater` | Integer | Applies or references the | 2 ||
+| `SpreadWater` | Integer | If set to 1, causes the character to spread water onto adjacent tiles. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17660,8 +17660,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stack_key`](./Enums.md#enum-stack_key) | Enum | `CATHIDE`, `EMPTY_GENERATOR`, `FANNY_PACK`, `FLOWER_SET` | 3 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 3 ||
+| [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 3 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 ||
 
 </details>
 
@@ -17678,7 +17678,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StackingSandstorm` | Integer | Applies or references the | 3 ||
+| `StackingSandstorm` | Integer | If non-zero, enables the stacking sandstorm mechanic which increases damage per stack. | 3 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17696,7 +17696,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StanceSwitchToMelee` | Integer | Applies or references the | 6 ||
+| `StanceSwitchToMelee` | Integer | If set, switches the source to melee stance. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17714,7 +17714,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StartDead` | Integer | Applies or references the | 2 ||
+| `StartDead` | Integer | The percentage chance that the character starts the battle already dead. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17732,7 +17732,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StartOffMap` | Integer | Applies or references the | 10 ||
+| `StartOffMap` | Integer | If 1, the unit begins the encounter off the map. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17750,7 +17750,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `StevenBolts` | Integer | Applies or references the | 2 ||
+| `StevenBolts` | Integer | The number of Steven Bolts (a special resource or charge) the unit has for a unique ability. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17768,7 +17768,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SurviveAt1HP` | Integer | Applies or references the | 4 ||
+| `SurviveAt1HP` | Integer | If 1, the unit survives a fatal hit with 1 HP instead of dying. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17786,7 +17786,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `SwallowSmallCharacter` | Integer | Applies or references the | 4 ||
+| `SwallowSmallCharacter` | Integer | The percentage chance to swallow a smaller character on hit. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17807,7 +17807,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Arrays.md#array-pool) | Array / Enum | An array of weapon item IDs to draw from. | 1 ||
+| [`pool`](./Arrays.md#array-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 ||
 
 </details>
 
@@ -17827,9 +17827,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`new_layer`](./Enums.md#enum-new_layer) | Enum | The specific audio layer to transition to (e.g., map, battle). | 6 ||
-| [`new_song`](./Enums.md#enum-new_song) | Enum | The ID of the new music track. | 5 ||
-| `crossfade_speed` | Integer | Examples: `1` | 1 ||
+| [`new_layer`](./Enums.md#enum-new_layer) | Enum | Specifies the music layer to switch to (e.g., 'event', 'battle', 'map'). | 6 ||
+| [`new_song`](./Enums.md#enum-new_song) | Enum | Specifies the song to switch to; 'same' keeps the current song playing on the new layer. | 5 ||
+| `crossfade_speed` | Integer | The duration in seconds for the crossfade transition between music tracks. | 1 ||
 
 </details>
 
@@ -17846,7 +17846,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Switcheroo`](Engine_StatusAndPassiveKeys.md#object-switcheroo) | Integer / Object | Applies or references the | 2 ||
+| [`Switcheroo`](Engine_StatusAndPassiveKeys.md#object-switcheroo) | Integer / Object | The number of stacks of the Switcheroo status effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17864,7 +17864,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `T2CopyCat` | Integer | Applies or references the | 2 ||
+| `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17882,7 +17882,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableAttack` | Integer | Applies or references the | 2 ||
+| `TVBotDisableAttack` | Integer | If set to 1, disables the TVBot's ability to attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17900,7 +17900,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TVBotDisableSpells` | Integer | Applies or references the | 2 ||
+| `TVBotDisableSpells` | Integer | If set to 1, disables the TVBot's ability to use spells. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17921,12 +17921,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | Character Form / Logic: Forces the character to die. | 1 ||
-| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | AI Profile: A simplified, less optimal decision-making profile. | 1 ||
-| `Fuck` | Integer | Applies or references the 'Fuck' effect/state. | 1 ||
-| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | AI State: Enforced compliance logic (e.g., when Charmed). | 1 ||
-| `Shit` | Integer | Applies or references the 'Shit' effect/state. | 1 ||
-| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | AI Movement: Forces the character to cease movement. | 1 ||
+| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 ||
+| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 ||
+| `Fuck` | Integer | The number of times the TV bot screen displays the 'Fuck' message. | 1 ||
+| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 ||
+| `Shit` | Integer | The number of times the TV bot screen displays the 'Shit' message. | 1 ||
+| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 ||
 
 </details>
 
@@ -17943,7 +17943,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | Examples: `food, pickup, bishop_hat` | 12 ||
+| [`TagGreed`](./Enums.md#enum-taggreed) | Enum | The tag of items that this unit will move towards to collect. | 12 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17961,7 +17961,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Applies or references the | 2 ||
+| [`TagMetronome`](./Enums.md#enum-tagmetronome) | Enum | Specifies a tag (e.g., "musical") used to filter which abilities the Metronome effect can pick. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17979,7 +17979,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TakeExtraTurnEndOfRound` | Integer | Applies or references the | 2 ||
+| `TakeExtraTurnEndOfRound` | Integer | The number of extra turns taken at the end of the round. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17997,7 +17997,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Tall` | Integer | Applies or references the | 2 ||
+| `Tall` | Integer | If set to 1, the character occupies a taller hitbox or sprite space. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18018,8 +18018,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_art`](./Enums.md#enum-alt_art) | Enum | The alternative sprite art to use while tangled. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`alt_art`](./Enums.md#enum-alt_art) | Enum | Specifies an alternative art asset name to use for the status. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -18036,7 +18036,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TargetedMetronome` | Integer | Applies or references the | 2 ||
+| `TargetedMetronome` | Integer | The number of random targets hit by the Targeted Metronome effect. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18054,7 +18054,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Taunting` | Integer | Applies or references the | 2 ||
+| `Taunting` | Integer | The number of stacks of Taunting, which forces enemies to target the unit. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18073,9 +18073,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The underlying logic ability executed by the team. | 730 ||
-| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Requires participants to share this tag. | 2 ||
-| `same_orientation` | Boolean | `true` | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| [`tag_restriction`](./Enums.md#enum-tag_restriction) | Enum | Specifies a tag that the target unit must have for the team cast to trigger. | 2 ||
+| `same_orientation` | Boolean | If true, the team cast ability only triggers if the caster and target face the same direction. | 1 ||
 
 </details>
 
@@ -18092,7 +18092,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Applies or references the | 2 ||
+| [`TeleportBackAtTurnEnd`](./Enums.md#enum-teleportbackatturnend) | Enum | Specifies the ability ID used to teleport the unit back to its starting position at turn end. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18110,7 +18110,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstab` | Integer | Applies or references the | 2 ||
+| `TempBackstab` | Integer | The amount of temporary backstab bonus, typically as a percentage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18128,7 +18128,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabBleed` | Integer | Applies or references the | 2 ||
+| `TempBackstabBleed` | Integer | The number of temporary Bleed status stacks applied on a backstab attack. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18146,7 +18146,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabPiercing` | Integer | Applies or references the | 2 ||
+| `TempBackstabPiercing` | Integer | The amount of temporary piercing added to backstab attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18164,7 +18164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempBackstabPoison` | Integer | Applies or references the | 2 ||
+| `TempBackstabPoison` | Integer | The amount of temporary poison stacks applied with backstab attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18185,7 +18185,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Reaction: Deals damage or status effects to an attacker upon receiving melee damage. | 20 ||
+| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 ||
 
 </details>
 
@@ -18202,7 +18202,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TempPenetrate` | Integer | Applies or references the | 2 ||
+| `TempPenetrate` | Integer | The amount of temporary penetration applied to attacks. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18223,8 +18223,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`groups`](./Arrays.md#array-groups) | Array | Examples: `[ { stacks 48 ParticleBurst Gibs_terminatorskin CatPartsT...` | 1 ||
-| [`status`](./Enums.md#enum-status) | Enum | ID of the status effect to apply or check. | 1 ||
+| [`groups`](./Arrays.md#array-groups) | Array | Groups of actors that this skin applies to. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
 
 </details>
 
@@ -18241,7 +18241,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Examples: `OilTile, WaterTile, FireTile` | 8 ||
+| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum | Specifies the type of tile to place one tile ahead of the unit's movement. | 8 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18262,8 +18262,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | Examples: `TinkererCraft` | 1 ||
-| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | Examples: `TinkererThrow` | 1 ||
+| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | The ability used for the craft action in the Tinkerer's basic attack switching. | 1 ||
+| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 1 ||
 
 </details>
 
@@ -18283,9 +18283,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`add`](./Arrays.md#array-add) | Array / Integer | Examples: `5` | 1 ||
-| [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | `ModelingClay_Default` | 1 ||
-| [`mul`](./Arrays.md#array-mul) | Array | Examples: `[ 0.45 0.3 0.25 ]` | 1 ||
+| [`add`](./Arrays.md#array-add) | Array / Integer | The amount or an array of values added to the event's advantage or item tint. | 1 ||
+| [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | Specifies the string aux value at which to ignore the tinting operation. | 1 ||
+| [`mul`](./Arrays.md#array-mul) | Array | An array of three floats (RGB) used to multiply the item's tint color. | 1 ||
 
 </details>
 
@@ -18302,7 +18302,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TireBehavior` | Integer | Applies or references the | 2 ||
+| `TireBehavior` | Integer | If set to 1, activates special tire-related behavior for the character. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18320,7 +18320,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsAggroTarget` | Integer | Applies or references the | 2 ||
+| `TossTargetIsAggroTarget` | Integer | If set to 1, the toss target is the unit's current aggro target. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18338,7 +18338,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TossTargetIsNotInWater` | Integer | Applies or references the | 2 ||
+| `TossTargetIsNotInWater` | Integer | If set to 1, the toss target must not be in water terrain. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18356,7 +18356,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Examples: `BonusBirdsKilled` | 2 ||
+| [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum | Specifies the name of the counter used to track how many of this type the player has killed. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18374,7 +18374,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TradeLife`](Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object | Applies or references the | 2 ||
+| [`TradeLife`](Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object | The amount of health life traded, or a template for a TradeLife ability. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18392,7 +18392,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrailBlazer` | Variable | Applies or references the | 2 ||
+| `TrailBlazer` | Variable | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18413,10 +18413,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The specific ability ID to cast. | 730 ||
-| `cancel_movement` | Boolean | `false` | 2 ||
-| `pathfinding_avoidance` | Integer | Examples: `250` | 2 ||
-| [`range`](./Enums.md#enum-range) | Enum / Integer | Distance or area of effect in tiles. | 2 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `cancel_movement` | Boolean | If true, the trapper cancels the trapped unit's movement. | 2 ||
+| `pathfinding_avoidance` | Integer | The weight that makes other units avoid traversing this tile during pathfinding. | 2 ||
+| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 ||
 
 </details>
 
@@ -18433,7 +18433,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrueShot` | Integer | Applies or references the | 6 ||
+| `TrueShot` | Integer | The number of stacks of a buff that makes the unit's attacks unmissable. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18454,7 +18454,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | Override for base critical hit probability. | 1 ||
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 ||
 
 </details>
 
@@ -18471,7 +18471,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TurnAround` | Integer | Applies or references the | 2 ||
+| `TurnAround` | Integer | The number of times the unit turns around. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18489,7 +18489,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Number | Applies or references the | 2 ||
+| [`TurnControlDelay`](./Enums.md#enum-turncontroldelay) | Number | Specifies the delay in seconds before the unit regains turn control. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18507,7 +18507,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TurnRight` | Integer | Applies or references the | 2 ||
+| `TurnRight` | Integer | The number of times the unit turns to the right. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18525,7 +18525,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Uncontrollable` | Integer | Applies or references the | 4 ||
+| `Uncontrollable` | Integer | If non-zero, the unit becomes uncontrollable by the player. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18543,7 +18543,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Undead` | Integer | Applies or references the | 50 ||
+| `Undead` | Integer | If set, flags the unit as undead (e.g., 1) with associated mechanics. | 50 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18561,7 +18561,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `UnlockOrientation` | Integer | Applies or references the | 4 ||
+| `UnlockOrientation` | Integer | If 1, allows the unit to freely rotate or face any direction regardless of movement. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18580,8 +18580,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ability`](./Enums.md#enum-ability) | Enum | The ID of the ability to trigger. | 730 ||
-| `respect_prime` | Boolean | If true, respects the ability's prime/cooldown state. | 1 ||
+| [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 ||
+| `respect_prime` | Boolean | If true, the ability will only be used if the unit is primed for it. | 1 ||
 
 </details>
 
@@ -18598,7 +18598,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Examples: `GenericRage, BBTransformZealot` | 6 ||
+| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum | Specifies an ability to use on kill that does not stack with itself. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18616,7 +18616,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Vaporize` | Integer | Applies or references the | 66 ||
+| `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 66 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18634,7 +18634,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeCorpse` | Integer | Applies or references the | 36 ||
+| `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 36 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18652,7 +18652,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`VaporizeCorpseFlipAdvantage`](./Arrays.md#array-vaporizecorpseflipadvantage) | Array | Applies or references the | 2 ||
+| [`VaporizeCorpseFlipAdvantage`](./Arrays.md#array-vaporizecorpseflipadvantage) | Array | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18670,7 +18670,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeDice` | Integer | Applies or references the | 2 ||
+| `VaporizeDice` | Integer | The number of dice vaporized. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18688,7 +18688,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeInanimate` | Integer | Applies or references the | 16 ||
+| `VaporizeInanimate` | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 16 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18706,7 +18706,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VaporizeTarget` | Integer | Applies or references the | 6 ||
+| `VaporizeTarget` | Integer | If non-zero, instantly destroys the target, leaving no corpse. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18724,7 +18724,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Examples: `Holyatk, MagicMissleBlast, WaterConduct` | 27 ||
+| [`VisualFX`](./Enums.md#enum-visualfx) | Enum | Specifies the name of the visual effect to play. | 27 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18742,7 +18742,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `VisualFlySwarm` | Number | Examples: `1` | 1 ||
+| `VisualFlySwarm` | Number | If non-zero, enables the visual fly swarm effect on the unit. | 1 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18763,10 +18763,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object | A clone of the Waggle enemy type with custom graphics settings. | 2 ||
-| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object | A larger clone of cWaggle that occupies 2x2 tiles. | 2 ||
-| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object | An even larger clone of cWaggle2x2 that occupies 3x3 tiles. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object | Defines a clone variant of the Waggle unit with its own graphics and properties. | 2 ||
+| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object | Defines a larger 2x2 tile clone variant of the Waggle unit. | 2 ||
+| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -18783,7 +18783,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Wall` | Integer | Applies or references the | 2 ||
+| `Wall` | Integer | If 1, the unit is treated as an impassable wall. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18801,7 +18801,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Webbed`](./Arrays.md#array-webbed) | Integer | Applies or references the | 23 ||
+| [`Webbed`](./Arrays.md#array-webbed) | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 23 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18819,7 +18819,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Wet` | Integer | Applies or references the | 2 ||
+| `Wet` | Integer | The number of stacks of the Wet status effect applied. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18837,7 +18837,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `WideBackstab` | Integer | Applies or references the | 2 ||
+| `WideBackstab` | Integer | The additional width for backstab attacks, in tiles. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18858,11 +18858,11 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | Examples: `amb_windy.ogg` | 13 ||
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Examples: `Windy` | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | Examples: `[ WindFull ]` | 1 ||
-| `prewarm` | Number | Examples: `5` | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Examples: `day_windy` | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -18879,7 +18879,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsConsumedCharacterMaxHP` | Integer | Applies or references the | 2 ||
+| `XIsConsumedCharacterMaxHP` | Integer | Specifies the multiplier used to set X to the maximum HP of the consumed character. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18897,7 +18897,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsCountDeaths` | Integer | Applies or references the | 2 ||
+| `XIsCountDeaths` | Integer | If set to 1, X is equal to the number of deaths in the match. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18915,7 +18915,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsFreeArmorSlots` | Integer | Applies or references the | 14 ||
+| `XIsFreeArmorSlots` | Integer | The number of armor slots that are free (no cost) for the unit. | 14 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18933,7 +18933,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsIncreaseEachTurn` | Integer | Applies or references the | 2 ||
+| `XIsIncreaseEachTurn` | Integer | Specifies the amount by which X increases each turn. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18951,7 +18951,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Examples: `hitler_clone_fetus, dc_crow, terminator_mini` | 10 ||
+| [`XIsLivingAlliesWithTag`](./Enums.md#enum-xislivingallieswithtag) | Enum | Specifies the tag that living allies must have for this passive to affect them. | 10 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18969,7 +18969,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`XIsLivingCharactersWithTag`](./Enums.md#enum-xislivingcharacterswithtag) | Enum | Applies or references the | 4 ||
+| [`XIsLivingCharactersWithTag`](./Enums.md#enum-xislivingcharacterswithtag) | Enum | Specifies the tag that living characters must have for this passive to affect them. | 4 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18987,7 +18987,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `XIsRampAndReset` | Integer | Applies or references the | 2 ||
+| `XIsRampAndReset` | Integer | If set to 1, X ramps up over time and resets after use; 0 disables this behavior. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -19008,8 +19008,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `reset_percent` | Integer | The percentage of stacks to keep after resetting. | 1 ||
-| `stacks` | Enum / Integer | Number of stacks or intensity to apply. | 1 ||
+| `reset_percent` | Integer | The percentage of the ramp-up value to reset to upon casting. | 1 ||
+| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 ||
 
 </details>
 
@@ -19026,7 +19026,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`YOffset`](./Enums.md#enum-yoffset) | Number | Applies or references the | 6 ||
+| [`YOffset`](./Enums.md#enum-yoffset) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -19044,7 +19044,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Zombie` | Number | Examples: `1` | 2 ||
+| `Zombie` | Number | The number of stacks or value for the Zombie status. | 2 ||
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 

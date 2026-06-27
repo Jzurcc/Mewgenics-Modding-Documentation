@@ -18,10 +18,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`image`](./Strings.md#string-image) | String |  | 578 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| `value` | Float | The magnitude or stat reference for this elite buff (e.g., numeric, 'spd', 'con'). | 54 |  |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 3 |  |
-| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Array / Enum | Specific element type required or applied. | 1 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 |  |
+| `value` | Float | The numeric value or formula associated with the buff. | 54 |  |
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 |  |
+| [`element`](./Engine_LogicKeys.md#valid-property-keys) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 |  |
 
 </details>
 
@@ -41,7 +41,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 |  |
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 |  |
 
 </details>
 

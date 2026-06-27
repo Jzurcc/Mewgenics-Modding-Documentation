@@ -17,23 +17,23 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Examples: `{ ... }` | 2609 ||
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Examples: `{ ... }` | 2372 ||
-| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | Examples: `[ HogRush Burp SelfMutilate ForceFeed Fartoom Mutilate Sk..., [ Propell Hadou...` | 14 ||
-| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | Examples: `[ BasicButcherMelee ], [ BasicDruidAbility ], [ BasicMonkMelee ]` | 14 ||
-| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | Examples: `[ int str lck ], [ con str lck ], [ cha int str ]` | 14 ||
-| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | Examples: `[ Putrefy NeverFull MainCourse FreshMeat Masochist Glutto..., [ SafeSwitching...` | 14 ||
-| [`stat_mods`](#object-stat_mods) | Object | Examples: `{ ... }` | 13 ||
-| [`ability_groups`](#object-ability_groups) | Object | Examples: `{ ... }` | 12 ||
-| [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | Examples: `[ SummonSquirrel SummonToad Encourage Protection SongOfSp..., [ Succ HogRush ...` | 12 ||
-| [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | Examples: `[ FalconPunch Exert Challenge Stoopzerk Grapple ThinkTooH..., [ DealWithTheDe...` | 6 ||
-| [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | Examples: `[ ElementalAttunement LatentEnergy MagicGuru One Two Four..., [ ShoulderCheck...` | 6 ||
-| [`innate_passives`](#object-innate_passives) | Object | Examples: `{ ... }` | 4 ||
-| [`innate_items`](#object-innate_items) | Object | Examples: `{ ... }` | 2 ||
-| [`move_pool`](./Arrays.md#array-move_pool) | Array | Examples: `[ DefaultMove ]` | 1 ||
-| [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | Examples: `[ Block LickHeal Dump ]` | 1 ||
-| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | Examples: `[ GainThorns ButtScoot Burst HireHitman ]` | 1 ||
-| [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | Examples: `[ Furious PressurePoints LateBloomer ZenkaiBoost ]` | 1 ||
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2609 ||
+| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 2372 ||
+| [`ability_pool`](./Arrays.md#array-ability_pool) | Array | An array of ability names available in the class's ability pool. | 14 ||
+| [`attack_pool`](./Arrays.md#array-attack_pool) | Array | An array of attack ability names available in the class's attack pool. | 14 ||
+| [`levelup_stats`](./Arrays.md#array-levelup_stats) | Array | An array of stat abbreviations that are randomly increased upon leveling up. | 14 ||
+| [`passive_pool`](./Arrays.md#array-passive_pool) | Array | An array of passive ability names available in the class's passive pool. | 14 ||
+| [`stat_mods`](#object-stat_mods) | Object | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. | 13 ||
+| [`ability_groups`](#object-ability_groups) | Object | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. | 12 ||
+| [`starter_abilities`](./Arrays.md#array-starter_abilities) | Array | An array of ability names that the class starts with at level 1. | 12 ||
+| [`complicated_abilities`](./Arrays.md#array-complicated_abilities) | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. | 6 ||
+| [`complicated_passives`](./Arrays.md#array-complicated_passives) | Array | An array of passive ability names flagged as complicated. | 6 ||
+| [`innate_passives`](#object-innate_passives) | Object | An object defining innate passive abilities or effects that the class always possesses. | 4 ||
+| [`innate_items`](#object-innate_items) | Object | An object specifying the class's starting equipment, with item slot names as keys. | 2 ||
+| [`move_pool`](./Arrays.md#array-move_pool) | Array | An array of movement ability names available to the class. | 1 ||
+| [`tutorial_levelup_active_pool`](./Arrays.md#array-tutorial_levelup_active_pool) | Array | An array of active ability names presented during tutorial level-up. | 1 ||
+| [`tutorial_levelup_active_pool_2`](./Arrays.md#array-tutorial_levelup_active_pool_2) | Array | An array of active ability names presented in a second tutorial level-up. | 1 ||
+| [`tutorial_levelup_passive_pool`](./Arrays.md#array-tutorial_levelup_passive_pool) | Array | An array of passive ability names presented during tutorial level-up. | 1 ||
 
 </details>
 
@@ -53,11 +53,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | Alternative animation sets for a cat class, defined as pairs of animation states and their replacements. | 47 ||
-| `palette` | Enum / Integer | Index or list of palette indices used for coloring the entity or its variations. | 34 ||
-| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Specifies the portrait face asset used for the class's HUD portrait. | 13 ||
-| [`default_face`](./Enums.md#enum-default_face) | Enum | Specifies the default facial expression displayed on the unit's sprite. | 1 ||
-| `hud_palette` | Number | Index of the palette used for the unit's HUD elements. | 1 ||
+| [`alt_animations`](./Arrays.md#array-alt_animations) | Array | An array of alternative animation state replacements, each as [state, animation_name]. | 47 ||
+| `palette` | Enum / Integer | Specifies the color palette index for the ability's visuals. | 34 ||
+| [`portrait_face`](./Enums.md#enum-portrait_face) | Enum | Specifies the portrait image to use for the class in the UI. | 13 ||
+| [`default_face`](./Enums.md#enum-default_face) | Enum | Specifies the default facial expression for the unit's portrait. | 1 ||
+| `hud_palette` | Number | The HUD color palette index used for the class's UI elements. | 1 ||
 
 </details>
 
@@ -77,8 +77,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](./Strings.md#string-name) | Enum | Examples: `"CAT_CLASS_MONK_NAME", "CAT_CLASS_BUTCHER_NAME", "CAT_CLASS_DRUID_NAME"` | 1611 ||
-| [`description`](./Strings.md#string-description) | String | Examples: `"CAT_CLASS_DRUID_DESC", "CAT_CLASS_MONK_DESC", "CAT_CLASS_BUTCHER_DESC"` | 14 ||
+| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1611 ||
+| [`description`](./Strings.md#string-description) | String | A string key for the localized description of the class. | 14 ||
 
 </details>
 
@@ -98,13 +98,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | Examples: `3, 2, -2` | 9 ||
-| `cha` | Enum / Integer | Examples: `3, 2, -1` | 7 ||
-| `int` | Enum / Integer | Examples: `4, 2, 1` | 6 ||
-| `spd` | Enum / Integer | Examples: `1, -1, -2` | 6 ||
-| `str` | Enum / Integer | Examples: `2, -1, -2` | 6 ||
-| `dex` | Enum / Integer | Examples: `3, -1` | 4 ||
-| `lck` | Enum / Integer | Examples: `2, -1, 1` | 4 ||
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 9 ||
+| `cha` | Enum / Integer | The Charisma stat value or modifier. | 7 ||
+| `int` | Enum / Integer | The Intelligence stat value or modifier. | 6 ||
+| `spd` | Enum / Integer | The Speed stat value or modifier. | 6 ||
+| `str` | Enum / Integer | The Strength stat value or modifier. | 6 ||
+| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 4 ||
+| `lck` | Enum / Integer | The Luck stat value or modifier. | 4 ||
 
 </details>
 
@@ -124,10 +124,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Arrays.md#array-attack) | Enum | Examples: `[ Fartoom Mutilate SkullBash Shred Chomp BodySlam SliceAn..., [ SquirrelSquad...` | 12 ||
-| [`misc`](./Arrays.md#array-misc) | Array | Examples: `[ SelfMutilate Succ Consume BloodMagic SmellBlood Vurp Li..., [ StoneFists Br...` | 12 ||
-| [`move`](./Arrays.md#array-move) | Enum | Examples: `[ DruidSwap FlowerFeet ThornyFeet RaccoonForm HydroPump C..., [ HogRush Trudg...` | 12 ||
-| [`defense`](./Arrays.md#array-defense) | Array | Examples: `[ SongOfSpring SummonTurtle PullToSafety Protection Safet..., [ Burp ForceFee...` | 10 ||
+| [`attack`](./Arrays.md#array-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 12 ||
+| [`misc`](./Arrays.md#array-misc) | Array | A list of ability names that do not fit into other categories. | 12 ||
+| [`move`](./Arrays.md#array-move) | Enum | Specifies the name of the class's default movement ability. | 12 ||
+| [`defense`](./Arrays.md#array-defense) | Array | An array of defensive ability names. | 10 ||
 
 </details>
 
@@ -147,11 +147,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`MonkStances`](./Arrays.md#array-monkstances) | Array | Examples: `[ BasicMonkMelee BasicMonkRanged ]` | 1 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
+| [`MonkStances`](./Arrays.md#array-monkstances) | Array | An array of stance ability names the Monk can switch between. | 1 ||
 | [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 1 | 5 |
-| [`SpawnOnBattleStart`](./Enums.md) | Enum | Specifies the object (e.g., Food, CharmedGamete) to spawn at the start of battle. | 1 | Crow |
-| [`TinkererBasicAttackSwitching`](#object-tinkererbasicattackswitching) | Object | Object containing craft_ability and throw_ability names, enabling the Tinkerer to switch between crafting and throwing basic attacks. | 1 ||
+| [`SpawnOnBattleStart`](./Enums.md) | Enum | Specifies the object that spawns adjacent to the unit at the start of battle. | 1 | Crow |
+| [`TinkererBasicAttackSwitching`](#object-tinkererbasicattackswitching) | Object | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 ||
 
 </details>
 
@@ -171,8 +171,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weapon`](./Enums.md#enum-weapon) | Enum | Examples: `MonkFist, ButcherHook` | 2 ||
-| [`trinket`](./Enums.md#enum-trinket) | Enum | Examples: `MonkStyleChanger` | 1 ||
+| [`weapon`](./Enums.md#enum-weapon) | Enum | The name of the weapon item the unit starts with. | 2 ||
+| [`trinket`](./Enums.md#enum-trinket) | Enum | The name of the trinket item the unit starts with. | 1 ||
 
 </details>
 
@@ -192,8 +192,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | Examples: `TinkererCraft` | 3 ||
-| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | Examples: `TinkererThrow` | 3 ||
+| [`craft_ability`](./Enums.md#enum-craft_ability) | Enum | The ability used for the craft action in the Tinkerer's basic attack switching. | 3 ||
+| [`throw_ability`](./Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 3 ||
 
 </details>
 

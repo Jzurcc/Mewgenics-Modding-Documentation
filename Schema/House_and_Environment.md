@@ -17,17 +17,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 2731 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| [`id`](./Enums.md#enum-id) | Enum | Specifies the unique identifier for the object or room, used for referencing or categorization. | 14 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather event. | 13 ||
-| [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | An array of element types that persist as hints during this weather (e.g., [Ice Wind]). | 12 ||
-| `height` | Integer | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 8 ||
-| [`reverb_empty`](#object-reverb_empty) | Object | Reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 ||
-| [`reverb_full`](#object-reverb_full) | Object | Reverb settings for a full room, including preset, amount, and volume adjustment. | 8 ||
-| `width` | Integer | The width of the room in grid tiles. | 8 ||
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame name used for interstitial room transition screens. | 3 ||
-| `amount` | Float | A scalar value for the strength or intensity of an ambient effect, or a percentage range. | 2 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2731 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 |  |
+| [`id`](./Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 14 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 ||
+| [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 ||
+| `height` | Integer | The height in tiles the target is launched into the air. | 8 ||
+| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 ||
+| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 8 ||
+| `width` | Integer | The number of tiles the room spans horizontally. | 8 ||
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 ||
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 ||
 | [`preset`](./Enums.md#enum-preset) | Enum || 2 ||
 | [`n`](./Arrays.md#array-n) | Array || 2 ||
 | [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object || 1 ||
@@ -49,7 +49,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`MediumHouse_SmallRoom`](Engine_LogicKeys.md#object-mediumhouse_smallroom) | Object || 1 ||
 | [`SmallAttic`](Engine_LogicKeys.md#object-smallattic) | Object || 1 ||
 | [`SmallHouse_Attic`](Engine_LogicKeys.md#object-smallhouse_attic) | Object || 1 ||
-| [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | An array defining additional collision planes that bound the room's playable area. | 1 ||
+| [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 ||
 | [`p`](./Arrays.md#array-p) | Array || 1 ||
 | [`Thunderstorm`](Engine_LogicKeys.md#object-thunderstorm) | Object || 1 ||
 
@@ -71,10 +71,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1695 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 750 ||
-| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Game-state flag identifiers for tracking world progression and event states. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1695 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 750 ||
+| [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Boolean | Inherits game-wide rule modifiers. You can utilize any key from the Engine Global Modifier Keys list here to alter overarching game mechanics (e.g., changing gravity or stamina costs). | 1 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -94,9 +94,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 66 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 23 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 66 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 23 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -134,10 +134,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the name of the tag to check for on the target. | 46 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 46 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 11 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 46 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 46 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 11 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -157,8 +157,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house type to set for the upgrade. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -178,9 +178,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`odds`](./Math_Equations.md) | Equation | (Must be float values) | 37 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 37 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 28 ||
+| [`odds`](./Math_Equations.md) | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 37 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 ||
 
 </details>
 
@@ -219,8 +219,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array / Integer || 31 ||
-| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 23 ||
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to (e.g., RoadTile, WaterTile). Can be a single tile or an array of tiles. | 7 ||
+| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 23 ||
+| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 ||
 | [`trap`](./Enums.md#enum-trap) | Enum || 2 ||
 
 </details>
@@ -241,7 +241,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 13 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 13 ||
 
 </details>
 
@@ -261,7 +261,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 ||
 </details>
 
 ---
@@ -280,7 +280,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | A scalar value for the strength or intensity of an ambient effect, or a percentage range. | 10 ||
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 ||
 | [`preset`](./Enums.md#enum-preset) | Enum || 10 ||
 | `volume_adjustment` | Float || 10 ||
 
@@ -302,7 +302,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | A scalar value for the strength or intensity of an ambient effect, or a percentage range. | 10 ||
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 ||
 | [`preset`](./Enums.md#enum-preset) | Enum || 10 ||
 
 </details>
@@ -323,8 +323,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the name of the tag to check for on the target. | 8 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 8 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 8 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 ||
 
 </details>
 
@@ -344,7 +344,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution. | 3 | |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 3 | |
 
 </details>
 
@@ -364,11 +364,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather event. | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | An array of particle system names to be used for this weather effect. | 1 ||
-| `prewarm` | Integer | The number of seconds to prewarm the particle system before displaying. | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Specifies the skybox visual frame to use for this weather. | 1 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -388,7 +388,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
 
 </details>
 
@@ -408,8 +408,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`follow_character_tag`](./Enums.md#enum-follow_character_tag) | Enum | The character tag this visual effect follows. | 2 ||
-| [`position`](./Arrays.md#array-position) | Array | The 2D position (x, y) or single-coordinate value for placement. | 2 ||
+| [`follow_character_tag`](./Enums.md#enum-follow_character_tag) | Enum | Determines which character this visual effect follows. | 2 ||
+| [`position`](./Arrays.md#array-position) | Array | The world-space coordinates for this object. | 2 ||
 
 </details>
 
@@ -429,8 +429,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AllStatsUp` | Enum / Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 1 ||
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | An object that executes inner effects if the target has the specified tag, else falls back. | 1 ||
+| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 ||
+| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 ||
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 ||
 </details> 
 
@@ -444,7 +444,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -455,7 +455,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -466,8 +466,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -478,7 +478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -489,8 +489,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -501,7 +501,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -512,7 +512,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -523,7 +523,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -534,8 +534,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Status and Passive Keys}` | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -546,7 +546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -557,7 +557,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| `{Damaging Keys}` | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 ||
 
 </details>
 
@@ -575,11 +575,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather event. | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | An array of particle system names to be used for this weather effect. | 1 ||
-| `prewarm` | Integer | The number of seconds to prewarm the particle system before displaying. | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Specifies the skybox visual frame to use for this weather. | 1 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -654,7 +654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 3 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 ||
 | `max_radius` | Float || 2 ||
 | [`min_radius`](./Enums.md#enum-min_radius) | Float || 2 ||
 | [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array || 2 ||
@@ -678,8 +678,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | References to status effect IDs and passive modifier IDs for application or checking. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 3 ||
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 0 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 ||
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 ||
 
 </details>
 
@@ -699,12 +699,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather event. | 1 ||
-| `lightning_fx` | Boolean | If true, enables lightning visual effects during the thunderstorm. | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | An array of particle system names to be used for this weather effect. | 1 ||
-| `prewarm` | Integer | The number of seconds to prewarm the particle system before displaying. | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Specifies the skybox visual frame to use for this weather. | 1 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 ||
+| `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -724,8 +724,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`faction`](./Enums.md#enum-faction) | Enum | Determines which faction the spawned entity belongs to, controlling its team allegiance and targeting behavior. | 1 ||
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 1 ||
+| [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 ||
 
 </details>
 
@@ -745,7 +745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 2 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 ||
 | [`number`](./Arrays.md#array-number) | Array / Integer || 1 ||
 
 </details>
@@ -766,9 +766,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 1 ||
-| [`elements`](./Arrays.md#array-elements) | Array | A list of elemental types applied to the damage instance, such as Heat or Fire, used for weaknesses, resistances, and visual effects. | 1 ||
-| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Properties for configuring damage instances (base damage, knockback, elements, accuracy, on-hit effects). Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 1 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 ||
+| [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Object | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 ||
 
 </details>
 
@@ -827,11 +827,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type for the adventure map (e.g., Snow, Rain, Windy, Thunderstorm). | 1 ||
-| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather event. | 1 ||
-| [`particles`](./Arrays.md#array-particles) | Array | An array of particle system names to be used for this weather effect. | 1 ||
-| `prewarm` | Integer | The number of seconds to prewarm the particle system before displaying. | 1 ||
-| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Specifies the skybox visual frame to use for this weather. | 1 ||
+| [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 ||
+| [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 ||
+| [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 ||
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 ||
+| [`skybox_frame`](./Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 ||
 
 </details>
 
@@ -892,8 +892,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -913,8 +913,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -934,8 +934,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -955,8 +955,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -976,8 +976,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -995,7 +995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the name of the tag to check for on the target. | 1 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 ||
 
 </details>
 
@@ -1015,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of times or items to generate, spawn, or apply. | 1 ||
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 ||
 
 </details>
 
@@ -1035,11 +1035,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 1 ||
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame name used for interstitial room transition screens. | 1 ||
-| [`reverb_empty`](#object-reverb_empty) | Object | Reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 ||
-| [`reverb_full`](#object-reverb_full) | Object | Reverb settings for a full room, including preset, amount, and volume adjustment. | 1 ||
-| `width` | Integer | The width of the room in grid tiles. | 1 ||
+| `height` | Integer | The height in tiles the target is launched into the air. | 1 ||
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 ||
+| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 ||
+| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 ||
+| `width` | Integer | The number of tiles the room spans horizontally. | 1 ||
 
 </details>
 
@@ -1059,11 +1059,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 1 ||
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame name used for interstitial room transition screens. | 1 ||
-| [`reverb_empty`](#object-reverb_empty) | Object | Reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 ||
-| [`reverb_full`](#object-reverb_full) | Object | Reverb settings for a full room, including preset, amount, and volume adjustment. | 1 ||
-| `width` | Integer | The width of the room in grid tiles. | 1 ||
+| `height` | Integer | The height in tiles the target is launched into the air. | 1 ||
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 ||
+| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 ||
+| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 ||
+| `width` | Integer | The number of tiles the room spans horizontally. | 1 ||
 
 </details>
 
@@ -1083,12 +1083,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | Maps auxiliary object names to their [x, y] coordinates in the house scene. | 1 ||
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies which placement frame to use for background decorations in the house. | 1 ||
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the movieclip identifier for the house background layer. | 1 ||
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the movieclip identifier for the house foreground layer. | 1 ||
-| [`room_positions`](#object-room_positions) | Object | Maps room names to their [x, y] grid positions within the house layout. | 1 ||
-| `zoomout_catvolume` | Float | The volume level for cat sounds when the camera is zoomed out, as a float. | 1 ||
+| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 ||
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 ||
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 ||
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 ||
+| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 ||
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 ||
 
 </details>
 
@@ -1108,12 +1108,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | Maps auxiliary object names to their [x, y] coordinates in the house scene. | 1 ||
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies which placement frame to use for background decorations in the house. | 1 ||
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the movieclip identifier for the house background layer. | 1 ||
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the movieclip identifier for the house foreground layer. | 1 ||
-| [`room_positions`](#object-room_positions) | Object | Maps room names to their [x, y] grid positions within the house layout. | 1 ||
-| `zoomout_catvolume` | Float | The volume level for cat sounds when the camera is zoomed out, as a float. | 1 ||
+| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 ||
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 ||
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 ||
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 ||
+| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 ||
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 ||
 
 </details>
 
@@ -1133,12 +1133,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | Maps auxiliary object names to their [x, y] coordinates in the house scene. | 1 ||
-| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies which placement frame to use for background decorations in the house. | 1 ||
-| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the movieclip identifier for the house background layer. | 1 ||
-| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the movieclip identifier for the house foreground layer. | 1 ||
-| [`room_positions`](#object-room_positions) | Object | Maps room names to their [x, y] grid positions within the house layout. | 1 ||
-| `zoomout_catvolume` | Float | The volume level for cat sounds when the camera is zoomed out, as a float. | 1 ||
+| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 ||
+| [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 ||
+| [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 ||
+| [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 ||
+| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 ||
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 ||
 
 </details>
 
@@ -1158,8 +1158,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house type to set for the upgrade. | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 ||
 
 </details>
 
@@ -1179,8 +1179,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -1200,8 +1200,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -1221,8 +1221,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house type to set for the upgrade. | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 ||
 
 </details>
 
@@ -1242,8 +1242,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -1263,11 +1263,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The maximum height in tiles that a unit is knocked up into the air (vertical displacement for knockback arcs). | 1 ||
-| [`id`](./Enums.md#enum-id) | Enum | Specifies the unique identifier for the object or room, used for referencing or categorization. | 1 ||
-| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame name used for interstitial room transition screens. | 1 ||
-| `width` | Integer | The width of the room in grid tiles. | 1 ||
-| [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | An array defining additional collision planes that bound the room's playable area. | 1 ||
+| `height` | Integer | The height in tiles the target is launched into the air. | 1 ||
+| [`id`](./Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 1 ||
+| [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 ||
+| `width` | Integer | The number of tiles the room spans horizontally. | 1 ||
+| [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 ||
 | [`n`](./Arrays.md#array-n) | Array || 1 ||
 
 </details>
@@ -1288,8 +1288,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](./Enums.md#enum-prereq) | Enum | The prerequisite upgrade that must be built before this basement upgrade is available. | 1 ||
-| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | The room type unlocked by this basement upgrade (e.g., Basement2, Attic). | 1 ||
+| [`prereq`](./Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 ||
+| [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 ||
 
 </details>
 
@@ -1311,7 +1311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `max_radius` | Float || 1 ||
 | `min_radius` | Float || 1 ||
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to (e.g., RoadTile, WaterTile). Can be a single tile or an array of tiles. | 1 ||
+| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 ||
 
 </details>
 

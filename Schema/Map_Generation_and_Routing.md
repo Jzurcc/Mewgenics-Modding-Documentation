@@ -17,28 +17,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 664 |  |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | Configures boss encounter properties, including type, rewards, and cutscene. | 131 ||
-| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Array` | Specifies the rare reward table or specific reward given. | 34 |  |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 664 |  |
+| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 131 ||
+| [`rare`](./Engine_EventKeys.md#valid-property-keys) | `Array` | Defines the rare reward block for a boss encounter. | 34 |  |
 | [`repeat`](./Enums.md#enum-repeat) | Enum |  | 33 |  |
 | [`special`](./Arrays.md#array-special) | Array || 29 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 27 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 27 ||
 | [`battle`](#object-battle) | Object || 25 ||
-| [`hard`](./Arrays.md#array-hard) | Array | Defines the reward and encounter parameters for the hard difficulty level. | 23 ||
+| [`hard`](./Arrays.md#array-hard) | Array | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 ||
 | [`miniboss`](./Arrays.md#array-miniboss) | Array || 23 ||
 | [`normal`](./Arrays.md#array-normal) | Array || 23 ||
 | [`event`](./Map_Generation_and_Routing.md#context-event) | Enum || 22 ||
 | [`level`](./Enums.md#enum-level) | Enum || 21 ||
 | [`folder`](./Enums.md#enum-folder) | Enum || 20 ||
-| [`easy`](./Arrays.md#array-easy) | Array | Defines the reward and encounter parameters for the easy difficulty level. | 20 ||
+| [`easy`](./Arrays.md#array-easy) | Array | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 ||
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum || 19 ||
-| [`include`](./Strings.md#string-include) | String | Examples: `"standard_nodes.gon"` | 19 ||
+| [`include`](./Strings.md#string-include) | String | Specifies the path to another file to include and merge into the current schema definition. | 19 ||
 | [`large`](./Arrays.md#array-large) | Array || 19 ||
 | [`medium`](./Arrays.md#array-medium) | Array || 19 ||
 | [`small`](./Arrays.md#array-small) | Array || 19 ||
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 15 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 15 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 12 ||
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 9 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 9 ||
 | [`time_machine`](#object-time_machine) | Object || 4 ||
 | [`dimensionx`](#object-dimensionx) | Object || 3 ||
 | [`meatworld`](#object-meatworld) | Object || 3 ||
@@ -59,17 +59,17 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`caves`](#object-caves) | Object || 3 ||
 | [`junkyard`](#object-junkyard) | Object || 3 ||
 | [`jestercat`](./Enums.md#enum-jestercat) | Enum || 3 ||
-| [`exit1`](#object-exit1) | Object | Defines the properties of the second exit node on a map, such as its type, destination, and locked state. | 3 ||
-| [`BothObelisksUnlocked`](Engine_LogicKeys.md#object-bothobelisksunlocked) | Object | Applies or references the 'BothObelisksUnlocked' effect/state. | 2 ||
-| [`MeatWorldUnlocked`](Engine_LogicKeys.md#object-meatworldunlocked) | Object | Applies or references the 'MeatWorldUnlocked' effect/state. | 2 ||
-| [`DimensionXUnlocked`](Engine_LogicKeys.md#object-dimensionxunlocked) | Object | Applies or references the 'DimensionXUnlocked' effect/state. | 2 ||
-| [`EndOfTimeUnlocked`](Engine_LogicKeys.md#object-endoftimeunlocked) | Object | Applies or references the 'EndOfTimeUnlocked' effect/state. | 2 ||
-| [`hard_initial`](#object-hard_initial) | Object | Defines initial properties for the hard path node, such as type and locked state. | 2 ||
-| [`HardPathUnlocked`](Engine_LogicKeys.md#object-hardpathunlocked) | Object | Applies or references the 'HardPathUnlocked' effect/state. | 2 ||
-| [`VolcanoAntennaAttached`](Engine_LogicKeys.md#object-volcanoantennaattached) | Object | Applies or references the 'VolcanoAntennaAttached' effect/state. | 2 ||
+| [`exit1`](#object-exit1) | Object | An object defining the properties of the second exit from this node. | 3 ||
+| [`BothObelisksUnlocked`](Engine_LogicKeys.md#object-bothobelisksunlocked) | Object | Configures the map event and art when both obelisks have been unlocked. | 2 ||
+| [`MeatWorldUnlocked`](Engine_LogicKeys.md#object-meatworldunlocked) | Object | Configures the map event and routes when MeatWorld is initially unlocked. | 2 ||
+| [`DimensionXUnlocked`](Engine_LogicKeys.md#object-dimensionxunlocked) | Object | Configures the map event and art when Dimension X is unlocked. | 2 ||
+| [`EndOfTimeUnlocked`](Engine_LogicKeys.md#object-endoftimeunlocked) | Object | Configures the map event and route visibility when End of Time is unlocked. | 2 ||
+| [`hard_initial`](#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 2 ||
+| [`HardPathUnlocked`](Engine_LogicKeys.md#object-hardpathunlocked) | Object | Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false. | 2 ||
+| [`VolcanoAntennaAttached`](Engine_LogicKeys.md#object-volcanoantennaattached) | Object | Configures the map event and art when the Volcano Antenna has been attached. | 2 ||
 | [`treasure`](#object-treasure) | Object || 1 ||
-| [`CoreObeliskUnlocked`](Engine_LogicKeys.md#object-coreobeliskunlocked) | Object | Applies or references the 'CoreObeliskUnlocked' effect/state. | 1 ||
-| [`MoonObeliskUnlocked`](Engine_LogicKeys.md#object-moonobeliskunlocked) | Object | Applies or references the 'MoonObeliskUnlocked' effect/state. | 1 ||
+| [`CoreObeliskUnlocked`](Engine_LogicKeys.md#object-coreobeliskunlocked) | Object | Configures the map event and art when the Core Obelisk is raised and unlocked. | 1 ||
+| [`MoonObeliskUnlocked`](Engine_LogicKeys.md#object-moonobeliskunlocked) | Object | Configures the map event and art when the Moon Obelisk is raised and unlocked. | 1 ||
 | [`queenhippo`](./Enums.md#enum-queenhippo) | Enum || 1 ||
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum || 1 ||
 | [`fightercat`](./Enums.md#enum-fightercat) | Enum || 1 ||
@@ -88,52 +88,52 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`zodiac`](./Enums.md#enum-zodiac) | Enum || 1 ||
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum || 1 ||
 | `advance` | Number || 1 ||
-| [`BoneyardUnlocked`](Engine_LogicKeys.md#object-boneyardunlocked) | Object | Applies or references the 'BoneyardUnlocked' effect/state. | 1 ||
-| [`BunkerUnlocked`](Engine_LogicKeys.md#object-bunkerunlocked) | Object | Applies or references the 'BunkerUnlocked' effect/state. | 1 ||
+| [`BoneyardUnlocked`](Engine_LogicKeys.md#object-boneyardunlocked) | Object | Unlocks an exit route to the Boneyard on the map. | 1 ||
+| [`BunkerUnlocked`](Engine_LogicKeys.md#object-bunkerunlocked) | Object | Unlocks an exit route to the Bunker on the map. | 1 ||
 | [`cancreeper`](./Enums.md#enum-cancreeper) | Enum || 1 ||
 | [`cavecatfamily`](./Enums.md#enum-cavecatfamily) | Enum || 1 ||
-| [`CavesUnlocked`](Engine_LogicKeys.md#object-cavesunlocked) | Object | Applies or references the 'CavesUnlocked' effect/state. | 1 ||
+| [`CavesUnlocked`](Engine_LogicKeys.md#object-cavesunlocked) | Object | Unlocks an exit route to the Caves on the map. | 1 ||
 | [`cerberubs`](./Enums.md#enum-cerberubs) | Enum || 1 ||
-| [`ChaosAntennaAttached`](Engine_LogicKeys.md#object-chaosantennaattached) | Object | Applies or references the 'ChaosAntennaAttached' effect/state. | 1 ||
+| [`ChaosAntennaAttached`](Engine_LogicKeys.md#object-chaosantennaattached) | Object | Configures the map event and art when the Chaos Antenna has been attached. | 1 ||
 | [`clericcat`](./Enums.md#enum-clericcat) | Enum || 1 ||
-| [`CoreUnlocked`](Engine_LogicKeys.md#object-coreunlocked) | Object | Applies or references the 'CoreUnlocked' effect/state. | 1 ||
-| [`CraterUnlocked`](Engine_LogicKeys.md#object-craterunlocked) | Object | Applies or references the 'CraterUnlocked' effect/state. | 1 ||
+| [`CoreUnlocked`](Engine_LogicKeys.md#object-coreunlocked) | Object | Unlocks an exit route to the Core on the map. | 1 ||
+| [`CraterUnlocked`](Engine_LogicKeys.md#object-craterunlocked) | Object | Unlocks an exit route to the Crater on the map. | 1 ||
 | [`dinocouple`](./Enums.md#enum-dinocouple) | Enum || 1 ||
 | [`drmangler`](./Enums.md#enum-drmangler) | Enum || 1 ||
 | [`druidcat`](./Enums.md#enum-druidcat) | Enum || 1 ||
 | [`exit_desert`](#object-exit_desert) | Object || 1 ||
 | [`exit_lab`](#object-exit_lab) | Object || 1 ||
-| [`FutureUnlocked`](Engine_LogicKeys.md#object-futureunlocked) | Object | Applies or references the 'FutureUnlocked' effect/state. | 1 ||
-| [`GenFlag_Boss_Spewer`](Engine_LogicKeys.md#object-genflag_boss_spewer) | Object | Applies or references the 'GenFlag_Boss_Spewer' effect/state. | 1 ||
-| [`GenFlag_Boss_Stacy`](Engine_LogicKeys.md#object-genflag_boss_stacy) | Object | Applies or references the 'GenFlag_Boss_Stacy' effect/state. | 1 ||
+| [`FutureUnlocked`](Engine_LogicKeys.md#object-futureunlocked) | Object | Configures the map event and art when the Future is unlocked. | 1 ||
+| [`GenFlag_Boss_Spewer`](Engine_LogicKeys.md#object-genflag_boss_spewer) | Object | Configures the boss encounter event for the Spewer boss on the map. | 1 ||
+| [`GenFlag_Boss_Stacy`](Engine_LogicKeys.md#object-genflag_boss_stacy) | Object | Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map. | 1 ||
 | `head_start` | Number || 1 ||
 | [`home`](Events_and_Encounters.md#object-home) | Object || 1 ||
 | [`huntercat`](./Enums.md#enum-huntercat) | Enum || 1 ||
-| [`IceAgeUnlocked`](Engine_LogicKeys.md#object-iceageunlocked) | Object | Applies or references the 'IceAgeUnlocked' effect/state. | 1 ||
+| [`IceAgeUnlocked`](Engine_LogicKeys.md#object-iceageunlocked) | Object | Configures the map event and art when Ice Age is unlocked. | 1 ||
 | [`iceelemental`](./Enums.md#enum-iceelemental) | Enum || 1 ||
 | [`infestedduo`](./Enums.md#enum-infestedduo) | Enum || 1 ||
-| [`JunkyardUnlocked`](Engine_LogicKeys.md#object-junkyardunlocked) | Object | Applies or references the 'JunkyardUnlocked' effect/state. | 1 ||
-| [`JurassicUnlocked`](Engine_LogicKeys.md#object-jurassicunlocked) | Object | Applies or references the 'JurassicUnlocked' effect/state. | 1 ||
+| [`JunkyardUnlocked`](Engine_LogicKeys.md#object-junkyardunlocked) | Object | Unlocks an exit route to the Junkyard on the map. | 1 ||
+| [`JurassicUnlocked`](Engine_LogicKeys.md#object-jurassicunlocked) | Object | Unlocks an exit route to the Jurassic area on the map. | 1 ||
 | [`lenny`](./Enums.md#enum-lenny) | Enum || 1 ||
 | [`lightningelemental`](./Enums.md#enum-lightningelemental) | Enum || 1 ||
 | `locked` | Boolean || 1 ||
 | [`mamamaggot`](./Enums.md#enum-mamamaggot) | Enum || 1 ||
-| [`MeatWorldUnlockedFull`](Engine_LogicKeys.md#object-meatworldunlockedfull) | Object | Applies or references the 'MeatWorldUnlockedFull' effect/state. | 1 ||
-| [`miniboss_event`](#object-miniboss_event) | Object | Defines a miniboss event node, specifying its type and level. | 1 ||
-| [`MoonUnlocked`](Engine_LogicKeys.md#object-moonunlocked) | Object | Applies or references the 'MoonUnlocked' effect/state. | 1 ||
+| [`MeatWorldUnlockedFull`](Engine_LogicKeys.md#object-meatworldunlockedfull) | Object | Unlocks hidden battle and hard nodes within the MeatWorld area on the map. | 1 ||
+| [`miniboss_event`](#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 1 ||
+| [`MoonUnlocked`](Engine_LogicKeys.md#object-moonunlocked) | Object | Unlocks an exit route to the Moon on the map. | 1 ||
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum || 1 ||
 | [`mw_altar`](#object-mw_altar) | Object || 1 ||
-| [`mw_battle1`](#object-mw_battle1) | Object | Defines a battle node on the Meat World map, with properties like type, hidden status, and music override. | 1 ||
-| [`mw_boss`](#object-mw_boss) | Object | Defines a boss encounter node on the Meat World map, with properties for cutscene and music. | 1 ||
-| [`mw_earlyhome`](#object-mw_earlyhome) | Object | Defines an early home node on the Meat World map, typically hidden or used for early access. | 1 ||
-| [`mw_event1`](#object-mw_event1) | Object | Defines an event node on the Meat World map, with properties like type and hidden status. | 1 ||
-| [`mw_hard1`](#object-mw_hard1) | Object | Defines a hard difficulty battle node on the Meat World map, with optional music layer override. | 1 ||
-| [`mw_home`](#object-mw_home) | Object | Defines a home node on the Meat World map, with properties for type and visibility. | 1 ||
-| [`mw_quest_event`](#object-mw_quest_event) | Object | Defines a quest event node on the Meat World map, with overrides for level and art. | 1 ||
-| [`mw_treasure`](#object-mw_treasure) | Object | Defines a treasure node on the Meat World map, with type and hidden status. | 1 ||
+| [`mw_battle1`](#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 1 ||
+| [`mw_boss`](#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 1 ||
+| [`mw_earlyhome`](#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 1 ||
+| [`mw_event1`](#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 1 ||
+| [`mw_hard1`](#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 1 ||
+| [`mw_home`](#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 1 ||
+| [`mw_quest_event`](#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 1 ||
+| [`mw_treasure`](#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 1 ||
 | [`ratking`](./Enums.md#enum-ratking) | Enum || 1 ||
 | [`rockybobo`](./Enums.md#enum-rockybobo) | Enum || 1 ||
-| [`SewersUnlocked`](Engine_LogicKeys.md#object-sewersunlocked) | Object | Applies or references the 'SewersUnlocked' effect/state. | 1 ||
+| [`SewersUnlocked`](Engine_LogicKeys.md#object-sewersunlocked) | Object | Unlocks an exit route to the Sewers on the map. | 1 ||
 | [`shop_cheapwater`](#object-shop_cheapwater) | Object || 1 ||
 | [`shop_water`](#object-shop_water) | Object || 1 ||
 | [`slime`](./Enums.md#enum-slime) | Enum || 1 ||
@@ -141,10 +141,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`stacy`](./Enums.md#enum-stacy) | Enum || 1 ||
 | [`tankcat`](./Enums.md#enum-tankcat) | Enum || 1 ||
 | [`thebloat`](./Enums.md#enum-thebloat) | Enum || 1 ||
-| [`TheEndUnlocked`](Engine_LogicKeys.md#object-theendunlocked) | Object | Applies or references the 'TheEndUnlocked' effect/state. | 1 ||
-| [`ThrobbingArteryDone`](Engine_LogicKeys.md#object-throbbingarterydone) | Object | Applies or references the 'ThrobbingArteryDone' effect/state. | 1 ||
+| [`TheEndUnlocked`](Engine_LogicKeys.md#object-theendunlocked) | Object | An object that stores flags related to unlocking the 'The End' chapter. | 1 ||
+| [`ThrobbingArteryDone`](Engine_LogicKeys.md#object-throbbingarterydone) | Object | An object that stores flags related to completing the Throbbing Artery quest. | 1 ||
 | [`trampy`](./Enums.md#enum-trampy) | Enum || 1 ||
-| [`WallOfFleshDone`](Engine_LogicKeys.md#object-walloffleshdone) | Object | Applies or references the 'WallOfFleshDone' effect/state. | 1 ||
+| [`WallOfFleshDone`](Engine_LogicKeys.md#object-walloffleshdone) | Object | An object that stores flags related to completing the Wall of Flesh quest. | 1 ||
 | [`weather_event`](#object-weather_event) | Object || 1 ||
 | [`choose_one`](./Arrays.md#array-choose_one) | Array || 1 ||
 | [`nemesis`](./Arrays.md#array-nemesis) | Array || 1 ||
@@ -168,7 +168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 19 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 19 ||
 | [`boss_cutscene`](./Enums.md#enum-boss_cutscene) | Enum || 16 ||
 | `is_final_boss` | Boolean || 2 ||
 | [`level`](./Enums.md#enum-level) | Enum || 2 ||
@@ -197,7 +197,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `locked` | Boolean || 17 ||
 | [`next_map`](./Enums.md#enum-next_map) | Enum || 15 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 15 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 15 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 15 ||
 | `hidden` | Boolean || 10 ||
 
 </details>
@@ -220,7 +220,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 24 ||
 | [`level`](./Enums.md#enum-level) | Enum || 19 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 11 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 ||
 
 </details>
 
@@ -243,7 +243,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `locked` | Boolean || 5 ||
 | [`next_map`](./Enums.md#enum-next_map) | Enum || 3 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 3 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 3 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 3 ||
 
 </details>
 
@@ -264,7 +264,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `locked` | Boolean || 4 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 2 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 ||
 
 </details>
 
@@ -286,7 +286,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 4 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 4 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 4 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 4 ||
 
 </details>
 
@@ -306,7 +306,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 2 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 ||
 
 </details>
 
@@ -326,7 +326,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 2 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 ||
 
 </details>
 
@@ -346,7 +346,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 2 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 ||
 
 </details>
 
@@ -366,7 +366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`hard_initial`](#object-hard_initial) | Object | Defines initial properties for the hard path node, such as type and locked state. | 2 ||
+| [`hard_initial`](#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 2 ||
 
 </details>
 
@@ -386,8 +386,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 2 ||
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 2 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 ||
 
 </details>
 
@@ -407,7 +407,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 2 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 ||
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
 
 </details>
@@ -429,7 +429,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 2 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -452,7 +452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hidden` | Boolean || 2 ||
 | [`boss_cutscene`](./Enums.md#enum-boss_cutscene) | Enum || 1 ||
 | [`override_music`](./Enums.md#enum-override_music) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -473,7 +473,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -494,7 +494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 2 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -516,7 +516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 2 ||
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -537,7 +537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 2 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -560,7 +560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `hidden` | Boolean || 2 ||
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -581,7 +581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `hidden` | Boolean || 2 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -601,7 +601,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 2 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 ||
 
 </details>
 
@@ -621,7 +621,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -641,7 +641,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -661,7 +661,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -681,7 +681,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -701,7 +701,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -721,7 +721,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -741,7 +741,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -761,7 +761,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](#object-exit1) | Object | Defines the properties of the second exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit1`](#object-exit1) | Object | An object defining the properties of the second exit from this node. | 1 ||
 
 </details>
 
@@ -822,7 +822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -846,7 +846,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `locked` | Boolean || 1 ||
 | [`next_map`](./Enums.md#enum-next_map) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -870,7 +870,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `locked` | Boolean || 1 ||
 | [`next_map`](./Enums.md#enum-next_map) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -910,7 +910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -930,7 +930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | Configures boss encounter properties, including type, rewards, and cutscene. | 1 ||
+| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 1 ||
 
 </details>
 
@@ -950,8 +950,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | Configures boss encounter properties, including type, rewards, and cutscene. | 1 ||
-| [`miniboss_event`](#object-miniboss_event) | Object | Defines a miniboss event node, specifying its type and level. | 1 ||
+| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 1 ||
+| [`miniboss_event`](#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 1 ||
 
 </details>
 
@@ -971,7 +971,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1011,7 +1011,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -1031,7 +1031,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](#object-exit1) | Object | Defines the properties of the second exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit1`](#object-exit1) | Object | An object defining the properties of the second exit from this node. | 1 ||
 
 </details>
 
@@ -1071,7 +1071,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -1091,14 +1091,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mw_battle1`](#object-mw_battle1) | Object | Defines a battle node on the Meat World map, with properties like type, hidden status, and music override. | 1 ||
-| [`mw_boss`](#object-mw_boss) | Object | Defines a boss encounter node on the Meat World map, with properties for cutscene and music. | 1 ||
-| [`mw_earlyhome`](#object-mw_earlyhome) | Object | Defines an early home node on the Meat World map, typically hidden or used for early access. | 1 ||
-| [`mw_event1`](#object-mw_event1) | Object | Defines an event node on the Meat World map, with properties like type and hidden status. | 1 ||
-| [`mw_hard1`](#object-mw_hard1) | Object | Defines a hard difficulty battle node on the Meat World map, with optional music layer override. | 1 ||
-| [`mw_home`](#object-mw_home) | Object | Defines a home node on the Meat World map, with properties for type and visibility. | 1 ||
-| [`mw_quest_event`](#object-mw_quest_event) | Object | Defines a quest event node on the Meat World map, with overrides for level and art. | 1 ||
-| [`mw_treasure`](#object-mw_treasure) | Object | Defines a treasure node on the Meat World map, with type and hidden status. | 1 ||
+| [`mw_battle1`](#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 1 ||
+| [`mw_boss`](#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 1 ||
+| [`mw_earlyhome`](#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 1 ||
+| [`mw_event1`](#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 1 ||
+| [`mw_hard1`](#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 1 ||
+| [`mw_home`](#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 1 ||
+| [`mw_quest_event`](#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 1 ||
+| [`mw_treasure`](#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 1 ||
 
 </details>
 
@@ -1118,7 +1118,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -1138,7 +1138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -1160,7 +1160,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1180,7 +1180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -1202,7 +1202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1224,7 +1224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
 | [`override_art`](./Enums.md#enum-override_art) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1244,7 +1244,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1284,7 +1284,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](#object-exit0) | Object | Defines the properties of the first exit node on a map, such as its type, destination, and locked state. | 1 ||
+| [`exit0`](#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 ||
 
 </details>
 
@@ -1304,7 +1304,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -1325,7 +1325,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 
@@ -1345,7 +1345,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](#object-quest_event) | Object | Defines a quest-related event node on the map, specifying the quest level and optional art override. | 1 ||
+| [`quest_event`](#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 ||
 
 </details>
 
@@ -1366,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`level`](./Enums.md#enum-level) | Enum || 1 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification type. | 1 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 ||
 
 </details>
 

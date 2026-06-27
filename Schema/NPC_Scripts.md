@@ -15,491 +15,491 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | Examples: `{ ... }` | 239 ||
-| [`tooltip`](./NPC_Scripts.md#context-tooltip) | Enum | Examples: `{ ... }` | 161 ||
-| [`states`](Miscellaneous.md#object-states) | Object | Examples: `{ ... }` | 12 ||
-| [`transitions`](Miscellaneous.md#object-transitions) | Object | Examples: `{ ... }` | 12 ||
-| [`unprompted`](Miscellaneous.md#object-unprompted) | Object | Examples: `{ ... }` | 8 ||
-| [`also`](Miscellaneous.md#object-also) | Object | Examples: `{ ... }` | 8 ||
-| [`unknown`](Miscellaneous.md#object-unknown) | Object | Examples: `{ ... }` | 8 ||
-| [`hide_text`](Miscellaneous.md#object-hide_text) | Object | Examples: `{ ... }` | 4 ||
-| [`purchase_item`](Miscellaneous.md#object-purchase_item) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_a`](Miscellaneous.md#object-unprompted_a) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_b`](Miscellaneous.md#object-unprompted_b) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_c`](Miscellaneous.md#object-unprompted_c) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_d`](Miscellaneous.md#object-unprompted_d) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_e`](Miscellaneous.md#object-unprompted_e) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_f`](Miscellaneous.md#object-unprompted_f) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_g`](Miscellaneous.md#object-unprompted_g) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_h`](Miscellaneous.md#object-unprompted_h) | Object | Examples: `{ ... }` | 4 ||
-| [`unprompted_i`](Miscellaneous.md#object-unprompted_i) | Object | Examples: `{ ... }` | 4 ||
-| [`cant_afford`](Miscellaneous.md#object-cant_afford) | Object | Examples: `{ ... }` | 3 ||
-| [`forward_to_tips`](Miscellaneous.md#object-forward_to_tips) | Object | Examples: `{ ... }` | 3 ||
-| [`out_of_stock`](Miscellaneous.md#object-out_of_stock) | Object | Examples: `{ ... }` | 3 ||
-| [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object | Examples: `{ ... }` | 2 ||
-| [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object | Examples: `{ ... }` | 2 ||
-| [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object | Examples: `{ ... }` | 2 ||
-| [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object | Examples: `{ ... }` | 2 ||
-| [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object | Examples: `{ ... }` | 2 ||
-| [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade3`](Miscellaneous.md#object-organ_upgrade3) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade4`](Miscellaneous.md#object-organ_upgrade4) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object | Examples: `{ ... }` | 2 ||
-| [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object | Examples: `{ ... }` | 2 ||
-| [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_max_intro`](Miscellaneous.md#object-tink_max_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_max_repeating`](Miscellaneous.md#object-tink_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_prettybow`](Miscellaneous.md#object-tink_prettybow) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_relationships`](Miscellaneous.md#object-tink_relationships) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_sexuality`](Miscellaneous.md#object-tink_sexuality) | Object | Examples: `{ ... }` | 2 ||
-| [`tink_tags`](Miscellaneous.md#object-tink_tags) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_blankcollar1`](Miscellaneous.md#object-tracy_blankcollar1) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_blankcollar2`](Miscellaneous.md#object-tracy_blankcollar2) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_blankcollar3`](Miscellaneous.md#object-tracy_blankcollar3) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage1`](Miscellaneous.md#object-tracy_foodstorage1) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage10`](Miscellaneous.md#object-tracy_foodstorage10) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage2`](Miscellaneous.md#object-tracy_foodstorage2) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage3`](Miscellaneous.md#object-tracy_foodstorage3) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage4`](Miscellaneous.md#object-tracy_foodstorage4) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage5`](Miscellaneous.md#object-tracy_foodstorage5) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage6`](Miscellaneous.md#object-tracy_foodstorage6) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage7`](Miscellaneous.md#object-tracy_foodstorage7) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage8`](Miscellaneous.md#object-tracy_foodstorage8) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_foodstorage9`](Miscellaneous.md#object-tracy_foodstorage9) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol1`](Miscellaneous.md#object-tracy_idol1) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol2`](Miscellaneous.md#object-tracy_idol2) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol3`](Miscellaneous.md#object-tracy_idol3) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol4`](Miscellaneous.md#object-tracy_idol4) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol5`](Miscellaneous.md#object-tracy_idol5) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol6`](Miscellaneous.md#object-tracy_idol6) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_idol7`](Miscellaneous.md#object-tracy_idol7) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_max_intro`](Miscellaneous.md#object-tracy_max_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`tracy_max_repeating`](Miscellaneous.md#object-tracy_max_repeating) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_1`](Miscellaneous.md#object-upgrade_storage_1) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_2`](Miscellaneous.md#object-upgrade_storage_2) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_3`](Miscellaneous.md#object-upgrade_storage_3) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_4`](Miscellaneous.md#object-upgrade_storage_4) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_5`](Miscellaneous.md#object-upgrade_storage_5) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_6`](Miscellaneous.md#object-upgrade_storage_6) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_7`](Miscellaneous.md#object-upgrade_storage_7) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_repeating_crazy`](Miscellaneous.md#object-upgrade_storage_repeating_crazy) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_repeating_hard`](Miscellaneous.md#object-upgrade_storage_repeating_hard) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object | Examples: `{ ... }` | 2 ||
-| [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object | Examples: `{ ... }` | 2 ||
-| [`beanies_bombquest_2`](Miscellaneous.md#object-beanies_bombquest_2) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_3`](Miscellaneous.md#object-beanies_bombquest_3) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofblood`](Miscellaneous.md#object-beanies_bombquest_fail_jarofblood) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofchaos`](Miscellaneous.md#object-beanies_bombquest_fail_jarofchaos) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_amnesia`](Miscellaneous.md#object-beanies_bombquest_amnesia) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_begin`](Miscellaneous.md#object-beanies_bombquest_begin) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_jarofradiation`](Miscellaneous.md#object-beanies_bombquest_fail_jarofradiation) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_bombquest_fail_nuke`](Miscellaneous.md#object-beanies_bombquest_fail_nuke) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_future_intro`](Miscellaneous.md#object-beanies_future_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_jurassic_intro`](Miscellaneous.md#object-beanies_jurassic_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_lab_intro`](Miscellaneous.md#object-beanies_lab_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_theend_intro`](Miscellaneous.md#object-beanies_theend_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_boneyard_intro`](Miscellaneous.md#object-butch_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_jester`](Miscellaneous.md#object-class_unlock_jester) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_caves_intro`](Miscellaneous.md#object-frank_caves_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_ending`](Miscellaneous.md#object-frank_ending) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_desert_intro`](Miscellaneous.md#object-jack_desert_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_boneyard_intro`](Miscellaneous.md#object-organ_boneyard_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_throbbingdomain_intro`](Miscellaneous.md#object-organ_throbbingdomain_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_postendgame`](Miscellaneous.md#object-steven_postendgame) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_begin_accepting_cats`](Miscellaneous.md#object-beanies_begin_accepting_cats) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_hitler3`](Miscellaneous.md#object-beanies_hitler3) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_hitler3_defeat`](Miscellaneous.md#object-beanies_hitler3_defeat) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_iloveyou`](Miscellaneous.md#object-beanies_iloveyou) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_infinite_intro`](Miscellaneous.md#object-beanies_infinite_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_quest_complete`](Miscellaneous.md#object-beanies_quest_complete) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_quest_fail`](Miscellaneous.md#object-beanies_quest_fail) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_rift_intro`](Miscellaneous.md#object-beanies_rift_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_screenshake_test`](Miscellaneous.md#object-beanies_screenshake_test) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_seefuture`](Miscellaneous.md#object-beanies_seefuture) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_seetheend`](Miscellaneous.md#object-beanies_seetheend) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_terminator1_defeat`](Miscellaneous.md#object-beanies_terminator1_defeat) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_terminator2_defeat`](Miscellaneous.md#object-beanies_terminator2_defeat) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_timemachine_2`](Miscellaneous.md#object-beanies_timemachine_2) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_timemachine_intro`](Miscellaneous.md#object-beanies_timemachine_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_vscreator1`](Miscellaneous.md#object-beanies_vscreator1) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_vscreator2`](Miscellaneous.md#object-beanies_vscreator2) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_vscreator3`](Miscellaneous.md#object-beanies_vscreator3) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_vscreator4`](Miscellaneous.md#object-beanies_vscreator4) | Object | Examples: `{ ... }` | 1 ||
-| [`beanies_vscreatorintro`](Miscellaneous.md#object-beanies_vscreatorintro) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_AI`](Miscellaneous.md#object-beaniesquest_complete_ai) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_AirHorn`](Miscellaneous.md#object-beaniesquest_complete_airhorn) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_AngryFace`](Miscellaneous.md#object-beaniesquest_complete_angryface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_AnimalHands`](Miscellaneous.md#object-beaniesquest_complete_animalhands) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_BubbleBoy`](Miscellaneous.md#object-beaniesquest_complete_bubbleboy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_ChadImplant`](Miscellaneous.md#object-beaniesquest_complete_chadimplant) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_ChaosDevice`](Miscellaneous.md#object-beaniesquest_complete_chaosdevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_complete_dimensionaldivider) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_DiseaseJar`](Miscellaneous.md#object-beaniesquest_complete_diseasejar) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_complete_experimentaltreatment) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_FartFace`](Miscellaneous.md#object-beaniesquest_complete_fartface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_FigLeaf`](Miscellaneous.md#object-beaniesquest_complete_figleaf) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_Generic`](Miscellaneous.md#object-beaniesquest_complete_generic) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_GlassCannon`](Miscellaneous.md#object-beaniesquest_complete_glasscannon) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_HardPill`](Miscellaneous.md#object-beaniesquest_complete_hardpill) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_HiveMind`](Miscellaneous.md#object-beaniesquest_complete_hivemind) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_MagicMirror`](Miscellaneous.md#object-beaniesquest_complete_magicmirror) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_MeStone`](Miscellaneous.md#object-beaniesquest_complete_mestone) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_MultilinkCable`](Miscellaneous.md#object-beaniesquest_complete_multilinkcable) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_MysteriousDice`](Miscellaneous.md#object-beaniesquest_complete_mysteriousdice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_complete_mysteriousglasses) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_NDEDevice`](Miscellaneous.md#object-beaniesquest_complete_ndedevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_NuclearKnife`](Miscellaneous.md#object-beaniesquest_complete_nuclearknife) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_complete_partiallobotomy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_PartyDetonator`](Miscellaneous.md#object-beaniesquest_complete_partydetonator) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_PersonalHeater`](Miscellaneous.md#object-beaniesquest_complete_personalheater) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_complete_persuasiondevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_PrincessHat`](Miscellaneous.md#object-beaniesquest_complete_princesshat) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_RealityScrambler`](Miscellaneous.md#object-beaniesquest_complete_realityscrambler) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_Redacted`](Miscellaneous.md#object-beaniesquest_complete_redacted) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_SpiderInjector`](Miscellaneous.md#object-beaniesquest_complete_spiderinjector) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_Stopwatch`](Miscellaneous.md#object-beaniesquest_complete_stopwatch) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_StorageLocker`](Miscellaneous.md#object-beaniesquest_complete_storagelocker) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_TheIOU`](Miscellaneous.md#object-beaniesquest_complete_theiou) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_TheLoner`](Miscellaneous.md#object-beaniesquest_complete_theloner) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_Trapfest99`](Miscellaneous.md#object-beaniesquest_complete_trapfest99) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_complete_UltraVision3000`](Miscellaneous.md#object-beaniesquest_complete_ultravision3000) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_AI`](Miscellaneous.md#object-beaniesquest_fail_ai) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_AirHorn`](Miscellaneous.md#object-beaniesquest_fail_airhorn) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_AngryFace`](Miscellaneous.md#object-beaniesquest_fail_angryface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_AnimalHands`](Miscellaneous.md#object-beaniesquest_fail_animalhands) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_BubbleBoy`](Miscellaneous.md#object-beaniesquest_fail_bubbleboy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_ChadImplant`](Miscellaneous.md#object-beaniesquest_fail_chadimplant) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_ChaosDevice`](Miscellaneous.md#object-beaniesquest_fail_chaosdevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_fail_dimensionaldivider) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_DiseaseJar`](Miscellaneous.md#object-beaniesquest_fail_diseasejar) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_fail_experimentaltreatment) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_FartFace`](Miscellaneous.md#object-beaniesquest_fail_fartface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_FigLeaf`](Miscellaneous.md#object-beaniesquest_fail_figleaf) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_Generic`](Miscellaneous.md#object-beaniesquest_fail_generic) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_GlassCannon`](Miscellaneous.md#object-beaniesquest_fail_glasscannon) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_HardPill`](Miscellaneous.md#object-beaniesquest_fail_hardpill) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_HiveMind`](Miscellaneous.md#object-beaniesquest_fail_hivemind) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_MagicMirror`](Miscellaneous.md#object-beaniesquest_fail_magicmirror) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_MeStone`](Miscellaneous.md#object-beaniesquest_fail_mestone) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_MultilinkCable`](Miscellaneous.md#object-beaniesquest_fail_multilinkcable) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_MysteriousDice`](Miscellaneous.md#object-beaniesquest_fail_mysteriousdice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_fail_mysteriousglasses) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_NDEDevice`](Miscellaneous.md#object-beaniesquest_fail_ndedevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_NuclearKnife`](Miscellaneous.md#object-beaniesquest_fail_nuclearknife) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_fail_partiallobotomy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_PartyDetonator`](Miscellaneous.md#object-beaniesquest_fail_partydetonator) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_PersonalHeater`](Miscellaneous.md#object-beaniesquest_fail_personalheater) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_fail_persuasiondevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_PrincessHat`](Miscellaneous.md#object-beaniesquest_fail_princesshat) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_RealityScrambler`](Miscellaneous.md#object-beaniesquest_fail_realityscrambler) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_Redacted`](Miscellaneous.md#object-beaniesquest_fail_redacted) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_SpiderInjector`](Miscellaneous.md#object-beaniesquest_fail_spiderinjector) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_Stopwatch`](Miscellaneous.md#object-beaniesquest_fail_stopwatch) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_StorageLocker`](Miscellaneous.md#object-beaniesquest_fail_storagelocker) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_TheIOU`](Miscellaneous.md#object-beaniesquest_fail_theiou) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_TheLoner`](Miscellaneous.md#object-beaniesquest_fail_theloner) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_Trapfest99`](Miscellaneous.md#object-beaniesquest_fail_trapfest99) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_fail_UltraVision3000`](Miscellaneous.md#object-beaniesquest_fail_ultravision3000) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_AI`](Miscellaneous.md#object-beaniesquest_intro_ai) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_AirHorn`](Miscellaneous.md#object-beaniesquest_intro_airhorn) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_AngryFace`](Miscellaneous.md#object-beaniesquest_intro_angryface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_AnimalHands`](Miscellaneous.md#object-beaniesquest_intro_animalhands) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_BubbleBoy`](Miscellaneous.md#object-beaniesquest_intro_bubbleboy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_ChadImplant`](Miscellaneous.md#object-beaniesquest_intro_chadimplant) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_ChaosDevice`](Miscellaneous.md#object-beaniesquest_intro_chaosdevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_intro_dimensionaldivider) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_DiseaseJar`](Miscellaneous.md#object-beaniesquest_intro_diseasejar) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_intro_experimentaltreatment) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_FartFace`](Miscellaneous.md#object-beaniesquest_intro_fartface) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_FigLeaf`](Miscellaneous.md#object-beaniesquest_intro_figleaf) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_Generic`](Miscellaneous.md#object-beaniesquest_intro_generic) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_GlassCannon`](Miscellaneous.md#object-beaniesquest_intro_glasscannon) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_HardPill`](Miscellaneous.md#object-beaniesquest_intro_hardpill) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_HiveMind`](Miscellaneous.md#object-beaniesquest_intro_hivemind) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_MagicMirror`](Miscellaneous.md#object-beaniesquest_intro_magicmirror) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_MeStone`](Miscellaneous.md#object-beaniesquest_intro_mestone) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_MultilinkCable`](Miscellaneous.md#object-beaniesquest_intro_multilinkcable) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_MysteriousDice`](Miscellaneous.md#object-beaniesquest_intro_mysteriousdice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_intro_mysteriousglasses) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_NDEDevice`](Miscellaneous.md#object-beaniesquest_intro_ndedevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_NuclearKnife`](Miscellaneous.md#object-beaniesquest_intro_nuclearknife) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_intro_partiallobotomy) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_PartyDetonator`](Miscellaneous.md#object-beaniesquest_intro_partydetonator) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_PersonalHeater`](Miscellaneous.md#object-beaniesquest_intro_personalheater) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_intro_persuasiondevice) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_PrincessHat`](Miscellaneous.md#object-beaniesquest_intro_princesshat) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_RealityScrambler`](Miscellaneous.md#object-beaniesquest_intro_realityscrambler) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_Redacted`](Miscellaneous.md#object-beaniesquest_intro_redacted) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_SpiderInjector`](Miscellaneous.md#object-beaniesquest_intro_spiderinjector) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_Stopwatch`](Miscellaneous.md#object-beaniesquest_intro_stopwatch) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_StorageLocker`](Miscellaneous.md#object-beaniesquest_intro_storagelocker) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_TheIOU`](Miscellaneous.md#object-beaniesquest_intro_theiou) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_TheLoner`](Miscellaneous.md#object-beaniesquest_intro_theloner) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_Trapfest99`](Miscellaneous.md#object-beaniesquest_intro_trapfest99) | Object | Examples: `{ ... }` | 1 ||
-| [`beaniesquest_intro_UltraVision3000`](Miscellaneous.md#object-beaniesquest_intro_ultravision3000) | Object | Examples: `{ ... }` | 1 ||
-| [`boss_fight_intro`](Miscellaneous.md#object-boss_fight_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`boss_fight_round2`](Miscellaneous.md#object-boss_fight_round2) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_begin_accepting_cats`](Miscellaneous.md#object-butch_begin_accepting_cats) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_first_house_boss_beat`](Miscellaneous.md#object-butch_first_house_boss_beat) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_pyro`](Miscellaneous.md#object-butch_pyro) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tina1`](Miscellaneous.md#object-butch_tina1) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_backstab`](Miscellaneous.md#object-butch_tips_backstab) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_charisma`](Miscellaneous.md#object-butch_tips_charisma) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_combat`](Miscellaneous.md#object-butch_tips_combat) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_disorders`](Miscellaneous.md#object-butch_tips_disorders) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_drafting`](Miscellaneous.md#object-butch_tips_drafting) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_elements`](Miscellaneous.md#object-butch_tips_elements) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_hard`](Miscellaneous.md#object-butch_tips_hard) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_headhome`](Miscellaneous.md#object-butch_tips_headhome) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_houseboss`](Miscellaneous.md#object-butch_tips_houseboss) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_info`](Miscellaneous.md#object-butch_tips_info) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_intelligence`](Miscellaneous.md#object-butch_tips_intelligence) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_intro`](Miscellaneous.md#object-butch_tips_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_items`](Miscellaneous.md#object-butch_tips_items) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_lesscats`](Miscellaneous.md#object-butch_tips_lesscats) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_magicdamage`](Miscellaneous.md#object-butch_tips_magicdamage) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_passives`](Miscellaneous.md#object-butch_tips_passives) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_reorient`](Miscellaneous.md#object-butch_tips_reorient) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_rewards`](Miscellaneous.md#object-butch_tips_rewards) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_tacticalview`](Miscellaneous.md#object-butch_tips_tacticalview) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_turnorder`](Miscellaneous.md#object-butch_tips_turnorder) | Object | Examples: `{ ... }` | 1 ||
-| [`butch_tips_wellrounded`](Miscellaneous.md#object-butch_tips_wellrounded) | Object | Examples: `{ ... }` | 1 ||
-| [`can_still_use_attack`](Miscellaneous.md#object-can_still_use_attack) | Object | Examples: `{ ... }` | 1 ||
-| [`can_still_use_attack_didntspell`](Miscellaneous.md#object-can_still_use_attack_didntspell) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_a`](Miscellaneous.md#object-cant_afford_a) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_b`](Miscellaneous.md#object-cant_afford_b) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_c`](Miscellaneous.md#object-cant_afford_c) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_d`](Miscellaneous.md#object-cant_afford_d) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_iceage`](Miscellaneous.md#object-cant_afford_iceage) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_jurassic`](Miscellaneous.md#object-cant_afford_jurassic) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_moon`](Miscellaneous.md#object-cant_afford_moon) | Object | Examples: `{ ... }` | 1 ||
-| [`cant_afford_theend`](Miscellaneous.md#object-cant_afford_theend) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_butcher`](Miscellaneous.md#object-class_unlock_butcher) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_druid`](Miscellaneous.md#object-class_unlock_druid) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_medic`](Miscellaneous.md#object-class_unlock_medic) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_monk`](Miscellaneous.md#object-class_unlock_monk) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_necromancer`](Miscellaneous.md#object-class_unlock_necromancer) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_psychic`](Miscellaneous.md#object-class_unlock_psychic) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_thief`](Miscellaneous.md#object-class_unlock_thief) | Object | Examples: `{ ... }` | 1 ||
-| [`class_unlock_tinkerer`](Miscellaneous.md#object-class_unlock_tinkerer) | Object | Examples: `{ ... }` | 1 ||
-| [`collected_new_items`](Miscellaneous.md#object-collected_new_items) | Object | Examples: `{ ... }` | 1 ||
-| [`collected_nothing`](Miscellaneous.md#object-collected_nothing) | Object | Examples: `{ ... }` | 1 ||
-| [`do_not_end_turn`](Miscellaneous.md#object-do_not_end_turn) | Object | Examples: `{ ... }` | 1 ||
-| [`done_spitting_fail_ally`](Miscellaneous.md#object-done_spitting_fail_ally) | Object | Examples: `{ ... }` | 1 ||
-| [`done_spitting_fail_miss`](Miscellaneous.md#object-done_spitting_fail_miss) | Object | Examples: `{ ... }` | 1 ||
-| [`done_spitting_fail_rat`](Miscellaneous.md#object-done_spitting_fail_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`done_spitting_success`](Miscellaneous.md#object-done_spitting_success) | Object | Examples: `{ ... }` | 1 ||
-| [`ending`](Miscellaneous.md#object-ending) | Object | Examples: `{ ... }` | 1 ||
-| [`finish_adventure`](Miscellaneous.md#object-finish_adventure) | Object | Examples: `{ ... }` | 1 ||
-| [`first_fight_intro`](Miscellaneous.md#object-first_fight_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`first_house_boss_tomorrow`](Miscellaneous.md#object-first_house_boss_tomorrow) | Object | Examples: `{ ... }` | 1 ||
-| [`first_house_hint_retired`](Miscellaneous.md#object-first_house_hint_retired) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_max1`](Miscellaneous.md#object-frank_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_max2`](Miscellaneous.md#object-frank_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_max3`](Miscellaneous.md#object-frank_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_max4`](Miscellaneous.md#object-frank_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_max5`](Miscellaneous.md#object-frank_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_terminator2`](Miscellaneous.md#object-frank_terminator2) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_1`](Miscellaneous.md#object-frank_tips_1) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_10`](Miscellaneous.md#object-frank_tips_10) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_2`](Miscellaneous.md#object-frank_tips_2) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_3`](Miscellaneous.md#object-frank_tips_3) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_4`](Miscellaneous.md#object-frank_tips_4) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_5`](Miscellaneous.md#object-frank_tips_5) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_6`](Miscellaneous.md#object-frank_tips_6) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_7`](Miscellaneous.md#object-frank_tips_7) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_8`](Miscellaneous.md#object-frank_tips_8) | Object | Examples: `{ ... }` | 1 ||
-| [`frank_tips_9`](Miscellaneous.md#object-frank_tips_9) | Object | Examples: `{ ... }` | 1 ||
-| [`gone`](Miscellaneous.md#object-gone) | Object | Examples: `{ ... }` | 1 ||
-| [`house_intro`](Miscellaneous.md#object-house_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`house_kitten_box`](Miscellaneous.md#object-house_kitten_box) | Object | Examples: `{ ... }` | 1 ||
-| [`house_pass_day`](Miscellaneous.md#object-house_pass_day) | Object | Examples: `{ ... }` | 1 ||
-| [`house_pass_day2`](Miscellaneous.md#object-house_pass_day2) | Object | Examples: `{ ... }` | 1 ||
-| [`house_pipe`](Miscellaneous.md#object-house_pipe) | Object | Examples: `{ ... }` | 1 ||
-| [`house_retired_cat_box`](Miscellaneous.md#object-house_retired_cat_box) | Object | Examples: `{ ... }` | 1 ||
-| [`house_starred_box`](Miscellaneous.md#object-house_starred_box) | Object | Examples: `{ ... }` | 1 ||
-| [`house_strays`](Miscellaneous.md#object-house_strays) | Object | Examples: `{ ... }` | 1 ||
-| [`house_upgrade_basement`](Miscellaneous.md#object-house_upgrade_basement) | Object | Examples: `{ ... }` | 1 ||
-| [`house_upgrade_basement2`](Miscellaneous.md#object-house_upgrade_basement2) | Object | Examples: `{ ... }` | 1 ||
-| [`house_upgrade_basement3`](Miscellaneous.md#object-house_upgrade_basement3) | Object | Examples: `{ ... }` | 1 ||
-| [`house_upgrade_basement4`](Miscellaneous.md#object-house_upgrade_basement4) | Object | Examples: `{ ... }` | 1 ||
-| [`house_upgrade_basement5`](Miscellaneous.md#object-house_upgrade_basement5) | Object | Examples: `{ ... }` | 1 ||
-| [`introduce_hard_path`](Miscellaneous.md#object-introduce_hard_path) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_begin_accepting_cats`](Miscellaneous.md#object-jack_begin_accepting_cats) | Object | Examples: `{ ... }` | 1 ||
-| [`Jack_Gainaltfurniture`](Engine_LogicKeys.md#object-jack_gainaltfurniture) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_introduction`](Miscellaneous.md#object-jack_introduction) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_max1`](Miscellaneous.md#object-jack_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_max2`](Miscellaneous.md#object-jack_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_max3`](Miscellaneous.md#object-jack_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_max4`](Miscellaneous.md#object-jack_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_max5`](Miscellaneous.md#object-jack_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`jack_zara`](Miscellaneous.md#object-jack_zara) | Object | Examples: `{ ... }` | 1 ||
-| [`level_up_didnt_select_sunburn`](Miscellaneous.md#object-level_up_didnt_select_sunburn) | Object | Examples: `{ ... }` | 1 ||
-| [`level_up_intro`](Miscellaneous.md#object-level_up_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`level_up_selected_sunburn`](Miscellaneous.md#object-level_up_selected_sunburn) | Object | Examples: `{ ... }` | 1 ||
-| [`low_on_food`](Miscellaneous.md#object-low_on_food) | Object | Examples: `{ ... }` | 1 ||
-| [`map_click_node`](Miscellaneous.md#object-map_click_node) | Object | Examples: `{ ... }` | 1 ||
-| [`map_equip_items`](Miscellaneous.md#object-map_equip_items) | Object | Examples: `{ ... }` | 1 ||
-| [`map_equip_items2`](Miscellaneous.md#object-map_equip_items2) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_attack_rat`](Miscellaneous.md#object-melee_attack_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit`](Miscellaneous.md#object-melee_cat_spit) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit_fail_ally`](Miscellaneous.md#object-melee_cat_spit_fail_ally) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit_fail_miss`](Miscellaneous.md#object-melee_cat_spit_fail_miss) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit_fail_rat`](Miscellaneous.md#object-melee_cat_spit_fail_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit_ignore`](Miscellaneous.md#object-melee_cat_spit_ignore) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_cat_spit_success`](Miscellaneous.md#object-melee_cat_spit_success) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_killed_rat`](Miscellaneous.md#object-melee_killed_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_move2`](Miscellaneous.md#object-melee_move2) | Object | Examples: `{ ... }` | 1 ||
-| [`melee_out_of_actions`](Miscellaneous.md#object-melee_out_of_actions) | Object | Examples: `{ ... }` | 1 ||
-| [`new_adventure`](Miscellaneous.md#object-new_adventure) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_intro`](Miscellaneous.md#object-organ_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_max1`](Miscellaneous.md#object-organ_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_max2`](Miscellaneous.md#object-organ_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_max3`](Miscellaneous.md#object-organ_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_max4`](Miscellaneous.md#object-organ_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_max5`](Miscellaneous.md#object-organ_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_rename`](Miscellaneous.md#object-organ_rename) | Object | Examples: `{ ... }` | 1 ||
-| [`organ_tina3`](Miscellaneous.md#object-organ_tina3) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_a`](Miscellaneous.md#object-purchase_item_a) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_b`](Miscellaneous.md#object-purchase_item_b) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_c`](Miscellaneous.md#object-purchase_item_c) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_d`](Miscellaneous.md#object-purchase_item_d) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_iceage`](Miscellaneous.md#object-purchase_item_iceage) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_jurassic`](Miscellaneous.md#object-purchase_item_jurassic) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_moon`](Miscellaneous.md#object-purchase_item_moon) | Object | Examples: `{ ... }` | 1 ||
-| [`purchase_item_theend`](Miscellaneous.md#object-purchase_item_theend) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_attack_tomtom`](Miscellaneous.md#object-ranged_attack_tomtom) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_attack_tomtom_fail_ally`](Miscellaneous.md#object-ranged_attack_tomtom_fail_ally) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_attack_tomtom_fail_miss`](Miscellaneous.md#object-ranged_attack_tomtom_fail_miss) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_attack_tomtom_fail_rat`](Miscellaneous.md#object-ranged_attack_tomtom_fail_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_attack`](Miscellaneous.md#object-ranged_cat_attack) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack2_ally`](Miscellaneous.md#object-ranged_cat_early_attack2_ally) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack2_miss`](Miscellaneous.md#object-ranged_cat_early_attack2_miss) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack2_rat`](Miscellaneous.md#object-ranged_cat_early_attack2_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack_ally`](Miscellaneous.md#object-ranged_cat_early_attack_ally) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack_miss`](Miscellaneous.md#object-ranged_cat_early_attack_miss) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_early_attack_rat`](Miscellaneous.md#object-ranged_cat_early_attack_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_failmove`](Miscellaneous.md#object-ranged_cat_failmove) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_intro`](Miscellaneous.md#object-ranged_cat_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_roll`](Miscellaneous.md#object-ranged_cat_roll) | Object | Examples: `{ ... }` | 1 ||
-| [`ranged_cat_rolled_first`](Miscellaneous.md#object-ranged_cat_rolled_first) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_100`](Miscellaneous.md#object-steven_100) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_introduction`](Miscellaneous.md#object-steven_introduction) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_resummon`](Miscellaneous.md#object-steven_resummon) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_1`](Miscellaneous.md#object-steven_savescum_1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_100`](Miscellaneous.md#object-steven_savescum_100) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_1alt1`](Miscellaneous.md#object-steven_savescum_1alt1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_1alt2`](Miscellaneous.md#object-steven_savescum_1alt2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_1alt3`](Miscellaneous.md#object-steven_savescum_1alt3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_2`](Miscellaneous.md#object-steven_savescum_2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_2alt1`](Miscellaneous.md#object-steven_savescum_2alt1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_2alt2`](Miscellaneous.md#object-steven_savescum_2alt2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_2alt3`](Miscellaneous.md#object-steven_savescum_2alt3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_3`](Miscellaneous.md#object-steven_savescum_3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_3alt1`](Miscellaneous.md#object-steven_savescum_3alt1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_3alt2`](Miscellaneous.md#object-steven_savescum_3alt2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_3alt3`](Miscellaneous.md#object-steven_savescum_3alt3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_4`](Miscellaneous.md#object-steven_savescum_4) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_4alt1`](Miscellaneous.md#object-steven_savescum_4alt1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_4alt2`](Miscellaneous.md#object-steven_savescum_4alt2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_4alt3`](Miscellaneous.md#object-steven_savescum_4alt3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_houseboss_1`](Miscellaneous.md#object-steven_savescum_houseboss_1) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_houseboss_100`](Miscellaneous.md#object-steven_savescum_houseboss_100) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_houseboss_2`](Miscellaneous.md#object-steven_savescum_houseboss_2) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_houseboss_3`](Miscellaneous.md#object-steven_savescum_houseboss_3) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_intro`](Miscellaneous.md#object-steven_savescum_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_savescum_intro_houseboss`](Miscellaneous.md#object-steven_savescum_intro_houseboss) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act1_crazy`](Miscellaneous.md#object-steven_unlock_act1_crazy) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act1_impossible`](Miscellaneous.md#object-steven_unlock_act1_impossible) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act2_crazy`](Miscellaneous.md#object-steven_unlock_act2_crazy) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act2_hard`](Miscellaneous.md#object-steven_unlock_act2_hard) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act2_impossible`](Miscellaneous.md#object-steven_unlock_act2_impossible) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act3_crazy`](Miscellaneous.md#object-steven_unlock_act3_crazy) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act3_hard`](Miscellaneous.md#object-steven_unlock_act3_hard) | Object | Examples: `{ ... }` | 1 ||
-| [`steven_unlock_act3_impossible`](Miscellaneous.md#object-steven_unlock_act3_impossible) | Object | Examples: `{ ... }` | 1 ||
-| [`take_cats_inside`](Miscellaneous.md#object-take_cats_inside) | Object | Examples: `{ ... }` | 1 ||
-| [`test_gamepad_prompts`](Miscellaneous.md#object-test_gamepad_prompts) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_begin_accepting_cats`](Miscellaneous.md#object-tink_begin_accepting_cats) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max1`](Miscellaneous.md#object-tink_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max10`](Miscellaneous.md#object-tink_max10) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max2`](Miscellaneous.md#object-tink_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max3`](Miscellaneous.md#object-tink_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max4`](Miscellaneous.md#object-tink_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max5`](Miscellaneous.md#object-tink_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max6`](Miscellaneous.md#object-tink_max6) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max7`](Miscellaneous.md#object-tink_max7) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max8`](Miscellaneous.md#object-tink_max8) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_max9`](Miscellaneous.md#object-tink_max9) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_terminator`](Miscellaneous.md#object-tink_terminator) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tina2`](Miscellaneous.md#object-tink_tina2) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_appeal`](Miscellaneous.md#object-tink_tips_appeal) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_basestats`](Miscellaneous.md#object-tink_tips_basestats) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_cleaning`](Miscellaneous.md#object-tink_tips_cleaning) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_comfort`](Miscellaneous.md#object-tink_tips_comfort) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_health`](Miscellaneous.md#object-tink_tips_health) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_inbreeding`](Miscellaneous.md#object-tink_tips_inbreeding) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_intro`](Miscellaneous.md#object-tink_tips_intro) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_multiclassing`](Miscellaneous.md#object-tink_tips_multiclassing) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_mutation`](Miscellaneous.md#object-tink_tips_mutation) | Object | Examples: `{ ... }` | 1 ||
-| [`tink_tips_stimulation`](Miscellaneous.md#object-tink_tips_stimulation) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_foodbonus1`](Miscellaneous.md#object-tracy_foodbonus1) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_introduction`](Miscellaneous.md#object-tracy_introduction) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_kaijufight`](Miscellaneous.md#object-tracy_kaijufight) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_max1`](Miscellaneous.md#object-tracy_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_max2`](Miscellaneous.md#object-tracy_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_max3`](Miscellaneous.md#object-tracy_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_max4`](Miscellaneous.md#object-tracy_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`tracy_max5`](Miscellaneous.md#object-tracy_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`try_again_attack_rat`](Miscellaneous.md#object-try_again_attack_rat) | Object | Examples: `{ ... }` | 1 ||
-| [`try_again_melee_move`](Miscellaneous.md#object-try_again_melee_move) | Object | Examples: `{ ... }` | 1 ||
-| [`tutorial_cat_dies`](Miscellaneous.md#object-tutorial_cat_dies) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted1`](Miscellaneous.md#object-unprompted1) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted2`](Miscellaneous.md#object-unprompted2) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted3`](Miscellaneous.md#object-unprompted3) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted4`](Miscellaneous.md#object-unprompted4) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted5`](Miscellaneous.md#object-unprompted5) | Object | Examples: `{ ... }` | 1 ||
-| [`unprompted6`](Miscellaneous.md#object-unprompted6) | Object | Examples: `{ ... }` | 1 ||
-| [`upgrade_storage_max1`](Miscellaneous.md#object-upgrade_storage_max1) | Object | Examples: `{ ... }` | 1 ||
-| [`upgrade_storage_max2`](Miscellaneous.md#object-upgrade_storage_max2) | Object | Examples: `{ ... }` | 1 ||
-| [`upgrade_storage_max3`](Miscellaneous.md#object-upgrade_storage_max3) | Object | Examples: `{ ... }` | 1 ||
-| [`upgrade_storage_max4`](Miscellaneous.md#object-upgrade_storage_max4) | Object | Examples: `{ ... }` | 1 ||
-| [`upgrade_storage_max5`](Miscellaneous.md#object-upgrade_storage_max5) | Object | Examples: `{ ... }` | 1 ||
-| [`use_attack_after_used_weapon`](Miscellaneous.md#object-use_attack_after_used_weapon) | Object | Examples: `{ ... }` | 1 ||
-| [`use_weapon`](Events_and_Encounters.md#object-use_weapon) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome`](Miscellaneous.md#object-welcome) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_boneyard`](Miscellaneous.md#object-welcome_boneyard) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_bunker`](Miscellaneous.md#object-welcome_bunker) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_caves`](Miscellaneous.md#object-welcome_caves) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_core`](Miscellaneous.md#object-welcome_core) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_crater`](Miscellaneous.md#object-welcome_crater) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_desert`](Miscellaneous.md#object-welcome_desert) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_future`](Miscellaneous.md#object-welcome_future) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_iceage`](Miscellaneous.md#object-welcome_iceage) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_junkyard`](Miscellaneous.md#object-welcome_junkyard) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_jurassic`](Miscellaneous.md#object-welcome_jurassic) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_lab`](Miscellaneous.md#object-welcome_lab) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_moon`](Miscellaneous.md#object-welcome_moon) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_sewers`](Miscellaneous.md#object-welcome_sewers) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_theend`](Miscellaneous.md#object-welcome_theend) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_water`](Miscellaneous.md#object-welcome_water) | Object | Examples: `{ ... }` | 1 ||
-| [`welcome_water_cheap`](Miscellaneous.md#object-welcome_water_cheap) | Object | Examples: `{ ... }` | 1 ||
+| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 ||
+| [`tooltip`](./NPC_Scripts.md#context-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 161 ||
+| [`states`](Miscellaneous.md#object-states) | Object | Defines named animation states and their associated animation clips. | 12 ||
+| [`transitions`](Miscellaneous.md#object-transitions) | Object | Defines named transitions between animation states. | 12 ||
+| [`unprompted`](Miscellaneous.md#object-unprompted) | Object | Defines sequences of unprompted dialog events. | 8 ||
+| [`also`](Miscellaneous.md#object-also) | Object | Defines an additional dialog sequence that plays alongside the main one. | 8 ||
+| [`unknown`](Miscellaneous.md#object-unknown) | Object | A generic object container for dialog and rewards, often used for unprompted sequences. | 8 ||
+| [`hide_text`](Miscellaneous.md#object-hide_text) | Object | Defines a sequence that hides text dialogs and autopasses to the next step. | 4 ||
+| [`purchase_item`](Miscellaneous.md#object-purchase_item) | Object | Defines the dialog sequence for purchasing an item from an NPC. | 4 ||
+| [`unprompted_a`](Miscellaneous.md#object-unprompted_a) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the first variant. | 4 ||
+| [`unprompted_b`](Miscellaneous.md#object-unprompted_b) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the second variant. | 4 ||
+| [`unprompted_c`](Miscellaneous.md#object-unprompted_c) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the third variant. | 4 ||
+| [`unprompted_d`](Miscellaneous.md#object-unprompted_d) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fourth variant. | 4 ||
+| [`unprompted_e`](Miscellaneous.md#object-unprompted_e) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fifth variant. | 4 ||
+| [`unprompted_f`](Miscellaneous.md#object-unprompted_f) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the sixth variant. | 4 ||
+| [`unprompted_g`](Miscellaneous.md#object-unprompted_g) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the seventh variant. | 4 ||
+| [`unprompted_h`](Miscellaneous.md#object-unprompted_h) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the eighth variant. | 4 ||
+| [`unprompted_i`](Miscellaneous.md#object-unprompted_i) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the ninth variant. | 4 ||
+| [`cant_afford`](Miscellaneous.md#object-cant_afford) | Object | Defines the dialog sequence that plays when the player attempts to purchase an item they cannot afford. | 3 ||
+| [`forward_to_tips`](Miscellaneous.md#object-forward_to_tips) | Object | Defines a dialog sequence that forwards the player to a random tip dialog for the current NPC. | 3 ||
+| [`out_of_stock`](Miscellaneous.md#object-out_of_stock) | Object | Defines the dialog sequence that plays when a shop item is out of stock. | 3 ||
+| [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 ||
+| [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 ||
+| [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Frank. | 2 ||
+| [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Frank at max favor. | 2 ||
+| [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object | Defines the dialog and house upgrade for unlocking the 4th room. | 2 ||
+| [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object | Defines the dialog and house upgrade for the attic. | 2 ||
+| [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object | Defines the dialog and house upgrade for the large house. | 2 ||
+| [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object | Defines the dialog and house upgrade for the medium house. | 2 ||
+| [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Jack. | 2 ||
+| [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Jack at max favor. | 2 ||
+| [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object | Defines the dialog and shop level up for Jack's first shop upgrade. | 2 ||
+| [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object | Defines the dialog and shop level up for Jack's second shop upgrade. | 2 ||
+| [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object | Defines the dialog and shop level up for Jack's third shop upgrade. | 2 ||
+| [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object | Defines the dialog and shop level up for Jack's fourth shop upgrade. | 2 ||
+| [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Organ Grinder. | 2 ||
+| [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor. | 2 ||
+| [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object | Defines the dialog and shop level up for unlocking Organ Grinder. | 2 ||
+| [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object | Defines the dialog and shop level up for Organ Grinder's first upgrade. | 2 ||
+| [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object | Defines the dialog and shop level up for Organ Grinder's second upgrade. | 2 ||
+| [`organ_upgrade3`](Miscellaneous.md#object-organ_upgrade3) | Object | Defines the dialog and shop level up for Organ Grinder's third upgrade. | 2 ||
+| [`organ_upgrade4`](Miscellaneous.md#object-organ_upgrade4) | Object | Defines the dialog and shop level up for Organ Grinder's fourth upgrade. | 2 ||
+| [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object | Defines the dialog and shop level up for Organ Grinder's fifth upgrade. | 2 ||
+| [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object | Defines the dialog and shop level up for Organ Grinder's sixth upgrade. | 2 ||
+| [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object | A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor. | 2 ||
+| [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat. | 2 ||
+| [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications. | 2 ||
+| [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree. | 2 ||
+| [`tink_max_intro`](Miscellaneous.md#object-tink_max_intro) | Object | The first dialogue sequence and favor reward that plays when Tink reaches maximum favor. | 2 ||
+| [`tink_max_repeating`](Miscellaneous.md#object-tink_max_repeating) | Object | A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences. | 2 ||
+| [`tink_prettybow`](Miscellaneous.md#object-tink_prettybow) | Object | A dialogue sequence and favor reward that grants the gift item TinksBow. | 2 ||
+| [`tink_relationships`](Miscellaneous.md#object-tink_relationships) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates). | 2 ||
+| [`tink_sexuality`](Miscellaneous.md#object-tink_sexuality) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags. | 2 ||
+| [`tink_tags`](Miscellaneous.md#object-tink_tags) | Object | A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name. | 2 ||
+| [`tracy_blankcollar1`](Miscellaneous.md#object-tracy_blankcollar1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_blankcollar2`](Miscellaneous.md#object-tracy_blankcollar2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_blankcollar3`](Miscellaneous.md#object-tracy_blankcollar3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage1`](Miscellaneous.md#object-tracy_foodstorage1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage10`](Miscellaneous.md#object-tracy_foodstorage10) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage2`](Miscellaneous.md#object-tracy_foodstorage2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage3`](Miscellaneous.md#object-tracy_foodstorage3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage4`](Miscellaneous.md#object-tracy_foodstorage4) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage5`](Miscellaneous.md#object-tracy_foodstorage5) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage6`](Miscellaneous.md#object-tracy_foodstorage6) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage7`](Miscellaneous.md#object-tracy_foodstorage7) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage8`](Miscellaneous.md#object-tracy_foodstorage8) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_foodstorage9`](Miscellaneous.md#object-tracy_foodstorage9) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol1`](Miscellaneous.md#object-tracy_idol1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol2`](Miscellaneous.md#object-tracy_idol2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol3`](Miscellaneous.md#object-tracy_idol3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol4`](Miscellaneous.md#object-tracy_idol4) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol5`](Miscellaneous.md#object-tracy_idol5) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol6`](Miscellaneous.md#object-tracy_idol6) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_idol7`](Miscellaneous.md#object-tracy_idol7) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 ||
+| [`tracy_max_intro`](Miscellaneous.md#object-tracy_max_intro) | Object | The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor. | 2 ||
+| [`tracy_max_repeating`](Miscellaneous.md#object-tracy_max_repeating) | Object | A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences. | 2 ||
+| [`upgrade_storage_1`](Miscellaneous.md#object-upgrade_storage_1) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0. | 2 ||
+| [`upgrade_storage_2`](Miscellaneous.md#object-upgrade_storage_2) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2. | 2 ||
+| [`upgrade_storage_3`](Miscellaneous.md#object-upgrade_storage_3) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3. | 2 ||
+| [`upgrade_storage_4`](Miscellaneous.md#object-upgrade_storage_4) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2. | 2 ||
+| [`upgrade_storage_5`](Miscellaneous.md#object-upgrade_storage_5) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3. | 2 ||
+| [`upgrade_storage_6`](Miscellaneous.md#object-upgrade_storage_6) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2. | 2 ||
+| [`upgrade_storage_7`](Miscellaneous.md#object-upgrade_storage_7) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3. | 2 ||
+| [`upgrade_storage_repeating_crazy`](Miscellaneous.md#object-upgrade_storage_repeating_crazy) | Object | A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion. | 2 ||
+| [`upgrade_storage_repeating_hard`](Miscellaneous.md#object-upgrade_storage_repeating_hard) | Object | A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion. | 2 ||
+| [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object | A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion. | 2 ||
+| [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object | The introductory dialogue sequence and reward when Butch maxes out storage capacity. | 2 ||
+| [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object | A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion. | 2 ||
+| [`beanies_bombquest_2`](Miscellaneous.md#object-beanies_bombquest_2) | Object | Defines the dialog sequence for Beanies' bomb quest step 2. | 1 ||
+| [`beanies_bombquest_3`](Miscellaneous.md#object-beanies_bombquest_3) | Object | Defines the dialog sequence for the third stage of Beanies' bomb quest. | 1 ||
+| [`beanies_bombquest_fail_jarofblood`](Miscellaneous.md#object-beanies_bombquest_fail_jarofblood) | Object | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of blood. | 1 ||
+| [`beanies_bombquest_fail_jarofchaos`](Miscellaneous.md#object-beanies_bombquest_fail_jarofchaos) | Object | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of chaos. | 1 ||
+| [`beanies_bombquest_amnesia`](Miscellaneous.md#object-beanies_bombquest_amnesia) | Object | Defines the dialog sequence for Dr. Beanies' amnesia after a successful nuke quest. | 1 ||
+| [`beanies_bombquest_begin`](Miscellaneous.md#object-beanies_bombquest_begin) | Object | Defines the dialog sequence for Dr. Beanies beginning the final bomb quest. | 1 ||
+| [`beanies_bombquest_fail_jarofradiation`](Miscellaneous.md#object-beanies_bombquest_fail_jarofradiation) | Object | Defines the dialog sequence for failing the bomb quest during the Act 1 jar-of-radiation stage. | 1 ||
+| [`beanies_bombquest_fail_nuke`](Miscellaneous.md#object-beanies_bombquest_fail_nuke) | Object | Defines the dialog sequence for failing the bomb quest during the Act 3 nuke stage. | 1 ||
+| [`beanies_future_intro`](Miscellaneous.md#object-beanies_future_intro) | Object | Defines the dialog sequence where Dr. Beanies sends the player to the future. | 1 ||
+| [`beanies_jurassic_intro`](Miscellaneous.md#object-beanies_jurassic_intro) | Object | Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area. | 1 ||
+| [`beanies_lab_intro`](Miscellaneous.md#object-beanies_lab_intro) | Object | Defines the dialog sequence where Dr. Beanies is homeless and credits roll. | 1 ||
+| [`beanies_theend_intro`](Miscellaneous.md#object-beanies_theend_intro) | Object | Defines the dialog sequence where Dr. Beanies responds to you killing Hitler. | 1 ||
+| [`butch_boneyard_intro`](Miscellaneous.md#object-butch_boneyard_intro) | Object | Defines the dialog sequence for Butch's introduction in the boneyard. | 1 ||
+| [`class_unlock_jester`](Miscellaneous.md#object-class_unlock_jester) | Object | Defines the dialog sequence for unlocking the Jester class. | 1 ||
+| [`frank_caves_intro`](Miscellaneous.md#object-frank_caves_intro) | Object | Defines the dialog sequence for Frank's introduction in the caves. | 1 ||
+| [`frank_ending`](Miscellaneous.md#object-frank_ending) | Object | Defines the dialog sequence for Frank's new intro after the nuke ending. | 1 ||
+| [`jack_desert_intro`](Miscellaneous.md#object-jack_desert_intro) | Object | Defines the dialog sequence for Jack's introduction in the desert. | 1 ||
+| [`organ_boneyard_intro`](Miscellaneous.md#object-organ_boneyard_intro) | Object | Defines the dialog sequence for Organ Grinder's introduction in the boneyard. | 1 ||
+| [`organ_throbbingdomain_intro`](Miscellaneous.md#object-organ_throbbingdomain_intro) | Object | Defines the dialog sequence for Organ Grinder's introduction in the throbbing domain. | 1 ||
+| [`steven_postendgame`](Miscellaneous.md#object-steven_postendgame) | Object | A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending. | 1 ||
+| [`beanies_begin_accepting_cats`](Miscellaneous.md#object-beanies_begin_accepting_cats) | Object | A cutscene sequence where Beanies begins accepting cats, playing dialogue and adjusting camera states. | 1 ||
+| [`beanies_hitler3`](Miscellaneous.md#object-beanies_hitler3) | Object | A cutscene sequence where Beanies reveals that Hitler has been sending robots back in time, introducing Hitler as the final boss. | 1 ||
+| [`beanies_hitler3_defeat`](Miscellaneous.md#object-beanies_hitler3_defeat) | Object | A cutscene sequence where Beanies provides the final piece of tech to unlock the infinite after defeating Hitler. | 1 ||
+| [`beanies_iloveyou`](Miscellaneous.md#object-beanies_iloveyou) | Object | A cutscene sequence where Beanies expresses love to the player through dialogue. | 1 ||
+| [`beanies_infinite_intro`](Miscellaneous.md#object-beanies_infinite_intro) | Object | A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator. | 1 ||
+| [`beanies_quest_complete`](Miscellaneous.md#object-beanies_quest_complete) | Object | A cutscene sequence that triggers upon successfully completing Beanies' side quest. | 1 ||
+| [`beanies_quest_fail`](Miscellaneous.md#object-beanies_quest_fail) | Object | A cutscene sequence that triggers upon failing Beanies' side quest. | 1 ||
+| [`beanies_rift_intro`](Miscellaneous.md#object-beanies_rift_intro) | Object | A cutscene sequence where Beanies comments on the chaos realm. | 1 ||
+| [`beanies_screenshake_test`](Miscellaneous.md#object-beanies_screenshake_test) | Object | A cutscene sequence with a dialog followed by a screen shake effect. | 1 ||
+| [`beanies_seefuture`](Miscellaneous.md#object-beanies_seefuture) | Object | A cutscene sequence where Beanies reacts to the player seeing the future. | 1 ||
+| [`beanies_seetheend`](Miscellaneous.md#object-beanies_seetheend) | Object | A cutscene sequence where Beanies responds to the player seeing the far future. | 1 ||
+| [`beanies_terminator1_defeat`](Miscellaneous.md#object-beanies_terminator1_defeat) | Object | A cutscene sequence that plays when the first terminator is killed. | 1 ||
+| [`beanies_terminator2_defeat`](Miscellaneous.md#object-beanies_terminator2_defeat) | Object | A cutscene sequence where Beanies invents more time-bending tech after the second terminator is defeated. | 1 ||
+| [`beanies_timemachine_2`](Miscellaneous.md#object-beanies_timemachine_2) | Object | A cutscene sequence where a frustrated Beanies sends the player into the future to gather information. | 1 ||
+| [`beanies_timemachine_intro`](Miscellaneous.md#object-beanies_timemachine_intro) | Object | A cutscene sequence where Beanies explains how the time machine works and the butterfly effect. | 1 ||
+| [`beanies_vscreator1`](Miscellaneous.md#object-beanies_vscreator1) | Object | A cutscene sequence where Beanies tells the player to detonate the nuke against the creator. | 1 ||
+| [`beanies_vscreator2`](Miscellaneous.md#object-beanies_vscreator2) | Object | A cutscene sequence where Beanies attempts to convince the player to detonate the nuke if they refuse. | 1 ||
+| [`beanies_vscreator3`](Miscellaneous.md#object-beanies_vscreator3) | Object | A cutscene sequence where an angry Beanies continues to try to convince the player to end it. | 1 ||
+| [`beanies_vscreator4`](Miscellaneous.md#object-beanies_vscreator4) | Object | A cutscene sequence where Beanies sets off the nuke himself after the player's refusal. | 1 ||
+| [`beanies_vscreatorintro`](Miscellaneous.md#object-beanies_vscreatorintro) | Object | A cutscene sequence where Beanies explains how to end everything. | 1 ||
+| [`beaniesquest_complete_AI`](Miscellaneous.md#object-beaniesquest_complete_ai) | Object | A cutscene sequence that plays upon completing the AI-related portion of Beanies' quest. | 1 ||
+| [`beaniesquest_complete_AirHorn`](Miscellaneous.md#object-beaniesquest_complete_airhorn) | Object | A cutscene sequence that plays upon completing the AirHorn-related portion of Beanies' quest. | 1 ||
+| [`beaniesquest_complete_AngryFace`](Miscellaneous.md#object-beaniesquest_complete_angryface) | Object | The completion dialogue sequence for the AngryFace sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_AnimalHands`](Miscellaneous.md#object-beaniesquest_complete_animalhands) | Object | The completion dialogue sequence for the AnimalHands sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_BubbleBoy`](Miscellaneous.md#object-beaniesquest_complete_bubbleboy) | Object | The completion dialogue sequence for the BubbleBoy sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_ChadImplant`](Miscellaneous.md#object-beaniesquest_complete_chadimplant) | Object | The completion dialogue sequence for the ChadImplant sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_ChaosDevice`](Miscellaneous.md#object-beaniesquest_complete_chaosdevice) | Object | The completion dialogue sequence for the ChaosDevice sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_complete_dimensionaldivider) | Object | The completion dialogue sequence for the DimensionalDivider sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_DiseaseJar`](Miscellaneous.md#object-beaniesquest_complete_diseasejar) | Object | The completion dialogue sequence for the DiseaseJar sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_complete_experimentaltreatment) | Object | The completion dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_FartFace`](Miscellaneous.md#object-beaniesquest_complete_fartface) | Object | The completion dialogue sequence for the FartFace sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_FigLeaf`](Miscellaneous.md#object-beaniesquest_complete_figleaf) | Object | The completion dialogue sequence for the FigLeaf sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_Generic`](Miscellaneous.md#object-beaniesquest_complete_generic) | Object | The completion dialogue sequence for a generic sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_GlassCannon`](Miscellaneous.md#object-beaniesquest_complete_glasscannon) | Object | The completion dialogue sequence for the GlassCannon sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_HardPill`](Miscellaneous.md#object-beaniesquest_complete_hardpill) | Object | The completion dialogue sequence for the HardPill sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_HiveMind`](Miscellaneous.md#object-beaniesquest_complete_hivemind) | Object | The completion dialogue sequence for the HiveMind sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_MagicMirror`](Miscellaneous.md#object-beaniesquest_complete_magicmirror) | Object | The completion dialogue sequence for the MagicMirror sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_MeStone`](Miscellaneous.md#object-beaniesquest_complete_mestone) | Object | The completion dialogue sequence for the MeStone sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_MultilinkCable`](Miscellaneous.md#object-beaniesquest_complete_multilinkcable) | Object | The completion dialogue sequence for the MultilinkCable sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_MysteriousDice`](Miscellaneous.md#object-beaniesquest_complete_mysteriousdice) | Object | The completion dialogue sequence for the MysteriousDice sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_complete_mysteriousglasses) | Object | The completion dialogue sequence for the MysteriousGlasses sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_NDEDevice`](Miscellaneous.md#object-beaniesquest_complete_ndedevice) | Object | The completion dialogue sequence for the NDEDevice sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_NuclearKnife`](Miscellaneous.md#object-beaniesquest_complete_nuclearknife) | Object | The completion dialogue sequence for the NuclearKnife sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_complete_partiallobotomy) | Object | The completion dialogue sequence for the PartialLobotomy sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_PartyDetonator`](Miscellaneous.md#object-beaniesquest_complete_partydetonator) | Object | The completion dialogue sequence for the PartyDetonator sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_PersonalHeater`](Miscellaneous.md#object-beaniesquest_complete_personalheater) | Object | The completion dialogue sequence for the PersonalHeater sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_complete_persuasiondevice) | Object | The completion dialogue sequence for the PersuasionDevice sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_PrincessHat`](Miscellaneous.md#object-beaniesquest_complete_princesshat) | Object | The completion dialogue sequence for the PrincessHat sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_RealityScrambler`](Miscellaneous.md#object-beaniesquest_complete_realityscrambler) | Object | The completion dialogue sequence for the RealityScrambler sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_Redacted`](Miscellaneous.md#object-beaniesquest_complete_redacted) | Object | The completion dialogue sequence for the Redacted sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_SpiderInjector`](Miscellaneous.md#object-beaniesquest_complete_spiderinjector) | Object | The completion dialogue sequence for the SpiderInjector sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_Stopwatch`](Miscellaneous.md#object-beaniesquest_complete_stopwatch) | Object | The completion dialogue sequence for the Stopwatch sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_StorageLocker`](Miscellaneous.md#object-beaniesquest_complete_storagelocker) | Object | The completion dialogue sequence for the StorageLocker sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_TheIOU`](Miscellaneous.md#object-beaniesquest_complete_theiou) | Object | The completion dialogue sequence for the TheIOU sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_TheLoner`](Miscellaneous.md#object-beaniesquest_complete_theloner) | Object | The completion dialogue sequence for the TheLoner sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_Trapfest99`](Miscellaneous.md#object-beaniesquest_complete_trapfest99) | Object | The completion dialogue sequence for the Trapfest99 sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_complete_UltraVision3000`](Miscellaneous.md#object-beaniesquest_complete_ultravision3000) | Object | The completion dialogue sequence for the UltraVision3000 sidequest, triggered when the quest is fulfilled. | 1 ||
+| [`beaniesquest_fail_AI`](Miscellaneous.md#object-beaniesquest_fail_ai) | Object | The failure dialogue sequence for the AI sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_AirHorn`](Miscellaneous.md#object-beaniesquest_fail_airhorn) | Object | The failure dialogue sequence for the AirHorn sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_AngryFace`](Miscellaneous.md#object-beaniesquest_fail_angryface) | Object | The failure dialogue sequence for the AngryFace sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_AnimalHands`](Miscellaneous.md#object-beaniesquest_fail_animalhands) | Object | The failure dialogue sequence for the AnimalHands sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_BubbleBoy`](Miscellaneous.md#object-beaniesquest_fail_bubbleboy) | Object | The failure dialogue sequence for the BubbleBoy sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_ChadImplant`](Miscellaneous.md#object-beaniesquest_fail_chadimplant) | Object | The failure dialogue sequence for the ChadImplant sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_ChaosDevice`](Miscellaneous.md#object-beaniesquest_fail_chaosdevice) | Object | The failure dialogue sequence for the ChaosDevice sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_fail_dimensionaldivider) | Object | The failure dialogue sequence for the DimensionalDivider sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_DiseaseJar`](Miscellaneous.md#object-beaniesquest_fail_diseasejar) | Object | The failure dialogue sequence for the DiseaseJar sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_fail_experimentaltreatment) | Object | The failure dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_FartFace`](Miscellaneous.md#object-beaniesquest_fail_fartface) | Object | The failure dialogue sequence for the FartFace sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_FigLeaf`](Miscellaneous.md#object-beaniesquest_fail_figleaf) | Object | The failure dialogue sequence for the FigLeaf sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_Generic`](Miscellaneous.md#object-beaniesquest_fail_generic) | Object | The failure dialogue sequence for a generic sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_GlassCannon`](Miscellaneous.md#object-beaniesquest_fail_glasscannon) | Object | The failure dialogue sequence for the GlassCannon sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_HardPill`](Miscellaneous.md#object-beaniesquest_fail_hardpill) | Object | The failure dialogue sequence for the HardPill sidequest, triggered when the quest fails. | 1 ||
+| [`beaniesquest_fail_HiveMind`](Miscellaneous.md#object-beaniesquest_fail_hivemind) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_MagicMirror`](Miscellaneous.md#object-beaniesquest_fail_magicmirror) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_MeStone`](Miscellaneous.md#object-beaniesquest_fail_mestone) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_MultilinkCable`](Miscellaneous.md#object-beaniesquest_fail_multilinkcable) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_MysteriousDice`](Miscellaneous.md#object-beaniesquest_fail_mysteriousdice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_fail_mysteriousglasses) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_NDEDevice`](Miscellaneous.md#object-beaniesquest_fail_ndedevice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_NuclearKnife`](Miscellaneous.md#object-beaniesquest_fail_nuclearknife) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_fail_partiallobotomy) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_PartyDetonator`](Miscellaneous.md#object-beaniesquest_fail_partydetonator) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_PersonalHeater`](Miscellaneous.md#object-beaniesquest_fail_personalheater) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_fail_persuasiondevice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_PrincessHat`](Miscellaneous.md#object-beaniesquest_fail_princesshat) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_RealityScrambler`](Miscellaneous.md#object-beaniesquest_fail_realityscrambler) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_Redacted`](Miscellaneous.md#object-beaniesquest_fail_redacted) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_SpiderInjector`](Miscellaneous.md#object-beaniesquest_fail_spiderinjector) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_Stopwatch`](Miscellaneous.md#object-beaniesquest_fail_stopwatch) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_StorageLocker`](Miscellaneous.md#object-beaniesquest_fail_storagelocker) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_TheIOU`](Miscellaneous.md#object-beaniesquest_fail_theiou) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_TheLoner`](Miscellaneous.md#object-beaniesquest_fail_theloner) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_Trapfest99`](Miscellaneous.md#object-beaniesquest_fail_trapfest99) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_fail_UltraVision3000`](Miscellaneous.md#object-beaniesquest_fail_ultravision3000) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 ||
+| [`beaniesquest_intro_AI`](Miscellaneous.md#object-beaniesquest_intro_ai) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_AirHorn`](Miscellaneous.md#object-beaniesquest_intro_airhorn) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_AngryFace`](Miscellaneous.md#object-beaniesquest_intro_angryface) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_AnimalHands`](Miscellaneous.md#object-beaniesquest_intro_animalhands) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_BubbleBoy`](Miscellaneous.md#object-beaniesquest_intro_bubbleboy) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_ChadImplant`](Miscellaneous.md#object-beaniesquest_intro_chadimplant) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_ChaosDevice`](Miscellaneous.md#object-beaniesquest_intro_chaosdevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_DimensionalDivider`](Miscellaneous.md#object-beaniesquest_intro_dimensionaldivider) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_DiseaseJar`](Miscellaneous.md#object-beaniesquest_intro_diseasejar) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_ExperimentalTreatment`](Miscellaneous.md#object-beaniesquest_intro_experimentaltreatment) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_FartFace`](Miscellaneous.md#object-beaniesquest_intro_fartface) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_FigLeaf`](Miscellaneous.md#object-beaniesquest_intro_figleaf) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_Generic`](Miscellaneous.md#object-beaniesquest_intro_generic) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_GlassCannon`](Miscellaneous.md#object-beaniesquest_intro_glasscannon) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_HardPill`](Miscellaneous.md#object-beaniesquest_intro_hardpill) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_HiveMind`](Miscellaneous.md#object-beaniesquest_intro_hivemind) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_MagicMirror`](Miscellaneous.md#object-beaniesquest_intro_magicmirror) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_MeStone`](Miscellaneous.md#object-beaniesquest_intro_mestone) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_MultilinkCable`](Miscellaneous.md#object-beaniesquest_intro_multilinkcable) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_MysteriousDice`](Miscellaneous.md#object-beaniesquest_intro_mysteriousdice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_MysteriousGlasses`](Miscellaneous.md#object-beaniesquest_intro_mysteriousglasses) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_NDEDevice`](Miscellaneous.md#object-beaniesquest_intro_ndedevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_NuclearKnife`](Miscellaneous.md#object-beaniesquest_intro_nuclearknife) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_PartialLobotomy`](Miscellaneous.md#object-beaniesquest_intro_partiallobotomy) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_PartyDetonator`](Miscellaneous.md#object-beaniesquest_intro_partydetonator) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_PersonalHeater`](Miscellaneous.md#object-beaniesquest_intro_personalheater) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_PersuasionDevice`](Miscellaneous.md#object-beaniesquest_intro_persuasiondevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_PrincessHat`](Miscellaneous.md#object-beaniesquest_intro_princesshat) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 ||
+| [`beaniesquest_intro_RealityScrambler`](Miscellaneous.md#object-beaniesquest_intro_realityscrambler) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Reality Scrambler item. | 1 ||
+| [`beaniesquest_intro_Redacted`](Miscellaneous.md#object-beaniesquest_intro_redacted) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Redacted item. | 1 ||
+| [`beaniesquest_intro_SpiderInjector`](Miscellaneous.md#object-beaniesquest_intro_spiderinjector) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Spider Injector item. | 1 ||
+| [`beaniesquest_intro_Stopwatch`](Miscellaneous.md#object-beaniesquest_intro_stopwatch) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Stopwatch item. | 1 ||
+| [`beaniesquest_intro_StorageLocker`](Miscellaneous.md#object-beaniesquest_intro_storagelocker) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Storage Locker item. | 1 ||
+| [`beaniesquest_intro_TheIOU`](Miscellaneous.md#object-beaniesquest_intro_theiou) | Object | A sequence of dialog and state changes for Beanie's quest intro involving The IOU item. | 1 ||
+| [`beaniesquest_intro_TheLoner`](Miscellaneous.md#object-beaniesquest_intro_theloner) | Object | A sequence of dialog and state changes for Beanie's quest intro involving The Loner item. | 1 ||
+| [`beaniesquest_intro_Trapfest99`](Miscellaneous.md#object-beaniesquest_intro_trapfest99) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Trapfest99 item. | 1 ||
+| [`beaniesquest_intro_UltraVision3000`](Miscellaneous.md#object-beaniesquest_intro_ultravision3000) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the UltraVision3000 item. | 1 ||
+| [`boss_fight_intro`](Miscellaneous.md#object-boss_fight_intro) | Object | A sequence of dialog and state changes for the boss fight introduction cutscene. | 1 ||
+| [`boss_fight_round2`](Miscellaneous.md#object-boss_fight_round2) | Object | A sequence of dialog and state changes for the boss fight round 2 cutscene. | 1 ||
+| [`butch_begin_accepting_cats`](Miscellaneous.md#object-butch_begin_accepting_cats) | Object | A sequence of dialog and state changes when Butch begins accepting cats into the shelter. | 1 ||
+| [`butch_first_house_boss_beat`](Miscellaneous.md#object-butch_first_house_boss_beat) | Object | A sequence of dialog and state changes after defeating the first house boss. | 1 ||
+| [`butch_pyro`](Miscellaneous.md#object-butch_pyro) | Object | A sequence of dialog and state changes discussing Butch's pyro character. | 1 ||
+| [`butch_tina1`](Miscellaneous.md#object-butch_tina1) | Object | A sequence of dialog and state changes related to Butch and Tina's first interaction. | 1 ||
+| [`butch_tips_backstab`](Miscellaneous.md#object-butch_tips_backstab) | Object | A tutorial tip sequence explaining the backstab mechanic. | 1 ||
+| [`butch_tips_charisma`](Miscellaneous.md#object-butch_tips_charisma) | Object | A tutorial tip sequence explaining the charisma stat. | 1 ||
+| [`butch_tips_combat`](Miscellaneous.md#object-butch_tips_combat) | Object | A tutorial tip sequence covering basic combat mechanics. | 1 ||
+| [`butch_tips_disorders`](Miscellaneous.md#object-butch_tips_disorders) | Object | A tutorial tip sequence explaining disorders in cats. | 1 ||
+| [`butch_tips_drafting`](Miscellaneous.md#object-butch_tips_drafting) | Object | A tutorial tip sequence explaining the drafting system. | 1 ||
+| [`butch_tips_elements`](Miscellaneous.md#object-butch_tips_elements) | Object | A tutorial tip sequence covering elemental damage types. | 1 ||
+| [`butch_tips_hard`](Miscellaneous.md#object-butch_tips_hard) | Object | A tutorial tip sequence about playing on hard difficulty. | 1 ||
+| [`butch_tips_headhome`](Miscellaneous.md#object-butch_tips_headhome) | Object | A tutorial tip sequence about returning to the home base. | 1 ||
+| [`butch_tips_houseboss`](Miscellaneous.md#object-butch_tips_houseboss) | Object | A tutorial tip sequence explaining house bosses. | 1 ||
+| [`butch_tips_info`](Miscellaneous.md#object-butch_tips_info) | Object | A tutorial tip sequence about viewing information on units. | 1 ||
+| [`butch_tips_intelligence`](Miscellaneous.md#object-butch_tips_intelligence) | Object | A tutorial tip sequence explaining the intelligence stat. | 1 ||
+| [`butch_tips_intro`](Miscellaneous.md#object-butch_tips_intro) | Object | The initial tutorial tip sequence that introduces Butch's tips. | 1 ||
+| [`butch_tips_items`](Miscellaneous.md#object-butch_tips_items) | Object | A tutorial tip sequence about using items in combat. | 1 ||
+| [`butch_tips_lesscats`](Miscellaneous.md#object-butch_tips_lesscats) | Object | A tutorial tip sequence about managing with fewer cats. | 1 ||
+| [`butch_tips_magicdamage`](Miscellaneous.md#object-butch_tips_magicdamage) | Object | A tutorial tip sequence explaining magic damage. | 1 ||
+| [`butch_tips_passives`](Miscellaneous.md#object-butch_tips_passives) | Object | A tutorial tip sequence covering passive abilities. | 1 ||
+| [`butch_tips_reorient`](Miscellaneous.md#object-butch_tips_reorient) | Object | A tutorial tip sequence explaining the reorient mechanic. | 1 ||
+| [`butch_tips_rewards`](Miscellaneous.md#object-butch_tips_rewards) | Object | A tutorial tip sequence about earning rewards. | 1 ||
+| [`butch_tips_tacticalview`](Miscellaneous.md#object-butch_tips_tacticalview) | Object | A tutorial tip sequence about using tactical view. | 1 ||
+| [`butch_tips_turnorder`](Miscellaneous.md#object-butch_tips_turnorder) | Object | A tutorial tip sequence explaining turn order. | 1 ||
+| [`butch_tips_wellrounded`](Miscellaneous.md#object-butch_tips_wellrounded) | Object | A tutorial tip sequence about building well-rounded teams. | 1 ||
+| [`can_still_use_attack`](Miscellaneous.md#object-can_still_use_attack) | Object | A sequence of dialog and state changes when a unit can still use an attack ability. | 1 ||
+| [`can_still_use_attack_didntspell`](Miscellaneous.md#object-can_still_use_attack_didntspell) | Object | A sequence of dialog and state changes when a unit didn't use a spell but can still attack. | 1 ||
+| [`cant_afford_a`](Miscellaneous.md#object-cant_afford_a) | Object | A sequence showing dialog when the player cannot afford item A. | 1 ||
+| [`cant_afford_b`](Miscellaneous.md#object-cant_afford_b) | Object | A sequence showing dialog when the player cannot afford item B. | 1 ||
+| [`cant_afford_c`](Miscellaneous.md#object-cant_afford_c) | Object | A sequence showing dialog when the player cannot afford item C. | 1 ||
+| [`cant_afford_d`](Miscellaneous.md#object-cant_afford_d) | Object | A sequence showing dialog when the player cannot afford item D. | 1 ||
+| [`cant_afford_iceage`](Miscellaneous.md#object-cant_afford_iceage) | Object | A sequence showing dialog when the player cannot afford the Ice Age item. Can also be a boolean flag. | 1 ||
+| [`cant_afford_jurassic`](Miscellaneous.md#object-cant_afford_jurassic) | Object | A sequence showing dialog when the player cannot afford the Jurassic item. Can also be a boolean flag. | 1 ||
+| [`cant_afford_moon`](Miscellaneous.md#object-cant_afford_moon) | Object | A sequence showing dialog when the player cannot afford the Moon item. Can also be a boolean flag. | 1 ||
+| [`cant_afford_theend`](Miscellaneous.md#object-cant_afford_theend) | Object | Defines the sequence for when the player cannot afford the End purchase, optionally cancelable with a dialog and autopass. | 1 ||
+| [`class_unlock_butcher`](Miscellaneous.md#object-class_unlock_butcher) | Object | Defines the sequence for unlocking the Butcher class, including dialogs and camera state changes. | 1 ||
+| [`class_unlock_druid`](Miscellaneous.md#object-class_unlock_druid) | Object | Defines the dialog sequence that plays when unlocking the Druid class. | 1 ||
+| [`class_unlock_medic`](Miscellaneous.md#object-class_unlock_medic) | Object | Defines the dialog sequence that plays when unlocking the Medic class. | 1 ||
+| [`class_unlock_monk`](Miscellaneous.md#object-class_unlock_monk) | Object | Defines the dialog sequence that plays when unlocking the Monk class. | 1 ||
+| [`class_unlock_necromancer`](Miscellaneous.md#object-class_unlock_necromancer) | Object | Defines the dialog sequence that plays when unlocking the Necromancer class. | 1 ||
+| [`class_unlock_psychic`](Miscellaneous.md#object-class_unlock_psychic) | Object | Defines the dialog sequence that plays when unlocking the Psychic class. | 1 ||
+| [`class_unlock_thief`](Miscellaneous.md#object-class_unlock_thief) | Object | Defines the dialog sequence that plays when unlocking the Thief class. | 1 ||
+| [`class_unlock_tinkerer`](Miscellaneous.md#object-class_unlock_tinkerer) | Object | Defines the dialog sequence that plays when unlocking the Tinkerer class. | 1 ||
+| [`collected_new_items`](Miscellaneous.md#object-collected_new_items) | Object | Defines the dialog sequence that plays when the player has collected new items after an adventure. | 1 ||
+| [`collected_nothing`](Miscellaneous.md#object-collected_nothing) | Object | Defines the dialog sequence that plays when the player collected nothing (e.g., died in first combat). | 1 ||
+| [`do_not_end_turn`](Miscellaneous.md#object-do_not_end_turn) | Object | Defines a dialog sequence warning the player not to end their turn. | 1 ||
+| [`done_spitting_fail_ally`](Miscellaneous.md#object-done_spitting_fail_ally) | Object | Defines a dialog sequence that plays when a spitting action fails on an ally. | 1 ||
+| [`done_spitting_fail_miss`](Miscellaneous.md#object-done_spitting_fail_miss) | Object | Defines a dialog sequence that plays when a spitting action misses. | 1 ||
+| [`done_spitting_fail_rat`](Miscellaneous.md#object-done_spitting_fail_rat) | Object | Defines a dialog sequence that plays when a spitting action fails on a rat. | 1 ||
+| [`done_spitting_success`](Miscellaneous.md#object-done_spitting_success) | Object | Defines a dialog sequence that plays when a spitting action succeeds. | 1 ||
+| [`ending`](Miscellaneous.md#object-ending) | Object | Defines the ending dialog sequence with Dr. Beanies after saving the player in the time machine. | 1 ||
+| [`finish_adventure`](Miscellaneous.md#object-finish_adventure) | Object | Defines a dialog sequence that plays when the player finishes an adventure. | 1 ||
+| [`first_fight_intro`](Miscellaneous.md#object-first_fight_intro) | Object | Defines the intro dialog sequence for the first fight. | 1 ||
+| [`first_house_boss_tomorrow`](Miscellaneous.md#object-first_house_boss_tomorrow) | Object | Defines a dialog sequence about a boss arriving tomorrow in the first house. | 1 ||
+| [`first_house_hint_retired`](Miscellaneous.md#object-first_house_hint_retired) | Object | Defines a dialog sequence giving a hint about a retired cat in the first house. | 1 ||
+| [`frank_max1`](Miscellaneous.md#object-frank_max1) | Object | Defines a dialog sequence for Frank at maximum affinity level 1. | 1 ||
+| [`frank_max2`](Miscellaneous.md#object-frank_max2) | Object | Defines a dialog sequence for Frank at maximum affinity level 2. | 1 ||
+| [`frank_max3`](Miscellaneous.md#object-frank_max3) | Object | Defines a dialog sequence for Frank at maximum affinity level 3. | 1 ||
+| [`frank_max4`](Miscellaneous.md#object-frank_max4) | Object | Defines a dialog sequence for Frank at maximum affinity level 4. | 1 ||
+| [`frank_max5`](Miscellaneous.md#object-frank_max5) | Object | Defines a dialog sequence for Frank at maximum affinity level 5. | 1 ||
+| [`frank_terminator2`](Miscellaneous.md#object-frank_terminator2) | Object | Defines a dialog sequence for Frank's 'terminator' event (likely a special encounter). | 1 ||
+| [`frank_tips_1`](Miscellaneous.md#object-frank_tips_1) | Object | Defines a tips dialog sequence from Frank (tip #1). | 1 ||
+| [`frank_tips_10`](Miscellaneous.md#object-frank_tips_10) | Object | Defines a tips dialog sequence from Frank (tip #10). | 1 ||
+| [`frank_tips_2`](Miscellaneous.md#object-frank_tips_2) | Object | Defines a tips dialog sequence from Frank (tip #2). | 1 ||
+| [`frank_tips_3`](Miscellaneous.md#object-frank_tips_3) | Object | Defines a tips dialog sequence from Frank (tip #3). | 1 ||
+| [`frank_tips_4`](Miscellaneous.md#object-frank_tips_4) | Object | Defines a tips dialog sequence from Frank (tip #4). | 1 ||
+| [`frank_tips_5`](Miscellaneous.md#object-frank_tips_5) | Object | Defines a tips dialog sequence from Frank (tip #5). | 1 ||
+| [`frank_tips_6`](Miscellaneous.md#object-frank_tips_6) | Object | Defines a tips dialog sequence from Frank (tip #6). | 1 ||
+| [`frank_tips_7`](Miscellaneous.md#object-frank_tips_7) | Object | Defines a tips dialog sequence from Frank (tip #7). | 1 ||
+| [`frank_tips_8`](Miscellaneous.md#object-frank_tips_8) | Object | Defines a tips dialog sequence from Frank (tip #8). | 1 ||
+| [`frank_tips_9`](Miscellaneous.md#object-frank_tips_9) | Object | Defines a tips dialog sequence from Frank (tip #9). | 1 ||
+| [`gone`](Miscellaneous.md#object-gone) | Object | Sets the NPC state to 'gone', making them disappear from the scene. | 1 ||
+| [`house_intro`](Miscellaneous.md#object-house_intro) | Object | Defines the intro dialog sequence that plays when entering a house. | 1 ||
+| [`house_kitten_box`](Miscellaneous.md#object-house_kitten_box) | Object | Defines a dialog sequence about a kitten box in the house. | 1 ||
+| [`house_pass_day`](Miscellaneous.md#object-house_pass_day) | Object | A sequence that plays dialog and animations when a day passes in the house. | 1 ||
+| [`house_pass_day2`](Miscellaneous.md#object-house_pass_day2) | Object | A sequence that plays extended dialog and animations when a day passes in the house. | 1 ||
+| [`house_pipe`](Miscellaneous.md#object-house_pipe) | Object | A sequence that plays dialog and animations related to the house pipe. | 1 ||
+| [`house_retired_cat_box`](Miscellaneous.md#object-house_retired_cat_box) | Object | A sequence that plays dialog and animations for the retired cat box. | 1 ||
+| [`house_starred_box`](Miscellaneous.md#object-house_starred_box) | Object | A sequence that plays dialog and animations for the starred box. | 1 ||
+| [`house_strays`](Miscellaneous.md#object-house_strays) | Object | A sequence that plays dialog and animations for stray cats in the house. | 1 ||
+| [`house_upgrade_basement`](Miscellaneous.md#object-house_upgrade_basement) | Object | A sequence that triggers dialog and a reward for the first basement upgrade. | 1 ||
+| [`house_upgrade_basement2`](Miscellaneous.md#object-house_upgrade_basement2) | Object | A sequence that triggers the second basement upgrade and awards favor. | 1 ||
+| [`house_upgrade_basement3`](Miscellaneous.md#object-house_upgrade_basement3) | Object | A sequence that triggers the third basement upgrade and awards favor. | 1 ||
+| [`house_upgrade_basement4`](Miscellaneous.md#object-house_upgrade_basement4) | Object | A sequence that triggers the fourth basement upgrade and awards favor. | 1 ||
+| [`house_upgrade_basement5`](Miscellaneous.md#object-house_upgrade_basement5) | Object | A sequence that triggers the fifth basement upgrade and awards favor. | 1 ||
+| [`introduce_hard_path`](Miscellaneous.md#object-introduce_hard_path) | Object | A sequence that plays dialog and animations to introduce the hard path. | 1 ||
+| [`jack_begin_accepting_cats`](Miscellaneous.md#object-jack_begin_accepting_cats) | Object | A sequence that shows Jack's introductory dialog for accepting cats, locking player controls. | 1 ||
+| [`Jack_Gainaltfurniture`](Engine_LogicKeys.md#object-jack_gainaltfurniture) | Object | A sequence that plays Jack's dialog explaining rare alt furniture and the Nona cat, locking controls. | 1 ||
+| [`jack_introduction`](Miscellaneous.md#object-jack_introduction) | Object | A sequence that plays Jack's initial introduction dialog and animation. | 1 ||
+| [`jack_max1`](Miscellaneous.md#object-jack_max1) | Object | A sequence that plays Jack's first max favor dialog sequence, locking controls. | 1 ||
+| [`jack_max2`](Miscellaneous.md#object-jack_max2) | Object | A sequence that plays Jack's second max favor dialog sequence, locking controls. | 1 ||
+| [`jack_max3`](Miscellaneous.md#object-jack_max3) | Object | A sequence that plays Jack's third max favor dialog sequence, locking controls. | 1 ||
+| [`jack_max4`](Miscellaneous.md#object-jack_max4) | Object | A sequence that plays Jack's fourth max favor dialog sequence, locking controls. | 1 ||
+| [`jack_max5`](Miscellaneous.md#object-jack_max5) | Object | A sequence that plays Jack's fifth max favor dialog sequence, locking controls. | 1 ||
+| [`jack_zara`](Miscellaneous.md#object-jack_zara) | Object | A sequence that plays Jack's dialog about Zara, locking controls. | 1 ||
+| [`level_up_didnt_select_sunburn`](Miscellaneous.md#object-level_up_didnt_select_sunburn) | Object | A sequence that plays dialog when the player did not select the Sunburn level-up option. | 1 ||
+| [`level_up_intro`](Miscellaneous.md#object-level_up_intro) | Object | A sequence that plays the introductory dialog and animation for the level-up UI. | 1 ||
+| [`level_up_selected_sunburn`](Miscellaneous.md#object-level_up_selected_sunburn) | Object | A sequence that plays dialog when the player selected the Sunburn level-up option. | 1 ||
+| [`low_on_food`](Miscellaneous.md#object-low_on_food) | Object | A sequence that plays a dialog and animation warning the player that they are low on food. | 1 ||
+| [`map_click_node`](Miscellaneous.md#object-map_click_node) | Object | A sequence that teaches the player to click a map node, then unlocks controls. | 1 ||
+| [`map_equip_items`](Miscellaneous.md#object-map_equip_items) | Object | A sequence that teaches the player to equip items on the map. | 1 ||
+| [`map_equip_items2`](Miscellaneous.md#object-map_equip_items2) | Object | A sequence that provides a secondary reminder to equip items, clearing its own token. | 1 ||
+| [`melee_attack_rat`](Miscellaneous.md#object-melee_attack_rat) | Object | A tutorial sequence that demonstrates how to perform a melee attack on a rat. | 1 ||
+| [`melee_cat_spit`](Miscellaneous.md#object-melee_cat_spit) | Object | A tutorial sequence that demonstrates how to use the cat spit ability. | 1 ||
+| [`melee_cat_spit_fail_ally`](Miscellaneous.md#object-melee_cat_spit_fail_ally) | Object | A tutorial sequence that plays when the cat spit fails due to targeting an ally. | 1 ||
+| [`melee_cat_spit_fail_miss`](Miscellaneous.md#object-melee_cat_spit_fail_miss) | Object | A tutorial sequence that plays when the cat spit fails due to a miss. | 1 ||
+| [`melee_cat_spit_fail_rat`](Miscellaneous.md#object-melee_cat_spit_fail_rat) | Object | A tutorial sequence that plays when the cat spit fails to hit a rat. | 1 ||
+| [`melee_cat_spit_ignore`](Miscellaneous.md#object-melee_cat_spit_ignore) | Object | A tutorial sequence that plays when the player ignores the cat spit prompt. | 1 ||
+| [`melee_cat_spit_success`](Miscellaneous.md#object-melee_cat_spit_success) | Object | A tutorial sequence that plays when the cat spit is successfully used. | 1 ||
+| [`melee_killed_rat`](Miscellaneous.md#object-melee_killed_rat) | Object | A tutorial sequence that plays after the player kills a rat with a melee attack. | 1 ||
+| [`melee_move2`](Miscellaneous.md#object-melee_move2) | Object | A tutorial sequence that teaches the player to use movement actions. | 1 ||
+| [`melee_out_of_actions`](Miscellaneous.md#object-melee_out_of_actions) | Object | A tutorial sequence that explains when the player is out of actions in melee. | 1 ||
+| [`new_adventure`](Miscellaneous.md#object-new_adventure) | Object | A sequence that plays dialog and animation when starting a new adventure. | 1 ||
+| [`organ_intro`](Miscellaneous.md#object-organ_intro) | Object | Sequence of events for the Organ Grinder's introductory dialogue. | 1 ||
+| [`organ_max1`](Miscellaneous.md#object-organ_max1) | Object | Sequence of events for the Organ Grinder's first max favor dialogue. | 1 ||
+| [`organ_max2`](Miscellaneous.md#object-organ_max2) | Object | Sequence of events for the Organ Grinder's second max favor dialogue. | 1 ||
+| [`organ_max3`](Miscellaneous.md#object-organ_max3) | Object | Sequence of events for the Organ Grinder's third max favor dialogue. | 1 ||
+| [`organ_max4`](Miscellaneous.md#object-organ_max4) | Object | Sequence of events for the Organ Grinder's fourth max favor dialogue. | 1 ||
+| [`organ_max5`](Miscellaneous.md#object-organ_max5) | Object | Sequence of events for the Organ Grinder's fifth max favor dialogue. | 1 ||
+| [`organ_rename`](Miscellaneous.md#object-organ_rename) | Object | Sequence of events for the Organ Grinder's rename dialogue. | 1 ||
+| [`organ_tina3`](Miscellaneous.md#object-organ_tina3) | Object | Sequence of events for the Organ Grinder's dialogue with Tina (stage 3). | 1 ||
+| [`purchase_item_a`](Miscellaneous.md#object-purchase_item_a) | Object | Sequence of events for purchasing shop item A from Tracy. | 1 ||
+| [`purchase_item_b`](Miscellaneous.md#object-purchase_item_b) | Object | Sequence of events for purchasing shop item B from Tracy. | 1 ||
+| [`purchase_item_c`](Miscellaneous.md#object-purchase_item_c) | Object | Sequence of events for purchasing shop item C from Tracy. | 1 ||
+| [`purchase_item_d`](Miscellaneous.md#object-purchase_item_d) | Object | Sequence of events for purchasing shop item D from Tracy. | 1 ||
+| [`purchase_item_iceage`](Miscellaneous.md#object-purchase_item_iceage) | Object | Sequence of events for purchasing the Ice Age shop item. When set to true, indicates the purchase has already occurred. | 1 ||
+| [`purchase_item_jurassic`](Miscellaneous.md#object-purchase_item_jurassic) | Object | Sequence of events for purchasing the Jurassic shop item. When set to true, indicates the purchase has already occurred. | 1 ||
+| [`purchase_item_moon`](Miscellaneous.md#object-purchase_item_moon) | Object | Sequence of events for purchasing the Moon shop item. When set to true, indicates the purchase has already occurred. | 1 ||
+| [`purchase_item_theend`](Miscellaneous.md#object-purchase_item_theend) | Object | Sequence of events for purchasing The End shop item. When set to true, indicates the purchase has already occurred. | 1 ||
+| [`ranged_attack_tomtom`](Miscellaneous.md#object-ranged_attack_tomtom) | Object | Sequence of events for TomTom's ranged attack. | 1 ||
+| [`ranged_attack_tomtom_fail_ally`](Miscellaneous.md#object-ranged_attack_tomtom_fail_ally) | Object | Sequence of events for when TomTom's ranged attack fails due to an ally in the way. | 1 ||
+| [`ranged_attack_tomtom_fail_miss`](Miscellaneous.md#object-ranged_attack_tomtom_fail_miss) | Object | Sequence of events for when TomTom's ranged attack misses. | 1 ||
+| [`ranged_attack_tomtom_fail_rat`](Miscellaneous.md#object-ranged_attack_tomtom_fail_rat) | Object | Sequence of events for when TomTom's ranged attack fails due to a rat. | 1 ||
+| [`ranged_cat_attack`](Miscellaneous.md#object-ranged_cat_attack) | Object | Sequence of events for the cat's ranged attack. | 1 ||
+| [`ranged_cat_early_attack2_ally`](Miscellaneous.md#object-ranged_cat_early_attack2_ally) | Object | Sequence of events for the cat's second early ranged attack failing due to an ally. | 1 ||
+| [`ranged_cat_early_attack2_miss`](Miscellaneous.md#object-ranged_cat_early_attack2_miss) | Object | Sequence of events for the cat's second early ranged attack missing. | 1 ||
+| [`ranged_cat_early_attack2_rat`](Miscellaneous.md#object-ranged_cat_early_attack2_rat) | Object | Sequence of events for the cat's second early ranged attack failing due to a rat. | 1 ||
+| [`ranged_cat_early_attack_ally`](Miscellaneous.md#object-ranged_cat_early_attack_ally) | Object | Sequence of events for the cat's first early ranged attack failing due to an ally. | 1 ||
+| [`ranged_cat_early_attack_miss`](Miscellaneous.md#object-ranged_cat_early_attack_miss) | Object | Sequence of events for the cat's first early ranged attack missing. | 1 ||
+| [`ranged_cat_early_attack_rat`](Miscellaneous.md#object-ranged_cat_early_attack_rat) | Object | Sequence of events for the cat's first early ranged attack failing due to a rat. | 1 ||
+| [`ranged_cat_failmove`](Miscellaneous.md#object-ranged_cat_failmove) | Object | Sequence of events for the cat's failed ranged attack move. | 1 ||
+| [`ranged_cat_intro`](Miscellaneous.md#object-ranged_cat_intro) | Object | Sequence of events for the cat's ranged attack introduction. | 1 ||
+| [`ranged_cat_roll`](Miscellaneous.md#object-ranged_cat_roll) | Object | Sequence of events for the cat's ranged attack roll animation. | 1 ||
+| [`ranged_cat_rolled_first`](Miscellaneous.md#object-ranged_cat_rolled_first) | Object | Sequence of events for when the cat rolls first. | 1 ||
+| [`steven_100`](Miscellaneous.md#object-steven_100) | Object | Sequence of events for Steven's 100% completion dialogue. | 1 ||
+| [`steven_introduction`](Miscellaneous.md#object-steven_introduction) | Object | Sequence of events for Steven's introduction dialogue. | 1 ||
+| [`steven_resummon`](Miscellaneous.md#object-steven_resummon) | Object | A sequence triggered after beating the final boss, unlocking the ability to resummon house bosses. | 1 ||
+| [`steven_savescum_1`](Miscellaneous.md#object-steven_savescum_1) | Object | A sequence that plays a random warning sequence for the first savescum event. | 1 ||
+| [`steven_savescum_100`](Miscellaneous.md#object-steven_savescum_100) | Object | A secret sequence for the 100th savescum event. | 1 ||
+| [`steven_savescum_1alt1`](Miscellaneous.md#object-steven_savescum_1alt1) | Object | One of the random alternative warning sequences for the first savescum event. | 1 ||
+| [`steven_savescum_1alt2`](Miscellaneous.md#object-steven_savescum_1alt2) | Object | One of the random alternative warning sequences for the first savescum event. | 1 ||
+| [`steven_savescum_1alt3`](Miscellaneous.md#object-steven_savescum_1alt3) | Object | One of the random alternative warning sequences for the first savescum event. | 1 ||
+| [`steven_savescum_2`](Miscellaneous.md#object-steven_savescum_2) | Object | A sequence that plays a random sequence for the second savescum event (1 cat deja vu 10%). | 1 ||
+| [`steven_savescum_2alt1`](Miscellaneous.md#object-steven_savescum_2alt1) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 ||
+| [`steven_savescum_2alt2`](Miscellaneous.md#object-steven_savescum_2alt2) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 ||
+| [`steven_savescum_2alt3`](Miscellaneous.md#object-steven_savescum_2alt3) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 ||
+| [`steven_savescum_3`](Miscellaneous.md#object-steven_savescum_3) | Object | A sequence that plays a random sequence for the third savescum event (all cats deja vu 10%). | 1 ||
+| [`steven_savescum_3alt1`](Miscellaneous.md#object-steven_savescum_3alt1) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 ||
+| [`steven_savescum_3alt2`](Miscellaneous.md#object-steven_savescum_3alt2) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 ||
+| [`steven_savescum_3alt3`](Miscellaneous.md#object-steven_savescum_3alt3) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 ||
+| [`steven_savescum_4`](Miscellaneous.md#object-steven_savescum_4) | Object | A sequence that plays a random sequence for the fourth savescum event (deja vu level up 25%). | 1 ||
+| [`steven_savescum_4alt1`](Miscellaneous.md#object-steven_savescum_4alt1) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 ||
+| [`steven_savescum_4alt2`](Miscellaneous.md#object-steven_savescum_4alt2) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 ||
+| [`steven_savescum_4alt3`](Miscellaneous.md#object-steven_savescum_4alt3) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 ||
+| [`steven_savescum_houseboss_1`](Miscellaneous.md#object-steven_savescum_houseboss_1) | Object | A warning sequence for the first house boss savescum event. | 1 ||
+| [`steven_savescum_houseboss_100`](Miscellaneous.md#object-steven_savescum_houseboss_100) | Object | A secret sequence for the 100th house boss savescum event. | 1 ||
+| [`steven_savescum_houseboss_2`](Miscellaneous.md#object-steven_savescum_houseboss_2) | Object | A sequence for the second house boss savescum event (all cats 10% deja vu). | 1 ||
+| [`steven_savescum_houseboss_3`](Miscellaneous.md#object-steven_savescum_houseboss_3) | Object | A sequence for the third house boss savescum event (all cats deja vu 25% and onward). | 1 ||
+| [`steven_savescum_intro`](Miscellaneous.md#object-steven_savescum_intro) | Object | A sequence that replaces the first savescum event sequences if it is the first time savescumming. | 1 ||
+| [`steven_savescum_intro_houseboss`](Miscellaneous.md#object-steven_savescum_intro_houseboss) | Object | A sequence that replaces the first house boss savescum event sequences if it is the first time savescumming. | 1 ||
+| [`steven_unlock_act1_crazy`](Miscellaneous.md#object-steven_unlock_act1_crazy) | Object | A sequence triggered when beating Act 1 and its house bosses on Hard, unlocking Crazy difficulty. | 1 ||
+| [`steven_unlock_act1_impossible`](Miscellaneous.md#object-steven_unlock_act1_impossible) | Object | A sequence triggered when beating Act 1 house bosses on Crazy, unlocking Impossible difficulty. | 1 ||
+| [`steven_unlock_act2_crazy`](Miscellaneous.md#object-steven_unlock_act2_crazy) | Object | A sequence for unlocking Act 2 Crazy difficulty. | 1 ||
+| [`steven_unlock_act2_hard`](Miscellaneous.md#object-steven_unlock_act2_hard) | Object | A sequence triggered when beating Act 2 for the first time, unlocking Hard difficulty. | 1 ||
+| [`steven_unlock_act2_impossible`](Miscellaneous.md#object-steven_unlock_act2_impossible) | Object | A sequence for unlocking Act 2 Impossible difficulty. | 1 ||
+| [`steven_unlock_act3_crazy`](Miscellaneous.md#object-steven_unlock_act3_crazy) | Object | A sequence for unlocking Act 3 Crazy difficulty. | 1 ||
+| [`steven_unlock_act3_hard`](Miscellaneous.md#object-steven_unlock_act3_hard) | Object | A sequence triggered when beating Act 3 for the first time, unlocking Hard difficulty. | 1 ||
+| [`steven_unlock_act3_impossible`](Miscellaneous.md#object-steven_unlock_act3_impossible) | Object | A sequence for unlocking Act 3 Impossible difficulty. | 1 ||
+| [`take_cats_inside`](Miscellaneous.md#object-take_cats_inside) | Object | A sequence for taking cats inside the house. | 1 ||
+| [`test_gamepad_prompts`](Miscellaneous.md#object-test_gamepad_prompts) | Object | A sequence that shows gamepad binding prompts. | 1 ||
+| [`tink_begin_accepting_cats`](Miscellaneous.md#object-tink_begin_accepting_cats) | Object | A sequence for when Tink begins accepting cats. | 1 ||
+| [`tink_max1`](Miscellaneous.md#object-tink_max1) | Object | One of the sequences played when Tink is at max favor (1 of 10). | 1 ||
+| [`tink_max10`](Miscellaneous.md#object-tink_max10) | Object | One of the sequences played when Tink is at max favor (10 of 10). | 1 ||
+| [`tink_max2`](Miscellaneous.md#object-tink_max2) | Object | One of the sequences played when Tink is at max favor (2 of 10). | 1 ||
+| [`tink_max3`](Miscellaneous.md#object-tink_max3) | Object | One of the sequences played when Tink is at max favor (3 of 10). | 1 ||
+| [`tink_max4`](Miscellaneous.md#object-tink_max4) | Object | One of the sequences played when Tink is at max favor (4 of 10). | 1 ||
+| [`tink_max5`](Miscellaneous.md#object-tink_max5) | Object | One of the sequences played when Tink is at max favor (5 of 10). | 1 ||
+| [`tink_max6`](Miscellaneous.md#object-tink_max6) | Object | One of the sequences played when Tink is at max favor (6 of 10). | 1 ||
+| [`tink_max7`](Miscellaneous.md#object-tink_max7) | Object | One of the sequences played when Tink is at max favor (7 of 10). | 1 ||
+| [`tink_max8`](Miscellaneous.md#object-tink_max8) | Object | One of the sequences played when Tink is at max favor (8 of 10). | 1 ||
+| [`tink_max9`](Miscellaneous.md#object-tink_max9) | Object | One of the sequences played when Tink is at max favor (9 of 10). | 1 ||
+| [`tink_terminator`](Miscellaneous.md#object-tink_terminator) | Object | A sequence for Tink's terminator event. | 1 ||
+| [`tink_tina2`](Miscellaneous.md#object-tink_tina2) | Object | A sequence for Tink and Tina interaction 2. | 1 ||
+| [`tink_tips_appeal`](Miscellaneous.md#object-tink_tips_appeal) | Object | A sequence for Tink's tips on appeal. | 1 ||
+| [`tink_tips_basestats`](Miscellaneous.md#object-tink_tips_basestats) | Object | A sequence for Tink's tips on base stats. | 1 ||
+| [`tink_tips_cleaning`](Miscellaneous.md#object-tink_tips_cleaning) | Object | A sequence for Tink's tips on cleaning. | 1 ||
+| [`tink_tips_comfort`](Miscellaneous.md#object-tink_tips_comfort) | Object | A sequence of dialogs providing Tink's tips on cat comfort. | 1 ||
+| [`tink_tips_health`](Miscellaneous.md#object-tink_tips_health) | Object | A sequence of dialogs providing Tink's tips on cat health. | 1 ||
+| [`tink_tips_inbreeding`](Miscellaneous.md#object-tink_tips_inbreeding) | Object | A sequence of dialogs providing Tink's tips on inbreeding. | 1 ||
+| [`tink_tips_intro`](Miscellaneous.md#object-tink_tips_intro) | Object | A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence. | 1 ||
+| [`tink_tips_multiclassing`](Miscellaneous.md#object-tink_tips_multiclassing) | Object | A sequence of dialogs providing Tink's tips on multiclassing. | 1 ||
+| [`tink_tips_mutation`](Miscellaneous.md#object-tink_tips_mutation) | Object | A sequence of dialogs providing Tink's tips on mutations. | 1 ||
+| [`tink_tips_stimulation`](Miscellaneous.md#object-tink_tips_stimulation) | Object | A sequence of dialogs providing Tink's tips on stimulation. | 1 ||
+| [`tracy_foodbonus1`](Miscellaneous.md#object-tracy_foodbonus1) | Object | A sequence showing Tracy explaining a food bonus reward. | 1 ||
+| [`tracy_introduction`](Miscellaneous.md#object-tracy_introduction) | Object | A sequence introducing Tracy to the player. | 1 ||
+| [`tracy_kaijufight`](Miscellaneous.md#object-tracy_kaijufight) | Object | A sequence where Tracy discusses a kaiju fight. | 1 ||
+| [`tracy_max1`](Miscellaneous.md#object-tracy_max1) | Object | A sequence for Tracy at max favor (part 1). | 1 ||
+| [`tracy_max2`](Miscellaneous.md#object-tracy_max2) | Object | A sequence for Tracy at max favor (part 2). | 1 ||
+| [`tracy_max3`](Miscellaneous.md#object-tracy_max3) | Object | A sequence for Tracy at max favor (part 3). | 1 ||
+| [`tracy_max4`](Miscellaneous.md#object-tracy_max4) | Object | A sequence for Tracy at max favor (part 4). | 1 ||
+| [`tracy_max5`](Miscellaneous.md#object-tracy_max5) | Object | A sequence for Tracy at max favor (part 5). | 1 ||
+| [`try_again_attack_rat`](Miscellaneous.md#object-try_again_attack_rat) | Object | A tutorial sequence prompting the player to try attacking the rat again. | 1 ||
+| [`try_again_melee_move`](Miscellaneous.md#object-try_again_melee_move) | Object | A tutorial sequence prompting the player to try a melee move again. | 1 ||
+| [`tutorial_cat_dies`](Miscellaneous.md#object-tutorial_cat_dies) | Object | A tutorial sequence explaining what happens when a cat dies. | 1 ||
+| [`unprompted1`](Miscellaneous.md#object-unprompted1) | Object | An unprompted dialogue sequence from Beanies (part 1). | 1 ||
+| [`unprompted2`](Miscellaneous.md#object-unprompted2) | Object | An unprompted dialogue sequence from Beanies (part 2). | 1 ||
+| [`unprompted3`](Miscellaneous.md#object-unprompted3) | Object | An unprompted dialogue sequence from Beanies (part 3). | 1 ||
+| [`unprompted4`](Miscellaneous.md#object-unprompted4) | Object | An unprompted dialogue sequence from Beanies (part 4). | 1 ||
+| [`unprompted5`](Miscellaneous.md#object-unprompted5) | Object | An unprompted dialogue sequence from Beanies (part 5). | 1 ||
+| [`unprompted6`](Miscellaneous.md#object-unprompted6) | Object | An unprompted dialogue sequence from Beanies (part 6). | 1 ||
+| [`upgrade_storage_max1`](Miscellaneous.md#object-upgrade_storage_max1) | Object | A dialogue popup for the first storage space upgrade. | 1 ||
+| [`upgrade_storage_max2`](Miscellaneous.md#object-upgrade_storage_max2) | Object | A dialogue popup for the second storage space upgrade, including a reward. | 1 ||
+| [`upgrade_storage_max3`](Miscellaneous.md#object-upgrade_storage_max3) | Object | A dialogue popup for the third storage space upgrade. | 1 ||
+| [`upgrade_storage_max4`](Miscellaneous.md#object-upgrade_storage_max4) | Object | A dialogue popup for the fourth storage space upgrade. | 1 ||
+| [`upgrade_storage_max5`](Miscellaneous.md#object-upgrade_storage_max5) | Object | A dialogue popup for the fifth storage space upgrade. | 1 ||
+| [`use_attack_after_used_weapon`](Miscellaneous.md#object-use_attack_after_used_weapon) | Object | A tutorial sequence teaching the player to use an attack after using a weapon. | 1 ||
+| [`use_weapon`](Events_and_Encounters.md#object-use_weapon) | Object | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 ||
+| [`welcome`](Miscellaneous.md#object-welcome) | Object | A cancelable welcome sequence for Tracy's shop. | 1 ||
+| [`welcome_boneyard`](Miscellaneous.md#object-welcome_boneyard) | Object | A cancelable welcome sequence for the boneyard biome shop. | 1 ||
+| [`welcome_bunker`](Miscellaneous.md#object-welcome_bunker) | Object | A cancelable welcome sequence for the bunker biome shop. | 1 ||
+| [`welcome_caves`](Miscellaneous.md#object-welcome_caves) | Object | A cancelable welcome sequence for the caves biome shop. | 1 ||
+| [`welcome_core`](Miscellaneous.md#object-welcome_core) | Object | A cancelable welcome sequence for the core biome shop. | 1 ||
+| [`welcome_crater`](Miscellaneous.md#object-welcome_crater) | Object | A cancelable welcome sequence for the crater biome shop. | 1 ||
+| [`welcome_desert`](Miscellaneous.md#object-welcome_desert) | Object | A cancelable welcome sequence for the desert biome shop. | 1 ||
+| [`welcome_future`](Miscellaneous.md#object-welcome_future) | Object | A cancelable welcome sequence for the future biome shop. | 1 ||
+| [`welcome_iceage`](Miscellaneous.md#object-welcome_iceage) | Object | A cancelable welcome sequence for the ice age biome shop. | 1 ||
+| [`welcome_junkyard`](Miscellaneous.md#object-welcome_junkyard) | Object | A cancelable welcome sequence for the junkyard biome shop. | 1 ||
+| [`welcome_jurassic`](Miscellaneous.md#object-welcome_jurassic) | Object | A cancelable welcome sequence for the jurassic biome shop. | 1 ||
+| [`welcome_lab`](Miscellaneous.md#object-welcome_lab) | Object | A cancelable welcome sequence for the lab biome shop. | 1 ||
+| [`welcome_moon`](Miscellaneous.md#object-welcome_moon) | Object | A cancelable welcome sequence for the moon biome shop. | 1 ||
+| [`welcome_sewers`](Miscellaneous.md#object-welcome_sewers) | Object | A cancelable welcome sequence for the sewers biome shop. | 1 ||
+| [`welcome_theend`](Miscellaneous.md#object-welcome_theend) | Object | A cancelable welcome sequence for the theend biome shop, with Beanies' voice. | 1 ||
+| [`welcome_water`](Miscellaneous.md#object-welcome_water) | Object | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1. | 1 ||
+| [`welcome_water_cheap`](Miscellaneous.md#object-welcome_water_cheap) | Object | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 1 ||
 
 </details>
 
@@ -519,22 +519,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`idle`](./Arrays.md#array-idle) | Array | Examples: `[ "idle" "blocking" ], [ "idle" ], [ "idle" "blocking" "gone" ]` | 10 ||
-| [`closeup`](./Arrays.md#array-closeup) | Array | Examples: `[ "closeup" ]` | 3 ||
-| [`verycloseup`](./Arrays.md#array-verycloseup) | Array | Examples: `[ "verycloseup" ]` | 3 ||
-| [`zoomedout`](./Arrays.md#array-zoomedout) | Array | Examples: `[ "zoomedout" ]` | 3 ||
-| [`beanies_intensestatic`](./Arrays.md#array-beanies_intensestatic) | Array | Examples: `[ "beanies_intensestatic" ]` | 1 ||
-| [`beanies_right`](./Arrays.md#array-beanies_right) | Array | Examples: `[ "beanies_right" ]` | 1 ||
-| [`butch_left`](./Arrays.md#array-butch_left) | Array | Examples: `[ "butch_left" "butch_point_move" "butch_point_attack" "b...` | 1 ||
-| [`butch_right`](./Arrays.md#array-butch_right) | Array | Examples: `[ "butch_right" "butch_point_spells" "butch_point_turnord...` | 1 ||
-| [`choosecats`](./Arrays.md#array-choosecats) | Array | Examples: `[ "choosecats" ]` | 1 ||
-| [`closerup`](./Arrays.md#array-closerup) | Array | Examples: `[ "closerup" ]` | 1 ||
-| [`frank_right`](./Arrays.md#array-frank_right) | Array | Examples: `[ "frank_right" "frank_point_pipe" ]` | 1 ||
-| [`jack_right`](./Arrays.md#array-jack_right) | Array | Examples: `[ "jack_right" "jack_point_furniture" ]` | 1 ||
-| [`offscreen`](./Arrays.md#array-offscreen) | Array | Examples: `[ "offscreen" ]` | 1 ||
-| [`steven_center`](./Arrays.md#array-steven_center) | Array | Examples: `[ "steven_center" "steven_cat" ]` | 1 ||
-| [`tink_left`](./Arrays.md#array-tink_left) | Array | Examples: `[ "tink_left" "tink_point_cats" "tink_point_food" "tink_p...` | 1 ||
-| [`tink_right`](./Arrays.md#array-tink_right) | Array | Examples: `[ "tink_right" "tink_point_strays" ]` | 1 ||
+| [`idle`](./Arrays.md#array-idle) | Array | List of animation states used for the idle state. | 10 ||
+| [`closeup`](./Arrays.md#array-closeup) | Array | List of animation states used for the closeup camera view. | 3 ||
+| [`verycloseup`](./Arrays.md#array-verycloseup) | Array | List of animation states used for the very closeup camera view. | 3 ||
+| [`zoomedout`](./Arrays.md#array-zoomedout) | Array | List of animation states used for the zoomed out camera view. | 3 ||
+| [`beanies_intensestatic`](./Arrays.md#array-beanies_intensestatic) | Array | List of animation states for Beanie's intense static effect. | 1 ||
+| [`beanies_right`](./Arrays.md#array-beanies_right) | Array | List of animation states for Beanie's right-facing pose. | 1 ||
+| [`butch_left`](./Arrays.md#array-butch_left) | Array | List of animation states for Butch's left-facing pose and associated pointing gestures. | 1 ||
+| [`butch_right`](./Arrays.md#array-butch_right) | Array | List of animation states for Butch's right-facing pose and associated pointing gestures. | 1 ||
+| [`choosecats`](./Arrays.md#array-choosecats) | Array | List of animation states for the cat selection screen. | 1 ||
+| [`closerup`](./Arrays.md#array-closerup) | Array | List of animation states for an even closer camera view. | 1 ||
+| [`frank_right`](./Arrays.md#array-frank_right) | Array | List of animation states for Frank's right-facing pose and pipe point. | 1 ||
+| [`jack_right`](./Arrays.md#array-jack_right) | Array | List of animation states for Jack's right-facing pose and furniture point. | 1 ||
+| [`offscreen`](./Arrays.md#array-offscreen) | Array | List of animation states for when the character is off screen. | 1 ||
+| [`steven_center`](./Arrays.md#array-steven_center) | Array | List of animation states for Steven's center position and cat animation. | 1 ||
+| [`tink_left`](./Arrays.md#array-tink_left) | Array | List of animation states for Tink's left-facing pose and associated pointing gestures. | 1 ||
+| [`tink_right`](./Arrays.md#array-tink_right) | Array | List of animation states for Tink's right-facing pose and stray point. | 1 ||
 
 </details>
 
@@ -554,28 +554,28 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`beanies_intensestatic_to_offscreen`](./Arrays.md#array-beanies_intensestatic_to_offscreen) | Array | Examples: `[ beanies_intensestatic offscreen ]` | 1 ||
-| [`beanies_offscreen_to_intensestatic`](./Arrays.md#array-beanies_offscreen_to_intensestatic) | Array | Examples: `[ offscreen beanies_intensestatic ]` | 1 ||
-| [`beanies_offscreen_to_right`](./Arrays.md#array-beanies_offscreen_to_right) | Array | Examples: `[ offscreen beanies_right ]` | 1 ||
-| [`beanies_right_to_offscreen`](./Arrays.md#array-beanies_right_to_offscreen) | Array | Examples: `[ beanies_right offscreen ]` | 1 ||
-| [`butch_left_to_offscreen`](./Arrays.md#array-butch_left_to_offscreen) | Array | Examples: `[ butch_left offscreen ]` | 1 ||
-| [`butch_left_to_right`](./Arrays.md#array-butch_left_to_right) | Array | Examples: `[ butch_left butch_right ]` | 1 ||
-| [`butch_offscreen_to_left`](./Arrays.md#array-butch_offscreen_to_left) | Array | Examples: `[ offscreen butch_left ]` | 1 ||
-| [`butch_offscreen_to_right`](./Arrays.md#array-butch_offscreen_to_right) | Array | Examples: `[ offscreen butch_right ]` | 1 ||
-| [`butch_right_to_left`](./Arrays.md#array-butch_right_to_left) | Array | Examples: `[ butch_right butch_left ]` | 1 ||
-| [`butch_right_to_offscreen`](./Arrays.md#array-butch_right_to_offscreen) | Array | Examples: `[ butch_right offscreen ]` | 1 ||
-| [`frank_offscreen_to_right`](./Arrays.md#array-frank_offscreen_to_right) | Array | Examples: `[ offscreen frank_right ]` | 1 ||
-| [`frank_right_to_offscreen`](./Arrays.md#array-frank_right_to_offscreen) | Array | Examples: `[ frank_right offscreen ]` | 1 ||
-| [`jack_offscreen_to_right`](./Arrays.md#array-jack_offscreen_to_right) | Array | Examples: `[ offscreen jack_right ]` | 1 ||
-| [`jack_right_to_offscreen`](./Arrays.md#array-jack_right_to_offscreen) | Array | Examples: `[ jack_right offscreen ]` | 1 ||
-| [`steven_center_to_offscreen`](./Arrays.md#array-steven_center_to_offscreen) | Array | Examples: `[ steven_center offscreen ]` | 1 ||
-| [`steven_offscreen_to_center`](./Arrays.md#array-steven_offscreen_to_center) | Array | Examples: `[ offscreen steven_center ]` | 1 ||
-| [`tink_left_to_offscreen`](./Arrays.md#array-tink_left_to_offscreen) | Array | Examples: `[ tink_left offscreen ]` | 1 ||
-| [`tink_left_to_right`](./Arrays.md#array-tink_left_to_right) | Array | Examples: `[ tink_left tink_right ]` | 1 ||
-| [`tink_offscreen_to_left`](./Arrays.md#array-tink_offscreen_to_left) | Array | Examples: `[ offscreen tink_left ]` | 1 ||
-| [`tink_offscreen_to_right`](./Arrays.md#array-tink_offscreen_to_right) | Array | Examples: `[ offscreen tink_right ]` | 1 ||
-| [`tink_right_to_left`](./Arrays.md#array-tink_right_to_left) | Array | Examples: `[ tink_right tink_left ]` | 1 ||
-| [`tink_right_to_offscreen`](./Arrays.md#array-tink_right_to_offscreen) | Array | Examples: `[ tink_right offscreen ]` | 1 ||
+| [`beanies_intensestatic_to_offscreen`](./Arrays.md#array-beanies_intensestatic_to_offscreen) | Array | A transition array that moves Beanie from the intensestatic state to offscreen. | 1 ||
+| [`beanies_offscreen_to_intensestatic`](./Arrays.md#array-beanies_offscreen_to_intensestatic) | Array | A transition array that moves Beanie from offscreen to the intensestatic state. | 1 ||
+| [`beanies_offscreen_to_right`](./Arrays.md#array-beanies_offscreen_to_right) | Array | A transition array that moves Beanie from offscreen to the right position. | 1 ||
+| [`beanies_right_to_offscreen`](./Arrays.md#array-beanies_right_to_offscreen) | Array | A transition array that moves Beanie from the right position to offscreen. | 1 ||
+| [`butch_left_to_offscreen`](./Arrays.md#array-butch_left_to_offscreen) | Array | A transition array that moves Butch from the left position to offscreen. | 1 ||
+| [`butch_left_to_right`](./Arrays.md#array-butch_left_to_right) | Array | A transition array that moves Butch from the left position to the right position. | 1 ||
+| [`butch_offscreen_to_left`](./Arrays.md#array-butch_offscreen_to_left) | Array | A transition array that moves Butch from offscreen to the left position. | 1 ||
+| [`butch_offscreen_to_right`](./Arrays.md#array-butch_offscreen_to_right) | Array | A transition array that moves Butch from offscreen to the right position. | 1 ||
+| [`butch_right_to_left`](./Arrays.md#array-butch_right_to_left) | Array | A transition array that moves Butch from the right position to the left position. | 1 ||
+| [`butch_right_to_offscreen`](./Arrays.md#array-butch_right_to_offscreen) | Array | A transition array that moves Butch from the right position to offscreen. | 1 ||
+| [`frank_offscreen_to_right`](./Arrays.md#array-frank_offscreen_to_right) | Array | A transition array that moves Frank from offscreen to the right position. | 1 ||
+| [`frank_right_to_offscreen`](./Arrays.md#array-frank_right_to_offscreen) | Array | A transition array that moves Frank from the right position to offscreen. | 1 ||
+| [`jack_offscreen_to_right`](./Arrays.md#array-jack_offscreen_to_right) | Array | A transition array that moves Jack from offscreen to the right position. | 1 ||
+| [`jack_right_to_offscreen`](./Arrays.md#array-jack_right_to_offscreen) | Array | A transition array that moves Jack from the right position to offscreen. | 1 ||
+| [`steven_center_to_offscreen`](./Arrays.md#array-steven_center_to_offscreen) | Array | A transition array that moves Steven from the center position to offscreen. | 1 ||
+| [`steven_offscreen_to_center`](./Arrays.md#array-steven_offscreen_to_center) | Array | A transition array that moves Steven from offscreen to the center position. | 1 ||
+| [`tink_left_to_offscreen`](./Arrays.md#array-tink_left_to_offscreen) | Array | A transition array that moves Tink from the left position to offscreen. | 1 ||
+| [`tink_left_to_right`](./Arrays.md#array-tink_left_to_right) | Array | A transition array that moves Tink from the left position to the right position. | 1 ||
+| [`tink_offscreen_to_left`](./Arrays.md#array-tink_offscreen_to_left) | Array | A transition array that moves Tink from offscreen to the left position. | 1 ||
+| [`tink_offscreen_to_right`](./Arrays.md#array-tink_offscreen_to_right) | Array | A transition array that moves Tink from offscreen to the right position. | 1 ||
+| [`tink_right_to_left`](./Arrays.md#array-tink_right_to_left) | Array | A transition array that moves Tink from the right position to the left position. | 1 ||
+| [`tink_right_to_offscreen`](./Arrays.md#array-tink_right_to_offscreen) | Array | A transition array that moves Tink from the right position to offscreen. | 1 ||
 
 </details>
 
@@ -595,11 +595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ unprompted_a unprompted_b unprompted_c unprompted_d unp..., [ unprompted1 u...` | 5 ||
-| `cancelable` | Boolean | Examples: `true` | 3 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_JACK_UNPROMPTED_1, NPC_ORGANGRINDER_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_2` | 3 ||
-| `wait_for_cancel` | Number | Examples: `1` | 3 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_UNPROMPTED_1, NPC_TRACY_UNPROMPTED_1` | 2 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 5 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 3 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 2 ||
 
 </details>
 
@@ -619,7 +619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_ALSO_1, NPC_BEANIES_ALSO_1, NPC_BUTCH_ALSO_1` | 8 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 8 ||
 
 </details>
 
@@ -639,11 +639,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UNKNOWN_1, NPC_FRANK_UNKNOWN_1, NPC_BEANIES_UNKNOWN_1` | 8 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 8 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle, blocking` | 3 ||
-| `lock_controls` | Number | Examples: `1` | 3 ||
-| `unlock_controls` | Number | Examples: `1` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 8 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 8 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 3 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 3 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 3 ||
 
 </details>
 
@@ -663,8 +663,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 4 ||
-| [`dialog_and_autopass`](./Strings.md#string-dialog_and_autopass) | String | Examples: `""` | 4 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 4 ||
+| [`dialog_and_autopass`](./Strings.md#string-dialog_and_autopass) | String | Specifies the dialog string to display, and automatically proceeds past it. | 4 ||
 
 </details>
 
@@ -684,10 +684,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 3 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_PURCHASE_ITEM_1, NPC_ORGANGRINDER_PURCHASE_ITEM_1, NPC_JACK_PURCHAS...` | 3 ||
-| `wait_for_cancel` | Number | Examples: `1` | 3 ||
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ purchase_item_a purchase_item_b purchase_item_c purchas...` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 3 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 3 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 3 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -707,9 +707,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 4 ||
-| [`tooltip_dialog`](./Enums.md#enum-tooltip_dialog) | Enum | Examples: `NPC_TRACY_SHOP_TOOLTIP, NPC_ORGANGRINDER_SHOP_TOOLTIP, NPC_JACK_SHOP_TOOLTIP` | 4 ||
-| `wait_for_cancel` | Number | Examples: `1` | 4 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 4 ||
+| [`tooltip_dialog`](./Enums.md#enum-tooltip_dialog) | Enum | Determines which tooltip dialog string to display, referenced by a unique NPC shop identifier. | 4 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 4 ||
 
 </details>
 
@@ -729,8 +729,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_UNPROMPTED_A_1, NPC_FRANK_UNPROMPTED_A_2, NPC_BUTCH_UNPROMPTED_A_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -750,8 +750,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UNPROMPTED_B_1, NPC_FRANK_UNPROMPTED_B_1, NPC_FRANK_UNPROMPTED_B_2` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -771,8 +771,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_UNPROMPTED_C_1, NPC_FRANK_UNPROMPTED_C_2, NPC_BUTCH_UNPROMPTED_C_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -792,8 +792,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_UNPROMPTED_D_1, NPC_BUTCH_UNPROMPTED_D_1, NPC_FRANK_UNPROMPTED_D_2` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -813,8 +813,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_UNPROMPTED_E_1, NPC_BUTCH_UNPROMPTED_E_1, NPC_FRANK_UNPROMPTED_E_2` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -834,8 +834,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UNPROMPTED_F_1, NPC_FRANK_UNPROMPTED_F_2, NPC_FRANK_UNPROMPTED_F_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -855,8 +855,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UNPROMPTED_G_2, NPC_BUTCH_UNPROMPTED_G_1, NPC_FRANK_UNPROMPTED_G_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -876,8 +876,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UNPROMPTED_H_1, NPC_FRANK_UNPROMPTED_H_2, NPC_FRANK_UNPROMPTED_H_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -897,8 +897,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_UNPROMPTED_I_2, NPC_BUTCH_UNPROMPTED_I_1, NPC_FRANK_UNPROMPTED_I_1` | 4 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `forward_to_tips` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 4 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 3 ||
 
 </details>
 
@@ -918,10 +918,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 2 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_CANT_AFFORD_1, NPC_JACK_CANT_AFFORD_1` | 2 ||
-| `wait_for_cancel` | Number | Examples: `1` | 2 ||
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ cant_afford_a cant_afford_b cant_afford_c cant_afford_d ]` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 2 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 2 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 2 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -941,7 +941,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ butch_tips_intelligence butch_tips_charisma butch_tips_..., [ frank_tips_1 ...` | 3 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 3 ||
 
 </details>
 
@@ -961,8 +961,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_OUT_OF_STOCK_1, NPC_JACK_OUT_OF_STOCK_1, NPC_TRACY_OUT_OF_ST...` | 3 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `blocking` | 3 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 3 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 3 ||
 
 </details>
 
@@ -982,9 +982,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BEGIN_ACCEPTING_CATS_2, NPC_BEANIES_BEANIES_BEGIN_ACCEPTI...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `beanies` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
 
 </details>
 
@@ -1004,8 +1004,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_2_2, NPC_BEANIES_BEANIES_BOMBQUEST_2_1, NPC_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1025,9 +1025,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_3_1, NPC_BEANIES_BEANIES_BOMBQUEST_3_2, NPC_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `nuke_quest_get_nuke` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1047,9 +1047,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_AMNESIA_1, NPC_BEANIES_BEANIES_BOMBQUEST_AMNESI...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `nuke_quest_loop` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1069,9 +1069,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_BEGIN_2, NPC_BEANIES_BEANIES_BOMBQUEST_BEGIN_1,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `reset_nuke_quest` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1091,9 +1091,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_FAIL_JAROFBLOOD_3, NPC_BEANIES_BEANIES_BOMBQUES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `reset_nuke_quest` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1113,9 +1113,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_FAIL_JAROFCHAOS_3, NPC_BEANIES_BEANIES_BOMBQUES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `reset_nuke_quest` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1135,9 +1135,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_FAIL_JAROFRADIATION_1, NPC_BEANIES_BEANIES_BOMB...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `reset_nuke_quest` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1157,9 +1157,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_BOMBQUEST_FAIL_NUKE_3, NPC_BEANIES_BEANIES_BOMBQUEST_FAIL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `reset_nuke_quest` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1179,8 +1179,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_FUTURE_INTRO_2, NPC_BEANIES_BEANIES_FUTURE_INTRO_3, NPC_B...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1200,8 +1200,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_HITLER3_2, NPC_BEANIES_BEANIES_HITLER3_1, NPC_BEANIES_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1221,9 +1221,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_HITLER3_DEFEAT_2, NPC_BEANIES_BEANIES_HITLER3_DEFEAT_1, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `quest_begin_amplifier2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1243,7 +1243,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_ILOVEYOU_2, NPC_BEANIES_BEANIES_ILOVEYOU_3, NPC_BEANIES_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -1263,10 +1263,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_INFINITE_INTRO_3, NPC_POPUP_BEANIES_INFINITE_INTRO_2, NPC_P...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
 
 </details>
 
@@ -1286,8 +1286,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_JURASSIC_INTRO_1, NPC_BEANIES_BEANIES_JURASSIC_INTRO_2, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1307,11 +1307,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_LAB_INTRO_1, NPC_BEANIES_BEANIES_LAB_INTRO_3, NPC_BEANIES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`play_cutscene`](./Enums.md#enum-play_cutscene) | Enum | Examples: `credits_1` | 1 ||
-| `restart_npc_music` | Number | Examples: `1` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `song_unlock_get_in_the_cage` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`play_cutscene`](./Enums.md#enum-play_cutscene) | Enum | Specifies the name of the cutscene to play. | 1 ||
+| `restart_npc_music` | Number | The number of times to restart the NPC's music track. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1331,8 +1331,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Examples: `beaniesquest_complete` | 1 ||
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Examples: `success` | 1 ||
+| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 ||
+| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 ||
 
 </details>
 
@@ -1352,8 +1352,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Examples: `beaniesquest_fail` | 1 ||
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Examples: `fail` | 1 ||
+| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 ||
+| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 ||
 
 </details>
 
@@ -1373,11 +1373,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_QUESTS_INTRO_3, NPC_BEANIES_BEANIES_QUESTS_INTRO_1, NPC_B...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Examples: `beaniesquest_intro` | 1 ||
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Examples: `newest` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 ||
+| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1397,11 +1397,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_QUESTS_REPEAT_1, NPC_BEANIES_BEANIES_QUESTS_REPEAT_3, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Examples: `beaniesquest_intro` | 1 ||
-| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Examples: `newest` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`do_sidequest_sequence`](./Enums.md#enum-do_sidequest_sequence) | Enum | Specifies the name of the sidequest sequence to run. | 1 ||
+| [`gather_questitem_info`](./Enums.md#enum-gather_questitem_info) | Enum | Specifies the type of quest item information to gather (e.g., 'fail', 'success', 'newest'). | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1421,10 +1421,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_RIFT_INTRO_1, NPC_POPUP_BEANIES_RIFT_INTRO_2, NPC_POPUP_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
 
 </details>
 
@@ -1444,9 +1444,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_SCREENSHAKE_TEST_1, NPC_BEANIES_BEANIES_SCREENSHAKE_TEST_...` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `PickupCoin` | 1 ||
-| [`screenshake`](./Arrays.md#array-screenshake) | Array | Examples: `[ .5 10 ]` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 ||
 
 </details>
 
@@ -1466,8 +1466,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_SEEFUTURE_3, NPC_BEANIES_BEANIES_SEEFUTURE_2, NPC_BEANIES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1487,8 +1487,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_SEETHEEND_1, NPC_BEANIES_BEANIES_SEETHEEND_2, NPC_BEANIES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1508,9 +1508,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_TERMINATOR1_DEFEAT_1, NPC_BEANIES_BEANIES_TERMINATOR1_DEF...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `quest_begin_receiver2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1530,9 +1530,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_TERMINATOR2_DEFEAT_3, NPC_BEANIES_BEANIES_TERMINATOR2_DEF...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `quest_begin_transmitter2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1552,8 +1552,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_THEEND_INTRO_3, NPC_BEANIES_BEANIES_THEEND_INTRO_2, NPC_B...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1573,8 +1573,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_TIMEMACHINE_2_2, NPC_BEANIES_BEANIES_TIMEMACHINE_2_3, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1594,9 +1594,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIES_TIMEMACHINE_INTRO_2, NPC_BEANIES_BEANIES_TIMEMACHINE_INTR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Examples: `time_machine_quest_begin` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`trigger_unlock`](./Enums.md#enum-trigger_unlock) | Enum | Specifies the quest or flag to unlock when this sequence completes. | 1 ||
 
 </details>
 
@@ -1616,9 +1616,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_VSCREATOR1_1, NPC_POPUP_BEANIES_VSCREATOR1_3, NPC_POPUP_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -1638,9 +1638,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_VSCREATOR2_1, NPC_POPUP_BEANIES_VSCREATOR2_3, NPC_POPUP_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -1660,9 +1660,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_VSCREATOR3_2, NPC_POPUP_BEANIES_VSCREATOR3_3, NPC_POPUP_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_intensestatic` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -1682,10 +1682,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_VSCREATOR4_2, NPC_POPUP_BEANIES_VSCREATOR4_3, NPC_POPUP_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_intensestatic` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
-| [`force_current_cat_use_ability`](./Enums.md#enum-force_current_cat_use_ability) | Enum | Examples: `neck_NukeBonus_remote` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`force_current_cat_use_ability`](./Enums.md#enum-force_current_cat_use_ability) | Enum | Specifies the ability ID that the current cat is forced to use. | 1 ||
 
 </details>
 
@@ -1705,9 +1705,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BEANIES_VSCREATORINTRO_1, NPC_POPUP_BEANIES_VSCREATORINTRO_2, NPC_P...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, beanies_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_BeaniesAppear, UISFX_BeaniesAway` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -1727,9 +1727,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_AI_3, NPC_BEANIES_BEANIESQUEST_COMPLETE_AI_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1749,9 +1749,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_AIRHORN_1, NPC_BEANIES_BEANIESQUEST_COMPLET...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1771,9 +1771,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_ANGRYFACE_1, NPC_BEANIES_BEANIESQUEST_COMPL...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1793,9 +1793,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_ANIMALHANDS_2, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1815,9 +1815,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_BUBBLEBOY_3, NPC_BEANIES_BEANIESQUEST_COMPL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1837,9 +1837,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_CHADIMPLANT_2, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1859,9 +1859,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_CHAOSDEVICE_1, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -1881,9 +1881,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_DIMENSIONALDIVIDER_2, NPC_BEANIES_BEANIESQU...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1903,9 +1903,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_DISEASEJAR_1, NPC_BEANIES_BEANIESQUEST_COMP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1925,9 +1925,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_EXPERIMENTALTREATMENT_3, NPC_BEANIES_BEANIE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1947,9 +1947,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_FARTFACE_3, NPC_BEANIES_BEANIESQUEST_COMPLE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1969,9 +1969,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_FIGLEAF_3, NPC_BEANIES_BEANIESQUEST_COMPLET...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -1991,8 +1991,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_GENERIC_2, NPC_BEANIES_BEANIESQUEST_COMPLET...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2012,9 +2012,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_GLASSCANNON_1, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2034,9 +2034,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_HARDPILL_1, NPC_BEANIES_BEANIESQUEST_COMPLE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2056,9 +2056,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_HIVEMIND_2, NPC_BEANIES_BEANIESQUEST_COMPLE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2078,9 +2078,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_MAGICMIRROR_2, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2100,9 +2100,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_MESTONE_3, NPC_BEANIES_BEANIESQUEST_COMPLET...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2122,9 +2122,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_MULTILINKCABLE_2, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2144,9 +2144,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_MYSTERIOUSDICE_3, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2166,9 +2166,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_MYSTERIOUSGLASSES_1, NPC_BEANIES_BEANIESQUE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2188,9 +2188,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_NDEDEVICE_1, NPC_BEANIES_BEANIESQUEST_COMPL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2210,9 +2210,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_NUCLEARKNIFE_2, NPC_BEANIES_BEANIESQUEST_CO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2232,9 +2232,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_PARTIALLOBOTOMY_1, NPC_BEANIES_BEANIESQUEST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2254,9 +2254,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_PARTYDETONATOR_2, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2276,9 +2276,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_PERSONALHEATER_3, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2298,9 +2298,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_PERSUASIONDEVICE_1, NPC_BEANIES_BEANIESQUES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2320,9 +2320,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_PRINCESSHAT_1, NPC_BEANIES_BEANIESQUEST_COM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2342,9 +2342,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_REALITYSCRAMBLER_1, NPC_BEANIES_BEANIESQUES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2364,9 +2364,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_REDACTED_2, NPC_BEANIES_BEANIESQUEST_COMPLE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2386,9 +2386,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_SPIDERINJECTOR_1, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2408,9 +2408,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_STOPWATCH_1, NPC_BEANIES_BEANIESQUEST_COMPL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2430,9 +2430,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_STORAGELOCKER_3, NPC_BEANIES_BEANIESQUEST_C...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2452,9 +2452,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_THEIOU_1, NPC_BEANIES_BEANIESQUEST_COMPLETE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2474,9 +2474,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_THELONER_2, NPC_BEANIES_BEANIESQUEST_COMPLE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2496,9 +2496,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_TRAPFEST99_2, NPC_BEANIES_BEANIESQUEST_COMP...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -2518,9 +2518,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_COMPLETE_ULTRAVISION3000_1, NPC_BEANIES_BEANIESQUEST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2540,9 +2540,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_AI_3, NPC_BEANIES_BEANIESQUEST_FAIL_AI_2, NPC_B...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2562,9 +2562,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_AIRHORN_1, NPC_BEANIES_BEANIESQUEST_FAIL_AIRHOR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2584,9 +2584,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_ANGRYFACE_2, NPC_BEANIES_BEANIESQUEST_FAIL_ANGR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2606,8 +2606,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_ANIMALHANDS_1, NPC_BEANIES_BEANIESQUEST_FAIL_AN...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2627,9 +2627,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_BUBBLEBOY_2, NPC_BEANIES_BEANIESQUEST_FAIL_BUBB...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2649,9 +2649,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_CHADIMPLANT_3, NPC_BEANIES_BEANIESQUEST_FAIL_CH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2671,9 +2671,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_CHAOSDEVICE_1, NPC_BEANIES_BEANIESQUEST_FAIL_CH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2693,9 +2693,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_DIMENSIONALDIVIDER_3, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2715,9 +2715,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_DISEASEJAR_3, NPC_BEANIES_BEANIESQUEST_FAIL_DIS...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2737,9 +2737,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_EXPERIMENTALTREATMENT_3, NPC_BEANIES_BEANIESQUE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2759,9 +2759,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_FARTFACE_2, NPC_BEANIES_BEANIESQUEST_FAIL_FARTF...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2781,9 +2781,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_FIGLEAF_1, NPC_BEANIES_BEANIESQUEST_FAIL_FIGLEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2803,8 +2803,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_GENERIC_1, NPC_BEANIES_BEANIESQUEST_FAIL_GENERI...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2824,9 +2824,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_GLASSCANNON_1, NPC_BEANIES_BEANIESQUEST_FAIL_GL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2846,9 +2846,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_HARDPILL_1, NPC_BEANIES_BEANIESQUEST_FAIL_HARDP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2868,9 +2868,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_HIVEMIND_2, NPC_BEANIES_BEANIESQUEST_FAIL_HIVEM...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2890,9 +2890,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_MAGICMIRROR_3, NPC_BEANIES_BEANIESQUEST_FAIL_MA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2912,9 +2912,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_MESTONE_2, NPC_BEANIES_BEANIESQUEST_FAIL_MESTON...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2934,9 +2934,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_MULTILINKCABLE_2, NPC_BEANIES_BEANIESQUEST_FAIL...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -2956,9 +2956,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_MYSTERIOUSDICE_2, NPC_BEANIES_BEANIESQUEST_FAIL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -2978,9 +2978,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_MYSTERIOUSGLASSES_3, NPC_BEANIES_BEANIESQUEST_F...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3000,9 +3000,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_NDEDEVICE_2, NPC_BEANIES_BEANIESQUEST_FAIL_NDED...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3022,9 +3022,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_NUCLEARKNIFE_3, NPC_BEANIES_BEANIESQUEST_FAIL_N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3044,9 +3044,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_PARTIALLOBOTOMY_1, NPC_BEANIES_BEANIESQUEST_FAI...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3066,9 +3066,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_PARTYDETONATOR_1, NPC_BEANIES_BEANIESQUEST_FAIL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3088,9 +3088,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_PERSONALHEATER_3, NPC_BEANIES_BEANIESQUEST_FAIL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3110,9 +3110,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_PERSUASIONDEVICE_1, NPC_BEANIES_BEANIESQUEST_FA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3132,9 +3132,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_PRINCESSHAT_1, NPC_BEANIES_BEANIESQUEST_FAIL_PR...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3154,9 +3154,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_REALITYSCRAMBLER_1, NPC_BEANIES_BEANIESQUEST_FA...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3176,9 +3176,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_REDACTED_1, NPC_BEANIES_BEANIESQUEST_FAIL_REDAC...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3198,9 +3198,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_SPIDERINJECTOR_2, NPC_BEANIES_BEANIESQUEST_FAIL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3220,9 +3220,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_STOPWATCH_2, NPC_BEANIES_BEANIESQUEST_FAIL_STOP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3242,9 +3242,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_STORAGELOCKER_3, NPC_BEANIES_BEANIESQUEST_FAIL_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3264,9 +3264,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_THEIOU_1, NPC_BEANIES_BEANIESQUEST_FAIL_THEIOU_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3286,9 +3286,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_THELONER_3, NPC_BEANIES_BEANIESQUEST_FAIL_THELO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3308,9 +3308,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_TRAPFEST99_2, NPC_BEANIES_BEANIESQUEST_FAIL_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `set_state, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3330,9 +3330,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_FAIL_ULTRAVISION3000_3, NPC_BEANIES_BEANIESQUEST_FAI...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `sidequest_fail` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -3352,8 +3352,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_AI_1, NPC_BEANIES_BEANIESQUEST_INTRO_AI_2, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3373,8 +3373,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_AIRHORN_2, NPC_BEANIES_BEANIESQUEST_INTRO_AIRH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3394,8 +3394,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_ANGRYFACE_2, NPC_BEANIES_BEANIESQUEST_INTRO_AN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3415,8 +3415,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_ANIMALHANDS_1, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3436,8 +3436,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_BUBBLEBOY_1, NPC_BEANIES_BEANIESQUEST_INTRO_BU...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3457,8 +3457,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_CHADIMPLANT_1, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3478,8 +3478,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_CHAOSDEVICE_3, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3499,8 +3499,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_DIMENSIONALDIVIDER_1, NPC_BEANIES_BEANIESQUEST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3520,8 +3520,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_DISEASEJAR_1, NPC_BEANIES_BEANIESQUEST_INTRO_D...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3541,8 +3541,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_EXPERIMENTALTREATMENT_2, NPC_BEANIES_BEANIESQU...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3562,8 +3562,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_FARTFACE_1, NPC_BEANIES_BEANIESQUEST_INTRO_FAR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3583,8 +3583,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_FIGLEAF_1, NPC_BEANIES_BEANIESQUEST_INTRO_FIGL...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3604,7 +3604,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_GENERIC_1, NPC_BEANIES_BEANIESQUEST_INTRO_GENE...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -3624,8 +3624,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_GLASSCANNON_2, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3645,8 +3645,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_HARDPILL_2, NPC_BEANIES_BEANIESQUEST_INTRO_HAR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3666,8 +3666,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_HIVEMIND_1, NPC_BEANIES_BEANIESQUEST_INTRO_HIV...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3687,8 +3687,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_MAGICMIRROR_3, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3708,8 +3708,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_MESTONE_1, NPC_BEANIES_BEANIESQUEST_INTRO_MEST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3729,8 +3729,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_MULTILINKCABLE_2, NPC_BEANIES_BEANIESQUEST_INT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3750,8 +3750,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_MYSTERIOUSDICE_3, NPC_BEANIES_BEANIESQUEST_INT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3771,8 +3771,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_MYSTERIOUSGLASSES_1, NPC_BEANIES_BEANIESQUEST_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3792,8 +3792,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_NDEDEVICE_2, NPC_BEANIES_BEANIESQUEST_INTRO_ND...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3813,8 +3813,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_NUCLEARKNIFE_3, NPC_BEANIES_BEANIESQUEST_INTRO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3834,8 +3834,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_PARTIALLOBOTOMY_3, NPC_BEANIES_BEANIESQUEST_IN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3855,8 +3855,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_PARTYDETONATOR_1, NPC_BEANIES_BEANIESQUEST_INT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3876,8 +3876,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_PERSONALHEATER_3, NPC_BEANIES_BEANIESQUEST_INT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3897,8 +3897,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_PERSUASIONDEVICE_3, NPC_BEANIES_BEANIESQUEST_I...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3918,8 +3918,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_PRINCESSHAT_2, NPC_BEANIES_BEANIESQUEST_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3939,8 +3939,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_REALITYSCRAMBLER_3, NPC_BEANIES_BEANIESQUEST_I...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3960,8 +3960,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_REDACTED_2, NPC_BEANIES_BEANIESQUEST_INTRO_RED...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -3981,8 +3981,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_SPIDERINJECTOR_2, NPC_BEANIES_BEANIESQUEST_INT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4002,8 +4002,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_STOPWATCH_2, NPC_BEANIES_BEANIESQUEST_INTRO_ST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4023,8 +4023,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_STORAGELOCKER_2, NPC_BEANIES_BEANIESQUEST_INTR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4044,8 +4044,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_THEIOU_3, NPC_BEANIES_BEANIESQUEST_INTRO_THEIO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4065,7 +4065,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_THELONER_2, NPC_BEANIES_BEANIESQUEST_INTRO_THE...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4085,8 +4085,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_TRAPFEST99_2, NPC_BEANIES_BEANIESQUEST_INTRO_T...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4106,8 +4106,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_BEANIESQUEST_INTRO_ULTRAVISION3000_1, NPC_BEANIES_BEANIESQUEST_IN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4127,10 +4127,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BOSS_FIGHT_INTRO_2, NPC_POPUP_BOSS_FIGHT_INTRO_1, NPC_POPUP_BOSS_FI...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.25, .5` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
 
 </details>
 
@@ -4150,9 +4150,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_BOSS_FIGHT_ROUND2_1, NPC_POPUP_BOSS_FIGHT_ROUND2_3, NPC_POPUP_BOSS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_turnorder, offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -4172,9 +4172,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_BEGIN_ACCEPTING_CATS_3, NPC_BUTCH_BUTCH_BEGIN_ACCEPTING_CATS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `butch` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
 
 </details>
 
@@ -4194,8 +4194,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_BONEYARD_INTRO_3, NPC_BUTCH_BUTCH_BONEYARD_INTRO_1, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4215,8 +4215,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_FIRST_HOUSE_BOSS_BEAT_2, NPC_BUTCH_BUTCH_FIRST_HOUSE_BOSS_BEA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4236,8 +4236,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_PYRO_2, NPC_BUTCH_BUTCH_PYRO_1, NPC_BUTCH_BUTCH_PYRO_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4257,8 +4257,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TINA1_3, NPC_BUTCH_BUTCH_TINA1_2, NPC_BUTCH_BUTCH_TINA1_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -4278,7 +4278,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_BACKSTAB_1, NPC_BUTCH_BUTCH_TIPS_BACKSTAB_3, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4298,7 +4298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_CHARISMA_1, NPC_BUTCH_BUTCH_TIPS_CHARISMA_2, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4318,7 +4318,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_COMBAT_1, NPC_BUTCH_BUTCH_TIPS_COMBAT_2, NPC_BUTCH_BUTCH...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4338,7 +4338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_DISORDERS_3, NPC_BUTCH_BUTCH_TIPS_DISORDERS_2, NPC_BUTCH...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4358,7 +4358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_DRAFTING_2, NPC_BUTCH_BUTCH_TIPS_DRAFTING_3, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4378,7 +4378,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_ELEMENTS_1, NPC_BUTCH_BUTCH_TIPS_ELEMENTS_2, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4398,7 +4398,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_HARD_3, NPC_BUTCH_BUTCH_TIPS_HARD_1, NPC_BUTCH_BUTCH_TIP...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4418,7 +4418,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_HEADHOME_2, NPC_BUTCH_BUTCH_TIPS_HEADHOME_1, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4438,7 +4438,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_HOUSEBOSS_3, NPC_BUTCH_BUTCH_TIPS_HOUSEBOSS_1, NPC_BUTCH...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4458,7 +4458,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_INFO_2, NPC_BUTCH_BUTCH_TIPS_INFO_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4478,7 +4478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_INTELLIGENCE_2, NPC_BUTCH_BUTCH_TIPS_INTELLIGENCE_3, NPC...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4498,8 +4498,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_INTRO_1, NPC_BUTCH_BUTCH_TIPS_INTRO_3, NPC_BUTCH_BUTCH_T...` | 1 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `butch_tips_intelligence` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 ||
 
 </details>
 
@@ -4519,7 +4519,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_ITEMS_1, NPC_BUTCH_BUTCH_TIPS_ITEMS_2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4539,7 +4539,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_LESSCATS_2, NPC_BUTCH_BUTCH_TIPS_LESSCATS_1, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4559,7 +4559,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_MAGICDAMAGE_2, NPC_BUTCH_BUTCH_TIPS_MAGICDAMAGE_1, NPC_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4579,7 +4579,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_PASSIVES_1, NPC_BUTCH_BUTCH_TIPS_PASSIVES_3, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4599,7 +4599,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_REORIENT_2, NPC_BUTCH_BUTCH_TIPS_REORIENT_1, NPC_BUTCH_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4619,7 +4619,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_REWARDS_3, NPC_BUTCH_BUTCH_TIPS_REWARDS_2, NPC_BUTCH_BUT...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4639,7 +4639,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_TACTICALVIEW_1, NPC_BUTCH_BUTCH_TIPS_TACTICALVIEW_2, NPC...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4659,7 +4659,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_TURNORDER_3, NPC_BUTCH_BUTCH_TIPS_TURNORDER_1, NPC_BUTCH...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4679,7 +4679,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_BUTCH_TIPS_WELLROUNDED_3, NPC_BUTCH_BUTCH_TIPS_WELLROUNDED_2, NPC_B...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -4699,13 +4699,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_attack` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_1, NPC_POPUP_CAN_STILL_USE_ATTACK_2` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_3` | 1 ||
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `can_still_use_attack_didntspell` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -4725,13 +4725,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_attack` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_DIDNTSPELL_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_CAN_STILL_USE_ATTACK_DIDNTSPELL_2` | 1 ||
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `can_still_use_attack` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -4751,9 +4751,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_A_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4773,9 +4773,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_B_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4795,9 +4795,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_C_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4817,9 +4817,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_D_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4839,9 +4839,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_ICEAGE_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4861,9 +4861,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_JURASSIC_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4883,9 +4883,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_MOON_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4905,9 +4905,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_CANT_AFFORD_THEEND_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -4927,9 +4927,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_BUTCHER_2, NPC_BUTCH_CLASS_UNLOCK_BUTCHER_3, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Butcher` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -4949,8 +4949,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_DRUID_1, NPC_BUTCH_CLASS_UNLOCK_DRUID_3, NPC_BUTCH_CLA...` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Druid` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -4970,9 +4970,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_JESTER_1, NPC_BUTCH_CLASS_UNLOCK_JESTER_3, NPC_BUTCH_C...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Jester` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -4992,9 +4992,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_MEDIC_2, NPC_BUTCH_CLASS_UNLOCK_MEDIC_1, NPC_BUTCH_CLA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Medic` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5014,9 +5014,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_MONK_3, NPC_BUTCH_CLASS_UNLOCK_MONK_1, NPC_BUTCH_CLASS...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Monk` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5036,9 +5036,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_NECROMANCER_3, NPC_BUTCH_CLASS_UNLOCK_NECROMANCER_2, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Necromancer` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5058,9 +5058,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_PSYCHIC_3, NPC_BUTCH_CLASS_UNLOCK_PSYCHIC_2, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Psychic` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5080,9 +5080,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_THIEF_2, NPC_BUTCH_CLASS_UNLOCK_THIEF_1, NPC_BUTCH_CLA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Thief` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5102,9 +5102,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_CLASS_UNLOCK_TINKERER_3, NPC_BUTCH_CLASS_UNLOCK_TINKERER_1, NPC_BUT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Examples: `Tinkerer` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`unlock_class`](./Enums.md#enum-unlock_class) | Enum | Specifies the name of the cat class to unlock. | 1 ||
 
 </details>
 
@@ -5124,12 +5124,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_COLLECTED_NEW_ITEMS_3, NPC_ORGANGRINDER_COLLECTED_NEW_ITEMS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle2, blocking` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_ORGANGRINDER_COLLECTED_NEW_ITEMS_5` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -5149,11 +5149,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_COLLECTED_NOTHING_1, NPC_ORGANGRINDER_COLLECTED_NOTHING_3, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle2, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -5173,10 +5173,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `do_not_end_turn` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_DO_NOT_END_TURN_1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
 
 </details>
 
@@ -5196,9 +5196,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_DONE_SPITTING_FAIL_ALLY_2, NPC_POPUP_DONE_SPITTING_FAIL_ALLY_3, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5218,9 +5218,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_DONE_SPITTING_FAIL_MISS_1, NPC_POPUP_DONE_SPITTING_FAIL_MISS_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5240,9 +5240,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_DONE_SPITTING_FAIL_RAT_1, NPC_POPUP_DONE_SPITTING_FAIL_RAT_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5262,9 +5262,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_DONE_SPITTING_SUCCESS_2, NPC_POPUP_DONE_SPITTING_SUCCESS_3, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5284,9 +5284,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_ENDING_1, NPC_BEANIES_ENDING_2, NPC_BEANIES_ENDING_3` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `BeaniesEnding_Banging` | 1 ||
-| [`screenshake`](./Arrays.md#array-screenshake) | Array | Examples: `[ 1 30 ]` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`screenshake`](./Arrays.md#array-screenshake) | Array | [intensity, duration] in frames. Applies a screen shake effect. | 1 ||
 
 </details>
 
@@ -5306,9 +5306,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_FINISH_ADVENTURE_1, NPC_POPUP_FINISH_ADVENTURE_2, NPC_POPUP_FINISH_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, butch_point_food, butch_point_save` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5328,14 +5328,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_FIRST_FIGHT_INTRO_3, NPC_POPUP_FIRST_FIGHT_INTRO_2, NPC_POPUP_FIRST...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_team, butch_point_enemies` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected, cat_turn` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_FIRST_FIGHT_INTRO_14` | 1 ||
-| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `default` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -5355,9 +5355,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_FIRST_HOUSE_BOSS_TOMORROW_3, NPC_POPUP_FIRST_HOUSE_BOSS_TOMORROW_1,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5377,9 +5377,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_FIRST_HOUSE_HINT_RETIRED_2, NPC_POPUP_FIRST_HOUSE_HINT_RETIRED_3, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5399,8 +5399,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_CAVES_INTRO_1, NPC_FRANK_FRANK_CAVES_INTRO_2, NPC_FRANK_FRANK...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -5420,8 +5420,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_ENDING_1, NPC_FRANK_FRANK_ENDING_2, NPC_FRANK_FRANK_ENDING_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -5441,9 +5441,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX1_2, NPC_FRANK_FRANK_MAX1_3, NPC_FRANK_FRANK_MAX1_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5463,9 +5463,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX2_1, NPC_FRANK_FRANK_MAX2_3, NPC_FRANK_FRANK_MAX2_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5485,9 +5485,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX3_3, NPC_FRANK_FRANK_MAX3_2, NPC_FRANK_FRANK_MAX3_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5507,9 +5507,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX4_3, NPC_FRANK_FRANK_MAX4_1, NPC_FRANK_FRANK_MAX4_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5529,9 +5529,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX5_1, NPC_FRANK_FRANK_MAX5_2, NPC_FRANK_FRANK_MAX5_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5551,9 +5551,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_MAX_INTRO_2, NPC_FRANK_FRANK_MAX_INTRO_3, NPC_FRANK_FRANK_MAX...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -5573,7 +5573,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ frank_max1 frank_max2 frank_max3 frank_max4 frank_max5 ]` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -5593,8 +5593,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TERMINATOR2_2, NPC_FRANK_FRANK_TERMINATOR2_3, NPC_FRANK_FRANK...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -5614,7 +5614,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_1_1, NPC_FRANK_FRANK_TIPS_1_2, NPC_FRANK_FRANK_TIPS_1_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5634,7 +5634,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_10_2, NPC_FRANK_FRANK_TIPS_10_1, NPC_FRANK_FRANK_TIPS_10_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5654,7 +5654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_2_1, NPC_FRANK_FRANK_TIPS_2_2, NPC_FRANK_FRANK_TIPS_2_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5674,7 +5674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_3_3, NPC_FRANK_FRANK_TIPS_3_2, NPC_FRANK_FRANK_TIPS_3_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5694,7 +5694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_4_3, NPC_FRANK_FRANK_TIPS_4_2, NPC_FRANK_FRANK_TIPS_4_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5714,7 +5714,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_5_1, NPC_FRANK_FRANK_TIPS_5_3, NPC_FRANK_FRANK_TIPS_5_2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5734,7 +5734,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_6_2, NPC_FRANK_FRANK_TIPS_6_1, NPC_FRANK_FRANK_TIPS_6_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5754,7 +5754,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_7_3, NPC_FRANK_FRANK_TIPS_7_2, NPC_FRANK_FRANK_TIPS_7_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5774,7 +5774,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_8_2, NPC_FRANK_FRANK_TIPS_8_1, NPC_FRANK_FRANK_TIPS_8_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5794,7 +5794,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_FRANK_TIPS_9_2, NPC_FRANK_FRANK_TIPS_9_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5814,7 +5814,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `gone` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -5834,13 +5834,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_1, NPC_POPUP_HOUSE_INTRO_2, NPC_POPUP_HOUSE_INTRO_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_cats` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_INTRO_11` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -5860,9 +5860,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_KITTEN_BOX_2, NPC_POPUP_HOUSE_KITTEN_BOX_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5882,9 +5882,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_PASS_DAY_3, NPC_POPUP_HOUSE_PASS_DAY_1, NPC_POPUP_HOUSE_PASS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_food` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5904,9 +5904,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_PASS_DAY2_3, NPC_POPUP_HOUSE_PASS_DAY2_1, NPC_POPUP_HOUSE_PAS...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5926,9 +5926,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_PIPE_1, NPC_POPUP_HOUSE_PIPE_2, NPC_POPUP_HOUSE_PIPE_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `frank_right, offscreen, frank_point_pipe` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5948,9 +5948,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_RETIRED_CAT_BOX_1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -5970,9 +5970,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_STARRED_BOX_1, NPC_POPUP_HOUSE_STARRED_BOX_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -5992,14 +5992,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_3, NPC_POPUP_HOUSE_STRAYS_2, NPC_POPUP_HOUSE_STRAYS_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left, tink_point_strays` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_HOUSE_STRAYS_5` | 1 ||
-| [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Examples: `stray` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`request_cat_info`](./Enums.md#enum-request_cat_info) | Enum | Specifies the type of cat information to request (e.g., 'stray'). | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6019,9 +6019,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_4THROOM_3, NPC_FRANK_HOUSE_UPGRADE_4THROOM_2, NPC_FRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6041,9 +6041,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_ATTIC_3, NPC_FRANK_HOUSE_UPGRADE_ATTIC_2, NPC_FRANK_H...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6063,8 +6063,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_BASEMENT_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6084,8 +6084,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_BASEMENT2_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6105,8 +6105,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_BASEMENT3_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6126,8 +6126,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_BASEMENT4_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6147,8 +6147,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_BASEMENT5_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6168,9 +6168,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_LARGEHOUSE_3, NPC_FRANK_HOUSE_UPGRADE_LARGEHOUSE_1, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6190,9 +6190,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_FRANK_HOUSE_UPGRADE_MEDIUMHOUSE_2, NPC_FRANK_HOUSE_UPGRADE_MEDIUMHOUSE_3,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -6212,15 +6212,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_INTRO_3, NPC_BEANIES_INTRO_1, NPC_BEANIES_INTRO_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Examples: `veryhappy, happy, default` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `reject_cat, choose_cat2, choose_cat1` | 1 ||
-| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | Examples: `.05, 5.4` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_BEANIES_INTRO_15` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `Intro_LabDisposal` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`set_mood`](./Enums.md#enum-set_mood) | Enum | Specifies the mood state to set for the speaking NPC (e.g., 'pondering', 'sad', 'default', 'happy', 'veryhappy'). | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
+| [`delay`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6240,9 +6240,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_INTRODUCE_HARD_PATH_1, NPC_POPUP_INTRODUCE_HARD_PATH_3, NPC_POPUP_I...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, offscreen` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -6262,11 +6262,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_BEGIN_ACCEPTING_CATS_2, NPC_JACK_JACK_BEGIN_ACCEPTING_CATS_3, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `jack` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6286,10 +6286,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_DESERT_INTRO_1, NPC_JACK_JACK_DESERT_INTRO_3, NPC_JACK_JACK_DES...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6309,10 +6309,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_GAINALTFURNITURE_3, NPC_JACK_JACK_GAINALTFURNITURE_1, NPC_JACK_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6332,14 +6332,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_JACK_INTRODUCTION_2, NPC_POPUP_JACK_INTRODUCTION_3, NPC_POPUP_JACK_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `jack_point_furniture, offscreen, jack_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_JACK_INTRODUCTION_7` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `open_furniture` | 1 ||
-| [`get_random_furniture_piece`](./Arrays.md#array-get_random_furniture_piece) | Array | Examples: `[ small_trash_cans small_trash_can2 ]` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
+| [`get_random_furniture_piece`](./Arrays.md#array-get_random_furniture_piece) | Array | An array of furniture piece names; one is chosen at random to spawn. | 1 ||
 
 </details>
 
@@ -6359,11 +6359,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX1_3, NPC_JACK_JACK_MAX1_2, NPC_JACK_JACK_MAX1_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6383,11 +6383,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX2_2, NPC_JACK_JACK_MAX2_1, NPC_JACK_JACK_MAX2_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6407,11 +6407,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX3_1, NPC_JACK_JACK_MAX3_2, NPC_JACK_JACK_MAX3_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6431,11 +6431,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX4_1, NPC_JACK_JACK_MAX4_3, NPC_JACK_JACK_MAX4_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6455,11 +6455,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX5_2, NPC_JACK_JACK_MAX5_1, NPC_JACK_JACK_MAX5_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6479,11 +6479,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_MAX_INTRO_3, NPC_JACK_JACK_MAX_INTRO_2, NPC_JACK_JACK_MAX_INTRO_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6503,7 +6503,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ jack_max1 jack_max2 jack_max3 jack_max4 jack_max5 ]` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -6523,11 +6523,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_SHOPUPGRADE1_3, NPC_JACK_JACK_SHOPUPGRADE1_2, NPC_JACK_JACK_SHO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6547,11 +6547,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_SHOPUPGRADE2_2, NPC_JACK_JACK_SHOPUPGRADE2_1, NPC_JACK_JACK_SHO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6571,11 +6571,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_SHOPUPGRADE3_3, NPC_JACK_JACK_SHOPUPGRADE3_2, NPC_JACK_JACK_SHO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6595,11 +6595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_SHOPUPGRADE4_3, NPC_JACK_JACK_SHOPUPGRADE4_2, NPC_JACK_JACK_SHO...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6619,10 +6619,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_JACK_JACK_ZARA_3, NPC_JACK_JACK_ZARA_1, NPC_JACK_JACK_ZARA_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, idle, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -6642,9 +6642,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_LEVEL_UP_DIDNT_SELECT_SUNBURN_1, NPC_POPUP_LEVEL_UP_DIDNT_SELECT_SU...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, offscreen` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -6664,14 +6664,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_LEVEL_UP_INTRO_1, NPC_POPUP_LEVEL_UP_INTRO_2, NPC_POPUP_LEVEL_UP_IN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_levelup, butch_point_hotblooded, butch_point_sunburn` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click, hovered_passive` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_LEVEL_UP_INTRO_6` | 1 ||
-| `lock_mouse` | Number | Examples: `1` | 1 ||
-| `unlock_mouse` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `lock_mouse` | Number | If non-zero, locks the mouse cursor in place. | 1 ||
+| `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 ||
 
 </details>
 
@@ -6691,9 +6691,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_LEVEL_UP_SELECTED_SUNBURN_2, NPC_POPUP_LEVEL_UP_SELECTED_SUNBURN_1,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, offscreen` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -6713,9 +6713,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `tink_point_box, tink_left, tink_point_food` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_LOW_ON_FOOD_3, NPC_POPUP_LOW_ON_FOOD_1, NPC_POPUP_LOW_ON_FOOD_2` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -6735,11 +6735,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_mapnode, offscreen` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_CLICK_NODE_1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `mapnode_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6759,12 +6759,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_left, butch_point_inventory, offscreen` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS_2` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `inventory_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6784,12 +6784,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_point_inventory` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `map_equip_items2` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MAP_EQUIP_ITEMS2_1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `inventory_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6809,13 +6809,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_attack` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMoveHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_ATTACK_RAT_2, NPC_POPUP_MELEE_ATTACK_RAT_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_ATTACK_RAT_3` | 1 ||
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `ranged_cat_attack` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6835,12 +6835,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_spells` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_2, NPC_POPUP_MELEE_CAT_SPIT_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_3` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6860,12 +6860,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_ALLY_2, NPC_POPUP_MELEE_CAT_SPIT_FAIL_ALLY_1, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_ALLY_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6885,12 +6885,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_MISS_2, NPC_POPUP_MELEE_CAT_SPIT_FAIL_MISS_3, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_MISS_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6910,12 +6910,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_RAT_1, NPC_POPUP_MELEE_CAT_SPIT_FAIL_RAT_2, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_FAIL_RAT_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6935,13 +6935,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `melee_cat_spit_ignore` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_IGNORE_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_IGNORE_2` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6961,12 +6961,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_SUCCESS_2, NPC_POPUP_MELEE_CAT_SPIT_SUCCESS_3, NPC_P...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_CAT_SPIT_SUCCESS_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -6986,12 +6986,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_passives, butch_point_team_nocircle` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHintDelay1, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_KILLED_RAT_2, NPC_POPUP_MELEE_KILLED_RAT_1, NPC_POPUP_MELEE_K...` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `click, hovered_passive` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_KILLED_RAT_3` | 1 ||
-| `unlock_mouse` | Number | Examples: `1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_mouse` | Number | If non-zero, unlocks the mouse cursor. | 1 ||
 
 </details>
 
@@ -7011,13 +7011,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_move` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMoveHint, UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `melee_move2` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_MOVE2_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_MOVE2_2` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -7037,12 +7037,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHintDelay1, UISFX_ButchHint` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_mana, butch_point_cost, butch_point_spells` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_MELEE_OUT_OF_ACTIONS_2, NPC_POPUP_MELEE_OUT_OF_ACTIONS_1, NPC_POPUP...` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_MELEE_OUT_OF_ACTIONS_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `end_turn` | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -7062,9 +7062,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `tink_point_box, offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_NEW_ADVENTURE_2, NPC_POPUP_NEW_ADVENTURE_1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -7084,10 +7084,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_BONEYARD_INTRO_3, NPC_ORGANGRINDER_ORGAN_BONEYARD_INTR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7107,13 +7107,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_INTRO_1, NPC_ORGANGRINDER_ORGAN_INTRO_2, NPC_ORGANGRIN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `organgrinder` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_INTRO_20` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | Examples: `"Tyler"` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | The name to assign to the organ in this sequence. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7133,11 +7133,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX1_1, NPC_ORGANGRINDER_ORGAN_MAX1_3, NPC_ORGANGRINDE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7157,11 +7157,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX2_1, NPC_ORGANGRINDER_ORGAN_MAX2_3, NPC_ORGANGRINDE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7181,11 +7181,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX3_3, NPC_ORGANGRINDER_ORGAN_MAX3_1, NPC_ORGANGRINDE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7205,11 +7205,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX4_2, NPC_ORGANGRINDER_ORGAN_MAX4_3, NPC_ORGANGRINDE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7229,11 +7229,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX5_1, NPC_ORGANGRINDER_ORGAN_MAX5_2, NPC_ORGANGRINDE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7253,11 +7253,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_MAX_INTRO_3, NPC_ORGANGRINDER_ORGAN_MAX_INTRO_1, NPC_O...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7277,7 +7277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ organ_max1 organ_max2 organ_max3 organ_max4 organ_max5 ]` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -7297,11 +7297,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_RENAME_3, NPC_ORGANGRINDER_ORGAN_RENAME_1, NPC_ORGANGR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | Examples: `"Tyler"` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| [`set_organ_name`](./Strings.md#string-set_organ_name) | String | The name to assign to the organ in this sequence. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7321,10 +7321,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_THROBBINGDOMAIN_INTRO_2, NPC_ORGANGRINDER_ORGAN_THROBB...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7344,10 +7344,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_TINA3_1, NPC_ORGANGRINDER_ORGAN_TINA3_2, NPC_ORGANGRIN...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7367,11 +7367,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UNLOCK_1, NPC_ORGANGRINDER_ORGAN_UNLOCK_3, NPC_ORGANGR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7391,11 +7391,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE1_3, NPC_ORGANGRINDER_ORGAN_UPGRADE1_1, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7415,11 +7415,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE2_2, NPC_ORGANGRINDER_ORGAN_UPGRADE2_3, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7439,11 +7439,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE3_1, NPC_ORGANGRINDER_ORGAN_UPGRADE3_2, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7463,11 +7463,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE4_1, NPC_ORGANGRINDER_ORGAN_UPGRADE4_2, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7487,11 +7487,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE5_1, NPC_ORGANGRINDER_ORGAN_UPGRADE5_3, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7511,11 +7511,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_ORGANGRINDER_ORGAN_UPGRADE6_1, NPC_ORGANGRINDER_ORGAN_UPGRADE6_2, NPC_ORG...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, idle2` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -7535,9 +7535,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_A_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7557,9 +7557,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_B_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7579,9 +7579,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_C_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7601,9 +7601,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_D_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7623,9 +7623,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_ICEAGE_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7645,9 +7645,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_JURASSIC_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7667,9 +7667,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_MOON_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7689,9 +7689,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_PURCHASE_ITEM_THEEND_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -7711,9 +7711,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_ATTACK_TOMTOM_1, NPC_POPUP_RANGED_ATTACK_TOMTOM_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7733,9 +7733,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_ATTACK_TOMTOM_FAIL_ALLY_1, NPC_POPUP_RANGED_ATTACK_TOMTOM_FA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7755,9 +7755,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_ATTACK_TOMTOM_FAIL_MISS_2, NPC_POPUP_RANGED_ATTACK_TOMTOM_FA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7777,9 +7777,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_ATTACK_TOMTOM_FAIL_RAT_1, NPC_POPUP_RANGED_ATTACK_TOMTOM_FAI...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7799,11 +7799,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ATTACK_1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -7823,9 +7823,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK2_ALLY_3, NPC_POPUP_RANGED_CAT_EARLY_ATTACK2...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7845,9 +7845,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK2_MISS_3, NPC_POPUP_RANGED_CAT_EARLY_ATTACK2...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7867,9 +7867,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK2_RAT_3, NPC_POPUP_RANGED_CAT_EARLY_ATTACK2_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7889,9 +7889,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK_ALLY_3, NPC_POPUP_RANGED_CAT_EARLY_ATTACK_A...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7911,9 +7911,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK_MISS_3, NPC_POPUP_RANGED_CAT_EARLY_ATTACK_M...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7933,9 +7933,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_EARLY_ATTACK_RAT_2, NPC_POPUP_RANGED_CAT_EARLY_ATTACK_RA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7955,9 +7955,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_FAILMOVE_1, NPC_POPUP_RANGED_CAT_FAILMOVE_2, NPC_POPUP_R...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -7977,12 +7977,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_attack, butch_point_move` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveHint, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_INTRO_3, NPC_POPUP_RANGED_CAT_INTRO_1, NPC_POPUP_RANGED_...` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_INTRO_4` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -8002,12 +8002,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_point_cost2, butch_right, butch_point_spells` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchHintDelay2, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLL_1, NPC_POPUP_RANGED_CAT_ROLL_2, NPC_POPUP_RANGED_CA...` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLL_6` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -8027,12 +8027,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLLED_FIRST_3, NPC_POPUP_RANGED_CAT_ROLLED_FIRST_1, NPC...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_move` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_RANGED_CAT_ROLLED_FIRST_4` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -8052,10 +8052,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_100_2, NPC_STEVEN_STEVEN_100_1, NPC_STEVEN_STEVEN_100_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8075,11 +8075,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_INTRODUCTION_2, NPC_STEVEN_STEVEN_INTRODUCTION_3, NPC_STEVE...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, talking` | 1 ||
-| [`blocking`](./Enums.md#enum-blocking) | Boolean | Examples: `idlenoani` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`blocking`](./Enums.md#enum-blocking) | Boolean | If true, the unit blocks movement and line-of-sight. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8099,9 +8099,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_MILLIONTRASHED_3, NPC_STEVEN_STEVEN_MILLIONTRASHED_1, NPC_S...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, talking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -8121,10 +8121,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_POSTENDGAME_1, NPC_STEVEN_STEVEN_POSTENDGAME_2, NPC_STEVEN_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8144,9 +8144,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_RESUMMON_1` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8166,7 +8166,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ steven_savescum_1alt1 steven_savescum_1alt2 steven_save...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8186,9 +8186,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_100_3, NPC_POPUP_STEVEN_SAVESCUM_100_2, NPC_POPUP_S...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8208,9 +8208,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_1ALT1_2, NPC_POPUP_STEVEN_SAVESCUM_1ALT1_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8230,9 +8230,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_1ALT2_1, NPC_POPUP_STEVEN_SAVESCUM_1ALT2_2, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8252,9 +8252,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_1ALT3_2, NPC_POPUP_STEVEN_SAVESCUM_1ALT3_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8274,7 +8274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ steven_savescum_2alt1 steven_savescum_2alt2 steven_save...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8294,9 +8294,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_2ALT1_2, NPC_POPUP_STEVEN_SAVESCUM_2ALT1_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `steven_cat, offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8316,9 +8316,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_2ALT2_2, NPC_POPUP_STEVEN_SAVESCUM_2ALT2_3, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `steven_cat, offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8338,9 +8338,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_2ALT3_3, NPC_POPUP_STEVEN_SAVESCUM_2ALT3_2, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `steven_cat, offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8360,7 +8360,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ steven_savescum_3alt1 steven_savescum_3alt2 steven_save...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8380,9 +8380,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_3ALT1_3, NPC_POPUP_STEVEN_SAVESCUM_3ALT1_2, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8402,9 +8402,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_3ALT2_3, NPC_POPUP_STEVEN_SAVESCUM_3ALT2_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8424,9 +8424,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_3ALT3_3, NPC_POPUP_STEVEN_SAVESCUM_3ALT3_2, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8446,7 +8446,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ steven_savescum_4alt1 steven_savescum_4alt2 steven_save...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -8466,9 +8466,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_4ALT1_2, NPC_POPUP_STEVEN_SAVESCUM_4ALT1_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8488,9 +8488,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_4ALT2_2, NPC_POPUP_STEVEN_SAVESCUM_4ALT2_1, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8510,9 +8510,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_4ALT3_2, NPC_POPUP_STEVEN_SAVESCUM_4ALT3_3, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8532,9 +8532,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_1_1, NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `housebossprep` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8554,9 +8554,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_100_2, NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOS...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `housebossprep` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8576,9 +8576,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_2_3, NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `housebossprep` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8598,9 +8598,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_3_1, NPC_POPUP_STEVEN_SAVESCUM_HOUSEBOSS_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `housebossprep` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8620,9 +8620,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_INTRO_1, NPC_POPUP_STEVEN_SAVESCUM_INTRO_3, NPC_POP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `adventure` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8642,9 +8642,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_STEVEN_SAVESCUM_INTRO_HOUSEBOSS_3, NPC_POPUP_STEVEN_SAVESCUM_INTRO_...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, steven_center` | 1 ||
-| [`autosave`](./Enums.md#enum-autosave) | Enum | Examples: `housebossprep` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`autosave`](./Enums.md#enum-autosave) | Enum | Specifies the point at which the game saves progress, such as before a house boss prep or during an adventure. | 1 ||
 
 </details>
 
@@ -8664,10 +8664,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT1_CRAZY_3, NPC_STEVEN_STEVEN_UNLOCK_ACT1_CRAZY_2,...` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8687,10 +8687,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT1_IMPOSSIBLE_3, NPC_STEVEN_STEVEN_UNLOCK_ACT1_IMP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `talking, closeup, idle` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8710,10 +8710,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT2_CRAZY_1, NPC_STEVEN_STEVEN_UNLOCK_ACT2_CRAZY_2,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8733,10 +8733,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT2_HARD_3, NPC_STEVEN_STEVEN_UNLOCK_ACT2_HARD_2, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, talking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8756,10 +8756,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT2_IMPOSSIBLE_2, NPC_STEVEN_STEVEN_UNLOCK_ACT2_IMP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, talking, idle` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8779,10 +8779,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT3_CRAZY_3, NPC_STEVEN_STEVEN_UNLOCK_ACT3_CRAZY_2,...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8802,10 +8802,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT3_HARD_2, NPC_STEVEN_STEVEN_UNLOCK_ACT3_HARD_1, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8825,10 +8825,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_STEVEN_STEVEN_UNLOCK_ACT3_IMPOSSIBLE_3, NPC_STEVEN_STEVEN_UNLOCK_ACT3_IMP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -8848,10 +8848,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, tink_left` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `take_cats_inside` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_TAKE_CATS_INSIDE_1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -8871,7 +8871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dialog` | Variable | Examples: `"Switch to gamepad now if you wanna see gamepad bindings.", NPC_POPUP_FIRST_F...` | 1 ||
+| `dialog` | Variable | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -8891,9 +8891,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_AGGRESSION_2, NPC_TINK_TINK_AGGRESSION_1, NPC_TINK_TINK_AGGRESS...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, zoomedout, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -8913,9 +8913,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_BASESTATS_1, NPC_TINK_TINK_BASESTATS_2, NPC_TINK_TINK_BASESTATS_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -8935,9 +8935,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_BEGIN_ACCEPTING_CATS_3, NPC_TINK_TINK_BEGIN_ACCEPTING_CATS_2, N...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `tink` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
 
 </details>
 
@@ -8957,9 +8957,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_INBREEDING_2, NPC_TINK_TINK_INBREEDING_3, NPC_TINK_TINK_INBREED...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -8979,9 +8979,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX1_3, NPC_TINK_TINK_MAX1_1, NPC_TINK_TINK_MAX1_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9001,9 +9001,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX10_3, NPC_TINK_TINK_MAX10_1, NPC_TINK_TINK_MAX10_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9023,9 +9023,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX2_3, NPC_TINK_TINK_MAX2_2, NPC_TINK_TINK_MAX2_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9045,9 +9045,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX3_2, NPC_TINK_TINK_MAX3_3, NPC_TINK_TINK_MAX3_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9067,9 +9067,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX4_3, NPC_TINK_TINK_MAX4_2, NPC_TINK_TINK_MAX4_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9089,9 +9089,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX5_3, NPC_TINK_TINK_MAX5_1, NPC_TINK_TINK_MAX5_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9111,8 +9111,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX6_2, NPC_TINK_TINK_MAX6_1, NPC_TINK_TINK_MAX6_3` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9132,9 +9132,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX7_2, NPC_TINK_TINK_MAX7_3, NPC_TINK_TINK_MAX7_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -9154,9 +9154,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX8_2, NPC_TINK_TINK_MAX8_1, NPC_TINK_TINK_MAX8_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9176,9 +9176,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX9_2, NPC_TINK_TINK_MAX9_1, NPC_TINK_TINK_MAX9_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9198,9 +9198,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_MAX_INTRO_2, NPC_TINK_TINK_MAX_INTRO_3, NPC_TINK_TINK_MAX_INTRO_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, zoomedout` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9220,7 +9220,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ tink_max1 tink_max2 tink_max3 tink_max4 tink_max5 tink_...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -9240,9 +9240,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_PRETTYBOW_3, NPC_TINK_TINK_PRETTYBOW_2, NPC_TINK_TINK_PRETTYBOW_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9262,9 +9262,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_RELATIONSHIPS_3, NPC_TINK_TINK_RELATIONSHIPS_1, NPC_TINK_TINK_R...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9284,9 +9284,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_SEXUALITY_2, NPC_TINK_TINK_SEXUALITY_3, NPC_TINK_TINK_SEXUALITY_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9306,9 +9306,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TAGS_1, NPC_TINK_TINK_TAGS_2, NPC_TINK_TINK_TAGS_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -9328,8 +9328,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TERMINATOR_2, NPC_TINK_TINK_TERMINATOR_1, NPC_TINK_TINK_TERMINA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -9349,8 +9349,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TINA2_2, NPC_TINK_TINK_TINA2_1, NPC_TINK_TINK_TINA2_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -9370,7 +9370,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_APPEAL_3, NPC_TINK_TINK_TIPS_APPEAL_2, NPC_TINK_TINK_TIPS_...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9390,7 +9390,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_BASESTATS_2, NPC_TINK_TINK_TIPS_BASESTATS_1, NPC_TINK_TINK...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9410,7 +9410,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_CLEANING_2, NPC_TINK_TINK_TIPS_CLEANING_1, NPC_TINK_TINK_T...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9430,7 +9430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_COMFORT_3, NPC_TINK_TINK_TIPS_COMFORT_2, NPC_TINK_TINK_TIP...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9450,7 +9450,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_HEALTH_1, NPC_TINK_TINK_TIPS_HEALTH_3, NPC_TINK_TINK_TIPS_...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9470,7 +9470,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_INBREEDING_1, NPC_TINK_TINK_TIPS_INBREEDING_2, NPC_TINK_TI...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9490,8 +9490,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_INTRO_3, NPC_TINK_TINK_TIPS_INTRO_1, NPC_TINK_TINK_TIPS_IN...` | 1 ||
-| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Examples: `tink_tips_comfort` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`do_sequence`](./Enums.md#enum-do_sequence) | Enum | Specifies the name of the sequence to execute. | 1 ||
 
 </details>
 
@@ -9511,7 +9511,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_MULTICLASSING_3, NPC_TINK_TINK_TIPS_MULTICLASSING_2, NPC_T...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9531,7 +9531,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_MUTATION_2, NPC_TINK_TINK_TIPS_MUTATION_1, NPC_TINK_TINK_T...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9551,7 +9551,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TINK_TINK_TIPS_STIMULATION_3, NPC_TINK_TINK_TIPS_STIMULATION_2, NPC_TINK_...` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -9571,11 +9571,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_BLANKCOLLAR1_1, NPC_TRACY_TRACY_BLANKCOLLAR1_3, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9595,11 +9595,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_BLANKCOLLAR2_1, NPC_TRACY_TRACY_BLANKCOLLAR2_3, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9619,11 +9619,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_BLANKCOLLAR3_2, NPC_TRACY_TRACY_BLANKCOLLAR3_3, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9643,11 +9643,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODBONUS1_2, NPC_TRACY_TRACY_FOODBONUS1_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9667,11 +9667,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE1_3, NPC_TRACY_TRACY_FOODSTORAGE1_1, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9691,11 +9691,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE10_2, NPC_TRACY_TRACY_FOODSTORAGE10_1, NPC_TRACY_T...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9715,11 +9715,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE2_3, NPC_TRACY_TRACY_FOODSTORAGE2_2, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9739,11 +9739,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE3_1, NPC_TRACY_TRACY_FOODSTORAGE3_2, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9763,11 +9763,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE4_3, NPC_TRACY_TRACY_FOODSTORAGE4_1, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9787,11 +9787,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE5_1, NPC_TRACY_TRACY_FOODSTORAGE5_3, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9811,11 +9811,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE6_1, NPC_TRACY_TRACY_FOODSTORAGE6_2, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9835,11 +9835,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE7_2, NPC_TRACY_TRACY_FOODSTORAGE7_3, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9859,11 +9859,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE8_2, NPC_TRACY_TRACY_FOODSTORAGE8_1, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9883,11 +9883,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_FOODSTORAGE9_3, NPC_TRACY_TRACY_FOODSTORAGE9_2, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9907,11 +9907,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL1_3, NPC_TRACY_TRACY_IDOL1_2, NPC_TRACY_TRACY_IDOL1_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9931,11 +9931,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL2_3, NPC_TRACY_TRACY_IDOL2_1, NPC_TRACY_TRACY_IDOL2_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9955,11 +9955,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL3_2, NPC_TRACY_TRACY_IDOL3_1, NPC_TRACY_TRACY_IDOL3_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -9979,11 +9979,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL4_2, NPC_TRACY_TRACY_IDOL4_3, NPC_TRACY_TRACY_IDOL4_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10003,11 +10003,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL5_3, NPC_TRACY_TRACY_IDOL5_2, NPC_TRACY_TRACY_IDOL5_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10027,11 +10027,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL6_1, NPC_TRACY_TRACY_IDOL6_3, NPC_TRACY_TRACY_IDOL6_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10051,11 +10051,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_IDOL7_1, NPC_TRACY_TRACY_IDOL7_3, NPC_TRACY_TRACY_IDOL7_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10075,11 +10075,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_INTRODUCTION_3, NPC_TRACY_TRACY_INTRODUCTION_2, NPC_TRACY_TRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Examples: `tracy` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`begin_accepting_cats`](./Enums.md#enum-begin_accepting_cats) | Enum | Specifies the character tag for the sequence that initiates accepting cats. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10099,10 +10099,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_KAIJUFIGHT_2, NPC_TRACY_TRACY_KAIJUFIGHT_1, NPC_TRACY_TRACY_K...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10122,11 +10122,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX1_2, NPC_TRACY_TRACY_MAX1_1, NPC_TRACY_TRACY_MAX1_3` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10146,11 +10146,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX2_3, NPC_TRACY_TRACY_MAX2_2, NPC_TRACY_TRACY_MAX2_1` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10170,11 +10170,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX3_2, NPC_TRACY_TRACY_MAX3_1, NPC_TRACY_TRACY_MAX3_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `idle, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10194,11 +10194,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX4_3, NPC_TRACY_TRACY_MAX4_2, NPC_TRACY_TRACY_MAX4_1` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10218,11 +10218,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX5_1, NPC_TRACY_TRACY_MAX5_2, NPC_TRACY_TRACY_MAX5_3` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10242,11 +10242,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_TRACY_MAX_INTRO_2, NPC_TRACY_TRACY_MAX_INTRO_1, NPC_TRACY_TRACY_MAX...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, zoomedout, blocking` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| `lock_controls` | Number | Examples: `1` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
 
 </details>
 
@@ -10266,7 +10266,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ tracy_max1 tracy_max2 tracy_max3 tracy_max4 tracy_max5 ]` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10286,14 +10286,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_TRY_AGAIN_ATTACK_RAT_1, NPC_POPUP_TRY_AGAIN_ATTACK_RAT_3, NPC_POPUP...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_attack` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHintDelay1, UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `try_again_attack_rat` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_TRY_AGAIN_ATTACK_RAT_4` | 1 ||
-| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Examples: `act` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -10313,11 +10313,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_TRY_AGAIN_MELEE_MOVE_1, NPC_POPUP_TRY_AGAIN_MELEE_MOVE_2` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMove` | 1 ||
-| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Examples: `try_again_melee_move` | 1 ||
-| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Examples: `both` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`clear_token`](./Enums.md#enum-clear_token) | Enum | Specifies the token name to clear from the sequence's state. | 1 ||
+| [`reset_turn`](./Enums.md#enum-reset_turn) | Enum | Specifies whether to reset the current act's actions, both acts, or neither, upon a retry sequence. | 1 ||
 
 </details>
 
@@ -10337,9 +10337,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_TUTORIAL_CAT_DIES_1, NPC_POPUP_TUTORIAL_CAT_DIES_3, NPC_POPUP_TUTOR...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchMove` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
 
 </details>
 
@@ -10359,7 +10359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED1_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10379,7 +10379,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED2_1, NPC_BEANIES_UNPROMPTED2_2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10399,7 +10399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED3_2, NPC_BEANIES_UNPROMPTED3_1, NPC_BEANIES_UNPROMPTED3_3` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10419,7 +10419,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED4_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10439,7 +10439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED5_1, NPC_BEANIES_UNPROMPTED5_2` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10459,7 +10459,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BEANIES_UNPROMPTED6_2, NPC_BEANIES_UNPROMPTED6_3, NPC_BEANIES_UNPROMPTED6_1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
 
 </details>
 
@@ -10479,9 +10479,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_1_3, NPC_BUTCH_UPGRADE_STORAGE_1_2, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10501,9 +10501,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_2_2, NPC_BUTCH_UPGRADE_STORAGE_2_1, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10523,9 +10523,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_3_1, NPC_BUTCH_UPGRADE_STORAGE_3_3, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10545,9 +10545,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_4_1, NPC_BUTCH_UPGRADE_STORAGE_4_3, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `verycloseup, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10567,9 +10567,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_5_2, NPC_BUTCH_UPGRADE_STORAGE_5_1, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10589,9 +10589,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_6_2, NPC_BUTCH_UPGRADE_STORAGE_6_3, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10611,9 +10611,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_7_2, NPC_BUTCH_UPGRADE_STORAGE_7_3, NPC_BUTCH_UPGRA...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10633,9 +10633,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_MAX1_3, NPC_BUTCH_UPGRADE_STORAGE_MAX1_2, NPC_BUTCH...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
 
 </details>
 
@@ -10655,8 +10655,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_MAX2_2, NPC_BUTCH_UPGRADE_STORAGE_MAX2_3, NPC_BUTCH...` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10676,9 +10676,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_MAX3_2, NPC_BUTCH_UPGRADE_STORAGE_MAX3_3, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10698,9 +10698,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_MAX4_3, NPC_BUTCH_UPGRADE_STORAGE_MAX4_2, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10720,9 +10720,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_MAX5_3, NPC_BUTCH_UPGRADE_STORAGE_MAX5_2, NPC_BUTCH...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `zoomedout, closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10742,7 +10742,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ upgrade_storage_max1 upgrade_storage_max2 upgrade_stora...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10762,7 +10762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ upgrade_storage_max1 upgrade_storage_max2 upgrade_stora...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10782,7 +10782,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ upgrade_storage_max1 upgrade_storage_max2 upgrade_stora...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10802,9 +10802,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_BUTCH_UPGRADE_STORAGE_REPEATING_INTRO_3, NPC_BUTCH_UPGRADE_STORAGE_REPEAT...` | 1 ||
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `closeup, idle` | 1 ||
-| [`get`](./Enums.md#enum-get) | Enum | Examples: `npc_reward` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`get`](./Enums.md#enum-get) | Enum | Specifies the type of result to retrieve from the sidequest (e.g., 'sidequest_fail', 'sidequest_reward', 'npc_reward'). | 1 ||
 
 </details>
 
@@ -10824,7 +10824,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | Examples: `[ upgrade_storage_max1 upgrade_storage_max2 upgrade_stora...` | 1 ||
+| [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
 
@@ -10844,13 +10844,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `butch_right, butch_point_attack, butch_point_weapon` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_USE_ATTACK_AFTER_USED_WEAPON_1, NPC_POPUP_USE_ATTACK_AFTER_USED_WEA...` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_USE_ATTACK_AFTER_USED_WEAPON_3` | 1 ||
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `use_weapon` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -10870,13 +10870,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_state`](./Enums.md#enum-set_state) | Enum | Examples: `offscreen, butch_right, butch_point_weapon` | 1 ||
-| [`sfx`](./Enums.md#enum-sfx) | Enum | Examples: `UISFX_ButchMoveAway, UISFX_ButchHint, UISFX_ButchMove` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_POPUP_USE_WEAPON_2, NPC_POPUP_USE_WEAPON_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_POPUP_USE_WEAPON_3` | 1 ||
-| [`get_token`](./Enums.md#enum-get_token) | Enum | Examples: `use_attack_after_used_weapon` | 1 ||
-| `unlock_controls` | Number | Examples: `1` | 1 ||
-| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Examples: `action_selected` | 1 ||
+| [`set_state`](./Enums.md#enum-set_state) | Enum | Specifies the state or flag to set on the character or game system. | 1 ||
+| [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`get_token`](./Enums.md#enum-get_token) | Enum | Specifies the name of the token to retrieve from the sequence's current state. | 1 ||
+| `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 ||
+| [`wait_for`](./Enums.md#enum-wait_for) | Enum | Specifies the game action or event to wait for before continuing the sequence. | 1 ||
 
 </details>
 
@@ -10896,11 +10896,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -10920,11 +10920,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BONEYARD_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -10944,11 +10944,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_2, NPC_TRACY_SHOP_WELCOME_BUNKER_1` | 1 ||
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_BUNKER_3` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -10968,11 +10968,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CAVES_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -10992,10 +10992,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CORE_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11015,11 +11015,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_CRATER_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11039,10 +11039,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_DESERT_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11062,10 +11062,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_FUTURE_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11085,11 +11085,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_ICEAGE_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11109,10 +11109,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JUNKYARD_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11132,11 +11132,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_JURASSIC_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11156,11 +11156,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_LAB_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11180,10 +11180,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_MOON_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11203,11 +11203,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_SEWERS_2` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11227,12 +11227,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog`](./Enums.md#enum-dialog) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_1` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_THEEND_2` | 1 ||
-| [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Examples: `beanies` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog`](./Enums.md#enum-dialog) | Enum | Specifies a dialog entry or dialog tree to display. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| [`set_npc_voice`](./Enums.md#enum-set_npc_voice) | Enum | Specifies which NPC's voice preset to apply for the current sequence's dialog. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11252,10 +11252,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 
@@ -11275,10 +11275,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cancelable` | Boolean | Examples: `true` | 1 ||
-| [`delay`](./Enums.md#enum-delay) | Number | Examples: `.5` | 1 ||
-| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Examples: `NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1` | 1 ||
-| `wait_for_cancel` | Number | Examples: `1` | 1 ||
+| `cancelable` | Boolean | If true, the sequence can be cancelled by the player. | 1 ||
+| [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 1 ||
+| [`dialog_and_autopass`](./Enums.md#enum-dialog_and_autopass) | Enum | Specifies the dialog string to display, and automatically proceeds past it. | 1 ||
+| `wait_for_cancel` | Number | The number of frames to wait before the sequence is cancelled. | 1 ||
 
 </details>
 

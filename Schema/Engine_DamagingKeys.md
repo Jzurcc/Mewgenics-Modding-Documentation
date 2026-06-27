@@ -15,87 +15,87 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Object defining the combat math and status effects applied upon successful hit. | 4688 ||
-| [`spell`](./Enums.md#enum-spell) | Enum | `MCHadouken` | 924 ||
-| `false` | Variable | Evaluates to the boolean false value. | 655 ||
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 436 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 369 ||
-| `str` | Enum / Integer | `aux` | 337 ||
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 277 ||
-| `durability` | Array / Integer | Consumes item durability. | 264 ||
-| `ai_base_score` | Integer | How highly the AI values using this ability. | 226 ||
-| `heal` | Enum / Integer | Restores health instead of dealing damage. | 128 ||
-| `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 120 ||
-| `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. | 103 ||
-| `melee` | Variable | Variable representing the melee damage type or keyword. | 102 ||
-| `status_spell` | Variable | Variable representing the status spells category. | 87 ||
-| [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). | 82 ||
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Secondary Area of Effect blast parameters. | 68 ||
-| `piercing` | Boolean | Ignores a percentage of target defense/armor. | 64 ||
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 ||
-| `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 46 ||
-| [`level`](./Enums.md#enum-level) | Enum | `Butch_Tutorial`, `CraterWeatherEvent`, `Quest_BrokenTimeMachine`, `Quest_CoreObelisk`, `Quest_CoreObeliskGlowing` | 33 ||
-| [`blocked_damage`](./Math_Equations.md) | Equation | Base damage dealt if the attack is blocked. | 24 ||
-| [`raw_damage`](./Math_Equations.md) | Equation | Unmitigated, unscaled base numbers. | 22 ||
-| `characters` | Variable | Variable representing all characters on the map. | 17 ||
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | Override for base critical hit probability. | 17 ||
-| `override_trample_damage` | Boolean | Custom damage value for trample moves. | 17 ||
-| `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 14 ||
-| `ranged` | Boolean | Boolean flagging the damage as explicitly ranged. | 10 ||
-| `tile_has_no_known_traps` | Variable | Condition variable that is true if the tile has no known traps. | 9 ||
-| `can_revive` | Boolean | Healing instance that can bring dead allies back to life. | 8 ||
-| `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. | 6 ||
-| `show_damage_on_0` | Boolean | Forces the "-0" floater text to appear. | 6 ||
-| `avoid_redundant_debuffs_strict` | Variable | AI logic variable to strictly avoid applying debuffs that already exist. | 4 ||
-| `blocked_multiplier` | Integer | Multiplier applied when hitting a blocking target. | 4 ||
-| `item_aux` | Variable | Variable referring to the auxiliary item slot or its value. | 4 ||
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 ||
-| [`accuracy`](./Enums.md#enum-accuracy) | Float | Hit chance modifier. | 3 ||
-| `can_collect_pickups` | Boolean | The damage instance can grab items on the ground. | 3 ||
-| `magnetize_favorlineup` | Variable | AI variable that favors lining up enemies for magnetize effects. | 3 ||
-| `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 3 ||
-| `spell_cost` | Variable | Variable representing the cost of a spell. | 3 ||
-| `tiles` | Variable | Variable representing a set of tiles. | 3 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | The base damage properties of an attack. | 2 ||
-| `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. | 2 ||
-| `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 2 ||
-| `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 2 ||
-| `force_no_knockback` | Boolean | Prevents the target from being pushed. | 2 ||
-| `knockblock` | Variable | Variable representing the knockback blocking property. | 2 ||
-| `physical_spell` | Variable | Variable representing the physical spell type. | 2 ||
-| `pickups` | Variable | Variable representing pickups on the map. | 2 ||
-| `raw_heal` | String | Unmitigated, unscaled base numbers. | 2 ||
-| `self` | Variable | Variable representing the current unit. | 2 ||
-| `tile_close_to_enemy` | Variable | Condition variable true if the tile is adjacent to an enemy. | 2 ||
-| `tile_exists` | Variable | Condition variable true if the specified tile exists. | 2 ||
-| `toss_farthest` | Variable | AI variable that favors tossing the target the farthest distance. | 2 ||
-| `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 ||
-| [`bonk_damage`](Abilities_and_Spells.md#object-bonk_damage) | Object | Damage dealt when knocked into a wall or obstacle. | 2 ||
-| `avoid_redundant_debuffs` | Variable | AI variable to avoid reapplying debuffs already present. | 1 ||
-| [`catch`](Events_and_Encounters.md#object-catch) | Object | Event Object: Story branch or dialog option representing the \'Catch\' action. | 1 ||
-| `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 ||
-| [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 ||
-| `favor_enemy_already_moved` | Variable | AI variable that favors targeting an enemy that has already acted this turn. | 1 ||
-| `favor_tile_far_away` | Variable | Increases the priority of targeting tiles far from the unit. | 1 ||
-| [`final_hit_bonus_damage`](./Math_Equations.md) | Equation | Extra damage applied on the last hit of a multihit. | 1 ||
-| `force_adjacent_and_diagonal_contact` | Boolean | Treats diagonal hits as physical contact. | 1 ||
-| `generic_physical` | Variable | Specifies that the ability deals generic physical damage. | 1 ||
-| `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. | 1 ||
-| [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Custom flinch animation for the target. | 1 ||
-| `moonhead_punchself` | Variable | Determines if the Moonhead cat punches itself. | 1 ||
-| `moonhead_use_if_cracked` | Variable | When true, the Moonhead cat uses the ability if its shell is cracked. | 1 ||
-| `must_heal_most_missing_health` | Variable | Requires the ability to target the ally with the most missing health. | 1 ||
-| `must_target_buddy` | Variable | Requires the ability to target a buddy (paired unit). | 1 ||
-| `no_coins_on_map` | Variable | When true, prevents coins from appearing on the map. | 1 ||
-| `no_redundant_formchange` | Variable | Prevents the ability from changing form if it would result in the same form. | 1 ||
-| [`status`](./Enums.md#enum-status) | Enum | The status effect to apply. | 1 ||
-| `target_closest` | Variable | Forces the ability to target the closest valid target. | 1 ||
-| `target_farthest` | Variable | Forces the ability to target the farthest valid target. | 1 ||
-| `teslacoil_priorities` | Variable | Specifies targeting priorities for Tesla Coil abilities. | 1 ||
-| `tile_close_to_enemy_soft` | Variable | Prefers tiles that are close to an enemy, with a soft constraint. | 1 ||
-| `toss_far` | Variable | Increases the distance the target is tossed. | 1 ||
-| `toss_towards_bottomleft` | Variable | Forces the toss direction towards the bottom-left of the map. | 1 ||
+| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 ||
+| [`spell`](./Enums.md#enum-spell) | Enum | Specifies the spell ability to use as a reaction. | 924 ||
+| `false` | Variable | Represents the boolean value false, used as a key in certain contexts. | 655 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 369 ||
+| `str` | Enum / Integer | The Strength stat value or modifier. | 337 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 277 ||
+| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. | 264 ||
+| `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 226 ||
+| `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 128 ||
+| `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 120 ||
+| `incidentally_collects_pickups` | Boolean | If true, the damage instance collects nearby pickups (e.g., coins, items) as part of its effect. | 103 ||
+| `melee` | Variable | The melee attack type or category. | 102 ||
+| `status_spell` | Variable | The category for spells that apply status effects. | 87 ||
+| [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | A string identifier for a custom AI weighting condition that modifies the AI's scoring for this damage instance. | 82 ||
+| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Defines additional damage or effects applied to nearby targets around the primary target. | 68 ||
+| `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 64 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 46 ||
+| [`level`](./Enums.md#enum-level) | Enum | The level or quest identifier to load. | 33 ||
+| [`blocked_damage`](./Math_Equations.md) | Equation | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 ||
+| [`raw_damage`](./Math_Equations.md) | Equation | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 ||
+| `characters` | Variable | A list of characters or character references. | 17 ||
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 17 ||
+| `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 17 ||
+| `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 ||
+| `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 10 ||
+| `tile_has_no_known_traps` | Variable | A condition that checks if a tile has no known traps. | 9 ||
+| `can_revive` | Boolean | If true, the damage instance can revive a downed unit instead of dealing damage. | 8 ||
+| `force_play_hit_animation` | Boolean | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 6 ||
+| `show_damage_on_0` | Boolean | If true, the damage number is still displayed even when the resulting damage is zero. | 6 ||
+| `avoid_redundant_debuffs_strict` | Variable | A flag to strictly avoid applying redundant debuffs. | 4 ||
+| `blocked_multiplier` | Integer | A multiplier applied to blocked damage, increasing the effectiveness of the defensive reduction. | 4 ||
+| `item_aux` | Variable | An auxiliary stat for items, often used for extra damage or value. | 4 ||
+| [`layer`](./Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 3 ||
+| [`accuracy`](./Enums.md#enum-accuracy) | Float | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 ||
+| `can_collect_pickups` | Boolean | If true, the damage instance can collect pickups from the target's tile as part of its effect. | 3 ||
+| `magnetize_favorlineup` | Variable | A condition or effect related to magnetizing and favor lineup. | 3 ||
+| `non_lethal` | Boolean | If true, the damage instance cannot reduce a unit below 1 HP, preventing kills. | 3 ||
+| `spell_cost` | Variable | The cost of a spell, usually in mana. | 3 ||
+| `tiles` | Variable | A collection of tiles. | 3 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 ||
+| `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 2 ||
+| `force_no_contact` | Boolean | If true, the damage instance does not trigger contact-based passives even if it would normally be a contact hit. | 2 ||
+| `force_no_knockback` | Boolean | If true, the damage instance applies no knockback regardless of any knockback values set. | 2 ||
+| `knockblock` | Variable | A property that blocks knockback effects. | 2 ||
+| `physical_spell` | Variable | A variable that determines whether an ability is considered a physical spell for mechanics that differentiate between physical and magical attacks. | 2 ||
+| `pickups` | Variable | A variable that refers to collectable items or units on the map that can be picked up. | 2 ||
+| `raw_heal` | String | An equation string that calculates the base healing amount before any modifiers are applied. | 2 ||
+| `self` | Variable | A variable that refers to the unit itself, often used for targeting or self-referential effects. | 2 ||
+| `tile_close_to_enemy` | Variable | A variable that prioritizes selecting a tile that is adjacent or very near to an enemy unit. | 2 ||
+| `tile_exists` | Variable | A variable that checks for the existence of a specific tile condition, often used to filter targeting. | 2 ||
+| `toss_farthest` | Variable | A variable that determines the maximum distance a unit or object can be tossed. | 2 ||
+| `two_way_contact` | Boolean | If true, contact effects apply to both the attacker and the target when the damage instance hits. | 2 ||
+| [`bonk_damage`](Abilities_and_Spells.md#object-bonk_damage) | Object | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 2 ||
+| `avoid_redundant_debuffs` | Variable | If true, prevents the application of a debuff that the target already has. | 1 ||
+| [`catch`](Events_and_Encounters.md#object-catch) | Object | An object defining a response option for catching an entity, including stat checks and rewards. | 1 ||
+| `damage_shield_only` | Boolean | If true, the damage instance only affects damage shields (e.g., barrier effects) and not health directly. | 1 ||
+| [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 ||
+| `favor_enemy_already_moved` | Variable | A variable that weights targeting towards enemies that have already taken their turn. | 1 ||
+| `favor_tile_far_away` | Variable | A variable that weights targeting towards tiles that are far from the unit. | 1 ||
+| [`final_hit_bonus_damage`](./Math_Equations.md) | Equation | An equation string that adds bonus damage to the final hit of a multi-hit damage instance. | 1 ||
+| `force_adjacent_and_diagonal_contact` | Boolean | If true, contact effects are forced for both adjacent and diagonal tiles even if not normally triggered. | 1 ||
+| `generic_physical` | Variable | A variable indicating a standard physical action without specific special properties. | 1 ||
+| `hint_dont_lowgravboost` | Boolean | If true, the damage instance does not receive a damage boost from low gravity tiles. | 1 ||
+| [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Specifies an alternative hit animation name (e.g., "catch") to play instead of the default on successful hit. | 1 ||
+| `moonhead_punchself` | Variable | A variable used by the Moonhead AI to determine if it should punch itself. | 1 ||
+| `moonhead_use_if_cracked` | Variable | A variable used by the Moonhead AI to check if it should use an ability when cracked. | 1 ||
+| `must_heal_most_missing_health` | Variable | If true, the unit must target the ally with the highest amount of missing health. | 1 ||
+| `must_target_buddy` | Variable | If true, the unit must target its designated buddy. | 1 ||
+| `no_coins_on_map` | Variable | If true, the AI behaves as if there are no coins on the map for decision-making. | 1 ||
+| `no_redundant_formchange` | Variable | If true, prevents a form change if the unit is already in that form. | 1 ||
+| [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 ||
+| `target_closest` | Variable | A variable that causes the AI to select the nearest valid target. | 1 ||
+| `target_farthest` | Variable | A variable that causes the AI to select the farthest valid target. | 1 ||
+| `teslacoil_priorities` | Variable | A variable defining the targeting priorities for the Teslacoil unit. | 1 ||
+| `tile_close_to_enemy_soft` | Variable | A variable that prioritizes tiles near enemies but with softer constraints than the hard version. | 1 ||
+| `toss_far` | Variable | A variable that specifies a far distance for tossing a unit or object. | 1 ||
+| `toss_towards_bottomleft` | Variable | A variable that specifies the direction of a toss towards the bottom-left of the map. | 1 ||
 
 </details>
 
@@ -114,8 +114,8 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
 
 </details>
 
@@ -130,45 +130,45 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 254 ||
-| `ai_base_score` | Integer | How highly the AI values using this ability. | 223 ||
-| `heal` | Enum / Integer | Restores health instead of dealing damage. | 122 ||
-| `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 110 ||
-| `incidentally_collects_pickups` | Boolean | Automatically grabs items in the AoE. | 103 ||
-| [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | Granular AI preference adjustments (e.g., `prefer_dont_move`). | 82 ||
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`type`](./Enums.md#enum-type) | Enum | The classification of damage (`melee`, `ranged`, `spell`, `trample`, `knockblock`, `spawn`). | 54 ||
-| `piercing` | Boolean | Ignores a percentage of target defense/armor. | 52 ||
-| `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 40 ||
-| `HealthRegenUp` | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 26 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
-| [`blocked_damage`](./Math_Equations.md) | Integer / String | Base damage dealt if the attack is blocked. | 24 ||
-| [`raw_damage`](./Math_Equations.md) | Enum / Integer | Unmitigated, unscaled base numbers. | 22 ||
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | Override for base critical hit probability. | 16 ||
-| `override_trample_damage` | Boolean | Custom damage value for trample moves. | 15 ||
-| `contact_requires_adjacency` | Boolean | Contact effects only trigger if standing next to the target. | 14 ||
-| `ranged` | Boolean | Boolean flagging the damage as explicitly ranged. | 10 ||
-| `can_revive` | Boolean | Healing instance that can bring dead allies back to life. | 8 ||
-| `show_damage_on_0` | Boolean | Forces the "-0" floater text to appear. | 6 ||
-| `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. | 5 ||
-| `blocked_multiplier` | Integer | Multiplier applied when hitting a blocking target. | 4 ||
-| [`accuracy`](./Enums.md#enum-accuracy) | Number | Hit chance modifier. | 3 ||
-| `can_collect_pickups` | Boolean | The damage instance can grab items on the ground. | 3 ||
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 ||
-| `can_instapop` | Boolean | Allows the attack to instantly destroy specific weak entities. | 2 ||
-| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 ||
-| `disallow_modifications` | Boolean | Prevents passives from altering this damage instance. | 2 ||
-| `force_no_contact` | Boolean | Bypasses all contact-based retaliation (Thorns, etc). | 2 ||
-| `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 2 ||
-| `raw_heal` | String | Unmitigated, unscaled base numbers. | 2 ||
-| `two_way_contact` | Boolean | Both caster and target trigger contact effects on each other. | 2 ||
-| `damage_shield_only` | Boolean | Depletes shields but cannot harm base health. | 1 ||
-| [`faction`](./Enums.md#enum-faction) | Enum | Determines alignment (`enemies`, `cats`, `neutral`). | 1 ||
-| [`final_hit_bonus_damage`](./Math_Equations.md) | String | Extra damage applied on the last hit of a multihit. | 1 ||
-| `force_adjacent_and_diagonal_contact` | Boolean | Treats diagonal hits as physical contact. | 1 ||
-| `force_no_knockback` | Boolean | Prevents the target from being pushed. | 1 ||
-| `hint_dont_lowgravboost` | Boolean | AI hint to ignore wind physics. | 1 ||
-| [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Custom flinch animation for the target. | 1 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 ||
+| `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 223 ||
+| `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 122 ||
+| `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 110 ||
+| `incidentally_collects_pickups` | Boolean | If true, the damage instance collects nearby pickups (e.g., coins, items) as part of its effect. | 103 ||
+| [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | A string identifier for a custom AI weighting condition that modifies the AI's scoring for this damage instance. | 82 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 52 ||
+| `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 40 ||
+| `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `[1 .5]` (Array), `4` (Number), `3` (Number), `{ ... }` (Object) |
+| [`blocked_damage`](./Math_Equations.md) | Integer / String | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 ||
+| [`raw_damage`](./Math_Equations.md) | Enum / Integer | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 ||
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Number | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 16 ||
+| `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 15 ||
+| `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 ||
+| `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 10 ||
+| `can_revive` | Boolean | If true, the damage instance can revive a downed unit instead of dealing damage. | 8 ||
+| `show_damage_on_0` | Boolean | If true, the damage number is still displayed even when the resulting damage is zero. | 6 ||
+| `force_play_hit_animation` | Boolean | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 5 ||
+| `blocked_multiplier` | Integer | A multiplier applied to blocked damage, increasing the effectiveness of the defensive reduction. | 4 ||
+| [`accuracy`](./Enums.md#enum-accuracy) | Number | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 ||
+| `can_collect_pickups` | Boolean | If true, the damage instance can collect pickups from the target's tile as part of its effect. | 3 ||
+| [`layer`](./Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 3 ||
+| `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 ||
+| [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 2 ||
+| `force_no_contact` | Boolean | If true, the damage instance does not trigger contact-based passives even if it would normally be a contact hit. | 2 ||
+| `non_lethal` | Boolean | If true, the damage instance cannot reduce a unit below 1 HP, preventing kills. | 2 ||
+| `raw_heal` | String | An equation string that calculates the base healing amount before any modifiers are applied. | 2 ||
+| `two_way_contact` | Boolean | If true, contact effects apply to both the attacker and the target when the damage instance hits. | 2 ||
+| `damage_shield_only` | Boolean | If true, the damage instance only affects damage shields (e.g., barrier effects) and not health directly. | 1 ||
+| [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 ||
+| [`final_hit_bonus_damage`](./Math_Equations.md) | String | An equation string that adds bonus damage to the final hit of a multi-hit damage instance. | 1 ||
+| `force_adjacent_and_diagonal_contact` | Boolean | If true, contact effects are forced for both adjacent and diagonal tiles even if not normally triggered. | 1 ||
+| `force_no_knockback` | Boolean | If true, the damage instance applies no knockback regardless of any knockback values set. | 1 ||
+| `hint_dont_lowgravboost` | Boolean | If true, the damage instance does not receive a damage boost from low gravity tiles. | 1 ||
+| [`hit_animation_alt`](./Enums.md#enum-hit_animation_alt) | Enum | Specifies an alternative hit animation name (e.g., "catch") to play instead of the default on successful hit. | 1 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 ||
 
 </details>
 
@@ -183,16 +183,16 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 ||
-| `piercing` | Boolean | Ignores a percentage of target defense/armor. | 12 ||
-| `cant_miss` | Boolean | Guarantees the hit, bypassing dodge mechanics. | 10 ||
-| `knockback` | Enum / Integer | The base physics pushing power (in tiles). | 10 ||
-| `heal` | Enum / Integer | Restores health instead of dealing damage. | 6 ||
-| `ai_base_score` | Integer | How highly the AI values using this ability. | 2 ||
-| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 ||
-| `non_lethal` | Boolean | Reduces target to 1 HP but will never kill. | 1 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 12 ||
+| `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 10 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 ||
+| `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 6 ||
+| `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 2 ||
+| [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `non_lethal` | Boolean | If true, the damage instance cannot reduce a unit below 1 HP, preventing kills. | 1 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 ||
 
 </details>
 
@@ -207,18 +207,18 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Non-damaging status applications and logic triggers executed on impact. | 62 ||
-| [`type`](./Enums.md#enum-type) | Enum | Classification/category type. | 54 ||
-| `knockback` | Enum / Integer | Knockback force of the splash blast. | 13 ||
-| `makes_contact` | Boolean | If false, explicitly avoids triggering contact-based passives. | 6 ||
-| [`layer`](./Enums.md#enum-layer) | Enum | Z-index targeting (e.g., `characters`, `self`). | 3 ||
-| [`damage`](./Arrays.md#array-damage) | Equation | The base damage properties of an attack. | 2 ||
-| `override_trample_damage` | Boolean | Custom damage value for trample moves. | 2 ||
-| `ai_base_score` | Integer | How highly the AI values using this ability. | 1 ||
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | Override for base critical hit probability. | 1 ||
-| `force_no_knockback` | Boolean | Prevents the target from being pushed. | 1 ||
-| `force_play_hit_animation` | Boolean | Forces the flinch animation even on 0 damage. | 1 ||
-| [`elements`](./Arrays.md#array-elements) | Array | Array of elemental tags to apply (e.g., `[Fire Holy]`). | 0 ||
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 ||
+| [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 ||
+| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 ||
+| `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 6 ||
+| [`layer`](./Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 3 ||
+| [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 ||
+| `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 2 ||
+| `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 1 ||
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 ||
+| `force_no_knockback` | Boolean | If true, the damage instance applies no knockback regardless of any knockback values set. | 1 ||
+| `force_play_hit_animation` | Boolean | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 1 ||
+| [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 0 ||
 
 </details>
 

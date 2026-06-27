@@ -15,397 +15,397 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Enum | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 |  |
-| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 ||
-| `cha` | Enum / Integer | `+1`, `aux` | 468 ||
-| `spd` | Enum / Integer | `aux` | 424 ||
-| `con` | Enum / Integer | `aux` | 416 ||
-| `dex` | Enum / Integer | `aux` | 301 ||
-| [`main`](Events_and_Encounters.md#object-main) | Object | Event Object: The central hub or recurring menu of a story event. | 214 ||
-| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 ||
-| [`play_animation`](./Enums.md#enum-play_animation) | Enum | Examples: `resultVeryGood, resultBad` | 160 ||
-| `cursed` | Boolean | `true` | 154 ||
-| `parasite` | Boolean | `true` | 102 ||
-| [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum | `alley`, `boneyard`, `bunker`, `caves`, `core` | 90 ||
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 85 ||
-| `auto` | Variable | When true, the event triggers automatically. | 82 ||
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 79 ||
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 67 ||
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 63 ||
-| [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 61 ||
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 52 ||
-| `WorldEventLegacyCounter_Jack` | Variable | Tracks the number of times the Jack world event has occurred. | 50 ||
-| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 48 ||
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | Examples: `[ 4 15 ], 5` | 47 ||
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 41 ||
-| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 40 ||
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 |  |
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 |  |
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 36 ||
-| `resultHole` | Variable | Specifies the resulting hole from an event (e.g., digging). | 32 ||
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 28 ||
-| [`dimensionx`](./Enums.md#enum-dimensionx) | Enum | `AREA_NAME_DIMENSIONX`, `mapflag_DimensionXUnlocked`, `mapflag_IceAgeUnlocked` | 27 ||
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 26 ||
-| [`meatworld`](./Enums.md#enum-meatworld) | Enum | `AREA_NAME_MEATWORLD`, `mapflag_MeatWorldUnlockedFull` | 24 ||
-| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 23 ||
-| [`setup`](Events_and_Encounters.md#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 ||
-| `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 21 ||
-| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 21 ||
-| [`boneyard`](./Enums.md#enum-boneyard) | Enum | `AREA_NAME_BONEYARD`, `mapflag_BoneyardUnlocked` | 21 ||
-| [`bunker`](./Enums.md#enum-bunker) | Enum | `AREA_NAME_BUNKER`, `mapflag_BunkerUnlocked` | 20 ||
-| [`core`](./Enums.md#enum-core) | Enum | `AREA_NAME_CORE`, `mapflag_CoreUnlocked`, `mapflag_IceAgeUnlocked` | 20 ||
-| [`moon`](./Enums.md#enum-moon) | Enum | `AREA_NAME_MOON`, `mapflag_IceAgeUnlocked`, `mapflag_MoonUnlocked` | 20 ||
-| `AdventureToken_HasTakenNeedle` | Variable | Indicates whether the unit has taken a needle from the adventure token. | 18 ||
-| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Examples: `BlackShard, JarOfRadiation, ScaldingOrb` | 18 ||
-| [`alley`](./Enums.md#enum-alley) | Enum | `AREA_NAME_ALLEY`, `departed_first_real_adventure` | 18 ||
-| `ambush_next_basic_fights` | Integer | Examples: `1` | 17 ||
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 17 ||
-| `full_heal` | Integer | Examples: `1` | 16 ||
-| [`crater`](./Enums.md#enum-crater) | Enum | `AREA_NAME_CRATER`, `mapflag_CraterUnlocked` | 16 ||
-| [`desert`](./Enums.md#enum-desert) | Enum | `AREA_NAME_DESERT`, `mapflag_DesertUnlocked` | 16 ||
-| [`future`](./Enums.md#enum-future) | Enum | `AREA_NAME_FUTURE`, `mapflag_FutureUnlocked` | 16 ||
-| [`sewers`](./Enums.md#enum-sewers) | Enum | `AREA_NAME_SEWERS`, `mapflag_SewersUnlocked` | 16 ||
-| [`StatusEachTurnBegin`](Cat_Mutations.md#object-statuseachturnbegin) | Object | Event Trigger: Applies nested statuses to each turn begin. | 16 ||
-| [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 15 ||
-| `AdventureToken_BlueNeedle` | Variable | Specifies the blue needle variant from the adventure token. | 14 ||
-| `AdventureToken_RedNeedle` | Variable | Specifies the red needle variant from the adventure token. | 14 ||
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 14 ||
-| [`iceage`](./Enums.md#enum-iceage) | Enum | `AREA_NAME_ICEAGE`, `mapflag_IceAgeUnlocked` | 14 ||
-| [`jurassic`](./Enums.md#enum-jurassic) | Enum | `AREA_NAME_JURASSIC`, `endoftime`, `mapflag_JurassicUnlocked` | 14 ||
-| [`lab`](./Enums.md#enum-lab) | Enum | `AREA_NAME_LAB`, `mapflag_LabUnlocked` | 14 ||
-| [`theend`](./Enums.md#enum-theend) | Enum | `AREA_NAME_THEEND`, `endoftime`, `mapflag_TheEndUnlocked` | 14 ||
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 13 ||
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 13 ||
-| `all_disorders` | Variable | A list of all disorder IDs available. | 12 ||
-| [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Examples: `iceage.gon, dimensionx.gon, future.gon` | 12 ||
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 12 ||
-| `current_chapter_common` | Variable | `auto` | 12 ||
-| `current_chapter_rare` | Variable | `auto` | 12 ||
-| [`caves`](./Enums.md#enum-caves) | Enum | `AREA_NAME_CAVES`, `mapflag_CavesUnlocked` | 12 ||
-| [`junkyard`](./Enums.md#enum-junkyard) | Enum | `AREA_NAME_JUNKYARD`, `mapflag_JunkyardUnlocked` | 12 ||
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| [`CharmedMaggot`](#object-charmedmaggot) | Object | A variant of the Maggot familiar that is charmed (green tint). | 11 ||
-| [`food`](./Arrays.md#array-food) | Array | Examples: `[ 4 8 ], [ 1 3 ], [ 4 7 ]` | 11 ||
-| [`cat`](Characters_and_Bosses.md#object-cat) | Variable | References the cat unit type. | 10 ||
-| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 10 ||
-| `HasPlayedMysteriousStranger` | Variable | Indicates whether the unit has interacted with the Mysterious Stranger. | 10 ||
-| [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Examples: `CobraStyle, PoisonTips, DeathProof` | 10 ||
-| [`set_subject`](./Enums.md#enum-set_subject) | Enum | Examples: `subject_frame, wall_of_flesh_noartery, throbbing_artery_noflesh` | 10 ||
-| [`bad`](Events_and_Encounters.md#object-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 10 ||
-| [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 10 ||
-| `chapter_rare` | Number | Examples: `1` | 10 ||
-| [`good`](#good) | Boolean | `false`, `true` | 8 ||
-| `parasites` | Variable | A list of parasites present. | 8 ||
-| `party_random_mutation` | Integer | Examples: `1` | 8 ||
-| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 ||
-| `heal_disorder` | Integer | Examples: `2` | 7 ||
-| [`leave_party_temporarily`](Events_and_Encounters.md#object-leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 ||
-| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 7 ||
-| `chapter_common` | Number | Examples: `1` | 7 ||
-| `consumables` | Number | Examples: `60, 10` | 6 ||
-| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 6 ||
-| `hide_appearance_changes` | Integer | Examples: `1` | 6 ||
-| `QEVENT_OBELISK_IGNORE` | Variable | Flag to ignore the Obelisk quest event. | 6 ||
-| `QEVENT_OBELISK_REW1` | Variable | Reward tier 1 for the Obelisk quest event. | 6 ||
-| `QEVENT_OBELISK_REW2` | Variable | Reward tier 2 for the Obelisk quest event. | 6 ||
-| `QEVENT_OBELISK_REW3` | Variable | Reward tier 3 for the Obelisk quest event. | 6 ||
-| `QEVENT_OBELISK_REW4` | Variable | Reward tier 4 for the Obelisk quest event. | 6 ||
-| [`Stinky`](#object-stinky) | Variable | The Stinky disorder that causes the unit to emit a stench. | 6 ||
-| `WorldEventLegacyCounter_CrackInTheWall` | Variable | Tracks the number of times the Crack in the Wall event has occurred. | 6 ||
-| `WorldEventLegacyToken_StartDigging` | Variable | Token flag to start the digging event. | 6 ||
-| [`chapter`](./Enums.md#enum-chapter) | Enum | `alley` | 6 ||
-| [`JarOfRadiation`](#object-jarofradiation) | Object | A jar containing radiation, used in events. | 6 ||
-| [`reward`](Events_and_Encounters.md#object-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 5 ||
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| `blood_altar_items` | Variable | A list of items that can be sacrificed at the blood altar. | 5 ||
-| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Examples: `infinite_intro` | 5 ||
-| `physical_disorders` | Variable | A list of physical disorder IDs. | 5 ||
-| [`SlagTight`](#object-slagtight) | Object | A tight slag object, likely a resource. | 5 ||
-| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 5 ||
-| `diseases` | Variable | A list of disease IDs. | 4 ||
-| `fleshhead_items` | Variable | A list of items related to the Fleshhead enemy. | 4 ||
-| [`goto`](./Enums.md#enum-goto) | Enum | Examples: `end` | 4 ||
-| `heal_injury` | Integer | Examples: `1` | 4 ||
-| `inventory` | Variable | The unit's inventory of items. | 4 ||
-| [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Examples: `BarfBall, FutureSight` | 4 ||
-| [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | Examples: `Necromancer` | 4 ||
-| `MysteriousStranger_HasLostFinger` | Variable | Indicates whether the unit has lost a finger to the Mysterious Stranger. | 4 ||
-| [`outcome`](Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 ||
-| `party_heal_disorder` | Integer | Examples: `2` | 4 ||
-| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 4 ||
-| `QEVENT_THROBBINGARTERY_REW3` | Variable | Reward tier 3 for the Throbbing Artery quest event. | 4 ||
-| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 4 ||
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 4 ||
-| `WorldEventLegacyCounter_ToiletFlushes` | Variable | Tracks the number of toilet flushes in the world. | 4 ||
-| [`JarOfRadiatedBlood`](#object-jarofradiatedblood) | Object | A jar containing radiated blood. | 4 ||
-| [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 4 ||
-| [`JarOfChaos`](#object-jarofchaos) | Object | A jar containing chaos essence. | 4 ||
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 3 ||
-| `bone_armor` | Variable | Bone armor item or value. | 3 ||
-| `bone_equipment` | Variable | Bone equipment item or value. | 3 ||
-| [`chapter_specific_item`](#object-chapter_specific_item) | Variable | An item specific to the current chapter. | 3 ||
-| [`CryogenicTimeChamber_Full`](#object-cryogenictimechamber_full) | Object | A full cryogenic time chamber, used for storage. | 3 ||
-| [`end_of_time_unlock`](#object-end_of_time_unlock) | Variable | Unlocks the End of Time area. | 3 ||
-| [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | Examples: `AnyUnlocked` | 3 ||
-| [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Examples: `cat` | 3 ||
-| [`make_old`](./Enums.md#enum-make_old) | Enum | Examples: `self` | 3 ||
-| `max_options` | Integer | Examples: `3, 2` | 3 ||
-| `mental_disorders` | Variable | Specifies the list of mental disorder statuses applied to a unit. | 3 ||
-| `QEVENT_OBELISK_QUES2` | Variable | Determines if the second Obelisk quest event has been completed. | 3 ||
-| `QEVENT_VOLCANO_REW2` | Variable | Determines if the second Volcano reward event has been triggered. | 3 ||
-| `QEVENT_VOLCANO_REW3` | Variable | Determines if the third Volcano reward event has been triggered. | 3 ||
-| [`radiated`](#object-radiated) | Variable | Determines if the unit has been affected by radiation and is now Radiated. | 3 ||
-| [`RestlessDead`](#object-restlessdead) | Variable | Determines if the Restless Dead event is active or if the unit has the Restless Dead status. | 3 ||
-| `resultVeryGood` | Variable | Determines if the event outcome was very good, affecting subsequent choices or rewards. | 3 ||
-| [`Scatological`](#object-scatological) | Variable | Specifies the Scatological disorder, which causes a unit to produce fecal-related effects. | 3 ||
-| `shuffle_options` | Boolean | Examples: `true` | 3 ||
-| [`SlagMight`](#object-slagmight) | Object | Specifies the Slag Might item, a powerful trinket or consumable. | 3 ||
-| `spawn_reflection_next_fight` | Integer | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
-| [`transform_item`](./Arrays.md#array-transform_item) | Array | Examples: `[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ], [ JarOfRadiation Ja...` | 3 ||
-| [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Examples: `CryogenicTimeChamber_Full, JarOfChaos, JarOfRadiatedBlood` | 3 ||
-| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Examples: `random` | 3 ||
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 2 ||
-| [`battle`](./Math_Equations.md) | Equation | Examples: `{ ... }` | 2 ||
-| [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 2 ||
-| [`Bottles`](#object-bottles) | Object | Specifies the Bottles item, a trinket or stackable resource. | 2 ||
-| `pills` | Number | Examples: `7` | 2 ||
-| `AdventureToken_YellowNeedle` | Variable | Determines if the Yellow Needle adventure token has been collected, tracking a quest step. | 2 ||
-| `all` | Variable | Applies the referenced property or action to all valid targets or categories. | 2 ||
-| [`Anxiety`](#object-anxiety) | Variable | Specifies the Anxiety disorder, which afflicts a unit with nervousness and potential stat penalties. | 2 ||
-| [`Cancer`](#object-cancer) | Object | Specifies the Cancer disorder or trinket, which applies a degenerating or cursed effect to the unit. | 2 ||
-| [`CharmedPinky`](#object-charmedpinky) | Object | Specifies the Charmed Pinky familiar, a friendly variant that fights for the player's faction. | 2 ||
-| [`CharmedRaptorBaby`](#object-charmedraptorbaby) | Object | Specifies the Charmed Raptor Baby familiar, a friendly variant that fights for the player's faction. | 2 ||
-| `clear_result_animation` | Integer | Examples: `1` | 2 ||
-| [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Examples: `pyrophina, zaratana` | 2 ||
-| [`Depression`](#object-depression) | Variable | Specifies the Depression disorder, which inflicts a unit with decreased morale or stats. | 2 ||
-| `flesh_items` | Variable | The amount of flesh-based items in the inventory or loot pool. | 2 ||
-| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Examples: `CharmedFleaSpecial` | 2 ||
-| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Examples: `FlyLarva` | 2 ||
-| `glitched_items` | Variable | The amount of glitched items in the inventory or loot pool. | 2 ||
-| `HasHitPinata` | Variable | Determines if the unit or run has already hit the Pinata, preventing repeat rewards. | 2 ||
-| [`HauntedNight`](#object-hauntednight) | Variable | Determines if the Haunted Night encounter or modifier is active. | 2 ||
-| [`map_unlock_dimensionx`](#object-map_unlock_dimensionx) | Variable | Unlocks the Dimension X map region when set. | 2 ||
-| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | Examples: `[ Dwarfism ], [ Gigantism ]` | 2 ||
-| `party_heal_injury` | Integer | Examples: `99` | 2 ||
-| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 2 ||
-| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 2 ||
-| [`PawShards`](#object-pawshards) | Object | Specifies the Paw Shards item, a crafting or quest material. | 2 ||
-| `poop_items` | Variable | The amount of poop items in the inventory or loot pool. | 2 ||
-| [`PutridLeech`](#object-putridleech) | Object | Specifies the Putrid Leech item, a trinket or consumable with healing or damaging effects. | 2 ||
-| [`PyrophinasCollar`](#object-pyrophinascollar) | Object | Specifies Pyrophina's Collar, a trinket that enhances fire-related abilities. | 2 ||
-| `QEVENT_OBELISK_QUES1` | Variable | Determines if the first Obelisk quest event has been completed. | 2 ||
-| `QEVENT_THROBBINGARTERY_REW1` | Variable | Determines if the first Throbbing Artery reward event has been triggered. | 2 ||
-| `QEVENT_THROBBINGARTERY_REW2` | Variable | Determines if the second Throbbing Artery reward event has been triggered. | 2 ||
-| `QEVENT_VOLCANO_REW1` | Variable | Determines if the first Volcano reward event has been triggered. | 2 ||
-| [`ReceiverAntenna`](#object-receiverantenna) | Object | Specifies the Receiver Antenna item, used for communication or quests. | 2 ||
-| `resultBad` | Variable | Determines if the event outcome was bad, affecting subsequent choices or penalties. | 2 ||
-| [`Rocks`](#object-rocks) | Object | Specifies the Rocks item, a common resource or trinket. | 2 ||
-| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 2 ||
-| `set_age` | Integer | Examples: `1` | 2 ||
-| [`SignalAmplifier`](#object-signalamplifier) | Object | Specifies the Signal Amplifier item, a trinket that boosts area or communication effects. | 2 ||
-| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | Applies or references the 'Snake' effect/state. | 2 ||
-| [`ThrobbingGristle`](#object-throbbinggristle) | Object | Specifies the Throbbing Gristle item, a flesh-based trinket or resource. | 2 ||
-| [`TransmitterAntenna`](#object-transmitterantenna) | Object | Specifies the Transmitter Antenna item, used for communication or quests. | 2 ||
-| [`ZaratanasCollar`](#object-zaratanascollar) | Object | Specifies Zaratana's Collar, a trinket that enhances earth or defensive abilities. | 2 ||
-| [`CryogenicTimeChamber_Empty`](#object-cryogenictimechamber_empty) | Object | Specifies the empty Cryogenic Time Chamber, a location or item used for revival or freezing. | 2 ||
-| [`EnchantingPoop`](#object-enchantingpoop) | Object | Specifies the Enchanting Poop item, a fecal trinket with beneficial or enchanting properties. | 2 ||
-| [`general_common`](./Enums.md#enum-general_common) | Enum | `auto` | 2 ||
-| [`general_rare`](./Enums.md#enum-general_rare) | Enum | `auto` | 2 ||
-| [`GuillotinasHead`](#object-guillotinashead) | Object | Specifies Guillotina's Head, a trinket that triggers execution or decapitation effects. | 2 ||
-| [`MomsKnife`](#object-momsknife) | Object | Specifies Mom's Knife, a trinket that increases damage or enables ricochet attacks. | 2 ||
-| [`RaptorEgg`](Engine_LogicKeys.md#object-raptoregg) | Object | Examples: `.1` | 2 ||
-| [`StatusDamagers`](Miscellaneous.md#object-statusdamagers) | Object | Event Trigger: Applies nested statuses to damagers. | 2 ||
-| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 1 ||
-| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| `party_heal` | Integer | Examples: `10` | 1 ||
-| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 ||
-| `cutscene` | String | Event Object: Triggers a narrative cutscene. | 1 ||
-| `random` | Number | Examples: `4` | 1 ||
-| `ally_ambush_next_fights` | Integer | Examples: `1` | 1 ||
-| `gain_cat_familiar` | Integer | Examples: `1` | 1 ||
-| `AdventureToken_HasRunFromDeath` | Variable | Determines if the unit has already run from death in the adventure. | 1 ||
-| `AdventureToken_MysteriousCave_FamiliarVoice` | Variable | Determines if the unit has heard the familiar voice in the Mysterious Cave. | 1 ||
-| `AdventureToken_MysteriousJarRepeat` | Variable | Determines if the Mysterious Jar encounter has been repeated. | 1 ||
-| `AdventureToken_StevenTryAgain` | Variable | Determines if the Steven retry attempt has been made. | 1 ||
-| `AdventureToken_StevenTryAgain2` | Variable | Determines if the second Steven retry attempt has been made. | 1 ||
-| `AdventureToken_StevenTryAgain3` | Variable | Determines if the third Steven retry attempt has been made. | 1 ||
-| `AdventureToken_TrippedOnBigToe` | Variable | Determines if the unit has tripped on their big toe in the adventure. | 1 ||
-| `AdventureToken_UnmarkedGraveForced` | Variable | Determines if the unit was forced to discover the unmarked grave. | 1 ||
-| [`Albinism`](#object-albinism) | Variable | Specifies the Albinism disorder, which causes a unit to have pale skin and sun-sensitivity effects. | 1 ||
-| [`AlienOvergrowth`](#object-alienovergrowth) | Variable | A weather event that causes volcanic spawns on battle start. | 1 ||
-| [`ambush`](./Math_Equations.md) | Equation | Examples: `"events/chupacabra.lvl"` | 1 ||
-| `AntennaQuest_Orb` | Variable | A status flag indicating the Orb antenna quest is active. | 1 ||
-| `AntennaQuest_Rift` | Variable | A status flag indicating the Rift antenna quest is active. | 1 ||
-| `AntennaQuest_Volcano` | Variable | A status flag indicating the Volcano antenna quest is active. | 1 ||
-| [`Beepis`](#object-beepis) | Object | An object definition for the Beepis item, entity, or character. | 1 ||
-| [`bleeding`](#object-bleeding) | Variable | A status effect that deals damage over time to the affected unit. | 1 ||
-| `bloody_items` | Variable | Determines which items are categorized as 'bloody' for interactions or drops. | 1 ||
-| [`BrainDamage`](#object-braindamage) | Variable | A disorder or status that reduces the unit's intelligence or mental stats. | 1 ||
-| [`BrainDead`](#object-braindead) | Variable | A disorder granted by a Monkey Paw wish that severely impairs the unit's mental faculties. | 1 ||
-| [`Brave`](#object-brave) | Variable | A disorder that grants the unit passive benefits related to courage or resistance. | 1 ||
-| [`burned`](#object-burned) | Variable | A status effect that deals fire damage over time to the affected unit. | 1 ||
-| [`CharmedTarBaby`](#object-charmedtarbaby) | Object | An allied variant of TarBaby that fights for the player's faction. | 1 ||
-| `clone_self_to_party` | Integer | Examples: `1` | 1 ||
-| `copy_items_to_party` | Integer | Examples: `1` | 1 ||
-| `copy_party_items` | Integer | Examples: `1` | 1 ||
-| [`Cunch`](#object-cunch) | Object | An object definition for the Cunch item, entity, or character. | 1 ||
-| [`CursedStickman`](#object-cursedstickman) | Object | A cursed trinket item variant of Stickman. | 1 ||
-| [`DeathsScythe`](#object-deathsscythe) | Object | An object definition for the DeathsScythe item, entity, or character. | 1 ||
-| `dimensionx.gon` | Variable | A variable referencing the Dimension X map or event file. | 1 ||
-| `EVENT_USETHETOILET_AGAIN` | Variable | A variable flag that tracks whether the 'Use the Toilet' event has been triggered again. | 1 ||
-| [`FecalHood_Cursed`](#object-fecalhood_cursed) | Object | A cursed variant of the FecalHood item. | 1 ||
-| [`FecalMask_Cursed`](#object-fecalmask_cursed) | Object | A cursed variant of the FecalMask item. | 1 ||
-| [`Feebis`](#object-feebis) | Object | An object definition for the Feebis item, entity, or character. | 1 ||
-| [`gain_clone_familiar`](Events_and_Encounters.md#object-gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 ||
-| [`GeomagneticStorm`](#object-geomagneticstorm) | Variable | A weather event that applies a status effect to all characters at round end. | 1 ||
-| [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Examples: `common` | 1 ||
-| [`Gigachad`](#object-gigachad) | Variable | A disorder that grants the unit significant stat boosts. | 1 ||
-| `godly_items` | Variable | Determines which items are categorized as 'godly' for interactions or drops. | 1 ||
-| `grass_items` | Variable | Determines which items are categorized as 'grass' for interactions or drops. | 1 ||
-| `hide_items` | Variable | Determines which items are categorized as 'hide' for interactions or drops. | 1 ||
-| [`Host`](#object-host) | Object | An object definition for the Host entity, likely a carrier for a parasite or symbiont. | 1 ||
-| `iceage.gon` | Variable | A variable referencing the Ice Age map or event file. | 1 ||
-| `junkyard_items` | Variable | Determines which items are categorized as 'junkyard' for interactions or drops. | 1 ||
-| [`legacy_event_unlock_momsknife`](#object-legacy_event_unlock_momsknife) | Variable | A sequence that unlocks the MomsKnife item and displays an unlock popup. | 1 ||
-| [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Examples: `cat` | 1 ||
-| [`map_unlock_iceage`](#object-map_unlock_iceage) | Variable | A sequence that unlocks the Ice Age area and displays an unlock popup. | 1 ||
-| `mapflag_ChaosAntennaAttached` | Variable | A flag indicating the Chaos antenna has been attached to the map. | 1 ||
-| `mapflag_OrbAntennaAttached` | Variable | A flag indicating the Orb antenna has been attached to the map. | 1 ||
-| `mapflag_ThrobbingArteryDone` | Variable | A flag indicating the Throbbing Artery event or encounter has been completed. | 1 ||
-| `mapflag_VolcanoAntennaAttached` | Variable | A flag indicating the Volcano antenna has been attached to the map. | 1 ||
-| `mapflag_WallOfFleshDone` | Variable | A flag indicating the Wall of Flesh event or encounter has been completed. | 1 ||
-| [`meat_world_open`](#object-meat_world_open) | Variable | A sequence that sets the map generation flag for full Meat World unlock. | 1 ||
-| `MeatWorldQuest_Gristle` | Variable | A variable representing the Gristle quest within the Meat World area. | 1 ||
-| `MeatWorldQuest_Leech` | Variable | A variable representing the Leech quest within the Meat World area. | 1 ||
-| `MeteorShowerUnlocked` | Variable | A flag indicating the Meteor Shower event or ability has been unlocked. | 1 ||
-| `monkey_paw_1finger` | Variable | A variable tracking the state of the Monkey Paw with one finger remaining. | 1 ||
-| `monkey_paw_2fingers` | Variable | A variable tracking the state of the Monkey Paw with two fingers remaining. | 1 ||
-| `monkey_paw_3fingers` | Variable | A variable tracking the state of the Monkey Paw with three fingers remaining. | 1 ||
-| `monkey_paw_4fingers` | Variable | A variable tracking the state of the Monkey Paw with four fingers remaining. | 1 ||
-| [`MysteriousTomb1`](#object-mysterioustomb1) | Variable | A variable representing the first Mysterious Tomb event or location. | 1 ||
-| [`MysteriousTomb2`](#object-mysterioustomb2) | Variable | A variable representing the second Mysterious Tomb event or location. | 1 ||
-| [`party_injury`](./Enums.md#enum-party_injury) | Enum | Examples: `random` | 1 ||
-| [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Examples: `resultVeryGood` | 1 ||
-| [`PuncturedEye`](#object-puncturedeye) | Variable | A status effect or injury that impairs the unit's vision or accuracy. | 1 ||
-| `QEVENT_BROKENTIMEMACHINE_QUES` | Variable | A quest flag for the Broken Time Machine quest chain. | 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW2` | Variable | A reward flag for the second stage of the Broken Time Machine quest chain. | 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW3` | Variable | A reward flag for the third stage of the Broken Time Machine quest chain. | 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW4` | Variable | A reward flag for the fourth stage of the Broken Time Machine quest chain. | 1 ||
-| `QEVENT_BROKENTIMEMACHINE_REW5` | Variable | A variable used to track the state or availability of the fifth reward for the broken time machine event. | 1 ||
-| `QEVENT_DEADGOD_QUES` | Variable | A variable that controls the quest state for the dead god event. | 1 ||
-| `QEVENT_DEADGOD_REW1` | Variable | A variable that controls the state or availability of the first reward for the dead god event. | 1 ||
-| `QEVENT_DEADGOD_REW2` | Variable | A variable that controls the state or availability of the second reward for the dead god event. | 1 ||
-| `QEVENT_DEADGOD_REW3` | Variable | A variable that controls the state or availability of the third reward for the dead god event. | 1 ||
-| `QEVENT_DEADKING_QUES` | Variable | A variable that controls the quest state for the dead king event. | 1 ||
-| `QEVENT_DEADKING_REW1` | Variable | A variable that controls the state or availability of the first reward for the dead king event. | 1 ||
-| `QEVENT_DEADKING_REW2` | Variable | A variable that controls the state or availability of the second reward for the dead king event. | 1 ||
-| `QEVENT_DEADKING_REW3` | Variable | A variable that controls the state or availability of the third reward for the dead king event. | 1 ||
-| `QEVENT_DEADKING_REW4` | Variable | A variable that controls the state or availability of the fourth reward for the dead king event. | 1 ||
-| `QEVENT_DEADKING_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the dead king event. | 1 ||
-| `QEVENT_DIMENSIONXPORTAL_ENTER_REW` | Variable | A variable that controls the reward state for entering the dimension X portal. | 1 ||
-| `QEVENT_DIMENSIONXPORTAL_IGNORE_ANSW` | Variable | A variable that controls the state for ignoring the answer from the dimension X portal event. | 1 ||
-| `QEVENT_DIMENSIONXPORTAL_QUES` | Variable | A variable that controls the quest state for the dimension X portal event. | 1 ||
-| `QEVENT_GLOWINGORB_QUES` | Variable | A variable that controls the quest state for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_QUES2` | Variable | A variable that controls the secondary quest state for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW1` | Variable | A variable that controls the state or availability of the first reward for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW2` | Variable | A variable that controls the state or availability of the second reward for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW3` | Variable | A variable that controls the state or availability of the third reward for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW4` | Variable | A variable that controls the state or availability of the fourth reward for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the glowing orb event. | 1 ||
-| `QEVENT_GLOWINGORB_REW7` | Variable | A variable that controls the state or availability of the seventh reward for the glowing orb event. | 1 ||
-| `QEVENT_MEATALTAR_QUES1` | Variable | A variable that controls the primary quest state for the meat altar event. | 1 ||
-| `QEVENT_MEATALTAR_REW1` | Variable | A variable that controls the primary reward state for the meat altar event. | 1 ||
-| `QEVENT_MEATALTAR_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the meat altar event. | 1 ||
-| `QEVENT_OBELISK_CORE_REW_ZARA3` | Variable | A variable controlling the third Zara reward state for the core obelisk event. | 1 ||
-| `QEVENT_OBELISK_MOON_REW_PYRO3` | Variable | A variable controlling the third Pyro reward state for the moon obelisk event. | 1 ||
-| `QEVENT_OBELISK_QUES3` | Variable | A variable that controls the tertiary quest state for the obelisk event. | 1 ||
-| `QEVENT_THEHEAD_QUES` | Variable | A variable that controls the quest state for the head event. | 1 ||
-| `QEVENT_THEHEAD_REW1` | Variable | A variable that controls the state or availability of the first reward for the head event. | 1 ||
-| `QEVENT_THEHEAD_REW2` | Variable | A variable that controls the state or availability of the second reward for the head event. | 1 ||
-| `QEVENT_THEHEAD_REW3` | Variable | A variable that controls the state or availability of the third reward for the head event. | 1 ||
-| `QEVENT_THEHEAD_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the head event. | 1 ||
-| `QEVENT_THEHEAD_REW6` | Variable | A variable that controls the state or availability of the sixth reward for the head event. | 1 ||
-| `QEVENT_THROBBINGARTERY2_QUES` | Variable | A variable that controls the quest state for the second throbbing artery event. | 1 ||
-| `QEVENT_THROBBINGARTERY2_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the second throbbing artery event. | 1 ||
-| `QEVENT_THROBBINGARTERY_QUES1` | Variable | A variable that controls the primary quest state for the throbbing artery event. | 1 ||
-| `QEVENT_THROBBINGARTERY_QUES2` | Variable | A variable that controls the secondary quest state for the throbbing artery event. | 1 ||
-| `QEVENT_THROBBINGARTERY_REW5` | Variable | A variable that controls the state or availability of the fifth reward for the throbbing artery event. | 1 ||
-| `QEVENT_THROBBINGARTERY_REW_IGNORE` | Variable | A variable that controls the reward state when the player ignores the throbbing artery event. | 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_QUES` | Variable | A variable that controls the quest state for the time machine future event. | 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_REW1` | Variable | A variable that controls the first reward state for the time machine future event. | 1 ||
-| `QEVENT_TIMEMACHINE_FUTURE_REW2` | Variable | A variable that controls the second reward state for the time machine future event. | 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_QUES` | Variable | A variable that controls the quest state for the time machine ice age event. | 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_REW1` | Variable | A variable that controls the first reward state for the time machine ice age event. | 1 ||
-| `QEVENT_TIMEMACHINE_ICEAGE_REW2` | Variable | A variable that controls the second reward state for the time machine ice age event. | 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_QUES` | Variable | A variable that controls the quest state for the time machine Jurassic event. | 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_REW1` | Variable | A variable that controls the first reward state for the time machine Jurassic event. | 1 ||
-| `QEVENT_TIMEMACHINE_JURASSIC_REW2` | Variable | A variable that controls the second reward state for the time machine Jurassic event. | 1 ||
-| `QEVENT_TIMEMACHINE_QUES` | Variable | A variable that controls the quest state for the time machine event. | 1 ||
-| `QEVENT_TIMEMACHINE_REW1` | Variable | The first reward granted upon completing the time machine quest. | 1 ||
-| `QEVENT_TIMEMACHINE_REW2` | Variable | The second reward granted upon completing the time machine quest. | 1 ||
-| `QEVENT_TIMEMACHINE_REW3` | Variable | The third reward granted upon completing the time machine quest. | 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_QUES` | Variable | Quest objective related to the time machine "The End" variant. | 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_REW1` | Variable | The first reward for completing the time machine "The End" quest. | 1 ||
-| `QEVENT_TIMEMACHINE_THEEND_REW2` | Variable | The second reward for completing the time machine "The End" quest. | 1 ||
-| `QEVENT_VOLCANO_QUES` | Variable | Quest objective for the volcano event. | 1 ||
-| `QEVENT_VOLCANO_QUES2` | Variable | Secondary quest objective for the volcano event. | 1 ||
-| `QEVENT_VOLCANO_REW4` | Variable | The fourth reward for completing the volcano event quest. | 1 ||
-| `QEVENT_VOLCANO_REW5` | Variable | The fifth reward for completing the volcano event quest. | 1 ||
-| `QEVENT_VOLCANO_REW7` | Variable | The seventh reward for completing the volcano event quest. | 1 ||
-| `QEVENT_WALLOFFLESH2_QUES` | Variable | Quest objective for the second wall of flesh event. | 1 ||
-| `QEVENT_WALLOFFLESH2_REW_IGNORE` | Variable | A reward placeholder for the second wall of flesh event that is not awarded. | 1 ||
-| `QEVENT_WALLOFFLESH_QUES1` | Variable | First quest objective for the wall of flesh event. | 1 ||
-| `QEVENT_WALLOFFLESH_QUES2` | Variable | Second quest objective for the wall of flesh event. | 1 ||
-| `QEVENT_WALLOFFLESH_REW1` | Variable | The first reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW10` | Variable | The tenth reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW2` | Variable | The second reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW3` | Variable | The third reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW4` | Variable | The fourth reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW5` | Variable | The fifth reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW7` | Variable | The seventh reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW8` | Variable | The eighth reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW9` | Variable | The ninth reward for completing the wall of flesh event quest. | 1 ||
-| `QEVENT_WALLOFFLESH_REW_IGNORE` | Variable | A reward placeholder for the wall of flesh event that is not awarded. | 1 ||
-| [`random_chance`](Events_and_Encounters.md#object-random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 ||
-| `raptor_nest_eggs` | Variable | The number of eggs present in a raptor nest. | 1 ||
-| `resultConfused` | Variable | Variable tracking a conflicting or inconclusive event outcome. | 1 ||
-| `resultVeryBad` | Variable | Variable tracking a particularly negative event outcome. | 1 ||
-| `rock_items` | Variable | A list of rock-type items (e.g., ores, gems) obtained from an event. | 1 ||
-| [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Examples: `all` | 1 ||
-| [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Examples: `all` | 1 ||
-| [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Examples: `glitched_items` | 1 ||
-| `self_heal` | Integer | Examples: `10` | 1 ||
-| [`SludgeHat`](#object-sludgehat) | Object | A cosmetic hat item for a sludge-themed character. | 1 ||
-| [`SludgeMask`](#object-sludgemask) | Object | A cosmetic mask item for a sludge-themed character. | 1 ||
-| [`Soulless`](#object-soulless) | Variable | A disorder that removes or nullifies the unit's passive abilities. | 1 ||
-| `Steven_disorders` | Variable | List of disorders associated with a character named Steven. | 1 ||
-| [`StrangeEggs`](#object-strangeeggs) | Variable | A weather effect that spawns strange eggs on the battlefield at the start of combat. | 1 ||
-| `tech_items` | Variable | A list of technology-themed items obtained from an event. | 1 ||
-| `TheRift_UsedPyrophina` | Variable | Tracks whether the character Pyrophina was used in The Rift event. | 1 ||
-| `TheRift_UsedZaratana` | Variable | Tracks whether the character Zaratana was used in The Rift event. | 1 ||
-| [`TheShimmer`](#object-theshimmer) | Variable | A weather effect that applies a post-processing visual filter to the battlefield. | 1 ||
-| [`time_machine_quest_finalstep`](#object-time_machine_quest_finalstep) | Variable | Triggers the NPC sequence for the final step of the time machine quest. | 1 ||
-| [`time_machine_quest_trigger`](#object-time_machine_quest_trigger) | Variable | Triggers the initial NPC sequence to start the time machine quest. | 1 ||
-| [`Touched`](#object-touched) | Variable | A disorder that modifies the unit's stats. | 1 ||
-| `trigger_butterfly_effect` | Integer | Examples: `1` | 1 ||
-| `WorldEventLegacyCounter_SealedCrypt` | Variable | Counter tracking the number of times the Sealed Crypt event has been triggered across legacies. | 1 ||
-| `WorldEventLegacyToken_CryptOpened` | Variable | Legacy token indicating that the crypt has been opened in this run. | 1 ||
-| `WorldEventLegacyToken_HasRunFromDeath` | Variable | Legacy token indicating that the unit has fled from death in this run. | 1 ||
-| `WorldEventLegacyToken_MomsKnife` | Variable | Legacy token for obtaining Mom's Knife item in this run. | 1 ||
-| `WorldEventLegacyToken_MonkeyPaw1` | Variable | First stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
-| `WorldEventLegacyToken_MonkeyPaw2` | Variable | Second stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
-| `WorldEventLegacyToken_MonkeyPaw3` | Variable | Third stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
-| `WorldEventLegacyToken_MonkeyPaw4` | Variable | Fourth stage of the Monkey Paw legacy token tracking wishes used. | 1 ||
-| `WorldEventLegacyToken_MonkeyPawGenes` | Variable | Legacy token tracking the number of gene mutations gained from the Monkey Paw event. | 1 ||
-| `WorldEventLegacyToken_MonkeyPawItems` | Variable | A reference to the legacy currency or token related to Monkey Paw items. | 1 ||
-| `WorldEventLegacyToken_MonkeyPawKnowledge` | Variable | A reference to the legacy currency or token related to Monkey Paw knowledge. | 1 ||
-| `WorldEventLegacyToken_MonkeyPawStrength` | Variable | A reference to the legacy currency or token related to Monkey Paw strength. | 1 ||
-| `WorldEventLegacyToken_StacyMutant` | Variable | A reference to the legacy currency or token related to Stacy Mutant. | 1 ||
-| `spawn_reflection_next_fight` | Number | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 0 ||
+| [`common`](./Enums.md#enum-common) | Enum | Defines the common reward block for a boss encounter. | 1067 |  |
+| [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 ||
+| `cha` | Enum / Integer | The Charisma stat value or modifier. | 468 ||
+| `spd` | Enum / Integer | The Speed stat value or modifier. | 424 ||
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 416 ||
+| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 301 ||
+| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. | 214 ||
+| [`options`](./Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 210 ||
+| [`play_animation`](./Enums.md#enum-play_animation) | Enum | Specifies an animation to play, optionally as an array with a probability weight. | 160 ||
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 154 ||
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 102 ||
+| [`complete_chapter`](./Enums.md#enum-complete_chapter) | Enum | Specifies which chapter to mark as completed when this event triggers. | 90 ||
+| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Specifies a disorder to add to the current cat when this event triggers. | 85 ||
+| `auto` | Variable | A variable that indicates an automatic or default behavior, often for AI decision-making. | 82 ||
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 79 ||
+| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Specifies a legacy counter to increment by one when this event triggers. | 67 ||
+| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Specifies a world event that will now occur for the same cat category as the current event. | 63 ||
+| [`get_item`](./Enums.md#enum-get_item) | Enum | Specifies an item to add to the player's inventory when this event triggers. | 61 ||
+| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 52 ||
+| `WorldEventLegacyCounter_Jack` | Variable | A legacy counter tracking the number of times a specific event related to 'Jack' has occurred. | 50 ||
+| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 48 ||
+| [`gain_coins`](./Arrays.md#array-gain_coins) | Array | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 47 ||
+| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 41 ||
+| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 40 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 |  |
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 |  |
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 36 ||
+| `resultHole` | Variable | A variable representing the result of an action that creates a hole or opening on the map. | 32 ||
+| [`gain_food`](./Arrays.md#array-gain_food) | Array | An array specifying the minimum and maximum amount of food gained, or a single integer. | 28 ||
+| [`dimensionx`](./Enums.md#enum-dimensionx) | Enum | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 27 ||
+| [`party_damage`](./Arrays.md#array-party_damage) | Array | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 26 ||
+| [`meatworld`](./Enums.md#enum-meatworld) | Enum | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 24 ||
+| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | An object defining status effects to apply to the party at the start of the next fight. | 23 ||
+| [`setup`](Events_and_Encounters.md#object-setup) | Object | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 ||
+| `override_end_option_prompt` | String | Specifies a custom prompt string to display for the end option of this event choice. | 21 ||
+| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Object | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 21 ||
+| [`boneyard`](./Enums.md#enum-boneyard) | Enum | Specifies the name, map flag, or connection for the Boneyard area. | 21 ||
+| [`bunker`](./Enums.md#enum-bunker) | Enum | Specifies the name, map flag, or connection for the Bunker area. | 20 ||
+| [`core`](./Enums.md#enum-core) | Enum | Specifies the name, map flag, or connection for the Core area. | 20 ||
+| [`moon`](./Enums.md#enum-moon) | Enum | Specifies the name, map flag, or connection for the Moon area. | 20 ||
+| `AdventureToken_HasTakenNeedle` | Variable | A token flag that tracks if the player has taken the needle in the associated adventure. | 18 ||
+| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Marks the specified item quest as completed. | 18 ||
+| [`alley`](./Enums.md#enum-alley) | Enum | Specifies the name, map flag, or connection for the Alley area. | 18 ||
+| `ambush_next_basic_fights` | Integer | The number of basic fights to trigger as ambushes. | 17 ||
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 17 ||
+| `full_heal` | Integer | If set to 1, fully restores the unit's health. | 16 ||
+| [`crater`](./Enums.md#enum-crater) | Enum | Specifies the name, map flag, or connection for the Crater area. | 16 ||
+| [`desert`](./Enums.md#enum-desert) | Enum | Specifies the name, map flag, or connection for the Desert area. | 16 ||
+| [`future`](./Enums.md#enum-future) | Enum | Specifies the name, map flag, or connection for the Future area. | 16 ||
+| [`sewers`](./Enums.md#enum-sewers) | Enum | Specifies the name, map flag, or connection for the Sewers area. | 16 ||
+| [`StatusEachTurnBegin`](Cat_Mutations.md#object-statuseachturnbegin) | Object | Specifies status effects applied to the unit at the start of each of its turns. | 16 ||
+| [`kill`](./Enums.md#enum-kill) | Enum | Kills the specified target type (e.g., 'cat'). | 15 ||
+| `AdventureToken_BlueNeedle` | Variable | A token flag that tracks the blue needle in the associated adventure. | 14 ||
+| `AdventureToken_RedNeedle` | Variable | A token flag that tracks the red needle in the associated adventure. | 14 ||
+| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 14 ||
+| [`iceage`](./Enums.md#enum-iceage) | Enum | Specifies the name, map flag, or connection for the Ice Age area. | 14 ||
+| [`jurassic`](./Enums.md#enum-jurassic) | Enum | Specifies the name, map flag, or connection for the Jurassic area. | 14 ||
+| [`lab`](./Enums.md#enum-lab) | Enum | Specifies the name, map flag, or connection for the Lab area. | 14 ||
+| [`theend`](./Enums.md#enum-theend) | Enum | Specifies the name, map flag, or connection for The End area. | 14 ||
+| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 13 ||
+| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Triggers the specified adventure or map unlock quest. | 13 ||
+| `all_disorders` | Variable | A variable or constant representing all possible disorders. | 12 ||
+| [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Specifies the chapter file to begin, transitioning to that chapter. | 12 ||
+| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Removes the specified item from the player's inventory. | 12 ||
+| `current_chapter_common` | Variable | A variable controlling the number of common item drops for the current chapter. | 12 ||
+| `current_chapter_rare` | Variable | A variable controlling the number of rare item drops for the current chapter. | 12 ||
+| [`caves`](./Enums.md#enum-caves) | Enum | Specifies the name, map flag, or connection for the Caves area. | 12 ||
+| [`junkyard`](./Enums.md#enum-junkyard) | Enum | Specifies the name, map flag, or connection for the Junkyard area. | 12 ||
+| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Grants an item from the specified pool or a specific item name. | 11 ||
+| [`CharmedMaggot`](#object-charmedmaggot) | Object | Defines a variant of the Maggot familiar with a green tint. | 11 ||
+| [`food`](./Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 11 ||
+| [`cat`](Characters_and_Bosses.md#object-cat) | Variable | A variable or constant representing the 'cat' type. | 10 ||
+| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 10 ||
+| `HasPlayedMysteriousStranger` | Variable | A token flag that tracks if the Mysterious Stranger event has been played. | 10 ||
+| [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Teaches the unit the specified passive ability. | 10 ||
+| [`set_subject`](./Enums.md#enum-set_subject) | Enum | Specifies which subject or frame to use for the event's visual. | 10 ||
+| [`bad`](Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 10 ||
+| [`weight`](./Enums.md#enum-weight) | Float | A multiplier or priority value for random selection or effect magnitude. | 10 ||
+| `chapter_rare` | Number | An integer or variable controlling the number of rare item drops for the current chapter. | 10 ||
+| [`good`](#good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 8 ||
+| `parasites` | Variable | A variable or constant representing parasites. | 8 ||
+| `party_random_mutation` | Integer | The number of random mutations applied to the entire party. | 8 ||
+| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 7 ||
+| `heal_disorder` | Integer | Specifies which disorder type to heal, or the number of disorders to heal. | 7 ||
+| [`leave_party_temporarily`](Events_and_Encounters.md#object-leave_party_temporarily) | Object | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 ||
+| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 7 ||
+| `chapter_common` | Number | The weight or probability for this entry to appear in the common loot pool for its chapter. | 7 ||
+| `consumables` | Number | The number of consumable items provided or available in this context. | 6 ||
+| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Specifies which legacy counter or token to decrement by one. | 6 ||
+| `hide_appearance_changes` | Integer | If set to 1, visual appearance changes from status effects or mutations are not shown on the unit. | 6 ||
+| `QEVENT_OBELISK_IGNORE` | Variable | A variable flag indicating the player chose to ignore or skip the Obelisk event. | 6 ||
+| `QEVENT_OBELISK_REW1` | Variable | A variable flag indicating the first reward choice from the Obelisk event was selected. | 6 ||
+| `QEVENT_OBELISK_REW2` | Variable | A variable flag indicating the second reward choice from the Obelisk event was selected. | 6 ||
+| `QEVENT_OBELISK_REW3` | Variable | A variable flag indicating the third reward choice from the Obelisk event was selected. | 6 ||
+| `QEVENT_OBELISK_REW4` | Variable | A variable flag indicating the fourth reward choice from the Obelisk event was selected. | 6 ||
+| [`Stinky`](#object-stinky) | Variable | A named object definition for the 'Stinky' disorder, containing its display name, description, class, and passive effects. | 6 ||
+| `WorldEventLegacyCounter_CrackInTheWall` | Variable | A variable tracking the number of times the 'CrackInTheWall' world event has occurred or been interacted with. | 6 ||
+| `WorldEventLegacyToken_StartDigging` | Variable | A variable flag that, when set, allows the 'StartDigging' legacy action to trigger. | 6 ||
+| [`chapter`](./Enums.md#enum-chapter) | Enum | Specifies which chapter or scenario this ability is available in. | 6 ||
+| [`JarOfRadiation`](#object-jarofradiation) | Object | An object definition for the 'Jar of Radiation' item or status, containing its properties and effects. | 6 ||
+| [`reward`](Events_and_Encounters.md#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 5 ||
+| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Specifies a weather effect type to apply to the current map. | 5 ||
+| `blood_altar_items` | Variable | A variable list or pool of items that can be received from a blood altar event. | 5 ||
+| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Determines which cutscene to play when the player leaves the current location. | 5 ||
+| `physical_disorders` | Variable | A variable list or pool of physical disorder definitions that can be applied or referenced. | 5 ||
+| [`SlagTight`](#object-slagtight) | Object | An object definition for the 'SlagTight' entity or item, containing its properties and effects. | 5 ||
+| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Specifies a named flag that must be unlocked or set for this event or option to appear. | 5 ||
+| `diseases` | Variable | A variable list or pool of disease definitions that can be applied or referenced. | 4 ||
+| `fleshhead_items` | Variable | A variable list or pool of items associated with the Fleshhead event or vendor. | 4 ||
+| [`goto`](./Enums.md#enum-goto) | Enum | Determines which labeled point in the event's script to jump to next, controlling flow. | 4 ||
+| `heal_injury` | Integer | The number of injury points to heal on the target unit. | 4 ||
+| `inventory` | Variable | A variable list or pool of inventory item definitions that can be used or referenced. | 4 ||
+| [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Specifies which specific ability the target unit learns. | 4 ||
+| [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 4 ||
+| `MysteriousStranger_HasLostFinger` | Variable | A variable flag indicating that the Mysterious Stranger event's 'lost finger' condition has been met. | 4 ||
+| [`outcome`](Events_and_Encounters.md#object-outcome) | Object | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 ||
+| `party_heal_disorder` | Integer | The number of disorders to heal from all party members. | 4 ||
+| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 4 ||
+| `QEVENT_THROBBINGARTERY_REW3` | Variable | A variable flag indicating the third reward choice from the Throbbing Artery quest line was selected. | 4 ||
+| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | An array or weighted pool of rewards that are rolled considering the unit's luck stat. | 4 ||
+| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 4 ||
+| `WorldEventLegacyCounter_ToiletFlushes` | Variable | A variable tracking the number of times the toilet flushing legacy action has occurred. | 4 ||
+| [`JarOfRadiatedBlood`](#object-jarofradiatedblood) | Object | An object definition for the 'Jar of Radiated Blood' item or status, containing its properties and effects. | 4 ||
+| [`spin`](./Enums.md#enum-spin) | Enum | Specifies an action to re-roll or spin again, such as for a random reward wheel. | 4 ||
+| [`JarOfChaos`](#object-jarofchaos) | Object | An object definition for the 'Jar of Chaos' item or status, containing its properties and effects. | 4 ||
+| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Specifies which familiar type (by its class name) the unit gains. | 3 ||
+| `bone_armor` | Variable | A variable list or pool of bone armor definitions that can be applied or referenced. | 3 ||
+| `bone_equipment` | Variable | A variable list or pool of bone equipment definitions that can be applied or referenced. | 3 ||
+| [`chapter_specific_item`](#object-chapter_specific_item) | Variable | A variable list or pool of items that are unique to the current chapter. | 3 ||
+| [`CryogenicTimeChamber_Full`](#object-cryogenictimechamber_full) | Object | An object definition for the filled 'Cryogenic Time Chamber' entity, containing its properties and effects. | 3 ||
+| [`end_of_time_unlock`](#object-end_of_time_unlock) | Variable | A variable or object used to set the mapgen flag that unlocks the End of Time area. | 3 ||
+| [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array | An array specifying a pool or list of passives from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked passive. | 3 ||
+| [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Specifies which item or item category is removed from the unit's inventory. | 3 ||
+| [`make_old`](./Enums.md#enum-make_old) | Enum | Applies the 'old' status or age increase to the specified target, typically 'self'. | 3 ||
+| `max_options` | Integer | The maximum number of event options presented to the player. | 3 ||
+| `mental_disorders` | Variable | A variable list or pool of mental disorder definitions that can be applied or referenced. | 3 ||
+| `QEVENT_OBELISK_QUES2` | Variable | A variable flag indicating the second quest choice from the Obelisk event was selected. | 3 ||
+| `QEVENT_VOLCANO_REW2` | Variable | Represents the second reward state for the volcano event quest chain. | 3 ||
+| `QEVENT_VOLCANO_REW3` | Variable | Represents the third reward state for the volcano event quest chain. | 3 ||
+| [`radiated`](#object-radiated) | Variable | Tracks the radiated status or state of an entity. | 3 ||
+| [`RestlessDead`](#object-restlessdead) | Variable | Tracks the Restless Dead event or status state. | 3 ||
+| `resultVeryGood` | Variable | Represents a very good outcome state for an event result. | 3 ||
+| [`Scatological`](#object-scatological) | Variable | Defines the Scatological disorder class with name, description, and passives. | 3 ||
+| `shuffle_options` | Boolean | If true, randomizes the order of event options presented to the player. | 3 ||
+| [`SlagMight`](#object-slagmight) | Object | Defines the SlagMight object or ability configuration. | 3 ||
+| `spawn_reflection_next_fight` | Integer | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 ||
+| [`transform_item`](./Arrays.md#array-transform_item) | Array | An array specifying source and destination item IDs to transform one into the other. | 3 ||
+| [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Specifies the item whose quest is unlocked or advanced. | 3 ||
+| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Specifies which passive ability to upgrade, or 'random' for a random choice. | 3 ||
+| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Specifies the pool name or explicit list of parasites to obtain from. | 2 ||
+| [`battle`](./Math_Equations.md) | Equation | Defines a battle encounter by preset, level file path, or reverb settings. | 2 ||
+| [`level_up`](./Enums.md#enum-level_up) | Enum | Specifies which units to level up, such as 'all' or 'self'. | 2 ||
+| [`Bottles`](#object-bottles) | Object | Defines the Bottles item or object category. | 2 ||
+| `pills` | Number | The amount of pills granted as a consumable reward. | 2 ||
+| `AdventureToken_YellowNeedle` | Variable | Tracks possession or use of the Yellow Needle adventure token. | 2 ||
+| `all` | Variable | Represents the 'all' target or value, often used for selecting everything. | 2 ||
+| [`Anxiety`](#object-anxiety) | Variable | Defines the Anxiety disorder class with name, description, and passives. | 2 ||
+| [`Cancer`](#object-cancer) | Object | Defines the Cancer item or disorder with name, description, rarity, and frame. | 2 ||
+| [`CharmedPinky`](#object-charmedpinky) | Object | Defines the CharmedPinky familiar variant with allied faction. | 2 ||
+| [`CharmedRaptorBaby`](#object-charmedraptorbaby) | Object | Defines the CharmedRaptorBaby familiar variant with allied faction. | 2 ||
+| `clear_result_animation` | Integer | The number of result animations to clear or skip. | 2 ||
+| [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Specifies which surviving kaiju to clear or remove. | 2 ||
+| [`Depression`](#object-depression) | Variable | Represents the Depression disorder or state. | 2 ||
+| `flesh_items` | Variable | Represents a category of flesh-based items. | 2 ||
+| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Specifies the immortal familiar to add to the party. | 2 ||
+| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Specifies the item to obtain and immediately equip. | 2 ||
+| `glitched_items` | Variable | Represents a category of glitched items. | 2 ||
+| `HasHitPinata` | Variable | Tracks whether the player has hit a piñata event. | 2 ||
+| [`HauntedNight`](#object-hauntednight) | Variable | Tracks the Haunted Night event or state. | 2 ||
+| [`map_unlock_dimensionx`](#object-map_unlock_dimensionx) | Variable | Triggers the unlock of the Dimension X map area and sets the associated mapgen flag. | 2 ||
+| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | An array specifying the pool or list of disorders for the party to gain. | 2 ||
+| `party_heal_injury` | Integer | The amount of injury to heal for the entire party. | 2 ||
+| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | An object defining permanent stat increases applied to the party. | 2 ||
+| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | An object specifying the count and mutation parts to randomly apply to the party. | 2 ||
+| [`PawShards`](#object-pawshards) | Object | Defines the PawShards item or object. | 2 ||
+| `poop_items` | Variable | Represents a category of poop-based items. | 2 ||
+| [`PutridLeech`](#object-putridleech) | Object | Defines the PutridLeech item or object. | 2 ||
+| [`PyrophinasCollar`](#object-pyrophinascollar) | Object | Defines the PyrophinasCollar item or object. | 2 ||
+| `QEVENT_OBELISK_QUES1` | Variable | Represents the first quest step or state for the obelisk event. | 2 ||
+| `QEVENT_THROBBINGARTERY_REW1` | Variable | Represents the first reward state for the Throbbing Artery quest chain. | 2 ||
+| `QEVENT_THROBBINGARTERY_REW2` | Variable | Represents the second reward state for the Throbbing Artery quest chain. | 2 ||
+| `QEVENT_VOLCANO_REW1` | Variable | Represents the first reward state for the volcano event quest chain. | 2 ||
+| [`ReceiverAntenna`](#object-receiverantenna) | Object | Defines the ReceiverAntenna item or object. | 2 ||
+| `resultBad` | Variable | Represents a bad outcome state for an event result. | 2 ||
+| [`Rocks`](#object-rocks) | Object | Defines the Rocks item or object. | 2 ||
+| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Specifies which abilities to randomize, such as 'all'. | 2 ||
+| `set_age` | Integer | The age value to set for the target unit. | 2 ||
+| [`SignalAmplifier`](#object-signalamplifier) | Object | An object defining properties for a signal amplifier mechanic. | 2 ||
+| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | The number of snake familiars spawned. | 2 ||
+| [`ThrobbingGristle`](#object-throbbinggristle) | Object | An object defining properties for a throbbing gristle mechanic. | 2 ||
+| [`TransmitterAntenna`](#object-transmitterantenna) | Object | An object defining properties for a transmitter antenna mechanic. | 2 ||
+| [`ZaratanasCollar`](#object-zaratanascollar) | Object | An object defining properties for a Zaratana's collar mechanic. | 2 ||
+| [`CryogenicTimeChamber_Empty`](#object-cryogenictimechamber_empty) | Object | An object defining properties for an empty cryogenic time chamber. | 2 ||
+| [`EnchantingPoop`](#object-enchantingpoop) | Object | An object defining a trinket item that can be acquired from various poop events. | 2 ||
+| [`general_common`](./Enums.md#enum-general_common) | Enum | Specifies the common rarity tier for an item or event outcome. | 2 ||
+| [`general_rare`](./Enums.md#enum-general_rare) | Enum | Specifies the rare rarity tier for an item or event outcome. | 2 ||
+| [`GuillotinasHead`](#object-guillotinashead) | Object | An object defining properties for a guillotine's head mechanic. | 2 ||
+| [`MomsKnife`](#object-momsknife) | Object | An object defining properties for a mom's knife mechanic. | 2 ||
+| [`RaptorEgg`](Engine_LogicKeys.md#object-raptoregg) | Object | An object defining a raptor egg item with a probability or weight. | 2 ||
+| [`StatusDamagers`](Miscellaneous.md#object-statusdamagers) | Object | An object defining status effects that damage the unit, with parameters for each status. | 2 ||
+| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| `random_mutation` | Integer | The number of random mutations applied to the unit. | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| `party_heal` | Integer | The amount of health healed for the entire party. | 1 ||
+| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
+| `cutscene` | String | Specifies the name of a cutscene to play. | 1 ||
+| `random` | Number | A random value used for stat or attribute adjustment. | 1 ||
+| `ally_ambush_next_fights` | Integer | The number of upcoming fights that will start with an ally ambush. | 1 ||
+| `gain_cat_familiar` | Integer | The number of cat familiars gained. | 1 ||
+| `AdventureToken_HasRunFromDeath` | Variable | A boolean flag indicating the unit has run from death before. | 1 ||
+| `AdventureToken_MysteriousCave_FamiliarVoice` | Variable | A boolean flag indicating the unit has heard a familiar voice in the mysterious cave. | 1 ||
+| `AdventureToken_MysteriousJarRepeat` | Variable | A boolean flag indicating the unit has repeated interaction with a mysterious jar. | 1 ||
+| `AdventureToken_StevenTryAgain` | Variable | A boolean flag indicating a retry with Steven. | 1 ||
+| `AdventureToken_StevenTryAgain2` | Variable | A boolean flag indicating a second retry with Steven. | 1 ||
+| `AdventureToken_StevenTryAgain3` | Variable | A boolean flag indicating a third retry with Steven. | 1 ||
+| `AdventureToken_TrippedOnBigToe` | Variable | A boolean flag indicating the unit tripped on a big toe. | 1 ||
+| `AdventureToken_UnmarkedGraveForced` | Variable | A boolean flag indicating the unit was forced to interact with an unmarked grave. | 1 ||
+| [`Albinism`](#object-albinism) | Variable | A variable representing the Albinism disorder, defining its name, description, and passive effects. | 1 ||
+| [`AlienOvergrowth`](#object-alienovergrowth) | Variable | A variable representing the Alien Overgrowth weather effect, defining its name, description, and gameplay effects. | 1 ||
+| [`ambush`](./Math_Equations.md) | Equation | Specifies the path to a level file for an ambush encounter. | 1 ||
+| `AntennaQuest_Orb` | Variable | A boolean flag tracking progress for the Antenna Quest related to the orb. | 1 ||
+| `AntennaQuest_Rift` | Variable | A boolean flag tracking progress for the Antenna Quest related to the rift. | 1 ||
+| `AntennaQuest_Volcano` | Variable | A boolean flag tracking progress for the Antenna Quest related to the volcano. | 1 ||
+| [`Beepis`](#object-beepis) | Object | An object defining properties for a beepis mechanic. | 1 ||
+| [`bleeding`](#object-bleeding) | Variable | A boolean flag indicating the unit is bleeding. | 1 ||
+| `bloody_items` | Variable | A boolean flag indicating the unit has bloody items. | 1 ||
+| [`BrainDamage`](#object-braindamage) | Variable | A boolean flag indicating the unit has brain damage. | 1 ||
+| [`BrainDead`](#object-braindead) | Variable | A variable representing the BrainDead disorder, defining its name, description, class, and stat modifiers. | 1 ||
+| [`Brave`](#object-brave) | Variable | A variable representing the Brave disorder, defining its name, description, class, and passive effects. | 1 ||
+| [`burned`](#object-burned) | Variable | A boolean flag indicating the unit is burned. | 1 ||
+| [`CharmedTarBaby`](#object-charmedtarbaby) | Object | An object defining a charmed variant of the TarBaby unit, with faction and inheritance properties. | 1 ||
+| `clone_self_to_party` | Integer | The number of clones of the unit added to the party. | 1 ||
+| `copy_items_to_party` | Integer | The number of times the unit's items are copied to the party. | 1 ||
+| `copy_party_items` | Integer | The number of times party items are copied to the unit. | 1 ||
+| [`Cunch`](#object-cunch) | Object | An object defining properties for a cunch mechanic. | 1 ||
+| [`CursedStickman`](#object-cursedstickman) | Object | An item object that defines the cursed stickman trinket with rarity, name, description, and cursed flag. | 1 ||
+| [`DeathsScythe`](#object-deathsscythe) | Object | An item object that defines Death's Scythe, likely a trinket or weapon with associated properties. | 1 ||
+| `dimensionx.gon` | Variable | A reference to a .gon file that likely contains data for the dimension x map or event. | 1 ||
+| `EVENT_USETHETOILET_AGAIN` | Variable | A boolean flag indicating whether the 'Use the Toilet' event can be triggered again. | 1 ||
+| [`FecalHood_Cursed`](#object-fecalhood_cursed) | Object | An item object defining the cursed version of the Fecal Hood trinket. | 1 ||
+| [`FecalMask_Cursed`](#object-fecalmask_cursed) | Object | An item object defining the cursed version of the Fecal Mask trinket. | 1 ||
+| [`Feebis`](#object-feebis) | Object | An object likely representing a character, item, or entity named Feebis, with associated properties. | 1 ||
+| [`gain_clone_familiar`](Events_and_Encounters.md#object-gain_clone_familiar) | Object | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 ||
+| [`GeomagneticStorm`](#object-geomagneticstorm) | Variable | A variable that defines a geomagnetic storm weather effect, applying status effects to characters on round end. | 1 ||
+| [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Specifies the item pool rarity from which to generate a full set of items. | 1 ||
+| [`Gigachad`](#object-gigachad) | Variable | A variable that defines the Gigachad disorder, including its name, description, and stat modifications. | 1 ||
+| `godly_items` | Variable | A variable likely referencing a pool or collection of godly-rarity items. | 1 ||
+| `grass_items` | Variable | A variable likely referencing a pool or collection of grass-themed items. | 1 ||
+| `hide_items` | Variable | A variable likely referencing a pool or collection of hide-related items. | 1 ||
+| [`Host`](#object-host) | Object | An object representing the host entity, possibly a character or event trigger. | 1 ||
+| `iceage.gon` | Variable | A reference to a .gon file that likely contains data for the ice age map or event. | 1 ||
+| `junkyard_items` | Variable | A variable likely referencing a pool or collection of junkyard-themed items. | 1 ||
+| [`legacy_event_unlock_momsknife`](#object-legacy_event_unlock_momsknife) | Variable | A variable that triggers the unlocking of the MomsKnife item and displays an unlock popup. | 1 ||
+| [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Specifies the target (e.g., 'cat') from which to remove all currently equipped items. | 1 ||
+| [`map_unlock_iceage`](#object-map_unlock_iceage) | Variable | A variable that unlocks the ice age area and displays an unlock popup. | 1 ||
+| `mapflag_ChaosAntennaAttached` | Variable | A boolean flag indicating whether the chaos antenna has been attached to the map. | 1 ||
+| `mapflag_OrbAntennaAttached` | Variable | A boolean flag indicating whether the orb antenna has been attached to the map. | 1 ||
+| `mapflag_ThrobbingArteryDone` | Variable | A boolean flag indicating whether the Throbbing Artery event or quest has been completed. | 1 ||
+| `mapflag_VolcanoAntennaAttached` | Variable | A boolean flag indicating whether the volcano antenna has been attached to the map. | 1 ||
+| `mapflag_WallOfFleshDone` | Variable | A boolean flag indicating whether the Wall of Flesh event or quest has been completed. | 1 ||
+| [`meat_world_open`](#object-meat_world_open) | Variable | A variable that sets a mapgen flag to fully unlock the Meat World area and shows an unlock popup. | 1 ||
+| `MeatWorldQuest_Gristle` | Variable | A variable likely defining a sub-quest involving the Gristle entity within the Meat World. | 1 ||
+| `MeatWorldQuest_Leech` | Variable | A variable likely defining a sub-quest involving the Leech entity within the Meat World. | 1 ||
+| `MeteorShowerUnlocked` | Variable | A boolean flag indicating whether the Meteor Shower event or weather has been unlocked. | 1 ||
+| `monkey_paw_1finger` | Variable | A variable representing a monkey paw with one finger remaining, likely tracking wishes or uses. | 1 ||
+| `monkey_paw_2fingers` | Variable | A variable representing a monkey paw with two fingers remaining. | 1 ||
+| `monkey_paw_3fingers` | Variable | A variable representing a monkey paw with three fingers remaining. | 1 ||
+| `monkey_paw_4fingers` | Variable | A variable representing a monkey paw with four fingers remaining. | 1 ||
+| [`MysteriousTomb1`](#object-mysterioustomb1) | Variable | A variable representing the first mysterious tomb event or object. | 1 ||
+| [`MysteriousTomb2`](#object-mysterioustomb2) | Variable | A variable representing the second mysterious tomb event or object. | 1 ||
+| [`party_injury`](./Enums.md#enum-party_injury) | Enum | Specifies the type of injury to inflict on the party (e.g., 'random'). | 1 ||
+| [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Specifies which result animation to play (e.g., 'resultVeryGood'). | 1 ||
+| [`PuncturedEye`](#object-puncturedeye) | Variable | A variable representing a punctured eye injury or status effect. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_QUES` | Variable | A variable representing the quest objective or state for the broken time machine event. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW2` | Variable | A variable representing a reward (likely reward 2) for the broken time machine quest. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW3` | Variable | A variable representing reward 3 for the broken time machine quest. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW4` | Variable | A variable representing reward 4 for the broken time machine quest. | 1 ||
+| `QEVENT_BROKENTIMEMACHINE_REW5` | Variable | A variable representing reward 5 for the broken time machine quest. | 1 ||
+| `QEVENT_DEADGOD_QUES` | Variable | A variable representing the quest objective or state for the dead god event. | 1 ||
+| `QEVENT_DEADGOD_REW1` | Variable | A variable representing reward 1 for the dead god quest. | 1 ||
+| `QEVENT_DEADGOD_REW2` | Variable | A variable representing reward 2 for the dead god quest. | 1 ||
+| `QEVENT_DEADGOD_REW3` | Variable | A variable representing reward 3 for the dead god quest. | 1 ||
+| `QEVENT_DEADKING_QUES` | Variable | A variable representing the quest objective or state for the dead king event. | 1 ||
+| `QEVENT_DEADKING_REW1` | Variable | A variable representing reward 1 for the dead king quest. | 1 ||
+| `QEVENT_DEADKING_REW2` | Variable | A variable representing reward 2 for the dead king quest. | 1 ||
+| `QEVENT_DEADKING_REW3` | Variable | A variable storing the reward index or item quantity for the third reward from the Dead King event. | 1 ||
+| `QEVENT_DEADKING_REW4` | Variable | A variable storing the reward index or item quantity for the fourth reward from the Dead King event. | 1 ||
+| `QEVENT_DEADKING_REW5` | Variable | A variable storing the reward index or item quantity for the fifth reward from the Dead King event. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_ENTER_REW` | Variable | A variable storing the reward index or item quantity granted upon entering the Dimension X portal. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_IGNORE_ANSW` | Variable | A variable storing the answer index that causes the Dimension X portal to be ignored. | 1 ||
+| `QEVENT_DIMENSIONXPORTAL_QUES` | Variable | A variable storing the question index presented by the Dimension X portal. | 1 ||
+| `QEVENT_GLOWINGORB_QUES` | Variable | A variable storing the question index for the first puzzle of the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_QUES2` | Variable | A variable storing the question index for the second puzzle of the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW3` | Variable | A variable storing the reward index or item quantity for the third reward from the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW4` | Variable | A variable storing the reward index or item quantity for the fourth reward from the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW5` | Variable | A variable storing the reward index or item quantity for the fifth reward from the Glowing Orb event. | 1 ||
+| `QEVENT_GLOWINGORB_REW7` | Variable | A variable storing the reward index or item quantity for the seventh reward from the Glowing Orb event. | 1 ||
+| `QEVENT_MEATALTAR_QUES1` | Variable | A variable storing the question index for the first puzzle of the Meat Altar event. | 1 ||
+| `QEVENT_MEATALTAR_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the Meat Altar event. | 1 ||
+| `QEVENT_MEATALTAR_REW_IGNORE` | Variable | A variable storing the reward index or item quantity granted when ignoring the Meat Altar. | 1 ||
+| `QEVENT_OBELISK_CORE_REW_ZARA3` | Variable | A variable storing the reward index or item quantity for Zara's third reward from the Obelisk Core event. | 1 ||
+| `QEVENT_OBELISK_MOON_REW_PYRO3` | Variable | A variable storing the reward index or item quantity for Pyro's third reward from the Obelisk Moon event. | 1 ||
+| `QEVENT_OBELISK_QUES3` | Variable | A variable storing the question index for the third puzzle of the Obelisk event. | 1 ||
+| `QEVENT_THEHEAD_QUES` | Variable | A variable storing the question index presented by The Head event. | 1 ||
+| `QEVENT_THEHEAD_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from The Head event. | 1 ||
+| `QEVENT_THEHEAD_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from The Head event. | 1 ||
+| `QEVENT_THEHEAD_REW3` | Variable | A variable storing the reward index or item quantity for the third reward from The Head event. | 1 ||
+| `QEVENT_THEHEAD_REW5` | Variable | A variable storing the reward index or item quantity for the fifth reward from The Head event. | 1 ||
+| `QEVENT_THEHEAD_REW6` | Variable | A variable storing the reward index or item quantity for the sixth reward from The Head event. | 1 ||
+| `QEVENT_THROBBINGARTERY2_QUES` | Variable | A variable storing the question index presented by the second Throbbing Artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY2_REW_IGNORE` | Variable | A variable storing the reward index or item quantity granted when ignoring the second Throbbing Artery. | 1 ||
+| `QEVENT_THROBBINGARTERY_QUES1` | Variable | A variable storing the question index for the first puzzle of the Throbbing Artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_QUES2` | Variable | A variable storing the question index for the second puzzle of the Throbbing Artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_REW5` | Variable | A variable storing the reward index or item quantity for the fifth reward from the Throbbing Artery event. | 1 ||
+| `QEVENT_THROBBINGARTERY_REW_IGNORE` | Variable | A variable storing the reward index or item quantity granted when ignoring the Throbbing Artery. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_QUES` | Variable | A variable storing the question index presented by the Future timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the Future timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_FUTURE_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from the Future timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_QUES` | Variable | A variable storing the question index presented by the Ice Age timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the Ice Age timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_ICEAGE_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from the Ice Age timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_QUES` | Variable | A variable storing the question index presented by the Jurassic timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the Jurassic timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_JURASSIC_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from the Jurassic timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_QUES` | Variable | A variable storing the question index presented by the base Time Machine event. | 1 ||
+| `QEVENT_TIMEMACHINE_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from the base Time Machine event. | 1 ||
+| `QEVENT_TIMEMACHINE_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from the base Time Machine event. | 1 ||
+| `QEVENT_TIMEMACHINE_REW3` | Variable | A variable storing the reward index or item quantity for the third reward from the base Time Machine event. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_QUES` | Variable | A variable storing the question index presented by The End timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_REW1` | Variable | A variable storing the reward index or item quantity for the first reward from The End timeline of the Time Machine. | 1 ||
+| `QEVENT_TIMEMACHINE_THEEND_REW2` | Variable | A variable storing the reward index or item quantity for the second reward from The End timeline of the Time Machine. | 1 ||
+| `QEVENT_VOLCANO_QUES` | Variable | A variable storing the question index for the first puzzle of the Volcano event. | 1 ||
+| `QEVENT_VOLCANO_QUES2` | Variable | A variable storing the question index for the second puzzle of the Volcano event. | 1 ||
+| `QEVENT_VOLCANO_REW4` | Variable | Stores a reward variable for the Volcano event, slot 4. | 1 ||
+| `QEVENT_VOLCANO_REW5` | Variable | Stores a reward variable for the Volcano event, slot 5. | 1 ||
+| `QEVENT_VOLCANO_REW7` | Variable | Stores a reward variable for the Volcano event, slot 7. | 1 ||
+| `QEVENT_WALLOFFLESH2_QUES` | Variable | Stores the quest state variable for the second Wall of Flesh event. | 1 ||
+| `QEVENT_WALLOFFLESH2_REW_IGNORE` | Variable | Controls whether to ignore the reward condition for the second Wall of Flesh event. | 1 ||
+| `QEVENT_WALLOFFLESH_QUES1` | Variable | Stores the quest state variable for the first Wall of Flesh event, slot 1. | 1 ||
+| `QEVENT_WALLOFFLESH_QUES2` | Variable | Stores the quest state variable for the first Wall of Flesh event, slot 2. | 1 ||
+| `QEVENT_WALLOFFLESH_REW1` | Variable | Stores a reward variable for the Wall of Flesh event, slot 1. | 1 ||
+| `QEVENT_WALLOFFLESH_REW10` | Variable | Stores a reward variable for the Wall of Flesh event, slot 10. | 1 ||
+| `QEVENT_WALLOFFLESH_REW2` | Variable | Stores a reward variable for the Wall of Flesh event, slot 2. | 1 ||
+| `QEVENT_WALLOFFLESH_REW3` | Variable | Stores a reward variable for the Wall of Flesh event, slot 3. | 1 ||
+| `QEVENT_WALLOFFLESH_REW4` | Variable | Stores a reward variable for the Wall of Flesh event, slot 4. | 1 ||
+| `QEVENT_WALLOFFLESH_REW5` | Variable | Stores a reward variable for the Wall of Flesh event, slot 5. | 1 ||
+| `QEVENT_WALLOFFLESH_REW7` | Variable | Stores a reward variable for the Wall of Flesh event, slot 7. | 1 ||
+| `QEVENT_WALLOFFLESH_REW8` | Variable | Stores a reward variable for the Wall of Flesh event, slot 8. | 1 ||
+| `QEVENT_WALLOFFLESH_REW9` | Variable | Stores a reward variable for the Wall of Flesh event, slot 9. | 1 ||
+| `QEVENT_WALLOFFLESH_REW_IGNORE` | Variable | Controls whether to ignore the reward condition for the Wall of Flesh event. | 1 ||
+| [`random_chance`](Events_and_Encounters.md#object-random_chance) | Object | Defines a block with a percentage chance and an action to execute if the chance succeeds. | 1 ||
+| `raptor_nest_eggs` | Variable | Tracks the number of eggs in a raptor nest. | 1 ||
+| `resultConfused` | Variable | An event result indicating a confused outcome. | 1 ||
+| `resultVeryBad` | Variable | An event result indicating a very bad outcome. | 1 ||
+| `rock_items` | Variable | A pool of rock-themed items. | 1 ||
+| [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Specifies which basic attacks to randomize or scramble. | 1 ||
+| [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Specifies which passive abilities to randomize or scramble. | 1 ||
+| [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Selects an item from a named pool for display in a cutscene without granting it. | 1 ||
+| `self_heal` | Integer | The amount of health the unit heals itself. | 1 ||
+| [`SludgeHat`](#object-sludgehat) | Object | Defines the Sludge Hat item or trait. | 1 ||
+| [`SludgeMask`](#object-sludgemask) | Object | Defines the Sludge Mask item or trait. | 1 ||
+| [`Soulless`](#object-soulless) | Variable | Defines the Soulless disorder, with its name, description, and passives. | 1 ||
+| `Steven_disorders` | Variable | A collection of disorders associated with the character Steven. | 1 ||
+| [`StrangeEggs`](#object-strangeeggs) | Variable | Defines the StrangeEggs weather, which spawns extra things on battle start. | 1 ||
+| `tech_items` | Variable | A pool of technology-themed items. | 1 ||
+| `TheRift_UsedPyrophina` | Variable | Tracks whether the Pyrophina item has been used in the Rift event. | 1 ||
+| `TheRift_UsedZaratana` | Variable | Tracks whether the Zaratana item has been used in the Rift event. | 1 ||
+| [`TheShimmer`](#object-theshimmer) | Variable | Defines the Shimmer weather, which adds a post-process visual effect. | 1 ||
+| [`time_machine_quest_finalstep`](#object-time_machine_quest_finalstep) | Variable | Triggers the final step NPC sequence for the time machine quest. | 1 ||
+| [`time_machine_quest_trigger`](#object-time_machine_quest_trigger) | Variable | Triggers the introductory NPC sequence for the time machine quest. | 1 ||
+| [`Touched`](#object-touched) | Variable | Defines the Touched disorder, with its name, description, and stats. | 1 ||
+| `trigger_butterfly_effect` | Integer | The number of times to trigger the butterfly effect event. | 1 ||
+| `WorldEventLegacyCounter_SealedCrypt` | Variable | Counter tracking how many times the Sealed Crypt has been encountered. | 1 ||
+| `WorldEventLegacyToken_CryptOpened` | Variable | Boolean token indicating the Crypt has been opened. | 1 ||
+| `WorldEventLegacyToken_HasRunFromDeath` | Variable | Boolean token indicating the player has run from death. | 1 ||
+| `WorldEventLegacyToken_MomsKnife` | Variable | Boolean token related to acquiring Mom's Knife. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw1` | Variable | Boolean token for the first Monkey Paw wish. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw2` | Variable | Boolean token for the second Monkey Paw wish. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw3` | Variable | Boolean token for the third Monkey Paw wish. | 1 ||
+| `WorldEventLegacyToken_MonkeyPaw4` | Variable | Boolean token for the fourth Monkey Paw wish. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawGenes` | Variable | Boolean token for a Monkey Paw wish related to genes. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawItems` | Variable | Boolean token for a Monkey Paw wish related to items. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawKnowledge` | Variable | Boolean token for a Monkey Paw wish related to knowledge. | 1 ||
+| `WorldEventLegacyToken_MonkeyPawStrength` | Variable | The strength modifier for the Monkey Paw legacy event token. | 1 ||
+| `WorldEventLegacyToken_StacyMutant` | Variable | The value associated with the Stacy Mutant legacy event token. | 1 ||
+| `spawn_reflection_next_fight` | Number | The number of reflections to spawn in the next battle, optionally with a mutation. | 0 ||
 </details>
 
 ### Valid Nested Objects
@@ -423,28 +423,28 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 ||
-| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Examples: `resultVeryGood, resultBad` | 5 ||
-| [`reward`](Events_and_Encounters.md#object-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 5 ||
-| [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 4 ||
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 3 ||
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 3 ||
-| [`battle`](./Math_Equations.md) | String | Examples: `{ ... }` | 2 ||
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 2 ||
-| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| [`cutscene`](Events_and_Encounters.md#object-cutscene) | Object | Event Object: Triggers a narrative cutscene. | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 1 ||
-| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Examples: `CharmedFleaSpecial` | 1 ||
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 ||
-| [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Examples: `glitched_items` | 1 ||
-| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 7 ||
+| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Specifies an animation to play, optionally as an array with a probability weight. | 5 ||
+| [`reward`](Events_and_Encounters.md#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 5 ||
+| [`kill`](./Enums.md#enum-kill) | Enum | Kills the specified target type (e.g., 'cat'). | 4 ||
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 3 ||
+| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Specifies a world event that will now occur for the same cat category as the current event. | 3 ||
+| [`battle`](./Math_Equations.md) | String | Defines a battle encounter by preset, level file path, or reverb settings. | 2 ||
+| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Specifies the pool name or explicit list of parasites to obtain from. | 2 ||
+| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| [`cutscene`](Events_and_Encounters.md#object-cutscene) | Object | Specifies the name of a cutscene to play. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Specifies the immortal familiar to add to the party. | 1 ||
+| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | An object specifying the count and mutation parts to randomly apply to the party. | 1 ||
+| [`select_item_from_pool_for_cutscene_only`](./Enums.md#enum-select_item_from_pool_for_cutscene_only) | Enum | Selects an item from a named pool for display in a cutscene without granting it. | 1 ||
+| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 ||
 
 </details>
 
@@ -459,61 +459,61 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 ||
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 21 ||
-| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 ||
-| [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 14 ||
-| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Examples: `resultVeryGood, resultBad` | 13 ||
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 12 ||
-| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Array / Enum / Object | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 11 ||
-| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 ||
-| `full_heal` | Integer | Examples: `1` | 10 ||
-| `ambush_next_basic_fights` | Integer | Examples: `1` | 9 ||
-| [`party_damage`](./Arrays.md#array-party_damage) | Array / Number | Examples: `[ 5 10 ]` | 9 ||
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 9 ||
-| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Number / Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 ||
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 7 ||
-| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 ||
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | Examples: `[ 4 15 ], 5` | 6 ||
-| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 ||
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 6 ||
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 5 ||
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 5 ||
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 5 ||
-| [`spin`](./Enums.md#enum-spin) | Enum | Examples: `again` | 4 ||
-| [`gain_familiar`](Events_and_Encounters.md#object-gain_familiar) | Enum / Object | Event Action: Adds a specific familiar to the party. | 3 ||
-| [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | Examples: `[ 5 10 ]` | 3 ||
-| `damage` | Array / Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 2 | `[3 6]` (Array), `[5 10]` (Array), `8` (Equation), `5` (Equation) |
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 ||
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Array / Enum | Examples: `cursed_items, parasites` | 2 ||
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 2 ||
-| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 ||
-| `party_heal_disorder` | Integer | Examples: `2` | 2 ||
-| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 ||
-| `ally_ambush_next_fights` | Integer | Examples: `1` | 1 ||
-| `clear_result_animation` | Integer | Examples: `1` | 1 ||
-| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Array / Enum | Examples: `Crazy_disorders` | 1 ||
-| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Examples: `FlyLarva` | 1 ||
-| `heal_disorder` | Integer | Examples: `2` | 1 ||
-| `heal_injury` | Integer | Examples: `1` | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | Examples: `Necromancer` | 1 ||
-| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| `party_heal` | Integer | Examples: `10` | 1 ||
-| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 1 ||
-| `self_heal` | Integer | Examples: `10` | 1 ||
-| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 ||
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 1 ||
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `[4 8]` (Array), `[5 10]` (Array), `50` (Number), `8` (Number) |
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 24 ||
+| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Specifies a world event that will now occur for the same cat category as the current event. | 21 ||
+| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 18 ||
+| [`get_item`](./Enums.md#enum-get_item) | Enum | Specifies an item to add to the player's inventory when this event triggers. | 14 ||
+| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Specifies an animation to play, optionally as an array with a probability weight. | 13 ||
+| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Specifies a disorder to add to the current cat when this event triggers. | 12 ||
+| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Array / Enum / Object | Grants an item from the specified pool or a specific item name. | 11 ||
+| `override_end_option_prompt` | String | Specifies a custom prompt string to display for the end option of this event choice. | 11 ||
+| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | An object defining status effects to apply to the party at the start of the next fight. | 11 ||
+| `full_heal` | Integer | If set to 1, fully restores the unit's health. | 10 ||
+| `ambush_next_basic_fights` | Integer | The number of basic fights to trigger as ambushes. | 9 ||
+| [`party_damage`](./Arrays.md#array-party_damage) | Array / Number | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 9 ||
+| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 9 ||
+| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Number / Object | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 ||
+| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 7 ||
+| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 7 ||
+| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 6 ||
+| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 6 ||
+| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Specifies a legacy counter to increment by one when this event triggers. | 6 ||
+| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Specifies a weather effect type to apply to the current map. | 5 ||
+| [`kill`](./Enums.md#enum-kill) | Enum | Kills the specified target type (e.g., 'cat'). | 5 ||
+| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 5 ||
+| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 5 ||
+| [`spin`](./Enums.md#enum-spin) | Enum | Specifies an action to re-roll or spin again, such as for a random reward wheel. | 4 ||
+| [`gain_familiar`](Events_and_Encounters.md#object-gain_familiar) | Enum / Object | Specifies which familiar type (by its class name) the unit gains. | 3 ||
+| [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | An array specifying the minimum and maximum amount of food gained, or a single integer. | 3 ||
+| `damage` | Array / Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `[3 6]` (Array), `[5 10]` (Array), `8` (Equation), `5` (Equation) |
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 2 ||
+| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Array / Enum | Specifies the pool name or explicit list of parasites to obtain from. | 2 ||
+| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Removes the specified item from the player's inventory. | 2 ||
+| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Object | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 2 ||
+| `party_heal_disorder` | Integer | The number of disorders to heal from all party members. | 2 ||
+| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 ||
+| `ally_ambush_next_fights` | Integer | The number of upcoming fights that will start with an ally ambush. | 1 ||
+| `clear_result_animation` | Integer | The number of result animations to clear or skip. | 1 ||
+| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Specifies which legacy counter or token to decrement by one. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Array / Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Specifies the item to obtain and immediately equip. | 1 ||
+| `heal_disorder` | Integer | Specifies which disorder type to heal, or the number of disorders to heal. | 1 ||
+| `heal_injury` | Integer | The number of injury points to heal on the target unit. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 1 ||
+| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| `party_heal` | Integer | The amount of health healed for the entire party. | 1 ||
+| `random_mutation` | Integer | The number of random mutations applied to the unit. | 1 ||
+| `self_heal` | Integer | The amount of health the unit heals itself. | 1 ||
+| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 ||
+| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 1 ||
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 ||
 
 </details>
 
@@ -528,63 +528,63 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 ||
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 52 ||
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 26 ||
-| [`play_animation`](./Enums.md#enum-play_animation) | Array / Enum | Examples: `resultVeryGood, resultBad` | 20 ||
-| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Examples: `BlackShard, JarOfRadiation, ScaldingOrb` | 18 ||
-| [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Examples: `iceage.gon, dimensionx.gon, future.gon` | 12 ||
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 12 ||
-| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 9 ||
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 9 ||
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 8 ||
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 8 ||
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 7 ||
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 5 ||
-| `heal_disorder` | Enum / Number | Examples: `2` | 5 ||
-| [`reward`](Events_and_Encounters.md#object-reward) | Object | Event Object: Story branch or dialog option representing the 'Reward' action. | 5 ||
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 3 ||
-| `heal_injury` | Integer | Examples: `1` | 3 ||
-| [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 3 ||
-| [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Examples: `CryogenicTimeChamber_Full, JarOfChaos, JarOfRadiatedBlood` | 3 ||
-| [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Examples: `pyrophina, zaratana` | 2 ||
-| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum / Object | Examples: `infinite_intro` | 2 ||
-| `full_heal` | Integer | Examples: `1` | 2 ||
-| [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 2 ||
-| `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 2 ||
-| `ally_ambush_next_fights` | Integer | Examples: `1` | 1 ||
-| `clone_self_to_party` | Integer | Examples: `1` | 1 ||
-| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| `copy_items_to_party` | Integer | Examples: `1` | 1 ||
-| `copy_party_items` | Integer | Examples: `1` | 1 ||
-| `cutscene` | String | Event Object: Triggers a narrative cutscene. | 1 ||
-| [`gain_clone_familiar`](Events_and_Encounters.md#object-gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 1 ||
-| [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Examples: `common` | 1 ||
-| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array / Enum | Examples: `Necromancer` | 1 ||
-| [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array / Enum | Examples: `AnyUnlocked` | 1 ||
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 1 ||
-| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 ||
-| [`random_mutation`](Events_and_Encounters.md#object-random_mutation) | Number / Object | Event Reward: Applies a completely random mutation to a character. | 1 ||
-| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 1 ||
-| [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Examples: `all` | 1 ||
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 1 ||
-| `trigger_butterfly_effect` | Integer | Examples: `1` | 1 ||
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 1 ||
-| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Examples: `random` | 1 ||
-| [`gain_food`](./Arrays.md#array-gain_food) | Array | Examples: `[ 5 10 ]` | 0 ||
-| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | Examples: `[ Dwarfism ], [ Gigantism ]` | 0 ||
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 ||
-| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | Examples: `[ { prompt "EVENT_TRACY_REW11" weight 1 get_item_from_poo..., [ { prompt "EVE...` | 0 ||
-| [`transform_item`](./Arrays.md#array-transform_item) | Array | Examples: `[ CryogenicTimeChamber_Empty CryogenicTimeChamber_Full ], [ JarOfRadiation Ja...` | 0 ||
+| [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 ||
+| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Specifies a legacy counter to increment by one when this event triggers. | 52 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 26 ||
+| [`play_animation`](./Enums.md#enum-play_animation) | Array / Enum | Specifies an animation to play, optionally as an array with a probability weight. | 20 ||
+| [`complete_item_quest`](./Enums.md#enum-complete_item_quest) | Enum | Marks the specified item quest as completed. | 18 ||
+| [`begin_chapter`](./Enums.md#enum-begin_chapter) | Enum | Specifies the chapter file to begin, transitioning to that chapter. | 12 ||
+| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 12 ||
+| [`get_item_from_pool`](./Enums.md#enum-get_item_from_pool) | Enum | Grants an item from the specified pool or a specific item name. | 11 ||
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 9 ||
+| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Specifies a world event that will now occur for the same cat category as the current event. | 9 ||
+| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Specifies a disorder to add to the current cat when this event triggers. | 8 ||
+| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Removes the specified item from the player's inventory. | 8 ||
+| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Triggers the specified adventure or map unlock quest. | 7 ||
+| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Specifies a weather effect type to apply to the current map. | 5 ||
+| [`get_item`](./Enums.md#enum-get_item) | Enum | Specifies an item to add to the player's inventory when this event triggers. | 5 ||
+| `heal_disorder` | Enum / Number | Specifies which disorder type to heal, or the number of disorders to heal. | 5 ||
+| [`reward`](Events_and_Encounters.md#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 5 ||
+| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 3 ||
+| `heal_injury` | Integer | The number of injury points to heal on the target unit. | 3 ||
+| [`kill`](./Enums.md#enum-kill) | Enum | Kills the specified target type (e.g., 'cat'). | 3 ||
+| [`unlock_item_quest`](./Enums.md#enum-unlock_item_quest) | Enum | Specifies the item whose quest is unlocked or advanced. | 3 ||
+| [`clear_surviving_kaiju`](./Enums.md#enum-clear_surviving_kaiju) | Enum | Specifies which surviving kaiju to clear or remove. | 2 ||
+| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum / Object | Determines which cutscene to play when the player leaves the current location. | 2 ||
+| `full_heal` | Integer | If set to 1, fully restores the unit's health. | 2 ||
+| [`level_up`](./Enums.md#enum-level_up) | Enum | Specifies which units to level up, such as 'all' or 'self'. | 2 ||
+| `override_end_option_prompt` | String | Specifies a custom prompt string to display for the end option of this event choice. | 2 ||
+| `ally_ambush_next_fights` | Integer | The number of upcoming fights that will start with an ally ambush. | 1 ||
+| `clone_self_to_party` | Integer | The number of clones of the unit added to the party. | 1 ||
+| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| `copy_items_to_party` | Integer | The number of times the unit's items are copied to the party. | 1 ||
+| `copy_party_items` | Integer | The number of times party items are copied to the unit. | 1 ||
+| `cutscene` | String | Specifies the name of a cutscene to play. | 1 ||
+| [`gain_clone_familiar`](Events_and_Encounters.md#object-gain_clone_familiar) | Object | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`get_full_item_set_from_pool`](./Enums.md#enum-get_full_item_set_from_pool) | Enum | Specifies the item pool rarity from which to generate a full set of items. | 1 ||
+| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| [`learn_ability_from_pool`](./Arrays.md#array-learn_ability_from_pool) | Array / Enum | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 1 ||
+| [`learn_passive_from_pool`](./Arrays.md#array-learn_passive_from_pool) | Array / Enum | An array specifying a pool or list of passives from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked passive. | 1 ||
+| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 ||
+| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Object | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 ||
+| [`random_mutation`](Events_and_Encounters.md#object-random_mutation) | Number / Object | The number of random mutations applied to the unit. | 1 ||
+| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Specifies which abilities to randomize, such as 'all'. | 1 ||
+| [`scramble_passives`](./Enums.md#enum-scramble_passives) | Enum | Specifies which passive abilities to randomize or scramble. | 1 ||
+| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 1 ||
+| `trigger_butterfly_effect` | Integer | The number of times to trigger the butterfly effect event. | 1 ||
+| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 1 ||
+| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Specifies which passive ability to upgrade, or 'random' for a random choice. | 1 ||
+| [`gain_food`](./Arrays.md#array-gain_food) | Array | An array specifying the minimum and maximum amount of food gained, or a single integer. | 0 ||
+| [`party_gain_disorder_from_pool`](./Arrays.md#array-party_gain_disorder_from_pool) | Array | An array specifying the pool or list of disorders for the party to gain. | 0 ||
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 ||
+| [`random_pool_consider_luck`](./Arrays.md#array-random_pool_consider_luck) | Array | An array or weighted pool of rewards that are rolled considering the unit's luck stat. | 0 ||
+| [`transform_item`](./Arrays.md#array-transform_item) | Array | An array specifying source and destination item IDs to transform one into the other. | 0 ||
 
 </details>
 
@@ -599,26 +599,26 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 ||
-| [`options`](./Arrays.md#array-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 ||
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`setup`](Events_and_Encounters.md#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 ||
-| [`bad`](Events_and_Encounters.md#object-bad) | Object | Event Object: Story branch or dialog option representing the 'Bad' action. | 10 ||
-| [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 10 ||
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Prerequisite: Must meet this condition. | 5 ||
-| [`goto`](./Enums.md#enum-goto) | Enum | Examples: `end` | 4 ||
-| [`outcome`](Events_and_Encounters.md#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 ||
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 3 ||
-| `max_options` | Integer | Examples: `3, 2` | 3 ||
-| `shuffle_options` | Boolean | Examples: `true` | 3 ||
-| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 ||
-| `party_heal` | Integer | Examples: `10` | 1 ||
-| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 ||
-| [`play_animation`](./Arrays.md#array-play_animation) | Array | Examples: `resultVeryGood, resultBad` | 1 ||
-| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 1 ||
+| [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 ||
+| [`options`](./Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 210 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`setup`](Events_and_Encounters.md#object-setup) | Object | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 ||
+| [`bad`](Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 10 ||
+| [`weight`](./Enums.md#enum-weight) | Float | A multiplier or priority value for random selection or effect magnitude. | 10 ||
+| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Specifies a weather effect type to apply to the current map. | 5 ||
+| [`requires_flag`](./Enums.md#enum-requires_flag) | Enum | Specifies a named flag that must be unlocked or set for this event or option to appear. | 5 ||
+| [`goto`](./Enums.md#enum-goto) | Enum | Determines which labeled point in the event's script to jump to next, controlling flow. | 4 ||
+| [`outcome`](Events_and_Encounters.md#object-outcome) | Object | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 ||
+| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Specifies which familiar type (by its class name) the unit gains. | 3 ||
+| `max_options` | Integer | The maximum number of event options presented to the player. | 3 ||
+| `shuffle_options` | Boolean | If true, randomizes the order of event options presented to the player. | 3 ||
+| [`next_event_from_set`](./Enums.md#enum-next_event_from_set) | Enum | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 ||
+| `party_heal` | Integer | The amount of health healed for the entire party. | 1 ||
+| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | An object defining permanent stat increases applied to the party. | 1 ||
+| [`play_animation`](./Arrays.md#array-play_animation) | Array | Specifies an animation to play, optionally as an array with a probability weight. | 1 ||
+| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
+| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 1 ||
 
 </details>
 
@@ -633,82 +633,82 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | A damage instance object that applies damage and effects to the source unit itself. | 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
-| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Examples: `BorrowedTime, Brave, Dyslexia` | 65 ||
-| [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 41 ||
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Examples: `BigToe, SpookieApparation, CatHole` | 30 ||
-| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Examples: `FaceShards, BigToeCursed, MetalRod` | 30 ||
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 22 ||
-| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 ||
-| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Number / Object | Event Reward: Applies a random mutation to a character from a specific pool. | 13 ||
-| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 ||
-| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Array / Enum / Object | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Examples: `CobraStyle, PoisonTips, DeathProof` | 10 ||
-| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Examples: `resultVeryGood, resultBad` | 10 ||
-| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall, W...` | 9 ||
-| `override_end_option_prompt` | String | Examples: `"EVENT_MYSTERIOUSSTRANGER_END_AGAIN2", "EVENT_LOCKEDDOOR_PROMPT2", "EVENT_MYS...` | 8 ||
-| [`party_damage`](./Arrays.md#array-party_damage) | Array / Number | Examples: `[ 5 10 ]` | 8 ||
-| `party_random_mutation` | Integer | Examples: `1` | 8 ||
-| `ambush_next_basic_fights` | String | Examples: `1` | 7 ||
-| [`leave_party_temporarily`](Events_and_Encounters.md#object-leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 ||
-| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Examples: `equipped, inventory` | 7 ||
-| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 7 ||
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 7 ||
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | Examples: `[ 4 15 ], 5` | 6 ||
-| `hide_appearance_changes` | Integer | Examples: `1` | 6 ||
-| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Examples: `TreasureHard, Event_SmallShop, Event_RareShop` | 6 ||
-| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Examples: `TheShimmer, SolarFlare, GeomagneticStorm` | 5 ||
-| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Examples: `WorldEventLegacyToken_StartDigging, WorldEventLegacyCounter_CrackInTheWall` | 5 ||
-| `full_heal` | Integer | Examples: `1` | 4 ||
-| [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Examples: `BarfBall, FutureSight` | 4 ||
-| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Event Action: Adds a specific familiar to the party. | 3 ||
-| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 ||
-| [`kill`](./Enums.md#enum-kill) | Enum | Examples: `cat` | 3 ||
-| [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Examples: `cat` | 3 ||
-| [`make_old`](./Enums.md#enum-make_old) | Enum | Examples: `self` | 3 ||
-| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Enum / Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 ||
-| [`spawn_reflection_next_fight`](Events_and_Encounters.md#object-spawn_reflection_next_fight) | Number / Object | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
-| `damage` | Array / Equation | The damage dealt, which can be a numeric value, a formula string, or a defined damage object. | 2 | `[3 4]` (Array), `[2 5]` (Array), `5` (Equation), `7` (Equation) |
-| [`battle`](./Math_Equations.md) | Enum / String | Examples: `{ ... }` | 2 ||
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 2 ||
-| [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | Examples: `[ 5 10 ]` | 2 ||
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Array / Enum | Examples: `cursed_items, parasites` | 2 ||
-| [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 2 ||
-| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Examples: `SlagTight` | 2 ||
-| `party_heal_disorder` | Integer | Examples: `2` | 2 ||
-| `party_heal_injury` | Integer | Examples: `99` | 2 ||
-| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 ||
-| `set_age` | Integer | Examples: `1` | 2 ||
-| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Examples: `random` | 2 ||
-| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Examples: `random` | 2 ||
-| `ally_ambush_next_fights` | Integer | Examples: `1` | 1 ||
-| [`ambush`](./Math_Equations.md) | Equation | Examples: `"events/chupacabra.lvl"` | 1 ||
-| `clear_result_animation` | Integer | Examples: `1` | 1 ||
-| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| `gain_cat_familiar` | Integer | Examples: `1` | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Array / Enum | Examples: `Crazy_disorders` | 1 ||
-| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Examples: `CharmedFleaSpecial` | 1 ||
-| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Examples: `FlyLarva` | 1 ||
-| `heal_disorder` | Integer | Examples: `2` | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | Examples: `Necromancer` | 1 ||
-| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum | Examples: `AnyUnlocked` | 1 ||
-| [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Examples: `cat` | 1 ||
-| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | Event Object: Story branch or dialog option representing the 'Mutation' action. | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| `party_heal` | Integer | Examples: `10` | 1 ||
-| [`party_injury`](./Enums.md#enum-party_injury) | Enum | Examples: `random` | 1 ||
-| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 ||
-| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 ||
-| [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Examples: `resultVeryGood` | 1 ||
-| `random_mutation` | Integer | Event Reward: Applies a completely random mutation to a character. | 1 ||
-| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Examples: `all` | 1 ||
-| [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Examples: `all` | 1 ||
-| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 1 ||
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `[6 10]` (Array), `50` (Number), `10` (Number) |
+| [`gain_disorder`](./Enums.md#enum-gain_disorder) | Enum | Specifies a disorder to add to the current cat when this event triggers. | 65 ||
+| [`get_item`](./Enums.md#enum-get_item) | Enum | Specifies an item to add to the player's inventory when this event triggers. | 41 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`event_now_same_cat`](./Enums.md#enum-event_now_same_cat) | Enum | Specifies a world event that will now occur for the same cat category as the current event. | 30 ||
+| [`get_parasite`](./Enums.md#enum-get_parasite) | Enum | Specifies a parasite item to attach to a unit when this event triggers. | 30 ||
+| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 22 ||
+| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 20 ||
+| [`random_mutation_from_set`](Events_and_Encounters.md#object-random_mutation_from_set) | Number / Object | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 13 ||
+| [`party_status_next_fight`](Events_and_Encounters.md#object-party_status_next_fight) | Object | An object defining status effects to apply to the party at the start of the next fight. | 12 ||
+| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Array / Enum / Object | Grants an item from the specified pool or a specific item name. | 11 ||
+| [`learn_passive`](./Enums.md#enum-learn_passive) | Enum | Teaches the unit the specified passive ability. | 10 ||
+| [`play_animation`](./Arrays.md#array-play_animation) | Array / Enum | Specifies an animation to play, optionally as an array with a probability weight. | 10 ||
+| [`increment_legacy_counter`](./Enums.md#enum-increment_legacy_counter) | Enum | Specifies a legacy counter to increment by one when this event triggers. | 9 ||
+| `override_end_option_prompt` | String | Specifies a custom prompt string to display for the end option of this event choice. | 8 ||
+| [`party_damage`](./Arrays.md#array-party_damage) | Array / Number | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 8 ||
+| `party_random_mutation` | Integer | The number of random mutations applied to the entire party. | 8 ||
+| `ambush_next_basic_fights` | String | The number of basic fights to trigger as ambushes. | 7 ||
+| [`leave_party_temporarily`](Events_and_Encounters.md#object-leave_party_temporarily) | Object | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 ||
+| [`lose_item`](./Enums.md#enum-lose_item) | Enum | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 7 ||
+| [`permanent_stats`](Events_and_Encounters.md#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 7 ||
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 7 ||
+| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 6 ||
+| `hide_appearance_changes` | Integer | If set to 1, visual appearance changes from status effects or mutations are not shown on the unit. | 6 ||
+| [`shop_now`](./Enums.md#enum-shop_now) | Enum | Triggers the specified shop to appear immediately. | 6 ||
+| [`add_weather`](./Enums.md#enum-add_weather) | Enum | Specifies a weather effect type to apply to the current map. | 5 ||
+| [`decrement_legacy_counter`](./Enums.md#enum-decrement_legacy_counter) | Enum | Specifies which legacy counter or token to decrement by one. | 5 ||
+| `full_heal` | Integer | If set to 1, fully restores the unit's health. | 4 ||
+| [`learn_ability`](./Enums.md#enum-learn_ability) | Enum | Specifies which specific ability the target unit learns. | 4 ||
+| [`gain_familiar`](./Enums.md#enum-gain_familiar) | Enum | Specifies which familiar type (by its class name) the unit gains. | 3 ||
+| [`global_effect_next_fight`](Events_and_Encounters.md#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 3 ||
+| [`kill`](./Enums.md#enum-kill) | Enum | Kills the specified target type (e.g., 'cat'). | 3 ||
+| [`lose_item_from_inventory`](./Enums.md#enum-lose_item_from_inventory) | Enum | Specifies which item or item category is removed from the unit's inventory. | 3 ||
+| [`make_old`](./Enums.md#enum-make_old) | Enum | Applies the 'old' status or age increase to the specified target, typically 'self'. | 3 ||
+| [`next_event_from_set`](Events_and_Encounters.md#object-next_event_from_set) | Enum / Object | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 3 ||
+| [`spawn_reflection_next_fight`](Events_and_Encounters.md#object-spawn_reflection_next_fight) | Number / Object | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 ||
+| `damage` | Array / Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `[3 4]` (Array), `[2 5]` (Array), `5` (Equation), `7` (Equation) |
+| [`battle`](./Math_Equations.md) | Enum / String | Defines a battle encounter by preset, level file path, or reverb settings. | 2 ||
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 2 ||
+| [`gain_food`](./Arrays.md#array-gain_food) | Array / Number | An array specifying the minimum and maximum amount of food gained, or a single integer. | 2 ||
+| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Array / Enum | Specifies the pool name or explicit list of parasites to obtain from. | 2 ||
+| [`level_up`](./Enums.md#enum-level_up) | Enum | Specifies which units to level up, such as 'all' or 'self'. | 2 ||
+| [`lose_specific_item`](./Enums.md#enum-lose_specific_item) | Enum | Removes the specified item from the player's inventory. | 2 ||
+| `party_heal_disorder` | Integer | The number of disorders to heal from all party members. | 2 ||
+| `party_heal_injury` | Integer | The amount of injury to heal for the entire party. | 2 ||
+| [`party_permanent_stats_exclude_self`](Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 ||
+| `set_age` | Integer | The age value to set for the target unit. | 2 ||
+| [`upgrade_ability`](./Enums.md#enum-upgrade_ability) | Enum | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 2 ||
+| [`upgrade_passive`](./Enums.md#enum-upgrade_passive) | Enum | Specifies which passive ability to upgrade, or 'random' for a random choice. | 2 ||
+| `ally_ambush_next_fights` | Integer | The number of upcoming fights that will start with an ally ambush. | 1 ||
+| [`ambush`](./Math_Equations.md) | Equation | Specifies the path to a level file for an ambush encounter. | 1 ||
+| `clear_result_animation` | Integer | The number of result animations to clear or skip. | 1 ||
+| [`conditional_reward`](Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| `gain_cat_familiar` | Integer | The number of cat familiars gained. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Array / Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`gain_immortal_familiar`](./Enums.md#enum-gain_immortal_familiar) | Enum | Specifies the immortal familiar to add to the party. | 1 ||
+| [`get_and_equip_item`](./Enums.md#enum-get_and_equip_item) | Enum | Specifies the item to obtain and immediately equip. | 1 ||
+| `heal_disorder` | Integer | Specifies which disorder type to heal, or the number of disorders to heal. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| [`learn_ability_from_pool`](./Enums.md#enum-learn_ability_from_pool) | Enum | An array specifying a pool or list of abilities from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked ability. | 1 ||
+| [`learn_passive_from_pool`](./Enums.md#enum-learn_passive_from_pool) | Enum | An array specifying a pool or list of passives from which one is randomly selected and learned. The string 'AnyUnlocked' selects any unlocked passive. | 1 ||
+| [`lose_all_equipped_items`](./Enums.md#enum-lose_all_equipped_items) | Enum | Specifies the target (e.g., 'cat') from which to remove all currently equipped items. | 1 ||
+| [`mutation`](Events_and_Encounters.md#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| `party_heal` | Integer | The amount of health healed for the entire party. | 1 ||
+| [`party_injury`](./Enums.md#enum-party_injury) | Enum | Specifies the type of injury to inflict on the party (e.g., 'random'). | 1 ||
+| [`party_permanent_stats`](Events_and_Encounters.md#object-party_permanent_stats) | Object | An object defining permanent stat increases applied to the party. | 1 ||
+| [`party_random_mutation_from_set`](Events_and_Encounters.md#object-party_random_mutation_from_set) | Object | An object specifying the count and mutation parts to randomly apply to the party. | 1 ||
+| [`play_result_animation`](./Enums.md#enum-play_result_animation) | Enum | Specifies which result animation to play (e.g., 'resultVeryGood'). | 1 ||
+| `random_mutation` | Integer | The number of random mutations applied to the unit. | 1 ||
+| [`scramble_abilities`](./Enums.md#enum-scramble_abilities) | Enum | Specifies which abilities to randomize, such as 'all'. | 1 ||
+| [`scramble_basic_attack`](./Enums.md#enum-scramble_basic_attack) | Enum | Specifies which basic attacks to randomize or scramble. | 1 ||
+| [`self_status_next_fight`](Events_and_Encounters.md#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
+| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Triggers the specified adventure or map unlock quest. | 1 ||
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 ||
 
 </details>
 
@@ -723,32 +723,32 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`common`](./Enums.md#enum-common) | Enum | Event Object: Story branch or dialog option representing the 'Common' action. | 1067 ||
-| [`rare`](./Enums.md#enum-rare) | Enum | Event Object: Story branch or dialog option representing the 'Rare' action. | 673 ||
-| [`prompt`](./Enums.md#enum-prompt) | String | Examples: `"woah", "EVENT_TRASHBIN_REW3", "EVENT_ABEGGAR_REW2"` | 38 ||
-| `set_frame` | Integer | Examples: `4, 2, 5` | 36 ||
-| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Examples: `AdventureToken_BlueNeedle, AdventureToken_HasTakenNeedle, AdventureToken_RedN...` | 24 ||
-| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Enum / Object | Event Action: Rewards the player with an item drawn from a specific loot pool. | 11 ||
-| [`set_subject`](./Enums.md#enum-set_subject) | Enum | Examples: `subject_frame, wall_of_flesh_noartery, throbbing_artery_noflesh` | 10 ||
-| [`weight`](./Enums.md#enum-weight) | Float | Probability weight for this outcome. | 10 ||
-| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Examples: `AdventureToken_Mirage2, AdventureToken_StevenTryAgain3, HasPlayedMysteriousSt...` | 9 ||
-| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Examples: `end_of_time_unlock, meat_world_unlock` | 5 ||
-| [`play_animation`](./Arrays.md#array-play_animation) | Enum | Examples: `resultVeryGood, resultBad` | 4 ||
-| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Examples: `infinite_intro` | 3 ||
-| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Examples: `cursed_items, parasites` | 2 ||
-| [`level_up`](./Enums.md#enum-level_up) | Enum | Examples: `all, self` | 2 ||
-| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 2 ||
-| `ambush_next_basic_fights` | Integer | Examples: `1` | 1 ||
-| [`event_now`](./Enums.md#enum-event_now) | Enum | Examples: `MeatGolem` | 1 ||
-| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | Examples: `[ 4 15 ], 5` | 1 ||
-| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Examples: `Crazy_disorders` | 1 ||
-| [`get_item`](./Enums.md#enum-get_item) | Enum | Examples: `BrokenWindow` | 1 ||
-| [`injury`](./Enums.md#enum-injury) | Enum | Examples: `random` | 1 ||
-| `next_event_bonus` | Integer | Examples: `2` | 1 ||
-| [`random_chance`](Events_and_Encounters.md#object-random_chance) | Object | Event Logic: Executes the nested outcome based on a percentage roll. | 1 ||
-| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Examples: `WorldEventLegacyToken_CryptOpened` | 1 ||
-| [`party_damage`](./Arrays.md#array-party_damage) | Array | Examples: `[ 5 10 ]` | 0 ||
-| [`random_pool`](./Arrays.md#array-random_pool) | Array | Examples: `[ { weight 90 prompt "EVENT_ABEGGAR_REW1" set_frame 3 ran..., [ { weight 85 p...` | 0 ||
+| [`common`](./Enums.md#enum-common) | Enum | Defines the common reward block for a boss encounter. | 1067 ||
+| [`rare`](./Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 673 ||
+| [`prompt`](./Enums.md#enum-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 38 ||
+| `set_frame` | Integer | The specific animation frame to set for an object or UI element. | 36 ||
+| [`clear_adventure_token`](./Enums.md#enum-clear_adventure_token) | Enum | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 24 ||
+| [`get_item_from_pool`](Events_and_Encounters.md#object-get_item_from_pool) | Enum / Object | Grants an item from the specified pool or a specific item name. | 11 ||
+| [`set_subject`](./Enums.md#enum-set_subject) | Enum | Specifies which subject or frame to use for the event's visual. | 10 ||
+| [`weight`](./Enums.md#enum-weight) | Float | A multiplier or priority value for random selection or effect magnitude. | 10 ||
+| [`set_adventure_token`](./Enums.md#enum-set_adventure_token) | Enum | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 9 ||
+| [`trigger_adventure_unlock`](./Enums.md#enum-trigger_adventure_unlock) | Enum | Triggers the specified adventure or map unlock quest. | 5 ||
+| [`play_animation`](./Arrays.md#array-play_animation) | Enum | Specifies an animation to play, optionally as an array with a probability weight. | 4 ||
+| [`cutscene_on_exit`](./Enums.md#enum-cutscene_on_exit) | Enum | Determines which cutscene to play when the player leaves the current location. | 3 ||
+| [`get_parasite_from_pool`](./Enums.md#enum-get_parasite_from_pool) | Enum | Specifies the pool name or explicit list of parasites to obtain from. | 2 ||
+| [`level_up`](./Enums.md#enum-level_up) | Enum | Specifies which units to level up, such as 'all' or 'self'. | 2 ||
+| [`spawn_unit_next_fight`](Events_and_Encounters.md#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 2 ||
+| `ambush_next_basic_fights` | Integer | The number of basic fights to trigger as ambushes. | 1 ||
+| [`event_now`](./Enums.md#enum-event_now) | Enum | Triggers the specified event immediately. | 1 ||
+| [`gain_coins`](./Arrays.md#array-gain_coins) | Array / Number | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 1 ||
+| [`gain_disorder_from_pool`](./Enums.md#enum-gain_disorder_from_pool) | Enum | Specifies a pool of disorders from which one is randomly gained. | 1 ||
+| [`get_item`](./Enums.md#enum-get_item) | Enum | Specifies an item to add to the player's inventory when this event triggers. | 1 ||
+| [`injury`](./Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 1 ||
+| `next_event_bonus` | Integer | A modifier to the next event's outcome roll or selection chance. | 1 ||
+| [`random_chance`](Events_and_Encounters.md#object-random_chance) | Object | Defines a block with a percentage chance and an action to execute if the chance succeeds. | 1 ||
+| [`set_legacy_token`](./Enums.md#enum-set_legacy_token) | Enum | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 ||
+| [`party_damage`](./Arrays.md#array-party_damage) | Array | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 0 ||
+| [`random_pool`](./Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 0 ||
 
 </details>
 
@@ -768,10 +768,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_ALBINISM_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_ALBINISM_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_ALBINISM_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_ALBINISM_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -784,9 +784,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_ALIENOVERGROWTH_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_ALIENOVERGROWTH_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_ALIENOVERGROWTH_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_ALIENOVERGROWTH_NAME"` |
 
 </details>
 
@@ -799,10 +799,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_ANXIETY_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_ANXIETY_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_ANXIETY_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_ANXIETY_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -815,13 +815,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_BEEPIS_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `224` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_BEEPIS_NAME"` |
-| `parasite` | Boolean | Undocumented. | 1 | `true` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_BEEPIS_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `224` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_BEEPIS_NAME"` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -834,13 +834,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_Bottles` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_BOTTLES_DESC"` |
-| `durability` | Number | Undocumented. | 1 | `6` |
-| `frame` | Number | Undocumented. | 1 | `17` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_BOTTLES_NAME"` |
-| `rarity` | String | Undocumented. | 1 | `common` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_Bottles` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_BOTTLES_DESC"` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `6` |
+| `frame` | Number | The sprite frame index to display. | 1 | `17` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_BOTTLES_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common` |
 
 </details>
 
@@ -853,10 +853,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAINDAMAGE_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_BRAINDAMAGE_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_BRAINDAMAGE_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_BRAINDAMAGE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -869,11 +869,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAINDEAD_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_BRAINDEAD_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_BRAINDEAD_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_BRAINDEAD_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
 
 </details>
 
@@ -886,10 +886,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_BRAVE_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_BRAVE_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_BRAVE_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_BRAVE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -902,14 +902,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 2 | `"DISORDER_CANCER_DESC"`<br>`"ITEM_CANCER_DESC"` |
-| `name` | String | Undocumented. | 2 | `"DISORDER_CANCER_NAME"`<br>`"ITEM_CANCER_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 2 ||
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `frame` | Number | Undocumented. | 1 | `152` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `rarity` | String | Undocumented. | 1 | `rare` |
-| `set` | String | Undocumented. | 1 | `Mother` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 2 | `"DISORDER_CANCER_DESC"`<br>`"ITEM_CANCER_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 2 | `"DISORDER_CANCER_NAME"`<br>`"ITEM_CANCER_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `frame` | Number | The sprite frame index to display. | 1 | `152` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Mother` |
 
 </details>
 
@@ -922,9 +922,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `Maggot` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Maggot` |
 
 </details>
 
@@ -937,8 +937,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `Pinky` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Pinky` |
 
 </details>
 
@@ -951,8 +951,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `RaptorBaby` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `RaptorBaby` |
 
 </details>
 
@@ -965,8 +965,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| `variant_of` | String | Undocumented. | 1 | `TarBaby` |
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `TarBaby` |
 
 </details>
 
@@ -979,18 +979,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
-| `frame` | Number | Undocumented. | 1 | `224` |
-| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | Undocumented. | 1 ||
-| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
-| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_MeatWorldUnlockedFull` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
+| `frame` | Number | The sprite frame index to display. | 1 | `224` |
+| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | An object containing global passive modifiers that apply to the entire run. | 1 ||
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `meatworld` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_MeatWorldUnlockedFull` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_EMP` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
 
 </details>
 
@@ -1003,17 +1003,17 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
-| `frame` | Number | Undocumented. | 1 | `225` |
-| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | Undocumented. | 1 ||
-| `hint_destination` | String | Undocumented. | 1 | `lab` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
+| `frame` | Number | The sprite frame index to display. | 1 | `225` |
+| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | An object containing global passive modifiers that apply to the entire run. | 1 ||
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `lab` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_CRYOGENICTIMECHAMBER_FUL` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
 
 </details>
 
@@ -1026,13 +1026,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_CUNCH_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `199` |
-| `kind` | String | Undocumented. | 1 | `neck` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_CUNCH_NAME"` |
-| `parasite` | Boolean | Undocumented. | 1 | `true` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_CUNCH_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `199` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `neck` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_CUNCH_NAME"` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1045,14 +1045,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_CURSEDSTICKMAN_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `68` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `name` | String | Undocumented. | 1 | `"ITEM_CURSEDSTICKMAN_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `rarity` | String | Undocumented. | 1 | `rare` |
-| `set` | Array | Undocumented. | 1 | `Wood Demonic` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_CURSEDSTICKMAN_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `68` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_CURSEDSTICKMAN_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `rare` |
+| `set` | Array | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Wood Demonic` |
 
 </details>
 
@@ -1065,12 +1065,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_DeathsScythe` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_DEATHSSCYTHE_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `122` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_DEATHSSCYTHE_NAME"` |
-| `rarity` | String | Undocumented. | 1 | `rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_DeathsScythe` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_DEATHSSCYTHE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `122` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_DEATHSSCYTHE_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `rare` |
 
 </details>
 
@@ -1083,11 +1083,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_DEPRESSION_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_DEPRESSION_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_DEPRESSION_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_DEPRESSION_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
 
 </details>
 
@@ -1100,12 +1100,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_ENCHANTINGPOOP_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `159` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `name` | String | Undocumented. | 1 | `"ITEM_ENCHANTINGPOOP_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `set` | String | Undocumented. | 1 | `Fecal` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_ENCHANTINGPOOP_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `159` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_ENCHANTINGPOOP_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Fecal` |
 
 </details>
 
@@ -1118,8 +1118,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `variant_of` | String | Undocumented. | 1 | `FecalHood` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `FecalHood` |
 
 </details>
 
@@ -1132,8 +1132,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `variant_of` | String | Undocumented. | 1 | `FecalMask` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `FecalMask` |
 
 </details>
 
@@ -1146,14 +1146,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `attack` | String | Undocumented. | 1 | `BasicPoke` |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_FEEBIS_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `204` |
-| `kind` | String | Undocumented. | 1 | `face` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_FEEBIS_NAME"` |
-| `parasite` | Boolean | Undocumented. | 1 | `true` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `attack` | String | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `BasicPoke` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_FEEBIS_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `204` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_FEEBIS_NAME"` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1166,9 +1166,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_GEOMAGSTORM_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_GEOMAGSTORM_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_GEOMAGSTORM_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_GEOMAGSTORM_NAME"` |
 
 </details>
 
@@ -1181,10 +1181,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_GIGACHAD_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_GIGACHAD_NAME"` |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_GIGACHAD_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_GIGACHAD_NAME"` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
 
 </details>
 
@@ -1197,20 +1197,20 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_GUILLOTINASHEAD_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `95` |
-| `global_tags` | Array | Undocumented. | 1 | `upgrade_basic_combats_to_hard` |
-| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
-| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_MeatWorldUnlocked` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `face` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_GUILLOTINASHEAD_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | Array | Undocumented. | 1 | `Meat Guts` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_GUILLOTINASHEAD_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `95` |
+| `global_tags` | Array | A list of global tags that modify the run's behavior. | 1 | `upgrade_basic_combats_to_hard` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `meatworld` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_MeatWorldUnlocked` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_GUILLOTINASHEAD_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | Array | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Meat Guts` |
 
 </details>
 
@@ -1223,9 +1223,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_HAUNTED_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_HAUNTED_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_HAUNTED_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_HAUNTED_NAME"` |
 
 </details>
 
@@ -1238,15 +1238,15 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | Undocumented. | 1 ||
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | Undocumented. | 1 ||
-| `class` | String | Undocumented. | 1 | `Hunter` |
-| `desc` | String | Undocumented. | 1 | `"PASSIVE_HOST_DESC"` |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"PASSIVE_HOST_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| [`properties`](Characters_and_Bosses.md#object-properties) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
+| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 1 ||
+| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Hunter` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"PASSIVE_HOST_DESC"` |
+| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"PASSIVE_HOST_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| [`properties`](Characters_and_Bosses.md#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
 
 </details>
 
@@ -1259,21 +1259,21 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `cm_JarOfChaos` |
-| `consumable` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFCHAOS_DESC"` |
-| `dont_destroy_on_0` | Boolean | Undocumented. | 1 | `true` |
-| `durability` | Number | Undocumented. | 1 | `1` |
-| `failable` | Boolean | Undocumented. | 1 | `true` |
-| `frame` | Number | Undocumented. | 1 | `239` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_JAROFCHAOS_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Radioactive` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `cm_JarOfChaos` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_JAROFCHAOS_DESC"` |
+| `dont_destroy_on_0` | Boolean | If true, the item is not destroyed when its charges reach zero. | 1 | `true` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `1` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
+| `frame` | Number | The sprite frame index to display. | 1 | `239` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_JAROFCHAOS_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Radioactive` |
 
 </details>
 
@@ -1286,18 +1286,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATEDBLOOD_DESC"` |
-| `failable` | Boolean | Undocumented. | 1 | `true` |
-| `frame` | Number | Undocumented. | 1 | `223` |
-| `hint_destination` | String | Undocumented. | 1 | `dimensionx` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATEDBLOOD_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Radioactive` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_JAROFRADIATEDBLOOD_DESC"` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
+| `frame` | Number | The sprite frame index to display. | 1 | `223` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `dimensionx` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_JAROFRADIATEDBLOOD_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Radioactive` |
 
 </details>
 
@@ -1310,18 +1310,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATION_DESC"` |
-| `failable` | Boolean | Undocumented. | 1 | `true` |
-| `frame` | Number | Undocumented. | 1 | `222` |
-| `hint_destination` | String | Undocumented. | 1 | `meatworld` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_JAROFRADIATION_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Radioactive` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_JAROFRADIATION_DESC"` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
+| `frame` | Number | The sprite frame index to display. | 1 | `222` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `meatworld` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_JAROFRADIATION_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Radioactive` |
 
 </details>
 
@@ -1334,13 +1334,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_MomsKnife` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_MOMSKNIFE_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `126` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_MOMSKNIFE_NAME"` |
-| `rarity` | String | Undocumented. | 1 | `very_rare` |
-| `set` | String | Undocumented. | 1 | `Mother` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_MomsKnife` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_MOMSKNIFE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `126` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_MOMSKNIFE_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `very_rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Mother` |
 
 </details>
 
@@ -1353,8 +1353,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | Undocumented. | 1 ||
-| [`main`](Events_and_Encounters.md#object-main) | Object | Undocumented. | 1 ||
+| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 1 ||
+| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. | 1 ||
 
 </details>
 
@@ -1367,8 +1367,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | Undocumented. | 1 ||
-| [`main`](Events_and_Encounters.md#object-main) | Object | Undocumented. | 1 ||
+| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 1 ||
+| [`main`](Events_and_Encounters.md#object-main) | Object | An object containing the primary prompt and options for an event. | 1 ||
 
 </details>
 
@@ -1381,12 +1381,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_PAWSHARDS_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `23` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_PAWSHARDS_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_PAWSHARDS_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `23` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_PAWSHARDS_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1399,12 +1399,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `bonus_items` | Array | Undocumented. | 1 | `Eyeball` |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_PUNCTUREDEYE_DESC"` |
-| [`lock_item_slot`](Miscellaneous.md#object-lock_item_slot) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"DISORDER_PUNCTUREDEYE_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `bonus_items` | Array | An array of item names granted as bonus rewards. | 1 | `Eyeball` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_PUNCTUREDEYE_DESC"` |
+| [`lock_item_slot`](Miscellaneous.md#object-lock_item_slot) | Object | An object that restricts which equipment slots can be used. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_PUNCTUREDEYE_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1417,20 +1417,20 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_PUTRIDLEECH_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `97` |
-| `hint_destination` | String | Undocumented. | 1 | `boneyard` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_PUTRIDLEECH_NAME"` |
-| `parasite` | Boolean | Undocumented. | 1 | `true` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `prevent_level_up` | Boolean | Undocumented. | 1 | `true` |
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Leech` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_PUTRIDLEECH_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `97` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_PUTRIDLEECH_NAME"` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `prevent_level_up` | Boolean | If true, the cat cannot gain experience or level up. | 1 | `true` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Leech` |
 
 </details>
 
@@ -1443,19 +1443,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_PYROPHINASCOLLAR_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `219` |
-| `global_tags` | Array | Undocumented. | 1 | `pyrophina_following` |
-| `hint_destination` | String | Undocumented. | 1 | `moon` |
-| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_BothObelisksUnlocked` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_PYROPHINASCOLLAR_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Used` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_PYROPHINASCOLLAR_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `219` |
+| `global_tags` | Array | A list of global tags that modify the run's behavior. | 1 | `pyrophina_following` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `moon` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_PYROPHINASCOLLAR_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Used` |
 
 </details>
 
@@ -1468,19 +1468,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_RECEIVERANTENNA_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `98` |
-| `global_tags` | Array | Undocumented. | 1 | `all_normal_events_are_weather` |
-| `hint_destination` | String | Undocumented. | 1 | `jurassic` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_RECEIVERANTENNA_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
-| `shield` | Number | Undocumented. | 1 | `8` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_RECEIVERANTENNA_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `98` |
+| `global_tags` | Array | A list of global tags that modify the run's behavior. | 1 | `all_normal_events_are_weather` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `jurassic` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_RECEIVERANTENNA_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | Array | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Bionic Cyborg` |
+| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `8` |
 
 </details>
 
@@ -1493,9 +1493,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_RESTLESS_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_RESTLESS_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_RESTLESS_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_RESTLESS_NAME"` |
 
 </details>
 
@@ -1508,14 +1508,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_Rocks` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_ROCKS_DESC"` |
-| `durability` | Number | Undocumented. | 1 | `8` |
-| `frame` | Number | Undocumented. | 1 | `55` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_ROCKS_NAME"` |
-| `rarity` | String | Undocumented. | 1 | `common` |
-| `set` | String | Undocumented. | 1 | `Rock` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_Rocks` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_ROCKS_DESC"` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `8` |
+| `frame` | Number | The sprite frame index to display. | 1 | `55` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_ROCKS_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Rock` |
 
 </details>
 
@@ -1528,10 +1528,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_SCATOLOGICAL_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_SCATOLOGICAL_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_SCATOLOGICAL_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_SCATOLOGICAL_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1544,19 +1544,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_SignalAmplifier` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_SIGNALAMPLIFIER_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `165` |
-| `hint_destination` | String | Undocumented. | 1 | `dimensionx` |
-| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_DimensionXUnlocked` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_SIGNALAMPLIFIER_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_SignalAmplifier` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_SIGNALAMPLIFIER_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `165` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `dimensionx` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_DimensionXUnlocked` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_SIGNALAMPLIFIER_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | Array | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Bionic Cyborg` |
 
 </details>
 
@@ -1569,13 +1569,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_SlagMight` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_SLAGMIGHT_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `173` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `name` | String | Undocumented. | 1 | `"ITEM_SLAGMIGHT_NAME"` |
-| `rarity` | String | Undocumented. | 1 | `very_rare` |
-| `set` | String | Undocumented. | 1 | `Rock` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_SlagMight` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_SLAGMIGHT_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `173` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_SLAGMIGHT_NAME"` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `very_rare` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Rock` |
 
 </details>
 
@@ -1588,14 +1588,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_SLAGTIGHT_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `170` |
-| `int` | Number | Undocumented. | 1 | `-4` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `name` | String | Undocumented. | 1 | `"ITEM_SLAGTIGHT_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `shield` | Number | Undocumented. | 1 | `5` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_SLAGTIGHT_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `170` |
+| `int` | Number | The Intelligence stat value or modifier. | 1 | `-4` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_SLAGTIGHT_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `5` |
 
 </details>
 
@@ -1608,14 +1608,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Number | Undocumented. | 1 | `-1` |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_SLUDGEHAT_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `14` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_SLUDGEHAT_NAME"` |
-| `set` | String | Undocumented. | 1 | `Sludge` |
-| `shield` | Number | Undocumented. | 1 | `1` |
+| `cha` | Number | The Charisma stat value or modifier. | 1 | `-1` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_SLUDGEHAT_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `14` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_SLUDGEHAT_NAME"` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Sludge` |
+| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `1` |
 
 </details>
 
@@ -1628,14 +1628,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Number | Undocumented. | 1 | `-1` |
-| `cursed` | Boolean | Undocumented. | 1 | `true` |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_SLUDGEMASK_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `23` |
-| `kind` | String | Undocumented. | 1 | `face` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_SLUDGEMASK_NAME"` |
-| `set` | String | Undocumented. | 1 | `Sludge` |
-| `shield` | Number | Undocumented. | 1 | `1` |
+| `cha` | Number | The Charisma stat value or modifier. | 1 | `-1` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_SLUDGEMASK_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `23` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_SLUDGEMASK_NAME"` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Sludge` |
+| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `1` |
 
 </details>
 
@@ -1648,10 +1648,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_SOULLESS_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_SOULLESS_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_SOULLESS_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_SOULLESS_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1664,10 +1664,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_STINKY_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_STINKY_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_STINKY_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_STINKY_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
 
 </details>
 
@@ -1680,9 +1680,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_STRANGEEGGS_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_STRANGEEGGS_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_STRANGEEGGS_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_STRANGEEGGS_NAME"` |
 
 </details>
 
@@ -1695,9 +1695,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"WEATHER_SHIMMER_DESC"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Undocumented. | 1 ||
-| `name` | String | Undocumented. | 1 | `"WEATHER_SHIMMER_NAME"` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"WEATHER_SHIMMER_DESC"` |
+| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 ||
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"WEATHER_SHIMMER_NAME"` |
 
 </details>
 
@@ -1710,18 +1710,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ability` | String | Undocumented. | 1 | `wp_ThrobbingGristle` |
-| `desc` | String | Undocumented. | 1 | `"ITEM_THROBBINGGRISTLE_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `162` |
-| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | Undocumented. | 1 ||
-| `hint_destination` | String | Undocumented. | 1 | `caves` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `weapon` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_THROBBINGGRISTLE_NAME"` |
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Meat` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `wp_ThrobbingGristle` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_THROBBINGGRISTLE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `162` |
+| [`global_passives`](Items_and_Equipment.md#object-global_passives) | Object | An object containing global passive modifiers that apply to the entire run. | 1 ||
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `caves` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `weapon` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_THROBBINGGRISTLE_NAME"` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Meat` |
 
 </details>
 
@@ -1734,11 +1734,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `class` | String | Undocumented. | 1 | `Disorder` |
-| `desc` | String | Undocumented. | 1 | `"DISORDER_TOUCHED_DESC"` |
-| `name` | String | Undocumented. | 1 | `"DISORDER_TOUCHED_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `Disorder` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"DISORDER_TOUCHED_DESC"` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"DISORDER_TOUCHED_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
 
 </details>
 
@@ -1751,17 +1751,17 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ARMOR_TRANSMITTERANTENNA_DESC` |
-| `frame` | Number | Undocumented. | 1 | `99` |
-| `hint_destination` | String | Undocumented. | 1 | `theend` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `head` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ARMOR_TRANSMITTERANTENNA_NAME` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | Array | Undocumented. | 1 | `Bionic Cyborg` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ARMOR_TRANSMITTERANTENNA_DESC` |
+| `frame` | Number | The sprite frame index to display. | 1 | `99` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `theend` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `head` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ARMOR_TRANSMITTERANTENNA_NAME` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | Array | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Bionic Cyborg` |
 
 </details>
 
@@ -1774,19 +1774,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `desc` | String | Undocumented. | 1 | `"ITEM_ZARATANASCOLLAR_DESC"` |
-| `frame` | Number | Undocumented. | 1 | `220` |
-| `global_tags` | Array | Undocumented. | 1 | `zaratana_following` |
-| `hint_destination` | String | Undocumented. | 1 | `core` |
-| `hint_prerequisite_flag` | String | Undocumented. | 1 | `mapflag_BothObelisksUnlocked` |
-| `indestructible` | Boolean | Undocumented. | 1 | `true` |
-| `kind` | String | Undocumented. | 1 | `trinket` |
-| `legacy_quest` | Boolean | Undocumented. | 1 | `true` |
-| `name` | String | Undocumented. | 1 | `"ITEM_ZARATANASCOLLAR_NAME"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | Undocumented. | 1 ||
-| `quest_item` | Boolean | Undocumented. | 1 | `true` |
-| `rarity` | String | Undocumented. | 1 | `quest` |
-| `set` | String | Undocumented. | 1 | `Used` |
+| `desc` | String | Specifies the localized description string for the item or ability. | 1 | `"ITEM_ZARATANASCOLLAR_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `220` |
+| `global_tags` | Array | A list of global tags that modify the run's behavior. | 1 | `zaratana_following` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `core` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `trinket` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `"ITEM_ZARATANASCOLLAR_NAME"` |
+| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 ||
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `true` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `quest` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `Used` |
 
 </details>
 
@@ -1799,10 +1799,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `deathsound` | String | Undocumented. | 1 | `Injury_Bleed` |
-| `id` | Number | Undocumented. | 1 | `8` |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
-| `text` | String | Undocumented. | 1 | `"INJURY_NAME_EXSANGUINATED"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Bleed` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `8` |
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| `text` | String | The localization key for the name of this injury. | 1 | `"INJURY_NAME_EXSANGUINATED"` |
 
 </details>
 
@@ -1815,11 +1815,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `deathsound` | String | Undocumented. | 1 | `Injury_Burn` |
-| `id` | Number | Undocumented. | 1 | `7` |
-| [`scars`](Injuries.md#object-scars) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
-| `text` | String | Undocumented. | 1 | `"INJURY_NAME_IMMOLATED"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Burn` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `7` |
+| [`scars`](Injuries.md#object-scars) | Object | An object mapping body parts to ranges of scar texture indices applied on injury. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| `text` | String | The localization key for the name of this injury. | 1 | `"INJURY_NAME_IMMOLATED"` |
 
 </details>
 
@@ -1832,10 +1832,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `current_chapter_common` | Number | Undocumented. | 1 | `55` |
-| `current_chapter_rare` | Number | Undocumented. | 1 | `10` |
-| `current_chapter_uncommon` | Number | Undocumented. | 1 | `35` |
-| `current_chapter_very_rare` | Number | Undocumented. | 1 | `1` |
+| `current_chapter_common` | Number | A variable controlling the number of common item drops for the current chapter. | 1 | `55` |
+| `current_chapter_rare` | Number | A variable controlling the number of rare item drops for the current chapter. | 1 | `10` |
+| `current_chapter_uncommon` | Number | The weight or value for uncommon items specific to the current chapter. | 1 | `35` |
+| `current_chapter_very_rare` | Number | The weight or value for very rare items specific to the current chapter. | 1 | `1` |
 
 </details>
 
@@ -1848,7 +1848,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | Undocumented. | 1 | `EndOfTimeUnlocked` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `EndOfTimeUnlocked` |
 
 </details>
 
@@ -1861,8 +1861,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`popup`](Miscellaneous.md#object-popup) | Object | Undocumented. | 1 ||
-| `unlock_item` | String | Undocumented. | 1 | `MomsKnife` |
+| [`popup`](Miscellaneous.md#object-popup) | Object | An object defining a popup notification with prompt and optional unlock. | 1 ||
+| `unlock_item` | String | The name of the item unlocked by this event. | 1 | `MomsKnife` |
 
 </details>
 
@@ -1875,7 +1875,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | Undocumented. | 1 | `DimensionXUnlocked` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `DimensionXUnlocked` |
 
 </details>
 
@@ -1888,8 +1888,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`popup`](Miscellaneous.md#object-popup) | Object | Undocumented. | 1 ||
-| `set_mapgen_flag` | String | Undocumented. | 1 | `IceAgeUnlocked` |
+| [`popup`](Miscellaneous.md#object-popup) | Object | An object defining a popup notification with prompt and optional unlock. | 1 ||
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `IceAgeUnlocked` |
 
 </details>
 
@@ -1902,7 +1902,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | Undocumented. | 1 | `MeatWorldUnlockedFull` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `MeatWorldUnlockedFull` |
 
 </details>
 
@@ -1915,11 +1915,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `deathsound` | String | Undocumented. | 1 | `Injury_Burn` |
-| `id` | Number | Undocumented. | 1 | `11` |
-| [`scars`](Injuries.md#object-scars) | Object | Undocumented. | 1 ||
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | Undocumented. | 1 ||
-| `text` | String | Undocumented. | 1 | `"INJURY_NAME_RADIATED"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Burn` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `11` |
+| [`scars`](Injuries.md#object-scars) | Object | An object mapping body parts to ranges of scar texture indices applied on injury. | 1 ||
+| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 ||
+| `text` | String | The localization key for the name of this injury. | 1 | `"INJURY_NAME_RADIATED"` |
 
 </details>
 
@@ -1932,7 +1932,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `trigger_npc_sequence` | String | Undocumented. | 1 | `beanies_timemachine_2` |
+| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 1 | `beanies_timemachine_2` |
 
 </details>
 
@@ -1945,6 +1945,6 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `trigger_npc_sequence` | String | Undocumented. | 1 | `beanies_timemachine_intro` |
+| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 1 | `beanies_timemachine_intro` |
 
 </details>

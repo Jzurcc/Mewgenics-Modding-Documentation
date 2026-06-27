@@ -17,19 +17,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Array / Enum | The visual set or furniture style tag (e.g., elegant, guts, Tentacle, wooden, Druid). | 985 |  |
-| `Comfort` | Integer | Applies or references the 'Comfort' effect/state. | 406 |  |
-| `Appeal` | Integer | Applies or references the 'Appeal' effect/state. | 338 |  |
-| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Properties for conditional execution, status effect logic, and execution flow control. Keys from the specified Engine Dictionary may or may not also be applicable in this object. | 291 |  |
-| `Stimulation` | Integer | Applies or references the 'Stimulation' effect/state. | 268 |  |
-| `Health` | Integer | Applies or references the 'Health' effect/state. | 67 |  |
-| `Evolution` | Integer | Applies or references the 'Evolution' effect/state. | 53 |  |
+| [`set`](./Enums.md#enum-set) | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. | 985 |  |
+| `Comfort` | Integer | The amount of comfort provided by the furniture piece to the room. | 406 |  |
+| `Appeal` | Integer | The amount of appeal provided by the furniture piece to the room. | 338 |  |
+| [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 |  |
+| `Stimulation` | Integer | The amount of stimulation provided by the furniture piece to the room. | 268 |  |
+| `Health` | Integer | The amount of health provided by the furniture piece to the room. | 67 |  |
+| `Evolution` | Integer | The amount of evolution provided by the furniture piece to the room. | 53 |  |
 | `special` | Boolean |  | 29 |  |
 | `can_be_rare` | Boolean |  | 10 |  |
-| `BreedSuppression` | Integer | Applies or references the 'BreedSuppression' effect/state. | 1 |  |
-| `FightBonusRewards` | Integer | Applies or references the 'FightBonusRewards' effect/state. | 1 |  |
-| `FightRisk` | Integer | Applies or references the 'FightRisk' effect/state. | 1 |  |
-| `FoodStorage` | Integer | Applies or references the 'FoodStorage' effect/state. | 1 |  |
+| `BreedSuppression` | Integer | The amount of breeding suppression provided by the furniture piece. | 1 |  |
+| `FightBonusRewards` | Integer | The number of bonus rewards earned from fights due to the furniture piece. | 1 |  |
+| `FightRisk` | Integer | The increased risk level of fights triggered by the furniture piece. | 1 |  |
+| `FoodStorage` | Integer | The amount of food storage capacity added by the furniture piece. | 1 |  |
 | `removed` | Boolean |  | 1 |  |
 
 </details>

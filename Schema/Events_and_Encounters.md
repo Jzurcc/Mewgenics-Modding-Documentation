@@ -17,42 +17,42 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 664 |  |
-| [`intro`](#object-intro) | Object | Event Node: The initial text block when a story event first loads. | 239 ||
-| [`main`](#object-main) | Object | Event Node: The central hub or recurring menu of a story event. | 227 ||
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Recoil or self-inflicted damage/effects applied to the caster. | 218 ||
-| `cha` | Enum / Integer | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 89 |  |
-| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 79 ||
-| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 78 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 664 |  |
+| [`intro`](#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 ||
+| [`main`](#object-main) | Object | An object containing the primary prompt and options for an event. | 227 ||
+| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 218 ||
+| `cha` | Enum / Integer | The Charisma stat value or modifier. | 89 |  |
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 79 ||
+| `spd` | Enum / Integer | The Speed stat value or modifier. | 78 ||
 | `int` | Enum / Integer || 66 ||
 | `lck` | Enum / Integer || 53 ||
 | `str` | Enum / Integer || 45 ||
-| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 34 |  |
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Defines the rare reward block for a boss encounter. | 34 |  |
 | `dex` | Enum / Integer || 30 ||
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | String || 25 ||
 | `normal` | Array || 23 | `[common boneyard_events.gon]` (Array), `[common core_events.gon]` (Array) |
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 13 ||
-| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 11 |  |
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 13 ||
+| [`common`](./Events_and_Encounters.md#object-common) | Enum | Defines the common reward block for a boss encounter. | 11 |  |
 | [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
 | `set_frame` | `Number` || 4 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 3 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 3 ||
-| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 3 ||
-| [`pick`](#object-pick) | Object | Examples: `{ ... }` | 2 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 ||
-| `weight` | `Number` | Probability weight for this outcome. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 ||
+| [`reward`](#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 3 ||
+| [`pick`](#object-pick) | Object | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 2 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 1 ||
+| `weight` | `Number` | A multiplier or priority value for random selection or effect magnitude. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
-| [`open`](Characters_and_Bosses.md#object-open) | Object | Examples: `{ ... }` | 1 ||
-| [`smash`](#object-smash) | Object | Examples: `{ ... }` | 1 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 1 ||
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 1 ||
-| [`destroy`](#object-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 1 ||
-| [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 ||
+| [`open`](Characters_and_Bosses.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 1 ||
+| [`smash`](#object-smash) | Object | An object defining the player action to smash an object, including its stat check and outcomes. | 1 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 1 ||
+| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Specifies the name of a cutscene to play. | 1 ||
+| [`destroy`](#object-destroy) | Object | An object defining the player action to destroy an object, including its stat check and outcomes. | 1 ||
+| [`mutation`](#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
 
 </details>
 
@@ -72,13 +72,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 759 ||
-| [`common`](./Events_and_Encounters.md#object-common) | Enum | Event Node: Story branch or dialog option representing the 'Common' action. | 633 ||
-| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 623 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 759 ||
+| [`common`](./Events_and_Encounters.md#object-common) | Enum | Defines the common reward block for a boss encounter. | 633 ||
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Defines the rare reward block for a boss encounter. | 623 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 70 ||
 | `set_frame` | `Number` || 53 ||
 | [`set_subject`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 9 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 9 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 9 ||
 | [`random_pool`](./Enums.md) | Array || 8 | [event_now] |
 | [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
@@ -114,42 +114,42 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 634 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 634 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 606 ||
 | `set_frame` | `Number` || 151 ||
-| [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 92 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 66 ||
-| [`permanent_stats`](#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 39 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 35 ||
+| [`self_status_next_fight`](#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 92 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 66 ||
+| [`permanent_stats`](#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 39 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 35 ||
 | [`random_pool`](./Enums.md) | Array || 35 | [event_now] |
 | [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 28 ||
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 ||
-| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 26 ||
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 25 ||
+| `self_damage` | `Number` | Defines damage or effects applied to the caster when using the ability. | 26 ||
+| `random_mutation` | `Number` | The number of random mutations applied to the unit. | 25 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 24 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 23 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
 | `gain_food` | `Number` || 21 ||
-| [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 18 ||
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
+| [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 18 ||
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Specifies which familiar type (by its class name) the unit gains. | 15 ||
 | `party_heal` | `Number` || 15 ||
 | `party_damage` | `Number` || 15 ||
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
-| `heal` | `Number` | The amount of health restored, specified as a flat number or a formula string that evaluates to a healing value. | 13 ||
+| `heal` | `Number` | An equation string that determines the amount of health restored by this damage instance. | 13 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
-| [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 11 ||
+| [`party_status_next_fight`](#object-party_status_next_fight) | Object | An object defining status effects to apply to the party at the start of the next fight. | 11 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 ||
 | `ally_ambush_next_fights` | `Number` || 10 ||
 | `full_heal` | `Number` || 10 ||
 | `ambush_next_basic_fights` | `Number` || 9 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 9 ||
-| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 8 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 9 ||
+| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | `next_event_bonus` | `Number` || 7 ||
 | [`clear_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
-| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 6 ||
+| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 6 ||
 | [`increment_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 5 ||
@@ -157,9 +157,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
-| [`next_event_from_set`](#object-next_event_from_set) | Object | Event Action: Chains immediately into a randomly selected subsequent story event. | 2 ||
+| [`next_event_from_set`](#object-next_event_from_set) | Object | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 2 ||
 | `party_heal_disorder` | `Number` || 2 ||
-| [`party_permanent_stats_exclude_self`](#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 ||
+| [`party_permanent_stats_exclude_self`](#object-party_permanent_stats_exclude_self) | Object | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 ||
 | [`spin`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | `clear_result_animation` | `Number` || 1 ||
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -167,7 +167,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `heal_disorder` | `Number` || 1 ||
 | `heal_injury` | `Number` || 1 ||
 | [`learn_ability_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 1 ||
+| [`mutation`](#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 1 ||
 | `self_heal` | `Number` || 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -190,32 +190,32 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 634 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 634 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 611 ||
 | `set_frame` | `Number` || 180 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 84 ||
-| [`permanent_stats`](#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 84 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 84 ||
+| [`permanent_stats`](#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 84 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 65 ||
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 46 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 45 ||
-| [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 40 ||
-| `random_mutation` | `Number` | Event Reward: Applies a completely random mutation to a character. | 38 ||
+| [`self_status_next_fight`](#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 40 ||
+| `random_mutation` | `Number` | The number of random mutations applied to the unit. | 38 ||
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 35 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 30 ||
 | [`random_pool`](./Enums.md) | Array || 28 | [event_now] |
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 26 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
-| [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | Event Penalty/Reward: Injects a specific entity (friendly or hostile) into the next combat encounter. | 20 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 18 ||
-| [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 18 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 18 ||
+| [`spawn_unit_next_fight`](#object-spawn_unit_next_fight) | Object | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 20 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 18 ||
+| [`mutation`](#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 18 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 18 ||
 | [`gain_coins`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 17 ||
-| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Event Action: Adds a specific familiar to the party. | 15 ||
+| [`gain_familiar`](./Events_and_Encounters.md#object-gain-familiar) | `String` | Specifies which familiar type (by its class name) the unit gains. | 15 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 ||
 | `next_event_bonus` | `Number` || 14 ||
-| `self_damage` | `Number` | Recoil or self-inflicted damage/effects applied to the caster. | 13 ||
-| [`party_status_next_fight`](#object-party_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect to the entire party at the start of the next combat encounter. | 12 ||
-| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Event Reward: Applies a random mutation to a character from a specific pool. | 11 ||
+| `self_damage` | `Number` | Defines damage or effects applied to the caster when using the ability. | 13 ||
+| [`party_status_next_fight`](#object-party_status_next_fight) | Object | An object defining status effects to apply to the party at the start of the next fight. | 12 ||
+| [`random_mutation_from_set`](#object-random_mutation_from_set) | Object | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 11 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | `Array` || 11 ||
 | [`learn_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 10 ||
 | `party_heal` | `Number` || 10 ||
@@ -224,7 +224,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 8 ||
 | `party_random_mutation` | `Number` || 8 ||
 | `ambush_next_basic_fights` | `Number` || 7 ||
-| [`leave_party_temporarily`](#object-leave_party_temporarily) | Object | Event Action: Removes a character from the active team until the next hub area. | 7 ||
+| [`leave_party_temporarily`](#object-leave_party_temporarily) | Object | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 7 ||
 | `hide_appearance_changes` | `Number` || 6 ||
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
@@ -236,18 +236,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`learn_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
 | [`decrement_legacy_counter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | `gain_cat_familiar` | `Number` || 3 ||
-| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 3 ||
+| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 3 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | [`make_old`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `String` | Event Action: Chains immediately into a randomly selected subsequent story event. | 3 ||
-| `spawn_reflection_next_fight` | `Number` | Event Penalty: Spawns dark clones/reflections of the party in the next combat encounter. | 3 ||
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | `String` | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 3 ||
+| `spawn_reflection_next_fight` | `Number` | The number of reflections to spawn in the next battle, optionally with a mutation. | 3 ||
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | `party_heal_disorder` | `Number` || 2 ||
 | `party_heal_injury` | `Number` || 2 ||
-| [`party_permanent_stats_exclude_self`](#object-party_permanent_stats_exclude_self) | Object | Event Reward: Permanently modifies stats for all party members except the one who initiated the action. | 2 ||
+| [`party_permanent_stats_exclude_self`](#object-party_permanent_stats_exclude_self) | Object | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 ||
 | `set_age` | `Number` || 2 ||
 | [`upgrade_ability`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
 | [`upgrade_passive`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
@@ -261,8 +261,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`learn_passive_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`lose_all_equipped_items`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`party_injury`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`party_permanent_stats`](#object-party_permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of all party members. | 1 ||
-| [`party_random_mutation_from_set`](#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 ||
+| [`party_permanent_stats`](#object-party_permanent_stats) | Object | An object defining permanent stat increases applied to the party. | 1 ||
+| [`party_random_mutation_from_set`](#object-party_random_mutation_from_set) | Object | An object specifying the count and mutation parts to randomly apply to the party. | 1 ||
 | [`play_result_animation`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`scramble_basic_attack`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -286,19 +286,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 545 ||
-| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 326 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 545 ||
+| [`reward`](#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 326 ||
 | `set_frame` | `Number` || 285 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 184 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 111 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 21 ||
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 19 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 14 ||
+| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Specifies the name of a cutscene to play. | 19 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 14 ||
 | [`begin_chapter`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
 | [`complete_item_quest`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
-| `random_mutation` | Number | Event Reward: Applies a completely random mutation to a character. | 12 ||
+| `random_mutation` | Number | The number of random mutations applied to the unit. | 12 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 ||
-| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Event Node: Story branch or dialog option representing the 'Rare' action. | 10 ||
+| [`rare`](./Events_and_Encounters.md#object-rare) | Enum | Defines the rare reward block for a boss encounter. | 10 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | String || 9 ||
 | [`lose_specific_item`](./Engine_EventKeys.md#valid-property-keys) | String || 8 ||
@@ -308,8 +308,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | String || 6 ||
 | [`random_pool`](./Enums.md) | Array || 5 | [event_now] |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Event Action: Rewards the player with an item drawn from a specific loot pool. | 4 ||
-| [`mutation`](#object-mutation) | Object | Event Node: Story branch or dialog option representing the 'Mutation' action. | 4 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | String | Grants an item from the specified pool or a specific item name. | 4 ||
+| [`mutation`](#object-mutation) | Object | An object defining specific body part mutations applied to the unit. | 4 ||
 | [`random_pool_consider_luck`](./Enums.md) | Array || 4 | [Clover] |
 | `heal_disorder` | Number || 3 ||
 | [`level_up`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
@@ -330,13 +330,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `clone_self_to_party` | `Number` || 1 ||
 | `copy_items_to_party` | `Number` || 1 ||
 | `copy_party_items` | `Number` || 1 ||
-| [`gain_clone_familiar`](#object-gain_clone_familiar) | Object | Event Action: Adds a clone of a character to the party as a familiar. | 1 ||
+| [`gain_clone_familiar`](#object-gain_clone_familiar) | Object | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 ||
 | [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Event Penalty/Reward: Applies a global Map Modifier (e.g., LowerAmbientLight, Rain) during the next combat encounter. | 1 ||
-| `heal` | `Number` | The amount of health restored, specified as a flat number or a formula string that evaluates to a healing value. | 1 ||
+| [`global_effect_next_fight`](#object-global_effect_next_fight) | Object | Defines a global status effect or modifier to apply in the next fight. | 1 ||
+| `heal` | `Number` | An equation string that determines the amount of health restored by this damage instance. | 1 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String || 1 ||
 | `next_event_bonus` | Number || 1 ||
-| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Event Action: Chains immediately into a randomly selected subsequent story event. | 1 ||
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 ||
 | [`scramble_abilities`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`scramble_passives`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`shop_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -362,27 +362,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 339 ||
-| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 305 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 339 ||
+| [`reward`](#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 305 ||
 | `set_frame` | `Number` || 222 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 38 ||
 | [`play_animation`](./Engine_EventKeys.md#valid-property-keys) | String || 10 ||
 | [`battle`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
 | [`gain_disorder_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 4 ||
 | [`kill`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
-| [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 4 ||
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Event Node: Triggers a narrative cutscene. | 3 ||
+| [`self_status_next_fight`](#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 4 ||
+| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | String | Specifies the name of a cutscene to play. | 3 ||
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 3 ||
 | [`get_parasite_from_pool`](./Engine_EventKeys.md#valid-property-keys) | String || 3 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 2 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 2 ||
 | [`injury`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 | `next_event_bonus` | Number || 2 ||
 | [`gain_immortal_familiar`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`get_parasite`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
-| [`party_random_mutation_from_set`](#object-party_random_mutation_from_set) | Object | Event Reward: Applies a random mutation to the entire party from a specific pool. | 1 ||
-| [`permanent_stats`](#object-permanent_stats) | Object | Event Reward: Permanently increases (or decreases) the core stats of a single character. | 1 ||
+| [`party_random_mutation_from_set`](#object-party_random_mutation_from_set) | Object | An object specifying the count and mutation parts to randomly apply to the party. | 1 ||
+| [`permanent_stats`](#object-permanent_stats) | Object | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 1 ||
 | [`select_item_from_pool_for_cutscene_only`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 
@@ -412,7 +412,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`choose_cat_with_item`](./Enums.md#enum-choose_cat_with_item) | Enum || 17 ||
 | `different_from_last_x_cats` | Number || 3 ||
 | `subject_frame_inner` | Number || 3 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 | [`choose_cat_with_highest_stat`](./Math_Equations.md) | Equation || 1 ||
 | [`choose_cat_with_item_slot_equipped`](./Enums.md#enum-choose_cat_with_item_slot_equipped) | Enum || 1 ||
 | `choose_cat_with_min_health` | Number || 1 ||
@@ -438,16 +438,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 214 ||
-| [`options`](./Events_and_Encounters.md#object-options) | Array | Event Object: Lists the available clickable dialog choices for the current story node. | 210 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 214 ||
+| [`options`](./Events_and_Encounters.md#object-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 210 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 203 ||
-| [`setup`](#object-setup) | Object | Event Object: Pre-initialization logic executed before the event UI is drawn. | 23 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
+| [`setup`](#object-setup) | Object | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 ||
 | [`goto`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
-| [`outcome`](#object-outcome) | Object | Event Object: Logic and text executed after selecting a specific dialog option. | 4 ||
+| [`outcome`](#object-outcome) | Object | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 ||
 | `max_options` | `Number` || 3 ||
 | `shuffle_options` | `Boolean` || 3 ||
-| [`leave`](Engine_LogicKeys.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 3 ||
+| [`leave`](Engine_LogicKeys.md#object-leave) | Object | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 3 ||
 | [`ignore`](#object-ignore) | Object || 2 ||
 | [`open`](Characters_and_Bosses.md#object-open) | Object || 2 ||
 | [`buy2`](#object-buy2) | Object || 1 ||
@@ -473,218 +473,218 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ignore`](#object-ignore) | Object | Event Node: Story branch or dialog option representing the \'Ignore\' action. | 55 ||
-| [`examine`](#object-examine) | Object | Event Node: Story branch or dialog option representing the \'Examine\' action. | 43 ||
-| [`leave`](Engine_LogicKeys.md#object-leave) | Object | Event Node: Story branch or dialog option representing the 'Leave' action. | 29 ||
-| [`loot`](#object-loot) | Object | Event Node: Story branch or dialog option representing the \'Loot\' action. | 25 ||
-| [`eat`](#object-eat) | Object | Event Node: Story branch or dialog option representing the \'Eat\' action. | 23 ||
-| [`smash`](#object-smash) | Object | Event Node: Story branch or dialog option representing the \'Smash\' action. | 15 ||
-| [`destroy`](#object-destroy) | Object | Event Node: Story branch or dialog option representing the \'Destroy\' action. | 13 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
-| [`bash`](#object-bash) | Object | Event Node: Story branch or dialog option representing the \'Bash\' action. | 12 ||
-| [`sneak`](#object-sneak) | Object | Event Node: Story branch or dialog option representing the \'Sneak\' action. | 11 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 10 ||
-| [`open`](Characters_and_Bosses.md#object-open) | Object | Event Node: Story branch or dialog option representing the \'Open\' action. | 8 ||
-| [`take`](#object-take) | Object | Event Node: Story branch or dialog option representing the \'Take\' action. | 8 ||
-| [`a`](#object-a) | Object | Event Node: Story branch or dialog option representing the \'A\' action. | 7 ||
-| [`attack`](./Events_and_Encounters.md#context-attack) | Enum | Event Node: Story branch or dialog option representing the \'Attack\' action. | 7 ||
-| [`b`](#object-b) | Object | Event Node: Story branch or dialog option representing the \'B\' action. | 7 ||
-| [`c`](#object-c) | Object | Event Node: Story branch or dialog option representing the \'C\' action. | 7 ||
-| [`charm`](#object-charm) | Object | Event Node: Story branch or dialog option representing the \'Charm\' action. | 7 ||
-| [`fight`](#object-fight) | Object | Event Node: Story branch or dialog option representing the \'Fight\' action. | 7 ||
-| [`touch`](#object-touch) | Object | Event Node: Story branch or dialog option representing the \'Touch\' action. | 7 ||
-| [`activate_p`](#object-activate_p) | Object | Event Node: Story branch or dialog option representing the 'Activate P' action. | 6 ||
-| [`activate_z`](#object-activate_z) | Object | Event Node: Story branch or dialog option representing the 'Activate Z' action. | 6 ||
-| [`d`](#object-d) | Object | Event Node: Story branch or dialog option representing the \'D\' action. | 6 ||
-| [`enter`](#object-enter) | Object | Event Node: Story branch or dialog option representing the \'Enter\' action. | 6 ||
-| [`inspect`](#object-inspect) | Object | Event Node: Story branch or dialog option representing the \'Inspect\' action. | 6 ||
-| [`lick`](#object-lick) | Object | Event Node: Story branch or dialog option representing the \'Lick\' action. | 6 ||
-| [`drink`](#object-drink) | Object | Event Node: Story branch or dialog option representing the \'Drink\' action. | 5 ||
-| [`kiss`](#object-kiss) | Object | Event Node: Story branch or dialog option representing the \'Kiss\' action. | 5 ||
-| [`run`](#object-run) | Object | Event Node: Story branch or dialog option representing the \'Run\' action. | 5 ||
-| [`bite`](#object-bite) | Object | Event Node: Story branch or dialog option representing the 'Bite' action. | 4 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 4 ||
-| [`go_around`](#object-go_around) | Object | Event Node: Story branch or dialog option representing the \'Go Around\' action. | 4 ||
-| [`home`](#object-home) | Object | Event Node: Story branch or dialog option representing the 'Home' action. | 4 ||
-| [`past`](#object-past) | Object | Event Node: Story branch or dialog option representing the 'Past' action. | 4 ||
-| [`skip`](#object-skip) | Object | Event Node: Story branch or dialog option representing the \'Skip\' action. | 4 ||
-| [`investigate`](#object-investigate) | Object | Event Node: Story branch or dialog option representing the \'Investigate\' action. | 3 ||
-| [`repell`](#object-repell) | Object | Event Node: Story branch or dialog option representing the \'Repell\' action. | 3 ||
-| [`attach_antenna`](#object-attach_antenna) | Object | Event Node: Story branch or dialog option representing the 'Attach Antenna' action. | 2 ||
-| [`boogers`](#object-boogers) | Object | Event Node: Story branch or dialog option representing the \'Boogers\' action. | 2 ||
-| [`copy`](#object-copy) | Object | Event Node: Story branch or dialog option representing the \'Copy\' action. | 2 ||
-| [`find_another_way`](#object-find_another_way) | Object | Event Node: Story branch or dialog option representing the \'Find Another Way\' action. | 2 ||
-| [`move_closer`](#object-move_closer) | Object | Event Node: Story branch or dialog option representing the \'Move Closer\' action. | 2 ||
-| [`play`](#object-play) | Object | Event Node: Story branch or dialog option representing the \'Play\' action. | 2 ||
-| [`poop`](#object-poop) | Object | Event Node: Story branch or dialog option representing the \'Poop\' action. | 2 ||
-| [`print`](#object-print) | Object | Event Node: Story branch or dialog option representing the \'Print\' action. | 2 ||
-| [`protection`](#object-protection) | Object | Event Node: Story branch or dialog option representing the \'Protection\' action. | 2 ||
-| [`repair`](#object-repair) | Object | Event Node: Story branch or dialog option representing the \'Repair\' action. | 2 ||
-| [`sacrifice`](#object-sacrifice) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice\' action. | 2 ||
-| [`scale`](./Events_and_Encounters.md#context-scale) | Number | Event Node: Story branch or dialog option representing the \'Scale\' action. | 2 ||
-| [`turnon`](#object-turnon) | Object | Event Node: Story branch or dialog option representing the \'Turnon\' action. | 2 ||
-| [`altar_sacrifice`](#object-altar_sacrifice) | Object | Event Action: Triggers the altar sacrifice progression logic. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`ignore`](#object-ignore) | Object | An object defining the player action to ignore the event, including its stat check and outcomes. | 55 ||
+| [`examine`](#object-examine) | Object | An object defining the player action to examine an object, including its stat check and outcomes. | 43 ||
+| [`leave`](Engine_LogicKeys.md#object-leave) | Object | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 29 ||
+| [`loot`](#object-loot) | Object | An object defining the player action to loot a container or corpse, including its stat check and outcomes. | 25 ||
+| [`eat`](#object-eat) | Object | An object defining the player action to consume something, including its stat check and outcomes. | 23 ||
+| [`smash`](#object-smash) | Object | An object defining the player action to smash an object, including its stat check and outcomes. | 15 ||
+| [`destroy`](#object-destroy) | Object | An object defining the player action to destroy an object, including its stat check and outcomes. | 13 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 12 ||
+| [`bash`](#object-bash) | Object | An object defining the player action to bash open a container, including its stat check and outcomes. | 12 ||
+| [`sneak`](#object-sneak) | Object | An object defining the player action to sneak past a threat, including its stat check and outcomes. | 11 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 10 ||
+| [`open`](Characters_and_Bosses.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 8 ||
+| [`take`](#object-take) | Object | An object defining the player action to take an item, including its stat check and outcomes. | 8 ||
+| [`a`](#object-a) | Object | An object defining the first custom option in a test or debug event. | 7 ||
+| [`attack`](./Events_and_Encounters.md#context-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 7 ||
+| [`b`](#object-b) | Object | An object defining the second custom option in a test or debug event. | 7 ||
+| [`c`](#object-c) | Object | An object defining the third custom option in a test or debug event. | 7 ||
+| [`charm`](#object-charm) | Object | Specifies the player character's attempt to charm or persuade the encounter. | 7 ||
+| [`fight`](#object-fight) | Object | Specifies the player character's attempt to fight or force their way through the encounter. | 7 ||
+| [`touch`](#object-touch) | Object | Specifies the player character's attempt to physically touch or interact with the encounter. | 7 ||
+| [`activate_p`](#object-activate_p) | Object | Specifies the player character's attempt to activate the object (press a button/lever). | 6 ||
+| [`activate_z`](#object-activate_z) | Object | Specifies the player character's attempt to activate the object (pull a lever/switch). | 6 ||
+| [`d`](#object-d) | Object | Specifies a debug or test option for game development purposes. | 6 ||
+| [`enter`](#object-enter) | Object | Specifies the player character's attempt to enter or go inside the encounter location. | 6 ||
+| [`inspect`](#object-inspect) | Object | Specifies the player character's attempt to inspect or examine the encounter. | 6 ||
+| [`lick`](#object-lick) | Object | Specifies the player character's attempt to lick the encounter. | 6 ||
+| [`drink`](#object-drink) | Object | Specifies the player character's attempt to drink from or consume the encounter. | 5 ||
+| [`kiss`](#object-kiss) | Object | Specifies the player character's attempt to kiss the encounter. | 5 ||
+| [`run`](#object-run) | Object | Specifies the player character's attempt to run away or flee from the encounter. | 5 ||
+| [`bite`](#object-bite) | Object | Specifies the player character's attempt to bite the encounter. | 4 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 ||
+| [`go_around`](#object-go_around) | Object | Specifies the player character's attempt to go around or bypass the encounter. | 4 ||
+| [`home`](#object-home) | Object | Specifies the option to go home (exit to the main hub). | 4 ||
+| [`past`](#object-past) | Object | Specifies the option to travel to a past era (Ice Age, Jurassic, etc.). | 4 ||
+| [`skip`](#object-skip) | Object | Specifies the option to skip or decline the current encounter. | 4 ||
+| [`investigate`](#object-investigate) | Object | Specifies the player character's attempt to investigate the encounter. | 3 ||
+| [`repell`](#object-repell) | Object | Specifies the player character's attempt to rappel down or climb into the encounter. | 3 ||
+| [`attach_antenna`](#object-attach_antenna) | Object | Specifies the player character's attempt to attach a device or antenna to the encounter. | 2 ||
+| [`boogers`](#object-boogers) | Object | Specifies the player character's attempt to pick or examine boogers. | 2 ||
+| [`copy`](#object-copy) | Object | Specifies the player character's attempt to copy or replicate something from the encounter. | 2 ||
+| [`find_another_way`](#object-find_another_way) | Object | Specifies the player character's attempt to find an alternative path around the encounter. | 2 ||
+| [`move_closer`](#object-move_closer) | Object | Specifies the player character's attempt to move closer to the encounter. | 2 ||
+| [`play`](#object-play) | Object | Specifies the player character's attempt to play or interact playfully with the encounter. | 2 ||
+| [`poop`](#object-poop) | Object | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 ||
+| [`print`](#object-print) | Object | Specifies the player character's attempt to print or output something from the encounter. | 2 ||
+| [`protection`](#object-protection) | Object | Specifies the player character's attempt to offer or ask for protection. | 2 ||
+| [`repair`](#object-repair) | Object | Specifies the player character's attempt to repair the encounter object. | 2 ||
+| [`sacrifice`](#object-sacrifice) | Object | Specifies the player character's attempt to make a sacrifice at the encounter. | 2 ||
+| [`scale`](./Events_and_Encounters.md#context-scale) | Number | The scale multiplier applied to the unit's visual size. | 2 ||
+| [`turnon`](#object-turnon) | Object | Specifies the player character's attempt to turn on or activate the encounter. | 2 ||
+| [`altar_sacrifice`](#object-altar_sacrifice) | Object | Specifies the player character's attempt to sacrifice a cat at the altar. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`arm`](#object-arm) | Object | Event Node: Story branch or dialog option representing the \'Arm\' action. | 1 ||
-| [`attach_amplifier`](#object-attach_amplifier) | Object | Event Node: Story branch or dialog option representing the 'Attach Amplifier' action. | 1 ||
-| [`attach_leech`](#object-attach_leech) | Object | Event Node: Story branch or dialog option representing the 'Attach Leech' action. | 1 ||
-| [`bash_past_alt`](#object-bash_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Bash Past Alt\' action. | 1 ||
-| [`bite_it_off`](#object-bite_it_off) | Object | Event Node: Story branch or dialog option representing the \'Bite It Off\' action. | 1 ||
-| [`blue`](#object-blue) | Object | Event Node: Story branch or dialog option representing the \'Blue\' action. | 1 ||
-| [`blue_needle`](#object-blue_needle) | Object | Event Node: Story branch or dialog option representing the \'Blue Needle\' action. | 1 ||
-| [`body`](./Events_and_Encounters.md#context-body) | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 1 ||
-| [`book`](#object-book) | Object | Event Node: Story branch or dialog option representing the \'Book\' action. | 1 ||
-| [`brace`](#object-brace) | Object | Event Node: Story branch or dialog option representing the \'Brace\' action. | 1 ||
-| [`break_ice`](#object-break_ice) | Object | Event Node: Story branch or dialog option representing the \'Break Ice\' action. | 1 ||
-| [`break_lock`](#object-break_lock) | Object | Event Node: Story branch or dialog option representing the \'Break Lock\' action. | 1 ||
-| [`bribe`](#object-bribe) | Object | Event Node: Story branch or dialog option representing the 'Bribe' action. | 1 ||
-| [`button`](#object-button) | Object | Event Node: Story branch or dialog option representing the \'Button\' action. | 1 ||
-| [`buy1`](#object-buy1) | Object | Event Node: Story branch or dialog option representing the \'Buy1\' action. | 1 ||
-| [`catch`](#object-catch) | Object | Event Node: Story branch or dialog option representing the \'Catch\' action. | 1 ||
-| [`challenge_to_game`](#object-challenge_to_game) | Object | Event Node: Story branch or dialog option representing the \'Challenge To Game\' action. | 1 ||
-| [`chaos_ending`](#object-chaos_ending) | Object | Event Node: Triggers the Chaos Boss victory sequence. | 1 ||
-| [`chapter_cutscene`](#object-chapter_cutscene) | Object | Event Node: Triggers an intermission cutscene. | 1 ||
-| [`charm_past_alt`](#object-charm_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Charm Past Alt\' action. | 1 ||
-| [`climb`](#object-climb) | Object | Event Node: Story branch or dialog option representing the \'Climb\' action. | 1 ||
-| [`comfort`](Engine_LogicKeys.md#object-comfort) | Object | Event Node: Story branch or dialog option representing the \'Comfort\' action. | 1 ||
-| [`communicate`](#object-communicate) | Object | Event Node: Story branch or dialog option representing the \'Communicate\' action. | 1 ||
-| [`concheck`](#object-concheck) | Object | Event Node: Stat check branch evaluating the \'con\' attribute. | 1 ||
-| [`counter`](#object-counter) | Object | Event Node: Story branch or dialog option representing the \'Counter\' action. | 1 ||
-| [`crack_open`](#object-crack_open) | Object | Event Node: Story branch or dialog option representing the \'Crack Open\' action. | 1 ||
-| [`cross`](#object-cross) | Object | Event Node: Story branch or dialog option representing the \'Cross\' action. | 1 ||
-| [`cut_wires`](#object-cut_wires) | Object | Event Node: Story branch or dialog option representing the \'Cut Wires\' action. | 1 ||
-| [`damage_1`](#object-damage_1) | Object | Event Node: Story branch or dialog option representing the \'Damage 1\' action. | 1 ||
-| [`damage_full`](#object-damage_full) | Object | Event Node: Story branch or dialog option representing the \'Damage Full\' action. | 1 ||
-| [`damage_half`](#object-damage_half) | Object | Event Node: Story branch or dialog option representing the \'Damage Half\' action. | 1 ||
-| [`desert_cutscene`](#object-desert_cutscene) | Object | Event Node: Triggers the desert transition cutscene. | 1 ||
-| [`dexcheck`](#object-dexcheck) | Object | Event Node: Stat check branch evaluating the \'dex\' attribute. | 1 ||
-| [`dig`](#object-dig) | Object | Event Node: Story branch or dialog option representing the \'Dig\' action. | 1 ||
-| [`disarm`](#object-disarm) | Object | Event Node: Story branch or dialog option representing the \'Disarm\' action. | 1 ||
-| [`dive`](#object-dive) | Object | Event Node: Story branch or dialog option representing the \'Dive\' action. | 1 ||
-| [`donate`](#object-donate) | Object | Event Node: Story branch or dialog option representing the \'Donate\' action. | 1 ||
-| [`donate_10`](#object-donate_10) | Object | Event Node: Story branch or dialog option representing the \'Donate 10\' action. | 1 ||
-| [`donate_15`](#object-donate_15) | Object | Event Node: Story branch or dialog option representing the \'Donate 15\' action. | 1 ||
-| [`donate_20`](#object-donate_20) | Object | Event Node: Story branch or dialog option representing the \'Donate 20\' action. | 1 ||
-| [`donate_5`](#object-donate_5) | Object | Event Node: Story branch or dialog option representing the \'Donate 5\' action. | 1 ||
-| [`double`](#object-double) | Object | Event Node: Story branch or dialog option representing the \'Double\' action. | 1 ||
-| [`eat_meat`](#object-eat_meat) | Object | Event Node: Story branch or dialog option representing the \'Eat Meat\' action. | 1 ||
-| [`enter_crater`](#object-enter_crater) | Object | Event Node: Story branch or dialog option representing the \'Enter Crater\' action. | 1 ||
-| [`face`](./Events_and_Encounters.md#context-face) | Enum | Event Node: Story branch or dialog option representing the \'Face\' action. | 1 ||
-| [`fiddle`](#object-fiddle) | Object | Event Node: Story branch or dialog option representing the 'Fiddle' action. | 1 ||
-| [`fill_jar`](#object-fill_jar) | Object | Event Node: Story branch or dialog option representing the 'Fill Jar' action. | 1 ||
-| [`find`](#object-find) | Object | Event Node: Story branch or dialog option representing the \'Find\' action. | 1 ||
-| [`fire`](Characters_and_Bosses.md#object-fire) | Object | Event Node: Story branch or dialog option representing the \'Fire\' action. | 1 ||
-| [`flush_yourself`](#object-flush_yourself) | Object | Event Node: Story branch or dialog option representing the \'Flush Yourself\' action. | 1 ||
-| [`follow`](#object-follow) | Object | Event Node: Story branch or dialog option representing the \'Follow\' action. | 1 ||
-| [`free`](#object-free) | Object | Event Node: Story branch or dialog option representing the \'Free\' action. | 1 ||
-| [`future`](#object-future) | Object | Event Node: Story branch or dialog option representing the 'Future' action. | 1 ||
-| [`give_parasite`](#object-give_parasite) | Object | Event Action: Equips a parasite item to a character. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the 'Good' action. | 1 ||
-| [`hack`](#object-hack) | Object | Event Node: Story branch or dialog option representing the \'Hack\' action. | 1 ||
-| [`head`](./Events_and_Encounters.md#context-head) | Enum / Number | Event Node: Story branch or dialog option representing the \'Head\' action. | 1 ||
-| [`holy`](Characters_and_Bosses.md#object-holy) | Object | Event Node: Story branch or dialog option representing the \'Holy\' action. | 1 ||
-| [`hp`](#object-hp) | Object | Event Node: Story branch or dialog option representing the \'Hp\' action. | 1 ||
-| [`ice`](Engine_LogicKeys.md#object-ice) | Object | Event Node: Story branch or dialog option representing the \'Ice\' action. | 1 ||
-| [`infinite`](#object-infinite) | Object | Event Node: A looping or endlessly repeating story branch. | 1 ||
-| [`intcheck`](#object-intcheck) | Object | Event Node: Stat check branch evaluating the \'int\' attribute. | 1 ||
-| [`intimidation`](#object-intimidation) | Object | Event Node: Story branch or dialog option representing the \'Intimidation\' action. | 1 ||
-| [`itchies`](#object-itchies) | Object | Event Node: Story branch or dialog option representing the \'Itchies\' action. | 1 ||
-| [`join`](#object-join) | Object | Event Node: Story branch or dialog option representing the \'Join\' action. | 1 ||
-| [`jump`](#object-jump) | Object | Event Node: Story branch or dialog option representing the \'Jump\' action. | 1 ||
-| [`jump_over`](#object-jump_over) | Object | Event Node: Story branch or dialog option representing the \'Jump Over\' action. | 1 ||
-| [`keep_going`](#object-keep_going) | Object | Event Node: Story branch or dialog option representing the \'Keep Going\' action. | 1 ||
-| [`kiss_meat`](#object-kiss_meat) | Object | Event Node: Story branch or dialog option representing the \'Kiss Meat\' action. | 1 ||
-| [`knife`](#object-knife) | Object | Event Node: Story branch or dialog option representing the \'Knife\' action. | 1 ||
+| [`arm`](#object-arm) | Object | Specifies the player character's attempt to put their arm inside the encounter. | 1 ||
+| [`attach_amplifier`](#object-attach_amplifier) | Object | Specifies the player character's attempt to attach an amplifier to the encounter. | 1 ||
+| [`attach_leech`](#object-attach_leech) | Object | Specifies the player character's attempt to attach a leech to the encounter. | 1 ||
+| [`bash_past_alt`](#object-bash_past_alt) | Object | Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters). | 1 ||
+| [`bite_it_off`](#object-bite_it_off) | Object | Specifies the player character's attempt to bite off part of the encounter. | 1 ||
+| [`blue`](#object-blue) | Object | Specifies the player character's attempt to choose the blue option. | 1 ||
+| [`blue_needle`](#object-blue_needle) | Object | Specifies the player character's attempt to take the blue needle. | 1 ||
+| [`body`](./Events_and_Encounters.md#context-body) | Number | The catalog ID for the cat's body part. | 1 ||
+| [`book`](#object-book) | Object | Specifies the player character's attempt to read or take the book. | 1 ||
+| [`brace`](#object-brace) | Object | Specifies the player character's attempt to brace themselves for the encounter. | 1 ||
+| [`break_ice`](#object-break_ice) | Object | Specifies the player character's attempt to break the ice covering the encounter. | 1 ||
+| [`break_lock`](#object-break_lock) | Object | Specifies the player character's attempt to break the lock on the encounter. | 1 ||
+| [`bribe`](#object-bribe) | Object | Specifies the player character's attempt to bribe the encounter. | 1 ||
+| [`button`](#object-button) | Object | Specifies the player character's attempt to push the button. | 1 ||
+| [`buy1`](#object-buy1) | Object | Specifies the player character's attempt to buy one of the offered items. | 1 ||
+| [`catch`](#object-catch) | Object | An object defining a response option for catching an entity, including stat checks and rewards. | 1 ||
+| [`challenge_to_game`](#object-challenge_to_game) | Object | Specifies the player character's attempt to challenge the encounter to a game. | 1 ||
+| [`chaos_ending`](#object-chaos_ending) | Object | Specifies the option to trigger the chaos ending cutscene. | 1 ||
+| [`chapter_cutscene`](#object-chapter_cutscene) | Object | Specifies the option to trigger a chapter intro cutscene. | 1 ||
+| [`charm_past_alt`](#object-charm_past_alt) | Object | Specifies the player character's attempt to charm the encounter (alternate version for specific chapters). | 1 ||
+| [`climb`](#object-climb) | Object | Specifies the player character's attempt to climb over the encounter. | 1 ||
+| [`comfort`](Engine_LogicKeys.md#object-comfort) | Object | A charisma-based event response that soothes the encounter subject. | 1 ||
+| [`communicate`](#object-communicate) | Object | A charisma-based event response to establish communication. | 1 ||
+| [`concheck`](#object-concheck) | Object | A constitution-based event response to test endurance. | 1 ||
+| [`counter`](#object-counter) | Object | An event response that uses a countering action, with no stat requirement. | 1 ||
+| [`crack_open`](#object-crack_open) | Object | A strength-based event response to break something open. | 1 ||
+| [`cross`](#object-cross) | Object | An event response to traverse an obstacle, with no stat requirement. | 1 ||
+| [`cut_wires`](#object-cut_wires) | Object | An intelligence-based event response to disable wires. | 1 ||
+| [`damage_1`](#object-damage_1) | Object | A constitution-based event response that deals minor damage. | 1 ||
+| [`damage_full`](#object-damage_full) | Object | A constitution-based event response that deals full damage. | 1 ||
+| [`damage_half`](#object-damage_half) | Object | A constitution-based event response that deals halved damage. | 1 ||
+| [`desert_cutscene`](#object-desert_cutscene) | Object | An event response that triggers a desert-themed cutscene, with no stat requirement. | 1 ||
+| [`dexcheck`](#object-dexcheck) | Object | A dexterity-based event response to test agility. | 1 ||
+| [`dig`](#object-dig) | Object | A strength-based event response to excavate, limited by a token counter maximum. | 1 ||
+| [`disarm`](#object-disarm) | Object | A dexterity-based event response to remove a trap. | 1 ||
+| [`dive`](#object-dive) | Object | A dexterity-based event response to plunge into water. | 1 ||
+| [`donate`](#object-donate) | Object | An event response to give a donation, with no stat requirement but a coin cost. | 1 ||
+| [`donate_10`](#object-donate_10) | Object | An event response to donate 10 coins. | 1 ||
+| [`donate_15`](#object-donate_15) | Object | An event response to donate 15 coins. | 1 ||
+| [`donate_20`](#object-donate_20) | Object | An event response to donate 20 coins. | 1 ||
+| [`donate_5`](#object-donate_5) | Object | An event response to donate 5 coins. | 1 ||
+| [`double`](#object-double) | Object | An event response that doubles something, with no stat requirement. | 1 ||
+| [`eat_meat`](#object-eat_meat) | Object | A constitution-based event response to consume meat. | 1 ||
+| [`enter_crater`](#object-enter_crater) | Object | A luck-based event response to enter a crater. | 1 ||
+| [`face`](./Events_and_Encounters.md#context-face) | Enum | The face equipment item assigned to the unit. | 1 ||
+| [`fiddle`](#object-fiddle) | Object | A quest-based event response to tamper, requiring no specific quest token. | 1 ||
+| [`fill_jar`](#object-fill_jar) | Object | A quest-based event response to fill a jar, with no stat requirement. | 1 ||
+| [`find`](#object-find) | Object | An event response to search, with no stat requirement. | 1 ||
+| [`fire`](Characters_and_Bosses.md#object-fire) | Object | An event response that uses fire, with no stat requirement. | 1 ||
+| [`flush_yourself`](#object-flush_yourself) | Object | An event response to flush oneself, requiring a minimum counter value. | 1 ||
+| [`follow`](#object-follow) | Object | A speed-based event response to pursue. | 1 ||
+| [`free`](#object-free) | Object | If true, this option requires no cost to activate. | 1 ||
+| [`future`](#object-future) | Object | Specifies the name, map flag, or connection for the Future area. | 1 ||
+| [`give_parasite`](#object-give_parasite) | Object | An event response to give a parasite, requiring the cat to have a parasite. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
+| [`hack`](#object-hack) | Object | An intelligence-based event response to hack a system. | 1 ||
+| [`head`](./Events_and_Encounters.md#context-head) | Enum / Number | The catalog ID for the cat's head part. | 1 ||
+| [`holy`](Characters_and_Bosses.md#object-holy) | Object | An event response that uses holy power, with no stat requirement. | 1 ||
+| [`hp`](#object-hp) | Object | An event response that trades health, with no stat requirement. | 1 ||
+| [`ice`](Engine_LogicKeys.md#object-ice) | Object | An event response that uses ice, with no stat requirement. | 1 ||
+| [`infinite`](#object-infinite) | Object | An event response to choose infinite, with a chapter exit hint and no stat requirement. | 1 ||
+| [`intcheck`](#object-intcheck) | Object | An intelligence-based event response to test intellect. | 1 ||
+| [`intimidation`](#object-intimidation) | Object | An event response that intimidates, with no stat requirement. | 1 ||
+| [`itchies`](#object-itchies) | Object | An event response that causes itches, with no stat requirement. | 1 ||
+| [`join`](#object-join) | Object | A charisma-based event response to join in. | 1 ||
+| [`jump`](#object-jump) | Object | A speed-based event response to leap. | 1 ||
+| [`jump_over`](#object-jump_over) | Object | A dexterity-based event response to vault over. | 1 ||
+| [`keep_going`](#object-keep_going) | Object | An event response to persevere, with no stat requirement. | 1 ||
+| [`kiss_meat`](#object-kiss_meat) | Object | A charisma-based event response to kiss meat. | 1 ||
+| [`knife`](#object-knife) | Object | An event response to obtain a knife, with no stat requirement. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`leave_it_in`](#object-leave_it_in) | Object | Event Node: Story branch or dialog option representing the \'Leave It In\' action. | 1 ||
-| [`leg`](#object-leg) | Object | Event Node: Story branch or dialog option representing the \'Leg\' action. | 1 ||
-| [`lever`](#object-lever) | Object | Event Node: Story branch or dialog option representing the \'Lever\' action. | 1 ||
-| [`lick_alt`](#object-lick_alt) | Object | Event Node: Story branch or dialog option representing the \'Lick Alt\' action. | 1 ||
-| [`lightning`](#object-lightning) | Object | Event Node: Story branch or dialog option representing the \'Lightning\' action. | 1 ||
-| [`listen`](#object-listen) | Object | Event Node: Story branch or dialog option representing the \'Listen\' action. | 1 ||
-| [`looks`](#object-looks) | Object | Event Node: Story branch or dialog option representing the 'Looks' action. | 1 ||
-| [`loot_heart`](#object-loot_heart) | Object | Event Node: Story branch or dialog option representing the 'Loot Heart' action. | 1 ||
-| [`makeup`](#object-makeup) | Object | Event Node: Story branch or dialog option representing the \'Makeup\' action. | 1 ||
-| [`mind`](#object-mind) | Object | Event Node: Story branch or dialog option representing the 'Mind' action. | 1 ||
-| [`neck`](./Events_and_Encounters.md#context-neck) | Enum | Event Node: Story branch or dialog option representing the \'Neck\' action. | 1 ||
-| [`nothanks`](#object-nothanks) | Object | Event Node: Story branch or dialog option representing the \'Nothanks\' action. | 1 ||
-| [`outsmart`](#object-outsmart) | Object | Event Node: Story branch or dialog option representing the \'Outsmart\' action. | 1 ||
-| [`patch_up`](#object-patch_up) | Object | Event Node: Story branch or dialog option representing the \'Patch Up\' action. | 1 ||
-| [`pick_lock`](#object-pick_lock) | Object | Event Node: Story branch or dialog option representing the \'Pick Lock\' action. | 1 ||
-| [`pilfer`](#object-pilfer) | Object | Event Node: Story branch or dialog option representing the \'Pilfer\' action. | 1 ||
-| [`pirouette`](#object-pirouette) | Object | Event Node: Story branch or dialog option representing the \'Pirouette\' action. | 1 ||
-| [`place_gristle`](#object-place_gristle) | Object | Event Node: Story branch or dialog option representing the 'Place Gristle' action. | 1 ||
-| [`power`](#object-power) | Object | Event Node: Story branch or dialog option representing the 'Power' action. | 1 ||
-| [`pull`](#object-pull) | Object | Event Node: Story branch or dialog option representing the \'Pull\' action. | 1 ||
-| [`pull_it_out`](#object-pull_it_out) | Object | Event Node: Story branch or dialog option representing the \'Pull It Out\' action. | 1 ||
-| [`pull_lever`](#object-pull_lever) | Object | Event Node: Story branch or dialog option representing the \'Pull Lever\' action. | 1 ||
-| [`purify`](#object-purify) | Object | Event Node: Story branch or dialog option representing the \'Purify\' action. | 1 ||
-| [`push_buttons`](#object-push_buttons) | Object | Event Node: Story branch or dialog option representing the \'Push Buttons\' action. | 1 ||
-| [`push_through`](#object-push_through) | Object | Event Node: Story branch or dialog option representing the \'Push Through\' action. | 1 ||
-| [`put_in_coins`](#object-put_in_coins) | Object | Event Node: Story branch or dialog option representing the \'Put In Coins\' action. | 1 ||
-| [`put_out_of_misery`](#object-put_out_of_misery) | Object | Event Node: Story branch or dialog option representing the \'Put Out Of Misery\' action. | 1 ||
-| [`reach_inside`](#object-reach_inside) | Object | Event Node: Story branch or dialog option representing the \'Reach Inside\' action. | 1 ||
-| [`read`](#object-read) | Object | Event Node: Story branch or dialog option representing the \'Read\' action. | 1 ||
-| [`receive`](#object-receive) | Object | Event Node: Story branch or dialog option representing the \'Receive\' action. | 1 ||
-| [`red`](#object-red) | Object | Event Node: Story branch or dialog option representing the \'Red\' action. | 1 ||
-| [`red_needle`](#object-red_needle) | Object | Event Node: Story branch or dialog option representing the \'Red Needle\' action. | 1 ||
-| [`reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Object | Event Node: Story branch or dialog option representing the \'Reflect\' action. | 1 ||
-| [`remove`](#object-remove) | Object | Event Node: Story branch or dialog option representing the \'Remove\' action. | 1 ||
-| [`remove_the_nail`](#object-remove_the_nail) | Object | Event Node: Story branch or dialog option representing the \'Remove The Nail\' action. | 1 ||
-| [`repair_quest`](#object-repair_quest) | Object | Event Node: Story branch or dialog option representing the 'Repair Quest' action. | 1 ||
-| [`rest`](#object-rest) | Object | Event Node: Story branch or dialog option representing the \'Rest\' action. | 1 ||
-| [`revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Object | Event Node: Story branch or dialog option representing the \'Revive\' action. | 1 ||
-| [`rub`](#object-rub) | Object | Event Node: Story branch or dialog option representing the \'Rub\' action. | 1 ||
-| [`run_again`](#object-run_again) | Object | Event Node: Story branch or dialog option representing the \'Run Again\' action. | 1 ||
-| [`run_away`](#object-run_away) | Object | Event Node: Story branch or dialog option representing the \'Run Away\' action. | 1 ||
-| [`sacrifice_full_favor`](#object-sacrifice_full_favor) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice Full Favor\' action. | 1 ||
-| [`sacrifice_normal`](#object-sacrifice_normal) | Object | Event Node: Story branch or dialog option representing the 'Sacrifice Normal' action. | 1 ||
-| [`sacrifice_partial_favor`](#object-sacrifice_partial_favor) | Object | Event Node: Story branch or dialog option representing the \'Sacrifice Partial Favor\' action. | 1 ||
-| [`sacrifice_quest`](#object-sacrifice_quest) | Object | Event Node: Story branch or dialog option representing the 'Sacrifice Quest' action. | 1 ||
-| [`scream`](#object-scream) | Object | Event Node: Story branch or dialog option representing the \'Scream\' action. | 1 ||
-| [`shake`](#object-shake) | Object | Event Node: Story branch or dialog option representing the \'Shake\' action. | 1 ||
-| [`slip_through`](#object-slip_through) | Object | Event Node: Story branch or dialog option representing the \'Slip Through\' action. | 1 ||
-| [`sneak_by`](#object-sneak_by) | Object | Event Node: Story branch or dialog option representing the \'Sneak By\' action. | 1 ||
-| [`sneak_past_alt`](#object-sneak_past_alt) | Object | Event Node: Story branch or dialog option representing the \'Sneak Past Alt\' action. | 1 ||
-| [`soul`](#object-soul) | Object | Event Node: Story branch or dialog option representing the 'Soul' action. | 1 ||
-| [`speed`](./Events_and_Encounters.md#context-speed) | Array / Number | Event Node: Story branch or dialog option representing the \'Speed\' action. | 1 ||
+| [`leave_it_in`](#object-leave_it_in) | Object | An event response to leave an object in place, with no stat requirement. | 1 ||
+| [`leg`](#object-leg) | Object | A luck-based event response to use a leg. | 1 ||
+| [`lever`](#object-lever) | Object | An event response to pull a lever, with a fixed chance and no stat requirement. | 1 ||
+| [`lick_alt`](#object-lick_alt) | Object | A constitution-based event response to lick, restricted to specific chapters. | 1 ||
+| [`lightning`](#object-lightning) | Object | An event response using lightning, with no stat requirement. | 1 ||
+| [`listen`](#object-listen) | Object | An intelligence-based event response to listen. | 1 ||
+| [`looks`](#object-looks) | Object | The dialogue option for the Genie good event that selects the looks reward. | 1 ||
+| [`loot_heart`](#object-loot_heart) | Object | The dialogue option to take the heart from the Dead King as a quest action. | 1 ||
+| [`makeup`](#object-makeup) | Object | The dialogue option for the makeup event, associated with the Tink2 encounter. | 1 ||
+| [`mind`](#object-mind) | Object | The dialogue option for the Genie bad event that selects the curse mind reward. | 1 ||
+| [`neck`](./Events_and_Encounters.md#context-neck) | Enum | The neck equipment item assigned to the unit. | 1 ||
+| [`nothanks`](#object-nothanks) | Object | The generic decline dialogue option that triggers a leave animation. | 1 ||
+| [`outsmart`](#object-outsmart) | Object | The dialogue option that uses the int stat to outsmart the tutorial encounter. | 1 ||
+| [`patch_up`](#object-patch_up) | Object | The dialogue option that uses the int stat to patch up the dying fetus. | 1 ||
+| [`pick_lock`](#object-pick_lock) | Object | The dialogue option that uses the dex stat to pick a lock on a crate. | 1 ||
+| [`pilfer`](#object-pilfer) | Object | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 1 ||
+| [`pirouette`](#object-pirouette) | Object | The dialogue option for the Tink1 encounter that performs a pirouette. | 1 ||
+| [`place_gristle`](#object-place_gristle) | Object | The dialogue option to place gristle on the Wall of Flesh as a quest action. | 1 ||
+| [`power`](#object-power) | Object | The dialogue option for the Genie good event that selects the power reward. | 1 ||
+| [`pull`](#object-pull) | Object | The dialogue option that uses the str stat to pull a knife from a wall. | 1 ||
+| [`pull_it_out`](#object-pull_it_out) | Object | The dialogue option to pull out a stalactite from the Jagged Pathway. | 1 ||
+| [`pull_lever`](#object-pull_lever) | Object | The dialogue option to pull the lever on the Odd Device. | 1 ||
+| [`purify`](#object-purify) | Object | The dialogue option that uses the lck stat to purify the Mysterious Chamber. | 1 ||
+| [`push_buttons`](#object-push_buttons) | Object | The dialogue option to push buttons on the Odd Device. | 1 ||
+| [`push_through`](#object-push_through) | Object | The dialogue option that uses the str stat to push through the Jagged Pathway. | 1 ||
+| [`put_in_coins`](#object-put_in_coins) | Object | The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins. | 1 ||
+| [`put_out_of_misery`](#object-put_out_of_misery) | Object | The dialogue option that uses the str stat to put the dying fetus out of its misery. | 1 ||
+| [`reach_inside`](#object-reach_inside) | Object | The dialogue option that uses the spd stat to reach inside a Small Black Hole. | 1 ||
+| [`read`](#object-read) | Object | The dialogue option that uses the int stat to read the Mysterious Manual. | 1 ||
+| [`receive`](#object-receive) | Object | The dialogue option to receive an item from a legacy event. | 1 ||
+| [`red`](#object-red) | Object | Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event. | 1 ||
+| [`red_needle`](#object-red_needle) | Object | The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token. | 1 ||
+| [`reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Object | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 ||
+| [`remove`](#object-remove) | Object | The dialogue option that uses the str stat to remove a stuck corpse. | 1 ||
+| [`remove_the_nail`](#object-remove_the_nail) | Object | The dialogue option that uses the dex stat to remove the nail from a big toe. | 1 ||
+| [`repair_quest`](#object-repair_quest) | Object | The dialogue option to repair the broken time machine as a quest action. | 1 ||
+| [`rest`](#object-rest) | Object | The dialogue option that uses the lck stat to rest on a cat bed. | 1 ||
+| [`revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Object | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 1 ||
+| [`rub`](#object-rub) | Object | The dialogue option that uses the lck stat to rub the Genie Lamp. | 1 ||
+| [`run_again`](#object-run_again) | Object | The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet. | 1 ||
+| [`run_away`](#object-run_away) | Object | The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark. | 1 ||
+| [`sacrifice_full_favor`](#object-sacrifice_full_favor) | Object | The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action. | 1 ||
+| [`sacrifice_normal`](#object-sacrifice_normal) | Object | The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped. | 1 ||
+| [`sacrifice_partial_favor`](#object-sacrifice_partial_favor) | Object | The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action. | 1 ||
+| [`sacrifice_quest`](#object-sacrifice_quest) | Object | The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped. | 1 ||
+| [`scream`](#object-scream) | Object | The dialogue option to scream at the Meat Golem with no stat requirement. | 1 ||
+| [`shake`](#object-shake) | Object | The dialogue option that uses the str stat to shake the Vending Machine. | 1 ||
+| [`slip_through`](#object-slip_through) | Object | The dialogue option that uses the dex stat to slip through a Barbed Wire Fence. | 1 ||
+| [`sneak_by`](#object-sneak_by) | Object | The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark. | 1 ||
+| [`sneak_past_alt`](#object-sneak_past_alt) | Object | The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters. | 1 ||
+| [`soul`](#object-soul) | Object | The dialogue option for the Genie bad event that selects the curse soul reward. | 1 ||
+| [`speed`](./Events_and_Encounters.md#context-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
-| [`surprise`](#object-surprise) | Object | Event Node: Story branch or dialog option representing the \'Surprise\' action. | 1 ||
-| [`sweet_talk`](#object-sweet_talk) | Object | Event Node: Story branch or dialog option representing the \'Sweet Talk\' action. | 1 ||
-| [`swim`](#object-swim) | Object | Event Node: Story branch or dialog option representing the \'Swim\' action. | 1 ||
-| [`tail`](./Events_and_Encounters.md#context-tail) | Integer | Event Node: Story branch or dialog option representing the \'Tail\' action. | 1 ||
-| [`take_blood`](#object-take_blood) | Object | Event Node: Story branch or dialog option representing the 'Take Blood' action. | 1 ||
-| [`talk`](#object-talk) | Object | Event Node: Story branch or dialog option representing the 'Talk' action. | 1 ||
-| [`talk_to`](#object-talk_to) | Object | Event Node: Story branch or dialog option representing the \'Talk To\' action. | 1 ||
-| [`tappytoes`](#object-tappytoes) | Object | Event Node: Story branch or dialog option representing the \'Tappytoes\' action. | 1 ||
-| [`teleport`](#object-teleport) | Object | Event Node: Story branch or dialog option representing the \'Teleport\' action. | 1 ||
-| [`thorns`](#object-thorns) | Object | Event Node: Story branch or dialog option representing the \'Thorns\' action. | 1 ||
-| [`throw`](#object-throw) | Object | Event Node: Story branch or dialog option representing the \'Throw\' action. | 1 ||
-| [`timemachine`](#object-timemachine) | Object | Event Node: Story branch or dialog option representing the \'Timemachine\' action. | 1 ||
-| [`traverse`](#object-traverse) | Object | Event Node: Story branch or dialog option representing the \'Traverse\' action. | 1 ||
-| [`upgrade_yourself`](#object-upgrade_yourself) | Object | Event Reward: Upgrades an existing ability or item. | 1 ||
-| [`use_item`](#object-use_item) | Object | Event Requirement: Requires the player to consume a specific item to proceed. | 1 ||
-| [`use_toilet_con`](#object-use_toilet_con) | Object | Event Node: Story branch or dialog option representing the \'Use Toilet Con\' action. | 1 ||
-| [`use_toilet_str`](#object-use_toilet_str) | Object | Event Node: Story branch or dialog option representing the \'Use Toilet Str\' action. | 1 ||
-| [`use_weapon`](#object-use_weapon) | Object | Event Requirement: Uses the properties of the equipped weapon to resolve an outcome. | 1 ||
-| [`w1`](#object-w1) | Object | Event Node: Story branch or dialog option representing the \'W1\' action. | 1 ||
-| [`w2`](#object-w2) | Object | Event Node: Story branch or dialog option representing the \'W2\' action. | 1 ||
-| [`w3`](#object-w3) | Object | Event Node: Story branch or dialog option representing the \'W3\' action. | 1 ||
-| [`w4`](#object-w4) | Object | Event Node: Story branch or dialog option representing the \'W4\' action. | 1 ||
-| [`w5`](#object-w5) | Object | Event Node: Story branch or dialog option representing the \'W5\' action. | 1 ||
-| [`w6`](#object-w6) | Object | Event Node: Story branch or dialog option representing the \'W6\' action. | 1 ||
-| [`wealth`](#object-wealth) | Object | Event Node: Story branch or dialog option representing the 'Wealth' action. | 1 ||
-| [`wheezies`](#object-wheezies) | Object | Event Node: Story branch or dialog option representing the \'Wheezies\' action. | 1 ||
-| [`wish_genes`](#object-wish_genes) | Object | Event Node: Story branch or dialog option representing the \'Wish Genes\' action. | 1 ||
-| [`wish_items`](#object-wish_items) | Object | Event Node: Story branch or dialog option representing the \'Wish Items\' action. | 1 ||
-| [`wish_levelups`](#object-wish_levelups) | Object | Event Node: Story branch or dialog option representing the \'Wish Levelups\' action. | 1 ||
-| [`wish_strength`](#object-wish_strength) | Object | Event Node: Story branch or dialog option representing the \'Wish Strength\' action. | 1 ||
-| [`withstand`](#object-withstand) | Object | Event Node: Story branch or dialog option representing the \'Withstand\' action. | 1 ||
-| [`yank_it_out`](#object-yank_it_out) | Object | Event Node: Story branch or dialog option representing the \'Yank It Out\' action. | 1 ||
-| [`yellow_needle`](#object-yellow_needle) | Object | Event Node: Story branch or dialog option representing the \'Yellow Needle\' action. | 1 ||
+| [`surprise`](#object-surprise) | Object | The dialogue option for the Butch2 encounter that surprises the target. | 1 ||
+| [`sweet_talk`](#object-sweet_talk) | Object | The dialogue option that uses the cha stat to sweet-talk Death. | 1 ||
+| [`swim`](#object-swim) | Object | The dialogue option that uses the str stat to swim through a Strong Current. | 1 ||
+| [`tail`](./Events_and_Encounters.md#context-tail) | Integer | The catalog ID for the cat's tail part. | 1 ||
+| [`take_blood`](#object-take_blood) | Object | The dialogue option to drain blood from the Dead King as a quest action. | 1 ||
+| [`talk`](#object-talk) | Object | The dialogue option that uses the cha stat to talk to a Spookie Apparation. | 1 ||
+| [`talk_to`](#object-talk_to) | Object | The dialogue option that uses the cha stat to talk to someone during a Dust Storm. | 1 ||
+| [`tappytoes`](#object-tappytoes) | Object | The dialogue option for the Tink1 encounter that performs a tappytoes action. | 1 ||
+| [`teleport`](#object-teleport) | Object | Defines a dialogue option that transports the unit to an alternative location in the event. | 1 ||
+| [`thorns`](#object-thorns) | Object | Defines a dialogue option that applies a thorns effect to the unit. | 1 ||
+| [`throw`](#object-throw) | Object | Defines a dialogue option that allows the unit to throw an object. | 1 ||
+| [`timemachine`](#object-timemachine) | Object | Defines a dialogue option that triggers a time travel sequence. | 1 ||
+| [`traverse`](#object-traverse) | Object | Defines a dialogue option that moves the unit through a traversal area. | 1 ||
+| [`upgrade_yourself`](#object-upgrade_yourself) | Object | Defines a dialogue option that upgrades the unit's attributes or abilities. | 1 ||
+| [`use_item`](#object-use_item) | Object | Defines a dialogue option that prompts the unit to use an item from their inventory. | 1 ||
+| [`use_toilet_con`](#object-use_toilet_con) | Object | Defines a dialogue option that interacts with a toilet using the Constitution stat. | 1 ||
+| [`use_toilet_str`](#object-use_toilet_str) | Object | Defines a dialogue option that interacts with a toilet using the Strength stat. | 1 ||
+| [`use_weapon`](#object-use_weapon) | Object | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 ||
+| [`w1`](#object-w1) | Object | Defines a dialogue option for the first weather choice in the Crater Weather event. | 1 ||
+| [`w2`](#object-w2) | Object | Defines a dialogue option for the second weather choice in the Crater Weather event. | 1 ||
+| [`w3`](#object-w3) | Object | Defines a dialogue option for the third weather choice in the Crater Weather event. | 1 ||
+| [`w4`](#object-w4) | Object | Defines a dialogue option for the fourth weather choice in the Crater Weather event. | 1 ||
+| [`w5`](#object-w5) | Object | Defines a dialogue option for the fifth weather choice in the Crater Weather event. | 1 ||
+| [`w6`](#object-w6) | Object | Defines a dialogue option for the sixth weather choice in the Crater Weather event. | 1 ||
+| [`wealth`](#object-wealth) | Object | Defines a dialogue option that grants the unit money or valuable items. | 1 ||
+| [`wheezies`](#object-wheezies) | Object | Defines a dialogue option that triggers a wheezing effect or condition. | 1 ||
+| [`wish_genes`](#object-wish_genes) | Object | Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics. | 1 ||
+| [`wish_items`](#object-wish_items) | Object | Defines a dialogue option in the Monkey Paw event that grants items. | 1 ||
+| [`wish_levelups`](#object-wish_levelups) | Object | Defines a dialogue option in the Monkey Paw event that grants level-ups. | 1 ||
+| [`wish_strength`](#object-wish_strength) | Object | Defines a dialogue option in the Monkey Paw event that increases Strength. | 1 ||
+| [`withstand`](#object-withstand) | Object | Defines a dialogue option that allows the unit to withstand a hazard using Constitution. | 1 ||
+| [`yank_it_out`](#object-yank_it_out) | Object | Defines a dialogue option that yanks out an object using Strength. | 1 ||
+| [`yellow_needle`](#object-yellow_needle) | Object | Defines a dialogue option to interact with a yellow needle. | 1 ||
 
 </details>
 
@@ -737,47 +737,47 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 131 ||
-| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 29 | 2 |
-| [`Poison`](./Enums.md) | Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 28 | 4 |
-| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 20 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 13 |
-| [`AllStatsUp`](./Enums.md) | Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 7 | 1 |
-| [`SpeedUp`](./Enums.md) | Integer | Specifies the number of Speed stacks applied, where each stack modifies the unit's turn order and dodge chance. | 5 | -2 |
-| [`StrengthUp`](./Enums.md) | Integer | Specifies the number of Strength stacks applied, where positive values increase melee damage and negative values decrease it. | 5 | 2 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 131 ||
+| [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 29 | 2 |
+| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 28 | 4 |
+| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 20 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 13 |
+| [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 7 | 1 |
+| [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 5 | -2 |
+| [`StrengthUp`](./Enums.md) | Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 5 | 2 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 4 | Flush |
-| [`ConstitutionUp`](./Enums.md) | Integer | The amount of Constitution (HP) increase, or an array with duration and chance. | 4 | -1 |
+| [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 4 | -1 |
 | [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 3 | 5 |
-| [`Burn`](./Enums.md) | Integer | The number of Burn stacks applied, which deals fire damage over time; can be an integer, a variable X, or an array `[stacks, probability]` to specify chance of application. | 3 | 5 |
-| [`CharismaUp`](./Enums.md) | Integer | The amount of Charisma stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. | 3 | -2 |
-| [`Confusion`](./Enums.md) | Integer | The number of turns of Confusion applied, or an array with duration and chance. | 3 | 2 |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 3 | 2 |
-| [`Webbed`](./Enums.md) | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
-| [`Blind`](./Enums.md) | Integer | The number of stacks of Blind to apply, reducing accuracy; can be an array `[stacks, probability]` for a chance-based application. | 2 | 6 |
-| [`Bruise`](./Enums.md) | Integer | The number of Bruise stacks applied, or an array with duration and chance. | 2 | 1 |
-| [`DexterityUp`](./Enums.md) | Integer | The amount of Dexterity stat increased or decreased (negative values lower the stat); can be a formula or fixed integer. | 2 | 2 |
-| [`IntelligenceUp`](./Enums.md) | Integer | The amount of intelligence increase, which can be a fixed integer or a mathematical expression. | 2 | 3 |
-| [`NoHealthRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents health regeneration. | 2 | 1 |
-| [`Sleep`](./Enums.md) | Integer | The number of stacks of Sleep, putting the unit to sleep for that many turns; can be an array `[stacks, probability]`. | 2 | 2 |
-| [`Stun`](./Enums.md) | Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | 1 |
+| [`Burn`](./Enums.md) | Integer | The amount of Burn applied, either as a fixed number or a formula string. | 3 | 5 |
+| [`CharismaUp`](./Enums.md) | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 3 | -2 |
+| [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 3 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 3 | 2 |
+| [`Webbed`](./Enums.md) | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 3 | 2 |
+| [`Blind`](./Enums.md) | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 2 | 6 |
+| [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 2 | 1 |
+| [`DexterityUp`](./Enums.md) | Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 2 | 2 |
+| [`IntelligenceUp`](./Enums.md) | Integer | The amount of Intelligence added as a flat bonus. | 2 | 3 |
+| [`NoHealthRegen`](./Enums.md) | Integer | Prevents the unit from regenerating health normally. | 2 | 1 |
+| [`Sleep`](./Enums.md) | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 2 | 2 |
+| [`Stun`](./Enums.md) | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | 1 |
 | [`AbilityOnBattleStart`](./Enums.md) | Enum || 1 | Flush |
-| [`AddInitiative`](./Enums.md) | Integer | The amount to add to the unit's initiative score, affecting turn order. | 1 | -99 |
-| [`AlphaTurns`](./Enums.md) | Integer | The number of additional alpha turns the unit receives at the start of combat. | 1 | 1 |
+| [`AddInitiative`](./Enums.md) | Integer | The amount of bonus or penalty to the unit's turn order initiative value. | 1 | -99 |
+| [`AlphaTurns`](./Enums.md) | Integer | The number of turns the unit acts first in battle; negative values may indicate last. | 1 | 1 |
 | [`ChangeTileUnderCharacterAtStart`](./Enums.md) | Enum || 1 | GlassTile |
-| [`DivineShield`](./Enums.md) | Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | 2 |
 | [`Fights`](./Enums.md) | Integer || 1 | 3 |
-| [`LuckUp`](./Enums.md) | Integer | Specifies the number of Luck stacks applied, where positive values increase critical hit chance and loot quality and negative values decrease them. | 1 | 1 |
-| [`Madness`](./Enums.md) | Integer | Specifies the number of Madness stacks applied, which cause the target to act randomly or attack allies; can be an integer, array `[stacks, probability]`, or a keyword alias. | 1 | 1 |
-| [`MissChance`](./Enums.md) | Integer | The percentage chance that the unit's attacks will miss. | 1 | 10 |
-| [`NoManaRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents mana regeneration. | 1 | 1 |
-| [`PermanentConfusion`](./Enums.md) | Integer | The number of PermanentConfusion stacks applied, causing persistent confusion. | 1 | 1 |
-| [`ProbeCharmed`](./Enums.md) | Integer | The number of stacks of ProbeCharmed status, which charms the target when probed. | 1 | 1 |
-| [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase (or decrease if negative) applied to a random stat. | 1 | 1 |
-| [`Rot`](./Enums.md) | Integer | The number of stacks of Rot, causing damage over time and potentially spawning a fly on death; can be an array `[stacks, probability]`. | 1 | 2 |
-| [`Slow`](./Enums.md) | Integer | The number of turns of Slow applied, or an array with duration and chance. | 1 | 3 |
-| [`SpiderInfested`](./Enums.md) | Integer | The number of turns the target is infested with spiders, taking damage over time. | 1 | 1 |
-| [`Tarred`](./Enums.md) | Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. | 1 | 1 |
-| [`TempStrengthUp`](./Enums.md) | Integer | Alias for TempStrengthUp; temporarily increases the unit's strength stat. | 1 | 1 |
+| [`LuckUp`](./Enums.md) | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | 1 |
+| [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | 1 |
+| [`MissChance`](./Enums.md) | Integer | The flat percentage chance that the unit's attacks will miss. | 1 | 10 |
+| [`NoManaRegen`](./Enums.md) | Integer | The unit does not naturally regenerate mana per turn. Value indicates the stage or flag enabling this restriction. | 1 | 1 |
+| [`PermanentConfusion`](./Enums.md) | Integer | If set to 1, the unit is permanently confused and cannot be cured. | 1 | 1 |
+| [`ProbeCharmed`](./Enums.md) | Integer | The number of charm stacks applied by a probe. | 1 | 1 |
+| [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | 1 |
+| [`Rot`](./Enums.md) | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 1 | 2 |
+| [`Slow`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | 3 |
+| [`SpiderInfested`](./Enums.md) | Integer | The number of spider infestation stacks applied. | 1 | 1 |
+| [`Tarred`](./Enums.md) | Integer | The amount of tarred stacks applied, or an [stacks, probability] array. | 1 | 1 |
+| [`TempStrengthUp`](./Enums.md) | Integer | The number of stacks of temporary Strength Up applied to the unit. | 1 | 1 |
 
 </details>
 
@@ -797,13 +797,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 37 ||
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 37 ||
 | `random` | Number || 25 ||
 | `int` | Enum / Integer || 23 ||
 | `lck` | Enum / Integer || 20 ||
-| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 20 ||
+| `spd` | Enum / Integer | The Speed stat value or modifier. | 20 ||
 | `str` | Enum / Integer || 18 ||
-| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 16 ||
+| [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable | The Charisma stat value or modifier. | 16 ||
 | `dex` | Enum / Integer || 10 ||
 
 </details>
@@ -824,10 +824,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 125 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 125 ||
-| [`reward`](#object-reward) | Object | Event Node: Story branch or dialog option representing the 'Reward' action. | 125 ||
-| [`else`](Abilities_and_Spells.md#object-else) | Object | Event Node: Story branch or dialog option representing the \'Else\' action. | 37 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 125 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 125 ||
+| [`reward`](#object-reward) | Object | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 125 ||
+| [`else`](Abilities_and_Spells.md#object-else) | Object | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 37 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | String || 2 ||
 
 </details>
@@ -848,13 +848,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 57 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 57 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 57 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 57 ||
 | [`label`](./Strings.md#string-label) | Variable || 57 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 56 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 55 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 3 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 55 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 3 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 2 ||
 
 </details>
@@ -877,11 +877,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | Variable || 44 ||
 | [`stat`](./Math_Equations.md) | Equation || 44 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 41 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 41 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 32 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 41 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 41 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 32 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 
 </details>
 
@@ -901,8 +901,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 40 ||
-| [`count`](./Arrays.md#array-count) | Array / Integer | Quantity. | 34 ||
+| [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 40 ||
+| [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 34 ||
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum || 31 ||
 | [`side`](./Enums.md#enum-side) | Enum || 3 ||
 
@@ -924,9 +924,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the loot pool, ability pool, or item category from which an item or effect is selected; can be a specific pool name, table index, or inline array. | 39 ||
+| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 39 ||
 | [`restrict`](./Arrays.md#array-restrict) | Array || 30 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 
 </details>
@@ -947,7 +947,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 38 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 38 ||
 | [`prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 20 ||
 | [`event_now_same_cat`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
 | [`set_adventure_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 6 ||
@@ -956,12 +956,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`event_now`](./Engine_EventKeys.md#valid-property-keys) | `String` || 4 ||
 | [`conditional_reward`](#object-conditional_reward) | Object || 4 ||
 | [`random_pool`](./Enums.md) | Array || 3 | [event_now] |
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 2 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `Array` | Grants an item from the specified pool or a specific item name. | 2 ||
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 2 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Event Node: Story branch or dialog option representing the 'Damage' action. | 1 ||
+| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 ||
 | `next_event_bonus` | `Number` || 1 ||
-| [`random_mutation`](#object-random_mutation) | Object | Event Reward: Applies a completely random mutation to a character. | 1 ||
-| [`self_status_next_fight`](#object-self_status_next_fight) | Object | Event Penalty/Reward: Applies a status effect specifically to the character that triggered the event during the next combat encounter. | 1 ||
+| [`random_mutation`](#object-random_mutation) | Object | The number of random mutations applied to the unit. | 1 ||
+| [`self_status_next_fight`](#object-self_status_next_fight) | Object | An object defining status effects applied to the unit at the start of the next fight. | 1 ||
 | [`set_legacy_token`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
 
 </details>
@@ -982,12 +982,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 32 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 32 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 32 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 32 ||
 | [`label`](./Strings.md#string-label) | String || 32 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 32 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 30 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 30 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 ||
 
 </details>
 
@@ -1007,13 +1007,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 25 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 25 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 25 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 25 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 25 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 25 ||
 | [`label`](./Strings.md#string-label) | Variable || 25 ||
 | [`stat`](./Math_Equations.md) | Equation || 25 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 2 ||
 
 </details>
 
@@ -1034,20 +1034,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `eyes` | Number || 13 ||
-| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 11 ||
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 11 ||
 | `ears` | Number || 10 ||
 | `eyebrows` | Number || 8 ||
-| `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 7 ||
+| `head` | Enum / Number | The catalog ID for the cat's head part. | 7 ||
 | `legs` | Number || 7 ||
 | `arms` | Number || 6 ||
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 6 ||
-| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 ||
-| `eye1` | Integer | The visual ID (integer) of the first eye part applied to the cat. | 3 ||
-| `arm1` | Number | The visual ID (integer/number) of the first arm part applied to the cat. | 2 ||
+| `body` | Number | The catalog ID for the cat's body part. | 6 ||
+| `tail` | Integer | The catalog ID for the cat's tail part. | 6 ||
+| `eye1` | Integer | The catalog ID for the cat's first eye part. | 3 ||
+| `arm1` | Number | The catalog ID for the cat's first arm part. | 2 ||
 | `ear1` | Integer || 2 ||
-| `eyebrow1` | Integer | The visual ID (integer) of the first eyebrow part applied to the cat. | 2 ||
-| `leg1` | Integer | The visual ID (integer) of the first leg part applied to the cat. | 2 ||
-| `eye2` | Integer | The visual ID (integer) of the second eye part applied to the cat. | 1 ||
+| `eyebrow1` | Integer | The catalog ID for the cat's first eyebrow part. | 2 ||
+| `leg1` | Integer | The catalog ID for the cat's first leg part. | 2 ||
+| `eye2` | Integer | The catalog ID for the cat's second eye part. | 1 ||
 
 </details>
 
@@ -1067,19 +1067,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 22 ||
-| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 6 | 2 |
-| [`Poison`](./Enums.md) | Integer | The number of Poison stacks applied, which deals poison damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 5 | 4 |
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 22 ||
+| [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 6 | 2 |
+| [`Poison`](./Enums.md) | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 5 | 4 |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md) | Enum || 3 | Flush |
-| [`NoHealthRegen`](./Enums.md) | Integer | If 1 or defined as an object, prevents health regeneration. | 3 | 1 |
-| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
-| [`DivineShield`](./Enums.md) | Integer | The number of charges of Divine Shield applied, which blocks the next instances of damage entirely; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
-| [`HealthRegenUp`](./Enums.md) | Integer | The amount of health regeneration (HealthRegen) granted by this damage instance. | 1 | 2 |
-| [`Immobile`](./Enums.md) | Integer | The number of turns of Immobile applied, or an array with duration and chance. | 1 | 1 |
-| [`Tangled`](./Enums.md) | Integer | The number of turns the target is unable to move, with optional [stacks, probability] format. | 1 | 2 |
-| [`Tarred`](./Enums.md) | Integer | The number of stacks of Tarred, making the unit more vulnerable to fire damage; can be an array `[stacks, probability]`. | 1 | 1 |
-| [`Webbed`](./Enums.md) | Integer | The number of Webbed stacks applied, which immobilizes the target and prevents movement; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 1 |
+| [`NoHealthRegen`](./Enums.md) | Integer | Prevents the unit from regenerating health normally. | 3 | 1 |
+| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | 2 |
+| [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | 2 |
+| [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | 2 |
+| [`Immobile`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | 1 |
+| [`Tangled`](./Enums.md) | Integer | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 1 | 2 |
+| [`Tarred`](./Enums.md) | Integer | The amount of tarred stacks applied, or an [stacks, probability] array. | 1 | 1 |
+| [`Webbed`](./Enums.md) | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 1 | 2 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 |
 
 </details>
 
@@ -1099,9 +1099,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 23 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 23 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 23 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 23 ||
 | [`label`](./Strings.md#string-label) | Variable || 23 ||
 | [`stat`](./Math_Equations.md) | Equation || 23 ||
 
@@ -1123,8 +1123,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 23 ||
-| [`conditional_reward`](#object-conditional_reward) | Object | Event Action: Provides a reward only if a specific condition is met. | 20 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 23 ||
+| [`conditional_reward`](#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 20 ||
 | `set_frame` | `Number` || 3 ||
 
 </details>
@@ -1145,8 +1145,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 21 ||
-| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Event Node: Triggers a narrative cutscene. | 21 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 21 ||
+| [`cutscene`](./Events_and_Encounters.md#object-cutscene) | `String` | Specifies the name of a cutscene to play. | 21 ||
 | `skip_result_screen` | Boolean || 21 ||
 
 </details>
@@ -1167,20 +1167,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 9 ||
-| `count` | Array / Integer | Quantity. | 8 ||
-| `tail` | Integer | Event Node: Story branch or dialog option representing the 'Tail' action. | 6 ||
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 9 ||
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 8 ||
+| `tail` | Integer | The catalog ID for the cat's tail part. | 6 ||
 | `ears` | Number || 5 ||
 | `eyes` | Number || 5 ||
 | `legs` | Number || 5 ||
-| `body` | Number | Event Node: Story branch or dialog option representing the 'Body' action. | 3 ||
+| `body` | Number | The catalog ID for the cat's body part. | 3 ||
 | `eyebrows` | Number || 3 ||
-| `head` | Enum / Number | Event Node: Story branch or dialog option representing the 'Head' action. | 3 ||
-| `arm1` | Number | The visual ID (integer/number) of the first arm part applied to the cat. | 2 ||
-| `arm2` | Number | The visual ID (integer/number) of the second arm part applied to the cat. | 2 ||
-| `leg1` | Integer | The visual ID (integer) of the first leg part applied to the cat. | 1 ||
-| `leg2` | Integer | The visual ID (integer) of the second leg part applied to the cat. | 1 ||
-| `texture` | Integer | The visual ID (integer) of the texture applied to the cat. | 1 ||
+| `head` | Enum / Number | The catalog ID for the cat's head part. | 3 ||
+| `arm1` | Number | The catalog ID for the cat's first arm part. | 2 ||
+| `arm2` | Number | The catalog ID for the cat's second arm part. | 2 ||
+| `leg1` | Integer | The catalog ID for the cat's first leg part. | 1 ||
+| `leg2` | Integer | The catalog ID for the cat's second leg part. | 1 ||
+| `texture` | Integer | The catalog ID for the cat's texture. | 1 ||
 
 </details>
 
@@ -1200,8 +1200,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | Quantity. | 15 ||
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 12 ||
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 15 ||
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 12 ||
 | `asymmetric` | Boolean || 8 ||
 
 </details>
@@ -1224,9 +1224,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String || 16 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 16 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 14 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 2 ||
 
 </details>
@@ -1247,11 +1247,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 14 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 14 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 14 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 ||
 | [`label`](./Strings.md#string-label) | String || 14 ||
 | [`stat`](./Math_Equations.md) | Equation || 14 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 13 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 13 ||
 
 </details>
 
@@ -1271,12 +1271,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 12 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 12 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 12 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 12 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 12 ||
 | [`label`](./Strings.md#string-label) | String || 12 ||
 | [`stat`](./Math_Equations.md) | Equation || 12 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -1296,12 +1296,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 ||
 | [`Fights`](./Enums.md) | Integer || 6 | 3 |
 | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object || 5 ||
 | [`StatusRandomEnemiesOnBattleStart`](#object-statusrandomenemiesonbattlestart) | Object || 3 ||
-| [`KillEnemyOfTypeAtBattleStart`](Engine_StatusAndPassiveKeys.md#object-killenemyoftypeatbattlestart) | Object | Encounter Modifier: Instantly kills one enemy of the specified type at the start of battle. | 2 ||
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 0 |
+| [`KillEnemyOfTypeAtBattleStart`](Engine_StatusAndPassiveKeys.md#object-killenemyoftypeatbattlestart) | Object | Specifies that a specific enemy type is killed at the start of the next battle. | 2 ||
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 |
 
 </details>
 
@@ -1323,9 +1323,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](./Strings.md#string-label) | String || 11 ||
 | [`stat`](./Math_Equations.md) | Equation || 11 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 7 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 4 ||
 
 </details>
@@ -1346,12 +1346,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 11 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 11 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 11 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 11 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 11 ||
 | [`label`](./Strings.md#string-label) | Variable || 11 ||
 | [`stat`](./Math_Equations.md) | Equation || 11 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -1393,12 +1393,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 8 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 8 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 8 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 8 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 8 ||
 | [`label`](./Strings.md#string-label) | String || 8 ||
 | [`stat`](./Math_Equations.md) | Equation || 8 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 
 </details>
 
@@ -1418,10 +1418,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 ||
 
 </details>
 
@@ -1441,11 +1441,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Math_Equations.md) | Equation || 7 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 
 </details>
 
@@ -1465,10 +1465,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 ||
 
 </details>
 
@@ -1488,10 +1488,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | String || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 ||
 
 </details>
 
@@ -1511,12 +1511,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 7 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 7 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Math_Equations.md) | Equation || 7 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -1536,12 +1536,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Math_Equations.md) | Equation || 7 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -1561,12 +1561,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 7 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 ||
 | [`label`](./Strings.md#string-label) | Variable || 7 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 7 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 7 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 ||
 
 </details>
 
@@ -1586,10 +1586,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Enums.md#enum-label) | Enum || 6 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 6 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 ||
 
 </details>
@@ -1610,10 +1610,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Enums.md#enum-label) | Enum || 6 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 6 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 6 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 ||
 
 </details>
@@ -1634,10 +1634,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Strings.md#string-label) | String || 6 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 6 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 5 ||
 
 </details>
 
@@ -1657,12 +1657,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Strings.md#string-label) | Variable || 6 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 5 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 
 </details>
@@ -1683,11 +1683,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Strings.md#string-label) | String || 6 ||
 | [`stat`](./Math_Equations.md) | Equation || 6 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 6 ||
 
 </details>
 
@@ -1707,13 +1707,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 6 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 6 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 6 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 ||
 | [`label`](./Strings.md#string-label) | Variable || 6 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 6 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -1735,7 +1735,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum || 5 ||
 | `same_cat` | Boolean || 5 ||
-| `count` | Array / Integer | Quantity. | 4 ||
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 4 ||
 
 </details>
 
@@ -1755,12 +1755,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specific entity tag required. | 8 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 8 ||
-| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
-| [`Stun`](./Enums.md) | Integer | The number of Stun stacks applied, which prevents the target from taking actions; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 2 | 1 |
-| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | All valid keys from the specified engine key are applicable to this context/block. | 2 |
-| [`AllStatsUp`](./Enums.md) | Integer | The amount (or array with duration and chance) of all stats increased (or decreased). | 1 | 1 |
+| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 8 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 ||
+| [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | 2 |
+| [`Stun`](./Enums.md) | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | 1 |
+| [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 |
+| [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | 1 |
 
 </details>
 
@@ -1780,9 +1780,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 5 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 ||
 | [`label`](./Strings.md#string-label) | Variable || 5 ||
 | [`stat`](./Math_Equations.md) | Equation || 5 ||
 
@@ -1804,9 +1804,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 5 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 ||
 | [`label`](./Strings.md#string-label) | String || 5 ||
 | [`stat`](./Math_Equations.md) | Equation || 5 ||
 
@@ -1828,13 +1828,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 5 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 5 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 5 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 5 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 ||
 | [`label`](./Strings.md#string-label) | String || 5 ||
 | [`stat`](./Math_Equations.md) | Equation || 5 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 
 </details>
 
@@ -1854,12 +1854,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
 | [`stat`](./Math_Equations.md) | Equation || 4 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 ||
 
 </details>
 
@@ -1879,9 +1879,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 3 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 3 ||
 
 </details>
@@ -1902,12 +1902,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 3 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 ||
 
 </details>
 
@@ -1927,8 +1927,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 ||
@@ -1951,7 +1951,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 ||
 | [`play_animation`](./Enums.md) | Array / Enum || 4 | [0] |
 | [`random_pool`](./Enums.md) | Array || 3 | [event_now] |
 | [`add_weather`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 ||
@@ -1975,12 +1975,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer | Specifies the charisma stat value as an integer or 'aux' for auxiliary stat assignment. | 4 ||
-| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 4 ||
+| `cha` | Enum / Integer | The Charisma stat value or modifier. | 4 ||
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 4 ||
 | `dex` | Enum / Integer || 4 ||
 | `int` | Enum / Integer || 4 ||
 | `lck` | Enum / Integer || 4 ||
-| `spd` | Enum / Integer | The speed stat value or modifier for the unit. | 4 ||
+| `spd` | Enum / Integer | The Speed stat value or modifier. | 4 ||
 | `str` | Enum / Integer || 4 ||
 
 </details>
@@ -2001,11 +2001,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 4 ||
 | [`label`](./Enums.md#enum-label) | Enum || 4 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 4 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 4 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 ||
 
 </details>
@@ -2026,11 +2026,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 4 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 4 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 ||
 | [`label`](./Strings.md#string-label) | String || 4 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 4 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 4 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 4 ||
 
 </details>
 
@@ -2050,11 +2050,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
 | [`stat`](./Math_Equations.md) | Equation || 3 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 ||
 
 </details>
 
@@ -2074,7 +2074,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The constitution stat value or modifier for the unit. | 2 ||
+| `con` | Enum / Integer | The Constitution stat value or modifier. | 2 ||
 
 </details>
 
@@ -2094,9 +2094,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 3 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 3 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 3 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 3 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 ||
 | [`label`](./Strings.md#string-label) | String || 3 ||
 | [`stat`](./Math_Equations.md) | Equation || 3 ||
 
@@ -2137,10 +2137,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | Quantity. | 7 ||
-| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 7 ||
-| [`Fear`](./Enums.md) | Integer | The number of Fear stacks applied, which reduces the target's accuracy and may cause it to flee; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 3 | 2 |
-| [`Bleed`](./Enums.md) | Integer | The number of Bleed stacks applied, which deals bleeding damage over time; an array `[stacks, probability]` can be used to specify the number of stacks and the chance of application. | 1 | 2 |
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 7 ||
+| [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 ||
+| [`Fear`](./Enums.md) | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | 2 |
+| [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | 2 |
 
 </details>
 
@@ -2160,10 +2160,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Enums.md#enum-label) | Enum || 2 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 2 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
 
 </details>
@@ -2184,8 +2184,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
 
@@ -2207,7 +2207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 
 </details>
@@ -2228,11 +2228,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -2251,8 +2251,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `initial_health` | Integer | The starting health of the unit before any modifiers. | 1 ||
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 1 ||
+| `initial_health` | Integer | The starting health of the unit when spawned. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 ||
 
 </details>
 
@@ -2293,9 +2293,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Math_Equations.md) | Equation || 2 ||
 
@@ -2317,11 +2317,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | Quantity. | 2 ||
+| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 ||
 | `ears` | Number || 2 ||
 | `eyebrows` | Number || 2 ||
 | `eyes` | Number || 2 ||
-| `mouth` | Number | The visual ID (number) of the mouth part applied to the cat. | 2 ||
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 2 ||
 
 </details>
 
@@ -2341,9 +2341,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Math_Equations.md) | Equation || 2 ||
 
@@ -2365,8 +2365,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
 
@@ -2388,7 +2388,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 
 </details>
@@ -2409,8 +2409,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 2 ||
 
@@ -2432,9 +2432,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| `chance` | Number | Probability weight for this outcome. | 1 ||
-| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Event Action: Rewards the player with an item drawn from a specific loot pool. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 ||
+| [`get_item_from_pool`](./Events_and_Encounters.md#object-get-item-from-pool) | `String` | Grants an item from the specified pool or a specific item name. | 1 ||
 
 </details>
 
@@ -2454,12 +2454,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | Variable || 2 ||
 | [`stat`](./Enums.md#enum-stat) | Variable || 2 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -2479,12 +2479,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -2505,7 +2505,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 
 </details>
@@ -2526,11 +2526,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 2 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 2 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 ||
 | [`label`](./Strings.md#string-label) | String || 2 ||
 | [`stat`](./Math_Equations.md) | Equation || 2 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 2 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 ||
 
 </details>
 
@@ -2550,7 +2550,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -2572,9 +2572,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -2596,10 +2596,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -2620,10 +2620,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -2644,11 +2644,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -2669,9 +2669,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -2693,7 +2693,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -2717,11 +2717,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -2742,10 +2742,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -2765,8 +2765,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -2788,8 +2788,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -2811,7 +2811,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
 
@@ -2833,11 +2833,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -2857,9 +2857,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -2881,7 +2881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`copy_results`](./Enums.md#enum-copy_results) | Enum || 1 ||
 | `fixed_chance` | Number || 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
@@ -2905,10 +2905,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
@@ -2932,9 +2932,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -2956,11 +2956,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -2980,7 +2980,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3002,7 +3002,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3024,11 +3024,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -3049,9 +3049,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3073,9 +3073,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3097,11 +3097,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3121,11 +3121,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3145,8 +3145,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3168,11 +3168,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3192,10 +3192,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3215,9 +3215,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3239,9 +3239,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3263,11 +3263,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3287,9 +3287,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3311,7 +3311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3333,11 +3333,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -3357,11 +3357,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -3382,9 +3382,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3406,9 +3406,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3430,8 +3430,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3453,13 +3453,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
@@ -3482,13 +3482,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
@@ -3511,13 +3511,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
@@ -3540,13 +3540,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
@@ -3569,8 +3569,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3592,9 +3592,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3616,7 +3616,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -3639,7 +3639,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -3660,9 +3660,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -3683,10 +3683,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -3707,7 +3707,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3729,8 +3729,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3752,9 +3752,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -3774,9 +3774,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3798,9 +3798,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -3822,11 +3822,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -3847,7 +3847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the template identifier of the entity to spawn, referencing a predefined character or object in the game data. | 1 ||
+| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 ||
 
 </details>
 
@@ -3867,11 +3867,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 
 </details>
 
@@ -3891,7 +3891,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -3914,7 +3914,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -3935,8 +3935,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3958,8 +3958,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -3981,8 +3981,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4004,11 +4004,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`hint_chapter_exit`](./Enums.md#enum-hint_chapter_exit) | Enum || 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -4029,7 +4029,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -4052,8 +4052,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4075,11 +4075,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4099,9 +4099,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4123,9 +4123,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4147,9 +4147,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4171,10 +4171,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4194,9 +4194,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4218,8 +4218,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4241,10 +4241,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4266,9 +4266,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4290,11 +4290,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
 | `fixed_chance` | Number || 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4316,11 +4316,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -4341,8 +4341,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4364,7 +4364,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -4387,7 +4387,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4409,10 +4409,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -4433,8 +4433,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4478,7 +4478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -4499,8 +4499,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4522,7 +4522,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4544,11 +4544,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4568,9 +4568,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4592,11 +4592,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4616,8 +4616,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4639,10 +4639,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -4663,7 +4663,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4685,11 +4685,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4709,9 +4709,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4733,9 +4733,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -4756,9 +4756,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4780,9 +4780,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -4803,11 +4803,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4827,15 +4827,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum || 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 | `stat_max` | Number || 1 ||
 | `stat_min` | Number || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4855,11 +4855,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4879,7 +4879,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -4901,11 +4901,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -4925,10 +4925,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -4949,11 +4949,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
 | `fixed_chance` | Number || 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -4975,11 +4975,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -5000,8 +5000,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5023,11 +5023,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5047,9 +5047,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5071,9 +5071,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -5094,7 +5094,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -5117,7 +5117,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -5140,7 +5140,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -5163,12 +5163,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -5189,11 +5189,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5213,10 +5213,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -5237,10 +5237,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -5261,13 +5261,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5287,10 +5287,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -5311,7 +5311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5333,7 +5333,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -5356,9 +5356,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5380,9 +5380,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5404,11 +5404,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -5451,8 +5451,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5474,8 +5474,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5497,9 +5497,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5521,9 +5521,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5545,9 +5545,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5569,10 +5569,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -5593,9 +5593,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5617,11 +5617,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5641,8 +5641,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5664,9 +5664,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5688,8 +5688,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5711,7 +5711,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
@@ -5734,7 +5734,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5756,8 +5756,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 
 </details>
@@ -5778,9 +5778,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5802,11 +5802,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5826,9 +5826,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -5850,11 +5850,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -5874,9 +5874,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`bad`](#object-bad) | Object || 1 ||
 
 </details>
@@ -5897,8 +5897,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5920,8 +5920,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5943,8 +5943,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5966,8 +5966,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -5989,8 +5989,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -6012,8 +6012,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -6035,7 +6035,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Enums.md#enum-label) | Enum || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
@@ -6057,11 +6057,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation clip to use for the ability’s meta representation. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
+| [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
 
 </details>
 
@@ -6081,9 +6081,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -6104,9 +6104,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -6127,9 +6127,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -6150,9 +6150,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Enums.md#enum-stat) | Enum || 1 ||
 
 </details>
@@ -6173,9 +6173,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -6197,9 +6197,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
@@ -6221,11 +6221,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | In addition to the other properties in this table, other keys from the specified engine dictionary may or may not also be applicable in this object. | 1 ||
-| [`bad`](#object-bad) | Object | Event Node: Story branch or dialog option representing the 'Bad' action. | 1 ||
-| [`good`](./Events_and_Encounters.md#context-good) | Boolean | Event Node: Story branch or dialog option representing the \'Good\' action. | 1 ||
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Object | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 ||
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](./Events_and_Encounters.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
 | [`label`](./Strings.md#string-label) | String || 1 ||
-| [`requirements`](#object-requirements) | Object | Event Block: Pre-requisites (e.g., minimum gold, specific item, or minimum stat value) needed to select an option. | 1 ||
+| [`requirements`](#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 1 ||
 | [`stat`](./Math_Equations.md) | Equation || 1 ||
 
 </details>
@@ -6248,14 +6248,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | String | Undocumented. | 1 | `choice_coins_ten` |
-| `animation_fail` | String | Undocumented. | 1 | `choice_no_coins` |
-| [`bad`](#object-bad) | Object | Undocumented. | 1 ||
-| [`good`](#object-good) | Object | Undocumented. | 1 ||
-| `label` | String | Undocumented. | 1 | `"EVENT_BUY_ANSW"` |
-| `stat` | String | Undocumented. | 1 | `coins` |
-| `stat_max` | Number | Undocumented. | 1 | `10` |
-| `stat_min` | Number | Undocumented. | 1 | `10` |
+| `animation` | String | Specifies the animation played when the ability is used. | 1 | `choice_coins_ten` |
+| `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](#object-good) | Object | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
+| `label` | String | Specifies the localization key or display string for an event option. | 1 | `"EVENT_BUY_ANSW"` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `10` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `10` |
 
 </details>
 
@@ -6268,14 +6268,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | String | Undocumented. | 1 | `choice_coins_twentyfive` |
-| `animation_fail` | String | Undocumented. | 1 | `choice_no_coins` |
-| [`bad`](#object-bad) | Object | Undocumented. | 1 ||
-| [`good`](#object-good) | Object | Undocumented. | 1 ||
-| `label` | String | Undocumented. | 1 | `"EVENT_BUY_ANSW"` |
-| `stat` | String | Undocumented. | 1 | `coins` |
-| `stat_max` | Number | Undocumented. | 1 | `25` |
-| `stat_min` | Number | Undocumented. | 1 | `25` |
+| `animation` | String | Specifies the animation played when the ability is used. | 1 | `choice_coins_twentyfive` |
+| `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| [`bad`](#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 ||
+| [`good`](#object-good) | Object | If true, indicates the positive outcome branch for events or spawning contexts. | 1 ||
+| `label` | String | Specifies the localization key or display string for an event option. | 1 | `"EVENT_BUY_ANSW"` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `25` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `25` |
 
 </details>
 
@@ -6288,9 +6288,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation` | String | Undocumented. | 3 | `choice_dex_alt` |
-| `copy_results` | String | Undocumented. | 3 | `examine` |
-| `label` | String | Undocumented. | 3 | `"EVENT_PICK_ANSW"` |
-| `stat` | String | Undocumented. | 3 | `dex` |
+| `animation` | String | Specifies the animation played when the ability is used. | 3 | `choice_dex_alt` |
+| `copy_results` | String | Specifies the identifier of another option whose outcomes are replicated. | 3 | `examine` |
+| `label` | String | Specifies the localization key or display string for an event option. | 3 | `"EVENT_PICK_ANSW"` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 3 | `dex` |
 
 </details>
