@@ -187,7 +187,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 </details>
 
 
----
+---  
 
 
 ### Object: `meta`
