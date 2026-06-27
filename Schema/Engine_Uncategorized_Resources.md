@@ -230,9 +230,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
@@ -292,7 +292,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`formula`](./Math_Equations.md) | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 | [`Slow`](./Arrays.md#array-slow) | Equation | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `-1`<br>`1`<br>`2` |
@@ -399,7 +399,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 | [`ForceImmediateMoveAndAttack`](./Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
@@ -488,7 +488,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`DelayCastAbility`](./Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
 
 </details>
@@ -613,7 +613,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 2 | `1`<br>`10`<br>`2` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -770,10 +770,10 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 3 | `1` |
 | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 2 | `1` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 1 | `1` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 1 | `1`<br>`10`<br>`2` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 1 | `1`<br>`10`<br>`2` |
 | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 1 | `25` |
 
 </details>
@@ -961,12 +961,12 @@
 | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` |
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 2 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`EvolveAbilityFromPool`](./Miscellaneous.md#object-evolveabilityfrompool) | Enum / Object  | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 | `1` |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
 | [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
@@ -1011,7 +1011,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -2116,7 +2116,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -2179,7 +2179,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -2573,7 +2573,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`add`](./Arrays.md#array-add) | Array / Integer | The amount or an array of values added to the event's advantage or item tint. | 1 | `5`<br>`[0.05 0.05 0.05]` |
+| [`add`](./Arrays.md#array-add) | Array / Equation | The amount or an array of values added to the event's advantage or item tint. | 1 | `5`<br>`[0.05 0.05 0.05]` |
 | [`options`](./Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 1 | `[smash bash open]` |
 
 </details>
@@ -2813,7 +2813,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 10 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
+| `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 10 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -2976,7 +2976,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -3377,7 +3377,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 | `-10`<br>`0`<br>`1` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -3443,7 +3443,7 @@
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 
 </details>
 
@@ -3565,7 +3565,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 1 | `1` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -3992,7 +3992,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | If true, the effect only applies to allied units. | 1 | `false`<br>`true` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -4173,7 +4173,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 20 | `-3`<br>`10`<br>`2` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 18 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 18 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `height` | Integer | The height in tiles the target is launched into the air. | 16 | `0`<br>`1`<br>`2` |
 | `circular_variance` | Integer | The random variance in the knockback direction, in tiles. | 1 | `2` |
 
@@ -4196,7 +4196,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 3 | `1`<br>`3`<br>`5` |
-| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 1 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
+| `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 1 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 
 </details>
 
@@ -4501,7 +4501,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `stack_scale` | Integer | The scaling factor for how many stacks of the over-heal status are applied. | 1 | `0` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
 
@@ -4703,7 +4703,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 20 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
+| [`RandomStatDown`](./Arrays.md#array-randomstatdown) | Array / Equation / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 20 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -5044,7 +5044,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`style`](./Arrays.md#array-style) | Array | Specifies the visual styles (e.g., crit) used for the fake damage display. | 1 | `[crit]` |
 
 </details>
@@ -5166,7 +5166,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 7 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 7 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
@@ -5228,9 +5228,9 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `consume` | Boolean | If true, the status is consumed after triggering. | 2 | `true` |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
@@ -5273,7 +5273,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -5293,7 +5293,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | The number of backflip charges, or an object defining its ability. | 2 | `1`<br>`2`<br>`X` |
+| [`BackflipWhenTargeted`](./Math_Equations.md) | Integer / Object | The number of backflip charges, or an object defining its ability. | 2 | `1`<br>`2`<br>`X` |
 | [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
 
 </details>
@@ -5344,12 +5344,12 @@
 | `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 3 | `-1`<br>`-2`<br>`1` |
 | [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
+| `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum | The name of the specific item to find and add to the source's inventory. | 1 | `BoneClub`<br>`Molars`<br>`Pearl` |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Specifies the name of the disorder gained. | 1 | `Chungus`<br>`Psychosis` |
-| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -5409,7 +5409,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5429,7 +5429,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`FillMana`](./Arrays.md#array-fillmana) | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
 
@@ -6979,7 +6979,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | Specifies the tag that units must have to be affected by this aura. | 1 | `humanoid` |
 | [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -8358,7 +8358,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
@@ -8560,7 +8560,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Charge` | Integer | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. | 1 | `1`<br>`2`<br>`3` |
 
 </details>
 
@@ -9995,7 +9995,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -10138,9 +10138,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Quivered`](./Arrays.md#array-quivered) | Array / Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 10 | `1`<br>`2`<br>`5` |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 | `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 1 | `1` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
@@ -10305,7 +10305,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 15 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 15 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 15 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `stored_food_value` | Integer | The amount of food value stored in this pickup. | 15 | `0`<br>`1`<br>`2` |
 | `anything_eats` | Boolean | If true, any unit can consume this health pickup. | 4 | `true` |
 | `force_frame` | Integer | Forces the health pickup to use a specific animation frame. | 1 | `12` |
@@ -10349,7 +10349,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`frame_range`](./Arrays.md#array-frame_range) | Array | Specifies the minimum and maximum animation frame for the health pickup. | 3 | `[1 2]`<br>`[11 12]`<br>`[13 13]` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -11312,8 +11312,8 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| [`initiative`](./Enums.md#enum-initiative) | Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
 | [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
@@ -11893,7 +11893,7 @@
 | [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -11916,7 +11916,7 @@
 | [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -11938,7 +11938,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -12192,7 +12192,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `include_spells` | Boolean | If true, the AI-controlled bonus turn includes spells as available actions. | 1 | `true` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -12776,7 +12776,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `enemies_only` | Boolean | If true, the arc lightning effect only chains to enemy units, ignoring allies. | 4 | `false`<br>`true` |
 | `max_distance` | Integer | The maximum range in tiles for the arc lightning to chain to subsequent targets. | 4 | `1`<br>`2`<br>`3` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`chance`](./Enums.md#enum-chance) | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `ignore_self` | Boolean | If true, the arc lightning effect does not chain to or affect the source unit itself. | 1 | `true` |
 
@@ -13039,7 +13039,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -13517,7 +13517,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`fail_ability`](./Enums.md#enum-fail_ability) | Enum | Specifies the ability to be used when the parent condition (e.g., breaking free) fails. | 3 | `CHuskDropFail`<br>`LennyStruggleFail`<br>`XXX` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -13930,7 +13930,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 | `true` |
 
 </details>
@@ -14032,7 +14032,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 1 | `{ . . . }` |
 
 </details>
@@ -16750,7 +16750,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 
@@ -16833,7 +16833,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`banned_abilities`](./Arrays.md#array-banned_abilities) | Array | A list of ability IDs that are excluded from random selection or usage in the Metronome effect. | 1 ||
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -18166,10 +18166,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `revive_health` | Integer | The amount of health (as a flat integer or percentage) the unit revives with. | 3 | `1`<br>`100%`<br>`50%` |
-| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| [`AllStatsUp`](./Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 
 </details>
@@ -18634,7 +18634,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `pop_chance` | Integer | The percentage chance that the first round is skipped. | 1 | `50%` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -18697,7 +18697,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 | `true` |
 
 </details>
@@ -18930,7 +18930,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 3 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -19318,7 +19318,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alt_art`](./Enums.md#enum-alt_art) | Enum | Specifies an alternative art asset name to use for the status. | 1 | `TangledMeat` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -19600,7 +19600,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`add`](./Arrays.md#array-add) | Array / Integer | The amount or an array of values added to the event's advantage or item tint. | 1 | `5`<br>`[0.05 0.05 0.05]` |
+| [`add`](./Arrays.md#array-add) | Array / Equation | The amount or an array of values added to the event's advantage or item tint. | 1 | `5`<br>`[0.05 0.05 0.05]` |
 | [`ignore_if_str_aux_equals`](./Enums.md#enum-ignore_if_str_aux_equals) | Enum | Specifies the string aux value at which to ignore the tinting operation. | 1 | `ModelingClay_Default` |
 | [`mul`](./Arrays.md#array-mul) | Array | An array of three floats (RGB) used to multiply the item's tint color. | 1 | `[0.45 0.3 0.25]` |
 
@@ -19785,7 +19785,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`crit_chance`](./Enums.md#enum-crit_chance) | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
+| [`crit_chance`](./Enums.md#enum-crit_chance) | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
 
@@ -20127,7 +20127,7 @@
 | [`cWaggle`](./Miscellaneous.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 2 | `{ . . . }` |
 | [`cWaggle2x2`](./Miscellaneous.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 2 | `{ . . . }` |
 | [`cWaggle3x3`](./Miscellaneous.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 
@@ -20392,7 +20392,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `reset_percent` | Integer | The percentage of the ramp-up value to reset to upon casting. | 1 | `50%` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 

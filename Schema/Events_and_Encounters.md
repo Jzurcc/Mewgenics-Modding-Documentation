@@ -138,7 +138,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `party_heal` | `Number` || 15 | `1`<br>`10`<br>`100%` |
 | `party_damage` | `Number` || 15 | `1`<br>`10`<br>`2` |
 | [`get_item`](./Engine_EventKeys.md#valid-property-keys) | `String` || 14 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
-| `heal` | `Number` | An equation string that determines the amount of health restored by this damage instance. | 13 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
+| `heal` | `Equation` | An equation string that determines the amount of health restored by this damage instance. | 13 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | [`gain_disorder`](./Engine_EventKeys.md#valid-property-keys) | `String` || 12 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
 | [`override_end_option_prompt`](./Engine_EventKeys.md#valid-property-keys) | `String` || 11 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
 | [`party_status_next_fight`](./Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 11 | `{ . . . }` |
@@ -338,7 +338,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gain_clone_familiar`](./Miscellaneous.md#object-gain_clone_familiar) | Object  | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 | `{ . . . }` |
 | [`get_full_item_set_from_pool`](./Engine_EventKeys.md#valid-property-keys) | `String` || 1 | `common` |
 | [`global_effect_next_fight`](./Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 1 | `{ . . . }` |
-| `heal` | `Number` | An equation string that determines the amount of health restored by this damage instance. | 1 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
+| `heal` | `Equation` | An equation string that determines the amount of health restored by this damage instance. | 1 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | [`lose_item`](./Engine_EventKeys.md#valid-property-keys) | String || 1 | `equipped`<br>`inventory`<br>`parasite` |
 | `next_event_bonus` | Number || 1 | `-1`<br>`-2`<br>`1` |
 | [`next_event_from_set`](./Events_and_Encounters.md#object-next-event-from-set) | String | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 | `CatHole`<br>`Tragedy`<br>`WatchingHead2` |
@@ -754,19 +754,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Bleed`](./Enums.md) | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 20 | `1`<br>`10`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 13 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 7 | `-1`<br>`-2`<br>`1` |
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 5 | `-1`<br>`-2`<br>`-4` |
-| [`StrengthUp`](./Enums.md) | Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 5 | `"max(int, 0)"`<br>`-1`<br>`-2` |
+| [`StrengthUp`](./Enums.md) | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 5 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`AbilityOnBattleStart_Immediate`](./Enums.md#enum-abilityonbattlestart_immediate) | Enum  || 4 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 4 | `-1`<br>`-2`<br>`1` |
 | [`AddStartingMana`](./Enums.md) | Integer | The amount of bonus mana the unit starts each battle with. | 3 | `20`<br>`5` |
-| [`Burn`](./Enums.md) | Integer | The amount of Burn applied, either as a fixed number or a formula string. | 3 | `1`<br>`10`<br>`2` |
+| [`Burn`](./Enums.md) | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 3 | `1`<br>`10`<br>`2` |
 | [`CharismaUp`](./Enums.md) | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 3 | `-1`<br>`-2`<br>`1` |
 | [`Confusion`](./Enums.md) | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 3 | `1`<br>`2`<br>`3` |
 | [`Webbed`](./Enums.md) | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`[1 .1]` |
 | [`Blind`](./Enums.md) | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 2 | `-1`<br>`1`<br>`2` |
 | [`Bruise`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 2 | `1`<br>`2`<br>`3` |
-| [`DexterityUp`](./Enums.md) | Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 2 | `-1`<br>`1`<br>`2` |
-| [`IntelligenceUp`](./Enums.md) | Integer | The amount of Intelligence added as a flat bonus. | 2 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| [`DexterityUp`](./Enums.md) | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 2 | `-1`<br>`1`<br>`2` |
+| [`IntelligenceUp`](./Enums.md) | Array / Equation | The amount of Intelligence added as a flat bonus. | 2 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`NoHealthRegen`](./Enums.md) | Integer | Prevents the unit from regenerating health normally. | 2 | `1` |
 | [`Sleep`](./Enums.md) | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
 | [`Stun`](./Enums.md) | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
@@ -782,7 +782,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`NoManaRegen`](./Enums.md) | Integer | The unit does not naturally regenerate mana per turn. Value indicates the stage or flag enabling this restriction. | 1 | `1` |
 | [`PermanentConfusion`](./Enums.md) | Integer | If set to 1, the unit is permanently confused and cannot be cured. | 1 | `1` |
 | [`ProbeCharmed`](./Enums.md) | Integer | The number of charm stacks applied by a probe. | 1 | `1` |
-| [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| [`RandomStatUp`](./Enums.md) | Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Rot`](./Enums.md) | Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 1 | `-999999`<br>`1`<br>`2` |
 | [`Slow`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
 | [`SpiderInfested`](./Enums.md) | Integer | The number of spider infestation stacks applied. | 1 | `1`<br>`2`<br>`4` |

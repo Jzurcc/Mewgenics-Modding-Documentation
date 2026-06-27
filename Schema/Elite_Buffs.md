@@ -21,7 +21,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2985 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 | `Default`<br>`FormChange`<br>`Druid` |
 | `icon_frame` | Integer | The sprite frame index for the buff icon. | 74 | `141`<br>`148`<br>`149` |
-| `value` | Float | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
+| `value` | Equation | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
 | `unique` | Boolean | If true, this buff can only appear once per unit. | 36 | `true` |
 | `specific_chapter` | Integer | The chapter in which this buff is exclusive to. | 8 | `1`<br>`2`<br>`3` |
 | [`minion_alt`](./Enums.md#enum-minion_alt) | Enum | The alternative minion type to spawn for this buff. | 5 | `SlightlyDepressing`<br>`SubTwin`<br>`SubUndying` |
@@ -349,7 +349,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `health` | Integer | The maximum hit points of the unit. | 4 | `0`<br>`1`<br>`10` |
 | [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 3 | `{ . . . }` |
 
@@ -374,7 +374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `aura_effects_allies` | Boolean | If false, the aura does not affect allies. | 4 | `false` |
 | [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
 

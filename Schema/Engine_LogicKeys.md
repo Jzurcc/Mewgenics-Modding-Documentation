@@ -38,7 +38,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | [`EvolveAbilityFromPool`](./Miscellaneous.md#object-evolveabilityfrompool) | Enum / Object  | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 26 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
 | [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
 | [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 23 | `{ . . . }` |
-| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 21 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 21 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | [`Sleep`](./Arrays.md#array-sleep) | Array / Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 21 | `1`<br>`2`<br>`3` |
 | [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 17 | `{ . . . }` |
 | [`struggle_ability`](./Enums.md#enum-struggle_ability) | Enum | Specifies the name of the ability the consumed unit uses to attempt escape. | 17 | `CHuskStruggle`<br>`CaveWomanEscape`<br>`LennyStruggle` |
@@ -52,7 +52,7 @@ This document is the authoritative reference for Logic Blocks. All of the contex
 | `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 11 | `true` |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 11 | `deferred`<br>`false`<br>`true` |
 | [`Conditional_FormulaIsPositive`](./Miscellaneous.md#object-conditional_formulaispositive) | Object  | Defines effects that apply only if a given formula evaluates to a positive value. | 10 | `{ . . . }` |
-| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
+| `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
 | `X` | Variable | A generic variable placeholder often used for coordinates or unknown values. | 10 ||
 | [`Nuke`](./Miscellaneous.md#object-nuke) | Object  | Defines a nuke form with no attack or movement options. | 10 | `{ . . . }` |
 | `OverrideChainKnockback` | Integer | The custom number of tiles for chain knockback, overriding the default. | 9 | `0`<br>`1`<br>`10` |
@@ -298,16 +298,16 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `1`<br>`2`<br>`3` |
-| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
+| `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
-| `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. || `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. || `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
 | [`EquipPermanentItem`](./Enums.md#enum-equippermanentitem) | Enum  | The name of the item to permanently equip to the source. || `BoneClub`<br>`Kidney` |
@@ -320,9 +320,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`GainCoinsRange`](./Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. || `{ . . . }` |
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
 
@@ -361,7 +361,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 1 | `{ . . . }` |
 | [`Conditional_PlayerCat`](./Miscellaneous.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
 
@@ -398,19 +398,19 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 36 | `1`<br>`2`<br>`3` |
 | `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 8 | `1`<br>`2`<br>`3` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
 | [`Conditional_PlayerCat`](./Miscellaneous.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | `HealthGain` | Integer | The amount of health restored to the source. || `1`<br>`10`<br>`2` |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. || `-1`<br>`-2`<br>`-4` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. || `-1`<br>`1`<br>`2` |
 | `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. || `10`<br>`4`<br>`X` |
@@ -470,8 +470,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. || `1`<br>`8` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
@@ -545,11 +545,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. || `1` |
 | [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. || `{ . . . }`<br>`1`<br>`2`<br>`3` |
@@ -635,9 +635,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_FinishedSpawning`](./Miscellaneous.md#object-conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. || `1` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
@@ -663,10 +663,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
 
 </details>
@@ -686,10 +686,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
-| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. || `1`<br>`[1 .10]`<br>`[1 .25]` |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
 
@@ -706,7 +706,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`formula`](./Enums.md#enum-formula) | Enum | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
@@ -779,7 +779,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`10`<br>`2` |
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 
@@ -800,11 +800,11 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
 | [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
@@ -834,7 +834,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_OncePerBattle`](./Miscellaneous.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 1 | `{ . . . }` |
 | [`threshold_expr`](./Enums.md#enum-threshold_expr) | Enum | A mathematical expression whose result is used as the dynamic health threshold for the conditional. | 1 | `item_aux` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. || `{ . . . }`<br>`1`<br>`6` |
 | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. || `1`<br>`10`<br>`2` |
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
@@ -856,7 +856,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. || `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
@@ -931,7 +931,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 
 </details>
 
@@ -1060,7 +1060,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1096,7 +1096,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`key`](./Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
 | `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. || `1`<br>`2` |
@@ -1141,7 +1141,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
 | `Scrambled` | Integer | The number of stacks of Scrambled applied. || `1`<br>`2` |
 
 </details>
@@ -1178,7 +1178,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
 | [`SetItemAux`](./Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. || `{ . . . }` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. || `1`<br>`2`<br>`3` |
@@ -1257,8 +1257,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_HealthThreshold`](./Miscellaneous.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1279,14 +1279,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
 | [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` |
 | [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
 | [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`Conditional_Displaceable`](./Miscellaneous.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
 | [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
@@ -1296,9 +1296,9 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Object`](./Miscellaneous.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | [`Conditional_Speculative`](./Miscellaneous.md#object-conditional_speculative) | Object  | Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. || `Default`<br>`FormChange`<br>`Druid` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). || `-1`<br>`-2`<br>`1` |
 | [`AllyInfested`](./Miscellaneous.md#object-allyinfested) | Array / Float / Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. || `{ . . . }` |
-| `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
+| `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). || `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
@@ -1351,10 +1351,10 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
 | [`Blind`](./Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` |
 | [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
+| `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 6 | `1`<br>`2`<br>`3` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` |
-| `MoveQuivered` | Integer | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
+| `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`[1, 0.1]` |
 | [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
 | [`Conditional_InForm`](./Miscellaneous.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 5 | `{ . . . }` |
 | [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
@@ -1386,7 +1386,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`MagicWeakness`](./Arrays.md#array-magicweakness) | Array / Integer  | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
 | [`PoisonLace`](./Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String  | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
 | [`Purge`](./Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object  | The number of status effects to purge from the target. | 2 | `{ . . . }`<br>`0`<br>`3` |
-| `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Reflect`](./Engine_StatusAndPassiveKeys.md#object-reflect) | Integer / Object  | The amount of reflect stacks applied. | 2 | `{ . . . }`<br>`1`<br>`5` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`SoulLink`](./Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object  | The number of soul link stacks applied. | 2 | `{ . . . }`<br>`1` |
@@ -1411,14 +1411,14 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | [`BurgleCoin`](./Arrays.md#array-burglecoin) | Array / Integer  | The number of coins stolen from the target, or an array of `[number, probability]`. || `1`<br>`3`<br>`[1 .5]` |
 | [`ChangeTile`](./Passives_and_Statuses.md#object-changetile) | Enum / Object  | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). || `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. || `DirtTile`<br>`GlassTile`<br>`LavaTile` |
-| `Charge` | Integer | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
+| `Charge` | Equation | The number of charge stacks applied. || `1`<br>`2`<br>`3` |
 | `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. || `-1`<br>`-2`<br>`1` |
 | [`Charmed`](./Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. || `1`<br>`2`<br>`3` |
 | [`Cleave`](./Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. || `{ . . . }`<br>`1` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. || `-1`<br>`-2`<br>`1` |
 | [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. || `{ . . . }` |
 | `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). || `1` |
-| `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. || `-1`<br>`1`<br>`2` |
+| `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. || `-1`<br>`1`<br>`2` |
 | `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. || `1`<br>`2`<br>`3` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. || `1`<br>`2`<br>`4` |
 | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. || `1`<br>`2`<br>`3` |
@@ -1440,12 +1440,12 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. || `1` |
 | [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. || `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). || `25`<br>`50`<br>`999` |
-| `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. || `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. || `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. || `1`<br>`10`<br>`2` |
 | [`KnockOutCoin`](./Miscellaneous.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. || `{ . . . }`<br>`1`<br>`[1 .5]` |
 | `Lifesteal` | Integer | The amount of lifesteal stacks applied. || `1`<br>`3` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. || `-1`<br>`-2`<br>`-4` |
-| `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
+| `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. || `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `ManaLeeches` | Integer | The number of mana leech stacks applied. || `1`<br>`2` |
 | `MovementUp` | Integer | The amount of movement increase or decrease applied. || `-2`<br>`1`<br>`2` |
 | `NonStackingDivineShield` | Integer | The number of Divine Shield stacks that do not stack with duplicates. || `1` |
@@ -1478,7 +1478,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | `SpiderInfested` | Integer | The number of spider infestation stacks applied. || `1`<br>`2`<br>`4` |
 | [`StatusAllCharactersOnSpawn`](./Passives_and_Statuses.md#object-statusallcharactersonspawn) | Object  | Defines status effects applied to all characters when they spawn into the battlefield. || `{ . . . }` |
 | [`StatusGroup`](./Passives_and_Statuses.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. || `{ . . . }` |
-| `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
+| `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. || `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`Tangled`](./Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. || `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | [`Tarred`](./Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. || `1`<br>`2`<br>`[1 .1]` |
 | `TempCounterAttack` | Integer | The number of turns TempCounterAttack lasts, ticking down at the start of the unit's turn. || `1` |
@@ -2433,7 +2433,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 | :--- | :--- | :--- | :--- | :--- |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| `AllStatsUp` | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Stealth`](./Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 1 | `1`<br>`2`<br>`[1 .1]` |
 
@@ -3154,7 +3154,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `damage` | Equation | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| `damage` | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -5475,8 +5475,8 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dampening` | Float / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 74 | `.1`<br>`.25`<br>`.5` |
-| `friction` | Float / String | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `.1`<br>`.2`<br>`.5` |
+| `dampening` | Float | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 74 | `.1`<br>`.25`<br>`.5` |
+| `friction` | Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 70 | `.1`<br>`.2`<br>`.5` |
 | [`plane`](./Enums.md#enum-plane) | Enum  | Specifies the direction the particle bounces off. Valid values are "right" and "back". | 32 | `back`<br>`right` |
 | `position` | Float | The world-space coordinates for this object. | 32 | `10.5`<br>`[4.5 4.5]` |
 | `rotation_dampening` | Number | The amount of rotational velocity retained after bouncing, where 1 is full retention. | 1 | `1` |
@@ -5521,7 +5521,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `dampening` | Float / String | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 6 | `.1`<br>`.25`<br>`.5` |
+| `dampening` | Float | A multiplier for how much velocity is retained on bounce, from 0 (lost) to 1 (perfect). | 6 | `.1`<br>`.25`<br>`.5` |
 | `friction` | Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 6 | `.1`<br>`.2`<br>`.5` |
 | `end_on_collision` | Boolean | If true, the particle is destroyed when it collides with a line. | 2 | `true` |
 
@@ -6129,7 +6129,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 4 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 4 | `-999999`<br>`.05*X`<br>`.25` |
 | [`class`](./Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. || `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 | [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
 | [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. || `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
@@ -6150,7 +6150,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
+| `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`style`](./Arrays.md#array-style) | Array  | Specifies the visual styles (e.g., crit) used for the fake damage display. || `[crit]` |
 
 </details>

@@ -1570,7 +1570,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
 | `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 | [`set`](./Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
 
@@ -1693,11 +1693,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 | `desc` | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
-| `int` | Number | The Intelligence stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
+| `int` | Integer | The Intelligence stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
 
@@ -1719,7 +1719,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
 
@@ -1741,7 +1741,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 | `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
 | `name` | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `shield` | Number | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 
 </details>
 
