@@ -18,7 +18,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 664 | `common`<br>`rare`<br>`cha` |
+| [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 883 | `common`<br>`rare`<br>`cha` |
 | [`rare`](./Enums.md) | Integer | Defines the rare reward block for a boss encounter. | 34 | `1`<br>`10`<br>`15` |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum   |  | 19 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 12 | `10`<br>`20`<br>`30` |
