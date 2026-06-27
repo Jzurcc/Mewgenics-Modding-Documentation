@@ -20,35 +20,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2731 | `damage_instance`<br>`spell`<br>`false` |
 | [`desc`](./Enums.md#enum-desc) | Enum | Specifies the localized description string for the item or ability. | 2423 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. | 1195 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`set`](./Enums.md#enum-set) | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. | 985 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 985 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 664 | `common`<br>`rare`<br>`cha` |
 | [`image`](./Arrays.md#array-image) | Array | Array of image filenames used for the related editor object. | 578 | `"empty.png"`<br>`["1.png" "pyrophina.png"]`<br>`["1.png" "zaratana.png"]` |
 | `category` | Number | The sorting or grouping category for this entity in the level editor. | 576 | `-100`<br>`1`<br>`10` |
 | `paint` | Boolean | If true, this entity can be painted in the level editor. | 576 | `false`<br>`true` |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 461 | `{ . . . }` |
-| [`abilities`](Characters_and_Bosses.md#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 460 | `{ . . . }` |
+| [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 461 | `{ . . . }` |
+| [`abilities`](./Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 460 | `{ . . . }` |
 | `Comfort` | Number | The amount of comfort provided by the furniture piece to the room. | 406 | `-1`<br>`-2`<br>`-3` |
 | `Appeal` | Number | The amount of appeal provided by the furniture piece to the room. | 338 | `-1`<br>`-2`<br>`-4` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 | `Default`<br>`FormChange`<br>`Druid` |
 | `Stimulation` | Number | The amount of stimulation provided by the furniture piece to the room. | 268 | `-1`<br>`-2`<br>`1` |
-| [`popup`](#object-popup) | Object | An object defining a popup notification with prompt and optional unlock. | 266 | `{ . . . }` |
-| [`intro`](Events_and_Encounters.md#object-intro) | Object | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 | `{ . . . }` |
+| [`popup`](./Progression_Unlocks.md#object-popup) | Object  | An object defining a popup notification with prompt and optional unlock. | 266 | `{ . . . }` |
+| [`intro`](./NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 | `{ . . . }` |
 | `pitch` | Variable | The sound pitch multiplier for the character's voice or sounds. | 223 | `.3`<br>`.5`<br>`.6` |
 | [`image_tint`](./Arrays.md#array-image_tint) | Array | An array specifying the tint colors applied to the image, using color names or RGBA arrays. | 222 | `["red"]`<br>`[[0,.5,0], [0,.5,0]]`<br>`[black grey]` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 210 | `-1`<br>`1`<br>`1000` |
 | `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 210 | `1`<br>`1000`<br>`1001` |
-| `palette` | Enum / Integer | Specifies the color palette index for the ability's visuals. | 210 | `-1`<br>`0`<br>`1` |
+| [`palette`](./Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 210 | `-1`<br>`0`<br>`1` |
 | [`voice`](./Enums.md#enum-voice) | Enum | Determines which voice set or type is used for the character. | 209 | `ankylosaurus`<br>`female1`<br>`female10` |
 | `righteye` | Number | The sprite frame index for the character's right eye. | 200 | `1`<br>`100`<br>`1001` |
 | `lefteye` | Number | The sprite frame index for the character's left eye. | 198 | `1`<br>`100`<br>`1001` |
 | `claws` | Number | The sprite frame index for the character's claws. | 196 | `1`<br>`1032`<br>`2` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 194 | `-1`<br>`-2`<br>`1` |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 191 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| [`shield`](./Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 191 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | `rightear` | Number | The sprite frame index for the character's right ear. | 188 | `1000`<br>`1001`<br>`1004` |
 | `leftear` | Number | The sprite frame index for the character's left ear. | 187 | `1`<br>`1000`<br>`1001` |
-| `head` | Enum / Number | The catalog ID for the cat's head part. | 184 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 184 | `-1`<br>`1`<br>`1.3` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 182 | `-1`<br>`1000`<br>`1001` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 181 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 181 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 179 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 177 | `-1`<br>`-2`<br>`1` |
 | `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 176 | `1`<br>`1000`<br>`1001` |
@@ -56,7 +56,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 174 | `-1`<br>`-2`<br>`1` |
 | `body` | Number | The catalog ID for the cat's body part. | 173 | `-1`<br>`1`<br>`1.1` |
 | `leg2` | Integer | The catalog ID for the cat's second leg part. | 172 | `-1`<br>`1`<br>`10` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 161 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 161 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `emit_rate` | Number | The rate of particle emission per second. | 158 | `.5`<br>`1`<br>`10` |
 | [`emit_amount`](./Arrays.md#array-emit_amount) | Array | The number of particles emitted per burst. | 158 | `1`<br>`10`<br>`100` |
 | [`render_mode`](./Enums.md#enum-render_mode) | Enum | The rendering mode for particles (e.g., 'default', 'separate'). | 157 | `default`<br>`separate` |
@@ -66,18 +66,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`emit_direction`](./Arrays.md#array-emit_direction) | Array | The initial direction vector for emitted particles. | 151 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 144 | `0`<br>`1`<br>`10` |
 | `speed_start` | Number | The initial speed of particles. | 139 | `-2`<br>`.001`<br>`.1` |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 131 | `{ . . . }` |
+| [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 131 | `{ . . . }` |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array | An array specifying [chapter, class] that must be completed to unlock this reward. | 129 | `[boneyard Butcher]`<br>`[boneyard Colorless]`<br>`[boneyard Druid]` |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum | Specifies which item is unlocked immediately when this unlock condition is met. | 127 | `AnointingOil`<br>`BagOfBags`<br>`BagOfSeeds` |
 | [`live_bounds`](./Arrays.md#array-live_bounds) | Array | The bounds within which particles can exist. | 122 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](#object-scripts) | Object | An object containing particle system scripts like forces or collisions. | 108 | `{ . . . }` |
+| [`scripts`](./Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 108 | `{ . . . }` |
 | [`size_start`](./Arrays.md#array-size_start) | Array | The starting size of particles. | 105 | `.1`<br>`.2`<br>`.3` |
 | `pieces_required` | Number | The number of scrap pieces required to craft this item. | 101 | `3` |
 | [`emit_box`](./Arrays.md#array-emit_box) | Array | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 100 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 89 | `+1`<br>`-1`<br>`-2` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 89 | `+1`<br>`-1`<br>`-2` |
 | [`size_end`](./Arrays.md#array-size_end) | Variable | The size (scalar or 2D vector) of the effect at the end of its animation. | 81 | `.1`<br>`.2`<br>`.3` |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 79 | `-1`<br>`-2`<br>`-3` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 78 | `-1`<br>`-10`<br>`-2` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 79 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 78 | `-1`<br>`-10`<br>`-2` |
 | `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 77 | `true` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 76 | `false`<br>`true` |
 | [`tooltip_stackless`](./Strings.md#string-tooltip_stackless) | Variable | A localization key for the tooltip description of this status effect when it has no stack count. | 76 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
@@ -87,7 +87,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`speed_scale`](./Arrays.md#array-speed_scale) | Array | A multiplier for particle speed. | 69 | `.05`<br>`.1`<br>`.2` |
 | [`frame_label`](./Enums.md#enum-frame_label) | Enum | Specifies the frame or cutscene animation label for the boss encounter. | 67 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
 | `Health` | Number | The amount of health provided by the furniture piece to the room. | 67 | `-1`<br>`-2`<br>`-5` |
-| `int` | Enum / Integer | The Intelligence stat value or modifier. | 66 | `-1`<br>`-10`<br>`-2` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 66 | `-1`<br>`-10`<br>`-2` |
 | `alpha_end` | Number | The alpha (opacity) value at the end of the effect's duration or animation. | 61 | `.2`<br>`.5`<br>`0` |
 | [`alias`](./Enums.md#enum-alias) | Enum | Specifies the reference name of another status effect to alias or copy properties from. | 57 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | `distance_to_ally` | Number | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
@@ -98,11 +98,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `total_distance_moved` | Number | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
 | [`rotation`](./Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 55 | `-90`<br>`90`<br>`[-10 10]` |
 | [`value`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
-| `lck` | Enum / Integer | The Luck stat value or modifier. | 53 | `-1`<br>`-2`<br>`-3` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 53 | `-1`<br>`-2`<br>`-3` |
 | [`trigger_npc_sequence`](./Enums.md#enum-trigger_npc_sequence) | Enum | The name of an NPC dialogue sequence to trigger. | 53 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 | `Evolution` | Number | The amount of evolution provided by the furniture piece to the room. | 53 | `1`<br>`2`<br>`4` |
 | `alpha_start` | Number | The alpha (opacity) value at the start of the effect's duration or animation. | 53 | `-1`<br>`.5`<br>`.8` |
-| [`size`](./Arrays.md#array-size) | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 51 | `.2`<br>`.5`<br>`1` |
+| [`size`](./Enums.md#enum-size) | Enum / Number  | The scale factor (size multiplier) of the spawned unit. | 51 | `.2`<br>`.5`<br>`1` |
 | [`beat_house_boss`](./Enums.md#enum-beat_house_boss) | Enum | Specifies which house boss (or 'any') must be defeated to fulfill this unlock condition. | 48 | `any`<br>`guillotina_1`<br>`guillotina_2` |
 | [`str`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | The Strength stat value or modifier. | 45 | `-1`<br>`-2`<br>`-3` |
 | `alpha` | Variable | The alpha transparency value for the particle system (e.g., '0.03'). | 41 | `.005`<br>`.01`<br>`.03` |
@@ -158,20 +158,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `tile_layer` | Number | The layer index for tile rendering. | 26 | `0` |
 | [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 26 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`alpha_in`](./Enums.md#enum-alpha_in) | Enum | The alpha (opacity) value at the start of the effect's intro animation. | 24 | `.01`<br>`.05`<br>`.1` |
-| [`breakdown`](#object-breakdown) | Object | Defines the breakdown of item pools or rewards for a shop or event. | 24 | `{ . . . }` |
-| [`item_groups`](#object-item_groups) | Object | Defines groups of items that can appear in a shop or loot. | 24 | `{ . . . }` |
+| [`breakdown`](./Shops.md#object-breakdown) | Object  | Defines the breakdown of item pools or rewards for a shop or event. | 24 | `{ . . . }` |
+| [`item_groups`](./Shops.md#object-item_groups) | Object  | Defines groups of items that can appear in a shop or loot. | 24 | `{ . . . }` |
 | [`set_mapgen_flag`](./Enums.md#enum-set_mapgen_flag) | Enum | The name of a map generation flag to set when this event triggers. | 23 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
-| [`hard`](Combat_Rewards.md#object-hard) | Object | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `{ . . . }` |
-| [`miniboss`](Combat_Rewards.md#object-miniboss) | Object | An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances. | 23 | `{ . . . }` |
-| [`normal`](Characters_and_Bosses.md#object-normal) | Object | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 23 | `{ . . . }` |
+| [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `{ . . . }` |
+| [`miniboss`](./Miscellaneous.md#object-miniboss) | Object  | An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances. | 23 | `{ . . . }` |
+| [`normal`](./Miscellaneous.md#object-normal) | Object  | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 23 | `{ . . . }` |
 | [`combo`](./Arrays.md#array-combo) | Array | A list of particle effect names that are spawned together in sequence. | 23 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 | [`ownership`](./Enums.md#enum-ownership) | Enum | The ownership scope for the effect, such as local to the caster. | 23 | `local`<br>`local*/` |
 | [`chain`](./Enums.md#enum-chain) | Boolean | Specifies the ability to chain into and execute. | 22 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 | `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 22 | `0` |
-| [`event`](./Miscellaneous.md#context-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 22 | `Blessing`<br>`Death`<br>`Tragedy` |
+| [`event`](./Enums.md#enum-event) | Enum  | Specifies the event to force, either by name or by a nested object defining its type and level. | 22 | `Blessing`<br>`Death`<br>`Tragedy` |
 | [`level`](./Math_Equations.md) | Equation | The level or quest identifier to load. | 21 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 | [`debris`](./Enums.md#enum-debris) | Enum | Specifies the type of debris objects used in the map. | 21 | `CaveDebris`<br>`Debris`<br>`Debris10` |
-| [`global_objects`](#object-global_objects) | Object | Defines global objects or lighting settings for a map. | 21 | `{ . . . }` |
+| [`global_objects`](./Miscellaneous.md#object-global_objects) | Object  | Defines global objects or lighting settings for a map. | 21 | `{ . . . }` |
 | [`combat_background`](./Enums.md#enum-combat_background) | Enum | Specifies the background asset used in combat. | 21 | `AlleyBGTest`<br>`BoneYardBG`<br>`BunkerBG` |
 | [`combat_ui_background`](./Enums.md#enum-combat_ui_background) | Enum | Specifies the UI background asset used in combat. | 21 | `CoreUI`<br>`DesertUI`<br>`LabUI` |
 | [`event_piece_frame`](./Enums.md#enum-event_piece_frame) | Enum | Specifies the visual theme frame for event pieces. | 21 | `alley`<br>`bunker`<br>`caves` |
@@ -184,7 +184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`static_tall_b`](./Enums.md#enum-static_tall_b) | Enum | Specifies the sprite set for tall static objects (variant b). | 21 | `BunkerTall2`<br>`CoreTall2`<br>`CraterTall2` |
 | `divine_shield` | Integer | The number of stacks of the Divine Shield status this mutation provides. | 20 | `0`<br>`1`<br>`2` |
 | [`folder`](./Enums.md#enum-folder) | Enum | The subdirectory or group name used to organize related levels or content. | 20 | `alley`<br>`boneyard`<br>`bunker` |
-| [`easy`](Difficulties.md#object-easy) | Object | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
+| [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | Specifies the item pool identifier used by a chapter or boss to determine which items can be found. | 19 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
 | [`include`](./Strings.md#string-include) | String | Specifies the path to another file to include and merge into the current schema definition. | 19 ||
 | [`large`](./Arrays.md#array-large) | Array | An array of enemy unit identifiers used as the large enemy pool for an area or boss encounter. | 19 | `[Carnibulb]`<br>`[KillDozer]`<br>`[MegaFetus]` |
@@ -195,7 +195,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`gender`](./Enums.md#enum-gender) | Enum | Specifies the gender requirement for a breed or character. | 17 | `any`<br>`male` |
 | `champ_budget` | Number | The budget for champion units in an encounter. | 16 | `0`<br>`1`<br>`1.5` |
 | `elite_buffs` | Number | The number of buffs applied to elite units. | 16 | `1`<br>`10`<br>`15` |
-| [`lock_item_slot`](#object-lock_item_slot) | Object | An object that restricts which equipment slots can be used. | 16 | `{ . . . }` |
+| [`lock_item_slot`](./Passives_and_Statuses.md#object-lock_item_slot) | Object  | An object that restricts which equipment slots can be used. | 16 | `{ . . . }` |
 | `rare_elite_buffs` | Number | The number of rare buffs applied to elite units. | 16 | `1`<br>`10`<br>`15` |
 | `depth_bias` | Variable | The depth offset applied to a visual effect or sprite. | 16 | `-0.1`<br>`.25`<br>`0` |
 | `flat_movement` | Boolean | If true, movement speed is constant and not affected by terrain or modifiers. | 16 | `true` |
@@ -203,27 +203,27 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `champ_chance_mini` | Variable | The probability of a miniboss becoming a champion. | 15 | `.25`<br>`.5`<br>`1` |
 | [`default_face`](./Enums.md#enum-default_face) | Enum | Specifies the default facial expression for the unit's portrait. | 15 | `angry`<br>`happy`<br>`mad` |
 | `elite_budget` | Number | The budget for elite units in an encounter. | 15 | `0`<br>`1`<br>`2` |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 15 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 15 | `{ . . . }` |
 | [`adjectives`](./Arrays.md#array-adjectives) | Array | A list of descriptive words used to generate animal names. | 15 | `[` |
 | [`nouns`](./Arrays.md#array-nouns) | Array | A list of naming words used to generate animal names. | 15 | `[` |
 | [`rotation_speed`](./Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 15 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
 | [`tooltip_stacks_singular`](./Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 15 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 | [`complete_checklist_with_class`](./Enums.md#enum-complete_checklist_with_class) | Enum | Specifies the class required to complete the checklist for this unlock. | 14 | `Butcher`<br>`Colorless`<br>`Druid` |
 | [`id`](./Enums.md#enum-id) | Variable | The unique numerical identifier for this injury or status effect. | 14 | `-1`<br>`0`<br>`1` |
-| [`reverb`](#object-reverb) | Object | Defines reverb audio settings for different environments and battle contexts. | 14 | `{ . . . }` |
+| [`reverb`](./Miscellaneous.md#object-reverb) | Object  | Defines reverb audio settings for different environments and battle contexts. | 14 | `{ . . . }` |
 | [`inherit_speed`](./Arrays.md#array-inherit_speed) | Array | The fraction or range of the parent's speed that the particle inherits. | 14 | `.1`<br>`.15`<br>`0` |
 | `elite_chance_mini` | Variable | The probability of a miniboss becoming an elite. | 13 | `.25`<br>`.5`<br>`1` |
 | [`unlock_quest_item`](./Enums.md#enum-unlock_quest_item) | Enum | Specifies the quest item that is unlocked. | 13 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`GuillotinasHead` |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`deathsound`](./Enums.md#enum-deathsound) | Enum | The name of the sound effect played when the unit dies from this injury. | 13 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
 | [`render_layer`](./Enums.md#enum-render_layer) | Enum | The render layer on which the effect is drawn (e.g., background, top). | 13 | `background`<br>`sorted_distortions`<br>`splatters` |
-| [`requirements`](Events_and_Encounters.md#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 13 | `{ . . . }` |
+| [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 13 | `{ . . . }` |
 | [`text`](./Strings.md#string-text) | String | The localization key for the name of this injury. | 13 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
 | [`tooltip_stacks_neg`](./Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 13 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
 | `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 12 | `10`<br>`20`<br>`30` |
 | [`override_art`](./Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 12 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| [`states`](#object-states) | Object | Defines named animation states and their associated animation clips. | 12 | `{ . . . }` |
-| [`transitions`](#object-transitions) | Object | Defines named transitions between animation states. | 12 | `{ . . . }` |
+| [`states`](./NPC_Scripts.md#object-states) | Object  | Defines named animation states and their associated animation clips. | 12 | `{ . . . }` |
+| [`transitions`](./NPC_Scripts.md#object-transitions) | Object  | Defines named transitions between animation states. | 12 | `{ . . . }` |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 | [`size_in`](./Enums.md#enum-size_in) | Enum | The size of the effect at the beginning of its intro animation. | 12 | `.1`<br>`.3`<br>`.5` |
 | [`size_out`](./Enums.md#enum-size_out) | Enum | The target size of the particle or element at the end of its life. | 12 | `.25`<br>`.5`<br>`.9` |
@@ -236,9 +236,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `can_be_rare` | Boolean | If false, this item cannot appear with a rare quality. | 10 | `false` |
 | [`friction_end`](./Arrays.md#array-friction_end) | Array | The friction values applied to movement at the start of the particle's life. | 10 | `[.15 .15 .15]`<br>`[.2 .2 .2]`<br>`[.5 .5 .5]` |
 | [`right_icon`](./Enums.md#enum-right_icon) | Enum | The name of the icon to display on the right side of the damage text. | 10 | `coin`<br>`divineshield`<br>`heal` |
-| [`scars`](Injuries.md#object-scars) | Object | An object mapping body parts to ranges of scar texture indices applied on injury. | 10 | `{ . . . }` |
+| [`scars`](./Miscellaneous.md#object-scars) | Object  | An object mapping body parts to ranges of scar texture indices applied on injury. | 10 | `{ . . . }` |
 | [`tooltip_stacks_pos`](./Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 10 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 9 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 9 | `{ . . . }` |
 | `act` | Number | The act number (game progression stage) in which this encounter or script takes place. | 9 | `1`<br>`2`<br>`3` |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array | An array of alternative animation state replacements, each as [state, animation_name]. | 9 | `[`<br>`[[idle girlyIdle]]` |
 | [`arrival_unlock`](./Enums.md#enum-arrival_unlock) | Enum | The name of the cutscene or event that is unlocked upon arrival. | 9 | `npc_houseboss_intro_guillotina_1`<br>`npc_houseboss_intro_guillotina_2`<br>`npc_houseboss_intro_guillotina_3` |
@@ -246,7 +246,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`friction_start`](./Arrays.md#array-friction_start) | Array | The friction values applied to movement at the start of the particle's life. | 9 | `[.06 .06 .06]`<br>`[.2 .2 .2]`<br>`[.9 .9 .9]` |
 | `index` | Number | The index used to order or identify this encounter within its list. | 9 | `1`<br>`2`<br>`3` |
 | [`initial_cooldown`](./Arrays.md#array-initial_cooldown) | Array | A list of possible initial cooldown values (in turns) before the encounter can trigger. | 9 | `[0]`<br>`[3 7]` |
-| [`item_rarity_costs`](#object-item_rarity_costs) | Object | Defines the cost multipliers for each item rarity tier in a shop. | 9 | `{ . . . }` |
+| [`item_rarity_costs`](./Shops.md#object-item_rarity_costs) | Object  | Defines the cost multipliers for each item rarity tier in a shop. | 9 | `{ . . . }` |
 | `lead_time` | Number | The number of turns before the event activates. | 9 | `7` |
 | [`music`](./Enums.md#enum-music) | Enum | Specifies the name of the music track to play during the encounter. | 9 | `alley`<br>`guillotina`<br>`hitler3` |
 | [`rematch_cooldown`](./Arrays.md#array-rematch_cooldown) | Array | The minimum and maximum number of days before a rematch becomes available. | 9 | `[3 7]` |
@@ -254,19 +254,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stock_fill_order` | Object | Defines the order in which shop slots are filled from the stock list. | 9 | `{ . . . }` |
 | `unlit` | Boolean | If true, the effect is not affected by scene lighting. | 9 | `true` |
 | [`unlock_act_difficulty`](./Arrays.md#array-unlock_act_difficulty) | Array | An array containing the act number and difficulty level to unlock. | 9 | `[1 1]`<br>`[1 2]`<br>`[1 3]` |
-| [`unprompted`](#object-unprompted) | Object | Defines sequences of unprompted dialog events. | 8 | `{ . . . }` |
-| [`also`](#object-also) | Object | Defines an additional dialog sequence that plays alongside the main one. | 8 | `{ . . . }` |
+| [`unprompted`](./NPC_Scripts.md#object-unprompted) | Object  | Defines sequences of unprompted dialog events. | 8 | `{ . . . }` |
+| [`also`](./NPC_Scripts.md#object-also) | Object  | Defines an additional dialog sequence that plays alongside the main one. | 8 | `{ . . . }` |
 | `height` | Integer | The height in tiles the target is launched into the air. | 8 | `0`<br>`1`<br>`2` |
 | [`queue_cutscene_immediate`](./Enums.md#enum-queue_cutscene_immediate) | Enum | Determines which cutscene to play immediately upon queueing. | 8 | `caves_intro`<br>`core_intro`<br>`desert_intro` |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 | `{ . . . }` |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 8 | `{ . . . }` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 8 | `{ . . . }` |
 | `specific_chapter` | Number | The chapter in which this buff is exclusive to. | 8 | `1`<br>`2`<br>`3` |
-| [`unknown`](#object-unknown) | Object | A generic object container for dialog and rewards, often used for unprompted sequences. | 8 | `{ . . . }` |
+| [`unknown`](./NPC_Scripts.md#object-unknown) | Object  | A generic object container for dialog and rewards, often used for unprompted sequences. | 8 | `{ . . . }` |
 | `width` | Number | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
 | [`back_icon`](./Enums.md#enum-back_icon) | Enum | The name of the icon to display behind the damage text. | 8 | `bleed`<br>`burn`<br>`confusion` |
 | [`rotation_start`](./Arrays.md#array-rotation_start) | Array | The minimum and maximum starting rotation for a particle or visual effect. | 8 | `[-10, 10]`<br>`[0 360]`<br>`[0, 360]` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 7 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`button_nav`](#object-button_nav) | Object | Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons. | 7 | `{ . . . }` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 7 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`button_nav`](./Shops.md#object-button_nav) | Object  | Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons. | 7 | `{ . . . }` |
 | [`override_basic_attack`](./Enums.md#enum-override_basic_attack) | Enum | Specifies the ability that replaces the unit's basic attack. | 6 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | [`set_savefile_flag`](./Enums.md#enum-set_savefile_flag) | Enum | Determines which save file flag to set. | 6 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 | [`unlock_boss`](./Enums.md#enum-unlock_boss) | Enum | Determines which boss encounter to unlock. | 6 | `bumblefoot`<br>`gambit`<br>`infestedduo` |
@@ -297,7 +297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Fighter`](./Arrays.md#array-fighter) | Array | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 4 | `[` |
 | [`Thief`](./Arrays.md#array-thief) | Array | Form identifier for the Thief boss type. | 4 | `[` |
 | [`Tank`](./Arrays.md#array-tank) | Array | Form identifier for the Tank boss type, used for dialogue references. | 4 | `[` |
-| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 4 | `{ . . . }` |
+| [`Butcher`](./Engine_LogicKeys.md#object-butcher) | Object  | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 4 | `{ . . . }` |
 | [`Necromancer`](./Arrays.md#array-necromancer) | Array | Defines a list of quotes for the Necromancer class. | 4 | `[` |
 | [`Mage`](./Arrays.md#array-mage) | Array | Defines a list of quotes for the Mage class. | 4 | `[` |
 | [`Tinkerer`](./Arrays.md#array-tinkerer) | Array | Form identifier for the Tinkerer boss type. | 4 | `[` |
@@ -311,69 +311,69 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `cap_distance_to_ally` | Number | The maximum distance the AI will maintain from ally units. | 4 | `2`<br>`4`<br>`7` |
 | [`fail_item_quest`](./Enums.md#enum-fail_item_quest) | Enum | Determines which item quest is marked as failed. | 4 | `JarOfChaos`<br>`JarOfRadiatedBlood`<br>`JarOfRadiation` |
 | `fully_complete_difficulty` | Number | The difficulty level required to be fully completed. | 4 | `0`<br>`1`<br>`2` |
-| [`hide_text`](#object-hide_text) | Object | Defines a sequence that hides text dialogs and autopasses to the next step. | 4 | `{ . . . }` |
+| [`hide_text`](./NPC_Scripts.md#object-hide_text) | Object  | Defines a sequence that hides text dialogs and autopasses to the next step. | 4 | `{ . . . }` |
 | [`post_combat_cutscene`](./Enums.md#enum-post_combat_cutscene) | Enum | Determines which cutscene to play after a combat encounter. | 4 | `obelisk1_core`<br>`obelisk1_moon`<br>`obelisk2_core` |
-| [`purchase_item`](#object-purchase_item) | Object | Defines the dialog sequence for purchasing an item from an NPC. | 4 | `{ . . . }` |
-| [`time_machine`](Map_Generation_and_Routing.md#object-time_machine) | Object | Defines a special event node that leads to a time machine quest level. | 4 | `{ . . . }` |
+| [`purchase_item`](./NPC_Scripts.md#object-purchase_item) | Object  | Defines the dialog sequence for purchasing an item from an NPC. | 4 | `{ . . . }` |
+| [`time_machine`](./Miscellaneous.md#object-time_machine) | Object  | Defines a special event node that leads to a time machine quest level. | 4 | `{ . . . }` |
 | [`unlock_npc_tomorrow`](./Enums.md#enum-unlock_npc_tomorrow) | Enum | Specifies the NPC that will become available to interact with the next in-game day. | 4 | `beanies`<br>`jack`<br>`organgrinder` |
-| [`unprompted_a`](#object-unprompted_a) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the first variant. | 4 | `{ . . . }` |
-| [`unprompted_b`](#object-unprompted_b) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the second variant. | 4 | `{ . . . }` |
-| [`unprompted_c`](#object-unprompted_c) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the third variant. | 4 | `{ . . . }` |
-| [`unprompted_d`](#object-unprompted_d) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fourth variant. | 4 | `{ . . . }` |
-| [`unprompted_e`](#object-unprompted_e) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fifth variant. | 4 | `{ . . . }` |
-| [`unprompted_f`](#object-unprompted_f) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the sixth variant. | 4 | `{ . . . }` |
-| [`unprompted_g`](#object-unprompted_g) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the seventh variant. | 4 | `{ . . . }` |
-| [`unprompted_h`](#object-unprompted_h) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the eighth variant. | 4 | `{ . . . }` |
-| [`unprompted_i`](#object-unprompted_i) | Object | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the ninth variant. | 4 | `{ . . . }` |
+| [`unprompted_a`](./NPC_Scripts.md#object-unprompted_a) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the first variant. | 4 | `{ . . . }` |
+| [`unprompted_b`](./NPC_Scripts.md#object-unprompted_b) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the second variant. | 4 | `{ . . . }` |
+| [`unprompted_c`](./NPC_Scripts.md#object-unprompted_c) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the third variant. | 4 | `{ . . . }` |
+| [`unprompted_d`](./NPC_Scripts.md#object-unprompted_d) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fourth variant. | 4 | `{ . . . }` |
+| [`unprompted_e`](./NPC_Scripts.md#object-unprompted_e) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fifth variant. | 4 | `{ . . . }` |
+| [`unprompted_f`](./NPC_Scripts.md#object-unprompted_f) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the sixth variant. | 4 | `{ . . . }` |
+| [`unprompted_g`](./NPC_Scripts.md#object-unprompted_g) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the seventh variant. | 4 | `{ . . . }` |
+| [`unprompted_h`](./NPC_Scripts.md#object-unprompted_h) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the eighth variant. | 4 | `{ . . . }` |
+| [`unprompted_i`](./NPC_Scripts.md#object-unprompted_i) | Object  | Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the ninth variant. | 4 | `{ . . . }` |
 | [`visit_chapter`](./Enums.md#enum-visit_chapter) | Enum | Specifies the chapter area that the player must visit to trigger an event. | 4 | `dimensionx`<br>`future`<br>`iceage` |
 | `no_breed` | Boolean | If true, the cat cannot be bred. | 4 | `true` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `coins_bonus` | Variable | A multiplier for coin rewards in this act or chapter. | 3 | `.5`<br>`.75`<br>`1` |
 | `food_bonus` | Number | A multiplier for food rewards in this act or chapter. | 3 | `1`<br>`1.75`<br>`2.5` |
-| [`dimensionx`](Map_Generation_and_Routing.md#object-dimensionx) | Object | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
-| [`meatworld`](Map_Generation_and_Routing.md#object-meatworld) | Object | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
-| [`boneyard`](Map_Generation_and_Routing.md#object-boneyard) | Object | Specifies the name, map flag, or connection for the Boneyard area. | 3 | `{ . . . }` |
-| [`bunker`](Map_Generation_and_Routing.md#object-bunker) | Object | Specifies the name, map flag, or connection for the Bunker area. | 3 | `{ . . . }` |
-| [`core`](Map_Generation_and_Routing.md#object-core) | Object | Specifies the name, map flag, or connection for the Core area. | 3 | `{ . . . }` |
-| [`moon`](Map_Generation_and_Routing.md#object-moon) | Object | Specifies the name, map flag, or connection for the Moon area. | 3 | `{ . . . }` |
-| [`alley`](Map_Generation_and_Routing.md#object-alley) | Object | Specifies the name, map flag, or connection for the Alley area. | 3 | `{ . . . }` |
-| [`endoftime`](Map_Generation_and_Routing.md#object-endoftime) | Object | Configures various attributes of the End of Time area, depending on context. | 3 | `{ . . . }` |
-| [`crater`](Map_Generation_and_Routing.md#object-crater) | Object | Specifies the name, map flag, or connection for the Crater area. | 3 | `{ . . . }` |
-| [`desert`](Map_Generation_and_Routing.md#object-desert) | Object | Specifies the name, map flag, or connection for the Desert area. | 3 | `{ . . . }` |
-| [`future`](Events_and_Encounters.md#object-future) | Object | Specifies the name, map flag, or connection for the Future area. | 3 | `{ . . . }` |
+| [`dimensionx`](./Miscellaneous.md#object-dimensionx) | Object  | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
+| [`meatworld`](./Miscellaneous.md#object-meatworld) | Object  | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 3 | `{ . . . }` |
+| [`boneyard`](./Miscellaneous.md#object-boneyard) | Object  | Specifies the name, map flag, or connection for the Boneyard area. | 3 | `{ . . . }` |
+| [`bunker`](./Miscellaneous.md#object-bunker) | Object  | Specifies the name, map flag, or connection for the Bunker area. | 3 | `{ . . . }` |
+| [`core`](./Miscellaneous.md#object-core) | Object  | Specifies the name, map flag, or connection for the Core area. | 3 | `{ . . . }` |
+| [`moon`](./Miscellaneous.md#object-moon) | Object  | Specifies the name, map flag, or connection for the Moon area. | 3 | `{ . . . }` |
+| [`alley`](./Miscellaneous.md#object-alley) | Object  | Specifies the name, map flag, or connection for the Alley area. | 3 | `{ . . . }` |
+| [`endoftime`](./Miscellaneous.md#object-endoftime) | Object  | Configures various attributes of the End of Time area, depending on context. | 3 | `{ . . . }` |
+| [`crater`](./Miscellaneous.md#object-crater) | Object  | Specifies the name, map flag, or connection for the Crater area. | 3 | `{ . . . }` |
+| [`desert`](./Miscellaneous.md#object-desert) | Object  | Specifies the name, map flag, or connection for the Desert area. | 3 | `{ . . . }` |
+| [`future`](./Miscellaneous.md#object-future) | Object  | Specifies the name, map flag, or connection for the Future area. | 3 | `{ . . . }` |
 | [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`sewers`](Map_Generation_and_Routing.md#object-sewers) | Object | Specifies the name, map flag, or connection for the Sewers area. | 3 | `{ . . . }` |
+| [`sewers`](./Miscellaneous.md#object-sewers) | Object  | Specifies the name, map flag, or connection for the Sewers area. | 3 | `{ . . . }` |
 | [`stat`](./Enums.md#enum-stat) | Variable | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
-| [`iceage`](Map_Generation_and_Routing.md#object-iceage) | Object | Specifies the name, map flag, or connection for the Ice Age area. | 3 | `{ . . . }` |
-| [`jurassic`](Map_Generation_and_Routing.md#object-jurassic) | Object | Specifies the name, map flag, or connection for the Jurassic area. | 3 | `{ . . . }` |
-| [`lab`](Map_Generation_and_Routing.md#object-lab) | Object | Specifies the name, map flag, or connection for the Lab area. | 3 | `{ . . . }` |
-| [`theend`](Map_Generation_and_Routing.md#object-theend) | Object | Specifies the name, map flag, or connection for The End area. | 3 | `{ . . . }` |
-| [`caves`](Map_Generation_and_Routing.md#object-caves) | Object | Specifies the name, map flag, or connection for the Caves area. | 3 | `{ . . . }` |
-| [`junkyard`](Map_Generation_and_Routing.md#object-junkyard) | Object | Specifies the name, map flag, or connection for the Junkyard area. | 3 | `{ . . . }` |
+| [`iceage`](./Miscellaneous.md#object-iceage) | Object  | Specifies the name, map flag, or connection for the Ice Age area. | 3 | `{ . . . }` |
+| [`jurassic`](./Miscellaneous.md#object-jurassic) | Object  | Specifies the name, map flag, or connection for the Jurassic area. | 3 | `{ . . . }` |
+| [`lab`](./Miscellaneous.md#object-lab) | Object  | Specifies the name, map flag, or connection for the Lab area. | 3 | `{ . . . }` |
+| [`theend`](./Miscellaneous.md#object-theend) | Object  | Specifies the name, map flag, or connection for The End area. | 3 | `{ . . . }` |
+| [`caves`](./Miscellaneous.md#object-caves) | Object  | Specifies the name, map flag, or connection for the Caves area. | 3 | `{ . . . }` |
+| [`junkyard`](./Miscellaneous.md#object-junkyard) | Object  | Specifies the name, map flag, or connection for the Junkyard area. | 3 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`good`](./Miscellaneous.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
 | [`jestercat`](./Enums.md#enum-jestercat) | Enum | Specifies the boss or miniboss configuration for JesterCat, often set to "auto" for procedural generation. | 3 | `auto` |
 | `simple` | Boolean | If true, the AI uses simplified decision-making logic. | 3 | `true` |
 | [`trigger_npc_sequence_tomorrow`](./Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum | Determines which NPC sequence to schedule for the next day. | 3 | `butch_boneyard_intro`<br>`frank_caves_intro`<br>`jack_desert_intro` |
 | `chapter_common` | Number | The weight or probability for this entry to appear in the common loot pool for its chapter. | 3 | `1` |
-| [`cant_afford`](#object-cant_afford) | Object | Defines the dialog sequence that plays when the player attempts to purchase an item they cannot afford. | 3 | `{ . . . }` |
-| `chapter` | Enum | Specifies which chapter or scenario this ability is available in. | 3 | `1`<br>`alley` |
+| [`cant_afford`](./NPC_Scripts.md#object-cant_afford) | Object  | Defines the dialog sequence that plays when the player attempts to purchase an item they cannot afford. | 3 | `{ . . . }` |
+| [`chapter`](./Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 3 | `1`<br>`alley` |
 | `Chicken` | Equation | The number of chicken pickups spawned. | 3 | `.01`<br>`.1`<br>`2` |
 | `consider_aoe` | Boolean | If true, the AI considers area-of-effect damage when evaluating actions. | 3 | `false`<br>`true` |
 | `consumables` | Number | The number of consumable items provided or available in this context. | 3 | `10`<br>`60` |
 | `danger_avoidance` | Variable | A weight multiplier for the AI's tendency to avoid dangerous positions. | 3 | `.1`<br>`1000`<br>`20` |
 | `distance_to_aggro_target` | Number | The preferred distance the AI tries to maintain from its aggro target. Negative values indicate behind. | 3 | `-1`<br>`-10` |
 | `distance_to_corpse` | Variable | The preferred distance the AI tries to maintain from corpses. Negative values indicate moving towards. | 3 | `-.1`<br>`-100`<br>`0` |
-| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 3 | `{ . . . }` |
-| [`forward_to_tips`](#object-forward_to_tips) | Object | Defines a dialog sequence that forwards the player to a random tip dialog for the current NPC. | 3 | `{ . . . }` |
+| [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 3 | `{ . . . }` |
+| [`forward_to_tips`](./NPC_Scripts.md#object-forward_to_tips) | Object  | Defines a dialog sequence that forwards the player to a random tip dialog for the current NPC. | 3 | `{ . . . }` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
-| [`out_of_stock`](#object-out_of_stock) | Object | Defines the dialog sequence that plays when a shop item is out of stock. | 3 | `{ . . . }` |
-| [`pattern`](Characters_and_Bosses.md#object-pattern) | Object | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
+| [`out_of_stock`](./NPC_Scripts.md#object-out_of_stock) | Object  | Defines the dialog sequence that plays when a shop item is out of stock. | 3 | `{ . . . }` |
+| [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
 | `requires_monoclass_run` | Boolean | If true, this unlock requires the player to have completed a monoclass run. | 3 | `true` |
 | [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum | Specifies the NPC that must be unlocked before this event or unlock can occur. | 3 | `frank`<br>`jack`<br>`tracy` |
 | [`background_extra_shader`](./Enums.md#enum-background_extra_shader) | Enum | Specifies an additional visual shader effect applied to the background. | 3 | `crazyeye`<br>`meatpulse`<br>`water` |
 | [`complete_chapters`](./Arrays.md#array-complete_chapters) | Array | An array of chapter names that must be completed to unlock this entity. | 3 | `[caves boneyard]`<br>`[core moon]` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
 | [`emit_timespread_curve`](./Enums.md#enum-emit_timespread_curve) | Enum | The curve type (e.g., ease_out) that defines how emission rate changes over time. | 3 | `ease_out` |
 | [`initial_cutscene_day`](./Enums.md#enum-initial_cutscene_day) | Enum | The name of the cutscene that plays on the first day the encounter appears. | 3 | `kaiju_fight`<br>`moonboss_intro`<br>`pyro_intro` |
 | [`name_reference_applier`](./Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. | 3 | `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
@@ -381,116 +381,116 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`tooltip_reference_applier`](./Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. | 3 | `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
 | [`tooltip_stackless_neg`](./Strings.md#string-tooltip_stackless_neg) | String | Localization key for the tooltip of the negative variant when not showing stack count. | 3 | `"KEYWORD_DAMAGEDOWN_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"`<br>`"KEYWORD_TEMPINITDOWN_DESC"` |
 | [`speed_end`](./Arrays.md#array-speed_end) | Array | Speed parameter for an effect, either a scalar value or a range [min, max] for randomization. | 3 | `0`<br>`5`<br>`[0.7, 1]` |
-| `face` | Enum | The face equipment item assigned to the unit. | 2 | `1004`<br>`1019`<br>`AtomicMark` |
+| [`face`](./Enums.md#enum-face) | Enum  | The face equipment item assigned to the unit. | 2 | `1004`<br>`1019`<br>`AtomicMark` |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum | Specifies the NPC sequence to reset for re-triggering. | 2 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_begin` |
 | [`current_chapter_common`](./Engine_EventKeys.md#valid-property-keys) | Variable | A variable controlling the number of common item drops for the current chapter. | 2 | `55`<br>`auto` |
 | [`current_chapter_rare`](./Engine_EventKeys.md#valid-property-keys) | Variable | A variable controlling the number of rare item drops for the current chapter. | 2 | `10`<br>`auto` |
 | [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Variable | The weight or value for uncommon items specific to the current chapter. | 2 | `35`<br>`auto` |
 | [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Variable | The weight or value for very rare items specific to the current chapter. | 2 | `1`<br>`auto` |
-| [`amount`](./Enums.md#enum-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
-| [`BothObelisksUnlocked`](Engine_LogicKeys.md#object-bothobelisksunlocked) | Object | Configures the map event and art when both obelisks have been unlocked. | 2 | `{ . . . }` |
-| [`empty_armor_scaled_stats`](#object-empty_armor_scaled_stats) | Object | Defines the stat bonuses applied when no armor is equipped in a slot. | 2 | `{ . . . }` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
+| [`BothObelisksUnlocked`](./Miscellaneous.md#object-bothobelisksunlocked) | Object  | Configures the map event and art when both obelisks have been unlocked. | 2 | `{ . . . }` |
+| [`empty_armor_scaled_stats`](./Passives_and_Statuses.md#object-empty_armor_scaled_stats) | Object  | Defines the stat bonuses applied when no armor is equipped in a slot. | 2 | `{ . . . }` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| [`MeatWorldUnlocked`](Engine_LogicKeys.md#object-meatworldunlocked) | Object | Configures the map event and routes when MeatWorld is initially unlocked. | 2 | `{ . . . }` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`MeatWorldUnlocked`](./Miscellaneous.md#object-meatworldunlocked) | Object  | Configures the map event and routes when MeatWorld is initially unlocked. | 2 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`tutorial`](./Arrays.md#array-tutorial) | Array | An array of area names or paths used for tutorial references. | 2 | `AREA_NAME_TUTORIAL`<br>`[]` |
 | `basic_consumables` | Number | The weight value for basic consumable items in a random pool distribution. | 2 | `100`<br>`90` |
-| [`beanies_quests_intro`](#object-beanies_quests_intro) | Object | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 | `{ . . . }` |
-| [`beanies_quests_repeat`](#object-beanies_quests_repeat) | Object | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 | `{ . . . }` |
+| [`beanies_quests_intro`](./Progression_Unlocks.md#object-beanies_quests_intro) | Object  | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 | `{ . . . }` |
+| [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat) | Object  | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 | `{ . . . }` |
 | `cap_distance_to_enemy` | Number | The maximum distance the AI will maintain from enemy units. | 2 | `2`<br>`5` |
 | [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum | Specifies the location requirement (e.g., 'anywhere') for completing an adventure. | 2 | `anywhere` |
-| [`DimensionXUnlocked`](Engine_LogicKeys.md#object-dimensionxunlocked) | Object | Configures the map event and art when Dimension X is unlocked. | 2 | `{ . . . }` |
+| [`DimensionXUnlocked`](./Miscellaneous.md#object-dimensionxunlocked) | Object  | Configures the map event and art when Dimension X is unlocked. | 2 | `{ . . . }` |
 | `distance_to_water` | Variable | The preferred distance the AI tries to maintain from water tiles. Negative values indicate moving towards. | 2 | `-.0001`<br>`-1` |
 | `end_turn_on_formswitch` | Boolean | If true, the unit's turn ends immediately after switching forms. | 2 | `false`<br>`true` |
-| [`EndOfTimeUnlocked`](Engine_LogicKeys.md#object-endoftimeunlocked) | Object | Configures the map event and route visibility when End of Time is unlocked. | 2 | `{ . . . }` |
+| [`EndOfTimeUnlocked`](./Miscellaneous.md#object-endoftimeunlocked) | Object  | Configures the map event and route visibility when End of Time is unlocked. | 2 | `{ . . . }` |
 | `face_aggro_target` | Number | A weight multiplier for the AI's tendency to face its aggro target. | 2 | `1`<br>`10` |
-| [`FoodBig`](Engine_LogicKeys.md#object-foodbig) | Object | Specifies the definition and weight for a large food item in item pools. | 2 | `{ . . . }` |
-| [`FoodMedium`](Engine_LogicKeys.md#object-foodmedium) | Object | Specifies the definition and weight for a medium food item in item pools. | 2 | `{ . . . }` |
-| [`frank_max_intro`](#object-frank_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Frank. | 2 | `{ . . . }` |
-| [`frank_max_repeating`](#object-frank_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Frank at max favor. | 2 | `{ . . . }` |
+| [`FoodBig`](./Engine_LogicKeys.md#object-foodbig) | Object  | Specifies the definition and weight for a large food item in item pools. | 2 | `{ . . . }` |
+| [`FoodMedium`](./Engine_LogicKeys.md#object-foodmedium) | Object  | Specifies the definition and weight for a medium food item in item pools. | 2 | `{ . . . }` |
+| [`frank_max_intro`](./Progression_Unlocks.md#object-frank_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Frank. | 2 | `{ . . . }` |
+| [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Frank at max favor. | 2 | `{ . . . }` |
 | `GrassTile` | Number | The numerical identifier for a grass-type tile. | 2 | `15`<br>`80` |
-| [`hard_initial`](Map_Generation_and_Routing.md#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
-| [`HardPathUnlocked`](Engine_LogicKeys.md#object-hardpathunlocked) | Object | Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false. | 2 | `{ . . . }` |
-| [`house_upgrade_4throom`](#object-house_upgrade_4throom) | Object | Defines the dialog and house upgrade for unlocking the 4th room. | 2 | `{ . . . }` |
-| [`house_upgrade_attic`](#object-house_upgrade_attic) | Object | Defines the dialog and house upgrade for the attic. | 2 | `{ . . . }` |
-| [`house_upgrade_largehouse`](#object-house_upgrade_largehouse) | Object | Defines the dialog and house upgrade for the large house. | 2 | `{ . . . }` |
-| [`house_upgrade_mediumhouse`](#object-house_upgrade_mediumhouse) | Object | Defines the dialog and house upgrade for the medium house. | 2 | `{ . . . }` |
-| [`jack_max_intro`](#object-jack_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Jack. | 2 | `{ . . . }` |
-| [`jack_max_repeating`](#object-jack_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Jack at max favor. | 2 | `{ . . . }` |
-| [`jack_shopupgrade1`](#object-jack_shopupgrade1) | Object | Defines the dialog and shop level up for Jack's first shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade2`](#object-jack_shopupgrade2) | Object | Defines the dialog and shop level up for Jack's second shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade3`](#object-jack_shopupgrade3) | Object | Defines the dialog and shop level up for Jack's third shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade4`](#object-jack_shopupgrade4) | Object | Defines the dialog and shop level up for Jack's fourth shop upgrade. | 2 | `{ . . . }` |
+| [`hard_initial`](./Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
+| [`HardPathUnlocked`](./Miscellaneous.md#object-hardpathunlocked) | Object  | Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false. | 2 | `{ . . . }` |
+| [`house_upgrade_4throom`](./Progression_Unlocks.md#object-house_upgrade_4throom) | Object  | Defines the dialog and house upgrade for unlocking the 4th room. | 2 | `{ . . . }` |
+| [`house_upgrade_attic`](./Progression_Unlocks.md#object-house_upgrade_attic) | Object  | Defines the dialog and house upgrade for the attic. | 2 | `{ . . . }` |
+| [`house_upgrade_largehouse`](./Progression_Unlocks.md#object-house_upgrade_largehouse) | Object  | Defines the dialog and house upgrade for the large house. | 2 | `{ . . . }` |
+| [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#object-house_upgrade_mediumhouse) | Object  | Defines the dialog and house upgrade for the medium house. | 2 | `{ . . . }` |
+| [`jack_max_intro`](./Progression_Unlocks.md#object-jack_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Jack. | 2 | `{ . . . }` |
+| [`jack_max_repeating`](./Progression_Unlocks.md#object-jack_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Jack at max favor. | 2 | `{ . . . }` |
+| [`jack_shopupgrade1`](./Progression_Unlocks.md#object-jack_shopupgrade1) | Object  | Defines the dialog and shop level up for Jack's first shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade2`](./Progression_Unlocks.md#object-jack_shopupgrade2) | Object  | Defines the dialog and shop level up for Jack's second shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade3`](./Progression_Unlocks.md#object-jack_shopupgrade3) | Object  | Defines the dialog and shop level up for Jack's third shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade4`](./Progression_Unlocks.md#object-jack_shopupgrade4) | Object  | Defines the dialog and shop level up for Jack's fourth shop upgrade. | 2 | `{ . . . }` |
 | `only_at_battle_start` | Boolean | If true, this buff only applies at the start of battle. | 2 | `true` |
-| [`organ_max_intro`](#object-organ_max_intro) | Object | Defines the dialog sequence and rewards for reaching max favor with Organ Grinder. | 2 | `{ . . . }` |
-| [`organ_max_repeating`](#object-organ_max_repeating) | Object | Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor. | 2 | `{ . . . }` |
-| [`organ_unlock`](#object-organ_unlock) | Object | Defines the dialog and shop level up for unlocking Organ Grinder. | 2 | `{ . . . }` |
-| [`organ_upgrade1`](#object-organ_upgrade1) | Object | Defines the dialog and shop level up for Organ Grinder's first upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade2`](#object-organ_upgrade2) | Object | Defines the dialog and shop level up for Organ Grinder's second upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade3`](#object-organ_upgrade3) | Object | Defines the dialog and shop level up for Organ Grinder's third upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade4`](#object-organ_upgrade4) | Object | Defines the dialog and shop level up for Organ Grinder's fourth upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade5`](#object-organ_upgrade5) | Object | Defines the dialog and shop level up for Organ Grinder's fifth upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade6`](#object-organ_upgrade6) | Object | Defines the dialog and shop level up for Organ Grinder's sixth upgrade. | 2 | `{ . . . }` |
+| [`organ_max_intro`](./Progression_Unlocks.md#object-organ_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Organ Grinder. | 2 | `{ . . . }` |
+| [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor. | 2 | `{ . . . }` |
+| [`organ_unlock`](./Progression_Unlocks.md#object-organ_unlock) | Object  | Defines the dialog and shop level up for unlocking Organ Grinder. | 2 | `{ . . . }` |
+| [`organ_upgrade1`](./Progression_Unlocks.md#object-organ_upgrade1) | Object  | Defines the dialog and shop level up for Organ Grinder's first upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade2`](./Progression_Unlocks.md#object-organ_upgrade2) | Object  | Defines the dialog and shop level up for Organ Grinder's second upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade3`](./Progression_Unlocks.md#object-organ_upgrade3) | Object  | Defines the dialog and shop level up for Organ Grinder's third upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade4`](./Progression_Unlocks.md#object-organ_upgrade4) | Object  | Defines the dialog and shop level up for Organ Grinder's fourth upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade5`](./Progression_Unlocks.md#object-organ_upgrade5) | Object  | Defines the dialog and shop level up for Organ Grinder's fifth upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade6`](./Progression_Unlocks.md#object-organ_upgrade6) | Object  | Defines the dialog and shop level up for Organ Grinder's sixth upgrade. | 2 | `{ . . . }` |
 | [`require_beat_house_boss`](./Enums.md#enum-require_beat_house_boss) | Enum | Specifies the name of the house boss that must be defeated to unlock this content. | 2 | `pyrophina`<br>`zaratana` |
 | [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum | Specifies the map generation flag that must be present to unlock this content. | 2 | `CoreObeliskUnlocked`<br>`MoonObeliskUnlocked` |
 | `requires_corpse` | Boolean | If true, this buff requires a corpse to function. | 2 | `true` |
 | `roll_limit` | Number | The maximum number of times this buff can be rolled. | 2 | `2` |
 | `shop_common` | Number | The number defining the weight or relative frequency for common shop items in a pool. | 2 | `1` |
 | `spawn_object_preferred_distance` | Number | The preferred distance from the unit at which objects are spawned. | 2 | `4`<br>`5` |
-| [`steven_milliontrashed`](#object-steven_milliontrashed) | Object | A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor. | 2 | `{ . . . }` |
+| [`steven_milliontrashed`](./Progression_Unlocks.md#object-steven_milliontrashed) | Object  | A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor. | 2 | `{ . . . }` |
 | [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum | Specifies which kaiju entity survives a given quest event. | 2 | `pyrophina`<br>`zaratana` |
-| [`tink_aggression`](#object-tink_aggression) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat. | 2 | `{ . . . }` |
-| [`tink_basestats`](#object-tink_basestats) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications. | 2 | `{ . . . }` |
-| [`tink_inbreeding`](#object-tink_inbreeding) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree. | 2 | `{ . . . }` |
-| [`tink_max_intro`](#object-tink_max_intro) | Object | The first dialogue sequence and favor reward that plays when Tink reaches maximum favor. | 2 | `{ . . . }` |
-| [`tink_max_repeating`](#object-tink_max_repeating) | Object | A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
-| [`tink_prettybow`](#object-tink_prettybow) | Object | A dialogue sequence and favor reward that grants the gift item TinksBow. | 2 | `{ . . . }` |
-| [`tink_relationships`](#object-tink_relationships) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates). | 2 | `{ . . . }` |
-| [`tink_sexuality`](#object-tink_sexuality) | Object | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags. | 2 | `{ . . . }` |
-| [`tink_tags`](#object-tink_tags) | Object | A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name. | 2 | `{ . . . }` |
-| [`tracy_blankcollar1`](#object-tracy_blankcollar1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_blankcollar2`](#object-tracy_blankcollar2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_blankcollar3`](#object-tracy_blankcollar3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage1`](#object-tracy_foodstorage1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage10`](#object-tracy_foodstorage10) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage2`](#object-tracy_foodstorage2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage3`](#object-tracy_foodstorage3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage4`](#object-tracy_foodstorage4) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage5`](#object-tracy_foodstorage5) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage6`](#object-tracy_foodstorage6) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage7`](#object-tracy_foodstorage7) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage8`](#object-tracy_foodstorage8) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage9`](#object-tracy_foodstorage9) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol1`](#object-tracy_idol1) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol2`](#object-tracy_idol2) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol3`](#object-tracy_idol3) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol4`](#object-tracy_idol4) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol5`](#object-tracy_idol5) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol6`](#object-tracy_idol6) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol7`](#object-tracy_idol7) | Object | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_max_intro`](#object-tracy_max_intro) | Object | The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor. | 2 | `{ . . . }` |
-| [`tracy_max_repeating`](#object-tracy_max_repeating) | Object | A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
+| [`tink_aggression`](./Progression_Unlocks.md#object-tink_aggression) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat. | 2 | `{ . . . }` |
+| [`tink_basestats`](./Progression_Unlocks.md#object-tink_basestats) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications. | 2 | `{ . . . }` |
+| [`tink_inbreeding`](./Progression_Unlocks.md#object-tink_inbreeding) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree. | 2 | `{ . . . }` |
+| [`tink_max_intro`](./Progression_Unlocks.md#object-tink_max_intro) | Object  | The first dialogue sequence and favor reward that plays when Tink reaches maximum favor. | 2 | `{ . . . }` |
+| [`tink_max_repeating`](./Progression_Unlocks.md#object-tink_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
+| [`tink_prettybow`](./Progression_Unlocks.md#object-tink_prettybow) | Object  | A dialogue sequence and favor reward that grants the gift item TinksBow. | 2 | `{ . . . }` |
+| [`tink_relationships`](./Progression_Unlocks.md#object-tink_relationships) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates). | 2 | `{ . . . }` |
+| [`tink_sexuality`](./Progression_Unlocks.md#object-tink_sexuality) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags. | 2 | `{ . . . }` |
+| [`tink_tags`](./Progression_Unlocks.md#object-tink_tags) | Object  | A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name. | 2 | `{ . . . }` |
+| [`tracy_blankcollar1`](./Progression_Unlocks.md#object-tracy_blankcollar1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_blankcollar2`](./Progression_Unlocks.md#object-tracy_blankcollar2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_blankcollar3`](./Progression_Unlocks.md#object-tracy_blankcollar3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage1`](./Progression_Unlocks.md#object-tracy_foodstorage1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage10`](./Progression_Unlocks.md#object-tracy_foodstorage10) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage2`](./Progression_Unlocks.md#object-tracy_foodstorage2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage3`](./Progression_Unlocks.md#object-tracy_foodstorage3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage4`](./Progression_Unlocks.md#object-tracy_foodstorage4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage5`](./Progression_Unlocks.md#object-tracy_foodstorage5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage6`](./Progression_Unlocks.md#object-tracy_foodstorage6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage7`](./Progression_Unlocks.md#object-tracy_foodstorage7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage8`](./Progression_Unlocks.md#object-tracy_foodstorage8) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage9`](./Progression_Unlocks.md#object-tracy_foodstorage9) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol1`](./Progression_Unlocks.md#object-tracy_idol1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol2`](./Progression_Unlocks.md#object-tracy_idol2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol3`](./Progression_Unlocks.md#object-tracy_idol3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol4`](./Progression_Unlocks.md#object-tracy_idol4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol5`](./Progression_Unlocks.md#object-tracy_idol5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol6`](./Progression_Unlocks.md#object-tracy_idol6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol7`](./Progression_Unlocks.md#object-tracy_idol7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_max_intro`](./Progression_Unlocks.md#object-tracy_max_intro) | Object  | The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor. | 2 | `{ . . . }` |
+| [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
 | [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum | Specifies the level group to unlock when a given condition is met. | 2 | `bigsharklevels` |
-| [`upgrade_storage_1`](#object-upgrade_storage_1) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0. | 2 | `{ . . . }` |
-| [`upgrade_storage_2`](#object-upgrade_storage_2) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_3`](#object-upgrade_storage_3) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_4`](#object-upgrade_storage_4) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_5`](#object-upgrade_storage_5) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_6`](#object-upgrade_storage_6) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_7`](#object-upgrade_storage_7) | Object | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_crazy`](#object-upgrade_storage_repeating_crazy) | Object | A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_hard`](#object-upgrade_storage_repeating_hard) | Object | A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_impossible`](#object-upgrade_storage_repeating_impossible) | Object | A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_intro`](#object-upgrade_storage_repeating_intro) | Object | The introductory dialogue sequence and reward when Butch maxes out storage capacity. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_normal`](#object-upgrade_storage_repeating_normal) | Object | A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`VolcanoAntennaAttached`](Engine_LogicKeys.md#object-volcanoantennaattached) | Object | Configures the map event and art when the Volcano Antenna has been attached. | 2 | `{ . . . }` |
+| [`upgrade_storage_1`](./Progression_Unlocks.md#object-upgrade_storage_1) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0. | 2 | `{ . . . }` |
+| [`upgrade_storage_2`](./Progression_Unlocks.md#object-upgrade_storage_2) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_3`](./Progression_Unlocks.md#object-upgrade_storage_3) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_4`](./Progression_Unlocks.md#object-upgrade_storage_4) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_5`](./Progression_Unlocks.md#object-upgrade_storage_5) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_6`](./Progression_Unlocks.md#object-upgrade_storage_6) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_7`](./Progression_Unlocks.md#object-upgrade_storage_7) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#object-upgrade_storage_repeating_crazy) | Object  | A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#object-upgrade_storage_repeating_hard) | Object  | A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#object-upgrade_storage_repeating_impossible) | Object  | A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#object-upgrade_storage_repeating_intro) | Object  | The introductory dialogue sequence and reward when Butch maxes out storage capacity. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#object-upgrade_storage_repeating_normal) | Object  | A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`VolcanoAntennaAttached`](./Miscellaneous.md#object-volcanoantennaattached) | Object  | Configures the map event and art when the Volcano Antenna has been attached. | 2 | `{ . . . }` |
 | [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
-| [`pick`](Events_and_Encounters.md#object-pick) | Object | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 2 | `{ . . . }` |
-| [`base_stats`](#object-base_stats) | Object | Defines the primary attribute values (str, spd, dex, con) that form the base stat block for a unit. | 2 | `{ . . . }` |
+| [`pick`](./Miscellaneous.md#object-pick) | Object  | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 2 | `{ . . . }` |
+| [`base_stats`](./Miscellaneous.md#object-base_stats) | Object  | Defines the primary attribute values (str, spd, dex, con) that form the base stat block for a unit. | 2 | `{ . . . }` |
 | `BlankTile` | Number | The number of blank tiles in a map segment, which are empty spaces with no special properties. | 2 | `5` |
-| [`breakdown2`](#object-breakdown2) | Object | A loot table defining guaranteed item drops for player levels 5 to 9. | 2 | `{ . . . }` |
-| [`breakdown3`](#object-breakdown3) | Object | A loot table defining guaranteed item drops for player levels 10 to 14. | 2 | `{ . . . }` |
-| [`breakdown4`](#object-breakdown4) | Object | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
+| [`breakdown2`](./Shops.md#object-breakdown2) | Object  | A loot table defining guaranteed item drops for player levels 5 to 9. | 2 | `{ . . . }` |
+| [`breakdown3`](./Shops.md#object-breakdown3) | Object  | A loot table defining guaranteed item drops for player levels 10 to 14. | 2 | `{ . . . }` |
+| [`breakdown4`](./Shops.md#object-breakdown4) | Object  | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
 | [`debug`](./Arrays.md#array-debug) | Array | An array or label used for debugging purposes, often containing an empty array or a string. | 2 | `"Unknown"`<br>`[]` |
 | `ears` | Number | The ID for the ear mutation appearance. | 2 | `-1`<br>`-2`<br>`1500` |
 | `fights_skipped` | Number | The number of fights the temporarily absent cat will skip before returning. | 2 | `0`<br>`1` |
@@ -509,19 +509,19 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`water_alt_shroud`](./Enums.md#enum-water_alt_shroud) | Enum | Specifies an alternative shroud sprite for water in a biome. | 2 | `BloodShroud` |
 | [`water_alt_tile`](./Enums.md#enum-water_alt_tile) | Enum | Specifies an alternative tile set for water in a biome. | 2 | `BloodTile` |
 | [`Set`](./Enums.md#enum-set) | Enum | Specifies the item set name that this item belongs to. | 1 | `Monk` |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
-| [`treasure`](Map_Generation_and_Routing.md#object-treasure) | Object | Defines a treasure node containing items or item pools. | 1 | `{ . . . }` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
+| [`treasure`](./Shops.md#object-treasure) | Object  | Defines a treasure node containing items or item pools. | 1 | `{ . . . }` |
 | `male1` | Number | The voice set index for the first male variant. | 1 | `1` |
 | `male2` | Number | The voice set index for the second male variant. | 1 | `1` |
 | `female2` | Number | A boolean flag indicating whether the voice set is assigned to the second female variant. | 1 | `1` |
-| [`mad`](#object-mad) | Object | Defines the facial expression configuration for the mad appearance. | 1 | `{ . . . }` |
+| [`mad`](./Miscellaneous.md#object-mad) | Object  | Defines the facial expression configuration for the mad appearance. | 1 | `{ . . . }` |
 | `male3` | Number | A boolean flag indicating whether the voice set is assigned to the third male variant. | 1 | `1` |
 | `female29` | Number | A boolean flag indicating whether the voice set is assigned to the twenty-ninth female variant. | 1 | `1` |
 | `male8` | Number | A boolean flag indicating whether the voice set is assigned to the eighth male variant. | 1 | `1` |
 | `male9` | Number | A boolean flag indicating whether the voice set is assigned to the ninth male variant. | 1 | `1` |
-| [`worried`](#object-worried) | Object | Defines the facial expression configuration for the worried appearance. | 1 | `{ . . . }` |
-| [`beanies_bombquest_2`](#object-beanies_bombquest_2) | Object | Defines the dialog sequence for Beanies' bomb quest step 2. | 1 | `{ . . . }` |
+| [`worried`](./Miscellaneous.md#object-worried) | Object  | Defines the facial expression configuration for the worried appearance. | 1 | `{ . . . }` |
+| [`beanies_bombquest_2`](./NPC_Scripts.md#object-beanies_bombquest_2) | Object  | Defines the dialog sequence for Beanies' bomb quest step 2. | 1 | `{ . . . }` |
 | `raptorbaby` | Number | A boolean flag indicating whether the voice set is assigned to the raptor baby variant. | 1 | `1` |
 | `scorpioncat` | Number | A boolean flag indicating whether the voice set is assigned to the scorpion cat variant. | 1 | `1` |
 | `female12` | Number | The weight assigned to this female voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
@@ -534,62 +534,62 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `male51` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `male79` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `male80` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`beanies_bombquest_3`](#object-beanies_bombquest_3) | Object | Defines the dialog sequence for the third stage of Beanies' bomb quest. | 1 | `{ . . . }` |
-| [`beanies_bombquest_fail_jarofblood`](#object-beanies_bombquest_fail_jarofblood) | Object | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of blood. | 1 | `{ . . . }` |
-| [`beanies_bombquest_fail_jarofchaos`](#object-beanies_bombquest_fail_jarofchaos) | Object | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of chaos. | 1 | `{ . . . }` |
-| [`complete_checkmarks`](#object-complete_checkmarks) | Object | Defines the completion criteria for earning a checkmark, including required classes, areas, and minimum difficulty. | 1 | `{ . . . }` |
-| [`CoreObeliskUnlocked`](Engine_LogicKeys.md#object-coreobeliskunlocked) | Object | Configures the map event and art when the Core Obelisk is raised and unlocked. | 1 | `{ . . . }` |
-| [`MoonObeliskUnlocked`](Engine_LogicKeys.md#object-moonobeliskunlocked) | Object | Configures the map event and art when the Moon Obelisk is raised and unlocked. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`beanies_bombquest_3`](./NPC_Scripts.md#object-beanies_bombquest_3) | Object  | Defines the dialog sequence for the third stage of Beanies' bomb quest. | 1 | `{ . . . }` |
+| [`beanies_bombquest_fail_jarofblood`](./NPC_Scripts.md#object-beanies_bombquest_fail_jarofblood) | Object  | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of blood. | 1 | `{ . . . }` |
+| [`beanies_bombquest_fail_jarofchaos`](./NPC_Scripts.md#object-beanies_bombquest_fail_jarofchaos) | Object  | Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of chaos. | 1 | `{ . . . }` |
+| [`complete_checkmarks`](./Miscellaneous.md#object-complete_checkmarks) | Object  | Defines the completion criteria for earning a checkmark, including required classes, areas, and minimum difficulty. | 1 | `{ . . . }` |
+| [`CoreObeliskUnlocked`](./Miscellaneous.md#object-coreobeliskunlocked) | Object  | Configures the map event and art when the Core Obelisk is raised and unlocked. | 1 | `{ . . . }` |
+| [`MoonObeliskUnlocked`](./Miscellaneous.md#object-moonobeliskunlocked) | Object  | Configures the map event and art when the Moon Obelisk is raised and unlocked. | 1 | `{ . . . }` |
 | `robotom` | Number | The weight assigned to the robotom special voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `sabertoothcat` | Number | The weight assigned to the sabertoothcat special voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
-| [`angry`](Characters_and_Bosses.md#object-angry) | Object | Defines the facial expression parameters for the 'angry' emotion, including eyebrow position and mouth shape. | 1 | `{ . . . }` |
+| [`angry`](./Miscellaneous.md#object-angry) | Object  | Defines the facial expression parameters for the 'angry' emotion, including eyebrow position and mouth shape. | 1 | `{ . . . }` |
 | `female10` | Number | The weight assigned to this female voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `female26` | Number | The weight assigned to this female voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `female5` | Number | The weight assigned to this female voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `female9` | Number | The weight assigned to this female voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
-| [`happy`](#object-happy) | Object | Defines the facial expression parameters for the 'happy' emotion, including eyebrow position and mouth shape. | 1 | `{ . . . }` |
+| [`happy`](./Miscellaneous.md#object-happy) | Object  | Defines the facial expression parameters for the 'happy' emotion, including eyebrow position and mouth shape. | 1 | `{ . . . }` |
 | `male11` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `male13` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | `male7` | Number | The weight assigned to this male voice set for random selection; 1 indicates it is enabled. | 1 | `1` |
 | [`queenhippo`](./Enums.md#enum-queenhippo) | Enum | Specifies the boss configuration for QueenHippo. Setting to "auto" generates it procedurally, or an inline object can define custom subfolder and cutscene. | 1 | `auto` |
 | `terminator_boss` | Number | The index of the voice set used for the Terminator boss. | 1 | `1` |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
-| [`beanies_bombquest_amnesia`](#object-beanies_bombquest_amnesia) | Object | Defines the dialog sequence for Dr. Beanies' amnesia after a successful nuke quest. | 1 | `{ . . . }` |
-| [`beanies_bombquest_begin`](#object-beanies_bombquest_begin) | Object | Defines the dialog sequence for Dr. Beanies beginning the final bomb quest. | 1 | `{ . . . }` |
-| [`beanies_bombquest_fail_jarofradiation`](#object-beanies_bombquest_fail_jarofradiation) | Object | Defines the dialog sequence for failing the bomb quest during the Act 1 jar-of-radiation stage. | 1 | `{ . . . }` |
-| [`beanies_bombquest_fail_nuke`](#object-beanies_bombquest_fail_nuke) | Object | Defines the dialog sequence for failing the bomb quest during the Act 3 nuke stage. | 1 | `{ . . . }` |
-| [`beanies_future_intro`](#object-beanies_future_intro) | Object | Defines the dialog sequence where Dr. Beanies sends the player to the future. | 1 | `{ . . . }` |
-| [`beanies_jurassic_intro`](#object-beanies_jurassic_intro) | Object | Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area. | 1 | `{ . . . }` |
-| [`beanies_lab_intro`](#object-beanies_lab_intro) | Object | Defines the dialog sequence where Dr. Beanies is homeless and credits roll. | 1 | `{ . . . }` |
-| [`beanies_theend_intro`](#object-beanies_theend_intro) | Object | Defines the dialog sequence where Dr. Beanies responds to you killing Hitler. | 1 | `{ . . . }` |
-| [`butch_boneyard_intro`](#object-butch_boneyard_intro) | Object | Defines the dialog sequence for Butch's introduction in the boneyard. | 1 | `{ . . . }` |
+| [`beanies_bombquest_amnesia`](./NPC_Scripts.md#object-beanies_bombquest_amnesia) | Object  | Defines the dialog sequence for Dr. Beanies' amnesia after a successful nuke quest. | 1 | `{ . . . }` |
+| [`beanies_bombquest_begin`](./NPC_Scripts.md#object-beanies_bombquest_begin) | Object  | Defines the dialog sequence for Dr. Beanies beginning the final bomb quest. | 1 | `{ . . . }` |
+| [`beanies_bombquest_fail_jarofradiation`](./NPC_Scripts.md#object-beanies_bombquest_fail_jarofradiation) | Object  | Defines the dialog sequence for failing the bomb quest during the Act 1 jar-of-radiation stage. | 1 | `{ . . . }` |
+| [`beanies_bombquest_fail_nuke`](./NPC_Scripts.md#object-beanies_bombquest_fail_nuke) | Object  | Defines the dialog sequence for failing the bomb quest during the Act 3 nuke stage. | 1 | `{ . . . }` |
+| [`beanies_future_intro`](./NPC_Scripts.md#object-beanies_future_intro) | Object  | Defines the dialog sequence where Dr. Beanies sends the player to the future. | 1 | `{ . . . }` |
+| [`beanies_jurassic_intro`](./NPC_Scripts.md#object-beanies_jurassic_intro) | Object  | Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area. | 1 | `{ . . . }` |
+| [`beanies_lab_intro`](./NPC_Scripts.md#object-beanies_lab_intro) | Object  | Defines the dialog sequence where Dr. Beanies is homeless and credits roll. | 1 | `{ . . . }` |
+| [`beanies_theend_intro`](./NPC_Scripts.md#object-beanies_theend_intro) | Object  | Defines the dialog sequence where Dr. Beanies responds to you killing Hitler. | 1 | `{ . . . }` |
+| [`butch_boneyard_intro`](./NPC_Scripts.md#object-butch_boneyard_intro) | Object  | Defines the dialog sequence for Butch's introduction in the boneyard. | 1 | `{ . . . }` |
 | [`butchercat`](./Enums.md#enum-butchercat) | Enum | Specifies the miniboss configuration for ButcherCat, typically set to "auto". | 1 | `auto` |
-| [`class_unlock_jester`](#object-class_unlock_jester) | Object | Defines the dialog sequence for unlocking the Jester class. | 1 | `{ . . . }` |
+| [`class_unlock_jester`](./NPC_Scripts.md#object-class_unlock_jester) | Object  | Defines the dialog sequence for unlocking the Jester class. | 1 | `{ . . . }` |
 | [`fightercat`](./Enums.md#enum-fightercat) | Enum | Specifies the miniboss configuration for FighterCat, typically set to "auto". | 1 | `auto` |
 | `fights` | Integer | The number of future battles the status effect will be applied at the start of. | 1 | `1`<br>`9999` |
-| [`frank_caves_intro`](#object-frank_caves_intro) | Object | Defines the dialog sequence for Frank's introduction in the caves. | 1 | `{ . . . }` |
-| [`frank_ending`](#object-frank_ending) | Object | Defines the dialog sequence for Frank's new intro after the nuke ending. | 1 | `{ . . . }` |
+| [`frank_caves_intro`](./NPC_Scripts.md#object-frank_caves_intro) | Object  | Defines the dialog sequence for Frank's introduction in the caves. | 1 | `{ . . . }` |
+| [`frank_ending`](./NPC_Scripts.md#object-frank_ending) | Object  | Defines the dialog sequence for Frank's new intro after the nuke ending. | 1 | `{ . . . }` |
 | `futurebot` | Number | The index of the voice set used for the Futurebot. | 1 | `1` |
-| [`jack_desert_intro`](#object-jack_desert_intro) | Object | Defines the dialog sequence for Jack's introduction in the desert. | 1 | `{ . . . }` |
+| [`jack_desert_intro`](./NPC_Scripts.md#object-jack_desert_intro) | Object  | Defines the dialog sequence for Jack's introduction in the desert. | 1 | `{ . . . }` |
 | [`magecat`](./Enums.md#enum-magecat) | Enum | Specifies the miniboss configuration for MageCat, typically set to "auto". | 1 | `auto` |
 | `mammothbaby` | Number | The index of the voice set used for the Mammothbaby. | 1 | `1` |
 | [`monkcat`](./Enums.md#enum-monkcat) | Enum | Specifies the miniboss configuration for MonkCat, typically set to "auto". | 1 | `auto` |
 | [`necrocat`](./Enums.md#enum-necrocat) | Enum | Specifies the miniboss configuration for NecroCat, typically set to "auto". | 1 | `auto` |
-| [`organ_boneyard_intro`](#object-organ_boneyard_intro) | Object | Defines the dialog sequence for Organ Grinder's introduction in the boneyard. | 1 | `{ . . . }` |
-| [`organ_throbbingdomain_intro`](#object-organ_throbbingdomain_intro) | Object | Defines the dialog sequence for Organ Grinder's introduction in the throbbing domain. | 1 | `{ . . . }` |
+| [`organ_boneyard_intro`](./NPC_Scripts.md#object-organ_boneyard_intro) | Object  | Defines the dialog sequence for Organ Grinder's introduction in the boneyard. | 1 | `{ . . . }` |
+| [`organ_throbbingdomain_intro`](./NPC_Scripts.md#object-organ_throbbingdomain_intro) | Object  | Defines the dialog sequence for Organ Grinder's introduction in the throbbing domain. | 1 | `{ . . . }` |
 | [`psychiccat`](./Enums.md#enum-psychiccat) | Enum | Specifies the miniboss configuration for PsychicCat, typically set to "auto". | 1 | `auto` |
-| [`schadenfreude_scaled_stats`](#object-schadenfreude_scaled_stats) | Object | Defines the stat bonuses (str, dex, con, int, cha) applied by the Schadenfreude trait at a given level. | 1 | `{ . . . }` |
+| [`schadenfreude_scaled_stats`](./Passives_and_Statuses.md#object-schadenfreude_scaled_stats) | Object  | Defines the stat bonuses (str, dex, con, int, cha) applied by the Schadenfreude trait at a given level. | 1 | `{ . . . }` |
 | `spidercat` | Number | The voice set ID used for spidercat characters. | 1 | `1` |
-| [`start`](./Miscellaneous.md#context-start) | Enum | Specifies the initial animation state played at the beginning of an ability. | 1 | `attack`<br>`lickAttack`<br>`monkAttack` |
+| [`start`](./Enums.md#enum-start) | Enum  | Specifies the initial animation state played at the beginning of an ability. | 1 | `attack`<br>`lickAttack`<br>`monkAttack` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
-| [`steven_postendgame`](#object-steven_postendgame) | Object | A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending. | 1 | `{ . . . }` |
+| [`steven_postendgame`](./NPC_Scripts.md#object-steven_postendgame) | Object  | A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending. | 1 | `{ . . . }` |
 | [`thiefcat`](./Enums.md#enum-thiefcat) | Enum | Specifies the miniboss configuration for ThiefCat, typically set to "auto". | 1 | `auto` |
 | [`tinkerercat`](./Enums.md#enum-tinkerercat) | Enum | Specifies the miniboss configuration for TinkerCat, typically set to "auto". | 1 | `auto` |
 | `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
 | [`bumblefoot`](./Enums.md#enum-bumblefoot) | Enum | Specifies the Bumblefoot miniboss encounter. | 1 | `auto` |
-| [`cough`](#object-cough) | Object | Defines the facial expression parameters for a coughing animation. | 1 | `{ . . . }` |
+| [`cough`](./Miscellaneous.md#object-cough) | Object  | Defines the facial expression parameters for a coughing animation. | 1 | `{ . . . }` |
 | `female17` | Number | An integer flag enabling the female17 voice set for a character. | 1 | `1` |
 | `female39` | Number | An integer flag enabling the female39 voice set for a character. | 1 | `1` |
 | `female45` | Number | An integer flag enabling the female45 voice set for a character. | 1 | `1` |
@@ -606,613 +606,613 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `male83` | Number | An integer flag enabling the male83 voice set for a character. | 1 | `1` |
 | `male89` | Number | An integer flag enabling the male89 voice set for a character. | 1 | `1` |
 | `male95` | Number | An integer flag enabling the male95 voice set for a character. | 1 | `1` |
-| [`open`](Characters_and_Bosses.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 1 | `{ . . . }` |
+| [`open`](./Miscellaneous.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 1 | `{ . . . }` |
 | [`radicalrat`](./Enums.md#enum-radicalrat) | Enum | Specifies the Radical Rat boss encounter. | 1 | `auto` |
-| [`smash`](Events_and_Encounters.md#object-smash) | Object | An object defining the player action to smash an object, including its stat check and outcomes. | 1 | `{ . . . }` |
+| [`smash`](./Miscellaneous.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 1 | `{ . . . }` |
 | [`spewer`](./Enums.md#enum-spewer) | Enum | Specifies the Spewer boss encounter. | 1 | `auto` |
 | `terminator` | Number | An integer flag enabling the terminator voice set for a character. | 1 | `1` |
 | [`zodiac`](./Enums.md#enum-zodiac) | Enum | Specifies the Zodiac boss encounter. | 1 | `auto` |
 | [`abandonedones`](./Enums.md#enum-abandonedones) | Enum | Specifies the Abandoned Ones miniboss encounter. | 1 | `auto` |
 | `advance` | Number | The number of levels the nemesis advances when triggered. | 1 | `1` |
 | `ankylosaurus` | Number | An integer flag enabling the ankylosaurus voice set for a character. | 1 | `1` |
-| [`Antidote`](Engine_LogicKeys.md#object-antidote) | Number / Object | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
-| [`BagOfSeeds`](Engine_LogicKeys.md#object-bagofseeds) | Object | Defines a Bag of Seeds item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`BasementUpgrade`](Engine_LogicKeys.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade2`](Engine_LogicKeys.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade3`](Engine_LogicKeys.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade4`](Engine_LogicKeys.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade5`](Engine_LogicKeys.md#object-basementupgrade5) | Object | An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`beanies_begin_accepting_cats`](#object-beanies_begin_accepting_cats) | Object | A cutscene sequence where Beanies begins accepting cats, playing dialogue and adjusting camera states. | 1 | `{ . . . }` |
-| [`beanies_hitler3`](#object-beanies_hitler3) | Object | A cutscene sequence where Beanies reveals that Hitler has been sending robots back in time, introducing Hitler as the final boss. | 1 | `{ . . . }` |
-| [`beanies_hitler3_defeat`](#object-beanies_hitler3_defeat) | Object | A cutscene sequence where Beanies provides the final piece of tech to unlock the infinite after defeating Hitler. | 1 | `{ . . . }` |
-| [`beanies_iloveyou`](#object-beanies_iloveyou) | Object | A cutscene sequence where Beanies expresses love to the player through dialogue. | 1 | `{ . . . }` |
-| [`beanies_infinite_intro`](#object-beanies_infinite_intro) | Object | A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator. | 1 | `{ . . . }` |
-| [`beanies_quest_complete`](#object-beanies_quest_complete) | Object | A cutscene sequence that triggers upon successfully completing Beanies' side quest. | 1 | `{ . . . }` |
-| [`beanies_quest_fail`](#object-beanies_quest_fail) | Object | A cutscene sequence that triggers upon failing Beanies' side quest. | 1 | `{ . . . }` |
-| [`beanies_rift_intro`](#object-beanies_rift_intro) | Object | A cutscene sequence where Beanies comments on the chaos realm. | 1 | `{ . . . }` |
-| [`beanies_screenshake_test`](#object-beanies_screenshake_test) | Object | A cutscene sequence with a dialog followed by a screen shake effect. | 1 | `{ . . . }` |
-| [`beanies_seefuture`](#object-beanies_seefuture) | Object | A cutscene sequence where Beanies reacts to the player seeing the future. | 1 | `{ . . . }` |
-| [`beanies_seetheend`](#object-beanies_seetheend) | Object | A cutscene sequence where Beanies responds to the player seeing the far future. | 1 | `{ . . . }` |
-| [`beanies_terminator1_defeat`](#object-beanies_terminator1_defeat) | Object | A cutscene sequence that plays when the first terminator is killed. | 1 | `{ . . . }` |
-| [`beanies_terminator2_defeat`](#object-beanies_terminator2_defeat) | Object | A cutscene sequence where Beanies invents more time-bending tech after the second terminator is defeated. | 1 | `{ . . . }` |
-| [`beanies_timemachine_2`](#object-beanies_timemachine_2) | Object | A cutscene sequence where a frustrated Beanies sends the player into the future to gather information. | 1 | `{ . . . }` |
-| [`beanies_timemachine_intro`](#object-beanies_timemachine_intro) | Object | A cutscene sequence where Beanies explains how the time machine works and the butterfly effect. | 1 | `{ . . . }` |
-| [`beanies_vscreator1`](#object-beanies_vscreator1) | Object | A cutscene sequence where Beanies tells the player to detonate the nuke against the creator. | 1 | `{ . . . }` |
-| [`beanies_vscreator2`](#object-beanies_vscreator2) | Object | A cutscene sequence where Beanies attempts to convince the player to detonate the nuke if they refuse. | 1 | `{ . . . }` |
-| [`beanies_vscreator3`](#object-beanies_vscreator3) | Object | A cutscene sequence where an angry Beanies continues to try to convince the player to end it. | 1 | `{ . . . }` |
-| [`beanies_vscreator4`](#object-beanies_vscreator4) | Object | A cutscene sequence where Beanies sets off the nuke himself after the player's refusal. | 1 | `{ . . . }` |
-| [`beanies_vscreatorintro`](#object-beanies_vscreatorintro) | Object | A cutscene sequence where Beanies explains how to end everything. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_AI`](#object-beaniesquest_complete_ai) | Object | A cutscene sequence that plays upon completing the AI-related portion of Beanies' quest. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_AirHorn`](#object-beaniesquest_complete_airhorn) | Object | A cutscene sequence that plays upon completing the AirHorn-related portion of Beanies' quest. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_AngryFace`](#object-beaniesquest_complete_angryface) | Object | The completion dialogue sequence for the AngryFace sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_AnimalHands`](#object-beaniesquest_complete_animalhands) | Object | The completion dialogue sequence for the AnimalHands sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_BubbleBoy`](#object-beaniesquest_complete_bubbleboy) | Object | The completion dialogue sequence for the BubbleBoy sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_ChadImplant`](#object-beaniesquest_complete_chadimplant) | Object | The completion dialogue sequence for the ChadImplant sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_ChaosDevice`](#object-beaniesquest_complete_chaosdevice) | Object | The completion dialogue sequence for the ChaosDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_DimensionalDivider`](#object-beaniesquest_complete_dimensionaldivider) | Object | The completion dialogue sequence for the DimensionalDivider sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_DiseaseJar`](#object-beaniesquest_complete_diseasejar) | Object | The completion dialogue sequence for the DiseaseJar sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_ExperimentalTreatment`](#object-beaniesquest_complete_experimentaltreatment) | Object | The completion dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_FartFace`](#object-beaniesquest_complete_fartface) | Object | The completion dialogue sequence for the FartFace sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_FigLeaf`](#object-beaniesquest_complete_figleaf) | Object | The completion dialogue sequence for the FigLeaf sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_Generic`](#object-beaniesquest_complete_generic) | Object | The completion dialogue sequence for a generic sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_GlassCannon`](#object-beaniesquest_complete_glasscannon) | Object | The completion dialogue sequence for the GlassCannon sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_HardPill`](#object-beaniesquest_complete_hardpill) | Object | The completion dialogue sequence for the HardPill sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_HiveMind`](#object-beaniesquest_complete_hivemind) | Object | The completion dialogue sequence for the HiveMind sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_MagicMirror`](#object-beaniesquest_complete_magicmirror) | Object | The completion dialogue sequence for the MagicMirror sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_MeStone`](#object-beaniesquest_complete_mestone) | Object | The completion dialogue sequence for the MeStone sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_MultilinkCable`](#object-beaniesquest_complete_multilinkcable) | Object | The completion dialogue sequence for the MultilinkCable sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_MysteriousDice`](#object-beaniesquest_complete_mysteriousdice) | Object | The completion dialogue sequence for the MysteriousDice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_MysteriousGlasses`](#object-beaniesquest_complete_mysteriousglasses) | Object | The completion dialogue sequence for the MysteriousGlasses sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_NDEDevice`](#object-beaniesquest_complete_ndedevice) | Object | The completion dialogue sequence for the NDEDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_NuclearKnife`](#object-beaniesquest_complete_nuclearknife) | Object | The completion dialogue sequence for the NuclearKnife sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_PartialLobotomy`](#object-beaniesquest_complete_partiallobotomy) | Object | The completion dialogue sequence for the PartialLobotomy sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_PartyDetonator`](#object-beaniesquest_complete_partydetonator) | Object | The completion dialogue sequence for the PartyDetonator sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_PersonalHeater`](#object-beaniesquest_complete_personalheater) | Object | The completion dialogue sequence for the PersonalHeater sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_PersuasionDevice`](#object-beaniesquest_complete_persuasiondevice) | Object | The completion dialogue sequence for the PersuasionDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_PrincessHat`](#object-beaniesquest_complete_princesshat) | Object | The completion dialogue sequence for the PrincessHat sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_RealityScrambler`](#object-beaniesquest_complete_realityscrambler) | Object | The completion dialogue sequence for the RealityScrambler sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_Redacted`](#object-beaniesquest_complete_redacted) | Object | The completion dialogue sequence for the Redacted sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_SpiderInjector`](#object-beaniesquest_complete_spiderinjector) | Object | The completion dialogue sequence for the SpiderInjector sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_Stopwatch`](#object-beaniesquest_complete_stopwatch) | Object | The completion dialogue sequence for the Stopwatch sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_StorageLocker`](#object-beaniesquest_complete_storagelocker) | Object | The completion dialogue sequence for the StorageLocker sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_TheIOU`](#object-beaniesquest_complete_theiou) | Object | The completion dialogue sequence for the TheIOU sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_TheLoner`](#object-beaniesquest_complete_theloner) | Object | The completion dialogue sequence for the TheLoner sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_Trapfest99`](#object-beaniesquest_complete_trapfest99) | Object | The completion dialogue sequence for the Trapfest99 sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_complete_UltraVision3000`](#object-beaniesquest_complete_ultravision3000) | Object | The completion dialogue sequence for the UltraVision3000 sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_AI`](#object-beaniesquest_fail_ai) | Object | The failure dialogue sequence for the AI sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_AirHorn`](#object-beaniesquest_fail_airhorn) | Object | The failure dialogue sequence for the AirHorn sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_AngryFace`](#object-beaniesquest_fail_angryface) | Object | The failure dialogue sequence for the AngryFace sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_AnimalHands`](#object-beaniesquest_fail_animalhands) | Object | The failure dialogue sequence for the AnimalHands sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_BubbleBoy`](#object-beaniesquest_fail_bubbleboy) | Object | The failure dialogue sequence for the BubbleBoy sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_ChadImplant`](#object-beaniesquest_fail_chadimplant) | Object | The failure dialogue sequence for the ChadImplant sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_ChaosDevice`](#object-beaniesquest_fail_chaosdevice) | Object | The failure dialogue sequence for the ChaosDevice sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_DimensionalDivider`](#object-beaniesquest_fail_dimensionaldivider) | Object | The failure dialogue sequence for the DimensionalDivider sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_DiseaseJar`](#object-beaniesquest_fail_diseasejar) | Object | The failure dialogue sequence for the DiseaseJar sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_ExperimentalTreatment`](#object-beaniesquest_fail_experimentaltreatment) | Object | The failure dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_FartFace`](#object-beaniesquest_fail_fartface) | Object | The failure dialogue sequence for the FartFace sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_FigLeaf`](#object-beaniesquest_fail_figleaf) | Object | The failure dialogue sequence for the FigLeaf sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_Generic`](#object-beaniesquest_fail_generic) | Object | The failure dialogue sequence for a generic sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_GlassCannon`](#object-beaniesquest_fail_glasscannon) | Object | The failure dialogue sequence for the GlassCannon sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_HardPill`](#object-beaniesquest_fail_hardpill) | Object | The failure dialogue sequence for the HardPill sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_HiveMind`](#object-beaniesquest_fail_hivemind) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_MagicMirror`](#object-beaniesquest_fail_magicmirror) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_MeStone`](#object-beaniesquest_fail_mestone) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_MultilinkCable`](#object-beaniesquest_fail_multilinkcable) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_MysteriousDice`](#object-beaniesquest_fail_mysteriousdice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_MysteriousGlasses`](#object-beaniesquest_fail_mysteriousglasses) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_NDEDevice`](#object-beaniesquest_fail_ndedevice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_NuclearKnife`](#object-beaniesquest_fail_nuclearknife) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_PartialLobotomy`](#object-beaniesquest_fail_partiallobotomy) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_PartyDetonator`](#object-beaniesquest_fail_partydetonator) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_PersonalHeater`](#object-beaniesquest_fail_personalheater) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_PersuasionDevice`](#object-beaniesquest_fail_persuasiondevice) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_PrincessHat`](#object-beaniesquest_fail_princesshat) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_RealityScrambler`](#object-beaniesquest_fail_realityscrambler) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_Redacted`](#object-beaniesquest_fail_redacted) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_SpiderInjector`](#object-beaniesquest_fail_spiderinjector) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_Stopwatch`](#object-beaniesquest_fail_stopwatch) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_StorageLocker`](#object-beaniesquest_fail_storagelocker) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_TheIOU`](#object-beaniesquest_fail_theiou) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_TheLoner`](#object-beaniesquest_fail_theloner) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_Trapfest99`](#object-beaniesquest_fail_trapfest99) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_fail_UltraVision3000`](#object-beaniesquest_fail_ultravision3000) | Object | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_AI`](#object-beaniesquest_intro_ai) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_AirHorn`](#object-beaniesquest_intro_airhorn) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_AngryFace`](#object-beaniesquest_intro_angryface) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_AnimalHands`](#object-beaniesquest_intro_animalhands) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_BubbleBoy`](#object-beaniesquest_intro_bubbleboy) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_ChadImplant`](#object-beaniesquest_intro_chadimplant) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_ChaosDevice`](#object-beaniesquest_intro_chaosdevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_DimensionalDivider`](#object-beaniesquest_intro_dimensionaldivider) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_DiseaseJar`](#object-beaniesquest_intro_diseasejar) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_ExperimentalTreatment`](#object-beaniesquest_intro_experimentaltreatment) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_FartFace`](#object-beaniesquest_intro_fartface) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_FigLeaf`](#object-beaniesquest_intro_figleaf) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_Generic`](#object-beaniesquest_intro_generic) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_GlassCannon`](#object-beaniesquest_intro_glasscannon) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_HardPill`](#object-beaniesquest_intro_hardpill) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_HiveMind`](#object-beaniesquest_intro_hivemind) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_MagicMirror`](#object-beaniesquest_intro_magicmirror) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_MeStone`](#object-beaniesquest_intro_mestone) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_MultilinkCable`](#object-beaniesquest_intro_multilinkcable) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_MysteriousDice`](#object-beaniesquest_intro_mysteriousdice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_MysteriousGlasses`](#object-beaniesquest_intro_mysteriousglasses) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_NDEDevice`](#object-beaniesquest_intro_ndedevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_NuclearKnife`](#object-beaniesquest_intro_nuclearknife) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_PartialLobotomy`](#object-beaniesquest_intro_partiallobotomy) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_PartyDetonator`](#object-beaniesquest_intro_partydetonator) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_PersonalHeater`](#object-beaniesquest_intro_personalheater) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_PersuasionDevice`](#object-beaniesquest_intro_persuasiondevice) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_PrincessHat`](#object-beaniesquest_intro_princesshat) | Object | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_RealityScrambler`](#object-beaniesquest_intro_realityscrambler) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Reality Scrambler item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_Redacted`](#object-beaniesquest_intro_redacted) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Redacted item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_SpiderInjector`](#object-beaniesquest_intro_spiderinjector) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Spider Injector item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_Stopwatch`](#object-beaniesquest_intro_stopwatch) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Stopwatch item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_StorageLocker`](#object-beaniesquest_intro_storagelocker) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Storage Locker item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_TheIOU`](#object-beaniesquest_intro_theiou) | Object | A sequence of dialog and state changes for Beanie's quest intro involving The IOU item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_TheLoner`](#object-beaniesquest_intro_theloner) | Object | A sequence of dialog and state changes for Beanie's quest intro involving The Loner item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_Trapfest99`](#object-beaniesquest_intro_trapfest99) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the Trapfest99 item. | 1 | `{ . . . }` |
-| [`beaniesquest_intro_UltraVision3000`](#object-beaniesquest_intro_ultravision3000) | Object | A sequence of dialog and state changes for Beanie's quest intro involving the UltraVision3000 item. | 1 | `{ . . . }` |
-| [`BirdFeed`](Engine_LogicKeys.md#object-birdfeed) | Object | Defines a Bird Feed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`BirdPoopHat`](Engine_LogicKeys.md#object-birdpoophat) | Object | Defines a Bird Poop Hat item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`BoneyardUnlocked`](Engine_LogicKeys.md#object-boneyardunlocked) | Object | Unlocks an exit route to the Boneyard on the map. | 1 | `{ . . . }` |
-| [`boss_fight_intro`](#object-boss_fight_intro) | Object | A sequence of dialog and state changes for the boss fight introduction cutscene. | 1 | `{ . . . }` |
-| [`boss_fight_round2`](#object-boss_fight_round2) | Object | A sequence of dialog and state changes for the boss fight round 2 cutscene. | 1 | `{ . . . }` |
-| [`BunkerUnlocked`](Engine_LogicKeys.md#object-bunkerunlocked) | Object | Unlocks an exit route to the Bunker on the map. | 1 | `{ . . . }` |
-| [`butch_begin_accepting_cats`](#object-butch_begin_accepting_cats) | Object | A sequence of dialog and state changes when Butch begins accepting cats into the shelter. | 1 | `{ . . . }` |
-| [`butch_first_house_boss_beat`](#object-butch_first_house_boss_beat) | Object | A sequence of dialog and state changes after defeating the first house boss. | 1 | `{ . . . }` |
-| [`butch_pyro`](#object-butch_pyro) | Object | A sequence of dialog and state changes discussing Butch's pyro character. | 1 | `{ . . . }` |
-| [`butch_tina1`](#object-butch_tina1) | Object | A sequence of dialog and state changes related to Butch and Tina's first interaction. | 1 | `{ . . . }` |
-| [`butch_tips_backstab`](#object-butch_tips_backstab) | Object | A tutorial tip sequence explaining the backstab mechanic. | 1 | `{ . . . }` |
-| [`butch_tips_charisma`](#object-butch_tips_charisma) | Object | A tutorial tip sequence explaining the charisma stat. | 1 | `{ . . . }` |
-| [`butch_tips_combat`](#object-butch_tips_combat) | Object | A tutorial tip sequence covering basic combat mechanics. | 1 | `{ . . . }` |
-| [`butch_tips_disorders`](#object-butch_tips_disorders) | Object | A tutorial tip sequence explaining disorders in cats. | 1 | `{ . . . }` |
-| [`butch_tips_drafting`](#object-butch_tips_drafting) | Object | A tutorial tip sequence explaining the drafting system. | 1 | `{ . . . }` |
-| [`butch_tips_elements`](#object-butch_tips_elements) | Object | A tutorial tip sequence covering elemental damage types. | 1 | `{ . . . }` |
-| [`butch_tips_hard`](#object-butch_tips_hard) | Object | A tutorial tip sequence about playing on hard difficulty. | 1 | `{ . . . }` |
-| [`butch_tips_headhome`](#object-butch_tips_headhome) | Object | A tutorial tip sequence about returning to the home base. | 1 | `{ . . . }` |
-| [`butch_tips_houseboss`](#object-butch_tips_houseboss) | Object | A tutorial tip sequence explaining house bosses. | 1 | `{ . . . }` |
-| [`butch_tips_info`](#object-butch_tips_info) | Object | A tutorial tip sequence about viewing information on units. | 1 | `{ . . . }` |
-| [`butch_tips_intelligence`](#object-butch_tips_intelligence) | Object | A tutorial tip sequence explaining the intelligence stat. | 1 | `{ . . . }` |
-| [`butch_tips_intro`](#object-butch_tips_intro) | Object | The initial tutorial tip sequence that introduces Butch's tips. | 1 | `{ . . . }` |
-| [`butch_tips_items`](#object-butch_tips_items) | Object | A tutorial tip sequence about using items in combat. | 1 | `{ . . . }` |
-| [`butch_tips_lesscats`](#object-butch_tips_lesscats) | Object | A tutorial tip sequence about managing with fewer cats. | 1 | `{ . . . }` |
-| [`butch_tips_magicdamage`](#object-butch_tips_magicdamage) | Object | A tutorial tip sequence explaining magic damage. | 1 | `{ . . . }` |
-| [`butch_tips_passives`](#object-butch_tips_passives) | Object | A tutorial tip sequence covering passive abilities. | 1 | `{ . . . }` |
-| [`butch_tips_reorient`](#object-butch_tips_reorient) | Object | A tutorial tip sequence explaining the reorient mechanic. | 1 | `{ . . . }` |
-| [`butch_tips_rewards`](#object-butch_tips_rewards) | Object | A tutorial tip sequence about earning rewards. | 1 | `{ . . . }` |
-| [`butch_tips_tacticalview`](#object-butch_tips_tacticalview) | Object | A tutorial tip sequence about using tactical view. | 1 | `{ . . . }` |
-| [`butch_tips_turnorder`](#object-butch_tips_turnorder) | Object | A tutorial tip sequence explaining turn order. | 1 | `{ . . . }` |
-| [`butch_tips_wellrounded`](#object-butch_tips_wellrounded) | Object | A tutorial tip sequence about building well-rounded teams. | 1 | `{ . . . }` |
-| [`can_still_use_attack`](#object-can_still_use_attack) | Object | A sequence of dialog and state changes when a unit can still use an attack ability. | 1 | `{ . . . }` |
-| [`can_still_use_attack_didntspell`](#object-can_still_use_attack_didntspell) | Object | A sequence of dialog and state changes when a unit didn't use a spell but can still attack. | 1 | `{ . . . }` |
+| [`Antidote`](./Engine_LogicKeys.md#object-antidote) | Number / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
+| [`BagOfSeeds`](./Engine_LogicKeys.md#object-bagofseeds) | Object  | Defines a Bag of Seeds item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object  | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade2`](./Miscellaneous.md#object-basementupgrade2) | Object  | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade3`](./Miscellaneous.md#object-basementupgrade3) | Object  | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade4`](./Miscellaneous.md#object-basementupgrade4) | Object  | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade5`](./Miscellaneous.md#object-basementupgrade5) | Object  | An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`beanies_begin_accepting_cats`](./NPC_Scripts.md#object-beanies_begin_accepting_cats) | Object  | A cutscene sequence where Beanies begins accepting cats, playing dialogue and adjusting camera states. | 1 | `{ . . . }` |
+| [`beanies_hitler3`](./NPC_Scripts.md#object-beanies_hitler3) | Object  | A cutscene sequence where Beanies reveals that Hitler has been sending robots back in time, introducing Hitler as the final boss. | 1 | `{ . . . }` |
+| [`beanies_hitler3_defeat`](./NPC_Scripts.md#object-beanies_hitler3_defeat) | Object  | A cutscene sequence where Beanies provides the final piece of tech to unlock the infinite after defeating Hitler. | 1 | `{ . . . }` |
+| [`beanies_iloveyou`](./NPC_Scripts.md#object-beanies_iloveyou) | Object  | A cutscene sequence where Beanies expresses love to the player through dialogue. | 1 | `{ . . . }` |
+| [`beanies_infinite_intro`](./NPC_Scripts.md#object-beanies_infinite_intro) | Object  | A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator. | 1 | `{ . . . }` |
+| [`beanies_quest_complete`](./NPC_Scripts.md#object-beanies_quest_complete) | Object  | A cutscene sequence that triggers upon successfully completing Beanies' side quest. | 1 | `{ . . . }` |
+| [`beanies_quest_fail`](./NPC_Scripts.md#object-beanies_quest_fail) | Object  | A cutscene sequence that triggers upon failing Beanies' side quest. | 1 | `{ . . . }` |
+| [`beanies_rift_intro`](./NPC_Scripts.md#object-beanies_rift_intro) | Object  | A cutscene sequence where Beanies comments on the chaos realm. | 1 | `{ . . . }` |
+| [`beanies_screenshake_test`](./NPC_Scripts.md#object-beanies_screenshake_test) | Object  | A cutscene sequence with a dialog followed by a screen shake effect. | 1 | `{ . . . }` |
+| [`beanies_seefuture`](./NPC_Scripts.md#object-beanies_seefuture) | Object  | A cutscene sequence where Beanies reacts to the player seeing the future. | 1 | `{ . . . }` |
+| [`beanies_seetheend`](./NPC_Scripts.md#object-beanies_seetheend) | Object  | A cutscene sequence where Beanies responds to the player seeing the far future. | 1 | `{ . . . }` |
+| [`beanies_terminator1_defeat`](./NPC_Scripts.md#object-beanies_terminator1_defeat) | Object  | A cutscene sequence that plays when the first terminator is killed. | 1 | `{ . . . }` |
+| [`beanies_terminator2_defeat`](./NPC_Scripts.md#object-beanies_terminator2_defeat) | Object  | A cutscene sequence where Beanies invents more time-bending tech after the second terminator is defeated. | 1 | `{ . . . }` |
+| [`beanies_timemachine_2`](./NPC_Scripts.md#object-beanies_timemachine_2) | Object  | A cutscene sequence where a frustrated Beanies sends the player into the future to gather information. | 1 | `{ . . . }` |
+| [`beanies_timemachine_intro`](./NPC_Scripts.md#object-beanies_timemachine_intro) | Object  | A cutscene sequence where Beanies explains how the time machine works and the butterfly effect. | 1 | `{ . . . }` |
+| [`beanies_vscreator1`](./NPC_Scripts.md#object-beanies_vscreator1) | Object  | A cutscene sequence where Beanies tells the player to detonate the nuke against the creator. | 1 | `{ . . . }` |
+| [`beanies_vscreator2`](./NPC_Scripts.md#object-beanies_vscreator2) | Object  | A cutscene sequence where Beanies attempts to convince the player to detonate the nuke if they refuse. | 1 | `{ . . . }` |
+| [`beanies_vscreator3`](./NPC_Scripts.md#object-beanies_vscreator3) | Object  | A cutscene sequence where an angry Beanies continues to try to convince the player to end it. | 1 | `{ . . . }` |
+| [`beanies_vscreator4`](./NPC_Scripts.md#object-beanies_vscreator4) | Object  | A cutscene sequence where Beanies sets off the nuke himself after the player's refusal. | 1 | `{ . . . }` |
+| [`beanies_vscreatorintro`](./NPC_Scripts.md#object-beanies_vscreatorintro) | Object  | A cutscene sequence where Beanies explains how to end everything. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_AI`](./NPC_Scripts.md#object-beaniesquest_complete_ai) | Object  | A cutscene sequence that plays upon completing the AI-related portion of Beanies' quest. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_AirHorn`](./NPC_Scripts.md#object-beaniesquest_complete_airhorn) | Object  | A cutscene sequence that plays upon completing the AirHorn-related portion of Beanies' quest. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_AngryFace`](./NPC_Scripts.md#object-beaniesquest_complete_angryface) | Object  | The completion dialogue sequence for the AngryFace sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_AnimalHands`](./NPC_Scripts.md#object-beaniesquest_complete_animalhands) | Object  | The completion dialogue sequence for the AnimalHands sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_BubbleBoy`](./NPC_Scripts.md#object-beaniesquest_complete_bubbleboy) | Object  | The completion dialogue sequence for the BubbleBoy sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_ChadImplant`](./NPC_Scripts.md#object-beaniesquest_complete_chadimplant) | Object  | The completion dialogue sequence for the ChadImplant sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_ChaosDevice`](./NPC_Scripts.md#object-beaniesquest_complete_chaosdevice) | Object  | The completion dialogue sequence for the ChaosDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_DimensionalDivider`](./NPC_Scripts.md#object-beaniesquest_complete_dimensionaldivider) | Object  | The completion dialogue sequence for the DimensionalDivider sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_DiseaseJar`](./NPC_Scripts.md#object-beaniesquest_complete_diseasejar) | Object  | The completion dialogue sequence for the DiseaseJar sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_ExperimentalTreatment`](./NPC_Scripts.md#object-beaniesquest_complete_experimentaltreatment) | Object  | The completion dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_FartFace`](./NPC_Scripts.md#object-beaniesquest_complete_fartface) | Object  | The completion dialogue sequence for the FartFace sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_FigLeaf`](./NPC_Scripts.md#object-beaniesquest_complete_figleaf) | Object  | The completion dialogue sequence for the FigLeaf sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_Generic`](./NPC_Scripts.md#object-beaniesquest_complete_generic) | Object  | The completion dialogue sequence for a generic sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_GlassCannon`](./NPC_Scripts.md#object-beaniesquest_complete_glasscannon) | Object  | The completion dialogue sequence for the GlassCannon sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_HardPill`](./NPC_Scripts.md#object-beaniesquest_complete_hardpill) | Object  | The completion dialogue sequence for the HardPill sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_HiveMind`](./NPC_Scripts.md#object-beaniesquest_complete_hivemind) | Object  | The completion dialogue sequence for the HiveMind sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_MagicMirror`](./NPC_Scripts.md#object-beaniesquest_complete_magicmirror) | Object  | The completion dialogue sequence for the MagicMirror sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_MeStone`](./NPC_Scripts.md#object-beaniesquest_complete_mestone) | Object  | The completion dialogue sequence for the MeStone sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_MultilinkCable`](./NPC_Scripts.md#object-beaniesquest_complete_multilinkcable) | Object  | The completion dialogue sequence for the MultilinkCable sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_MysteriousDice`](./NPC_Scripts.md#object-beaniesquest_complete_mysteriousdice) | Object  | The completion dialogue sequence for the MysteriousDice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_MysteriousGlasses`](./NPC_Scripts.md#object-beaniesquest_complete_mysteriousglasses) | Object  | The completion dialogue sequence for the MysteriousGlasses sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_NDEDevice`](./NPC_Scripts.md#object-beaniesquest_complete_ndedevice) | Object  | The completion dialogue sequence for the NDEDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_NuclearKnife`](./NPC_Scripts.md#object-beaniesquest_complete_nuclearknife) | Object  | The completion dialogue sequence for the NuclearKnife sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_PartialLobotomy`](./NPC_Scripts.md#object-beaniesquest_complete_partiallobotomy) | Object  | The completion dialogue sequence for the PartialLobotomy sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_PartyDetonator`](./NPC_Scripts.md#object-beaniesquest_complete_partydetonator) | Object  | The completion dialogue sequence for the PartyDetonator sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_PersonalHeater`](./NPC_Scripts.md#object-beaniesquest_complete_personalheater) | Object  | The completion dialogue sequence for the PersonalHeater sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_PersuasionDevice`](./NPC_Scripts.md#object-beaniesquest_complete_persuasiondevice) | Object  | The completion dialogue sequence for the PersuasionDevice sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_PrincessHat`](./NPC_Scripts.md#object-beaniesquest_complete_princesshat) | Object  | The completion dialogue sequence for the PrincessHat sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_RealityScrambler`](./NPC_Scripts.md#object-beaniesquest_complete_realityscrambler) | Object  | The completion dialogue sequence for the RealityScrambler sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_Redacted`](./NPC_Scripts.md#object-beaniesquest_complete_redacted) | Object  | The completion dialogue sequence for the Redacted sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_SpiderInjector`](./NPC_Scripts.md#object-beaniesquest_complete_spiderinjector) | Object  | The completion dialogue sequence for the SpiderInjector sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_Stopwatch`](./NPC_Scripts.md#object-beaniesquest_complete_stopwatch) | Object  | The completion dialogue sequence for the Stopwatch sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_StorageLocker`](./NPC_Scripts.md#object-beaniesquest_complete_storagelocker) | Object  | The completion dialogue sequence for the StorageLocker sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_TheIOU`](./NPC_Scripts.md#object-beaniesquest_complete_theiou) | Object  | The completion dialogue sequence for the TheIOU sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_TheLoner`](./NPC_Scripts.md#object-beaniesquest_complete_theloner) | Object  | The completion dialogue sequence for the TheLoner sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_Trapfest99`](./NPC_Scripts.md#object-beaniesquest_complete_trapfest99) | Object  | The completion dialogue sequence for the Trapfest99 sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_complete_UltraVision3000`](./NPC_Scripts.md#object-beaniesquest_complete_ultravision3000) | Object  | The completion dialogue sequence for the UltraVision3000 sidequest, triggered when the quest is fulfilled. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_AI`](./NPC_Scripts.md#object-beaniesquest_fail_ai) | Object  | The failure dialogue sequence for the AI sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_AirHorn`](./NPC_Scripts.md#object-beaniesquest_fail_airhorn) | Object  | The failure dialogue sequence for the AirHorn sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_AngryFace`](./NPC_Scripts.md#object-beaniesquest_fail_angryface) | Object  | The failure dialogue sequence for the AngryFace sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_AnimalHands`](./NPC_Scripts.md#object-beaniesquest_fail_animalhands) | Object  | The failure dialogue sequence for the AnimalHands sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_BubbleBoy`](./NPC_Scripts.md#object-beaniesquest_fail_bubbleboy) | Object  | The failure dialogue sequence for the BubbleBoy sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_ChadImplant`](./NPC_Scripts.md#object-beaniesquest_fail_chadimplant) | Object  | The failure dialogue sequence for the ChadImplant sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_ChaosDevice`](./NPC_Scripts.md#object-beaniesquest_fail_chaosdevice) | Object  | The failure dialogue sequence for the ChaosDevice sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_DimensionalDivider`](./NPC_Scripts.md#object-beaniesquest_fail_dimensionaldivider) | Object  | The failure dialogue sequence for the DimensionalDivider sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_DiseaseJar`](./NPC_Scripts.md#object-beaniesquest_fail_diseasejar) | Object  | The failure dialogue sequence for the DiseaseJar sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_ExperimentalTreatment`](./NPC_Scripts.md#object-beaniesquest_fail_experimentaltreatment) | Object  | The failure dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_FartFace`](./NPC_Scripts.md#object-beaniesquest_fail_fartface) | Object  | The failure dialogue sequence for the FartFace sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_FigLeaf`](./NPC_Scripts.md#object-beaniesquest_fail_figleaf) | Object  | The failure dialogue sequence for the FigLeaf sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_Generic`](./NPC_Scripts.md#object-beaniesquest_fail_generic) | Object  | The failure dialogue sequence for a generic sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_GlassCannon`](./NPC_Scripts.md#object-beaniesquest_fail_glasscannon) | Object  | The failure dialogue sequence for the GlassCannon sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_HardPill`](./NPC_Scripts.md#object-beaniesquest_fail_hardpill) | Object  | The failure dialogue sequence for the HardPill sidequest, triggered when the quest fails. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_HiveMind`](./NPC_Scripts.md#object-beaniesquest_fail_hivemind) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_MagicMirror`](./NPC_Scripts.md#object-beaniesquest_fail_magicmirror) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_MeStone`](./NPC_Scripts.md#object-beaniesquest_fail_mestone) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_MultilinkCable`](./NPC_Scripts.md#object-beaniesquest_fail_multilinkcable) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_MysteriousDice`](./NPC_Scripts.md#object-beaniesquest_fail_mysteriousdice) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_MysteriousGlasses`](./NPC_Scripts.md#object-beaniesquest_fail_mysteriousglasses) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_NDEDevice`](./NPC_Scripts.md#object-beaniesquest_fail_ndedevice) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_NuclearKnife`](./NPC_Scripts.md#object-beaniesquest_fail_nuclearknife) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_PartialLobotomy`](./NPC_Scripts.md#object-beaniesquest_fail_partiallobotomy) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_PartyDetonator`](./NPC_Scripts.md#object-beaniesquest_fail_partydetonator) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_PersonalHeater`](./NPC_Scripts.md#object-beaniesquest_fail_personalheater) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_PersuasionDevice`](./NPC_Scripts.md#object-beaniesquest_fail_persuasiondevice) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_PrincessHat`](./NPC_Scripts.md#object-beaniesquest_fail_princesshat) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_RealityScrambler`](./NPC_Scripts.md#object-beaniesquest_fail_realityscrambler) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_Redacted`](./NPC_Scripts.md#object-beaniesquest_fail_redacted) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_SpiderInjector`](./NPC_Scripts.md#object-beaniesquest_fail_spiderinjector) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_Stopwatch`](./NPC_Scripts.md#object-beaniesquest_fail_stopwatch) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_StorageLocker`](./NPC_Scripts.md#object-beaniesquest_fail_storagelocker) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_TheIOU`](./NPC_Scripts.md#object-beaniesquest_fail_theiou) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_TheLoner`](./NPC_Scripts.md#object-beaniesquest_fail_theloner) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_Trapfest99`](./NPC_Scripts.md#object-beaniesquest_fail_trapfest99) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_fail_UltraVision3000`](./NPC_Scripts.md#object-beaniesquest_fail_ultravision3000) | Object  | The dialogue and camera sequence played upon failure of the quest for this item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_AI`](./NPC_Scripts.md#object-beaniesquest_intro_ai) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_AirHorn`](./NPC_Scripts.md#object-beaniesquest_intro_airhorn) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_AngryFace`](./NPC_Scripts.md#object-beaniesquest_intro_angryface) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_AnimalHands`](./NPC_Scripts.md#object-beaniesquest_intro_animalhands) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_BubbleBoy`](./NPC_Scripts.md#object-beaniesquest_intro_bubbleboy) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_ChadImplant`](./NPC_Scripts.md#object-beaniesquest_intro_chadimplant) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_ChaosDevice`](./NPC_Scripts.md#object-beaniesquest_intro_chaosdevice) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_DimensionalDivider`](./NPC_Scripts.md#object-beaniesquest_intro_dimensionaldivider) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_DiseaseJar`](./NPC_Scripts.md#object-beaniesquest_intro_diseasejar) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_ExperimentalTreatment`](./NPC_Scripts.md#object-beaniesquest_intro_experimentaltreatment) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_FartFace`](./NPC_Scripts.md#object-beaniesquest_intro_fartface) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_FigLeaf`](./NPC_Scripts.md#object-beaniesquest_intro_figleaf) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_Generic`](./NPC_Scripts.md#object-beaniesquest_intro_generic) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_GlassCannon`](./NPC_Scripts.md#object-beaniesquest_intro_glasscannon) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_HardPill`](./NPC_Scripts.md#object-beaniesquest_intro_hardpill) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_HiveMind`](./NPC_Scripts.md#object-beaniesquest_intro_hivemind) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_MagicMirror`](./NPC_Scripts.md#object-beaniesquest_intro_magicmirror) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_MeStone`](./NPC_Scripts.md#object-beaniesquest_intro_mestone) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_MultilinkCable`](./NPC_Scripts.md#object-beaniesquest_intro_multilinkcable) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_MysteriousDice`](./NPC_Scripts.md#object-beaniesquest_intro_mysteriousdice) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_MysteriousGlasses`](./NPC_Scripts.md#object-beaniesquest_intro_mysteriousglasses) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_NDEDevice`](./NPC_Scripts.md#object-beaniesquest_intro_ndedevice) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_NuclearKnife`](./NPC_Scripts.md#object-beaniesquest_intro_nuclearknife) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_PartialLobotomy`](./NPC_Scripts.md#object-beaniesquest_intro_partiallobotomy) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_PartyDetonator`](./NPC_Scripts.md#object-beaniesquest_intro_partydetonator) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_PersonalHeater`](./NPC_Scripts.md#object-beaniesquest_intro_personalheater) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_PersuasionDevice`](./NPC_Scripts.md#object-beaniesquest_intro_persuasiondevice) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_PrincessHat`](./NPC_Scripts.md#object-beaniesquest_intro_princesshat) | Object  | The dialogue and camera sequence played during the introduction of this quest item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_RealityScrambler`](./NPC_Scripts.md#object-beaniesquest_intro_realityscrambler) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Reality Scrambler item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_Redacted`](./NPC_Scripts.md#object-beaniesquest_intro_redacted) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Redacted item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_SpiderInjector`](./NPC_Scripts.md#object-beaniesquest_intro_spiderinjector) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Spider Injector item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_Stopwatch`](./NPC_Scripts.md#object-beaniesquest_intro_stopwatch) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Stopwatch item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_StorageLocker`](./NPC_Scripts.md#object-beaniesquest_intro_storagelocker) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Storage Locker item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_TheIOU`](./NPC_Scripts.md#object-beaniesquest_intro_theiou) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving The IOU item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_TheLoner`](./NPC_Scripts.md#object-beaniesquest_intro_theloner) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving The Loner item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_Trapfest99`](./NPC_Scripts.md#object-beaniesquest_intro_trapfest99) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the Trapfest99 item. | 1 | `{ . . . }` |
+| [`beaniesquest_intro_UltraVision3000`](./NPC_Scripts.md#object-beaniesquest_intro_ultravision3000) | Object  | A sequence of dialog and state changes for Beanie's quest intro involving the UltraVision3000 item. | 1 | `{ . . . }` |
+| [`BirdFeed`](./Engine_LogicKeys.md#object-birdfeed) | Object  | Defines a Bird Feed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
+| [`BirdPoopHat`](./Engine_LogicKeys.md#object-birdpoophat) | Object  | Defines a Bird Poop Hat item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`BoneyardUnlocked`](./Miscellaneous.md#object-boneyardunlocked) | Object  | Unlocks an exit route to the Boneyard on the map. | 1 | `{ . . . }` |
+| [`boss_fight_intro`](./NPC_Scripts.md#object-boss_fight_intro) | Object  | A sequence of dialog and state changes for the boss fight introduction cutscene. | 1 | `{ . . . }` |
+| [`boss_fight_round2`](./NPC_Scripts.md#object-boss_fight_round2) | Object  | A sequence of dialog and state changes for the boss fight round 2 cutscene. | 1 | `{ . . . }` |
+| [`BunkerUnlocked`](./Miscellaneous.md#object-bunkerunlocked) | Object  | Unlocks an exit route to the Bunker on the map. | 1 | `{ . . . }` |
+| [`butch_begin_accepting_cats`](./NPC_Scripts.md#object-butch_begin_accepting_cats) | Object  | A sequence of dialog and state changes when Butch begins accepting cats into the shelter. | 1 | `{ . . . }` |
+| [`butch_first_house_boss_beat`](./NPC_Scripts.md#object-butch_first_house_boss_beat) | Object  | A sequence of dialog and state changes after defeating the first house boss. | 1 | `{ . . . }` |
+| [`butch_pyro`](./NPC_Scripts.md#object-butch_pyro) | Object  | A sequence of dialog and state changes discussing Butch's pyro character. | 1 | `{ . . . }` |
+| [`butch_tina1`](./NPC_Scripts.md#object-butch_tina1) | Object  | A sequence of dialog and state changes related to Butch and Tina's first interaction. | 1 | `{ . . . }` |
+| [`butch_tips_backstab`](./NPC_Scripts.md#object-butch_tips_backstab) | Object  | A tutorial tip sequence explaining the backstab mechanic. | 1 | `{ . . . }` |
+| [`butch_tips_charisma`](./NPC_Scripts.md#object-butch_tips_charisma) | Object  | A tutorial tip sequence explaining the charisma stat. | 1 | `{ . . . }` |
+| [`butch_tips_combat`](./NPC_Scripts.md#object-butch_tips_combat) | Object  | A tutorial tip sequence covering basic combat mechanics. | 1 | `{ . . . }` |
+| [`butch_tips_disorders`](./NPC_Scripts.md#object-butch_tips_disorders) | Object  | A tutorial tip sequence explaining disorders in cats. | 1 | `{ . . . }` |
+| [`butch_tips_drafting`](./NPC_Scripts.md#object-butch_tips_drafting) | Object  | A tutorial tip sequence explaining the drafting system. | 1 | `{ . . . }` |
+| [`butch_tips_elements`](./NPC_Scripts.md#object-butch_tips_elements) | Object  | A tutorial tip sequence covering elemental damage types. | 1 | `{ . . . }` |
+| [`butch_tips_hard`](./NPC_Scripts.md#object-butch_tips_hard) | Object  | A tutorial tip sequence about playing on hard difficulty. | 1 | `{ . . . }` |
+| [`butch_tips_headhome`](./NPC_Scripts.md#object-butch_tips_headhome) | Object  | A tutorial tip sequence about returning to the home base. | 1 | `{ . . . }` |
+| [`butch_tips_houseboss`](./NPC_Scripts.md#object-butch_tips_houseboss) | Object  | A tutorial tip sequence explaining house bosses. | 1 | `{ . . . }` |
+| [`butch_tips_info`](./NPC_Scripts.md#object-butch_tips_info) | Object  | A tutorial tip sequence about viewing information on units. | 1 | `{ . . . }` |
+| [`butch_tips_intelligence`](./NPC_Scripts.md#object-butch_tips_intelligence) | Object  | A tutorial tip sequence explaining the intelligence stat. | 1 | `{ . . . }` |
+| [`butch_tips_intro`](./NPC_Scripts.md#object-butch_tips_intro) | Object  | The initial tutorial tip sequence that introduces Butch's tips. | 1 | `{ . . . }` |
+| [`butch_tips_items`](./NPC_Scripts.md#object-butch_tips_items) | Object  | A tutorial tip sequence about using items in combat. | 1 | `{ . . . }` |
+| [`butch_tips_lesscats`](./NPC_Scripts.md#object-butch_tips_lesscats) | Object  | A tutorial tip sequence about managing with fewer cats. | 1 | `{ . . . }` |
+| [`butch_tips_magicdamage`](./NPC_Scripts.md#object-butch_tips_magicdamage) | Object  | A tutorial tip sequence explaining magic damage. | 1 | `{ . . . }` |
+| [`butch_tips_passives`](./NPC_Scripts.md#object-butch_tips_passives) | Object  | A tutorial tip sequence covering passive abilities. | 1 | `{ . . . }` |
+| [`butch_tips_reorient`](./NPC_Scripts.md#object-butch_tips_reorient) | Object  | A tutorial tip sequence explaining the reorient mechanic. | 1 | `{ . . . }` |
+| [`butch_tips_rewards`](./NPC_Scripts.md#object-butch_tips_rewards) | Object  | A tutorial tip sequence about earning rewards. | 1 | `{ . . . }` |
+| [`butch_tips_tacticalview`](./NPC_Scripts.md#object-butch_tips_tacticalview) | Object  | A tutorial tip sequence about using tactical view. | 1 | `{ . . . }` |
+| [`butch_tips_turnorder`](./NPC_Scripts.md#object-butch_tips_turnorder) | Object  | A tutorial tip sequence explaining turn order. | 1 | `{ . . . }` |
+| [`butch_tips_wellrounded`](./NPC_Scripts.md#object-butch_tips_wellrounded) | Object  | A tutorial tip sequence about building well-rounded teams. | 1 | `{ . . . }` |
+| [`can_still_use_attack`](./NPC_Scripts.md#object-can_still_use_attack) | Object  | A sequence of dialog and state changes when a unit can still use an attack ability. | 1 | `{ . . . }` |
+| [`can_still_use_attack_didntspell`](./NPC_Scripts.md#object-can_still_use_attack_didntspell) | Object  | A sequence of dialog and state changes when a unit didn't use a spell but can still attack. | 1 | `{ . . . }` |
 | [`cancreeper`](./Enums.md#enum-cancreeper) | Enum | Specifies the Cancreeper miniboss encounter. | 1 | `auto` |
-| [`cant_afford_a`](#object-cant_afford_a) | Object | A sequence showing dialog when the player cannot afford item A. | 1 | `{ . . . }` |
-| [`cant_afford_b`](#object-cant_afford_b) | Object | A sequence showing dialog when the player cannot afford item B. | 1 | `{ . . . }` |
-| [`cant_afford_c`](#object-cant_afford_c) | Object | A sequence showing dialog when the player cannot afford item C. | 1 | `{ . . . }` |
-| [`cant_afford_d`](#object-cant_afford_d) | Object | A sequence showing dialog when the player cannot afford item D. | 1 | `{ . . . }` |
-| [`cant_afford_iceage`](#object-cant_afford_iceage) | Object | A sequence showing dialog when the player cannot afford the Ice Age item. Can also be a boolean flag. | 1 | `{ . . . }` |
-| [`cant_afford_jurassic`](#object-cant_afford_jurassic) | Object | A sequence showing dialog when the player cannot afford the Jurassic item. Can also be a boolean flag. | 1 | `{ . . . }` |
-| [`cant_afford_moon`](#object-cant_afford_moon) | Object | A sequence showing dialog when the player cannot afford the Moon item. Can also be a boolean flag. | 1 | `{ . . . }` |
-| [`cant_afford_theend`](#object-cant_afford_theend) | Object | Defines the sequence for when the player cannot afford the End purchase, optionally cancelable with a dialog and autopass. | 1 | `{ . . . }` |
+| [`cant_afford_a`](./NPC_Scripts.md#object-cant_afford_a) | Object  | A sequence showing dialog when the player cannot afford item A. | 1 | `{ . . . }` |
+| [`cant_afford_b`](./NPC_Scripts.md#object-cant_afford_b) | Object  | A sequence showing dialog when the player cannot afford item B. | 1 | `{ . . . }` |
+| [`cant_afford_c`](./NPC_Scripts.md#object-cant_afford_c) | Object  | A sequence showing dialog when the player cannot afford item C. | 1 | `{ . . . }` |
+| [`cant_afford_d`](./NPC_Scripts.md#object-cant_afford_d) | Object  | A sequence showing dialog when the player cannot afford item D. | 1 | `{ . . . }` |
+| [`cant_afford_iceage`](./NPC_Scripts.md#object-cant_afford_iceage) | Object  | A sequence showing dialog when the player cannot afford the Ice Age item. Can also be a boolean flag. | 1 | `{ . . . }` |
+| [`cant_afford_jurassic`](./NPC_Scripts.md#object-cant_afford_jurassic) | Object  | A sequence showing dialog when the player cannot afford the Jurassic item. Can also be a boolean flag. | 1 | `{ . . . }` |
+| [`cant_afford_moon`](./NPC_Scripts.md#object-cant_afford_moon) | Object  | A sequence showing dialog when the player cannot afford the Moon item. Can also be a boolean flag. | 1 | `{ . . . }` |
+| [`cant_afford_theend`](./NPC_Scripts.md#object-cant_afford_theend) | Object  | Defines the sequence for when the player cannot afford the End purchase, optionally cancelable with a dialog and autopass. | 1 | `{ . . . }` |
 | `cap_distance_to_character` | Number | The maximum distance the AI will maintain from any character (ally or enemy). | 1 | `2` |
 | `cap_total_distance_moved` | Number | The maximum number of tiles a unit can move before its movement is capped. | 1 | `1` |
-| [`CatnipBig`](Engine_LogicKeys.md#object-catnipbig) | Object | Specifies the definition and weight for a large catnip item in item pools. | 1 | `{ . . . }` |
+| [`CatnipBig`](./Engine_LogicKeys.md#object-catnipbig) | Object  | Specifies the definition and weight for a large catnip item in item pools. | 1 | `{ . . . }` |
 | [`cavecatfamily`](./Enums.md#enum-cavecatfamily) | Enum | Specifies the Cave Cat Family miniboss encounter. | 1 | `auto` |
-| [`CavesUnlocked`](Engine_LogicKeys.md#object-cavesunlocked) | Object | Unlocks an exit route to the Caves on the map. | 1 | `{ . . . }` |
+| [`CavesUnlocked`](./Miscellaneous.md#object-cavesunlocked) | Object  | Unlocks an exit route to the Caves on the map. | 1 | `{ . . . }` |
 | [`cerberubs`](./Enums.md#enum-cerberubs) | Enum | Specifies the Cerberubs miniboss encounter. | 1 | `auto` |
-| [`ChaosAntennaAttached`](Engine_LogicKeys.md#object-chaosantennaattached) | Object | Configures the map event and art when the Chaos Antenna has been attached. | 1 | `{ . . . }` |
-| [`class_unlock_butcher`](#object-class_unlock_butcher) | Object | Defines the sequence for unlocking the Butcher class, including dialogs and camera state changes. | 1 | `{ . . . }` |
-| [`class_unlock_druid`](#object-class_unlock_druid) | Object | Defines the dialog sequence that plays when unlocking the Druid class. | 1 | `{ . . . }` |
-| [`class_unlock_medic`](#object-class_unlock_medic) | Object | Defines the dialog sequence that plays when unlocking the Medic class. | 1 | `{ . . . }` |
-| [`class_unlock_monk`](#object-class_unlock_monk) | Object | Defines the dialog sequence that plays when unlocking the Monk class. | 1 | `{ . . . }` |
-| [`class_unlock_necromancer`](#object-class_unlock_necromancer) | Object | Defines the dialog sequence that plays when unlocking the Necromancer class. | 1 | `{ . . . }` |
-| [`class_unlock_psychic`](#object-class_unlock_psychic) | Object | Defines the dialog sequence that plays when unlocking the Psychic class. | 1 | `{ . . . }` |
-| [`class_unlock_thief`](#object-class_unlock_thief) | Object | Defines the dialog sequence that plays when unlocking the Thief class. | 1 | `{ . . . }` |
-| [`class_unlock_tinkerer`](#object-class_unlock_tinkerer) | Object | Defines the dialog sequence that plays when unlocking the Tinkerer class. | 1 | `{ . . . }` |
+| [`ChaosAntennaAttached`](./Miscellaneous.md#object-chaosantennaattached) | Object  | Configures the map event and art when the Chaos Antenna has been attached. | 1 | `{ . . . }` |
+| [`class_unlock_butcher`](./NPC_Scripts.md#object-class_unlock_butcher) | Object  | Defines the sequence for unlocking the Butcher class, including dialogs and camera state changes. | 1 | `{ . . . }` |
+| [`class_unlock_druid`](./NPC_Scripts.md#object-class_unlock_druid) | Object  | Defines the dialog sequence that plays when unlocking the Druid class. | 1 | `{ . . . }` |
+| [`class_unlock_medic`](./NPC_Scripts.md#object-class_unlock_medic) | Object  | Defines the dialog sequence that plays when unlocking the Medic class. | 1 | `{ . . . }` |
+| [`class_unlock_monk`](./NPC_Scripts.md#object-class_unlock_monk) | Object  | Defines the dialog sequence that plays when unlocking the Monk class. | 1 | `{ . . . }` |
+| [`class_unlock_necromancer`](./NPC_Scripts.md#object-class_unlock_necromancer) | Object  | Defines the dialog sequence that plays when unlocking the Necromancer class. | 1 | `{ . . . }` |
+| [`class_unlock_psychic`](./NPC_Scripts.md#object-class_unlock_psychic) | Object  | Defines the dialog sequence that plays when unlocking the Psychic class. | 1 | `{ . . . }` |
+| [`class_unlock_thief`](./NPC_Scripts.md#object-class_unlock_thief) | Object  | Defines the dialog sequence that plays when unlocking the Thief class. | 1 | `{ . . . }` |
+| [`class_unlock_tinkerer`](./NPC_Scripts.md#object-class_unlock_tinkerer) | Object  | Defines the dialog sequence that plays when unlocking the Tinkerer class. | 1 | `{ . . . }` |
 | [`clericcat`](./Enums.md#enum-clericcat) | Enum | Specifies the Cleric Cat miniboss encounter. | 1 | `auto` |
-| [`collected_new_items`](#object-collected_new_items) | Object | Defines the dialog sequence that plays when the player has collected new items after an adventure. | 1 | `{ . . . }` |
-| [`collected_nothing`](#object-collected_nothing) | Object | Defines the dialog sequence that plays when the player collected nothing (e.g., died in first combat). | 1 | `{ . . . }` |
+| [`collected_new_items`](./NPC_Scripts.md#object-collected_new_items) | Object  | Defines the dialog sequence that plays when the player has collected new items after an adventure. | 1 | `{ . . . }` |
+| [`collected_nothing`](./NPC_Scripts.md#object-collected_nothing) | Object  | Defines the dialog sequence that plays when the player collected nothing (e.g., died in first combat). | 1 | `{ . . . }` |
 | `consider_aggro_target_enemy` | Boolean | If true, the AI considers the aggro target when determining movement or attack behavior. | 1 | `true` |
 | `consider_spells` | Boolean | If true, the AI considers using spells in its decision-making. | 1 | `false` |
 | `consumables_consumable_common` | Number | The weight for selecting common consumable items from the consumables pool. | 1 | `50` |
 | `consumables_consumable_rare` | Number | The weight for selecting rare consumable items from the consumables pool. | 1 | `15` |
 | `consumables_consumable_uncommon` | Number | The weight for selecting uncommon consumable items from the consumables pool. | 1 | `35` |
 | `consumables_consumable_very_rare` | Number | The weight for selecting very rare consumable items from the consumables pool. | 1 | `1` |
-| [`CoreUnlocked`](Engine_LogicKeys.md#object-coreunlocked) | Object | Unlocks an exit route to the Core on the map. | 1 | `{ . . . }` |
+| [`CoreUnlocked`](./Miscellaneous.md#object-coreunlocked) | Object  | Unlocks an exit route to the Core on the map. | 1 | `{ . . . }` |
 | `count_nomove_in_eval` | Boolean | If true, the evaluation of a move includes the option of not moving. | 1 | `false` |
-| [`CraterUnlocked`](Engine_LogicKeys.md#object-craterunlocked) | Object | Unlocks an exit route to the Crater on the map. | 1 | `{ . . . }` |
-| [`DeadHummingbird`](Engine_LogicKeys.md#object-deadhummingbird) | Object | Defines a Dead Hummingbird item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`destinations`](#object-destinations) | Object | Specifies the list of areas and their associated coin rewards for Beanie's quest destinations. | 1 | `{ . . . }` |
+| [`CraterUnlocked`](./Miscellaneous.md#object-craterunlocked) | Object  | Unlocks an exit route to the Crater on the map. | 1 | `{ . . . }` |
+| [`DeadHummingbird`](./Engine_LogicKeys.md#object-deadhummingbird) | Object  | Defines a Dead Hummingbird item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`destinations`](./Progression_Unlocks.md#object-destinations) | Object  | Specifies the list of areas and their associated coin rewards for Beanie's quest destinations. | 1 | `{ . . . }` |
 | [`dinocouple`](./Enums.md#enum-dinocouple) | Enum | Specifies the Dino Couple miniboss encounter. | 1 | `auto` |
 | `distance_to_center` | Number | The distance in tiles from the current position to the map center for AI evaluation. | 1 | `-1` |
-| [`do_not_end_turn`](#object-do_not_end_turn) | Object | Defines a dialog sequence warning the player not to end their turn. | 1 | `{ . . . }` |
-| [`done_spitting_fail_ally`](#object-done_spitting_fail_ally) | Object | Defines a dialog sequence that plays when a spitting action fails on an ally. | 1 | `{ . . . }` |
-| [`done_spitting_fail_miss`](#object-done_spitting_fail_miss) | Object | Defines a dialog sequence that plays when a spitting action misses. | 1 | `{ . . . }` |
-| [`done_spitting_fail_rat`](#object-done_spitting_fail_rat) | Object | Defines a dialog sequence that plays when a spitting action fails on a rat. | 1 | `{ . . . }` |
-| [`done_spitting_success`](#object-done_spitting_success) | Object | Defines a dialog sequence that plays when a spitting action succeeds. | 1 | `{ . . . }` |
+| [`do_not_end_turn`](./NPC_Scripts.md#object-do_not_end_turn) | Object  | Defines a dialog sequence warning the player not to end their turn. | 1 | `{ . . . }` |
+| [`done_spitting_fail_ally`](./NPC_Scripts.md#object-done_spitting_fail_ally) | Object  | Defines a dialog sequence that plays when a spitting action fails on an ally. | 1 | `{ . . . }` |
+| [`done_spitting_fail_miss`](./NPC_Scripts.md#object-done_spitting_fail_miss) | Object  | Defines a dialog sequence that plays when a spitting action misses. | 1 | `{ . . . }` |
+| [`done_spitting_fail_rat`](./NPC_Scripts.md#object-done_spitting_fail_rat) | Object  | Defines a dialog sequence that plays when a spitting action fails on a rat. | 1 | `{ . . . }` |
+| [`done_spitting_success`](./NPC_Scripts.md#object-done_spitting_success) | Object  | Defines a dialog sequence that plays when a spitting action succeeds. | 1 | `{ . . . }` |
 | [`drmangler`](./Enums.md#enum-drmangler) | Enum | Specifies the Dr. Mangler miniboss encounter. | 1 | `auto` |
 | [`druidcat`](./Enums.md#enum-druidcat) | Enum | Specifies the Druid Cat miniboss encounter. | 1 | `auto` |
-| [`ending`](#object-ending) | Object | Defines the ending dialog sequence with Dr. Beanies after saving the player in the time machine. | 1 | `{ . . . }` |
+| [`ending`](./NPC_Scripts.md#object-ending) | Object  | Defines the ending dialog sequence with Dr. Beanies after saving the player in the time machine. | 1 | `{ . . . }` |
 | [`exclude_characters_tagged`](./Enums.md#enum-exclude_characters_tagged) | Enum | Specifies a tag; characters with this tag are excluded from AI behavior targeting. | 1 | `siren` |
-| [`exit_desert`](Map_Generation_and_Routing.md#object-exit_desert) | Object | Defines the exit node properties for the desert map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
-| [`exit_lab`](Map_Generation_and_Routing.md#object-exit_lab) | Object | Defines the exit node properties for the lab map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
+| [`exit_desert`](./Miscellaneous.md#object-exit_desert) | Object  | Defines the exit node properties for the desert map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
+| [`exit_lab`](./Miscellaneous.md#object-exit_lab) | Object  | Defines the exit node properties for the lab map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
 | `face_camera` | Boolean | If true, the spawned unit always faces the camera. | 1 | `1000`<br>`true` |
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum | Specifies a trigger that causes the current adventure to fail, with a location parameter (e.g., 'anywhere'). | 1 | `anywhere` |
-| [`finish_adventure`](#object-finish_adventure) | Object | Defines a dialog sequence that plays when the player finishes an adventure. | 1 | `{ . . . }` |
+| [`finish_adventure`](./NPC_Scripts.md#object-finish_adventure) | Object  | Defines a dialog sequence that plays when the player finishes an adventure. | 1 | `{ . . . }` |
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum | Specifies the name of the quest to mark as finished. | 1 | `JarOfChaos` |
-| [`first_fight_intro`](#object-first_fight_intro) | Object | Defines the intro dialog sequence for the first fight. | 1 | `{ . . . }` |
-| [`first_house_boss_tomorrow`](#object-first_house_boss_tomorrow) | Object | Defines a dialog sequence about a boss arriving tomorrow in the first house. | 1 | `{ . . . }` |
-| [`first_house_hint_retired`](#object-first_house_hint_retired) | Object | Defines a dialog sequence giving a hint about a retired cat in the first house. | 1 | `{ . . . }` |
-| [`Floor1_Large`](Engine_LogicKeys.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`Floor1_Small`](Engine_LogicKeys.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`frank_max1`](#object-frank_max1) | Object | Defines a dialog sequence for Frank at maximum affinity level 1. | 1 | `{ . . . }` |
-| [`frank_max2`](#object-frank_max2) | Object | Defines a dialog sequence for Frank at maximum affinity level 2. | 1 | `{ . . . }` |
-| [`frank_max3`](#object-frank_max3) | Object | Defines a dialog sequence for Frank at maximum affinity level 3. | 1 | `{ . . . }` |
-| [`frank_max4`](#object-frank_max4) | Object | Defines a dialog sequence for Frank at maximum affinity level 4. | 1 | `{ . . . }` |
-| [`frank_max5`](#object-frank_max5) | Object | Defines a dialog sequence for Frank at maximum affinity level 5. | 1 | `{ . . . }` |
-| [`frank_terminator2`](#object-frank_terminator2) | Object | Defines a dialog sequence for Frank's 'terminator' event (likely a special encounter). | 1 | `{ . . . }` |
-| [`frank_tips_1`](#object-frank_tips_1) | Object | Defines a tips dialog sequence from Frank (tip #1). | 1 | `{ . . . }` |
-| [`frank_tips_10`](#object-frank_tips_10) | Object | Defines a tips dialog sequence from Frank (tip #10). | 1 | `{ . . . }` |
-| [`frank_tips_2`](#object-frank_tips_2) | Object | Defines a tips dialog sequence from Frank (tip #2). | 1 | `{ . . . }` |
-| [`frank_tips_3`](#object-frank_tips_3) | Object | Defines a tips dialog sequence from Frank (tip #3). | 1 | `{ . . . }` |
-| [`frank_tips_4`](#object-frank_tips_4) | Object | Defines a tips dialog sequence from Frank (tip #4). | 1 | `{ . . . }` |
-| [`frank_tips_5`](#object-frank_tips_5) | Object | Defines a tips dialog sequence from Frank (tip #5). | 1 | `{ . . . }` |
-| [`frank_tips_6`](#object-frank_tips_6) | Object | Defines a tips dialog sequence from Frank (tip #6). | 1 | `{ . . . }` |
-| [`frank_tips_7`](#object-frank_tips_7) | Object | Defines a tips dialog sequence from Frank (tip #7). | 1 | `{ . . . }` |
-| [`frank_tips_8`](#object-frank_tips_8) | Object | Defines a tips dialog sequence from Frank (tip #8). | 1 | `{ . . . }` |
-| [`frank_tips_9`](#object-frank_tips_9) | Object | Defines a tips dialog sequence from Frank (tip #9). | 1 | `{ . . . }` |
-| [`FutureUnlocked`](Engine_LogicKeys.md#object-futureunlocked) | Object | Configures the map event and art when the Future is unlocked. | 1 | `{ . . . }` |
+| [`first_fight_intro`](./NPC_Scripts.md#object-first_fight_intro) | Object  | Defines the intro dialog sequence for the first fight. | 1 | `{ . . . }` |
+| [`first_house_boss_tomorrow`](./NPC_Scripts.md#object-first_house_boss_tomorrow) | Object  | Defines a dialog sequence about a boss arriving tomorrow in the first house. | 1 | `{ . . . }` |
+| [`first_house_hint_retired`](./NPC_Scripts.md#object-first_house_hint_retired) | Object  | Defines a dialog sequence giving a hint about a retired cat in the first house. | 1 | `{ . . . }` |
+| [`Floor1_Large`](./Miscellaneous.md#object-floor1_large) | Object  | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`Floor1_Small`](./Miscellaneous.md#object-floor1_small) | Object  | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`frank_max1`](./NPC_Scripts.md#object-frank_max1) | Object  | Defines a dialog sequence for Frank at maximum affinity level 1. | 1 | `{ . . . }` |
+| [`frank_max2`](./NPC_Scripts.md#object-frank_max2) | Object  | Defines a dialog sequence for Frank at maximum affinity level 2. | 1 | `{ . . . }` |
+| [`frank_max3`](./NPC_Scripts.md#object-frank_max3) | Object  | Defines a dialog sequence for Frank at maximum affinity level 3. | 1 | `{ . . . }` |
+| [`frank_max4`](./NPC_Scripts.md#object-frank_max4) | Object  | Defines a dialog sequence for Frank at maximum affinity level 4. | 1 | `{ . . . }` |
+| [`frank_max5`](./NPC_Scripts.md#object-frank_max5) | Object  | Defines a dialog sequence for Frank at maximum affinity level 5. | 1 | `{ . . . }` |
+| [`frank_terminator2`](./NPC_Scripts.md#object-frank_terminator2) | Object  | Defines a dialog sequence for Frank's 'terminator' event (likely a special encounter). | 1 | `{ . . . }` |
+| [`frank_tips_1`](./NPC_Scripts.md#object-frank_tips_1) | Object  | Defines a tips dialog sequence from Frank (tip #1). | 1 | `{ . . . }` |
+| [`frank_tips_10`](./NPC_Scripts.md#object-frank_tips_10) | Object  | Defines a tips dialog sequence from Frank (tip #10). | 1 | `{ . . . }` |
+| [`frank_tips_2`](./NPC_Scripts.md#object-frank_tips_2) | Object  | Defines a tips dialog sequence from Frank (tip #2). | 1 | `{ . . . }` |
+| [`frank_tips_3`](./NPC_Scripts.md#object-frank_tips_3) | Object  | Defines a tips dialog sequence from Frank (tip #3). | 1 | `{ . . . }` |
+| [`frank_tips_4`](./NPC_Scripts.md#object-frank_tips_4) | Object  | Defines a tips dialog sequence from Frank (tip #4). | 1 | `{ . . . }` |
+| [`frank_tips_5`](./NPC_Scripts.md#object-frank_tips_5) | Object  | Defines a tips dialog sequence from Frank (tip #5). | 1 | `{ . . . }` |
+| [`frank_tips_6`](./NPC_Scripts.md#object-frank_tips_6) | Object  | Defines a tips dialog sequence from Frank (tip #6). | 1 | `{ . . . }` |
+| [`frank_tips_7`](./NPC_Scripts.md#object-frank_tips_7) | Object  | Defines a tips dialog sequence from Frank (tip #7). | 1 | `{ . . . }` |
+| [`frank_tips_8`](./NPC_Scripts.md#object-frank_tips_8) | Object  | Defines a tips dialog sequence from Frank (tip #8). | 1 | `{ . . . }` |
+| [`frank_tips_9`](./NPC_Scripts.md#object-frank_tips_9) | Object  | Defines a tips dialog sequence from Frank (tip #9). | 1 | `{ . . . }` |
+| [`FutureUnlocked`](./Miscellaneous.md#object-futureunlocked) | Object  | Configures the map event and art when the Future is unlocked. | 1 | `{ . . . }` |
 | [`general_common`](./Enums.md#enum-general_common) | Enum | Specifies the common rarity tier for an item or event outcome. | 1 | `auto` |
 | [`general_rare`](./Enums.md#enum-general_rare) | Enum | Specifies the rare rarity tier for an item or event outcome. | 1 | `auto` |
 | [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Specifies how uncommon general loot pool items are distributed; often set to 'auto' for automatic weighting. | 1 | `auto` |
 | [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Specifies how very rare general loot pool items are distributed; often set to 'auto' for automatic weighting. | 1 | `auto` |
-| [`GenFlag_Boss_Spewer`](Engine_LogicKeys.md#object-genflag_boss_spewer) | Object | Configures the boss encounter event for the Spewer boss on the map. | 1 | `{ . . . }` |
-| [`GenFlag_Boss_Stacy`](Engine_LogicKeys.md#object-genflag_boss_stacy) | Object | Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map. | 1 | `{ . . . }` |
-| [`GlowingSeed`](Engine_LogicKeys.md#object-glowingseed) | Object | Defines a Glowing Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`GoldenEgg`](Engine_LogicKeys.md#object-goldenegg) | Object | Defines a Golden Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`gone`](#object-gone) | Object | Sets the NPC state to 'gone', making them disappear from the scene. | 1 | `{ . . . }` |
+| [`GenFlag_Boss_Spewer`](./Miscellaneous.md#object-genflag_boss_spewer) | Object  | Configures the boss encounter event for the Spewer boss on the map. | 1 | `{ . . . }` |
+| [`GenFlag_Boss_Stacy`](./Miscellaneous.md#object-genflag_boss_stacy) | Object  | Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map. | 1 | `{ . . . }` |
+| [`GlowingSeed`](./Engine_LogicKeys.md#object-glowingseed) | Object  | Defines a Glowing Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
+| [`GoldenEgg`](./Engine_LogicKeys.md#object-goldenegg) | Object  | Defines a Golden Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
+| [`gone`](./NPC_Scripts.md#object-gone) | Object  | Sets the NPC state to 'gone', making them disappear from the scene. | 1 | `{ . . . }` |
 | [`grant_ability`](./Enums.md#enum-grant_ability) | Enum | Specifies the name of an ability to grant to the player or unit. | 1 | `Rest` |
-| [`HarpysClaw`](Engine_LogicKeys.md#object-harpysclaw) | Object | Defines a Harpy's Claw item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`HarpysClaw`](./Engine_LogicKeys.md#object-harpysclaw) | Object  | Defines a Harpy's Claw item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | `head_start` | Number | The initial number of turns the nemesis has before the player can act. | 1 | `99` |
-| [`home`](Events_and_Encounters.md#object-home) | Object | Specifies the option to go home (exit to the main hub). | 1 | `{ . . . }` |
-| [`House1`](Engine_LogicKeys.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House2`](Engine_LogicKeys.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House3`](Engine_LogicKeys.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`house_intro`](#object-house_intro) | Object | Defines the intro dialog sequence that plays when entering a house. | 1 | `{ . . . }` |
-| [`house_kitten_box`](#object-house_kitten_box) | Object | Defines a dialog sequence about a kitten box in the house. | 1 | `{ . . . }` |
-| [`house_pass_day`](#object-house_pass_day) | Object | A sequence that plays dialog and animations when a day passes in the house. | 1 | `{ . . . }` |
-| [`house_pass_day2`](#object-house_pass_day2) | Object | A sequence that plays extended dialog and animations when a day passes in the house. | 1 | `{ . . . }` |
-| [`house_pipe`](#object-house_pipe) | Object | A sequence that plays dialog and animations related to the house pipe. | 1 | `{ . . . }` |
-| [`house_retired_cat_box`](#object-house_retired_cat_box) | Object | A sequence that plays dialog and animations for the retired cat box. | 1 | `{ . . . }` |
-| [`house_starred_box`](#object-house_starred_box) | Object | A sequence that plays dialog and animations for the starred box. | 1 | `{ . . . }` |
-| [`house_strays`](#object-house_strays) | Object | A sequence that plays dialog and animations for stray cats in the house. | 1 | `{ . . . }` |
-| [`house_upgrade_basement`](#object-house_upgrade_basement) | Object | A sequence that triggers dialog and a reward for the first basement upgrade. | 1 | `{ . . . }` |
-| [`house_upgrade_basement2`](#object-house_upgrade_basement2) | Object | A sequence that triggers the second basement upgrade and awards favor. | 1 | `{ . . . }` |
-| [`house_upgrade_basement3`](#object-house_upgrade_basement3) | Object | A sequence that triggers the third basement upgrade and awards favor. | 1 | `{ . . . }` |
-| [`house_upgrade_basement4`](#object-house_upgrade_basement4) | Object | A sequence that triggers the fourth basement upgrade and awards favor. | 1 | `{ . . . }` |
-| [`house_upgrade_basement5`](#object-house_upgrade_basement5) | Object | A sequence that triggers the fifth basement upgrade and awards favor. | 1 | `{ . . . }` |
+| [`home`](./Miscellaneous.md#object-home) | Object  | Specifies the option to go home (exit to the main hub). | 1 | `{ . . . }` |
+| [`House1`](./Miscellaneous.md#object-house1) | Object  | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House2`](./Miscellaneous.md#object-house2) | Object  | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House3`](./Miscellaneous.md#object-house3) | Object  | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`house_intro`](./NPC_Scripts.md#object-house_intro) | Object  | Defines the intro dialog sequence that plays when entering a house. | 1 | `{ . . . }` |
+| [`house_kitten_box`](./NPC_Scripts.md#object-house_kitten_box) | Object  | Defines a dialog sequence about a kitten box in the house. | 1 | `{ . . . }` |
+| [`house_pass_day`](./NPC_Scripts.md#object-house_pass_day) | Object  | A sequence that plays dialog and animations when a day passes in the house. | 1 | `{ . . . }` |
+| [`house_pass_day2`](./NPC_Scripts.md#object-house_pass_day2) | Object  | A sequence that plays extended dialog and animations when a day passes in the house. | 1 | `{ . . . }` |
+| [`house_pipe`](./NPC_Scripts.md#object-house_pipe) | Object  | A sequence that plays dialog and animations related to the house pipe. | 1 | `{ . . . }` |
+| [`house_retired_cat_box`](./NPC_Scripts.md#object-house_retired_cat_box) | Object  | A sequence that plays dialog and animations for the retired cat box. | 1 | `{ . . . }` |
+| [`house_starred_box`](./NPC_Scripts.md#object-house_starred_box) | Object  | A sequence that plays dialog and animations for the starred box. | 1 | `{ . . . }` |
+| [`house_strays`](./NPC_Scripts.md#object-house_strays) | Object  | A sequence that plays dialog and animations for stray cats in the house. | 1 | `{ . . . }` |
+| [`house_upgrade_basement`](./NPC_Scripts.md#object-house_upgrade_basement) | Object  | A sequence that triggers dialog and a reward for the first basement upgrade. | 1 | `{ . . . }` |
+| [`house_upgrade_basement2`](./NPC_Scripts.md#object-house_upgrade_basement2) | Object  | A sequence that triggers the second basement upgrade and awards favor. | 1 | `{ . . . }` |
+| [`house_upgrade_basement3`](./NPC_Scripts.md#object-house_upgrade_basement3) | Object  | A sequence that triggers the third basement upgrade and awards favor. | 1 | `{ . . . }` |
+| [`house_upgrade_basement4`](./NPC_Scripts.md#object-house_upgrade_basement4) | Object  | A sequence that triggers the fourth basement upgrade and awards favor. | 1 | `{ . . . }` |
+| [`house_upgrade_basement5`](./NPC_Scripts.md#object-house_upgrade_basement5) | Object  | A sequence that triggers the fifth basement upgrade and awards favor. | 1 | `{ . . . }` |
 | [`huntercat`](./Enums.md#enum-huntercat) | Enum | Specifies the Hunter Cat miniboss encounter. | 1 | `auto` |
-| [`IceAgeUnlocked`](Engine_LogicKeys.md#object-iceageunlocked) | Object | Configures the map event and art when Ice Age is unlocked. | 1 | `{ . . . }` |
+| [`IceAgeUnlocked`](./Miscellaneous.md#object-iceageunlocked) | Object  | Configures the map event and art when Ice Age is unlocked. | 1 | `{ . . . }` |
 | [`iceelemental`](./Enums.md#enum-iceelemental) | Enum | Specifies the Ice Elemental miniboss encounter. | 1 | `auto` |
 | [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | Enum | Specifies the GameStat counter to increment when this sequence completes. | 1 | `GameStat_CountNukeQuestCompletions` |
 | [`infestedduo`](./Enums.md#enum-infestedduo) | Enum | Specifies the Infested Duo miniboss encounter. | 1 | `auto` |
-| [`introduce_hard_path`](#object-introduce_hard_path) | Object | A sequence that plays dialog and animations to introduce the hard path. | 1 | `{ . . . }` |
-| [`jack_begin_accepting_cats`](#object-jack_begin_accepting_cats) | Object | A sequence that shows Jack's introductory dialog for accepting cats, locking player controls. | 1 | `{ . . . }` |
-| [`Jack_Gainaltfurniture`](Engine_LogicKeys.md#object-jack_gainaltfurniture) | Object | A sequence that plays Jack's dialog explaining rare alt furniture and the Nona cat, locking controls. | 1 | `{ . . . }` |
-| [`jack_introduction`](#object-jack_introduction) | Object | A sequence that plays Jack's initial introduction dialog and animation. | 1 | `{ . . . }` |
-| [`jack_max1`](#object-jack_max1) | Object | A sequence that plays Jack's first max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
-| [`jack_max2`](#object-jack_max2) | Object | A sequence that plays Jack's second max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
-| [`jack_max3`](#object-jack_max3) | Object | A sequence that plays Jack's third max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
-| [`jack_max4`](#object-jack_max4) | Object | A sequence that plays Jack's fourth max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
-| [`jack_max5`](#object-jack_max5) | Object | A sequence that plays Jack's fifth max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
-| [`jack_zara`](#object-jack_zara) | Object | A sequence that plays Jack's dialog about Zara, locking controls. | 1 | `{ . . . }` |
-| [`JunkyardUnlocked`](Engine_LogicKeys.md#object-junkyardunlocked) | Object | Unlocks an exit route to the Junkyard on the map. | 1 | `{ . . . }` |
-| [`JurassicUnlocked`](Engine_LogicKeys.md#object-jurassicunlocked) | Object | Unlocks an exit route to the Jurassic area on the map. | 1 | `{ . . . }` |
-| [`LargeHouse`](Engine_LogicKeys.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Large`](Engine_LogicKeys.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Small`](Engine_LogicKeys.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
+| [`introduce_hard_path`](./NPC_Scripts.md#object-introduce_hard_path) | Object  | A sequence that plays dialog and animations to introduce the hard path. | 1 | `{ . . . }` |
+| [`jack_begin_accepting_cats`](./NPC_Scripts.md#object-jack_begin_accepting_cats) | Object  | A sequence that shows Jack's introductory dialog for accepting cats, locking player controls. | 1 | `{ . . . }` |
+| [`Jack_Gainaltfurniture`](./NPC_Scripts.md#object-jack_gainaltfurniture) | Object  | A sequence that plays Jack's dialog explaining rare alt furniture and the Nona cat, locking controls. | 1 | `{ . . . }` |
+| [`jack_introduction`](./NPC_Scripts.md#object-jack_introduction) | Object  | A sequence that plays Jack's initial introduction dialog and animation. | 1 | `{ . . . }` |
+| [`jack_max1`](./NPC_Scripts.md#object-jack_max1) | Object  | A sequence that plays Jack's first max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
+| [`jack_max2`](./NPC_Scripts.md#object-jack_max2) | Object  | A sequence that plays Jack's second max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
+| [`jack_max3`](./NPC_Scripts.md#object-jack_max3) | Object  | A sequence that plays Jack's third max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
+| [`jack_max4`](./NPC_Scripts.md#object-jack_max4) | Object  | A sequence that plays Jack's fourth max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
+| [`jack_max5`](./NPC_Scripts.md#object-jack_max5) | Object  | A sequence that plays Jack's fifth max favor dialog sequence, locking controls. | 1 | `{ . . . }` |
+| [`jack_zara`](./NPC_Scripts.md#object-jack_zara) | Object  | A sequence that plays Jack's dialog about Zara, locking controls. | 1 | `{ . . . }` |
+| [`JunkyardUnlocked`](./Miscellaneous.md#object-junkyardunlocked) | Object  | Unlocks an exit route to the Junkyard on the map. | 1 | `{ . . . }` |
+| [`JurassicUnlocked`](./Miscellaneous.md#object-jurassicunlocked) | Object  | Unlocks an exit route to the Jurassic area on the map. | 1 | `{ . . . }` |
+| [`LargeHouse`](./Miscellaneous.md#object-largehouse) | Object  | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Large`](./Miscellaneous.md#object-largehouse_floor2large) | Object  | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Small`](./Miscellaneous.md#object-largehouse_floor2small) | Object  | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
 | `lava` | Number | A weight or priority value for preferring lava tiles in AI movement decisions. | 1 | `5` |
 | [`lenny`](./Enums.md#enum-lenny) | Enum | Specifies the Lenny miniboss encounter. | 1 | `auto` |
-| [`level_up_didnt_select_sunburn`](#object-level_up_didnt_select_sunburn) | Object | A sequence that plays dialog when the player did not select the Sunburn level-up option. | 1 | `{ . . . }` |
-| [`level_up_intro`](#object-level_up_intro) | Object | A sequence that plays the introductory dialog and animation for the level-up UI. | 1 | `{ . . . }` |
-| [`level_up_selected_sunburn`](#object-level_up_selected_sunburn) | Object | A sequence that plays dialog when the player selected the Sunburn level-up option. | 1 | `{ . . . }` |
+| [`level_up_didnt_select_sunburn`](./NPC_Scripts.md#object-level_up_didnt_select_sunburn) | Object  | A sequence that plays dialog when the player did not select the Sunburn level-up option. | 1 | `{ . . . }` |
+| [`level_up_intro`](./NPC_Scripts.md#object-level_up_intro) | Object  | A sequence that plays the introductory dialog and animation for the level-up UI. | 1 | `{ . . . }` |
+| [`level_up_selected_sunburn`](./NPC_Scripts.md#object-level_up_selected_sunburn) | Object  | A sequence that plays dialog when the player selected the Sunburn level-up option. | 1 | `{ . . . }` |
 | [`lightningelemental`](./Enums.md#enum-lightningelemental) | Enum | Specifies the Lightning Elemental miniboss encounter. | 1 | `auto` |
 | `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
-| [`LostSoul`](Engine_LogicKeys.md#object-lostsoul) | Object | Defines a Lost Soul item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`low_on_food`](#object-low_on_food) | Object | A sequence that plays a dialog and animation warning the player that they are low on food. | 1 | `{ . . . }` |
-| [`MagicSeed`](Engine_LogicKeys.md#object-magicseed) | Object | Defines a Magic Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
+| [`LostSoul`](./Engine_LogicKeys.md#object-lostsoul) | Object  | Defines a Lost Soul item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`low_on_food`](./NPC_Scripts.md#object-low_on_food) | Object  | A sequence that plays a dialog and animation warning the player that they are low on food. | 1 | `{ . . . }` |
+| [`MagicSeed`](./Engine_LogicKeys.md#object-magicseed) | Object  | Defines a Magic Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
 | [`mamamaggot`](./Enums.md#enum-mamamaggot) | Enum | Specifies the Mama Maggot miniboss encounter. | 1 | `auto` |
-| [`map_areas`](#object-map_areas) | Object | An object mapping map area names to their required save file flags for visibility on the map. | 1 | `{ . . . }` |
-| [`map_click_node`](#object-map_click_node) | Object | A sequence that teaches the player to click a map node, then unlocks controls. | 1 | `{ . . . }` |
-| [`map_equip_items`](#object-map_equip_items) | Object | A sequence that teaches the player to equip items on the map. | 1 | `{ . . . }` |
-| [`map_equip_items2`](#object-map_equip_items2) | Object | A sequence that provides a secondary reminder to equip items, clearing its own token. | 1 | `{ . . . }` |
-| [`MeatWorldUnlockedFull`](Engine_LogicKeys.md#object-meatworldunlockedfull) | Object | Unlocks hidden battle and hard nodes within the MeatWorld area on the map. | 1 | `{ . . . }` |
-| [`MediumHouse`](Engine_LogicKeys.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
-| [`MediumHouse_SmallRoom`](Engine_LogicKeys.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
-| [`melee_attack_rat`](#object-melee_attack_rat) | Object | A tutorial sequence that demonstrates how to perform a melee attack on a rat. | 1 | `{ . . . }` |
-| [`melee_cat_spit`](#object-melee_cat_spit) | Object | A tutorial sequence that demonstrates how to use the cat spit ability. | 1 | `{ . . . }` |
-| [`melee_cat_spit_fail_ally`](#object-melee_cat_spit_fail_ally) | Object | A tutorial sequence that plays when the cat spit fails due to targeting an ally. | 1 | `{ . . . }` |
-| [`melee_cat_spit_fail_miss`](#object-melee_cat_spit_fail_miss) | Object | A tutorial sequence that plays when the cat spit fails due to a miss. | 1 | `{ . . . }` |
-| [`melee_cat_spit_fail_rat`](#object-melee_cat_spit_fail_rat) | Object | A tutorial sequence that plays when the cat spit fails to hit a rat. | 1 | `{ . . . }` |
-| [`melee_cat_spit_ignore`](#object-melee_cat_spit_ignore) | Object | A tutorial sequence that plays when the player ignores the cat spit prompt. | 1 | `{ . . . }` |
-| [`melee_cat_spit_success`](#object-melee_cat_spit_success) | Object | A tutorial sequence that plays when the cat spit is successfully used. | 1 | `{ . . . }` |
-| [`melee_killed_rat`](#object-melee_killed_rat) | Object | A tutorial sequence that plays after the player kills a rat with a melee attack. | 1 | `{ . . . }` |
-| [`melee_move2`](#object-melee_move2) | Object | A tutorial sequence that teaches the player to use movement actions. | 1 | `{ . . . }` |
-| [`melee_out_of_actions`](#object-melee_out_of_actions) | Object | A tutorial sequence that explains when the player is out of actions in melee. | 1 | `{ . . . }` |
-| [`miniboss_event`](Map_Generation_and_Routing.md#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
-| [`MoonUnlocked`](Engine_LogicKeys.md#object-moonunlocked) | Object | Unlocks an exit route to the Moon on the map. | 1 | `{ . . . }` |
+| [`map_areas`](./Miscellaneous.md#object-map_areas) | Object  | An object mapping map area names to their required save file flags for visibility on the map. | 1 | `{ . . . }` |
+| [`map_click_node`](./NPC_Scripts.md#object-map_click_node) | Object  | A sequence that teaches the player to click a map node, then unlocks controls. | 1 | `{ . . . }` |
+| [`map_equip_items`](./NPC_Scripts.md#object-map_equip_items) | Object  | A sequence that teaches the player to equip items on the map. | 1 | `{ . . . }` |
+| [`map_equip_items2`](./NPC_Scripts.md#object-map_equip_items2) | Object  | A sequence that provides a secondary reminder to equip items, clearing its own token. | 1 | `{ . . . }` |
+| [`MeatWorldUnlockedFull`](./Miscellaneous.md#object-meatworldunlockedfull) | Object  | Unlocks hidden battle and hard nodes within the MeatWorld area on the map. | 1 | `{ . . . }` |
+| [`MediumHouse`](./Miscellaneous.md#object-mediumhouse) | Object  | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
+| [`MediumHouse_SmallRoom`](./Miscellaneous.md#object-mediumhouse_smallroom) | Object  | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
+| [`melee_attack_rat`](./NPC_Scripts.md#object-melee_attack_rat) | Object  | A tutorial sequence that demonstrates how to perform a melee attack on a rat. | 1 | `{ . . . }` |
+| [`melee_cat_spit`](./NPC_Scripts.md#object-melee_cat_spit) | Object  | A tutorial sequence that demonstrates how to use the cat spit ability. | 1 | `{ . . . }` |
+| [`melee_cat_spit_fail_ally`](./NPC_Scripts.md#object-melee_cat_spit_fail_ally) | Object  | A tutorial sequence that plays when the cat spit fails due to targeting an ally. | 1 | `{ . . . }` |
+| [`melee_cat_spit_fail_miss`](./NPC_Scripts.md#object-melee_cat_spit_fail_miss) | Object  | A tutorial sequence that plays when the cat spit fails due to a miss. | 1 | `{ . . . }` |
+| [`melee_cat_spit_fail_rat`](./NPC_Scripts.md#object-melee_cat_spit_fail_rat) | Object  | A tutorial sequence that plays when the cat spit fails to hit a rat. | 1 | `{ . . . }` |
+| [`melee_cat_spit_ignore`](./NPC_Scripts.md#object-melee_cat_spit_ignore) | Object  | A tutorial sequence that plays when the player ignores the cat spit prompt. | 1 | `{ . . . }` |
+| [`melee_cat_spit_success`](./NPC_Scripts.md#object-melee_cat_spit_success) | Object  | A tutorial sequence that plays when the cat spit is successfully used. | 1 | `{ . . . }` |
+| [`melee_killed_rat`](./NPC_Scripts.md#object-melee_killed_rat) | Object  | A tutorial sequence that plays after the player kills a rat with a melee attack. | 1 | `{ . . . }` |
+| [`melee_move2`](./NPC_Scripts.md#object-melee_move2) | Object  | A tutorial sequence that teaches the player to use movement actions. | 1 | `{ . . . }` |
+| [`melee_out_of_actions`](./NPC_Scripts.md#object-melee_out_of_actions) | Object  | A tutorial sequence that explains when the player is out of actions in melee. | 1 | `{ . . . }` |
+| [`miniboss_event`](./Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
+| [`MoonUnlocked`](./Miscellaneous.md#object-moonunlocked) | Object  | Unlocks an exit route to the Moon on the map. | 1 | `{ . . . }` |
 | [`musiclayer`](./Enums.md#enum-musiclayer) | Enum | Specifies the music layer to play for this node (e.g., 'boss'). | 1 | `boss` |
-| [`mw_altar`](Map_Generation_and_Routing.md#object-mw_altar) | Object | A map node that represents a Meat World special event altar with custom art. | 1 | `{ . . . }` |
-| [`mw_battle1`](Map_Generation_and_Routing.md#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
-| [`mw_boss`](Map_Generation_and_Routing.md#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
-| [`mw_earlyhome`](Map_Generation_and_Routing.md#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
-| [`mw_event1`](Map_Generation_and_Routing.md#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
-| [`mw_hard1`](Map_Generation_and_Routing.md#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
-| [`mw_home`](Map_Generation_and_Routing.md#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
-| [`mw_quest_event`](Map_Generation_and_Routing.md#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
-| [`mw_treasure`](Map_Generation_and_Routing.md#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
-| [`new_adventure`](#object-new_adventure) | Object | A sequence that plays dialog and animation when starting a new adventure. | 1 | `{ . . . }` |
-| [`organ_intro`](#object-organ_intro) | Object | Sequence of events for the Organ Grinder's introductory dialogue. | 1 | `{ . . . }` |
-| [`organ_max1`](#object-organ_max1) | Object | Sequence of events for the Organ Grinder's first max favor dialogue. | 1 | `{ . . . }` |
-| [`organ_max2`](#object-organ_max2) | Object | Sequence of events for the Organ Grinder's second max favor dialogue. | 1 | `{ . . . }` |
-| [`organ_max3`](#object-organ_max3) | Object | Sequence of events for the Organ Grinder's third max favor dialogue. | 1 | `{ . . . }` |
-| [`organ_max4`](#object-organ_max4) | Object | Sequence of events for the Organ Grinder's fourth max favor dialogue. | 1 | `{ . . . }` |
-| [`organ_max5`](#object-organ_max5) | Object | Sequence of events for the Organ Grinder's fifth max favor dialogue. | 1 | `{ . . . }` |
-| [`organ_rename`](#object-organ_rename) | Object | Sequence of events for the Organ Grinder's rename dialogue. | 1 | `{ . . . }` |
-| [`organ_tina3`](#object-organ_tina3) | Object | Sequence of events for the Organ Grinder's dialogue with Tina (stage 3). | 1 | `{ . . . }` |
+| [`mw_altar`](./Miscellaneous.md#object-mw_altar) | Object  | A map node that represents a Meat World special event altar with custom art. | 1 | `{ . . . }` |
+| [`mw_battle1`](./Miscellaneous.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
+| [`mw_boss`](./Miscellaneous.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
+| [`mw_earlyhome`](./Miscellaneous.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
+| [`mw_event1`](./Miscellaneous.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
+| [`mw_hard1`](./Miscellaneous.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
+| [`mw_home`](./Miscellaneous.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
+| [`mw_quest_event`](./Miscellaneous.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
+| [`mw_treasure`](./Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
+| [`new_adventure`](./NPC_Scripts.md#object-new_adventure) | Object  | A sequence that plays dialog and animation when starting a new adventure. | 1 | `{ . . . }` |
+| [`organ_intro`](./NPC_Scripts.md#object-organ_intro) | Object  | Sequence of events for the Organ Grinder's introductory dialogue. | 1 | `{ . . . }` |
+| [`organ_max1`](./NPC_Scripts.md#object-organ_max1) | Object  | Sequence of events for the Organ Grinder's first max favor dialogue. | 1 | `{ . . . }` |
+| [`organ_max2`](./NPC_Scripts.md#object-organ_max2) | Object  | Sequence of events for the Organ Grinder's second max favor dialogue. | 1 | `{ . . . }` |
+| [`organ_max3`](./NPC_Scripts.md#object-organ_max3) | Object  | Sequence of events for the Organ Grinder's third max favor dialogue. | 1 | `{ . . . }` |
+| [`organ_max4`](./NPC_Scripts.md#object-organ_max4) | Object  | Sequence of events for the Organ Grinder's fourth max favor dialogue. | 1 | `{ . . . }` |
+| [`organ_max5`](./NPC_Scripts.md#object-organ_max5) | Object  | Sequence of events for the Organ Grinder's fifth max favor dialogue. | 1 | `{ . . . }` |
+| [`organ_rename`](./NPC_Scripts.md#object-organ_rename) | Object  | Sequence of events for the Organ Grinder's rename dialogue. | 1 | `{ . . . }` |
+| [`organ_tina3`](./NPC_Scripts.md#object-organ_tina3) | Object  | Sequence of events for the Organ Grinder's dialogue with Tina (stage 3). | 1 | `{ . . . }` |
 | [`p`](./Arrays.md#array-p) | Array | A coordinate pair [x, y] representing a position. | 1 | `[18 0]`<br>`[35 0]` |
 | `parasaurolophus` | Number | Identifier for the parasaurolophus voice set. | 1 | `1` |
-| [`Parousworm`](Engine_LogicKeys.md#object-parousworm) | Object | Defines a Parousworm item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`PeaceSymbol`](Engine_LogicKeys.md#object-peacesymbol) | Object | Defines a Peace Symbol item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`PeaceSymbolFacePaint`](Engine_LogicKeys.md#object-peacesymbolfacepaint) | Object | Defines a Peace Symbol Face Paint item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`Parousworm`](./Engine_LogicKeys.md#object-parousworm) | Object  | Defines a Parousworm item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`PeaceSymbol`](./Engine_LogicKeys.md#object-peacesymbol) | Object  | Defines a Peace Symbol item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`PeaceSymbolFacePaint`](./Engine_LogicKeys.md#object-peacesymbolfacepaint) | Object  | Defines a Peace Symbol Face Paint item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | `pills` | Number | The amount of pills granted as a consumable reward. | 1 | `7` |
-| [`prereqs`](#object-prereqs) | Object | Object mapping quest or unlock names to their prerequisite mapflags or conditions. | 1 | `{ . . . }` |
-| [`purchase_item_a`](#object-purchase_item_a) | Object | Sequence of events for purchasing shop item A from Tracy. | 1 | `{ . . . }` |
-| [`purchase_item_b`](#object-purchase_item_b) | Object | Sequence of events for purchasing shop item B from Tracy. | 1 | `{ . . . }` |
-| [`purchase_item_c`](#object-purchase_item_c) | Object | Sequence of events for purchasing shop item C from Tracy. | 1 | `{ . . . }` |
-| [`purchase_item_d`](#object-purchase_item_d) | Object | Sequence of events for purchasing shop item D from Tracy. | 1 | `{ . . . }` |
-| [`purchase_item_iceage`](#object-purchase_item_iceage) | Object | Sequence of events for purchasing the Ice Age shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
-| [`purchase_item_jurassic`](#object-purchase_item_jurassic) | Object | Sequence of events for purchasing the Jurassic shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
-| [`purchase_item_moon`](#object-purchase_item_moon) | Object | Sequence of events for purchasing the Moon shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
-| [`purchase_item_theend`](#object-purchase_item_theend) | Object | Sequence of events for purchasing The End shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
-| [`ranged_attack_tomtom`](#object-ranged_attack_tomtom) | Object | Sequence of events for TomTom's ranged attack. | 1 | `{ . . . }` |
-| [`ranged_attack_tomtom_fail_ally`](#object-ranged_attack_tomtom_fail_ally) | Object | Sequence of events for when TomTom's ranged attack fails due to an ally in the way. | 1 | `{ . . . }` |
-| [`ranged_attack_tomtom_fail_miss`](#object-ranged_attack_tomtom_fail_miss) | Object | Sequence of events for when TomTom's ranged attack misses. | 1 | `{ . . . }` |
-| [`ranged_attack_tomtom_fail_rat`](#object-ranged_attack_tomtom_fail_rat) | Object | Sequence of events for when TomTom's ranged attack fails due to a rat. | 1 | `{ . . . }` |
-| [`ranged_cat_attack`](#object-ranged_cat_attack) | Object | Sequence of events for the cat's ranged attack. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack2_ally`](#object-ranged_cat_early_attack2_ally) | Object | Sequence of events for the cat's second early ranged attack failing due to an ally. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack2_miss`](#object-ranged_cat_early_attack2_miss) | Object | Sequence of events for the cat's second early ranged attack missing. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack2_rat`](#object-ranged_cat_early_attack2_rat) | Object | Sequence of events for the cat's second early ranged attack failing due to a rat. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack_ally`](#object-ranged_cat_early_attack_ally) | Object | Sequence of events for the cat's first early ranged attack failing due to an ally. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack_miss`](#object-ranged_cat_early_attack_miss) | Object | Sequence of events for the cat's first early ranged attack missing. | 1 | `{ . . . }` |
-| [`ranged_cat_early_attack_rat`](#object-ranged_cat_early_attack_rat) | Object | Sequence of events for the cat's first early ranged attack failing due to a rat. | 1 | `{ . . . }` |
-| [`ranged_cat_failmove`](#object-ranged_cat_failmove) | Object | Sequence of events for the cat's failed ranged attack move. | 1 | `{ . . . }` |
-| [`ranged_cat_intro`](#object-ranged_cat_intro) | Object | Sequence of events for the cat's ranged attack introduction. | 1 | `{ . . . }` |
-| [`ranged_cat_roll`](#object-ranged_cat_roll) | Object | Sequence of events for the cat's ranged attack roll animation. | 1 | `{ . . . }` |
-| [`ranged_cat_rolled_first`](#object-ranged_cat_rolled_first) | Object | Sequence of events for when the cat rolls first. | 1 | `{ . . . }` |
+| [`prereqs`](./Progression_Unlocks.md#object-prereqs) | Object  | Object mapping quest or unlock names to their prerequisite mapflags or conditions. | 1 | `{ . . . }` |
+| [`purchase_item_a`](./NPC_Scripts.md#object-purchase_item_a) | Object  | Sequence of events for purchasing shop item A from Tracy. | 1 | `{ . . . }` |
+| [`purchase_item_b`](./NPC_Scripts.md#object-purchase_item_b) | Object  | Sequence of events for purchasing shop item B from Tracy. | 1 | `{ . . . }` |
+| [`purchase_item_c`](./NPC_Scripts.md#object-purchase_item_c) | Object  | Sequence of events for purchasing shop item C from Tracy. | 1 | `{ . . . }` |
+| [`purchase_item_d`](./NPC_Scripts.md#object-purchase_item_d) | Object  | Sequence of events for purchasing shop item D from Tracy. | 1 | `{ . . . }` |
+| [`purchase_item_iceage`](./NPC_Scripts.md#object-purchase_item_iceage) | Object  | Sequence of events for purchasing the Ice Age shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
+| [`purchase_item_jurassic`](./NPC_Scripts.md#object-purchase_item_jurassic) | Object  | Sequence of events for purchasing the Jurassic shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
+| [`purchase_item_moon`](./NPC_Scripts.md#object-purchase_item_moon) | Object  | Sequence of events for purchasing the Moon shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
+| [`purchase_item_theend`](./NPC_Scripts.md#object-purchase_item_theend) | Object  | Sequence of events for purchasing The End shop item. When set to true, indicates the purchase has already occurred. | 1 | `{ . . . }` |
+| [`ranged_attack_tomtom`](./NPC_Scripts.md#object-ranged_attack_tomtom) | Object  | Sequence of events for TomTom's ranged attack. | 1 | `{ . . . }` |
+| [`ranged_attack_tomtom_fail_ally`](./NPC_Scripts.md#object-ranged_attack_tomtom_fail_ally) | Object  | Sequence of events for when TomTom's ranged attack fails due to an ally in the way. | 1 | `{ . . . }` |
+| [`ranged_attack_tomtom_fail_miss`](./NPC_Scripts.md#object-ranged_attack_tomtom_fail_miss) | Object  | Sequence of events for when TomTom's ranged attack misses. | 1 | `{ . . . }` |
+| [`ranged_attack_tomtom_fail_rat`](./NPC_Scripts.md#object-ranged_attack_tomtom_fail_rat) | Object  | Sequence of events for when TomTom's ranged attack fails due to a rat. | 1 | `{ . . . }` |
+| [`ranged_cat_attack`](./NPC_Scripts.md#object-ranged_cat_attack) | Object  | Sequence of events for the cat's ranged attack. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack2_ally`](./NPC_Scripts.md#object-ranged_cat_early_attack2_ally) | Object  | Sequence of events for the cat's second early ranged attack failing due to an ally. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack2_miss`](./NPC_Scripts.md#object-ranged_cat_early_attack2_miss) | Object  | Sequence of events for the cat's second early ranged attack missing. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack2_rat`](./NPC_Scripts.md#object-ranged_cat_early_attack2_rat) | Object  | Sequence of events for the cat's second early ranged attack failing due to a rat. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack_ally`](./NPC_Scripts.md#object-ranged_cat_early_attack_ally) | Object  | Sequence of events for the cat's first early ranged attack failing due to an ally. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack_miss`](./NPC_Scripts.md#object-ranged_cat_early_attack_miss) | Object  | Sequence of events for the cat's first early ranged attack missing. | 1 | `{ . . . }` |
+| [`ranged_cat_early_attack_rat`](./NPC_Scripts.md#object-ranged_cat_early_attack_rat) | Object  | Sequence of events for the cat's first early ranged attack failing due to a rat. | 1 | `{ . . . }` |
+| [`ranged_cat_failmove`](./NPC_Scripts.md#object-ranged_cat_failmove) | Object  | Sequence of events for the cat's failed ranged attack move. | 1 | `{ . . . }` |
+| [`ranged_cat_intro`](./NPC_Scripts.md#object-ranged_cat_intro) | Object  | Sequence of events for the cat's ranged attack introduction. | 1 | `{ . . . }` |
+| [`ranged_cat_roll`](./NPC_Scripts.md#object-ranged_cat_roll) | Object  | Sequence of events for the cat's ranged attack roll animation. | 1 | `{ . . . }` |
+| [`ranged_cat_rolled_first`](./NPC_Scripts.md#object-ranged_cat_rolled_first) | Object  | Sequence of events for when the cat rolls first. | 1 | `{ . . . }` |
 | `raptor` | Number | Identifier for the raptor voice set. | 1 | `1` |
-| [`RaptorEgg`](Engine_LogicKeys.md#object-raptoregg) | Object | An object defining a raptor egg item with a probability or weight. | 1 | `{ . . . }` |
+| [`RaptorEgg`](./Engine_LogicKeys.md#object-raptoregg) | Object  | An object defining a raptor egg item with a probability or weight. | 1 | `{ . . . }` |
 | [`ratking`](./Enums.md#enum-ratking) | Enum | Specifies the Rat King miniboss encounter. | 1 | `auto` |
-| [`RavenFeather`](Engine_LogicKeys.md#object-ravenfeather) | Object | Defines a Raven Feather item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`RavenFeather`](./Engine_LogicKeys.md#object-ravenfeather) | Object  | Defines a Raven Feather item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | `requires_hard_path` | Boolean | If true, this unlock requires the player to be on the hard path. | 1 | `true` |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum | Specifies the unlock key to reset upon completing this unlock chain. | 1 | `nuke_quest_begin` |
 | [`rockybobo`](./Enums.md#enum-rockybobo) | Enum | Specifies the Rocky Bobo miniboss encounter. | 1 | `auto` |
-| [`SewersUnlocked`](Engine_LogicKeys.md#object-sewersunlocked) | Object | Unlocks an exit route to the Sewers on the map. | 1 | `{ . . . }` |
-| [`shop_cheapwater`](Map_Generation_and_Routing.md#object-shop_cheapwater) | Object | Node definition for a cheap water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
-| [`shop_water`](Map_Generation_and_Routing.md#object-shop_water) | Object | Node definition for a water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
+| [`SewersUnlocked`](./Miscellaneous.md#object-sewersunlocked) | Object  | Unlocks an exit route to the Sewers on the map. | 1 | `{ . . . }` |
+| [`shop_cheapwater`](./Miscellaneous.md#object-shop_cheapwater) | Object  | Node definition for a cheap water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
+| [`shop_water`](./Miscellaneous.md#object-shop_water) | Object  | Node definition for a water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
 | [`slime`](./Enums.md#enum-slime) | Enum | Specifies the Slime miniboss encounter. | 1 | `auto` |
-| [`SmallAttic`](Engine_LogicKeys.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
-| [`SmallHouse_Attic`](Engine_LogicKeys.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
+| [`SmallAttic`](./Miscellaneous.md#object-smallattic) | Object  | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
+| [`SmallHouse_Attic`](./Miscellaneous.md#object-smallhouse_attic) | Object  | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
 | [`spawn_node`](./Enums.md#enum-spawn_node) | Enum | The name of the node where the nemesis first spawns on the map. | 1 | `start` |
 | [`stacy`](./Enums.md#enum-stacy) | Enum | Specifies the Stacy boss encounter. | 1 | `auto` |
-| [`steven_100`](#object-steven_100) | Object | Sequence of events for Steven's 100% completion dialogue. | 1 | `{ . . . }` |
-| [`steven_introduction`](#object-steven_introduction) | Object | Sequence of events for Steven's introduction dialogue. | 1 | `{ . . . }` |
-| [`steven_resummon`](#object-steven_resummon) | Object | A sequence triggered after beating the final boss, unlocking the ability to resummon house bosses. | 1 | `{ . . . }` |
-| [`steven_savescum_1`](#object-steven_savescum_1) | Object | A sequence that plays a random warning sequence for the first savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_100`](#object-steven_savescum_100) | Object | A secret sequence for the 100th savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_1alt1`](#object-steven_savescum_1alt1) | Object | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_1alt2`](#object-steven_savescum_1alt2) | Object | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_1alt3`](#object-steven_savescum_1alt3) | Object | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_2`](#object-steven_savescum_2) | Object | A sequence that plays a random sequence for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_2alt1`](#object-steven_savescum_2alt1) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_2alt2`](#object-steven_savescum_2alt2) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_2alt3`](#object-steven_savescum_2alt3) | Object | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_3`](#object-steven_savescum_3) | Object | A sequence that plays a random sequence for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_3alt1`](#object-steven_savescum_3alt1) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_3alt2`](#object-steven_savescum_3alt2) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_3alt3`](#object-steven_savescum_3alt3) | Object | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
-| [`steven_savescum_4`](#object-steven_savescum_4) | Object | A sequence that plays a random sequence for the fourth savescum event (deja vu level up 25%). | 1 | `{ . . . }` |
-| [`steven_savescum_4alt1`](#object-steven_savescum_4alt1) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
-| [`steven_savescum_4alt2`](#object-steven_savescum_4alt2) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
-| [`steven_savescum_4alt3`](#object-steven_savescum_4alt3) | Object | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
-| [`steven_savescum_houseboss_1`](#object-steven_savescum_houseboss_1) | Object | A warning sequence for the first house boss savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_houseboss_100`](#object-steven_savescum_houseboss_100) | Object | A secret sequence for the 100th house boss savescum event. | 1 | `{ . . . }` |
-| [`steven_savescum_houseboss_2`](#object-steven_savescum_houseboss_2) | Object | A sequence for the second house boss savescum event (all cats 10% deja vu). | 1 | `{ . . . }` |
-| [`steven_savescum_houseboss_3`](#object-steven_savescum_houseboss_3) | Object | A sequence for the third house boss savescum event (all cats deja vu 25% and onward). | 1 | `{ . . . }` |
-| [`steven_savescum_intro`](#object-steven_savescum_intro) | Object | A sequence that replaces the first savescum event sequences if it is the first time savescumming. | 1 | `{ . . . }` |
-| [`steven_savescum_intro_houseboss`](#object-steven_savescum_intro_houseboss) | Object | A sequence that replaces the first house boss savescum event sequences if it is the first time savescumming. | 1 | `{ . . . }` |
-| [`steven_unlock_act1_crazy`](#object-steven_unlock_act1_crazy) | Object | A sequence triggered when beating Act 1 and its house bosses on Hard, unlocking Crazy difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act1_impossible`](#object-steven_unlock_act1_impossible) | Object | A sequence triggered when beating Act 1 house bosses on Crazy, unlocking Impossible difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act2_crazy`](#object-steven_unlock_act2_crazy) | Object | A sequence for unlocking Act 2 Crazy difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act2_hard`](#object-steven_unlock_act2_hard) | Object | A sequence triggered when beating Act 2 for the first time, unlocking Hard difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act2_impossible`](#object-steven_unlock_act2_impossible) | Object | A sequence for unlocking Act 2 Impossible difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act3_crazy`](#object-steven_unlock_act3_crazy) | Object | A sequence for unlocking Act 3 Crazy difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act3_hard`](#object-steven_unlock_act3_hard) | Object | A sequence triggered when beating Act 3 for the first time, unlocking Hard difficulty. | 1 | `{ . . . }` |
-| [`steven_unlock_act3_impossible`](#object-steven_unlock_act3_impossible) | Object | A sequence for unlocking Act 3 Impossible difficulty. | 1 | `{ . . . }` |
-| [`take_cats_inside`](#object-take_cats_inside) | Object | A sequence for taking cats inside the house. | 1 | `{ . . . }` |
+| [`steven_100`](./NPC_Scripts.md#object-steven_100) | Object  | Sequence of events for Steven's 100% completion dialogue. | 1 | `{ . . . }` |
+| [`steven_introduction`](./NPC_Scripts.md#object-steven_introduction) | Object  | Sequence of events for Steven's introduction dialogue. | 1 | `{ . . . }` |
+| [`steven_resummon`](./NPC_Scripts.md#object-steven_resummon) | Object  | A sequence triggered after beating the final boss, unlocking the ability to resummon house bosses. | 1 | `{ . . . }` |
+| [`steven_savescum_1`](./NPC_Scripts.md#object-steven_savescum_1) | Object  | A sequence that plays a random warning sequence for the first savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_100`](./NPC_Scripts.md#object-steven_savescum_100) | Object  | A secret sequence for the 100th savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_1alt1`](./NPC_Scripts.md#object-steven_savescum_1alt1) | Object  | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_1alt2`](./NPC_Scripts.md#object-steven_savescum_1alt2) | Object  | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_1alt3`](./NPC_Scripts.md#object-steven_savescum_1alt3) | Object  | One of the random alternative warning sequences for the first savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_2`](./NPC_Scripts.md#object-steven_savescum_2) | Object  | A sequence that plays a random sequence for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_2alt1`](./NPC_Scripts.md#object-steven_savescum_2alt1) | Object  | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_2alt2`](./NPC_Scripts.md#object-steven_savescum_2alt2) | Object  | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_2alt3`](./NPC_Scripts.md#object-steven_savescum_2alt3) | Object  | One of the random alternative sequences for the second savescum event (1 cat deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_3`](./NPC_Scripts.md#object-steven_savescum_3) | Object  | A sequence that plays a random sequence for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_3alt1`](./NPC_Scripts.md#object-steven_savescum_3alt1) | Object  | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_3alt2`](./NPC_Scripts.md#object-steven_savescum_3alt2) | Object  | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_3alt3`](./NPC_Scripts.md#object-steven_savescum_3alt3) | Object  | One of the random alternative sequences for the third savescum event (all cats deja vu 10%). | 1 | `{ . . . }` |
+| [`steven_savescum_4`](./NPC_Scripts.md#object-steven_savescum_4) | Object  | A sequence that plays a random sequence for the fourth savescum event (deja vu level up 25%). | 1 | `{ . . . }` |
+| [`steven_savescum_4alt1`](./NPC_Scripts.md#object-steven_savescum_4alt1) | Object  | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
+| [`steven_savescum_4alt2`](./NPC_Scripts.md#object-steven_savescum_4alt2) | Object  | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
+| [`steven_savescum_4alt3`](./NPC_Scripts.md#object-steven_savescum_4alt3) | Object  | One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over). | 1 | `{ . . . }` |
+| [`steven_savescum_houseboss_1`](./NPC_Scripts.md#object-steven_savescum_houseboss_1) | Object  | A warning sequence for the first house boss savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_houseboss_100`](./NPC_Scripts.md#object-steven_savescum_houseboss_100) | Object  | A secret sequence for the 100th house boss savescum event. | 1 | `{ . . . }` |
+| [`steven_savescum_houseboss_2`](./NPC_Scripts.md#object-steven_savescum_houseboss_2) | Object  | A sequence for the second house boss savescum event (all cats 10% deja vu). | 1 | `{ . . . }` |
+| [`steven_savescum_houseboss_3`](./NPC_Scripts.md#object-steven_savescum_houseboss_3) | Object  | A sequence for the third house boss savescum event (all cats deja vu 25% and onward). | 1 | `{ . . . }` |
+| [`steven_savescum_intro`](./NPC_Scripts.md#object-steven_savescum_intro) | Object  | A sequence that replaces the first savescum event sequences if it is the first time savescumming. | 1 | `{ . . . }` |
+| [`steven_savescum_intro_houseboss`](./NPC_Scripts.md#object-steven_savescum_intro_houseboss) | Object  | A sequence that replaces the first house boss savescum event sequences if it is the first time savescumming. | 1 | `{ . . . }` |
+| [`steven_unlock_act1_crazy`](./NPC_Scripts.md#object-steven_unlock_act1_crazy) | Object  | A sequence triggered when beating Act 1 and its house bosses on Hard, unlocking Crazy difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act1_impossible`](./NPC_Scripts.md#object-steven_unlock_act1_impossible) | Object  | A sequence triggered when beating Act 1 house bosses on Crazy, unlocking Impossible difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act2_crazy`](./NPC_Scripts.md#object-steven_unlock_act2_crazy) | Object  | A sequence for unlocking Act 2 Crazy difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act2_hard`](./NPC_Scripts.md#object-steven_unlock_act2_hard) | Object  | A sequence triggered when beating Act 2 for the first time, unlocking Hard difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act2_impossible`](./NPC_Scripts.md#object-steven_unlock_act2_impossible) | Object  | A sequence for unlocking Act 2 Impossible difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act3_crazy`](./NPC_Scripts.md#object-steven_unlock_act3_crazy) | Object  | A sequence for unlocking Act 3 Crazy difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act3_hard`](./NPC_Scripts.md#object-steven_unlock_act3_hard) | Object  | A sequence triggered when beating Act 3 for the first time, unlocking Hard difficulty. | 1 | `{ . . . }` |
+| [`steven_unlock_act3_impossible`](./NPC_Scripts.md#object-steven_unlock_act3_impossible) | Object  | A sequence for unlocking Act 3 Impossible difficulty. | 1 | `{ . . . }` |
+| [`take_cats_inside`](./NPC_Scripts.md#object-take_cats_inside) | Object  | A sequence for taking cats inside the house. | 1 | `{ . . . }` |
 | `tall_grass` | Number | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 1 | `5` |
 | [`tankcat`](./Enums.md#enum-tankcat) | Enum | Specifies the Tank Cat miniboss encounter. | 1 | `auto` |
-| [`test_gamepad_prompts`](#object-test_gamepad_prompts) | Object | A sequence that shows gamepad binding prompts. | 1 | `{ . . . }` |
+| [`test_gamepad_prompts`](./NPC_Scripts.md#object-test_gamepad_prompts) | Object  | A sequence that shows gamepad binding prompts. | 1 | `{ . . . }` |
 | [`thebloat`](./Enums.md#enum-thebloat) | Enum | Specifies The Bloat miniboss encounter. | 1 | `auto` |
-| [`TheEndUnlocked`](Engine_LogicKeys.md#object-theendunlocked) | Object | An object that stores flags related to unlocking the 'The End' chapter. | 1 | `{ . . . }` |
-| [`ThrobbingArteryDone`](Engine_LogicKeys.md#object-throbbingarterydone) | Object | An object that stores flags related to completing the Throbbing Artery quest. | 1 | `{ . . . }` |
-| [`TieDyeBandana`](Engine_LogicKeys.md#object-tiedyebandana) | Object | Defines a Tie Dye Bandana item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`tink_begin_accepting_cats`](#object-tink_begin_accepting_cats) | Object | A sequence for when Tink begins accepting cats. | 1 | `{ . . . }` |
-| [`tink_max1`](#object-tink_max1) | Object | One of the sequences played when Tink is at max favor (1 of 10). | 1 | `{ . . . }` |
-| [`tink_max10`](#object-tink_max10) | Object | One of the sequences played when Tink is at max favor (10 of 10). | 1 | `{ . . . }` |
-| [`tink_max2`](#object-tink_max2) | Object | One of the sequences played when Tink is at max favor (2 of 10). | 1 | `{ . . . }` |
-| [`tink_max3`](#object-tink_max3) | Object | One of the sequences played when Tink is at max favor (3 of 10). | 1 | `{ . . . }` |
-| [`tink_max4`](#object-tink_max4) | Object | One of the sequences played when Tink is at max favor (4 of 10). | 1 | `{ . . . }` |
-| [`tink_max5`](#object-tink_max5) | Object | One of the sequences played when Tink is at max favor (5 of 10). | 1 | `{ . . . }` |
-| [`tink_max6`](#object-tink_max6) | Object | One of the sequences played when Tink is at max favor (6 of 10). | 1 | `{ . . . }` |
-| [`tink_max7`](#object-tink_max7) | Object | One of the sequences played when Tink is at max favor (7 of 10). | 1 | `{ . . . }` |
-| [`tink_max8`](#object-tink_max8) | Object | One of the sequences played when Tink is at max favor (8 of 10). | 1 | `{ . . . }` |
-| [`tink_max9`](#object-tink_max9) | Object | One of the sequences played when Tink is at max favor (9 of 10). | 1 | `{ . . . }` |
-| [`tink_terminator`](#object-tink_terminator) | Object | A sequence for Tink's terminator event. | 1 | `{ . . . }` |
-| [`tink_tina2`](#object-tink_tina2) | Object | A sequence for Tink and Tina interaction 2. | 1 | `{ . . . }` |
-| [`tink_tips_appeal`](#object-tink_tips_appeal) | Object | A sequence for Tink's tips on appeal. | 1 | `{ . . . }` |
-| [`tink_tips_basestats`](#object-tink_tips_basestats) | Object | A sequence for Tink's tips on base stats. | 1 | `{ . . . }` |
-| [`tink_tips_cleaning`](#object-tink_tips_cleaning) | Object | A sequence for Tink's tips on cleaning. | 1 | `{ . . . }` |
-| [`tink_tips_comfort`](#object-tink_tips_comfort) | Object | A sequence of dialogs providing Tink's tips on cat comfort. | 1 | `{ . . . }` |
-| [`tink_tips_health`](#object-tink_tips_health) | Object | A sequence of dialogs providing Tink's tips on cat health. | 1 | `{ . . . }` |
-| [`tink_tips_inbreeding`](#object-tink_tips_inbreeding) | Object | A sequence of dialogs providing Tink's tips on inbreeding. | 1 | `{ . . . }` |
-| [`tink_tips_intro`](#object-tink_tips_intro) | Object | A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence. | 1 | `{ . . . }` |
-| [`tink_tips_multiclassing`](#object-tink_tips_multiclassing) | Object | A sequence of dialogs providing Tink's tips on multiclassing. | 1 | `{ . . . }` |
-| [`tink_tips_mutation`](#object-tink_tips_mutation) | Object | A sequence of dialogs providing Tink's tips on mutations. | 1 | `{ . . . }` |
-| [`tink_tips_stimulation`](#object-tink_tips_stimulation) | Object | A sequence of dialogs providing Tink's tips on stimulation. | 1 | `{ . . . }` |
-| [`tracy_foodbonus1`](#object-tracy_foodbonus1) | Object | A sequence showing Tracy explaining a food bonus reward. | 1 | `{ . . . }` |
-| [`tracy_introduction`](#object-tracy_introduction) | Object | A sequence introducing Tracy to the player. | 1 | `{ . . . }` |
-| [`tracy_kaijufight`](#object-tracy_kaijufight) | Object | A sequence where Tracy discusses a kaiju fight. | 1 | `{ . . . }` |
-| [`tracy_max1`](#object-tracy_max1) | Object | A sequence for Tracy at max favor (part 1). | 1 | `{ . . . }` |
-| [`tracy_max2`](#object-tracy_max2) | Object | A sequence for Tracy at max favor (part 2). | 1 | `{ . . . }` |
-| [`tracy_max3`](#object-tracy_max3) | Object | A sequence for Tracy at max favor (part 3). | 1 | `{ . . . }` |
-| [`tracy_max4`](#object-tracy_max4) | Object | A sequence for Tracy at max favor (part 4). | 1 | `{ . . . }` |
-| [`tracy_max5`](#object-tracy_max5) | Object | A sequence for Tracy at max favor (part 5). | 1 | `{ . . . }` |
+| [`TheEndUnlocked`](./Miscellaneous.md#object-theendunlocked) | Object  | An object that stores flags related to unlocking the 'The End' chapter. | 1 | `{ . . . }` |
+| [`ThrobbingArteryDone`](./Miscellaneous.md#object-throbbingarterydone) | Object  | An object that stores flags related to completing the Throbbing Artery quest. | 1 | `{ . . . }` |
+| [`TieDyeBandana`](./Engine_LogicKeys.md#object-tiedyebandana) | Object  | Defines a Tie Dye Bandana item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`tink_begin_accepting_cats`](./NPC_Scripts.md#object-tink_begin_accepting_cats) | Object  | A sequence for when Tink begins accepting cats. | 1 | `{ . . . }` |
+| [`tink_max1`](./NPC_Scripts.md#object-tink_max1) | Object  | One of the sequences played when Tink is at max favor (1 of 10). | 1 | `{ . . . }` |
+| [`tink_max10`](./NPC_Scripts.md#object-tink_max10) | Object  | One of the sequences played when Tink is at max favor (10 of 10). | 1 | `{ . . . }` |
+| [`tink_max2`](./NPC_Scripts.md#object-tink_max2) | Object  | One of the sequences played when Tink is at max favor (2 of 10). | 1 | `{ . . . }` |
+| [`tink_max3`](./NPC_Scripts.md#object-tink_max3) | Object  | One of the sequences played when Tink is at max favor (3 of 10). | 1 | `{ . . . }` |
+| [`tink_max4`](./NPC_Scripts.md#object-tink_max4) | Object  | One of the sequences played when Tink is at max favor (4 of 10). | 1 | `{ . . . }` |
+| [`tink_max5`](./NPC_Scripts.md#object-tink_max5) | Object  | One of the sequences played when Tink is at max favor (5 of 10). | 1 | `{ . . . }` |
+| [`tink_max6`](./NPC_Scripts.md#object-tink_max6) | Object  | One of the sequences played when Tink is at max favor (6 of 10). | 1 | `{ . . . }` |
+| [`tink_max7`](./NPC_Scripts.md#object-tink_max7) | Object  | One of the sequences played when Tink is at max favor (7 of 10). | 1 | `{ . . . }` |
+| [`tink_max8`](./NPC_Scripts.md#object-tink_max8) | Object  | One of the sequences played when Tink is at max favor (8 of 10). | 1 | `{ . . . }` |
+| [`tink_max9`](./NPC_Scripts.md#object-tink_max9) | Object  | One of the sequences played when Tink is at max favor (9 of 10). | 1 | `{ . . . }` |
+| [`tink_terminator`](./NPC_Scripts.md#object-tink_terminator) | Object  | A sequence for Tink's terminator event. | 1 | `{ . . . }` |
+| [`tink_tina2`](./NPC_Scripts.md#object-tink_tina2) | Object  | A sequence for Tink and Tina interaction 2. | 1 | `{ . . . }` |
+| [`tink_tips_appeal`](./NPC_Scripts.md#object-tink_tips_appeal) | Object  | A sequence for Tink's tips on appeal. | 1 | `{ . . . }` |
+| [`tink_tips_basestats`](./NPC_Scripts.md#object-tink_tips_basestats) | Object  | A sequence for Tink's tips on base stats. | 1 | `{ . . . }` |
+| [`tink_tips_cleaning`](./NPC_Scripts.md#object-tink_tips_cleaning) | Object  | A sequence for Tink's tips on cleaning. | 1 | `{ . . . }` |
+| [`tink_tips_comfort`](./NPC_Scripts.md#object-tink_tips_comfort) | Object  | A sequence of dialogs providing Tink's tips on cat comfort. | 1 | `{ . . . }` |
+| [`tink_tips_health`](./NPC_Scripts.md#object-tink_tips_health) | Object  | A sequence of dialogs providing Tink's tips on cat health. | 1 | `{ . . . }` |
+| [`tink_tips_inbreeding`](./NPC_Scripts.md#object-tink_tips_inbreeding) | Object  | A sequence of dialogs providing Tink's tips on inbreeding. | 1 | `{ . . . }` |
+| [`tink_tips_intro`](./NPC_Scripts.md#object-tink_tips_intro) | Object  | A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence. | 1 | `{ . . . }` |
+| [`tink_tips_multiclassing`](./NPC_Scripts.md#object-tink_tips_multiclassing) | Object  | A sequence of dialogs providing Tink's tips on multiclassing. | 1 | `{ . . . }` |
+| [`tink_tips_mutation`](./NPC_Scripts.md#object-tink_tips_mutation) | Object  | A sequence of dialogs providing Tink's tips on mutations. | 1 | `{ . . . }` |
+| [`tink_tips_stimulation`](./NPC_Scripts.md#object-tink_tips_stimulation) | Object  | A sequence of dialogs providing Tink's tips on stimulation. | 1 | `{ . . . }` |
+| [`tracy_foodbonus1`](./NPC_Scripts.md#object-tracy_foodbonus1) | Object  | A sequence showing Tracy explaining a food bonus reward. | 1 | `{ . . . }` |
+| [`tracy_introduction`](./NPC_Scripts.md#object-tracy_introduction) | Object  | A sequence introducing Tracy to the player. | 1 | `{ . . . }` |
+| [`tracy_kaijufight`](./NPC_Scripts.md#object-tracy_kaijufight) | Object  | A sequence where Tracy discusses a kaiju fight. | 1 | `{ . . . }` |
+| [`tracy_max1`](./NPC_Scripts.md#object-tracy_max1) | Object  | A sequence for Tracy at max favor (part 1). | 1 | `{ . . . }` |
+| [`tracy_max2`](./NPC_Scripts.md#object-tracy_max2) | Object  | A sequence for Tracy at max favor (part 2). | 1 | `{ . . . }` |
+| [`tracy_max3`](./NPC_Scripts.md#object-tracy_max3) | Object  | A sequence for Tracy at max favor (part 3). | 1 | `{ . . . }` |
+| [`tracy_max4`](./NPC_Scripts.md#object-tracy_max4) | Object  | A sequence for Tracy at max favor (part 4). | 1 | `{ . . . }` |
+| [`tracy_max5`](./NPC_Scripts.md#object-tracy_max5) | Object  | A sequence for Tracy at max favor (part 5). | 1 | `{ . . . }` |
 | [`trampy`](./Enums.md#enum-trampy) | Enum | Specifies the Trampy miniboss encounter. | 1 | `auto` |
-| [`try_again_attack_rat`](#object-try_again_attack_rat) | Object | A tutorial sequence prompting the player to try attacking the rat again. | 1 | `{ . . . }` |
-| [`try_again_melee_move`](#object-try_again_melee_move) | Object | A tutorial sequence prompting the player to try a melee move again. | 1 | `{ . . . }` |
-| [`Turkey`](Engine_LogicKeys.md#object-turkey) | Integer / Object | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
-| [`tutorial_cat_dies`](#object-tutorial_cat_dies) | Object | A tutorial sequence explaining what happens when a cat dies. | 1 | `{ . . . }` |
+| [`try_again_attack_rat`](./NPC_Scripts.md#object-try_again_attack_rat) | Object  | A tutorial sequence prompting the player to try attacking the rat again. | 1 | `{ . . . }` |
+| [`try_again_melee_move`](./NPC_Scripts.md#object-try_again_melee_move) | Object  | A tutorial sequence prompting the player to try a melee move again. | 1 | `{ . . . }` |
+| [`Turkey`](./Engine_LogicKeys.md#object-turkey) | Integer / Object  | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
+| [`tutorial_cat_dies`](./NPC_Scripts.md#object-tutorial_cat_dies) | Object  | A tutorial sequence explaining what happens when a cat dies. | 1 | `{ . . . }` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`unlock_item`](./Enums.md#enum-unlock_item) | Enum | The name of the item unlocked by this event. | 1 | `MomsKnife` |
-| [`unprompted1`](#object-unprompted1) | Object | An unprompted dialogue sequence from Beanies (part 1). | 1 | `{ . . . }` |
-| [`unprompted2`](#object-unprompted2) | Object | An unprompted dialogue sequence from Beanies (part 2). | 1 | `{ . . . }` |
-| [`unprompted3`](#object-unprompted3) | Object | An unprompted dialogue sequence from Beanies (part 3). | 1 | `{ . . . }` |
-| [`unprompted4`](#object-unprompted4) | Object | An unprompted dialogue sequence from Beanies (part 4). | 1 | `{ . . . }` |
-| [`unprompted5`](#object-unprompted5) | Object | An unprompted dialogue sequence from Beanies (part 5). | 1 | `{ . . . }` |
-| [`unprompted6`](#object-unprompted6) | Object | An unprompted dialogue sequence from Beanies (part 6). | 1 | `{ . . . }` |
-| [`upgrade_storage_max1`](#object-upgrade_storage_max1) | Object | A dialogue popup for the first storage space upgrade. | 1 | `{ . . . }` |
-| [`upgrade_storage_max2`](#object-upgrade_storage_max2) | Object | A dialogue popup for the second storage space upgrade, including a reward. | 1 | `{ . . . }` |
-| [`upgrade_storage_max3`](#object-upgrade_storage_max3) | Object | A dialogue popup for the third storage space upgrade. | 1 | `{ . . . }` |
-| [`upgrade_storage_max4`](#object-upgrade_storage_max4) | Object | A dialogue popup for the fourth storage space upgrade. | 1 | `{ . . . }` |
-| [`upgrade_storage_max5`](#object-upgrade_storage_max5) | Object | A dialogue popup for the fifth storage space upgrade. | 1 | `{ . . . }` |
-| [`use_attack_after_used_weapon`](#object-use_attack_after_used_weapon) | Object | A tutorial sequence teaching the player to use an attack after using a weapon. | 1 | `{ . . . }` |
-| [`use_weapon`](Events_and_Encounters.md#object-use_weapon) | Object | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 | `{ . . . }` |
-| [`WallOfFleshDone`](Engine_LogicKeys.md#object-walloffleshdone) | Object | An object that stores flags related to completing the Wall of Flesh quest. | 1 | `{ . . . }` |
-| [`weather_event`](Map_Generation_and_Routing.md#object-weather_event) | Object | Defines a special event that triggers a crater weather level. | 1 | `{ . . . }` |
-| [`WeirdEgg`](Engine_LogicKeys.md#object-weirdegg) | Object | Defines a Weird Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`welcome`](#object-welcome) | Object | A cancelable welcome sequence for Tracy's shop. | 1 | `{ . . . }` |
-| [`welcome_boneyard`](#object-welcome_boneyard) | Object | A cancelable welcome sequence for the boneyard biome shop. | 1 | `{ . . . }` |
-| [`welcome_bunker`](#object-welcome_bunker) | Object | A cancelable welcome sequence for the bunker biome shop. | 1 | `{ . . . }` |
-| [`welcome_caves`](#object-welcome_caves) | Object | A cancelable welcome sequence for the caves biome shop. | 1 | `{ . . . }` |
-| [`welcome_core`](#object-welcome_core) | Object | A cancelable welcome sequence for the core biome shop. | 1 | `{ . . . }` |
-| [`welcome_crater`](#object-welcome_crater) | Object | A cancelable welcome sequence for the crater biome shop. | 1 | `{ . . . }` |
-| [`welcome_desert`](#object-welcome_desert) | Object | A cancelable welcome sequence for the desert biome shop. | 1 | `{ . . . }` |
-| [`welcome_future`](#object-welcome_future) | Object | A cancelable welcome sequence for the future biome shop. | 1 | `{ . . . }` |
-| [`welcome_iceage`](#object-welcome_iceage) | Object | A cancelable welcome sequence for the ice age biome shop. | 1 | `{ . . . }` |
-| [`welcome_junkyard`](#object-welcome_junkyard) | Object | A cancelable welcome sequence for the junkyard biome shop. | 1 | `{ . . . }` |
-| [`welcome_jurassic`](#object-welcome_jurassic) | Object | A cancelable welcome sequence for the jurassic biome shop. | 1 | `{ . . . }` |
-| [`welcome_lab`](#object-welcome_lab) | Object | A cancelable welcome sequence for the lab biome shop. | 1 | `{ . . . }` |
-| [`welcome_moon`](#object-welcome_moon) | Object | A cancelable welcome sequence for the moon biome shop. | 1 | `{ . . . }` |
-| [`welcome_sewers`](#object-welcome_sewers) | Object | A cancelable welcome sequence for the sewers biome shop. | 1 | `{ . . . }` |
-| [`welcome_theend`](#object-welcome_theend) | Object | A cancelable welcome sequence for the theend biome shop, with Beanies' voice. | 1 | `{ . . . }` |
-| [`welcome_water`](#object-welcome_water) | Object | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1. | 1 | `{ . . . }` |
-| [`welcome_water_cheap`](#object-welcome_water_cheap) | Object | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 1 | `{ . . . }` |
-| [`WishBone`](Engine_LogicKeys.md#object-wishbone) | Object | Defines a Wish Bone item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| [`unprompted1`](./NPC_Scripts.md#object-unprompted1) | Object  | An unprompted dialogue sequence from Beanies (part 1). | 1 | `{ . . . }` |
+| [`unprompted2`](./NPC_Scripts.md#object-unprompted2) | Object  | An unprompted dialogue sequence from Beanies (part 2). | 1 | `{ . . . }` |
+| [`unprompted3`](./NPC_Scripts.md#object-unprompted3) | Object  | An unprompted dialogue sequence from Beanies (part 3). | 1 | `{ . . . }` |
+| [`unprompted4`](./NPC_Scripts.md#object-unprompted4) | Object  | An unprompted dialogue sequence from Beanies (part 4). | 1 | `{ . . . }` |
+| [`unprompted5`](./NPC_Scripts.md#object-unprompted5) | Object  | An unprompted dialogue sequence from Beanies (part 5). | 1 | `{ . . . }` |
+| [`unprompted6`](./NPC_Scripts.md#object-unprompted6) | Object  | An unprompted dialogue sequence from Beanies (part 6). | 1 | `{ . . . }` |
+| [`upgrade_storage_max1`](./NPC_Scripts.md#object-upgrade_storage_max1) | Object  | A dialogue popup for the first storage space upgrade. | 1 | `{ . . . }` |
+| [`upgrade_storage_max2`](./NPC_Scripts.md#object-upgrade_storage_max2) | Object  | A dialogue popup for the second storage space upgrade, including a reward. | 1 | `{ . . . }` |
+| [`upgrade_storage_max3`](./NPC_Scripts.md#object-upgrade_storage_max3) | Object  | A dialogue popup for the third storage space upgrade. | 1 | `{ . . . }` |
+| [`upgrade_storage_max4`](./NPC_Scripts.md#object-upgrade_storage_max4) | Object  | A dialogue popup for the fourth storage space upgrade. | 1 | `{ . . . }` |
+| [`upgrade_storage_max5`](./NPC_Scripts.md#object-upgrade_storage_max5) | Object  | A dialogue popup for the fifth storage space upgrade. | 1 | `{ . . . }` |
+| [`use_attack_after_used_weapon`](./NPC_Scripts.md#object-use_attack_after_used_weapon) | Object  | A tutorial sequence teaching the player to use an attack after using a weapon. | 1 | `{ . . . }` |
+| [`use_weapon`](./NPC_Scripts.md#object-use_weapon) | Object  | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 | `{ . . . }` |
+| [`WallOfFleshDone`](./Miscellaneous.md#object-walloffleshdone) | Object  | An object that stores flags related to completing the Wall of Flesh quest. | 1 | `{ . . . }` |
+| [`weather_event`](./Miscellaneous.md#object-weather_event) | Object  | Defines a special event that triggers a crater weather level. | 1 | `{ . . . }` |
+| [`WeirdEgg`](./Engine_LogicKeys.md#object-weirdegg) | Object  | Defines a Weird Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
+| [`welcome`](./NPC_Scripts.md#object-welcome) | Object  | A cancelable welcome sequence for Tracy's shop. | 1 | `{ . . . }` |
+| [`welcome_boneyard`](./NPC_Scripts.md#object-welcome_boneyard) | Object  | A cancelable welcome sequence for the boneyard biome shop. | 1 | `{ . . . }` |
+| [`welcome_bunker`](./NPC_Scripts.md#object-welcome_bunker) | Object  | A cancelable welcome sequence for the bunker biome shop. | 1 | `{ . . . }` |
+| [`welcome_caves`](./NPC_Scripts.md#object-welcome_caves) | Object  | A cancelable welcome sequence for the caves biome shop. | 1 | `{ . . . }` |
+| [`welcome_core`](./NPC_Scripts.md#object-welcome_core) | Object  | A cancelable welcome sequence for the core biome shop. | 1 | `{ . . . }` |
+| [`welcome_crater`](./NPC_Scripts.md#object-welcome_crater) | Object  | A cancelable welcome sequence for the crater biome shop. | 1 | `{ . . . }` |
+| [`welcome_desert`](./NPC_Scripts.md#object-welcome_desert) | Object  | A cancelable welcome sequence for the desert biome shop. | 1 | `{ . . . }` |
+| [`welcome_future`](./NPC_Scripts.md#object-welcome_future) | Object  | A cancelable welcome sequence for the future biome shop. | 1 | `{ . . . }` |
+| [`welcome_iceage`](./NPC_Scripts.md#object-welcome_iceage) | Object  | A cancelable welcome sequence for the ice age biome shop. | 1 | `{ . . . }` |
+| [`welcome_junkyard`](./NPC_Scripts.md#object-welcome_junkyard) | Object  | A cancelable welcome sequence for the junkyard biome shop. | 1 | `{ . . . }` |
+| [`welcome_jurassic`](./NPC_Scripts.md#object-welcome_jurassic) | Object  | A cancelable welcome sequence for the jurassic biome shop. | 1 | `{ . . . }` |
+| [`welcome_lab`](./NPC_Scripts.md#object-welcome_lab) | Object  | A cancelable welcome sequence for the lab biome shop. | 1 | `{ . . . }` |
+| [`welcome_moon`](./NPC_Scripts.md#object-welcome_moon) | Object  | A cancelable welcome sequence for the moon biome shop. | 1 | `{ . . . }` |
+| [`welcome_sewers`](./NPC_Scripts.md#object-welcome_sewers) | Object  | A cancelable welcome sequence for the sewers biome shop. | 1 | `{ . . . }` |
+| [`welcome_theend`](./NPC_Scripts.md#object-welcome_theend) | Object  | A cancelable welcome sequence for the theend biome shop, with Beanies' voice. | 1 | `{ . . . }` |
+| [`welcome_water`](./NPC_Scripts.md#object-welcome_water) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1. | 1 | `{ . . . }` |
+| [`welcome_water_cheap`](./NPC_Scripts.md#object-welcome_water_cheap) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 1 | `{ . . . }` |
+| [`WishBone`](./Engine_LogicKeys.md#object-wishbone) | Object  | Defines a Wish Bone item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | `wolfcat` | Number | A flag (1) indicating the wolfcat special voice set is enabled. | 1 | `1` |
 | `yeticat` | Number | A flag (1) indicating the yeticat special voice set is enabled. | 1 | `1` |
 | `asymmetric` | Boolean | If true, the mutation is applied asymmetrically (e.g., different on each side). | 1 | `false`<br>`true` |
-| [`back`](#object-back) | Object | If true, the face is rendered facing away (back of head view). | 1 | `{ . . . }` |
+| [`back`](./Miscellaneous.md#object-back) | Object  | If true, the face is rendered facing away (back of head view). | 1 | `{ . . . }` |
 | [`background_shader`](./Enums.md#enum-background_shader) | Enum | Specifies the background shader to apply (e.g., 'meatpulse_ground'). | 1 | `meatpulse_ground` |
-| [`barf`](#object-barf) | Object | Defines a face expression with raised eyebrows, downward rotation, open mouth, and closed eyes (vomiting). | 1 | `{ . . . }` |
-| [`barf_attack`](#object-barf_attack) | Object | Defines a face expression with raised eyebrows, downward rotation, open mouth, and open eyes (attack while vomiting). | 1 | `{ . . . }` |
-| [`barf_prep`](#object-barf_prep) | Object | Defines a face expression with slightly raised eyebrows, downward rotation, closed mouth, and closed eyes (preparing to vomit). | 1 | `{ . . . }` |
-| [`bite`](Events_and_Encounters.md#object-bite) | Object | Specifies the player character's attempt to bite the encounter. | 1 | `{ . . . }` |
-| [`bloodthirsty`](#object-bloodthirsty) | Object | Defines a face expression with raised eyebrows, upward rotation, smiling mouth, and open eyes (savage aggression). | 1 | `{ . . . }` |
-| [`bloodthirsty_eyes_closed`](#object-bloodthirsty_eyes_closed) | Object | Defines a face expression with raised eyebrows, upward rotation, smiling mouth, closed eyes, and an offset face position. | 1 | `{ . . . }` |
-| [`bored`](#object-bored) | Object | Defines a face expression with slightly raised eyebrows, neutral rotation, closed mouth, and open eyes (disinterest). | 1 | `{ . . . }` |
+| [`barf`](./Miscellaneous.md#object-barf) | Object  | Defines a face expression with raised eyebrows, downward rotation, open mouth, and closed eyes (vomiting). | 1 | `{ . . . }` |
+| [`barf_attack`](./Miscellaneous.md#object-barf_attack) | Object  | Defines a face expression with raised eyebrows, downward rotation, open mouth, and open eyes (attack while vomiting). | 1 | `{ . . . }` |
+| [`barf_prep`](./Miscellaneous.md#object-barf_prep) | Object  | Defines a face expression with slightly raised eyebrows, downward rotation, closed mouth, and closed eyes (preparing to vomit). | 1 | `{ . . . }` |
+| [`bite`](./Miscellaneous.md#object-bite) | Object  | Specifies the player character's attempt to bite the encounter. | 1 | `{ . . . }` |
+| [`bloodthirsty`](./Miscellaneous.md#object-bloodthirsty) | Object  | Defines a face expression with raised eyebrows, upward rotation, smiling mouth, and open eyes (savage aggression). | 1 | `{ . . . }` |
+| [`bloodthirsty_eyes_closed`](./Miscellaneous.md#object-bloodthirsty_eyes_closed) | Object  | Defines a face expression with raised eyebrows, upward rotation, smiling mouth, closed eyes, and an offset face position. | 1 | `{ . . . }` |
+| [`bored`](./Miscellaneous.md#object-bored) | Object  | Defines a face expression with slightly raised eyebrows, neutral rotation, closed mouth, and open eyes (disinterest). | 1 | `{ . . . }` |
 | [`boss_background_alt`](./Enums.md#enum-boss_background_alt) | Enum | Specifies the alternative boss background to use (e.g., 'CoreBossBG'). | 1 | `CoreBossBG` |
 | `BreedSuppression` | Number | The amount of breeding suppression provided by the furniture piece. | 1 | `1` |
 | [`built_in_collision`](./Arrays.md#array-built_in_collision) | Array | A list of collision geometry definitions for the room. | 1 | `[` |
-| [`butcher_portrait`](#object-butcher_portrait) | Object | Defines the face expression for the butcher's portrait with offset, raised eyebrows, slight rotation, smile, and open eyes. | 1 | `{ . . . }` |
+| [`butcher_portrait`](./Miscellaneous.md#object-butcher_portrait) | Object  | Defines the face expression for the butcher's portrait with offset, raised eyebrows, slight rotation, smile, and open eyes. | 1 | `{ . . . }` |
 | [`chain_chance`](./Enums.md#enum-chain_chance) | Enum | A probability (0.9) that a chain effect triggers. | 1 | `.9` |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 | `choose_cat_with_min_health` | Number | Selects a cat with at least the specified percentage of health remaining. | 1 | `75%` |
 | [`choose_one`](./Arrays.md#array-choose_one) | Array | A list of generation flags from which exactly one is randomly selected. | 1 | `[GenFlag_Boss_Stacy, GenFlag_Boss_Spewer]` |
 | [`Colorless_Tutorial`](./Arrays.md#array-colorless_tutorial) | Array | An array of return quotes used for the Colorless tutorial. | 1 | `[` |
 | [`CompletionCheckmarkTooltip`](./Arrays.md#array-completioncheckmarktooltip) | Array | An array of strings defining which completion checkmark tooltips to show. | 1 | `[meatworld dimensionx endoftime]` |
-| [`concentrate`](#object-concentrate) | Object | Defines a face expression with raised eyebrows, strong upward rotation, closed mouth, and closed eyes (focus). | 1 | `{ . . . }` |
+| [`concentrate`](./Miscellaneous.md#object-concentrate) | Object  | Defines a face expression with raised eyebrows, strong upward rotation, closed mouth, and closed eyes (focus). | 1 | `{ . . . }` |
 | `continual_emission` | Boolean | If true, the particle effect emits continuously. | 1 | `true` |
-| [`dead`](./Miscellaneous.md#context-dead) | Enum | Determines the animation set used when the unit is dead. | 1 | `deadShot` |
-| [`dead_facecenter`](#object-dead_facecenter) | Object | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, centered offset (death face). | 1 | `{ . . . }` |
-| [`dead_faceleft`](#object-dead_faceleft) | Object | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, offset left (death face). | 1 | `{ . . . }` |
-| [`destroy`](Events_and_Encounters.md#object-destroy) | Object | An object defining the player action to destroy an object, including its stat check and outcomes. | 1 | `{ . . . }` |
-| [`devious`](#object-devious) | Object | Defines a face expression with very raised eyebrows, upward rotation, smiling mouth, closed eyes, and right offset (sly look). | 1 | `{ . . . }` |
-| [`devious2`](#object-devious2) | Object | Defines a face expression with very raised eyebrows, upward rotation, smiling mouth, closed eyes, and offset right-up (devious variant). | 1 | `{ . . . }` |
-| [`distraught`](#object-distraught) | Object | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, and large downward offset (grief). | 1 | `{ . . . }` |
-| [`dreamworks`](#object-dreamworks) | Object | Defines a face expression with asymmetric eyebrow raise and rotation, smiling mouth (dreamworks smile pose). | 1 | `{ . . . }` |
-| [`dreamworks2`](#object-dreamworks2) | Object | Defines a face expression with stronger asymmetric eyebrow raise, smiling mouth (dreamworks smile variant). | 1 | `{ . . . }` |
-| [`druid_portrait`](#object-druid_portrait) | Object | Defines the face expression for the druid portrait with offset, raised eyebrows, asymmetric rotation, smile, and mixed eye states. | 1 | `{ . . . }` |
-| [`ears_down`](#object-ears_down) | Object | Defines a pose where both ears rotate downward and eyebrows lower (sad/submissive). | 1 | `{ . . . }` |
-| [`ears_down_overshoot`](#object-ears_down_overshoot) | Object | Defines an overshoot pose where both ears rotate further downward and eyebrows lower more. | 1 | `{ . . . }` |
-| [`ears_left`](#object-ears_left) | Object | Defines a pose where the left ear rotates left and the right ear rotates right. | 1 | `{ . . . }` |
-| [`ears_right`](#object-ears_right) | Object | Defines a pose where the left ear rotates right and the right ear rotates left. | 1 | `{ . . . }` |
-| [`ears_up`](#object-ears_up) | Object | Defines a pose where both ears rotate upward and eyebrows raise (alert/happy). | 1 | `{ . . . }` |
-| [`ears_up_overshoot`](#object-ears_up_overshoot) | Object | Defines an overshoot pose where both ears rotate further upward and eyebrows raise more. | 1 | `{ . . . }` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`else`](Abilities_and_Spells.md#object-else) | Object | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 1 | `{ . . . }` |
+| [`dead`](./Enums.md#enum-dead) | Enum  | Determines the animation set used when the unit is dead. | 1 | `deadShot` |
+| [`dead_facecenter`](./Miscellaneous.md#object-dead_facecenter) | Object  | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, centered offset (death face). | 1 | `{ . . . }` |
+| [`dead_faceleft`](./Miscellaneous.md#object-dead_faceleft) | Object  | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, offset left (death face). | 1 | `{ . . . }` |
+| [`destroy`](./Miscellaneous.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 1 | `{ . . . }` |
+| [`devious`](./Miscellaneous.md#object-devious) | Object  | Defines a face expression with very raised eyebrows, upward rotation, smiling mouth, closed eyes, and right offset (sly look). | 1 | `{ . . . }` |
+| [`devious2`](./Miscellaneous.md#object-devious2) | Object  | Defines a face expression with very raised eyebrows, upward rotation, smiling mouth, closed eyes, and offset right-up (devious variant). | 1 | `{ . . . }` |
+| [`distraught`](./Miscellaneous.md#object-distraught) | Object  | Defines a face expression with raised eyebrows, downward rotation, closed mouth, closed eyes, and large downward offset (grief). | 1 | `{ . . . }` |
+| [`dreamworks`](./Miscellaneous.md#object-dreamworks) | Object  | Defines a face expression with asymmetric eyebrow raise and rotation, smiling mouth (dreamworks smile pose). | 1 | `{ . . . }` |
+| [`dreamworks2`](./Miscellaneous.md#object-dreamworks2) | Object  | Defines a face expression with stronger asymmetric eyebrow raise, smiling mouth (dreamworks smile variant). | 1 | `{ . . . }` |
+| [`druid_portrait`](./Miscellaneous.md#object-druid_portrait) | Object  | Defines the face expression for the druid portrait with offset, raised eyebrows, asymmetric rotation, smile, and mixed eye states. | 1 | `{ . . . }` |
+| [`ears_down`](./Miscellaneous.md#object-ears_down) | Object  | Defines a pose where both ears rotate downward and eyebrows lower (sad/submissive). | 1 | `{ . . . }` |
+| [`ears_down_overshoot`](./Miscellaneous.md#object-ears_down_overshoot) | Object  | Defines an overshoot pose where both ears rotate further downward and eyebrows lower more. | 1 | `{ . . . }` |
+| [`ears_left`](./Miscellaneous.md#object-ears_left) | Object  | Defines a pose where the left ear rotates left and the right ear rotates right. | 1 | `{ . . . }` |
+| [`ears_right`](./Miscellaneous.md#object-ears_right) | Object  | Defines a pose where the left ear rotates right and the right ear rotates left. | 1 | `{ . . . }` |
+| [`ears_up`](./Miscellaneous.md#object-ears_up) | Object  | Defines a pose where both ears rotate upward and eyebrows raise (alert/happy). | 1 | `{ . . . }` |
+| [`ears_up_overshoot`](./Miscellaneous.md#object-ears_up_overshoot) | Object  | Defines an overshoot pose where both ears rotate further upward and eyebrows raise more. | 1 | `{ . . . }` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`else`](./Miscellaneous.md#object-else) | Object  | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 1 | `{ . . . }` |
 | [`emitshape_scale`](./Arrays.md#array-emitshape_scale) | Array | A 2D scale factor [x, y] applied to the particle emission shape. | 1 | `[1 0.5625]` |
 | [`ending_cutscene`](./Enums.md#enum-ending_cutscene) | Enum | Specifies which ending cutscene to play (e.g., 'hitler_end'). | 1 | `hitler_end` |
 | [`ending_cutscene2`](./Enums.md#enum-ending_cutscene2) | Enum | Specifies a secondary ending cutscene to play (e.g., 'credits_3'). | 1 | `credits_3` |
-| [`euphoric`](#object-euphoric) | Object | Defines the facial expression configuration for the euphoric emotional state of a unit. | 1 | `{ . . . }` |
+| [`euphoric`](./Miscellaneous.md#object-euphoric) | Object  | Defines the facial expression configuration for the euphoric emotional state of a unit. | 1 | `{ . . . }` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
-| [`eyes_closed`](#object-eyes_closed) | Object | Defines a simple pose with closed eyes and closed mouth. | 1 | `{ . . . }` |
-| [`face_center`](#object-face_center) | Object | Defines a pose with the face centered at its default offset [0, 0]. | 1 | `{ . . . }` |
-| [`face_down_wince`](#object-face_down_wince) | Object | Defines a wincing face expression with raised eyebrows, downward rotation, open mouth, closed eyes, and downward offset. | 1 | `{ . . . }` |
-| [`face_far_down`](#object-face_far_down) | Object | Defines a pose with the face offset far downward. | 1 | `{ . . . }` |
-| [`face_far_down_right`](#object-face_far_down_right) | Object | Defines a pose with the face offset far down-right. | 1 | `{ . . . }` |
-| [`face_far_left`](#object-face_far_left) | Object | Defines a pose with the face offset far left. | 1 | `{ . . . }` |
-| [`face_far_left_eyes_closed`](#object-face_far_left_eyes_closed) | Object | Defines a pose with the face offset far left, closed eyes, and closed mouth. | 1 | `{ . . . }` |
-| [`face_far_right`](#object-face_far_right) | Object | Defines a pose with the face offset far right. | 1 | `{ . . . }` |
-| [`face_far_up`](#object-face_far_up) | Object | Defines a pose with the face offset far upward. | 1 | `{ . . . }` |
-| [`face_far_up_left`](#object-face_far_up_left) | Object | Defines a pose with the face offset far up-left. | 1 | `{ . . . }` |
-| [`face_far_up_right`](#object-face_far_up_right) | Object | Defines a pose with the face offset far up-right. | 1 | `{ . . . }` |
-| [`face_left_wince`](#object-face_left_wince) | Object | Defines a wincing face expression with raised eyebrows, downward rotation, open mouth, closed eyes, and left offset. | 1 | `{ . . . }` |
-| [`facecenter`](#object-facecenter) | Object | Defines a pose with the face centered at its default offset. | 1 | `{ . . . }` |
-| [`facecenter_back`](#object-facecenter_back) | Object | Defines a pose with the face centered and rendered from behind (back view). | 1 | `{ . . . }` |
-| [`facecenter_eyes_closed`](#object-facecenter_eyes_closed) | Object | Facial expression preset with eyes and mouth closed, centered. | 1 | `{ . . . }` |
-| [`facecenter_happy`](#object-facecenter_happy) | Object | Facial expression preset for a happy expression, centered. | 1 | `{ . . . }` |
-| [`facecenter_happy_overshoot`](#object-facecenter_happy_overshoot) | Object | Facial expression preset for an exaggerated happy expression. | 1 | `{ . . . }` |
-| [`facecenter_hardblink`](#object-facecenter_hardblink) | Object | Facial expression preset for a hard blink with neutral eyebrows and closed eyes. | 1 | `{ . . . }` |
-| [`facecenter_right`](#object-facecenter_right) | Object | Facial expression preset with a slight right face offset, centering eyes while directing fur and ears right. | 1 | `{ . . . }` |
-| [`facecenter_shock`](#object-facecenter_shock) | Object | Facial expression preset for shock, with raised eyebrows, open mouth, and rotated ears. | 1 | `{ . . . }` |
-| [`facecenter_suprise`](#object-facecenter_suprise) | Object | Facial expression preset for surprise, with raised eyebrows and a smiling mouth. | 1 | `{ . . . }` |
-| [`facecenter_worried`](#object-facecenter_worried) | Object | Facial expression preset for worry, with slightly raised, rotated eyebrows and lowered ears. | 1 | `{ . . . }` |
-| [`facedown`](#object-facedown) | Object | Facial expression preset looking downward, with a vertical offset. | 1 | `{ . . . }` |
-| [`facedown_back`](#object-facedown_back) | Object | Facial expression preset looking downward from behind, with back-facing flag. | 1 | `{ . . . }` |
-| [`facedown_eyes_closed`](#object-facedown_eyes_closed) | Object | Facial expression preset looking downward with eyes and mouth closed. | 1 | `{ . . . }` |
-| [`facedown_eyes_closed_overshoot`](#object-facedown_eyes_closed_overshoot) | Object | Facial expression preset looking downward with exaggerated offset and closed eyes and mouth. | 1 | `{ . . . }` |
-| [`facedownleft`](#object-facedownleft) | Object | Facial expression preset looking down-left. | 1 | `{ . . . }` |
-| [`facedownleft_eyes_closed`](#object-facedownleft_eyes_closed) | Object | Facial expression preset looking down-left with eyes closed. | 1 | `{ . . . }` |
-| [`facedownright`](#object-facedownright) | Object | Facial expression preset looking down-right. | 1 | `{ . . . }` |
-| [`facedownright_eyes_closed`](#object-facedownright_eyes_closed) | Object | Facial expression preset looking down-right with eyes closed. | 1 | `{ . . . }` |
-| [`facedownright_focused`](#object-facedownright_focused) | Object | Facial expression preset for a focused look down-right with raised eyebrows and closed mouth. | 1 | `{ . . . }` |
-| [`facedownright_more`](#object-facedownright_more) | Object | Facial expression preset looking further down-right. | 1 | `{ . . . }` |
-| [`faceleft`](#object-faceleft) | Object | Facial expression preset looking left. | 1 | `{ . . . }` |
-| [`faceleft_back`](#object-faceleft_back) | Object | Facial expression preset looking left from behind, with back-facing flag. | 1 | `{ . . . }` |
-| [`faceleft_eyes_closed`](#object-faceleft_eyes_closed) | Object | Facial expression preset looking left with eyes and mouth closed. | 1 | `{ . . . }` |
-| [`faceleft_mouth_open`](#object-faceleft_mouth_open) | Object | Facial expression preset looking left with mouth open. | 1 | `{ . . . }` |
-| [`faceright`](#object-faceright) | Object | Facial expression preset looking right. | 1 | `{ . . . }` |
-| [`faceright_back`](#object-faceright_back) | Object | Facial expression preset looking right from behind, with back-facing flag. | 1 | `{ . . . }` |
-| [`faceup`](#object-faceup) | Object | Facial expression preset looking upward. | 1 | `{ . . . }` |
-| [`faceup_back`](#object-faceup_back) | Object | Facial expression preset looking upward from behind, with back-facing flag. | 1 | `{ . . . }` |
-| [`faceup_eyes_closed`](#object-faceup_eyes_closed) | Object | Facial expression preset looking upward with eyes and mouth closed. | 1 | `{ . . . }` |
-| [`faceup_shock`](#object-faceup_shock) | Object | Facial expression preset for shock while looking upward. | 1 | `{ . . . }` |
-| [`faceupleft`](#object-faceupleft) | Object | Facial expression preset looking up-left. | 1 | `{ . . . }` |
-| [`faceupleft_eyes_closed`](#object-faceupleft_eyes_closed) | Object | Facial expression preset looking up-left with eyes and mouth closed. | 1 | `{ . . . }` |
-| [`faceupright`](#object-faceupright) | Object | Facial expression preset looking up-right. | 1 | `{ . . . }` |
-| [`faceupright_supermad`](#object-faceupright_supermad) | Object | Facial expression preset for extreme anger while looking up-right. | 1 | `{ . . . }` |
+| [`eyes_closed`](./Miscellaneous.md#object-eyes_closed) | Object  | Defines a simple pose with closed eyes and closed mouth. | 1 | `{ . . . }` |
+| [`face_center`](./Miscellaneous.md#object-face_center) | Object  | Defines a pose with the face centered at its default offset [0, 0]. | 1 | `{ . . . }` |
+| [`face_down_wince`](./Miscellaneous.md#object-face_down_wince) | Object  | Defines a wincing face expression with raised eyebrows, downward rotation, open mouth, closed eyes, and downward offset. | 1 | `{ . . . }` |
+| [`face_far_down`](./Miscellaneous.md#object-face_far_down) | Object  | Defines a pose with the face offset far downward. | 1 | `{ . . . }` |
+| [`face_far_down_right`](./Miscellaneous.md#object-face_far_down_right) | Object  | Defines a pose with the face offset far down-right. | 1 | `{ . . . }` |
+| [`face_far_left`](./Miscellaneous.md#object-face_far_left) | Object  | Defines a pose with the face offset far left. | 1 | `{ . . . }` |
+| [`face_far_left_eyes_closed`](./Miscellaneous.md#object-face_far_left_eyes_closed) | Object  | Defines a pose with the face offset far left, closed eyes, and closed mouth. | 1 | `{ . . . }` |
+| [`face_far_right`](./Miscellaneous.md#object-face_far_right) | Object  | Defines a pose with the face offset far right. | 1 | `{ . . . }` |
+| [`face_far_up`](./Miscellaneous.md#object-face_far_up) | Object  | Defines a pose with the face offset far upward. | 1 | `{ . . . }` |
+| [`face_far_up_left`](./Miscellaneous.md#object-face_far_up_left) | Object  | Defines a pose with the face offset far up-left. | 1 | `{ . . . }` |
+| [`face_far_up_right`](./Miscellaneous.md#object-face_far_up_right) | Object  | Defines a pose with the face offset far up-right. | 1 | `{ . . . }` |
+| [`face_left_wince`](./Miscellaneous.md#object-face_left_wince) | Object  | Defines a wincing face expression with raised eyebrows, downward rotation, open mouth, closed eyes, and left offset. | 1 | `{ . . . }` |
+| [`facecenter`](./Miscellaneous.md#object-facecenter) | Object  | Defines a pose with the face centered at its default offset. | 1 | `{ . . . }` |
+| [`facecenter_back`](./Miscellaneous.md#object-facecenter_back) | Object  | Defines a pose with the face centered and rendered from behind (back view). | 1 | `{ . . . }` |
+| [`facecenter_eyes_closed`](./Miscellaneous.md#object-facecenter_eyes_closed) | Object  | Facial expression preset with eyes and mouth closed, centered. | 1 | `{ . . . }` |
+| [`facecenter_happy`](./Miscellaneous.md#object-facecenter_happy) | Object  | Facial expression preset for a happy expression, centered. | 1 | `{ . . . }` |
+| [`facecenter_happy_overshoot`](./Miscellaneous.md#object-facecenter_happy_overshoot) | Object  | Facial expression preset for an exaggerated happy expression. | 1 | `{ . . . }` |
+| [`facecenter_hardblink`](./Miscellaneous.md#object-facecenter_hardblink) | Object  | Facial expression preset for a hard blink with neutral eyebrows and closed eyes. | 1 | `{ . . . }` |
+| [`facecenter_right`](./Miscellaneous.md#object-facecenter_right) | Object  | Facial expression preset with a slight right face offset, centering eyes while directing fur and ears right. | 1 | `{ . . . }` |
+| [`facecenter_shock`](./Miscellaneous.md#object-facecenter_shock) | Object  | Facial expression preset for shock, with raised eyebrows, open mouth, and rotated ears. | 1 | `{ . . . }` |
+| [`facecenter_suprise`](./Miscellaneous.md#object-facecenter_suprise) | Object  | Facial expression preset for surprise, with raised eyebrows and a smiling mouth. | 1 | `{ . . . }` |
+| [`facecenter_worried`](./Miscellaneous.md#object-facecenter_worried) | Object  | Facial expression preset for worry, with slightly raised, rotated eyebrows and lowered ears. | 1 | `{ . . . }` |
+| [`facedown`](./Miscellaneous.md#object-facedown) | Object  | Facial expression preset looking downward, with a vertical offset. | 1 | `{ . . . }` |
+| [`facedown_back`](./Miscellaneous.md#object-facedown_back) | Object  | Facial expression preset looking downward from behind, with back-facing flag. | 1 | `{ . . . }` |
+| [`facedown_eyes_closed`](./Miscellaneous.md#object-facedown_eyes_closed) | Object  | Facial expression preset looking downward with eyes and mouth closed. | 1 | `{ . . . }` |
+| [`facedown_eyes_closed_overshoot`](./Miscellaneous.md#object-facedown_eyes_closed_overshoot) | Object  | Facial expression preset looking downward with exaggerated offset and closed eyes and mouth. | 1 | `{ . . . }` |
+| [`facedownleft`](./Miscellaneous.md#object-facedownleft) | Object  | Facial expression preset looking down-left. | 1 | `{ . . . }` |
+| [`facedownleft_eyes_closed`](./Miscellaneous.md#object-facedownleft_eyes_closed) | Object  | Facial expression preset looking down-left with eyes closed. | 1 | `{ . . . }` |
+| [`facedownright`](./Miscellaneous.md#object-facedownright) | Object  | Facial expression preset looking down-right. | 1 | `{ . . . }` |
+| [`facedownright_eyes_closed`](./Miscellaneous.md#object-facedownright_eyes_closed) | Object  | Facial expression preset looking down-right with eyes closed. | 1 | `{ . . . }` |
+| [`facedownright_focused`](./Miscellaneous.md#object-facedownright_focused) | Object  | Facial expression preset for a focused look down-right with raised eyebrows and closed mouth. | 1 | `{ . . . }` |
+| [`facedownright_more`](./Miscellaneous.md#object-facedownright_more) | Object  | Facial expression preset looking further down-right. | 1 | `{ . . . }` |
+| [`faceleft`](./Miscellaneous.md#object-faceleft) | Object  | Facial expression preset looking left. | 1 | `{ . . . }` |
+| [`faceleft_back`](./Miscellaneous.md#object-faceleft_back) | Object  | Facial expression preset looking left from behind, with back-facing flag. | 1 | `{ . . . }` |
+| [`faceleft_eyes_closed`](./Miscellaneous.md#object-faceleft_eyes_closed) | Object  | Facial expression preset looking left with eyes and mouth closed. | 1 | `{ . . . }` |
+| [`faceleft_mouth_open`](./Miscellaneous.md#object-faceleft_mouth_open) | Object  | Facial expression preset looking left with mouth open. | 1 | `{ . . . }` |
+| [`faceright`](./Miscellaneous.md#object-faceright) | Object  | Facial expression preset looking right. | 1 | `{ . . . }` |
+| [`faceright_back`](./Miscellaneous.md#object-faceright_back) | Object  | Facial expression preset looking right from behind, with back-facing flag. | 1 | `{ . . . }` |
+| [`faceup`](./Miscellaneous.md#object-faceup) | Object  | Facial expression preset looking upward. | 1 | `{ . . . }` |
+| [`faceup_back`](./Miscellaneous.md#object-faceup_back) | Object  | Facial expression preset looking upward from behind, with back-facing flag. | 1 | `{ . . . }` |
+| [`faceup_eyes_closed`](./Miscellaneous.md#object-faceup_eyes_closed) | Object  | Facial expression preset looking upward with eyes and mouth closed. | 1 | `{ . . . }` |
+| [`faceup_shock`](./Miscellaneous.md#object-faceup_shock) | Object  | Facial expression preset for shock while looking upward. | 1 | `{ . . . }` |
+| [`faceupleft`](./Miscellaneous.md#object-faceupleft) | Object  | Facial expression preset looking up-left. | 1 | `{ . . . }` |
+| [`faceupleft_eyes_closed`](./Miscellaneous.md#object-faceupleft_eyes_closed) | Object  | Facial expression preset looking up-left with eyes and mouth closed. | 1 | `{ . . . }` |
+| [`faceupright`](./Miscellaneous.md#object-faceupright) | Object  | Facial expression preset looking up-right. | 1 | `{ . . . }` |
+| [`faceupright_supermad`](./Miscellaneous.md#object-faceupright_supermad) | Object  | Facial expression preset for extreme anger while looking up-right. | 1 | `{ . . . }` |
 | `female1` | Number | The enable flag for the female voice set 1 (1 = enabled). | 1 | `1` |
 | `female11` | Number | The enable flag for the female voice set 11 (1 = enabled). | 1 | `1` |
 | `female13` | Number | The enable flag for the female voice set 13 (1 = enabled). | 1 | `1` |
@@ -1265,22 +1265,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `female7` | Number | The weight for voice set index 7 in the female voice pool. | 1 | `1` |
 | `female8` | Number | The weight for voice set index 8 in the female voice pool. | 1 | `1` |
 | `FightBonusRewards` | Number | The number of bonus rewards earned from fights due to the furniture piece. | 1 | `1` |
-| [`fighter_portrait`](#object-fighter_portrait) | Object | Facial expression settings for the fighter's portrait, defining offsets, eyebrow positions, mouth shape, and eye state. | 1 | `{ . . . }` |
+| [`fighter_portrait`](./Miscellaneous.md#object-fighter_portrait) | Object  | Facial expression settings for the fighter's portrait, defining offsets, eyebrow positions, mouth shape, and eye state. | 1 | `{ . . . }` |
 | `FightRisk` | Number | The increased risk level of fights triggered by the furniture piece. | 1 | `2` |
-| [`focused`](#object-focused) | Object | Facial expression settings for a focused look, defining mouth pose, eyebrow height, and eyebrow rotation. | 1 | `{ . . . }` |
+| [`focused`](./Miscellaneous.md#object-focused) | Object  | Facial expression settings for a focused look, defining mouth pose, eyebrow height, and eyebrow rotation. | 1 | `{ . . . }` |
 | `FoodStorage` | Number | The amount of food storage capacity added by the furniture piece. | 1 | `40` |
 | [`format`](./Strings.md#string-format) | String | A localization key string used to format team names. | 1 | `"TEAMNAME_FORMAT"` |
 | [`format2`](./Strings.md#string-format2) | String | An alternative localization key string for formatting team names. | 1 | `"TEAMNAME_FORMAT2"` |
-| [`happy_eyes_closed`](#object-happy_eyes_closed) | Object | Facial expression settings for a happy expression with closed eyes and a smile. | 1 | `{ . . . }` |
-| [`happy_left`](#object-happy_left) | Object | Facial expression settings for a happy expression looking left, defining eyebrow and mouth poses. | 1 | `{ . . . }` |
-| [`happy_up_eyes_closed`](#object-happy_up_eyes_closed) | Object | Facial expression settings for a happy upward expression with closed eyes and a smile. | 1 | `{ . . . }` |
-| [`hardblink`](#object-hardblink) | Object | Facial expression settings for a hard blink, with neutral eyebrows, closed mouth, and closed eyes. | 1 | `{ . . . }` |
-| [`hunter_portrait`](#object-hunter_portrait) | Object | Facial expression settings for the hunter's portrait, with a random range for eyebrow placement and eye states. | 1 | `{ . . . }` |
+| [`happy_eyes_closed`](./Miscellaneous.md#object-happy_eyes_closed) | Object  | Facial expression settings for a happy expression with closed eyes and a smile. | 1 | `{ . . . }` |
+| [`happy_left`](./Miscellaneous.md#object-happy_left) | Object  | Facial expression settings for a happy expression looking left, defining eyebrow and mouth poses. | 1 | `{ . . . }` |
+| [`happy_up_eyes_closed`](./Miscellaneous.md#object-happy_up_eyes_closed) | Object  | Facial expression settings for a happy upward expression with closed eyes and a smile. | 1 | `{ . . . }` |
+| [`hardblink`](./Miscellaneous.md#object-hardblink) | Object  | Facial expression settings for a hard blink, with neutral eyebrows, closed mouth, and closed eyes. | 1 | `{ . . . }` |
+| [`hunter_portrait`](./Miscellaneous.md#object-hunter_portrait) | Object  | Facial expression settings for the hunter's portrait, with a random range for eyebrow placement and eye states. | 1 | `{ . . . }` |
 | `initial_health` | Integer | The starting health of the unit when spawned. | 1 | `1`<br>`10`<br>`14` |
-| [`insane`](#object-insane) | Object | Defines the 'insane' facial expression with eyebrow and mouth positions. | 1 | `{ . . . }` |
+| [`insane`](./Miscellaneous.md#object-insane) | Object  | Defines the 'insane' facial expression with eyebrow and mouth positions. | 1 | `{ . . . }` |
 | `is_3D` | Boolean | If true, the particle or visual effect uses a 3D renderer instead of 2D. | 1 | `false` |
-| [`jester_portrait`](#object-jester_portrait) | Object | Facial expression settings for the jester's portrait, defining a smile with closed eyes and tilted eyebrows. | 1 | `{ . . . }` |
-| [`mage_portrait`](#object-mage_portrait) | Object | Facial expression settings for the mage's portrait, with an open mouth and open eyes. | 1 | `{ . . . }` |
+| [`jester_portrait`](./Miscellaneous.md#object-jester_portrait) | Object  | Facial expression settings for the jester's portrait, defining a smile with closed eyes and tilted eyebrows. | 1 | `{ . . . }` |
+| [`mage_portrait`](./Miscellaneous.md#object-mage_portrait) | Object  | Facial expression settings for the mage's portrait, with an open mouth and open eyes. | 1 | `{ . . . }` |
 | [`main_pool`](./Arrays.md#array-main_pool) | Array | A list of quest IDs or objects that form the primary quest pool for a beanies quest node. | 1 | `[` |
 | [`major_class_checkmarks`](./Arrays.md#array-major_class_checkmarks) | Array | An ordered list of zone keys that display checkmarks on the pause menu for major class completion. | 1 ||
 | `male10` | Number | The weight for voice set index 10 in the male voice pool. | 1 | `1` |
@@ -1398,50 +1398,50 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `male97` | Number | The numeric identifier for this male voice set. | 1 | `1` |
 | `male98` | Number | The numeric identifier for this male voice set. | 1 | `1` |
 | `male99` | Number | The numeric identifier for this male voice set. | 1 | `1` |
-| [`medic_portrait`](#object-medic_portrait) | Object | Facial expression configuration for the medic portrait, specifying offsets and feature states. | 1 | `{ . . . }` |
-| [`monk_portrait`](#object-monk_portrait) | Object | Facial expression configuration for the monk portrait. | 1 | `{ . . . }` |
-| [`mouth_open`](#object-mouth_open) | Object | Facial expression preset with mouth open and eyes open. | 1 | `{ . . . }` |
-| [`necromancer_portrait`](#object-necromancer_portrait) | Object | Facial expression configuration for the necromancer portrait. | 1 | `{ . . . }` |
+| [`medic_portrait`](./Miscellaneous.md#object-medic_portrait) | Object  | Facial expression configuration for the medic portrait, specifying offsets and feature states. | 1 | `{ . . . }` |
+| [`monk_portrait`](./Miscellaneous.md#object-monk_portrait) | Object  | Facial expression configuration for the monk portrait. | 1 | `{ . . . }` |
+| [`mouth_open`](./Miscellaneous.md#object-mouth_open) | Object  | Facial expression preset with mouth open and eyes open. | 1 | `{ . . . }` |
+| [`necromancer_portrait`](./Miscellaneous.md#object-necromancer_portrait) | Object  | Facial expression configuration for the necromancer portrait. | 1 | `{ . . . }` |
 | [`nemesis`](./Arrays.md#array-nemesis) | Array | A list of nemesis definitions to use for this level. | 1 | `[nemesis]` |
-| [`one_eye_wink`](#object-one_eye_wink) | Object | Facial expression preset for a one-eye wink, with randomized features. | 1 | `{ . . . }` |
-| [`petted`](#object-petted) | Object | Facial expression preset for a petted reaction. | 1 | `{ . . . }` |
-| [`petted2`](#object-petted2) | Object | Facial expression preset for an alternate petted reaction. | 1 | `{ . . . }` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
+| [`one_eye_wink`](./Miscellaneous.md#object-one_eye_wink) | Object  | Facial expression preset for a one-eye wink, with randomized features. | 1 | `{ . . . }` |
+| [`petted`](./Miscellaneous.md#object-petted) | Object  | Facial expression preset for a petted reaction. | 1 | `{ . . . }` |
+| [`petted2`](./Miscellaneous.md#object-petted2) | Object  | Facial expression preset for an alternate petted reaction. | 1 | `{ . . . }` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 | `poopcat` | Number | The numeric identifier for the poopcat special voice set. | 1 | `1` |
-| [`psychic_portrait`](#object-psychic_portrait) | Object | Facial expression configuration for the psychic portrait. | 1 | `{ . . . }` |
+| [`psychic_portrait`](./Miscellaneous.md#object-psychic_portrait) | Object  | Facial expression configuration for the psychic portrait. | 1 | `{ . . . }` |
 | `random` | Number | A random value used for stat or attribute adjustment. | 1 | `-1`<br>`-2`<br>`1` |
-| [`real_wink`](#object-real_wink) | Object | Facial expression preset for a wink with animated eyes. | 1 | `{ . . . }` |
-| [`real_wink_overshoot`](#object-real_wink_overshoot) | Object | Facial expression preset for a wink with overshoot animation. | 1 | `{ . . . }` |
+| [`real_wink`](./Miscellaneous.md#object-real_wink) | Object  | Facial expression preset for a wink with animated eyes. | 1 | `{ . . . }` |
+| [`real_wink_overshoot`](./Miscellaneous.md#object-real_wink_overshoot) | Object  | Facial expression preset for a wink with overshoot animation. | 1 | `{ . . . }` |
 | `removed` | Boolean | If true, this autofeeder item is disabled and not available. | 1 | `true` |
 | [`restrict`](./Enums.md#enum-restrict) | Enum | Limits the pool of items to specific categories such as weapon, armor, or consumables. | 1 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
 | [`return_as`](./Enums.md#enum-return_as) | Enum | Specifies the role or faction the temporarily absent cat returns as. | 1 | `enemy` |
 | [`return_during`](./Enums.md#enum-return_during) | Enum | Specifies the encounter type during which the temporarily absent cat returns. | 1 | `boss` |
-| [`sad`](#object-sad) | Object | Facial expression preset for sadness. | 1 | `{ . . . }` |
-| [`sad_left`](#object-sad_left) | Object | Facial expression preset for sadness facing left. | 1 | `{ . . . }` |
+| [`sad`](./Miscellaneous.md#object-sad) | Object  | Facial expression preset for sadness. | 1 | `{ . . . }` |
+| [`sad_left`](./Miscellaneous.md#object-sad_left) | Object  | Facial expression preset for sadness facing left. | 1 | `{ . . . }` |
 | `same_cat` | Boolean | If true, the next event from the set uses the same cat as the previous event. | 1 | `true` |
-| [`shake1`](#object-shake1) | Object | Facial expression preset for a shake animation, frame 1. | 1 | `{ . . . }` |
-| [`shake2`](#object-shake2) | Object | Facial expression preset for a shake animation, frame 2. | 1 | `{ . . . }` |
-| [`shock`](#object-shock) | Object | Facial expression preset for shock. | 1 | `{ . . . }` |
-| [`shock_left`](#object-shock_left) | Object | Facial expression preset for shock facing left. | 1 | `{ . . . }` |
+| [`shake1`](./Miscellaneous.md#object-shake1) | Object  | Facial expression preset for a shake animation, frame 1. | 1 | `{ . . . }` |
+| [`shake2`](./Miscellaneous.md#object-shake2) | Object  | Facial expression preset for a shake animation, frame 2. | 1 | `{ . . . }` |
+| [`shock`](./Miscellaneous.md#object-shock) | Object  | Facial expression preset for shock. | 1 | `{ . . . }` |
+| [`shock_left`](./Miscellaneous.md#object-shock_left) | Object  | Facial expression preset for shock facing left. | 1 | `{ . . . }` |
 | `skip_result_screen` | Boolean | If true, the result screen is skipped after the cutscene completes. | 1 | `true` |
 | [`SmallCompletionCheckmarkTooltip`](./Arrays.md#array-smallcompletioncheckmarktooltip) | Array | The list of level names that display a small completion checkmark tooltip. | 1 | `[caves boneyard moon core jurassic theend]` |
-| [`smile`](#object-smile) | Object | Facial expression preset with smile, eyes open, and eyebrow up. | 1 | `{ . . . }` |
-| [`smug`](#object-smug) | Object | Facial expression preset for a smug look. | 1 | `{ . . . }` |
-| [`smug_left`](#object-smug_left) | Object | Facial expression preset for a smug look facing left. | 1 | `{ . . . }` |
+| [`smile`](./Miscellaneous.md#object-smile) | Object  | Facial expression preset with smile, eyes open, and eyebrow up. | 1 | `{ . . . }` |
+| [`smug`](./Miscellaneous.md#object-smug) | Object  | Facial expression preset for a smug look. | 1 | `{ . . . }` |
+| [`smug_left`](./Miscellaneous.md#object-smug_left) | Object  | Facial expression preset for a smug look facing left. | 1 | `{ . . . }` |
 | [`spawn_side`](./Enums.md#enum-spawn_side) | Enum | Specifies which side the spawned unit appears on. Possible values: "cats", "enemies", or "anywhere". | 1 | `"cats"`<br>`anywhere`<br>`cats` |
 | [`suffix`](./Strings.md#string-suffix) | String | A string appended to the damage text. | 1 | `"!!!"` |
-| [`supermad`](#object-supermad) | Object | Facial expression preset for extreme anger. | 1 | `{ . . . }` |
-| [`suprise`](#object-suprise) | Object | Facial expression preset for surprise. | 1 | `{ . . . }` |
-| [`tank_portrait`](#object-tank_portrait) | Object | Facial expression configuration for the tank portrait. | 1 | `{ . . . }` |
-| [`tantrum_cry`](#object-tantrum_cry) | Object | Facial expression preset for a tantrum crying expression. | 1 | `{ . . . }` |
-| [`terror`](#object-terror) | Object | Facial expression preset for terror. | 1 | `{ . . . }` |
-| [`thief_portrait`](#object-thief_portrait) | Object | Facial expression configuration for the thief portrait. | 1 | `{ . . . }` |
-| [`Thunderstorm`](Engine_LogicKeys.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
-| [`tinkerer_portrait`](#object-tinkerer_portrait) | Object | Facial expression configuration for the tinkerer portrait. | 1 | `{ . . . }` |
-| [`verymad`](#object-verymad) | Object | Facial expression preset for very angry. | 1 | `{ . . . }` |
-| [`wince`](#object-wince) | Object | Facial expression preset for wincing. | 1 | `{ . . . }` |
-| [`wink`](#object-wink) | Object | Facial expression preset for a wink. | 1 | `{ . . . }` |
-| [`worried_left`](#object-worried_left) | Object | Facial expression preset for worry facing left. | 1 | `{ . . . }` |
+| [`supermad`](./Miscellaneous.md#object-supermad) | Object  | Facial expression preset for extreme anger. | 1 | `{ . . . }` |
+| [`suprise`](./Miscellaneous.md#object-suprise) | Object  | Facial expression preset for surprise. | 1 | `{ . . . }` |
+| [`tank_portrait`](./Miscellaneous.md#object-tank_portrait) | Object  | Facial expression configuration for the tank portrait. | 1 | `{ . . . }` |
+| [`tantrum_cry`](./Miscellaneous.md#object-tantrum_cry) | Object  | Facial expression preset for a tantrum crying expression. | 1 | `{ . . . }` |
+| [`terror`](./Miscellaneous.md#object-terror) | Object  | Facial expression preset for terror. | 1 | `{ . . . }` |
+| [`thief_portrait`](./Miscellaneous.md#object-thief_portrait) | Object  | Facial expression configuration for the thief portrait. | 1 | `{ . . . }` |
+| [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object  | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
+| [`tinkerer_portrait`](./Miscellaneous.md#object-tinkerer_portrait) | Object  | Facial expression configuration for the tinkerer portrait. | 1 | `{ . . . }` |
+| [`verymad`](./Miscellaneous.md#object-verymad) | Object  | Facial expression preset for very angry. | 1 | `{ . . . }` |
+| [`wince`](./Miscellaneous.md#object-wince) | Object  | Facial expression preset for wincing. | 1 | `{ . . . }` |
+| [`wink`](./Miscellaneous.md#object-wink) | Object  | Facial expression preset for a wink. | 1 | `{ . . . }` |
+| [`worried_left`](./Miscellaneous.md#object-worried_left) | Object  | Facial expression preset for worry facing left. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1463,10 +1463,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2039 | `passives`<br>`class`<br>`tag` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`passive0`](./Enums.md#enum-passive0) | Enum | Specifies the first passive ability assigned to the unit from a predefined list (e.g., SelfAssured, HotBlooded). | 2 | `HotBlooded`<br>`SelfAssured` |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 
 </details>
@@ -1488,9 +1488,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1557 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 517 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 461 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 409 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 517 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 461 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 409 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 149 | `.5`<br>`1`<br>`1.3` |
 | `delay` | Number | The delay in seconds before the ability's effect triggers. | 93 | `.05`<br>`.1`<br>`.25` |
 | [`speed`](./Miscellaneous.md#object-speed) | Variable | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
@@ -1518,10 +1518,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`desc`](./Strings.md#string-desc) | Enum | Specifies the localized description string for the item or ability. | 1641 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1611 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1641 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1611 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`class`](./Enums.md#enum-class) | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. | 876 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `treasure_room` | Boolean | If true, this level is a treasure room. | 14 | `true` |
 | `delay_enable_tooltips` | Boolean | If true, delays the enabling of tooltips in this scene. | 7 | `true` |
 | `keeper` | Number | The number of items the shopkeeper keeps from a previous visit. | 7 | `0` |
@@ -1552,7 +1552,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2344 | `damage_instance`<br>`spell`<br>`false` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1554 | `passives`<br>`class`<br>`tag` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1447 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1447 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 359 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 352 | `[`<br>`[Heat Fire]` |
 | [`knockback`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
@@ -1624,7 +1624,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `mana` | Enum / Integer | The amount of mana required to cast, as a formula or stat. | 1605 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
 | [`charge`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | The amount of charge required or the formula to calculate charge cost. | 18 | `"1-clamp(spd,0,1)"`<br>`0`<br>`1` |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. | 8 | `0`<br>`1`<br>`10` |
+| [`durability`](./Arrays.md#array-durability) | Array / Integer  | The amount of durability consumed by this ability or required for its use. | 8 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -1665,7 +1665,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 634 | `common`<br>`rare`<br>`cha` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 18 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 18 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -1686,7 +1686,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 634 | `common`<br>`rare`<br>`cha` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 35 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 35 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -1710,7 +1710,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 505 | `allies`<br>`auto`<br>`birds` |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 399 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 280 | `[attack move spell]`<br>`attack`<br>`battle` |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| [`shield`](./Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | `mana` | Enum / Integer | The amount of mana required to cast, as a formula or stat. | 50 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
 | `flying` | Boolean | If true, the unit can fly over obstacles and is immune to ground effects. | 47 | `true` |
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 32 | `0`<br>`1`<br>`15` |
@@ -1777,14 +1777,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 34 | `-1`<br>`-2`<br>`-3` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 27 | `-1`<br>`-10`<br>`-2` |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 24 | `+1`<br>`-1`<br>`-2` |
-| `int` | Enum / Integer | The Intelligence stat value or modifier. | 24 | `-1`<br>`-10`<br>`-2` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
-| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 18 | `-1`<br>`-2`<br>`-3` |
-| `lck` | Enum / Integer | The Luck stat value or modifier. | 16 | `-1`<br>`-2`<br>`-3` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 34 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 27 | `-1`<br>`-10`<br>`-2` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 24 | `+1`<br>`-1`<br>`-2` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 24 | `-1`<br>`-10`<br>`-2` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 18 | `-1`<br>`-2`<br>`-3` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 16 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -1910,7 +1910,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 220 | `damage_instance`<br>`spell`<br>`false` |
 | [`damage`](./Miscellaneous.md#object-damage) | Variable | Specifies the amount of damage dealt, can be a number or expression. | 47 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 4 | `[`<br>`[Heat Fire]` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 2 | `-99999`<br>`-999999`<br>`1` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 0 | `common`<br>`rare`<br>`cha` |
@@ -1984,26 +1984,26 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 12 | `common`<br>`rare`<br>`cha` |
-| [`attack`](./Miscellaneous.md#context-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 7 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`poop`](Events_and_Encounters.md#object-poop) | Object | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
+| [`attack`](./Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 7 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`poop`](./Miscellaneous.md#object-poop) | Object  | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`animation_fail`](./Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | [`body`](./Miscellaneous.md#context-body) | Number | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
-| [`brace`](Events_and_Encounters.md#object-brace) | Object | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
-| [`catch`](Events_and_Encounters.md#object-catch) | Object | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
-| [`free`](Events_and_Encounters.md#object-free) | Object | If true, this option requires no cost to activate. | 1 | `{ . . . }` |
-| [`future`](Events_and_Encounters.md#object-future) | Object | Specifies the name, map flag, or connection for the Future area. | 1 | `{ . . . }` |
+| [`brace`](./Miscellaneous.md#object-brace) | Object  | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
+| [`catch`](./Miscellaneous.md#object-catch) | Object  | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
+| [`free`](./Miscellaneous.md#object-free) | Object  | If true, this option requires no cost to activate. | 1 | `{ . . . }` |
+| [`future`](./Miscellaneous.md#object-future) | Object  | Specifies the name, map flag, or connection for the Future area. | 1 | `{ . . . }` |
 | [`good`](./Miscellaneous.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`label`](./Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`pilfer`](Events_and_Encounters.md#object-pilfer) | Object | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 1 | `{ . . . }` |
-| [`reflect`](Engine_StatusAndPassiveKeys.md#object-reflect) | Object | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 | `{ . . . }` |
-| [`revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Object | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 1 | `{ . . . }` |
-| [`speed`](./Miscellaneous.md#context-speed) | Array / Number | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| [`pilfer`](./Miscellaneous.md#object-pilfer) | Object  | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 1 | `{ . . . }` |
+| [`reflect`](./Miscellaneous.md#object-reflect) | Object  | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 | `{ . . . }` |
+| [`revive`](./Miscellaneous.md#object-revive) | Object  | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 1 | `{ . . . }` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | [`stat`](./Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
-| [`thorns`](Events_and_Encounters.md#object-thorns) | Object | Defines a dialogue option that applies a thorns effect to the unit. | 1 | `{ . . . }` |
+| [`thorns`](./Miscellaneous.md#object-thorns) | Object  | Defines a dialogue option that applies a thorns effect to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2023,7 +2023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 39 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 39 | `2`<br>`3`<br>`4` |
 | [`restrict`](./Arrays.md#array-restrict) | Array | Limits the pool of items to specific categories such as weapon, armor, or consumables. | 30 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 1 | `common`<br>`rare`<br>`cha` |
 
@@ -2072,7 +2072,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 184 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 184 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 83 | `damage_instance`<br>`spell`<br>`false` |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 59 | `allies`<br>`auto`<br>`birds` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 31 | `-99999`<br>`-999999`<br>`1` |
@@ -2137,12 +2137,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 37 | `-1`<br>`-2`<br>`-3` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 37 | `-1`<br>`-2`<br>`-3` |
 | `random` | Number | A random value used for stat or attribute adjustment. | 25 | `-1`<br>`-2`<br>`1` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 18 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 18 | `-1`<br>`-2`<br>`-3` |
 | [`cha`](./Engine_EventKeys.md#valid-property-keys) | Variable | The Charisma stat value or modifier. | 16 | `+1`<br>`-1`<br>`-2` |
-| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 10 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 10 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -2163,8 +2163,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 125 | `common`<br>`rare`<br>`cha` |
-| [`requirements`](Events_and_Encounters.md#object-requirements) | Object | An object defining the conditions that must be met for a reward or event branch to be available. | 125 | `{ . . . }` |
-| [`else`](Abilities_and_Spells.md#object-else) | Object | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 37 | `{ . . . }` |
+| [`requirements`](./Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 125 | `{ . . . }` |
+| [`else`](./Miscellaneous.md#object-else) | Object  | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 37 | `{ . . . }` |
 
 </details>
 
@@ -2184,13 +2184,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ParticleBouncePlane`](Engine_LogicKeys.md#object-particlebounceplane) | Object | Defines a plane that particles bounce off of, with dampening and friction properties. | 44 | `{ . . . }` |
-| [`ParticleGlobalForce`](Engine_LogicKeys.md#object-particleglobalforce) | Object | Applies a constant force (e.g., wind) to all particles in the system. | 27 | `{ . . . }` |
+| [`ParticleBouncePlane`](./Miscellaneous.md#object-particlebounceplane) | Object  | Defines a plane that particles bounce off of, with dampening and friction properties. | 44 | `{ . . . }` |
+| [`ParticleGlobalForce`](./Miscellaneous.md#object-particleglobalforce) | Object  | Applies a constant force (e.g., wind) to all particles in the system. | 27 | `{ . . . }` |
 | [`ParticleRandomForce`](./Arrays.md#array-particlerandomforce) | Array | Applies a random force to particles, optionally varying over time from a begin to end value. | 20 | `[0, [-20, 20], 0]`<br>`[0, [-80, -10], 0]`<br>`[0, [10, 60], 0]` |
-| [`ParticleTornadoForce`](Engine_LogicKeys.md#object-particletornadoforce) | Object | Applies a swirling, tornado-like force around a central axis to particles. | 19 | `{ . . . }` |
-| [`ParticleAttractor`](Engine_LogicKeys.md#object-particleattractor) | Object | Applies a force pulling particles towards a point or along a direction. | 9 | `{ . . . }` |
-| [`ParticleLineCollisions`](Engine_LogicKeys.md#object-particlelinecollisions) | Object | Defines collision properties for particles hitting a line or edge, optionally ending them on impact. | 8 | `{ . . . }` |
-| [`ParticleCharacterCollision`](Engine_LogicKeys.md#object-particlecharactercollision) | Object | Defines how particles collide with characters, including push force and velocity inheritance. | 1 | `{ . . . }` |
+| [`ParticleTornadoForce`](./Miscellaneous.md#object-particletornadoforce) | Object  | Applies a swirling, tornado-like force around a central axis to particles. | 19 | `{ . . . }` |
+| [`ParticleAttractor`](./Miscellaneous.md#object-particleattractor) | Object  | Applies a force pulling particles towards a point or along a direction. | 9 | `{ . . . }` |
+| [`ParticleLineCollisions`](./Miscellaneous.md#object-particlelinecollisions) | Object  | Defines collision properties for particles hitting a line or edge, optionally ending them on impact. | 8 | `{ . . . }` |
+| [`ParticleCharacterCollision`](./Miscellaneous.md#object-particlecharactercollision) | Object  | Defines how particles collide with characters, including push force and velocity inheritance. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2211,31 +2211,31 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 37 | `{ . . . }`<br>`release` |
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 11 | `{ . . . }`<br>`0` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 37 | `{ . . . }`<br>`release` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 11 | `{ . . . }`<br>`0` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | `passives`<br>`class`<br>`tag` |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 4 | `{ . . . }`<br>`bite1` |
-| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 4 | `{ . . . }`<br>`bite1` |
+| [`OffMap`](./Miscellaneous.md#object-offmap) | Object  | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
-| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
-| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`Small`](Characters_and_Bosses.md#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
-| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
-| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
-| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
-| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
-| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Defines a list of quotes for the Monk class. | 1 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Boris`](./Miscellaneous.md#object-boris) | Enum / Object  | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
+| [`Explosive`](./Miscellaneous.md#object-explosive) | Enum / Object  | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`Small`](./Miscellaneous.md#object-small) | Object  | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
+| [`SquirrelForm`](./Miscellaneous.md#object-squirrelform) | Object  | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
+| [`Druid`](./Engine_LogicKeys.md#object-druid) | Object  | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`DualSword`](./Miscellaneous.md#object-dualsword) | Object  | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
+| [`Fighter`](./Engine_LogicKeys.md#object-fighter) | Object  | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`Grown`](./Miscellaneous.md#object-grown) | Object  | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
+| [`HalfDead`](./Miscellaneous.md#object-halfdead) | Object  | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
+| [`Monk`](./Engine_LogicKeys.md#object-monk) | Object  | Defines a list of quotes for the Monk class. | 1 | `{ . . . }` |
 | [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Defines a form that suppresses death rattle and triggers a heart attack when a buddy dies. | 1 | `{ . . . }` |
-| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 1 | `{ . . . }` |
-| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
+| [`Nuke`](./Miscellaneous.md#object-nuke) | Object  | Defines a nuke form with no attack or movement options. | 1 | `{ . . . }` |
+| [`Pulp2`](./Miscellaneous.md#object-pulp2) | Object  | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`SmallHolding`](./Miscellaneous.md#object-smallholding) | Object  | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SmallHoldingCat`](./Miscellaneous.md#object-smallholdingcat) | Object  | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`Standing`](./Miscellaneous.md#object-standing) | Object  | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 
 </details>
@@ -2324,8 +2324,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 70 | `damage_instance`<br>`spell`<br>`false` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 43 | `passives`<br>`class`<br>`tag` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 24 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 22 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 24 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 22 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 10 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 10 | `[`<br>`[Heat Fire]` |
 
@@ -2347,8 +2347,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 15 | `0`<br>`1`<br>`10` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 12 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 15 | `0`<br>`1`<br>`10` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 12 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | `asymmetric` | Boolean | If true, the mutation is applied asymmetrically (e.g., different on each side). | 8 | `false`<br>`true` |
 
 </details>
@@ -2453,7 +2453,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 57 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 56 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 52 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 52 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2503,8 +2503,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `number` | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 29 | `1`<br>`10`<br>`2` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`number`](./Arrays.md#array-number) | Array / Integer  | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 29 | `1`<br>`10`<br>`2` |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
@@ -2566,7 +2566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 46 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 11 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -2816,11 +2816,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`set_house`](./Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
 | [`unlock_room`](./Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
@@ -2843,7 +2843,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 38 | `common`<br>`rare`<br>`cha` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -2863,11 +2863,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 20 | `false`<br>`true` |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 | `shield_only` | Boolean | If true, only triggers when the unit has a shield. | 2 | `true` |
-| `number` | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
+| [`number`](./Arrays.md#array-number) | Array / Integer  | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2930,8 +2930,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 37 | `2`<br>`3`<br>`4` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 37 | `2`<br>`3`<br>`4` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
 | `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `1`<br>`3`<br>`6` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
 
@@ -3055,8 +3055,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 35 | `damage_instance`<br>`spell`<br>`false` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 13 | `[`<br>`[Heat Fire]` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 12 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 1 | `-99999`<br>`-999999`<br>`1` |
@@ -3168,7 +3168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 31 | `1`<br>`10`<br>`2` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 23 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | [`trap`](./Enums.md#enum-trap) | Enum | The type of trap to spawn. Specifies which trap template to use. | 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
 
 </details>
@@ -3190,9 +3190,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 31 | `damage_instance`<br>`spell`<br>`false` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 8 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 8 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 
 </details>
@@ -3368,14 +3368,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `treasure` | Number | Defines a treasure node containing items or item pools. | 14 | `1` |
-| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
 | `levelup` | Number | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `1` |
 | `mandatory` | Number | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 3 | `1`<br>`3`<br>`6` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
 | `mostly_food` | Number | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `1`<br>`2` |
 | `empty` | Number | The number of empty items offered, or an object defining their pool and cost. | 1 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -3395,16 +3395,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`treasure`](Map_Generation_and_Routing.md#object-treasure) | Object | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
-| [`pool`](./Miscellaneous.md#context-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
-| [`mandatory`](#object-mandatory) | Object | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 5 | `{ . . . }` |
-| [`levelup`](Engine_LogicKeys.md#object-levelup) | Object | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `{ . . . }` |
-| [`common_item`](#object-common_item) | Object | The number of common items offered, or an object defining their pool and cost. | 2 | `{ . . . }` |
+| [`treasure`](./Shops.md#object-treasure) | Object  | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
+| [`mandatory`](./Shops.md#object-mandatory) | Object  | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 5 | `{ . . . }` |
+| [`levelup`](./Shops.md#object-levelup) | Object  | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `{ . . . }` |
+| [`common_item`](./Shops.md#object-common_item) | Object  | The number of common items offered, or an object defining their pool and cost. | 2 | `{ . . . }` |
 | [`consumable`](./Miscellaneous.md#context-consumable) | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
-| [`guaranteed_food`](#object-guaranteed_food) | Object | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `{ . . . }` |
-| [`item`](./Miscellaneous.md#context-item) | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
-| [`mostly_food`](#object-mostly_food) | Object | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `{ . . . }` |
-| [`empty`](Characters_and_Bosses.md#object-empty) | Object | The number of empty items offered, or an object defining their pool and cost. | 1 | `{ . . . }` |
+| [`guaranteed_food`](./Shops.md#object-guaranteed_food) | Object  | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `{ . . . }` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`mostly_food`](./Shops.md#object-mostly_food) | Object  | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `{ . . . }` |
+| [`empty`](./Shops.md#object-empty) | Object  | The number of empty items offered, or an object defining their pool and cost. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3590,10 +3590,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Lighting`](Engine_LogicKeys.md#object-lighting) | Object | An object defining the ambient light level and ray counts for a map's global lighting. | 10 | `{ . . . }` |
-| [`Fly`](Engine_LogicKeys.md#object-fly) | Object | An object defining a range [min, max] for the number of flies spawned in the environment. | 7 | `{ . . . }` |
-| [`Cockroach`](Engine_LogicKeys.md#object-cockroach) | Object | An object defining a range [min, max] for the number of cockroaches spawned in the environment. | 3 | `{ . . . }` |
-| [`Firefly`](Engine_LogicKeys.md#object-firefly) | Object | An object defining a range [min, max] for the number of fireflies spawned in the environment. | 1 | `{ . . . }` |
+| [`Lighting`](./Miscellaneous.md#object-lighting) | Object  | An object defining the ambient light level and ray counts for a map's global lighting. | 10 | `{ . . . }` |
+| [`Fly`](./Miscellaneous.md#object-fly) | Object  | An object defining a range [min, max] for the number of flies spawned in the environment. | 7 | `{ . . . }` |
+| [`Cockroach`](./Miscellaneous.md#object-cockroach) | Object  | An object defining a range [min, max] for the number of cockroaches spawned in the environment. | 3 | `{ . . . }` |
+| [`Firefly`](./Miscellaneous.md#object-firefly) | Object  | An object defining a range [min, max] for the number of fireflies spawned in the environment. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3617,7 +3617,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 20 | `.02`<br>`.1`<br>`.15` |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 5 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| `number` | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 2 | `1`<br>`10`<br>`2` |
+| [`number`](./Arrays.md#array-number) | Array / Integer  | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -3657,7 +3657,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 22 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 22 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 22 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
@@ -3699,7 +3699,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 13 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 13 | `2`<br>`3`<br>`4` |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 13 | `true` |
 
 </details>
@@ -3721,7 +3721,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 9 | `-1`<br>`-2`<br>`1` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 8 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 8 | `0`<br>`1`<br>`10` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `ears` | Number | The ID for the ear mutation appearance. | 5 | `-1`<br>`-2`<br>`1500` |
 | `body` | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
@@ -3850,8 +3850,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 1 | `{ . . . }`<br>`20` |
-| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | The number of snake familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 1 | `{ . . . }`<br>`20` |
+| [`Snake`](./Engine_LogicKeys.md#object-snake) | Integer / Object  | The number of snake familiars spawned. | 1 | `{ . . . }`<br>`10` |
 
 </details>
 
@@ -3871,7 +3871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
 
 </details>
 
@@ -3891,7 +3891,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 18 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 18 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 18 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -4076,7 +4076,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 14 | `1.3`<br>`1.35`<br>`1.5` |
-| [`amount`](./Enums.md#enum-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 14 | `.1`<br>`.25`<br>`.35` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 14 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 14 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 | `DecayTime` | Number | The time in seconds for the reverb effect to decay to silence. | 11 | `1.68`<br>`1.8` |
 | [`ReverbDelay`](./Enums.md#enum-reverbdelay) | Enum | The time in seconds before the initial reverb reflections begin. | 7 | `.2`<br>`.25`<br>`.45` |
@@ -4124,7 +4124,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 15 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 15 | `2`<br>`3`<br>`4` |
 | `temporary` | Boolean | If true, the crafted item is temporary and will be removed after the battle or a set duration. | 4 | `false` |
 
 </details>
@@ -4145,7 +4145,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
 | [`level`](./Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
@@ -4410,11 +4410,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 9 | `-1`<br>`-2`<br>`-3` |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 7 | `+1`<br>`-1`<br>`-2` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 6 | `-1`<br>`-2`<br>`-3` |
-| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 9 | `-1`<br>`-2`<br>`-3` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 7 | `+1`<br>`-1`<br>`-2` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 6 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -4434,10 +4434,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `int` | Enum / Integer | The Intelligence stat value or modifier. | 8 | `-1`<br>`-10`<br>`-2` |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 2 | `+1`<br>`-1`<br>`-2` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 8 | `-1`<br>`-10`<br>`-2` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 2 | `+1`<br>`-1`<br>`-2` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -4457,8 +4457,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`attack`](./Arrays.md#array-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 12 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`move`](./Arrays.md#array-move) | Enum | Specifies the name of the class's default movement ability. | 12 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
+| [`attack`](./Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 12 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| [`move`](./Enums.md#enum-move) | Enum  | Specifies the name of the class's default movement ability. | 12 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
 </details>
 
@@ -4626,7 +4626,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 9 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 9 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -4906,10 +4906,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 10 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -4929,7 +4929,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 7 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 7 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`stacks`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
 
@@ -4993,7 +4993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 11 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 11 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 10 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -5121,10 +5121,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 10 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 8 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 8 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
@@ -5146,7 +5146,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`amount`](./Enums.md#enum-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 | `volume_adjustment` | Number | A multiplier for the volume of audio in a given room or reverb zone. | 10 | `1.3`<br>`1.35`<br>`1.5` |
 
@@ -5168,7 +5168,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`amount`](./Enums.md#enum-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 
 </details>
@@ -5189,7 +5189,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Arrays.md#array-head) | Enum / Number | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
 | [`body`](./Arrays.md#array-body) | Number | The catalog ID for the cat's body part. | 3 | `-1`<br>`1`<br>`1.1` |
 | [`arms`](./Arrays.md#array-arms) | Array | The ID or range of IDs for the arm mutation appearance. | 1 | `900`<br>`[10 20]` |
 | [`legs`](./Arrays.md#array-legs) | Array | The ID or range of IDs for the leg mutation appearance. | 1 | `-1`<br>`306`<br>`322` |
@@ -5252,8 +5252,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 9 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 9 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -5316,7 +5316,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 5 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `health` | Integer | The maximum hit points of the unit. | 4 | `0`<br>`1`<br>`10` |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 3 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 3 | `{ . . . }` |
 
 </details>
 
@@ -5359,7 +5359,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 9 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -5449,8 +5449,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `chain` | Boolean | Specifies the ability to chain into and execute. | 2 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 
 </details>
@@ -5534,7 +5534,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 8 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -5554,8 +5554,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 9 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 9 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -5639,7 +5639,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -6057,7 +6057,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
 
 </details>
 
@@ -6227,10 +6227,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 7 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 7 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 7 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 7 | `damage_instance`<br>`spell`<br>`false` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -6250,7 +6250,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 7 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 7 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 7 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 7 | `damage_instance`<br>`spell`<br>`false` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
@@ -6373,7 +6373,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`begin`](./Arrays.md#array-begin) | Array | The initial force applied to the particle as a 3D vector, where any axis can be a random range [min, max]. | 7 | `[0, -10, 0]`<br>`[0, -20, 0]`<br>`[0, [-20, 20], 0]` |
-| [`end`](./Arrays.md#array-end) | Enum | Defines the final animation state or offset vector for a particle's lifespan. | 7 | `[-20, 0, 20]`<br>`[0, -450, 0]`<br>`[0, [200, 900], 0]` |
+| [`end`](./Enums.md#enum-end) | Enum  | Defines the final animation state or offset vector for a particle's lifespan. | 7 | `[-20, 0, 20]`<br>`[0, -450, 0]`<br>`[0, [200, 900], 0]` |
 
 </details>
 
@@ -6494,7 +6494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 7 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 7 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | `passives`<br>`class`<br>`tag` |
 | `exclude_basicattack` | Boolean | If true, basic attacks are excluded from triggering the status effect. | 2 | `true` |
 
@@ -6516,7 +6516,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 7 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 7 | `0`<br>`1`<br>`10` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 7 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -6623,7 +6623,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 6 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 6 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -6644,7 +6644,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 6 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 6 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -6666,8 +6666,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 6 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 6 | `0`<br>`1`<br>`10` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 6 | `0`<br>`1`<br>`10` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -6900,8 +6900,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
-| `radius` | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -7025,7 +7025,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `reduction` | Integer | The amount or percentage by which mana cost is reduced. | 6 | `1`<br>`2`<br>`3` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -7068,7 +7068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`event`](./Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 5 | `Blessing`<br>`Death`<br>`Tragedy` |
 | `same_cat` | Boolean | If true, the next event from the set uses the same cat as the previous event. | 5 | `true` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 4 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 4 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -7109,7 +7109,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 6 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 6 | `{ . . . }` |
 
 </details>
 
@@ -7232,7 +7232,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 5 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -7382,7 +7382,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`good`](./Miscellaneous.md#context-good) | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
@@ -7507,12 +7507,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 5 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -7575,7 +7575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -7595,7 +7595,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 4 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 4 | `{ . . . }` |
 | `Furniture` | Object | Defines the group of furniture items available in a shop. | 1 | `{ . . . }` |
 
 </details>
@@ -7635,7 +7635,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -7718,8 +7718,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -7839,7 +7839,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `spells` | Array | The list of spell ability IDs the unit possesses. | 5 | `1`<br>`2`<br>`5` |
+| [`spells`](./Arrays.md#array-spells) | Array  | The list of spell ability IDs the unit possesses. | 5 | `1`<br>`2`<br>`5` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -7861,7 +7861,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](./Arrays.md#array-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](./Enums.md#enum-type) | Enum  | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -7902,7 +7902,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 5 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 5 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -8045,7 +8045,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -8152,7 +8152,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 4 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
@@ -8320,7 +8320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spell_graphics_override`](#object-spell_graphics_override) | Object | An object defining custom particle effects and palette for the EMP spell. | 4 | `{ . . . }` |
+| [`spell_graphics_override`](./Passives_and_Statuses.md#object-spell_graphics_override) | Object  | An object defining custom particle effects and palette for the EMP spell. | 4 | `{ . . . }` |
 | [`status_explosion_override`](./Enums.md#enum-status_explosion_override) | Enum | Specifies the status effect particle type to override for the EMP explosion. | 4 | `WaterConduct` |
 
 </details>
@@ -8341,9 +8341,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 1 | `+1`<br>`-1`<br>`-2` |
-| `int` | Enum / Integer | The Intelligence stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 1 | `+1`<br>`-1`<br>`-2` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -8384,8 +8384,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -8513,7 +8513,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -8533,8 +8533,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 4 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 4 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -8637,8 +8637,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 3 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 3 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -8678,11 +8678,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 4 | `+1`<br>`-1`<br>`-2` |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 4 | `+1`<br>`-1`<br>`-2` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -8952,7 +8952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 4 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 4 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
@@ -8993,7 +8993,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`area_particle`](./Enums.md#enum-area_particle) | Enum | Specifies the FX particle effect emitted across the affected area tiles. | 4 | `Bolt`<br>`BurnTrigger`<br>`Earthquake` |
 | [`center_particle`](./Enums.md#enum-center_particle) | Enum | Specifies the FX particle effect emitted at the center of the ability's origin tile. | 4 | `BigMagicMissileBlast`<br>`Explosion`<br>`FireBlastMushroom` |
-| `palette` | Enum / Integer | Specifies the color palette index for the ability's visuals. | 4 | `-1`<br>`0`<br>`1` |
+| [`palette`](./Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 4 | `-1`<br>`0`<br>`1` |
 | [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 4 | `ArrowFromAbove`<br>`BigMagicMissileBlast`<br>`Bolt` |
 
 </details>
@@ -9712,7 +9712,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | Specifies the form to change into. | 3 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -9796,7 +9796,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 3 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 3 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -9860,8 +9860,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
@@ -9883,7 +9883,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -9945,7 +9945,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -10006,10 +10006,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`statuses_on_enter_form`](Characters_and_Bosses.md#object-statuses_on_enter_form) | Object | Statuses or abilities applied when entering this form. | 2 | `{ . . . }` |
+| [`statuses_on_enter_form`](./Miscellaneous.md#object-statuses_on_enter_form) | Object  | Statuses or abilities applied when entering this form. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -10132,7 +10132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
 
@@ -10152,7 +10152,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LevelUp`](Engine_LogicKeys.md#object-levelup) | Object | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
+| [`LevelUp`](./Shops.md#object-levelup) | Object  | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
 
 </details>
 
@@ -10172,7 +10172,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
 
 </details>
@@ -10214,7 +10214,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | Specifies the form to change into. | 3 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -10235,7 +10235,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -10317,7 +10317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`adventure_weather`](./Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`particles`](./Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
@@ -10393,7 +10393,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RepressedMemoriesMetronome`](Engine_StatusAndPassiveKeys.md#object-repressedmemoriesmetronome) | Object | An object defining the metronome status effect and its pool triggered on mana spend. | 2 | `{ . . . }` |
+| [`RepressedMemoriesMetronome`](./Passives_and_Statuses.md#object-repressedmemoriesmetronome) | Object  | An object defining the metronome status effect and its pool triggered on mana spend. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -10472,7 +10472,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
 | [`min_radius`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Variable | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
@@ -10776,7 +10776,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -10798,9 +10798,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -10822,7 +10822,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
 | [`AOEPuddle`](./Math_Equations.md) | Equation | Specifies the pattern or shape of an area-of-effect puddle left on the ground. | 2 | `X-1` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -10981,7 +10981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DelayedWind`](Engine_StatusAndPassiveKeys.md#object-delayedwind) | Object | Defines the properties for a delayed wind effect applied on melee damage. | 1 | `{ . . . }` |
+| [`DelayedWind`](./Passives_and_Statuses.md#object-delayedwind) | Object  | Defines the properties for a delayed wind effect applied on melee damage. | 1 | `{ . . . }` |
 
 </details>
 
@@ -11001,7 +11001,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -11203,13 +11203,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `cha` | Enum / Integer | The Charisma stat value or modifier. | 2 | `+1`<br>`-1`<br>`-2` |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
-| `dex` | Enum / Integer | The Dexterity stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
-| `int` | Enum / Integer | The Intelligence stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
-| `lck` | Enum / Integer | The Luck stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
-| `spd` | Enum / Integer | The Speed stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`cha`](./Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 2 | `+1`<br>`-1`<br>`-2` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](./Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`int`](./Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
+| [`lck`](./Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](./Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -11306,8 +11306,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`on_break`](#object-on_break) | Object | An object defining effects that trigger when the item is broken. | 2 | `{ . . . }` |
-| [`on_throw`](#object-on_throw) | Object | An object defining effects that trigger when the item is thrown. | 2 | `{ . . . }` |
+| [`on_break`](./Passives_and_Statuses.md#object-on_break) | Object  | An object defining effects that trigger when the item is broken. | 2 | `{ . . . }` |
+| [`on_throw`](./Passives_and_Statuses.md#object-on_throw) | Object  | An object defining effects that trigger when the item is thrown. | 2 | `{ . . . }` |
 
 </details>
 
@@ -11348,7 +11348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -11369,7 +11369,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -11393,7 +11393,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
 | `mostly_food` | Number | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `1`<br>`2` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -11416,7 +11416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `common_item` | Number | The number of common items offered, or an object defining their pool and cost. | 2 | `1`<br>`2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -11439,7 +11439,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `common_item` | Number | The number of common items offered, or an object defining their pool and cost. | 2 | `1`<br>`2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -11500,12 +11500,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -11525,12 +11525,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -11569,7 +11569,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -11752,7 +11752,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -11834,10 +11834,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`fire`](Characters_and_Bosses.md#object-fire) | Object | An event response that uses fire, with no stat requirement. | 1 | `{ . . . }` |
-| [`ice`](Engine_LogicKeys.md#object-ice) | Object | An event response that uses ice, with no stat requirement. | 1 | `{ . . . }` |
-| [`lightning`](Events_and_Encounters.md#object-lightning) | Object | An event response using lightning, with no stat requirement. | 1 | `{ . . . }` |
-| [`triattack`](#object-triattack) | Object | An object defining the properties of a triangular attack that damages neighbor tiles when casting a spell. | 1 | `{ . . . }` |
+| [`fire`](./Passives_and_Statuses.md#object-fire) | Object  | An event response that uses fire, with no stat requirement. | 1 | `{ . . . }` |
+| [`ice`](./Passives_and_Statuses.md#object-ice) | Object  | An event response that uses ice, with no stat requirement. | 1 | `{ . . . }` |
+| [`lightning`](./Passives_and_Statuses.md#object-lightning) | Object  | An event response using lightning, with no stat requirement. | 1 | `{ . . . }` |
+| [`triattack`](./Passives_and_Statuses.md#object-triattack) | Object  | An object defining the properties of a triangular attack that damages neighbor tiles when casting a spell. | 1 | `{ . . . }` |
 
 </details>
 
@@ -11901,7 +11901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 2 | `-3`<br>`10`<br>`2` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -11921,7 +11921,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -11942,7 +11942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -12020,16 +12020,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Earth`](Engine_LogicKeys.md#object-earth) | Object | Defines the Earth element effects, including damage value. | 2 | `{ . . . }` |
-| [`Electric`](Engine_LogicKeys.md#object-electric) | Object | Applies a Stun status effect with specified stacks and probability based on variable X. | 2 | `{ . . . }` |
-| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 2 | `{ . . . }`<br>`1` |
-| [`Grass`](Engine_LogicKeys.md#object-grass) | Object | Specifies the status effects applied to allies standing on grass tiles. | 2 | `{ . . . }` |
-| [`Gravity`](Engine_LogicKeys.md#object-gravity) | Object | An object defining the effects granted by Gravity elemental attunement. | 2 | `{ . . . }` |
-| [`Holy`](Characters_and_Bosses.md#object-holy) | Enum / Object | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
-| [`Ice`](Engine_LogicKeys.md#object-ice) | Object | Applies the Slow status effect to targets hit by ice-element abilities. | 2 | `{ . . . }` |
-| [`Shadow`](Engine_LogicKeys.md#object-shadow) | Object | An object defining the effects granted by Shadow elemental attunement. | 2 | `{ . . . }` |
-| [`Water`](Characters_and_Bosses.md#object-water) | Object | Form state for water element, applying a puddle or movement bonus. | 2 | `{ . . . }` |
-| [`Wind`](Engine_LogicKeys.md#object-wind) | Object | Defines the properties for the Wind element, such as knockback amount. | 2 | `{ . . . }` |
+| [`Earth`](./Passives_and_Statuses.md#object-earth) | Object  | Defines the Earth element effects, including damage value. | 2 | `{ . . . }` |
+| [`Electric`](./Passives_and_Statuses.md#object-electric) | Object  | Applies a Stun status effect with specified stacks and probability based on variable X. | 2 | `{ . . . }` |
+| [`Fire`](./Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 2 | `{ . . . }`<br>`1` |
+| [`Grass`](./Passives_and_Statuses.md#object-grass) | Object  | Specifies the status effects applied to allies standing on grass tiles. | 2 | `{ . . . }` |
+| [`Gravity`](./Passives_and_Statuses.md#object-gravity) | Object  | An object defining the effects granted by Gravity elemental attunement. | 2 | `{ . . . }` |
+| [`Holy`](./Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
+| [`Ice`](./Passives_and_Statuses.md#object-ice) | Object  | Applies the Slow status effect to targets hit by ice-element abilities. | 2 | `{ . . . }` |
+| [`Shadow`](./Passives_and_Statuses.md#object-shadow) | Object  | An object defining the effects granted by Shadow elemental attunement. | 2 | `{ . . . }` |
+| [`Water`](./Passives_and_Statuses.md#object-water) | Object  | Form state for water element, applying a puddle or movement bonus. | 2 | `{ . . . }` |
+| [`Wind`](./Passives_and_Statuses.md#object-wind) | Object  | Defines the properties for the Wind element, such as knockback amount. | 2 | `{ . . . }` |
 
 </details>
 
@@ -12049,7 +12049,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -12088,7 +12088,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -12171,7 +12171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -12234,7 +12234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 3 | `.02`<br>`.1`<br>`.15` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
 
 </details>
 
@@ -12254,7 +12254,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
@@ -12300,7 +12300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -12320,7 +12320,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 2 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
@@ -12392,7 +12392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -12452,7 +12452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 
@@ -12474,7 +12474,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
 
 </details>
 
@@ -12494,7 +12494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`hard_initial`](Map_Generation_and_Routing.md#object-hard_initial) | Object | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
+| [`hard_initial`](./Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -12536,9 +12536,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -12698,7 +12698,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
@@ -12762,7 +12762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13006,7 +13006,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
@@ -13093,8 +13093,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13135,8 +13135,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 2 | `{ . . . }` |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 2 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 2 | `{ . . . }` |
+| [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13156,8 +13156,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13177,7 +13177,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 2 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13494,7 +13494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -13514,8 +13514,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Defines additional damage or effects applied to nearby targets around the primary target. | 1 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`splash_damage`](./Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -13838,7 +13838,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -13858,7 +13858,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 2 | `0`<br>`1`<br>`10` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 2 | `-1`<br>`-2`<br>`1` |
 
 </details>
@@ -13942,7 +13942,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`HealAlliesEachTurn`](Engine_StatusAndPassiveKeys.md#object-healallieseachturn) | Object | An object defining how much health and mana are healed to all allies each turn. | 2 | `{ . . . }` |
+| [`HealAlliesEachTurn`](./Passives_and_Statuses.md#object-healallieseachturn) | Object  | An object defining how much health and mana are healed to all allies each turn. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -13963,7 +13963,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`HolyDamageBlessing`](Engine_StatusAndPassiveKeys.md#object-holydamageblessing) | Object | An object defining the damage multiplier and status effects applied as a holy damage blessing. | 2 | `{ . . . }` |
+| [`HolyDamageBlessing`](./Passives_and_Statuses.md#object-holydamageblessing) | Object  | An object defining the damage multiplier and status effects applied as a holy damage blessing. | 2 | `{ . . . }` |
 
 </details>
 
@@ -14127,7 +14127,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -14147,7 +14147,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -14210,7 +14210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 2 | `.02`<br>`.1`<br>`.15` |
-| `radius` | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 2 | `0`<br>`1`<br>`13` |
 
 </details>
 
@@ -14272,7 +14272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -14313,7 +14313,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 2 | `2`<br>`3`<br>`4` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
@@ -14416,8 +14416,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `con` | Enum / Integer | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
+| [`con`](./Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -14495,7 +14495,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -14537,7 +14537,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2 | `damage_instance`<br>`spell`<br>`false` |
@@ -14560,7 +14560,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
@@ -14581,7 +14581,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -14643,7 +14643,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 </details>
 
@@ -14664,7 +14664,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
@@ -14687,7 +14687,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | `strength` | Integer | The base strength stat, used for physical damage calculations. | 1 | `1`<br>`10`<br>`15` |
 
 </details>
@@ -14927,7 +14927,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -15008,7 +15008,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `kills` | Number | The number of kills required to meet the threshold for the battle-end status effect. | 2 | `3` |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 
 </details>
 
@@ -15150,7 +15150,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`set`](./Enums.md#enum-set) | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -15229,7 +15229,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -15317,7 +15317,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`bonus_passives`](Abilities_and_Spells.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. | 2 | `{ . . . }` |
+| [`bonus_passives`](./Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 2 | `{ . . . }` |
 
 </details>
 
@@ -15337,7 +15337,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -15604,8 +15604,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `range` | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -15633,7 +15633,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15662,7 +15662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15691,7 +15691,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15720,7 +15720,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15749,7 +15749,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15778,7 +15778,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15807,7 +15807,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15836,7 +15836,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15865,7 +15865,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15894,7 +15894,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15923,7 +15923,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15952,7 +15952,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -15981,7 +15981,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16010,7 +16010,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16039,7 +16039,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16068,7 +16068,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16097,7 +16097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16126,7 +16126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16155,7 +16155,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16184,7 +16184,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Number | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16213,7 +16213,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `lock_controls` | Number | The amount of time in seconds to lock player controls. | 1 | `1` |
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | `unlock_controls` | Number | The amount of time in seconds before unlocking player controls. | 1 | `1` |
 
 </details>
@@ -16239,7 +16239,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`repeat`](./Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
 | `required_age` | Number | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
 | [`do_random_sequence`](./Arrays.md#array-do_random_sequence) | Array | An array of sequence names; one is chosen at random to execute. | 1 ||
 
 </details>
@@ -16260,8 +16260,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -16323,7 +16323,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
@@ -16704,7 +16704,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -17025,7 +17025,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](Engine_LogicKeys.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
+| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -17126,7 +17126,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -17169,7 +17169,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
 
 </details>
 
@@ -17210,7 +17210,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -17270,8 +17270,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -17456,7 +17456,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -20828,8 +20828,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -20850,7 +20850,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -20871,7 +20871,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -20892,12 +20892,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -20940,10 +20940,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -21093,7 +21093,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -21113,7 +21113,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
@@ -21306,8 +21306,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -21347,7 +21347,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -22249,11 +22249,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -22274,7 +22274,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -22294,11 +22294,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -22319,11 +22319,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -22487,7 +22487,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -22546,7 +22546,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -22586,9 +22586,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -23293,7 +23293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -23336,7 +23336,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -23379,7 +23379,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -23399,7 +23399,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -23485,7 +23485,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
+| [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -23527,11 +23527,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -23674,7 +23674,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -23695,7 +23695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
 
@@ -23786,8 +23786,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -23807,8 +23807,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -23890,7 +23890,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -24046,7 +24046,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -24525,11 +24525,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -24550,11 +24550,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -24575,7 +24575,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -24762,7 +24762,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
@@ -24805,7 +24805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
 
 </details>
 
@@ -24911,7 +24911,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
 
 </details>
 
@@ -24979,7 +24979,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
@@ -26028,7 +26028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -26092,10 +26092,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -26238,7 +26238,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `radius` | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
 
 </details>
 
@@ -26358,7 +26358,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -26452,7 +26452,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -26474,9 +26474,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Number | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
@@ -26499,9 +26499,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`reverb_empty`](House_and_Environment.md#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](House_and_Environment.md#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Number | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
@@ -26522,8 +26522,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -26544,8 +26544,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -26566,7 +26566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -26606,7 +26606,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -26627,7 +26627,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -26649,7 +26649,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -27233,7 +27233,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -27253,7 +27253,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -27272,7 +27272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `initial_health` | Integer | The starting health of the unit when spawned. | 1 | `1`<br>`10`<br>`14` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -27293,7 +27293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
 
@@ -27313,7 +27313,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
+| [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
 
 </details>
 
@@ -27333,8 +27333,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](Combat_Rewards.md#object-boss) | Object | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
-| [`miniboss_event`](Map_Generation_and_Routing.md#object-miniboss_event) | Object | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
+| [`boss`](./Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
+| [`miniboss_event`](./Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -27394,7 +27394,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -27434,7 +27434,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_animations`](Characters_and_Bosses.md#object-exit_animations) | Object | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
+| [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
@@ -27455,10 +27455,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 1 | `0`<br>`1`<br>`15` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -27500,8 +27500,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -27542,8 +27542,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -27679,8 +27679,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -27702,8 +27702,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -27744,8 +27744,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -27786,7 +27786,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -27806,7 +27806,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -27826,7 +27826,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -27847,7 +27847,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -27889,11 +27889,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -27914,11 +27914,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -27939,11 +27939,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](House_and_Environment.md#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](House_and_Environment.md#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | [`zoomout_catvolume`](./Enums.md#enum-zoomout_catvolume) | Enum | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -28296,7 +28296,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -28340,7 +28340,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -28402,10 +28402,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -28449,9 +28449,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -28472,9 +28472,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -28843,7 +28843,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -28863,7 +28863,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -28884,7 +28884,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -28925,7 +28925,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -28967,7 +28967,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -29030,7 +29030,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](Map_Generation_and_Routing.md#object-exit1) | Object | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
+| [`exit1`](./Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -29050,7 +29050,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -29133,7 +29133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -29216,7 +29216,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -29414,10 +29414,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -29761,14 +29761,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mw_battle1`](Map_Generation_and_Routing.md#object-mw_battle1) | Object | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
-| [`mw_boss`](Map_Generation_and_Routing.md#object-mw_boss) | Object | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
-| [`mw_earlyhome`](Map_Generation_and_Routing.md#object-mw_earlyhome) | Object | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
-| [`mw_event1`](Map_Generation_and_Routing.md#object-mw_event1) | Object | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
-| [`mw_hard1`](Map_Generation_and_Routing.md#object-mw_hard1) | Object | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
-| [`mw_home`](Map_Generation_and_Routing.md#object-mw_home) | Object | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
-| [`mw_quest_event`](Map_Generation_and_Routing.md#object-mw_quest_event) | Object | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
-| [`mw_treasure`](Map_Generation_and_Routing.md#object-mw_treasure) | Object | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
+| [`mw_battle1`](./Miscellaneous.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
+| [`mw_boss`](./Miscellaneous.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
+| [`mw_earlyhome`](./Miscellaneous.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
+| [`mw_event1`](./Miscellaneous.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
+| [`mw_hard1`](./Miscellaneous.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
+| [`mw_home`](./Miscellaneous.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
+| [`mw_quest_event`](./Miscellaneous.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
+| [`mw_treasure`](./Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -30252,7 +30252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -30272,7 +30272,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -30311,7 +30311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 1 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 1 | `{ . . . }` |
 
 </details>
 
@@ -30350,7 +30350,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -30391,8 +30391,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -30413,7 +30413,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -30433,7 +30433,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -30670,13 +30670,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -30784,7 +30784,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -30869,7 +30869,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -30889,7 +30889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -30912,7 +30912,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -30975,11 +30975,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -30999,7 +30999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -31021,7 +31021,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -31061,7 +31061,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -31104,7 +31104,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -31125,7 +31125,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -31408,8 +31408,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
-| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| [`Boris`](./Miscellaneous.md#object-boris) | Enum / Object  | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
+| [`Explosive`](./Miscellaneous.md#object-explosive) | Enum / Object  | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
 
 </details>
 
@@ -31742,7 +31742,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 1 | `false`<br>`true` |
 | `clone_referenced_catdata` | Boolean | If true, the spawned unit is a clone of the referenced cat data, including its stats and equipment. | 1 | `true` |
 | `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 1 | `false`<br>`true` |
@@ -31765,8 +31765,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -31832,7 +31832,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -31941,11 +31941,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -31967,11 +31967,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -31993,11 +31993,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -32019,11 +32019,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -32045,11 +32045,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -32071,11 +32071,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -32400,7 +32400,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -33434,7 +33434,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
 
 </details>
 
@@ -33494,7 +33494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
@@ -33536,7 +33536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -33736,11 +33736,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33805,7 +33805,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
 | [`id`](./Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `width` | Number | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
 | [`n`](./Arrays.md#array-n) | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 1 | `[-1 -2]`<br>`[1 -2]` |
@@ -33828,7 +33828,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -33849,7 +33849,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -34025,7 +34025,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
@@ -34066,7 +34066,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -34087,7 +34087,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
@@ -34110,7 +34110,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
 | `min_radius` | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
 
@@ -34151,7 +34151,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 1 | `{ . . . }`<br>`0` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 1 | `{ . . . }`<br>`0` |
 
 </details>
 
@@ -34171,7 +34171,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 1 | `.1`<br>`.25`<br>`.35` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 1 | `.1`<br>`.25`<br>`.35` |
 | `cap` | Number | The maximum value or percentage cap for the stacking effect. | 1 | `10`<br>`50%` |
 
 </details>
@@ -34432,10 +34432,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -34456,10 +34456,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -35695,7 +35695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -35947,7 +35947,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -35969,8 +35969,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -36207,7 +36207,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -36229,7 +36229,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
@@ -36420,7 +36420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](Map_Generation_and_Routing.md#object-exit0) | Object | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -36505,7 +36505,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -36525,7 +36525,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -36545,7 +36545,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -36566,7 +36566,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -36588,7 +36588,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -37434,7 +37434,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -37475,7 +37475,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
@@ -37518,7 +37518,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
@@ -37654,7 +37654,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 1 | `2`<br>`20`<br>`3` |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 | `2`<br>`3`<br>`4` |
 
@@ -37878,7 +37878,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
@@ -38349,10 +38349,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
-| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle`](./Miscellaneous.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
+| [`cWaggle2x2`](./Miscellaneous.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle3x3`](./Miscellaneous.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -38372,7 +38372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](Map_Generation_and_Routing.md#object-quest_event) | Object | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -38392,7 +38392,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -38413,11 +38413,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -38881,11 +38881,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -39829,11 +39829,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -39853,11 +39853,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -39929,8 +39929,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `animation` | String | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
-| [`bad`](Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`good`](Events_and_Encounters.md#object-good) | Object | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`good`](./Miscellaneous.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
 | `label` | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
@@ -39949,8 +39949,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `animation` | String | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
-| [`bad`](Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`good`](Events_and_Encounters.md#object-good) | Object | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
+| [`bad`](./Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`good`](./Miscellaneous.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
 | `label` | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |

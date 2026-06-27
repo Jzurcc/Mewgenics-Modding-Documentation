@@ -15,8 +15,8 @@ This document lists every confirmed Global Modifier ID. These are game-state fla
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. | 5 | `{ . . . }` |
-| [`BloodRain`](#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
+| [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 5 | `{ . . . }` |
+| [`BloodRain`](./Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object  | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
 | `NextPlayerCatTakesExtraTurn` | Integer | The number of extra turns the active player cat gains. | 1 | `1` |
 | `NoCorpses` | Integer | If set to 1, corpses are prevented from spawning. | 1 | `1` |
 
@@ -37,8 +37,8 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
-| [`BloodRain`](#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
+| [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
+| [`BloodRain`](./Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object  | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
 
 </details>
 
@@ -53,36 +53,36 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). || `.005`<br>`.01`<br>`.03` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. || `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. || `{ . . . }` |
 | `emit_amount` | Number | The number of particles emitted per burst. || `1`<br>`10`<br>`100` |
-| `emit_box` | Array | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. || `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `emit_direction` | Array | The initial direction vector for emitted particles. || `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| [`emit_box`](./Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. || `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| [`emit_direction`](./Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. || `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
 | `emit_rate` | Number | The rate of particle emission per second. || `.5`<br>`1`<br>`10` |
 | `emit_spread` | Number | The angle spread for particle emission direction. || `0`<br>`1`<br>`10` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. || `false`<br>`true` |
-| `force` | Array | The force vector applied to particles. || `0`<br>`1`<br>`1.5` |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
-| `live_bounds` | Array | The bounds within which particles can exist. || `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
-| `movieclip` | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`force`](./Arrays.md#array-force) | Array  | The force vector applied to particles. || `0`<br>`1`<br>`1.5` |
+| [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. || `{ . . . }` |
+| [`live_bounds`](./Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. || `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. || `{ . . . }` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. || `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `particle_lifetime` | Number | The duration in seconds particles remain alive. || `.`<br>`.025`<br>`.35` |
-| `projection_matrix` | Enum | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
-| `render_mode` | Enum | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
-| [`scripts`](Miscellaneous.md#object-scripts) | Object | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. || `{ . . . }`<br>`1`<br>`10`<br>`100%` |
-| `simulation_space` | Enum | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
-| `size_start` | Array | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
+| [`projection_matrix`](./Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). || `default` |
+| [`render_mode`](./Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). || `default`<br>`separate` |
+| [`scripts`](./Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. || `{ . . . }` |
+| [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. || `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`simulation_space`](./Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). || `global`<br>`local` |
+| [`size_start`](./Arrays.md#array-size_start) | Array   | The starting size of particles. || `.1`<br>`.2`<br>`.3` |
 | `speed_scale` | String | A multiplier for particle speed. || `.05`<br>`.1`<br>`.2` |
 | `speed_start` | Number | The initial speed of particles. || `-2`<br>`.001`<br>`.1` |
-| [`target`](Abilities_and_Spells.md#object-target) | Object | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
-| `template` | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](./Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. || `{ . . . }` |
+| [`template`](./Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). || `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 
 ### Object: `LowerAmbientLight`
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). || `.1`<br>`.25`<br>`.35` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). || `.1`<br>`.25`<br>`.35` |
 

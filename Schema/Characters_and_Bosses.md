@@ -18,22 +18,22 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2985 | `passives`<br>`class`<br>`tag` |
-| [`graphics`](Abilities_and_Spells.md#object-graphics) | Object | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2609 | `{ . . . }` |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 2344 | `{ . . . }` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1910 | `{ . . . }` |
+| [`graphics`](./Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2609 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2344 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1910 | `{ . . . }` |
 | [`variant_of`](./Enums.md#enum-variant_of) | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. | 1195 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](#object-properties) | Object | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 600 | `{ . . . }` |
-| [`stats`](#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 461 | `{ . . . }` |
-| [`abilities`](#object-abilities) | Object | A container object defining a character's move, attack, and spell abilities. | 460 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 459 | `{ . . . }` |
-| [`sound`](#object-sound) | Object | A container object defining audio configurations, including alternate sound lists. | 62 | `{ . . . }` |
+| [`properties`](./Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 600 | `{ . . . }` |
+| [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 461 | `{ . . . }` |
+| [`abilities`](./Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 460 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 459 | `{ . . . }` |
+| [`sound`](./Miscellaneous.md#object-sound) | Object  | A container object defining audio configurations, including alternate sound lists. | 62 | `{ . . . }` |
 | [`distance_to_ally`](./Enums.md) | Number | The preferred distance (in tiles) to maintain from allies; negative values or 0 disable the preference. | 55 | `-.1`<br>`-1`<br>`0` |
 | [`distance_to_character`](./Enums.md) | Integer | The preferred distance (in tiles) to maintain from any character; negative values or 0 disable the preference. | 55 | `-1`<br>`0`<br>`1` |
 | [`distance_to_enemy`](./Enums.md) | Number | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 55 | `-.01`<br>`-.5`<br>`-1` |
 | [`face_closest_enemy`](./Enums.md) | Integer | If nonzero, the character will face the closest enemy. | 55 | `0`<br>`1` |
-| [`preferred_distance`](./Enums.md) | Enum / Integer | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 55 | `0`<br>`1`<br>`2` |
+| [`preferred_distance`](./Enums.md#enum-preferred_distance) | Enum / Integer  | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 55 | `0`<br>`1`<br>`2` |
 | [`total_distance_moved`](./Enums.md) | Number | The total distance the character has moved, used in movement weight calculations. | 55 | `-0.001`<br>`-0.01`<br>`-1` |
-| [`equipment`](#object-equipment) | Object | A container object defining the character's equipped items (head, face, neck, weapon, etc.). | 44 | `{ . . . }` |
+| [`equipment`](./Miscellaneous.md#object-equipment) | Object  | A container object defining the character's equipped items (head, face, neck, weapon, etc.). | 44 | `{ . . . }` |
 | [`accurate_knockback`](./Enums.md) | Boolean | If true, knockback from attacks is applied accurately (e.g., straight line); if false, knockback may be erratic. | 32 | `false` |
 | [`buff_ally`](./Enums.md) | Integer | The number of buffs applied to ally units. | 32 | `0`<br>`1`<br>`10` |
 | [`buff_enemy`](./Enums.md) | Integer | The number of buffs applied to enemy units. Negative values may apply debuffs. | 32 | `-1`<br>`-100`<br>`0` |
@@ -61,7 +61,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`spawn_object_distance_to_ally`](./Enums.md) | Number | The distance offset from ally units for spawned objects. Negative values move closer. | 32 | `-.0001`<br>`-.01`<br>`.0001` |
 | [`spawn_object_distance_to_enemy`](./Enums.md) | Number | The distance offset from enemy units for spawned objects. | 32 | `-.01`<br>`0`<br>`1` |
 | [`spend_mana_scale`](./Enums.md) | Number | A multiplier applied to mana cost when making decisions. | 32 | `.99` |
-| [`alt_spawn_pool`](#object-alt_spawn_pool) | Object | An alternative spawn pool defining possible objects to spawn with their weights. | 18 | `{ . . . }` |
+| [`alt_spawn_pool`](./Miscellaneous.md#object-alt_spawn_pool) | Object  | An alternative spawn pool defining possible objects to spawn with their weights. | 18 | `{ . . . }` |
 | [`brain`](./Enums.md#enum-brain) | Enum | Specifies the AI brain type used for decision-making logic. | 5 | `DicerBrain`<br>`GenericBrain`<br>`MountBrain` |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 5 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 5 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
@@ -69,20 +69,20 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`flat_cast_bonus`](./Enums.md) | Integer | A flat bonus added to the AI's cast chance evaluation. | 5 | `99999` |
 | [`randomness`](./Enums.md) | Integer | The amount of randomness added to AI decision-making to avoid predictability. | 5 | `4`<br>`50`<br>`6` |
 | [`cap_distance_to_ally`](./Enums.md) | Integer | The maximum distance the AI will maintain from ally units. | 4 | `2`<br>`4`<br>`7` |
-| [`pattern`](#object-pattern) | Object | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
+| [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
 | [`consider_aoe`](./Enums.md) | Boolean | If true, the AI considers area-of-effect damage when evaluating actions. | 3 | `false`<br>`true` |
 | [`danger_avoidance`](./Enums.md) | Number | A weight multiplier for the AI's tendency to avoid dangerous positions. | 3 | `.1`<br>`1000`<br>`20` |
 | [`distance_to_aggro_target`](./Enums.md) | Integer | The preferred distance the AI tries to maintain from its aggro target. Negative values indicate behind. | 3 | `-1`<br>`-10` |
 | [`distance_to_corpse`](./Enums.md) | Number | The preferred distance the AI tries to maintain from corpses. Negative values indicate moving towards. | 3 | `-.1`<br>`-100`<br>`0` |
 | [`simple`](./Enums.md) | Boolean | If true, the AI uses simplified decision-making logic. | 3 | `true` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
 | `end_turn_on_formswitch` | Boolean | If true, the unit's turn ends immediately after switching forms. | 2 | `false`<br>`true` |
 | [`cap_distance_to_enemy`](./Enums.md) | Integer | The maximum distance the AI will maintain from enemy units. | 2 | `2`<br>`5` |
 | [`distance_to_water`](./Enums.md) | Number | The preferred distance the AI tries to maintain from water tiles. Negative values indicate moving towards. | 2 | `-.0001`<br>`-1` |
 | [`face_aggro_target`](./Enums.md) | Integer | A weight multiplier for the AI's tendency to face its aggro target. | 2 | `1`<br>`10` |
 | [`spawn_object_preferred_distance`](./Enums.md) | Integer | The preferred distance from the unit at which objects are spawned. | 2 | `4`<br>`5` |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`ai_if_spawned_as_enemy`](#object-ai_if_spawned_as_enemy) | Object | Overrides the unit's AI settings when it is spawned as an enemy rather than an ally. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai_if_spawned_as_enemy`](./Miscellaneous.md#object-ai_if_spawned_as_enemy) | Object  | Overrides the unit's AI settings when it is spawned as an enemy rather than an ally. | 1 | `{ . . . }` |
 | `consider_spells` | Boolean | If true, the AI considers using spells in its decision-making. | 1 | `false` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`cap_distance_to_character`](./Enums.md) | Integer | The maximum distance the AI will maintain from any character (ally or enemy). | 1 | `2` |
@@ -90,7 +90,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`consider_aggro_target_enemy`](./Enums.md) | Boolean | If true, the AI considers the aggro target when determining movement or attack behavior. | 1 | `true` |
 | [`count_nomove_in_eval`](./Enums.md) | Boolean | If true, the evaluation of a move includes the option of not moving. | 1 | `false` |
 | [`distance_to_center`](./Enums.md) | Integer | The distance in tiles from the current position to the map center for AI evaluation. | 1 | `-1` |
-| [`exclude_characters_tagged`](./Enums.md) | Enum | Specifies a tag; characters with this tag are excluded from AI behavior targeting. | 1 | `siren` |
+| [`exclude_characters_tagged`](./Enums.md#enum-exclude_characters_tagged) | Enum  | Specifies a tag; characters with this tag are excluded from AI behavior targeting. | 1 | `siren` |
 | [`face_camera`](./Enums.md) | Integer | If true, the spawned unit always faces the camera. | 1 | `1000`<br>`true` |
 | [`lava`](./Enums.md) | Integer | A weight or priority value for preferring lava tiles in AI movement decisions. | 1 | `5` |
 | [`tall_grass`](./Enums.md) | Integer | A weight or priority value for preferring tall grass tiles in AI movement decisions. | 1 | `5` |
@@ -113,16 +113,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 517 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 461 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 409 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 517 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 461 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 409 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `shadow_size` | Number | A multiplier for the size of the object's shadow relative to its default. | 151 | `.20`<br>`.25`<br>`.4` |
 | [`scale`](./Enums.md#enum-scale) | Number | The scale multiplier applied to the unit's visual size. | 149 | `.5`<br>`.6`<br>`.7` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 149 | `.5`<br>`1`<br>`1.3` |
 | [`custom_cat_data`](./Enums.md#enum-custom_cat_data) | Enum | Specifies a dataset or customization profile for cat graphics or behavior. | 127 | `AlbinoTomTom`<br>`AngelicCat`<br>`Ankylosaurus` |
 | [`water_mask`](./Enums.md#enum-water_mask) | Enum | Specifies the shape or size of the water reflection mask applied to the object. | 83 | `big`<br>`medium`<br>`medmed` |
 | [`alt_animations`](./Arrays.md#array-alt_animations) | Array | An array of alternative animation state replacements, each as [state, animation_name]. | 47 | `[`<br>`[[idle girlyIdle]]` |
-| [`spawnin_animation`](./Strings.md#string-spawnin_animation) | Enum | Specifies the animation played when the unit spawns in. | 37 | `"digUp"`<br>`"howl"`<br>`beamin` |
+| [`spawnin_animation`](./Enums.md#enum-spawnin_animation) | Enum  | Specifies the animation played when the unit spawns in. | 37 | `"digUp"`<br>`"howl"`<br>`beamin` |
 | `piece_alt_frame` | Integer | The frame index from the graphical piece sheet to use as an alternative display frame. | 27 | `1`<br>`11`<br>`13` |
 | [`shadow`](./Enums.md#enum-shadow) | Enum | Specifies the visual shadow asset or type applied to the object. | 23 | `BigSlimeShadow`<br>`MedSlimeShadow`<br>`None` |
 | `move_speed_sync_frames` | Number | The number of animation frames used to synchronize the movement speed of the unit. | 20 | `22`<br>`22.5`<br>`28` |
@@ -137,7 +137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `show_infinity_damage_warning` | Boolean | If true, the game displays a warning when the unit has infinite damage potential. | 3 | `true` |
 | `always_huge_mask` | Boolean | If true, the unit always uses a large collision or visibility mask regardless of its actual size. | 2 | `true` |
 | [`default_attack_animation`](./Enums.md#enum-default_attack_animation) | Enum | Specifies the name of the default attack animation to use when no specific one is defined. | 2 | `attack2`<br>`bite1` |
-| [`desc`](./Strings.md#string-desc) | Enum | Specifies the localized description string for the item or ability. | 2 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`desc`](./Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 2 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 | `shade_occluded_objects` | Boolean | If true, the object is drawn with a shade when occluded by other objects. | 2 | `true` |
 | `no_horizontal_flip` | Boolean | If true, the object's art is never flipped horizontally. | 1 | `true` |
 | [`override_portrait`](./Enums.md#enum-override_portrait) | Enum | Specifies a different portrait asset name to use instead of the default. | 1 | `Cherub` |
@@ -164,7 +164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 2344 | `damage_instance`<br>`spell`<br>`false` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1787 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1787 | `{ . . . }` |
 
 </details>
 
@@ -185,271 +185,271 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2039 | `passives`<br>`class`<br>`tag` |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 133 | `{ . . . }` |
-| [`FormChanger`](#object-formchanger) | Object | Defines the unit's form-changing data, including multiple form definitions and their sub-properties. | 106 | `{ . . . }` |
+| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 133 | `{ . . . }` |
+| [`FormChanger`](./Passives_and_Statuses.md#object-formchanger) | Object  | Defines the unit's form-changing data, including multiple form definitions and their sub-properties. | 106 | `{ . . . }` |
 | [`Brace`](./Enums.md) | Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 94 | `1`<br>`10`<br>`2` |
 | [`Trample`](./Enums.md) | Integer | The amount of bonus damage dealt when moving through an enemy. | 88 | `1`<br>`3`<br>`4` |
 | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 65 | `1`<br>`2`<br>`3` |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 59 | `{ . . . }` |
+| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 59 | `{ . . . }` |
 | [`HealthRegenUp`](./Enums.md) | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 52 | `1`<br>`2`<br>`3` |
-| [`StatusEachTurnEnd`](Cat_Mutations.md#object-statuseachturnend) | Object | Specifies status effects applied to the unit at the end of each of its turns. | 49 | `{ . . . }` |
-| [`Robot`](#object-robot) | Integer / Object | If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties. | 47 | `{ . . . }`<br>`1` |
-| [`ElementImmune`](./Enums.md) | Enum | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 39 | `Creep`<br>`Electric`<br>`Fire` |
-| [`DeathRattle`](#object-deathrattle) | Enum / Object | Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag. | 35 | `{ . . . }`<br>`BBExplode`<br>`BloatyExplodey`<br>`BombFlyExplode` |
-| [`FormChangeWhileHasStatus`](#object-formchangewhilehasstatus) | Object | Defines a form change condition that activates while the unit has a specific status effect. | 35 | `{ . . . }` |
-| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object | Specifies the ability used when the unit counterattacks after being hit. | 34 | `{ . . . }`<br>`BungaSwipe`<br>`CloakerHex`<br>`CollectiveCounter` |
-| [`StatusImmunity`](./Enums.md) | Array / Enum | A list of status effect names the unit is immune to. | 34 | `Burn`<br>`Poison`<br>`Tarred` |
-| [`StatusOnKill`](Cat_Mutations.md#object-statusonkill) | Object | Specifies status effects or actions triggered when the unit kills an enemy. | 29 | `{ . . . }` |
-| [`StatusOnTookDamage`](Cat_Mutations.md#object-statusontookdamage) | Object | Specifies status effects or actions triggered when the unit takes damage. | 29 | `{ . . . }` |
-| [`SpawnThingOnDamage`](Cat_Mutations.md#object-spawnthingondamage) | Object | Specifies an object that spawns on the tile when the unit takes damage. | 28 | `{ . . . }` |
-| [`ImmediateAbilityReaction`](#object-immediateabilityreaction) | Array / Enum / Object | Specifies an ability or list of abilities used immediately in reaction to a triggering event. | 26 | `{ . . . }`<br>`BirthwortReactionShot`<br>`BumbleButt`<br>`CatGoop` |
+| [`StatusEachTurnEnd`](./Passives_and_Statuses.md#object-statuseachturnend) | Object  | Specifies status effects applied to the unit at the end of each of its turns. | 49 | `{ . . . }` |
+| [`Robot`](./Passives_and_Statuses.md#object-robot) | Integer / Object  | If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties. | 47 | `{ . . . }`<br>`1` |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 39 | `Creep`<br>`Electric`<br>`Fire` |
+| [`DeathRattle`](./Passives_and_Statuses.md#object-deathrattle) | Enum / Object  | Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag. | 35 | `{ . . . }`<br>`BBExplode`<br>`BloatyExplodey`<br>`BombFlyExplode` |
+| [`FormChangeWhileHasStatus`](./Passives_and_Statuses.md#object-formchangewhilehasstatus) | Object  | Defines a form change condition that activates while the unit has a specific status effect. | 35 | `{ . . . }` |
+| [`CounterAttack`](./Passives_and_Statuses.md#object-counterattack) | Array / Enum / Object  | Specifies the ability used when the unit counterattacks after being hit. | 34 | `{ . . . }`<br>`BungaSwipe`<br>`CloakerHex`<br>`CollectiveCounter` |
+| [`StatusImmunity`](./Arrays.md#array-statusimmunity) | Array / Enum  | A list of status effect names the unit is immune to. | 34 | `Burn`<br>`Poison`<br>`Tarred` |
+| [`StatusOnKill`](./Passives_and_Statuses.md#object-statusonkill) | Object  | Specifies status effects or actions triggered when the unit kills an enemy. | 29 | `{ . . . }` |
+| [`StatusOnTookDamage`](./Passives_and_Statuses.md#object-statusontookdamage) | Object  | Specifies status effects or actions triggered when the unit takes damage. | 29 | `{ . . . }` |
+| [`SpawnThingOnDamage`](./Passives_and_Statuses.md#object-spawnthingondamage) | Object  | Specifies an object that spawns on the tile when the unit takes damage. | 28 | `{ . . . }` |
+| [`ImmediateAbilityReaction`](./Passives_and_Statuses.md#object-immediateabilityreaction) | Array / Enum / Object  | Specifies an ability or list of abilities used immediately in reaction to a triggering event. | 26 | `{ . . . }`<br>`BirthwortReactionShot`<br>`BumbleButt`<br>`CatGoop` |
 | [`Undead`](./Enums.md) | Integer | If set, flags the unit as undead (e.g., 1) with associated mechanics. | 25 | `1` |
-| [`AbilityReaction`](#object-abilityreaction) | Enum / Object | Specifies the ability used as a reaction when the unit is targeted by an ability. | 23 | `{ . . . }`<br>`AnkyloSpin`<br>`GSOpen`<br>`Gassy_AssBlast` |
-| [`SpawnOnDeath`](#object-spawnondeath) | Enum / Object | Specifies an object and its faction to spawn when the unit dies. | 21 | `{ . . . }`<br>`Antidote`<br>`BiggestFood`<br>`FrankPinky` |
+| [`AbilityReaction`](./Passives_and_Statuses.md#object-abilityreaction) | Enum / Object  | Specifies the ability used as a reaction when the unit is targeted by an ability. | 23 | `{ . . . }`<br>`AnkyloSpin`<br>`GSOpen`<br>`Gassy_AssBlast` |
+| [`SpawnOnDeath`](./Passives_and_Statuses.md#object-spawnondeath) | Enum / Object  | Specifies an object and its faction to spawn when the unit dies. | 21 | `{ . . . }`<br>`Antidote`<br>`BiggestFood`<br>`FrankPinky` |
 | [`AddMovement`](./Enums.md) | Integer | The amount of bonus movement points added to the unit's base movement. | 20 | `-1`<br>`-2`<br>`1` |
-| [`BossRewards`](#object-bossrewards) | Object | Defines the common and rare item rewards dropped by a boss on defeat. | 20 | `{ . . . }` |
-| [`BirdRewards`](#object-birdrewards) | Object | Defines the rewards and statuses applied when a bird allies with the unit. | 18 | `{ . . . }` |
-| [`Buddy`](#object-buddy) | Enum / Object | Specifies a buddy unit that accompanies or is spawned alongside the unit, with optional reclaim and targeting properties. | 17 | `{ . . . }`<br>`BoyDino`<br>`CaveCatDad`<br>`Chubs` |
-| [`CharacterLightSource`](#object-characterlightsource) | Object | Defines a dynamic light source attached to the unit, including color, glow, and size. | 16 | `{ . . . }` |
-| [`HealthPickup`](#object-healthpickup) | Object | Defines properties for a health pickup object, such as healing amount and visual frame range. | 16 | `{ . . . }` |
+| [`BossRewards`](./Passives_and_Statuses.md#object-bossrewards) | Object  | Defines the common and rare item rewards dropped by a boss on defeat. | 20 | `{ . . . }` |
+| [`BirdRewards`](./Passives_and_Statuses.md#object-birdrewards) | Object  | Defines the rewards and statuses applied when a bird allies with the unit. | 18 | `{ . . . }` |
+| [`Buddy`](./Passives_and_Statuses.md#object-buddy) | Enum / Object  | Specifies a buddy unit that accompanies or is spawned alongside the unit, with optional reclaim and targeting properties. | 17 | `{ . . . }`<br>`BoyDino`<br>`CaveCatDad`<br>`Chubs` |
+| [`CharacterLightSource`](./Passives_and_Statuses.md#object-characterlightsource) | Object  | Defines a dynamic light source attached to the unit, including color, glow, and size. | 16 | `{ . . . }` |
+| [`HealthPickup`](./Passives_and_Statuses.md#object-healthpickup) | Object  | Defines properties for a health pickup object, such as healing amount and visual frame range. | 16 | `{ . . . }` |
 | [`KineticSpikes`](./Enums.md) | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 15 | `1`<br>`2`<br>`3` |
-| [`RevengeDamage`](Abilities_and_Spells.md#object-revengedamage) | Object | An object defining the damage and effects that trigger when the unit is attacked. | 15 | `{ . . . }` |
+| [`RevengeDamage`](./Passives_and_Statuses.md#object-revengedamage) | Object  | An object defining the damage and effects that trigger when the unit is attacked. | 15 | `{ . . . }` |
 | [`AddCorpseHealth`](./Enums.md) | Integer | The amount of bonus health the unit's corpse has before it can be resurrected. | 14 | `-999`<br>`-999999`<br>`100` |
 | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 14 | `-1`<br>`-2`<br>`1` |
 | [`DodgeChance`](./Enums.md) | Integer | The percentage chance the unit has to dodge incoming attacks. | 14 | `10%`<br>`15%`<br>`2%` |
-| [`InnateElement`](./Enums.md) | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 14 | `Earth`<br>`Electric`<br>`Fire` |
+| [`InnateElement`](./Enums.md#enum-innateelement) | Enum  | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 14 | `Earth`<br>`Electric`<br>`Fire` |
 | [`WaterWalk`](./Enums.md) | Integer | If greater than 0, allows the unit to traverse water tiles as if they were ground. | 14 | `1` |
-| [`DeathRattleRevive`](#object-deathrattlerevive) | Enum / Object | Specifies an ability or effect that revives the unit upon death, with options for stunning behavior. | 13 | `{ . . . }`<br>`DoNothing`<br>`HCHumanDie`<br>`ToxPuff` |
-| [`TransformOnDeath`](./Enums.md) | Array / Enum | Specifies the unit or list of units to transform into upon death. | 13 | `BishopHat`<br>`CanCreeperOut`<br>`Carcus` |
-| [`AbilityHealthThreshold`](#object-abilityhealththreshold) | Object | Defines an ability and conditions for its activation when the unit's health reaches a threshold. | 12 | `{ . . . }` |
+| [`DeathRattleRevive`](./Passives_and_Statuses.md#object-deathrattlerevive) | Enum / Object  | Specifies an ability or effect that revives the unit upon death, with options for stunning behavior. | 13 | `{ . . . }`<br>`DoNothing`<br>`HCHumanDie`<br>`ToxPuff` |
+| [`TransformOnDeath`](./Arrays.md#array-transformondeath) | Array / Enum  | Specifies the unit or list of units to transform into upon death. | 13 | `BishopHat`<br>`CanCreeperOut`<br>`Carcus` |
+| [`AbilityHealthThreshold`](./Passives_and_Statuses.md#object-abilityhealththreshold) | Object  | Defines an ability and conditions for its activation when the unit's health reaches a threshold. | 12 | `{ . . . }` |
 | [`NoHealthOnlyShield`](./Enums.md) | Integer | If set (e.g., 1), the unit has no health and only a shield for damage absorption. | 12 | `1` |
-| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 12 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
-| [`SpawnThingOnDeath`](./Enums.md) | Enum | Specifies the name of an object to spawn upon death. | 12 | `Boulder`<br>`CharmedDemonKitten`<br>`CharmedFlySwarm` |
-| [`MoveWhenDamaged`](Cat_Mutations.md#object-movewhendamaged) | Enum / Object | Defines movement behavior when the unit takes damage, such as weights and move ability. | 11 | `{ . . . }`<br>`TKNG_Hop`<br>`move` |
+| [`ReflectProjectiles`](./Passives_and_Statuses.md#object-reflectprojectiles) | Integer / Object  | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 12 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
+| [`SpawnThingOnDeath`](./Enums.md#enum-spawnthingondeath) | Enum  | Specifies the name of an object to spawn upon death. | 12 | `Boulder`<br>`CharmedDemonKitten`<br>`CharmedFlySwarm` |
+| [`MoveWhenDamaged`](./Passives_and_Statuses.md#object-movewhendamaged) | Enum / Object  | Defines movement behavior when the unit takes damage, such as weights and move ability. | 11 | `{ . . . }`<br>`TKNG_Hop`<br>`move` |
 | [`CoinPickup`](./Enums.md) | Integer | The amount of coins awarded when this pickup is collected. | 10 | `1`<br>`10`<br>`2` |
 | [`LimitDamage`](./Enums.md) | Integer | The maximum amount of damage the unit can take from a single hit. | 10 | `1` |
-| [`MoveTowardsDamageSource`](#object-movetowardsdamagesource) | Enum / Object | Determines the movement behavior when moving towards the unit that dealt damage to it. | 10 | `{ . . . }`<br>`MoveOne` |
+| [`MoveTowardsDamageSource`](./Passives_and_Statuses.md#object-movetowardsdamagesource) | Enum / Object  | Determines the movement behavior when moving towards the unit that dealt damage to it. | 10 | `{ . . . }`<br>`MoveOne` |
 | [`StripStatuses`](./Enums.md) | Integer | If 1, removes all status effects from the unit at the beginning of its turn. | 10 | `1` |
-| [`AddTag`](./Enums.md) | Enum | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 9 | `bug`<br>`cat`<br>`fetus` |
+| [`AddTag`](./Enums.md#enum-addtag) | Enum  | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 9 | `bug`<br>`cat`<br>`fetus` |
 | [`BackstabImmunity`](./Enums.md) | Integer | If greater than 0, prevents the unit from taking extra damage from backstabs. | 9 | `1` |
 | [`Flying`](./Enums.md) | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 9 | `1` |
 | [`LimitHeal`](./Enums.md) | Integer | If 1, prevents the unit from being healed. | 9 | `0`<br>`1` |
 | [`MissChance`](./Enums.md) | Integer | The flat percentage chance that the unit's attacks will miss. | 9 | `10`<br>`15`<br>`20` |
-| [`MovementReaction`](#object-movementreaction) | Object | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 9 | `{ . . . }` |
+| [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 9 | `{ . . . }` |
 | [`PoisonThorns`](./Enums.md) | Integer | The number of stacks of Poison applied to melee attackers when they hit this unit. | 9 | `1`<br>`2`<br>`3` |
-| [`SmallRockBehavior`](#object-smallrockbehavior) | Integer / Object | Defines the damage, knockback, and chain properties of small rocks spawned from this unit when destroyed. | 9 | `{ . . . }`<br>`0`<br>`5` |
-| [`StatusCollector`](#object-statuscollector) | Object | Specifies the status effects and their stack counts that the unit collects to trigger transformations. | 9 | `{ . . . }` |
-| [`TransformOnElementInfluence`](#object-transformonelementinfluence) | Object | Defines the element that triggers a transformation and the object to transform into. | 9 | `{ . . . }` |
+| [`SmallRockBehavior`](./Passives_and_Statuses.md#object-smallrockbehavior) | Integer / Object  | Defines the damage, knockback, and chain properties of small rocks spawned from this unit when destroyed. | 9 | `{ . . . }`<br>`0`<br>`5` |
+| [`StatusCollector`](./Passives_and_Statuses.md#object-statuscollector) | Object  | Specifies the status effects and their stack counts that the unit collects to trigger transformations. | 9 | `{ . . . }` |
+| [`TransformOnElementInfluence`](./Passives_and_Statuses.md#object-transformonelementinfluence) | Object  | Defines the element that triggers a transformation and the object to transform into. | 9 | `{ . . . }` |
 | [`FadeInsteadOfDie`](./Enums.md) | Integer | If non-zero, the unit fades out instead of dying. | 8 | `1` |
-| [`FormChangeOffMap`](#object-formchangeoffmap) | Object | Specifies the unit's form when off the map and when on the map. | 8 | `{ . . . }` |
-| [`FormChangeOnElementInfluence`](#object-formchangeonelementinfluence) | Object | Defines the element that triggers a form change, optional visual effects, and the target form. | 8 | `{ . . . }` |
+| [`FormChangeOffMap`](./Passives_and_Statuses.md#object-formchangeoffmap) | Object  | Specifies the unit's form when off the map and when on the map. | 8 | `{ . . . }` |
+| [`FormChangeOnElementInfluence`](./Passives_and_Statuses.md#object-formchangeonelementinfluence) | Object  | Defines the element that triggers a form change, optional visual effects, and the target form. | 8 | `{ . . . }` |
 | [`PermanentMadness`](./Enums.md) | Integer | The number of permanent madness stacks applied. | 8 | `1` |
 | [`Plant`](./Enums.md) | Integer | If set to 1, marks the unit as a Plant type, granting associated immunities and interactions. | 8 | `1` |
-| [`RandomizeAIWeightsEachTurn`](./Enums.md) | Array | The range of random weights applied to AI actions each turn. | 8 | `[` |
-| [`StatusOnDie`](Cat_Mutations.md#object-statusondie) | Object | Specifies status effects or actions triggered when the unit dies. | 8 | `{ . . . }` |
+| [`RandomizeAIWeightsEachTurn`](./Arrays.md#array-randomizeaiweightseachturn) | Array  | The range of random weights applied to AI actions each turn. | 8 | `[` |
+| [`StatusOnDie`](./Passives_and_Statuses.md#object-statusondie) | Object  | Specifies status effects or actions triggered when the unit dies. | 8 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 8 | `Default`<br>`FormChange`<br>`Druid` | [`AbilityWhenBuddyDies`](./Enums.md) | Enum | Specifies the ability to cast when a nearby allied unit dies. | 7 | `BoyDinoCry`<br>`ChubsRage`<br>`GirlDinoCry` |
-| [`AddElementsToBasicAttack`](./Enums.md) | Enum | Specifies an elemental damage type that is added to the unit's basic attacks. | 7 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`AddElementsToBasicAttack`](./Enums.md#enum-addelementstobasicattack) | Enum  | Specifies an elemental damage type that is added to the unit's basic attacks. | 7 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`AddInitiative`](./Enums.md) | Integer | The amount of bonus or penalty to the unit's turn order initiative value. | 7 | `-10`<br>`-100`<br>`-20` |
 | [`AlphaTurns`](./Enums.md) | Integer | The number of turns the unit acts first in battle; negative values may indicate last. | 7 | `-1`<br>`1` |
-| [`ChanceToSpitOnDamage`](#object-chancetospitondamage) | Object | Configures the chance to use a spit ability when taking damage, including base chance and per-damage bonus. | 7 | `{ . . . }` |
+| [`ChanceToSpitOnDamage`](./Passives_and_Statuses.md#object-chancetospitondamage) | Object  | Configures the chance to use a spit ability when taking damage, including base chance and per-damage bonus. | 7 | `{ . . . }` |
 | [`DebuffImmunity`](./Enums.md) | Integer | If 1, the unit is immune to debuffs. | 7 | `1` |
 | [`MinimumKnockbackFromAllDamage`](./Enums.md) | Integer | The minimum knockback distance the unit will suffer from any damage source. | 7 | `1` |
 | [`OverrideMaxHealth`](./Enums.md) | Integer | Replaces the unit's maximum health with this value. | 7 | `1`<br>`25` |
-| [`SecurityBotProtect`](#object-securitybotprotect) | Object | Specifies the ability and movement used by a security bot to protect allies. | 7 | `{ . . . }` |
+| [`SecurityBotProtect`](./Passives_and_Statuses.md#object-securitybotprotect) | Object  | Specifies the ability and movement used by a security bot to protect allies. | 7 | `{ . . . }` |
 | [`SetSpellCosts`](./Enums.md) | Integer | Overrides the cost of all spells to this value. | 7 | `0`<br>`1`<br>`3` |
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 7 | `-1`<br>`-2`<br>`-4` |
-| [`StatusOnEndMove`](Cat_Mutations.md#object-statusonendmove) | Object | Specifies status effects or actions triggered when the unit finishes moving. | 7 | `{ . . . }` |
-| [`TransformInXTurns`](#object-transforminxturns) | Object | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. | 7 | `{ . . . }` |
+| [`StatusOnEndMove`](./Passives_and_Statuses.md#object-statusonendmove) | Object  | Specifies status effects or actions triggered when the unit finishes moving. | 7 | `{ . . . }` |
+| [`TransformInXTurns`](./Passives_and_Statuses.md#object-transforminxturns) | Object  | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. | 7 | `{ . . . }` |
 | [`AddDamage`](./Enums.md) | Integer | The amount of damage added to all attacks. Negative values reduce damage. | 6 | `-1`<br>`1`<br>`2` |
-| [`CaveFamilyEnrage`](#object-cavefamilyenrage) | Object | Specifies the ability used when the number of family members with a given tag falls below a threshold. | 6 | `{ . . . }` |
-| [`DelayedAutoRevive`](#object-delayedautorevive) | Object | Configures an automatic revival after a delay, with specified rounds and health percentage. | 6 | `{ . . . }` |
-| [`Divide4OnDeath`](./Enums.md) | Enum | The object that spawns in four instances upon this unit's death. | 6 | `BiggestFood`<br>`Clot`<br>`MedSlime` |
+| [`CaveFamilyEnrage`](./Passives_and_Statuses.md#object-cavefamilyenrage) | Object  | Specifies the ability used when the number of family members with a given tag falls below a threshold. | 6 | `{ . . . }` |
+| [`DelayedAutoRevive`](./Passives_and_Statuses.md#object-delayedautorevive) | Object  | Configures an automatic revival after a delay, with specified rounds and health percentage. | 6 | `{ . . . }` |
+| [`Divide4OnDeath`](./Enums.md#enum-divide4ondeath) | Enum  | The object that spawns in four instances upon this unit's death. | 6 | `BiggestFood`<br>`Clot`<br>`MedSlime` |
 | [`DodgeChance_Status`](./Enums.md) | Integer | The flat percentage increase to dodge chance applied as a status effect. | 6 | `1`<br>`10`<br>`100` |
-| [`FormChangeWhilePrimingAbility`](#object-formchangewhileprimingability) | Object | Defines the form changes when a specific ability is being primed and when it is not. | 6 | `{ . . . }` |
+| [`FormChangeWhilePrimingAbility`](./Passives_and_Statuses.md#object-formchangewhileprimingability) | Object  | Defines the form changes when a specific ability is being primed and when it is not. | 6 | `{ . . . }` |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 6 | `1`<br>`10`<br>`2` |
 | [`IgnoreTiles`](./Enums.md) | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 6 | `1` |
 | [`KaijuKnockbackImmune`](./Enums.md) | Integer | If 1, the unit is immune to knockback from kaiju sources. | 6 | `1` |
-| [`StatusOnTookDamageFromAbility`](Cat_Mutations.md#object-statusontookdamagefromability) | Object | Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental). | 6 | `{ . . . }` |
-| [`StunImmunity`](#object-stunimmunity) | Integer / Object | If 1, the unit is immune to stun. The optional object configures whether to cleanse stun on apply. | 6 | `{ . . . }`<br>`1` |
-| [`TagGreed`](./Enums.md) | Enum | The tag of items that this unit will move towards to collect. | 6 | `bishop_hat`<br>`food`<br>`pickup` |
-| [`TileTrail`](./Enums.md) | Enum | Specifies the type of tile left behind as the unit moves. | 6 | `BrambleTile`<br>`CreepTile`<br>`FireTile` |
+| [`StatusOnTookDamageFromAbility`](./Passives_and_Statuses.md#object-statusontookdamagefromability) | Object  | Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental). | 6 | `{ . . . }` |
+| [`StunImmunity`](./Passives_and_Statuses.md#object-stunimmunity) | Integer / Object  | If 1, the unit is immune to stun. The optional object configures whether to cleanse stun on apply. | 6 | `{ . . . }`<br>`1` |
+| [`TagGreed`](./Enums.md#enum-taggreed) | Enum  | The tag of items that this unit will move towards to collect. | 6 | `bishop_hat`<br>`food`<br>`pickup` |
+| [`TileTrail`](./Enums.md#enum-tiletrail) | Enum  | Specifies the type of tile left behind as the unit moves. | 6 | `BrambleTile`<br>`CreepTile`<br>`FireTile` |
 | [`YOffset`](./Enums.md) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
-| [`AddHiddenTag`](./Enums.md) | Enum | A hidden tag applied to the unit for internal logic and triggers. | 5 | `bowling_ball`<br>`grown_hitler_clone`<br>`hitler_clone_fetus` |
+| [`AddHiddenTag`](./Enums.md#enum-addhiddentag) | Enum  | A hidden tag applied to the unit for internal logic and triggers. | 5 | `bowling_ball`<br>`grown_hitler_clone`<br>`hitler_clone_fetus` |
 | [`Angel`](./Enums.md) | Integer | If 1, the unit is an angel type, which may affect behavior like reviving. | 5 | `1` |
-| [`AutocastEachRound`](Abilities_and_Spells.md#object-autocasteachround) | Enum / Object | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 5 | `{ . . . }`<br>`SpiderReturn` |
+| [`AutocastEachRound`](./Passives_and_Statuses.md#object-autocasteachround) | Enum / Object  | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 5 | `{ . . . }`<br>`SpiderReturn` |
 | [`Burn`](./Enums.md) | Integer | The amount of Burn applied, either as a fixed number or a formula string. | 5 | `1`<br>`10`<br>`2` |
 | [`FaceShield`](./Enums.md) | Integer | If 1, the unit has a face shield that protects it from certain attacks or effects. | 5 | `0`<br>`1` |
 | [`InjuryImmunity`](./Enums.md) | Integer | The number of turns the unit is immune to injuries. | 5 | `1` |
 | [`KnockbackImmunity`](./Enums.md) | Integer | If set to 1, the unit cannot be knocked back. | 5 | `1` |
-| [`MoveTowardsKillers`](#object-movetowardskillers) | Enum / Object | Determines the movement behavior when moving towards units that have killed an ally. | 5 | `{ . . . }`<br>`ReaperRevenge` |
+| [`MoveTowardsKillers`](./Passives_and_Statuses.md#object-movetowardskillers) | Enum / Object  | Determines the movement behavior when moving towards units that have killed an ally. | 5 | `{ . . . }`<br>`ReaperRevenge` |
 | [`SharkySmellsBlood`](./Enums.md) | Integer | If 1, the unit is attracted to damaged units and may prioritize them. | 5 | `1` |
 | [`StartOffMap`](./Enums.md) | Integer | If 1, the unit begins the encounter off the map. | 5 | `1` |
-| [`TransformOnDeathImmediately`](#object-transformondeathimmediately) | Enum / Object | The object to transform into immediately upon death, with optional turn handling. | 5 | `{ . . . }`<br>`NoHead` |
-| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md) | Enum | The ability to cast after an enemy spell, which can stack in effect. | 4 | `ThornUp`<br>`ThornUpX` |
+| [`TransformOnDeathImmediately`](./Passives_and_Statuses.md#object-transformondeathimmediately) | Enum / Object  | The object to transform into immediately upon death, with optional turn handling. | 5 | `{ . . . }`<br>`NoHead` |
+| [`AbilityAfterEnemyCastSpell_Stackable`](./Enums.md#enum-abilityafterenemycastspell_stackable) | Enum  | The ability to cast after an enemy spell, which can stack in effect. | 4 | `ThornUp`<br>`ThornUpX` |
 | [`AddMaxHealth`](./Enums.md) | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 4 | `-25`<br>`10`<br>`2` |
 | [`AddMeleeKnockback`](./Enums.md) | Integer | The amount of additional knockback dealt by melee attacks. | 4 | `1`<br>`10`<br>`2` |
-| [`AddStatusToWeapons`](#object-addstatustoweapons) | Object | Specifies status effects to add to the unit's weapon attacks, with their stack counts. | 4 | `{ . . . }` |
-| [`AddTemporaryEffectsToBasicAttack`](Cat_Mutations.md#object-addtemporaryeffectstobasicattack) | Object | A container object that lists temporary status effects applied to the unit's basic attack. | 4 | `{ . . . }` |
+| [`AddStatusToWeapons`](./Passives_and_Statuses.md#object-addstatustoweapons) | Object  | Specifies status effects to add to the unit's weapon attacks, with their stack counts. | 4 | `{ . . . }` |
+| [`AddTemporaryEffectsToBasicAttack`](./Passives_and_Statuses.md#object-addtemporaryeffectstobasicattack) | Object  | A container object that lists temporary status effects applied to the unit's basic attack. | 4 | `{ . . . }` |
 | [`Ammo`](./Enums.md) | Integer | The amount of ammo to add or remove (negative values subtract). | 4 | `-1`<br>`-99999`<br>`1` |
 | [`BackstabAllDirections`](./Enums.md) | Integer | If 1, the unit deals backstab damage from all directions. | 4 | `1` |
-| [`BaitAura`](#object-baitaura) | Object | The range of the bait aura that draws enemies towards the unit. | 4 | `{ . . . }` |
-| [`Bird`](./Enums.md) | Enum | The object dropped by this bird unit upon death. | 4 | `CookedChickenLeg` |
+| [`BaitAura`](./Passives_and_Statuses.md#object-baitaura) | Object  | The range of the bait aura that draws enemies towards the unit. | 4 | `{ . . . }` |
+| [`Bird`](./Enums.md#enum-bird) | Enum  | The object dropped by this bird unit upon death. | 4 | `CookedChickenLeg` |
 | [`BuffImmunity`](./Enums.md) | Integer | If 1, the unit is immune to buffs. An optional object can list buffs to exclude from immunity. | 4 | `1` |
-| [`ChanceToBackflip`](Cat_Mutations.md#object-chancetobackflip) | Object | An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit. | 4 | `{ . . . }` |
-| [`ChangeTileOnPop`](./Enums.md) | Enum | The type of tile that appears when this unit is destroyed. | 4 | `CreepTile`<br>`GlitchTile`<br>`OilTile` |
+| [`ChanceToBackflip`](./Passives_and_Statuses.md#object-chancetobackflip) | Object  | An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit. | 4 | `{ . . . }` |
+| [`ChangeTileOnPop`](./Enums.md#enum-changetileonpop) | Enum  | The type of tile that appears when this unit is destroyed. | 4 | `CreepTile`<br>`GlitchTile`<br>`OilTile` |
 | [`CountAsCorpse`](./Enums.md) | Integer | If 1, the unit counts as a corpse for interactions like raising or necromancy. | 4 | `1` |
-| [`DisplayDangerAOE`](./Enums.md) | Enum | The ability whose area of effect is displayed to warn players. | 4 | `GrenadeExplode`<br>`MoonHead_Blow`<br>`TheChild_Wrath` |
+| [`DisplayDangerAOE`](./Enums.md#enum-displaydangeraoe) | Enum  | The ability whose area of effect is displayed to warn players. | 4 | `GrenadeExplode`<br>`MoonHead_Blow`<br>`TheChild_Wrath` |
 | [`ExtraDispersedTurns`](./Enums.md) | Integer | The number of additional or fewer turns in the dispersed turn order. | 4 | `-1`<br>`1` |
-| [`GroundFlopper`](./Enums.md) | Enum | The movement ability used when this unit is on the ground. | 4 | `DefaultMove`<br>`MoveOne` |
-| [`LoopingSoundWhileAlive`](./Enums.md) | Enum | The looping sound effect played while the unit is alive. | 4 | `BigUFO_ambient_looping`<br>`Bomb_FuseLoop`<br>`Twister_loop` |
-| [`PassiveWhenAffectedByElement`](Cat_Mutations.md#object-passivewhenaffectedbyelement) | Object | An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element. | 4 | `{ . . . }` |
-| [`PassiveWhenDead`](#object-passivewhendead) | Object | Passive effects that remain active while the unit is dead. | 4 | `{ . . . }` |
+| [`GroundFlopper`](./Enums.md#enum-groundflopper) | Enum  | The movement ability used when this unit is on the ground. | 4 | `DefaultMove`<br>`MoveOne` |
+| [`LoopingSoundWhileAlive`](./Enums.md#enum-loopingsoundwhilealive) | Enum  | The looping sound effect played while the unit is alive. | 4 | `BigUFO_ambient_looping`<br>`Bomb_FuseLoop`<br>`Twister_loop` |
+| [`PassiveWhenAffectedByElement`](./Passives_and_Statuses.md#object-passivewhenaffectedbyelement) | Object  | An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element. | 4 | `{ . . . }` |
+| [`PassiveWhenDead`](./Passives_and_Statuses.md#object-passivewhendead) | Object  | Passive effects that remain active while the unit is dead. | 4 | `{ . . . }` |
 | [`PrioritizeFarAwayTargets`](./Enums.md) | Integer | The weight for AI to prioritize targets based on distance; higher values favor farther targets. | 4 | `1`<br>`10` |
-| [`StatusOnGainCoins`](#object-statusongaincoins) | Object | Specifies status effects applied when this unit gains coins. | 4 | `{ . . . }` |
-| [`Trapper`](#object-trapper) | Object | Specifies a trap-placing ability and its targeting parameters. | 4 | `{ . . . }` |
-| [`WeremanTransformationReceiver`](./Enums.md) | Enum | Determines which transformation animation or effect is applied when this unit is turned by a were-creature. | 4 | `CaveManTransform`<br>`CaveWomanDropTransform` |
-| [`ArmorPickup`](#object-armorpickup) | Object | The amount of armor stacks and the frame range for the pickup animation. | 3 | `{ . . . }` |
-| [`AbilityWhenTaggedCharacterMovesNear`](Cat_Mutations.md#object-abilitywhentaggedcharactermovesnear) | Object | An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range. | 3 | `{ . . . }` |
-| [`AddStatusToSpells`](#object-addstatustospells) | Object | Specifies status effects added to all spell attacks used by this unit. | 3 | `{ . . . }` |
+| [`StatusOnGainCoins`](./Passives_and_Statuses.md#object-statusongaincoins) | Object  | Specifies status effects applied when this unit gains coins. | 4 | `{ . . . }` |
+| [`Trapper`](./Passives_and_Statuses.md#object-trapper) | Object  | Specifies a trap-placing ability and its targeting parameters. | 4 | `{ . . . }` |
+| [`WeremanTransformationReceiver`](./Enums.md#enum-weremantransformationreceiver) | Enum  | Determines which transformation animation or effect is applied when this unit is turned by a were-creature. | 4 | `CaveManTransform`<br>`CaveWomanDropTransform` |
+| [`ArmorPickup`](./Passives_and_Statuses.md#object-armorpickup) | Object  | The amount of armor stacks and the frame range for the pickup animation. | 3 | `{ . . . }` |
+| [`AbilityWhenTaggedCharacterMovesNear`](./Passives_and_Statuses.md#object-abilitywhentaggedcharactermovesnear) | Object  | An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range. | 3 | `{ . . . }` |
+| [`AddStatusToSpells`](./Passives_and_Statuses.md#object-addstatustospells) | Object  | Specifies status effects added to all spell attacks used by this unit. | 3 | `{ . . . }` |
 | [`AggroTargetIsCurrentTurn`](./Enums.md) | Integer | If set to 1, the unit's aggro target is the unit currently taking its turn. | 3 | `1` |
 | [`BaseStatMultiply`](./Enums.md) | Number | A multiplier applied to the unit's base stats. | 3 | `.25`<br>`.5`<br>`.666` |
-| [`BonusTurnPattern`](./Enums.md) | Array | An array defining the pattern of bonus turns granted to this unit. | 3 | `[` |
-| [`CanMutateTo`](./Enums.md) | Array / Enum | Specifies the mutation forms this unit can transform into, either a single form or an array of possible forms. | 3 | `Hyde`<br>`[Lumpy, Leaper]`<br>`[TumorousMaggot, ChargeyMaggot, SwappyMaggot]` |
-| [`DigestDeadBodies`](./Enums.md) | Enum | Specifies the ability or animation used when digesting a dead body. | 3 | `Digest`<br>`LennyCatDies`<br>`MoonHead_Digest` |
+| [`BonusTurnPattern`](./Arrays.md#array-bonusturnpattern) | Array  | An array defining the pattern of bonus turns granted to this unit. | 3 | `[` |
+| [`CanMutateTo`](./Arrays.md#array-canmutateto) | Array / Enum  | Specifies the mutation forms this unit can transform into, either a single form or an array of possible forms. | 3 | `Hyde`<br>`[Lumpy, Leaper]`<br>`[TumorousMaggot, ChargeyMaggot, SwappyMaggot]` |
+| [`DigestDeadBodies`](./Enums.md#enum-digestdeadbodies) | Enum  | Specifies the ability or animation used when digesting a dead body. | 3 | `Digest`<br>`LennyCatDies`<br>`MoonHead_Digest` |
 | [`ExtraMovePoints`](./Enums.md) | Integer | The number of additional movement points granted to this unit. | 3 | `1` |
-| [`FormChangeHealthThreshold`](#object-formchangehealththreshold) | Object | Specifies health thresholds that trigger form changes, with form_below for health at or below and form_above for health above. | 3 | `{ . . . }` |
-| [`ManaPickup`](#object-manapickup) | Object | The amount of mana stacks and the frame range for the pickup animation. | 3 | `{ . . . }` |
+| [`FormChangeHealthThreshold`](./Passives_and_Statuses.md#object-formchangehealththreshold) | Object  | Specifies health thresholds that trigger form changes, with form_below for health at or below and form_above for health above. | 3 | `{ . . . }` |
+| [`ManaPickup`](./Passives_and_Statuses.md#object-manapickup) | Object  | The amount of mana stacks and the frame range for the pickup animation. | 3 | `{ . . . }` |
 | [`MimicSpawnerAttacks`](./Enums.md) | Integer | If positive, the number of attacks mimicked; if -1, mimics all attacks from spawner. | 3 | `-1`<br>`1` |
 | [`MinimumKnockbackFromPhysicalAttacks`](./Enums.md) | Integer | The minimum knockback distance applied when hit by a physical attack. | 3 | `1` |
-| [`MutateViaAbility`](./Enums.md) | Enum | Specifies the ability that triggers a mutation form change. | 3 | `BBTransformMutant` |
+| [`MutateViaAbility`](./Enums.md#enum-mutateviaability) | Enum  | Specifies the ability that triggers a mutation form change. | 3 | `BBTransformMutant` |
 | [`PrioritizeHitDifferentTargets`](./Enums.md) | Integer | If set to 1, the unit's AI prioritizes hitting different targets rather than focusing one. | 3 | `1` |
-| [`ProtectTargetedAllies`](#object-protecttargetedallies) | Object | Specifies the ability used to protect targeted allies, including an optional target filter. | 3 | `{ . . . }` |
-| [`RandomPassivePool`](#object-randompassivepool) | Object | A pool of random passives from which one is chosen for this unit. | 3 | `{ . . . }` |
+| [`ProtectTargetedAllies`](./Passives_and_Statuses.md#object-protecttargetedallies) | Object  | Specifies the ability used to protect targeted allies, including an optional target filter. | 3 | `{ . . . }` |
+| [`RandomPassivePool`](./Passives_and_Statuses.md#object-randompassivepool) | Object  | A pool of random passives from which one is chosen for this unit. | 3 | `{ . . . }` |
 | [`RunInXTurns`](./Enums.md) | Integer | The number of turns after which this unit will flee the battle. | 3 | `1`<br>`2`<br>`3` |
 | [`SharePickupsWithSpawner`](./Enums.md) | Integer | If set to 1, pickups collected by this unit are also given to its spawner. | 3 | `0`<br>`1` |
 | [`SpawnCreepOnHit`](./Enums.md) | Integer | If set to 1, spawns creep on the tile when this unit takes damage. | 3 | `1` |
 | [`StrengthUp`](./Enums.md) | Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 3 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`SupportFormChangeInsteadOfRun`](#object-supportformchangeinsteadofrun) | Enum / Object | Specifies a form change to trigger instead of fleeing, either as a passive object with ability details or a direct form name. | 3 | `{ . . . }`<br>`Attacker` |
-| [`TileTrail_Ahead`](./Enums.md) | Enum | Specifies the type of tile to place one tile ahead of the unit's movement. | 3 | `FireTile`<br>`FlowerTile`<br>`OilTile` |
+| [`SupportFormChangeInsteadOfRun`](./Passives_and_Statuses.md#object-supportformchangeinsteadofrun) | Enum / Object  | Specifies a form change to trigger instead of fleeing, either as a passive object with ability details or a direct form name. | 3 | `{ . . . }`<br>`Attacker` |
+| [`TileTrail_Ahead`](./Enums.md#enum-tiletrail_ahead) | Enum  | Specifies the type of tile to place one tile ahead of the unit's movement. | 3 | `FireTile`<br>`FlowerTile`<br>`OilTile` |
 | [`WeaponsDontLoseDurability`](./Enums.md) | Integer | If set to 1, weapons equipped by this unit do not lose durability. | 3 | `0`<br>`1` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`AbilityOnRoundEnd`](#object-abilityonroundend) | Object | Specifies an ability that is automatically executed at the end of each round. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`AbilityOnRoundEnd`](./Passives_and_Statuses.md#object-abilityonroundend) | Object  | Specifies an ability that is automatically executed at the end of each round. | 2 | `{ . . . }` |
 | [`AggroTargetIsBuddy`](./Enums.md) | Integer | If set to 1, the unit's aggro target is its buddy (linked partner). | 2 | `1` |
 | [`AllDamageImmune_IncludingSpeculative`](./Enums.md) | Integer | If set to 1, this unit is immune to all damage, including speculative damage. | 2 | `1` |
 | [`AlwaysHitDifferentTargets`](./Enums.md) | Integer | If set to 1, attacks always target different units, never the same target twice. | 2 | `1` |
-| [`BungaEntrance`](#object-bungaentrance) | Object | Specifies the entrance animation, ability, and conditions for this unit's dramatic battle entrance. | 2 | `{ . . . }` |
+| [`BungaEntrance`](./Passives_and_Statuses.md#object-bungaentrance) | Object  | Specifies the entrance animation, ability, and conditions for this unit's dramatic battle entrance. | 2 | `{ . . . }` |
 | [`CCImmunity`](./Enums.md) | Integer | If set to 1, this unit is immune to crowd control effects. | 2 | `1` |
 | [`CanShield`](./Enums.md) | Integer | If set to 1, this unit can generate shields. | 2 | `1` |
 | [`ChanceToDisableActionsIfNotCharmed`](./Enums.md) | Integer | The percentage chance to disable actions of enemies that are not charmed. | 2 | `75%` |
-| [`ChangeTileOnDeath`](./Enums.md) | Enum | Specifies the tile type that replaces the current tile when this unit dies. | 2 | `WaterTile` |
-| [`CherubimReaction`](#object-cherubimreaction) | Object | Specifies the abilities used when this unit leaves or returns to the battlefield. | 2 | `{ . . . }` |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. | 2 | `{ . . . }` |
+| [`ChangeTileOnDeath`](./Enums.md#enum-changetileondeath) | Enum  | Specifies the tile type that replaces the current tile when this unit dies. | 2 | `WaterTile` |
+| [`CherubimReaction`](./Passives_and_Statuses.md#object-cherubimreaction) | Object  | Specifies the abilities used when this unit leaves or returns to the battlefield. | 2 | `{ . . . }` |
+| [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 2 | `{ . . . }` |
 | [`DemonicGlyphFrames`](./Enums.md) | Integer | The number of animation frames for the demonic glyph effect. | 2 | `1` |
-| [`DiesToElement`](#object-diestoelement) | Enum / Object | Specifies the element that instantly kills this unit, optionally with an instant flag. | 2 | `{ . . . }`<br>`Wind` |
+| [`DiesToElement`](./Passives_and_Statuses.md#object-diestoelement) | Enum / Object  | Specifies the element that instantly kills this unit, optionally with an instant flag. | 2 | `{ . . . }`<br>`Wind` |
 | [`DissuadeInstakills`](./Enums.md) | Integer | If set to 1, this unit cannot be instantly killed. | 2 | `1` |
 | [`ExpireOnSpawnerTurnEnd`](./Enums.md) | Integer | If set to 1, this unit is removed from battle at the end of its spawner's turn. | 2 | `1` |
-| [`FaceLastDamage`](#object-facelastdamage) | Integer / Object | If set to 1, the unit turns to face the direction of the last damage received; an object can specify animation settings. | 2 | `{ . . . }`<br>`1` |
-| [`FinalBossShield`](./Enums.md) | Enum | Specifies the shield ability used by a final boss, or None for no shield. | 2 | `DestroyerShieldBash`<br>`None` |
-| [`FormChangeDuringWeatherElement`](#object-formchangeduringweatherelement) | Object | Specifies a form change that triggers when the weather matches a given element. | 2 | `{ . . . }` |
-| [`FreePathfindElement`](./Enums.md) | Enum | Specifies a terrain element (e.g., Water, Grass) that the unit can pathfind through without penalty. | 2 | `Grass`<br>`Water` |
+| [`FaceLastDamage`](./Passives_and_Statuses.md#object-facelastdamage) | Integer / Object  | If set to 1, the unit turns to face the direction of the last damage received; an object can specify animation settings. | 2 | `{ . . . }`<br>`1` |
+| [`FinalBossShield`](./Enums.md#enum-finalbossshield) | Enum  | Specifies the shield ability used by a final boss, or None for no shield. | 2 | `DestroyerShieldBash`<br>`None` |
+| [`FormChangeDuringWeatherElement`](./Passives_and_Statuses.md#object-formchangeduringweatherelement) | Object  | Specifies a form change that triggers when the weather matches a given element. | 2 | `{ . . . }` |
+| [`FreePathfindElement`](./Enums.md#enum-freepathfindelement) | Enum  | Specifies a terrain element (e.g., Water, Grass) that the unit can pathfind through without penalty. | 2 | `Grass`<br>`Water` |
 | [`GoopWalk`](./Enums.md) | Integer | If set to 1, this unit can move through goop tiles without being slowed or damaged. | 2 | `1` |
 | [`ImmobilePassive`](./Enums.md) | Integer | If set to 1, this unit cannot move from its starting position. | 2 | `1` |
-| [`InfiniteRebirth`](#object-infiniterebirth) | Object | Specifies the health and effects for unlimited rebirth upon death. | 2 | `{ . . . }` |
-| [`KaijuWinCon`](./Enums.md) | Enum | Determines which kaiju victory condition is active for this unit. | 2 | `pyrophina`<br>`zaratana` |
+| [`InfiniteRebirth`](./Passives_and_Statuses.md#object-infiniterebirth) | Object  | Specifies the health and effects for unlimited rebirth upon death. | 2 | `{ . . . }` |
+| [`KaijuWinCon`](./Enums.md#enum-kaijuwincon) | Enum  | Determines which kaiju victory condition is active for this unit. | 2 | `pyrophina`<br>`zaratana` |
 | [`MagicDamageImmune`](./Enums.md) | Integer | If set to 1, this unit is immune to magic damage. | 2 | `1` |
 | [`MamaCatAnimations`](./Enums.md) | Integer | If set to 1, enables special mama cat animations. | 2 | `1` |
-| [`MiniVolcanoReaction`](./Enums.md) | Enum | Specifies the ability triggered when a mini volcano erupts near this unit. | 2 | `MiniVolcano_Spurt`<br>`ThrobShot_Reaction` |
-| [`MotherTumorSpawnInCapture`](#object-mothertumorspawnincapture) | Object | Specifies the form changes and statuses applied when the mother tumor spawns after capturing a cat or non-cat. | 2 | `{ . . . }` |
-| [`MoveAwayFromDamageSource`](#object-moveawayfromdamagesource) | Object | Specifies the move ability used to flee from the source of damage, or an object with `move_ability`. | 2 | `{ . . . }` |
-| [`PassiveWhileHasStatus`](Cat_Mutations.md#object-passivewhilehasstatus) | Object | An object containing `status` and `passives` that grants the listed passives while the unit has the specified status. | 2 | `{ . . . }` |
-| [`PassiveWhileNotHasStatus`](#object-passivewhilenothasstatus) | Object | Specifies a set of passives that are active only when this unit does not have the given status. | 2 | `{ . . . }` |
+| [`MiniVolcanoReaction`](./Enums.md#enum-minivolcanoreaction) | Enum  | Specifies the ability triggered when a mini volcano erupts near this unit. | 2 | `MiniVolcano_Spurt`<br>`ThrobShot_Reaction` |
+| [`MotherTumorSpawnInCapture`](./Passives_and_Statuses.md#object-mothertumorspawnincapture) | Object  | Specifies the form changes and statuses applied when the mother tumor spawns after capturing a cat or non-cat. | 2 | `{ . . . }` |
+| [`MoveAwayFromDamageSource`](./Passives_and_Statuses.md#object-moveawayfromdamagesource) | Object  | Specifies the move ability used to flee from the source of damage, or an object with `move_ability`. | 2 | `{ . . . }` |
+| [`PassiveWhileHasStatus`](./Miscellaneous.md#object-passivewhilehasstatus) | Object  | An object containing `status` and `passives` that grants the listed passives while the unit has the specified status. | 2 | `{ . . . }` |
+| [`PassiveWhileNotHasStatus`](./Passives_and_Statuses.md#object-passivewhilenothasstatus) | Object  | Specifies a set of passives that are active only when this unit does not have the given status. | 2 | `{ . . . }` |
 | [`PrioritizeAggroTarget`](./Enums.md) | Integer | A priority weight for targeting the current aggro target. | 2 | `1` |
 | [`PrioritizePlayerCats`](./Enums.md) | Integer | A priority weight for targeting player-controlled cats. | 2 | `1` |
 | [`PrioritizeWeakestEnemy`](./Enums.md) | Integer | A priority weight for targeting the weakest enemy unit. | 2 | `1` |
 | [`SafeDoomed`](./Enums.md) | Integer | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 2 | `1`<br>`2`<br>`level` |
-| [`SharePickups`](#object-sharepickups) | Object | If 1 or an object with include_coins, makes the unit share pickups with nearby allies. | 2 | `{ . . . }` |
-| [`SlotMachineRollPool`](#object-slotmachinerollpool) | Object | Defines the weighted pool of possible slot machine roll results. | 2 | `{ . . . }` |
-| [`StatusAfterXTurns`](#object-statusafterxturns) | Object | Applies a status effect or forces an ability usage after a set number of turns. | 2 | `{ . . . }` |
-| [`StatusOnSpawnIn`](#object-statusonspawnin) | Object | Applies statuses or actions upon the unit spawning into the battlefield. | 2 | `{ . . . }` |
+| [`SharePickups`](./Passives_and_Statuses.md#object-sharepickups) | Object  | If 1 or an object with include_coins, makes the unit share pickups with nearby allies. | 2 | `{ . . . }` |
+| [`SlotMachineRollPool`](./Passives_and_Statuses.md#object-slotmachinerollpool) | Object  | Defines the weighted pool of possible slot machine roll results. | 2 | `{ . . . }` |
+| [`StatusAfterXTurns`](./Passives_and_Statuses.md#object-statusafterxturns) | Object  | Applies a status effect or forces an ability usage after a set number of turns. | 2 | `{ . . . }` |
+| [`StatusOnSpawnIn`](./Passives_and_Statuses.md#object-statusonspawnin) | Object  | Applies statuses or actions upon the unit spawning into the battlefield. | 2 | `{ . . . }` |
 | [`SurviveAt1HP`](./Enums.md) | Integer | If 1, the unit survives a fatal hit with 1 HP instead of dying. | 2 | `1` |
-| [`TowerDefenseReflex`](./Enums.md) | Enum | Specifies the ability or attack used when the unit counterattacks in tower defense reflex mode. | 2 | `BasicRanged_1DMG`<br>`attack` |
-| [`TransformOnElementInfluencex`](#object-transformonelementinfluencex) | Object | Transforms into a specified object when influenced by a given element. | 2 | `{ . . . }` |
-| [`TransformWhenBuddyDies`](./Enums.md) | Enum | Specifies the form the unit transforms into when its buddy dies. | 2 | `UltraOrnstein`<br>`UltraSmough` |
+| [`TowerDefenseReflex`](./Enums.md#enum-towerdefensereflex) | Enum  | Specifies the ability or attack used when the unit counterattacks in tower defense reflex mode. | 2 | `BasicRanged_1DMG`<br>`attack` |
+| [`TransformOnElementInfluencex`](./Passives_and_Statuses.md#object-transformonelementinfluencex) | Object  | Transforms into a specified object when influenced by a given element. | 2 | `{ . . . }` |
+| [`TransformWhenBuddyDies`](./Enums.md#enum-transformwhenbuddydies) | Enum  | Specifies the form the unit transforms into when its buddy dies. | 2 | `UltraOrnstein`<br>`UltraSmough` |
 | [`UncappedHP`](./Enums.md) | Integer | If 1, the unit's maximum HP is not capped by standard limits. | 2 | `1` |
 | [`UnlockOrientation`](./Enums.md) | Integer | If 1, allows the unit to freely rotate or face any direction regardless of movement. | 2 | `1` |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 2 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 2 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
-| [`AbilityOnBattleStart_UseAI`](./Enums.md) | Enum | Specifies the ability the unit will use at the start of battle via AI resolution. | 1 | `TheCreator_SpawnCloneTeam` |
-| [`AddStatusToReceivedDamage`](#object-addstatustoreceiveddamage) | Object | Applies a status effect to the attacker when the unit takes damage. | 1 | `{ . . . }` |
-| [`AdvancedTint`](./Enums.md) | Array | An RGBA color array for advanced sprite tinting. | 1 | `[` |
-| [`AdventureTokenPassivePool`](#object-adventuretokenpassivepool) | Object | A pool of passive definitions granted to the unit when picked up as an adventure token. | 1 | `{ . . . }` |
-| [`AggroTargetIsGovernedByHitEffect`](#object-aggrotargetisgovernedbyhiteffect) | Object | If set, the aggro target is determined by the unit's hit effect, with a sub-key for enemies_only. | 1 | `{ . . . }` |
+| [`AbilityOnBattleStart_UseAI`](./Enums.md#enum-abilityonbattlestart_useai) | Enum  | Specifies the ability the unit will use at the start of battle via AI resolution. | 1 | `TheCreator_SpawnCloneTeam` |
+| [`AddStatusToReceivedDamage`](./Passives_and_Statuses.md#object-addstatustoreceiveddamage) | Object  | Applies a status effect to the attacker when the unit takes damage. | 1 | `{ . . . }` |
+| [`AdvancedTint`](./Arrays.md#array-advancedtint) | Array  | An RGBA color array for advanced sprite tinting. | 1 | `[` |
+| [`AdventureTokenPassivePool`](./Miscellaneous.md#object-adventuretokenpassivepool) | Object  | A pool of passive definitions granted to the unit when picked up as an adventure token. | 1 | `{ . . . }` |
+| [`AggroTargetIsGovernedByHitEffect`](./Passives_and_Statuses.md#object-aggrotargetisgovernedbyhiteffect) | Object  | If set, the aggro target is determined by the unit's hit effect, with a sub-key for enemies_only. | 1 | `{ . . . }` |
 | [`AggroTargetIsLastEnemyThatDealtDamage`](./Enums.md) | Integer | If 1, the unit's aggro target is the last enemy that damaged it. | 1 | `1` |
 | [`AggroTargetIsLowestHealthEnemyTillItDies`](./Enums.md) | Integer | If 1, the unit focuses the lowest health enemy until that enemy dies. | 1 | `1` |
 | [`AggroTargetIsLowestMaxHealthCat`](./Enums.md) | Integer | If 1, the unit targets the cat ally with the lowest maximum health. | 1 | `1` |
-| [`AlienBeastDangerZones`](./Enums.md) | Array | An array of ability names that mark dangerous zones for the Alien Beast fight. | 1 | [AlienBeastPuke] |
+| [`AlienBeastDangerZones`](./Arrays.md#array-alienbeastdangerzones) | Array  | An array of ability names that mark dangerous zones for the Alien Beast fight. | 1 | [AlienBeastPuke] |
 | [`AlienBeastEyeStalks`](./Enums.md) | Integer | The number of eye stalk segments on the Alien Beast. | 1 | `3` |
 | [`AllSpellsCostActPoints`](./Enums.md) | Integer | If 1, all spells require action points instead of mana or other resources. | 1 | `1` |
-| [`AllStatsAura`](#object-allstatsaura) | Object | An aura that grants bonus stacks of all stats to allies within range. | 1 | `{ . . . }` |
+| [`AllStatsAura`](./Passives_and_Statuses.md#object-allstatsaura) | Object  | An aura that grants bonus stacks of all stats to allies within range. | 1 | `{ . . . }` |
 | [`AvoidDamagingCharmedEnemies`](./Enums.md) | Integer | If 1, the unit avoids dealing damage to charmed enemies. | 1 | `1` |
 | [`AwardCoinsOnDeath`](./Enums.md) | Integer | The amount of coins awarded to the killer when this unit dies. | 1 | `10` |
 | [`BasicAIDangerZone`](./Enums.md) | Integer | The radius of the danger zone used by the basic AI for area denial. | 1 | `2` |
-| [`BattlefieldUniqueRandomPassive`](#object-battlefielduniquerandompassive) | Object | A pool of unique random passives that can be applied to each battlefield instance. | 1 | `{ . . . }` |
+| [`BattlefieldUniqueRandomPassive`](./Passives_and_Statuses.md#object-battlefielduniquerandompassive) | Object  | A pool of unique random passives that can be applied to each battlefield instance. | 1 | `{ . . . }` |
 | [`BlackHolePassive`](./Enums.md) | Integer | If 1, the unit has black hole passive mechanics. | 1 | `1` |
-| [`BloatEyePassive2`](./Enums.md) | Enum | Specifies the movement ability for the Bloat Eye enemy. | 1 | `BloatEyeMovement2` |
+| [`BloatEyePassive2`](./Enums.md#enum-bloateyepassive2) | Enum  | Specifies the movement ability for the Bloat Eye enemy. | 1 | `BloatEyeMovement2` |
 | [`BlockAllDamage`](./Enums.md) | Integer | If 1, the unit blocks all incoming damage. | 1 | `1` |
 | [`BombBehavior`](./Enums.md) | Integer | If 1, the unit explodes after a set duration or on death. | 1 | `1` |
-| [`BungaCheers`](#object-bungacheers) | Object | Defines cheer particle effects and sounds triggered by ally or enemy actions. | 1 | `{ . . . }` |
+| [`BungaCheers`](./Passives_and_Statuses.md#object-bungacheers) | Object  | Defines cheer particle effects and sounds triggered by ally or enemy actions. | 1 | `{ . . . }` |
 | [`CapReceivedDamage`](./Enums.md) | Integer | If 1, the unit caps incoming damage to a maximum per hit. | 1 | `1` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`CerberubsAggroTargetBehavior`](#object-cerberubsaggrotargetbehavior) | Object | Defines the default and alert forms used by Cerberubs when changing aggro behavior. | 1 | `{ . . . }` |
-| [`ChanceToFormChangeOnAbilityDamage`](#object-chancetoformchangeonabilitydamage) | Object | A chance to transform into a different form when damaged by an ability. | 1 | `{ . . . }` |
-| [`ChaosBossFormChangeGuide`](#object-chaosbossformchangeguide) | Object | Defines active and passive piece sets and a health threshold for the Chaos boss's form change pattern. | 1 | `{ . . . }` |
-| [`ChaosBossPieces`](#object-chaosbosspieces) | Object | Defines the list of active and passive piece tags for the Chaos boss fight. | 1 | `{ . . . }` |
-| [`ChaosHeadDropIn`](#object-chaosheaddropin) | Object | Defines the tag, spawn ability, and music for the Chaos head's drop-in sequence. | 1 | `{ . . . }` |
-| [`ConjureBonusAbility`](./Enums.md) | Enum | Specifies the name of the bonus ability to conjure. | 1 | `Class`<br>`Colorless`<br>`Mage` |
-| [`CounterAttackAfterEnemyCastSpell`](./Enums.md) | Enum | Specifies the ability the unit uses to counterattack after an enemy casts a spell. | 1 | `Telekinesis` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CerberubsAggroTargetBehavior`](./Passives_and_Statuses.md#object-cerberubsaggrotargetbehavior) | Object  | Defines the default and alert forms used by Cerberubs when changing aggro behavior. | 1 | `{ . . . }` |
+| [`ChanceToFormChangeOnAbilityDamage`](./Passives_and_Statuses.md#object-chancetoformchangeonabilitydamage) | Object  | A chance to transform into a different form when damaged by an ability. | 1 | `{ . . . }` |
+| [`ChaosBossFormChangeGuide`](./Passives_and_Statuses.md#object-chaosbossformchangeguide) | Object  | Defines active and passive piece sets and a health threshold for the Chaos boss's form change pattern. | 1 | `{ . . . }` |
+| [`ChaosBossPieces`](./Passives_and_Statuses.md#object-chaosbosspieces) | Object  | Defines the list of active and passive piece tags for the Chaos boss fight. | 1 | `{ . . . }` |
+| [`ChaosHeadDropIn`](./Passives_and_Statuses.md#object-chaosheaddropin) | Object  | Defines the tag, spawn ability, and music for the Chaos head's drop-in sequence. | 1 | `{ . . . }` |
+| [`ConjureBonusAbility`](./Enums.md#enum-conjurebonusability) | Enum  | Specifies the name of the bonus ability to conjure. | 1 | `Class`<br>`Colorless`<br>`Mage` |
+| [`CounterAttackAfterEnemyCastSpell`](./Enums.md#enum-counterattackafterenemycastspell) | Enum  | Specifies the ability the unit uses to counterattack after an enemy casts a spell. | 1 | `Telekinesis` |
 | [`CrowAttackLink`](./Enums.md) | Integer | If 1, allows this unit's attacks to chain or link to nearby enemies like a crow. | 1 | `1` |
 | [`DamageFromBehindOnly`](./Enums.md) | Integer | If 1, the unit can only be damaged when attacked from behind. | 1 | `1` |
 | [`DemonicGlyphStealer`](./Enums.md) | Integer | If 1, the unit can steal demonic glyphs from other units. | 1 | `1` |
-| [`DiceBehavior`](#object-dicebehavior) | Object | Defines the dice size and knockback damage for the Dice enemy. | 1 | `{ . . . }` |
-| [`DicerArt`](./Enums.md) | Array | An array of art offset values for the Dicer enemy. | 1 | `[59 52 65 50 54 63 64]` |
+| [`DiceBehavior`](./Passives_and_Statuses.md#object-dicebehavior) | Object  | Defines the dice size and knockback damage for the Dice enemy. | 1 | `{ . . . }` |
+| [`DicerArt`](./Arrays.md#array-dicerart) | Array  | An array of art offset values for the Dicer enemy. | 1 | `[59 52 65 50 54 63 64]` |
 | [`DieWhenOnlyGolemsLeft`](./Enums.md) | Integer | If 1, the unit dies when only golem-type allies remain on the field. | 1 | `1` |
 | [`DieWhenSpawnerDies`](./Enums.md) | Integer | If 1, the unit dies when its spawner unit dies. | 1 | `1` |
-| [`DiesToPiercingAndSpikes`](#object-diestopiercingandspikes) | Object | Makes the unit take lethal damage from piercing attacks and spike terrain. | 1 | `{ . . . }` |
+| [`DiesToPiercingAndSpikes`](./Passives_and_Statuses.md#object-diestopiercingandspikes) | Object  | Makes the unit take lethal damage from piercing attacks and spike terrain. | 1 | `{ . . . }` |
 | [`DisableSpells`](./Enums.md) | Integer | If 1, the unit cannot cast spells. | 1 | `1` |
 | [`Disguised`](./Enums.md) | Integer | If true, the unit is disguised, appearing as a different faction or model. | 1 | `1` |
-| [`DisguisedTrapper`](./Enums.md) | Enum | Specifies the passive used when disguised as a trapper, e.g. FearMelee. | 1 | `FearMelee` |
+| [`DisguisedTrapper`](./Enums.md#enum-disguisedtrapper) | Enum  | Specifies the passive used when disguised as a trapper, e.g. FearMelee. | 1 | `FearMelee` |
 | [`DisplayBuddyCatOnSpawn`](./Enums.md) | Integer | The number of buddy cat objects to display when the unit spawns. | 1 | `3` |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 | [`DivineShieldPickup`](./Enums.md) | Integer | The number of divine shield charges granted on pickup. | 1 | `1` |
 | [`DodgeChanceWithBlindSpot`](./Enums.md) | Integer | The percentage chance to dodge attacks while a blind spot condition is active. | 1 | `25%` |
-| [`DodgeWhenTargeted`](#object-dodgewhentargeted) | Object | An object defining the ability and effects triggered when the unit is targeted for an attack. | 1 | `{ . . . }` |
+| [`DodgeWhenTargeted`](./Passives_and_Statuses.md#object-dodgewhentargeted) | Object  | An object defining the ability and effects triggered when the unit is targeted for an attack. | 1 | `{ . . . }` |
 | [`DustCloudBehavior`](./Enums.md) | Integer | An integer flag that controls the behavior mode of a dust cloud entity. | 1 | `1` |
 | [`Dybbuk1HPTracker`](./Enums.md) | Integer | A flag indicating the unit tracks that it has 1 HP remaining for Dybbuk possession mechanics. | 1 | `1` |
-| [`DybbukPossessionFallback`](#object-dybbukpossessionfallback) | Object | An object specifying the fallback form and exit ability used when possession fails. | 1 | `{ . . . }` |
+| [`DybbukPossessionFallback`](./Passives_and_Statuses.md#object-dybbukpossessionfallback) | Object  | An object specifying the fallback form and exit ability used when possession fails. | 1 | `{ . . . }` |
 | [`ElectricArcs`](./Enums.md) | Integer | The number of electric arcs emitted by this unit. | 1 | `1` |
-| [`ElementWeakness`](./Enums.md) | Enum | Determines which element the unit is weak to, e.g. Fire. | 1 | `Fire` |
+| [`ElementWeakness`](./Enums.md#enum-elementweakness) | Enum  | Determines which element the unit is weak to, e.g. Fire. | 1 | `Fire` |
 | [`EnrageOnDamage`](./Enums.md) | Integer | If set to 1, the unit gains enrage stacks when taking damage. | 1 | `1` |
 | [`EraseSpawnCoins`](./Enums.md) | Integer | If set to 1, the unit erases spawn coins from the map on spawn. | 1 | `1` |
 | [`EventBounterHunterPassive`](./Enums.md) | Integer | A flag enabling the event bounty hunter passive behavior. | 1 | `1` |
-| [`ExtraTurnsPerTaggedUnit`](./Enums.md) | Enum | Specifies the tag of units that grant extra turns when present. | 1 | `sprout` |
-| [`FaceAwayLastDamage`](#object-faceawaylastdamage) | Object | An object defining animation overrides for the last damage event when the unit faces away. | 1 | `{ . . . }` |
-| [`FinalBossBeamQueue`](#object-finalbossbeamqueue) | Object | An object defining the queue of beam ability actions for the final boss form. | 1 | `{ . . . }` |
-| [`FinalBossBecomeTheChild`](#object-finalbossbecomethechild) | Object | An object defining the transformation and environment changes when the boss becomes TheChild. | 1 | `{ . . . }` |
-| [`FinalBossHitCountdownBoris`](#object-finalbosshitcountdownboris) | Object | An object defining the countdown status effect properties for the Boris phase, including stacks, icons, and forced abilities. | 1 | `{ . . . }` |
-| [`FinalBossHitCountdownExplosive`](#object-finalbosshitcountdownexplosive) | Object | An object defining the countdown status effect properties for the Explosive phase, including stacks, icons, and forced abilities. | 1 | `{ . . . }` |
-| [`FinalBossHitCountdownHoly`](#object-finalbosshitcountdownholy) | Object | An object defining the countdown status effect properties for the Holy phase, including stacks and icons. | 1 | `{ . . . }` |
-| [`FinalBossPupils`](#object-finalbosspupils) | Object | An object configuring the visual tracking of the final boss's pupils, including radius, head position, and teleport tracking. | 1 | `{ . . . }` |
-| [`FinalBossShieldHealth`](#object-finalbossshieldhealth) | Object | An object defining the shield health thresholds per visual state for the final boss. | 1 | `{ . . . }` |
-| [`FinalBossSyncAnimations`](#object-finalbosssyncanimations) | Object | An object defining animation synchronization with another character, including form change abilities. | 1 | `{ . . . }` |
+| [`ExtraTurnsPerTaggedUnit`](./Enums.md#enum-extraturnspertaggedunit) | Enum  | Specifies the tag of units that grant extra turns when present. | 1 | `sprout` |
+| [`FaceAwayLastDamage`](./Passives_and_Statuses.md#object-faceawaylastdamage) | Object  | An object defining animation overrides for the last damage event when the unit faces away. | 1 | `{ . . . }` |
+| [`FinalBossBeamQueue`](./Passives_and_Statuses.md#object-finalbossbeamqueue) | Object  | An object defining the queue of beam ability actions for the final boss form. | 1 | `{ . . . }` |
+| [`FinalBossBecomeTheChild`](./Passives_and_Statuses.md#object-finalbossbecomethechild) | Object  | An object defining the transformation and environment changes when the boss becomes TheChild. | 1 | `{ . . . }` |
+| [`FinalBossHitCountdownBoris`](./Passives_and_Statuses.md#object-finalbosshitcountdownboris) | Object  | An object defining the countdown status effect properties for the Boris phase, including stacks, icons, and forced abilities. | 1 | `{ . . . }` |
+| [`FinalBossHitCountdownExplosive`](./Passives_and_Statuses.md#object-finalbosshitcountdownexplosive) | Object  | An object defining the countdown status effect properties for the Explosive phase, including stacks, icons, and forced abilities. | 1 | `{ . . . }` |
+| [`FinalBossHitCountdownHoly`](./Passives_and_Statuses.md#object-finalbosshitcountdownholy) | Object  | An object defining the countdown status effect properties for the Holy phase, including stacks and icons. | 1 | `{ . . . }` |
+| [`FinalBossPupils`](./Passives_and_Statuses.md#object-finalbosspupils) | Object  | An object configuring the visual tracking of the final boss's pupils, including radius, head position, and teleport tracking. | 1 | `{ . . . }` |
+| [`FinalBossShieldHealth`](./Passives_and_Statuses.md#object-finalbossshieldhealth) | Object  | An object defining the shield health thresholds per visual state for the final boss. | 1 | `{ . . . }` |
+| [`FinalBossSyncAnimations`](./Passives_and_Statuses.md#object-finalbosssyncanimations) | Object  | An object defining animation synchronization with another character, including form change abilities. | 1 | `{ . . . }` |
 | [`FlingObjectsOnTop`](./Enums.md) | Integer | The number of objects to fling on top of this unit. | 1 | `8` |
-| [`FlushmasterCelebration`](./Enums.md) | Enum | Specifies the celebration animation or effect name used by the Flushmaster. | 1 | `celebrate` |
+| [`FlushmasterCelebration`](./Enums.md#enum-flushmastercelebration) | Enum  | Specifies the celebration animation or effect name used by the Flushmaster. | 1 | `celebrate` |
 | [`ForceDodgeEverything`](./Enums.md) | Integer | If set to 1, the unit will always dodge all incoming attacks. | 1 | `1` |
-| [`FormChangeWhenBuddyDies`](./Enums.md) | Enum | Specifies the form name the unit changes into when its buddy dies. | 1 | `Rage` |
+| [`FormChangeWhenBuddyDies`](./Enums.md#enum-formchangewhenbuddydies) | Enum  | Specifies the form name the unit changes into when its buddy dies. | 1 | `Rage` |
 | [`FullBlockEverything`](./Enums.md) | Integer | If set to 1, the unit fully blocks all incoming damage. | 1 | `1` |
 | [`FullBlockEverythingTo0Damage`](./Enums.md) | Integer | If set to 1, the unit reduces all incoming damage to 0. | 1 | `1` |
 | [`GasCanBehavior`](./Enums.md) | Integer | An integer flag that controls the behavior mode of a gas can entity. | 1 | `1` |
@@ -458,30 +458,30 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`GlobalManaDrainAura`](./Enums.md) | Integer | The amount of mana drained per turn from all units in range. | 1 | `-1` |
 | [`GoopImmunity`](./Enums.md) | Integer | If set to 1, the unit is immune to goop status effects. | 1 | `1` |
 | [`GuillotinaDeathHead`](./Enums.md) | Integer | If set to 1, the unit spawns a head object upon death via guillotine. | 1 | `1` |
-| [`HPAltStates`](#object-hpaltstates) | Object | An object defining alternate visual frames based on current HP thresholds. | 1 | `{ . . . }` |
-| [`HarpoonTrapPassive`](./Enums.md) | Enum | Specifies the ability name used when the harpoon trap is triggered. | 1 | `HarpoonTrapPull` |
-| [`HealNeighborsEachTurn`](#object-healneighborseachturn) | Object | An object defining the amount and target filtering for healing adjacent units each turn. | 1 | `{ . . . }` |
+| [`HPAltStates`](./Passives_and_Statuses.md#object-hpaltstates) | Object  | An object defining alternate visual frames based on current HP thresholds. | 1 | `{ . . . }` |
+| [`HarpoonTrapPassive`](./Enums.md#enum-harpoontrappassive) | Enum  | Specifies the ability name used when the harpoon trap is triggered. | 1 | `HarpoonTrapPull` |
+| [`HealNeighborsEachTurn`](./Passives_and_Statuses.md#object-healneighborseachturn) | Object  | An object defining the amount and target filtering for healing adjacent units each turn. | 1 | `{ . . . }` |
 | [`HiddenDoomed`](./Enums.md) | Integer | The number of stacks of a hidden doomed status effect applied to the unit. | 1 | `2` |
-| [`HitlerExecute`](#object-hitlerexecute) | Object | An object defining the tag, ability, and health threshold for executing a clone. | 1 | `{ . . . }` |
+| [`HitlerExecute`](./Passives_and_Statuses.md#object-hitlerexecute) | Object  | An object defining the tag, ability, and health threshold for executing a clone. | 1 | `{ . . . }` |
 | [`IceBlockBehavior`](./Enums.md) | Integer | An integer flag that controls the behavior mode of an ice block entity. | 1 | `1` |
 | [`IllusionTint`](./Enums.md) | Integer | If non-zero, applies an illusionary tint to the unit's sprite. | 1 | `1` |
 | [`InheritSpawnerStats`](./Enums.md) | Integer | If set to 1, the unit inherits the stats of its spawner. | 1 | `1` |
 | [`InsertIntoBackgroundPlaceholder`](./Enums.md) | Integer | If set to 1, the unit is inserted into a background placeholder slot. | 1 | `1` |
-| [`JohnnyNeedsWashing`](#object-johnnyneedswashing) | Object | An object specifying the form names for washed and unwashed states. | 1 | `{ . . . }` |
-| [`JohnnyWasher`](./Enums.md) | Enum | Specifies the ability name used by the washer form to clean Johnny. | 1 | `BBTransformZealot` |
-| [`LegacySpawnSavedCatIfExists`](./Enums.md) | Enum | Specifies the legacy saved cat ID to spawn if it exists in the save data. | 1 | `Legacy_Marshmallow_StolenCatID` |
-| [`LockOrientationFaceTile`](./Enums.md) | Array | A tile coordinate [x y] that the unit's orientation is locked to face. | 1 | `[0 0]` |
-| [`ManglerMonsterPassive`](./Enums.md) | Enum | Specifies the ability name used for the Mangler monster's dash attack. | 1 | `ManglerMonsterDashAttack` |
-| [`MegaDinoDropController`](#object-megadinodropcontroller) | Object | An object defining the abilities and stable leg count for the Mega Dino's leg drop sequence. | 1 | `{ . . . }` |
-| [`ModularPickup`](#object-modularpickup) | Object | An object defining the effects and sounds triggered when the unit is picked up. | 1 | `{ . . . }` |
-| [`MonkCatReactionAbilities`](#object-monkcatreactionabilities) | Object | A set of mappings from action types (move, attack, spell, trinket) to the corresponding ability IDs the MonkCat will use for reactions. | 1 | `{ . . . }` |
-| [`MoonHeadCrackedVisual`](./Enums.md) | Enum | Specifies the visual state for the character's cracked head appearance. | 1 | `Cracked` |
-| [`MotherGrowController`](#object-mothergrowcontroller) | Object | Controls the growth of tumors on The Mother, including the tumor object, damage type, damage amount, and whether it pierces defense when eating damage. | 1 | `{ . . . }` |
-| [`MotherTumorPassive`](#object-mothertumorpassive) | Object | Defines the passive behavior for a MotherTumor, including the forms considered for pass/receive, the pass and receive animations, and the grow ability. | 1 | `{ . . . }` |
-| [`Mount`](#object-mount) | Object | Defines the entering and ejecting abilities for a mountable unit, along with its death rattle ability. | 1 | `{ . . . }` |
-| [`MoveAfterAnyAttemptedAttack`](#object-moveafteranyattemptedattack) | Object | Defines the movement behavior (weights and abilities) used after any attempted attack. | 1 | `{ . . . }` |
-| [`MoveAwayWhenEnemyAdjacent`](#object-moveawaywhenenemyadjacent) | Object | Defines the movement behavior (move_ability, weights, and whether it triggers once per turn) when an enemy is adjacent. | 1 | `{ . . . }` |
-| [`MultiSpawnOnDeath`](#object-multispawnondeath) | Object | Specifies the object to spawn and the range of number of objects to spawn on death. | 1 | `{ . . . }` |
+| [`JohnnyNeedsWashing`](./Passives_and_Statuses.md#object-johnnyneedswashing) | Object  | An object specifying the form names for washed and unwashed states. | 1 | `{ . . . }` |
+| [`JohnnyWasher`](./Enums.md#enum-johnnywasher) | Enum  | Specifies the ability name used by the washer form to clean Johnny. | 1 | `BBTransformZealot` |
+| [`LegacySpawnSavedCatIfExists`](./Enums.md#enum-legacyspawnsavedcatifexists) | Enum  | Specifies the legacy saved cat ID to spawn if it exists in the save data. | 1 | `Legacy_Marshmallow_StolenCatID` |
+| [`LockOrientationFaceTile`](./Arrays.md#array-lockorientationfacetile) | Array  | A tile coordinate [x y] that the unit's orientation is locked to face. | 1 | `[0 0]` |
+| [`ManglerMonsterPassive`](./Enums.md#enum-manglermonsterpassive) | Enum  | Specifies the ability name used for the Mangler monster's dash attack. | 1 | `ManglerMonsterDashAttack` |
+| [`MegaDinoDropController`](./Passives_and_Statuses.md#object-megadinodropcontroller) | Object  | An object defining the abilities and stable leg count for the Mega Dino's leg drop sequence. | 1 | `{ . . . }` |
+| [`ModularPickup`](./Passives_and_Statuses.md#object-modularpickup) | Object  | An object defining the effects and sounds triggered when the unit is picked up. | 1 | `{ . . . }` |
+| [`MonkCatReactionAbilities`](./Passives_and_Statuses.md#object-monkcatreactionabilities) | Object  | A set of mappings from action types (move, attack, spell, trinket) to the corresponding ability IDs the MonkCat will use for reactions. | 1 | `{ . . . }` |
+| [`MoonHeadCrackedVisual`](./Enums.md#enum-moonheadcrackedvisual) | Enum  | Specifies the visual state for the character's cracked head appearance. | 1 | `Cracked` |
+| [`MotherGrowController`](./Passives_and_Statuses.md#object-mothergrowcontroller) | Object  | Controls the growth of tumors on The Mother, including the tumor object, damage type, damage amount, and whether it pierces defense when eating damage. | 1 | `{ . . . }` |
+| [`MotherTumorPassive`](./Passives_and_Statuses.md#object-mothertumorpassive) | Object  | Defines the passive behavior for a MotherTumor, including the forms considered for pass/receive, the pass and receive animations, and the grow ability. | 1 | `{ . . . }` |
+| [`Mount`](./Passives_and_Statuses.md#object-mount) | Object  | Defines the entering and ejecting abilities for a mountable unit, along with its death rattle ability. | 1 | `{ . . . }` |
+| [`MoveAfterAnyAttemptedAttack`](./Passives_and_Statuses.md#object-moveafteranyattemptedattack) | Object  | Defines the movement behavior (weights and abilities) used after any attempted attack. | 1 | `{ . . . }` |
+| [`MoveAwayWhenEnemyAdjacent`](./Passives_and_Statuses.md#object-moveawaywhenenemyadjacent) | Object  | Defines the movement behavior (move_ability, weights, and whether it triggers once per turn) when an enemy is adjacent. | 1 | `{ . . . }` |
+| [`MultiSpawnOnDeath`](./Passives_and_Statuses.md#object-multispawnondeath) | Object  | Specifies the object to spawn and the range of number of objects to spawn on death. | 1 | `{ . . . }` |
 | [`MulticatHeads`](./Enums.md) | Integer | The number of additional heads the Multicat has. | 1 | `0` |
 | [`MutateAfterXTurns`](./Enums.md) | Integer | The number of turns after which the character automatically mutates (or transforms). | 1 | `3` |
 | [`MuteDemonicGlyphDisplay`](./Enums.md) | Integer | If set to 1, suppresses the display of demonic glyphs on the character. | 1 | `1` |
@@ -490,49 +490,49 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Phasing`](./Enums.md) | Integer | If set to 1, allows the character to phase through solid objects or obstacles. | 1 | `1` |
 | [`ReturnBoundItemOnBattleEnd`](./Enums.md) | Integer | If set to 1, items bound to this character are returned to their owner at the end of battle. | 1 | `1` |
 | [`RunWhenKittensDead`](./Enums.md) | Integer | If set to 1, causes the character to attempt to flee when all associated kittens are dead. | 1 | `1` |
-| [`RunWhenLastPlayerCatIsCharmed`](#object-runwhenlastplayercatischarmed) | Object | Defines the behavior (including mid-turn decision allowance and legacy save key) for fleeing when the last player cat is charmed. | 1 | `{ . . . }` |
-| [`ScalingAttackAnimation`](#object-scalingattackanimation) | Object | Maps attack animations to damage thresholds; when the unit's attack stat reaches a threshold, the corresponding animation overrides the default. | 1 | `{ . . . }` |
-| [`SkipFirstRounds`](#object-skipfirstrounds) | Object | Determines the number of initial rounds to skip and the chance per round of 'popping' (becoming active). | 1 | `{ . . . }` |
+| [`RunWhenLastPlayerCatIsCharmed`](./Passives_and_Statuses.md#object-runwhenlastplayercatischarmed) | Object  | Defines the behavior (including mid-turn decision allowance and legacy save key) for fleeing when the last player cat is charmed. | 1 | `{ . . . }` |
+| [`ScalingAttackAnimation`](./Passives_and_Statuses.md#object-scalingattackanimation) | Object  | Maps attack animations to damage thresholds; when the unit's attack stat reaches a threshold, the corresponding animation overrides the default. | 1 | `{ . . . }` |
+| [`SkipFirstRounds`](./Passives_and_Statuses.md#object-skipfirstrounds) | Object  | Determines the number of initial rounds to skip and the chance per round of 'popping' (becoming active). | 1 | `{ . . . }` |
 | [`SpawnCreepOnHitKnockback`](./Enums.md) | Integer | If set to 1, spawns creep on the tile where a hit knocks back an enemy. | 1 | `1` |
 | [`SpawnerCatDataReference`](./Enums.md) | Integer | A reference ID pointing to the spawner cat's data, used by minions to link back to their spawner. | 1 | `1` |
-| [`SpewerAltGraphics`](#object-speweraltgraphics) | Object | Maps different Spewer liquid types (Normal, Fire, Tar) to their corresponding alternate graphic indices. | 1 | `{ . . . }` |
+| [`SpewerAltGraphics`](./Passives_and_Statuses.md#object-speweraltgraphics) | Object  | Maps different Spewer liquid types (Normal, Fire, Tar) to their corresponding alternate graphic indices. | 1 | `{ . . . }` |
 | [`SpreadWater`](./Enums.md) | Integer | If set to 1, causes the character to spread water onto adjacent tiles. | 1 | `1` |
 | [`SproutsGrantMovement`](./Enums.md) | Integer | If set to 1, sprouts on the character grant additional movement (aliases to MovementUp). | 1 | `1` |
 | [`StartDead`](./Enums.md) | Integer | The percentage chance that the character starts the battle already dead. | 1 | `100%` |
-| [`StatusEachTurnBeginIfHasStatus`](#object-statuseachturnbeginifhasstatus) | Object | Defines a status effect to apply (and optionally consume) at the start of each turn if the character already has a specific status, with a specified animation. | 1 | `{ . . . }` |
-| [`StatusEachTurnEndIfEnabledAtStartOfTurn`](#object-statuseachturnendifenabledatstartofturn) | Object | Defines an ability to force-use at the end of each turn if the character was in the specified form at the start of the turn. | 1 | `{ . . . }` |
-| [`StatusOnEnemyConfused`](#object-statusonenemyconfused) | Object | Defines an ability to immediately use when an enemy becomes confused. | 1 | `{ . . . }` |
-| [`StatusOverlappingCharactersAndDie`](#object-statusoverlappingcharactersanddie) | Object | Defines a status effect applied to overlapping characters, after which the character dies. | 1 | `{ . . . }` |
-| [`StatusWhenStatusCompletelyRemoved`](#object-statuswhenstatuscompletelyremoved) | Object | Defines a status to apply and an ability to use when a specific status is completely removed from the character. | 1 | `{ . . . }` |
-| [`SupportDieInsteadOfRun`](#object-supportdieinsteadofrun) | Object | Configures alternative dying and dead animations for support units that die instead of fleeing. | 1 | `{ . . . }` |
-| [`SwimmingFormChange`](#object-swimmingformchange) | Object | Defines the form names to switch to when in water and when exiting water. | 1 | `{ . . . }` |
-| [`SyncFormsWithBuddy`](#object-syncformswithbuddy) | Object | Specifies the form to revert to if the character has no buddy, ensuring form synchronization. | 1 | `{ . . . }` |
-| [`T3HitlerSpawningPhase`](#object-t3hitlerspawningphase) | Object | Defines weighted groups of spawn abilities used during the T3Hitler boss's spawning phase. | 1 | `{ . . . }` |
+| [`StatusEachTurnBeginIfHasStatus`](./Passives_and_Statuses.md#object-statuseachturnbeginifhasstatus) | Object  | Defines a status effect to apply (and optionally consume) at the start of each turn if the character already has a specific status, with a specified animation. | 1 | `{ . . . }` |
+| [`StatusEachTurnEndIfEnabledAtStartOfTurn`](./Passives_and_Statuses.md#object-statuseachturnendifenabledatstartofturn) | Object  | Defines an ability to force-use at the end of each turn if the character was in the specified form at the start of the turn. | 1 | `{ . . . }` |
+| [`StatusOnEnemyConfused`](./Passives_and_Statuses.md#object-statusonenemyconfused) | Object  | Defines an ability to immediately use when an enemy becomes confused. | 1 | `{ . . . }` |
+| [`StatusOverlappingCharactersAndDie`](./Passives_and_Statuses.md#object-statusoverlappingcharactersanddie) | Object  | Defines a status effect applied to overlapping characters, after which the character dies. | 1 | `{ . . . }` |
+| [`StatusWhenStatusCompletelyRemoved`](./Passives_and_Statuses.md#object-statuswhenstatuscompletelyremoved) | Object  | Defines a status to apply and an ability to use when a specific status is completely removed from the character. | 1 | `{ . . . }` |
+| [`SupportDieInsteadOfRun`](./Passives_and_Statuses.md#object-supportdieinsteadofrun) | Object  | Configures alternative dying and dead animations for support units that die instead of fleeing. | 1 | `{ . . . }` |
+| [`SwimmingFormChange`](./Passives_and_Statuses.md#object-swimmingformchange) | Object  | Defines the form names to switch to when in water and when exiting water. | 1 | `{ . . . }` |
+| [`SyncFormsWithBuddy`](./Passives_and_Statuses.md#object-syncformswithbuddy) | Object  | Specifies the form to revert to if the character has no buddy, ensuring form synchronization. | 1 | `{ . . . }` |
+| [`T3HitlerSpawningPhase`](./Passives_and_Statuses.md#object-t3hitlerspawningphase) | Object  | Defines weighted groups of spawn abilities used during the T3Hitler boss's spawning phase. | 1 | `{ . . . }` |
 | [`TVBotDisableAttack`](./Enums.md) | Integer | If set to 1, disables the TVBot's ability to attack. | 1 | `1` |
 | [`TVBotDisableMove`](./Enums.md) | Integer | If set to 1, disables the TVBot's ability to move. | 1 | `1` |
 | [`TVBotDisableSpells`](./Enums.md) | Integer | If set to 1, disables the TVBot's ability to use spells. | 1 | `1` |
-| [`TVBotScreen`](#object-tvbotscreen) | Object | Maps TVBot screen channel names to their corresponding form indices. | 1 | `{ . . . }` |
+| [`TVBotScreen`](./Passives_and_Statuses.md#object-tvbotscreen) | Object  | Maps TVBot screen channel names to their corresponding form indices. | 1 | `{ . . . }` |
 | [`TakeWeaponFromSpawner`](./Enums.md) | Integer | If set to 1, the minion inherits the weapon from its spawner. | 1 | `1` |
 | [`Tall`](./Enums.md) | Integer | If set to 1, the character occupies a taller hitbox or sprite space. | 1 | `1` |
-| [`TallTumorManaBurn`](./Enums.md) | Enum | Specifies the mana burn ability used by the TallTumor. | 1 | `TT_ManaBurn` |
-| [`Terminator2Chase`](./Enums.md) | Enum | Specifies the movement ability used by Terminator2 when chasing the target. | 1 | `move` |
-| [`Terminator2Run`](#object-terminator2run) | Object | Defines the movement ability and movement weights used by Terminator2 when running away. | 1 | `{ . . . }` |
-| [`TerminatorChase`](#object-terminatorchase) | Object | Defines the movement ability and reaction ability used by Terminator1 when chasing a target, plus whether it prioritizes player cats. | 1 | `{ . . . }` |
-| [`TerminatorSkin`](#object-terminatorskin) | Object | Defines the status effect and groups of stacks applied by the Terminator's skin passive. | 1 | `{ . . . }` |
-| [`TileElementDamageImmunity`](./Enums.md) | Enum | Determines which tile element type the character is immune to damage from. | 1 | `Ice` |
-| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
+| [`TallTumorManaBurn`](./Enums.md#enum-talltumormanaburn) | Enum  | Specifies the mana burn ability used by the TallTumor. | 1 | `TT_ManaBurn` |
+| [`Terminator2Chase`](./Enums.md#enum-terminator2chase) | Enum  | Specifies the movement ability used by Terminator2 when chasing the target. | 1 | `move` |
+| [`Terminator2Run`](./Passives_and_Statuses.md#object-terminator2run) | Object  | Defines the movement ability and movement weights used by Terminator2 when running away. | 1 | `{ . . . }` |
+| [`TerminatorChase`](./Passives_and_Statuses.md#object-terminatorchase) | Object  | Defines the movement ability and reaction ability used by Terminator1 when chasing a target, plus whether it prioritizes player cats. | 1 | `{ . . . }` |
+| [`TerminatorSkin`](./Passives_and_Statuses.md#object-terminatorskin) | Object  | Defines the status effect and groups of stacks applied by the Terminator's skin passive. | 1 | `{ . . . }` |
+| [`TileElementDamageImmunity`](./Enums.md#enum-tileelementdamageimmunity) | Enum  | Determines which tile element type the character is immune to damage from. | 1 | `Ice` |
+| [`TinkererBasicAttackSwitching`](./Passives_and_Statuses.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
 | [`TireBehavior`](./Enums.md) | Integer | If set to 1, activates special tire-related behavior for the character. | 1 | `1` |
 | [`TormentorHeal`](./Enums.md) | Integer | If set to 1, the Tormentor can heal itself. | 1 | `1` |
-| [`TrackAmountKilledByPlayer`](./Enums.md) | Enum | Specifies the name of the counter used to track how many of this type the player has killed. | 1 | `BonusBirdsKilled` |
-| [`TransformOnStatusThreshold`](#object-transformonstatusthreshold) | Object | Defines the status effect, the stack threshold at which to transform, and the object to transform into. | 1 | `{ . . . }` |
+| [`TrackAmountKilledByPlayer`](./Enums.md#enum-trackamountkilledbyplayer) | Enum  | Specifies the name of the counter used to track how many of this type the player has killed. | 1 | `BonusBirdsKilled` |
+| [`TransformOnStatusThreshold`](./Passives_and_Statuses.md#object-transformonstatusthreshold) | Object  | Defines the status effect, the stack threshold at which to transform, and the object to transform into. | 1 | `{ . . . }` |
 | [`TutorialBossRiggedFight`](./Enums.md) | Integer | The turn count at which the tutorial boss fight becomes rigged. | 1 | `16` |
-| [`TwisterFling`](#object-twisterfling) | Object | Defines the minimum distance, maximum distance, and damage for the TwisterFling ability. | 1 | `{ . . . }` |
-| [`UnlimitedDeathRattleRevive`](#object-unlimiteddeathrattlerevive) | Object | Configures an unlimited revive effect, including the ability to use and whether it works even when stunned. | 1 | `{ . . . }` |
+| [`TwisterFling`](./Passives_and_Statuses.md#object-twisterfling) | Object  | Defines the minimum distance, maximum distance, and damage for the TwisterFling ability. | 1 | `{ . . . }` |
+| [`UnlimitedDeathRattleRevive`](./Passives_and_Statuses.md#object-unlimiteddeathrattlerevive) | Object  | Configures an unlimited revive effect, including the ability to use and whether it works even when stunned. | 1 | `{ . . . }` |
 | [`UpTireBehavior`](./Enums.md) | Integer | The behavior type integer for the Tire's upward form. | 1 | `5` |
-| [`UseAbilityWhenOutOfStatus`](#object-useabilitywhenoutofstatus) | Object | Defines an ability to execute when the unit no longer has a specified status. | 1 | `{ . . . }` |
-| [`UseAbilityWhenShieldDepleted`](./Enums.md) | Enum | The ability to use when the unit's shield is fully depleted. | 1 | `T3Pebbles_PrimeBoulderDrop` |
+| [`UseAbilityWhenOutOfStatus`](./Passives_and_Statuses.md#object-useabilitywhenoutofstatus) | Object  | Defines an ability to execute when the unit no longer has a specified status. | 1 | `{ . . . }` |
+| [`UseAbilityWhenShieldDepleted`](./Enums.md#enum-useabilitywhenshielddepleted) | Enum  | The ability to use when the unit's shield is fully depleted. | 1 | `T3Pebbles_PrimeBoulderDrop` |
 | [`Wall`](./Enums.md) | Integer | If 1, the unit is treated as an impassable wall. | 1 | `1` |
-| [`WhitelistPickupType`](./Enums.md) | Enum | Specifies the type of pickup that this unit is allowed to collect. | 1 | `food` |
+| [`WhitelistPickupType`](./Enums.md#enum-whitelistpickuptype) | Enum  | Specifies the type of pickup that this unit is allowed to collect. | 1 | `food` |
 | [`WideBackstab`](./Enums.md) | Integer | The additional width for backstab attacks, in tiles. | 1 | `1` |
 | [`WispDodge`](./Enums.md) | Integer | If 1, the unit gains the Wisp's dodge ability. | 1 | `1` |
 | [`ZeroKnockbackDamage`](./Enums.md) | Integer | If 1, the unit takes no damage from knockback effects. | 1 | `1` |
@@ -566,11 +566,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `dispersed_bonus_turns` | Integer | The number of bonus turns granted to this unit when its turn order is dispersed. | 104 | `0`<br>`1`<br>`2` |
 | `base_mana_regen` | Integer | The base amount of mana regenerated per turn. | 90 | `0`<br>`3`<br>`999` |
 | [`size`](./Enums.md#enum-size) | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 80 | `.2`<br>`.5`<br>`1` |
-| `shield` | Enum / Integer | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| [`shield`](./Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | [`move_block`](./Enums.md#enum-move_block) | Enum | Determines which movement directions are blocked. | 73 | `everything_even_when_dead`<br>`nothing` |
 | `kill_required` | Boolean | If true, the unit must be killed to complete the objective. | 69 | `false`<br>`true` |
 | `can_be_backstabbed` | Boolean | If true, the unit can be backstabbed. | 68 | `false` |
-| `initiative` | Enum / Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 61 | `-10`<br>`-100`<br>`-20` |
+| [`initiative`](./Enums.md#enum-initiative) | Enum / Integer  | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 61 | `-10`<br>`-100`<br>`-20` |
 | `takes_turns` | Boolean | If true, the unit participates in the turn order. | 61 | `false`<br>`true` |
 | `mana_regen` | Integer | The amount of mana regenerated per turn, overriding base_mana_regen if set. | 51 | `999` |
 | `mana` | Enum / Integer | The amount of mana required to cast, as a formula or stat. | 50 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
@@ -677,29 +677,29 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`brain`](./Enums.md#enum-brain) | Enum | Specifies the AI brain type used for decision-making logic. | 573 | `DicerBrain`<br>`GenericBrain`<br>`MountBrain` |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 493 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 490 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
-| [`pattern`](#object-pattern) | Object | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 289 | `{ . . . }` |
-| [`mainturn_pattern`](#object-mainturn_pattern) | Object | Specifies the AI behavior pattern used during main turns. | 44 | `{ . . . }` |
+| [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 289 | `{ . . . }` |
+| [`mainturn_pattern`](./Miscellaneous.md#object-mainturn_pattern) | Object  | Specifies the AI behavior pattern used during main turns. | 44 | `{ . . . }` |
 | `end_turn_on_formswitch` | Boolean | If true, the unit's turn ends immediately after switching forms. | 39 | `false`<br>`true` |
-| [`virtual_abilities`](#object-virtual_abilities) | Object | Defines virtual abilities and their movement weights for AI decision-making. | 35 | `{ . . . }` |
+| [`virtual_abilities`](./Miscellaneous.md#object-virtual_abilities) | Object  | Defines virtual abilities and their movement weights for AI decision-making. | 35 | `{ . . . }` |
 | `auto_orient` | Boolean | If true, the unit automatically faces the nearest target. | 31 | `false` |
 | `reset_pattern_on_formswitch` | Boolean | If true, the AI pattern resets when the unit switches forms. | 31 | `false`<br>`true` |
 | `stun_advances_pattern` | Boolean | If true, the AI advances to the next step in its pattern when stunned. | 30 | `false`<br>`true` |
 | `fallback_advances_pattern` | Boolean | If true, using the fallback action advances the AI's pattern index. | 28 | `false`<br>`true` |
-| [`bonusturn_pattern`](#object-bonusturn_pattern) | Object | The action sequence the AI follows during a bonus turn. | 27 | `{ . . . }` |
-| [`fallback`](#object-fallback) | Object | The action sequence the AI uses when its main pattern cannot execute. | 23 | `{ . . . }` |
-| [`round_end_bonusturn_pattern`](#object-round_end_bonusturn_pattern) | Object | The action sequence the AI executes at the end of the round as a bonus turn. | 12 | `{ . . . }` |
+| [`bonusturn_pattern`](./Miscellaneous.md#object-bonusturn_pattern) | Object  | The action sequence the AI follows during a bonus turn. | 27 | `{ . . . }` |
+| [`fallback`](./Miscellaneous.md#object-fallback) | Object  | The action sequence the AI uses when its main pattern cannot execute. | 23 | `{ . . . }` |
+| [`round_end_bonusturn_pattern`](./Miscellaneous.md#object-round_end_bonusturn_pattern) | Object  | The action sequence the AI executes at the end of the round as a bonus turn. | 12 | `{ . . . }` |
 | `consider_spells` | Boolean | If true, the AI considers using spells in its decision-making. | 11 | `false` |
 | `animate_choice` | Boolean | If true, the AI animates its decision-making process (e.g., thinking indicator). | 8 | `false`<br>`true` |
 | `clamp_pattern` | Boolean | If true, the AI's pattern index is clamped to the last valid entry rather than resetting or overflowing. | 5 | `true` |
 | `randomize_pattern_start` | Boolean | If true, the AI starts its pattern from a random index at the beginning of combat. | 3 | `true` |
-| [`dispersed_bonusturn_pattern`](#object-dispersed_bonusturn_pattern) | Object | The action sequence used when bonus turns are evenly distributed among multiple units. | 2 | `{ . . . }` |
+| [`dispersed_bonusturn_pattern`](./Miscellaneous.md#object-dispersed_bonusturn_pattern) | Object  | The action sequence used when bonus turns are evenly distributed among multiple units. | 2 | `{ . . . }` |
 | `random_orient` | Boolean | If true, the AI randomizes its facing direction on spawn. | 2 | `true` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `never_hit_ally_corpses` | Boolean | If true, the AI avoids targeting or damaging ally corpses. | 1 | `true` |
 | [`post_absorb_move_weights`](./Enums.md#enum-post_absorb_move_weights) | Enum | Specifies the movement weight set used after the AI absorbs a target. | 1 | `minimum_move` |
 | `reset_pattern_on_round_begin` | Boolean | If true, the AI's pattern index resets to the start at the beginning of each round. | 1 | `true` |
 | [`roll_ability`](./Enums.md#enum-roll_ability) | Enum | Specifies the ability name used for the AI's dice-rolling mechanic. | 1 | `RollDice` |
-| [`round_start_bonusturn_pattern`](#object-round_start_bonusturn_pattern) | Object | The action sequence the AI executes at the start of the round as a bonus turn. | 1 | `{ . . . }` |
+| [`round_start_bonusturn_pattern`](./Miscellaneous.md#object-round_start_bonusturn_pattern) | Object  | The action sequence the AI executes at the start of the round as a bonus turn. | 1 | `{ . . . }` |
 | [`dice_abilities`](./Arrays.md#array-dice_abilities) | Array | The list of ability names from which the AI randomly selects when rolling dice. | 1 ||
 
 </details>
@@ -725,7 +725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `dexterity` | Integer | The base dexterity stat, used for accuracy and evasion. | 380 | `1`<br>`2`<br>`3` |
 | `charisma` | Integer | The base charisma stat, used for social or mind-affecting abilities. | 379 | `1`<br>`2`<br>`3` |
 | `intelligence` | Integer | The base intelligence stat, used for spell power and mana. | 379 | `0`<br>`1`<br>`10` |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
 | `luck` | Integer | The base luck stat, used for critical hits and random beneficial effects. | 160 | `1`<br>`10`<br>`3` |
 
 </details>
@@ -803,11 +803,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 10 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 10 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 10 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -827,8 +827,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -850,163 +850,163 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | Specifies the starting form name for a unit with FormChanger. | 56 | `0`<br>`1`<br>`5` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 56 | `Default`<br>`FormChange`<br>`Druid` |
-| [`Default`](#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 37 | `{ . . . }`<br>`release` |
-| [`Normal`](#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 11 | `{ . . . }`<br>`0` |
-| [`Rage`](#object-rage) | Object | The rage form configuration, applied when the unit enters an enraged state. | 10 | `{ . . . }` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 37 | `{ . . . }`<br>`release` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 11 | `{ . . . }`<br>`0` |
+| [`Rage`](./Miscellaneous.md#object-rage) | Object  | The rage form configuration, applied when the unit enters an enraged state. | 10 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | `passives`<br>`class`<br>`tag` |
-| [`HasCat`](#object-hascat) | Object | The form configuration applied when the unit is holding or has swallowed a cat. | 5 | `{ . . . }` |
-| [`default`](#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 4 | `{ . . . }`<br>`bite1` |
-| [`hot`](#object-hot) | Object | The form configuration applied when the unit is in a hot state, granting fire element. | 4 | `{ . . . }` |
-| [`OffMap`](#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
-| [`AllAlive`](#object-allalive) | Object | The form configuration applied when all family members are alive. | 3 | `{ . . . }` |
-| [`Down`](#object-down) | Object | The form configuration applied when the unit is in a knocked-down or prone state. | 3 | `{ . . . }` |
-| [`Full`](#object-full) | Object | The form configuration applied when the unit is in a full state. | 3 | `{ . . . }` |
-| [`OneAlive`](#object-onealive) | Object | The form configuration applied when only one family member remains alive. | 3 | `{ . . . }` |
-| [`TwoAlive`](#object-twoalive) | Object | A form that activates when two specific units are alive, granting the contained passives and abilities. | 3 | `{ . . . }` |
-| [`Up`](#object-up) | Object | Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior. | 3 | `{ . . . }` |
-| [`active`](#object-active) | Object | Defines the active form, containing passives and abilities that are active while in this form. | 2 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`HasCat`](./Miscellaneous.md#object-hascat) | Object  | The form configuration applied when the unit is holding or has swallowed a cat. | 5 | `{ . . . }` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 4 | `{ . . . }`<br>`bite1` |
+| [`hot`](./Miscellaneous.md#object-hot) | Object  | The form configuration applied when the unit is in a hot state, granting fire element. | 4 | `{ . . . }` |
+| [`OffMap`](./Miscellaneous.md#object-offmap) | Object  | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
+| [`AllAlive`](./Miscellaneous.md#object-allalive) | Object  | The form configuration applied when all family members are alive. | 3 | `{ . . . }` |
+| [`Down`](./Miscellaneous.md#object-down) | Object  | The form configuration applied when the unit is in a knocked-down or prone state. | 3 | `{ . . . }` |
+| [`Full`](./Miscellaneous.md#object-full) | Object  | The form configuration applied when the unit is in a full state. | 3 | `{ . . . }` |
+| [`OneAlive`](./Miscellaneous.md#object-onealive) | Object  | The form configuration applied when only one family member remains alive. | 3 | `{ . . . }` |
+| [`TwoAlive`](./Miscellaneous.md#object-twoalive) | Object  | A form that activates when two specific units are alive, granting the contained passives and abilities. | 3 | `{ . . . }` |
+| [`Up`](./Miscellaneous.md#object-up) | Object  | Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior. | 3 | `{ . . . }` |
+| [`active`](./Miscellaneous.md#object-active) | Object  | Defines the active form, containing passives and abilities that are active while in this form. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`Big`](#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
-| [`Boris`](#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
-| [`CaveMan`](#object-caveman) | Object | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 2 | `{ . . . }` |
-| [`CaveManSpear`](#object-cavemanspear) | Object | Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation. | 2 | `{ . . . }` |
-| [`Empty`](#object-empty) | Object | Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach). | 2 | `{ . . . }` |
-| [`Explosive`](#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
-| [`Holding`](#object-holding) | Object | Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors. | 2 | `{ . . . }` |
-| [`Holy`](#object-holy) | Enum / Object | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
-| [`NotPriming`](#object-notpriming) | Object | Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns. | 2 | `{ . . . }` |
-| `partial_animation_suffix` | Enum / Integer | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`passive`](#object-passive) | Object | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 2 | `{ . . . }` |
-| [`Priming`](#object-priming) | Object | Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end. | 2 | `{ . . . }` |
-| [`Rain`](#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 2 | `{ . . . }` |
-| [`Small`](#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
-| [`SquirrelForm`](#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
-| [`Turtled`](#object-turtled) | Object | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 | `{ . . . }` |
-| [`Alert`](#object-alert) | Object | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 | `{ . . . }` |
-| [`Angry`](#object-angry) | Object | Defines the 'Angry' form, an enraged state with its own AI. | 1 | `{ . . . }` |
-| [`Attacker`](#object-attacker) | Object | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 | `{ . . . }` |
-| [`BellyFull`](#object-bellyfull) | Object | Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation. | 1 | `{ . . . }` |
-| [`BigHolding`](#object-bigholding) | Object | Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status. | 1 | `{ . . . }` |
-| [`BigHoldingCat`](#object-bigholdingcat) | Object | Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming. | 1 | `{ . . . }` |
-| [`Bishop`](#object-bishop) | Object | Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation. | 1 | `{ . . . }` |
-| [`BlackHole`](#object-blackhole) | Object | Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name. | 1 | `{ . . . }` |
-| [`Bomb`](#object-bomb) | Object | Defines the 'Bomb' form, an explosive state that triggers an ability on death. | 1 | `{ . . . }` |
-| [`Bully`](#object-bully) | Object | Defines the 'Bully' form, which allows the unit to take turns and enables its passives. | 1 | `{ . . . }` |
-| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`CaveBaby`](#object-cavebaby) | Object | Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack. | 1 | `{ . . . }` |
-| [`CaveWoman`](#object-cavewoman) | Object | Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health. | 1 | `{ . . . }` |
-| [`CaveWomanHasCat`](#object-cavewomanhascat) | Object | Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap. | 1 | `{ . . . }` |
-| [`Charging`](#object-charging) | Object | Defines the 'Charging' form, a wind-up state for a powerful attack. | 1 | `{ . . . }` |
-| [`Close`](#object-close) | Object | Defines the 'Close' form, which triggers GSOpen ability upon reaction. | 1 | `{ . . . }` |
-| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`Cultist`](#object-cultist) | Object | Defines the 'Cultist' form, a basic melee form with its own name and tooltip. | 1 | `{ . . . }` |
-| [`Damaged`](#object-damaged) | Object | Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack. | 1 | `{ . . . }` |
-| [`Default_Ceiling`](#object-default_ceiling) | Object | Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders. | 1 | `{ . . . }` |
-| [`Default_Ground`](#object-default_ground) | Object | Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack. | 1 | `{ . . . }` |
-| [`DesireMech`](#object-desiremech) | Object | Defines the 'DesireMech' form, a mech suit form with its own AI pattern. | 1 | `{ . . . }` |
-| [`Die`](#object-die) | Integer / Object | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
-| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`Drunker`](#object-drunker) | Object | Defines the 'Drunker' form, a drunken state with altered animation. | 1 | `{ . . . }` |
-| [`DualSword`](#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
-| [`DualSword_Primed`](#object-dualsword_primed) | Object | Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation. | 1 | `{ . . . }` |
-| [`Dumb`](#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
-| [`Explody`](#object-explody) | Object | Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move. | 1 | `{ . . . }` |
-| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
-| [`FightPhase`](#object-fightphase) | Object | Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns. | 1 | `{ . . . }` |
-| [`Fire`](#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 1 | `{ . . . }`<br>`1` |
-| [`FireFull`](#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
-| [`Flop`](#object-flop) | Object | Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit. | 1 | `{ . . . }` |
-| [`Flop2`](#object-flop2) | Object | Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover. | 1 | `{ . . . }` |
-| [`Flush`](#object-flush) | Object | Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name. | 1 | `{ . . . }` |
-| [`FlushBubs`](#object-flushbubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
-| [`FlushHost`](#object-flushhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
-| [`FlushNettle`](#object-flushnettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
-| [`Grappling`](#object-grappling) | Object | Defines a grappling form with a specific animation suffix and exit animations. | 1 | `{ . . . }` |
-| [`Grown`](#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
-| [`GuaranteedJackpot`](#object-guaranteedjackpot) | Object | Defines a form that guarantees a jackpot coin result from slot machine rolls. | 1 | `{ . . . }` |
-| [`Guarding`](#object-guarding) | Object | Defines a guarding form with a high brace passive. | 1 | `{ . . . }` |
-| [`HalfDead`](#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
-| [`HasDeadCat`](#object-hasdeadcat) | Object | Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active. | 1 | `{ . . . }` |
-| [`HasRock`](#object-hasrock) | Object | Defines a form where the unit has a rock, with a bash attack. | 1 | `{ . . . }` |
-| [`Headless`](#object-headless) | Object | Defines a headless form with increased movement. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals`](#object-hint_crackedvisuals) | Object | Defines a visual state with cracked animation suffix. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals2`](#object-hint_crackedvisuals2) | Object | Defines a visual state with charging cracked animation. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals3`](#object-hint_crackedvisuals3) | Object | Defines a visual state with swallowed cracked animation. | 1 | `{ . . . }` |
-| [`HumanDead`](#object-humandead) | Object | Defines a form when the human half is dead, with a spin attack and custom tooltip. | 1 | `{ . . . }` |
-| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Defines a list of quotes for the Hunter class (vs boss, embark, return early). | 1 | `{ . . . }` |
-| [`InitialPhase`](#object-initialphase) | Object | Defines the initial phase form with a float move, shoot attack, and the ability to take turns. | 1 | `{ . . . }` |
-| [`Insane_Ceiling`](#object-insane_ceiling) | Object | Defines the insane ceiling form with pattern AI and animation suffix. | 1 | `{ . . . }` |
-| [`Insane_Ground`](#object-insane_ground) | Object | Defines the insane ground form with pattern AI and animation suffix. | 1 | `{ . . . }` |
-| [`Johnny`](#object-johnny) | Object | Defines a form that executes a mega blast, side switch, and form switch in sequence. | 1 | `{ . . . }` |
-| [`JohnnyBubs`](#object-johnnybubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
-| [`JohnnyHost`](#object-johnnyhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
-| [`JohnnyNettle`](#object-johnnynettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
-| [`Joystick`](#object-joystick) | Object | Defines a form with joystick animation and an immediate ability reaction (fumble even/odd). | 1 | `{ . . . }` |
-| [`LastHit`](#object-lasthit) | Object | Defines a form that grants 2 dispersed bonus turns after the last hit. | 1 | `{ . . . }` |
-| [`Lifted`](#object-lifted) | Object | Defines a lifted form with no attack or movement options. | 1 | `{ . . . }` |
-| [`Lit`](#object-lit) | Object | Defines a lit form that changes when wind element influence is applied. | 1 | `{ . . . }` |
-| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Defines a list of quotes for the Mage class. | 1 | `{ . . . }` |
-| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Defines a list of quotes for the Medic class. | 1 | `{ . . . }` |
-| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Defines a list of quotes for the Monk class. | 1 | `{ . . . }` |
-| [`Mounted`](#object-mounted) | Object | Defines a mounted form with 'Cat' animation suffix. | 1 | `{ . . . }` |
-| [`MouthFull`](#object-mouthfull) | Object | Defines a form with mouth full animation that changes while the Consuming status is active. | 1 | `{ . . . }` |
-| [`Mutant`](#object-mutant) | Integer / Object | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
-| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Defines a list of quotes for the Necromancer class. | 1 | `{ . . . }` |
-| [`NeutronStar`](#object-neutronstar) | Object | Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode). | 1 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Boris`](./Miscellaneous.md#object-boris) | Enum / Object  | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
+| [`CaveMan`](./Miscellaneous.md#object-caveman) | Object  | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 2 | `{ . . . }` |
+| [`CaveManSpear`](./Miscellaneous.md#object-cavemanspear) | Object  | Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation. | 2 | `{ . . . }` |
+| [`Empty`](./Miscellaneous.md#object-empty) | Object  | Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach). | 2 | `{ . . . }` |
+| [`Explosive`](./Miscellaneous.md#object-explosive) | Enum / Object  | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| [`Holding`](./Miscellaneous.md#object-holding) | Object  | Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors. | 2 | `{ . . . }` |
+| [`Holy`](./Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
+| [`NotPriming`](./Miscellaneous.md#object-notpriming) | Object  | Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns. | 2 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 2 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passive`](./Miscellaneous.md#object-passive) | Object  | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 2 | `{ . . . }` |
+| [`Priming`](./Miscellaneous.md#object-priming) | Object  | Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end. | 2 | `{ . . . }` |
+| [`Rain`](./Miscellaneous.md#object-rain) | Object  | Defines the rain weather effect with associated particle, sound, and rendering settings. | 2 | `{ . . . }` |
+| [`Small`](./Miscellaneous.md#object-small) | Object  | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
+| [`SquirrelForm`](./Miscellaneous.md#object-squirrelform) | Object  | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
+| [`Turtled`](./Miscellaneous.md#object-turtled) | Object  | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 | `{ . . . }` |
+| [`Alert`](./Miscellaneous.md#object-alert) | Object  | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 | `{ . . . }` |
+| [`Angry`](./Miscellaneous.md#object-angry) | Object  | Defines the 'Angry' form, an enraged state with its own AI. | 1 | `{ . . . }` |
+| [`Attacker`](./Miscellaneous.md#object-attacker) | Object  | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 | `{ . . . }` |
+| [`BellyFull`](./Miscellaneous.md#object-bellyfull) | Object  | Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation. | 1 | `{ . . . }` |
+| [`BigHolding`](./Miscellaneous.md#object-bigholding) | Object  | Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status. | 1 | `{ . . . }` |
+| [`BigHoldingCat`](./Miscellaneous.md#object-bigholdingcat) | Object  | Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming. | 1 | `{ . . . }` |
+| [`Bishop`](./Miscellaneous.md#object-bishop) | Object  | Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation. | 1 | `{ . . . }` |
+| [`BlackHole`](./Miscellaneous.md#object-blackhole) | Object  | Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name. | 1 | `{ . . . }` |
+| [`Bomb`](./Miscellaneous.md#object-bomb) | Object  | Defines the 'Bomb' form, an explosive state that triggers an ability on death. | 1 | `{ . . . }` |
+| [`Bully`](./Miscellaneous.md#object-bully) | Object  | Defines the 'Bully' form, which allows the unit to take turns and enables its passives. | 1 | `{ . . . }` |
+| [`Butcher`](./Engine_LogicKeys.md#object-butcher) | Object  | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`CaveBaby`](./Miscellaneous.md#object-cavebaby) | Object  | Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack. | 1 | `{ . . . }` |
+| [`CaveWoman`](./Miscellaneous.md#object-cavewoman) | Object  | Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health. | 1 | `{ . . . }` |
+| [`CaveWomanHasCat`](./Miscellaneous.md#object-cavewomanhascat) | Object  | Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap. | 1 | `{ . . . }` |
+| [`Charging`](./Miscellaneous.md#object-charging) | Object  | Defines the 'Charging' form, a wind-up state for a powerful attack. | 1 | `{ . . . }` |
+| [`Close`](./Miscellaneous.md#object-close) | Object  | Defines the 'Close' form, which triggers GSOpen ability upon reaction. | 1 | `{ . . . }` |
+| [`Colorless`](./Engine_LogicKeys.md#object-colorless) | Object  | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`Cultist`](./Miscellaneous.md#object-cultist) | Object  | Defines the 'Cultist' form, a basic melee form with its own name and tooltip. | 1 | `{ . . . }` |
+| [`Damaged`](./Miscellaneous.md#object-damaged) | Object  | Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack. | 1 | `{ . . . }` |
+| [`Default_Ceiling`](./Miscellaneous.md#object-default_ceiling) | Object  | Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders. | 1 | `{ . . . }` |
+| [`Default_Ground`](./Miscellaneous.md#object-default_ground) | Object  | Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack. | 1 | `{ . . . }` |
+| [`DesireMech`](./Miscellaneous.md#object-desiremech) | Object  | Defines the 'DesireMech' form, a mech suit form with its own AI pattern. | 1 | `{ . . . }` |
+| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
+| [`Druid`](./Engine_LogicKeys.md#object-druid) | Object  | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`Drunker`](./Miscellaneous.md#object-drunker) | Object  | Defines the 'Drunker' form, a drunken state with altered animation. | 1 | `{ . . . }` |
+| [`DualSword`](./Miscellaneous.md#object-dualsword) | Object  | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
+| [`DualSword_Primed`](./Miscellaneous.md#object-dualsword_primed) | Object  | Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation. | 1 | `{ . . . }` |
+| [`Dumb`](./Miscellaneous.md#object-dumb) | Integer / Object  | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
+| [`Explody`](./Miscellaneous.md#object-explody) | Object  | Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move. | 1 | `{ . . . }` |
+| [`Fighter`](./Engine_LogicKeys.md#object-fighter) | Object  | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 1 | `{ . . . }` |
+| [`FightPhase`](./Miscellaneous.md#object-fightphase) | Object  | Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns. | 1 | `{ . . . }` |
+| [`Fire`](./Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 1 | `{ . . . }`<br>`1` |
+| [`FireFull`](./Miscellaneous.md#object-firefull) | Integer / Object  | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
+| [`Flop`](./Miscellaneous.md#object-flop) | Object  | Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit. | 1 | `{ . . . }` |
+| [`Flop2`](./Miscellaneous.md#object-flop2) | Object  | Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover. | 1 | `{ . . . }` |
+| [`Flush`](./Miscellaneous.md#object-flush) | Object  | Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name. | 1 | `{ . . . }` |
+| [`FlushBubs`](./Miscellaneous.md#object-flushbubs) | Object  | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
+| [`FlushHost`](./Miscellaneous.md#object-flushhost) | Object  | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
+| [`FlushNettle`](./Miscellaneous.md#object-flushnettle) | Object  | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
+| [`Grappling`](./Miscellaneous.md#object-grappling) | Object  | Defines a grappling form with a specific animation suffix and exit animations. | 1 | `{ . . . }` |
+| [`Grown`](./Miscellaneous.md#object-grown) | Object  | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
+| [`GuaranteedJackpot`](./Miscellaneous.md#object-guaranteedjackpot) | Object  | Defines a form that guarantees a jackpot coin result from slot machine rolls. | 1 | `{ . . . }` |
+| [`Guarding`](./Miscellaneous.md#object-guarding) | Object  | Defines a guarding form with a high brace passive. | 1 | `{ . . . }` |
+| [`HalfDead`](./Miscellaneous.md#object-halfdead) | Object  | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
+| [`HasDeadCat`](./Miscellaneous.md#object-hasdeadcat) | Object  | Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active. | 1 | `{ . . . }` |
+| [`HasRock`](./Miscellaneous.md#object-hasrock) | Object  | Defines a form where the unit has a rock, with a bash attack. | 1 | `{ . . . }` |
+| [`Headless`](./Miscellaneous.md#object-headless) | Object  | Defines a headless form with increased movement. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals`](./Miscellaneous.md#object-hint_crackedvisuals) | Object  | Defines a visual state with cracked animation suffix. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals2`](./Miscellaneous.md#object-hint_crackedvisuals2) | Object  | Defines a visual state with charging cracked animation. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals3`](./Miscellaneous.md#object-hint_crackedvisuals3) | Object  | Defines a visual state with swallowed cracked animation. | 1 | `{ . . . }` |
+| [`HumanDead`](./Miscellaneous.md#object-humandead) | Object  | Defines a form when the human half is dead, with a spin attack and custom tooltip. | 1 | `{ . . . }` |
+| [`Hunter`](./Engine_LogicKeys.md#object-hunter) | Object  | Defines a list of quotes for the Hunter class (vs boss, embark, return early). | 1 | `{ . . . }` |
+| [`InitialPhase`](./Miscellaneous.md#object-initialphase) | Object  | Defines the initial phase form with a float move, shoot attack, and the ability to take turns. | 1 | `{ . . . }` |
+| [`Insane_Ceiling`](./Miscellaneous.md#object-insane_ceiling) | Object  | Defines the insane ceiling form with pattern AI and animation suffix. | 1 | `{ . . . }` |
+| [`Insane_Ground`](./Miscellaneous.md#object-insane_ground) | Object  | Defines the insane ground form with pattern AI and animation suffix. | 1 | `{ . . . }` |
+| [`Johnny`](./Miscellaneous.md#object-johnny) | Object  | Defines a form that executes a mega blast, side switch, and form switch in sequence. | 1 | `{ . . . }` |
+| [`JohnnyBubs`](./Miscellaneous.md#object-johnnybubs) | Object  | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
+| [`JohnnyHost`](./Miscellaneous.md#object-johnnyhost) | Object  | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
+| [`JohnnyNettle`](./Miscellaneous.md#object-johnnynettle) | Object  | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
+| [`Joystick`](./Miscellaneous.md#object-joystick) | Object  | Defines a form with joystick animation and an immediate ability reaction (fumble even/odd). | 1 | `{ . . . }` |
+| [`LastHit`](./Miscellaneous.md#object-lasthit) | Object  | Defines a form that grants 2 dispersed bonus turns after the last hit. | 1 | `{ . . . }` |
+| [`Lifted`](./Miscellaneous.md#object-lifted) | Object  | Defines a lifted form with no attack or movement options. | 1 | `{ . . . }` |
+| [`Lit`](./Miscellaneous.md#object-lit) | Object  | Defines a lit form that changes when wind element influence is applied. | 1 | `{ . . . }` |
+| [`Mage`](./Engine_LogicKeys.md#object-mage) | Object  | Defines a list of quotes for the Mage class. | 1 | `{ . . . }` |
+| [`Medic`](./Engine_LogicKeys.md#object-medic) | Object  | Defines a list of quotes for the Medic class. | 1 | `{ . . . }` |
+| [`Monk`](./Engine_LogicKeys.md#object-monk) | Object  | Defines a list of quotes for the Monk class. | 1 | `{ . . . }` |
+| [`Mounted`](./Miscellaneous.md#object-mounted) | Object  | Defines a mounted form with 'Cat' animation suffix. | 1 | `{ . . . }` |
+| [`MouthFull`](./Miscellaneous.md#object-mouthfull) | Object  | Defines a form with mouth full animation that changes while the Consuming status is active. | 1 | `{ . . . }` |
+| [`Mutant`](./Miscellaneous.md#object-mutant) | Integer / Object  | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
+| [`Necromancer`](./Engine_LogicKeys.md#object-necromancer) | Object  | Defines a list of quotes for the Necromancer class. | 1 | `{ . . . }` |
+| [`NeutronStar`](./Miscellaneous.md#object-neutronstar) | Object  | Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode). | 1 | `{ . . . }` |
 | [`NoDeathRattle`](./Engine_LogicKeys.md#valid-property-keys) | Object | Defines a form that suppresses death rattle and triggers a heart attack when a buddy dies. | 1 | `{ . . . }` |
-| [`NoEyes`](#object-noeyes) | Object | Defines a form with no eyes animation. | 1 | `{ . . . }` |
-| [`NormalFull`](#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
-| [`NoStick`](#object-nostick) | Object | Defines a form without a stick, using a jab attack with pattern AI. | 1 | `{ . . . }` |
-| [`Nuke`](#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 1 | `{ . . . }` |
-| [`Obey`](#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
-| [`Off`](#object-off) | Object | Defines an off form with a 'Off' animation suffix. | 1 | `{ . . . }` |
-| [`OffScreen`](#object-offscreen) | Object | Defines an off-screen form that does not take turns and drops in chaos heads. | 1 | `{ . . . }` |
-| [`OneEye`](#object-oneeye) | Object | Defines a form with one eye that triggers an ability at 40% health threshold. | 1 | `{ . . . }` |
-| [`Open`](#object-open) | Object | Defines an open form with increased movement and a specific attack. | 1 | `{ . . . }` |
-| [`OpenCat`](#object-opencat) | Object | Defines an open cat form that changes when the Consuming status is active. | 1 | `{ . . . }` |
-| [`Out`](#object-out) | Object | Defines a form that is 'out' with a ground flopper movement passive. | 1 | `{ . . . }` |
-| [`Possessing`](#object-possessing) | Object | Form state when the unit is possessing another entity. | 1 | `{ . . . }` |
-| [`Primed`](#object-primed) | Object | Form state representing the unit being primed, with specific attack and AI behavior. | 1 | `{ . . . }` |
-| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Form identifier for the Psychic boss type, used for dialogue references. | 1 | `{ . . . }` |
-| [`Pulp2`](#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp3`](#object-pulp3) | Object | Form state for the third stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp4`](#object-pulp4) | Object | Form state for the fourth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp5`](#object-pulp5) | Object | Form state for the fifth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp6`](#object-pulp6) | Object | Form state for the sixth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp7`](#object-pulp7) | Object | Form state for the seventh stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Sitting`](#object-sitting) | Object | Form state where the unit is sitting, with no movement or attack. | 1 | `{ . . . }` |
-| [`SmallHolding`](#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`SmallHoldingCat`](#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`SpawningPhase`](#object-spawningphase) | Object | Form state for the spawning phase, where the unit is immobile and cannot take turns. | 1 | `{ . . . }` |
-| [`Standing`](#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
-| [`Standing2`](#object-standing2) | Object | Form state where the unit is standing with a jumping movement ability. | 1 | `{ . . . }` |
-| [`Start_Ceiling`](#object-start_ceiling) | Object | Form state for starting on the ceiling, with a form change trigger when entering the map. | 1 | `{ . . . }` |
-| [`Stop`](#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
-| [`SwordAndShield`](#object-swordandshield) | Object | Form state with sword and shield, using the DestroyerAttack ability. | 1 | `{ . . . }` |
-| [`SwordAndShield_Primed`](#object-swordandshield_primed) | Object | Primed form state of SwordAndShield with holy animation and no final boss shield. | 1 | `{ . . . }` |
+| [`NoEyes`](./Miscellaneous.md#object-noeyes) | Object  | Defines a form with no eyes animation. | 1 | `{ . . . }` |
+| [`NormalFull`](./Miscellaneous.md#object-normalfull) | Integer / Object  | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
+| [`NoStick`](./Miscellaneous.md#object-nostick) | Object  | Defines a form without a stick, using a jab attack with pattern AI. | 1 | `{ . . . }` |
+| [`Nuke`](./Miscellaneous.md#object-nuke) | Object  | Defines a nuke form with no attack or movement options. | 1 | `{ . . . }` |
+| [`Obey`](./Miscellaneous.md#object-obey) | Integer / Object  | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
+| [`Off`](./Miscellaneous.md#object-off) | Object  | Defines an off form with a 'Off' animation suffix. | 1 | `{ . . . }` |
+| [`OffScreen`](./Miscellaneous.md#object-offscreen) | Object  | Defines an off-screen form that does not take turns and drops in chaos heads. | 1 | `{ . . . }` |
+| [`OneEye`](./Miscellaneous.md#object-oneeye) | Object  | Defines a form with one eye that triggers an ability at 40% health threshold. | 1 | `{ . . . }` |
+| [`Open`](./Miscellaneous.md#object-open) | Object  | Defines an open form with increased movement and a specific attack. | 1 | `{ . . . }` |
+| [`OpenCat`](./Miscellaneous.md#object-opencat) | Object  | Defines an open cat form that changes when the Consuming status is active. | 1 | `{ . . . }` |
+| [`Out`](./Miscellaneous.md#object-out) | Object  | Defines a form that is 'out' with a ground flopper movement passive. | 1 | `{ . . . }` |
+| [`Possessing`](./Miscellaneous.md#object-possessing) | Object  | Form state when the unit is possessing another entity. | 1 | `{ . . . }` |
+| [`Primed`](./Miscellaneous.md#object-primed) | Object  | Form state representing the unit being primed, with specific attack and AI behavior. | 1 | `{ . . . }` |
+| [`Psychic`](./Engine_LogicKeys.md#object-psychic) | Object  | Form identifier for the Psychic boss type, used for dialogue references. | 1 | `{ . . . }` |
+| [`Pulp2`](./Miscellaneous.md#object-pulp2) | Object  | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp3`](./Miscellaneous.md#object-pulp3) | Object  | Form state for the third stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp4`](./Miscellaneous.md#object-pulp4) | Object  | Form state for the fourth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp5`](./Miscellaneous.md#object-pulp5) | Object  | Form state for the fifth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp6`](./Miscellaneous.md#object-pulp6) | Object  | Form state for the sixth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp7`](./Miscellaneous.md#object-pulp7) | Object  | Form state for the seventh stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Sitting`](./Miscellaneous.md#object-sitting) | Object  | Form state where the unit is sitting, with no movement or attack. | 1 | `{ . . . }` |
+| [`SmallHolding`](./Miscellaneous.md#object-smallholding) | Object  | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SmallHoldingCat`](./Miscellaneous.md#object-smallholdingcat) | Object  | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SpawningPhase`](./Miscellaneous.md#object-spawningphase) | Object  | Form state for the spawning phase, where the unit is immobile and cannot take turns. | 1 | `{ . . . }` |
+| [`Standing`](./Miscellaneous.md#object-standing) | Object  | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
+| [`Standing2`](./Miscellaneous.md#object-standing2) | Object  | Form state where the unit is standing with a jumping movement ability. | 1 | `{ . . . }` |
+| [`Start_Ceiling`](./Miscellaneous.md#object-start_ceiling) | Object  | Form state for starting on the ceiling, with a form change trigger when entering the map. | 1 | `{ . . . }` |
+| [`Stop`](./Miscellaneous.md#object-stop) | Integer / Object  | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
+| [`SwordAndShield`](./Miscellaneous.md#object-swordandshield) | Object  | Form state with sword and shield, using the DestroyerAttack ability. | 1 | `{ . . . }` |
+| [`SwordAndShield_Primed`](./Miscellaneous.md#object-swordandshield_primed) | Object  | Primed form state of SwordAndShield with holy animation and no final boss shield. | 1 | `{ . . . }` |
 | `sync_brain_patterns` | Boolean | If true, synchronizes brain patterns across form changes. | 1 | `true` |
-| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Form identifier for the Tank boss type, used for dialogue references. | 1 | `{ . . . }` |
-| [`Tar`](#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`TarFull`](#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Form identifier for the Thief boss type. | 1 | `{ . . . }` |
-| [`Throb`](#object-throb) | Object | Form state for the Chaos unit's throb behavior, with a spread pattern. | 1 | `{ . . . }` |
-| [`ThrobBubs`](#object-throbbubs) | Object | Form state for Chaos unit throb that reacts with a shotgun attack. | 1 | `{ . . . }` |
-| [`ThrobHost`](#object-throbhost) | Object | Form state for Chaos unit acting as host, reflecting projectiles. | 1 | `{ . . . }` |
-| [`ThrobNettle`](#object-throbnettle) | Object | Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells. | 1 | `{ . . . }` |
-| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Form identifier for the Tinkerer boss type. | 1 | `{ . . . }` |
-| [`Transformed`](#object-transformed) | Object | Form state after transformation, ending the turn on form switch. | 1 | `{ . . . }` |
-| [`TwoEyes`](#object-twoeyes) | Object | Form state with two eyes, triggering ability at a health threshold. | 1 | `{ . . . }` |
+| [`Tank`](./Engine_LogicKeys.md#object-tank) | Object  | Form identifier for the Tank boss type, used for dialogue references. | 1 | `{ . . . }` |
+| [`Tar`](./Miscellaneous.md#object-tar) | Integer / Object  | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`Thief`](./Engine_LogicKeys.md#object-thief) | Object  | Form identifier for the Thief boss type. | 1 | `{ . . . }` |
+| [`Throb`](./Miscellaneous.md#object-throb) | Object  | Form state for the Chaos unit's throb behavior, with a spread pattern. | 1 | `{ . . . }` |
+| [`ThrobBubs`](./Miscellaneous.md#object-throbbubs) | Object  | Form state for Chaos unit throb that reacts with a shotgun attack. | 1 | `{ . . . }` |
+| [`ThrobHost`](./Miscellaneous.md#object-throbhost) | Object  | Form state for Chaos unit acting as host, reflecting projectiles. | 1 | `{ . . . }` |
+| [`ThrobNettle`](./Miscellaneous.md#object-throbnettle) | Object  | Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells. | 1 | `{ . . . }` |
+| [`Tinkerer`](./Engine_LogicKeys.md#object-tinkerer) | Object  | Form identifier for the Tinkerer boss type. | 1 | `{ . . . }` |
+| [`Transformed`](./Miscellaneous.md#object-transformed) | Object  | Form state after transformation, ending the turn on form switch. | 1 | `{ . . . }` |
+| [`TwoEyes`](./Miscellaneous.md#object-twoeyes) | Object  | Form state with two eyes, triggering ability at a health threshold. | 1 | `{ . . . }` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
-| [`Unlit`](#object-unlit) | Object | Form state for an unlit candle, muting demonic glyph display. | 1 | `{ . . . }` |
+| [`Unlit`](./Miscellaneous.md#object-unlit) | Object  | Form state for an unlit candle, muting demonic glyph display. | 1 | `{ . . . }` |
 | [`Unmounted`](./Engine_Uncategorized_Resources.md#valid-property-keys) | Object | Form state when the unit is unmounted from its mech suit, with no additional properties. | 1 | `{ . . . }` |
-| [`Unwashed`](#object-unwashed) | Object | Form state for the unwashed version of Johnny, with its own AI pattern. | 1 | `{ . . . }` |
-| [`Washed`](#object-washed) | Object | Form state for the washed version of Johnny, with a blast attack. | 1 | `{ . . . }` |
-| [`Washer`](#object-washer) | Object | Form state for the washer variant of a cultist, with basic melee attack. | 1 | `{ . . . }` |
-| [`Water`](#object-water) | Object | Form state for water element, applying a puddle or movement bonus. | 1 | `{ . . . }` |
-| [`WereMan`](#object-wereman) | Object | Form state for the were-man transformation, with fury swipe attack and sabertooth faction. | 1 | `{ . . . }` |
-| [`Zealot`](#object-zealot) | Object | Form state for the zealot variant of a cultist, with a stabbing attack. | 1 | `{ . . . }` |
-| [`ZealotBomb`](#object-zealotbomb) | Object | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
+| [`Unwashed`](./Miscellaneous.md#object-unwashed) | Object  | Form state for the unwashed version of Johnny, with its own AI pattern. | 1 | `{ . . . }` |
+| [`Washed`](./Miscellaneous.md#object-washed) | Object  | Form state for the washed version of Johnny, with a blast attack. | 1 | `{ . . . }` |
+| [`Washer`](./Miscellaneous.md#object-washer) | Object  | Form state for the washer variant of a cultist, with basic melee attack. | 1 | `{ . . . }` |
+| [`Water`](./Passives_and_Statuses.md#object-water) | Object  | Form state for water element, applying a puddle or movement bonus. | 1 | `{ . . . }` |
+| [`WereMan`](./Miscellaneous.md#object-wereman) | Object  | Form state for the were-man transformation, with fury swipe attack and sabertooth faction. | 1 | `{ . . . }` |
+| [`Zealot`](./Miscellaneous.md#object-zealot) | Object  | Form state for the zealot variant of a cultist, with a stabbing attack. | 1 | `{ . . . }` |
+| [`ZealotBomb`](./Miscellaneous.md#object-zealotbomb) | Object  | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1028,7 +1028,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 4 | `allies`<br>`auto`<br>`birds` |
 | [`obj`](./Arrays.md#array-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
-| [`additional_statuses`](#object-additional_statuses) | Object | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
+| [`additional_statuses`](./Miscellaneous.md#object-additional_statuses) | Object  | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1069,7 +1069,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alternate_energized_effect`](#object-alternate_energized_effect) | Object | Effects applied when the robot becomes energized, such as form changes or stat boosts. | 2 | `{ . . . }` |
+| [`alternate_energized_effect`](./Miscellaneous.md#object-alternate_energized_effect) | Object  | Effects applied when the robot becomes energized, such as form changes or stat boosts. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1163,12 +1163,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 24 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 24 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 10 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -1233,35 +1233,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MoveAway`](#object-moveaway) | Object | Defines an AI virtual ability that moves the unit away from its current target using the specified ability and move weights. | 4 | `{ . . . }` |
-| [`MoveClose`](#object-moveclose) | Object | Defines an AI virtual ability that moves the unit close to its target using the specified ability and move weights. | 4 | `{ . . . }` |
-| [`DashRandomly`](#object-dashrandomly) | Object | Defines an AI virtual ability that causes the unit to dash in a random direction using the specified ability and decision weights. | 2 | `{ . . . }` |
-| [`Escape`](#object-escape) | Object | Defines an AI virtual ability that causes the unit to escape using the specified ability and move weights. | 2 | `{ . . . }` |
-| [`MoveCenter`](#object-movecenter) | Object | Defines an AI virtual ability that moves the unit toward the center of the map using the specified ability and move weights. | 2 | `{ . . . }` |
-| [`MoveForThrow`](#object-moveforthrow) | Object | Defines an AI virtual ability that moves the unit into position for a throw ability. | 2 | `{ . . . }` |
-| [`SpearRun`](#object-spearrun) | Object | Defines an AI virtual ability that moves the unit to run with a spear and pick it up. | 2 | `{ . . . }` |
-| [`CerberubsJumpBlind`](#object-cerberubsjumpblind) | Object | Defines an AI virtual ability that makes Cerberubs jump with blind decision weights. | 1 | `{ . . . }` |
-| [`CerberubsJumpNormal`](#object-cerberubsjumpnormal) | Object | Defines an AI virtual ability that makes Cerberubs jump with default decision weights. | 1 | `{ . . . }` |
-| [`CloseConvert`](#object-closeconvert) | Object | Defines an AI virtual ability that moves close and uses the MarshmallowConvert ability. | 1 | `{ . . . }` |
-| [`FoodMove`](#object-foodmove) | Object | Defines an AI virtual ability that moves the unit toward food using the CaveBabyFoodMove ability. | 1 | `{ . . . }` |
-| [`ForceTrample`](#object-forcetrample) | Object | Defines an AI virtual ability that forces the unit to trample carelessly using the BirthwortTrample ability. | 1 | `{ . . . }` |
-| [`LeapClose`](#object-leapclose) | Object | Defines an AI virtual ability that makes the unit leap toward its aggro target. | 1 | `{ . . . }` |
-| [`MoveForBarrage`](#object-moveforbarrage) | Object | Defines an AI virtual ability that moves the unit to a position suitable for a barrage ability. | 1 | `{ . . . }` |
-| [`MoveForDash`](#object-movefordash) | Object | Defines an AI virtual ability that moves the unit into position for a dash attack. | 1 | `{ . . . }` |
-| [`MoveForGrass`](#object-moveforgrass) | Object | Defines an AI virtual ability that moves the unit to stomp and eat grass. | 1 | `{ . . . }` |
-| [`MoveForPounce`](#object-moveforpounce) | Object | Defines an AI virtual ability that moves the unit into position for a pounce attack. | 1 | `{ . . . }` |
-| [`MoveForSpin`](#object-moveforspin) | Object | Defines an AI virtual ability that moves the unit to set up a spin throw. | 1 | `{ . . . }` |
-| [`MoveOneForPuke`](#object-moveoneforpuke) | Object | Defines an AI virtual ability that moves the unit one step for a puke ability. | 1 | `{ . . . }` |
-| [`MoveSpaced`](#object-movespaced) | Object | Defines an AI virtual ability that moves the unit while maintaining a specific distance. | 1 | `{ . . . }` |
-| [`MoveToHead`](#object-movetohead) | Object | Defines an AI virtual ability that moves the unit to the head of a target to grab it. | 1 | `{ . . . }` |
-| [`MoveTowards`](#object-movetowards) | Object | Defines an AI virtual ability that moves the unit toward its target. | 1 | `{ . . . }` |
-| [`NCGravecrawlFAR`](#object-ncgravecrawlfar) | Object | Defines an AI virtual ability that makes a NecroCat gravecrawl while staying far from enemies. | 1 | `{ . . . }` |
-| [`ReturnA`](#object-returna) | Object | Defines an AI virtual ability that makes a HangerBot return to a close position. | 1 | `{ . . . }` |
-| [`RunFar`](#object-runfar) | Object | Defines an AI virtual ability that makes the unit run far away. | 1 | `{ . . . }` |
-| [`SuckMF`](#object-suckmf) | Object | Defines an AI virtual ability that makes a Tormentor suck enemies carelessly while keeping distance. | 1 | `{ . . . }` |
-| [`TF_TargetAllies`](#object-tf_targetallies) | Object | Defines an AI virtual ability that casts Twisting Flames targeting allies. | 1 | `{ . . . }` |
-| [`TF_TargetEnemies`](#object-tf_targetenemies) | Object | Defines an AI virtual ability that casts Twisting Flames targeting enemies. | 1 | `{ . . . }` |
-| [`Unflip`](#object-unflip) | Object | Defines an AI virtual ability that teleports the unit to flip up and spin an enemy. | 1 | `{ . . . }` |
+| [`MoveAway`](./Miscellaneous.md#object-moveaway) | Object  | Defines an AI virtual ability that moves the unit away from its current target using the specified ability and move weights. | 4 | `{ . . . }` |
+| [`MoveClose`](./Miscellaneous.md#object-moveclose) | Object  | Defines an AI virtual ability that moves the unit close to its target using the specified ability and move weights. | 4 | `{ . . . }` |
+| [`DashRandomly`](./Miscellaneous.md#object-dashrandomly) | Object  | Defines an AI virtual ability that causes the unit to dash in a random direction using the specified ability and decision weights. | 2 | `{ . . . }` |
+| [`Escape`](./Miscellaneous.md#object-escape) | Object  | Defines an AI virtual ability that causes the unit to escape using the specified ability and move weights. | 2 | `{ . . . }` |
+| [`MoveCenter`](./Miscellaneous.md#object-movecenter) | Object  | Defines an AI virtual ability that moves the unit toward the center of the map using the specified ability and move weights. | 2 | `{ . . . }` |
+| [`MoveForThrow`](./Miscellaneous.md#object-moveforthrow) | Object  | Defines an AI virtual ability that moves the unit into position for a throw ability. | 2 | `{ . . . }` |
+| [`SpearRun`](./Miscellaneous.md#object-spearrun) | Object  | Defines an AI virtual ability that moves the unit to run with a spear and pick it up. | 2 | `{ . . . }` |
+| [`CerberubsJumpBlind`](./Miscellaneous.md#object-cerberubsjumpblind) | Object  | Defines an AI virtual ability that makes Cerberubs jump with blind decision weights. | 1 | `{ . . . }` |
+| [`CerberubsJumpNormal`](./Miscellaneous.md#object-cerberubsjumpnormal) | Object  | Defines an AI virtual ability that makes Cerberubs jump with default decision weights. | 1 | `{ . . . }` |
+| [`CloseConvert`](./Miscellaneous.md#object-closeconvert) | Object  | Defines an AI virtual ability that moves close and uses the MarshmallowConvert ability. | 1 | `{ . . . }` |
+| [`FoodMove`](./Miscellaneous.md#object-foodmove) | Object  | Defines an AI virtual ability that moves the unit toward food using the CaveBabyFoodMove ability. | 1 | `{ . . . }` |
+| [`ForceTrample`](./Miscellaneous.md#object-forcetrample) | Object  | Defines an AI virtual ability that forces the unit to trample carelessly using the BirthwortTrample ability. | 1 | `{ . . . }` |
+| [`LeapClose`](./Miscellaneous.md#object-leapclose) | Object  | Defines an AI virtual ability that makes the unit leap toward its aggro target. | 1 | `{ . . . }` |
+| [`MoveForBarrage`](./Miscellaneous.md#object-moveforbarrage) | Object  | Defines an AI virtual ability that moves the unit to a position suitable for a barrage ability. | 1 | `{ . . . }` |
+| [`MoveForDash`](./Miscellaneous.md#object-movefordash) | Object  | Defines an AI virtual ability that moves the unit into position for a dash attack. | 1 | `{ . . . }` |
+| [`MoveForGrass`](./Miscellaneous.md#object-moveforgrass) | Object  | Defines an AI virtual ability that moves the unit to stomp and eat grass. | 1 | `{ . . . }` |
+| [`MoveForPounce`](./Miscellaneous.md#object-moveforpounce) | Object  | Defines an AI virtual ability that moves the unit into position for a pounce attack. | 1 | `{ . . . }` |
+| [`MoveForSpin`](./Miscellaneous.md#object-moveforspin) | Object  | Defines an AI virtual ability that moves the unit to set up a spin throw. | 1 | `{ . . . }` |
+| [`MoveOneForPuke`](./Miscellaneous.md#object-moveoneforpuke) | Object  | Defines an AI virtual ability that moves the unit one step for a puke ability. | 1 | `{ . . . }` |
+| [`MoveSpaced`](./Miscellaneous.md#object-movespaced) | Object  | Defines an AI virtual ability that moves the unit while maintaining a specific distance. | 1 | `{ . . . }` |
+| [`MoveToHead`](./Miscellaneous.md#object-movetohead) | Object  | Defines an AI virtual ability that moves the unit to the head of a target to grab it. | 1 | `{ . . . }` |
+| [`MoveTowards`](./Miscellaneous.md#object-movetowards) | Object  | Defines an AI virtual ability that moves the unit toward its target. | 1 | `{ . . . }` |
+| [`NCGravecrawlFAR`](./Miscellaneous.md#object-ncgravecrawlfar) | Object  | Defines an AI virtual ability that makes a NecroCat gravecrawl while staying far from enemies. | 1 | `{ . . . }` |
+| [`ReturnA`](./Miscellaneous.md#object-returna) | Object  | Defines an AI virtual ability that makes a HangerBot return to a close position. | 1 | `{ . . . }` |
+| [`RunFar`](./Miscellaneous.md#object-runfar) | Object  | Defines an AI virtual ability that makes the unit run far away. | 1 | `{ . . . }` |
+| [`SuckMF`](./Miscellaneous.md#object-suckmf) | Object  | Defines an AI virtual ability that makes a Tormentor suck enemies carelessly while keeping distance. | 1 | `{ . . . }` |
+| [`TF_TargetAllies`](./Miscellaneous.md#object-tf_targetallies) | Object  | Defines an AI virtual ability that casts Twisting Flames targeting allies. | 1 | `{ . . . }` |
+| [`TF_TargetEnemies`](./Miscellaneous.md#object-tf_targetenemies) | Object  | Defines an AI virtual ability that casts Twisting Flames targeting enemies. | 1 | `{ . . . }` |
+| [`Unflip`](./Miscellaneous.md#object-unflip) | Object  | Defines an AI virtual ability that teleports the unit to flip up and spin an enemy. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1297,7 +1297,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`Madness`](./Enums.md) | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 3 | `1`<br>`2`<br>`3` |
 | [`RemoteLeech`](./Enums.md) | Integer | The amount of remote leech applied to the target on basic attack. | 2 | `1` |
 | [`DamageUp`](./Enums.md) | Integer | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`GainDisorderFromPool`](#object-gaindisorderfrompool) | Object | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 1 | `{ . . . }` |
+| [`GainDisorderFromPool`](./Miscellaneous.md#object-gaindisorderfrompool) | Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 1 | `{ . . . }` |
 | [`Possessed`](./Enums.md) | Integer | The number of possession stacks applied, or a template with name and tooltips. | 1 | `1` |
 | [`RandomStatUp`](./Enums.md) | Integer | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`RemoteFlatLeech`](./Enums.md) | Integer | The flat amount of remote leech applied to the target on basic attack. | 1 | `1` |
@@ -1378,7 +1378,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `ear2` | Integer | The catalog ID for the cat's second ear part. | 10 | `1005`<br>`1013`<br>`1036` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 8 | `-1`<br>`-2`<br>`1` |
 | `leg2` | Integer | The catalog ID for the cat's second leg part. | 8 | `-1`<br>`1`<br>`10` |
-| `head` | Enum / Number | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
+| [`head`](./Enums.md#enum-head) | Enum / Number  | The catalog ID for the cat's head part. | 6 | `-1`<br>`1`<br>`1.3` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 6 | `-1`<br>`1`<br>`1000` |
 | `body` | Number | The catalog ID for the cat's body part. | 5 | `-1`<br>`1`<br>`1.1` |
 | `eye1` | Integer | The catalog ID for the cat's first eye part. | 3 | `-1`<br>`-2`<br>`1013` |
@@ -1481,9 +1481,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 70 | `damage_instance`<br>`spell`<br>`false` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 47 | `{ . . . }` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 24 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 22 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 47 | `{ . . . }` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 24 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 22 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 10 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 10 | `[`<br>`[Heat Fire]` |
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 1 | `true` |
@@ -1507,9 +1507,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 18 | `passives`<br>`class`<br>`tag` |
-| [`FindItemFromPool`](./Enums.md) | Enum | Specifies the loot pool from which to find an item, with an optional chance. | 16 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`Conditional_GoodRoll`](Abilities_and_Spells.md#object-conditional_goodroll) | Object | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 2 | `{ . . . }` |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 16 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 2 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -1530,50 +1530,50 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`Antidote`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Float | The multiplier for the number of antidote pickups spawned. | 5 | `.5`<br>`1` |
 | `Blessing` | Float | The multiplier for the number of blessing pickups spawned. | 5 | `.5`<br>`1` |
-| [`BigCatnip`](Engine_LogicKeys.md#object-bigcatnip) | Integer / Object | The number of big catnip pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`BiggestFood`](Engine_LogicKeys.md#object-biggestfood) | Integer / Object | The number of biggest food pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`15`<br>`4` |
-| [`BigScrap`](Engine_LogicKeys.md#object-bigscrap) | Number / Object | The amount of big scrap pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`4.5` |
-| [`Coin`](Engine_LogicKeys.md#object-coin) | Integer / Object | The number of coin pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`70` |
-| [`BigFood`](Engine_LogicKeys.md#object-bigfood) | Integer / Object | The number of big food pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
+| [`BigCatnip`](./Engine_LogicKeys.md#object-bigcatnip) | Integer / Object  | The number of big catnip pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`BiggestFood`](./Engine_LogicKeys.md#object-biggestfood) | Integer / Object  | The number of biggest food pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`15`<br>`4` |
+| [`BigScrap`](./Engine_LogicKeys.md#object-bigscrap) | Number / Object  | The amount of big scrap pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`4.5` |
+| [`Coin`](./Engine_LogicKeys.md#object-coin) | Integer / Object  | The number of coin pickups spawned. | 4 | `{ . . . }`<br>`1`<br>`70` |
+| [`BigFood`](./Engine_LogicKeys.md#object-bigfood) | Integer / Object  | The number of big food pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
 | `Coin10` | Float | The multiplier for the number of Coin10 pickups spawned. | 2 | `.1`<br>`1` |
-| [`Coin3`](Engine_LogicKeys.md#object-coin3) | Integer / Object | The number of Coin3 pickups spawned. | 2 | `{ . . . }`<br>`1` |
-| [`Coin4`](Engine_LogicKeys.md#object-coin4) | Integer / Object | The number of Coin4 pickups spawned. | 2 | `{ . . . }`<br>`1` |
-| [`MedCatnip`](Engine_LogicKeys.md#object-medcatnip) | Integer / Object | The number of medium catnip pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
-| [`MedScrap`](Engine_LogicKeys.md#object-medscrap) | Integer / Object | The number of medium scrap pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
-| [`RandomArmorPickup`](Engine_LogicKeys.md#object-randomarmorpickup) | Number / Object | The amount of random armor pickups spawned. | 2 | `{ . . . }`<br>`4.5`<br>`40` |
-| [`RandomCatnipPickup`](Engine_LogicKeys.md#object-randomcatnippickup) | Integer / Object | The number of random catnip pickups spawned. | 2 | `{ . . . }`<br>`10`<br>`30` |
-| [`RandomFoodPickup`](Engine_LogicKeys.md#object-randomfoodpickup) | Integer / Object | The number of random food pickups spawned. | 2 | `{ . . . }`<br>`15`<br>`40` |
-| [`Bear`](Engine_LogicKeys.md#object-bear) | Integer / Object | The number of bear familiars spawned. | 1 | `{ . . . }`<br>`1` |
-| [`BlackBird`](Engine_LogicKeys.md#object-blackbird) | Integer / Object | The number of black birds spawned. | 1 | `{ . . . }`<br>`3000` |
-| [`Catepillar`](Engine_LogicKeys.md#object-catepillar) | Integer / Object | The number of caterpillar familiars spawned. | 1 | `{ . . . }`<br>`10` |
-| [`Catnip`](Engine_LogicKeys.md#object-catnip) | Integer / Object | The number of catnip pickups spawned. | 1 | `{ . . . }`<br>`20`<br>`3` |
-| [`CharmedDip`](Engine_LogicKeys.md#object-charmeddip) | Integer / Object | The number of charmed dip pickups spawned. | 1 | `{ . . . }`<br>`1` |
-| [`CharmedFloater`](Engine_LogicKeys.md#object-charmedfloater) | Integer / Object | The number of charmed floater pickups spawned. | 1 | `{ . . . }`<br>`1` |
-| [`CharmedPile`](Engine_LogicKeys.md#object-charmedpile) | Integer / Object | The number of charmed pile pickups spawned. | 1 | `{ . . . }`<br>`1` |
-| [`Cherub`](Engine_LogicKeys.md#object-cherub) | Integer / Object | The number of cherubs spawned. | 1 | `{ . . . }`<br>`1` |
-| [`Chicken`](Engine_LogicKeys.md#object-chicken) | Integer / Object | The number of chicken pickups spawned. | 1 | `{ . . . }`<br>`.01`<br>`.1`<br>`2` |
-| [`Coin2`](Engine_LogicKeys.md#object-coin2) | Integer / Object | The number of Coin2 pickups spawned. | 1 | `{ . . . }`<br>`1` |
-| [`Dove`](Engine_LogicKeys.md#object-dove) | Integer / Object | The number of doves spawned. | 1 | `{ . . . }`<br>`1000` |
-| [`Eagle`](Engine_LogicKeys.md#object-eagle) | Integer / Object | The number of eagles spawned. | 1 | `{ . . . }`<br>`300` |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 1 | `{ . . . }`<br>`20` |
-| [`Harpy`](Engine_LogicKeys.md#object-harpy) | Integer / Object | The number of harpies spawned. | 1 | `{ . . . }`<br>`1` |
-| [`HummingBird`](Engine_LogicKeys.md#object-hummingbird) | Integer / Object | The number of hummingbirds spawned. | 1 | `{ . . . }`<br>`300` |
-| [`LargeBirdPool`](Engine_LogicKeys.md#object-largebirdpool) | Integer / Object | The weight for spawning from the large bird pool. | 1 | `{ . . . }`<br>`1` |
-| [`MedBirdPool`](Engine_LogicKeys.md#object-medbirdpool) | Integer / Object | The weight for spawning from the medium bird pool. | 1 | `{ . . . }`<br>`1` |
-| [`Mutant`](#object-mutant) | Integer / Object | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
-| [`Pigeon`](Engine_LogicKeys.md#object-pigeon) | Integer / Object | The number of pigeons spawned. | 1 | `{ . . . }`<br>`3000` |
-| [`RandomBiggerArmorPickup`](Engine_LogicKeys.md#object-randombiggerarmorpickup) | Number / Object | The amount of bigger random armor pickups spawned. | 1 | `{ . . . }`<br>`4.5` |
-| [`RandomBiggerCatnipPickup`](Engine_LogicKeys.md#object-randombiggercatnippickup) | Integer / Object | The number of bigger random catnip pickups spawned. | 1 | `{ . . . }`<br>`10` |
-| [`RandomBiggerFoodPickup`](Engine_LogicKeys.md#object-randombiggerfoodpickup) | Integer / Object | The number of bigger random food pickups spawned. | 1 | `{ . . . }`<br>`15` |
-| [`Raven`](Engine_LogicKeys.md#object-raven) | Integer / Object | The number of ravens spawned. | 1 | `{ . . . }`<br>`300` |
-| [`Scrap`](Engine_LogicKeys.md#object-scrap) | Integer / Object | The number of scrap pickups spawned. | 1 | `{ . . . }`<br>`20` |
-| [`Seagull`](Engine_LogicKeys.md#object-seagull) | Integer / Object | The number of seagulls spawned. | 1 | `{ . . . }`<br>`1000` |
-| [`SmallBirdPool`](Engine_LogicKeys.md#object-smallbirdpool) | Integer / Object | The weight for spawning from the small bird pool. | 1 | `{ . . . }`<br>`1` |
-| [`Snake`](Engine_LogicKeys.md#object-snake) | Integer / Object | The number of snake familiars spawned. | 1 | `{ . . . }`<br>`10` |
-| [`Squirrel`](Engine_LogicKeys.md#object-squirrel) | Integer / Object | The number of squirrel familiars spawned. | 1 | `{ . . . }`<br>`10` |
-| [`Toad`](Engine_LogicKeys.md#object-toad) | Integer / Object | The number of toad familiars spawned. | 1 | `{ . . . }`<br>`10` |
-| [`Turkey`](Engine_LogicKeys.md#object-turkey) | Integer / Object | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
-| [`Turtle`](Engine_LogicKeys.md#object-turtle) | Integer / Object | The number of turtle familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Coin3`](./Engine_LogicKeys.md#object-coin3) | Integer / Object  | The number of Coin3 pickups spawned. | 2 | `{ . . . }`<br>`1` |
+| [`Coin4`](./Engine_LogicKeys.md#object-coin4) | Integer / Object  | The number of Coin4 pickups spawned. | 2 | `{ . . . }`<br>`1` |
+| [`MedCatnip`](./Engine_LogicKeys.md#object-medcatnip) | Integer / Object  | The number of medium catnip pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
+| [`MedScrap`](./Engine_LogicKeys.md#object-medscrap) | Integer / Object  | The number of medium scrap pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`5` |
+| [`RandomArmorPickup`](./Engine_LogicKeys.md#object-randomarmorpickup) | Number / Object  | The amount of random armor pickups spawned. | 2 | `{ . . . }`<br>`4.5`<br>`40` |
+| [`RandomCatnipPickup`](./Engine_LogicKeys.md#object-randomcatnippickup) | Integer / Object  | The number of random catnip pickups spawned. | 2 | `{ . . . }`<br>`10`<br>`30` |
+| [`RandomFoodPickup`](./Engine_LogicKeys.md#object-randomfoodpickup) | Integer / Object  | The number of random food pickups spawned. | 2 | `{ . . . }`<br>`15`<br>`40` |
+| [`Bear`](./Engine_LogicKeys.md#object-bear) | Integer / Object  | The number of bear familiars spawned. | 1 | `{ . . . }`<br>`1` |
+| [`BlackBird`](./Engine_LogicKeys.md#object-blackbird) | Integer / Object  | The number of black birds spawned. | 1 | `{ . . . }`<br>`3000` |
+| [`Catepillar`](./Engine_LogicKeys.md#object-catepillar) | Integer / Object  | The number of caterpillar familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Catnip`](./Engine_LogicKeys.md#object-catnip) | Integer / Object  | The number of catnip pickups spawned. | 1 | `{ . . . }`<br>`20`<br>`3` |
+| [`CharmedDip`](./Engine_LogicKeys.md#object-charmeddip) | Integer / Object  | The number of charmed dip pickups spawned. | 1 | `{ . . . }`<br>`1` |
+| [`CharmedFloater`](./Engine_LogicKeys.md#object-charmedfloater) | Integer / Object  | The number of charmed floater pickups spawned. | 1 | `{ . . . }`<br>`1` |
+| [`CharmedPile`](./Engine_LogicKeys.md#object-charmedpile) | Integer / Object  | The number of charmed pile pickups spawned. | 1 | `{ . . . }`<br>`1` |
+| [`Cherub`](./Engine_LogicKeys.md#object-cherub) | Integer / Object  | The number of cherubs spawned. | 1 | `{ . . . }`<br>`1` |
+| [`Chicken`](./Engine_LogicKeys.md#object-chicken) | Integer / Object  | The number of chicken pickups spawned. | 1 | `{ . . . }`<br>`.01`<br>`.1`<br>`2` |
+| [`Coin2`](./Engine_LogicKeys.md#object-coin2) | Integer / Object  | The number of Coin2 pickups spawned. | 1 | `{ . . . }`<br>`1` |
+| [`Dove`](./Engine_LogicKeys.md#object-dove) | Integer / Object  | The number of doves spawned. | 1 | `{ . . . }`<br>`1000` |
+| [`Eagle`](./Engine_LogicKeys.md#object-eagle) | Integer / Object  | The number of eagles spawned. | 1 | `{ . . . }`<br>`300` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 1 | `{ . . . }`<br>`20` |
+| [`Harpy`](./Engine_LogicKeys.md#object-harpy) | Integer / Object  | The number of harpies spawned. | 1 | `{ . . . }`<br>`1` |
+| [`HummingBird`](./Engine_LogicKeys.md#object-hummingbird) | Integer / Object  | The number of hummingbirds spawned. | 1 | `{ . . . }`<br>`300` |
+| [`LargeBirdPool`](./Engine_LogicKeys.md#object-largebirdpool) | Integer / Object  | The weight for spawning from the large bird pool. | 1 | `{ . . . }`<br>`1` |
+| [`MedBirdPool`](./Engine_LogicKeys.md#object-medbirdpool) | Integer / Object  | The weight for spawning from the medium bird pool. | 1 | `{ . . . }`<br>`1` |
+| [`Mutant`](./Miscellaneous.md#object-mutant) | Integer / Object  | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
+| [`Pigeon`](./Engine_LogicKeys.md#object-pigeon) | Integer / Object  | The number of pigeons spawned. | 1 | `{ . . . }`<br>`3000` |
+| [`RandomBiggerArmorPickup`](./Engine_LogicKeys.md#object-randombiggerarmorpickup) | Number / Object  | The amount of bigger random armor pickups spawned. | 1 | `{ . . . }`<br>`4.5` |
+| [`RandomBiggerCatnipPickup`](./Engine_LogicKeys.md#object-randombiggercatnippickup) | Integer / Object  | The number of bigger random catnip pickups spawned. | 1 | `{ . . . }`<br>`10` |
+| [`RandomBiggerFoodPickup`](./Engine_LogicKeys.md#object-randombiggerfoodpickup) | Integer / Object  | The number of bigger random food pickups spawned. | 1 | `{ . . . }`<br>`15` |
+| [`Raven`](./Engine_LogicKeys.md#object-raven) | Integer / Object  | The number of ravens spawned. | 1 | `{ . . . }`<br>`300` |
+| [`Scrap`](./Engine_LogicKeys.md#object-scrap) | Integer / Object  | The number of scrap pickups spawned. | 1 | `{ . . . }`<br>`20` |
+| [`Seagull`](./Engine_LogicKeys.md#object-seagull) | Integer / Object  | The number of seagulls spawned. | 1 | `{ . . . }`<br>`1000` |
+| [`SmallBirdPool`](./Engine_LogicKeys.md#object-smallbirdpool) | Integer / Object  | The weight for spawning from the small bird pool. | 1 | `{ . . . }`<br>`1` |
+| [`Snake`](./Engine_LogicKeys.md#object-snake) | Integer / Object  | The number of snake familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Squirrel`](./Engine_LogicKeys.md#object-squirrel) | Integer / Object  | The number of squirrel familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Toad`](./Engine_LogicKeys.md#object-toad) | Integer / Object  | The number of toad familiars spawned. | 1 | `{ . . . }`<br>`10` |
+| [`Turkey`](./Engine_LogicKeys.md#object-turkey) | Integer / Object  | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
+| [`Turtle`](./Engine_LogicKeys.md#object-turtle) | Integer / Object  | The number of turtle familiars spawned. | 1 | `{ . . . }`<br>`10` |
 
 </details>
 
@@ -1593,8 +1593,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](#object-ally_rewards) | Object | Defines the rewards granted to the ally when the BirdRewards passive triggers. | 18 | `{ . . . }` |
-| [`statuses`](#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
+| [`ally_rewards`](./Miscellaneous.md#object-ally_rewards) | Object  | Defines the rewards granted to the ally when the BirdRewards passive triggers. | 18 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
 
 </details>
 
@@ -1614,7 +1614,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `size` | Enum / Number | The scale factor (size multiplier) of the spawned unit. | 16 | `.2`<br>`.5`<br>`1` |
+| [`size`](./Enums.md#enum-size) | Enum / Number  | The scale factor (size multiplier) of the spawned unit. | 16 | `.2`<br>`.5`<br>`1` |
 | [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 16 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`glow`](./Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 | `[.3, .7, 1, .5]`<br>`[.7, .3, 1, .5]`<br>`[.7, .8, .9, .5]` |
 
@@ -1662,7 +1662,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 12 | `passives`<br>`class`<br>`tag` |
 | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 4 | `-1`<br>`-2`<br>`1` |
-| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 4 | `{ . . . }` |
+| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 4 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -1756,7 +1756,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 13 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 12 | `passives`<br>`class`<br>`tag` |
-| [`threshold`](./Enums.md) | Enum / Integer | The health threshold value, either as a formula using X (max health) or a fixed integer. | 12 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 12 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 7 | `true` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 6 | `false`<br>`true` |
 | `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 | `true` |
@@ -1783,12 +1783,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 14 | `passives`<br>`class`<br>`tag` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 13 | `Default`<br>`FormChange`<br>`Druid` | [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 12 | `{ . . . }` |
-| [`FormChange`](./Enums.md) | Enum | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 12 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 11 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 12 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 11 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | [`SelfStatusCarefulness`](./Enums.md) | Integer | The carefulness level when applying statuses to self, used to control stacking. | 2 | `1` |
 | [`StatusCarefulness`](./Enums.md) | Integer | The carefulness level when applying statuses, used to control stacking behavior. | 2 | `1` |
 | [`ExtraBasicAttacks`](./Enums.md) | Integer | The number of additional basic attacks the unit can perform per turn. | 1 | `1`<br>`2` |
-| [`TinkererBasicAttackSwitching`](Cat_Classes.md#object-tinkererbasicattackswitching) | Object | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
+| [`TinkererBasicAttackSwitching`](./Passives_and_Statuses.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1833,7 +1833,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 38 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 20 | `false`<br>`true` |
 | [`chance`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A probability (decimal or percentage) for a form change or other effect to occur. | 12 | `.02`<br>`.1`<br>`.15` |
 | `spawn_on_death_hit` | Boolean | If true, spawning only occurs when the damage is lethal. | 10 | `false` |
@@ -1881,7 +1881,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 9 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 9 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 2 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 
 </details>
@@ -1903,11 +1903,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 10 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 8 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 8 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
@@ -1930,7 +1930,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 9 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`exclude`](./Enums.md#enum-exclude) | Enum | Specifies an element or effect that does not trigger the form change. | 5 | `SpellDamageUp`<br>`fire`<br>`water` |
 | [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 5 | `ArrowFromAbove`<br>`BigMagicMissileBlast`<br>`Bolt` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 5 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
@@ -1998,7 +1998,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 8 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2018,8 +2018,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 9 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 9 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 9 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -2060,8 +2060,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `chain` | Boolean | Specifies the ability to chain into and execute. | 2 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 
 </details>
@@ -2133,8 +2133,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 6 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 6 | `0`<br>`1`<br>`10` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 6 | `0`<br>`1`<br>`10` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 6 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -2228,13 +2228,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 5 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
 
@@ -2277,7 +2277,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 6 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 
 </details>
 
@@ -2298,7 +2298,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum | Determines when the spawned unit takes its first turn relative to the spawn event. | 4 | `end_of_round`<br>`initiative`<br>`keep_turns` |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
 
@@ -2318,7 +2318,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `range` | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
+| [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2341,7 +2341,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`animation_suffix`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2410,8 +2410,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2431,10 +2431,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 4 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 4 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
 
 </details>
 
@@ -2497,8 +2497,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 3 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 3 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2541,7 +2541,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 55 | `passives`<br>`class`<br>`tag` |
 | [`SpeedUp`](./Enums.md) | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 5 | `-1`<br>`-2`<br>`-4` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 5 | `Default`<br>`FormChange`<br>`Druid` | [`AllStatsUp`](./Enums.md) | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`Conditional_BadRoll`](Abilities_and_Spells.md#object-conditional_badroll) | Object | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 1 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 1 | `{ . . . }` |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 
@@ -2565,7 +2565,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 34 | `passives`<br>`class`<br>`tag` |
 | [`HealthGain`](./Enums.md) | Integer | The amount of health restored to the source. | 5 | `1`<br>`10`<br>`2` |
-| [`UseAbility_NonStack`](./Enums.md) | Enum | Specifies an ability to use on kill that does not stack with itself. | 3 | `BBTransformZealot`<br>`GenericRage` |
+| [`UseAbility_NonStack`](./Enums.md#enum-useability_nonstack) | Enum  | Specifies an ability to use on kill that does not stack with itself. | 3 | `BBTransformZealot`<br>`GenericRage` |
 
 </details>
 
@@ -2632,7 +2632,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `cancel_movement` | Boolean | If true, the trapper cancels the trapped unit's movement. | 2 | `false` |
 | `pathfinding_avoidance` | Integer | The weight that makes other units avoid traversing this tile during pathfinding. | 2 | `250` |
-| `range` | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
+| [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2694,7 +2694,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2713,7 +2713,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | If true, the effect only applies to allied units. | 3 | `false`<br>`true` |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 | `reclaim_if_lost` | Boolean | If true, the buddy can be reclaimed after being lost. | 1 | `true` |
 
 </details>
@@ -2735,7 +2735,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | Specifies the form to change into. | 3 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
-| [`statuses`](#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -2756,13 +2756,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -2783,9 +2783,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
@@ -2808,9 +2808,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2833,7 +2833,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`form_above`](./Enums.md#enum-form_above) | Enum | The form to change to when health is above the threshold. | 3 | `Default`<br>`Full`<br>`Standing` |
 | [`form_below`](./Enums.md#enum-form_below) | Enum | The form to change to when health is below the threshold. | 3 | `Damaged`<br>`DesireMech`<br>`Standing2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`threshold`](./Enums.md) | Enum / Integer | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 | `true` |
 
 </details>
@@ -2854,12 +2854,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`statuses_on_enter_form`](#object-statuses_on_enter_form) | Object | Statuses or abilities applied when entering this form. | 2 | `{ . . . }` |
+| [`statuses_on_enter_form`](./Miscellaneous.md#object-statuses_on_enter_form) | Object  | Statuses or abilities applied when entering this form. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2901,7 +2901,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`formchange`](./Enums.md#enum-formchange) | Enum | Specifies the form to change into. | 3 | `BigHolding`<br>`BigHoldingCat`<br>`SmallHolding` |
-| [`statuses`](#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -2922,9 +2922,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 
 </details>
 
@@ -2945,9 +2945,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 4 | `passives`<br>`class`<br>`tag` |
-| [`PassiveGroup`](#object-passivegroup) | Object | A group of passive abilities that can be randomly assigned. | 2 | `{ . . . }` |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
-| [`TransformInXTurns`](#object-transforminxturns) | Object | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. | 1 | `{ . . . }` |
+| [`PassiveGroup`](./Passives_and_Statuses.md#object-passivegroup) | Object  | A group of passive abilities that can be randomly assigned. | 2 | `{ . . . }` |
+| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
+| [`TransformInXTurns`](./Passives_and_Statuses.md#object-transforminxturns) | Object  | Defines a delayed transformation after a set number of turns, with optional target object and initiative handling. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2970,7 +2970,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`brain`](./Enums.md#enum-brain) | Enum | Specifies the AI brain type used for decision-making logic. | 4 | `DicerBrain`<br>`GenericBrain`<br>`MountBrain` |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 4 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 4 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
-| [`pattern`](#object-pattern) | Object | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
+| [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 3 | `{ . . . }` |
 
 </details>
 
@@ -2991,9 +2991,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
@@ -3035,9 +3035,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 
 </details>
 
@@ -3058,10 +3058,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3082,8 +3082,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3125,8 +3125,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 5 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `range` | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 5 | `1`<br>`10`<br>`2` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`range`](./Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 5 | `1`<br>`10`<br>`2` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 5 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -3186,7 +3186,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`FormChange`](./Enums.md) | Enum | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Enums.md#enum-formchange) | Enum  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`SpellDamageUp`](./Enums.md) | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 1 | `1`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -3227,15 +3227,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3255,12 +3255,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3280,9 +3280,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3325,13 +3325,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3351,13 +3351,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -3377,13 +3377,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3403,8 +3403,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Specifies the ability used when this unit leaves the field. | 2 | `{ . . . }`<br>`CherubimLeave`<br>`LELeave` |
-| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Specifies the ability used when this unit returns to the field. | 2 | `{ . . . }`<br>`CherubimReturn`<br>`LEReturn` |
+| [`Leave`](./Engine_LogicKeys.md#object-leave) | Enum / Object  | Specifies the ability used when this unit leaves the field. | 2 | `{ . . . }`<br>`CherubimLeave`<br>`LELeave` |
+| [`Return`](./Engine_LogicKeys.md#object-return) | Enum / Object  | Specifies the ability used when this unit returns to the field. | 2 | `{ . . . }`<br>`CherubimReturn`<br>`LEReturn` |
 
 </details>
 
@@ -3427,7 +3427,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `odds` | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 37 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 28 | `passives`<br>`class`<br>`tag` |
-| [`FindItemFromPool`](./Enums.md) | Enum | Specifies the loot pool from which to find an item, with an optional chance. | 5 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 5 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 
 </details>
 
@@ -3448,12 +3448,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3494,7 +3494,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 | `instant` | `Boolean` | If true, the consumption happens immediately without a timer. | 1 | `true` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -3536,7 +3536,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3577,9 +3577,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3619,11 +3619,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3643,7 +3643,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3663,7 +3663,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 2 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 
 </details>
@@ -3684,11 +3684,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3708,7 +3708,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3749,7 +3749,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -3769,9 +3769,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](#object-cat) | Object | Defines the behavior and form change for captured cat units. | 2 | `{ . . . }` |
-| [`NonCat`](#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 2 | `{ . . . }` |
-| [`Nothing`](#object-nothing) | Object | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 2 | `{ . . . }` |
+| [`NonCat`](./Miscellaneous.md#object-noncat) | Object  | Defines the behavior and form change for captured non-cat units. | 2 | `{ . . . }` |
+| [`Nothing`](./Miscellaneous.md#object-nothing) | Object  | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3834,15 +3834,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move_speed_multiplier`](./Enums.md#enum-move_speed_multiplier) | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3862,9 +3862,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3884,8 +3884,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -3905,12 +3905,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3932,7 +3932,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 2 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3952,9 +3952,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3995,7 +3995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4036,10 +4036,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | The result of a jackpot roll that spawns coins, or the weight of that result in the pool. | 2 | `{ . . . }`<br>`1` |
-| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | The result of an explosion roll, or the weight of that result. | 1 | `{ . . . }`<br>`1` |
-| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | The result of a nothing roll, or the weight of that result. | 1 | `{ . . . }`<br>`7` |
-| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
+| [`SlotResult_Jackpot_Coins`](./Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object  | The result of a jackpot roll that spawns coins, or the weight of that result in the pool. | 2 | `{ . . . }`<br>`1` |
+| [`SlotResult_Explode`](./Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object  | The result of an explosion roll, or the weight of that result. | 1 | `{ . . . }`<br>`1` |
+| [`SlotResult_Nothing`](./Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object  | The result of a nothing roll, or the weight of that result. | 1 | `{ . . . }`<br>`7` |
+| [`SlotResult_RandomPickup`](./Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object  | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
 
 </details>
 
@@ -4059,7 +4059,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -4122,7 +4122,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 6 | `passives`<br>`class`<br>`tag` |
-| [`FindItemFromPool`](./Enums.md) | Enum | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`FindItemFromPool`](./Enums.md#enum-finditemfrompool) | Enum  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `blackbird_pool`<br>`chapter`<br>`chapter_common` |
 
 </details>
 
@@ -4164,7 +4164,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 38 | `passives`<br>`class`<br>`tag` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 14 | `Default`<br>`FormChange`<br>`Druid` | [`StrengthUp`](./Enums.md) | Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 4 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`ConstitutionUp`](./Enums.md) | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 3 | `-1`<br>`-2`<br>`1` |
-| [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object | An object specifying a status name and the number of stacks to remove from the target. | 1 | `{ . . . }` |
+| [`RemoveStatusStacks`](./Miscellaneous.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4185,7 +4185,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | `passives`<br>`class`<br>`tag` |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
+| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4226,8 +4226,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 2 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -4247,12 +4247,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 
 </details>
 
@@ -4272,13 +4272,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4299,12 +4299,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4424,18 +4424,18 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`StacyMutant_Brace`](#object-stacymutant_brace) | Object | A passive group granting the Brace ability and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Counter`](#object-stacymutant_counter) | Object | A passive group granting a counter attack and a bleed effect on basic attacks. | 1 | `{ . . . }` |
-| [`StacyMutant_Damage`](#object-stacymutant_damage) | Object | A passive group increasing damage and decreasing max health with cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_DoubleHead`](#object-stacymutant_doublehead) | Object | A passive group granting an extra dispersed turn and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Fire`](#object-stacymutant_fire) | Object | A passive group granting fire immunity and a lava shot basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Health`](#object-stacymutant_health) | Object | A passive group increasing max health, reducing speed, and scaling size. | 1 | `{ . . . }` |
-| [`StacyMutant_Holy`](#object-stacymutant_holy) | Object | A passive group granting a divine shield and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Ice`](#object-stacymutant_ice) | Object | A passive group granting ice immunity and an ice breath basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Lightning`](#object-stacymutant_lightning) | Object | A passive group granting electric immunity and a lightning dash basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Mirror`](#object-stacymutant_mirror) | Object | A passive group granting projectile reflection and random magic missile each turn. | 1 | `{ . . . }` |
-| [`StacyMutant_Speed`](#object-stacymutant_speed) | Object | A passive group increasing speed, reducing damage, and scaling size. | 1 | `{ . . . }` |
-| [`StacyMutant_Thorns`](#object-stacymutant_thorns) | Object | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Brace`](./Miscellaneous.md#object-stacymutant_brace) | Object  | A passive group granting the Brace ability and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Counter`](./Miscellaneous.md#object-stacymutant_counter) | Object  | A passive group granting a counter attack and a bleed effect on basic attacks. | 1 | `{ . . . }` |
+| [`StacyMutant_Damage`](./Miscellaneous.md#object-stacymutant_damage) | Object  | A passive group increasing damage and decreasing max health with cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_DoubleHead`](./Miscellaneous.md#object-stacymutant_doublehead) | Object  | A passive group granting an extra dispersed turn and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Fire`](./Miscellaneous.md#object-stacymutant_fire) | Object  | A passive group granting fire immunity and a lava shot basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Health`](./Miscellaneous.md#object-stacymutant_health) | Object  | A passive group increasing max health, reducing speed, and scaling size. | 1 | `{ . . . }` |
+| [`StacyMutant_Holy`](./Miscellaneous.md#object-stacymutant_holy) | Object  | A passive group granting a divine shield and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Ice`](./Miscellaneous.md#object-stacymutant_ice) | Object  | A passive group granting ice immunity and an ice breath basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Lightning`](./Miscellaneous.md#object-stacymutant_lightning) | Object  | A passive group granting electric immunity and a lightning dash basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Mirror`](./Miscellaneous.md#object-stacymutant_mirror) | Object  | A passive group granting projectile reflection and random magic missile each turn. | 1 | `{ . . . }` |
+| [`StacyMutant_Speed`](./Miscellaneous.md#object-stacymutant_speed) | Object  | A passive group increasing speed, reducing damage, and scaling size. | 1 | `{ . . . }` |
+| [`StacyMutant_Thorns`](./Miscellaneous.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4478,7 +4478,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`brain`](./Enums.md#enum-brain) | Enum | Specifies the AI brain type used for decision-making logic. | 1 | `DicerBrain`<br>`GenericBrain`<br>`MountBrain` |
 | [`decision_weights`](./Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 1 | `always_cast`<br>`always_cast_careless`<br>`angry` |
 | [`move_weights`](./Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 1 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
-| [`pattern`](#object-pattern) | Object | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 1 | `{ . . . }` |
+| [`pattern`](./Miscellaneous.md#object-pattern) | Object  | Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4498,10 +4498,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4543,7 +4543,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4608,10 +4608,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4631,9 +4631,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4653,9 +4653,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4675,10 +4675,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4722,13 +4722,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4898,7 +4898,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`new_music`](./Enums.md#enum-new_music) | Enum | Specifies the music track to play during the boss's head drop-in animation. | 1 | `chaos_boss_part2` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -4918,11 +4918,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4943,7 +4943,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5006,9 +5006,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `RemoveKnockback` | `Number` | The number of knockback stacks removed from the received damage. | 1 | `1` |
-| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
+| [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -5030,9 +5030,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `RemoveKnockback` | `Number` | The number of knockback stacks removed from the received damage. | 1 | `1` |
-| [`TempPassiveUntilSettled`](#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
+| [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` |
 
@@ -5075,7 +5075,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Global Modifier Keys}`](./Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | Inherits game-wide rule modifiers. You can utilize any key from the Engine Global Modifier Keys list here to alter overarching game mechanics (e.g., changing gravity or stamina costs). | 5 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
 | `BloodRain` | `Number` | If non-zero, enables the blood rain visual effect. | 3 | `1` |
-| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
+| [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 3 | `{ . . . }` |
 
 </details>
 
@@ -5095,7 +5095,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5115,9 +5115,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -5136,9 +5136,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -5178,7 +5178,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5219,8 +5219,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -5299,13 +5299,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5325,13 +5325,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Number | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5351,9 +5351,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5395,8 +5395,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 1 | `true` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 | `makes_contact` | `Boolean` | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 1 | `false`<br>`true` |
 | `piercing` | `Boolean` | If true, the damage instance ignores armor or damage reduction effects on the target. | 1 | `true` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
@@ -5421,8 +5421,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 23 | `Default`<br>`FormChange`<br>`Druid` |
-| [`Conditional_HasKnockback`](#object-conditional_hasknockback) | Object | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`Conditional_HasKnockback`](./Miscellaneous.md#object-conditional_hasknockback) | Object  | An object containing actions that execute if the incoming damage has knockback. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5442,7 +5442,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Default`](#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
 
 </details>
 
@@ -5462,12 +5462,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5509,12 +5509,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5558,7 +5558,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`GlobalSpawnCharacter`](./Engine_LogicKeys.md#valid-property-keys) | `String` | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `PlayBackground` | `Number` | Specifies the background index to play. | 1 | `0`<br>`1` |
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 1 | `{ . . . }` |
+| [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 1 | `{ . . . }` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -5583,7 +5583,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -5607,7 +5607,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -5649,7 +5649,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `radius` | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
+| [`radius`](./Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 1 | `0`<br>`1`<br>`13` |
 | [`reset_center_because_no_target_halflife`](./Enums.md#enum-reset_center_because_no_target_halflife) | Number | The half-life for the pupil position to reset to center when no target is available. | 1 | `.1` |
 | [`reset_center_because_of_animation_halflife`](./Enums.md#enum-reset_center_because_of_animation_halflife) | Number | The half-life for the pupil position to reset to center during an animation. | 1 | `.05` |
 | [`teleport_tracking_halflife`](./Enums.md#enum-teleport_tracking_halflife) | Number | The half-life for the pupil tracking to reacquire a target after a teleport. | 1 | `.01` |
@@ -5697,7 +5697,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`other_character`](./Enums.md#enum-other_character) | Enum | Specifies the name of the other boss character whose animations are synced. | 1 | `MegaGuppy` |
-| [`other_form_change_abilities`](#object-other_form_change_abilities) | Object | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
+| [`other_form_change_abilities`](./Miscellaneous.md#object-other_form_change_abilities) | Object  | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5717,10 +5717,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5740,10 +5740,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5763,9 +5763,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5785,10 +5785,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5808,9 +5808,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5873,7 +5873,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
 
@@ -5893,7 +5893,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit_animations`](#object-exit_animations) | Object | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
+| [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
@@ -5914,14 +5914,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 1 | `0`<br>`1`<br>`15` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5960,10 +5960,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5983,11 +5983,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6007,11 +6007,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6031,8 +6031,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -6053,10 +6053,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6097,7 +6097,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6117,7 +6117,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6137,7 +6137,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6158,9 +6158,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`threshold`](./Enums.md) | Enum / Integer | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -6203,7 +6203,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
 
@@ -6245,12 +6245,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6270,11 +6270,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6294,11 +6294,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6318,9 +6318,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6340,10 +6340,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6384,9 +6384,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6406,9 +6406,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6449,12 +6449,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6476,7 +6476,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6496,7 +6496,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `speed` | Array / Number | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
+| [`speed`](./Arrays.md#array-speed) | Array / Number  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
 | [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
 
 </details>
@@ -6585,7 +6585,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eat_damage`](#object-eat_damage) | Object | An object defining the damage properties of the eat attack. | 1 | `{ . . . }` |
+| [`eat_damage`](./Miscellaneous.md#object-eat_damage) | Object  | An object defining the damage properties of the eat attack. | 1 | `{ . . . }` |
 | [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Specifies the name of the tumor object to spawn. | 1 | `MotherTumor` |
 
 </details>
@@ -6606,9 +6606,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](#object-cat) | Object | Defines the behavior and form change for captured cat units. | 1 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 1 | `{ . . . }` |
 | [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | Specifies the ability used by the tumor to grow. | 1 | `MotherTumorGrow` |
-| [`NonCat`](#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 1 | `{ . . . }` |
+| [`NonCat`](./Miscellaneous.md#object-noncat) | Object  | Defines the behavior and form change for captured non-cat units. | 1 | `{ . . . }` |
 | [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | Specifies the animation played when passing something to the tumor. | 1 | `pass` |
 | [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | Specifies the animation played when receiving something from the tumor. | 1 | `receive` |
 | [`considered_forms`](./Arrays.md#array-considered_forms) | Array | An array of form names the tumor considers for interaction. | 1 | `[Big BigHolding BigHoldingCat]` |
@@ -6652,7 +6652,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6672,10 +6672,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6695,7 +6695,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -6737,7 +6737,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 | `once_per_turn` | Boolean | If true, the movement away can only trigger once per turn. | 1 | `true` |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -6954,7 +6954,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 1 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 1 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
@@ -6996,7 +6996,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7016,11 +7016,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7040,7 +7040,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
 </details>
@@ -7081,9 +7081,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7123,8 +7123,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -7143,9 +7143,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7165,11 +7165,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7191,7 +7191,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7211,9 +7211,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Boris`](#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
-| [`Explosive`](#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
-| [`Holy`](#object-holy) | Enum / Object | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
+| [`Boris`](./Miscellaneous.md#object-boris) | Enum / Object  | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
+| [`Explosive`](./Miscellaneous.md#object-explosive) | Enum / Object  | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| [`Holy`](./Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
 
 </details>
 
@@ -7234,7 +7234,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7254,9 +7254,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 18 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 18 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 18 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 18 | `{ . . . }` |
 
 </details>
 
@@ -7295,10 +7295,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7318,11 +7318,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7342,14 +7342,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7369,14 +7369,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7396,14 +7396,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7423,14 +7423,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7450,14 +7450,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7477,14 +7477,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `animation_suffix` | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`tooltip`](./Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7505,7 +7505,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 33 | `passives`<br>`class`<br>`tag` |
-| [`StatusGroup`](Abilities_and_Spells.md#object-statusgroup) | Object | A container grouping multiple status effects to be applied simultaneously. | 3 | `{ . . . }` |
+| [`StatusGroup`](./Passives_and_Statuses.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. | 3 | `{ . . . }` |
 
 </details>
 
@@ -7546,9 +7546,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 8 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 8 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 3 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -7708,7 +7708,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 1 | `{ . . . }`<br>`bite1` |
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
@@ -7749,13 +7749,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7796,9 +7796,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7818,9 +7818,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7840,9 +7840,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -7862,12 +7862,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Fire`](#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 1 | `{ . . . }`<br>`1` |
-| [`FireFull`](#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
-| [`Normal`](#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 1 | `{ . . . }`<br>`0` |
-| [`NormalFull`](#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
-| [`Tar`](#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`TarFull`](#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`Fire`](./Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 1 | `{ . . . }`<br>`1` |
+| [`FireFull`](./Miscellaneous.md#object-firefull) | Integer / Object  | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 1 | `{ . . . }`<br>`0` |
+| [`NormalFull`](./Miscellaneous.md#object-normalfull) | Integer / Object  | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
+| [`Tar`](./Miscellaneous.md#object-tar) | Integer / Object  | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
 
 </details>
 
@@ -7889,7 +7889,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`Brace`](./Enums.md) | Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -7909,9 +7909,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`CounterAttack`](Cat_Mutations.md#object-counterattack) | Array / Enum / Object | Specifies the ability used when the unit counterattacks after being hit. | 1 | `{ . . . }`<br>`BungaSwipe`<br>`CloakerHex`<br>`CollectiveCounter` |
+| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CounterAttack`](./Passives_and_Statuses.md#object-counterattack) | Array / Enum / Object  | Specifies the ability used when the unit counterattacks after being hit. | 1 | `{ . . . }`<br>`BungaSwipe`<br>`CloakerHex`<br>`CollectiveCounter` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -7933,7 +7933,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`AddDamage`](./Enums.md) | Integer | The amount of damage added to all attacks. Negative values reduce damage. | 1 | `-1`<br>`1`<br>`2` |
 | [`AddMaxHealth`](./Enums.md) | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 1 | `-25`<br>`10`<br>`2` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -7953,7 +7953,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [`ExtraDispersedTurns`](./Enums.md) | Integer | The number of additional or fewer turns in the dispersed turn order. | 1 | `-1`<br>`1` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -7974,10 +7974,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`ElementImmune`](./Enums.md) | Enum | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
-| [`ReplaceBrain`](#object-replacebrain) | Object | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
+| [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -7999,7 +7999,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`AddMaxHealth`](./Enums.md) | Integer | The amount added to the unit's maximum health. Negative values reduce max health. | 1 | `-25`<br>`10`<br>`2` |
 | [`AddSpeed`](./Enums.md) | Integer | The amount of speed added (or subtracted) to the unit. | 1 | `-3`<br>`4`<br>`6` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [`SizeScale`](./Enums.md) | Number | The multiplier applied to the unit's visual and hitbox size. | 1 | `.4`<br>`.6`<br>`.7` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -8020,7 +8020,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [`DivineShield`](./Enums.md) | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -8042,10 +8042,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`AddMovement`](./Enums.md) | Integer | The amount of bonus movement points added to the unit's base movement. | 1 | `-1`<br>`-2`<br>`1` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`ElementImmune`](./Enums.md) | Enum | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
-| [`ReplaceBrain`](#object-replacebrain) | Object | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
+| [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -8065,10 +8065,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`ElementImmune`](./Enums.md) | Enum | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
-| [`ReplaceBasicAttack`](./Enums.md) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
-| [`ReplaceBrain`](#object-replacebrain) | Object | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`ElementImmune`](./Enums.md#enum-elementimmune) | Enum  | Specifies an element type (e.g., Fire, Ice) that the unit is immune to damage from. | 1 | `Creep`<br>`Electric`<br>`Fire` |
+| [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum  | Specifies the ability ID that replaces the unit's basic attack. | 1 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
+| [`ReplaceBrain`](./Passives_and_Statuses.md#object-replacebrain) | Object  | Defines a replacement AI brain and behavior pattern for the mutant. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -8088,9 +8088,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
-| [`ReflectProjectiles`](#object-reflectprojectiles) | Integer / Object | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 1 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
-| [`StatusEachTurnEndForEachTurn`](#object-statuseachturnendforeachturn) | Object | Statuses applied at the end of each turn, with the number of turns as nested values. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`ReflectProjectiles`](./Passives_and_Statuses.md#object-reflectprojectiles) | Integer / Object  | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 1 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
+| [`StatusEachTurnEndForEachTurn`](./Passives_and_Statuses.md#object-statuseachturnendforeachturn) | Object  | Statuses applied at the end of each turn, with the number of turns as nested values. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -8112,7 +8112,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
 | [`AddDamage`](./Enums.md) | Integer | The amount of damage added to all attacks. Negative values reduce damage. | 1 | `-1`<br>`1`<br>`2` |
 | [`AddSpeed`](./Enums.md) | Integer | The amount of speed added (or subtracted) to the unit. | 1 | `-3`<br>`4`<br>`6` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [`SizeScale`](./Enums.md) | Number | The multiplier applied to the unit's visual and hitbox size. | 1 | `.4`<br>`.6`<br>`.7` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -8133,7 +8133,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`CatPartsTransform`](Abilities_and_Spells.md#object-catpartstransform) | Object | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | [`Thorns`](./Enums.md) | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
@@ -8153,12 +8153,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8178,12 +8178,12 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](./Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
-| [`turns`](#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8204,7 +8204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8226,7 +8226,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag` |
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -8293,7 +8293,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`ForceUseAbility`](#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -8315,7 +8315,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 9 | `passives`<br>`class`<br>`tag` |
 | [`RemoveAmbientLightEffects`](./Enums.md) | Integer | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
-| [`RemoveGlobalModifiers`](./Enums.md) | Array | List of global modifier names to remove upon death. | 1 | `[BloodRain]` |
+| [`RemoveGlobalModifiers`](./Arrays.md#array-removeglobalmodifiers) | Array  | List of global modifier names to remove upon death. | 1 | `[BloodRain]` |
 
 </details>
 
@@ -8374,7 +8374,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | `passives`<br>`class`<br>`tag` |
-| [`BackflipWhenTargeted`](Abilities_and_Spells.md#object-backflipwhentargeted) | Object | The number of backflip charges, or an object defining its ability. | 1 | `{ . . . }` |
+| [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Object  | The number of backflip charges, or an object defining its ability. | 1 | `{ . . . }` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -8416,7 +8416,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 | [{Logic Keys}](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` </details>
 
 ---
@@ -8435,9 +8435,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8542,10 +8542,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8565,11 +8565,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8629,10 +8629,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8652,11 +8652,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8781,7 +8781,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8801,9 +8801,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8823,10 +8823,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8846,9 +8846,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8868,8 +8868,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` </details>
 
 ---
@@ -8888,10 +8888,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`threshold`](./Enums.md) | Enum / Integer | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -8912,11 +8912,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `Die` | `Number` | If set, kills the target immediately. | 1 | `1`<br>`6` |
-| [`Dumb`](#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
+| [`Dumb`](./Miscellaneous.md#object-dumb) | Integer / Object  | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
 | `Fuck` | Integer | The number of times the TV bot screen displays the 'Fuck' message. | 1 | `5` |
-| [`Obey`](#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
+| [`Obey`](./Miscellaneous.md#object-obey) | Integer / Object  | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
 | `Shit` | Integer | The number of times the TV bot screen displays the 'Shit' message. | 1 | `4` |
-| [`Stop`](#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
+| [`Stop`](./Miscellaneous.md#object-stop) | Integer / Object  | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` |
 
 </details>
@@ -8937,7 +8937,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 1 | `2`<br>`20`<br>`3` |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 | `2`<br>`3`<br>`4` |
 
@@ -9023,7 +9023,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -9043,7 +9043,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
 </details>
@@ -9106,9 +9106,9 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -9128,13 +9128,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`partial_animation_suffix`](./Strings.md#string-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -9154,13 +9154,13 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ai`](#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](./Strings.md#string-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`animation_suffix`](./Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`name`](./Strings.md#string-name) | Enum | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](./Strings.md#string-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](./Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](./Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
 </details>
 

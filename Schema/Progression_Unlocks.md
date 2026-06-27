@@ -19,7 +19,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 664 | `common`<br>`rare`<br>`cha` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 291 | `Default`<br>`FormChange`<br>`Druid` |
-| [`popup`](Miscellaneous.md#object-popup) | Object || 266 | `{ . . . }` |
+| [`popup`](./Progression_Unlocks.md#object-popup) | Object  || 266 | `{ . . . }` |
 | [`intro`](./Arrays.md#array-intro) | Array | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 | `[PersuasionDevice]` |
 | [`complete_chapter_with_class`](./Arrays.md#array-complete_chapter_with_class) | Array || 129 | `[boneyard Butcher]`<br>`[boneyard Colorless]`<br>`[boneyard Druid]` |
 | [`unlock_item_immediate`](./Enums.md#enum-unlock_item_immediate) | Enum || 127 | `AnointingOil`<br>`BagOfBags`<br>`BagOfSeeds` |
@@ -53,83 +53,83 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`requires_unlocked_npc`](./Enums.md#enum-requires_unlocked_npc) | Enum || 3 | `frank`<br>`jack`<br>`tracy` |
 | [`complete_chapters`](./Arrays.md#array-complete_chapters) | Array || 3 | `[caves boneyard]`<br>`[core moon]` |
 | [`reset_npc_sequence`](./Enums.md#enum-reset_npc_sequence) | Enum || 2 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_begin` |
-| [`beanies_quests_intro`](Miscellaneous.md#object-beanies_quests_intro) | Object || 2 | `{ . . . }` |
-| [`beanies_quests_repeat`](Miscellaneous.md#object-beanies_quests_repeat) | Object || 2 | `{ . . . }` |
+| [`beanies_quests_intro`](./Progression_Unlocks.md#object-beanies_quests_intro) | Object  || 2 | `{ . . . }` |
+| [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat) | Object  || 2 | `{ . . . }` |
 | [`complete_adventure`](./Enums.md#enum-complete_adventure) | Enum || 2 | `anywhere` |
-| [`frank_max_intro`](Miscellaneous.md#object-frank_max_intro) | Object || 2 | `{ . . . }` |
-| [`frank_max_repeating`](Miscellaneous.md#object-frank_max_repeating) | Object || 2 | `{ . . . }` |
-| [`house_upgrade_4throom`](Miscellaneous.md#object-house_upgrade_4throom) | Object || 2 | `{ . . . }` |
-| [`house_upgrade_attic`](Miscellaneous.md#object-house_upgrade_attic) | Object || 2 | `{ . . . }` |
-| [`house_upgrade_largehouse`](Miscellaneous.md#object-house_upgrade_largehouse) | Object || 2 | `{ . . . }` |
-| [`house_upgrade_mediumhouse`](Miscellaneous.md#object-house_upgrade_mediumhouse) | Object || 2 | `{ . . . }` |
-| [`jack_max_intro`](Miscellaneous.md#object-jack_max_intro) | Object || 2 | `{ . . . }` |
-| [`jack_max_repeating`](Miscellaneous.md#object-jack_max_repeating) | Object || 2 | `{ . . . }` |
-| [`jack_shopupgrade1`](Miscellaneous.md#object-jack_shopupgrade1) | Object || 2 | `{ . . . }` |
-| [`jack_shopupgrade2`](Miscellaneous.md#object-jack_shopupgrade2) | Object || 2 | `{ . . . }` |
-| [`jack_shopupgrade3`](Miscellaneous.md#object-jack_shopupgrade3) | Object || 2 | `{ . . . }` |
-| [`jack_shopupgrade4`](Miscellaneous.md#object-jack_shopupgrade4) | Object || 2 | `{ . . . }` |
-| [`organ_max_intro`](Miscellaneous.md#object-organ_max_intro) | Object || 2 | `{ . . . }` |
-| [`organ_max_repeating`](Miscellaneous.md#object-organ_max_repeating) | Object || 2 | `{ . . . }` |
-| [`organ_unlock`](Miscellaneous.md#object-organ_unlock) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade1`](Miscellaneous.md#object-organ_upgrade1) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade2`](Miscellaneous.md#object-organ_upgrade2) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade3`](Miscellaneous.md#object-organ_upgrade3) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade4`](Miscellaneous.md#object-organ_upgrade4) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade5`](Miscellaneous.md#object-organ_upgrade5) | Object || 2 | `{ . . . }` |
-| [`organ_upgrade6`](Miscellaneous.md#object-organ_upgrade6) | Object || 2 | `{ . . . }` |
+| [`frank_max_intro`](./Progression_Unlocks.md#object-frank_max_intro) | Object  || 2 | `{ . . . }` |
+| [`frank_max_repeating`](./Progression_Unlocks.md#object-frank_max_repeating) | Object  || 2 | `{ . . . }` |
+| [`house_upgrade_4throom`](./Progression_Unlocks.md#object-house_upgrade_4throom) | Object  || 2 | `{ . . . }` |
+| [`house_upgrade_attic`](./Progression_Unlocks.md#object-house_upgrade_attic) | Object  || 2 | `{ . . . }` |
+| [`house_upgrade_largehouse`](./Progression_Unlocks.md#object-house_upgrade_largehouse) | Object  || 2 | `{ . . . }` |
+| [`house_upgrade_mediumhouse`](./Progression_Unlocks.md#object-house_upgrade_mediumhouse) | Object  || 2 | `{ . . . }` |
+| [`jack_max_intro`](./Progression_Unlocks.md#object-jack_max_intro) | Object  || 2 | `{ . . . }` |
+| [`jack_max_repeating`](./Progression_Unlocks.md#object-jack_max_repeating) | Object  || 2 | `{ . . . }` |
+| [`jack_shopupgrade1`](./Progression_Unlocks.md#object-jack_shopupgrade1) | Object  || 2 | `{ . . . }` |
+| [`jack_shopupgrade2`](./Progression_Unlocks.md#object-jack_shopupgrade2) | Object  || 2 | `{ . . . }` |
+| [`jack_shopupgrade3`](./Progression_Unlocks.md#object-jack_shopupgrade3) | Object  || 2 | `{ . . . }` |
+| [`jack_shopupgrade4`](./Progression_Unlocks.md#object-jack_shopupgrade4) | Object  || 2 | `{ . . . }` |
+| [`organ_max_intro`](./Progression_Unlocks.md#object-organ_max_intro) | Object  || 2 | `{ . . . }` |
+| [`organ_max_repeating`](./Progression_Unlocks.md#object-organ_max_repeating) | Object  || 2 | `{ . . . }` |
+| [`organ_unlock`](./Progression_Unlocks.md#object-organ_unlock) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade1`](./Progression_Unlocks.md#object-organ_upgrade1) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade2`](./Progression_Unlocks.md#object-organ_upgrade2) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade3`](./Progression_Unlocks.md#object-organ_upgrade3) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade4`](./Progression_Unlocks.md#object-organ_upgrade4) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade5`](./Progression_Unlocks.md#object-organ_upgrade5) | Object  || 2 | `{ . . . }` |
+| [`organ_upgrade6`](./Progression_Unlocks.md#object-organ_upgrade6) | Object  || 2 | `{ . . . }` |
 | [`require_beat_house_boss`](./Enums.md#enum-require_beat_house_boss) | Enum || 2 | `pyrophina`<br>`zaratana` |
 | [`require_mapgen_flag`](./Enums.md#enum-require_mapgen_flag) | Enum || 2 | `CoreObeliskUnlocked`<br>`MoonObeliskUnlocked` |
-| [`steven_milliontrashed`](Miscellaneous.md#object-steven_milliontrashed) | Object || 2 | `{ . . . }` |
+| [`steven_milliontrashed`](./Progression_Unlocks.md#object-steven_milliontrashed) | Object  || 2 | `{ . . . }` |
 | [`surviving_kaiju`](./Enums.md#enum-surviving_kaiju) | Enum || 2 | `pyrophina`<br>`zaratana` |
-| [`tink_aggression`](Miscellaneous.md#object-tink_aggression) | Object || 2 | `{ . . . }` |
-| [`tink_basestats`](Miscellaneous.md#object-tink_basestats) | Object || 2 | `{ . . . }` |
-| [`tink_inbreeding`](Miscellaneous.md#object-tink_inbreeding) | Object || 2 | `{ . . . }` |
-| [`tink_max_intro`](Miscellaneous.md#object-tink_max_intro) | Object || 2 | `{ . . . }` |
-| [`tink_max_repeating`](Miscellaneous.md#object-tink_max_repeating) | Object || 2 | `{ . . . }` |
-| [`tink_prettybow`](Miscellaneous.md#object-tink_prettybow) | Object || 2 | `{ . . . }` |
-| [`tink_relationships`](Miscellaneous.md#object-tink_relationships) | Object || 2 | `{ . . . }` |
-| [`tink_sexuality`](Miscellaneous.md#object-tink_sexuality) | Object || 2 | `{ . . . }` |
-| [`tink_tags`](Miscellaneous.md#object-tink_tags) | Object || 2 | `{ . . . }` |
-| [`tracy_blankcollar1`](Miscellaneous.md#object-tracy_blankcollar1) | Object || 2 | `{ . . . }` |
-| [`tracy_blankcollar2`](Miscellaneous.md#object-tracy_blankcollar2) | Object || 2 | `{ . . . }` |
-| [`tracy_blankcollar3`](Miscellaneous.md#object-tracy_blankcollar3) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage1`](Miscellaneous.md#object-tracy_foodstorage1) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage10`](Miscellaneous.md#object-tracy_foodstorage10) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage2`](Miscellaneous.md#object-tracy_foodstorage2) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage3`](Miscellaneous.md#object-tracy_foodstorage3) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage4`](Miscellaneous.md#object-tracy_foodstorage4) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage5`](Miscellaneous.md#object-tracy_foodstorage5) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage6`](Miscellaneous.md#object-tracy_foodstorage6) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage7`](Miscellaneous.md#object-tracy_foodstorage7) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage8`](Miscellaneous.md#object-tracy_foodstorage8) | Object || 2 | `{ . . . }` |
-| [`tracy_foodstorage9`](Miscellaneous.md#object-tracy_foodstorage9) | Object || 2 | `{ . . . }` |
-| [`tracy_idol1`](Miscellaneous.md#object-tracy_idol1) | Object || 2 | `{ . . . }` |
-| [`tracy_idol2`](Miscellaneous.md#object-tracy_idol2) | Object || 2 | `{ . . . }` |
-| [`tracy_idol3`](Miscellaneous.md#object-tracy_idol3) | Object || 2 | `{ . . . }` |
-| [`tracy_idol4`](Miscellaneous.md#object-tracy_idol4) | Object || 2 | `{ . . . }` |
-| [`tracy_idol5`](Miscellaneous.md#object-tracy_idol5) | Object || 2 | `{ . . . }` |
-| [`tracy_idol6`](Miscellaneous.md#object-tracy_idol6) | Object || 2 | `{ . . . }` |
-| [`tracy_idol7`](Miscellaneous.md#object-tracy_idol7) | Object || 2 | `{ . . . }` |
-| [`tracy_max_intro`](Miscellaneous.md#object-tracy_max_intro) | Object || 2 | `{ . . . }` |
-| [`tracy_max_repeating`](Miscellaneous.md#object-tracy_max_repeating) | Object || 2 | `{ . . . }` |
+| [`tink_aggression`](./Progression_Unlocks.md#object-tink_aggression) | Object  || 2 | `{ . . . }` |
+| [`tink_basestats`](./Progression_Unlocks.md#object-tink_basestats) | Object  || 2 | `{ . . . }` |
+| [`tink_inbreeding`](./Progression_Unlocks.md#object-tink_inbreeding) | Object  || 2 | `{ . . . }` |
+| [`tink_max_intro`](./Progression_Unlocks.md#object-tink_max_intro) | Object  || 2 | `{ . . . }` |
+| [`tink_max_repeating`](./Progression_Unlocks.md#object-tink_max_repeating) | Object  || 2 | `{ . . . }` |
+| [`tink_prettybow`](./Progression_Unlocks.md#object-tink_prettybow) | Object  || 2 | `{ . . . }` |
+| [`tink_relationships`](./Progression_Unlocks.md#object-tink_relationships) | Object  || 2 | `{ . . . }` |
+| [`tink_sexuality`](./Progression_Unlocks.md#object-tink_sexuality) | Object  || 2 | `{ . . . }` |
+| [`tink_tags`](./Progression_Unlocks.md#object-tink_tags) | Object  || 2 | `{ . . . }` |
+| [`tracy_blankcollar1`](./Progression_Unlocks.md#object-tracy_blankcollar1) | Object  || 2 | `{ . . . }` |
+| [`tracy_blankcollar2`](./Progression_Unlocks.md#object-tracy_blankcollar2) | Object  || 2 | `{ . . . }` |
+| [`tracy_blankcollar3`](./Progression_Unlocks.md#object-tracy_blankcollar3) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage1`](./Progression_Unlocks.md#object-tracy_foodstorage1) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage10`](./Progression_Unlocks.md#object-tracy_foodstorage10) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage2`](./Progression_Unlocks.md#object-tracy_foodstorage2) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage3`](./Progression_Unlocks.md#object-tracy_foodstorage3) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage4`](./Progression_Unlocks.md#object-tracy_foodstorage4) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage5`](./Progression_Unlocks.md#object-tracy_foodstorage5) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage6`](./Progression_Unlocks.md#object-tracy_foodstorage6) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage7`](./Progression_Unlocks.md#object-tracy_foodstorage7) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage8`](./Progression_Unlocks.md#object-tracy_foodstorage8) | Object  || 2 | `{ . . . }` |
+| [`tracy_foodstorage9`](./Progression_Unlocks.md#object-tracy_foodstorage9) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol1`](./Progression_Unlocks.md#object-tracy_idol1) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol2`](./Progression_Unlocks.md#object-tracy_idol2) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol3`](./Progression_Unlocks.md#object-tracy_idol3) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol4`](./Progression_Unlocks.md#object-tracy_idol4) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol5`](./Progression_Unlocks.md#object-tracy_idol5) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol6`](./Progression_Unlocks.md#object-tracy_idol6) | Object  || 2 | `{ . . . }` |
+| [`tracy_idol7`](./Progression_Unlocks.md#object-tracy_idol7) | Object  || 2 | `{ . . . }` |
+| [`tracy_max_intro`](./Progression_Unlocks.md#object-tracy_max_intro) | Object  || 2 | `{ . . . }` |
+| [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating) | Object  || 2 | `{ . . . }` |
 | [`unlock_levelgroup`](./Enums.md#enum-unlock_levelgroup) | Enum || 2 | `bigsharklevels` |
-| [`upgrade_storage_1`](Miscellaneous.md#object-upgrade_storage_1) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_2`](Miscellaneous.md#object-upgrade_storage_2) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_3`](Miscellaneous.md#object-upgrade_storage_3) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_4`](Miscellaneous.md#object-upgrade_storage_4) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_5`](Miscellaneous.md#object-upgrade_storage_5) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_6`](Miscellaneous.md#object-upgrade_storage_6) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_7`](Miscellaneous.md#object-upgrade_storage_7) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_crazy`](Miscellaneous.md#object-upgrade_storage_repeating_crazy) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_hard`](Miscellaneous.md#object-upgrade_storage_repeating_hard) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_impossible`](Miscellaneous.md#object-upgrade_storage_repeating_impossible) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_intro`](Miscellaneous.md#object-upgrade_storage_repeating_intro) | Object || 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_normal`](Miscellaneous.md#object-upgrade_storage_repeating_normal) | Object || 2 | `{ . . . }` |
-| [`destinations`](Miscellaneous.md#object-destinations) | Object || 1 | `{ . . . }` |
+| [`upgrade_storage_1`](./Progression_Unlocks.md#object-upgrade_storage_1) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_2`](./Progression_Unlocks.md#object-upgrade_storage_2) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_3`](./Progression_Unlocks.md#object-upgrade_storage_3) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_4`](./Progression_Unlocks.md#object-upgrade_storage_4) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_5`](./Progression_Unlocks.md#object-upgrade_storage_5) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_6`](./Progression_Unlocks.md#object-upgrade_storage_6) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_7`](./Progression_Unlocks.md#object-upgrade_storage_7) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_crazy`](./Progression_Unlocks.md#object-upgrade_storage_repeating_crazy) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_hard`](./Progression_Unlocks.md#object-upgrade_storage_repeating_hard) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_impossible`](./Progression_Unlocks.md#object-upgrade_storage_repeating_impossible) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_intro`](./Progression_Unlocks.md#object-upgrade_storage_repeating_intro) | Object  || 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_normal`](./Progression_Unlocks.md#object-upgrade_storage_repeating_normal) | Object  || 2 | `{ . . . }` |
+| [`destinations`](./Progression_Unlocks.md#object-destinations) | Object  || 1 | `{ . . . }` |
 | [`fail_adventure`](./Enums.md#enum-fail_adventure) | Enum || 1 | `anywhere` |
 | [`finish_quest`](./Enums.md#enum-finish_quest) | Enum || 1 | `JarOfChaos` |
 | [`increment_savefile_counter`](./Enums.md#enum-increment_savefile_counter) | String || 1 | `GameStat_CountNukeQuestCompletions` |
-| [`prereqs`](Miscellaneous.md#object-prereqs) | Object || 1 | `{ . . . }` |
+| [`prereqs`](./Progression_Unlocks.md#object-prereqs) | Object  || 1 | `{ . . . }` |
 | `requires_hard_path` | Boolean || 1 | `true` |
 | [`reset_unlock`](./Enums.md#enum-reset_unlock) | Enum || 1 | `nuke_quest_begin` |
 | [`unlock_item`](./Enums.md#enum-unlock_item) | Enum || 1 | `MomsKnife` |
@@ -175,7 +175,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 22 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 22 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 22 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
@@ -940,7 +940,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -964,7 +964,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -988,7 +988,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1012,7 +1012,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1036,7 +1036,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1060,7 +1060,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1084,7 +1084,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1108,7 +1108,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1132,7 +1132,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1156,7 +1156,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1180,7 +1180,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1204,7 +1204,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1252,7 +1252,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1276,7 +1276,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1300,7 +1300,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1324,7 +1324,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1348,7 +1348,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1372,7 +1372,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1396,7 +1396,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | `shop_level_up` | Integer || 1 | `1` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1420,7 +1420,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`level_display`](./Enums.md#enum-level_display) | Enum || 1 | `max` |
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -1445,7 +1445,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`repeat`](./Enums.md#enum-repeat) | Enum || 1 | `1`<br>`2`<br>`20` |
 | `required_age` | Integer || 1 | `5` |
 | [`reward_text`](./Strings.md#string-reward_text) | String || 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](Miscellaneous.md#object-tracy_special_item) | Object || 1 | `{ . . . }` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object  || 1 | `{ . . . }` |
 
 </details>
 

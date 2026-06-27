@@ -23,35 +23,35 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | [`ambient_sound`](./Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`hint_persistent_elements`](./Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 | `height` | Integer | The height in tiles the target is launched into the air. | 8 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 | `{ . . . }` |
-| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 8 | `{ . . . }` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 8 | `{ . . . }` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](./Enums.md#enum-preset) | Enum || 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 | [`n`](./Arrays.md#array-n) | Array || 2 | `[-1 -2]`<br>`[1 -2]` |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object || 1 | `{ . . . }`<br>`release` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  || 1 | `{ . . . }`<br>`release` |
 | `volume_adjustment` | Float || 1 | `1.3`<br>`1.35`<br>`1.5` |
-| [`BasementUpgrade`](Engine_LogicKeys.md#object-basementupgrade) | Object || 1 | `{ . . . }` |
-| [`BasementUpgrade2`](Engine_LogicKeys.md#object-basementupgrade2) | Object || 1 | `{ . . . }` |
-| [`BasementUpgrade3`](Engine_LogicKeys.md#object-basementupgrade3) | Object || 1 | `{ . . . }` |
-| [`BasementUpgrade4`](Engine_LogicKeys.md#object-basementupgrade4) | Object || 1 | `{ . . . }` |
-| [`BasementUpgrade5`](Engine_LogicKeys.md#object-basementupgrade5) | Object || 1 | `{ . . . }` |
-| [`Floor1_Large`](Engine_LogicKeys.md#object-floor1_large) | Object || 1 | `{ . . . }` |
-| [`Floor1_Small`](Engine_LogicKeys.md#object-floor1_small) | Object || 1 | `{ . . . }` |
-| [`House1`](Engine_LogicKeys.md#object-house1) | Object || 1 | `{ . . . }` |
-| [`House2`](Engine_LogicKeys.md#object-house2) | Object || 1 | `{ . . . }` |
-| [`House3`](Engine_LogicKeys.md#object-house3) | Object || 1 | `{ . . . }` |
-| [`LargeHouse`](Engine_LogicKeys.md#object-largehouse) | Object || 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Large`](Engine_LogicKeys.md#object-largehouse_floor2large) | Object || 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Small`](Engine_LogicKeys.md#object-largehouse_floor2small) | Object || 1 | `{ . . . }` |
-| [`MediumHouse`](Engine_LogicKeys.md#object-mediumhouse) | Object || 1 | `{ . . . }` |
-| [`MediumHouse_SmallRoom`](Engine_LogicKeys.md#object-mediumhouse_smallroom) | Object || 1 | `{ . . . }` |
-| [`SmallAttic`](Engine_LogicKeys.md#object-smallattic) | Object || 1 | `{ . . . }` |
-| [`SmallHouse_Attic`](Engine_LogicKeys.md#object-smallhouse_attic) | Object || 1 | `{ . . . }` |
+| [`BasementUpgrade`](./Miscellaneous.md#object-basementupgrade) | Object  || 1 | `{ . . . }` |
+| [`BasementUpgrade2`](./Miscellaneous.md#object-basementupgrade2) | Object  || 1 | `{ . . . }` |
+| [`BasementUpgrade3`](./Miscellaneous.md#object-basementupgrade3) | Object  || 1 | `{ . . . }` |
+| [`BasementUpgrade4`](./Miscellaneous.md#object-basementupgrade4) | Object  || 1 | `{ . . . }` |
+| [`BasementUpgrade5`](./Miscellaneous.md#object-basementupgrade5) | Object  || 1 | `{ . . . }` |
+| [`Floor1_Large`](./Miscellaneous.md#object-floor1_large) | Object  || 1 | `{ . . . }` |
+| [`Floor1_Small`](./Miscellaneous.md#object-floor1_small) | Object  || 1 | `{ . . . }` |
+| [`House1`](./Miscellaneous.md#object-house1) | Object  || 1 | `{ . . . }` |
+| [`House2`](./Miscellaneous.md#object-house2) | Object  || 1 | `{ . . . }` |
+| [`House3`](./Miscellaneous.md#object-house3) | Object  || 1 | `{ . . . }` |
+| [`LargeHouse`](./Miscellaneous.md#object-largehouse) | Object  || 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Large`](./Miscellaneous.md#object-largehouse_floor2large) | Object  || 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Small`](./Miscellaneous.md#object-largehouse_floor2small) | Object  || 1 | `{ . . . }` |
+| [`MediumHouse`](./Miscellaneous.md#object-mediumhouse) | Object  || 1 | `{ . . . }` |
+| [`MediumHouse_SmallRoom`](./Miscellaneous.md#object-mediumhouse_smallroom) | Object  || 1 | `{ . . . }` |
+| [`SmallAttic`](./Miscellaneous.md#object-smallattic) | Object  || 1 | `{ . . . }` |
+| [`SmallHouse_Attic`](./Miscellaneous.md#object-smallhouse_attic) | Object  || 1 | `{ . . . }` |
 | [`extra_bound_planes`](./Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
 | [`p`](./Arrays.md#array-p) | Array || 1 | `[18 0]`<br>`[35 0]` |
-| [`Thunderstorm`](Engine_LogicKeys.md#object-thunderstorm) | Object || 1 | `{ . . . }` |
+| [`Thunderstorm`](./Miscellaneous.md#object-thunderstorm) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -134,7 +134,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 46 | `passives`<br>`class`<br>`tag` |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 11 | `Default`<br>`FormChange`<br>`Druid` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 0 | `damage_instance`<br>`spell`<br>`false` |
@@ -220,7 +220,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | [`number`](./Arrays.md#array-number) | Array / Integer || 31 | `1`<br>`10`<br>`2` |
 | [`object`](./Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 23 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | [`trap`](./Enums.md#enum-trap) | Enum || 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
 
 </details>
@@ -323,7 +323,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 8 | `passives`<br>`class`<br>`tag` |
 
 </details>
@@ -430,7 +430,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`Conditional_HasTag`](Abilities_and_Spells.md#object-conditional_hastag) | Object | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 </details> 
 
@@ -654,10 +654,10 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Float || 2 | `2.2`<br>`3.5` |
 | [`min_radius`](./Enums.md#enum-min_radius) | Float || 2 | `.2`<br>`1`<br>`1.5` |
-| [`puddle_tile`](./Enums.md#enum-puddle_tile) | Array || 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
+| [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array  || 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -725,7 +725,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -745,7 +745,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer || 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -766,7 +766,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Inherits all standard damage properties. You can inject any key from the Engine Damaging Keys list here (such as `knockback`, `piercing`, or `elements`). | 1 | `damage_instance`<br>`spell`<br>`false` |
 
@@ -788,7 +788,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object || 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  || 2 | `{ . . . }` |
 
 </details>
 
@@ -872,7 +872,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](Engine_LogicKeys.md#object-floatingdebris) | Object || 1 | `{ . . . }` |
+| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  || 1 | `{ . . . }` |
 
 </details>
 
@@ -995,7 +995,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -1015,7 +1015,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `count` | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
+| [`count`](./Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -1037,8 +1037,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
@@ -1061,8 +1061,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
 | [`interstitial_bg_frame`](./Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`reverb_empty`](#object-reverb_empty) | Object | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](#object-reverb_full) | Object | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`reverb_empty`](./Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 
 </details>
@@ -1083,11 +1083,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1108,11 +1108,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1133,11 +1133,11 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](#object-aux_positions) | Object | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](./Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](./Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](./Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](#object-room_positions) | Object | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1311,7 +1311,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | :--- | :--- | :--- | :--- | :--- |
 | `max_radius` | Float || 1 | `2.2`<br>`3.5` |
 | `min_radius` | Float || 1 | `.2`<br>`1`<br>`1.5` |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
 

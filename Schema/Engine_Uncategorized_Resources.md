@@ -38,7 +38,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [`weather`](./Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 | `[FlySwarm FireflySwarm ButterflySwarm]` |
 
 </details>
@@ -60,8 +60,8 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 2 | `100`<br>`25`<br>`50` |
-| `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`Burn`](./Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -122,8 +122,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
 
@@ -143,7 +143,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -163,7 +163,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
@@ -184,7 +184,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyToTile`](Abilities_and_Spells.md#object-applytotile) | Object | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
+| [`ApplyToTile`](./Miscellaneous.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
 | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 2 | `1` |
 
 </details>
@@ -317,7 +317,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `GenericBuff` | Integer | A generic buff value applied to the unit. | 1 | `100`<br>`5` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -337,9 +337,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 1 | `1` |
-| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
+| [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 
 </details>
 
@@ -362,10 +362,10 @@
 | `threshold_flat` | Integer | The flat health value (in hit points) below which the target must be for the conditional to trigger. | 4 | `0`<br>`10`<br>`3` |
 | [`SpawnThingIfHitKills`](./Enums.md#enum-spawnthingifhitkills) | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [`BonusDamage`](./Math_Equations.md) | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 | `1` |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
+| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
 | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
 | `FactionConversion` | Integer | Converts the target to the caster's faction. | 1 | `1` |
 | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 1 | `1`<br>`10`<br>`2` |
@@ -395,11 +395,11 @@
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 36 | `1`<br>`10`<br>`100` |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 7 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
 | `DamageUp` | Integer / String | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 6 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 2 | `1`<br>`10`<br>`100` |
-| [`ForceImmediateMoveAndAttack`](Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
+| [`ForceImmediateMoveAndAttack`](./Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
 
@@ -419,9 +419,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 1 | `1` |
-| [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
+| [`TempPassiveUntilSettled`](./Miscellaneous.md#object-temppassiveuntilsettled) | Object  | An object containing a temporary passive that is applied until the character's position is settled. | 1 | `{ . . . }` |
 
 </details>
 
@@ -481,10 +481,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`KnockUpAndAway`](Abilities_and_Spells.md#object-knockupandaway) | Object | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
+| [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`KnockUpAndAway`](./Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
 | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`DelayCastAbility`](Abilities_and_Spells.md#object-delaycastability) | Enum / Object | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
+| [`DelayCastAbility`](./Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
 
 </details>
 
@@ -504,9 +504,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`Consumed`](Abilities_and_Spells.md#object-consumed) | Object | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
-| [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
+| [`TempPassiveWhileHasStatus`](./Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
 
 </details>
 
@@ -547,8 +547,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`Confusion`](./Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 
 </details>
 
@@ -628,8 +628,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`CanApplyToInanimate`](Abilities_and_Spells.md#object-canapplytoinanimate) | Object | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`RepairWeapon`](./Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 
 </details>
@@ -672,10 +672,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 2 | `1` |
 | `Adrenaline` | Integer | The flat amount of Adrenaline (a resource or stat) granted to the unit. | 1 | `10` |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 1 | `1`<br>`10`<br>`100` |
 | [`KnockOutClone`](./Enums.md#enum-knockoutclone) | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 1 | `PlayerCat_MiniMiniMe` |
 | `Scrambled` | Integer | The number of stacks of Scrambled applied. | 1 | `1`<br>`2` |
@@ -699,7 +699,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
+| [`ApplyPassives`](./Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
 | [`odds`](./Enums.md#enum-odds) | Number | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
 
 </details>
@@ -720,9 +720,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 
 </details>
 
@@ -742,7 +742,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
@@ -767,7 +767,7 @@
 | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 2 | `1` |
 | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 1 | `1` |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | `Knockback` | Integer | The number of tiles the target is pushed away from the source on hit. | 1 | `1`<br>`10`<br>`2` |
 | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 1 | `25` |
 
@@ -945,13 +945,13 @@
 | [`CompleteItemQuest`](./Enums.md#enum-completeitemquest) | Enum | Specifies the item quest ID to mark as complete on kill. | 2 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
 | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`Revive`](Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
+| [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`EvolveAbilityFromPool`](Abilities_and_Spells.md#object-evolveabilityfrompool) | Enum / Object | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
+| [`EvolveAbilityFromPool`](./Miscellaneous.md#object-evolveabilityfrompool) | Enum / Object  | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 | `1` |
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 1 | `1` |
-| [`TransformWeapon`](Abilities_and_Spells.md#object-transformweapon) | Object | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
+| [`TransformWeapon`](./Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
 | [`WeaponAuxMultiplier`](./Enums.md#enum-weaponauxmultiplier) | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
@@ -1110,8 +1110,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Return`](Engine_LogicKeys.md#object-return) | Enum / Object | Specifies the ability used when this unit returns to the field. | 26 | `{ . . . }`<br>`CherubimReturn`<br>`LEReturn` |
-| [`Leave`](Engine_LogicKeys.md#object-leave) | Enum / Object | Specifies the ability used when this unit leaves the field. | 16 | `{ . . . }`<br>`CherubimLeave`<br>`LELeave` |
+| [`Return`](./Engine_LogicKeys.md#object-return) | Enum / Object  | Specifies the ability used when this unit returns to the field. | 26 | `{ . . . }`<br>`CherubimReturn`<br>`LEReturn` |
+| [`Leave`](./Engine_LogicKeys.md#object-leave) | Enum / Object  | Specifies the ability used when this unit leaves the field. | 16 | `{ . . . }`<br>`CherubimLeave`<br>`LELeave` |
 
 </details>
 
@@ -1164,7 +1164,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Counterspell`](Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 4 | `{ . . . }`<br>`1` |
+| [`Counterspell`](./Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object  | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 4 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -1389,7 +1389,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -1717,7 +1717,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -1773,7 +1773,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` |
+| [`AddStatusToTrampleDamage`](./Passives_and_Statuses.md#object-addstatustotrampledamage) | Object  | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1793,7 +1793,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
 | [`tile`](./Arrays.md#array-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
@@ -1995,7 +1995,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 2 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 1 | `true` |
 | `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 1 | `1` |
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 1 | `1` |
@@ -2018,7 +2018,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
@@ -2061,8 +2061,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
-| [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -2404,7 +2404,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 11 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 11 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 6 | `true` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 5 | `false`<br>`true` |
 | `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 | `true` |
@@ -2618,7 +2618,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2638,7 +2638,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](Abilities_and_Spells.md#object-else) | Object | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2658,7 +2658,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](Engine_LogicKeys.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
+| [`FloatingDebris`](./Miscellaneous.md#object-floatingdebris) | Object  | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2822,7 +2822,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
@@ -3251,7 +3251,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`Fear`](./Arrays.md#array-fear) | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`AllStatsUp`](./Arrays.md#array-allstatsup) | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
@@ -3271,7 +3271,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ChargeFists`](Engine_StatusAndPassiveKeys.md#object-chargefists) | Integer / Object | The number of charge stacks applied to unarmed attacks. | 2 | `{ . . . }`<br>`1` |
+| [`ChargeFists`](./Engine_StatusAndPassiveKeys.md#object-chargefists) | Integer / Object  | The number of charge stacks applied to unarmed attacks. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -3496,9 +3496,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`damage_tiles`](./Enums.md#enum-damage_tiles) | Enum | Specifies whether the damage effect applies to tiles; 'all' damages every tile in the area. | 2 | `all` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 
@@ -3686,8 +3686,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | An object containing additional status effects (with stack counts) applied to the consumed unit. | 1 | `{ . . . }` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object  | An object containing additional status effects (with stack counts) applied to the consumed unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3725,7 +3725,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -4280,7 +4280,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
@@ -4301,7 +4301,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 2 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
@@ -4394,7 +4394,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](Characters_and_Bosses.md#object-stats) | Object | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 982 | `{ . . . }` |
+| [`stats`](./Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 982 | `{ . . . }` |
 
 </details>
 
@@ -4856,7 +4856,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 8 | `1`<br>`10`<br>`2` |
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 7 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| [`Slow`](./Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
 
@@ -4896,7 +4896,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
 
@@ -4941,7 +4941,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -4983,7 +4983,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`BackflipWhenTargeted`](./Math_Equations.md) | Equation | The number of backflip charges, or an object defining its ability. | 2 | `1`<br>`2`<br>`X` |
-| [`Craft`](Abilities_and_Spells.md#object-craft) | Object | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
+| [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 2 | `{ . . . }` |
 
 </details>
 
@@ -5025,19 +5025,19 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
-| [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`GainCoinsRange`](Abilities_and_Spells.md#object-gaincoinsrange) | Object | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 5 | `{ . . . }` |
+| [`Bruise`](./Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`GainCoinsRange`](./Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 5 | `{ . . . }` |
 | [`ChangeTilesUnder`](./Enums.md#enum-changetilesunder) | Enum | The tile type to change the ground tiles under the target to. | 3 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. | 3 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`FindItemFromPool`](./Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 3 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 3 | `1`<br>`10`<br>`2` |
 | `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 3 | `-1`<br>`-2`<br>`1` |
-| [`ApplyToRandomPartyMemberIfPossible`](Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
+| [`ApplyToRandomPartyMemberIfPossible`](./Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | [`ConstitutionUp`](./Arrays.md#array-constitutionup) | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
 | `DexterityUp` | Enum / Integer | The amount of dexterity change, or a keyword like 'item_aux'. | 1 | `-1`<br>`1`<br>`2` |
 | [`FindItem`](./Enums.md#enum-finditem) | Enum | The name of the specific item to find and add to the source's inventory. | 1 | `BoneClub`<br>`Molars`<br>`Pearl` |
 | [`GainDisorder`](./Enums.md#enum-gaindisorder) | Enum | Specifies the name of the disorder gained. | 1 | `Chungus`<br>`Psychosis` |
 | `IntelligenceUp` | Enum / Integer | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 1 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
@@ -5058,7 +5058,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ScatterCoins`](Abilities_and_Spells.md#object-scattercoins) | Object | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 6 | `{ . . . }` |
+| [`ScatterCoins`](./Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 6 | `{ . . . }` |
 
 </details>
 
@@ -5078,7 +5078,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ImmediateUseAbility`](Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 
 </details>
 
@@ -5159,8 +5159,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set`](./Enums.md#enum-set) | Array / Enum | Specifies the set name(s) the item belongs to for set bonuses. | 1504 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| [`FindItemFromPool`](Abilities_and_Spells.md#object-finditemfrompool) | Enum / Object | Specifies the loot pool from which to find an item, with an optional chance. | 1 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
+| [`set`](./Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 1504 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| [`FindItemFromPool`](./Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 1 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 1 | `1`<br>`2` |
 | `PermanentConstitution` | Integer | The amount of permanent Constitution stat added or removed. | 1 | `-1`<br>`-2`<br>`1` |
 | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 1 | `1`<br>`2` |
@@ -5372,9 +5372,9 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 26 | `1`<br>`2`<br>`3` |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 | `{ . . . }` |
+| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 | `{ . . . }` |
 | `AddManaRegen` | Integer | The flat amount of mana regenerated per turn. | 4 | `1`<br>`2`<br>`3` |
-| [`ReplaceSpell`](Abilities_and_Spells.md#object-replacespell) | Object | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
+| [`ReplaceSpell`](./Miscellaneous.md#object-replacespell) | Object  | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 
 </details>
@@ -5432,11 +5432,11 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`delay`](./Enums.md#enum-delay) | Number | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
-| [`CreateGlobalModifiers`](Abilities_and_Spells.md#object-createglobalmodifiers) | Object | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
-| [`DoScreenShake`](Abilities_and_Spells.md#object-doscreenshake) | Integer / Object | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
-| [`FormChange`](Abilities_and_Spells.md#object-formchange) | Enum / Object | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
+| [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
+| [`DoScreenShake`](./Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
+| [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 1 | `0`<br>`1` |
@@ -5587,7 +5587,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 
 </details>
 
@@ -6245,7 +6245,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`RandomMagicMissile`](Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object | The number of random magic missiles fired, or an object defining its properties. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`RandomMagicMissile`](./Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
 
@@ -6357,7 +6357,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Metronome`](Abilities_and_Spells.md#object-metronome) | Integer / Object | The number of times Metronome triggers, or an object with stacks and banned abilities. | 4 | `{ . . . }`<br>`1`<br>`2` |
+| [`Metronome`](./Miscellaneous.md#object-metronome) | Integer / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 4 | `{ . . . }`<br>`1`<br>`2` |
 | [`DivineShield`](./Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 2 | `1`<br>`2`<br>`4` |
 
 </details>
@@ -6566,7 +6566,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
@@ -6782,7 +6782,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Tangled`](Abilities_and_Spells.md#object-tangled) | Array / Integer / Object | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| [`Tangled`](./Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 
 </details>
 
@@ -7314,7 +7314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
@@ -7428,7 +7428,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 | `10` |
 
 </details>
@@ -7539,7 +7539,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -7561,7 +7561,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`move_ability`](./Enums.md#enum-move_ability) | Enum | Specifies the movement ability (e.g., BirdFly, TrampleMoveOne) used for the movement action. | 1 | `BirdFly`<br>`MD_WalkOne`<br>`MoveOne` |
 | `once_per_turn` | Boolean | If true, the movement away can only trigger once per turn. | 1 | `true` |
-| [`weights`](./Enums.md#enum-weights) | Array / Enum | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
+| [`weights`](./Arrays.md#array-weights) | Array / Enum  | Specifies the weight array or named preset for the crazy eye background AI. | 1 | `[0 0 1]`<br>`[0 1 0]`<br>`[1 0 0]` |
 
 </details>
 
@@ -8028,7 +8028,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`UseAbility`](Abilities_and_Spells.md#object-useability) | Enum / Object | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
+| [`UseAbility`](./Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 1 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
 
@@ -8292,7 +8292,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 6 | `2`<br>`20`<br>`3` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 2 | `2`<br>`3`<br>`4` |
 | [`exclude_prefix`](./Enums.md#enum-exclude_prefix) | Enum | Specifies a prefix string; units with a matching prefix in their ID are excluded from the displacement effect. | 1 | `Twister` |
 
@@ -8314,7 +8314,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 1 | `2`<br>`20`<br>`3` |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 1 | `2`<br>`3`<br>`4` |
 
@@ -8432,7 +8432,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allies_only` | Boolean | If true, the effect only applies to allied units. | 3 | `false`<br>`true` |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 | `reclaim_if_lost` | Boolean | If true, the buddy can be reclaimed after being lost. | 1 | `true` |
 
 </details>
@@ -8633,7 +8633,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -8708,9 +8708,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 10 | `{ . . . }` |
-| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 2 | `{ . . . }` |
-| [`Nothing`](Characters_and_Bosses.md#object-nothing) | Object | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 10 | `{ . . . }` |
+| [`NonCat`](./Miscellaneous.md#object-noncat) | Object  | Defines the behavior and form change for captured non-cat units. | 2 | `{ . . . }` |
+| [`Nothing`](./Miscellaneous.md#object-nothing) | Object  | Defines the behavior when nothing is captured, typically just an animation. | 1 | `{ . . . }` |
 
 </details>
 
@@ -8731,7 +8731,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 1 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 1 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
 
@@ -8751,7 +8751,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 1 | `false`<br>`true` |
 | `clone_referenced_catdata` | Boolean | If true, the spawned unit is a clone of the referenced cat data, including its stats and equipment. | 1 | `true` |
 | `no_splatter` | Boolean | If true, prevents the blood splatter visual effect from appearing when the object spawns or is popped. | 1 | `false`<br>`true` |
@@ -8846,7 +8846,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`prevent_chain_tag`](./Enums.md#enum-prevent_chain_tag) | Enum | A tag that prevents chaining of spawns from the same source. | 2 | `ancestorset_shade`<br>`eb_twin`<br>`minime_clone` |
 
 </details>
@@ -8921,7 +8921,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`number`](./Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -8960,7 +8960,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `break_on_pop_only` | Boolean | If true, the linked familiar spawn only breaks when the item is popped. | 2 | `true` |
 
 </details>
@@ -9019,7 +9019,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 3 | `allies`<br>`auto`<br>`birds` |
 | [`obj`](./Arrays.md#array-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 3 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
-| [`additional_statuses`](Characters_and_Bosses.md#object-additional_statuses) | Object | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
+| [`additional_statuses`](./Miscellaneous.md#object-additional_statuses) | Object  | Additional status effects applied to the spawned unit on death. | 1 | `{ . . . }` |
 
 </details>
 
@@ -9057,7 +9057,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
 
 </details>
@@ -9114,7 +9114,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tile`](./Enums.md#enum-tile) | Array / Enum | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`tile`](./Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 26 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
 
@@ -9136,7 +9136,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Number | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
 | [`min_radius`](./Enums.md#enum-min_radius) | Number | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](./Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
@@ -9390,8 +9390,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ally_rewards`](Characters_and_Bosses.md#object-ally_rewards) | Object | Defines the rewards granted to the ally when the BirdRewards passive triggers. | 18 | `{ . . . }` |
-| [`statuses`](Characters_and_Bosses.md#object-statuses) | Object | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
+| [`ally_rewards`](./Miscellaneous.md#object-ally_rewards) | Object  | Defines the rewards granted to the ally when the BirdRewards passive triggers. | 18 | `{ . . . }` |
+| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 5 | `{ . . . }` |
 
 </details>
 
@@ -9411,7 +9411,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`new_music`](./Enums.md#enum-new_music) | Enum | Specifies the music track to play during the boss's head drop-in animation. | 1 | `chaos_boss_part2` |
 
@@ -9527,7 +9527,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoubleLoot`](Engine_StatusAndPassiveKeys.md#object-doubleloot) | Integer / Object | The multiplier for loot drops, where 1 or 2 doubles the loot. | 2 | `{ . . . }`<br>`1`<br>`2` |
+| [`DoubleLoot`](./Engine_StatusAndPassiveKeys.md#object-doubleloot) | Integer / Object  | The multiplier for loot drops, where 1 or 2 doubles the loot. | 2 | `{ . . . }`<br>`1`<br>`2` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -9763,7 +9763,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleanse`](Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
+| [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
 | [`sound_event`](./Enums.md#enum-sound_event) | Enum | Specifies the sound event to play when the pickup is used. | 1 | `EatAntidote` |
 
 </details>
@@ -10126,7 +10126,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`form`](./Enums.md#enum-form) | Enum / Integer | Specifies the name of the form the unit changes into. | 2 | `"Angry"`<br>`"Big"`<br>`"Bishop"` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -10148,7 +10148,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum | The form to change to when health is above the threshold. | 3 | `Default`<br>`Full`<br>`Standing` |
 | [`form_below`](./Enums.md#enum-form_below) | Enum | The form to change to when health is below the threshold. | 3 | `Damaged`<br>`DesireMech`<br>`Standing2` |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 | `true` |
 
 </details>
@@ -10194,7 +10194,7 @@
 | [`exclude`](./Enums.md#enum-exclude) | Enum | Specifies an element or effect that does not trigger the form change. | 5 | `SpellDamageUp`<br>`fire`<br>`water` |
 | [`particle`](./Enums.md#enum-particle) | Enum | Specifies the particle effect displayed. | 5 | `ArrowFromAbove`<br>`BigMagicMissileBlast`<br>`Bolt` |
 | [`sfx`](./Enums.md#enum-sfx) | Enum | Specifies the sound effect to play when the form change triggers. | 5 | `BeaniesEnding_Banging`<br>`FireExtinguish`<br>`Intro_LabDisposal` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -10275,164 +10275,164 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
-| [`ai`](Characters_and_Bosses.md#object-ai) | Object | A container object defining the character's artificial intelligence brain and decision weights. | 928 | `{ . . . }` |
-| [`Default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 199 | `{ . . . }`<br>`release` |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 199 | `{ . . . }`<br>`bite1` |
-| [`Colorless`](Engine_LogicKeys.md#object-colorless) | Object | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 140 | `{ . . . }` |
-| [`Druid`](Engine_LogicKeys.md#object-druid) | Object | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
-| [`Fighter`](Engine_LogicKeys.md#object-fighter) | Object | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
-| [`Thief`](Engine_LogicKeys.md#object-thief) | Object | Form identifier for the Thief boss type. | 76 | `{ . . . }` |
-| [`Tank`](Engine_LogicKeys.md#object-tank) | Object | Form identifier for the Tank boss type, used for dialogue references. | 74 | `{ . . . }` |
-| [`Butcher`](Engine_LogicKeys.md#object-butcher) | Object | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 72 | `{ . . . }` |
-| [`Necromancer`](Engine_LogicKeys.md#object-necromancer) | Object | Defines a list of quotes for the Necromancer class. | 72 | `{ . . . }` |
-| [`Mage`](Engine_LogicKeys.md#object-mage) | Object | Defines a list of quotes for the Mage class. | 70 | `{ . . . }` |
-| [`Tinkerer`](Engine_LogicKeys.md#object-tinkerer) | Object | Form identifier for the Tinkerer boss type. | 70 | `{ . . . }` |
-| [`Hunter`](Engine_LogicKeys.md#object-hunter) | Object | Defines a list of quotes for the Hunter class (vs boss, embark, return early). | 68 | `{ . . . }` |
-| [`Monk`](Engine_LogicKeys.md#object-monk) | Object | Defines a list of quotes for the Monk class. | 66 | `{ . . . }` |
-| [`Psychic`](Engine_LogicKeys.md#object-psychic) | Object | Form identifier for the Psychic boss type, used for dialogue references. | 66 | `{ . . . }` |
-| [`Medic`](Engine_LogicKeys.md#object-medic) | Object | Defines a list of quotes for the Medic class. | 58 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`ai`](./Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 928 | `{ . . . }` |
+| [`Default`](./Miscellaneous.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 199 | `{ . . . }`<br>`release` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 199 | `{ . . . }`<br>`bite1` |
+| [`Colorless`](./Engine_LogicKeys.md#object-colorless) | Object  | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 140 | `{ . . . }` |
+| [`Druid`](./Engine_LogicKeys.md#object-druid) | Object  | Specifies the 'Druid' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
+| [`Fighter`](./Engine_LogicKeys.md#object-fighter) | Object  | Specifies the 'Fighter' form within FormChanger, used for boss dialogue. | 80 | `{ . . . }` |
+| [`Thief`](./Engine_LogicKeys.md#object-thief) | Object  | Form identifier for the Thief boss type. | 76 | `{ . . . }` |
+| [`Tank`](./Engine_LogicKeys.md#object-tank) | Object  | Form identifier for the Tank boss type, used for dialogue references. | 74 | `{ . . . }` |
+| [`Butcher`](./Engine_LogicKeys.md#object-butcher) | Object  | Specifies the 'Butcher' form within FormChanger, used for boss dialogue. | 72 | `{ . . . }` |
+| [`Necromancer`](./Engine_LogicKeys.md#object-necromancer) | Object  | Defines a list of quotes for the Necromancer class. | 72 | `{ . . . }` |
+| [`Mage`](./Engine_LogicKeys.md#object-mage) | Object  | Defines a list of quotes for the Mage class. | 70 | `{ . . . }` |
+| [`Tinkerer`](./Engine_LogicKeys.md#object-tinkerer) | Object  | Form identifier for the Tinkerer boss type. | 70 | `{ . . . }` |
+| [`Hunter`](./Engine_LogicKeys.md#object-hunter) | Object  | Defines a list of quotes for the Hunter class (vs boss, embark, return early). | 68 | `{ . . . }` |
+| [`Monk`](./Engine_LogicKeys.md#object-monk) | Object  | Defines a list of quotes for the Monk class. | 66 | `{ . . . }` |
+| [`Psychic`](./Engine_LogicKeys.md#object-psychic) | Object  | Form identifier for the Psychic boss type, used for dialogue references. | 66 | `{ . . . }` |
+| [`Medic`](./Engine_LogicKeys.md#object-medic) | Object  | Defines a list of quotes for the Medic class. | 58 | `{ . . . }` |
 | [`attack`](./Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 26 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
-| [`Cultist`](Characters_and_Bosses.md#object-cultist) | Object | Defines the 'Cultist' form, a basic melee form with its own name and tooltip. | 11 | `{ . . . }` |
-| [`Nuke`](Characters_and_Bosses.md#object-nuke) | Object | Defines a nuke form with no attack or movement options. | 10 | `{ . . . }` |
-| [`Rage`](Characters_and_Bosses.md#object-rage) | Object | The rage form configuration, applied when the unit enters an enraged state. | 10 | `{ . . . }` |
-| [`Unlit`](Characters_and_Bosses.md#object-unlit) | Object | Form state for an unlit candle, muting demonic glyph display. | 9 | `{ . . . }` |
-| [`CaveMan`](Characters_and_Bosses.md#object-caveman) | Object | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 7 | `{ . . . }` |
-| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 | `{ . . . }`<br>`1` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
+| [`Cultist`](./Miscellaneous.md#object-cultist) | Object  | Defines the 'Cultist' form, a basic melee form with its own name and tooltip. | 11 | `{ . . . }` |
+| [`Nuke`](./Miscellaneous.md#object-nuke) | Object  | Defines a nuke form with no attack or movement options. | 10 | `{ . . . }` |
+| [`Rage`](./Miscellaneous.md#object-rage) | Object  | The rage form configuration, applied when the unit enters an enraged state. | 10 | `{ . . . }` |
+| [`Unlit`](./Miscellaneous.md#object-unlit) | Object  | Form state for an unlit candle, muting demonic glyph display. | 9 | `{ . . . }` |
+| [`CaveMan`](./Miscellaneous.md#object-caveman) | Object  | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 7 | `{ . . . }` |
+| [`Fire`](./Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 | `{ . . . }`<br>`1` |
 | [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | Specifies the starting form name for a unit with FormChanger. | 6 | `0`<br>`1`<br>`5` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 6 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`Angry`](Characters_and_Bosses.md#object-angry) | Object | Defines the 'Angry' form, an enraged state with its own AI. | 5 | `{ . . . }` |
-| [`HasCat`](Characters_and_Bosses.md#object-hascat) | Object | The form configuration applied when the unit is holding or has swallowed a cat. | 5 | `{ . . . }` |
-| [`Water`](Characters_and_Bosses.md#object-water) | Object | Form state for water element, applying a puddle or movement bonus. | 5 | `{ . . . }` |
-| [`Flush`](Characters_and_Bosses.md#object-flush) | Object | Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name. | 4 | `{ . . . }` |
-| [`hot`](Characters_and_Bosses.md#object-hot) | Object | The form configuration applied when the unit is in a hot state, granting fire element. | 4 | `{ . . . }` |
-| [`OffMap`](Characters_and_Bosses.md#object-offmap) | Object | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
-| [`passive`](Characters_and_Bosses.md#object-passive) | Object | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 4 | `{ . . . }` |
-| [`AllAlive`](Characters_and_Bosses.md#object-allalive) | Object | The form configuration applied when all family members are alive. | 3 | `{ . . . }` |
-| [`CaveBaby`](Characters_and_Bosses.md#object-cavebaby) | Object | Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack. | 3 | `{ . . . }` |
-| [`Down`](Characters_and_Bosses.md#object-down) | Object | The form configuration applied when the unit is in a knocked-down or prone state. | 3 | `{ . . . }` |
-| [`Full`](Characters_and_Bosses.md#object-full) | Object | The form configuration applied when the unit is in a full state. | 3 | `{ . . . }` |
-| [`OneAlive`](Characters_and_Bosses.md#object-onealive) | Object | The form configuration applied when only one family member remains alive. | 3 | `{ . . . }` |
-| [`Open`](Characters_and_Bosses.md#object-open) | Object | Defines an open form with increased movement and a specific attack. | 3 | `{ . . . }` |
-| [`TwoAlive`](Characters_and_Bosses.md#object-twoalive) | Object | A form that activates when two specific units are alive, granting the contained passives and abilities. | 3 | `{ . . . }` |
-| [`Up`](Characters_and_Bosses.md#object-up) | Object | Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior. | 3 | `{ . . . }` |
-| [`active`](Characters_and_Bosses.md#object-active) | Object | Defines the active form, containing passives and abilities that are active while in this form. | 2 | `{ . . . }` |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
-| [`CaveManSpear`](Characters_and_Bosses.md#object-cavemanspear) | Object | Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation. | 2 | `{ . . . }` |
-| [`Explosive`](Characters_and_Bosses.md#object-explosive) | Enum / Object | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
-| [`Holding`](Characters_and_Bosses.md#object-holding) | Object | Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors. | 2 | `{ . . . }` |
-| [`Holy`](Characters_and_Bosses.md#object-holy) | Enum / Object | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
-| [`LastHit`](Characters_and_Bosses.md#object-lasthit) | Object | Defines a form that grants 2 dispersed bonus turns after the last hit. | 2 | `{ . . . }` |
-| [`NeutronStar`](Characters_and_Bosses.md#object-neutronstar) | Object | Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode). | 2 | `{ . . . }` |
-| [`NotPriming`](Characters_and_Bosses.md#object-notpriming) | Object | Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns. | 2 | `{ . . . }` |
-| [`Priming`](Characters_and_Bosses.md#object-priming) | Object | Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end. | 2 | `{ . . . }` |
-| [`Small`](Characters_and_Bosses.md#object-small) | Object | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
-| [`SquirrelForm`](Characters_and_Bosses.md#object-squirrelform) | Object | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
-| [`Turtled`](Characters_and_Bosses.md#object-turtled) | Object | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 | `{ . . . }` |
+| [`Angry`](./Miscellaneous.md#object-angry) | Object  | Defines the 'Angry' form, an enraged state with its own AI. | 5 | `{ . . . }` |
+| [`HasCat`](./Miscellaneous.md#object-hascat) | Object  | The form configuration applied when the unit is holding or has swallowed a cat. | 5 | `{ . . . }` |
+| [`Water`](./Passives_and_Statuses.md#object-water) | Object  | Form state for water element, applying a puddle or movement bonus. | 5 | `{ . . . }` |
+| [`Flush`](./Miscellaneous.md#object-flush) | Object  | Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name. | 4 | `{ . . . }` |
+| [`hot`](./Miscellaneous.md#object-hot) | Object  | The form configuration applied when the unit is in a hot state, granting fire element. | 4 | `{ . . . }` |
+| [`OffMap`](./Miscellaneous.md#object-offmap) | Object  | The form configuration applied when the unit is off the battlefield map. | 4 | `{ . . . }` |
+| [`passive`](./Miscellaneous.md#object-passive) | Object  | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 4 | `{ . . . }` |
+| [`AllAlive`](./Miscellaneous.md#object-allalive) | Object  | The form configuration applied when all family members are alive. | 3 | `{ . . . }` |
+| [`CaveBaby`](./Miscellaneous.md#object-cavebaby) | Object  | Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack. | 3 | `{ . . . }` |
+| [`Down`](./Miscellaneous.md#object-down) | Object  | The form configuration applied when the unit is in a knocked-down or prone state. | 3 | `{ . . . }` |
+| [`Full`](./Miscellaneous.md#object-full) | Object  | The form configuration applied when the unit is in a full state. | 3 | `{ . . . }` |
+| [`OneAlive`](./Miscellaneous.md#object-onealive) | Object  | The form configuration applied when only one family member remains alive. | 3 | `{ . . . }` |
+| [`Open`](./Miscellaneous.md#object-open) | Object  | Defines an open form with increased movement and a specific attack. | 3 | `{ . . . }` |
+| [`TwoAlive`](./Miscellaneous.md#object-twoalive) | Object  | A form that activates when two specific units are alive, granting the contained passives and abilities. | 3 | `{ . . . }` |
+| [`Up`](./Miscellaneous.md#object-up) | Object  | Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior. | 3 | `{ . . . }` |
+| [`active`](./Miscellaneous.md#object-active) | Object  | Defines the active form, containing passives and abilities that are active while in this form. | 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`CaveManSpear`](./Miscellaneous.md#object-cavemanspear) | Object  | Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation. | 2 | `{ . . . }` |
+| [`Explosive`](./Miscellaneous.md#object-explosive) | Enum / Object  | Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformExplosive` |
+| [`Holding`](./Miscellaneous.md#object-holding) | Object  | Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors. | 2 | `{ . . . }` |
+| [`Holy`](./Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 2 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
+| [`LastHit`](./Miscellaneous.md#object-lasthit) | Object  | Defines a form that grants 2 dispersed bonus turns after the last hit. | 2 | `{ . . . }` |
+| [`NeutronStar`](./Miscellaneous.md#object-neutronstar) | Object  | Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode). | 2 | `{ . . . }` |
+| [`NotPriming`](./Miscellaneous.md#object-notpriming) | Object  | Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns. | 2 | `{ . . . }` |
+| [`Priming`](./Miscellaneous.md#object-priming) | Object  | Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end. | 2 | `{ . . . }` |
+| [`Small`](./Miscellaneous.md#object-small) | Object  | Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation. | 2 | `{ . . . }` |
+| [`SquirrelForm`](./Miscellaneous.md#object-squirrelform) | Object  | Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses. | 2 | `{ . . . }` |
+| [`Turtled`](./Miscellaneous.md#object-turtled) | Object  | Defines the 'Turtled' form, a defensive state where the unit cannot attack or move. | 2 | `{ . . . }` |
 | `uifloaters_offset` | Number | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 2 | `.5`<br>`1`<br>`1.3` |
-| [`Zealot`](Characters_and_Bosses.md#object-zealot) | Object | Form state for the zealot variant of a cultist, with a stabbing attack. | 2 | `{ . . . }` |
-| [`Alert`](Characters_and_Bosses.md#object-alert) | Object | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 | `{ . . . }` |
-| [`Attacker`](Characters_and_Bosses.md#object-attacker) | Object | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 | `{ . . . }` |
-| [`BellyFull`](Characters_and_Bosses.md#object-bellyfull) | Object | Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation. | 1 | `{ . . . }` |
-| [`BigHolding`](Characters_and_Bosses.md#object-bigholding) | Object | Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status. | 1 | `{ . . . }` |
-| [`BigHoldingCat`](Characters_and_Bosses.md#object-bigholdingcat) | Object | Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming. | 1 | `{ . . . }` |
-| [`Bishop`](Characters_and_Bosses.md#object-bishop) | Object | Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation. | 1 | `{ . . . }` |
-| [`BlackHole`](Characters_and_Bosses.md#object-blackhole) | Object | Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name. | 1 | `{ . . . }` |
-| [`Bomb`](Characters_and_Bosses.md#object-bomb) | Object | Defines the 'Bomb' form, an explosive state that triggers an ability on death. | 1 | `{ . . . }` |
-| [`Boris`](Characters_and_Bosses.md#object-boris) | Enum / Object | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
-| [`Bully`](Characters_and_Bosses.md#object-bully) | Object | Defines the 'Bully' form, which allows the unit to take turns and enables its passives. | 1 | `{ . . . }` |
-| [`CaveWoman`](Characters_and_Bosses.md#object-cavewoman) | Object | Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health. | 1 | `{ . . . }` |
-| [`CaveWomanHasCat`](Characters_and_Bosses.md#object-cavewomanhascat) | Object | Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap. | 1 | `{ . . . }` |
-| [`Charging`](Characters_and_Bosses.md#object-charging) | Object | Defines the 'Charging' form, a wind-up state for a powerful attack. | 1 | `{ . . . }` |
-| [`Close`](Characters_and_Bosses.md#object-close) | Object | Defines the 'Close' form, which triggers GSOpen ability upon reaction. | 1 | `{ . . . }` |
-| [`Damaged`](Characters_and_Bosses.md#object-damaged) | Object | Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack. | 1 | `{ . . . }` |
-| [`Default_Ceiling`](Characters_and_Bosses.md#object-default_ceiling) | Object | Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders. | 1 | `{ . . . }` |
-| [`Default_Ground`](Characters_and_Bosses.md#object-default_ground) | Object | Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack. | 1 | `{ . . . }` |
-| [`DesireMech`](Characters_and_Bosses.md#object-desiremech) | Object | Defines the 'DesireMech' form, a mech suit form with its own AI pattern. | 1 | `{ . . . }` |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
-| [`Drunker`](Characters_and_Bosses.md#object-drunker) | Object | Defines the 'Drunker' form, a drunken state with altered animation. | 1 | `{ . . . }` |
-| [`DualSword`](Characters_and_Bosses.md#object-dualsword) | Object | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
-| [`DualSword_Primed`](Characters_and_Bosses.md#object-dualsword_primed) | Object | Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation. | 1 | `{ . . . }` |
-| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
-| [`Empty`](Characters_and_Bosses.md#object-empty) | Object | Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach). | 1 | `{ . . . }` |
-| [`Explody`](Characters_and_Bosses.md#object-explody) | Object | Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move. | 1 | `{ . . . }` |
-| [`FightPhase`](Characters_and_Bosses.md#object-fightphase) | Object | Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns. | 1 | `{ . . . }` |
-| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
-| [`Flop`](Characters_and_Bosses.md#object-flop) | Object | Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit. | 1 | `{ . . . }` |
-| [`Flop2`](Characters_and_Bosses.md#object-flop2) | Object | Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover. | 1 | `{ . . . }` |
-| [`FlushBubs`](Characters_and_Bosses.md#object-flushbubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
-| [`FlushHost`](Characters_and_Bosses.md#object-flushhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
-| [`FlushNettle`](Characters_and_Bosses.md#object-flushnettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
-| [`Grappling`](Characters_and_Bosses.md#object-grappling) | Object | Defines a grappling form with a specific animation suffix and exit animations. | 1 | `{ . . . }` |
-| [`Grown`](Characters_and_Bosses.md#object-grown) | Object | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
-| [`GuaranteedJackpot`](Characters_and_Bosses.md#object-guaranteedjackpot) | Object | Defines a form that guarantees a jackpot coin result from slot machine rolls. | 1 | `{ . . . }` |
-| [`Guarding`](Characters_and_Bosses.md#object-guarding) | Object | Defines a guarding form with a high brace passive. | 1 | `{ . . . }` |
-| [`HalfDead`](Characters_and_Bosses.md#object-halfdead) | Object | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
-| [`HasDeadCat`](Characters_and_Bosses.md#object-hasdeadcat) | Object | Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active. | 1 | `{ . . . }` |
-| [`HasRock`](Characters_and_Bosses.md#object-hasrock) | Object | Defines a form where the unit has a rock, with a bash attack. | 1 | `{ . . . }` |
-| [`Headless`](Characters_and_Bosses.md#object-headless) | Object | Defines a headless form with increased movement. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals`](Characters_and_Bosses.md#object-hint_crackedvisuals) | Object | Defines a visual state with cracked animation suffix. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals2`](Characters_and_Bosses.md#object-hint_crackedvisuals2) | Object | Defines a visual state with charging cracked animation. | 1 | `{ . . . }` |
-| [`Hint_CrackedVisuals3`](Characters_and_Bosses.md#object-hint_crackedvisuals3) | Object | Defines a visual state with swallowed cracked animation. | 1 | `{ . . . }` |
-| [`HumanDead`](Characters_and_Bosses.md#object-humandead) | Object | Defines a form when the human half is dead, with a spin attack and custom tooltip. | 1 | `{ . . . }` |
-| [`InitialPhase`](Characters_and_Bosses.md#object-initialphase) | Object | Defines the initial phase form with a float move, shoot attack, and the ability to take turns. | 1 | `{ . . . }` |
-| [`Insane_Ceiling`](Characters_and_Bosses.md#object-insane_ceiling) | Object | Defines the insane ceiling form with pattern AI and animation suffix. | 1 | `{ . . . }` |
-| [`Insane_Ground`](Characters_and_Bosses.md#object-insane_ground) | Object | Defines the insane ground form with pattern AI and animation suffix. | 1 | `{ . . . }` |
-| [`Johnny`](Characters_and_Bosses.md#object-johnny) | Object | Defines a form that executes a mega blast, side switch, and form switch in sequence. | 1 | `{ . . . }` |
-| [`JohnnyBubs`](Characters_and_Bosses.md#object-johnnybubs) | Object | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
-| [`JohnnyHost`](Characters_and_Bosses.md#object-johnnyhost) | Object | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
-| [`JohnnyNettle`](Characters_and_Bosses.md#object-johnnynettle) | Object | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
-| [`Joystick`](Characters_and_Bosses.md#object-joystick) | Object | Defines a form with joystick animation and an immediate ability reaction (fumble even/odd). | 1 | `{ . . . }` |
-| [`Lifted`](Characters_and_Bosses.md#object-lifted) | Object | Defines a lifted form with no attack or movement options. | 1 | `{ . . . }` |
-| [`Lit`](Characters_and_Bosses.md#object-lit) | Object | Defines a lit form that changes when wind element influence is applied. | 1 | `{ . . . }` |
-| [`Mounted`](Characters_and_Bosses.md#object-mounted) | Object | Defines a mounted form with 'Cat' animation suffix. | 1 | `{ . . . }` |
-| [`MouthFull`](Characters_and_Bosses.md#object-mouthfull) | Object | Defines a form with mouth full animation that changes while the Consuming status is active. | 1 | `{ . . . }` |
-| [`Mutant`](Characters_and_Bosses.md#object-mutant) | Integer / Object | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
+| [`Zealot`](./Miscellaneous.md#object-zealot) | Object  | Form state for the zealot variant of a cultist, with a stabbing attack. | 2 | `{ . . . }` |
+| [`Alert`](./Miscellaneous.md#object-alert) | Object  | Defines the 'Alert' form, an alerted state with a pattern brain AI. | 1 | `{ . . . }` |
+| [`Attacker`](./Miscellaneous.md#object-attacker) | Object  | Defines the 'Attacker' form, focusing on offensive actions like attacking and charging. | 1 | `{ . . . }` |
+| [`BellyFull`](./Miscellaneous.md#object-bellyfull) | Object  | Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation. | 1 | `{ . . . }` |
+| [`BigHolding`](./Miscellaneous.md#object-bigholding) | Object  | Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status. | 1 | `{ . . . }` |
+| [`BigHoldingCat`](./Miscellaneous.md#object-bigholdingcat) | Object  | Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming. | 1 | `{ . . . }` |
+| [`Bishop`](./Miscellaneous.md#object-bishop) | Object  | Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation. | 1 | `{ . . . }` |
+| [`BlackHole`](./Miscellaneous.md#object-blackhole) | Object  | Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name. | 1 | `{ . . . }` |
+| [`Bomb`](./Miscellaneous.md#object-bomb) | Object  | Defines the 'Bomb' form, an explosive state that triggers an ability on death. | 1 | `{ . . . }` |
+| [`Boris`](./Miscellaneous.md#object-boris) | Enum / Object  | Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives. | 1 | `{ . . . }`<br>`MegaGuppy_TransformBoris` |
+| [`Bully`](./Miscellaneous.md#object-bully) | Object  | Defines the 'Bully' form, which allows the unit to take turns and enables its passives. | 1 | `{ . . . }` |
+| [`CaveWoman`](./Miscellaneous.md#object-cavewoman) | Object  | Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health. | 1 | `{ . . . }` |
+| [`CaveWomanHasCat`](./Miscellaneous.md#object-cavewomanhascat) | Object  | Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap. | 1 | `{ . . . }` |
+| [`Charging`](./Miscellaneous.md#object-charging) | Object  | Defines the 'Charging' form, a wind-up state for a powerful attack. | 1 | `{ . . . }` |
+| [`Close`](./Miscellaneous.md#object-close) | Object  | Defines the 'Close' form, which triggers GSOpen ability upon reaction. | 1 | `{ . . . }` |
+| [`Damaged`](./Miscellaneous.md#object-damaged) | Object  | Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack. | 1 | `{ . . . }` |
+| [`Default_Ceiling`](./Miscellaneous.md#object-default_ceiling) | Object  | Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders. | 1 | `{ . . . }` |
+| [`Default_Ground`](./Miscellaneous.md#object-default_ground) | Object  | Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack. | 1 | `{ . . . }` |
+| [`DesireMech`](./Miscellaneous.md#object-desiremech) | Object  | Defines the 'DesireMech' form, a mech suit form with its own AI pattern. | 1 | `{ . . . }` |
+| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
+| [`Drunker`](./Miscellaneous.md#object-drunker) | Object  | Defines the 'Drunker' form, a drunken state with altered animation. | 1 | `{ . . . }` |
+| [`DualSword`](./Miscellaneous.md#object-dualsword) | Object  | Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack. | 1 | `{ . . . }` |
+| [`DualSword_Primed`](./Miscellaneous.md#object-dualsword_primed) | Object  | Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation. | 1 | `{ . . . }` |
+| [`Dumb`](./Miscellaneous.md#object-dumb) | Integer / Object  | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
+| [`Empty`](./Miscellaneous.md#object-empty) | Object  | Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach). | 1 | `{ . . . }` |
+| [`Explody`](./Miscellaneous.md#object-explody) | Object  | Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move. | 1 | `{ . . . }` |
+| [`FightPhase`](./Miscellaneous.md#object-fightphase) | Object  | Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns. | 1 | `{ . . . }` |
+| [`FireFull`](./Miscellaneous.md#object-firefull) | Integer / Object  | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
+| [`Flop`](./Miscellaneous.md#object-flop) | Object  | Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit. | 1 | `{ . . . }` |
+| [`Flop2`](./Miscellaneous.md#object-flop2) | Object  | Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover. | 1 | `{ . . . }` |
+| [`FlushBubs`](./Miscellaneous.md#object-flushbubs) | Object  | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
+| [`FlushHost`](./Miscellaneous.md#object-flushhost) | Object  | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
+| [`FlushNettle`](./Miscellaneous.md#object-flushnettle) | Object  | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
+| [`Grappling`](./Miscellaneous.md#object-grappling) | Object  | Defines a grappling form with a specific animation suffix and exit animations. | 1 | `{ . . . }` |
+| [`Grown`](./Miscellaneous.md#object-grown) | Object  | Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold. | 1 | `{ . . . }` |
+| [`GuaranteedJackpot`](./Miscellaneous.md#object-guaranteedjackpot) | Object  | Defines a form that guarantees a jackpot coin result from slot machine rolls. | 1 | `{ . . . }` |
+| [`Guarding`](./Miscellaneous.md#object-guarding) | Object  | Defines a guarding form with a high brace passive. | 1 | `{ . . . }` |
+| [`HalfDead`](./Miscellaneous.md#object-halfdead) | Object  | Defines the half-dead form with reduced movement and a dash attack. | 1 | `{ . . . }` |
+| [`HasDeadCat`](./Miscellaneous.md#object-hasdeadcat) | Object  | Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active. | 1 | `{ . . . }` |
+| [`HasRock`](./Miscellaneous.md#object-hasrock) | Object  | Defines a form where the unit has a rock, with a bash attack. | 1 | `{ . . . }` |
+| [`Headless`](./Miscellaneous.md#object-headless) | Object  | Defines a headless form with increased movement. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals`](./Miscellaneous.md#object-hint_crackedvisuals) | Object  | Defines a visual state with cracked animation suffix. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals2`](./Miscellaneous.md#object-hint_crackedvisuals2) | Object  | Defines a visual state with charging cracked animation. | 1 | `{ . . . }` |
+| [`Hint_CrackedVisuals3`](./Miscellaneous.md#object-hint_crackedvisuals3) | Object  | Defines a visual state with swallowed cracked animation. | 1 | `{ . . . }` |
+| [`HumanDead`](./Miscellaneous.md#object-humandead) | Object  | Defines a form when the human half is dead, with a spin attack and custom tooltip. | 1 | `{ . . . }` |
+| [`InitialPhase`](./Miscellaneous.md#object-initialphase) | Object  | Defines the initial phase form with a float move, shoot attack, and the ability to take turns. | 1 | `{ . . . }` |
+| [`Insane_Ceiling`](./Miscellaneous.md#object-insane_ceiling) | Object  | Defines the insane ceiling form with pattern AI and animation suffix. | 1 | `{ . . . }` |
+| [`Insane_Ground`](./Miscellaneous.md#object-insane_ground) | Object  | Defines the insane ground form with pattern AI and animation suffix. | 1 | `{ . . . }` |
+| [`Johnny`](./Miscellaneous.md#object-johnny) | Object  | Defines a form that executes a mega blast, side switch, and form switch in sequence. | 1 | `{ . . . }` |
+| [`JohnnyBubs`](./Miscellaneous.md#object-johnnybubs) | Object  | Defines a form granting an immediate ability reaction for Cerberubs shotgun. | 1 | `{ . . . }` |
+| [`JohnnyHost`](./Miscellaneous.md#object-johnnyhost) | Object  | Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage. | 1 | `{ . . . }` |
+| [`JohnnyNettle`](./Miscellaneous.md#object-johnnynettle) | Object  | Defines a form that gains thorns and kinetic spikes after an enemy casts a spell. | 1 | `{ . . . }` |
+| [`Joystick`](./Miscellaneous.md#object-joystick) | Object  | Defines a form with joystick animation and an immediate ability reaction (fumble even/odd). | 1 | `{ . . . }` |
+| [`Lifted`](./Miscellaneous.md#object-lifted) | Object  | Defines a lifted form with no attack or movement options. | 1 | `{ . . . }` |
+| [`Lit`](./Miscellaneous.md#object-lit) | Object  | Defines a lit form that changes when wind element influence is applied. | 1 | `{ . . . }` |
+| [`Mounted`](./Miscellaneous.md#object-mounted) | Object  | Defines a mounted form with 'Cat' animation suffix. | 1 | `{ . . . }` |
+| [`MouthFull`](./Miscellaneous.md#object-mouthfull) | Object  | Defines a form with mouth full animation that changes while the Consuming status is active. | 1 | `{ . . . }` |
+| [`Mutant`](./Miscellaneous.md#object-mutant) | Integer / Object  | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
 | `NoDeathRattle` | Object | Defines a form that suppresses death rattle and triggers a heart attack when a buddy dies. | 1 | `{ . . . }` |
-| [`NoEyes`](Characters_and_Bosses.md#object-noeyes) | Object | Defines a form with no eyes animation. | 1 | `{ . . . }` |
-| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
-| [`NoStick`](Characters_and_Bosses.md#object-nostick) | Object | Defines a form without a stick, using a jab attack with pattern AI. | 1 | `{ . . . }` |
-| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
-| [`Off`](Characters_and_Bosses.md#object-off) | Object | Defines an off form with a 'Off' animation suffix. | 1 | `{ . . . }` |
-| [`OffScreen`](Characters_and_Bosses.md#object-offscreen) | Object | Defines an off-screen form that does not take turns and drops in chaos heads. | 1 | `{ . . . }` |
-| [`OneEye`](Characters_and_Bosses.md#object-oneeye) | Object | Defines a form with one eye that triggers an ability at 40% health threshold. | 1 | `{ . . . }` |
-| [`OpenCat`](Characters_and_Bosses.md#object-opencat) | Object | Defines an open cat form that changes when the Consuming status is active. | 1 | `{ . . . }` |
-| [`Out`](Characters_and_Bosses.md#object-out) | Object | Defines a form that is 'out' with a ground flopper movement passive. | 1 | `{ . . . }` |
-| [`Possessing`](Characters_and_Bosses.md#object-possessing) | Object | Form state when the unit is possessing another entity. | 1 | `{ . . . }` |
-| [`Primed`](Characters_and_Bosses.md#object-primed) | Object | Form state representing the unit being primed, with specific attack and AI behavior. | 1 | `{ . . . }` |
-| [`Pulp2`](Characters_and_Bosses.md#object-pulp2) | Object | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp3`](Characters_and_Bosses.md#object-pulp3) | Object | Form state for the third stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp4`](Characters_and_Bosses.md#object-pulp4) | Object | Form state for the fourth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp5`](Characters_and_Bosses.md#object-pulp5) | Object | Form state for the fifth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp6`](Characters_and_Bosses.md#object-pulp6) | Object | Form state for the sixth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Pulp7`](Characters_and_Bosses.md#object-pulp7) | Object | Form state for the seventh stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
-| [`Rain`](Characters_and_Bosses.md#object-rain) | Object | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
-| [`Sitting`](Characters_and_Bosses.md#object-sitting) | Object | Form state where the unit is sitting, with no movement or attack. | 1 | `{ . . . }` |
-| [`SmallHolding`](Characters_and_Bosses.md#object-smallholding) | Object | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`SmallHoldingCat`](Characters_and_Bosses.md#object-smallholdingcat) | Object | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
-| [`SpawningPhase`](Characters_and_Bosses.md#object-spawningphase) | Object | Form state for the spawning phase, where the unit is immobile and cannot take turns. | 1 | `{ . . . }` |
-| [`Standing`](Characters_and_Bosses.md#object-standing) | Object | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
-| [`Standing2`](Characters_and_Bosses.md#object-standing2) | Object | Form state where the unit is standing with a jumping movement ability. | 1 | `{ . . . }` |
-| [`Start_Ceiling`](Characters_and_Bosses.md#object-start_ceiling) | Object | Form state for starting on the ceiling, with a form change trigger when entering the map. | 1 | `{ . . . }` |
-| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
-| [`SwordAndShield`](Characters_and_Bosses.md#object-swordandshield) | Object | Form state with sword and shield, using the DestroyerAttack ability. | 1 | `{ . . . }` |
-| [`SwordAndShield_Primed`](Characters_and_Bosses.md#object-swordandshield_primed) | Object | Primed form state of SwordAndShield with holy animation and no final boss shield. | 1 | `{ . . . }` |
+| [`NoEyes`](./Miscellaneous.md#object-noeyes) | Object  | Defines a form with no eyes animation. | 1 | `{ . . . }` |
+| [`NormalFull`](./Miscellaneous.md#object-normalfull) | Integer / Object  | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
+| [`NoStick`](./Miscellaneous.md#object-nostick) | Object  | Defines a form without a stick, using a jab attack with pattern AI. | 1 | `{ . . . }` |
+| [`Obey`](./Miscellaneous.md#object-obey) | Integer / Object  | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
+| [`Off`](./Miscellaneous.md#object-off) | Object  | Defines an off form with a 'Off' animation suffix. | 1 | `{ . . . }` |
+| [`OffScreen`](./Miscellaneous.md#object-offscreen) | Object  | Defines an off-screen form that does not take turns and drops in chaos heads. | 1 | `{ . . . }` |
+| [`OneEye`](./Miscellaneous.md#object-oneeye) | Object  | Defines a form with one eye that triggers an ability at 40% health threshold. | 1 | `{ . . . }` |
+| [`OpenCat`](./Miscellaneous.md#object-opencat) | Object  | Defines an open cat form that changes when the Consuming status is active. | 1 | `{ . . . }` |
+| [`Out`](./Miscellaneous.md#object-out) | Object  | Defines a form that is 'out' with a ground flopper movement passive. | 1 | `{ . . . }` |
+| [`Possessing`](./Miscellaneous.md#object-possessing) | Object  | Form state when the unit is possessing another entity. | 1 | `{ . . . }` |
+| [`Primed`](./Miscellaneous.md#object-primed) | Object  | Form state representing the unit being primed, with specific attack and AI behavior. | 1 | `{ . . . }` |
+| [`Pulp2`](./Miscellaneous.md#object-pulp2) | Object  | Form state for the second stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp3`](./Miscellaneous.md#object-pulp3) | Object  | Form state for the third stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp4`](./Miscellaneous.md#object-pulp4) | Object  | Form state for the fourth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp5`](./Miscellaneous.md#object-pulp5) | Object  | Form state for the fifth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp6`](./Miscellaneous.md#object-pulp6) | Object  | Form state for the sixth stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Pulp7`](./Miscellaneous.md#object-pulp7) | Object  | Form state for the seventh stage of pulping, with no attacks or movement. | 1 | `{ . . . }` |
+| [`Rain`](./Miscellaneous.md#object-rain) | Object  | Defines the rain weather effect with associated particle, sound, and rendering settings. | 1 | `{ . . . }` |
+| [`Sitting`](./Miscellaneous.md#object-sitting) | Object  | Form state where the unit is sitting, with no movement or attack. | 1 | `{ . . . }` |
+| [`SmallHolding`](./Miscellaneous.md#object-smallholding) | Object  | Form state when the unit is holding a small object, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SmallHoldingCat`](./Miscellaneous.md#object-smallholdingcat) | Object  | Form state when the unit is holding a cat, triggering a form change while consuming. | 1 | `{ . . . }` |
+| [`SpawningPhase`](./Miscellaneous.md#object-spawningphase) | Object  | Form state for the spawning phase, where the unit is immobile and cannot take turns. | 1 | `{ . . . }` |
+| [`Standing`](./Miscellaneous.md#object-standing) | Object  | Form state where the unit is standing, with default movement and attack. | 1 | `{ . . . }` |
+| [`Standing2`](./Miscellaneous.md#object-standing2) | Object  | Form state where the unit is standing with a jumping movement ability. | 1 | `{ . . . }` |
+| [`Start_Ceiling`](./Miscellaneous.md#object-start_ceiling) | Object  | Form state for starting on the ceiling, with a form change trigger when entering the map. | 1 | `{ . . . }` |
+| [`Stop`](./Miscellaneous.md#object-stop) | Integer / Object  | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
+| [`SwordAndShield`](./Miscellaneous.md#object-swordandshield) | Object  | Form state with sword and shield, using the DestroyerAttack ability. | 1 | `{ . . . }` |
+| [`SwordAndShield_Primed`](./Miscellaneous.md#object-swordandshield_primed) | Object  | Primed form state of SwordAndShield with holy animation and no final boss shield. | 1 | `{ . . . }` |
 | `sync_brain_patterns` | Boolean | If true, synchronizes brain patterns across form changes. | 1 | `true` |
-| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`Throb`](Characters_and_Bosses.md#object-throb) | Object | Form state for the Chaos unit's throb behavior, with a spread pattern. | 1 | `{ . . . }` |
-| [`ThrobBubs`](Characters_and_Bosses.md#object-throbbubs) | Object | Form state for Chaos unit throb that reacts with a shotgun attack. | 1 | `{ . . . }` |
-| [`ThrobHost`](Characters_and_Bosses.md#object-throbhost) | Object | Form state for Chaos unit acting as host, reflecting projectiles. | 1 | `{ . . . }` |
-| [`ThrobNettle`](Characters_and_Bosses.md#object-throbnettle) | Object | Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells. | 1 | `{ . . . }` |
-| [`Transformed`](Characters_and_Bosses.md#object-transformed) | Object | Form state after transformation, ending the turn on form switch. | 1 | `{ . . . }` |
-| [`TwoEyes`](Characters_and_Bosses.md#object-twoeyes) | Object | Form state with two eyes, triggering ability at a health threshold. | 1 | `{ . . . }` |
+| [`Tar`](./Miscellaneous.md#object-tar) | Integer / Object  | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`Throb`](./Miscellaneous.md#object-throb) | Object  | Form state for the Chaos unit's throb behavior, with a spread pattern. | 1 | `{ . . . }` |
+| [`ThrobBubs`](./Miscellaneous.md#object-throbbubs) | Object  | Form state for Chaos unit throb that reacts with a shotgun attack. | 1 | `{ . . . }` |
+| [`ThrobHost`](./Miscellaneous.md#object-throbhost) | Object  | Form state for Chaos unit acting as host, reflecting projectiles. | 1 | `{ . . . }` |
+| [`ThrobNettle`](./Miscellaneous.md#object-throbnettle) | Object  | Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells. | 1 | `{ . . . }` |
+| [`Transformed`](./Miscellaneous.md#object-transformed) | Object  | Form state after transformation, ending the turn on form switch. | 1 | `{ . . . }` |
+| [`TwoEyes`](./Miscellaneous.md#object-twoeyes) | Object  | Form state with two eyes, triggering ability at a health threshold. | 1 | `{ . . . }` |
 | `Unmounted` | Object | Form state when the unit is unmounted from its mech suit, with no additional properties. | 1 | `{ . . . }` |
-| [`Unwashed`](Characters_and_Bosses.md#object-unwashed) | Object | Form state for the unwashed version of Johnny, with its own AI pattern. | 1 | `{ . . . }` |
-| [`Washed`](Characters_and_Bosses.md#object-washed) | Object | Form state for the washed version of Johnny, with a blast attack. | 1 | `{ . . . }` |
-| [`Washer`](Characters_and_Bosses.md#object-washer) | Object | Form state for the washer variant of a cultist, with basic melee attack. | 1 | `{ . . . }` |
-| [`WereMan`](Characters_and_Bosses.md#object-wereman) | Object | Form state for the were-man transformation, with fury swipe attack and sabertooth faction. | 1 | `{ . . . }` |
-| [`ZealotBomb`](Characters_and_Bosses.md#object-zealotbomb) | Object | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
+| [`Unwashed`](./Miscellaneous.md#object-unwashed) | Object  | Form state for the unwashed version of Johnny, with its own AI pattern. | 1 | `{ . . . }` |
+| [`Washed`](./Miscellaneous.md#object-washed) | Object  | Form state for the washed version of Johnny, with a blast attack. | 1 | `{ . . . }` |
+| [`Washer`](./Miscellaneous.md#object-washer) | Object  | Form state for the washer variant of a cultist, with basic melee attack. | 1 | `{ . . . }` |
+| [`WereMan`](./Miscellaneous.md#object-wereman) | Object  | Form state for the were-man transformation, with fury swipe attack and sabertooth faction. | 1 | `{ . . . }` |
+| [`ZealotBomb`](./Miscellaneous.md#object-zealotbomb) | Object  | Form state for the bomb zealot variant, with an explosion attack. | 1 | `{ . . . }` |
 
 </details>
 
@@ -10613,7 +10613,7 @@
 | [`animation`](./Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 11 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 8 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`initiative`](./Enums.md#enum-initiative) | Enum / Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 4 | `-10`<br>`-100`<br>`-20` |
-| [`turns`](Characters_and_Bosses.md#object-turns) | Array / Integer / Object | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`turns`](./Miscellaneous.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 
 </details>
 
@@ -10635,7 +10635,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `full_repair` | Boolean | If true, the item's durability is fully restored when transformed by element influence. | 5 | `true` |
 | [`item`](./Enums.md#enum-item) | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 5 | `1`<br>`2`<br>`EstusFlask_Full` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -10670,7 +10670,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TransformOnDeath`](./Enums.md#enum-transformondeath) | Array / Enum | Specifies the unit or list of units to transform into upon death. | 26 | `BishopHat`<br>`CanCreeperOut`<br>`Carcus` |
+| [`TransformOnDeath`](./Arrays.md#array-transformondeath) | Array / Enum  | Specifies the unit or list of units to transform into upon death. | 26 | `BishopHat`<br>`CanCreeperOut`<br>`Carcus` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -10692,7 +10692,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`first_turn`](./Enums.md#enum-first_turn) | Enum | Determines when the spawned unit takes its first turn relative to the spawn event. | 4 | `end_of_round`<br>`initiative`<br>`keep_turns` |
-| [`obj`](./Enums.md#enum-obj) | Array / Enum | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
+| [`obj`](./Arrays.md#array-obj) | Array / Enum  | Specifies one or more object names to bounce towards the target. | 4 | `BeefyCharmedLeech`<br>`Dice`<br>`Maggot` |
 
 </details>
 
@@ -10712,8 +10712,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -10733,8 +10733,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -10754,9 +10754,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -11137,7 +11137,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | [`GlobalSpawnCharacter`](./Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 1 | `0`<br>`1` |
-| [`SwitchMusic`](Abilities_and_Spells.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 1 | `{ . . . }` |
+| [`SwitchMusic`](./Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 1 | `{ . . . }` |
 
 </details>
 
@@ -11158,7 +11158,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
@@ -11181,7 +11181,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`icon`](./Enums.md#enum-icon) | Integer | The sprite ID or atlas key for the countdown icon when not ready. | 4 | `800`<br>`802`<br>`804` |
-| [`ForceUseAbility`](Characters_and_Bosses.md#object-forceuseability) | Enum / Object | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
+| [`ForceUseAbility`](./Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 2 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `icon_ready` | Integer | The sprite ID or atlas key for the countdown icon when the ability is ready. | 1 | `801`<br>`803`<br>`805` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
@@ -11309,7 +11309,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`other_character`](./Enums.md#enum-other_character) | Enum | Specifies the name of the other boss character whose animations are synced. | 1 | `MegaGuppy` |
-| [`other_form_change_abilities`](Characters_and_Bosses.md#object-other_form_change_abilities) | Object | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
+| [`other_form_change_abilities`](./Miscellaneous.md#object-other_form_change_abilities) | Object  | An object mapping form names to the other character's form change abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -11329,9 +11329,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Defines additional damage or effects applied to nearby targets around the primary target. | 68 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
+| [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`splash_damage`](./Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 68 | `{ . . . }` |
 
 </details>
 
@@ -11665,18 +11665,18 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`StacyMutant_Brace`](Characters_and_Bosses.md#object-stacymutant_brace) | Object | A passive group granting the Brace ability and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Counter`](Characters_and_Bosses.md#object-stacymutant_counter) | Object | A passive group granting a counter attack and a bleed effect on basic attacks. | 1 | `{ . . . }` |
-| [`StacyMutant_Damage`](Characters_and_Bosses.md#object-stacymutant_damage) | Object | A passive group increasing damage and decreasing max health with cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_DoubleHead`](Characters_and_Bosses.md#object-stacymutant_doublehead) | Object | A passive group granting an extra dispersed turn and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Fire`](Characters_and_Bosses.md#object-stacymutant_fire) | Object | A passive group granting fire immunity and a lava shot basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Health`](Characters_and_Bosses.md#object-stacymutant_health) | Object | A passive group increasing max health, reducing speed, and scaling size. | 1 | `{ . . . }` |
-| [`StacyMutant_Holy`](Characters_and_Bosses.md#object-stacymutant_holy) | Object | A passive group granting a divine shield and cosmetic changes. | 1 | `{ . . . }` |
-| [`StacyMutant_Ice`](Characters_and_Bosses.md#object-stacymutant_ice) | Object | A passive group granting ice immunity and an ice breath basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Lightning`](Characters_and_Bosses.md#object-stacymutant_lightning) | Object | A passive group granting electric immunity and a lightning dash basic attack. | 1 | `{ . . . }` |
-| [`StacyMutant_Mirror`](Characters_and_Bosses.md#object-stacymutant_mirror) | Object | A passive group granting projectile reflection and random magic missile each turn. | 1 | `{ . . . }` |
-| [`StacyMutant_Speed`](Characters_and_Bosses.md#object-stacymutant_speed) | Object | A passive group increasing speed, reducing damage, and scaling size. | 1 | `{ . . . }` |
-| [`StacyMutant_Thorns`](Characters_and_Bosses.md#object-stacymutant_thorns) | Object | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Brace`](./Miscellaneous.md#object-stacymutant_brace) | Object  | A passive group granting the Brace ability and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Counter`](./Miscellaneous.md#object-stacymutant_counter) | Object  | A passive group granting a counter attack and a bleed effect on basic attacks. | 1 | `{ . . . }` |
+| [`StacyMutant_Damage`](./Miscellaneous.md#object-stacymutant_damage) | Object  | A passive group increasing damage and decreasing max health with cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_DoubleHead`](./Miscellaneous.md#object-stacymutant_doublehead) | Object  | A passive group granting an extra dispersed turn and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Fire`](./Miscellaneous.md#object-stacymutant_fire) | Object  | A passive group granting fire immunity and a lava shot basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Health`](./Miscellaneous.md#object-stacymutant_health) | Object  | A passive group increasing max health, reducing speed, and scaling size. | 1 | `{ . . . }` |
+| [`StacyMutant_Holy`](./Miscellaneous.md#object-stacymutant_holy) | Object  | A passive group granting a divine shield and cosmetic changes. | 1 | `{ . . . }` |
+| [`StacyMutant_Ice`](./Miscellaneous.md#object-stacymutant_ice) | Object  | A passive group granting ice immunity and an ice breath basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Lightning`](./Miscellaneous.md#object-stacymutant_lightning) | Object  | A passive group granting electric immunity and a lightning dash basic attack. | 1 | `{ . . . }` |
+| [`StacyMutant_Mirror`](./Miscellaneous.md#object-stacymutant_mirror) | Object  | A passive group granting projectile reflection and random magic missile each turn. | 1 | `{ . . . }` |
+| [`StacyMutant_Speed`](./Miscellaneous.md#object-stacymutant_speed) | Object  | A passive group increasing speed, reducing damage, and scaling size. | 1 | `{ . . . }` |
+| [`StacyMutant_Thorns`](./Miscellaneous.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 1 | `{ . . . }` |
 
 </details>
 
@@ -11770,7 +11770,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
 
 </details>
@@ -11867,7 +11867,7 @@
 | `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 12 | `1` |
 | [`ReplaceBasicAttack`](./Enums.md#enum-replacebasicattack) | Enum | Specifies the ability ID that replaces the unit's basic attack. | 8 | `BasicButcherMeleeWideDoubleSpin`<br>`BasicButcherMeleeWideSpin`<br>`BasicDruidAbilityVersatile` |
 | `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 6 | `1` |
-| [`StatusOnBattleEnd`](Abilities_and_Spells.md#object-statusonbattleend) | Object | An object containing status effects or passives applied to the unit when the battle ends. | 6 | `{ . . . }` |
+| [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 6 | `{ . . . }` |
 | [`YOffset`](./Enums.md#enum-yoffset) | Number | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 6 | `-.18`<br>`.25`<br>`.35` |
 | [`AddTag`](./Enums.md#enum-addtag) | Enum | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
@@ -11892,7 +11892,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `DeleteObject` | Integer | If set, deletes the target object from the map. | 3 | `1` |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
+| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
 
 </details>
 
@@ -11912,7 +11912,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Marked`](Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
+| [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
 
 </details>
 
@@ -11972,7 +11972,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](Abilities_and_Spells.md#object-objectonhit) | Enum / Object | Specifies the object to spawn on the hit tile. | 2 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
+| [`ObjectOnHit`](./Miscellaneous.md#object-objectonhit) | Enum / Object  | Specifies the object to spawn on the hit tile. | 2 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
 | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 2 | `1` |
 
 </details>
@@ -12194,7 +12194,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
+| [`BloodRain`](./Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object  | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12269,7 +12269,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BombRatTurtle`](Engine_StatusAndPassiveKeys.md#object-bombratturtle) | Integer / Object | The number of bomb rat turtle spawns triggered. | 2 | `{ . . . }`<br>`1` |
+| [`BombRatTurtle`](./Engine_StatusAndPassiveKeys.md#object-bombratturtle) | Integer / Object  | The number of bomb rat turtle spawns triggered. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -12481,13 +12481,13 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [`BreakIntoRocks`](./Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 4 | `Coin`<br>`SmallRock` |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 3 | `1`<br>`20` |
 | `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 2 | `1` |
 | `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 1 | `1` |
-| [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 
 </details>
 
@@ -12597,7 +12597,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`count`](./Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 3 | `0`<br>`1`<br>`10` |
 
@@ -12980,7 +12980,7 @@
 | `do_not_pop_corpse` | Boolean | If true, the consumed unit's corpse is not popped upon consumption. | 7 | `true` |
 | [`drop_on_death`](./Enums.md#enum-drop_on_death) | Boolean / Enum | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 7 | `deferred`<br>`false`<br>`true` |
 | `drop_on_self_death` | Boolean | If true, the consumed unit is dropped when the consumer dies. | 3 | `true` |
-| [`extra_statuses`](Abilities_and_Spells.md#object-extra_statuses) | Object | An object containing additional status effects (with stack counts) applied to the consumed unit. | 3 | `{ . . . }` |
+| [`extra_statuses`](./Miscellaneous.md#object-extra_statuses) | Object  | An object containing additional status effects (with stack counts) applied to the consumed unit. | 3 | `{ . . . }` |
 | [`drop_body_ability`](./Enums.md#enum-drop_body_ability) | Enum | Specifies the ability used to drop the consumed body. | 1 | `MoonHandDrop` |
 | `kill_on_consume` | Boolean | If true, the consumed unit is killed immediately upon consumption. | 1 | `true` |
 | `use_placeholder` | Boolean | If true, renders the ability using a temporary placeholder animation instead of the final art. | 1 | `true` |
@@ -13114,8 +13114,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
-| [`LowerAmbientLight`](Abilities_and_Spells.md#object-lowerambientlight) | Object | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 | `{ . . . }` |
+| [`BloodRain`](./Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object  | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` |
+| [`LowerAmbientLight`](./Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 | `{ . . . }` |
 
 </details>
 
@@ -13154,7 +13154,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`TakeBonusTurnWithAIControl`](Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 1 | `{ . . . }` |
+| [`TakeBonusTurnWithAIControl`](./Miscellaneous.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 1 | `{ . . . }` |
 
 </details>
 
@@ -13526,8 +13526,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
-| [`keyword_tooltips`](Abilities_and_Spells.md#object-keyword_tooltips) | Object | Associates keyword tooltips with the ability, often used for status effects. | 62 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 62 | `{ . . . }` |
 
 </details>
 
@@ -13583,7 +13583,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 | `instant` | Boolean | If true, the consumption happens immediately without a timer. | 1 | `true` |
 
 </details>
@@ -13987,7 +13987,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`EmptyMind`](Engine_StatusAndPassiveKeys.md#object-emptymind) | Integer / Object | The number of Empty Mind stacks, likely disabling special abilities. | 2 | `{ . . . }`<br>`1` |
+| [`EmptyMind`](./Engine_StatusAndPassiveKeys.md#object-emptymind) | Integer / Object  | The number of Empty Mind stacks, likely disabling special abilities. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14041,7 +14041,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Enlarge`](Engine_StatusAndPassiveKeys.md#object-enlarge) | Integer / Object | The number of turns the unit is enlarged, increasing its size and stats. | 2 | `{ . . . }`<br>`3` |
+| [`Enlarge`](./Engine_StatusAndPassiveKeys.md#object-enlarge) | Integer / Object  | The number of turns the unit is enlarged, increasing its size and stats. | 2 | `{ . . . }`<br>`3` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14117,7 +14117,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 13 | `true` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
 
@@ -14386,7 +14386,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FireArmor2`](Engine_StatusAndPassiveKeys.md#object-firearmor2) | Integer / Object | The number of Fire Armor2 stacks (likely a variant). | 2 | `{ . . . }`<br>`1` |
+| [`FireArmor2`](./Engine_StatusAndPassiveKeys.md#object-firearmor2) | Integer / Object  | The number of Fire Armor2 stacks (likely a variant). | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14494,7 +14494,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FlySwarm`](Engine_StatusAndPassiveKeys.md#object-flyswarm) | Object | Summons a fly swarm with the given chance or intensity percentage. | 5 | `{ . . . }` |
+| [`FlySwarm`](./Engine_StatusAndPassiveKeys.md#object-flyswarm) | Object  | Summons a fly swarm with the given chance or intensity percentage. | 5 | `{ . . . }` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14548,7 +14548,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FrankBolts`](Passives_and_Statuses.md#object-frankbolts) | Integer / Object | The number of Frank Bolts applied or available. | 2 | `{ . . . }`<br>`1` |
+| [`FrankBolts`](./Passives_and_Statuses.md#object-frankbolts) | Integer / Object  | The number of Frank Bolts applied or available. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -14624,7 +14624,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 1 | `2`<br>`3`<br>`4` |
 
 </details>
 
@@ -14843,7 +14843,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 6 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`exit_animations`](Characters_and_Bosses.md#object-exit_animations) | Object | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
+| [`exit_animations`](./Miscellaneous.md#object-exit_animations) | Object  | An object mapping exit conditions to their corresponding animation names. | 1 | `{ . . . }` |
 
 </details>
 
@@ -15025,9 +15025,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](./Enums.md#enum-tag) | Array / Enum | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 981 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 730 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`threshold`](Items_and_Equipment.md#object-threshold) | Enum / Integer / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| [`threshold`](./Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -15434,7 +15434,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -15639,7 +15639,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`ApplyToSource`](Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 
 </details>
 
@@ -15770,8 +15770,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 4719 | `{ . . . }` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3702 | `{ . . . }` |
+| [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 4719 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3702 | `{ . . . }` |
 
 </details>
 
@@ -15827,7 +15827,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`eat_damage`](Characters_and_Bosses.md#object-eat_damage) | Object | An object defining the damage properties of the eat attack. | 1 | `{ . . . }` |
+| [`eat_damage`](./Miscellaneous.md#object-eat_damage) | Object  | An object defining the damage properties of the eat attack. | 1 | `{ . . . }` |
 | [`tumor_object`](./Enums.md#enum-tumor_object) | Enum | Specifies the name of the tumor object to spawn. | 1 | `MotherTumor` |
 
 </details>
@@ -15848,10 +15848,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cat`](Characters_and_Bosses.md#object-cat) | Object | Defines the behavior and form change for captured cat units. | 10 | `{ . . . }` |
+| [`Cat`](./Miscellaneous.md#object-cat) | Object  | Defines the behavior and form change for captured cat units. | 10 | `{ . . . }` |
 | [`considered_forms`](./Arrays.md#array-considered_forms) | Array | An array of form names the tumor considers for interaction. | 1 | `[Big BigHolding BigHoldingCat]` |
 | [`grow_ability`](./Enums.md#enum-grow_ability) | Enum | Specifies the ability used by the tumor to grow. | 1 | `MotherTumorGrow` |
-| [`NonCat`](Characters_and_Bosses.md#object-noncat) | Object | Defines the behavior and form change for captured non-cat units. | 1 | `{ . . . }` |
+| [`NonCat`](./Miscellaneous.md#object-noncat) | Object  | Defines the behavior and form change for captured non-cat units. | 1 | `{ . . . }` |
 | [`pass_ani`](./Enums.md#enum-pass_ani) | Enum | Specifies the animation played when passing something to the tumor. | 1 | `pass` |
 | [`receive_ani`](./Enums.md#enum-receive_ani) | Enum | Specifies the animation played when receiving something from the tumor. | 1 | `receive` |
 
@@ -15984,7 +15984,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](./Enums.md#enum-object) | Array / Enum | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 545 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`chance`](./Enums.md#enum-chance) | Number | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
 
 </details>
@@ -16059,7 +16059,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
+| [`passives`](./Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` |
 | [`value`](./Math_Equations.md) | Equation | The numeric value or formula associated with the buff. | 485 | `.5`<br>`0`<br>`1` |
 
 </details>
@@ -16080,7 +16080,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Brace`](Events_and_Encounters.md#object-brace) | Enum / Integer / Object | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Brace`](./Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 20 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
 
@@ -16100,7 +16100,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MovementReaction`](Characters_and_Bosses.md#object-movementreaction) | Object | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 2 | `{ . . . }` |
+| [`MovementReaction`](./Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 2 | `{ . . . }` |
 
 </details>
 
@@ -16120,7 +16120,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 | `{ . . . }` |
+| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 178 | `{ . . . }` |
 
 </details>
 
@@ -16263,7 +16263,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`PoisonLace`](Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
+| [`PoisonLace`](./Engine_StatusAndPassiveKeys.md#object-poisonlace) | Integer / Object / String  | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `{ . . . }`<br>`"X/3"`<br>`"X/5"`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -16631,7 +16631,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 
 </details>
 
@@ -16652,7 +16652,7 @@
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`text`](./Strings.md#string-text) | String | The localization key for the name of this injury. | 13 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
-| [`element`](./Enums.md#enum-element) | Array / Enum | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
+| [`element`](./Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 1 | `Electric`<br>`Fire`<br>`Gravity` |
 
 </details>
 
@@ -16723,7 +16723,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Regurge`](Engine_StatusAndPassiveKeys.md#object-regurge) | Integer / Object | The number of regurgitation triggers. | 2 | `{ . . . }`<br>`1` |
+| [`Regurge`](./Engine_StatusAndPassiveKeys.md#object-regurge) | Integer / Object  | The number of regurgitation triggers. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17020,7 +17020,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Sandstorm`](Engine_StatusAndPassiveKeys.md#object-sandstorm) | Object | A self-buff ability that creates a sandstorm, applying a status effect (may be 'Sandstorm 1' or an object definition with a specific template). | 2 | `{ . . . }` |
+| [`Sandstorm`](./Engine_StatusAndPassiveKeys.md#object-sandstorm) | Object  | A self-buff ability that creates a sandstorm, applying a status effect (may be 'Sandstorm 1' or an object definition with a specific template). | 2 | `{ . . . }` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17041,7 +17041,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 199 | `{ . . . }`<br>`bite1` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 199 | `{ . . . }`<br>`bite1` |
 | [`thresholds`](./Arrays.md#array-thresholds) | Array | An array of health percentage thresholds that trigger an alt state. | 1 | `[` |
 
 </details>
@@ -17285,7 +17285,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Shatter`](Engine_StatusAndPassiveKeys.md#object-shatter) | Integer / Object | The amount of damage dealt when a frozen or petrified status is shattered, or a template definition for a Shatter ability. | 4 | `{ . . . }`<br>`15` |
+| [`Shatter`](./Engine_StatusAndPassiveKeys.md#object-shatter) | Integer / Object  | The amount of damage dealt when a frozen or petrified status is shattered, or a template definition for a Shatter ability. | 4 | `{ . . . }`<br>`15` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17339,7 +17339,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ShortCircuit`](Engine_StatusAndPassiveKeys.md#object-shortcircuit) | Integer / Object | The number of stacks of the ShortCircuit status effect. | 2 | `{ . . . }`<br>`1` |
+| [`ShortCircuit`](./Engine_StatusAndPassiveKeys.md#object-shortcircuit) | Integer / Object  | The number of stacks of the ShortCircuit status effect. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17399,10 +17399,10 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SlotResult_Explode`](Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object | The result of an explosion roll, or the weight of that result. | 2 | `{ . . . }`<br>`1` |
-| [`SlotResult_Jackpot_Coins`](Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object | The result of a jackpot roll that spawns coins, or the weight of that result in the pool. | 2 | `{ . . . }`<br>`1` |
-| [`SlotResult_Nothing`](Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object | The result of a nothing roll, or the weight of that result. | 1 | `{ . . . }`<br>`7` |
-| [`SlotResult_RandomPickup`](Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
+| [`SlotResult_Explode`](./Engine_LogicKeys.md#object-slotresult_explode) | Integer / Object  | The result of an explosion roll, or the weight of that result. | 2 | `{ . . . }`<br>`1` |
+| [`SlotResult_Jackpot_Coins`](./Engine_LogicKeys.md#object-slotresult_jackpot_coins) | Integer / Object  | The result of a jackpot roll that spawns coins, or the weight of that result in the pool. | 2 | `{ . . . }`<br>`1` |
+| [`SlotResult_Nothing`](./Engine_LogicKeys.md#object-slotresult_nothing) | Integer / Object  | The result of a nothing roll, or the weight of that result. | 1 | `{ . . . }`<br>`7` |
+| [`SlotResult_RandomPickup`](./Engine_LogicKeys.md#object-slotresult_randompickup) | Integer / Object  | The result of a random pickup roll, or the weight of that result. | 1 | `{ . . . }`<br>`11` |
 
 </details>
 
@@ -17458,7 +17458,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`SmellBlood`](Engine_StatusAndPassiveKeys.md#object-smellblood) | Integer / Object | If non-zero, activates the Smell Blood ability which reveals nearby injured units. | 2 | `{ . . . }`<br>`1` |
+| [`SmellBlood`](./Engine_StatusAndPassiveKeys.md#object-smellblood) | Integer / Object  | If non-zero, activates the Smell Blood ability which reveals nearby injured units. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17503,8 +17503,8 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
 
 </details>
@@ -17543,7 +17543,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](Characters_and_Bosses.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Big`](./Miscellaneous.md#object-big) | Object  | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 </details>
 
@@ -17581,12 +17581,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Normal`](Characters_and_Bosses.md#object-normal) | Integer / Object | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
-| [`Fire`](Characters_and_Bosses.md#object-fire) | Integer / Object | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 | `{ . . . }`<br>`1` |
-| [`FireFull`](Characters_and_Bosses.md#object-firefull) | Integer / Object | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
-| [`NormalFull`](Characters_and_Bosses.md#object-normalfull) | Integer / Object | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
-| [`Tar`](Characters_and_Bosses.md#object-tar) | Integer / Object | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
-| [`TarFull`](Characters_and_Bosses.md#object-tarfull) | Integer / Object | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`Normal`](./Miscellaneous.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 24 | `{ . . . }`<br>`0` |
+| [`Fire`](./Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 6 | `{ . . . }`<br>`1` |
+| [`FireFull`](./Miscellaneous.md#object-firefull) | Integer / Object  | Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo. | 1 | `{ . . . }`<br>`1` |
+| [`NormalFull`](./Miscellaneous.md#object-normalfull) | Integer / Object  | As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index. | 1 | `{ . . . }`<br>`0` |
+| [`Tar`](./Miscellaneous.md#object-tar) | Integer / Object  | If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit. | 1 | `{ . . . }`<br>`2` |
+| [`TarFull`](./Miscellaneous.md#object-tarfull) | Integer / Object  | If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit. | 1 | `{ . . . }`<br>`2` |
 
 </details>
 
@@ -17846,7 +17846,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Switcheroo`](Engine_StatusAndPassiveKeys.md#object-switcheroo) | Integer / Object | The number of stacks of the Switcheroo status effect. | 2 | `{ . . . }`<br>`1` |
+| [`Switcheroo`](./Engine_StatusAndPassiveKeys.md#object-switcheroo) | Integer / Object  | The number of stacks of the Switcheroo status effect. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -17921,12 +17921,12 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
-| [`Dumb`](Characters_and_Bosses.md#object-dumb) | Integer / Object | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
+| [`Die`](./Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 1 | `{ . . . }`<br>`1`<br>`6` |
+| [`Dumb`](./Miscellaneous.md#object-dumb) | Integer / Object  | Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV. | 1 | `{ . . . }`<br>`3` |
 | `Fuck` | Integer | The number of times the TV bot screen displays the 'Fuck' message. | 1 | `5` |
-| [`Obey`](Characters_and_Bosses.md#object-obey) | Integer / Object | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
+| [`Obey`](./Miscellaneous.md#object-obey) | Integer / Object  | As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count). | 1 | `{ . . . }`<br>`1` |
 | `Shit` | Integer | The number of times the TV bot screen displays the 'Shit' message. | 1 | `4` |
-| [`Stop`](Characters_and_Bosses.md#object-stop) | Integer / Object | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
+| [`Stop`](./Miscellaneous.md#object-stop) | Integer / Object  | If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state. | 1 | `{ . . . }`<br>`2` |
 
 </details>
 
@@ -18185,7 +18185,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`MeleeRevengeDamage`](Abilities_and_Spells.md#object-meleerevengedamage) | Object | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 | `{ . . . }` |
+| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 20 | `{ . . . }` |
 
 </details>
 
@@ -18374,7 +18374,7 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TradeLife`](Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object | The amount of health life traded, or a template for a TradeLife ability. | 2 | `{ . . . }`<br>`1` |
+| [`TradeLife`](./Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object  | The amount of health life traded, or a template for a TradeLife ability. | 2 | `{ . . . }`<br>`1` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18763,9 +18763,9 @@
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](Abilities_and_Spells.md#object-cwaggle) | Object | Defines a clone variant of the Waggle unit with its own graphics and properties. | 2 | `{ . . . }` |
-| [`cWaggle2x2`](Abilities_and_Spells.md#object-cwaggle2x2) | Object | Defines a larger 2x2 tile clone variant of the Waggle unit. | 2 | `{ . . . }` |
-| [`cWaggle3x3`](Abilities_and_Spells.md#object-cwaggle3x3) | Object | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle`](./Miscellaneous.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 2 | `{ . . . }` |
+| [`cWaggle2x2`](./Miscellaneous.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 2 | `{ . . . }` |
+| [`cWaggle3x3`](./Miscellaneous.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
 | `stacks` | Enum / Integer | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>

@@ -15,13 +15,13 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage_instance`](Abilities_and_Spells.md#object-damage_instance) | Object | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
+| [`damage_instance`](./Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 4688 | `{ . . . }` |
 | [`spell`](./Enums.md#enum-spell) | Enum | Specifies the spell ability to use as a reaction. | 924 | `MCHadouken` |
-| [`self_damage`](Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`self_damage`](./Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 436 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 | [`elements`](./Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 369 | `[`<br>`[Heat Fire]` |
-| `str` | Enum / Integer | The Strength stat value or modifier. | 337 | `-1`<br>`-2`<br>`-3` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 277 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
-| `durability` | Array / Integer | The amount of durability consumed by this ability or required for its use. | 264 | `0`<br>`1`<br>`10` |
+| [`str`](./Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 337 | `-1`<br>`-2`<br>`-3` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 277 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`durability`](./Arrays.md#array-durability) | Array / Integer  | The amount of durability consumed by this ability or required for its use. | 264 | `0`<br>`1`<br>`10` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 226 | `-99999`<br>`-999999`<br>`1` |
 | `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 128 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 120 | `true` |
@@ -29,9 +29,9 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `melee` | Variable | The melee attack type or category. | 102 | `Melee` |
 | `status_spell` | Variable | The category for spells that apply status effects. | 87 ||
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | A string identifier for a custom AI weighting condition that modifies the AI's scoring for this damage instance. | 82 | `avoid_redundant_debuffs`<br>`avoid_redundant_debuffs_strict`<br>`avoid_target_map_top` |
-| [`splash_damage`](Abilities_and_Spells.md#object-splash_damage) | Object | Defines additional damage or effects applied to nearby targets around the primary target. | 68 | `{ . . . }` |
+| [`splash_damage`](./Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 68 | `{ . . . }` |
 | `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 64 | `true` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 46 | `false`<br>`true` |
 | [`level`](./Enums.md#enum-level) | Enum | The level or quest identifier to load. | 33 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
@@ -56,7 +56,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `non_lethal` | Boolean | If true, the damage instance cannot reduce a unit below 1 HP, preventing kills. | 3 | `true` |
 | `spell_cost` | Variable | The cost of a spell, usually in mana. | 3 ||
 | `tiles` | Variable | A collection of tiles. | 3 ||
-| [`damage`](Abilities_and_Spells.md#object-damage) | Enum / Integer / Object | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `can_instapop` | Boolean | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 | `false` |
 | `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 2 | `true` |
 | `force_no_contact` | Boolean | If true, the damage instance does not trigger contact-based passives even if it would normally be a contact hit. | 2 | `true` |
@@ -70,9 +70,9 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `tile_exists` | Variable | A variable that checks for the existence of a specific tile condition, often used to filter targeting. | 2 ||
 | `toss_farthest` | Variable | A variable that determines the maximum distance a unit or object can be tossed. | 2 ||
 | `two_way_contact` | Boolean | If true, contact effects apply to both the attacker and the target when the damage instance hits. | 2 | `true` |
-| [`bonk_damage`](Abilities_and_Spells.md#object-bonk_damage) | Object | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 2 | `{ . . . }` |
+| [`bonk_damage`](./Miscellaneous.md#object-bonk_damage) | Object  | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 2 | `{ . . . }` |
 | `avoid_redundant_debuffs` | Variable | If true, prevents the application of a debuff that the target already has. | 1 ||
-| [`catch`](Events_and_Encounters.md#object-catch) | Object | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
+| [`catch`](./Miscellaneous.md#object-catch) | Object  | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
 | `damage_shield_only` | Boolean | If true, the damage instance only affects damage shields (e.g., barrier effects) and not health directly. | 1 | `true` |
 | [`faction`](./Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
 | `favor_enemy_already_moved` | Variable | A variable that weights targeting towards enemies that have already taken their turn. | 1 ||
@@ -113,7 +113,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
@@ -129,13 +129,13 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 223 | `-99999`<br>`-999999`<br>`1` |
 | `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 122 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 110 | `true` |
 | `incidentally_collects_pickups` | Boolean | If true, the damage instance collects nearby pickups (e.g., coins, items) as part of its effect. | 103 | `false`<br>`true` |
 | [`custom_additional_ai_weight`](./Enums.md#enum-custom_additional_ai_weight) | Enum | A string identifier for a custom AI weighting condition that modifies the AI's scoring for this damage instance. | 82 | `avoid_redundant_debuffs`<br>`avoid_redundant_debuffs_strict`<br>`avoid_target_map_top` |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 52 | `true` |
 | `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 40 | `false`<br>`true` |
@@ -182,11 +182,11 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 12 | `true` |
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 10 | `true` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `heal` | Enum / Integer | An equation string that determines the amount of health restored by this damage instance. | 6 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 2 | `-99999`<br>`-999999`<br>`1` |
 | [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
@@ -206,9 +206,9 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](Abilities_and_Spells.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
+| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 62 | `{ . . . }` |
 | [`type`](./Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 54 | `[attack move spell]`<br>`attack`<br>`battle` |
-| `knockback` | Enum / Integer | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 6 | `false`<br>`true` |
 | [`layer`](./Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 3 | `2`<br>`all`<br>`characters` |
 | [`damage`](./Arrays.md#array-damage) | Equation | Specifies the amount of damage dealt, can be a number or expression. | 2 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |

@@ -17,15 +17,15 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](Abilities_and_Spells.md#object-meta) | Object | Contains metadata for the ability including name, description, class, and type icon. | 2372 | `{ . . . }` |
-| [`breakdown`](Miscellaneous.md#object-breakdown) | Object | Defines the breakdown of item pools or rewards for a shop or event. | 24 | `{ . . . }` |
-| [`item_groups`](Miscellaneous.md#object-item_groups) | Object | Defines groups of items that can appear in a shop or loot. | 24 | `{ . . . }` |
-| [`item_rarity_costs`](Miscellaneous.md#object-item_rarity_costs) | Object | Defines the cost multipliers for each item rarity tier in a shop. | 9 | `{ . . . }` |
+| [`meta`](./Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2372 | `{ . . . }` |
+| [`breakdown`](./Shops.md#object-breakdown) | Object  | Defines the breakdown of item pools or rewards for a shop or event. | 24 | `{ . . . }` |
+| [`item_groups`](./Shops.md#object-item_groups) | Object  | Defines groups of items that can appear in a shop or loot. | 24 | `{ . . . }` |
+| [`item_rarity_costs`](./Shops.md#object-item_rarity_costs) | Object  | Defines the cost multipliers for each item rarity tier in a shop. | 9 | `{ . . . }` |
 | `stock_fill_order` | Object | Defines the order in which shop slots are filled from the stock list. | 9 | `{ . . . }` |
-| [`button_nav`](Miscellaneous.md#object-button_nav) | Object | Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons. | 7 | `{ . . . }` |
-| [`breakdown2`](Miscellaneous.md#object-breakdown2) | Object | A loot table defining guaranteed item drops for player levels 5 to 9. | 2 | `{ . . . }` |
-| [`breakdown3`](Miscellaneous.md#object-breakdown3) | Object | A loot table defining guaranteed item drops for player levels 10 to 14. | 2 | `{ . . . }` |
-| [`breakdown4`](Miscellaneous.md#object-breakdown4) | Object | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
+| [`button_nav`](./Shops.md#object-button_nav) | Object  | Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons. | 7 | `{ . . . }` |
+| [`breakdown2`](./Shops.md#object-breakdown2) | Object  | A loot table defining guaranteed item drops for player levels 5 to 9. | 2 | `{ . . . }` |
+| [`breakdown3`](./Shops.md#object-breakdown3) | Object  | A loot table defining guaranteed item drops for player levels 10 to 14. | 2 | `{ . . . }` |
+| [`breakdown4`](./Shops.md#object-breakdown4) | Object  | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
 
 </details>
 
@@ -45,8 +45,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](./Enums.md#enum-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 37 | `2`<br>`3`<br>`4` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 37 | `2`<br>`3`<br>`4` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 21 | `{ . . . }` |
 | `mandatory` | Boolean | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 14 | `1`<br>`3`<br>`6` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
@@ -69,7 +69,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`movieclip`](./Enums.md#enum-movieclip) | Array / Enum | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`movieclip`](./Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `treasure_room` | Boolean | If true, this level is a treasure room. | 14 | `true` |
 | `delay_enable_tooltips` | Boolean | If true, delays the enabling of tooltips in this scene. | 7 | `true` |
 | `keeper` | Number | The number of items the shopkeeper keeps from a previous visit. | 7 | `0` |
@@ -98,14 +98,14 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `treasure` | Number | Defines a treasure node containing items or item pools. | 14 | `1` |
-| `pool` | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
 | `levelup` | Number | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `1` |
 | `mandatory` | Number | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 3 | `1`<br>`3`<br>`6` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
 | `mostly_food` | Number | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `1`<br>`2` |
 | `empty` | Number | The number of empty items offered, or an object defining their pool and cost. | 1 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -125,16 +125,16 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`treasure`](Map_Generation_and_Routing.md#object-treasure) | Object | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
-| [`pool`](./Shops.md#context-pool) | Array / Enum | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
-| [`mandatory`](Miscellaneous.md#object-mandatory) | Object | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 5 | `{ . . . }` |
-| [`levelup`](Engine_LogicKeys.md#object-levelup) | Object | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `{ . . . }` |
-| [`common_item`](Miscellaneous.md#object-common_item) | Object | The number of common items offered, or an object defining their pool and cost. | 2 | `{ . . . }` |
+| [`treasure`](./Shops.md#object-treasure) | Object  | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
+| [`pool`](./Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 6 | `2`<br>`3`<br>`4` |
+| [`mandatory`](./Shops.md#object-mandatory) | Object  | The number of guaranteed items to generate from this group, or an object specifying mandatory selection. | 5 | `{ . . . }` |
+| [`levelup`](./Shops.md#object-levelup) | Object  | The number of level-up rewards offered, or an object defining their cost and pool. | 3 | `{ . . . }` |
+| [`common_item`](./Shops.md#object-common_item) | Object  | The number of common items offered, or an object defining their pool and cost. | 2 | `{ . . . }` |
 | [`consumable`](./Shops.md#context-consumable) | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
-| [`guaranteed_food`](Miscellaneous.md#object-guaranteed_food) | Object | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `{ . . . }` |
-| [`item`](./Shops.md#context-item) | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
-| [`mostly_food`](Miscellaneous.md#object-mostly_food) | Object | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `{ . . . }` |
-| [`empty`](Characters_and_Bosses.md#object-empty) | Object | The number of empty items offered, or an object defining their pool and cost. | 1 | `{ . . . }` |
+| [`guaranteed_food`](./Shops.md#object-guaranteed_food) | Object  | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `{ . . . }` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`mostly_food`](./Shops.md#object-mostly_food) | Object  | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `{ . . . }` |
+| [`empty`](./Shops.md#object-empty) | Object  | The number of empty items offered, or an object defining their pool and cost. | 1 | `{ . . . }` |
 
 </details>
 
@@ -154,7 +154,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
 
 </details>
 
@@ -202,7 +202,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`default`](Characters_and_Bosses.md#object-default) | Enum / Object | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
+| [`default`](./Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
 
 </details>
 
@@ -222,7 +222,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 6 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 6 | `{ . . . }` |
 
 </details>
 
@@ -242,7 +242,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 4 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 4 | `{ . . . }` |
 | `Furniture` | Object | Defines the group of furniture items available in a shop. | 1 | `{ . . . }` |
 
 </details>
@@ -264,8 +264,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
-| `amount` | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
+| [`amount`](./Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
 | [`{Event Keys}`](./Engine_EventKeys.md#valid-property-keys) | Variable | Inherits event response capabilities. You can inject any key from the Engine Event Keys list here to trigger outcomes like rewards, combat, or map generation. | 2 | `common`<br>`rare`<br>`cha` |
 | [`weight`](./Enums.md) | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
 
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](Abilities_and_Spells.md#object-cost) | Object | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
+| [`cost`](./Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
 
@@ -307,7 +307,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LevelUp`](Engine_LogicKeys.md#object-levelup) | Object | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
+| [`LevelUp`](./Shops.md#object-levelup) | Object  | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
 
 </details>
 
@@ -331,7 +331,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
 | `mostly_food` | Number | The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules. | 2 | `1`<br>`2` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -354,7 +354,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `common_item` | Number | The number of common items offered, or an object defining their pool and cost. | 2 | `1`<br>`2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 1 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -377,7 +377,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 | `common_item` | Number | The number of common items offered, or an object defining their pool and cost. | 2 | `1`<br>`2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 2 | `1`<br>`2`<br>`true` |
 | `guaranteed_food` | Number | The number of guaranteed food items, or an object defining their amount, cost, and duplication rules. | 2 | `1` |
-| `item` | Enum | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
+| [`item`](./Enums.md#enum-item) | Enum  | Specifies the item to transform into, either by name, a nested item object, or a numeric value. | 2 | `1`<br>`2`<br>`EstusFlask_Full` |
 
 </details>
 
@@ -397,7 +397,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -417,7 +417,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -437,7 +437,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
 
 </details>
 
@@ -457,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -477,8 +477,8 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Food`](Engine_LogicKeys.md#object-food) | Integer / Object | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
 
 </details>
 
@@ -498,7 +498,7 @@ This document is an exhaustive, auto-generated dictionary of every `.gon` proper
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](Engine_LogicKeys.md#object-item) | Object | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
 
 </details>
 
