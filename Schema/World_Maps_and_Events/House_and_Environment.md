@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
-| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 2 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 2 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>

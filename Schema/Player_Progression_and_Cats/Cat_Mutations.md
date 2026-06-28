@@ -493,18 +493,18 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 489 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 272 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 144 | `+1`<br>`-1`<br>`-2` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 133 | `-1`<br>`-10`<br>`-2` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 132 | `-1`<br>`-10`<br>`-2` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 131 | `-1`<br>`-2`<br>`-3` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 126 | `-1`<br>`-2`<br>`-3` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 119 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 118 | `-1`<br>`-2`<br>`-3` |
-| [`shield`](../Reference_and_Meta/Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 16 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `cha` | Integer | The Charisma stat value or modifier. | 144 | `+1`<br>`-1`<br>`-2` |
+| `spd` | Integer | The Speed stat value or modifier. | 133 | `-1`<br>`-10`<br>`-2` |
+| `int` | Integer | The Intelligence stat value or modifier. | 132 | `-1`<br>`-10`<br>`-2` |
+| `con` | Integer | The Constitution stat value or modifier. | 131 | `-1`<br>`-2`<br>`-3` |
+| `str` | Integer | The Strength stat value or modifier. | 126 | `-1`<br>`-2`<br>`-3` |
+| `lck` | Integer | The Luck stat value or modifier. | 119 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 118 | `-1`<br>`-2`<br>`-3` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 16 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 14 | passives<br>class<br>tag |
 | `divine_shield` | Integer | The number of stacks of the Divine Shield status this mutation provides. | 4 | `0`<br>`1`<br>`2` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -712,7 +712,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 5 | `damage_instance`<br>`spell`<br>`false` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` | [`effects`](./Cat_Mutations.md#object-effects) | Object | Applies a list of status effects or visual effects to targets. | 6 | Default<br>FormChange<br>Druid |
@@ -1520,7 +1520,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 

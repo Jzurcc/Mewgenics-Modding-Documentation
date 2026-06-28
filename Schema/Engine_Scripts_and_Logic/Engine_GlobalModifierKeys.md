@@ -73,8 +73,8 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
-| [`amount`](../Reference_and_Meta/Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 3 | `-30`<br>`-4`<br>`.5` |
+| `amount` | Array / Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 3 | `.1`<br>`.25`<br>`.35` |
 ### Object: `BloodRain`
 
 
@@ -99,10 +99,10 @@ The following objects all behave as `{Global Modifier Keys}` containers. Each ha
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
-| `speed_scale` | String | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
 | [`force`](../Reference_and_Meta/Arrays.md#array-force) | Array  | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
 

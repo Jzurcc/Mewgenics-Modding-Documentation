@@ -150,7 +150,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`main`](./Events_and_Encounters.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 214 | `{ . . . }` |
 | [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 101 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 88 | `1`<br>`10`<br>`15` |
-| `weight` | `Number` | A multiplier or priority value for random selection or effect magnitude. | 63 | `.25`<br>`.5`<br>`1` |
+| `weight` | Float | A multiplier or priority value for random selection or effect magnitude. | 63 | `.25`<br>`.5`<br>`1` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 31 | `{ . . . }` |
 | `get_item_from_pool` | String | Grants an item from the specified pool or a specific item name. | 27 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 12 | `{ . . . }` |
@@ -170,13 +170,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 2 | `{ . . . }` |
 | [`common`](../Reference_and_Meta/Enums.md#enum-common) | Enum  | Defines the common reward block for a boss encounter. | 1 | `100`<br>`14`<br>`5` |
 | [`reward`](./Events_and_Encounters.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 0 | `{ . . . }` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 0 | `+1`<br>`-1`<br>`-2` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| `lck` | Integer | The Luck stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| `int` | Integer | The Intelligence stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
+| `str` | Integer | The Strength stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| `cha` | Integer | The Charisma stat value or modifier. | 0 | `+1`<br>`-1`<br>`-2` |
+| `spd` | Integer | The Speed stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
+| `con` | Integer | The Constitution stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
 | [`cutscene`](../Assets_and_Localization/Strings.md#string-cutscene) | String | Specifies the name of a cutscene to play. | 0 | `"chaos_ending_bad"`<br>`"chaos_ending_good"`<br>`"chapterintros/bunker"` |
 | [`normal`](../Reference_and_Meta/Arrays.md#array-normal) | Array | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 0 | `[` |
 | [`battle`](../Assets_and_Localization/Strings.md#string-battle) | String | Defines a battle encounter by preset, level file path, or reverb settings. | 0 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
@@ -822,8 +822,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`print`](./Events_and_Encounters.md#object-print) | Object  | Specifies the player character's attempt to print or output something from the encounter. | 2 | `{ . . . }` |
 | [`repair`](./Events_and_Encounters.md#object-repair) | Object  | Specifies the player character's attempt to repair the encounter object. | 2 | `{ . . . }` |
 | [`sacrifice`](./Events_and_Encounters.md#object-sacrifice) | Object  | Specifies the player character's attempt to make a sacrifice at the encounter. | 2 | `{ . . . }` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| `head` | Float | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
 | [`face`](../Reference_and_Meta/Enums.md#enum-face) | Enum  | The face equipment item assigned to the unit. | 1 | `1004`<br>`1019`<br>`AtomicMark` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 1 | `-1`<br>`1000`<br>`1001` |
 | [`neck`](../Reference_and_Meta/Enums.md#enum-neck) | Enum  | The neck equipment item assigned to the unit. | 1 | `AngelicAura`<br>`AngelicAura_Terminator`<br>`DruidNeck` |
@@ -1170,14 +1170,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 38 | `-1`<br>`-2`<br>`-3` |
+| `con` | Integer | The Constitution stat value or modifier. | 38 | `-1`<br>`-2`<br>`-3` |
 | `random` | Number | A random value used for stat or attribute adjustment. | 26 | `-1`<br>`-2`<br>`1` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 25 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 21 | `-1`<br>`-2`<br>`-3` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
+| `int` | Integer | The Intelligence stat value or modifier. | 25 | `-1`<br>`-10`<br>`-2` |
+| `str` | Integer | The Strength stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
+| `lck` | Integer | The Luck stat value or modifier. | 21 | `-1`<br>`-2`<br>`-3` |
+| `spd` | Integer | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
 | `cha` | Integer | The Charisma stat value or modifier. | 17 | `+1`<br>`-1`<br>`-2` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 14 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 14 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -1509,7 +1509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 11 | `-1`<br>`-2`<br>`1` |
 | `ears` | Number | The ID for the ear mutation appearance. | 10 | `-1`<br>`-2`<br>`1500` |
 | `eyebrows` | Number | The ID for the eyebrow mutation appearance. | 8 | `-1`<br>`-2`<br>`440` |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 7 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 7 | `-1`<br>`1`<br>`1.3` |
 | `legs` | Number | The ID or range of IDs for the leg mutation appearance. | 7 | `-1`<br>`306`<br>`322` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 6 | `-1`<br>`1000`<br>`1001` |
 | `body` | Float | The catalog ID for the cat's body part. | 6 | `-1`<br>`1`<br>`1.1` |
@@ -1681,7 +1681,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ears` | Number | The ID for the ear mutation appearance. | 5 | `-1`<br>`-2`<br>`1500` |
 | `legs` | Number | The ID or range of IDs for the leg mutation appearance. | 5 | `-1`<br>`306`<br>`322` |
 | `body` | Float | The catalog ID for the cat's body part. | 4 | `-1`<br>`1`<br>`1.1` |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 3 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 3 | `-1`<br>`1`<br>`1.3` |
 | `eyebrows` | Number | The ID for the eyebrow mutation appearance. | 3 | `-1`<br>`-2`<br>`440` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 2 | `-1`<br>`-2`<br>`1` |
 | `arm1` | Number | The catalog ID for the cat's first arm part. | 2 | `-1`<br>`-2`<br>`1` |
@@ -2730,13 +2730,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 4 | `+1`<br>`-1`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `con` | Integer | The Constitution stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `int` | Integer | The Intelligence stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
+| `cha` | Integer | The Charisma stat value or modifier. | 4 | `+1`<br>`-1`<br>`-2` |
+| `str` | Integer | The Strength stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `spd` | Integer | The Speed stat value or modifier. | 4 | `-1`<br>`-10`<br>`-2` |
+| `lck` | Integer | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -2920,7 +2920,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
+| `con` | Integer | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 

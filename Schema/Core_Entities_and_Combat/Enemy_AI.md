@@ -101,13 +101,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `heal_self` | Number | The amount of health restored to the unit itself. Negative values deal damage. | 32 | `-1`<br>`-100`<br>`0` |
 | `kill_ally` | Number | The chance (percentage) to instantly kill an ally unit. | 32 | `0`<br>`40` |
 | `kill_enemy` | Float | The chance (percentage or probability) to instantly kill an enemy unit. | 32 | `.2`<br>`0`<br>`100` |
-| `negative_weight_scale` | Enum | A multiplier applied to the weight of negative (penalty) decisions in AI calculations. | 32 | `.99` |
+| `negative_weight_scale` | Float | A multiplier applied to the weight of negative (penalty) decisions in AI calculations. | 32 | `.99` |
 | `revive_ally_corpse` | Number | The chance (percentage) to revive an ally corpse. | 32 | `0`<br>`1`<br>`10` |
 | `revive_enemy_corpse` | Number | The chance (percentage) to revive an enemy corpse. Negative values may cause destruction. | 32 | `-1`<br>`-100`<br>`0` |
 | `spawn_object` | Number | If non-zero, enables spawning of an object. The value may specify the number of objects. | 32 | `0`<br>`1` |
 | `spawn_object_distance_to_ally` | Float | The distance offset from ally units for spawned objects. Negative values move closer. | 32 | `-.0001`<br>`-.01`<br>`.0001` |
 | `spawn_object_distance_to_enemy` | Float | The distance offset from enemy units for spawned objects. | 32 | `-.01`<br>`0`<br>`1` |
-| `spend_mana_scale` | Enum | A multiplier applied to mana cost when making decisions. | 32 | `.99` |
+| `spend_mana_scale` | Float | A multiplier applied to mana cost when making decisions. | 32 | `.99` |
 | `flat_cast_bonus` | Number | A flat bonus added to the AI's cast chance evaluation. | 5 | `99999` |
 | `randomness` | Number | The amount of randomness added to AI decision-making to avoid predictability. | 5 | `4`<br>`50`<br>`6` |
 | `cap_distance_to_ally` | Number | The maximum distance the AI will maintain from ally units. | 4 | `2`<br>`4`<br>`7` |

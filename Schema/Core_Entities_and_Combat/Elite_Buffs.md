@@ -49,7 +49,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 54 | passives<br>class<br>tag |
-| `value` | Equation | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
+| `value` | Float | The numeric value or formula associated with the buff. | 54 | `.5`<br>`0`<br>`1` |
 | `icon_frame` | Integer | The sprite frame index for the buff icon. | 54 | `141`<br>`148`<br>`149` |
 | `unique` | Boolean | If true, this buff can only appear once per unit. | 36 | `true` |
 | `specific_chapter` | Integer | The chapter in which this buff is exclusive to. | 8 | `1`<br>`2`<br>`3` |
@@ -151,7 +151,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 3 | `damage_instance`<br>`spell`<br>`false` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 3 | `{ . . . }` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 2 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 2 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |`damage_instance`<br>`spell`<br>`self_damage`
 
 </details>
@@ -301,7 +301,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 4 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 | `aura_effects_allies` | Boolean | If false, the aura does not affect allies. | 4 | `false` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 4 | `{ . . . }` |
 

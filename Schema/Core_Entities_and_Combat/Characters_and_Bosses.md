@@ -97,7 +97,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`partial_animation_suffix`](../Reference_and_Meta/Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 7 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`move_weights`](../Reference_and_Meta/Enums.md#enum-move_weights) | Enum | Determines the movement strategy used by the AI when executing this move ability. | 5 | `bird`<br>`blind_move_far`<br>`chaos_always_move` |
 | [`decision_weights`](../Reference_and_Meta/Enums.md#enum-decision_weights) | Enum | Specifies the named set of decision weight presets used by the AI. | 5 | `always_cast`<br>`always_cast_careless`<br>`angry` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 3 | `.5`<br>`1`<br>`1.3` |
 | [`damage_instance`](./Characters_and_Bosses.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
 | `scale` | Float | The scale multiplier applied to the unit's visual size. | 1 | `.5`<br>`.6`<br>`.7` |
@@ -111,7 +111,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `distance_to_character` | Integer | The preferred distance (in tiles) to maintain from any character; negative values or 0 disable the preference. | 0 | `-1`<br>`0`<br>`1` |
 | `distance_to_enemy` | Float | The preferred distance (in tiles) to maintain from enemies; negative values or 0 disable the preference. | 0 | `-.01`<br>`-.5`<br>`-1` |
 | `face_closest_enemy` | Integer | If nonzero, the character will face the closest enemy. | 0 | `0`<br>`1` |
-| [`preferred_distance`](../Reference_and_Meta/Enums.md#enum-preferred_distance) | Enum / Integer  | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 0 | `0`<br>`1`<br>`2` |
+| `preferred_distance` | Integer | The ideal distance to maintain from a target, expressed either as an absolute tile count or relative to movement (e.g., `mov+2`) or reach (`mov+reach`). | 0 | `0`<br>`1`<br>`2` |
 | `total_distance_moved` | Float | The total distance the character has moved, used in movement weight calculations. | 0 | `-0.001`<br>`-0.01`<br>`-1` |
 | `accurate_knockback` | Boolean | If true, knockback from attacks is applied accurately (e.g., straight line); if false, knockback may be erratic. | 0 | `false` |
 | `buff_ally` | Integer | The number of buffs applied to ally units. | 0 | `0`<br>`1`<br>`10` |
@@ -529,7 +529,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
 | [`partial_animation_suffix`](../Reference_and_Meta/Enums.md#enum-partial_animation_suffix) | Enum / Integer   | Specifies an animation suffix for partial form changes. | 0 | `""`<br>`"Angry"`<br>`"Belly"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 0 | `.5`<br>`1`<br>`1.3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 0 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 0 | `""`<br>`"0"`<br>`"1"` |
 | [`CerberubsAggroTargetBehavior`](./Characters_and_Bosses.md#object-cerberubsaggrotargetbehavior) | Object  | Defines the default and alert forms used by Cerberubs when changing aggro behavior. | 0 | `{ . . . }` |
 | [`FormChangeWhenBuddyDies`](../Reference_and_Meta/Enums.md#enum-formchangewhenbuddydies) | Enum  | Specifies the form name the unit changes into when its buddy dies. | 0 | `Rage` |
 
@@ -668,13 +668,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `inherit_faction` | Boolean | If true, the unit inherits the faction of its spawner or parent. | 115 | `false`<br>`true` |
 | `dispersed_bonus_turns` | Integer | The number of bonus turns granted to this unit when its turn order is dispersed. | 104 | `0`<br>`1`<br>`2` |
 | `base_mana_regen` | Integer | The base amount of mana regenerated per turn. | 90 | `0`<br>`3`<br>`999` |
-| [`size`](../Reference_and_Meta/Enums.md#enum-size) | Enum / Float | The scale factor (size multiplier) of the spawned unit. | 80 | `.2`<br>`.5`<br>`1` |
-| [`shield`](../Reference_and_Meta/Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `size` | Float | The scale factor (size multiplier) of the spawned unit. | 80 | `.2`<br>`.5`<br>`1` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 74 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | [`move_block`](../Reference_and_Meta/Enums.md#enum-move_block) | Enum | Determines which movement directions are blocked. | 73 | `everything_even_when_dead`<br>`nothing` |
 | `kill_required` | Boolean | If true, the unit must be killed to complete the objective. | 69 | `false`<br>`true` |
 | `can_be_backstabbed` | Boolean | If true, the unit can be backstabbed. | 68 | `false` |
 | `takes_turns` | Boolean | If true, the unit participates in the turn order. | 61 | `false`<br>`true` |
-| [`initiative`](../Reference_and_Meta/Enums.md#enum-initiative) | Enum / Integer  | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 61 | `-10`<br>`-100`<br>`-20` |
+| `initiative` | Integer | The unit's turn order priority; can be an integer modifier or 'keep_turns_end_turn' to force end of turn after acting. | 61 | `-10`<br>`-100`<br>`-20` |
 | `mana_regen` | Integer | The amount of mana regenerated per turn, overriding base_mana_regen if set. | 51 | `999` |
 | `mana` | Equation | The amount of mana required to cast, as a formula or stat. | 50 | `"4-clamp(floor(X/7), 0, 1)"`<br>`"max(4-X, 0)"`<br>`"max(7-2*X,0)"` |
 | `flying` | Boolean | If true, the unit can fly over obstacles and is immune to ground effects. | 47 | `true` |
@@ -848,7 +848,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `strength` | Integer | The base strength stat, used for physical damage calculations. | 386 | `1`<br>`10`<br>`15` |
 | `constitution` | Integer | The base constitution stat, used for health and damage mitigation. | 380 | `1`<br>`10`<br>`2` |
 | `dexterity` | Integer | The base dexterity stat, used for accuracy and evasion. | 380 | `1`<br>`2`<br>`3` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 379 | `-30`<br>`-4`<br>`.5` |
 | `charisma` | Integer | The base charisma stat, used for social or mind-affecting abilities. | 379 | `1`<br>`2`<br>`3` |
 | `intelligence` | Integer | The base intelligence stat, used for spell power and mana. | 379 | `0`<br>`1`<br>`10` |
 | `luck` | Integer | The base luck stat, used for critical hits and random beneficial effects. | 160 | `1`<br>`10`<br>`3` |
@@ -1019,7 +1019,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 57 | Default<br>FormChange<br>Druid |
-| [`initial_form`](../Reference_and_Meta/Enums.md#enum-initial_form) | Enum / Integer | Specifies the starting form name for a unit with FormChanger. | 57 | `0`<br>`1`<br>`5` |
+| `initial_form` | Integer | Specifies the starting form name for a unit with FormChanger. | 57 | `0`<br>`1`<br>`5` |
 | [`Default`](./Characters_and_Bosses.md#object-default) | Enum / Object  | The default form configuration for a unit, containing its standard stats and abilities. | 46 | `{ . . . }`<br>`release` |
 | [`Normal`](./Characters_and_Bosses.md#object-normal) | Integer / Object  | The normal form configuration, used as a baseline state for shape-shifting units. | 16 | `{ . . . }`<br>`0` |
 | [`default`](./Characters_and_Bosses.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 9 | `{ . . . }`<br>`bite1` |
@@ -1224,7 +1224,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
@@ -1325,7 +1325,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 16 | `{ . . . }` |
 | [`effects`](./Characters_and_Bosses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 11 | `{ . . . }` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 11 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 9 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 9 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 8 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 5 | `[`<br>`[Heat Fire]` |
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 1 | `true` |
@@ -1395,7 +1395,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-| [`animation_suffix`](../Assets_and_Localization/Strings.md#string-animation_suffix) | String | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 
@@ -1444,8 +1444,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`palette`](../Reference_and_Meta/Enums.md#enum-palette) | Enum / Integer | Specifies the color palette index for the ability's visuals. | 16 | `-1`<br>`0`<br>`1` |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 13 | `-1`<br>`1`<br>`1.3` |
+| `palette` | Integer | Specifies the color palette index for the ability's visuals. | 16 | `-1`<br>`0`<br>`1` |
+| `head` | Float | The catalog ID for the cat's head part. | 13 | `-1`<br>`1`<br>`1.3` |
 | `leg1` | Integer | The catalog ID for the cat's first leg part. | 12 | `-1`<br>`-2`<br>`1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 12 | `-1`<br>`1000`<br>`1001` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 12 | `-1`<br>`-2`<br>`1` |
@@ -1549,7 +1549,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`face`](../Reference_and_Meta/Enums.md#enum-face) | Enum | The face equipment item assigned to the unit. | 16 | `1004`<br>`1019`<br>`AtomicMark` |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 14 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 14 | `-1`<br>`1`<br>`1.3` |
 | [`neck`](../Reference_and_Meta/Enums.md#enum-neck) | Enum | The neck equipment item assigned to the unit. | 10 | `AngelicAura`<br>`AngelicAura_Terminator`<br>`DruidNeck` |
 | [`weapon`](../Reference_and_Meta/Enums.md#enum-weapon) | Enum | The name of the weapon item the unit starts with. | 7 | `AstroTaser`<br>`ButcherHook`<br>`CaveCatClub` |
 
@@ -1819,7 +1819,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 4 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -1864,7 +1864,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -1890,7 +1890,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 6 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`partial_animation_suffix`](../Reference_and_Meta/Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 4 | `""`<br>`"Angry"`<br>`"Belly"` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
@@ -2231,7 +2231,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Squirrel`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-squirrel) | Integer / Object  | The number of squirrel familiars spawned. | 1 | `{ . . . }`<br>`10` |
 | [`Bear`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-bear) | Integer / Object  | The number of bear familiars spawned. | 1 | `{ . . . }`<br>`1` |
 | [`Turtle`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-turtle) | Integer / Object  | The number of turtle familiars spawned. | 1 | `{ . . . }`<br>`10` |
-| [`Chicken`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-chicken) | Integer / Object  | The number of chicken pickups spawned. | 1 | `{ . . . }`<br>`.01`<br>`.1`<br>`2` |
+| `Chicken` | Float / Object | The number of chicken pickups spawned. | 1 | `{ . . . }`<br>`.01`<br>`.1`<br>`2` |
 | [`Mutant`](./Characters_and_Bosses.md#object-mutant) | Integer / Object  | As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight. | 1 | `{ . . . }`<br>`1` |
 | [`Toad`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-toad) | Integer / Object  | The number of toad familiars spawned. | 1 | `{ . . . }`<br>`10` |
 | [`Catepillar`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-catepillar) | Integer / Object  | The number of caterpillar familiars spawned. | 1 | `{ . . . }`<br>`10` |
@@ -2306,7 +2306,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2330,7 +2330,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 </details>
@@ -2377,7 +2377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`size`](../Reference_and_Meta/Enums.md#enum-size) | Enum / Float  | The scale factor (size multiplier) of the spawned unit. | 16 | `.2`<br>`.5`<br>`1` |
+| `size` | Float | The scale factor (size multiplier) of the spawned unit. | 16 | `.2`<br>`.5`<br>`1` |
 | [`color`](../Reference_and_Meta/Arrays.md#array-color) | Array | The RGB color of the light source. | 16 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`glow`](../Reference_and_Meta/Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 | `[.3, .7, 1, .5]`<br>`[.7, .3, 1, .5]`<br>`[.7, .8, .9, .5]` |
 
@@ -2489,7 +2489,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2544,7 +2544,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2589,7 +2589,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 12 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 11 | passives<br>class<br>tag |
-| [`threshold`](../Reference_and_Meta/Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 11 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation | The health threshold value, either as a formula using X (max health) or a fixed integer. | 11 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 6 | `true` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 5 | `false`<br>`true` |
 | `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 | `true` |
@@ -2621,7 +2621,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2694,7 +2694,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`statuses_on_enter_form`](./Characters_and_Bosses.md#object-statuses_on_enter_form) | Object  | Statuses or abilities applied when entering this form. | 2 | `{ . . . }` |
 
 </details>
@@ -2748,7 +2748,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 
 </details>
@@ -2830,7 +2830,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
 | [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 4 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2855,7 +2855,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 5 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 5 | `{ . . . }` |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 4 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 4 | `""`<br>`"0"`<br>`"1"` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`partial_animation_suffix`](../Reference_and_Meta/Enums.md#enum-partial_animation_suffix) | Enum / Integer  | Specifies an animation suffix for partial form changes. | 1 | `""`<br>`"Angry"`<br>`"Belly"` |
 
@@ -2886,7 +2886,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -2952,7 +2952,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 
@@ -3002,7 +3002,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
@@ -3095,7 +3095,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
-| `RemoveAmbientLightEffects` | Integer | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
+| `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
 | [`RemoveGlobalModifiers`](../Reference_and_Meta/Arrays.md#array-removeglobalmodifiers) | Array  | List of global modifier names to remove upon death. | 1 | `[BloodRain]` |
 
 </details>
@@ -3143,7 +3143,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 4 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `chain` | Boolean | Specifies the ability to chain into and execute. | 2 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 
 </details>
@@ -3261,7 +3261,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3288,7 +3288,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3401,7 +3401,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3445,7 +3445,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
@@ -3561,8 +3561,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
-| [`amount`](../Reference_and_Meta/Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 1 | `.1`<br>`.25`<br>`.35` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| `amount` | Array / Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 1 | `.1`<br>`.25`<br>`.35` |
 
 </details>
 
@@ -3635,7 +3635,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -3882,7 +3882,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
@@ -3953,7 +3953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
@@ -4004,7 +4004,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4026,7 +4026,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -4049,7 +4049,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -4076,7 +4076,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 2 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 2 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 2 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4098,7 +4098,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 | `cancel_movement` | Boolean | If true, the trapper cancels the trapped unit's movement. | 2 | `false` |
 | `pathfinding_avoidance` | Integer | The weight that makes other units avoid traversing this tile during pathfinding. | 2 | `250` |
 
@@ -4216,7 +4216,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4237,7 +4237,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 2 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 
@@ -4356,7 +4356,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 2 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -4470,7 +4470,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4681,7 +4681,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4745,7 +4745,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4793,7 +4793,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4887,7 +4887,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -4953,7 +4953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 4 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -5114,7 +5114,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5250,7 +5250,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5273,7 +5273,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5345,7 +5345,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5367,7 +5367,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5393,7 +5393,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5527,7 +5527,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5552,7 +5552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5577,7 +5577,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5602,7 +5602,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -5653,7 +5653,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `weak_threshold` | Integer | The health threshold below which the unit is considered weakened. | 1 | `0`<br>`1`<br>`15` |
 
 </details>
@@ -5719,7 +5719,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`threshold`](../Reference_and_Meta/Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`form_above`](../Reference_and_Meta/Enums.md#enum-form_above) | Enum | The form to change to when health is above the threshold. | 3 | `Default`<br>`Full`<br>`Standing` |
 | [`form_below`](../Reference_and_Meta/Enums.md#enum-form_below) | Enum | The form to change to when health is below the threshold. | 3 | `Damaged`<br>`DesireMech`<br>`Standing2` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
@@ -5795,7 +5795,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | `move_speed_multiplier` | Float | A multiplier for the unit's base movement speed. | 1 | `.5`<br>`.66`<br>`.75` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
@@ -6006,7 +6006,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6654,7 +6654,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6704,7 +6704,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6732,7 +6732,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6760,7 +6760,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6788,7 +6788,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6816,7 +6816,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | `uifloaters_offset` | Float | The vertical offset for UI floaters (e.g., damage numbers) above the unit. | 1 | `.5`<br>`1`<br>`1.3` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer   | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -6908,7 +6908,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -6973,7 +6973,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7182,7 +7182,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`turns`](./Characters_and_Bosses.md#object-turns) | Array / Integer / Object  | Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7297,7 +7297,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7320,7 +7320,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7345,7 +7345,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7503,7 +7503,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7527,7 +7527,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`passives`](./Characters_and_Bosses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7649,7 +7649,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum | Specifies the name of the class's default movement ability. | 1 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -7871,7 +7871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 | [`ai`](./Characters_and_Bosses.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -8101,7 +8101,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`status`](../Reference_and_Meta/Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 1 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`threshold`](../Reference_and_Meta/Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -8702,7 +8702,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -8937,7 +8937,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`threshold`](../Reference_and_Meta/Enums.md#enum-threshold) | Enum / Integer  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -8959,7 +8959,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -8980,7 +8980,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -9001,7 +9001,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer  | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 1 | `""`<br>`"0"`<br>`"1"` |
 
 </details>
 
@@ -9545,7 +9545,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 | [`aura_requires_tag`](../Reference_and_Meta/Enums.md#enum-aura_requires_tag) | Enum | Specifies the tag that units must have to be affected by this aura. | 1 | `humanoid` |
 
 </details>

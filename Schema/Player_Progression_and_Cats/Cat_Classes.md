@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`alt_animations`](../Reference_and_Meta/Arrays.md#array-alt_animations) | Array | An array of alternative animation state replacements, each as [state, animation_name]. | 14 | `[`<br>`[[idle girlyIdle]]` |
-| [`palette`](../Reference_and_Meta/Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 13 | `-1`<br>`0`<br>`1` |
+| `palette` | Integer | Specifies the color palette index for the ability's visuals. | 13 | `-1`<br>`0`<br>`1` |
 | [`portrait_face`](../Reference_and_Meta/Enums.md#enum-portrait_face) | Enum | Specifies the portrait image to use for the class in the UI. | 13 | `butcher_portrait`<br>`druid_portrait`<br>`fighter_portrait` |
 | [`default_face`](../Reference_and_Meta/Enums.md#enum-default_face) | Enum | Specifies the default facial expression for the unit's portrait. | 1 | `angry`<br>`happy`<br>`mad` |
 | `hud_palette` | Number | The HUD color palette index used for the class's UI elements. | 1 | `11` |
@@ -334,13 +334,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 9 | `-1`<br>`-2`<br>`-3` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 7 | `+1`<br>`-1`<br>`-2` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 6 | `-1`<br>`-2`<br>`-3` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `con` | Integer | The Constitution stat value or modifier. | 9 | `-1`<br>`-2`<br>`-3` |
+| `cha` | Integer | The Charisma stat value or modifier. | 7 | `+1`<br>`-1`<br>`-2` |
+| `int` | Integer | The Intelligence stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
+| `str` | Integer | The Strength stat value or modifier. | 6 | `-1`<br>`-2`<br>`-3` |
+| `spd` | Integer | The Speed stat value or modifier. | 6 | `-1`<br>`-10`<br>`-2` |
+| `lck` | Integer | The Luck stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 4 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 

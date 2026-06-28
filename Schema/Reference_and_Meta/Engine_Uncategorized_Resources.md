@@ -314,11 +314,11 @@ MysteryObject {
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `formula` | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 8 | `X`<br>`X*10`<br>`X+1` |
 | [`Immobile`](./Arrays.md#array-immobile) | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
-| `Slow` | Equation | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `-1`<br>`1`<br>`2` |
+| `Slow` | Array / Equation / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `-1`<br>`1`<br>`2` |
 | `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | [`Freeze`](./Arrays.md#array-freeze) | Array / Integer | The amount of freeze stacks applied, or an [stacks, probability] array. | 51 | `1`<br>`2`<br>`[1 .01]` |
 | `OverrideKnockbackDamage` | Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 17 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | [`Stun`](./Arrays.md#array-stun) | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -422,7 +422,7 @@ MysteryObject {
 | [`FormChange`](./Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 26 | `1`<br>`10`<br>`100` |
 | [`ForceImmediateMoveAndAttack`](./Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | [`UseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 14 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
@@ -2111,7 +2111,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`stack_key`](./Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 10 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 22 | `true` |
 | `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 6 | `1` |
 | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 21 | `1` |
@@ -2546,7 +2546,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 589 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 27 | `true` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 231 | `false`<br>`true` |
 | `use_ai` | Boolean | If true, the ability uses AI targeting logic when triggered at the threshold. | 2 | `true` |
@@ -3416,7 +3416,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 449 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 449 | `-1`<br>`1`<br>`1.3` |
 
 </details>
 
@@ -3969,7 +3969,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -5186,7 +5186,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](./Arrays.md#array-poison) | Array / Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 203 | `1`<br>`10`<br>`2` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 
 </details>
 
@@ -6997,7 +6997,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`aura_requires_tag`](./Enums.md#enum-aura_requires_tag) | Enum | Specifies the tag that units must have to be affected by this aura. | 1 | `humanoid` |
-| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 234 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>
@@ -7040,7 +7040,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 101 | `.02`<br>`.1`<br>`.15` |
-| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -7060,7 +7060,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -7206,7 +7206,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 16 | `-1`<br>`-2`<br>`1` |
 | [`radius`](./Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 13 | `0`<br>`1`<br>`13` |
-| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 475 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float | The speed of the projectile or move, can be a value or a range. | 475 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -7952,7 +7952,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`knockback`](./Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 | `10` |
 
 </details>
@@ -10162,7 +10162,7 @@ MysteryObject {
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 17 | `1`<br>`3` |
 | `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 2 | `1` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -10695,9 +10695,9 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](./Enums.md#enum-head) | Enum / Float | The catalog ID for the cat's head part. | 449 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 449 | `-1`<br>`1`<br>`1.3` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 223 | `-1`<br>`1`<br>`1000` |
-| [`palette`](./Enums.md#enum-palette) | Enum / Integer | Specifies the color palette index for the ability's visuals. | 265 | `-1`<br>`0`<br>`1` |
+| `palette` | Integer | Specifies the color palette index for the ability's visuals. | 265 | `-1`<br>`0`<br>`1` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 316 | `-1`<br>`-2`<br>`1` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 219 | `-1`<br>`1000`<br>`1001` |
 | `arm2` | Number | The catalog ID for the cat's second arm part. | 204 | `-1`<br>`-2`<br>`1` |
@@ -10858,7 +10858,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | [`form_above`](./Enums.md#enum-form_above) | Enum | The form to change to when health is above the threshold. | 3 | `Default`<br>`Full`<br>`Standing` |
 | [`form_below`](./Enums.md#enum-form_below) | Enum | The form to change to when health is below the threshold. | 3 | `Damaged`<br>`DesireMech`<br>`Standing2` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `count_shield` | Boolean | If true, shields count towards the health threshold calculation. | 1 | `true` |
 
 </details>
@@ -11012,7 +11012,7 @@ MysteryObject {
 | [`Unlit`](./Miscellaneous.md#object-unlit) | Object  | Form state for an unlit candle, muting demonic glyph display. | 4 | `{ . . . }` |
 | [`CaveMan`](./Miscellaneous.md#object-caveman) | Object  | Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives. | 10 | `{ . . . }` |
 | [`Fire`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 168 | `{ . . . }`<br>`1` |
-| [`initial_form`](./Enums.md#enum-initial_form) | Enum / Integer | Specifies the starting form name for a unit with FormChanger. | 59 | `0`<br>`1`<br>`5` |
+| `initial_form` | Integer | Specifies the starting form name for a unit with FormChanger. | 59 | `0`<br>`1`<br>`5` |
 | [`partial_animation_suffix`](./Enums.md#enum-partial_animation_suffix) | Enum / Integer | Specifies an animation suffix for partial form changes. | 32 | `""`<br>`"Angry"`<br>`"Belly"` |
 | [`Angry`](./Miscellaneous.md#object-angry) | Object  | Defines the 'Angry' form, an enraged state with its own AI. | 3 | `{ . . . }` |
 | [`HasCat`](./Miscellaneous.md#object-hascat) | Object  | The form configuration applied when the unit is holding or has swallowed a cat. | 11 | `{ . . . }` |
@@ -11480,7 +11480,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](./Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1014 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`status`](./Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 160 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -11539,7 +11539,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`TriggerWerewolfTransform`](./Arrays.md#array-triggerwerewolftransform) | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
+| `TriggerWerewolfTransform` | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -13678,7 +13678,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | [`color`](./Arrays.md#array-color) | Array | The RGB color of the light source. | 42 | `[.27 .47 .18]`<br>`[.3, .7, 1]`<br>`[.32 .10 .10]` |
 | [`glow`](./Arrays.md#array-glow) | Array | The RGBA glow color of the light source. | 8 | `[.3, .7, 1, .5]`<br>`[.7, .3, 1, .5]`<br>`[.7, .8, .9, .5]` |
-| [`size`](./Enums.md#enum-size) | Enum / Float | The scale factor (size multiplier) of the spawned unit. | 153 | `.2`<br>`.5`<br>`1` |
+| `size` | Float | The scale factor (size multiplier) of the spawned unit. | 153 | `.2`<br>`.5`<br>`1` |
 
 </details>
 
@@ -16105,7 +16105,7 @@ MysteryObject {
 | :--- | :--- | :--- | :--- | :--- |
 | [`tag`](./Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 589 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -16608,8 +16608,8 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`amount`](./Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 72 | `.1`<br>`.25`<br>`.35` |
-| [`speed`](./Arrays.md#array-speed) | Array / Float | The speed of the projectile or move, can be a value or a range. | 475 | `-30`<br>`-4`<br>`.5` |
+| `amount` | Array / Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 72 | `.1`<br>`.25`<br>`.35` |
+| `speed` | Array / Float | The speed of the projectile or move, can be a value or a range. | 475 | `-30`<br>`-4`<br>`.5` |
 
 </details>
 
@@ -17222,7 +17222,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2807 | `{ . . . }` |
-| `value` | Equation | The numeric value or formula associated with the buff. | 441 | `.5`<br>`0`<br>`1` |
+| `value` | Float | The numeric value or formula associated with the buff. | 441 | `.5`<br>`0`<br>`1` |
 
 </details>
 
@@ -18125,7 +18125,7 @@ MysteryObject {
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 589 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 37 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 37 | `0`<br>`1`<br>`2` |
 
 </details>
 
@@ -18227,7 +18227,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `RockyArmorSalvage` | Enum | A multiplier for the percentage of armor value salvaged when the unit takes damage. | 1 | `.75` |
+| `RockyArmorSalvage` | Float | A multiplier for the percentage of armor value salvaged when the unit takes damage. | 1 | `.75` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -18511,8 +18511,8 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `value` | Equation | The numeric value or formula associated with the buff. | 441 | `.5`<br>`0`<br>`1` |
-| [`slot`](./Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 37 | `0`<br>`1`<br>`2` |
+| `value` | Float | The numeric value or formula associated with the buff. | 441 | `.5`<br>`0`<br>`1` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 37 | `0`<br>`1`<br>`2` |
 
 </details>
 
@@ -19739,7 +19739,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `TrailBlazer` | Integer / Enum | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `1`<br>`mov` |
+| `TrailBlazer` | Equation | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `1`<br>`mov` |
 
 > *Note: This entry has no own context block. The row above reflects how this identifier appears as a property key inside other contexts, not as a standalone structured block.*
 
@@ -19764,7 +19764,7 @@ MysteryObject {
 | [`ability`](./Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 589 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `cancel_movement` | Boolean | If true, the trapper cancels the trapped unit's movement. | 2 | `false` |
 | `pathfinding_avoidance` | Integer | The weight that makes other units avoid traversing this tile during pathfinding. | 2 | `250` |
-| [`range`](./Enums.md#enum-range) | Enum / Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 28 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -19804,7 +19804,7 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
 

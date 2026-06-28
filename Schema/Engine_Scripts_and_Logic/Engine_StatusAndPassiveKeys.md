@@ -43,9 +43,9 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1484 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 583 | `{ . . . }` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer  | The Intelligence stat value or modifier. | 355 | `-1`<br>`-10`<br>`-2` |
+| `int` | Integer | The Intelligence stat value or modifier. | 355 | `-1`<br>`-10`<br>`-2` |
 | [`neck`](../Reference_and_Meta/Enums.md#enum-neck) | Enum | The neck equipment item assigned to the unit. | 209 | `AngelicAura`<br>`AngelicAura_Terminator`<br>`DruidNeck` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer  | The Luck stat value or modifier. | 283 | `-1`<br>`-2`<br>`-3` |
+| `lck` | Integer | The Luck stat value or modifier. | 283 | `-1`<br>`-2`<br>`-3` |
 | [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 138 | `{ . . . }` |
 | [`AddStatusToBasicAttack`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 248 | `{ . . . }` |
 | [`Colorless`](./Engine_LogicKeys.md#object-colorless) | Object  | Specifies the 'Colorless' form within FormChanger, used for boss dialogue. | 247 | `{ . . . }` |
@@ -78,7 +78,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`RevengeDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-revengedamage) | Object  | An object defining the damage and effects that trigger when the unit is attacked. | 31 | `{ . . . }` |
 | `AddCritMultiplier` | Integer | The percentage added to the critical hit damage multiplier. | 24 | `100%`<br>`125%`<br>`150%` |
 | [`TransformAbility`](../Reference_and_Meta/Enums.md#enum-transformability) | Enum | Specifies the ability that replaces the current ability. | 28 | `BerserkDash`<br>`BerserkDash2`<br>`BirthSquirrel` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `AddBonusRange` | Integer | The number of additional tiles of range added to the unit's abilities. | 32 | `1`<br>`10`<br>`2` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 95 | `1`<br>`2`<br>`3` |
 | [`ImmediateAbilityReaction`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-immediateabilityreaction) | Array / Enum / Object  | Specifies an ability or list of abilities used immediately in reaction to a triggering event. | 26 | `{ . . . }`<br>`BirthwortReactionShot`<br>`BumbleButt`<br>`CatGoop` |
@@ -95,7 +95,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`mode`](../Reference_and_Meta/Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 29 | `equal`<br>`greater`<br>`greater_or_equal` |
 | [`StatusOnBreak`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonbreak) | Object  | An object defining statuses or effects applied when an item or object breaks. | 22 | `{ . . . }` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`additional_passives`](../Reference_and_Meta/Miscellaneous.md#object-additional_passives) | Object  | Additional passive abilities applied to the spawned unit. | 20 | `{ . . . }` |
 | [`BossRewards`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bossrewards) | Object  | Defines the common and rare item rewards dropped by a boss on defeat. | 20 | `{ . . . }` |
 | [`Brace`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 169 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
@@ -112,7 +112,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AbilityOnBattleStart_Immediate`](../Reference_and_Meta/Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 17 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | `CollectsPickups` | Integer | If set to 1 or greater, the unit collects pickups (e.g., items) on contact. | 17 | `1`<br>`2` |
 | [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | `OverrideKnockbackDamage` | Enum / Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 17 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
 | [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `rat` | Variable | A variable representing the Rat element or material type. | 15 ||
@@ -143,7 +143,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ApplyPassives`](../Reference_and_Meta/Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 13 | `{ . . . }` |
 | [`DeathRattleRevive`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-deathrattlerevive) | Enum / Object  | Specifies an ability or effect that revives the unit upon death, with options for stunning behavior. | 13 | `{ . . . }`<br>`DoNothing`<br>`HCHumanDie`<br>`ToxPuff` |
 | `Flammable` | Integer | The number of stacks of Flammable, or an object defining its properties. | 14 | `1`<br>`2` |
-| [`SafeDoomed`](../Reference_and_Meta/Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 16 | `1`<br>`2`<br>`level` |
+| `SafeDoomed` | Equation | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 16 | `1`<br>`2`<br>`level` |
 | [`TransformOnDeath`](../Reference_and_Meta/Arrays.md#array-transformondeath) | Array / Enum  | Specifies the unit or list of units to transform into upon death. | 13 | `BishopHat`<br>`CanCreeperOut`<br>`Carcus` |
 | `AddBonusMeleeRange` | Integer | The number of additional tiles of range added to the unit's melee attacks. | 11 | `1`<br>`10`<br>`2` |
 | `AddCorpseHealth` | Integer | The amount of bonus health the unit's corpse has before it can be resurrected. | 20 | `-999`<br>`-999999`<br>`100` |
@@ -232,7 +232,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `BramblesOnHit` | Integer | If set to 1, spawns bramble tiles on the target's location on hit. | 7 | `1` |
 | [`BrittleDuringElement`](../Reference_and_Meta/Enums.md#enum-brittleduringelement) | Enum | Makes the unit brittle while in contact with the specified element. | 8 | `water` |
 | [`ChanceToSpitOnDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-chancetospitondamage) | Object  | Configures the chance to use a spit ability when taking damage, including base chance and per-damage bonus. | 7 | `{ . . . }` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
 | `ContextualHeal` | Integer | The amount of healing applied contextually (e.g., to allies). | 7 | `1` |
 | [`DamageNeighborsOnEndMove`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-damageneighborsonendmove) | Object  | Deals damage and knockback to units on neighboring tiles when the unit finishes moving. | 7 | `{ . . . }` |
 | [`DurabilityTransform`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-durabilitytransform) | Object  | Transforms the item into another when durability reaches specified thresholds. | 7 | `{ . . . }` |
@@ -245,7 +245,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`PassiveIfStrAuxEquals`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passiveifstrauxequals) | Object  | Grants the contained passive effects when the unit's specified auxiliary stat equals the given value. | 7 | `{ . . . }` |
 | [`PassiveWhenOnTile`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passivewhenontile) | Object  | Grants the contained passive effects while the unit is standing on one of the specified tile types. | 7 | `{ . . . }` |
 | [`SetFragileImmune`](../Assets_and_Localization/Strings.md#string-setfragileimmune) | String | Sets the unit's material to the specified type, granting immunity to the Fragile status. | 7 | `""`<br>`Bionic`<br>`Cardboard` |
-| [`TriggerWerewolfTransform`](../Reference_and_Meta/Arrays.md#array-triggerwerewolftransform) | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
+| `TriggerWerewolfTransform` | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 19 | `1`<br>`2`<br>`[1 .1]` |
 | `XIsFreeArmorSlots` | Integer | The number of armor slots that are free (no cost) for the unit. | 7 | `1` |
 | `AbilityEnabledPercentEachTurn` | Integer | The percentage chance each turn that this ability is enabled. | 6 | `25%`<br>`33%`<br>`35%` |
@@ -255,7 +255,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddMovement` | Integer | The amount of bonus movement points added to the unit's base movement. | 25 | `-1`<br>`-2`<br>`1` |
 | [`AddStatusToElementAbilities`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustoelementabilities) | Object  | Adds the contained status effects to all abilities with the specified element. | 6 | `{ . . . }` |
 | [`AddTemporaryEffectsToBasicAttack`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addtemporaryeffectstobasicattack) | Object  | A container object that lists temporary status effects applied to the unit's basic attack. | 7 | `{ . . . }` |
-| [`animation_suffix`](../Reference_and_Meta/Enums.md#enum-animation_suffix) | Enum / Integer | Specifies an animation suffix for the current form, used to load different sprites. | 89 | `""`<br>`"0"`<br>`"1"` |
+| `animation_suffix` | Integer | Specifies an animation suffix for the current form, used to load different sprites. | 89 | `""`<br>`"0"`<br>`"1"` |
 | `BackstabImmunity` | Integer | If greater than 0, prevents the unit from taking extra damage from backstabs. | 12 | `1` |
 | `BasicAttackAOEBonus` | Integer | The additional area of effect radius for the basic attack. | 5 | `1`<br>`2` |
 | `BasicAttackDamageMultiplier` | Float | A multiplier applied to the damage of the basic attack. | 6 | `0`<br>`33.333334%`<br>`50%` |
@@ -1000,8 +1000,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`TowerDefenseReflex`](../Reference_and_Meta/Enums.md#enum-towerdefensereflex) | Enum | Specifies the ability or attack used when the unit counterattacks in tower defense reflex mode. | 3 | `BasicRanged_1DMG`<br>`attack` |
 | [`TradeLife`](./Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object  | The amount of health life traded, or a template for a TradeLife ability. | 6 | `{ . . . }`<br>`1` |
 | [`TradeLife`](./Engine_StatusAndPassiveKeys.md#object-tradelife) | Integer / Object  | The amount of health life traded, or a template for a TradeLife ability. | 6 | `{ . . . }`<br>`1` |
-| [`TrailBlazer`](./Engine_StatusAndPassiveKeys.md#object-trailblazer) | Enum / Integer / Object  | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `{ . . . }`<br>`1`<br>`mov` |
-| [`TrailBlazer`](./Engine_StatusAndPassiveKeys.md#object-trailblazer) | Enum / Integer / Object  | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `{ . . . }`<br>`1`<br>`mov` |
+| `TrailBlazer` | Equation / Object | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `{ . . . }`<br>`1`<br>`mov` |
+| `TrailBlazer` | Equation / Object | The number of trail blazer stacks applied, or a string alias like 'mov'. | 5 | `{ . . . }`<br>`1`<br>`mov` |
 | [`TransformOnElementInfluencex`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-transformonelementinfluencex) | Object  | Transforms into a specified object when influenced by a given element. | 2 | `{ . . . }` |
 | [`TransformWhenBuddyDies`](../Reference_and_Meta/Enums.md#enum-transformwhenbuddydies) | Enum | Specifies the form the unit transforms into when its buddy dies. | 2 | `UltraOrnstein`<br>`UltraSmough` |
 | `TrapEffectsMultiplier` | Integer | Multiplier for the potency of trap effects triggered by the unit. | 2 | `2` |
@@ -1736,7 +1736,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TilesMovedToStrength` | Integer | The number of stacks of a status that grants strength based on tiles moved. | 3 | `1` |
 | `TowerDefenseStatus` | Integer | The number of stacks of the sentry/tower defense status, granting stationary attack capabilities. | 2 | `1` |
 | `TowerDefenseStatus2` | Integer | The number of stacks of the enhanced sentry/tower defense status. | 2 | `1` |
-| [`TriggerWerewolfTransform`](../Reference_and_Meta/Arrays.md#array-triggerwerewolftransform) | Array / Float  | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
+| `TriggerWerewolfTransform` | Array / Float  | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
 | `TurnControlDelay` | Float | Specifies the delay in seconds before the unit regains turn control. | 1 | `.25` |
 | [`VisualFlySwarm`](./Engine_StatusAndPassiveKeys.md#object-visualflyswarm) | Float / Object  | If non-zero, enables the visual fly swarm effect on the unit. | 3 | `{ . . . }`<br>`1` |
 
@@ -1882,7 +1882,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 39 | `1`<br>`2` |
 | [`Conditional_Ally`](./Engine_StatusAndPassiveKeys.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Weakness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 59 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`Conditional_Enemy`](./Engine_StatusAndPassiveKeys.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 44 | `{ . . . }` |
 | [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
@@ -1909,7 +1909,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 33 | `1`<br>`10`<br>`2` |
 | [`KnockOutCoin`](./Engine_StatusAndPassiveKeys.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 5 | `{ . . . }`<br>`1`<br>`[1 .5]` |
 | [`KnockUpAndAway`](./Engine_StatusAndPassiveKeys.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 25 | `{ . . . }` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 45 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `ManaLeeches` | Integer | The number of mana leech stacks applied. | 5 | `1`<br>`2` |
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 27 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
@@ -2104,7 +2104,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 171 | `1`<br>`10`<br>`2` |
 | [`Purge`](./Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object  | The number of status effects to purge from the target. | 10 | `{ . . . }`<br>`0`<br>`3` |
 | [`ApplyToSource`](./Engine_StatusAndPassiveKeys.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 59 | `{ . . . }` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -2231,7 +2231,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2166 | `{ . . . }` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 836 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 203 | `1`<br>`10`<br>`2` |
 | [`InnateElement`](../Reference_and_Meta/Enums.md#enum-innateelement) | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 18 | `Earth`<br>`Electric`<br>`Fire` |
 | [`AddDamageToElementDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 9 | `{ . . . }` |
@@ -2280,7 +2280,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2807 | `{ . . . }` |
 | [`mode`](../Reference_and_Meta/Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 29 | `equal`<br>`greater`<br>`greater_or_equal` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -2299,7 +2299,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2807 | `{ . . . }` |
 | [`mode`](../Reference_and_Meta/Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 29 | `equal`<br>`greater`<br>`greater_or_equal` |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 49 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 
 </details>
 
@@ -2318,10 +2318,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | [`CatPartsTransform`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 55 | `{ . . . }` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
 | [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -2465,7 +2465,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 41 | `1`<br>`2`<br>`3` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 22 | `1`<br>`2`<br>`[1, 0.1]` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Weakness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 59 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`BackflipWhenTargeted`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-backflipwhentargeted) | Enum / Integer / Object  | The number of backflip charges, or an object defining its ability. | 15 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 26 | `1`<br>`10`<br>`100` |
@@ -2478,7 +2478,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 29 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 47 | `1`<br>`2`<br>`3` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 3 | `1` |
@@ -2493,7 +2493,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 6 | `1` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | `Lifesteal` | Integer | The amount of lifesteal stacks applied. | 6 | `1`<br>`3` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 45 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 40 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 27 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
@@ -2508,7 +2508,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Scrambled` | Integer | The number of stacks of Scrambled applied. | 3 | `1`<br>`2` |
 | [`Sleep`](../Reference_and_Meta/Arrays.md#array-sleep) | Array / Integer  | The amount of sleep stacks applied, or an [stacks, probability] array. | 35 | `1`<br>`2`<br>`3` |
 | [`SpawnCoinAnywhere`](../Reference_and_Meta/Arrays.md#array-spawncoinanywhere) | Array / Integer  | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 7 | `1`<br>`[1 .5]` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 24 | `1`<br>`3` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
@@ -2532,7 +2532,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2166 | `{ . . . }` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 836 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 1684 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 414 | `[`<br>`[Heat Fire]` |
 
@@ -2635,8 +2635,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 113 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
@@ -2707,7 +2707,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 11 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | [`UseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 14 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 | `Wet` | Integer | The number of stacks of the Wet status effect applied. | 2 | `1` |
 
@@ -2752,7 +2752,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`RandomStatDown`](../Reference_and_Meta/Arrays.md#array-randomstatdown) | Array / Integer / String  | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 12 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
 | `RangeUp` | Integer | The number of stacks of bonus attack range applied. | 6 | `1` |
 | [`SpawnCoinAnywhere`](../Reference_and_Meta/Arrays.md#array-spawncoinanywhere) | Array / Integer  | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 7 | `1`<br>`[1 .5]` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
@@ -2817,9 +2817,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 25 | `-1`<br>`1`<br>`2` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 43 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 51 | `1`<br>`2`<br>`[1 .01]` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | [`SpawnCoinAnywhere`](../Reference_and_Meta/Arrays.md#array-spawncoinanywhere) | Array / Integer  | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 7 | `1`<br>`[1 .5]` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3122,7 +3122,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`ForceAttack`](./Engine_StatusAndPassiveKeys.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
 | [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 3 | `1` |
 | [`RemoveStatusStacks`](./Engine_StatusAndPassiveKeys.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 4 | `{ . . . }` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
@@ -3130,7 +3130,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
 | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 3 | `1` |
 | [`ForceAttack`](./Engine_StatusAndPassiveKeys.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3150,7 +3150,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`BackflipWhenTargeted`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-backflipwhentargeted) | Enum / Integer / Object  | The number of backflip charges, or an object defining its ability. | 15 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3194,14 +3194,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Stealth`](../Reference_and_Meta/Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 11 | `1`<br>`2`<br>`[1 .1]` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 25 | `-1`<br>`1`<br>`2` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | `RangeUp` | Integer | The number of stacks of bonus attack range applied. | 6 | `1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 1 | `2` |
 | `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 1 | `2` |
@@ -3232,7 +3232,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 40 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 
 </details>
@@ -3252,7 +3252,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 25 | `-1`<br>`1`<br>`2` |
 | [`GainCoins`](../Reference_and_Meta/Arrays.md#array-gaincoins) | Array / Integer  | The amount of coins gained, or a [min, max] range. | 10 | `-5`<br>`1`<br>`2` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3302,13 +3302,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. | 12 | `1`<br>`2`<br>`3` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | `MovementUp` | Integer | The amount of movement increase or decrease applied. | 12 | `-2`<br>`1`<br>`2` |
 | `RandomInjury` | Integer | The number of random injuries applied. | 8 | `1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 12 | `-1`<br>`1`<br>`2` |
-| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. | 4 | `1`<br>`20`<br>`mov` |
+| `TempMovement` | Equation | The amount of temporary movement range added, or a string alias like 'mov'. | 4 | `1`<br>`20`<br>`mov` |
 
 </details>
 
@@ -3466,8 +3466,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 16 | `1` |
 | [`ReviveNextRound`](./Engine_StatusAndPassiveKeys.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 6 | `{ . . . }`<br>`2` |
-| [`SafeDoomed`](../Reference_and_Meta/Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 16 | `1`<br>`2`<br>`level` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SafeDoomed` | Equation | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 16 | `1`<br>`2`<br>`level` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3579,16 +3579,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 203 | `1`<br>`10`<br>`2` |
 | [`Blind`](../Reference_and_Meta/Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 43 | `-1`<br>`1`<br>`2` |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 25 | `-1`<br>`1`<br>`2` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 45 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`NoHealthRegen`](./Engine_StatusAndPassiveKeys.md#object-nohealthregen) | Array / Float / Object  | Prevents the unit from regenerating health normally. | 7 | `{ . . . }`<br>`1` |
 | [`NoManaRegen`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-nomanaregen) | Array / Float / Object  | The unit does not naturally regenerate mana per turn. Value indicates the stage or flag enabling this restriction. | 3 | `{ . . . }`<br>`1` |
@@ -3596,7 +3596,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `ProbeCharmed` | Integer | The number of charm stacks applied by a probe. | 3 | `1` |
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 20 | `-999999`<br>`1`<br>`2` |
 | [`Sleep`](../Reference_and_Meta/Arrays.md#array-sleep) | Array / Integer  | The amount of sleep stacks applied, or an [stacks, probability] array. | 35 | `1`<br>`2`<br>`3` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 10 | `1`<br>`2`<br>`4` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
@@ -4611,7 +4611,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
 | [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Array / Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
 | `size_start` | Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
@@ -5068,7 +5068,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
@@ -5211,9 +5211,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
 | [`size`](../Reference_and_Meta/Arrays.md#array-size) | Array  | The scale factor (size multiplier) of the spawned unit. | 1 | `.2`<br>`.5`<br>`1` |
 | [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
+| `friction` | Array / Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Array / Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array  | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
@@ -5462,7 +5462,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
 | `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
 | `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
@@ -5805,7 +5805,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
@@ -5925,7 +5925,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
 | `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
 | `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
-| [`emit_rate`](../Reference_and_Meta/Arrays.md#array-emit_rate) | Array   | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `emit_rate` | Array / Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
 | `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
 | `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
 | `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
@@ -5933,7 +5933,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
 
@@ -5962,7 +5962,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
@@ -6046,7 +6046,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
@@ -6154,7 +6154,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
@@ -6871,7 +6871,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`threshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`stack_key`](../Reference_and_Meta/Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 2 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 1 | `true` |
@@ -7067,7 +7067,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| `min_radius` | Float / String | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](../Reference_and_Meta/Arrays.md#array-puddle_tile) | Array / Enum | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
 | [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
@@ -7131,14 +7131,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
 | [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Array / Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
 | [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 1 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 | `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 1 | `0` |
 | [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 1 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
@@ -7224,8 +7224,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `value` | Enum | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
+| `value` | Float | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
 
 
 ### Object: `SetCrazyEyeBackgroundWeights`
@@ -7350,7 +7350,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
 
 
 ### Object: `RemoveStatusStacks`
@@ -7821,11 +7821,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
-| `alpha_out` | String | The alpha (opacity) value at the end of the effect's outro animation. | 1 | `.2`<br>`.3`<br>`.5` |
-| `alpha_in` | String | The alpha (opacity) value at the start of the effect's intro animation. | 1 | `.01`<br>`.05`<br>`.1` |
+| `alpha_out` | Float | The alpha (opacity) value at the end of the effect's outro animation. | 1 | `.2`<br>`.3`<br>`.5` |
+| `alpha_in` | Float | The alpha (opacity) value at the start of the effect's intro animation. | 1 | `.01`<br>`.05`<br>`.1` |
 | [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 1 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
 
 
@@ -7986,7 +7986,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 | `10` |
 
 
@@ -8054,9 +8054,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 | [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 | [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
-| `value` | Enum | The numeric value or formula associated with the buff. | 1 | `.5`<br>`0`<br>`1` |
+| `value` | Float | The numeric value or formula associated with the buff. | 1 | `.5`<br>`0`<br>`1` |
 | `mouth` | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
-| [`palette`](../Reference_and_Meta/Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 1 | `-1`<br>`0`<br>`1` |
+| `palette` | Integer | Specifies the color palette index for the ability's visuals. | 1 | `-1`<br>`0`<br>`1` |
 | `texture` | Integer | The catalog ID for the cat's texture. | 1 | `-1`<br>`1`<br>`1000` |
 | `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 1 | `1`<br>`1000`<br>`1001` |
 | `righteye` | Number | The sprite frame index for the character's right eye. | 1 | `1`<br>`100`<br>`1001` |
@@ -8064,7 +8064,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `lefteye` | Number | The sprite frame index for the character's left eye. | 1 | `1`<br>`100`<br>`1001` |
 | `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
 | `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
-| `pitch` | String | The sound pitch multiplier for the character's voice or sounds. | 1 | `.3`<br>`.5`<br>`.6` |
+| `pitch` | Float | The sound pitch multiplier for the character's voice or sounds. | 1 | `.3`<br>`.5`<br>`.6` |
 | `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
@@ -8278,12 +8278,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
 | [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
 | [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
+| `friction` | Array / Float | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
 | `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
-| `speed_start` | String | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Array / Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
 | `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
@@ -8422,8 +8422,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
@@ -8436,7 +8436,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
 | [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 1 | `10`<br>`4`<br>`X` |
+| `TempSpeedUp` | Equation | The number of stacks of temporary Speed Up applied to the unit. | 1 | `10`<br>`4`<br>`X` |
 | [`ScatterCoins`](./Engine_StatusAndPassiveKeys.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 | [`DybbukPossessed`](../Reference_and_Meta/Miscellaneous.md#object-dybbukpossessed) | Object  | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 | `{ . . . }` |
 | [`AllyInfested`](../Reference_and_Meta/Miscellaneous.md#object-allyinfested) | Array / Float / Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 | `{ . . . }` |
@@ -8531,7 +8531,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
 | [`radius`](../Reference_and_Meta/Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
 
@@ -8652,7 +8652,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](../Reference_and_Meta/Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 15 | `2`<br>`3`<br>`4` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 14 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 14 | `0`<br>`1`<br>`2` |
 | `temporary` | Boolean | If true, the crafted item is temporary and will be removed after the battle or a set duration. | 4 | `false` |
 | `works_with_tech` | Boolean | If true, the craft effect is compatible with tech-based interactions or abilities. | 4 | `true` |
 | [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
@@ -8790,7 +8790,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Quivered`](../Reference_and_Meta/Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
@@ -8877,9 +8877,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>tag |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 2 | `1`<br>`2`<br>`3` |
-| [`SafeDoomed`](../Reference_and_Meta/Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 2 | `1`<br>`2`<br>`level` |
+| `SafeDoomed` | Equation | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 2 | `1`<br>`2`<br>`level` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `RandomMutation` | Integer | The number of random mutations to apply. | 1 | `1`<br>`3` |
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 1 | `1` |
@@ -8930,9 +8930,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 2 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 2 | `10`<br>`4`<br>`X` |
+| `TempSpeedUp` | Equation | The number of stacks of temporary Speed Up applied to the unit. | 2 | `10`<br>`4`<br>`X` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 1 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
@@ -8961,7 +8961,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Quivered`](../Reference_and_Meta/Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 | `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 1 | `1` |
 
@@ -9216,14 +9216,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 3 | `-1`<br>`-2`<br>`1` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 3 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | `Charge` | Equation | The number of charge stacks applied. | 2 | `1`<br>`2`<br>`3` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 2 | `1`<br>`2` |
 | [`EquipPermanentItem`](../Reference_and_Meta/Enums.md#enum-equippermanentitem) | Enum  | The name of the item to permanently equip to the source. | 2 | `BoneClub`<br>`Kidney` |
 | [`Brace`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 1 | `1`<br>`2`<br>`3` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 1 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
@@ -9362,12 +9362,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
 | [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
 | [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
-| `size_start` | String | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| `size_start` | Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
 | [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
 | `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
-| `speed_scale` | String | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
 | [`force`](../Reference_and_Meta/Arrays.md#array-force) | Array  | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
 | `chain` | Boolean | Specifies the ability to chain into and execute. | 1 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
 | `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 

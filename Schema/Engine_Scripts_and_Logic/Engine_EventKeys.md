@@ -38,10 +38,10 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | :--- | :--- | :--- | :--- | :--- |
 | [`common`](../Reference_and_Meta/Enums.md#enum-common) | Enum | Defines the common reward block for a boss encounter. | 1226 | `100`<br>`14`<br>`5` |
 | [`rare`](../Reference_and_Meta/Enums.md#enum-rare) | Enum | Defines the rare reward block for a boss encounter. | 1061 | `1`<br>`10`<br>`15` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 337 | `+1`<br>`-1`<br>`-2` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 332 | `-1`<br>`-10`<br>`-2` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 361 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer  | The Dexterity stat value or modifier. | 250 | `-1`<br>`-2`<br>`-3` |
+| `cha` | Integer | The Charisma stat value or modifier. | 337 | `+1`<br>`-1`<br>`-2` |
+| `spd` | Integer | The Speed stat value or modifier. | 332 | `-1`<br>`-10`<br>`-2` |
+| `con` | Integer | The Constitution stat value or modifier. | 361 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 250 | `-1`<br>`-2`<br>`-3` |
 | [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 215 | `{ . . . }` |
 | [`options`](../Reference_and_Meta/Arrays.md#array-options) | Array | An array of named option objects within an event, each defining a possible action the player can take. | 211 | `[smash bash open]` |
 | [`play_animation`](../Reference_and_Meta/Enums.md#enum-play_animation) | Enum | Specifies an animation to play, optionally as an array with a probability weight. | 179 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
@@ -234,7 +234,7 @@ This document defines the schema shared by all Event Node blocks (`good`, `bad`,
 | [`general_rare`](../Reference_and_Meta/Enums.md#enum-general_rare) | Enum | Specifies the rare rarity tier for an item or event outcome. | 1 | `auto` |
 | [`GuillotinasHead`](./Engine_EventKeys.md#object-guillotinashead) | Object  | An object defining properties for a guillotine's head mechanic. | 7 | `{ . . . }` |
 | [`MomsKnife`](./Engine_EventKeys.md#object-momsknife) | Object  | An object defining properties for a mom's knife mechanic. | 8 | `{ . . . }` |
-| [`RaptorEgg`](./Engine_LogicKeys.md#object-raptoregg) | Object  | An object defining a raptor egg item with a probability or weight. | 5 | `{ . . . }` |
+| `RaptorEgg` | Float / Object | An object defining a raptor egg item with a probability or weight. | 5 | `{ . . . }` |
 | [`StatusDamagers`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusdamagers) | Object  | An object defining status effects that damage the unit, with parameters for each status. | 2 | `{ . . . }` |
 | [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 199 | `{ . . . }` |
 | [`injury`](../Reference_and_Meta/Enums.md#enum-injury) | Enum | Specifies the type of injury applied, such as bleeding or stat reduction. | 109 | `bleeding`<br>`burned`<br>`cha` |

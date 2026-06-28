@@ -214,17 +214,17 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `AwardCoinsOnDeath` | Characters & Bosses, Miscellaneous |
 | `BackflipWhenTargeted` | Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous |
 | `BackstabAllDirections` | Characters & Bosses, Miscellaneous |
-| `BackstabCritChance` | Items & Equipment, Miscellaneous, Passives & Statuses |
+| `BackstabCritChance` | Float |
 | `BackstabFront` | Cat Mutations, Miscellaneous |
 | `BackstabImmunity` | Cat Mutations, Characters & Bosses, Miscellaneous, Passives & Statuses |
 | `BackstabWeakness` | Miscellaneous, Passives & Statuses |
 | `BaitAura` | Characters & Bosses, Miscellaneous |
 | `BalanceStats` | Items & Equipment, Miscellaneous |
-| `BaseStatMultiply` | Characters & Bosses, Miscellaneous |
+| `BaseStatMultiply` | Float |
 | `BasicAIDangerZone` | Characters & Bosses, Miscellaneous |
 | `BasicAttackAOEBonus` | Miscellaneous, Passives & Statuses |
 | `BasicAttackCantMiss` | Cat Mutations, Items & Equipment, Miscellaneous |
-| `BasicAttackCritChance` | Items & Equipment, Miscellaneous, Passives & Statuses |
+| `BasicAttackCritChance` | Float |
 | `BasicAttackDamageMultiplier` | Miscellaneous, Passives & Statuses |
 | `BasicAttackStatusCarefulness` | Miscellaneous, Passives & Statuses |
 | `BasicAttackStatusSwap` | Miscellaneous, Passives & Statuses |
@@ -774,7 +774,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `HealsAlsoRegenMana` | Miscellaneous, Passives & Statuses |
 | `HealsCanRevive` | Miscellaneous, Passives & Statuses |
 | `HealthGain` | Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous, Passives & Statuses |
-| `HealthMultiplier` | Miscellaneous |
+| `HealthMultiplier` | Float |
 | `HealthPickup` | Characters & Bosses, Miscellaneous |
 | `HealthRegenUp` | Abilities & Spells, Cat Mutations, Characters & Bosses, Events & Encounters, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `HeatWave` | Miscellaneous |
@@ -862,7 +862,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `LimitHeal` | Characters & Bosses, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `LimitSelfKnockbackDamage` | Miscellaneous, Passives & Statuses |
 | `LimitedTileTrail` | Miscellaneous, Passives & Statuses |
-| `LineOfSightTrueSightAura` | Miscellaneous, Passives & Statuses |
+| `LineOfSightTrueSightAura` | Float |
 | `LobbedHook` | Miscellaneous, Passives & Statuses |
 | `LockOrientationFaceTile` | Characters & Bosses, Miscellaneous |
 | `LoopingSoundWhileAlive` | Characters & Bosses, Miscellaneous |
@@ -932,7 +932,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `MoveAwayWhenEnemyAdjacent` | Characters & Bosses, Miscellaneous |
 | `MoveQuivered` | Abilities & Spells, Cat Mutations, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `MoveRandomly` | Miscellaneous, Passives & Statuses |
-| `MoveSpeedMultiplier` | Items & Equipment, Miscellaneous, Passives & Statuses |
+| `MoveSpeedMultiplier` | Float |
 | `MoveTowardsDamageSource` | Characters & Bosses, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `MoveTowardsKillers` | Characters & Bosses, Miscellaneous |
 | `MoveWhenDamaged` | Cat Mutations, Characters & Bosses, Miscellaneous, Passives & Statuses |
@@ -1129,7 +1129,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `RemoteFlatLeech` | Characters & Bosses, Miscellaneous |
 | `RemoteLeech` | Characters & Bosses, Miscellaneous |
 | `RemoveActPoints` | Abilities & Spells, Miscellaneous |
-| `RemoveAmbientLightEffects` | Abilities & Spells, Characters & Bosses, Miscellaneous |
+| `RemoveAmbientLightEffects` | Float |
 | `RemoveExtraDispersedTurn` | Miscellaneous |
 | `RemoveGlobalModifiers` | Characters & Bosses, Miscellaneous |
 | `RemoveItem` | Abilities & Spells, Items & Equipment, Miscellaneous |
@@ -1172,7 +1172,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `RobotsInheritArmor` | Miscellaneous, Passives & Statuses |
 | `RockDetector` | Miscellaneous, Passives & Statuses |
 | `RockyArmorPassive` | Items & Equipment, Miscellaneous |
-| `RockyArmorSalvage` | Miscellaneous |
+| `RockyArmorSalvage` | Float |
 | `Rot` | Abilities & Spells, Characters & Bosses, Events & Encounters, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `RunInXTurns` | Characters & Bosses, Miscellaneous |
 | `RunWhenKittensDead` | Characters & Bosses, Miscellaneous |
@@ -1231,7 +1231,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `ShowHiddenThings` | Cat Mutations, Miscellaneous, Passives & Statuses |
 | `ShowText` | Abilities & Spells, Items & Equipment, Miscellaneous |
 | `SignalFinalBossShieldBroke` | Abilities & Spells, Miscellaneous |
-| `SizeScale` | Abilities & Spells, Characters & Bosses, Miscellaneous, Passives & Statuses |
+| `SizeScale` | Float |
 | `SizeScalePercent` | Miscellaneous, Passives & Statuses |
 | `SkipFirstRounds` | Characters & Bosses, Miscellaneous |
 | `Sleep` | Abilities & Spells, Events & Encounters, Miscellaneous, Passives & Statuses |
@@ -1542,13 +1542,13 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `TriggerGameEnding` | Abilities & Spells, Miscellaneous |
 | `TriggerMotherConsume` | Abilities & Spells, Miscellaneous |
 | `TriggerMotherGrow` | Abilities & Spells, Miscellaneous |
-| `TriggerWerewolfTransform` | Abilities & Spells, Miscellaneous |
+| `TriggerWerewolfTransform` | Float |
 | `TrinketActiveEffectsMultiplierBonus` | Items & Equipment, Miscellaneous, Passives & Statuses |
 | `TrinketPassiveMultiplierBonus` | Items & Equipment, Miscellaneous, Passives & Statuses |
 | `TrueShot` | Items & Equipment, Miscellaneous |
 | `TunnelVision` | Items & Equipment, Miscellaneous |
 | `TurnAround` | Abilities & Spells, Miscellaneous |
-| `TurnControlDelay` | Abilities & Spells, Miscellaneous |
+| `TurnControlDelay` | Float |
 | `TurnRight` | Abilities & Spells, Miscellaneous |
 | `TutorialBossRiggedFight` | Characters & Bosses, Miscellaneous |
 | `TwisterDisplaceWithDamage` | Abilities & Spells, Miscellaneous |
@@ -1589,7 +1589,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `WaterWalk` | Cat Mutations, Characters & Bosses, Miscellaneous, Passives & Statuses |
 | `Weakness` | Abilities & Spells, Cat Mutations, Characters & Bosses, Items & Equipment, Miscellaneous, Passives & Statuses |
 | `WeaponActiveEffectsMultiplierBonus` | Miscellaneous, Passives & Statuses |
-| `WeaponAuxMultiplier` | Abilities & Spells, Miscellaneous |
+| `WeaponAuxMultiplier` | Float |
 | `WeaponCountsAsBasicAttack` | Miscellaneous, Passives & Statuses |
 | `WeaponDamageMultiplierBonus` | Items & Equipment, Miscellaneous, Passives & Statuses |
 | `WeaponPassiveMultiplierBonus` | Miscellaneous, Passives & Statuses |
@@ -1615,7 +1615,7 @@ These identifiers are missing from the `passive_pool` enum, but they DO exist as
 | `XIsSpellStormRampAndReset` | Abilities & Spells, Miscellaneous |
 | `XIsTargetHealth` | Abilities & Spells, Miscellaneous |
 | `XIsTimesDamageTaken` | Abilities & Spells, Miscellaneous |
-| `YOffset` | Abilities & Spells, Cat Mutations, Characters & Bosses, Miscellaneous |
+| `YOffset` | Float |
 | `ZeroKnockbackDamage` | Characters & Bosses, Miscellaneous |
 | `Zombie` | Miscellaneous |
 

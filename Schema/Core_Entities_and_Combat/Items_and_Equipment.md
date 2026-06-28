@@ -63,21 +63,21 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`passives`](./Items_and_Equipment.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 823 | `{ . . . }` |
 | [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 766 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 368 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`shield`](../Reference_and_Meta/Enums.md#enum-shield) | Enum / Integer  | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 186 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 186 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
 | [`durability`](../Reference_and_Meta/Arrays.md#array-durability) | Array / Integer  | The amount of durability consumed by this ability or required for its use. | 171 | `0`<br>`1`<br>`10` |
 | `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 77 | `true` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 75 | `+1`<br>`-1`<br>`-2` |
+| `cha` | Integer | The Charisma stat value or modifier. | 75 | `+1`<br>`-1`<br>`-2` |
 | `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 64 | `1`<br>`2`<br>`true` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 60 | `-1`<br>`-10`<br>`-2` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 57 | `-1`<br>`-2`<br>`-3` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 54 | `-1`<br>`-10`<br>`-2` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 44 | `-1`<br>`-2`<br>`-3` |
+| `spd` | Integer | The Speed stat value or modifier. | 60 | `-1`<br>`-10`<br>`-2` |
+| `con` | Integer | The Constitution stat value or modifier. | 57 | `-1`<br>`-2`<br>`-3` |
+| `int` | Integer | The Intelligence stat value or modifier. | 54 | `-1`<br>`-10`<br>`-2` |
+| `lck` | Integer | The Luck stat value or modifier. | 44 | `-1`<br>`-2`<br>`-3` |
 | `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. | 41 | `-1`<br>`1`<br>`10` |
 | `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 40 | `false`<br>`true` |
 | `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 36 | `true` |
 | [`variant_of`](../Reference_and_Meta/Enums.md#enum-variant_of) | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. | 29 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 | `str` | Integer | The Strength stat value or modifier. | 28 | `-1`<br>`-2`<br>`-3` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
+| `dex` | Integer | The Dexterity stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
 | [`quest_reward_item`](../Reference_and_Meta/Enums.md#enum-quest_reward_item) | Enum | The specific item awarded as a quest reward. The value uses a unique item identifier string. | 22 | `AirHorn_Fixed`<br>`AngryFace_Fixed`<br>`BubbleBoy_Fixed` |
 | `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 20 | `true` |
 | `divine_shield` | Integer | The number of stacks of the Divine Shield status this mutation provides. | 17 | `0`<br>`1`<br>`2` |
@@ -100,7 +100,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `reset_aux_on_store` | Integer | An integer flag that when set to 1, resets the item's auxiliary data when it is stored in the inventory. | 3 | `1` |
 | `sticky` | Boolean | If true, the item cannot be unequipped or removed from the unit's slot under normal circumstances. | 3 | `true` |
 | `weightless` | Boolean | If true, the item does not contribute to the unit's weight or encumbrance. | 3 | `true` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 2 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 2 | `-30`<br>`-4`<br>`.5` |
 | [`keyword_tooltips`](./Items_and_Equipment.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 2 | `{ . . . }` |
 | [`passive`](./Items_and_Equipment.md#object-passive) | Object | Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive. | 2 | `{ . . . }` |
 | `prevent_level_up` | Boolean | If true, the cat cannot gain experience or level up. | 2 | `true` |
@@ -683,7 +683,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 34 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Items_and_Equipment.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 25 | `{ . . . }` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 14 | `{ . . . }` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 9 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 9 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 5 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 
 </details>
@@ -848,8 +848,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
+| `int` | Integer | The Intelligence stat value or modifier. | 2 | `-1`<br>`-10`<br>`-2` |
+| `con` | Integer | The Constitution stat value or modifier. | 1 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -1370,7 +1370,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](../Reference_and_Meta/Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 4 | `2`<br>`3`<br>`4` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
 | `works_with_tech` | Boolean | If true, the craft effect is compatible with tech-based interactions or abilities. | 3 | `true` |
 
 </details>
@@ -1498,7 +1498,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
 | [`passives`](./Items_and_Equipment.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 3 | `{ . . . }` |
-| [`threshold`](./Items_and_Equipment.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 3 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`mode`](../Reference_and_Meta/Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 3 | `equal`<br>`greater`<br>`greater_or_equal` |
 
 </details>
@@ -1571,7 +1571,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 1 | `false`<br>`true` |
-| [`threshold`](./Items_and_Equipment.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 1 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | `aux` | Integer | An auxiliary integer value used for item properties, such as hunger value. | 1 | `-1`<br>`1`<br>`10` |
 | `even_if_stunned` | Boolean | If true, the autocast triggers even if the unit is stunned. | 1 | `true` |
 
@@ -1882,7 +1882,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>tag |
 | [`passives`](./Items_and_Equipment.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 5 | `{ . . . }` |
-| [`threshold`](./Items_and_Equipment.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 5 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 5 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`mode`](../Reference_and_Meta/Enums.md#enum-mode) | Enum | Specifies the comparison mode (equal, greater, less_or_equal, etc.) used for a conditional check. | 5 | `equal`<br>`greater`<br>`greater_or_equal` |
 
 </details>
@@ -1950,7 +1950,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 2 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| `crit_chance` | `Equation` | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 2 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 2 | `-999999`<br>`.05*X`<br>`.25` |
 
 </details>
 
@@ -2207,7 +2207,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`passives`](./Items_and_Equipment.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 7 | `{ . . . }` |
-| `value` | Equation | The numeric value or formula associated with the buff. | 7 | `.5`<br>`0`<br>`1` |
+| `value` | Float | The numeric value or formula associated with the buff. | 7 | `.5`<br>`0`<br>`1` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 7 | passives<br>class<br>tag |
 
 </details>
@@ -3440,8 +3440,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `value` | Equation | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
+| `value` | Float | The numeric value or formula associated with the buff. | 3 | `.5`<br>`0`<br>`1` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 3 | `0`<br>`1`<br>`2` |
 
 </details>
 
@@ -3545,7 +3545,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Enum / Integer | The maximum range of the ability, can be a static number or an expression. | 1 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
+| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Equation | The maximum range of the ability, can be a static number or an expression. | 1 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
 | `max_bounces` | Integer | The maximum number of bounces for a projectile; -1 means infinite. | 1 | `-1`<br>`1`<br>`10` |
 
 </details>
@@ -3773,7 +3773,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`threshold`](./Items_and_Equipment.md#object-threshold) | Enum / Integer / Object  | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
+| `threshold` | Equation / Object | The health threshold value, either as a formula using X (max health) or a fixed integer. | 2 | `{ . . . }`<br>`"X*.4"`<br>`"X*.8"`<br>`"max(X*.33, 5)"` |
 | [`stack_key`](../Reference_and_Meta/Enums.md#enum-stack_key) | Enum | Specifies the key of the status stack to check for the condition. | 2 | `CATHIDE`<br>`EMPTY_GENERATOR`<br>`FANNY_PACK` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | `expires_on_end_turn` | Boolean | If true, the temporary effect expires at the end of the target's turn. | 1 | `true` |
@@ -3924,7 +3924,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`range`](../Reference_and_Meta/Enums.md#enum-range) | Enum / Integer  | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
+| `range` | Integer | The distance in tiles for the trigger effect; `global` means any distance. | 1 | `1`<br>`10`<br>`2` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 
 </details>
@@ -3972,7 +3972,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `crit_chance` | `Equation` | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
@@ -4377,7 +4377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `override_chain_knockback` | Integer | The distance in tiles the unit is knocked back if a critical hit triggers chain knockback. | 1 | `10` |
 
 </details>
@@ -4399,7 +4399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 1 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 
 </details>
 
@@ -4537,7 +4537,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
+| `head` | Float | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
 
 </details>
 

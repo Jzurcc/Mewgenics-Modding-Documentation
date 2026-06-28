@@ -97,7 +97,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [`cloned_ability`](../Reference_and_Meta/Enums.md#enum-cloned_ability) | Enum | Specifies an ability that is cloned from another. | 2 | `attack` |
 | [`empty_self_damage`](./Abilities_and_Spells.md#object-empty_self_damage) | Object  | Defines self-damage or effects when the ability is used with no target (empty). | 2 | `{ . . . }` |
-| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`bonk_damage`](./Abilities_and_Spells.md#object-bonk_damage) | Object  | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 1 | `{ . . . }` |
 | [`layer`](../Reference_and_Meta/Enums.md#enum-layer) | Enum  | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 0 | `2`<br>`all`<br>`characters` |
 | [`chapter`](../Reference_and_Meta/Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 0 | `1`<br>`alley` |
@@ -130,7 +130,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `dont_orient` | Boolean | If true, the caster does not rotate to face the target. | 83 | `true` |
 | [`dash_animation`](../Reference_and_Meta/Enums.md#enum-dash_animation) | Enum | Specifies the animation played during the dash movement. | 65 | `dash`<br>`dash2`<br>`dashing` |
 | [`dash_start_animation`](../Reference_and_Meta/Enums.md#enum-dash_start_animation) | Enum | Specifies the animation played at the start of the dash. | 63 | `dashbegin`<br>`dashstart`<br>`dashstart2` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 61 | `-30`<br>`-4`<br>`.5` |
 | [`affected_particle`](../Reference_and_Meta/Enums.md#enum-affected_particle) | Enum | Specifies the particle effect on affected targets. | 51 | `Cleanse`<br>`ExclamationPointEnemy`<br>`HealBig` |
 | [`dash_attack_animation`](../Reference_and_Meta/Enums.md#enum-dash_attack_animation) | Enum | Specifies the animation played at the end of the dash when attacking. | 45 | `block`<br>`dashEnd`<br>`dashEnd2` |
 | `lob_height` | Integer | Controls the height of the lobbed projectile trajectory. | 45 | `-1`<br>`0`<br>`1` |
@@ -215,7 +215,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `self_damage_mid_port` | Boolean | If true, the unit takes damage during the middle of a teleport effect. | 2 | `true` |
 | `throw_speed` | Integer | The speed multiplier for thrown objects. | 2 | `3` |
 | `use_hit_alts` | Boolean | If true, the ability uses alternative hit animations based on hit type. | 2 | `false` |
-| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Enum / Integer   | The maximum range of the ability, can be a static number or an expression. | 1 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
+| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Equation   | The maximum range of the ability, can be a static number or an expression. | 1 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
 | `min_range` | Integer | The minimum range of the ability. | 1 | `0`<br>`1`<br>`2` |
 | [`animate_name`](../Reference_and_Meta/Enums.md#enum-animate_name) | Boolean / Enum | If true, the ability name is animated; if set to an enum, it specifies a specific animation type like 'pointout'. | 1 | `false`<br>`pointout`<br>`true` |
 | [`affected_animation`](../Reference_and_Meta/Enums.md#enum-affected_animation) | Enum | Specifies the animation played on the target unit when it is affected by the ability. | 1 | `statDown` |
@@ -301,7 +301,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2342 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1785 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1554 | passives<br>class<br>tag |
-| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1446 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1446 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 358 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 352 | `[`<br>`[Heat Fire]` |
 | `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
@@ -316,14 +316,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `blocked_damage` | Equation | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 | `"(3+bonus_melee_ability_damage)*2"`<br>`3+bonus_melee_ability_damage`<br>`5` |
 | `raw_damage` | `String` | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 | `"(con+1)/2"`<br>`"8-X"`<br>`"max((X-1)*2, 0)"` |
 | `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 17 | `Ranged`<br>`true` |
-| `crit_chance` | `Equation` | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 16 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 16 | `-999999`<br>`.05*X`<br>`.25` |
 | `override_trample_damage` | `Boolean` | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 15 | `true` |
 | `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 | `false` |
 | `can_revive` | `Boolean` | If true, the damage instance can revive a downed unit instead of dealing damage. | 8 | `true` |
 | `show_damage_on_0` | `Boolean` | If true, the damage number is still displayed even when the resulting damage is zero. | 6 | `true` |
 | `force_play_hit_animation` | `Boolean` | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 5 | `true` |
 | `blocked_multiplier` | `Number` | A multiplier applied to blocked damage, increasing the effectiveness of the defensive reduction. | 4 | `2` |
-| `accuracy` | `String` | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 | `.5` |
+| `accuracy` | Float | A decimal value (e.g., .5) representing the base hit chance of the damage instance, where 1.0 is guaranteed. | 3 | `.5` |
 | `can_collect_pickups` | `Boolean` | If true, the damage instance can collect pickups from the target's tile as part of its effect. | 3 | `true` |
 | `can_instapop` | `Boolean` | If false, the ability cannot instantly kill or remove the target, often used for non-lethal effects. | 2 | `false` |
 | `force_no_contact` | `Boolean` | If true, the damage instance does not trigger contact-based passives even if it would normally be a contact hit. | 2 | `true` |
@@ -363,7 +363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 510 | Default<br>FormChange<br>Druid |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 102 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 89 | `1`<br>`2`<br>`3` |
-| [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 77 | `1`<br>`10`<br>`2` |
+| [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Equation | The amount of Burn applied, either as a fixed number or a formula string. | 77 | `1`<br>`10`<br>`2` |
 | `IgnoreSelf` | `Number` | If set to 1 or true, the damage instance ignores the source unit (does not affect itself). | 75 | `1`<br>`true` |
 | [`Bruise`](../Reference_and_Meta/Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 70 | `1`<br>`2`<br>`3` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 66 | `1`<br>`10`<br>`2` |
@@ -375,7 +375,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 35 | `1`<br>`10`<br>`2` |
 | [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 34 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Array / Equation | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 34 | `-1`<br>`-2`<br>`-4` |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 34 | `{ . . . }` |
 | `BounceObject` | `String` | Specifies the object or projectile to spawn and bounce from the target. | 31 | `AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 29 | `-1`<br>`-2`<br>`1` |
@@ -383,7 +383,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TransformAbility` | `String` | Specifies the ability that replaces the current ability. | 28 | `BerserkDash`<br>`BerserkDash2`<br>`BirthSquirrel` |
 | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 27 | `{ . . . }` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 26 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 25 | `-1`<br>`1`<br>`2` |
+| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Equation  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 25 | `-1`<br>`1`<br>`2` |
 | [`Conditional_Ally`](./Abilities_and_Spells.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 23 | `1`<br>`10`<br>`2` |
 | [`Weakness`](../Reference_and_Meta/Arrays.md#array-weakness) | Array / Integer  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 23 | `1`<br>`2`<br>`3` |
@@ -391,16 +391,16 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Blind`](../Reference_and_Meta/Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 22 | `-1`<br>`1`<br>`2` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 22 | `1`<br>`2` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 21 | `0`<br>`1`<br>`10%` |
-| [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 21 | `-1`<br>`-2`<br>`1` |
+| [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Equation  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 21 | `-1`<br>`-2`<br>`1` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 21 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | `VisualFXTile` | `String` | Specifies the name of the visual effect to play on the target tile. | 21 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
 | [`Sleep`](../Reference_and_Meta/Arrays.md#array-sleep) | Array / Integer  | The amount of sleep stacks applied, or an [stacks, probability] array. | 21 | `1`<br>`2`<br>`3` |
 | `EvolveAbilityFromPool` | `String` | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 21 | `Butcher`<br>`Druid`<br>`Fighter` |
-| [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 20 | `1`<br>`2`<br>`3` |
+| [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Equation  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 20 | `1`<br>`2`<br>`3` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 20 | `1`<br>`20` |
-| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 19 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Equation / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 19 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 18 | `1`<br>`10`<br>`2` |
-| `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 17 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
+| `RandomStatUp` | Array / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 17 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 17 | `{ . . . }` |
 | `CollectsPickups` | `Number` | If set to 1 or greater, the unit collects pickups (e.g., items) on contact. | 17 | `1`<br>`2` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 16 | `1`<br>`2`<br>`[1 .01]` |
@@ -421,7 +421,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Leeches` | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 13 | `1`<br>`2`<br>`3` |
 | [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
 | `GenericDebuff` | `Number` | The number of stacks of a generic, untooltipped debuff applied to the target. | 13 | `1`<br>`10`<br>`100` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 12 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Equation | The amount of Luck stat changed on the source, affecting random chance outcomes. | 12 | `-1`<br>`-2`<br>`-4` |
 | `Displace` | `Number` | If set to 1, the unit is displaced to another location (e.g., teleport). | 12 | `1` |
 | [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 11 | `{ . . . }` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 11 | `0`<br>`1` |
@@ -458,12 +458,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `BramblesOnHit` | `Number` | If set to 1, spawns bramble tiles on the target's location on hit. | 7 | `1` |
 | `ContextualHeal` | `Number` | The amount of healing applied contextually (e.g., to allies). | 7 | `1` |
 | `ManaSteal` | `Number` | The amount of mana stolen (negative values may drain instead). | 7 | `-1`<br>`5` |
-| `TriggerWerewolfTransform` | `Array`  | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
+| `TriggerWerewolfTransform` | Array / Float | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
 | [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 6 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 6 | `{ . . . }` |
 | [`Tarred`](../Reference_and_Meta/Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`2`<br>`[1 .1]` |
 | `Metronome` | `Number` | The number of times Metronome triggers, or an object with stacks and banned abilities. | 6 | `1`<br>`2` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 6 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Array / Equation | The amount of charisma change, or a keyword like 'item_aux'. | 6 | `-1`<br>`-2`<br>`1` |
 | `RemoveStatus` | `String` | The name of the status effect to remove from the source. | 6 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 | [`BackflipWhenTargeted`](./Abilities_and_Spells.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`8` |
@@ -542,7 +542,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `PoisonLace` | Enum / Equation | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 3 | `"X/3"`<br>`"X/5"`<br>`1` |
 | [`Tangled`](./Abilities_and_Spells.md#object-tangled) | Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 3 | `1`<br>`3`<br>`5` |
-| `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 3 | `10`<br>`4`<br>`X` |
+| `TempSpeedUp` | Equation | The number of stacks of temporary Speed Up applied to the unit. | 3 | `10`<br>`4`<br>`X` |
 | [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
 | `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 3 | `1` |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 3 | `1` |
@@ -608,7 +608,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 2 | `2`<br>`X` |
 | `TempInitiativeChange` | Integer | The flat change to the unit's initiative value. | 2 | `-100`<br>`-999`<br>`100` |
 | `TempSpellDamageUp` | Integer | The amount of temporary spell damage increase applied. | 2 | `1` |
-| `TrailBlazer` | Enum / Integer | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 | `1`<br>`mov` |
+| `TrailBlazer` | Array / Equation | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 | `1`<br>`mov` |
 | `BonusKnockbackDamage` | `Number` | The extra damage dealt per tile of knockback. | 2 | `2`<br>`3`<br>`5` |
 | `CharmedForceAttack` | `Number` | If non-zero, forces the charmed target to use its basic attack on a random nearby unit. | 2 | `1` |
 | [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
@@ -617,7 +617,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `RandomDistanceDisplace` | `Number` | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 2 | `20` |
 | `Ostracized` | Integer | The number of stacks of Ostracized applied. | 2 | `1`<br>`2`<br>`4` |
 | `Possessed` | Integer | The number of possession stacks applied, or a template with name and tooltips. | 2 | `1` |
-| `TempMovement` | Enum / Integer | The amount of temporary movement range added, or a string alias like 'mov'. | 2 | `1`<br>`20`<br>`mov` |
+| `TempMovement` | Array / Equation | The amount of temporary movement range added, or a string alias like 'mov'. | 2 | `1`<br>`20`<br>`mov` |
 | `RemoveMovePoints` | `Number` | The number of move points to remove from the target, preventing them from moving. | 2 | `1` |
 | `RepairWeaponCondition` | `Number` | The amount of weapon condition restored. | 2 | `1` |
 | `SetShield` | `Number` | Sets the target's shield value to a specific flat amount. | 2 | `0`<br>`88` |
@@ -865,7 +865,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TriggerMotherConsume` | `Number` | The number of times the Mother consume effect is triggered. | 1 | `1` |
 | `TriggerMotherGrow` | `Number` | The number of times the Mother grow effect is triggered. | 1 | `4` |
 | `TurnAround` | `Number` | The number of times the unit turns around. | 1 | `1` |
-| `TurnControlDelay` | `String` | Specifies the delay in seconds before the unit regains turn control. | 1 | `.25` |
+| `TurnControlDelay` | Float | Specifies the delay in seconds before the unit regains turn control. | 1 | `.25` |
 | `TurnRight` | `Number` | The number of times the unit turns to the right. | 1 | `1` |
 | `UndoDamage` | `Number` | The amount of damage reversed. | 1 | `1` |
 | [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#object-usemoveabilitywithai) | Object  | Defines a move ability to execute with AI-controlled movement weights. | 1 | `{ . . . }` |
@@ -962,8 +962,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Enum / Integer   | The maximum range of the ability, can be a static number or an expression. | 1088 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
-| [`max_aoe`](../Reference_and_Meta/Enums.md#enum-max_aoe) | Enum / Integer   | An equation or integer defining the maximum radius or number of tiles for the area of effect target selection. | 795 | `"(X+1)/2"`<br>`"X/2"`<br>`-1` |
+| [`max_range`](../Reference_and_Meta/Enums.md#enum-max_range) | Equation   | The maximum range of the ability, can be a static number or an expression. | 1088 | `"4+(1-clamp(spd,0,1))*2"`<br>`"max(5-int, 1)"`<br>`-1` |
+| [`max_aoe`](../Reference_and_Meta/Enums.md#enum-max_aoe) | Equation   | An equation or integer defining the maximum radius or number of tiles for the area of effect target selection. | 795 | `"(X+1)/2"`<br>`"X/2"`<br>`-1` |
 | `min_range` | Integer | The minimum range of the ability. | 583 | `0`<br>`1`<br>`2` |
 | [`target_mode`](../Reference_and_Meta/Enums.md#enum-target_mode) | Enum | Determines how the targeting input is handled (e.g., direction8, tile, random_direction) for selecting a target location. | 503 | `direction`<br>`direction8`<br>`none` |
 | [`restrictions`](../Reference_and_Meta/Arrays.md#array-restrictions) | Array / Enum | An array of constraint tags (e.g., [aoe_must_exist must_have_enemy]) that filter valid targets for the ability. | 463 | `[]`<br>`[aoe_must_be_displaceable aoe_must_exist]`<br>`[aoe_must_be_displaceable must_have_character]` |
@@ -976,8 +976,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`range_mode`](../Reference_and_Meta/Enums.md#enum-range_mode) | Enum | Determines the shape or logic used to calculate ability range, such as standard, ground_move, cross, custom, or special_tagged_tiles. | 114 | `8cross`<br>`cross`<br>`custom` |
 | [`X_is`](../Reference_and_Meta/Enums.md#enum-x_is) | Enum | Defines what the ability's variable 'X' represents, such as custom, storm_count, random_0_to_N, alpha_exists, or current_shield. | 86 | `alpha_exists`<br>`basic_attack_damage`<br>`cast_count` |
 | [`custom_aoe`](../Reference_and_Meta/Arrays.md#array-custom_aoe) | Array | A list of tile offsets relative to the target that defines the shape of a custom area of effect. | 83 | `[`<br>`[ [-1, -1] ]`<br>`[ [-1, 0] ]` |
-| `multihit` | Enum / Equation | The number of times the ability hits each target, or an expression involving X. | 62 | `10`<br>`14`<br>`2` |
-| `max_targets` | Integer / String | The maximum number of targets the ability can affect. | 56 | `-1`<br>`-X`<br>`1` |
+| `multihit` | Integer | The number of times the ability hits each target, or an expression involving X. | 62 | `10`<br>`14`<br>`2` |
+| `max_targets` | Equation | The maximum number of targets the ability can affect. | 56 | `-1`<br>`-X`<br>`1` |
 | `range_excludes_blocking` | Boolean | If true, the range calculation ignores obstacles that block line of sight. | 53 | `false`<br>`true` |
 | `prioritize_dont_change_direction` | Boolean / Integer | If true, the unit's facing direction is not changed when selecting a target. | 52 | `1`<br>`true` |
 | [`target_requires_tag`](../Reference_and_Meta/Enums.md#enum-target_requires_tag) | Enum | Restricts targeting to characters that possess a specific tag. | 40 | `bishop_hat`<br>`bowling_ball`<br>`food` |
@@ -1152,7 +1152,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 47 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `piercing` | `Boolean` | If true, the damage instance ignores armor or damage reduction effects on the target. | 12 | `true` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `cant_miss` | `Boolean` | If true, the damage instance always hits its target regardless of accuracy or evasion. | 10 | `true` |
 | `heal` | `Equation` | An equation string that determines the amount of health restored by this damage instance. | 6 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 4 | `[`<br>`[Heat Fire]` |
@@ -1321,7 +1321,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 37 | passives<br>class<br>tag |
 | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 26 | `1`<br>`3`<br>`4` |
-| `CastAgain` | Integer / String | The number of additional times the ability can be cast this turn. | 20 | `1`<br>`2`<br>`3` |
+| `CastAgain` | Integer | The number of additional times the ability can be cast this turn. | 20 | `1`<br>`2`<br>`3` |
 | `DisableTrample` | Integer | If set to 1, trample damage is disabled for the duration of the effect. | 10 | `1` |
 | `Fury` | Integer | The amount of Fury (bonus damage or charges) gained. | 7 | `10`<br>`55`<br>`75` |
 | [`TileTrail`](../Reference_and_Meta/Enums.md#enum-tiletrail) | Enum  | Specifies the type of tile left behind as the unit moves. | 6 | `BrambleTile`<br>`CreepTile`<br>`FireTile` |
@@ -1377,9 +1377,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Bruise`](../Reference_and_Meta/Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `1`<br>`2`<br>`3` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
-| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
 | [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
@@ -1503,7 +1503,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Craft`](./Abilities_and_Spells.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 3 | `{ . . . }` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 3 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 2 | `0`<br>`1` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | [`FindItemFromPool`](./Abilities_and_Spells.md#object-finditemfrompool) | Object  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `{ . . . }` |
 | `RemoveStatus` | `String` | The name of the status effect to remove from the source. | 2 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 | `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 2 | `1`<br>`2` |
@@ -1923,13 +1923,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 17 | `{ . . . }` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 13 | `[`<br>`[Heat Fire]` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 12 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `makes_contact` | `Boolean` | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 6 | `false`<br>`true` |
 | `override_trample_damage` | `Boolean` | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 2 | `true` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 1 | `-99999`<br>`-999999`<br>`1` |
 | `layer` | `String` | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 1 | `2`<br>`all`<br>`characters` |
-| `crit_chance` | `Equation` | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 1 | `-999999`<br>`.05*X`<br>`.25` |
 | `force_play_hit_animation` | `Boolean` | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 1 | `true` |
 | `force_no_knockback` | `Boolean` | If true, the damage instance applies no knockback regardless of any knockback values set. | 1 | `true` |
 
@@ -1957,10 +1957,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 7 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `GainCoins` | Integer | The amount of coins gained, or a [min, max] range. | 7 | `-5`<br>`1`<br>`2` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
-| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 6 | `-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 6 | `-1`<br>`1`<br>`2` |
 | `DivineShield` | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 6 | `1`<br>`2`<br>`4` |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 5 | `1`<br>`10`<br>`2` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 4 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 4 | `-1`<br>`-2`<br>`-4` |
 | `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 4 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 4 | `-1`<br>`-2`<br>`1` |
 | `Charge` | Equation | The number of charge stacks applied. | 4 | `1`<br>`2`<br>`3` |
@@ -1978,7 +1978,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 2 | `1`<br>`2`<br>`3` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 2 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 2 | `1`<br>`10`<br>`100` |
 | [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 2 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
@@ -1990,7 +1990,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`MagicWeakness`](../Reference_and_Meta/Arrays.md#array-magicweakness) | Array / Integer  | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`3` |
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 2 | `-999999`<br>`1`<br>`2` |
 | [`Tarred`](../Reference_and_Meta/Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`[1 .1]` |
-| `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 2 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 2 | `-1`<br>`-2`<br>`1` |
 | [`BackflipWhenTargeted`](./Abilities_and_Spells.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. | 2 | `1`<br>`2`<br>`3` |
 | `Reflect` | Integer | The amount of reflect stacks applied. | 2 | `1`<br>`5` |
@@ -2227,7 +2227,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`pool`](../Reference_and_Meta/Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 9 | `2`<br>`3`<br>`4` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 8 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 8 | `0`<br>`1`<br>`2` |
 | `temporary` | Boolean | If true, the crafted item is temporary and will be removed after the battle or a set duration. | 4 | `false` |
 | `works_with_tech` | Boolean | If true, the craft effect is compatible with tech-based interactions or abilities. | 1 | `true` |
 
@@ -2256,7 +2256,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 10 | Default<br>FormChange<br>Druid |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
-| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `-1`<br>`1`<br>`2` |
+| `Slow` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `-1`<br>`1`<br>`2` |
 | [`RemoveStatus`](../Reference_and_Meta/Enums.md#enum-removestatus) | Enum  | The name of the status effect to remove from the source. | 2 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 | [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
@@ -2282,14 +2282,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 16 | passives<br>class<br>tag |
-| [`SafeDoomed`](../Reference_and_Meta/Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 11 | `1`<br>`2`<br>`level` |
+| `SafeDoomed` | Equation | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 11 | `1`<br>`2`<br>`level` |
 | `InjuryImmunity` | Integer | The number of turns the unit is immune to injuries. | 7 | `1` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 2 | `1` |
 | `FadeInsteadOfDie` | Integer | If non-zero, the unit fades out instead of dying. | 2 | `1` |
 | `IllusionTint` | Integer | If non-zero, applies an illusionary tint to the unit's sprite. | 2 | `1` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 | `1` |
@@ -2457,7 +2457,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `EvolveAbilityFromPool` | `String` | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 | `Butcher`<br>`Druid`<br>`Fighter` |
 | `RefreshActPoints` | `Number` | The amount of action points restored to the source. | 1 | `1` |
 | [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
-| `WeaponAuxMultiplier` | `String` | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
+| `WeaponAuxMultiplier` | Float | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
 
@@ -2738,8 +2738,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 2 | `0`<br>`1`<br>`10%` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | `passives`<br>`class`<br>`tag` | [`formula`](../Engine_Scripts_and_Logic/Math_Equations.md) | Equation | A mathematical expression evaluated to determine if its result is positive, enabling the parent conditional. | 1 | passives<br>class<br>tag |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
-| [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `Slow` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .01]` |
 | `OverrideKnockbackDamage` | `String` | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 1 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
 
@@ -2800,7 +2800,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`10`<br>`2` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 
 </details>
 
@@ -3001,8 +3001,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 2 | `-30`<br>`-4`<br>`.5` |
-| [`amount`](../Reference_and_Meta/Arrays.md#array-amount) | Array | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 2 | `-30`<br>`-4`<br>`.5` |
+| `amount` | Array / Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
 
 </details>
 
@@ -3085,7 +3085,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `FormChange` | `String` | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 5 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 | `UseAbility` | `String` | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
@@ -3312,7 +3312,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 6 | `-30`<br>`-4`<br>`.5` |
 | `intensity` | Integer | The strength of the screen shake effect; positive values shake more, negative values may invert direction. | 6 | `-1`<br>`-2`<br>`1` |
 | [`radius`](../Reference_and_Meta/Arrays.md#array-radius) | Array / Integer  | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 6 | `0`<br>`1`<br>`13` |
 
@@ -3523,7 +3523,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 2 | `1`<br>`3` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 1 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 1 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
 | `Quivered` | Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid` | `CurrentWeaponAddPoison` | Integer | The number of poison stacks added to the target's current weapon; an integer value applies that many stacks. | 2 | Default<br>FormChange<br>Druid |
 
@@ -3629,7 +3629,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
+| `speed` | Array / Float  | The speed of the projectile or move, can be a value or a range. | 4 | `-30`<br>`-4`<br>`.5` |
 | [`radius`](../Reference_and_Meta/Arrays.md#array-radius) | Array / Integer | The range in tiles of the distortion ring effect; an array [min, max] specifies a random radius within that range. | 4 | `0`<br>`1`<br>`13` |
 
 </details>
@@ -3652,7 +3652,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 4 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
+| `slot` | Integer | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 4 | `0`<br>`1`<br>`2` |
 
 </details>
 

@@ -420,7 +420,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 12 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
 | `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 12 | `1`<br>`2`<br>`25` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
+| `consumable_chance` | Float | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
 | `item_chance` | Float | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
 
 </details>
@@ -444,8 +444,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 12 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
 | `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 12 | `1`<br>`2`<br>`25` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Float | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Float | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -468,8 +468,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 12 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
 | `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 12 | `1`<br>`2`<br>`25` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Float | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Float | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -492,8 +492,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 12 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
 | `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 12 | `1`<br>`2`<br>`25` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
+| `consumable_chance` | Float | The probability of dropping a consumable. | 12 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Float | The probability of dropping an item. | 12 | `.25`<br>`.5`<br>`1` |
 
 </details>
 

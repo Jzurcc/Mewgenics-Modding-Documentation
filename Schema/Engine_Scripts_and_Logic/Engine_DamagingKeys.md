@@ -40,8 +40,8 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | [`spell`](../Reference_and_Meta/Enums.md#enum-spell) | Enum | Specifies the spell ability to use as a reaction. | 569 | `MCHadouken` |
 | [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 271 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 414 | `[`<br>`[Heat Fire]` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer  | The Strength stat value or modifier. | 335 | `-1`<br>`-2`<br>`-3` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `str` | Integer | The Strength stat value or modifier. | 335 | `-1`<br>`-2`<br>`-3` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`durability`](../Reference_and_Meta/Arrays.md#array-durability) | Array / Integer  | The amount of durability consumed by this ability or required for its use. | 182 | `0`<br>`1`<br>`10` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 257 | `-99999`<br>`-999999`<br>`1` |
 | `heal` | Enum / Equation | An equation string that determines the amount of health restored by this damage instance. | 168 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
@@ -59,7 +59,7 @@ This document defines the shared schema for all Damage Instance blocks (`damage_
 | `blocked_damage` | Equation | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 | `"(3+bonus_melee_ability_damage)*2"`<br>`3+bonus_melee_ability_damage`<br>`5` |
 | `raw_damage` | Equation | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 | `"(con+1)/2"`<br>`"8-X"`<br>`"max((X-1)*2, 0)"` |
 | `characters` | Variable | A list of characters or character references. | 18 ||
-| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
 | `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 17 | `true` |
 | `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 | `false` |
 | `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 18 | `Ranged`<br>`true` |
@@ -156,7 +156,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1731 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 257 | `-99999`<br>`-999999`<br>`1` |
 | `heal` | Enum / Equation | An equation string that determines the amount of health restored by this damage instance. | 168 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 131 | `true` |
@@ -169,7 +169,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 95 | `1`<br>`2`<br>`3` |
 | `blocked_damage` | Equation | An equation string that calculates the amount of damage that can be blocked or reduced by the target's defenses. | 24 | `"(3+bonus_melee_ability_damage)*2"`<br>`3+bonus_melee_ability_damage`<br>`5` |
 | `raw_damage` | Enum / Equation | An equation string that calculates the base damage before any modifiers or bonuses are applied. | 22 | `"(con+1)/2"`<br>`"8-X"`<br>`"max((X-1)*2, 0)"` |
-| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
 | `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 17 | `true` |
 | `contact_requires_adjacency` | Boolean | If false, contact effects are not restricted to adjacent tiles, allowing contact to trigger at range. | 14 | `false` |
 | `ranged` | Boolean | If true, the damage instance is considered a ranged attack, interacting with ranged-specific modifiers and passives. | 18 | `Ranged`<br>`true` |
@@ -216,7 +216,7 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 836 | `[attack move spell]`<br>`attack`<br>`battle` |
 | `piercing` | Boolean | If true, the damage instance ignores armor or damage reduction effects on the target. | 67 | `true` |
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 131 | `true` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `heal` | Enum / Equation | An equation string that determines the amount of health restored by this damage instance. | 168 | `"ceil(X*item_aux/100)"`<br>`0`<br>`1` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 257 | `-99999`<br>`-999999`<br>`1` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 1684 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
@@ -241,13 +241,13 @@ The following objects all behave as `{Damaging Keys}` containers. Each has its o
 | [`{Damaging Keys}`](./Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 33 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2166 | `{ . . . }` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 836 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
+| `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 314 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | `makes_contact` | Boolean | If true, the damage instance is considered a contact hit, triggering contact-based passives on both the attacker and target. | 47 | `false`<br>`true` |
 | [`layer`](../Reference_and_Meta/Enums.md#enum-layer) | Enum | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 61 | `2`<br>`all`<br>`characters` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 1684 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `override_trample_damage` | Boolean | If true, this damage instance replaces any default trample damage when the unit passes through an occupied tile. | 17 | `true` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 257 | `-99999`<br>`-999999`<br>`1` |
-| `crit_chance` | Equation | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
+| `crit_chance` | Float | The chance for the damage instance to critically hit, expressed as a percentage or equation; values above 1 default to 100%. | 24 | `-999999`<br>`.05*X`<br>`.25` |
 | `force_no_knockback` | Boolean | If true, the damage instance applies no knockback regardless of any knockback values set. | 2 | `true` |
 | `force_play_hit_animation` | Boolean | If true, the hit animation is forced to play regardless of other conditions (e.g., miss or block). | 6 | `true` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 414 | `[`<br>`[Heat Fire]` |

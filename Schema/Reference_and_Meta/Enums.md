@@ -91,7 +91,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `animation`
 
 
@@ -515,7 +514,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `class`
 
 
@@ -577,7 +575,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `variant_of`
 
@@ -1553,7 +1550,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `kind`
 
 
@@ -1582,7 +1578,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `rarity`
 
 
@@ -1610,7 +1605,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `object`
 
@@ -2327,7 +2321,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `set`
 
 
@@ -2468,7 +2461,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tag`
 
 
@@ -2557,7 +2549,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `type`
 
 
@@ -2613,7 +2604,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `name`
 
@@ -3394,7 +3384,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `desc`
 
 
@@ -4114,7 +4103,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `movieclip`
 
@@ -4997,7 +4985,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ability`
 
 
@@ -5524,7 +5511,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `brain`
 
 
@@ -5548,7 +5534,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `faction`
 
@@ -5581,7 +5566,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `move_weights`
 
@@ -5649,7 +5633,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `attack`
 
@@ -5950,7 +5933,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `decision_weights`
 
 
@@ -5996,7 +5978,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `target_mode`
 
 
@@ -6021,7 +6002,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `particle`
 
@@ -6095,7 +6075,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move`
 
 
@@ -6141,7 +6120,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `aoe_mode`
 
 
@@ -6184,7 +6162,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `prompt`
 
@@ -6449,7 +6426,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `restrictions`
 
 
@@ -6509,7 +6485,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `knockback_mode`
 
 
@@ -6547,7 +6522,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `stat`
 
 
@@ -6568,7 +6542,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `projectile`
 
@@ -6662,7 +6635,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cat_choice`
 
 
@@ -6681,7 +6653,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `event_clip`
 
@@ -6702,7 +6673,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `subject_clip`
 
 
@@ -6721,7 +6691,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `subject_frame`
 
@@ -6925,7 +6894,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `voice`
 
 
@@ -7003,7 +6971,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `do`
 
@@ -7128,7 +7095,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `get_item_from_pool`
 
 
@@ -7195,7 +7161,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `frame`
 
 
@@ -7244,7 +7209,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `render_mode`
 
 
@@ -7265,7 +7229,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `simulation_space`
 
 
@@ -7285,7 +7248,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `projection_matrix`
 
 
@@ -7304,7 +7266,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `aoe_restrictions`
 
@@ -7349,7 +7310,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `status`
 
@@ -7413,7 +7373,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `custom_cat_data`
 
@@ -7553,7 +7512,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_item_immediate`
 
@@ -7700,7 +7658,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `range_mode`
 
 
@@ -7733,7 +7690,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `pool`
 
@@ -7790,7 +7746,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `gain_disorder`
 
@@ -7856,7 +7811,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `label`
 
 
@@ -7919,7 +7873,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `X_is`
 
 
@@ -7953,7 +7906,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `custom_additional_ai_weight`
 
@@ -8008,7 +7960,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `size`
 
 
@@ -8034,7 +7985,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `water_mask`
 
 
@@ -8056,7 +8006,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `has_token`
 
@@ -8113,7 +8062,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `gain_disorder_from_pool`
 
 
@@ -8141,7 +8089,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpawnOnDeath`
 
 
@@ -8167,7 +8114,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `element`
 
@@ -8219,7 +8165,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move_block`
 
 
@@ -8239,7 +8184,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `event_now_same_cat`
 
@@ -8293,7 +8237,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `increment_legacy_counter`
 
 
@@ -8322,7 +8265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `frame_label`
 
@@ -8409,7 +8351,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FormChange`
 
 
@@ -8481,7 +8422,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dash_animation`
 
 
@@ -8512,7 +8452,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `override_art`
 
@@ -8582,7 +8521,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dash_start_animation`
 
 
@@ -8610,7 +8548,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ChangeTile`
 
@@ -8650,7 +8587,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `get_item`
 
@@ -8714,7 +8650,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `set_adventure_token`
 
 
@@ -8765,7 +8700,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `layer`
 
 
@@ -8791,7 +8725,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `initial_form`
 
@@ -8843,7 +8776,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `play_animation`
 
 
@@ -8873,7 +8805,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `trigger_npc_sequence`
 
@@ -8950,7 +8881,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `complete_chapter`
 
 
@@ -8990,7 +8920,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `alias`
 
@@ -9042,7 +8971,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `gain_familiar`
 
 
@@ -9089,7 +9017,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ElementImmune`
 
 
@@ -9113,7 +9040,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `affected_particle`
 
@@ -9150,7 +9076,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tooltip`
 
 
@@ -9181,7 +9106,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `beat_house_boss`
 
@@ -9215,7 +9139,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `clear_adventure_token`
 
 
@@ -9239,7 +9162,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dash_attack_animation`
 
@@ -9278,7 +9200,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `level`
 
@@ -9340,7 +9261,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `adventure_unlock`
 
@@ -9404,7 +9324,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `animation_in`
 
 
@@ -9431,7 +9350,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `animation_out`
 
 
@@ -9457,7 +9375,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tile`
 
@@ -9500,7 +9417,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `get_parasite`
 
@@ -9548,7 +9464,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FindItemFromPool`
 
 
@@ -9589,7 +9504,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `class_anis`
 
 
@@ -9624,7 +9538,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `target_requires_tag`
 
@@ -9666,7 +9579,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `VisualFXTile`
 
 
@@ -9700,7 +9612,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `jump_attack_animation`
 
 
@@ -9724,7 +9635,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `set_legacy_token`
 
@@ -9780,7 +9690,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `get_parasite_from_pool`
 
 
@@ -9804,7 +9713,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `BounceObject`
 
@@ -9845,7 +9753,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `preset`
 
 
@@ -9871,7 +9778,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `CounterAttack`
 
@@ -9912,7 +9818,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `spawnin_animation`
 
@@ -9960,7 +9865,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `injury`
 
 
@@ -9983,7 +9887,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ontrigger`
 
@@ -10033,7 +9936,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `plane`
 
 
@@ -10053,7 +9955,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `beat_chapter_boss`
 
@@ -10094,7 +9995,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `hidden_tag`
 
@@ -10138,7 +10038,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `not_has_token`
 
@@ -10187,7 +10086,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `spawn_side`
 
 
@@ -10208,7 +10106,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_ability`
 
@@ -10261,7 +10158,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_hasnot`
 
 
@@ -10291,7 +10187,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ai_ability`
 
@@ -10334,7 +10229,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `id`
 
 
@@ -10354,7 +10248,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `mode`
 
@@ -10378,7 +10271,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `music`
 
@@ -10422,7 +10314,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_passive`
 
@@ -10471,7 +10362,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `unlock_song`
 
 
@@ -10519,7 +10409,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ForceUseAbility`
 
 
@@ -10566,7 +10455,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MulticlassLevelUp`
 
 
@@ -10598,7 +10486,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TransformAbility`
 
@@ -10648,7 +10535,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `aoe_symmetry`
 
 
@@ -10669,7 +10555,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `form`
 
@@ -10709,7 +10594,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `icon_shell_frame`
 
 
@@ -10732,7 +10616,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `slot`
 
@@ -10761,7 +10644,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReplaceBasicAttack`
 
@@ -10807,7 +10689,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_has`
 
 
@@ -10839,7 +10720,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ObjectOnHitCharacter`
 
@@ -10873,7 +10753,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `full_jump_animation`
 
@@ -10910,7 +10789,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AddElementsToBasicAttack`
 
 
@@ -10939,7 +10817,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DeathRattle`
 
@@ -10979,7 +10856,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cat_has_item_equipped`
 
 
@@ -11015,7 +10891,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ownership`
 
 
@@ -11034,7 +10909,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `set_mapgen_flag`
 
@@ -11078,7 +10952,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `shadow`
 
 
@@ -11104,7 +10977,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `title`
 
@@ -11142,7 +11014,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `add_weather`
 
 
@@ -11171,7 +11042,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `chain`
 
@@ -11207,7 +11077,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `complete_item_quest`
 
@@ -11245,7 +11114,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dash_end_animation`
 
 
@@ -11271,7 +11139,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `event_now`
 
@@ -11299,7 +11166,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `quest_reward_item`
 
@@ -11340,7 +11206,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tooltip_stackless`
 
 
@@ -11363,7 +11228,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `center_particle`
 
@@ -11395,7 +11259,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `combat_background`
 
@@ -11436,7 +11299,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `combat_ui_background`
 
 
@@ -11476,7 +11338,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `debris`
 
 
@@ -11512,7 +11373,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `event_piece_frame`
 
@@ -11556,7 +11416,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `first_turn`
 
 
@@ -11580,7 +11439,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `particle_lifetime`
 
 
@@ -11603,7 +11461,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `static_1x1_a`
 
@@ -11644,7 +11501,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `static_1x1_b`
 
 
@@ -11680,7 +11536,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `static_1x1_c`
 
@@ -11718,7 +11573,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `static_2x2_a`
 
@@ -11759,7 +11613,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `static_2x2_b`
 
 
@@ -11785,7 +11638,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `static_tall_a`
 
@@ -11823,7 +11675,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `static_tall_b`
 
 
@@ -11859,7 +11710,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ambience`
 
 
@@ -11894,7 +11744,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `area_particle`
 
 
@@ -11922,7 +11771,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `chapter_id`
 
@@ -11964,7 +11812,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `common`
 
 
@@ -12002,7 +11849,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `folder`
 
@@ -12045,7 +11891,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `graphics`
 
 
@@ -12081,7 +11926,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `next_map`
 
@@ -12119,7 +11963,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tileset`
 
@@ -12163,7 +12006,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EliteParticle`
 
 
@@ -12193,7 +12035,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `area_name`
 
@@ -12229,7 +12070,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `chapter_item_pool`
 
@@ -12267,7 +12107,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `disease`
 
 
@@ -12295,7 +12134,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `world_name_frame`
 
@@ -12336,7 +12174,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BonusAbility`
 
 
@@ -12373,7 +12210,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `InnateElement`
 
 
@@ -12401,7 +12237,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `restrict`
 
 
@@ -12426,7 +12261,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityOnBattleStart_Immediate`
 
 
@@ -12450,7 +12284,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReplaceBasicMove`
 
@@ -12480,7 +12313,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ambient_sound`
 
 
@@ -12508,7 +12340,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `boss_cutscene`
 
@@ -12547,7 +12378,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `level_display`
 
 
@@ -12566,7 +12396,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `lose_item`
 
@@ -12589,7 +12418,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `struggle_ability`
 
@@ -12618,7 +12446,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `GainDisorderFromPool_PostCast`
 
 
@@ -12638,7 +12465,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `RemoveStatus`
 
@@ -12670,7 +12496,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpawnOnBattleStart`
 
 
@@ -12697,7 +12522,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SpawnThingOnDeath`
 
@@ -12729,7 +12553,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `auto_run_priority`
 
 
@@ -12750,7 +12573,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `default_face`
 
@@ -12773,7 +12595,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `face`
 
@@ -12809,7 +12630,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `hint_destination`
 
 
@@ -12842,7 +12662,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `kill`
 
 
@@ -12861,7 +12680,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `move_for_ability`
 
@@ -12890,7 +12708,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `rare`
 
@@ -12926,7 +12743,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityOnBattleStart`
 
 
@@ -12960,7 +12776,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityReaction`
 
 
@@ -12993,7 +12808,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Buddy`
 
@@ -13030,7 +12844,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `chain_ability`
 
 
@@ -13064,7 +12877,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move_then_do`
 
 
@@ -13091,7 +12903,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `shop_now`
 
 
@@ -13114,7 +12925,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `str_aux_initialize`
 
@@ -13142,7 +12952,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ChangeCatClass`
 
@@ -13180,7 +12989,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TileTrail`
 
 
@@ -13212,7 +13020,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TransformBasicAttack`
 
 
@@ -13242,7 +13049,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `VisualFX`
 
 
@@ -13270,7 +13076,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `animation_suffix`
 
@@ -13300,7 +13105,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `complete_checklist_with_class`
 
@@ -13338,7 +13142,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `copy_results`
 
 
@@ -13362,7 +13165,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `corpse_health`
 
 
@@ -13381,7 +13183,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `head`
 
@@ -13415,7 +13216,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move_start_animation`
 
 
@@ -13441,7 +13241,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ClassFromNeutral,`
 
@@ -13474,7 +13273,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ClassToNeutral,`
 
 
@@ -13505,7 +13303,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `EvolveAbilityFromPool`
 
@@ -13542,7 +13339,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `StartTurn,`
 
 
@@ -13573,7 +13369,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Victory,`
 
@@ -13606,7 +13401,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `begin_chapter`
 
 
@@ -13634,7 +13428,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `catdata`
 
 
@@ -13657,7 +13450,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `deathsound`
 
@@ -13688,7 +13480,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `hidden_tags`
 
 
@@ -13707,7 +13498,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `hint_chapter_exit`
 
@@ -13737,7 +13527,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `lose_specific_item`
 
@@ -13771,7 +13560,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move_ability`
 
 
@@ -13800,7 +13588,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `move_end_animation`
 
 
@@ -13825,7 +13612,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `obj`
 
@@ -13859,7 +13645,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `portrait_face`
 
 
@@ -13891,7 +13676,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `render_layer`
 
 
@@ -13913,7 +13697,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `trigger_adventure_unlock`
 
@@ -13940,7 +13723,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_quest_item`
 
@@ -13977,7 +13759,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AddTag`
 
 
@@ -14004,7 +13785,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DeadAltAbility`
 
@@ -14038,7 +13818,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EquipTemporaryItem`
 
 
@@ -14064,7 +13843,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ImmediateAbilityReaction`
 
@@ -14092,7 +13870,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `StatusImmunity`
 
 
@@ -14118,7 +13895,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TransformOnDeath`
 
@@ -14152,7 +13928,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `UseAbility`
 
 
@@ -14181,7 +13956,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cantrip_group`
 
 
@@ -14204,7 +13978,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `level_up`
 
 
@@ -14226,7 +13999,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `palette`
 
@@ -14260,7 +14032,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `range`
 
 
@@ -14279,7 +14050,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `set_savefile_flag`
 
@@ -14311,7 +14081,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `animation_fail`
 
 
@@ -14330,7 +14099,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `chain_movieclip`
 
@@ -14352,7 +14120,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `learn_passive`
 
@@ -14381,7 +14148,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `partial_animation_suffix`
 
 
@@ -14409,7 +14175,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `prereq`
 
 
@@ -14434,7 +14199,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `set_subject`
 
@@ -14465,7 +14229,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `weights`
 
 
@@ -14489,7 +14252,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ImmediateUseAbility`
 
@@ -14518,7 +14280,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpawnThingIfHitKills`
 
 
@@ -14542,7 +14303,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `beam_cap`
 
@@ -14568,7 +14328,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `beam_clip`
 
 
@@ -14593,7 +14352,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `color`
 
 
@@ -14614,7 +14372,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `end`
 
@@ -14643,7 +14400,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `jump_start_animation`
 
 
@@ -14666,7 +14422,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `loop`
 
@@ -14691,7 +14446,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `neck`
 
@@ -14721,7 +14475,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `orientation`
 
 
@@ -14743,7 +14496,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `override_basic_attack`
 
@@ -14771,7 +14523,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `prime_animation`
 
@@ -14801,7 +14552,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `right_icon`
 
 
@@ -14825,7 +14575,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `stack_key`
 
 
@@ -14847,7 +14596,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `start`
 
@@ -14872,7 +14620,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `trigger_house_boss`
 
@@ -14905,7 +14652,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `unlock_room`
 
 
@@ -14934,7 +14680,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `weapon`
 
 
@@ -14959,7 +14704,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AmplifyStatus`
 
@@ -14987,7 +14731,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ChangeTilesUnder`
 
 
@@ -15012,7 +14755,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `arrival_unlock`
 
@@ -15041,7 +14783,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `choose_cat_with_item`
 
 
@@ -15069,7 +14810,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `complete_house_boss`
 
@@ -15102,7 +14842,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dead,`
 
 
@@ -15128,7 +14867,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `intro_cutscene`
 
@@ -15157,7 +14895,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `repeat`
 
 
@@ -15177,7 +14914,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `save_file_flag`
 
@@ -15210,7 +14946,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AddElement`
 
 
@@ -15230,7 +14965,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `FreePathfindElement`
 
@@ -15254,7 +14988,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpawnOnDowned`
 
 
@@ -15277,7 +15010,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `back_icon`
 
@@ -15305,7 +15037,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `deadhit,`
 
 
@@ -15331,7 +15062,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_offmap`
 
 
@@ -15355,7 +15085,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_onmap`
 
 
@@ -15377,7 +15106,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `max_range`
 
@@ -15402,7 +15130,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `on_store`
 
 
@@ -15423,7 +15150,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `prevent_chain_tag`
 
@@ -15446,7 +15172,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `queue_cutscene_immediate`
 
@@ -15473,7 +15198,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `reset_npc_sequence`
 
@@ -15505,7 +15229,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `sub_ability`
 
 
@@ -15534,7 +15257,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `type_icon`
 
 
@@ -15561,7 +15283,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityWhenBuddyDies`
 
 
@@ -15586,7 +15307,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BrittleDuringElement`
 
 
@@ -15605,7 +15325,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `OverrideBasicAttack`
 
@@ -15634,7 +15353,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `damage`
 
 
@@ -15655,7 +15373,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `decrement_legacy_counter`
 
@@ -15680,7 +15397,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `event`
 
 
@@ -15704,7 +15420,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `land_animation`
 
 
@@ -15723,7 +15438,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `max_npc`
 
@@ -15750,7 +15464,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `miss_particle`
 
 
@@ -15769,7 +15482,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `new_layer`
 
@@ -15794,7 +15506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `npc_script`
 
 
@@ -15813,7 +15524,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AddHiddenTag`
 
@@ -15840,7 +15550,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ConjureBonusAbility`
 
 
@@ -15864,7 +15573,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Divide4OnDeath`
 
@@ -15892,7 +15600,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ForceUseAbility_NonStack`
 
 
@@ -15913,7 +15620,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Imprison`
 
@@ -15939,7 +15645,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `LevelUpClassOverride`
 
 
@@ -15961,7 +15666,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReplaceBasicAttackWhenCastable`
 
@@ -15985,7 +15689,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SetFragileImmune`
 
@@ -16013,7 +15716,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TagGreed`
 
 
@@ -16036,7 +15738,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ability_icon`
 
@@ -16064,7 +15765,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `air_animation`
 
 
@@ -16085,7 +15785,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `custom_priming_animation`
 
@@ -16110,7 +15809,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `exclude`
 
 
@@ -16131,7 +15829,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `formchange`
 
@@ -16157,7 +15854,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `house_upgrade`
 
 
@@ -16181,7 +15877,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `initial_cutscene_night`
 
@@ -16209,7 +15904,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `interstitial_bg_frame`
 
 
@@ -16232,7 +15926,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `key`
 
@@ -16257,7 +15950,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `new_song`
 
 
@@ -16276,7 +15968,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `not_priming`
 
@@ -16298,7 +15989,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `preempt_npc_sequence`
 
@@ -16323,7 +16013,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `priming`
 
 
@@ -16344,7 +16033,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `rematch_cutscene_night`
 
@@ -16369,7 +16057,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `requires_flag`
 
@@ -16397,7 +16084,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `toss_direction_restriction`
 
 
@@ -16417,7 +16103,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_boss`
 
@@ -16445,7 +16130,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `upgrade_ability`
 
 
@@ -16466,7 +16150,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BlacklistPickupType`
 
 
@@ -16486,7 +16169,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `CompleteItemQuest`
 
@@ -16511,7 +16193,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DeathRattleRevive`
 
 
@@ -16534,7 +16215,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DisableAbilitiesWithTag`
 
 
@@ -16556,7 +16236,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EquipPermanentItem`
 
 
@@ -16577,7 +16256,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MoveTowardsDamageSource`
 
 
@@ -16596,7 +16274,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ObjectOnHit`
 
@@ -16621,7 +16298,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ObjectOnHitEmpty`
 
@@ -16648,7 +16324,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SetBrittleImmune`
 
 
@@ -16674,7 +16349,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpawnObjectOnPopCorpse`
 
 
@@ -16698,7 +16372,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `XIsLivingAlliesWithTag`
 
 
@@ -16719,7 +16392,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `aoe_tile_requires_element`
 
@@ -16746,7 +16418,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `current_chapter_common`
 
 
@@ -16765,7 +16436,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `current_chapter_rare`
 
@@ -16786,7 +16456,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `current_chapter_uncommon`
 
 
@@ -16806,7 +16475,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `current_chapter_very_rare`
 
 
@@ -16825,7 +16493,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `cutscene_on_exit`
 
@@ -16847,7 +16514,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dead`
 
 
@@ -16868,7 +16534,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `detatched_animation`
 
@@ -16892,7 +16557,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `drop_on_death`
 
 
@@ -16911,7 +16575,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dying`
 
@@ -16934,7 +16597,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `empty_animation`
 
 
@@ -16953,7 +16615,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `hint_prerequisite_flag`
 
@@ -16978,7 +16639,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `item`
 
@@ -18140,7 +17800,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `learn_ability`
 
 
@@ -18164,7 +17823,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `make_old`
 
 
@@ -18187,7 +17845,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `material`
 
 
@@ -18207,7 +17864,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `minion_alt`
 
@@ -18230,7 +17886,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `mount_mode`
 
 
@@ -18250,7 +17905,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `sfx`
 
 
@@ -18269,7 +17923,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `spurt`
 
@@ -18292,7 +17945,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tag_location`
 
@@ -18318,7 +17970,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tag_restriction`
 
 
@@ -18342,7 +17993,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `upgrade_passive`
 
 
@@ -18362,7 +18012,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `walk`
 
@@ -18385,7 +18034,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityAfterEnemyCastSpell_Stackable`
 
 
@@ -18406,7 +18054,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Bird`
 
 
@@ -18425,7 +18072,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `BounceRock`
 
@@ -18448,7 +18094,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BreakIntoRocks`
 
 
@@ -18470,7 +18115,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ChangeTileOnPop`
 
@@ -18495,7 +18139,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DisableAbilities`
 
 
@@ -18516,7 +18159,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DisplayDangerAOE`
 
@@ -18542,7 +18184,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EnableWeather`
 
 
@@ -18565,7 +18206,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FragileDuringElement`
 
 
@@ -18584,7 +18224,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `GroundFlopper`
 
@@ -18608,7 +18247,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `KillsToMeat`
 
 
@@ -18627,7 +18265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `LoopingSoundWhileAlive`
 
@@ -18649,7 +18286,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `PopAndSpawn`
 
@@ -18675,7 +18311,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `RemoveItem`
 
 
@@ -18698,7 +18333,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TeamCastAbility`
 
@@ -18724,7 +18358,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TileTrail_Ahead`
 
 
@@ -18749,7 +18382,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `WeremanTransformationReceiver`
 
 
@@ -18769,7 +18401,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `adventure_weather`
 
@@ -18793,7 +18424,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `damage_tiles`
 
 
@@ -18812,7 +18442,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `fail_item_quest`
 
@@ -18838,7 +18467,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `goto`
 
 
@@ -18857,7 +18485,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `heal_disorder`
 
@@ -18882,7 +18509,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `hit`
 
 
@@ -18903,7 +18529,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `initiative`
 
 
@@ -18922,7 +18547,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `learn_ability_from_pool`
 
@@ -18946,7 +18570,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `lose_item_from_inventory`
 
 
@@ -18965,7 +18588,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `next_event_from_set`
 
@@ -18991,7 +18613,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `post_combat_cutscene`
 
 
@@ -19014,7 +18635,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `return_as`
 
 
@@ -19034,7 +18654,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `return_during`
 
 
@@ -19053,7 +18672,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `skybox_frame`
 
@@ -19077,7 +18695,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `status_explosion_override`
 
 
@@ -19096,7 +18713,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `stunned`
 
@@ -19119,7 +18735,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tag_filter`
 
@@ -19144,7 +18759,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tags`
 
 
@@ -19163,7 +18777,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `threshold`
 
@@ -19186,7 +18799,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `trap`
 
@@ -19212,7 +18824,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `trigger_npc_sequence_tomorrow`
 
 
@@ -19234,7 +18845,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_item_quest`
 
@@ -19259,7 +18869,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_npc_tomorrow`
 
@@ -19287,7 +18896,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `visit_chapter`
 
 
@@ -19312,7 +18920,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `weak`
 
 
@@ -19334,7 +18941,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AbilityEnableIfConsumedCharacterHasTag`
 
@@ -19359,7 +18965,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BreakOnElement`
 
 
@@ -19379,7 +18984,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `CobraReflex`
 
 
@@ -19398,7 +19002,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DigestDeadBodies`
 
@@ -19420,7 +19023,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DoubleStatus`
 
@@ -19445,7 +19047,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DropAsFamiliarOnArmorBreak`
 
 
@@ -19466,7 +19067,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `FactionUprising`
 
@@ -19491,7 +19091,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FindExtraItemFromPoolOnBattleEnd`
 
 
@@ -19511,7 +19110,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `FindItem`
 
@@ -19534,7 +19132,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `GlobalSpawnCharacter`
 
 
@@ -19553,7 +19150,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `KnockbackDirectionIsFacingDirection`
 
@@ -19574,7 +19170,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `MoveAndUseAbilityEachTurnBeginIfPossible`
 
@@ -19597,7 +19192,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MoveWhenDamaged`
 
 
@@ -19618,7 +19212,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MutateViaAbility`
 
 
@@ -19637,7 +19230,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `PoopWhenHit`
 
@@ -19658,7 +19250,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ReplaceBasicMove_Mutation`
 
 
@@ -19678,7 +19269,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SetDefaultFace`
 
@@ -19701,7 +19291,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SetDefaultFacePassive`
 
 
@@ -19721,7 +19310,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SpawnCustomTrap`
 
@@ -19746,7 +19334,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TowerDefenseReflex`
 
 
@@ -19766,7 +19353,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `UseAbility_NonStack`
 
@@ -19788,7 +19374,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `aoe_pierce_mode`
 
 
@@ -19807,7 +19392,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `background_extra_shader`
 
@@ -19830,7 +19414,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `bg_placements_frame`
 
 
@@ -19850,7 +19433,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `core`
 
@@ -19873,7 +19455,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `craft_ability`
 
 
@@ -19892,7 +19473,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dash_decelerating_animation`
 
@@ -19913,7 +19493,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `deadhit`
 
 
@@ -19932,7 +19511,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dimensionx`
 
@@ -19955,7 +19533,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `disallow_items`
 
 
@@ -19976,7 +19553,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `emit_timespread_curve`
 
 
@@ -19995,7 +19571,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `endoftime`
 
@@ -20018,7 +19593,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `fail_ability`
 
 
@@ -20039,7 +19613,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `form_above`
 
@@ -20064,7 +19637,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_below`
 
 
@@ -20085,7 +19657,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `from`
 
@@ -20110,7 +19681,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `gain_immortal_familiar`
 
 
@@ -20133,7 +19703,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `get_and_equip_item`
 
@@ -20158,7 +19727,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `gift_item`
 
 
@@ -20179,7 +19747,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `grab_animation`
 
 
@@ -20198,7 +19765,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `icon_damage_type`
 
@@ -20220,7 +19786,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `icon_hint`
 
 
@@ -20240,7 +19805,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `image_tint`
 
@@ -20272,7 +19836,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `initial_cutscene_day`
 
 
@@ -20294,7 +19857,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `jestercat`
 
 
@@ -20313,7 +19875,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `jurassic`
 
@@ -20335,7 +19896,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `learn_passive_from_pool`
 
@@ -20359,7 +19919,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `max_aoe`
 
 
@@ -20380,7 +19939,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `min_aoe`
 
 
@@ -20400,7 +19958,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `moon`
 
@@ -20423,7 +19980,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `movieclip_bg`
 
 
@@ -20445,7 +20001,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `movieclip_fg`
 
 
@@ -20466,7 +20021,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `not_cat_has_item_equipped`
 
@@ -20491,7 +20045,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `oncast`
 
 
@@ -20512,7 +20065,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `oncastpoint`
 
 
@@ -20532,7 +20084,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `override_music`
 
@@ -20555,7 +20106,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `rematch_cutscene_day`
 
 
@@ -20576,7 +20126,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `requires_unlocked_npc`
 
@@ -20601,7 +20150,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `scramble_abilities`
 
 
@@ -20620,7 +20168,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `set_house`
 
@@ -20643,7 +20190,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `side`
 
 
@@ -20662,7 +20208,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `special_tile_tag`
 
@@ -20687,7 +20232,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `spin`
 
 
@@ -20706,7 +20250,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `theend`
 
@@ -20729,7 +20272,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `throw_ability`
 
 
@@ -20748,7 +20290,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tint`
 
@@ -20770,7 +20311,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `to`
 
@@ -20795,7 +20335,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `walk,`
 
 
@@ -20816,7 +20355,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `warrior_tag`
 
@@ -20840,7 +20378,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `weak,`
 
 
@@ -20861,7 +20398,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AbilityEnabledIfHasStatus`
 
@@ -20885,7 +20421,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AddElementsToWeapon`
 
 
@@ -20904,7 +20439,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AfterImage`
 
@@ -20926,7 +20460,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AllyBonusAbilityAura`
 
 
@@ -20946,7 +20479,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AllyDamageReaction`
 
 
@@ -20965,7 +20497,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AllyMoveAbilityAura`
 
@@ -20989,7 +20520,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AutocastEachTurn`
 
 
@@ -21009,7 +20539,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AutocastEachTurnBegin`
 
@@ -21031,7 +20560,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ChangeFaction`
 
 
@@ -21051,7 +20579,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ChangeTileOnDeath`
 
 
@@ -21070,7 +20597,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ChargeSpiritBombAura`
 
@@ -21094,7 +20620,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EliteTint`
 
 
@@ -21114,7 +20639,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `EnterMount`
 
 
@@ -21133,7 +20657,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `EquipRandomTemporaryItemFromPool`
 
@@ -21155,7 +20678,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FamiliarBonusAbility`
 
 
@@ -21175,7 +20697,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `FinalBossShield`
 
@@ -21197,7 +20718,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FollowUp`
 
 
@@ -21217,7 +20737,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ForceMoveTowardsEnemies`
 
@@ -21239,7 +20758,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `GainDisorder`
 
 
@@ -21260,7 +20778,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `GainDisorderFromPool`
 
 
@@ -21280,7 +20797,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `HideEquipment`
 
 
@@ -21299,7 +20815,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `HolyShieldTransferToTaggedMinions`
 
@@ -21323,7 +20838,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ImmediateUseDirectionalAbility`
 
 
@@ -21343,7 +20857,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `KaijuWinCon`
 
@@ -21367,7 +20880,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Leave`
 
 
@@ -21387,7 +20899,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `LeaveBehindOnceEachMove`
 
@@ -21411,7 +20922,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MiniVolcanoReaction`
 
 
@@ -21431,7 +20941,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `MoveAwayFromDamageSource`
 
@@ -21455,7 +20964,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MoveTowardsKillers`
 
 
@@ -21474,7 +20982,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ProtectTargetedAllies`
 
@@ -21495,7 +21002,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `RandomTaggedMutation`
 
@@ -21519,7 +21025,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ReplaceBasicAttackWhenDead`
 
 
@@ -21538,7 +21043,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Return`
 
@@ -21560,7 +21064,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SE_Cat_StompLegMove`
 
 
@@ -21581,7 +21084,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ShovingMatch`
 
 
@@ -21600,7 +21102,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TransformWhenBuddyDies`
 
@@ -21624,7 +21125,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `UpgradeLevelUpClassActives`
 
 
@@ -21644,7 +21144,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `UpgradeLevelUpClassPassives`
 
 
@@ -21663,7 +21162,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `UpgradeTaggedSpawnsToChampions`
 
@@ -21687,7 +21185,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `XIsLivingCharactersWithTag`
 
 
@@ -21707,7 +21204,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `alley`
 
@@ -21729,7 +21225,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `boneyard`
 
 
@@ -21749,7 +21244,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `bunker`
 
@@ -21771,7 +21265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `caves`
 
 
@@ -21792,7 +21285,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cha`
 
 
@@ -21812,7 +21304,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `check_in_form`
 
@@ -21836,7 +21327,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `clear_surviving_kaiju`
 
 
@@ -21859,7 +21349,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cloned_ability`
 
 
@@ -21879,7 +21368,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `complete_adventure`
 
 
@@ -21898,7 +21386,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `crater`
 
@@ -21920,7 +21407,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `default_attack_animation`
 
 
@@ -21941,7 +21427,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `desert`
 
 
@@ -21961,7 +21446,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `enemy_type`
 
@@ -21985,7 +21469,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `exit_ability`
 
 
@@ -22005,7 +21488,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `follow_character_tag`
 
 
@@ -22024,7 +21506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `future`
 
@@ -22046,7 +21527,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `generate_beanies_quest`
 
 
@@ -22067,7 +21547,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `get_full_item_set_from_pool`
 
 
@@ -22087,7 +21566,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `gift_item_from_pool`
 
 
@@ -22106,7 +21584,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `iceage`
 
@@ -22128,7 +21605,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `icon`
 
 
@@ -22149,7 +21625,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `is_move`
 
 
@@ -22168,7 +21643,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `junkyard`
 
@@ -22190,7 +21664,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `lab`
 
 
@@ -22211,7 +21684,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `lose_all_equipped_items`
 
 
@@ -22230,7 +21702,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `mask_center`
 
@@ -22251,7 +21722,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `mask_extent`
 
 
@@ -22270,7 +21740,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `meatworld`
 
@@ -22292,7 +21761,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `musiclayer`
 
 
@@ -22311,7 +21779,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `outline_color`
 
@@ -22332,7 +21799,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `override_move`
 
 
@@ -22351,7 +21817,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `particle_mat`
 
@@ -22372,7 +21837,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `party_injury`
 
 
@@ -22391,7 +21855,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `preturn_animation`
 
@@ -22412,7 +21875,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `pseudoprojectile`
 
 
@@ -22431,7 +21893,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `quest_item_alias`
 
@@ -22453,7 +21914,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `range_bonuses`
 
 
@@ -22472,7 +21932,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `require_beat_house_boss`
 
@@ -22496,7 +21955,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `require_mapgen_flag`
 
 
@@ -22519,7 +21977,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `scramble_basic_attack`
 
 
@@ -22539,7 +21996,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `scramble_passives`
 
 
@@ -22558,7 +22014,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `select_item_from_pool_for_cutscene_only`
 
@@ -22582,7 +22037,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `sewers`
 
 
@@ -22603,7 +22057,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `smallray_clip`
 
 
@@ -22623,7 +22076,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `surviving_kaiju`
 
@@ -22647,7 +22099,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `target_filter`
 
 
@@ -22668,7 +22119,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tinkerer_0`
 
 
@@ -22688,7 +22138,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tinkerer_1`
 
 
@@ -22707,7 +22156,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tooltip_stacks_singular`
 
@@ -22729,7 +22177,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `trinket`
 
 
@@ -22750,7 +22197,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `unlock_levelgroup`
 
 
@@ -22769,7 +22215,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `water_alt_shader`
 
@@ -22790,7 +22235,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `water_alt_shroud`
 
 
@@ -22810,7 +22254,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `water_alt_tile`
 
 
@@ -22829,7 +22272,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `welcome_message`
 
@@ -22851,7 +22293,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `#`
 
 
@@ -22870,7 +22311,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `10,`
 
@@ -22891,7 +22331,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `1x1_object`
 
 
@@ -22910,7 +22349,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `2x2_object`
 
@@ -22931,7 +22369,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `3x3_object`
 
 
@@ -22950,7 +22387,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AbilityEnabledIfNotHasStatus`
 
@@ -22971,7 +22407,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AbilityEnabledIfSpecificItemEquipped`
 
 
@@ -22990,7 +22425,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AbilityOnBattleStart_UseAI`
 
@@ -23011,7 +22445,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AddElementsToSpells`
 
 
@@ -23030,7 +22463,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `AlternateIdleAnimation`
 
@@ -23051,7 +22483,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `AutocastEachRound`
 
 
@@ -23070,7 +22501,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `BloatEyePassive2`
 
@@ -23091,7 +22521,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `BonusAbility_DelayedApplication`
 
 
@@ -23110,7 +22539,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Boris`
 
@@ -23131,7 +22559,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `CanMutateTo`
 
 
@@ -23150,7 +22577,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ChangeTileUnderCharacterAtStart`
 
@@ -23171,7 +22597,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Charmed`
 
 
@@ -23190,7 +22615,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ConfusionEffectOnTaggedAbilities`
 
@@ -23211,7 +22635,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ConjureSingleUseBonusAbility`
 
 
@@ -23230,7 +22653,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `CounterAttackAfterEnemyCastSpell`
 
@@ -23251,7 +22673,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DeathwormUnderground`
 
 
@@ -23270,7 +22691,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Default`
 
@@ -23291,7 +22711,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DelayCastAbility`
 
 
@@ -23310,7 +22729,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DiesToElement`
 
@@ -23331,7 +22749,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DinoLegAnimation`
 
 
@@ -23350,7 +22767,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DisguisedTrapper`
 
@@ -23371,7 +22787,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DoubleCastTaggedSpells`
 
 
@@ -23390,7 +22805,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `DropAsFamiliarOnTookDamage`
 
@@ -23411,7 +22825,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `DropSoulJarOnDeath`
 
 
@@ -23430,7 +22843,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ElementWeakness`
 
@@ -23451,7 +22863,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ExcludeFromEvents`
 
 
@@ -23470,7 +22881,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Explosive`
 
@@ -23491,7 +22901,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ExtraTurnsPerTaggedUnit`
 
 
@@ -23510,7 +22919,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `FlushmasterCelebration`
 
@@ -23531,7 +22939,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `FormChangeWhenBuddyDies`
 
 
@@ -23550,7 +22957,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `HarpoonTrapPassive`
 
@@ -23571,7 +22977,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Holy`
 
 
@@ -23590,7 +22995,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ImmediateUseAbility_Instant`
 
@@ -23611,7 +23015,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `JohnnyWasher`
 
 
@@ -23630,7 +23033,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `JumpAttackLeaveBehind`
 
@@ -23651,7 +23053,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `KnockOutClone`
 
 
@@ -23670,7 +23071,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `LeaveBehind`
 
@@ -23691,7 +23091,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `LegacySpawnSavedCatIfExists`
 
 
@@ -23710,7 +23109,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `LimitedTileTrail`
 
@@ -23731,7 +23129,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Madness`
 
 
@@ -23750,7 +23147,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ManglerMonsterPassive`
 
@@ -23771,7 +23167,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `MoonHeadCrackedVisual`
 
 
@@ -23790,7 +23185,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ObjectOnHitFullyEmpty`
 
@@ -23811,7 +23205,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Paranoia`
 
 
@@ -23831,7 +23224,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `Peralta`
 
 
@@ -23848,7 +23240,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `PersistentElement`
 
@@ -23869,7 +23260,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `QueueUseAbility`
 
 
@@ -23888,7 +23278,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReloadOnElementalDamageReceived`
 
@@ -23909,7 +23298,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ReloadOnKillTagged`
 
 
@@ -23928,7 +23316,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReplaceBasicAttack_Mutation`
 
@@ -23949,7 +23336,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ReplaceBlankTilesOnBattleStart`
 
 
@@ -23968,7 +23354,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ReplaceSpellsWhenDead`
 
@@ -23989,7 +23374,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SE_CatSwishThrow`
 
 
@@ -24008,7 +23392,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SE_Cat_ShadowStepIn`
 
@@ -24029,7 +23412,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SE_Cat_ShadowStepOut`
 
 
@@ -24048,7 +23430,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SE_Cat_WeaponLower`
 
@@ -24069,7 +23450,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SE_Cat_WeaponRaise`
 
 
@@ -24088,7 +23468,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SE_Cat_bearHug`
 
@@ -24109,7 +23488,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SE_Cat_equipWeapon`
 
 
@@ -24128,7 +23506,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SE_PetRock_Dash`
 
@@ -24149,7 +23526,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SafeDoomed`
 
 
@@ -24168,7 +23544,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Set`
 
@@ -24189,7 +23564,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SetFaction`
 
 
@@ -24208,7 +23582,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SoundEventOnHit`
 
@@ -24229,7 +23602,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SourceSwapsBackEndOfTurn`
 
 
@@ -24248,7 +23620,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `SpawnMeatOnMove`
 
@@ -24269,7 +23640,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SpecialBossMultipartInstakill`
 
 
@@ -24288,7 +23658,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `StealEquipment`
 
@@ -24309,7 +23678,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `SupportFormChangeInsteadOfRun`
 
 
@@ -24328,7 +23696,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TagMetronome`
 
@@ -24349,7 +23716,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TallTumorManaBurn`
 
 
@@ -24368,7 +23734,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TeamBonusAbility`
 
@@ -24389,7 +23754,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TeleportBackAtTurnEnd`
 
 
@@ -24408,7 +23772,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `Terminator2Chase`
 
@@ -24429,7 +23792,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TickDownStatus`
 
 
@@ -24448,7 +23810,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TileElementDamageImmunity`
 
@@ -24469,7 +23830,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TilesMovedToNeighborHeal`
 
 
@@ -24488,7 +23848,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TrackAmountKilledByPlayer`
 
@@ -24509,7 +23868,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TransformBasicMove`
 
 
@@ -24528,7 +23886,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `TransformNow`
 
@@ -24549,7 +23906,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `TransformOnDeathImmediately`
 
 
@@ -24568,7 +23924,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `UseAbilityWhenShieldDepleted`
 
@@ -24589,7 +23944,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `UseAbility_Madness`
 
 
@@ -24608,7 +23962,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `WhitelistPickupType`
 
@@ -24629,7 +23982,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `XIsCountStatusStacks`
 
 
@@ -24648,7 +24000,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `abandonedones`
 
@@ -24669,7 +24020,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `adjust_target`
 
 
@@ -24688,7 +24038,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `affected_animation`
 
@@ -24709,7 +24058,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `alert_form`
 
 
@@ -24729,7 +24077,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `allow`
 
 
@@ -24746,7 +24093,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ally_animation`
 
@@ -24767,7 +24113,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ally_damage`
 
 
@@ -24786,7 +24131,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ally_dead`
 
@@ -24807,7 +24151,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `alt_art`
 
 
@@ -24826,7 +24169,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `alt_dead_ani`
 
@@ -24847,7 +24189,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `alt_dying_ani`
 
 
@@ -24867,7 +24208,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ambush`
 
 
@@ -24884,7 +24224,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `animate_name`
 
@@ -24905,7 +24244,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `animation_prefix`
 
 
@@ -24924,7 +24262,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `appearance`
 
@@ -24945,7 +24282,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `aura_requires_tag`
 
 
@@ -24964,7 +24300,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `auto_cast`
 
@@ -24985,7 +24320,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `auto_cast_on_spawn`
 
 
@@ -25004,7 +24338,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `background_shader`
 
@@ -25025,7 +24358,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `boss_background_alt`
 
 
@@ -25044,7 +24376,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `break_ability`
 
@@ -25065,7 +24396,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `bumblefoot`
 
 
@@ -25084,7 +24414,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `butchercat`
 
@@ -25105,7 +24434,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cancreeper`
 
 
@@ -25124,7 +24452,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `cat_has_item_slot_equipped`
 
@@ -25145,7 +24472,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `cavecatfamily`
 
 
@@ -25164,7 +24490,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `cerberubs`
 
@@ -25185,7 +24510,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `chapter`
 
 
@@ -25204,7 +24528,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `check_has_status`
 
@@ -25225,7 +24548,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `choose_cat_with_item_slot_equipped`
 
 
@@ -25244,7 +24566,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `clericcat`
 
@@ -25265,7 +24586,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `clipname`
 
 
@@ -25284,7 +24604,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `con`
 
@@ -25305,7 +24624,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dash_bonk_animation`
 
 
@@ -25324,7 +24642,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `default`
 
@@ -25345,7 +24662,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `default_form`
 
 
@@ -25365,7 +24681,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `default_tileset`
 
 
@@ -25382,7 +24697,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dex`
 
@@ -25403,7 +24717,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `dinocouple`
 
 
@@ -25422,7 +24735,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `dodge`
 
@@ -25443,7 +24755,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `drmangler`
 
 
@@ -25462,7 +24773,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `drop_body_ability`
 
@@ -25483,7 +24793,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `druidcat`
 
 
@@ -25502,7 +24811,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `eject_ability`
 
@@ -25523,7 +24831,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `empty!`
 
 
@@ -25542,7 +24849,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ending_cutscene`
 
@@ -25563,7 +24869,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ending_cutscene2`
 
 
@@ -25582,7 +24887,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `enemy_damage`
 
@@ -25603,7 +24907,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `enemy_dead`
 
 
@@ -25622,7 +24925,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `enter_ability`
 
@@ -25643,7 +24945,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `equip_sound`
 
 
@@ -25662,7 +24963,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `exclude_characters_tagged`
 
@@ -25683,7 +24983,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `exclude_prefix`
 
 
@@ -25702,7 +25001,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `fail_adventure`
 
@@ -25723,7 +25021,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `fightercat`
 
 
@@ -25742,7 +25039,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `finish_quest`
 
@@ -25763,7 +25059,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `flushmaster`
 
 
@@ -25782,7 +25077,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `form_in`
 
@@ -25803,7 +25097,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_out`
 
 
@@ -25822,7 +25115,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `form_unwashed`
 
@@ -25843,7 +25135,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `form_washed`
 
 
@@ -25862,7 +25153,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `gambit`
 
@@ -25883,7 +25173,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `general_common`
 
 
@@ -25902,7 +25191,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `general_rare`
 
@@ -25923,7 +25211,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `general_uncommon`
 
 
@@ -25942,7 +25229,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `general_very_rare`
 
@@ -25963,7 +25249,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `get_and_equip_item_from_pool`
 
 
@@ -25980,7 +25265,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `grant_ability`
 
@@ -26001,7 +25285,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `grow_ability`
 
 
@@ -26020,7 +25303,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `head_drop`
 
@@ -26041,7 +25323,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `hit_animation_alt`
 
 
@@ -26060,7 +25341,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `huntercat`
 
@@ -26081,7 +25361,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `iceelemental`
 
 
@@ -26100,7 +25379,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ignore_if_str_aux_equals`
 
@@ -26121,7 +25399,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `ignore_tagged_sources`
 
 
@@ -26140,7 +25417,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `increment_savefile_counter`
 
@@ -26161,7 +25437,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `infestedduo`
 
 
@@ -26180,7 +25455,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `int`
 
@@ -26201,7 +25475,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `knockback`
 
 
@@ -26220,7 +25493,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `knockback_modifier`
 
@@ -26241,7 +25513,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `lck`
 
 
@@ -26260,7 +25531,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `leg_leave`
 
@@ -26281,7 +25551,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `leg_return`
 
 
@@ -26300,7 +25569,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `legacy_savekey`
 
@@ -26321,7 +25589,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `lenny`
 
 
@@ -26340,7 +25607,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `lightningelemental`
 
@@ -26361,7 +25627,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `magecat`
 
 
@@ -26380,7 +25645,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `mamamaggot`
 
@@ -26401,7 +25665,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `monkcat`
 
 
@@ -26420,7 +25683,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `name_mod`
 
@@ -26441,7 +25703,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `necrocat`
 
 
@@ -26460,7 +25721,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `new_music`
 
@@ -26481,7 +25741,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `next_fight_from_set`
 
 
@@ -26498,7 +25757,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `no_buddy`
 
@@ -26519,7 +25777,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `nuke`
 
 
@@ -26538,7 +25795,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ontrigger_intentional`
 
@@ -26559,7 +25815,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `other_character`
 
 
@@ -26578,7 +25833,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `override_end_option_prompt`
 
@@ -26599,7 +25853,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `override_portrait`
 
 
@@ -26619,7 +25872,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `party_gain_disorder_from_pool`
 
 
@@ -26636,7 +25888,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `party_gain_disorder_from_pool_exclude_self`
 
@@ -26655,7 +25906,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `party_heal_disorder`
 
 
@@ -26672,7 +25922,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `pass_ani`
 
@@ -26693,7 +25942,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `play_result_animation`
 
 
@@ -26713,7 +25961,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `play_sound`
 
 
@@ -26730,7 +25977,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `post_absorb_move_weights`
 
@@ -26751,7 +25997,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `preferred_distance`
 
 
@@ -26770,7 +26015,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `prioritize_throw_target_with_passive`
 
@@ -26791,7 +26035,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `psychiccat`
 
 
@@ -26810,7 +26053,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `puddle_tile`
 
@@ -26831,7 +26073,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `punch_self_ability`
 
 
@@ -26850,7 +26091,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `queenhippo`
 
@@ -26871,7 +26111,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `queue`
 
 
@@ -26890,7 +26129,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `radicalrat`
 
@@ -26911,7 +26149,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `range_symmetry`
 
 
@@ -26930,7 +26167,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `ratking`
 
@@ -26951,7 +26187,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `receive_ani`
 
 
@@ -26970,7 +26205,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `release`
 
@@ -26991,7 +26225,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `reserved`
 
 
@@ -27010,7 +26243,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `reset_str_aux_on_store`
 
@@ -27031,7 +26263,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `reset_unlock`
 
 
@@ -27050,7 +26281,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `restructions`
 
@@ -27071,7 +26301,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `rockybobo`
 
 
@@ -27090,7 +26319,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `roll_ability`
 
@@ -27111,7 +26339,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `shader`
 
 
@@ -27130,7 +26357,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `shield`
 
@@ -27151,7 +26377,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `slime`
 
 
@@ -27170,7 +26395,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `sound_event`
 
@@ -27191,7 +26415,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `spawn_node`
 
 
@@ -27210,7 +26433,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `spd`
 
@@ -27231,7 +26453,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `spell`
 
 
@@ -27250,7 +26471,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `spewer`
 
@@ -27271,7 +26491,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `stacy`
 
 
@@ -27290,7 +26509,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `str`
 
@@ -27311,7 +26529,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `str_aux`
 
 
@@ -27330,7 +26547,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tankcat`
 
@@ -27351,7 +26567,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `thebloat`
 
 
@@ -27370,7 +26585,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `thiefcat`
 
@@ -27391,7 +26605,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tinkerercat`
 
 
@@ -27410,7 +26623,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `trampy`
 
@@ -27431,7 +26643,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `transform`
 
 
@@ -27450,7 +26661,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `tumor_object`
 
@@ -27471,7 +26681,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `tutorial`
 
 
@@ -27490,7 +26699,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `unlock_item`
 
@@ -27511,7 +26719,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `unlockcheck_on_complete`
 
 
@@ -27531,7 +26738,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `utility`
 
 
@@ -27550,7 +26756,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `zodiac`
 
@@ -27574,7 +26779,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `state_health`
 
 
@@ -27596,7 +26800,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `sludge_armor`
 
 
@@ -27616,7 +26819,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `raptor_nest_eggs`
 
 
@@ -27635,7 +26837,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `spells`
 
@@ -30835,7 +30036,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `passive_pool`
 
 
@@ -31376,7 +30576,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `disorder`
 
 
@@ -31456,7 +30655,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `parasite`
 
 
@@ -31505,7 +30703,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `image`
 
@@ -31878,7 +31075,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `event_file`
 
 
@@ -31919,7 +31115,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `combo_effect`
 
@@ -32001,7 +31196,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 ---
 
-
 ### Enum: `sound`
 
 
@@ -32023,7 +31217,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `global_tags`
 
@@ -32055,7 +31248,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `global_particles`
 
@@ -32275,7 +31467,6 @@ This document provides exhaustive lists of all enum and string values found in t
 
 
 ---
-
 
 ### Enum: `class_seals`
 
