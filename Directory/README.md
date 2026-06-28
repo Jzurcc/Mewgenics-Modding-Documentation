@@ -6,9 +6,9 @@ description: "Reference dumps of base-game items, enemies, and abilities"
 # Base Game Object Directory
 
 > **What is this folder?**
-> This directory acts as an **encyclopedia of vanilla game objects**. It contains raw `.gon` dumps of all base-game Abilities, Classes, Enemies, Items, and more.
+> This directory acts as a **comprehensive reference index of base-game objects**. It contains raw `.gon` extracts of all core Abilities, Classes, Enemies, Items, and more.
 
-If you ever need to see the actual code for a specific item, enemy, or passive from the base game, you can look it up in these files. This is invaluable when you want to use the `variant_of` key to inherit from an existing object, but need to see its original properties first.
+If you require access to the source definition for a specific item, enemy, or passive, you can reference these files. This is particularly useful when utilizing the `variant_of` key to inherit from an existing object and require visibility into its original properties.
 
 ## File Index
 
