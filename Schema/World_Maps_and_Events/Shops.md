@@ -120,6 +120,99 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`breakdown2`](./Shops.md#object-breakdown2) | Object  | A loot table defining guaranteed item drops for player levels 5 to 9. | 2 | `{ . . . }` |
 | [`breakdown3`](./Shops.md#object-breakdown3) | Object  | A loot table defining guaranteed item drops for player levels 10 to 14. | 2 | `{ . . . }` |
 | [`breakdown4`](./Shops.md#object-breakdown4) | Object  | A loot table defining guaranteed item drops for player levels 15 and above. | 2 | `{ . . . }` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `meta`
+
+
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
+**Total Count:** 2374
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `treasure_room` | Boolean | If true, this level is a treasure room. | 14 | `true` |
+| `delay_enable_tooltips` | Boolean | If true, delays the enabling of tooltips in this scene. | 7 | `true` |
+| `keeper` | Number | The number of items the shopkeeper keeps from a previous visit. | 7 | `0` |
+| [`npc_script`](../Reference_and_Meta/Enums.md#enum-npc_script) | Enum | The filename of the script controlling the NPC in this scene. | 7 | `tracy_adventure_shop_script.gon` |
+| [`shopkeeper_fights`](../Reference_and_Meta/Arrays.md#array-shopkeeper_fights) | Array | Array of references to battles the shopkeeper can fight. | 7 | `[` |
+| `house_shop` | Boolean | If true, this shop is a house shop (player enters the house to browse). | 4 | `true` |
+| [`welcome_message`](../Reference_and_Meta/Enums.md#enum-welcome_message) | Enum | The identifier for the welcome message displayed upon entering this shop. | 2 | `welcome_water`<br>`welcome_water_cheap` |
+| `pick_n` | Number | The number of items the player can pick from a selection. | 1 | `1` |
+
+</details>
+
+
+---
+
+
+### Object: `pool`
+
+
+**Definition:** Specifies the name of the pool from which an ability is learned or an item is crafted.  
+**Total Count:** 154
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 10 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `consumable`
+
+
+**Definition:** If true, the item is consumed on use. Can also specify a number of uses or an item pool.  
+**Total Count:** 124
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `treasure`
+
+
+**Definition:** Defines a treasure node containing items or item pools.  
+**Total Count:** 45
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
 
 </details>
 
@@ -152,28 +245,24 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `meta`
+### Object: `Food`
 
 
-**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
-**Total Count:** 2374
+**Definition:** The number of food pickups spawned.  
+**Total Count:** 35
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Shops.md#object-root)
+> **Referenced by:** [`guaranteed_food`](./Shops.md#object-guaranteed_food), [`mostly_food`](./Shops.md#object-mostly_food)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 25 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `treasure_room` | Boolean | If true, this level is a treasure room. | 14 | `true` |
-| `delay_enable_tooltips` | Boolean | If true, delays the enabling of tooltips in this scene. | 7 | `true` |
-| `keeper` | Number | The number of items the shopkeeper keeps from a previous visit. | 7 | `0` |
-| [`npc_script`](../Reference_and_Meta/Enums.md#enum-npc_script) | Enum | The filename of the script controlling the NPC in this scene. | 7 | `tracy_adventure_shop_script.gon` |
-| [`shopkeeper_fights`](../Reference_and_Meta/Arrays.md#array-shopkeeper_fights) | Array | Array of references to battles the shopkeeper can fight. | 7 | `[` |
-| `house_shop` | Boolean | If true, this shop is a house shop (player enters the house to browse). | 4 | `true` |
-| [`welcome_message`](../Reference_and_Meta/Enums.md#enum-welcome_message) | Enum | The identifier for the welcome message displayed upon entering this shop. | 2 | `welcome_water`<br>`welcome_water_cheap` |
-| `pick_n` | Number | The number of items the player can pick from a selection. | 1 | `1` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
+| [`amount`](../Reference_and_Meta/Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
+| `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
+| `weight` | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
+| [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -240,98 +329,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `treasure`
-
-
-**Definition:** Defines a treasure node containing items or item pools.  
-**Total Count:** 45
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 14 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `item_rarity_costs`
-
-
-**Definition:** Defines the cost multipliers for each item rarity tier in a shop.  
-**Total Count:** 9
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `common` | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
-| `rare` | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
-| `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
-| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
-| `consumable_common` | Number | The cost or quantity for common consumable items in an item shop. | 9 | `10`<br>`3`<br>`5` |
-| `consumable_rare` | Number | The cost or quantity for rare consumable items in an item shop. | 9 | `10`<br>`20`<br>`8` |
-| `consumable_uncommon` | Number | The cost or quantity for uncommon consumable items in an item shop. | 9 | `14`<br>`5`<br>`7` |
-| `consumable_very_rare` | Number | The cost or quantity for very rare consumable items in an item shop. | 9 | `12`<br>`20`<br>`40` |
-| [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 9 | `common`<br>`rare`<br>`cha` |
-
-</details>
-
-
----
-
-
-### Object: `button_nav`
-
-
-**Definition:** Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons.  
-**Total Count:** 7
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Shops.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`default`](../Reference_and_Meta/Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
-
-</details>
-
-
----
-
-
-### Object: `pool`
-
-
-**Definition:** Specifies the name of the pool from which an ability is learned or an item is crafted.  
-**Total Count:** 154
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 10 | `{ . . . }` |
-
-</details>
-
-
----
-
-
 ### Object: `mandatory`
 
 
@@ -354,36 +351,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `Food`
+### Object: `empty`
 
 
-**Definition:** The number of food pickups spawned.  
-**Total Count:** 35
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`guaranteed_food`](./Shops.md#object-guaranteed_food), [`mostly_food`](./Shops.md#object-mostly_food)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 4 | `{ . . . }` |
-| [`amount`](../Reference_and_Meta/Arrays.md#array-amount) | Array  | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
-| `allow_duplicates` | Boolean | If true, duplicate items of this type can appear in the same shop inventory. | 4 | `true` |
-| `weight` | Integer | A multiplier or priority value for random selection or effect magnitude. | 2 | `.25`<br>`.5`<br>`1` |
-| [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
-
-</details>
-
-
----
-
-
-### Object: `levelup`
-
-
-**Definition:** The number of level-up rewards offered, or an object defining their cost and pool.  
-**Total Count:** 6
+**Definition:** The number of empty items offered, or an object defining their pool and cost.  
+**Total Count:** 15
 
 <details>
 <summary><b>Expand</b></summary>
@@ -392,57 +364,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`LevelUp`](./Shops.md#object-levelup) | Object  | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
 
 </details>
 
 
 ---
-
-
-### Object: `LevelUp`
-
-
-**Definition:** Defines the cost and pool for leveling up an item.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`levelup`](./Shops.md#object-levelup)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `mostly_food`
-
-
-**Definition:** The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules.  
-**Total Count:** 6
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
-| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
-
-</details>
-
-
----
-
-
 ### Object: `item`
 
 
@@ -485,20 +412,28 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `consumable`
+### Object: `item_rarity_costs`
 
 
-**Definition:** If true, the item is consumed on use. Can also specify a number of uses or an item pool.  
-**Total Count:** 124
+**Definition:** Defines the cost multipliers for each item rarity tier in a shop.  
+**Total Count:** 9
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| `common` | Integer | Defines the common reward block for a boss encounter. | 9 | `100`<br>`14`<br>`5` |
+| `rare` | Integer | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
+| `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 9 | `10`<br>`20`<br>`30` |
+| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 9 | `.01`<br>`1`<br>`15` |
+| `consumable_common` | Number | The cost or quantity for common consumable items in an item shop. | 9 | `10`<br>`3`<br>`5` |
+| `consumable_rare` | Number | The cost or quantity for rare consumable items in an item shop. | 9 | `10`<br>`20`<br>`8` |
+| `consumable_uncommon` | Number | The cost or quantity for uncommon consumable items in an item shop. | 9 | `14`<br>`5`<br>`7` |
+| `consumable_very_rare` | Number | The cost or quantity for very rare consumable items in an item shop. | 9 | `12`<br>`20`<br>`40` |
+| [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 9 | `common`<br>`rare`<br>`cha` |
 
 </details>
 
@@ -520,6 +455,91 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `button_nav`
+
+
+**Definition:** Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons.  
+**Total Count:** 7
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Shops.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`default`](../Reference_and_Meta/Miscellaneous.md#object-default) | Enum / Object  | The default configuration or value used when no specific override is provided. | 7 | `{ . . . }`<br>`bite1` |
+
+</details>
+
+
+---
+
+
+### Object: `mostly_food`
+
+
+**Definition:** The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules.  
+**Total Count:** 6
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 2 | `{ . . . }` |
+| [`Food`](./Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 2 | `{ . . . }`<br>`20` |
+
+</details>
+
+
+---
+
+
+### Object: `levelup`
+
+
+**Definition:** The number of level-up rewards offered, or an object defining their cost and pool.  
+**Total Count:** 6
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`LevelUp`](./Shops.md#object-levelup) | Object  | Defines the cost and pool for leveling up an item. | 3 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `LevelUp`
+
+
+**Definition:** Defines the cost and pool for leveling up an item.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`levelup`](./Shops.md#object-levelup)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 3 | `{ . . . }` |
 
 </details>
 
@@ -599,23 +619,3 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 ---
 
-
-### Object: `empty`
-
-
-**Definition:** The number of empty items offered, or an object defining their pool and cost.  
-**Total Count:** 15
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`item_groups`](./Shops.md#object-item_groups)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`Item`](./Shops.md#object-item) | Object  | An object defining the item pool, cost, weight, and mandatory flag used in an item group. | 1 | `{ . . . }` |
-
-</details>
-
-
----

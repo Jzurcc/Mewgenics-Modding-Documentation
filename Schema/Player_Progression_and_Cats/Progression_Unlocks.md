@@ -47,6 +47,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 206 | `common`<br>`rare`<br>`cha` |
 | [`complete_chapter_with_class`](../Reference_and_Meta/Arrays.md#array-complete_chapter_with_class) | Array | An array specifying [chapter, class] that must be completed to unlock this reward. | 129 | `[boneyard Butcher]`<br>`[boneyard Colorless]`<br>`[boneyard Druid]` |
 | [`unlock_item_immediate`](../Reference_and_Meta/Enums.md#enum-unlock_item_immediate) | Enum | Specifies which item is unlocked immediately when this unlock condition is met. | 127 | `AnointingOil`<br>`BagOfBags`<br>`BagOfSeeds` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 70 | `{ . . . }` |
 | [`trigger_npc_sequence`](../Reference_and_Meta/Enums.md#enum-trigger_npc_sequence) | Enum | The name of an NPC dialogue sequence to trigger. | 55 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 | [`beat_house_boss`](../Reference_and_Meta/Enums.md#enum-beat_house_boss) | Enum | Specifies which house boss (or 'any') must be defeated to fulfill this unlock condition. | 48 | `any`<br>`guillotina_1`<br>`guillotina_2` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 38 | Default<br>FormChange<br>Druid |
@@ -1310,30 +1311,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `prereqs`
-
-
-**Definition:** Object mapping quest or unlock names to their prerequisite mapflags or conditions.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`endoftime`](../Reference_and_Meta/Enums.md#enum-endoftime) | Enum | Configures various attributes of the End of Time area, depending on context. | 4 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
-| [`jurassic`](../Reference_and_Meta/Enums.md#enum-jurassic) | Enum | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
-| [`theend`](../Reference_and_Meta/Enums.md#enum-theend) | Enum | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
-| [`core`](../Reference_and_Meta/Enums.md#enum-core) | Enum | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
-| [`dimensionx`](../Reference_and_Meta/Enums.md#enum-dimensionx) | Enum | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
-| [`moon`](../Reference_and_Meta/Enums.md#enum-moon) | Enum | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
-
-</details>
-
-
----
 ### Object: `organ_upgrade6`
 
 
@@ -1826,35 +1803,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `destinations`
-
-
-**Definition:** Specifies the list of areas and their associated coin rewards for Beanie's quest destinations.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `jurassic` | Integer | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
-| `theend` | Integer | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
-| `boneyard` | Integer | Specifies the name, map flag, or connection for the Boneyard area. | 1 | `200`<br>`AREA_NAME_BONEYARD`<br>`[junkyard alley]` |
-| `core` | Integer | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
-| `dimensionx` | Integer | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
-| `endoftime` | Integer | Configures various attributes of the End of Time area, depending on context. | 1 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
-| `meatworld` | Integer | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 1 | `300`<br>`AREA_NAME_MEATWORLD`<br>`[caves boneyard junkyard sewers alley]` |
-| `moon` | Integer | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
-| `caves` | Integer | Specifies the name, map flag, or connection for the Caves area. | 1 | `200`<br>`AREA_NAME_CAVES`<br>`[sewers alley]` |
-
-</details>
-
-
----
-
-
 ### Object: `beanies_quests_repeat`
 
 
@@ -1896,6 +1844,59 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
 | [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 | [`generate_beanies_quest`](../Reference_and_Meta/Enums.md#enum-generate_beanies_quest) | Enum | Specifies which quest pool (e.g., 'main_pool', 'intro') to generate a quest from. | 1 | `intro`<br>`main_pool` |
+
+</details>
+
+
+---
+
+
+### Object: `prereqs`
+
+
+**Definition:** Object mapping quest or unlock names to their prerequisite mapflags or conditions.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`endoftime`](../Reference_and_Meta/Enums.md#enum-endoftime) | Enum | Configures various attributes of the End of Time area, depending on context. | 4 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
+| [`jurassic`](../Reference_and_Meta/Enums.md#enum-jurassic) | Enum | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
+| [`theend`](../Reference_and_Meta/Enums.md#enum-theend) | Enum | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
+| [`core`](../Reference_and_Meta/Enums.md#enum-core) | Enum | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
+| [`dimensionx`](../Reference_and_Meta/Enums.md#enum-dimensionx) | Enum | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
+| [`moon`](../Reference_and_Meta/Enums.md#enum-moon) | Enum | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
+
+</details>
+
+
+---
+### Object: `destinations`
+
+
+**Definition:** Specifies the list of areas and their associated coin rewards for Beanie's quest destinations.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `jurassic` | Integer | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
+| `theend` | Integer | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
+| `boneyard` | Integer | Specifies the name, map flag, or connection for the Boneyard area. | 1 | `200`<br>`AREA_NAME_BONEYARD`<br>`[junkyard alley]` |
+| `core` | Integer | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
+| `dimensionx` | Integer | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
+| `endoftime` | Integer | Configures various attributes of the End of Time area, depending on context. | 1 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
+| `meatworld` | Integer | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 1 | `300`<br>`AREA_NAME_MEATWORLD`<br>`[caves boneyard junkyard sewers alley]` |
+| `moon` | Integer | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
+| `caves` | Integer | Specifies the name, map flag, or connection for the Caves area. | 1 | `200`<br>`AREA_NAME_CAVES`<br>`[sewers alley]` |
 
 </details>
 

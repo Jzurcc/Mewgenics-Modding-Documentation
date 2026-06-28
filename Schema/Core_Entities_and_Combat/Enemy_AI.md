@@ -129,6 +129,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `count_nomove_in_eval` | Boolean | If true, the evaluation of a move includes the option of not moving. | 1 | `false` |
 | `distance_to_center` | Number | The distance in tiles from the current position to the map center for AI evaluation. | 1 | `-1` |
 | [`exclude_characters_tagged`](../Reference_and_Meta/Enums.md#enum-exclude_characters_tagged) | Enum | Specifies a tag; characters with this tag are excluded from AI behavior targeting. | 1 | `siren` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 </details>
 

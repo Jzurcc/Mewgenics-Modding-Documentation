@@ -54,6 +54,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`miniboss`](../Reference_and_Meta/Arrays.md#array-miniboss) | Array | An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances. | 41 | `[miniboss]` |
 | `rare` | `Array`  | Defines the rare reward block for a boss encounter. | 40 | `1`<br>`10`<br>`15` |
 | [`special`](../Reference_and_Meta/Arrays.md#array-special) | Array | An array or boolean indicating that an item or entry is a special container or category. | 38 | `[special]`<br>`true` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 34 | `{ . . . }` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 27 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`hard`](../Reference_and_Meta/Arrays.md#array-hard) | Array | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `[easy bigsharklevels]`<br>`[easy]`<br>`[hard]` |
 | [`normal`](../Reference_and_Meta/Arrays.md#array-normal) | Array | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 20 | `[` |
@@ -187,54 +188,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `exit0`
-
-
-**Definition:** An object defining the properties of the first exit from this node.  
-**Total Count:** 27
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#object-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#object-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#object-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#object-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#object-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#object-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#object-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#object-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#object-theendunlocked)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 17 | `false`<br>`true` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 15 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 15 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 15 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
-| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 10 | `false`<br>`true` |
-
-</details>
-
-
----
-
-
-### Object: `quest_event`
-
-
-**Definition:** An object defining the properties of a quest-related event at this node, such as its level and art.  
-**Total Count:** 24
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#object-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#object-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#object-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#object-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#object-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#object-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#object-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#object-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#object-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#object-walloffleshdone)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 24 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 19 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
-
-</details>
-
-
----
-
-
 ### Object: `boss`
 
 
@@ -262,35 +215,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `exit1`
+### Object: `jurassic`
 
 
-**Definition:** An object defining the properties of the second exit from this node.  
-**Total Count:** 5
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#object-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#object-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 5 | `false`<br>`true` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 3 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 3 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 3 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
-
-</details>
-
-
----
-
-
-### Object: `time_machine`
-
-
-**Definition:** Defines a special event node that leads to a time machine quest level.  
-**Total Count:** 6
+**Definition:** Specifies the name, map flag, or connection for the Jurassic area.  
+**Total Count:** 56
 
 <details>
 <summary><b>Expand</b></summary>
@@ -299,9 +228,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 4 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 4 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 4 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
 
 </details>
 
@@ -309,21 +236,20 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `hard_initial`
+### Object: `theend`
 
 
-**Definition:** An object defining the properties of the initial hard path node.  
-**Total Count:** 4
+**Definition:** Specifies the name, map flag, or connection for The End area.  
+**Total Count:** 51
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#object-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 4 | `false`<br>`true` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
 
 </details>
 
@@ -336,6 +262,368 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 **Definition:** Defines a treasure node containing items or item pools.  
 **Total Count:** 45
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+
+</details>
+
+
+---
+
+
+### Object: `moon`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 45
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `meatworld`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 45
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `endoftime`
+
+
+**Definition:** Configures various attributes of the End of Time area, depending on context.  
+**Total Count:** 45
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
+
+</details>
+
+
+---
+
+
+### Object: `dimensionx`
+
+
+**Definition:** An enum specifying the Dimension X chapter area, or an object with its specific properties.  
+**Total Count:** 45
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
+
+</details>
+
+
+---
+
+
+### Object: `core`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 45
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `boneyard`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 45
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `caves`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 42
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `battle`
+
+
+**Definition:** Defines a battle encounter by preset, level file path, or reverb settings.  
+**Total Count:** 36
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+
+</details>
+
+
+---
+
+
+### Object: `iceage`
+
+
+**Definition:** Specifies the name, map flag, or connection for the Ice Age area.  
+**Total Count:** 32
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
+
+</details>
+
+
+---
+
+
+### Object: `future`
+
+
+**Definition:** Specifies the name, map flag, or connection for the Future area.  
+**Total Count:** 30
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
+
+</details>
+
+
+---
+
+
+### Object: `exit0`
+
+
+**Definition:** An object defining the properties of the first exit from this node.  
+**Total Count:** 27
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#object-boneyardunlocked), [`BunkerUnlocked`](./Map_Generation_and_Routing.md#object-bunkerunlocked), [`CavesUnlocked`](./Map_Generation_and_Routing.md#object-cavesunlocked), [`CoreUnlocked`](./Map_Generation_and_Routing.md#object-coreunlocked), [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#object-endoftimeunlocked), [`JurassicUnlocked`](./Map_Generation_and_Routing.md#object-jurassicunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonUnlocked`](./Map_Generation_and_Routing.md#object-moonunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`SewersUnlocked`](./Map_Generation_and_Routing.md#object-sewersunlocked), [`TheEndUnlocked`](./Map_Generation_and_Routing.md#object-theendunlocked)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 17 | `false`<br>`true` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 15 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 15 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 15 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
+| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 10 | `false`<br>`true` |
+
+</details>
+
+
+---
+
+
+### Object: `alley`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 25
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `quest_event`
+
+
+**Definition:** An object defining the properties of a quest-related event at this node, such as its level and art.  
+**Total Count:** 24
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#object-bothobelisksunlocked), [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#object-chaosantennaattached), [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#object-coreobeliskunlocked), [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#object-dimensionxunlocked), [`FutureUnlocked`](./Map_Generation_and_Routing.md#object-futureunlocked), [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#object-iceageunlocked), [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked), [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#object-moonobeliskunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root), [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#object-throbbingarterydone), [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#object-volcanoantennaattached), [`WallOfFleshDone`](./Map_Generation_and_Routing.md#object-walloffleshdone)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 24 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 19 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
+
+</details>
+
+
+---
+
+
+### Object: `desert`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 23
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `bunker`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 21
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `sewers`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 20
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+### Object: `lab`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 20
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `home`
+
+
+**Definition:** Specifies the option to go home (exit to the main hub).  
+**Total Count:** 20
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+
+</details>
+
+
+---
+
+
+### Object: `crater`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 20
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `junkyard`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 18
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+### Object: `event`
+
+
+**Definition:** Specifies the event to force, either by name or by a nested object defining its type and level.  
+**Total Count:** 15
 
 <details>
 <summary><b>Expand</b></summary>
@@ -367,6 +655,286 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+
+</details>
+
+
+---
+
+
+### Object: `time_machine`
+
+
+**Definition:** Defines a special event node that leads to a time machine quest level.  
+**Total Count:** 6
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 4 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 4 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 4 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+
+</details>
+
+
+---
+
+
+### Object: `exit1`
+
+
+**Definition:** An object defining the properties of the second exit from this node.  
+**Total Count:** 5
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`CraterUnlocked`](./Map_Generation_and_Routing.md#object-craterunlocked), [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#object-junkyardunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 5 | `false`<br>`true` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 3 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 3 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 3 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
+
+</details>
+
+
+---
+
+
+### Object: `hard_initial`
+
+
+**Definition:** An object defining the properties of the initial hard path node.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`HardPathUnlocked`](./Map_Generation_and_Routing.md#object-hardpathunlocked), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 4 | `false`<br>`true` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
+
+</details>
+
+
+---
+
+
+### Object: `BothObelisksUnlocked`
+
+
+**Definition:** Configures the map event and art when both obelisks have been unlocked.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `MoonObeliskUnlocked`
+
+
+**Definition:** Configures the map event and art when the Moon Obelisk is raised and unlocked.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `MeatWorldUnlocked`
+
+
+**Definition:** Configures the map event and routes when MeatWorld is initially unlocked.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `HardPathUnlocked`
+
+
+**Definition:** Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`hard_initial`](../Reference_and_Meta/Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `EndOfTimeUnlocked`
+
+
+**Definition:** Configures the map event and route visibility when End of Time is unlocked.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `DimensionXUnlocked`
+
+
+**Definition:** Configures the map event and art when Dimension X is unlocked.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `CoreObeliskUnlocked`
+
+
+**Definition:** Configures the map event and art when the Core Obelisk is raised and unlocked.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `VolcanoAntennaAttached`
+
+
+**Definition:** Configures the map event and art when the Volcano Antenna has been attached.  
+**Total Count:** 2
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `TheEndUnlocked`
+
+
+**Definition:** An object that stores flags related to unlocking the 'The End' chapter.  
+**Total Count:** 2
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `SewersUnlocked`
+
+
+**Definition:** Unlocks an exit route to the Sewers on the map.  
+**Total Count:** 2
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -555,742 +1123,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `miniboss_event`
-
-
-**Definition:** An object defining the properties of a mini-boss event at this node.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#object-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-
-</details>
-
-
----
-
-
-### Object: `home`
-
-
-**Definition:** Specifies the option to go home (exit to the main hub).  
-**Total Count:** 20
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-
-</details>
-
-
----
-
-
-### Object: `event`
-
-
-**Definition:** Specifies the event to force, either by name or by a nested object defining its type and level.  
-**Total Count:** 15
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-
-</details>
-
-
----
-
-
-### Object: `battle`
-
-
-**Definition:** Defines a battle encounter by preset, level file path, or reverb settings.  
-**Total Count:** 36
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-
-</details>
-
-
----
-
-
-### Object: `VolcanoAntennaAttached`
-
-
-**Definition:** Configures the map event and art when the Volcano Antenna has been attached.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `MeatWorldUnlocked`
-
-
-**Definition:** Configures the map event and routes when MeatWorld is initially unlocked.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `HardPathUnlocked`
-
-
-**Definition:** Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`hard_initial`](../Reference_and_Meta/Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `EndOfTimeUnlocked`
-
-
-**Definition:** Configures the map event and route visibility when End of Time is unlocked.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `DimensionXUnlocked`
-
-
-**Definition:** Configures the map event and art when Dimension X is unlocked.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `BothObelisksUnlocked`
-
-
-**Definition:** Configures the map event and art when both obelisks have been unlocked.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `weather_event`
-
-
-**Definition:** Defines a special event that triggers a crater weather level.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-
-</details>
-
-
----
-
-
----
-
-
-## Auto-Discovered Objects
-
-
-### Object: `theend`
-
-
-**Definition:** Specifies the name, map flag, or connection for The End area.  
-**Total Count:** 51
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `shop_water`
-
-
-**Definition:** Node definition for a water shop, specifying its type, level, and override art.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-
-</details>
-
-
----
-
-
-### Object: `shop_cheapwater`
-
-
-**Definition:** Node definition for a cheap water shop, specifying its type, level, and override art.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-
-</details>
-
-
----
-
-
-### Object: `sewers`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 20
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-### Object: `mw_altar`
-
-
-**Definition:** A map node that represents a Meat World special event altar with custom art.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-
-</details>
-
-
----
-
-
-### Object: `moon`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 45
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `meatworld`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 45
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `lab`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 20
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `jurassic`
-
-
-**Definition:** Specifies the name, map flag, or connection for the Jurassic area.  
-**Total Count:** 56
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `junkyard`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 18
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `iceage`
-
-
-**Definition:** Specifies the name, map flag, or connection for the Ice Age area.  
-**Total Count:** 32
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `future`
-
-
-**Definition:** Specifies the name, map flag, or connection for the Future area.  
-**Total Count:** 30
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `exit_lab`
-
-
-**Definition:** Defines the exit node properties for the lab map, including type, next map, lock state, and art.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 1 | `false`<br>`true` |
-| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
-| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 1 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
-
-</details>
-
-
----
-
-
-### Object: `exit_desert`
-
-
-**Definition:** Defines the exit node properties for the desert map, including type, next map, lock state, and art.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 1 | `false`<br>`true` |
-| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
-| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 1 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
-
-</details>
-
-
----
-
-
-### Object: `endoftime`
-
-
-**Definition:** Configures various attributes of the End of Time area, depending on context.  
-**Total Count:** 45
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `dimensionx`
-
-
-**Definition:** An enum specifying the Dimension X chapter area, or an object with its specific properties.  
-**Total Count:** 45
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `spin_cats` | Boolean | If true, cats on this node will rotate to face their movement direction. | 1 | `true` |
-
-</details>
-
-
----
-
-
-### Object: `desert`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 23
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `crater`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 20
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `core`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 45
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `caves`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 42
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `bunker`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 21
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `boneyard`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 45
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `alley`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 25
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
-### Object: `WallOfFleshDone`
-
-
-**Definition:** An object that stores flags related to completing the Wall of Flesh quest.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `ThrobbingArteryDone`
-
-
-**Definition:** An object that stores flags related to completing the Throbbing Artery quest.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `TheEndUnlocked`
-
-
-**Definition:** An object that stores flags related to unlocking the 'The End' chapter.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `SewersUnlocked`
-
-
-**Definition:** Unlocks an exit route to the Sewers on the map.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
 ### Object: `MoonUnlocked`
 
 
@@ -1312,20 +1144,21 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `MoonObeliskUnlocked`
+### Object: `miniboss_event`
 
 
-**Definition:** Configures the map event and art when the Moon Obelisk is raised and unlocked.  
-**Total Count:** 3
+**Definition:** An object defining the properties of a mini-boss event at this node.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+> **Referenced by:** [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#object-genflag_boss_stacy), [`ROOT`](./Map_Generation_and_Routing.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 
 </details>
 
@@ -1530,48 +1363,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `CoreObeliskUnlocked`
-
-
-**Definition:** Configures the map event and art when the Core Obelisk is raised and unlocked.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `ChaosAntennaAttached`
-
-
-**Definition:** Configures the map event and art when the Chaos Antenna has been attached.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
 ### Object: `CavesUnlocked`
 
 
@@ -1628,6 +1419,216 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `weather_event`
+
+
+**Definition:** Defines a special event that triggers a crater weather level.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+
+</details>
+
+
+---
+
+
+---
+
+
+## Auto-Discovered Objects
+
+
+### Object: `WallOfFleshDone`
+
+
+**Definition:** An object that stores flags related to completing the Wall of Flesh quest.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `ThrobbingArteryDone`
+
+
+**Definition:** An object that stores flags related to completing the Throbbing Artery quest.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `shop_water`
+
+
+**Definition:** Node definition for a water shop, specifying its type, level, and override art.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+
+</details>
+
+
+---
+
+
+### Object: `shop_cheapwater`
+
+
+**Definition:** Node definition for a cheap water shop, specifying its type, level, and override art.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+
+</details>
+
+
+---
+
+
+### Object: `mw_altar`
+
+
+**Definition:** A map node that represents a Meat World special event altar with custom art.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+
+</details>
+
+
+---
+
+
+### Object: `exit_lab`
+
+
+**Definition:** Defines the exit node properties for the lab map, including type, next map, lock state, and art.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 1 | `false`<br>`true` |
+| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
+| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 1 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
+
+</details>
+
+
+---
+
+
+### Object: `exit_desert`
+
+
+**Definition:** Defines the exit node properties for the desert map, including type, next map, lock state, and art.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 1 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
+| `hidden` | Boolean | If true, this exit is not shown on the map until it is discovered. | 1 | `false`<br>`true` |
+| `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
+| [`next_map`](../Reference_and_Meta/Enums.md#enum-next_map) | Enum | Specifies which map file to load when this exit is used. | 1 | `bunker.gon`<br>`core.gon`<br>`crater.gon` |
+
+</details>
+
+
+---
+
+
+### Object: `ChaosAntennaAttached`
+
+
+**Definition:** Configures the map event and art when the Chaos Antenna has been attached.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Map_Generation_and_Routing.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 

@@ -254,6 +254,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack_pool`](../Reference_and_Meta/Arrays.md#array-attack_pool) | Array | An array of attack ability names available in the class's attack pool. | 14 | `[` |
 | [`levelup_stats`](../Reference_and_Meta/Arrays.md#array-levelup_stats) | Array | An array of stat abbreviations that are randomly increased upon leveling up. | 14 | `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
 | [`passive_pool`](../Reference_and_Meta/Arrays.md#array-passive_pool) | Array | An array of passive ability names available in the class's passive pool. | 14 | `[` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 14 | `{ . . . }` |
 | [`stat_mods`](../Reference_and_Meta/Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. | 13 | `{ . . . }` |
 | [`ability_groups`](../Reference_and_Meta/Miscellaneous.md#object-ability_groups) | Object  | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. | 12 | `{ . . . }` |
 | [`starter_abilities`](../Reference_and_Meta/Arrays.md#array-starter_abilities) | Array | An array of ability names that the class starts with at level 1. | 12 | `[` |
@@ -265,28 +266,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tutorial_levelup_active_pool`](../Reference_and_Meta/Arrays.md#array-tutorial_levelup_active_pool) | Array | An array of active ability names presented during tutorial level-up. | 1 | `[` |
 | [`tutorial_levelup_active_pool_2`](../Reference_and_Meta/Arrays.md#array-tutorial_levelup_active_pool_2) | Array | An array of active ability names presented in a second tutorial level-up. | 1 | `[` |
 | [`tutorial_levelup_passive_pool`](../Reference_and_Meta/Arrays.md#array-tutorial_levelup_passive_pool) | Array | An array of passive ability names presented during tutorial level-up. | 1 | `[` |
-
-</details>
-
-
----
-
-
-### Object: `meta`
-
-
-**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
-**Total Count:** 2374
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 14 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`description`](../Assets_and_Localization/Strings.md#string-description) | String | A string key for the localized description of the class. | 14 | `"CAT_CLASS_BUTCHER_DESC"`<br>`"CAT_CLASS_COLORLESS_DESC"`<br>`"CAT_CLASS_DRUID_DESC"` |
 
 </details>
 
@@ -312,6 +291,29 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`portrait_face`](../Reference_and_Meta/Enums.md#enum-portrait_face) | Enum | Specifies the portrait image to use for the class in the UI. | 13 | `butcher_portrait`<br>`druid_portrait`<br>`fighter_portrait` |
 | [`default_face`](../Reference_and_Meta/Enums.md#enum-default_face) | Enum | Specifies the default facial expression for the unit's portrait. | 1 | `angry`<br>`happy`<br>`mad` |
 | `hud_palette` | Number | The HUD color palette index used for the class's UI elements. | 1 | `11` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `meta`
+
+
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
+**Total Count:** 2374
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`ROOT`](./Cat_Classes.md#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 14 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`description`](../Assets_and_Localization/Strings.md#string-description) | String | A string key for the localized description of the class. | 14 | `"CAT_CLASS_BUTCHER_DESC"`<br>`"CAT_CLASS_COLORLESS_DESC"`<br>`"CAT_CLASS_DRUID_DESC"` |
 
 </details>
 
@@ -362,6 +364,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 12 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
 | [`move`](../Reference_and_Meta/Enums.md#enum-move) | Enum  | Specifies the name of the class's default movement ability. | 12 | `BasicJump`<br>`BungaJumpMove`<br>`DefaultMove` |
 | [`misc`](../Reference_and_Meta/Arrays.md#array-misc) | Array | A list of ability names that do not fit into other categories. | 12 | `[` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 12 | `{ . . . }` |
 | [`defense`](../Reference_and_Meta/Arrays.md#array-defense) | Array | An array of defensive ability names. | 10 | `[` |
 
 </details>
@@ -395,6 +398,26 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
+### Object: `TinkererBasicAttackSwitching`
+
+
+**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`craft_ability`](../Reference_and_Meta/Enums.md#enum-craft_ability) | Enum | The ability used for the craft action in the Tinkerer's basic attack switching. | 1 | `TinkererCraft` |
+| [`throw_ability`](../Reference_and_Meta/Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 1 | `TinkererThrow` |
+
+</details>
+
+
+---
 ### Object: `innate_items`
 
 
@@ -416,24 +439,3 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 ---
 
-
-### Object: `TinkererBasicAttackSwitching`
-
-
-**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Referenced by:** [`innate_passives`](./Cat_Classes.md#object-innate_passives)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`craft_ability`](../Reference_and_Meta/Enums.md#enum-craft_ability) | Enum | The ability used for the craft action in the Tinkerer's basic attack switching. | 1 | `TinkererCraft` |
-| [`throw_ability`](../Reference_and_Meta/Enums.md#enum-throw_ability) | Enum | The ability used for the throw action in the Tinkerer's basic attack switching. | 1 | `TinkererThrow` |
-
-</details>
-
-
----

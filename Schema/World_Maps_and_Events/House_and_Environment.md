@@ -93,6 +93,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 58 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 12 | `{ . . . }` |
 | `height` | Integer | The height in tiles the target is launched into the air. | 8 | `0`<br>`1`<br>`2` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
 | [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 7 | `{ . . . }` |
@@ -158,6 +159,164 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
+### Object: `Else`
+
+
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
+**Total Count:** 86
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
+| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+
+---`damage_instance`<br>`spell`<br>`self_damage`
+
+
+### Object: `Default`
+
+
+**Definition:** The default form configuration for a unit, containing its standard stats and abilities.  
+**Total Count:** 85
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
+
+</details>
+
+
+---
+
+
+### Object: `Big`
+
+
+**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.  
+**Total Count:** 59
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`position`](../Reference_and_Meta/Arrays.md#array-position) | Array | The world-space coordinates for this object. | 2 | `10.5`<br>`[4.5 4.5]` |
+| [`follow_character_tag`](../Reference_and_Meta/Enums.md#enum-follow_character_tag) | Enum | Determines which character this visual effect follows. | 2 | `zaratana` |
+
+</details>
+
+
+---
+
+
+### Object: `StatusOnBattleEnd`
+
+
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.  
+**Total Count:** 53
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ApplyPassives`](#object-applypassives)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `Conditional_HasTag`
+
+
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.  
+**Total Count:** 47
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`extra_statuses`](#object-extra_statuses)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+
+
+---
+
+
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+### Object: `Conditional_GoodRoll`
+
+
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
+**Total Count:** 37
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
+| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 2 | `.1`<br>`.16666666`<br>`.3` |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
+
+</details>
+
+
+---
+
+
+### Object: `RandomStatusFromPool`
+
+
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
+**Total Count:** 35
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
@@ -175,6 +334,104 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 19 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 | [`trap`](../Reference_and_Meta/Enums.md#enum-trap) | Enum | The type of trap to spawn. Specifies which trap template to use. | 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
+
+</details>
+
+
+---
+
+
+### Object: `Rain`
+
+
+**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.  
+**Total Count:** 21
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+
+</details>
+
+
+---
+
+
+### Object: `Snow`
+
+
+`damage_instance`<br>`spell`<br>`self_damage`
+
+**Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.  
+**Total Count:** 17
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
+| :--- | :--- | :--- | :--- | :--- |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+
+</details>
+
+
+---
+
+
+### Object: `ApplyPassives`
+
+
+**Definition:** Specifies the passives or status effects to apply to the unit.  
+**Total Count:** 13
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
+
+</details>
+
+
+---
+
+
+### Object: `Windy`
+
+
+**Definition:** The number representing the Windy weather intensity or whether it is active.  
+**Total Count:** 12
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
 
@@ -220,6 +477,343 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 9 | `.1`<br>`.25`<br>`.35` |
 | [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 9 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 | `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 9 | `1.3`<br>`1.35`<br>`1.5` |
+
+</details>
+
+
+---
+
+
+### Object: `Conditional_Corpse`
+
+
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.  
+**Total Count:** 11
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>tag |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+### Object: `Thunderstorm`
+
+
+**Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.  
+**Total Count:** 10
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 | `true` |
+
+</details>
+
+
+---
+
+
+### Object: `CharacterTypeGainsStatusAtBattleStart`
+
+
+**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.  
+**Total Count:** 8
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+### Object: `Conditional_PartyMember`
+
+
+**Definition:** A conditional block that executes its child actions only if the target is a party member.  
+**Total Count:** 6
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>tag |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+### Object: `StatusAllCharactersOnSpawn`
+
+
+**Definition:** Defines status effects applied to all characters when they spawn into the battlefield.  
+**Total Count:** 5
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
+
+</details>
+
+
+---
+
+
+### Object: `MediumHouse`
+
+
+**Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.  
+**Total Count:** 5
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
+
+</details>
+
+
+---
+
+
+### Object: `Floor1_Large`
+
+
+**Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
+**Total Count:** 5
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
+| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
+
+</details>
+
+
+---
+
+
+### Object: `SolarFlare`
+
+
+**Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
+| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+
+
+---
+
+
+### Object: `LargeHouse`
+
+
+**Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
+
+</details>
+
+
+---
+
+
+### Object: `Floor1_Small`
+
+
+**Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
+| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
+
+</details>
+
+
+---
+
+
+### Object: `FactionUprising`
+
+
+**Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>tag |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+
+</details>
+
+
+---
+
+
+### Object: `extra_statuses`
+
+
+**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.  
+**Total Count:** 4
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`FactionUprising`](#object-factionuprising)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
+| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `StatusCharactersOnRoundEnd`
+
+
+**Definition:** An object whose nested keys define statuses or effects applied to characters at the end of each round.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
+| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
+
+</details>
+
+
+---
+
+
+### Object: `StatusCharactersOnRoundEnd`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 3
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 3 | `{ . . . }` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+`damage_instance`<br>`spell`<br>`self_damage`
+
+</details>
+### Object: `SpawnVolcanoOnBattleStart`
+
+
+**Definition:** An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle.  
+**Total Count:** 3
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| [`puddle_tile`](../Reference_and_Meta/Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
+| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -284,140 +878,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `StatusCharactersOnRoundEnd`
-
-
-**Definition:** An object whose nested keys define statuses or effects applied to characters at the end of each round.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-### Object: `StatusCharactersOnRoundEnd`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 3
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-`damage_instance`<br>`spell`<br>`self_damage`
-
-</details>
-### Object: `SpawnVolcanoOnBattleStart`
-
-
-**Definition:** An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle.  
-**Total Count:** 3
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
-| [`puddle_tile`](../Reference_and_Meta/Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
-| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
-
-</details>
-
-
----
-
-
-### Object: `Else`
-
-
-**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
-**Total Count:** 86
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-
----`damage_instance`<br>`spell`<br>`self_damage`
-
-
-### Object: `Windy`
-
-
-**Definition:** The number representing the Windy weather intensity or whether it is active.  
-**Total Count:** 12
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
-
-</details>
-
-
----
-
-
-### Object: `Thunderstorm`
-
-
-**Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.  
-**Total Count:** 10
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
-| `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 | `true` |
-
-</details>
-
-
----
-
-
 ### Object: `StatusCharactersOnRoundStart`
 
 
@@ -431,6 +891,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 `damage_instance`<br>`spell`<br>`self_damage`
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 
 </details>
 
@@ -456,27 +917,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAllCharactersOnSpawn`
 
 
-**Definition:** Defines status effects applied to all characters when they spawn into the battlefield.  
-**Total Count:** 5
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-
-</details>
-
-
----
-
-
-### Object: `StatusAllCharactersOnSpawn`
-
-
 <details>
 <summary><b>Expand</b></summary>
 
@@ -484,6 +924,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
 | `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
@@ -508,361 +949,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `SolarFlare`
-
-
-**Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
-| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-
-
----
-
-
-### Object: `Snow`
-
-
-`damage_instance`<br>`spell`<br>`self_damage`
-
-**Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.  
-**Total Count:** 17
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
-| :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
-
-</details>
-
-
----
-
-
-### Object: `RandomStatusFromPool`
-
-
-**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
-**Total Count:** 35
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
----
-
-
-### Object: `RandomStatusFromPool`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-### Object: `Rain`
-
-
-**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.  
-**Total Count:** 21
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
-
-</details>
-
-
----
-
-
-### Object: `GlobalSpawnOnRoundEnd`
-
-
-**Definition:** Specifies the object to spawn globally at the end of each round.  
-**Total Count:** 2
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
-
-</details>
-
-
----
-
-
-### Object: `Conditional_GoodRoll`
-
-
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
-**Total Count:** 37
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
-| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 2 | `.1`<br>`.16666666`<br>`.3` |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
-
-</details>
-
-
----
-
-
-### Object: `Conditional_GoodRoll`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-### Object: `CharacterTypeGainsStatusAtBattleStart`
-
-
-**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.  
-**Total Count:** 8
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 2 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-### Object: `CharacterTypeGainsStatusAtBattleStart`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-### Object: `Big`
-
-
-**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.  
-**Total Count:** 59
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`position`](../Reference_and_Meta/Arrays.md#array-position) | Array | The world-space coordinates for this object. | 2 | `10.5`<br>`[4.5 4.5]` |
-| [`follow_character_tag`](../Reference_and_Meta/Enums.md#enum-follow_character_tag) | Enum | Determines which character this visual effect follows. | 2 | `zaratana` |
-
-</details>
-
-
----
-
-
-### Object: `ApplyPassives`
-
-
-**Definition:** Specifies the passives or status effects to apply to the unit.  
-**Total Count:** 13
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-
-</details>
-
-
----
-
-
-### Object: `ApplyPassives`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-### Object: `extra_statuses`
-
-
-**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`FactionUprising`](#object-factionuprising)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `extra_statuses`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-
-
-### Object: `StatusOnBattleEnd`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-> **Total Count:** 1
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-`damage_instance`<br>`spell`<br>`self_damage`
-
-
-</details>
-
-
-### Object: `StatusOnBattleEnd`
-
-
-**Definition:** An object containing status effects or passives applied to the unit when the battle ends.  
-**Total Count:** 53
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ApplyPassives`](#object-applypassives)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
-
-
----
-
-
-### Object: `SpawnTilePuddleOnBattleStart`
-
-
-**Definition:** Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`effects`](#object-effects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
-| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
-| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
-
-</details>
-
-
----
 ### Object: `SmallHouse_Attic`
 
 
@@ -911,6 +997,20 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
+### Object: `RandomStatusFromPool`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
 ### Object: `MediumHouse_SmallRoom`
 
 
@@ -926,28 +1026,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
 | [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
-
-</details>
-
-
----
-
-
-### Object: `MediumHouse`
-
-
-**Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.  
-**Total Count:** 5
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -992,28 +1070,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
 | [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
-
-</details>
-
-
----
-
-
-### Object: `LargeHouse`
-
-
-**Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -1099,24 +1155,21 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `Floor1_Small`
+### Object: `GlobalSpawnOnRoundEnd`
 
 
-**Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
-**Total Count:** 4
+**Definition:** Specifies the object to spawn globally at the end of each round.  
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`effects`](#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1124,215 +1177,34 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
-### Object: `Floor1_Large`
-
-
-**Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
-**Total Count:** 5
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-
-</details>
-
-
----
-
-
-### Object: `FloatingDebris`
-
-
-**Definition:** An object defining parameters for spawning floating debris tileset objects.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`AddTilesetObjects`](#object-addtilesetobjects)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
-
-</details>
-
-
----
-
-
-### Object: `FactionUprising`
-
-
-**Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.  
-**Total Count:** 4
-
-<details>
-<summary><b>Expand</b></summary
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>tag |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-
-</details>
-
-
----
-
-
-### Object: `Default`
-
-
-**Definition:** The default form configuration for a unit, containing its standard stats and abilities.  
-**Total Count:** 85
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
-
-</details>
-
-
----
-
-
-### Object: `Conditional_PartyMember`
+### Object: `Conditional_GoodRoll`
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Total Count:** 2
 
-| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
+| Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 | `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
-### Object: `Conditional_PartyMember`
-
-
-**Definition:** A conditional block that executes its child actions only if the target is a party member.  
-**Total Count:** 6
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>tag |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-### Object: `Conditional_HasTag`
-
-
-**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.  
-**Total Count:** 47
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`extra_statuses`](#object-extra_statuses)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
-
-</details>
-
-
----
-
-
-`damage_instance`<br>`spell`<br>`self_damage`
-
-
-### Object: `Conditional_Corpse`
+### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
 <details>
 <summary><b>Expand</b></summary>
 
-> **Total Count:** 1
+> **Total Count:** 2
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>tag |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
 | `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
-### Object: `Conditional_Corpse`
-
-
-**Definition:** Contains an inner effect block that only executes if the target is a corpse.  
-**Total Count:** 11
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>tag |
-| [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
-
-</details>
-
-
----
-
-
-### Object: `BasementUpgrade5`
-
-
-**Definition:** An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met.  
-**Total Count:** 1
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
-
-</details>
-
-
----
-
-
 ### Object: `BasementUpgrade4`
 
 
@@ -1421,6 +1293,20 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ---
 
 
+### Object: `ApplyPassives`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
 ### Object: `AllyInfested`
 
 
@@ -1436,6 +1322,134 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 | [`faction`](../Reference_and_Meta/Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
+
+</details>
+
+
+---
+
+
+### Object: `StatusOnBattleEnd`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+`damage_instance`<br>`spell`<br>`self_damage`
+
+
+</details>
+
+
+### Object: `SpawnTilePuddleOnBattleStart`
+
+
+**Definition:** Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`effects`](#object-effects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
+
+</details>
+
+
+---
+### Object: `FloatingDebris`
+
+
+**Definition:** An object defining parameters for spawning floating debris tileset objects.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`AddTilesetObjects`](#object-addtilesetobjects)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
+
+</details>
+
+
+---
+
+
+### Object: `extra_statuses`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+
+
+### Object: `Conditional_PartyMember`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+### Object: `Conditional_Corpse`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+> **Total Count:** 1
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| `{Status and Passive Keys}` | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>tag |
+| `{Damaging Keys}` | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 0 | `damage_instance`<br>`spell`<br>`false` |
+
+</details>
+### Object: `BasementUpgrade5`
+
+
+**Definition:** An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met.  
+**Total Count:** 1
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 

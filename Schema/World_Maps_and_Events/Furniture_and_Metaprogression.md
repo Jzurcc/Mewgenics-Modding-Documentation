@@ -293,6 +293,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `FoodStorage` | Integer | The amount of food storage capacity added by the furniture piece. | 1 | `40` |
 | `removed` | Boolean | If true, this autofeeder item is disabled and not available. | 1 | `true` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 </details>
 

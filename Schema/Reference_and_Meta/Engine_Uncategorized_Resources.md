@@ -20465,18 +20465,6 @@ MysteryObject {
 ## Auto-Discovered Objects
 
 
-### Object: `cWaggle3x3`
-
-
-<details>
-<summary><b>Expand</b></summary>
-
-**Total Count:** 2
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
-
-</details>
 ### Object: `cWaggle2x2`
 
 
@@ -20504,3 +20492,16 @@ MysteryObject {
 
 </details>
 
+
+### Object: `cWaggle3x3`
+
+
+<details>
+<summary><b>Expand</b></summary>
+
+**Total Count:** 2
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>

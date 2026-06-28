@@ -47,6 +47,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `back_icon` | String | The name of the icon to display behind the damage text. | 8 | `bleed`<br>`burn`<br>`confusion` |
 | [`outline_color`](../Reference_and_Meta/Enums.md#enum-outline_color) | Enum | The color of the text outline. | 2 | `white` |
 | [`suffix`](./Strings.md#string-suffix) | String | A string appended to the damage text. | 1 | `"!!!"` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>

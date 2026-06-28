@@ -103,6 +103,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`general_rare`](./Enums.md#enum-general_rare) | Enum | Specifies the rare rarity tier for an item or event outcome. | 1 | `auto` |
 | [`general_uncommon`](./Enums.md#enum-general_uncommon) | Enum | Specifies how uncommon general loot pool items are distributed; often set to 'auto' for automatic weighting. | 1 | `auto` |
 | [`general_very_rare`](./Enums.md#enum-general_very_rare) | Enum | Specifies how very rare general loot pool items are distributed; often set to 'auto' for automatic weighting. | 1 | `auto` |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 | [`chapter_item_pool`](./Enums.md#enum-chapter_item_pool) | Enum | Specifies the item pool identifier used by a chapter or boss to determine which items can be found. | 0 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
 
 </details>

@@ -46,29 +46,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 8 | `{ . . . }` |
+| [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 8 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
-| [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 0 | `{ . . . }` |
-| [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 0 | `{ . . . }` |
-
-</details>
-
-
----
-
-
-### Object: `hard`
-
-
-**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
-**Total Count:** 47
-
-<details>
-<summary><b>Expand</b></summary
-
-> **Referenced by:** [`ROOT`](#object-root)
-
-| Key | Type | Definition | Count | Example Inputs |
-| :--- | :--- | :--- | :--- | :--- |
+| [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 </details>
 
@@ -94,3 +75,22 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 ---
+### Object: `hard`
+
+
+**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
+**Total Count:** 47
+
+<details>
+<summary><b>Expand</b></summary
+
+> **Referenced by:** [`ROOT`](#object-root)
+
+| Key | Type | Definition | Count | Example Inputs |
+| :--- | :--- | :--- | :--- | :--- |
+
+</details>
+
+
+---
+
