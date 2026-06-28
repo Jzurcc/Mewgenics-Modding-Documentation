@@ -45,13 +45,23 @@ The schema documentation is divided logically by subsystem. Click on any file to
 ### Core Entities & Combat
 | File | Description |
 |------|-------------|
-| [Characters_and_Bosses.md](./Core_Entities_and_Combat/Characters_and_Bosses.md) | Cat classes, enemies, bosses, and summons. |
 | [Abilities_and_Spells.md](./Core_Entities_and_Combat/Abilities_and_Spells.md) | Spells, attacks, and combat abilities. |
+| [Characters_and_Bosses.md](./Core_Entities_and_Combat/Characters_and_Bosses.md) | Cat classes, enemies, bosses, and summons. |
 | [Items_and_Equipment.md](./Core_Entities_and_Combat/Items_and_Equipment.md) | Consumables, weapons, and trinkets. |
 | [Passives_and_Statuses.md](./Core_Entities_and_Combat/Passives_and_Statuses.md) | Status effects and permanent passive buffs. |
 | [Elite_Buffs.md](./Core_Entities_and_Combat/Elite_Buffs.md) | Modifiers applied to elite enemies. |
 | [Enemy_AI.md](./Core_Entities_and_Combat/Enemy_AI.md) | AI decision nodes and behavioral weighting. |
 | [Status_Effect_Keywords.md](./Core_Entities_and_Combat/Status_Effect_Keywords.md) | Dictionary of valid status effect keywords. |
+
+### Engine Scripts & Logic
+| File | Description |
+|------|-------------|
+| [Engine_LogicKeys.md](./Engine_Scripts_and_Logic/Engine_LogicKeys.md) | Core conditionals, loops, and execution flow. |
+| [Engine_EventKeys.md](./Engine_Scripts_and_Logic/Engine_EventKeys.md) | Scripting keys for narrative and map events. |
+| [Engine_DamagingKeys.md](./Engine_Scripts_and_Logic/Engine_DamagingKeys.md) | Hooks for calculating and modifying damage. |
+| [Engine_StatusAndPassiveKeys.md](./Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Hooks for triggering logic when statuses are applied. |
+| [Engine_GlobalModifierKeys.md](./Engine_Scripts_and_Logic/Engine_GlobalModifierKeys.md) | Global state flags affecting the entire run. |
+| [Math_Equations.md](./Engine_Scripts_and_Logic/Math_Equations.md) | Valid syntax and variables for Equation strings. |
 
 ### Player Progression & Cats
 | File | Description |
@@ -74,16 +84,6 @@ The schema documentation is divided logically by subsystem. Click on any file to
 | [Spawns_and_Enemy_Pools.md](./World_Maps_and_Events/Spawns_and_Enemy_Pools.md) | Tables determining which enemies spawn per biome. |
 | [Boss_Cutscene_Info.md](./World_Maps_and_Events/Boss_Cutscene_Info.md) | Camera and timing configuration for boss intros. |
 | [NPC_Scripts.md](./World_Maps_and_Events/NPC_Scripts.md) | Behavior logic for non-combat interactive NPCs. |
-
-### Engine Scripts & Logic
-| File | Description |
-|------|-------------|
-| [Engine_LogicKeys.md](./Engine_Scripts_and_Logic/Engine_LogicKeys.md) | Core conditionals, loops, and execution flow. |
-| [Engine_EventKeys.md](./Engine_Scripts_and_Logic/Engine_EventKeys.md) | Scripting keys for narrative and map events. |
-| [Engine_DamagingKeys.md](./Engine_Scripts_and_Logic/Engine_DamagingKeys.md) | Hooks for calculating and modifying damage. |
-| [Engine_StatusAndPassiveKeys.md](./Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Hooks for triggering logic when statuses are applied. |
-| [Engine_GlobalModifierKeys.md](./Engine_Scripts_and_Logic/Engine_GlobalModifierKeys.md) | Global state flags affecting the entire run. |
-| [Math_Equations.md](./Engine_Scripts_and_Logic/Math_Equations.md) | Valid syntax and variables for Equation strings. |
 
 ### Assets & Localization
 | File | Description |
