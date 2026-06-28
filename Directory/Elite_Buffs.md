@@ -1,10 +1,12 @@
 # Elite Buffs Directory
 
+## File: `elite_buffs.gon`
+
 ### `Spiky`
 **Source:** `elite_buffs.gon`  
 
 ```
-Spiky {
+Spiky {//animated spikes
 	value 1
 	icon_frame 500
 	passives {
@@ -21,7 +23,7 @@ Spiky {
 **Source:** `elite_buffs.gon`  
 
 ```
-Reactive {
+Reactive {//sparkles
 	value 1
 	icon_frame 501
 	passives {
@@ -38,12 +40,12 @@ Reactive {
 **Source:** `elite_buffs.gon`  
 
 ```
-Damaging {
+Damaging {//red tint
 	value 1
 	icon_frame 502
 	passives {
 		EliteTint red
-		DamageUp 2 
+		DamageUp 2 //todo: for enemies make DamageUp apply to all of their spells
 	}
 }
 ```
@@ -54,7 +56,7 @@ Damaging {
 **Source:** `elite_buffs.gon`  
 
 ```
-Tough {
+Tough {//grey tint
 	value 1
 	icon_frame 503
 	passives {
@@ -162,7 +164,7 @@ Shielded4 {
 **Source:** `elite_buffs.gon`  
 
 ```
-Protected {
+Protected {//white aura
 	icon_frame 505
 	value 1
 	unique true
@@ -184,7 +186,7 @@ Protected {
 **Source:** `elite_buffs.gon`  
 
 ```
-Speedy {
+Speedy {//sped up anis?
 	value 1
 	icon_frame 506
 	passives {
@@ -200,7 +202,7 @@ Speedy {
 **Source:** `elite_buffs.gon`  
 
 ```
-Flaming {
+Flaming {//flames
 	value 1
 	icon_frame 507
 	unique true
@@ -221,7 +223,7 @@ Flaming {
 **Source:** `elite_buffs.gon`  
 
 ```
-Creepy { 
+Creepy { //also: attack deals poison  //green tint
 	value 1
 	icon_frame 508
 	unique true
@@ -244,7 +246,7 @@ Creepy {
 **Source:** `elite_buffs.gon`  
 
 ```
-Static { 
+Static { //electric particles
 	value 1
 	icon_frame 509
 	unique true
@@ -273,7 +275,7 @@ Static {
 **Source:** `elite_buffs.gon`  
 
 ```
-Lucky { 
+Lucky { //yellow tiny
 	value 1
 	icon_frame 510
 	passives {
@@ -292,7 +294,7 @@ Lucky {
 **Source:** `elite_buffs.gon`  
 
 ```
-Bouncy {
+Bouncy {// bound distortion partcle
 	value 1
 	unique true
 	icon_frame 511
@@ -311,7 +313,7 @@ Bouncy {
 **Source:** `elite_buffs.gon`  
 
 ```
-Mirror { 
+Mirror { //todo: exclude this one on enemies that already reflect projectiles (Host) //add shine?
 	value 1
 	icon_frame 512
 	unique true
@@ -331,7 +333,7 @@ Mirror {
 **Source:** `elite_buffs.gon`  
 
 ```
-Resonant { 
+Resonant { //purple tint
 	value 1
 	icon_frame 513
 	passives {
@@ -350,7 +352,7 @@ Resonant {
 **Source:** `elite_buffs.gon`  
 
 ```
-Undying { 
+Undying { //death particle
 	value 1
 	icon_frame 514
 	unique true
@@ -378,7 +380,7 @@ Undying {
 **Source:** `elite_buffs.gon`  
 
 ```
-SubUndying { 
+SubUndying { //death particle
 	value 1
 	icon_frame 514
 	unique true
@@ -403,7 +405,7 @@ SubUndying {
 **Source:** `elite_buffs.gon`  
 
 ```
-Healthy {
+Healthy {//heart partcle
 	value 1
 	icon_frame 515
 	passives {
@@ -420,7 +422,7 @@ Healthy {
 **Source:** `elite_buffs.gon`  
 
 ```
-Sandy {
+Sandy {//sand partcle
 	value 1
 	icon_frame 516
 	unique true
@@ -441,7 +443,7 @@ Sandy {
 **Source:** `elite_buffs.gon`  
 
 ```
-Infested {
+Infested {//flyswarm
 	value 1
 	icon_frame 517
 	passives {
@@ -458,7 +460,7 @@ Infested {
 **Source:** `elite_buffs.gon`  
 
 ```
-Absorbant {
+Absorbant {//mana suck partcile
 	value 1
 	icon_frame 518
 	unique true
@@ -477,7 +479,7 @@ Absorbant {
 **Source:** `elite_buffs.gon`  
 
 ```
-Depressing { 
+Depressing { //todo: exclude from forwarding to spawns? //grey cloud
 	value 1
 	unique true
 	icon_frame 519
@@ -523,7 +525,7 @@ SlightlyDepressing {
 **Source:** `elite_buffs.gon`  
 
 ```
-Evolving {
+Evolving {//colorshifting
 	value 1
 	icon_frame 520
 	passives {
@@ -542,7 +544,7 @@ Evolving {
 **Source:** `elite_buffs.gon`  
 
 ```
-Plow { 
+Plow { //blue tint
 	value 1
 	icon_frame 521
 	unique true
@@ -561,7 +563,7 @@ Plow {
 **Source:** `elite_buffs.gon`  
 
 ```
-Mega {
+Mega {//XL
 	value 1
 	icon_frame 522
 	unique true
@@ -570,7 +572,7 @@ Mega {
 		ExtraDispersedTurns -1
 		HealthMultiplier 1.5
 		AbilityDamageMultiplier 1.5
-		RemoveExtraDispersedTurn 1 
+		RemoveExtraDispersedTurn 1 //immediately remove the extra turn when this buff is applied
 		SizeScale 1.2
 	}
 }
@@ -582,7 +584,7 @@ Mega {
 **Source:** `elite_buffs.gon`  
 
 ```
-Mad {
+Mad {//pulse red or madness partciles
 	value 1
 	icon_frame 523
 	unique true
@@ -688,6 +690,8 @@ Sticky {
 ```
 
 ---
+
+## File: `boss_elite_buffs.gon`
 
 ### `Spiky`
 **Source:** `boss_elite_buffs.gon`  
@@ -1040,27 +1044,6 @@ SlightlyDepressing {
 			stacks 1
 			range 1
 			aura_effects_allies false
-		}
-	}
-}
-```
-
----
-
-### `Mad`
-**Source:** `boss_elite_buffs.gon`  
-
-```
-Mad {
-	value 1
-	icon_frame 623
-	unique true
-
-	passives {
-		PermanentMadness 1
-		StatusOnKill {
-			AllStatsUp 1
-			HealthGain 4
 		}
 	}
 }

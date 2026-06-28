@@ -61,6 +61,21 @@ divineshield_loss {
 
 ---
 
+### `damagescale_thresholds`
+**Source:** `damage_text_styles.gon`  
+
+```
+damagescale_thresholds [
+	[0  damagescale_zero]
+	[1  damagescale_small]
+	[5  damagescale_medium]
+	[10 damagescale_large]
+	[25 damagescale_extreme]
+]
+```
+
+---
+
 ### `damagescale_zero`
 **Source:** `damage_text_styles.gon`  
 
