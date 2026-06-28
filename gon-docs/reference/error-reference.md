@@ -1,80 +1,66 @@
-# Troubleshooting & Error Reference
+# Common Pitfalls & Silent Failures
 
 > **Purpose:** Common parsing mistakes in GON and how to fix them.
 
-Because GON is incredibly permissive (ignoring commas and equals signs), the parser rarely "crashes", but it will misinterpret your data if you break structural rules.
+Because GON is incredibly permissive (ignoring commas and equals signs), the parser rarely "crashes". Instead, it will silently misinterpret your data if you break structural rules, resulting in logic bugs or objects failing to load in-game.
 
 ---
 
-## 1. The "Everything after this is broken" Error
+## 1. The Missing Brace Pitfall
 **Cause:** Missing a closing brace `}` on a nested object.
-**Symptom:** The parser thinks all subsequent objects in the file are children of the unclosed object. The game either crashes on load or the objects fail to spawn.
+**Symptom:** The parser assumes all subsequent objects in the file are children of the unclosed object. This usually results in a silent failure where your game objects simply do not appear.
 
 **Fix:** Count your braces. Every `{` needs a matching `}`.
 ```gon
-❌  parent {
+✗  parent {
         child value
     // missing }
 
-✅  parent {
+✓  parent {
         child value
     }
 ```
 
 ---
 
-## 2. The "String merging" Error
+## 2. The String Merging Pitfall
 **Cause:** Forgetting quotes around a string that contains spaces.
-**Symptom:** Because space is the separator in GON, the parser thinks the second word is a new key-value node instead of part of the string.
+**Symptom:** Because whitespace is the primary delimiter in GON, the parser interprets the second word as a completely new key instead of as part of the string value.
 
 **Fix:** Wrap multi-word text in double quotes `""`.
 ```gon
-❌  name Tall Grass
+✗  name Tall Grass
 
-✅  name "Tall Grass"
+✓  name "Tall Grass"
 ```
 
 ---
 
-## 3. The "Invalid Boolean" Error
+## 3. The Capitalized Boolean Pitfall
 **Cause:** Capitalizing `True` or `False`.
-**Symptom:** The game's engine expects the literal string `"true"` to trigger boolean logic. `"True"` does not match, so the boolean evaluates to false.
+**Symptom:** The game's engine expects the exact string `"true"` or `"false"` to trigger boolean logic. Because GON is strictly case-sensitive, `"True"` does not match the expected value, often defaulting the internal boolean to false silently.
 
-**Fix:** Use strict lowercase.
+**Fix:** Use strict lowercase for booleans.
 ```gon
-❌  paint True
+✗  paint True
 
-✅  paint true
+✓  paint true
 ```
 
 ---
 
-## 4. The "Unexpected Colon" Error
-**Cause:** Muscle memory from JSON or YAML causing you to write `key: value`.
-**Symptom:** The parser may see `key:` as the identifier, and fail to map it to the engine's expected `key`.
-
-**Fix:** Use only whitespace to separate keys and values.
-```gon
-❌  health: 10
-❌  health = 10
-
-✅  health 10
-```
-
----
-
-## 5. The "Array Syntax" Error
+## 4. The Array/Object Mismatch Pitfall
 **Cause:** Putting objects `{ }` inside arrays `[ ]`.
-**Symptom:** GON arrays are intended for scalar values (strings, numbers, enums) or nested arrays. Mewgenics engine code rarely supports reading complex objects out of an array.
+**Symptom:** While syntactically valid in GON, the Mewgenics engine code is often strictly typed on the backend. Many array properties are designed only to read scalar values (strings, numbers) and will silently fail to parse complex nested objects.
 
-**Fix:** If you need multiple objects, assign them sequential numeric keys inside a parent object, or check the Schema for that specific property.
+**Fix:** Always check the Schema for your specific property. If you need multiple objects, the standard convention is to assign them sequential numeric keys inside a parent object rather than using an array.
 ```gon
-❌  levels [
+✗  levels [
         { name "1" }
         { name "2" }
     ]
 
-✅  levels {
+✓  levels {
         0 { name "1" }
         1 { name "2" }
     }

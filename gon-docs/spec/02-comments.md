@@ -8,7 +8,7 @@ GON supports C-style single-line comments.
 
 Everything from the `//` sequence to the end of the line is ignored by the parser.
 
-### ✅ Valid: Full-Line Comments
+### ✓ Valid: Full-Line Comments
 *(Source evidence: `data/difficulties.gon`)*
 ```gon
 // default difficulty
@@ -17,7 +17,7 @@ Everything from the `//` sequence to the end of the line is ignored by the parse
 }
 ```
 
-### ✅ Valid: Inline Comments
+### ✓ Valid: Inline Comments
 *(Source evidence: `data/difficulties.gon`)*
 ```gon
 0 {
@@ -29,13 +29,13 @@ Everything from the `//` sequence to the end of the line is ignored by the parse
 
 Mewgenics GON does **not** support block comments or alternative comment characters.
 
-### ❌ Invalid: Hash/Pound
+### ✗ Invalid: Hash/Pound
 ```gon
 # This is invalid
 key value # Invalid inline comment
 ```
 
-### ❌ Invalid: Block Comments
+### ✗ Invalid: Block Comments
 ```gon
 /*
 This will cause a parser error.

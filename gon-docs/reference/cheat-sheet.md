@@ -13,7 +13,7 @@ A condensed syntax reference for formatting `.gon` files for Mewgenics.
 key value    // This is an inline comment
 
 /* 
-  ❌ Block comments are NOT supported 
+  ✗ Block comments are NOT supported 
 */
 ```
 
@@ -83,9 +83,9 @@ image_tint [[0 .5 0] [0 .5 0]]
 
 ## What NOT to do
 ```gon
-key: value            // ✅ Valid (colon ignored)
-key = value           // ✅ Valid (equals ignored)
-boolean True          // ❌ Must be lowercase 'true'
+key: value            // ✓ Valid (colon ignored)
+key = value           // ✓ Valid (equals ignored)
+boolean True          // ✗ Must be lowercase 'true'
 desc "Multi
-line"                 // ❌ No multi-line strings
+line"                 // ✗ No multi-line strings
 ```

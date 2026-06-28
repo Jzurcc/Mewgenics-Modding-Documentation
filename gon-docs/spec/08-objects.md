@@ -10,7 +10,7 @@ An object is defined by a key, followed by a set of curly braces `{ }`.
 - **Optional Separators:** While conventionally omitted, you *can* use a colon `:` or equals sign `=` between the key and the opening brace. The parser ignores them as whitespace.
 - **Closing Braces:** You must provide exactly one closing brace `}` for every opening brace `{`.
 
-### ✅ Valid: Object Definition
+### ✓ Valid: Object Definition
 *(Source evidence: `data/abilities/basic_attacks.gon`)*
 ```gon
 meta {
@@ -22,7 +22,7 @@ meta {
 ## Nesting
 Objects can be nested infinitely deep.
 
-### ✅ Valid: Deep Nesting
+### ✓ Valid: Deep Nesting
 *(Source evidence: `data/abilities/basic_attacks.gon`)*
 ```gon
 graphics {
@@ -40,10 +40,10 @@ GON does **not** support anonymous objects (objects without a key). Every openin
 
 Because GON does not strictly enforce types, it also does not natively support objects inside arrays (unless parsed via custom engine code), as arrays expect space-separated scalars or nested arrays.
 
-### ❌ Invalid: Anonymous Object
+### ✗ Invalid: Anonymous Object
 ```gon
 {
-    key value     // ❌ Invalid: Missing parent key
+    key value     // ✗ Invalid: Missing parent key
 }
 ```
 

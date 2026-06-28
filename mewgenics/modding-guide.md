@@ -211,9 +211,9 @@ Art assets in Mewgenics are driven by compiled Flash files (`.swf`). This proces
 If your mod fails to load or causes the engine to crash, verify the files against these common syntax errors:
 
 1. **Missing Quotes:** If a string contains spaces, it must be enclosed in double quotes.
-   - ❌ `name My Cool Sword`
-   - ✅ `name "My Cool Sword"`
+   - ✗ `name My Cool Sword`
+   - ✓ `name "My Cool Sword"`
 2. **Capitalized Booleans:** The engine strictly enforces lowercase booleans.
-   - ❌ `paint True`
-   - ✅ `paint true`
+   - ✗ `paint True`
+   - ✓ `paint true`
 3. **Unmatched Braces:** Every `{` requires a terminating `}`. A missing brace will cause the parser to fail for the remainder of the file.

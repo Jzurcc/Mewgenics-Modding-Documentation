@@ -8,7 +8,7 @@ Arrays in GON are lists of space-separated values enclosed in square brackets `[
 - **Separators:** Values are separated by whitespace (spaces or tabs).
 - **Commas:** While you can technically include commas `,`, the parser treats them as whitespace/syntactic noise. It is standard convention to simply use spaces.
 
-### ✅ Valid: Arrays
+### ✓ Valid: Arrays
 *(Source evidence: `data/tiles.gon`, `data/catquotes.gon`)*
 ```gon
 image ["ground.png" "ground_spots.png"]
@@ -18,7 +18,7 @@ image_tint [blue blue]
 ## Multi-Line Arrays
 Arrays can natively span multiple lines.
 
-### ✅ Valid: Multi-Line Array
+### ✓ Valid: Multi-Line Array
 *(Source evidence: `data/catquotes.gon`)*
 ```gon
 Fighter [
@@ -31,7 +31,7 @@ Fighter [
 ## Nested Arrays
 Arrays can contain other arrays.
 
-### ✅ Valid: Nested Arrays
+### ✓ Valid: Nested Arrays
 *(Source evidence: `data/tiles.gon`)*
 ```gon
 image_tint [[0,.5,0], [0,.5,0]]

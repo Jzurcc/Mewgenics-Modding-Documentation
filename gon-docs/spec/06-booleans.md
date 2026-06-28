@@ -4,20 +4,20 @@
 
 Booleans must be strictly **lowercase**.
 
-### ✅ Valid: Booleans
+### ✓ Valid: Booleans
 *(Source evidence: `data/tiles.gon`, `data/abilities/basic_attacks.gon`)*
 ```gon
 paint true
 animate_name false
 ```
 
-### ❌ Invalid: Alternative Casings
+### ✗ Invalid: Alternative Casings
 Mewgenics requires strict lowercasing.
 ```gon
-paint True     // ❌ Invalid
-paint TRUE     // ❌ Invalid
-paint yes      // ❌ Invalid
-paint 1        // ❌ Will parse as Integer 1, not Boolean true
+paint True     // ✗ Invalid
+paint TRUE     // ✗ Invalid
+paint yes      // ✗ Invalid
+paint 1        // ✗ Will parse as Integer 1, not Boolean true
 ```
 
 > **Note on "Types" in GON:**

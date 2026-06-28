@@ -7,7 +7,7 @@ In most programming languages, `WaterTile` or `melee_attack` would be considered
 ## Parsing Context
 The GON parser is contextual. It assumes that the **first token** on a line is the key, and the subsequent tokens form the value.
 
-### ✅ Valid: Identifiers
+### ✓ Valid: Identifiers
 *(Source evidence: `data/tiles.gon`, `data/abilities/basic_attacks.gon`)*
 ```gon
 tile WaterTile

@@ -24,7 +24,7 @@ Unlike JSON, which requires exactly one root element (usually `{ }` or `[ ]`), a
 > **Note on JSON Compatibility:**
 > While GON's primary goal is "JSON without the crap", it explicitly supports standard JSON syntax. You can take a fully compliant `.json` file (complete with commas, colons, equals signs, and quoted keys) and feed it directly into the GON parser, and it will read it perfectly. GON treats those extra symbols as optional whitespace.
 
-### ✅ Valid: Multiple Top-Level Objects
+### ✓ Valid: Multiple Top-Level Objects
 *(Source evidence: `data/tiles.gon`)*
 
 ```gon
@@ -42,7 +42,7 @@ Unlike JSON, which requires exactly one root element (usually `{ }` or `[ ]`), a
 }
 ```
 
-### ✅ Valid: Top-Level Scalars
+### ✓ Valid: Top-Level Scalars
 *(Source evidence: `data/catgen.gon`)*
 
 ```gon

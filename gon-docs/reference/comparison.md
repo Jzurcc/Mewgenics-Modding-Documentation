@@ -8,16 +8,16 @@ GON was designed as a streamlined alternative to JSON, optimizing exclusively fo
 
 | Feature | GON | JSON | TOML | YAML |
 |---------|-----|------|------|------|
-| **Comments** | ✅ `//` | ❌ | ✅ `#` | ✅ `#` |
-| **Unquoted Strings** | ✅ (single words) | ❌ | ❌ | ✅ |
-| **Optional Commas** | ✅ (ignored) | ❌ | ❌ | ✅ |
-| **Optional Colons/Equals** | ✅ (whitespace used) | ❌ (`:`) | ❌ (`=`) | ❌ (`:`) |
-| **Root Wrapper Required** | ❌ (Implicit root) | ✅ `{}` | ❌ | ❌ |
-| **Trailing Commas** | N/A (commas ignored) | ❌ | ✅ | N/A |
-| **Strict Typing** | ❌ (All parsed as strings) | ✅ | ✅ | ✅ |
-| **Multi-line Strings** | ❌ | ❌ | ✅ `"""` | ✅ `>` or `\|` |
-| **Nested Objects** | ✅ `{ }` | ✅ `{ }` | ✅ `[table]` | ✅ (indentation) |
-| **Numeric Keys** | ✅ | ❌ | ❌ | ✅ |
+| **Comments** | ✓ `//` | ✗ | ✓ `#` | ✓ `#` |
+| **Unquoted Strings** | ✓ (single words) | ✗ | ✗ | ✓ |
+| **Optional Commas** | ✓ (ignored) | ✗ | ✗ | ✓ |
+| **Optional Colons/Equals** | ✓ (whitespace used) | ✗ (`:`) | ✗ (`=`) | ✗ (`:`) |
+| **Root Wrapper Required** | ✗ (Implicit root) | ✓ `{}` | ✗ | ✗ |
+| **Trailing Commas** | N/A (commas ignored) | ✗ | ✓ | N/A |
+| **Strict Typing** | ✗ (All parsed as strings) | ✓ | ✓ | ✓ |
+| **Multi-line Strings** | ✗ | ✗ | ✓ `"""` | ✓ `>` or `\|` |
+| **Nested Objects** | ✓ `{ }` | ✓ `{ }` | ✓ `[table]` | ✓ (indentation) |
+| **Numeric Keys** | ✓ | ✗ | ✗ | ✓ |
 
 ## Transitioning from JSON
 

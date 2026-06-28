@@ -43,7 +43,7 @@ The Mewgenics engine loads all objects into a global pool, indexed by their Enti
 
 To prevent this, you **must namespace your additions**. If your mod is called "Haunters", prepend your Entity IDs with `Haunters_`.
 
-### ✅ Correct Namespacing
+### ✓ Correct Namespacing
 ```gon
 Haunters_GhostBlade {
     name "ITEM_HAUNTERS_GHOSTBLADE_NAME"
@@ -51,7 +51,7 @@ Haunters_GhostBlade {
 }
 ```
 
-### ❌ Incorrect (High Collision Risk)
+### ✗ Incorrect (High Collision Risk)
 ```gon
 GhostBlade {
     name "ITEM_GHOSTBLADE_NAME"

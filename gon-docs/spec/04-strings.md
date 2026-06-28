@@ -7,7 +7,7 @@ GON supports both quoted and unquoted strings.
 ## Unquoted Strings (Bare Words)
 If a string consists of a single contiguous word without spaces, special characters, or slashes, quotes are **optional** (and usually omitted by convention).
 
-### ✅ Valid: Unquoted
+### ✓ Valid: Unquoted
 *(Source evidence: `data/tiles.gon`)*
 ```gon
 tile WaterTile
@@ -20,7 +20,7 @@ Double quotes (`"`) are required when a string contains:
 2. Slashes (like file paths).
 3. Certain special characters that might confuse the parser.
 
-### ✅ Valid: Quoted
+### ✓ Valid: Quoted
 *(Source evidence: `data/tiles.gon`)*
 ```gon
 name "Tall Grass"               // Contains a space
@@ -34,7 +34,7 @@ Mewgenics GON **does not utilize** escape sequences (`\n`, `\t`, `\"`) or multi-
 
 For long dialogue or localized text, the engine relies on **localization keys** (which are bare words) that point to a separate translation database.
 
-### ✅ Valid: Localization Key Paradigm
+### ✓ Valid: Localization Key Paradigm
 *(Source evidence: `data/catquotes.gon`)*
 ```gon
 Fighter [
@@ -43,10 +43,10 @@ Fighter [
 ]
 ```
 
-### ❌ Invalid: Multi-Line
+### ✗ Invalid: Multi-Line
 ```gon
 desc "This is a 
-multi-line string"  // ❌ Invalid
+multi-line string"  // ✗ Invalid
 ```
 
 ---

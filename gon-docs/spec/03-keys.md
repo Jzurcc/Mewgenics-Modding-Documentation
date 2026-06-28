@@ -10,7 +10,7 @@ A key is the identifier on the left side of a node mapping.
 - Keys are **case-sensitive** (`Meta` is not the same as `meta`).
 - While colons `:` and equals signs `=` are conventionally omitted, they are explicitly ignored by the parser. A key can be separated from its value by whitespace, colons, or equals signs interchangeably.
 
-### ✅ Valid: Standard Keys
+### ✓ Valid: Standard Keys
 *(Source evidence: `data/abilities/basic_attacks.gon`)*
 ```gon
 template melee_attack
@@ -19,7 +19,7 @@ meta {
 }
 ```
 
-### ✅ Valid: Numeric Keys
+### ✓ Valid: Numeric Keys
 *(Source evidence: `data/tiles.gon`)*
 Keys do not need to start with a letter. Pure numbers are fully valid as keys.
 ```gon
@@ -28,7 +28,7 @@ Keys do not need to start with a letter. Pure numbers are fully valid as keys.
 }
 ```
 
-### ✅ Valid: Quoted Keys (JSON Compatibility)
+### ✓ Valid: Quoted Keys (JSON Compatibility)
 *(Source evidence: Standard JSON structure)*
 While rarely seen in the game's actual data files, keys **can** be quoted to support standard JSON format or to include whitespace within the key name itself.
 ```gon
@@ -41,7 +41,7 @@ While rarely seen in the game's actual data files, keys **can** be quoted to sup
 
 If you define the same key multiple times within the same block, the parser accepts it. The engine will read them sequentially. Depending on the specific property's logic, the engine may **override** the previous value or **accumulate/add** them together.
 
-### ✅ Valid: Duplicate Keys
+### ✓ Valid: Duplicate Keys
 *(Source evidence: `data/difficulties.gon`)*
 ```gon
 0 {
