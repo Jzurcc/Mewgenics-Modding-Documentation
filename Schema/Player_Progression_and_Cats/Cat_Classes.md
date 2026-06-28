@@ -13,12 +13,18 @@ description: "Defines the progression and stats of cat classes."
 Here is a real example of this object being defined in the game's data:
 ```gon
 Hunter {
-    base_stats { 
-        hp 10
-        mana 5
+    meta {
+        name "CAT_CLASS_HUNTER_NAME"
+        description "CAT_CLASS_HUNTER_DESC"
     }
-    level_up_pool HunterAbilities
-    outfit "hunter_hat.png"
+    graphics {
+        palette 50
+        alt_animations [
+            [idle, HunterIdle]
+        ]
+        portrait_face hunter_portrait
+    }
+    attack_pool [ BasicRanged_Hunter ]
 }
 ```
 

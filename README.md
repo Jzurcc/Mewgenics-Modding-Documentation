@@ -5,41 +5,78 @@ description: "Root index for all Mewgenics modding guides, schemas, and specific
 
 # Mewgenics Modding Documentation
 
-Welcome to the Mewgenics modding documentation root. This directory contains all the resources, tutorials, and schemas you need to create custom classes, enemies, items, and abilities for Mewgenics.
+This repository serves as an **unofficial** documentation and reference index for Mewgenics modding. It was originally compiled as a personal study resource, but has been shared to assist others in the modding community. It contains the structural schemas, syntax specifications, and practical guides required to implement custom classes, enemies, items, and abilities.
 
-Because the game uses a highly custom data format and engine architecture, the documentation is split into three main pillars: **Theory**, **Syntax**, and **Practice**.
+> [!WARNING]
+> **Disclaimer:** This documentation is an individual, fan-made resource and is not foolproof. While heavily cross-referenced against the base game files, it may contain incorrect information, outdated assumptions, or incomplete schemas.
+
+Mewgenics utilizes a proprietary engine architecture and data serialization format (GON). To accommodate this, the documentation is divided into three functional areas: **Theory**, **Syntax**, and **Practice**. Of these, the [**`Schema/`**](./Schema/) directory serves as the primary technical reference and is where you will spend the majority of your time during mod development.
+
+---
+
+## Where Should I Start?
+
+Select a path below based on your immediate objective:
+
+### I am new to modding Mewgenics
+- Read the [**Step-by-Step Modding Guide**](./mewgenics/modding-guide.md) to understand project structure and how to load a mod into the runtime.
+- Review the [**GON Format Overview**](./gon-docs/spec/01-overview.md) for a primer on how the engine parses data files.
+
+### I need to implement a new Item or Weapon
+- Consult the [**Items & Equipment Schema**](./Schema/Core_Entities_and_Combat/Items_and_Equipment.md) for the complete list of valid object properties.
+- Reference the [**Items Directory**](./Directory/Items_and_Passives/Items_and_Equipment.md) to analyze how base-game weapons are constructed.
+
+### I need to implement a custom Cat Class or Mutation
+- Consult the [**Cat Classes Schema**](./Schema/Player_Progression_and_Cats/Cat_Classes.md) to understand base stat initialization and level-up pools.
+- Reference the [**Cat Abilities Directory**](./Directory/Abilities/Cat_Abilities.md) to analyze ability balance and targeting logic.
+
+### My mod is crashing or failing to load
+- Refer to the [**GON Error Reference**](./gon-docs/reference/error-reference.md) to diagnose common parsing failures.
+- Review the [**Syntax Cheat Sheet**](./gon-docs/reference/cheat-sheet.md) to verify your file formatting.
+
+---
+
+## The Core Modding Workflow
+
+Mod development in Mewgenics generally follows a strict four-step pipeline:
+
+1. **Conceive:** Identify a base-game object in the [**`Directory/`**](./Directory/) that closely matches your intended logic.
+2. **Define:** Cross-reference that object type in the [**`Schema/`**](./Schema/) to discover which engine properties and hooks are available for modification.
+3. **Format:** Construct your object in a `.gon` file. Ensure compliance with the parser rules outlined in the [**`gon-docs/`**](./gon-docs/).
+4. **Test:** Execute the game, monitor the developer console for parsing errors, and validate the logic in combat.
 
 ---
 
 ## Directory Overview
 
-Here is a breakdown of where to find what you need.
-
 > [!TIP]
-> **Navigation Tip:** When you click into any of the folders below (`Schema/`, `gon-docs/`, or `mewgenics/`), remember to **scroll down** past the file list to read the `README.md` file rendered at the bottom of the page!
+> **Navigation:** When browsing the directories below, refer to the `README.md` index file rendered at the bottom of each folder for context and cross-linking.
 
-| Directory | Focus Area | Description |
+| Directory | Scope | Description |
 |-----------|------------|-------------|
-| [**`Schema/`**](./Schema/) | **Theory (What to write)** | The comprehensive semantic index of the engine. Look here if you want to know what properties (keys) are valid for an Item, Character, or Ability, and how the C++ engine uses them. |
-| [**`gon-docs/`**](./gon-docs/) | **Syntax (How to format)** | The formal specification for the `.gon` (Glaiel Object Notation) text format. Look here if your file is failing to parse or if you need to know the rules for arrays, strings, and objects. |
-| [**`mewgenics/`**](./mewgenics/) | **Practice (How to build)** | Practical modding tutorials. Look here for step-by-step guides on making your first mod, understanding file architecture, and heavily annotated examples of real base-game objects. |
-| [**`Directory/`**](./Directory/) | **Reference (What exists)** | An encyclopedia containing raw `.gon` dumps of all base-game Abilities, Classes, Enemies, Items, and more. Highly useful for referencing existing content or using the `variant_of` key. |
+| [**`Schema/`**](./Schema/) | **Theory (Engine Semantics)** | The exhaustive dictionary of the engine. Defines valid properties, keys, and values for all objects (Items, Characters, Abilities, etc). |
+| [**`gon-docs/`**](./gon-docs/) | **Syntax (File Formatting)** | The formal language specification for Glaiel Object Notation (`.gon`). Contains syntax rules, format comparisons, and troubleshooting. |
+| [**`mewgenics/`**](./mewgenics/) | **Practice (Implementation)** | Practical implementation guides. Includes step-by-step tutorials and annotated case studies of base-game objects. |
+| [**`Directory/`**](./Directory/) | **Reference (Base Game Data)** | An encyclopedia containing raw `.gon` data dumps of all base-game content. Required for referencing existing structure or utilizing the `variant_of` key. |
+
+---
+
+## Tooling & Architecture Principles
+
+Ensure your development environment is properly configured before writing code:
+
+1. **Text Editor:** Use a modern code editor (e.g., [VSCode](https://code.visualstudio.com/), [Notepad++](https://notepad-plus-plus.org/), or [Sublime Text](https://www.sublimetext.com/)). Avoid basic text editors like Windows Notepad.
+2. **Syntax Highlighting:** Install the [Mewgenics GON Extension for VSCode](https://github.com/henriquel1997/gon_vs_syntax_highlighting) to improve readability and catch formatting errors early.
+
+> [!IMPORTANT]
+> **Core Architectural Rules**
+> 1. **GON is JSON-compatible.** Commas, colons, and equals signs are ignored by the parser as syntactic whitespace. Standard JSON syntax is fully valid.
+> 2. **Strict Case Sensitivity.** The engine parses all values as strings. If a schema defines an enum as `Fire`, writing `fire` will result in a silent failure. Always match the casing found in the Reference Directories.
+
+---
 
 ### Deprecated Documentation
 
 | Directory | Description |
 |-----------|-------------|
-| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | The original, legacy documentation files (01-18). These have been superseded by the `Schema/` directory, but are kept here for historical reference. The information within these files may be outdated or inaccurate. |
-
----
-
-## Where should I start?
-
-- **If you are completely new to Mewgenics modding:**  
-  Start with the [**Step-by-Step Modding Guide**](./mewgenics/modding-guide.md).
-
-- **If you want to know what a specific status effect or engine property does:**  
-  Head into the [**Schema Index**](./Schema/README.md) and click on the relevant subsystem.
-
-- **If your game is crashing when reading your mod:**  
-  Check the [**GON Error Reference**](./gon-docs/reference/error-reference.md).
+| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | Legacy documentation files from previous engine versions. Superseded by the `Schema/` directory. Retained solely for historical reference. |
