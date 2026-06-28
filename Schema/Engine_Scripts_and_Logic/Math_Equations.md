@@ -74,6 +74,7 @@ In the Mewgenics engine, many numeric fields can accept an inline math equation 
 | `mov` | |
 | `spd` | |
 | `lvl` | |
+| `aux` | |
 | `health` | |
 | `charge` | |
 | `max_range` | |
