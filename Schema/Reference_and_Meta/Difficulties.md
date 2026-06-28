@@ -47,8 +47,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
-| [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `{ . . . }` |
-| [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 20 | `{ . . . }` |
+| [`hard`](./Miscellaneous.md#object-hard) | Object  | Configuration for hard difficulty, including elite/champ budgets and rewards. | 47 | `{ . . . }` |
+| [`easy`](./Difficulties.md#object-easy) | Object  | Configuration for easy difficulty, including elite/champ budgets and rewards. | 67 | `{ . . . }` |
 
 </details>
 
@@ -60,7 +60,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
-**Total Count:** 21
+**Total Count:** 47
 
 <details>
 <summary><b>Expand</b></summary
@@ -80,7 +80,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Configuration for easy difficulty, including elite/champ budgets and rewards.  
-**Total Count:** 8
+**Total Count:** 67
 
 <details>
 <summary><b>Expand</b></summary

@@ -62,14 +62,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** The catalog ID for the cat's first arm part.  
-**Total Count:** 2
+**Total Count:** 202
 
 <details>
 <summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
+| `frame` | Integer | The sprite frame index to display. | 1272 | `1`<br>`10`<br>`100` |
 
 </details>
 
@@ -81,14 +81,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** The catalog ID for the cat's second arm part.  
-**Total Count:** 2
+**Total Count:** 204
 
 <details>
 <summary><b>Expand</b></summary
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `frame` | Integer | The sprite frame index to display. | 2 | `1`<br>`10`<br>`100` |
+| `frame` | Integer | The sprite frame index to display. | 1272 | `1`<br>`10`<br>`100` |
 
 </details>
 

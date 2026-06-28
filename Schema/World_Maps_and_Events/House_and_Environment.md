@@ -91,39 +91,39 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 681 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
-| [`id`](../Reference_and_Meta/Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 14 | `-1`<br>`0`<br>`1` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`id`](../Reference_and_Meta/Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 42 | `-1`<br>`0`<br>`1` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 17 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
-| `height` | Integer | The height in tiles the target is launched into the air. | 8 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 8 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 8 | `{ . . . }` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 2 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 2 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `height` | Integer | The height in tiles the target is launched into the air. | 13 | `0`<br>`1`<br>`2` |
+| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 11 | `{ . . . }` |
+| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 11 | `{ . . . }` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 11 | `16`<br>`18`<br>`33` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 6 | `attic`<br>`room1`<br>`room2` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 72 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 36 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 | `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
-| [`Default`](../Reference_and_Meta/Miscellaneous.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
-| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 1 | `1.3`<br>`1.35`<br>`1.5` |
-| [`BasementUpgrade`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade2`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade3`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade4`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`Default`](../Reference_and_Meta/Miscellaneous.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 85 | `{ . . . }`<br>`release` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 26 | `1.3`<br>`1.35`<br>`1.5` |
+| [`BasementUpgrade`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 2 | `{ . . . }` |
+| [`BasementUpgrade2`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 2 | `{ . . . }` |
+| [`BasementUpgrade3`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 2 | `{ . . . }` |
+| [`BasementUpgrade4`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 2 | `{ . . . }` |
 | [`BasementUpgrade5`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade5) | Object | An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`Floor1_Large`](../Reference_and_Meta/Miscellaneous.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`Floor1_Small`](../Reference_and_Meta/Miscellaneous.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`House1`](../Reference_and_Meta/Miscellaneous.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House2`](../Reference_and_Meta/Miscellaneous.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House3`](../Reference_and_Meta/Miscellaneous.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`LargeHouse`](../Reference_and_Meta/Miscellaneous.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Large`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Small`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
-| [`MediumHouse`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
-| [`MediumHouse_SmallRoom`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
-| [`SmallAttic`](../Reference_and_Meta/Miscellaneous.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
-| [`SmallHouse_Attic`](../Reference_and_Meta/Miscellaneous.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
-| [`extra_bound_planes`](../Reference_and_Meta/Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
+| [`Floor1_Large`](../Reference_and_Meta/Miscellaneous.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 5 | `{ . . . }` |
+| [`Floor1_Small`](../Reference_and_Meta/Miscellaneous.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 4 | `{ . . . }` |
+| [`House1`](../Reference_and_Meta/Miscellaneous.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 2 | `{ . . . }` |
+| [`House2`](../Reference_and_Meta/Miscellaneous.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 2 | `{ . . . }` |
+| [`House3`](../Reference_and_Meta/Miscellaneous.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 2 | `{ . . . }` |
+| [`LargeHouse`](../Reference_and_Meta/Miscellaneous.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 4 | `{ . . . }` |
+| [`LargeHouse_Floor2Large`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 2 | `{ . . . }` |
+| [`LargeHouse_Floor2Small`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 2 | `{ . . . }` |
+| [`MediumHouse`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 5 | `{ . . . }` |
+| [`MediumHouse_SmallRoom`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 2 | `{ . . . }` |
+| [`SmallAttic`](../Reference_and_Meta/Miscellaneous.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 2 | `{ . . . }` |
+| [`SmallHouse_Attic`](../Reference_and_Meta/Miscellaneous.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 2 | `{ . . . }` |
+| [`extra_bound_planes`](../Reference_and_Meta/Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 2 | `[` |
 | `p` | Array | A coordinate pair [x, y] representing a position. | 1 | `[18 0]`<br>`[35 0]` |
-| [`Thunderstorm`](../Reference_and_Meta/Miscellaneous.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
+| [`Thunderstorm`](../Reference_and_Meta/Miscellaneous.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 10 | `{ . . . }` |
 
 </details>
 
@@ -162,7 +162,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
-**Total Count:** 85
+**Total Count:** 86
 
 <details>
 <summary><b>Expand</b></summary
@@ -213,7 +213,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 46 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 49 | passives<br>class<br>tag |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 43 | Default<br>FormChange<br>Druid |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
@@ -231,7 +231,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** The default form configuration for a unit, containing its standard stats and abilities.  
-**Total Count:** 38
+**Total Count:** 85
 
 <details>
 <summary><b>Expand</b></summary
@@ -240,8 +240,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 3 | `House1`<br>`House2`<br>`House3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -262,7 +262,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 37 | `.1`<br>`.16666666`<br>`.3` |
+| `odds` | Equation | The probability of the effect occurring, expressed as a decimal or percentage. | 50 | `.1`<br>`.16666666`<br>`.3` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 15 | passives<br>class<br>tag |
 
@@ -305,10 +305,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 31 | `1`<br>`10`<br>`2` |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 23 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 7 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
-| [`trap`](../Reference_and_Meta/Enums.md#enum-trap) | Enum | The type of trap to spawn. Specifies which trap template to use. | 2 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
+| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 75 | `1`<br>`10`<br>`2` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 1014 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 131 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| [`trap`](../Reference_and_Meta/Enums.md#enum-trap) | Enum | The type of trap to spawn. Specifies which trap template to use. | 4 | `BearTrap`<br>`LandMine`<br>`WaterKittenTrap` |
 
 </details>
 
@@ -372,9 +372,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 10 | `1.3`<br>`1.35`<br>`1.5` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 72 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 36 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 26 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
 
@@ -395,8 +395,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 10 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 10 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 72 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 36 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 
 </details>
 
@@ -418,7 +418,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | Default<br>FormChange<br>Druid |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 8 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>tag |
 
 </details>
@@ -453,7 +453,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.  
-**Total Count:** 6
+**Total Count:** 21
 
 <details>
 <summary><b>Expand</b></summary
@@ -462,11 +462,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 4 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 17 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 4 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 4 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 4 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
 
@@ -499,7 +499,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.  
-**Total Count:** 4
+**Total Count:** 59
 
 <details>
 <summary><b>Expand</b></summary
@@ -509,7 +509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`follow_character_tag`](../Reference_and_Meta/Enums.md#enum-follow_character_tag) | Enum | Determines which character this visual effect follows. | 2 | `zaratana` |
-| [`position`](../Reference_and_Meta/Arrays.md#array-position) | Array | The world-space coordinates for this object. | 2 | `10.5`<br>`[4.5 4.5]` |
+| [`position`](../Reference_and_Meta/Arrays.md#array-position) | Array | The world-space coordinates for this object. | 36 | `10.5`<br>`[4.5 4.5]` |
 
 </details>
 
@@ -530,9 +530,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
-| `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
+| [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
+| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
+| `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -543,7 +543,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>ApplyPassives</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -553,7 +553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>CharacterTypeGainsStatusAtBattleStart</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -563,7 +563,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Conditional_Corpse</b></summary>
 
-> **Total Count:** 11`damage_instance`<br>`spell`<br>`self_damage`
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -574,7 +574,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Conditional_GoodRoll</b></summary>
 
-> **Total Count:** 0`damage_instance`<br>`spell`<br>`self_damage`
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -584,7 +584,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Conditional_PartyMember</b></summary>
 
-> **Total Count:** 2
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
@@ -595,7 +595,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>RandomStatusFromPool</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
@@ -605,7 +605,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>StatusAllCharactersOnSpawn</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -615,7 +615,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>StatusCharactersOnRoundEnd</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -626,7 +626,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>StatusCharactersOnRoundStart</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -638,7 +638,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>StatusOnBattleEnd</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -653,7 +653,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>extra_statuses</b></summary>
 
-> **Total Count:** 0
+> **Total Count:** 4
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -668,7 +668,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 `damage_instance`<br>`spell`<br>`self_damage`
 
 **Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.  
-**Total Count:** 4
+**Total Count:** 17
 
 <details>
 <summary><b>Expand</b></summary
@@ -677,11 +677,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 4 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 17 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 4 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 4 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 4 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
 
@@ -728,17 +728,17 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Floor1_Large`](../Reference_and_Meta/Arrays.md#array-floor1_large) | Array | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 3 | `[1, 1]` |
-| [`Basement0`](../Reference_and_Meta/Arrays.md#array-basement0) | Array | The grid position [x, y] of the first basement room. | 2 | `[1 -6]` |
-| [`Basement1`](../Reference_and_Meta/Arrays.md#array-basement1) | Array | The grid position [x, y] of the second basement room. | 2 | `[1 -12]` |
-| [`Basement2`](../Reference_and_Meta/Arrays.md#array-basement2) | Array | The grid position [x, y] of the third basement room. | 2 | `[1 -18]` |
-| [`Basement3`](../Reference_and_Meta/Arrays.md#array-basement3) | Array | The grid position [x, y] of the fourth basement room. | 2 | `[1 -24]` |
-| [`Basement4`](../Reference_and_Meta/Arrays.md#array-basement4) | Array | The grid position [x, y] of the fifth basement room. | 2 | `[1 -30]` |
-| [`Floor1_Small`](../Reference_and_Meta/Arrays.md#array-floor1_small) | Array | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 2 | `[18, 1]` |
-| [`LargeAttic`](../Reference_and_Meta/Arrays.md#array-largeattic) | Array | The grid position [x, y] of the large attic room. | 2 | `[0, 17]`<br>`[0, 9]` |
-| [`Floor2_Large`](../Reference_and_Meta/Arrays.md#array-floor2_large) | Array | The grid position [x, y] of the large room on the second floor. | 1 | `[18, 9]` |
-| [`Floor2_Small`](../Reference_and_Meta/Arrays.md#array-floor2_small) | Array | The grid position [x, y] of the small room on the second floor. | 1 | `[1, 9]` |
-| [`SmallAttic`](../Reference_and_Meta/Arrays.md#array-smallattic) | Array | Room definition for the Small Attic, including its dimensions and position. | 1 | `[0, 9]` |
+| [`Floor1_Large`](../Reference_and_Meta/Arrays.md#array-floor1_large) | Array | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 5 | `[1, 1]` |
+| [`Basement0`](../Reference_and_Meta/Arrays.md#array-basement0) | Array | The grid position [x, y] of the first basement room. | 4 | `[1 -6]` |
+| [`Basement1`](../Reference_and_Meta/Arrays.md#array-basement1) | Array | The grid position [x, y] of the second basement room. | 4 | `[1 -12]` |
+| [`Basement2`](../Reference_and_Meta/Arrays.md#array-basement2) | Array | The grid position [x, y] of the third basement room. | 4 | `[1 -18]` |
+| [`Basement3`](../Reference_and_Meta/Arrays.md#array-basement3) | Array | The grid position [x, y] of the fourth basement room. | 4 | `[1 -24]` |
+| [`Basement4`](../Reference_and_Meta/Arrays.md#array-basement4) | Array | The grid position [x, y] of the fifth basement room. | 4 | `[1 -30]` |
+| [`Floor1_Small`](../Reference_and_Meta/Arrays.md#array-floor1_small) | Array | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 4 | `[18, 1]` |
+| [`LargeAttic`](../Reference_and_Meta/Arrays.md#array-largeattic) | Array | The grid position [x, y] of the large attic room. | 3 | `[0, 17]`<br>`[0, 9]` |
+| [`Floor2_Large`](../Reference_and_Meta/Arrays.md#array-floor2_large) | Array | The grid position [x, y] of the large room on the second floor. | 3 | `[18, 9]` |
+| [`Floor2_Small`](../Reference_and_Meta/Arrays.md#array-floor2_small) | Array | The grid position [x, y] of the small room on the second floor. | 3 | `[1, 9]` |
+| [`SmallAttic`](../Reference_and_Meta/Arrays.md#array-smallattic) | Array | Room definition for the Small Attic, including its dimensions and position. | 2 | `[0, 9]` |
 
 </details>
 
@@ -759,11 +759,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 3 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 2 | `2.2`<br>`3.5` |
-| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 2 | `.2`<br>`1`<br>`1.5` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1014 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 3 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 3 | `.2`<br>`1`<br>`1.5` |
 | [`puddle_tile`](../Reference_and_Meta/Arrays.md#array-puddle_tile) | Array | An array specifying the tile types to use for the puddle or volcano. | 2 | `LavaTile`<br>`[BrambleTile TallBrambleTile]` |
-| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
+| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 75 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -797,7 +797,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.  
-**Total Count:** 3
+**Total Count:** 10
 
 <details>
 <summary><b>Expand</b></summary
@@ -806,12 +806,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 4 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 17 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | `lightning_fx` | Boolean | If true, lightning visual effects will occur during this thunderstorm. | 1 | `true` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 4 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 4 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 4 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
 
@@ -832,8 +832,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`faction`](../Reference_and_Meta/Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 1 | `allies`<br>`auto`<br>`birds` |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`faction`](../Reference_and_Meta/Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 570 | `allies`<br>`auto`<br>`birds` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1014 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
 
 </details>
 
@@ -854,8 +854,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 2 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 1 | `1`<br>`10`<br>`2` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum  | Specifies the object or unit to be spawned. | 1014 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`number`](../Reference_and_Meta/Arrays.md#array-number) | Array / Integer | The number of objects to spawn; can be a single integer or an array `[min, max]` for a random range. | 75 | `1`<br>`10`<br>`2` |
 
 </details>
 
@@ -867,7 +867,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.  
-**Total Count:** 2
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary
@@ -876,8 +876,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
+| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1684 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 414 | `[`<br>`[Heat Fire]` |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`false` |
 
 </details>
@@ -899,7 +899,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](../Reference_and_Meta/Miscellaneous.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Big`](../Reference_and_Meta/Miscellaneous.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 59 | `{ . . . }` |
 
 </details>
 
@@ -931,7 +931,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** The number representing the Windy weather intensity or whether it is active.  
-**Total Count:** 2
+**Total Count:** 12
 
 <details>
 <summary><b>Expand</b></summary
@@ -940,11 +940,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
-| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
+| [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 4 | `Rain`<br>`Snow`<br>`Thunderstorm` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 17 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 4 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
+| `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 4 | `20`<br>`5` |
+| [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum | Determines which skybox background frame is displayed for this weather. | 4 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 
 </details>
 
@@ -999,7 +999,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1008,8 +1008,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1021,7 +1021,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1030,8 +1030,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1043,7 +1043,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1052,8 +1052,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1065,7 +1065,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1074,8 +1074,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1096,8 +1096,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1109,7 +1109,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.  
-**Total Count:** 1
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary
@@ -1117,7 +1117,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>tag |
-| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
+| [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 
 </details>
 
@@ -1138,7 +1138,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 1 | `0`<br>`1`<br>`10` |
+| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer  | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 99 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -1150,7 +1150,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
-**Total Count:** 1
+**Total Count:** 5
 
 <details>
 <summary><b>Expand</b></summary
@@ -1159,11 +1159,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
+| `height` | Integer | The height in tiles the target is launched into the air. | 13 | `0`<br>`1`<br>`2` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 6 | `attic`<br>`room1`<br>`room2` |
+| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 11 | `{ . . . }` |
+| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 11 | `{ . . . }` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 11 | `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1175,7 +1175,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
-**Total Count:** 1
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary
@@ -1184,11 +1184,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
+| `height` | Integer | The height in tiles the target is launched into the air. | 13 | `0`<br>`1`<br>`2` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 6 | `attic`<br>`room1`<br>`room2` |
+| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 11 | `{ . . . }` |
+| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 11 | `{ . . . }` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 11 | `16`<br>`18`<br>`33` |
 
 </details>
 
@@ -1200,7 +1200,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1209,12 +1209,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
-| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
-| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
-| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
-| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
+| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 3 | `{ . . . }` |
+| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 3 | `large`<br>`small` |
+| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 3 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 3 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 3 | `{ . . . }` |
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 3 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -1226,7 +1226,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1235,12 +1235,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
-| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
-| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
-| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
-| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
+| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 3 | `{ . . . }` |
+| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 3 | `large`<br>`small` |
+| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 3 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 3 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 3 | `{ . . . }` |
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 3 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -1252,7 +1252,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1261,12 +1261,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
-| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
-| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
-| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
-| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
+| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 3 | `{ . . . }` |
+| [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 3 | `large`<br>`small` |
+| [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 3 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
+| [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 3 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
+| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 3 | `{ . . . }` |
+| `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 3 | `.6`<br>`.7`<br>`.8` |
 
 </details>
 
@@ -1278,7 +1278,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.  
-**Total Count:** 1
+**Total Count:** 4
 
 <details>
 <summary><b>Expand</b></summary
@@ -1287,8 +1287,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 3 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -1300,7 +1300,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Large room.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1309,8 +1309,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1322,7 +1322,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Small room.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1331,8 +1331,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1344,7 +1344,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.  
-**Total Count:** 1
+**Total Count:** 5
 
 <details>
 <summary><b>Expand</b></summary
@@ -1353,8 +1353,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 1 | `House1`<br>`House2`<br>`House3` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`set_house`](../Reference_and_Meta/Enums.md#enum-set_house) | Enum | Specifies which house layout to use for this upgrade. | 3 | `House1`<br>`House2`<br>`House3` |
 
 </details>
 
@@ -1366,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An upgrade that requires MediumHouse and unlocks the Floor1_Small room.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1375,8 +1375,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1388,7 +1388,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Room definition for the Small Attic, including its dimensions and position.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1397,11 +1397,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`id`](../Reference_and_Meta/Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
-| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
-| `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
-| [`extra_bound_planes`](../Reference_and_Meta/Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
+| `height` | Integer | The height in tiles the target is launched into the air. | 13 | `0`<br>`1`<br>`2` |
+| [`id`](../Reference_and_Meta/Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 42 | `-1`<br>`0`<br>`1` |
+| [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 6 | `attic`<br>`room1`<br>`room2` |
+| `width` | Integer | The number of tiles the room spans horizontally. | 11 | `16`<br>`18`<br>`33` |
+| [`extra_bound_planes`](../Reference_and_Meta/Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 2 | `[` |
 | `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 1 | `[-1 -2]`<br>`[1 -2]` |
 
 </details>
@@ -1414,7 +1414,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Upgrade that unlocks the Attic room in a small house.  
-**Total Count:** 1
+**Total Count:** 2
 
 <details>
 <summary><b>Expand</b></summary
@@ -1423,8 +1423,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 1 | `Attic`<br>`Basement0`<br>`Basement1` |
+| [`prereq`](../Reference_and_Meta/Enums.md#enum-prereq) | Enum | Determines which upgrade must be purchased before this upgrade becomes available. | 11 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`unlock_room`](../Reference_and_Meta/Enums.md#enum-unlock_room) | Enum | Specifies the room that is unlocked by purchasing this upgrade. | 10 | `Attic`<br>`Basement0`<br>`Basement1` |
 
 </details>
 
@@ -1445,9 +1445,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 1 | `2.2`<br>`3.5` |
-| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 1 | `.2`<br>`1`<br>`1.5` |
-| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 1 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
+| `max_radius` | Float | The maximum radius of the spawned puddle or volcano in tiles. | 3 | `2.2`<br>`3.5` |
+| `min_radius` | Float | The minimum radius of the spawned puddle or volcano in tiles. | 3 | `.2`<br>`1`<br>`1.5` |
+| [`tile`](../Reference_and_Meta/Arrays.md#array-tile) | Array / Enum  | Specifies the tile type(s) to change to, either a single tile string or an array of tiles. | 131 | `BrambleTile`<br>`CreepTile`<br>`DirtTile` |
 
 </details>
 

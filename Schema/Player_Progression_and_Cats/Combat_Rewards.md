@@ -409,7 +409,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An object defining the properties of a boss encounter, such as rewards or level.  
-**Total Count:** 33
+**Total Count:** 213
 
 <details>
 <summary><b>Expand</b></summary
@@ -418,10 +418,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
-| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Float | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 81 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 48 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Float | The probability of dropping an item. | 48 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -433,7 +433,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
-**Total Count:** 21
+**Total Count:** 47
 
 <details>
 <summary><b>Expand</b></summary
@@ -442,10 +442,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
-| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 81 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 48 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 48 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -457,7 +457,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances.  
-**Total Count:** 13
+**Total Count:** 54
 
 <details>
 <summary><b>Expand</b></summary
@@ -466,10 +466,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
-| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 81 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 48 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 48 | `.25`<br>`.5`<br>`1` |
 
 </details>
 
@@ -481,7 +481,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 **Definition:** An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances.  
-**Total Count:** 12
+**Total Count:** 41
 
 <details>
 <summary><b>Expand</b></summary
@@ -490,10 +490,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 3 | `1`<br>`2`<br>`25` |
-| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 3 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
-| `consumable_chance` | Equation | The probability of dropping a consumable. | 3 | `.25`<br>`.3`<br>`.5` |
-| `item_chance` | Equation | The probability of dropping an item. | 3 | `.25`<br>`.5`<br>`1` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| [`food`](../Reference_and_Meta/Arrays.md#array-food) | Array | The range [min, max] of food items dropped. | 81 | `[1 3]`<br>`[10 15]`<br>`[2 5]` |
+| `consumable_chance` | Equation | The probability of dropping a consumable. | 48 | `.25`<br>`.3`<br>`.5` |
+| `item_chance` | Equation | The probability of dropping an item. | 48 | `.25`<br>`.5`<br>`1` |
 
 </details>
 

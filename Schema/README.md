@@ -19,7 +19,7 @@ Throughout the schema markdown files, you will encounter a standard table format
 
 | Property Key | Inferred Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
-| `base_health` | Integer | The base HP of the unit. | 45 |
+| `base_health` | Integer | The base HP of the unit. | 2 |
 
 > [!IMPORTANT]
 > The **Inferred Type** listed in these tables describes the C++ engine's internal cast target, **not** a rigid GON syntax rule.

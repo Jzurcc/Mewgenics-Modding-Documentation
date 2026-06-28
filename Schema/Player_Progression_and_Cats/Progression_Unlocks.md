@@ -46,18 +46,18 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 883 | `common`<br>`rare`<br>`cha` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 155 | Default<br>FormChange<br>Druid |
 | [`popup`](./Progression_Unlocks.md#object-popup) | Object | An object defining a popup notification with prompt and optional unlock. | 266 | `{ . . . }` |
-| [`intro`](../Reference_and_Meta/Arrays.md#array-intro) | Array | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 239 | `[PersuasionDevice]` |
+| [`intro`](../Reference_and_Meta/Arrays.md#array-intro) | Array | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 220 | `[PersuasionDevice]` |
 | [`complete_chapter_with_class`](../Reference_and_Meta/Arrays.md#array-complete_chapter_with_class) | Array | An array specifying [chapter, class] that must be completed to unlock this reward. | 129 | `[boneyard Butcher]`<br>`[boneyard Colorless]`<br>`[boneyard Druid]` |
 | [`unlock_item_immediate`](../Reference_and_Meta/Enums.md#enum-unlock_item_immediate) | Enum | Specifies which item is unlocked immediately when this unlock condition is met. | 127 | `AnointingOil`<br>`BagOfBags`<br>`BagOfSeeds` |
-| [`trigger_npc_sequence`](../Reference_and_Meta/Enums.md#enum-trigger_npc_sequence) | Enum | The name of an NPC dialogue sequence to trigger. | 53 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
+| [`trigger_npc_sequence`](../Reference_and_Meta/Enums.md#enum-trigger_npc_sequence) | Enum | The name of an NPC dialogue sequence to trigger. | 55 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 | [`beat_house_boss`](../Reference_and_Meta/Enums.md#enum-beat_house_boss) | Enum | Specifies which house boss (or 'any') must be defeated to fulfill this unlock condition. | 48 | `any`<br>`guillotina_1`<br>`guillotina_2` |
-| [`complete_chapter`](../Reference_and_Meta/Enums.md#enum-complete_chapter) | Enum | Specifies which chapter to mark as completed when this event triggers. | 37 | `alley`<br>`boneyard`<br>`bunker` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 36 | `0`<br>`1`<br>`2` |
-| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 33 | `1`<br>`2`<br>`20` |
+| [`complete_chapter`](../Reference_and_Meta/Enums.md#enum-complete_chapter) | Enum | Specifies which chapter to mark as completed when this event triggers. | 54 | `alley`<br>`boneyard`<br>`bunker` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
 | [`beat_chapter_boss`](../Reference_and_Meta/Enums.md#enum-beat_chapter_boss) | Enum | Specifies the chapter boss that must be defeated to trigger the unlock. | 31 | `alley`<br>`boneyard`<br>`bunker` |
 | [`unlock_song`](../Reference_and_Meta/Enums.md#enum-unlock_song) | Enum | Specifies the song that is unlocked. | 29 | `alone_in_the_dark`<br>`angel_wings`<br>`bolt_of_lightning` |
-| [`unlock_ability`](../Reference_and_Meta/Enums.md#enum-unlock_ability) | Enum | Specifies the ability that is unlocked. | 28 | `BallOfSpiders`<br>`Bump`<br>`Ethereal` |
-| [`unlock_passive`](../Reference_and_Meta/Enums.md#enum-unlock_passive) | Enum | Specifies the passive ability that is unlocked. | 28 | `AlphaStrike`<br>`ArmorSpecialist`<br>`Bouncer` |
+| [`unlock_ability`](../Reference_and_Meta/Enums.md#enum-unlock_ability) | Enum | Specifies the ability that is unlocked. | 31 | `BallOfSpiders`<br>`Bump`<br>`Ethereal` |
+| [`unlock_passive`](../Reference_and_Meta/Enums.md#enum-unlock_passive) | Enum | Specifies the passive ability that is unlocked. | 29 | `AlphaStrike`<br>`ArmorSpecialist`<br>`Bouncer` |
 | [`set_mapgen_flag`](../Reference_and_Meta/Enums.md#enum-set_mapgen_flag) | Enum | The name of a map generation flag to set when this event triggers. | 23 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 | [`complete_checklist_with_class`](../Reference_and_Meta/Enums.md#enum-complete_checklist_with_class) | Enum | Specifies the class required to complete the checklist for this unlock. | 14 | `Butcher`<br>`Colorless`<br>`Druid` |
 | [`unlock_quest_item`](../Reference_and_Meta/Enums.md#enum-unlock_quest_item) | Enum | Specifies the quest item that is unlocked. | 13 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`GuillotinasHead` |
@@ -66,19 +66,19 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`complete_act_difficulty`](../Reference_and_Meta/Arrays.md#array-complete_act_difficulty) | Array | An array containing the act number and difficulty level that must be completed. | 9 | `[1 0]`<br>`[1 1]`<br>`[1 2]` |
 | [`unlock_act_difficulty`](../Reference_and_Meta/Arrays.md#array-unlock_act_difficulty) | Array | An array containing the act number and difficulty level to unlock. | 9 | `[1 1]`<br>`[1 2]`<br>`[1 3]` |
 | [`queue_cutscene_immediate`](../Reference_and_Meta/Enums.md#enum-queue_cutscene_immediate) | Enum | Determines which cutscene to play immediately upon queueing. | 8 | `caves_intro`<br>`core_intro`<br>`desert_intro` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 6 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 | [`unlock_boss`](../Reference_and_Meta/Enums.md#enum-unlock_boss) | Enum | Determines which boss encounter to unlock. | 6 | `bumblefoot`<br>`gambit`<br>`infestedduo` |
-| [`preempt_npc_sequence`](../Reference_and_Meta/Enums.md#enum-preempt_npc_sequence) | Enum | Specifies the NPC sequence to run before the current one. | 4 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_amnesia` |
+| [`preempt_npc_sequence`](../Reference_and_Meta/Enums.md#enum-preempt_npc_sequence) | Enum | Specifies the NPC sequence to run before the current one. | 6 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_amnesia` |
 | [`fail_item_quest`](../Reference_and_Meta/Enums.md#enum-fail_item_quest) | Enum | Determines which item quest is marked as failed. | 4 | `JarOfChaos`<br>`JarOfRadiatedBlood`<br>`JarOfRadiation` |
 | `fully_complete_difficulty` | Integer | The difficulty level required to be fully completed. | 4 | `0`<br>`1`<br>`2` |
 | [`post_combat_cutscene`](../Reference_and_Meta/Enums.md#enum-post_combat_cutscene) | Enum | Determines which cutscene to play after a combat encounter. | 4 | `obelisk1_core`<br>`obelisk1_moon`<br>`obelisk2_core` |
 | [`unlock_npc_tomorrow`](../Reference_and_Meta/Enums.md#enum-unlock_npc_tomorrow) | Enum | Specifies the NPC that will become available to interact with the next in-game day. | 4 | `beanies`<br>`jack`<br>`organgrinder` |
 | [`visit_chapter`](../Reference_and_Meta/Enums.md#enum-visit_chapter) | Enum | Specifies the chapter area that the player must visit to trigger an event. | 4 | `dimensionx`<br>`future`<br>`iceage` |
-| [`trigger_npc_sequence_tomorrow`](../Reference_and_Meta/Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum | Determines which NPC sequence to schedule for the next day. | 3 | `butch_boneyard_intro`<br>`frank_caves_intro`<br>`jack_desert_intro` |
+| [`trigger_npc_sequence_tomorrow`](../Reference_and_Meta/Enums.md#enum-trigger_npc_sequence_tomorrow) | Enum | Determines which NPC sequence to schedule for the next day. | 4 | `butch_boneyard_intro`<br>`frank_caves_intro`<br>`jack_desert_intro` |
 | `requires_monoclass_run` | Boolean | If true, this unlock requires the player to have completed a monoclass run. | 3 | `true` |
 | [`requires_unlocked_npc`](../Reference_and_Meta/Enums.md#enum-requires_unlocked_npc) | Enum | Specifies the NPC that must be unlocked before this event or unlock can occur. | 3 | `frank`<br>`jack`<br>`tracy` |
 | [`complete_chapters`](../Reference_and_Meta/Arrays.md#array-complete_chapters) | Array | An array of chapter names that must be completed to unlock this entity. | 3 | `[caves boneyard]`<br>`[core moon]` |
-| [`reset_npc_sequence`](../Reference_and_Meta/Enums.md#enum-reset_npc_sequence) | Enum | Specifies the NPC sequence to reset for re-triggering. | 2 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_begin` |
+| [`reset_npc_sequence`](../Reference_and_Meta/Enums.md#enum-reset_npc_sequence) | Enum | Specifies the NPC sequence to reset for re-triggering. | 8 | `beanies_bombquest_2`<br>`beanies_bombquest_3`<br>`beanies_bombquest_begin` |
 | [`beanies_quests_intro`](./Progression_Unlocks.md#object-beanies_quests_intro) | Object | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 | `{ . . . }` |
 | [`beanies_quests_repeat`](./Progression_Unlocks.md#object-beanies_quests_repeat) | Object | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 | `{ . . . }` |
 | [`complete_adventure`](../Reference_and_Meta/Enums.md#enum-complete_adventure) | Enum | Specifies the location requirement (e.g., 'anywhere') for completing an adventure. | 2 | `anywhere` |
@@ -159,7 +159,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `requires_hard_path` | Boolean | If true, this unlock requires the player to be on the hard path. | 1 | `true` |
 | [`reset_unlock`](../Reference_and_Meta/Enums.md#enum-reset_unlock) | Enum | Specifies the unlock key to reset upon completing this unlock chain. | 1 | `nuke_quest_begin` |
 | [`unlock_item`](../Reference_and_Meta/Enums.md#enum-unlock_item) | Enum | The name of the item unlocked by this event. | 1 | `MomsKnife` |
-| [`main_pool`](../Reference_and_Meta/Arrays.md#array-main_pool) | Array | A list of quest IDs or objects that form the primary quest pool for a beanies quest node. | 1 | `[` |
+| [`main_pool`](../Reference_and_Meta/Arrays.md#array-main_pool) | Array | A list of quest IDs or objects that form the primary quest pool for a beanies quest node. | 2 | `[` |
 
 </details>
 
@@ -181,8 +181,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 266 | `common`<br>`rare`<br>`cha` |
-| `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 221 | `false`<br>`true` |
-| `frame` | Integer | The sprite frame index to display. | 159 | `1`<br>`10`<br>`100` |
+| `immediate` | Boolean | If true, the action (e.g., attack) occurs instantly without waiting for the unit's turn in the initiative order. | 231 | `false`<br>`true` |
+| `frame` | Integer | The sprite frame index to display. | 1272 | `1`<br>`10`<br>`100` |
 
 </details>
 
@@ -203,8 +203,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 22 | `{ . . . }` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 22 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1903 | `{ . . . }` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 836 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
 
@@ -225,9 +225,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`generate_beanies_quest`](../Reference_and_Meta/Enums.md#enum-generate_beanies_quest) | Enum | Specifies which quest pool (e.g., 'main_pool', 'intro') to generate a quest from. | 1 | `intro`<br>`main_pool` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`generate_beanies_quest`](../Reference_and_Meta/Enums.md#enum-generate_beanies_quest) | Enum | Specifies which quest pool (e.g., 'main_pool', 'intro') to generate a quest from. | 2 | `intro`<br>`main_pool` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -248,11 +248,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`generate_beanies_quest`](../Reference_and_Meta/Enums.md#enum-generate_beanies_quest) | Enum | Specifies which quest pool (e.g., 'main_pool', 'intro') to generate a quest from. | 1 | `intro`<br>`main_pool` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`generate_beanies_quest`](../Reference_and_Meta/Enums.md#enum-generate_beanies_quest) | Enum | Specifies which quest pool (e.g., 'main_pool', 'intro') to generate a quest from. | 2 | `intro`<br>`main_pool` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -273,10 +273,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`gift_item_from_pool`](../Reference_and_Meta/Enums.md#enum-gift_item_from_pool) | Enum | Specifies the item pool from which to gift an item. | 1 | `parasites` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`gift_item_from_pool`](../Reference_and_Meta/Enums.md#enum-gift_item_from_pool) | Enum | Specifies the item pool from which to gift an item. | 2 | `parasites` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -297,11 +297,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`gift_item_from_pool`](../Reference_and_Meta/Enums.md#enum-gift_item_from_pool) | Enum | Specifies the item pool from which to gift an item. | 1 | `parasites` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`gift_item_from_pool`](../Reference_and_Meta/Enums.md#enum-gift_item_from_pool) | Enum | Specifies the item pool from which to gift an item. | 2 | `parasites` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -322,9 +322,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 6 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -345,9 +345,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 6 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -368,9 +368,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 6 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -391,9 +391,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 1 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| [`house_upgrade`](../Reference_and_Meta/Enums.md#enum-house_upgrade) | Enum | Specifies the name of the house upgrade to apply. | 6 | `BasementUpgrade`<br>`BasementUpgrade2`<br>`BasementUpgrade3` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -414,10 +414,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -438,11 +438,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -463,9 +463,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -486,9 +486,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -509,9 +509,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -532,9 +532,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -555,10 +555,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 1 | `TinksBow`<br>`disorder_needle` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 3 | `TinksBow`<br>`disorder_needle` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -579,11 +579,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 1 | `TinksBow`<br>`disorder_needle` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 3 | `TinksBow`<br>`disorder_needle` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -604,9 +604,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -627,9 +627,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -650,9 +650,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -673,9 +673,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -696,9 +696,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -719,9 +719,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -742,9 +742,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
 
 </details>
 
@@ -765,9 +765,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
 
 </details>
 
@@ -788,9 +788,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -811,9 +811,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -834,9 +834,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -857,10 +857,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 1 | `1`<br>`2`<br>`25` |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -881,11 +881,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 1 | `1`<br>`2`<br>`25` |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `coins` | Integer | The amount of coins required to use this ability or obtained from this source. | 71 | `1`<br>`2`<br>`25` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -906,9 +906,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 1 | `TinksBow`<br>`disorder_needle` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`gift_item`](../Reference_and_Meta/Enums.md#enum-gift_item) | Enum | The identifier of the item to gift to the player. | 3 | `TinksBow`<br>`disorder_needle` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -929,9 +929,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -952,9 +952,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -975,9 +975,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `set_savefile_flag` | String | Determines which save file flag to set. | 1 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `set_savefile_flag` | String | Determines which save file flag to set. | 12 | `AlienInvasionUnlocked`<br>`HauntedNightUnlocked`<br>`PlotFlag_Beanies_Homeless` |
 
 </details>
 
@@ -998,11 +998,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1023,11 +1023,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1048,11 +1048,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1073,11 +1073,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1098,11 +1098,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1123,11 +1123,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1148,11 +1148,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1173,11 +1173,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1198,11 +1198,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1223,11 +1223,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1248,11 +1248,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1273,11 +1273,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1298,11 +1298,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1323,11 +1323,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1348,11 +1348,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1373,11 +1373,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1398,11 +1398,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1423,11 +1423,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1448,11 +1448,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1473,11 +1473,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `shop_level_up` | Integer | The level of the shop upgrade granted. | 1 | `1` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `shop_level_up` | Integer | The level of the shop upgrade granted. | 31 | `1` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1498,11 +1498,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1523,12 +1523,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 1 | `5` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 1 | `{ . . . }` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| `required_age` | Integer | The minimum age the player character must be to access this interaction or upgrade. | 22 | `5` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| [`tracy_special_item`](./Progression_Unlocks.md#object-tracy_special_item) | Object | An object defining a special item offered by Tracy, including its type, cost, and associated reward text. | 22 | `{ . . . }` |
 
 </details>
 
@@ -1549,11 +1549,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1574,11 +1574,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1599,11 +1599,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1624,11 +1624,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1649,11 +1649,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1674,11 +1674,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1699,11 +1699,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
-| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 1 | `1` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `storage_expansion` | Integer | The number of additional storage slots granted by this upgrade. | 7 | `1` |
 
 </details>
 
@@ -1724,14 +1724,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 1 | `0`<br>`1`<br>`2` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -1752,14 +1752,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 1 | `0`<br>`1`<br>`2` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -1780,14 +1780,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 1 | `0`<br>`1`<br>`2` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -1808,13 +1808,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 1 | `0`<br>`1`<br>`2` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -1835,14 +1835,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `favor` | Integer | The amount of favor points awarded or spent. | 1 | `1`<br>`10`<br>`100` |
-| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 1 | `max` |
-| `rep_reward_count` | Integer | The number of reputation rewards granted. | 1 | `1` |
-| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
-| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`1`<br>`2` |
-| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 1 | `0`<br>`2`<br>`3` |
-| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 1 | `0`<br>`1`<br>`2` |
-| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 1 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
+| `favor` | Integer | The amount of favor points awarded or spent. | 67 | `1`<br>`10`<br>`100` |
+| [`level_display`](../Reference_and_Meta/Enums.md#enum-level_display) | Enum | Specifies how to display the current level of a repeating upgrade (e.g., 'max'). | 17 | `max` |
+| `rep_reward_count` | Integer | The number of reputation rewards granted. | 7 | `1` |
+| `repeat` | Integer | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 44 | `1`<br>`2`<br>`20` |
+| `required_act` | Integer | The act number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`1`<br>`2` |
+| `required_chapter` | Integer | The chapter number that must be reached before this upgrade or interaction becomes available. | 12 | `0`<br>`2`<br>`3` |
+| `required_difficulty` | Integer | The minimum difficulty level required to access this content (0 = easy, 1 = normal, etc.). | 41 | `0`<br>`1`<br>`2` |
+| [`reward_text`](../Assets_and_Localization/Strings.md#string-reward_text) | String | A localization key for the text describing the reward. | 66 | `"FAVOR_BEANIES_INTRO"`<br>`"FAVOR_BEANIES_REPEAT"`<br>`"FAVOR_BUTCH_UPGRADE"` |
 
 </details>
 
@@ -1863,15 +1863,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `boneyard` | Integer | Specifies the name, map flag, or connection for the Boneyard area. | 1 | `200`<br>`AREA_NAME_BONEYARD`<br>`[junkyard alley]` |
-| `caves` | Integer | Specifies the name, map flag, or connection for the Caves area. | 1 | `200`<br>`AREA_NAME_CAVES`<br>`[sewers alley]` |
-| `core` | Integer | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
-| `dimensionx` | Integer | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
-| `endoftime` | Integer | Configures various attributes of the End of Time area, depending on context. | 1 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
-| `jurassic` | Integer | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
-| `meatworld` | Integer | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 1 | `300`<br>`AREA_NAME_MEATWORLD`<br>`[caves boneyard junkyard sewers alley]` |
-| `moon` | Integer | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
-| `theend` | Integer | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
+| `boneyard` | Integer | Specifies the name, map flag, or connection for the Boneyard area. | 45 | `200`<br>`AREA_NAME_BONEYARD`<br>`[junkyard alley]` |
+| `caves` | Integer | Specifies the name, map flag, or connection for the Caves area. | 42 | `200`<br>`AREA_NAME_CAVES`<br>`[sewers alley]` |
+| `core` | Integer | Specifies the name, map flag, or connection for the Core area. | 45 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
+| `dimensionx` | Integer | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 45 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
+| `endoftime` | Integer | Configures various attributes of the End of Time area, depending on context. | 45 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
+| `jurassic` | Integer | Specifies the name, map flag, or connection for the Jurassic area. | 56 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
+| `meatworld` | Integer | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 45 | `300`<br>`AREA_NAME_MEATWORLD`<br>`[caves boneyard junkyard sewers alley]` |
+| `moon` | Integer | Specifies the name, map flag, or connection for the Moon area. | 45 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
+| `theend` | Integer | Specifies the name, map flag, or connection for The End area. | 51 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
 
 </details>
 
@@ -1892,12 +1892,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`endoftime`](../Reference_and_Meta/Enums.md#enum-endoftime) | Enum | Configures various attributes of the End of Time area, depending on context. | 1 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
-| [`core`](../Reference_and_Meta/Enums.md#enum-core) | Enum | Specifies the name, map flag, or connection for the Core area. | 1 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
-| [`dimensionx`](../Reference_and_Meta/Enums.md#enum-dimensionx) | Enum | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 1 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
-| [`jurassic`](../Reference_and_Meta/Enums.md#enum-jurassic) | Enum | Specifies the name, map flag, or connection for the Jurassic area. | 1 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
-| [`moon`](../Reference_and_Meta/Enums.md#enum-moon) | Enum | Specifies the name, map flag, or connection for the Moon area. | 1 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
-| [`theend`](../Reference_and_Meta/Enums.md#enum-theend) | Enum | Specifies the name, map flag, or connection for The End area. | 1 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
+| [`endoftime`](../Reference_and_Meta/Enums.md#enum-endoftime) | Enum | Configures various attributes of the End of Time area, depending on context. | 45 | `500`<br>`AREA_NAME_ENDOFTIME`<br>`[jurassic theend iceage future lab]` |
+| [`core`](../Reference_and_Meta/Enums.md#enum-core) | Enum | Specifies the name, map flag, or connection for the Core area. | 45 | `300`<br>`AREA_NAME_CORE`<br>`[bunker desert]` |
+| [`dimensionx`](../Reference_and_Meta/Enums.md#enum-dimensionx) | Enum | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 45 | `400`<br>`AREA_NAME_DIMENSIONX`<br>`[moon core bunker crater desert]` |
+| [`jurassic`](../Reference_and_Meta/Enums.md#enum-jurassic) | Enum | Specifies the name, map flag, or connection for the Jurassic area. | 56 | `400`<br>`AREA_NAME_JURASSIC`<br>`[iceage lab]` |
+| [`moon`](../Reference_and_Meta/Enums.md#enum-moon) | Enum | Specifies the name, map flag, or connection for the Moon area. | 45 | `300`<br>`AREA_NAME_MOON`<br>`[crater desert]` |
+| [`theend`](../Reference_and_Meta/Enums.md#enum-theend) | Enum | Specifies the name, map flag, or connection for The End area. | 51 | `400`<br>`AREA_NAME_THEEND`<br>`[future lab]` |
 
 </details>
 
