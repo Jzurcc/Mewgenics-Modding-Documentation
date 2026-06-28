@@ -29,6 +29,7 @@ If you ever need to see the actual code for a specific item, enemy, or passive f
 - [`House_and_Environment.md`](./House_and_Environment.md)
 - [`Injuries.md`](./Injuries.md)
 - [`Item_Pools.md`](./Item_Pools.md)
+- [`Item_Set_Bonuses.md`](./Item_Set_Bonuses.md)
 - [`Items_and_Equipment.md`](./Items_and_Equipment.md)
 - [`Map_Generation_and_Routing.md`](./Map_Generation_and_Routing.md)
 - [`Mutations.md`](./Mutations.md)
@@ -42,4 +43,5 @@ If you ever need to see the actual code for a specific item, enemy, or passive f
 - [`Special_Strays.md`](./Special_Strays.md)
 - [`Status_Effect_Keywords.md`](./Status_Effect_Keywords.md)
 - [`Statuses.md`](./Statuses.md)
+- [`Team_Names.md`](./Team_Names.md)
 - [`Tutorial_Cats.md`](./Tutorial_Cats.md)
