@@ -108,4 +108,4 @@ The schema documentation is divided logically by subsystem. Click on any file to
 | [Miscellaneous.md](./Reference_and_Meta/Miscellaneous.md) | Assorted properties lacking clear subsystem alignment. |
 
 > [!TIP]
-> The exact boundaries between these schema files often blur (e.g., an Ability might trigger an Event). If you cannot find a property in the expected file, try checking the **Reference & Meta** subsystem, specifically `Miscellaneous.md` or `Engine_Uncategorized_Resources.md`.
+> The exact boundaries between these schema files often blur. If you cannot find a property in the expected file, try checking the **Reference & Meta** subsystem, specifically `Miscellaneous.md` or `Engine_Uncategorized_Resources.md`.
