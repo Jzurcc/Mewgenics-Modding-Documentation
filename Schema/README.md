@@ -1,73 +1,136 @@
+---
+title: "Mewgenics Object Schema"
+description: "Semantic documentation index for Mewgenics .gon data files"
+---
+
 # Mewgenics Object Schema
 
 > **What is this folder?**
-> This folder contains **semantic documentation** for the `.gon` files used in Mewgenics. It describes what keys are valid inside specific game objects (like Abilities, Characters, Items) and what the engine expects those keys to mean.
+> This directory serves as the **semantic reference index** for the `.gon` files used in Mewgenics. It describes exactly what properties (keys) are valid inside specific game objects (e.g., Abilities, Characters, Items) and how the C++ game engine interprets them at runtime.
 
-For syntax rules and formatting, refer to the [`gon-docs/`](../gon-docs/) directory.  
-For practical tutorials on creating mods, refer to the [`mewgenics/`](../mewgenics/) directory.
+For rules regarding string parsing, arrays, and structural syntax, refer to the [GON Syntax Documentation](../gon-docs/README.md).  
+For practical step-by-step tutorials on creating and injecting mods, refer to the [Practical Modding Guides](../mewgenics/README.md).
 
 ---
 
+## 1. Data Pipeline Overview
 
-## How to Read These Files
+To build robust mods, it is essential to understand how Mewgenics reads data. The `.gon` (Glaiel Object Notation) format does not have strict internal types—everything is parsed as text. The engine is responsible for casting these strings into concrete C++ variables.
 
-The documentation in this folder is divided into three main types of files:
+```mermaid
+flowchart LR
+    A[Mod .gon File<br/>(Raw Text)] --> B[GON Parser]
+    B --> C(Global String Dictionary)
+    C --> D{Semantic Evaluator<br/>(Engine)}
+    D -- "Expects number" --> E[Float/Int Cast]
+    D -- "Expects enum" --> F[Enum Matching]
+    D -- "Expects formula" --> G[Math Equation Parsing]
 
-### 1. Schema Files
-Files like `Abilities_and_Spells.md`, `Characters_and_Bosses.md`, and `Events_and_Encounters.md` map out the specific properties allowed for different objects.
+    style A fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
+    style B fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
+    style C fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
+    style D fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
+    style E fill:#161b22,stroke:#30363d,color:#e6edf3
+    style F fill:#161b22,stroke:#30363d,color:#e6edf3
+    style G fill:#161b22,stroke:#30363d,color:#e6edf3
+```
 
-They use tables structured like this:
+Because of this architecture, providing a valid string format (like `"1.5"`) to a property that the engine expects to be an Enum (like `"melee_attack"`) will not cause a parser error—it will simply be ignored or cause undefined runtime behavior when the engine tries to cast it. The files in this schema define those *engine expectations*.
+
+---
+
+## 2. Type Reference Guidelines
+
+Throughout the schema markdown files, you will encounter a standard table format detailing the properties of an object:
+
 | Property Key | Inferred Type | Definition | Count |
 | :--- | :--- | :--- | :--- |
+| `base_health` | Integer | The base HP of the unit. | 45 |
 
-- **Property Key:** The exact string used as the key in the `.gon` file.
-- **Inferred Type:** How the *Mewgenics engine* interprets the value. (See the Type Reference Table below).
-- **Definition:** Explanation of what the key does in the engine.
-- **Count:** How many `.gon` files in the base game use this key.
+> [!IMPORTANT]
+> The **Inferred Type** listed in these tables describes the C++ engine's internal cast target, **not** a rigid GON syntax rule.
 
-### 2. Enums (`Enums.md`)
-Some keys expect a specific identifier from a fixed list (an Enum). `Enums.md` lists the confirmed valid string values for every enum-type key.
-- Values marked as "Confirmed" mean they appear in the base game files.
-- The engine may support additional values that aren't used in the vanilla game; you'll need to test these to discover them.
-
----
-
-
-## Type Reference Table
-
-> ⚠️ **Important:** GON has **no native type system**. All values are parsed as raw strings. The "Type" listed in these documentation tables describes the Mewgenics engine's *expected interpretation*, not a rigid GON syntax rule.
-
-| Type Label | Meaning | Example |
-|-----------|---------|---------|
-| **Boolean** | Engine interprets as true/false | `true`, `false` |
-| **Integer** | Engine interprets as a whole number | `5`, `100`, `-3` |
-| **Float** | Engine interprets as a decimal number | `1.25`, `.5` |
-| **Number** | Used when it is unknown if the engine strictly requires an Integer or a Float | `42` |
-| **Enum** | Engine matches against a fixed set of identifiers | `melee_attack`, `north` |
-| **String** | Engine uses as text (usually a localization key or file path) | `"ABILITY_NAME"`, `"cats/tabby.png"` |
-| **Array** | Engine reads as a list of values | `[ Fire Holy ]`, `[ 1 2 3 ]` |
-| **Object** | A nested key-value structure | `{ key value }` |
-| **Equation** | Engine evaluates as a mathematical formula (may reference stat variables) | `1+bonus_melee_range`, `"ceil(X*.25)"` |
-
+| Inferred Type | Engine Cast Behavior | Example |
+|---------------|----------------------|---------|
+| **Boolean** | Evaluates explicitly for `true` or `false` string literals. | `true`, `false` |
+| **Integer** | Casts the string to a whole number (e.g., `atoi`). Decimals are truncated. | `5`, `100`, `-3` |
+| **Float** | Casts the string to a floating-point decimal (e.g., `atof`). | `1.25`, `.5` |
+| **Number** | Used when it is empirically unknown if the engine utilizes an int or float cast internally. | `42` |
+| **Enum** | Maps the string against a hardcoded C++ `enum`. Unrecognized strings are typically ignored. | `melee_attack`, `north` |
+| **String** | Read raw. Used for file paths or localization keys. | `"ABILITY_NAME"`, `"cats/tabby.png"` |
+| **Equation** | Passed to the engine's internal math parser. Evaluated dynamically at runtime, allowing state variables. | `1+bonus_melee_range` |
+| **Array** | Expects a bracketed list. The engine iterates over the elements and casts each individually. | `[ Fire Holy ]` |
+| **Object** | Expects a nested dictionary of keys and values. | `{ value 5 }` |
 
 ---
 
+## 3. Comprehensive File Index
 
-## File Index
+The schema documentation is divided logically by subsystem. Click on any file to view the comprehensive list of properties and behaviors accepted by the engine for those objects.
 
-| File | Covers |
-|------|--------|
-| `Abilities_and_Spells.md` | `abilities/` — spells, attacks, passives |
-| `Characters_and_Bosses.md` | `characters/` — cats, enemies, bosses |
-| `Events_and_Encounters.md` | `events/` — map events, choice nodes |
-| `Passives_and_Statuses.md` | `passives/` — status effects, buffs |
-| `Items_and_Equipment.md` | `items/` — weapons, armor, trinkets |
-| `House_and_Environment.md` | `house/`, `tiles/` — furniture, tiles |
-| `Cat_Classes.md` | `classes/` — cat classes and progression |
-| `Cat_Mutations.md` | `mutations/` — visual and stat mutations |
-| `Elite_Buffs.md` | Elite enemy modifiers |
-| `Engine_LogicKeys.md` | Engine scripting keys (conditionals, loops) |
-| `Engine_StatusAndPassiveKeys.md` | Status/passive engine hooks |
-| `Engine_EventKeys.md` | Event scripting engine keys |
-| `Engine_DamagingKeys.md` | Damage calculation engine keys |
-| `Enums.md` | Valid values for every enum-type property |
+### Core Entities & Combat
+| File | Description |
+|------|-------------|
+| [Characters_and_Bosses.md](./Characters_and_Bosses.md) | Cat classes, enemies, bosses, and summons. |
+| [Abilities_and_Spells.md](./Abilities_and_Spells.md) | Spells, attacks, and combat abilities. |
+| [Items_and_Equipment.md](./Items_and_Equipment.md) | Consumables, weapons, and trinkets. |
+| [Passives_and_Statuses.md](./Passives_and_Statuses.md) | Status effects and permanent passive buffs. |
+| [Elite_Buffs.md](./Elite_Buffs.md) | Modifiers applied to elite enemies. |
+| [Enemy_AI.md](./Enemy_AI.md) | AI decision nodes and behavioral weighting. |
+| [Status_Effect_Keywords.md](./Status_Effect_Keywords.md) | Dictionary of valid status effect keywords. |
+
+### Player Progression & Cats
+| File | Description |
+|------|-------------|
+| [Cat_Classes.md](./Cat_Classes.md) | Definitions for cat classes and stat scaling. |
+| [Cat_Mutations.md](./Cat_Mutations.md) | Visual body mutations and their stat impacts. |
+| [Custom_Cats.md](./Custom_Cats.md) | Properties for generating specific, bespoke cats. |
+| [Injuries.md](./Injuries.md) | Post-combat injury definitions and penalties. |
+| [Progression_Unlocks.md](./Progression_Unlocks.md) | Conditions and flags for unlocking content. |
+| [Combat_Rewards.md](./Combat_Rewards.md) | Loot tables and combat reward generation. |
+
+### World, Maps & Events
+| File | Description |
+|------|-------------|
+| [Events_and_Encounters.md](./Events_and_Encounters.md) | Dialogue encounters and choice nodes. |
+| [House_and_Environment.md](./House_and_Environment.md) | Overworld tiles and intractable house objects. |
+| [Map_Generation_and_Routing.md](./Map_Generation_and_Routing.md) | Biome layout rules and node generation logic. |
+| [Furniture_and_Metaprogression.md](./Furniture_and_Metaprogression.md) | Placeable furniture and permanent upgrades. |
+| [Shops.md](./Shops.md) | Vendor inventories and pricing multipliers. |
+| [Spawns_and_Enemy_Pools.md](./Spawns_and_Enemy_Pools.md) | Tables determining which enemies spawn per biome. |
+| [Boss_Cutscene_Info.md](./Boss_Cutscene_Info.md) | Camera and timing configuration for boss intros. |
+| [NPC_Scripts.md](./NPC_Scripts.md) | Behavior logic for non-combat interactive NPCs. |
+
+### Engine Scripts & Logic
+| File | Description |
+|------|-------------|
+| [Engine_LogicKeys.md](./Engine_LogicKeys.md) | Core conditionals, loops, and execution flow. |
+| [Engine_EventKeys.md](./Engine_EventKeys.md) | Scripting keys for narrative and map events. |
+| [Engine_DamagingKeys.md](./Engine_DamagingKeys.md) | Hooks for calculating and modifying damage. |
+| [Engine_StatusAndPassiveKeys.md](./Engine_StatusAndPassiveKeys.md) | Hooks for triggering logic when statuses are applied. |
+| [Engine_GlobalModifierKeys.md](./Engine_GlobalModifierKeys.md) | Global state flags affecting the entire run. |
+| [Math_Equations.md](./Math_Equations.md) | Valid syntax and variables for Equation strings. |
+
+### Assets & Localization
+| File | Description |
+|------|-------------|
+| [Audio_SFX_Dictionary.md](./Audio_SFX_Dictionary.md) | Triggers for playing sound effects. |
+| [Particles_and_VFX_Dictionary.md](./Particles_and_VFX_Dictionary.md) | Identifiers for spawning visual effects. |
+| [Damage_Text_Styles.md](./Damage_Text_Styles.md) | Configuration for floating combat text. |
+| [Localization_Guide.md](./Localization_Guide.md) | Best practices for translating and keying strings. |
+| [Strings.md](./Strings.md) | Internal engine string references. |
+
+### Reference & Meta
+| File | Description |
+|------|-------------|
+| [Enums.md](./Enums.md) | Valid string identifiers for all enum-backed properties. |
+| [Arrays.md](./Arrays.md) | Specialized array formats. |
+| [Item_Pools.md](./Item_Pools.md) | Identifiers for categorizing item drops. |
+| [Difficulties.md](./Difficulties.md) | Scaling multipliers across game difficulty settings. |
+| [Engine_Hidden_Passives_and_Statuses.md](./Engine_Hidden_Passives_and_Statuses.md) | Passives that exist but are hidden from the UI. |
+| [Passive_Identifiers_Audit.md](./Passive_Identifiers_Audit.md) | Deep-dive tracking of passive effect implementations. |
+| [Engine_Uncategorized_Resources.md](./Engine_Uncategorized_Resources.md) | Keys that have not yet been fully categorized. |
+| [Miscellaneous.md](./Miscellaneous.md) | Assorted properties lacking clear subsystem alignment. |
+
+> [!TIP]
+> The exact boundaries between these schema files often blur (e.g., an Ability might trigger an Event). If you cannot find a property in the expected file, try checking the **Reference & Meta** subsystem, specifically `Miscellaneous.md` or `Engine_Uncategorized_Resources.md`.
