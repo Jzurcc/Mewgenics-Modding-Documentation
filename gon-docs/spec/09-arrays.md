@@ -44,3 +44,19 @@ Because GON has no native type constraints, arrays can mix numbers, strings, and
 ```gon
 mixed_array [ 1 "two" true ]
 ```
+
+---
+
+## The Specification (spec/)
+The strict rules of the language, confirmed directly against the Mewgenics codebase.
+
+- [00. Formal Grammar](00-formal-grammar.md)
+- [01. Overview & File Structure](01-overview.md)
+- [02. Comments](02-comments.md)
+- [03. Keys](03-keys.md)
+- [04. Strings](04-strings.md)
+- [05. Numbers](05-numbers.md)
+- [06. Booleans](06-booleans.md)
+- [07. Identifiers](07-identifiers.md)
+- [08. Objects](08-objects.md)
+- [09. Arrays](09-arrays.md)
