@@ -12,10 +12,9 @@ description: "Defines standard keywords for tooltips."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-PoisonKeyword {
-    tooltip_stacks "KEYWORD_POISON_DESC"
-    tooltip_stackless "KEYWORD_POISON_DESC_STACKLESS"
-    icon "poison.png"
+Adrenaline {
+    name "KEYWORD_ADRENALINE_NAME"
+    tooltip "KEYWORD_ADRENALINE_DESC"
 }
 ```
 

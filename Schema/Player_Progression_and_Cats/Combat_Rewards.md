@@ -12,10 +12,381 @@ description: "Loot tables and combat reward generation logic."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-StandardEncounter {
-    pool "StandardEncounter"
-    gold { min 10 max 25 }
-    item_chance 15%
+acts {
+	0 { //tutorial, everything hardcoded
+	}
+
+	1 { //alley and such
+		food_bonus 1
+		coins_bonus .5
+
+		chapters {
+			1 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [2 5]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [5 8]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			2 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [4 8]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [6 12]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			3 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			4 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+		}
+	}
+
+	2 { //desert and such
+		food_bonus 1.75
+		coins_bonus .75
+
+		chapters {
+			1 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [2 5]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [5 8]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			2 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [4 8]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [6 12]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			3 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			4 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+		}
+	}
+
+	3 { //lab and such
+		food_bonus 2.5
+		coins_bonus 1
+
+		chapters {
+			1 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [2 5]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [5 8]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			2 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [4 8]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [6 12]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			3 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+			4 {
+				food_bonus 1 //food rewards get multiplied by this (quick way to "overall balance" an area)
+				coins_bonus 1 //coin rewards get multiplied by this (quick way to "overall balance" an area)
+
+				normal {
+					coins [1 6]
+					food [1 3]
+					item_chance .25
+					consumable_chance .25
+				}
+				hard {
+					coins [1 6]
+					food [4 7]
+					item_chance .25
+					consumable_chance .25
+				}
+				miniboss {
+					coins [10 20]
+					food [5 10]
+					item_chance .5
+					consumable_chance .3
+				}
+				boss {
+					coins [10 20]
+					food [10 15]
+					item_chance 1
+					consumable_chance .5
+				}
+			}
+		}
+	}
 }
 ```
 

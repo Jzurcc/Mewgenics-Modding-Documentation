@@ -12,19 +12,214 @@ description: "Defines the progression and stats of cat classes."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Hunter {
+Monk {
     meta {
-        name "CAT_CLASS_HUNTER_NAME"
-        description "CAT_CLASS_HUNTER_DESC"
+        name "CAT_CLASS_MONK_NAME"
+        description "CAT_CLASS_MONK_DESC"
     }
+
     graphics {
-        palette 50
+        palette 66
+
         alt_animations [
-            [idle, HunterIdle]
+            [idle, MonkIdle]
+            [ClassToNeutral,   MonkToNeutral]
+            [ClassFromNeutral, MonkFromNeutral]
+            [StartTurn, MonkStartTurn]
+            [Victory, monkVictory]
         ]
-        portrait_face hunter_portrait
+
+        portrait_face monk_portrait
     }
-    attack_pool [ BasicRanged_Hunter ]
+
+    innate_items {
+        weapon MonkFist
+        trinket MonkStyleChanger
+    }
+    innate_passives {
+        MonkStances [BasicMonkMelee BasicMonkRanged]
+    }
+
+    attack_pool [
+        BasicMonkMelee
+    ]
+
+    ability_pool [
+        Propell
+        Hadouken
+        Cartwheel
+        StoneFists
+        Transcend
+
+        HipToss
+        Bruise
+        Slapback
+        Finisher
+        Reverberate
+
+        ComboThrow
+        ComboPull
+        OneWithTheWind
+        Pogo
+        TrainArms
+
+        Porcupine
+        Anneal
+        DeepDive
+        HopAndBlock
+        TrainMind
+
+        Meditate
+        DoomPunch
+        KiBurst
+        DragonPunch
+        TrainLegs
+
+        ReallyFastRun
+        DetectWeakness
+        HundredHandSlap
+        KineticCharge
+        AirBurst
+
+        TrainBody
+        ReleaseEnergy
+        Pummel
+        QuickAttack
+        PerfectForm
+
+        WarmupStretch
+        FlyingFist
+        SpiritBomb
+        OnePunch
+        UnbridledHits
+
+        Kamehameha
+        SideStep
+        UnimpededLunge
+        DoubleDragon
+        FistOfFate
+
+        Nirvana
+        EmptyMind
+        Position
+        ChargeFists
+        Apprentice
+    ]
+
+    starter_abilities [
+        Propell
+        Pogo
+        ComboThrow
+        ComboPull
+        Bruise
+        Anneal
+        Hadouken
+        ReallyFastRun
+		Finisher
+		UnbridledHits
+    ]
+
+    ability_groups {
+        attack [
+            Propell
+            Hadouken
+            HipToss
+            Slapback
+            Finisher
+            ComboThrow
+            ComboPull
+            DoomPunch
+            DragonPunch
+            HundredHandSlap
+            ReleaseEnergy
+            Pummel
+            FlyingFist
+            SpiritBomb
+            OnePunch
+            UnbridledHits
+            Kamehameha
+            UnimpededLunge
+        ]
+        defense [
+            Transcend
+            Reverberate
+            Porcupine
+            Anneal
+            DeepDive
+            Meditate
+            KiBurst
+            KineticCharge
+            TrainBody
+            PerfectForm
+            Nirvana
+        ]
+        move [
+            Cartwheel
+            OneWithTheWind
+            Pogo
+            HopAndBlock
+            TrainLegs
+            ReallyFastRun
+            QuickAttack
+            SideStep
+            FistOfFate
+            Position
+        ]
+        misc [
+            StoneFists
+            Bruise
+            TrainArms
+            TrainMind
+            DetectWeakness
+            AirBurst
+            WarmupStretch
+            DoubleDragon
+            EmptyMind
+            ChargeFists
+            Apprentice
+        ]
+    }
+    
+    passive_pool [
+        SafeSwitching
+        Mixup
+        Turnabout
+        MonkeyStyle
+        BrickSkin
+
+        JaggedEdges
+        MindBreaker
+        CobraStyle
+        Tenderize
+        LongArms
+
+        SpreadThePain
+        Harden
+        IronSkin
+        JetFists
+        EnergyFists
+
+        Unstoppable
+        UnburdenedMotion
+        UnburdenedStrikes
+        UnburdenedThoughts
+        RunningJab
+
+        PerfectTechnique
+        RapidFlow
+        CounterBarrage
+        FlowState
+        DancingLights
+    ]
+
+    stat_mods {
+        int 2
+        cha 2
+        str -1
+        dex -1
+    }
+
+    levelup_stats [int str lck]
 }
 ```
 

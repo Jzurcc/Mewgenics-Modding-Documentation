@@ -12,13 +12,10 @@ description: "Tables determining which enemies spawn per biome."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-ForestMobs {
-    pool "ForestMobs"
-    enemies [
-        { id "Goblin" weight 50 }
-        { id "Wolf" weight 25 }
-    ]
-}
+editor {
+        image "empty.png"
+        name "Empty"
+    }
 ```
 
 ## Associated Directory Files

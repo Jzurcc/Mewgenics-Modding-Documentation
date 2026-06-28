@@ -12,10 +12,14 @@ description: "Defines modifiers applied to elite enemy variants."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-HeavyBrute {
-    health_multiplier 1.5
-    bonus_abilities [ HeavySlam ]
-    color { r 1.0 g 0.2 b 0.2 }
+Spiky {//animated spikes
+	value 1
+	icon_frame 500
+	passives {
+		EliteParticle SpikeBuff
+		Thorns 2
+		EliteTint [.6 .6 .6 .50]
+	}
 }
 ```
 

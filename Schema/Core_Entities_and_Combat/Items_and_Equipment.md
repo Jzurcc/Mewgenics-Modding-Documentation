@@ -12,14 +12,20 @@ description: "Defines consumables, weapons, and wearable trinkets."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-RustySword {
-    type Weapon
-    rarity rare
-    stats { 
-        bonus_melee_damage 2 
+ScrapHat {
+        name "ARMOR_SCRAPMETALHAT_NAME"
+        desc "ARMOR_SCRAPMETALHAT_DESC"
+        rarity common
+        kind head
+        frame 12
+        set Scrap
+
+        shield 4
+
+        passives {
+            Metal 1
+        }
     }
-    ability CleaveAttack
-}
 ```
 
 ## Associated Directory Files

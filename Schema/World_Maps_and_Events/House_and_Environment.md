@@ -12,13 +12,56 @@ description: "Overworld tiles and intractable house objects."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Bed {
-    object "Bed"
-    interactable true
-    on_interact {
-        trigger_event "SleepMenu"
-    }
-}
+Forecast [ //the first and last week of each month's odds are blended with the next month
+    { //Winter 2 (January)
+		None 14
+		Snow 1
+	}
+	{ //Winter 3
+		None 14
+		Snow 1
+	}
+	{ //Spring 1 (March)
+		None 14
+		Rain 1
+	}
+	{ //Spring 2
+		None 14
+		Rain 1
+	}
+	{ //Spring 3
+		None 14
+		Rain 1
+	}
+	{ //Summer 1 (June)
+		None 14
+		Thunderstorm 1
+	}
+	{ //Summer 2
+		None 14
+		Thunderstorm 1
+	}
+	{ //Summer 3
+		None 14
+		Thunderstorm 1
+	}
+	{ //Autumn 1 (September)
+		None 14
+		Windy 1
+	}
+	{ //Autumn 2
+		None 14
+		Windy 1
+	}
+	{ //Autumn 3
+		None 14
+		Windy 1
+	}
+	{ //Winter 1 (December)
+		None 14
+		Snow 1
+	}
+]
 ```
 
 ## Associated Directory Files

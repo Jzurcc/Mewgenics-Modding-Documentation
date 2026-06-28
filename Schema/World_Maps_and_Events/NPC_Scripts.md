@@ -12,12 +12,13 @@ description: "Behavior logic for non-combat interactive NPCs."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Blacksmith {
-    npc "Blacksmith"
-    idle_anim "hammering"
-    on_talk {
-        script "open_upgrade_menu"
-    }
+states_and_transitions {
+	states {
+		idle ["idle"]
+	}
+
+	transitions {
+	}
 }
 ```
 

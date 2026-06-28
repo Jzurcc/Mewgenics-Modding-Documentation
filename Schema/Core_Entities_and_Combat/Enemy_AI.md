@@ -12,13 +12,41 @@ description: "Defines behavior trees and targeting priorities for the AI."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-UseHeavyAttack {
-    weight 100
-    condition {
-        target_in_range true
-        has_mana true
-    }
-    action UseAbility
+default {
+    damage_ally -1
+    damage_enemy 1
+    heal_ally 1
+    heal_enemy -1
+    
+    kill_enemy 0
+    kill_ally  0
+    
+    debuff_ally -1
+    buff_ally 1
+    debuff_enemy 1
+    buff_enemy -1
+    
+    damage_self -0.1
+    heal_self 0
+    buff_self 0
+    debuff_self -0.1
+    
+    damage_ally_corpse 0
+    damage_enemy_corpse 0
+    revive_ally_corpse 1
+    revive_enemy_corpse -1
+    
+    spawn_object 1
+    spawn_object_distance_to_enemy -.01
+    spawn_object_distance_to_ally .0001
+    
+    negative_weight_scale .99
+    spend_mana_scale .99
+    
+    consider_total_damage true
+    consider_secondary_damage true
+    accurate_knockback false
+    consider_overkill true
 }
 ```
 

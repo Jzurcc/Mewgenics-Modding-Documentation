@@ -12,11 +12,8 @@ description: "Configuration for floating combat text."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-CriticalHitStyle {
-    style "critical_hit"
-    color { r 1.0 g 0.8 b 0.0 }
-    scale 1.5
-    shake true
+health_damage {
+	color [.74 .39 .39]
 }
 ```
 

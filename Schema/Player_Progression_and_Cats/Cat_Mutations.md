@@ -12,12 +12,457 @@ description: "Defines body part variations and their impacts."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-TwinTail {
-    part tail
-    visual "twin_tail.png"
-    stats { 
-        bonus_speed 1 
+body {
+    300 { //Rock Bod
+        con 1
     }
+
+    301 { //Cactus Bod
+        desc "MUTATION_BODY_301_DESC"
+        passives {
+            Thorns 1
+        }
+    }
+
+    302 { //Turtle Bod
+        tag animal
+        spd -1
+        shield 5
+    }
+
+    303 { //Snail Bod
+        tag animal
+        shield 10
+        spd -2
+    }
+
+    304 { //Robot Body
+        spd 1
+        int 1
+    }
+
+    305 { //Conjoined Bod
+        lck 1
+    }
+
+    306 { //Skin & Bones
+        shield 12
+        con -3
+    }
+
+    307 { //Udders
+        tag animal
+        cha 1
+    }
+
+    308 { //Beach Bod
+        str 1
+        con 1
+        int -1
+    }
+
+    309 { //Maggot Bod
+        desc "MUTATION_BODY_309_DESC"
+
+        passives {
+            MeleeRevengeDamage {
+                type status
+                damage 0
+                knockback 2
+            }
+        }
+    }
+
+    310 { //Puffball Bod
+        cha 1
+    }
+
+    311 { //Square Bod
+        con 1
+    }
+    
+    312 { //Money Bag Bod
+        desc "MUTATION_BODY_312_DESC"
+        passives {
+            SpawnThingOnDamage {
+                object Coin
+                chance 100%
+            }
+        }
+    }
+
+    313 { //Spike Bod
+        desc "MUTATION_BODY_313_DESC"
+        passives {
+            KineticSpikes 1
+        }
+    }
+
+    314 { //Porcupine
+        desc "MUTATION_BODY_314_DESC"
+        cha -1
+        passives {   
+            Thorns 2 
+        }
+    }
+
+    315 { //Carapace
+        desc "MUTATION_BODY_315_DESC"
+        passives {
+            Brace 1
+        }
+    }
+    
+    316 { //Pangolin
+        shield 2
+    }
+
+    317 { //Camel Hump
+        desc "MUTATION_BODY_317_DESC"
+        con 1
+        passives {
+		    DrinkWater 1
+        }
+    }
+
+    318 { //Egg Sack Back
+         desc "MUTATION_BODY_318_DESC" 
+
+        passives { 
+            SpawnEachTurn {
+                object CharmedFly
+                chance 25% 
+            } 
+        }
+    }
+
+    319 { //Fractured Bod
+        desc "MUTATION_BODY_319_DESC"
+        
+        passives {
+            StatusOnTookDamageFromAbility {
+                RandomStatusFromPool { 
+                    Charge 1
+                    Thorns 1
+                    KineticSpikes 1
+                    DiminishingHealthRegen 1
+                    RandomStatUp 1
+                    Shield 1
+                }
+            }
+        } 
+    }
+
+    320 { //Brick Bod
+        shield 1
+    }
+     
+    321 { //Kitten Bod
+        desc "MUTATION_BODY_321_DESC"  
+        passives {
+            SpawnOnDowned CharmedKitten
+        }
+    }
+
+    322 { //Backpack
+        desc "MUTATION_BODY_322_DESC"
+        passives {
+            StatusOnBattleEnd {
+                FindItemFromPool consumables
+            }
+        }
+    }
+
+    323 { //Fatty
+        desc "MUTATION_BODY_323_DESC"
+        spd -3
+        passives {
+            MoveWhenDamaged {
+                move_ability MoveOne
+                weights chaotic
+            }
+            Trample 3
+        }
+    }
+
+    324 { //Eyeball
+        desc "MUTATION_BODY_324_DESC"
+        passives {
+            StatusOnKill {
+                RangeUp 1
+            }
+        }
+    }
+	
+    750 { //spike body
+        desc "MUTATION_BODY_750_DESC" 
+        passives {        
+            Thorns 1 
+        } 
+    }
+	
+    753 { //mermaid body
+		shield 5
+    }
+	
+    758 { //human head body
+		desc "MUTATION_BODY_758_DESC" 
+		con 1
+		passives {
+			Quivered 1
+		}
+    }
+
+    900 { //slender
+        con -2
+        spd 1
+    }
+
+
+    //simple stat mod parts
+    400 {
+        tag common
+        str 2
+        con -1
+    }
+    401 {
+        tag common
+        str 2
+        dex -1
+    }
+    402 {
+        tag common
+        str 2
+        cha -1
+    }
+    403 {
+        tag common
+        str 2
+        int -1
+    }
+    404 {
+        tag common
+        str 2
+        spd -1
+    }
+    405 {
+        tag common
+        str 2
+        lck -1
+    }
+    406 {
+        tag common
+        con 2
+        str -1
+    }
+    407 {
+        tag common
+        con 2
+        dex -1
+    }
+    408 {
+        tag common
+        con 2
+        cha -1
+    }
+    409 {
+        tag common
+        con 2
+        int -1
+    }
+    410 {
+        tag common
+        con 2
+        spd -1
+    }
+    411 {
+        tag common
+        con 2
+        lck -1
+    }
+    412 {
+        tag common
+        dex 2
+        con -1
+    }
+    413 {
+        tag common
+        dex 2
+        str -1
+    }
+    414 {
+        tag common
+        dex 2
+        cha -1
+    }
+    415 {
+        tag common
+        dex 2
+        int -1
+    }
+    416 {
+        tag common
+        dex 2
+        spd -1
+    }
+    417 {
+        tag common
+        dex 2
+        lck -1
+    }
+    418 {
+        tag common
+        int 2
+        con -1
+    }
+    419 {
+        tag common
+        int 2
+        dex -1
+    }
+    420 {
+        tag common
+        int 2
+        cha -1
+    }
+    421 {
+        tag common
+        int 2
+        str -1
+    }
+    422 {
+        tag common
+        int 2
+        spd -1
+    }
+    423 {
+        tag common
+        int 2
+        lck -1
+    }
+    424 {
+        tag common
+        cha 2
+        con -1
+    }
+    425 {
+        tag common
+        cha 2
+        dex -1
+    }
+    426 {
+        tag common
+        cha 2
+        str -1
+    }
+    427 {
+        tag common
+        cha 2
+        int -1
+    }
+    428 {
+        tag common
+        cha 2
+        spd -1
+    }
+    429 {
+        tag common
+        cha 2
+        lck -1
+    }
+    430 {
+        tag common
+        lck 2
+        con -1
+    }
+    431 {
+        tag common
+        lck 2
+        dex -1
+    }
+    432 {
+        tag common
+        lck 2
+        cha -1
+    }
+    433 {
+        tag common
+        lck 2
+        int -1
+    }
+    434 {
+        tag common
+        lck 2
+        spd -1
+    }
+    435 {
+        tag common
+        lck 2
+        str -1
+    }
+    436 {
+        tag common
+        spd 2
+        con -1
+    }
+    437 {
+        tag common
+        spd 2
+        str -1
+    }
+    438 {
+        tag common
+        spd 2
+        cha -1
+    }
+    439 {
+        tag common
+        spd 2
+        int -1
+    }
+    440 {
+        tag common
+        spd 2
+        dex -1
+    }
+    441 {
+        tag common
+        spd 2
+        lck -1
+    }
+
+    442 {
+        tag melted
+        cha -1
+    }
+
+    //birth defects
+    700 { //Gastroschisis
+        tag birth_defect
+        con -2
+    }
+    701 { //Deformed Ribcage
+        tag birth_defect
+        spd -2
+    }
+    702 { //Malnurished
+        tag birth_defect
+        con -1
+    }    
+	703 { //Body Welts
+        desc "MUTATION_BODY_703_DESC"
+        tag birth_defect
+
+        passives {
+            Bruise 1
+        }
+    }
+	704 { //Conjoined Body
+        tag birth_defect
+        spd -3
+		con 2
+    }
+	
 }
 ```
 

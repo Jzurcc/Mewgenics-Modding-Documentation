@@ -12,10 +12,13 @@ description: "Camera and timing configuration for boss intros."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-DragonIntro {
-    boss "Dragon"
-    camera_pan_speed 0.5
-    title_card "DRAGON_INTRO_TEXT"
+error {
+    name BOSS_ERROR_NAME
+    frame_label error
+
+    quotes [
+        BOSS_ERROR_QUOTE_1
+    ]
 }
 ```
 

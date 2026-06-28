@@ -12,11 +12,13 @@ description: "Scaling multipliers across game difficulty settings."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-HardDifficulty {
-    difficulty "Hard"
-    enemy_hp_mod 1.2
-    gold_drop_mod 0.8
-}
+easy {
+		elite_budget 0
+		champ_budget 0
+
+		elite_buffs 1
+		rare_elite_buffs 1
+	}
 ```
 
 ## Associated Directory Files

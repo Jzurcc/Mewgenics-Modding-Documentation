@@ -12,12 +12,245 @@ description: "Placeable furniture and permanent upgrades."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Altar {
-    name "Altar"
-    type furniture
-    bonus { 
-        starting_gold 50 
-    }
+rooms {
+	Floor1_Large {
+		width 16
+		height 7
+
+		movieclip RoomBackgroundLargeF1
+		interstitial_bg_frame room1
+
+		reverb_empty {
+			preset STONEROOM
+			amount .65
+            volume_adjustment 2
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Floor1_Small {
+		width 16
+		height 7
+
+		movieclip RoomBackgroundSmallF1
+		interstitial_bg_frame room2
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	SmallAttic {
+		id Attic
+		width 18
+		height 5
+
+		movieclip RoomBackgroundSmallAttic
+		interstitial_bg_frame attic
+
+		extra_bound_planes [
+			{
+				p [0 0]  
+				n [1 -2]
+			}
+			{
+				p [18 0] 
+				n [-1 -2]
+			}
+		]
+
+		//0: empty, 1: solid, 2: attachable solid, 6: out of bounds, 7: semi out of bounds (cat can be here, furniture cant)
+		built_in_collision [ //this is 2 larger than specified dimensions cause theres normally a blue (2) border added
+							 [6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 8 8 6 6 6 6 6 6 6 6 6]
+						     [6 6 6 6 6 6 6 8 7 0 0 7 8 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 8 7 0 0 0 0 0 0 7 8 6 6 6 6 6]
+							 [6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6]
+							 [6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6]
+							 [6 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 8 6]
+		                   ]
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	LargeAttic {
+		id Attic
+		width 35
+		height 9
+
+		movieclip RoomBackgroundAttic
+		interstitial_bg_frame attic
+
+		extra_bound_planes [
+			{
+				p [0 0]  
+				n [1 -2]
+			}
+			{
+				p [35 0] 
+				n [-1 -2]
+			}
+		]
+
+		//0: empty, 1: solid, 2: attachable solid, 6: out of bounds, 8: out of bounds but still visualize it
+		built_in_collision [ //this is 2 larger than specified dimensions cause theres normally a blue (2) border added
+							 [6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 7 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 8 7 0 0 0 7 8 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 6 6 6 6 8 7 0 0 0 0 0 0 0 7 8 6 6 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 6 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 6 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 6 6 6 6 6 6]
+						     [6 6 6 6 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 6 6 6 6]
+							 [6 6 6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6 6 6]
+							 [6 6 6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6 6 6]
+							 [6 8 7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 8 6]
+							 [6 8 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 8 6]
+		                   ]
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Floor2_Large {
+		width 16
+		height 7
+
+		movieclip RoomBackgroundLargeF2
+		interstitial_bg_frame room3
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Floor2_Small {
+		width 16
+		height 7
+
+		movieclip RoomBackgroundSmallF2
+		interstitial_bg_frame room4
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+
+	Basement0 { //basement
+		width 33
+		height 5
+
+		movieclip RoomBackgroundBasement0
+		//bounds_ignored_for_zoomout true
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Basement1 { //caves
+		width 33
+		height 5
+
+		movieclip RoomBackgroundBasement1
+		//bounds_ignored_for_zoomout true
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Basement2 { //depths
+		width 33
+		height 5
+
+		movieclip RoomBackgroundBasement2
+		//bounds_ignored_for_zoomout true
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Basement3 { //womb
+		width 33
+		height 5
+
+		movieclip RoomBackgroundBasement3
+		//bounds_ignored_for_zoomout true
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
+	Basement4 { //sheol
+		width 33
+		height 5
+
+		movieclip RoomBackgroundBasement4
+		//bounds_ignored_for_zoomout true
+
+		reverb_empty {
+			preset AUDITORIUM
+			amount .65
+            volume_adjustment 1.50
+		}
+		reverb_full {
+			preset LIVINGROOM
+			amount .25
+		}
+	}
 }
 ```
 

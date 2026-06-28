@@ -12,10 +12,14 @@ description: "Properties for generating specific bespoke cats."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-FrankTheCat {
-    name "Frank"
-    class Butcher
-    forced_mutations [ twin_tail ]
+TomTom {
+    default_frame 1000
+    texture 1000
+    claws 1
+    palette 9
+
+    voice male1
+    pitch .5
 }
 ```
 

@@ -12,14 +12,25 @@ description: "Defines buffs, debuffs, and permanent modifiers."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Poison {
-    duration 3
-    is_debuff true
-    stats { 
-        bonus_speed -1 
+Putrefy {
+    name "PASSIVE_PUTREFY_NAME"
+    desc "PASSIVE_PUTREFY_DESCRIPTION"
+    class Butcher
+
+    1 {
+        passives {
+            AddStatusToBasicAttack {
+                Rot 1
+            }
+        }
     }
-    on_turn_start {
-        damage 5
+    2 {
+        desc "PASSIVE_PUTREFY2_DESCRIPTION"
+        passives {
+            AddStatusToBasicAttack {
+                Rot -999999
+            }
+        }
     }
 }
 ```

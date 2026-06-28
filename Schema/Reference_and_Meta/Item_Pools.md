@@ -12,10 +12,22 @@ description: "Identifiers for categorizing item drops."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-RareWeaponsPool {
-    pool_name "RareWeaponsPool"
-    items [ "Excalibur" "Masamune" ]
-}
+tinkerer_0 [ //default
+    //melee
+    TinkererStick
+    TinkererGlassShard
+    PogoStick
+
+    //ranged
+    SmallBomb
+    TinkererBattery
+    Spitball
+
+    //armor
+    JankAlloyHat
+    JankAlloyMask
+    JankAlloyArmor
+]
 ```
 
 ## Associated Directory Files

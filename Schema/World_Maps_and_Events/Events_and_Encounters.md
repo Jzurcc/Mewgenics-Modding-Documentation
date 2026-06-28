@@ -12,12 +12,111 @@ description: "Dialogue encounters and choice nodes."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-ShrineEvent {
-    text "EVENT_SHRINE_TEXT"
-    choices [
-        { text "Pray" reward { heal 10 } }
-        { text "Steal" reward { item "Gold" } }
-    ]
+TrashBin { //originally in treasure_box.gon
+    intro {
+        title "EVENT_TRASHBIN_NAME"
+        cat_choice random
+        subject_clip EventSubject
+        subject_frame trashcan
+        event_clip NonWheelEvent
+    }
+
+    main {
+        prompt "EVENT_TRASHBIN_QUES"
+
+        options {
+            examine {
+                label "EVENT_EXAMINE_ANSW"
+                stat int
+
+                good {
+                    prompt "EVENT_TRASHBIN_REW1"
+                    set_frame 2
+                    reward {
+                        common {
+                            random_pool [
+                                { 
+                                    party_heal 5 
+                                    gain_food [2 4]
+                                }
+                                { 
+                                    prompt "EVENT_TRASHBIN_REW2"
+                                    spawn_unit_next_fight {
+                                        object RandomNonCoinPickup
+                                        count 8
+                                        spawn_side anywhere
+                                    } 
+                                    spawn_unit_next_fight {
+                                        object [Junk Junk TrashBag]
+                                        count [3 6]
+                                        spawn_side anywhere
+                                    } 
+                                }
+                                { 
+                                    full_heal 1
+                                }
+                                { 
+                                    gain_coins [5 15]
+                                }
+                            ]
+                        }
+                        rare {
+                            random_pool [
+                                {
+                                    party_heal 100%
+                                    gain_food [10 25]
+                                }
+                                { 
+                                    party_heal 3
+                                    party_permanent_stats {
+                                        con 1
+                                    }
+                                }
+                                { 
+                                    get_item_from_pool food
+                                    get_item_from_pool food
+                                    get_item_from_pool food
+                                    get_item_from_pool food
+                                }
+                            ]
+                        }
+                    }
+                }
+                bad {
+                    prompt "EVENT_TRASHBIN_REW3"
+                    set_frame 2
+                    reward {
+                        common {
+                            self_status_next_fight {
+                                Poison 2
+                            }
+                        }
+                        rare {
+                            self_status_next_fight {
+                                Poison 2
+                            }
+                            get_parasite_from_pool sludge_armor
+                        }
+                    }
+                }
+            }
+
+            pick {
+                label "EVENT_PICK_ANSW"
+                stat dex
+                animation choice_dex_alt
+
+                copy_results examine
+            }
+
+            open {
+                label "EVENT_OPEN_ANSW"
+                stat lck
+
+                copy_results examine
+            }
+        }
+    }
 }
 ```
 

@@ -12,12 +12,28 @@ description: "Defines post-combat injuries and permanent disorders."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-BrokenLeg {
-    type broken_leg
-    stats { 
-        bonus_speed -2 
+str {
+    text "INJURY_NAME_BROKENPAW"
+    id 0
+
+    stats {
+        str -1
     }
-    treatment_cost 50
+
+    scars {
+        arms [10 20]
+    }
+
+    alt_animations [
+        [dying, brokenPaw]
+        [dead, brokenPawLoop]
+        [deadhit, brokenPawHit]
+        [weak, brokenPawIdle]
+        [walk, brokenPawWalk]
+        //hit_brokenPaw
+    ]
+
+    deathsound Injury_BrokenPaw
 }
 ```
 

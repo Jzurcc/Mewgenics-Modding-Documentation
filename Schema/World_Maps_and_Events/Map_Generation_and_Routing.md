@@ -12,10 +12,14 @@ description: "Biome layout rules and node generation logic."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-ForestBiome {
-    biome "Forest"
-    node_density 15
-    boss_node "ForestGuardian"
+levels {
+    folder alley
+    easy [easy]
+    hard [easy] //switch this to "hard" in the brackets if we get specific hard levels in!
+    rare [rare]
+    boss [boss]
+    miniboss [miniboss]
+    special [special]
 }
 ```
 

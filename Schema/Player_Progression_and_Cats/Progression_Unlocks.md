@@ -12,12 +12,9 @@ description: "Conditions and flags for unlocking content."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-UnlockHolySword {
-    unlock_type item
-    target "HolySword"
-    condition {
-        boss_defeated "SkeletonKing"
-    }
+class_unlock_medic {
+	complete_chapter alley
+	trigger_npc_sequence class_unlock_medic
 }
 ```
 

@@ -12,12 +12,47 @@ description: "Defines the stats, properties, and visuals of units."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Goblin {
-    base_health 50
-    speed 2
-    ai_type melee
+BirdBase {
+    graphics {
+        movieclip BirdSmall
+        name "ENEMY_BIRD_NAME"
+
+        tooltip "ENEMY_BIRD_DESC"
+    }
+
+    properties {
+        tag animal
+        hidden_tag [bird bonusbird]
+        faction birds
+        kill_required false
+        movement 3
+        health 2
+        initiative -999
+    }
+
+    abilities {
+        move DefaultMove
+        attack BasicMelee
+
+        spells [
+            BirdFly
+        ]
+    }
+
     passives {
-        SpikedArmor
+        CounterAttack attack
+        MoveAwayFromDamageSource {
+            move_ability BirdFly
+        }
+        Bird CookedChickenLeg
+
+        TrackAmountKilledByPlayer BonusBirdsKilled
+    }
+    
+    ai {
+        brain GenericBrain
+        decision_weights simple
+        move_weights bird
     }
 }
 ```

@@ -12,10 +12,42 @@ description: "Identifiers for spawning visual effects."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-BloodSplat {
-    particle "blood_splat"
-    color { r 1.0 g 0.0 b 0.0 }
-    duration 0.5
+test {
+    movieclip ParticleTestNoRandom
+    
+    render_mode default
+    //render_mode separate
+    
+    //update_mode locked
+    
+    simulation_space global
+    //ownership local
+    projection_matrix default
+    //continual_emission false
+    
+    emit_rate 240
+    emit_amount 1
+    emit_direction [0, 1, 0]
+    friction [.1 .1 .1]
+    emit_spread 180//30
+    live_bounds [-999 999 -999 999 -999 999]
+    
+    
+    particle_lifetime  [.1 2]
+    speed_start 4
+    //speed_end 5
+    //force_start [0 -70 0]
+    //force_end [0 90 0]
+    //rotation_start [0, 360]
+    //rotation_speed_start [-900, 900]
+    //rotation_speed_end 0
+    size_start [.1 1]
+    size_end .2
+    alpha_start 2
+    alpha_end 0
+    speed_scale .1
+    inherit_speed 1//.21
+    face_moving_direction true
 }
 ```
 

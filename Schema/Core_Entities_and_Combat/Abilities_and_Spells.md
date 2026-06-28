@@ -12,16 +12,35 @@ description: "Defines the properties and engine hooks for combat abilities."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Fireball {
-    damage_instance { 
-        amount 10 
-        element Fire 
+HogRush {
+    template move
+    
+    meta {
+        name "ABILITY_HOGRUSH_NAME"
+        desc "ABILITY_HOGRUSH_DESC"
+        animate_name true
+        class Butcher
     }
-    cost { 
-        mana 2 
+
+    graphics {
+        speed 2
+        animation dash
     }
-    target { 
-        range 3 
+
+    cost {
+        infcantrip true
+        mana 7
+    }
+
+    temporary_effects {
+        Trample 3
+    }
+
+    target {
+        max_range 100
+        restrictions [must_be_moveable must_have_tag must_move]
+        target_requires_tag food
+        trample_allies_too true
     }
 }
 ```

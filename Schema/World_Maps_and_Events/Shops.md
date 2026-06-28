@@ -12,11 +12,77 @@ description: "Vendor inventories and pricing multipliers."
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
 ```gon
-Merchant {
-    vendor "Merchant"
-    item_pool "GeneralGoods"
-    price_multiplier 1.2
-    stock_size 4
+ItemShopSmall {
+    meta {
+        movieclip Shop
+        npc_script tracy_adventure_shop_script.gon
+        delay_enable_tooltips true
+        keeper 0
+        shopkeeper_fights [
+            test.lvl
+        ]
+    }
+
+    item_rarity_costs {
+        consumable_common 5
+        consumable_uncommon 7
+        consumable_rare 10
+        consumable_very_rare 20
+        common 7
+        uncommon 10
+        rare 20
+        very_rare 40
+    }
+
+    item_groups {
+        mandatory {
+            Item {
+                pool rare 
+            }
+        }
+        levelup {
+            LevelUp {
+                cost 10
+            }
+        }
+        pool {
+            Item {
+                pool shop_common
+            }
+        }
+    }
+
+    breakdown {
+        levelup 1
+        pool 2
+    }
+
+    stock_fill_order {
+        //0 1 2
+        // 3 4
+
+        1 [1]
+        2 [0 2]
+        3 [1 3 4]
+        4 [0 2 3 4]
+        5 [1 0 2 3 4]
+    }
+
+    button_nav {
+        //up down left right, x = no connection
+        default {
+            0 [x 3 x 1]
+            1 [x 3 0 2]
+            2 [x 4 1 x]
+            3 [0 x x 4]
+            4 [2 x 3 x]
+        }
+        //stock fill overrides
+        3 { //if exactly 3 items in stock
+            3 [1 x x 4]
+            4 [1 x 3 x]
+        }
+    }
 }
 ```
 
