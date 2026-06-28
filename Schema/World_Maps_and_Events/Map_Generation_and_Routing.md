@@ -190,7 +190,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `boss`
 
 
-**Definition:** An object defining the properties of a boss encounter, such as rewards or level.
+**Definition:** An object defining the properties of a boss encounter, such as rewards or level.  
 **Total Count:** 41
 
 <details>
@@ -217,7 +217,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `exit0`
 
 
-**Definition:** An object defining the properties of the first exit from this node.
+**Definition:** An object defining the properties of the first exit from this node.  
 **Total Count:** 27
 
 <details>
@@ -242,7 +242,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `quest_event`
 
 
-**Definition:** An object defining the properties of a quest-related event at this node, such as its level and art.
+**Definition:** An object defining the properties of a quest-related event at this node, such as its level and art.  
 **Total Count:** 24
 
 <details>
@@ -265,7 +265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `exit1`
 
 
-**Definition:** An object defining the properties of the second exit from this node.
+**Definition:** An object defining the properties of the second exit from this node.  
 **Total Count:** 5
 
 <details>
@@ -289,7 +289,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hard_initial`
 
 
-**Definition:** An object defining the properties of the initial hard path node.
+**Definition:** An object defining the properties of the initial hard path node.  
 **Total Count:** 4
 
 <details>
@@ -311,7 +311,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `time_machine`
 
 
-**Definition:** Defines a special event node that leads to a time machine quest level.
+**Definition:** Defines a special event node that leads to a time machine quest level.  
 **Total Count:** 4
 
 <details>
@@ -334,7 +334,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BothObelisksUnlocked`
 
 
-**Definition:** Configures the map event and art when both obelisks have been unlocked.
+**Definition:** Configures the map event and art when both obelisks have been unlocked.  
 **Total Count:** 2
 
 <details>
@@ -355,7 +355,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DimensionXUnlocked`
 
 
-**Definition:** Configures the map event and art when Dimension X is unlocked.
+**Definition:** Configures the map event and art when Dimension X is unlocked.  
 **Total Count:** 2
 
 <details>
@@ -376,7 +376,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `EndOfTimeUnlocked`
 
 
-**Definition:** Configures the map event and route visibility when End of Time is unlocked.
+**Definition:** Configures the map event and route visibility when End of Time is unlocked.  
 **Total Count:** 2
 
 <details>
@@ -397,7 +397,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HardPathUnlocked`
 
 
-**Definition:** Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false.
+**Definition:** Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false.  
 **Total Count:** 2
 
 <details>
@@ -418,7 +418,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeatWorldUnlocked`
 
 
-**Definition:** Configures the map event and routes when MeatWorld is initially unlocked.
+**Definition:** Configures the map event and routes when MeatWorld is initially unlocked.  
 **Total Count:** 2
 
 <details>
@@ -440,7 +440,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `miniboss_event`
 
 
-**Definition:** An object defining the properties of a mini-boss event at this node.
+**Definition:** An object defining the properties of a mini-boss event at this node.  
 **Total Count:** 2
 
 <details>
@@ -462,7 +462,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_battle1`
 
 
-**Definition:** An object defining the properties of the first MeatWorld battle node.
+**Definition:** An object defining the properties of the first MeatWorld battle node.  
 **Total Count:** 2
 
 <details>
@@ -484,7 +484,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_boss`
 
 
-**Definition:** An object defining the properties of the MeatWorld boss node.
+**Definition:** An object defining the properties of the MeatWorld boss node.  
 **Total Count:** 2
 
 <details>
@@ -508,7 +508,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_earlyhome`
 
 
-**Definition:** An object defining the properties of the MeatWorld early home node.
+**Definition:** An object defining the properties of the MeatWorld early home node.  
 **Total Count:** 2
 
 <details>
@@ -530,7 +530,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_event1`
 
 
-**Definition:** An object defining the properties of the first MeatWorld event node.
+**Definition:** An object defining the properties of the first MeatWorld event node.  
 **Total Count:** 2
 
 <details>
@@ -552,7 +552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_hard1`
 
 
-**Definition:** An object defining the properties of the first MeatWorld hard path node.
+**Definition:** An object defining the properties of the first MeatWorld hard path node.  
 **Total Count:** 2
 
 <details>
@@ -575,7 +575,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_home`
 
 
-**Definition:** An object defining the properties of the MeatWorld home node.
+**Definition:** An object defining the properties of the MeatWorld home node.  
 **Total Count:** 2
 
 <details>
@@ -597,7 +597,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_quest_event`
 
 
-**Definition:** An object defining the properties of the MeatWorld quest event node.
+**Definition:** An object defining the properties of the MeatWorld quest event node.  
 **Total Count:** 2
 
 <details>
@@ -621,7 +621,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_treasure`
 
 
-**Definition:** An object defining the properties of the MeatWorld treasure node.
+**Definition:** An object defining the properties of the MeatWorld treasure node.  
 **Total Count:** 2
 
 <details>
@@ -643,7 +643,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `VolcanoAntennaAttached`
 
 
-**Definition:** Configures the map event and art when the Volcano Antenna has been attached.
+**Definition:** Configures the map event and art when the Volcano Antenna has been attached.  
 **Total Count:** 2
 
 <details>
@@ -664,7 +664,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `battle`
 
 
-**Definition:** Defines a battle encounter by preset, level file path, or reverb settings.
+**Definition:** Defines a battle encounter by preset, level file path, or reverb settings.  
 **Total Count:** 1
 
 <details>
@@ -685,7 +685,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BoneyardUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Boneyard on the map.
+**Definition:** Unlocks an exit route to the Boneyard on the map.  
 **Total Count:** 1
 
 <details>
@@ -706,7 +706,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BunkerUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Bunker on the map.
+**Definition:** Unlocks an exit route to the Bunker on the map.  
 **Total Count:** 1
 
 <details>
@@ -727,7 +727,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CavesUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Caves on the map.
+**Definition:** Unlocks an exit route to the Caves on the map.  
 **Total Count:** 1
 
 <details>
@@ -748,7 +748,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChaosAntennaAttached`
 
 
-**Definition:** Configures the map event and art when the Chaos Antenna has been attached.
+**Definition:** Configures the map event and art when the Chaos Antenna has been attached.  
 **Total Count:** 1
 
 <details>
@@ -769,7 +769,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CoreObeliskUnlocked`
 
 
-**Definition:** Configures the map event and art when the Core Obelisk is raised and unlocked.
+**Definition:** Configures the map event and art when the Core Obelisk is raised and unlocked.  
 **Total Count:** 1
 
 <details>
@@ -790,7 +790,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CoreUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Core on the map.
+**Definition:** Unlocks an exit route to the Core on the map.  
 **Total Count:** 1
 
 <details>
@@ -811,7 +811,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CraterUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Crater on the map.
+**Definition:** Unlocks an exit route to the Crater on the map.  
 **Total Count:** 1
 
 <details>
@@ -832,7 +832,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `dimensionx`
 
 
-**Definition:** An enum specifying the Dimension X chapter area, or an object with its specific properties.
+**Definition:** An enum specifying the Dimension X chapter area, or an object with its specific properties.  
 **Total Count:** 1
 
 <details>
@@ -853,7 +853,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `endoftime`
 
 
-**Definition:** Configures various attributes of the End of Time area, depending on context.
+**Definition:** Configures various attributes of the End of Time area, depending on context.  
 **Total Count:** 1
 
 <details>
@@ -874,7 +874,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `event`
 
 
-**Definition:** Specifies the event to force, either by name or by a nested object defining its type and level.
+**Definition:** Specifies the event to force, either by name or by a nested object defining its type and level.  
 **Total Count:** 1
 
 <details>
@@ -896,7 +896,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `exit_desert`
 
 
-**Definition:** Defines the exit node properties for the desert map, including type, next map, lock state, and art.
+**Definition:** Defines the exit node properties for the desert map, including type, next map, lock state, and art.  
 **Total Count:** 1
 
 <details>
@@ -921,7 +921,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `exit_lab`
 
 
-**Definition:** Defines the exit node properties for the lab map, including type, next map, lock state, and art.
+**Definition:** Defines the exit node properties for the lab map, including type, next map, lock state, and art.  
 **Total Count:** 1
 
 <details>
@@ -946,7 +946,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `future`
 
 
-**Definition:** Specifies the name, map flag, or connection for the Future area.
+**Definition:** Specifies the name, map flag, or connection for the Future area.  
 **Total Count:** 1
 
 <details>
@@ -967,7 +967,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FutureUnlocked`
 
 
-**Definition:** Configures the map event and art when the Future is unlocked.
+**Definition:** Configures the map event and art when the Future is unlocked.  
 **Total Count:** 1
 
 <details>
@@ -988,7 +988,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GenFlag_Boss_Spewer`
 
 
-**Definition:** Configures the boss encounter event for the Spewer boss on the map.
+**Definition:** Configures the boss encounter event for the Spewer boss on the map.  
 **Total Count:** 1
 
 <details>
@@ -1009,7 +1009,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GenFlag_Boss_Stacy`
 
 
-**Definition:** Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map.
+**Definition:** Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map.  
 **Total Count:** 1
 
 <details>
@@ -1031,7 +1031,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `home`
 
 
-**Definition:** Specifies the option to go home (exit to the main hub).
+**Definition:** Specifies the option to go home (exit to the main hub).  
 **Total Count:** 1
 
 <details>
@@ -1052,7 +1052,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `iceage`
 
 
-**Definition:** Specifies the name, map flag, or connection for the Ice Age area.
+**Definition:** Specifies the name, map flag, or connection for the Ice Age area.  
 **Total Count:** 1
 
 <details>
@@ -1073,7 +1073,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `IceAgeUnlocked`
 
 
-**Definition:** Configures the map event and art when Ice Age is unlocked.
+**Definition:** Configures the map event and art when Ice Age is unlocked.  
 **Total Count:** 1
 
 <details>
@@ -1094,7 +1094,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JunkyardUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Junkyard on the map.
+**Definition:** Unlocks an exit route to the Junkyard on the map.  
 **Total Count:** 1
 
 <details>
@@ -1115,7 +1115,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jurassic`
 
 
-**Definition:** Specifies the name, map flag, or connection for the Jurassic area.
+**Definition:** Specifies the name, map flag, or connection for the Jurassic area.  
 **Total Count:** 1
 
 <details>
@@ -1136,7 +1136,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JurassicUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Jurassic area on the map.
+**Definition:** Unlocks an exit route to the Jurassic area on the map.  
 **Total Count:** 1
 
 <details>
@@ -1157,7 +1157,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeatWorldUnlockedFull`
 
 
-**Definition:** Unlocks hidden battle and hard nodes within the MeatWorld area on the map.
+**Definition:** Unlocks hidden battle and hard nodes within the MeatWorld area on the map.  
 **Total Count:** 1
 
 <details>
@@ -1185,7 +1185,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoonObeliskUnlocked`
 
 
-**Definition:** Configures the map event and art when the Moon Obelisk is raised and unlocked.
+**Definition:** Configures the map event and art when the Moon Obelisk is raised and unlocked.  
 **Total Count:** 1
 
 <details>
@@ -1206,7 +1206,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoonUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Moon on the map.
+**Definition:** Unlocks an exit route to the Moon on the map.  
 **Total Count:** 1
 
 <details>
@@ -1227,7 +1227,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mw_altar`
 
 
-**Definition:** A map node that represents a Meat World special event altar with custom art.
+**Definition:** A map node that represents a Meat World special event altar with custom art.  
 **Total Count:** 1
 
 <details>
@@ -1250,7 +1250,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SewersUnlocked`
 
 
-**Definition:** Unlocks an exit route to the Sewers on the map.
+**Definition:** Unlocks an exit route to the Sewers on the map.  
 **Total Count:** 1
 
 <details>
@@ -1271,7 +1271,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `shop_cheapwater`
 
 
-**Definition:** Node definition for a cheap water shop, specifying its type, level, and override art.
+**Definition:** Node definition for a cheap water shop, specifying its type, level, and override art.  
 **Total Count:** 1
 
 <details>
@@ -1294,7 +1294,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `shop_water`
 
 
-**Definition:** Node definition for a water shop, specifying its type, level, and override art.
+**Definition:** Node definition for a water shop, specifying its type, level, and override art.  
 **Total Count:** 1
 
 <details>
@@ -1317,7 +1317,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `start`
 
 
-**Definition:** Specifies the initial animation state played at the beginning of an ability.
+**Definition:** Specifies the initial animation state played at the beginning of an ability.  
 **Total Count:** 1
 
 <details>
@@ -1338,7 +1338,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `theend`
 
 
-**Definition:** Specifies the name, map flag, or connection for The End area.
+**Definition:** Specifies the name, map flag, or connection for The End area.  
 **Total Count:** 1
 
 <details>
@@ -1359,7 +1359,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TheEndUnlocked`
 
 
-**Definition:** An object that stores flags related to unlocking the 'The End' chapter.
+**Definition:** An object that stores flags related to unlocking the 'The End' chapter.  
 **Total Count:** 1
 
 <details>
@@ -1380,7 +1380,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ThrobbingArteryDone`
 
 
-**Definition:** An object that stores flags related to completing the Throbbing Artery quest.
+**Definition:** An object that stores flags related to completing the Throbbing Artery quest.  
 **Total Count:** 1
 
 <details>
@@ -1401,7 +1401,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `treasure`
 
 
-**Definition:** Defines a treasure node containing items or item pools.
+**Definition:** Defines a treasure node containing items or item pools.  
 **Total Count:** 1
 
 <details>
@@ -1423,7 +1423,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `WallOfFleshDone`
 
 
-**Definition:** An object that stores flags related to completing the Wall of Flesh quest.
+**Definition:** An object that stores flags related to completing the Wall of Flesh quest.  
 **Total Count:** 1
 
 <details>
@@ -1444,7 +1444,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `weather_event`
 
 
-**Definition:** Defines a special event that triggers a crater weather level.
+**Definition:** Defines a special event that triggers a crater weather level.  
 **Total Count:** 1
 
 <details>

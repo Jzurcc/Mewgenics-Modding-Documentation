@@ -191,7 +191,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `reward`
 
 
-**Definition:** An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items.
+**Definition:** An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items.  
 **Total Count:** 757
 
 <details>
@@ -234,7 +234,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `common`
 
 
-**Definition:** Defines the common reward block for a boss encounter.
+**Definition:** Defines the common reward block for a boss encounter.  
 **Total Count:** 633
 
 <details>
@@ -311,7 +311,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `rare`
 
 
-**Definition:** Defines the rare reward block for a boss encounter.
+**Definition:** Defines the rare reward block for a boss encounter.  
 **Total Count:** 633
 
 <details>
@@ -408,7 +408,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `good`
 
 
-**Definition:** If true, indicates the positive outcome branch for events or spawning contexts.
+**Definition:** If true, indicates the positive outcome branch for events or spawning contexts.  
 **Total Count:** 550
 
 <details>
@@ -485,7 +485,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bad`
 
 
-**Definition:** Defines the bad outcome branch of an event option, including its frame and rewards.
+**Definition:** Defines the bad outcome branch of an event option, including its frame and rewards.  
 **Total Count:** 341
 
 <details>
@@ -528,7 +528,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `intro`
 
 
-**Definition:** An object defining the introductory cutscene for the event, including title, cat selection, and visuals.
+**Definition:** An object defining the introductory cutscene for the event, including title, cat selection, and visuals.  
 **Total Count:** 214
 
 <details>
@@ -563,7 +563,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `main`
 
 
-**Definition:** An object containing the primary prompt and options for an event.
+**Definition:** An object containing the primary prompt and options for an event.  
 **Total Count:** 214
 
 <details>
@@ -599,7 +599,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `options`
 
 
-**Definition:** An array of named option objects within an event, each defining a possible action the player can take.
+**Definition:** An array of named option objects within an event, each defining a possible action the player can take.  
 **Total Count:** 210
 
 <details>
@@ -831,7 +831,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `requirements`
 
 
-**Definition:** An object defining the conditions that must be met for a reward or event branch to be available.
+**Definition:** An object defining the conditions that must be met for a reward or event branch to be available.  
 **Total Count:** 203
 
 <details>
@@ -865,7 +865,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `self_status_next_fight`
 
 
-**Definition:** An object defining status effects applied to the unit at the start of the next fight.
+**Definition:** An object defining status effects applied to the unit at the start of the next fight.  
 **Total Count:** 143
 
 <details>
@@ -925,7 +925,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `permanent_stats`
 
 
-**Definition:** Defines permanent stat changes to apply to the unit (e.g., con, cha).
+**Definition:** Defines permanent stat changes to apply to the unit (e.g., con, cha).  
 **Total Count:** 134
 
 <details>
@@ -953,7 +953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `conditional_reward`
 
 
-**Definition:** An object defining a reward that is granted only if specified conditions are met.
+**Definition:** An object defining a reward that is granted only if specified conditions are met.  
 **Total Count:** 126
 
 <details>
@@ -978,7 +978,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ignore`
 
 
-**Definition:** An object defining the player action to ignore the event, including its stat check and outcomes.
+**Definition:** An object defining the player action to ignore the event, including its stat check and outcomes.  
 **Total Count:** 57
 
 <details>
@@ -1006,7 +1006,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `examine`
 
 
-**Definition:** An object defining the player action to examine an object, including its stat check and outcomes.
+**Definition:** An object defining the player action to examine an object, including its stat check and outcomes.  
 **Total Count:** 44
 
 <details>
@@ -1033,7 +1033,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `spawn_unit_next_fight`
 
 
-**Definition:** An object defining a unit to spawn during the next fight, including its object, count, and spawn side.
+**Definition:** An object defining a unit to spawn during the next fight, including its object, count, and spawn side.  
 **Total Count:** 41
 
 <details>
@@ -1057,7 +1057,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `get_item_from_pool`
 
 
-**Definition:** Grants an item from the specified pool or a specific item name.
+**Definition:** Grants an item from the specified pool or a specific item name.  
 **Total Count:** 40
 
 <details>
@@ -1081,7 +1081,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `else`
 
 
-**Definition:** Specifies the fallback outcome when the primary condition in a conditional reward is not met.
+**Definition:** Specifies the fallback outcome when the primary condition in a conditional reward is not met.  
 **Total Count:** 37
 
 <details>
@@ -1117,7 +1117,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `leave`
 
 
-**Definition:** An object defining the player action to leave or ignore the event, including its stat check and outcomes.
+**Definition:** An object defining the player action to leave or ignore the event, including its stat check and outcomes.  
 **Total Count:** 32
 
 <details>
@@ -1143,7 +1143,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `loot`
 
 
-**Definition:** An object defining the player action to loot a container or corpse, including its stat check and outcomes.
+**Definition:** An object defining the player action to loot a container or corpse, including its stat check and outcomes.  
 **Total Count:** 25
 
 <details>
@@ -1170,7 +1170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mutation`
 
 
-**Definition:** An object defining specific body part mutations applied to the unit.
+**Definition:** An object defining specific body part mutations applied to the unit.  
 **Total Count:** 24
 
 <details>
@@ -1205,7 +1205,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `party_status_next_fight`
 
 
-**Definition:** An object defining status effects to apply to the party at the start of the next fight.
+**Definition:** An object defining status effects to apply to the party at the start of the next fight.  
 **Total Count:** 24
 
 <details>
@@ -1238,7 +1238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `eat`
 
 
-**Definition:** An object defining the player action to consume something, including its stat check and outcomes.
+**Definition:** An object defining the player action to consume something, including its stat check and outcomes.  
 **Total Count:** 23
 
 <details>
@@ -1263,7 +1263,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `setup`
 
 
-**Definition:** Defines actions or checks to run before the main event logic, often setting up conditions or tokens.
+**Definition:** Defines actions or checks to run before the main event logic, often setting up conditions or tokens.  
 **Total Count:** 23
 
 <details>
@@ -1286,7 +1286,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cutscene`
 
 
-**Definition:** Specifies the name of a cutscene to play.
+**Definition:** Specifies the name of a cutscene to play.  
 **Total Count:** 22
 
 <details>
@@ -1309,7 +1309,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `random_mutation_from_set`
 
 
-**Definition:** Defines a set of mutation categories and their specific IDs to apply a random mutation from.
+**Definition:** Defines a set of mutation categories and their specific IDs to apply a random mutation from.  
 **Total Count:** 22
 
 <details>
@@ -1343,7 +1343,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `random_mutation`
 
 
-**Definition:** The number of random mutations applied to the unit.
+**Definition:** The number of random mutations applied to the unit.  
 **Total Count:** 19
 
 <details>
@@ -1366,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `smash`
 
 
-**Definition:** An object defining the player action to smash an object, including its stat check and outcomes.
+**Definition:** An object defining the player action to smash an object, including its stat check and outcomes.  
 **Total Count:** 16
 
 <details>
@@ -1392,7 +1392,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `destroy`
 
 
-**Definition:** An object defining the player action to destroy an object, including its stat check and outcomes.
+**Definition:** An object defining the player action to destroy an object, including its stat check and outcomes.  
 **Total Count:** 14
 
 <details>
@@ -1417,7 +1417,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bash`
 
 
-**Definition:** An object defining the player action to bash open a container, including its stat check and outcomes.
+**Definition:** An object defining the player action to bash open a container, including its stat check and outcomes.  
 **Total Count:** 12
 
 <details>
@@ -1443,7 +1443,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `global_effect_next_fight`
 
 
-**Definition:** Defines a global status effect or modifier to apply in the next fight.
+**Definition:** Defines a global status effect or modifier to apply in the next fight.  
 **Total Count:** 11
 
 <details>
@@ -1469,7 +1469,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `open`
 
 
-**Definition:** An object defining the player action to open a container, including its stat check and outcomes.
+**Definition:** An object defining the player action to open a container, including its stat check and outcomes.  
 **Total Count:** 11
 
 <details>
@@ -1495,7 +1495,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sneak`
 
 
-**Definition:** An object defining the player action to sneak past a threat, including its stat check and outcomes.
+**Definition:** An object defining the player action to sneak past a threat, including its stat check and outcomes.  
 **Total Count:** 11
 
 <details>
@@ -1521,7 +1521,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `leave_party_temporarily`
 
 
-**Definition:** Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions.
+**Definition:** Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions.  
 **Total Count:** 9
 
 <details>
@@ -1544,7 +1544,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `take`
 
 
-**Definition:** An object defining the player action to take an item, including its stat check and outcomes.
+**Definition:** An object defining the player action to take an item, including its stat check and outcomes.  
 **Total Count:** 8
 
 <details>
@@ -1570,7 +1570,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `a`
 
 
-**Definition:** An object defining the first custom option in a test or debug event.
+**Definition:** An object defining the first custom option in a test or debug event.  
 **Total Count:** 7
 
 <details>
@@ -1594,7 +1594,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `attack`
 
 
-**Definition:** Specifies the primary attack ability for the class, either as a string name or a detailed object.
+**Definition:** Specifies the primary attack ability for the class, either as a string name or a detailed object.  
 **Total Count:** 7
 
 <details>
@@ -1619,7 +1619,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `b`
 
 
-**Definition:** An object defining the second custom option in a test or debug event.
+**Definition:** An object defining the second custom option in a test or debug event.  
 **Total Count:** 7
 
 <details>
@@ -1643,7 +1643,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `c`
 
 
-**Definition:** An object defining the third custom option in a test or debug event.
+**Definition:** An object defining the third custom option in a test or debug event.  
 **Total Count:** 7
 
 <details>
@@ -1667,7 +1667,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `charm`
 
 
-**Definition:** Specifies the player character's attempt to charm or persuade the encounter.
+**Definition:** Specifies the player character's attempt to charm or persuade the encounter.  
 **Total Count:** 7
 
 <details>
@@ -1693,7 +1693,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fight`
 
 
-**Definition:** Specifies the player character's attempt to fight or force their way through the encounter.
+**Definition:** Specifies the player character's attempt to fight or force their way through the encounter.  
 **Total Count:** 7
 
 <details>
@@ -1719,7 +1719,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `touch`
 
 
-**Definition:** Specifies the player character's attempt to physically touch or interact with the encounter.
+**Definition:** Specifies the player character's attempt to physically touch or interact with the encounter.  
 **Total Count:** 7
 
 <details>
@@ -1745,7 +1745,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `activate_p`
 
 
-**Definition:** Specifies the player character's attempt to activate the object (press a button/lever).
+**Definition:** Specifies the player character's attempt to activate the object (press a button/lever).  
 **Total Count:** 6
 
 <details>
@@ -1770,7 +1770,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `activate_z`
 
 
-**Definition:** Specifies the player character's attempt to activate the object (pull a lever/switch).
+**Definition:** Specifies the player character's attempt to activate the object (pull a lever/switch).  
 **Total Count:** 6
 
 <details>
@@ -1795,7 +1795,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `d`
 
 
-**Definition:** Specifies a debug or test option for game development purposes.
+**Definition:** Specifies a debug or test option for game development purposes.  
 **Total Count:** 6
 
 <details>
@@ -1819,7 +1819,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `enter`
 
 
-**Definition:** Specifies the player character's attempt to enter or go inside the encounter location.
+**Definition:** Specifies the player character's attempt to enter or go inside the encounter location.  
 **Total Count:** 6
 
 <details>
@@ -1846,7 +1846,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `inspect`
 
 
-**Definition:** Specifies the player character's attempt to inspect or examine the encounter.
+**Definition:** Specifies the player character's attempt to inspect or examine the encounter.  
 **Total Count:** 6
 
 <details>
@@ -1871,7 +1871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lick`
 
 
-**Definition:** Specifies the player character's attempt to lick the encounter.
+**Definition:** Specifies the player character's attempt to lick the encounter.  
 **Total Count:** 6
 
 <details>
@@ -1898,7 +1898,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `next_event_from_set`
 
 
-**Definition:** Specifies the next event to trigger, or defines a set of events with count and category constraints.
+**Definition:** Specifies the next event to trigger, or defines a set of events with count and category constraints.  
 **Total Count:** 6
 
 <details>
@@ -1921,7 +1921,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
-**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.
+**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.  
 **Total Count:** 5
 
 <details>
@@ -1946,7 +1946,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `drink`
 
 
-**Definition:** Specifies the player character's attempt to drink from or consume the encounter.
+**Definition:** Specifies the player character's attempt to drink from or consume the encounter.  
 **Total Count:** 5
 
 <details>
@@ -1971,7 +1971,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `kiss`
 
 
-**Definition:** Specifies the player character's attempt to kiss the encounter.
+**Definition:** Specifies the player character's attempt to kiss the encounter.  
 **Total Count:** 5
 
 <details>
@@ -1996,7 +1996,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `run`
 
 
-**Definition:** Specifies the player character's attempt to run away or flee from the encounter.
+**Definition:** Specifies the player character's attempt to run away or flee from the encounter.  
 **Total Count:** 5
 
 <details>
@@ -2023,7 +2023,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bite`
 
 
-**Definition:** Specifies the player character's attempt to bite the encounter.
+**Definition:** Specifies the player character's attempt to bite the encounter.  
 **Total Count:** 4
 
 <details>
@@ -2049,7 +2049,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `damage`
 
 
-**Definition:** Specifies the amount of damage dealt, can be a number or expression.
+**Definition:** Specifies the amount of damage dealt, can be a number or expression.  
 **Total Count:** 4
 
 <details>
@@ -2073,7 +2073,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `go_around`
 
 
-**Definition:** Specifies the player character's attempt to go around or bypass the encounter.
+**Definition:** Specifies the player character's attempt to go around or bypass the encounter.  
 **Total Count:** 4
 
 <details>
@@ -2099,7 +2099,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `home`
 
 
-**Definition:** Specifies the option to go home (exit to the main hub).
+**Definition:** Specifies the option to go home (exit to the main hub).  
 **Total Count:** 4
 
 <details>
@@ -2124,7 +2124,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `outcome`
 
 
-**Definition:** An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations.
+**Definition:** An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations.  
 **Total Count:** 4
 
 <details>
@@ -2149,7 +2149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `party_permanent_stats_exclude_self`
 
 
-**Definition:** An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit.
+**Definition:** An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit.  
 **Total Count:** 4
 
 <details>
@@ -2176,7 +2176,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `past`
 
 
-**Definition:** Specifies the option to travel to a past era (Ice Age, Jurassic, etc.).
+**Definition:** Specifies the option to travel to a past era (Ice Age, Jurassic, etc.).  
 **Total Count:** 4
 
 <details>
@@ -2202,7 +2202,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `skip`
 
 
-**Definition:** Specifies the option to skip or decline the current encounter.
+**Definition:** Specifies the option to skip or decline the current encounter.  
 **Total Count:** 4
 
 <details>
@@ -2227,7 +2227,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `investigate`
 
 
-**Definition:** Specifies the player character's attempt to investigate the encounter.
+**Definition:** Specifies the player character's attempt to investigate the encounter.  
 **Total Count:** 3
 
 <details>
@@ -2252,7 +2252,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `party_permanent_stats`
 
 
-**Definition:** An object defining permanent stat increases applied to the party.
+**Definition:** An object defining permanent stat increases applied to the party.  
 **Total Count:** 3
 
 <details>
@@ -2273,7 +2273,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `repell`
 
 
-**Definition:** Specifies the player character's attempt to rappel down or climb into the encounter.
+**Definition:** Specifies the player character's attempt to rappel down or climb into the encounter.  
 **Total Count:** 3
 
 <details>
@@ -2298,7 +2298,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `spawn_reflection_next_fight`
 
 
-**Definition:** The number of reflections to spawn in the next battle, optionally with a mutation.
+**Definition:** The number of reflections to spawn in the next battle, optionally with a mutation.  
 **Total Count:** 3
 
 <details>
@@ -2318,7 +2318,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusRandomEnemiesOnBattleStart`
 
 
-**Definition:** An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status.
+**Definition:** An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status.  
 **Total Count:** 3
 
 <details>
@@ -2342,7 +2342,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `attach_antenna`
 
 
-**Definition:** Specifies the player character's attempt to attach a device or antenna to the encounter.
+**Definition:** Specifies the player character's attempt to attach a device or antenna to the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2367,7 +2367,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `boogers`
 
 
-**Definition:** Specifies the player character's attempt to pick or examine boogers.
+**Definition:** Specifies the player character's attempt to pick or examine boogers.  
 **Total Count:** 2
 
 <details>
@@ -2391,7 +2391,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `copy`
 
 
-**Definition:** Specifies the player character's attempt to copy or replicate something from the encounter.
+**Definition:** Specifies the player character's attempt to copy or replicate something from the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2413,7 +2413,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `find_another_way`
 
 
-**Definition:** Specifies the player character's attempt to find an alternative path around the encounter.
+**Definition:** Specifies the player character's attempt to find an alternative path around the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2439,7 +2439,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `gain_familiar`
 
 
-**Definition:** Specifies which familiar type (by its class name) the unit gains.
+**Definition:** Specifies which familiar type (by its class name) the unit gains.  
 **Total Count:** 2
 
 <details>
@@ -2459,7 +2459,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `KillEnemyOfTypeAtBattleStart`
 
 
-**Definition:** Specifies that a specific enemy type is killed at the start of the next battle.
+**Definition:** Specifies that a specific enemy type is killed at the start of the next battle.  
 **Total Count:** 2
 
 <details>
@@ -2481,7 +2481,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `move_closer`
 
 
-**Definition:** Specifies the player character's attempt to move closer to the encounter.
+**Definition:** Specifies the player character's attempt to move closer to the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2506,7 +2506,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `party_random_mutation_from_set`
 
 
-**Definition:** An object specifying the count and mutation parts to randomly apply to the party.
+**Definition:** An object specifying the count and mutation parts to randomly apply to the party.  
 **Total Count:** 2
 
 <details>
@@ -2531,7 +2531,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `play`
 
 
-**Definition:** Specifies the player character's attempt to play or interact playfully with the encounter.
+**Definition:** Specifies the player character's attempt to play or interact playfully with the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2556,7 +2556,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `poop`
 
 
-**Definition:** Defines a poop event or interaction, often part of a random encounter or response in dialogue.
+**Definition:** Defines a poop event or interaction, often part of a random encounter or response in dialogue.  
 **Total Count:** 2
 
 <details>
@@ -2580,7 +2580,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `print`
 
 
-**Definition:** Specifies the player character's attempt to print or output something from the encounter.
+**Definition:** Specifies the player character's attempt to print or output something from the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2602,7 +2602,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `protection`
 
 
-**Definition:** Specifies the player character's attempt to offer or ask for protection.
+**Definition:** Specifies the player character's attempt to offer or ask for protection.  
 **Total Count:** 2
 
 <details>
@@ -2626,7 +2626,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `random_chance`
 
 
-**Definition:** Defines a block with a percentage chance and an action to execute if the chance succeeds.
+**Definition:** Defines a block with a percentage chance and an action to execute if the chance succeeds.  
 **Total Count:** 2
 
 <details>
@@ -2649,7 +2649,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `repair`
 
 
-**Definition:** Specifies the player character's attempt to repair the encounter object.
+**Definition:** Specifies the player character's attempt to repair the encounter object.  
 **Total Count:** 2
 
 <details>
@@ -2675,7 +2675,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sacrifice`
 
 
-**Definition:** Specifies the player character's attempt to make a sacrifice at the encounter.
+**Definition:** Specifies the player character's attempt to make a sacrifice at the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2702,7 +2702,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `scale`
 
 
-**Definition:** The scale multiplier applied to the unit's visual size.
+**Definition:** The scale multiplier applied to the unit's visual size.  
 **Total Count:** 2
 
 <details>
@@ -2724,7 +2724,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `turnon`
 
 
-**Definition:** Specifies the player character's attempt to turn on or activate the encounter.
+**Definition:** Specifies the player character's attempt to turn on or activate the encounter.  
 **Total Count:** 2
 
 <details>
@@ -2749,7 +2749,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `altar_sacrifice`
 
 
-**Definition:** Specifies the player character's attempt to sacrifice a cat at the altar.
+**Definition:** Specifies the player character's attempt to sacrifice a cat at the altar.  
 **Total Count:** 1
 
 <details>
@@ -2772,7 +2772,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `arm`
 
 
-**Definition:** Specifies the player character's attempt to put their arm inside the encounter.
+**Definition:** Specifies the player character's attempt to put their arm inside the encounter.  
 **Total Count:** 1
 
 <details>
@@ -2797,7 +2797,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `attach_amplifier`
 
 
-**Definition:** Specifies the player character's attempt to attach an amplifier to the encounter.
+**Definition:** Specifies the player character's attempt to attach an amplifier to the encounter.  
 **Total Count:** 1
 
 <details>
@@ -2822,7 +2822,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `attach_leech`
 
 
-**Definition:** Specifies the player character's attempt to attach a leech to the encounter.
+**Definition:** Specifies the player character's attempt to attach a leech to the encounter.  
 **Total Count:** 1
 
 <details>
@@ -2847,7 +2847,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bash_past_alt`
 
 
-**Definition:** Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters).
+**Definition:** Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters).  
 **Total Count:** 1
 
 <details>
@@ -2873,7 +2873,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bite_it_off`
 
 
-**Definition:** Specifies the player character's attempt to bite off part of the encounter.
+**Definition:** Specifies the player character's attempt to bite off part of the encounter.  
 **Total Count:** 1
 
 <details>
@@ -2898,7 +2898,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `blue`
 
 
-**Definition:** Specifies the player character's attempt to choose the blue option.
+**Definition:** Specifies the player character's attempt to choose the blue option.  
 **Total Count:** 1
 
 <details>
@@ -2923,7 +2923,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `blue_needle`
 
 
-**Definition:** Specifies the player character's attempt to take the blue needle.
+**Definition:** Specifies the player character's attempt to take the blue needle.  
 **Total Count:** 1
 
 <details>
@@ -2949,7 +2949,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `body`
 
 
-**Definition:** The catalog ID for the cat's body part.
+**Definition:** The catalog ID for the cat's body part.  
 **Total Count:** 1
 
 <details>
@@ -2973,7 +2973,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `book`
 
 
-**Definition:** Specifies the player character's attempt to read or take the book.
+**Definition:** Specifies the player character's attempt to read or take the book.  
 **Total Count:** 1
 
 <details>
@@ -2997,7 +2997,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `brace`
 
 
-**Definition:** Specifies the player character's attempt to brace themselves for the encounter.
+**Definition:** Specifies the player character's attempt to brace themselves for the encounter.  
 **Total Count:** 1
 
 <details>
@@ -3021,7 +3021,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `break_ice`
 
 
-**Definition:** Specifies the player character's attempt to break the ice covering the encounter.
+**Definition:** Specifies the player character's attempt to break the ice covering the encounter.  
 **Total Count:** 1
 
 <details>
@@ -3044,7 +3044,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `break_lock`
 
 
-**Definition:** Specifies the player character's attempt to break the lock on the encounter.
+**Definition:** Specifies the player character's attempt to break the lock on the encounter.  
 **Total Count:** 1
 
 <details>
@@ -3069,7 +3069,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bribe`
 
 
-**Definition:** Specifies the player character's attempt to bribe the encounter.
+**Definition:** Specifies the player character's attempt to bribe the encounter.  
 **Total Count:** 1
 
 <details>
@@ -3094,7 +3094,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `button`
 
 
-**Definition:** Specifies the player character's attempt to push the button.
+**Definition:** Specifies the player character's attempt to push the button.  
 **Total Count:** 1
 
 <details>
@@ -3119,7 +3119,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `buy1`
 
 
-**Definition:** Specifies the player character's attempt to buy one of the offered items.
+**Definition:** Specifies the player character's attempt to buy one of the offered items.  
 **Total Count:** 1
 
 <details>
@@ -3147,7 +3147,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `catch`
 
 
-**Definition:** An object defining a response option for catching an entity, including stat checks and rewards.
+**Definition:** An object defining a response option for catching an entity, including stat checks and rewards.  
 **Total Count:** 1
 
 <details>
@@ -3172,7 +3172,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `challenge_to_game`
 
 
-**Definition:** Specifies the player character's attempt to challenge the encounter to a game.
+**Definition:** Specifies the player character's attempt to challenge the encounter to a game.  
 **Total Count:** 1
 
 <details>
@@ -3197,7 +3197,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `chaos_ending`
 
 
-**Definition:** Specifies the option to trigger the chaos ending cutscene.
+**Definition:** Specifies the option to trigger the chaos ending cutscene.  
 **Total Count:** 1
 
 <details>
@@ -3220,7 +3220,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `chapter_cutscene`
 
 
-**Definition:** Specifies the option to trigger a chapter intro cutscene.
+**Definition:** Specifies the option to trigger a chapter intro cutscene.  
 **Total Count:** 1
 
 <details>
@@ -3243,7 +3243,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `charm_past_alt`
 
 
-**Definition:** Specifies the player character's attempt to charm the encounter (alternate version for specific chapters).
+**Definition:** Specifies the player character's attempt to charm the encounter (alternate version for specific chapters).  
 **Total Count:** 1
 
 <details>
@@ -3269,7 +3269,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `climb`
 
 
-**Definition:** Specifies the player character's attempt to climb over the encounter.
+**Definition:** Specifies the player character's attempt to climb over the encounter.  
 **Total Count:** 1
 
 <details>
@@ -3294,7 +3294,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `comfort`
 
 
-**Definition:** A charisma-based event response that soothes the encounter subject.
+**Definition:** A charisma-based event response that soothes the encounter subject.  
 **Total Count:** 1
 
 <details>
@@ -3319,7 +3319,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `communicate`
 
 
-**Definition:** A charisma-based event response to establish communication.
+**Definition:** A charisma-based event response to establish communication.  
 **Total Count:** 1
 
 <details>
@@ -3344,7 +3344,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `concheck`
 
 
-**Definition:** A constitution-based event response to test endurance.
+**Definition:** A constitution-based event response to test endurance.  
 **Total Count:** 1
 
 <details>
@@ -3369,7 +3369,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `counter`
 
 
-**Definition:** An event response that uses a countering action, with no stat requirement.
+**Definition:** An event response that uses a countering action, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3393,7 +3393,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `crack_open`
 
 
-**Definition:** A strength-based event response to break something open.
+**Definition:** A strength-based event response to break something open.  
 **Total Count:** 1
 
 <details>
@@ -3418,7 +3418,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cross`
 
 
-**Definition:** An event response to traverse an obstacle, with no stat requirement.
+**Definition:** An event response to traverse an obstacle, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3442,7 +3442,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cut_wires`
 
 
-**Definition:** An intelligence-based event response to disable wires.
+**Definition:** An intelligence-based event response to disable wires.  
 **Total Count:** 1
 
 <details>
@@ -3467,7 +3467,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `damage_1`
 
 
-**Definition:** A constitution-based event response that deals minor damage.
+**Definition:** A constitution-based event response that deals minor damage.  
 **Total Count:** 1
 
 <details>
@@ -3492,7 +3492,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `damage_full`
 
 
-**Definition:** A constitution-based event response that deals full damage.
+**Definition:** A constitution-based event response that deals full damage.  
 **Total Count:** 1
 
 <details>
@@ -3517,7 +3517,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `damage_half`
 
 
-**Definition:** A constitution-based event response that deals halved damage.
+**Definition:** A constitution-based event response that deals halved damage.  
 **Total Count:** 1
 
 <details>
@@ -3542,7 +3542,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `desert_cutscene`
 
 
-**Definition:** An event response that triggers a desert-themed cutscene, with no stat requirement.
+**Definition:** An event response that triggers a desert-themed cutscene, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3565,7 +3565,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `dexcheck`
 
 
-**Definition:** A dexterity-based event response to test agility.
+**Definition:** A dexterity-based event response to test agility.  
 **Total Count:** 1
 
 <details>
@@ -3590,7 +3590,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `dig`
 
 
-**Definition:** A strength-based event response to excavate, limited by a token counter maximum.
+**Definition:** A strength-based event response to excavate, limited by a token counter maximum.  
 **Total Count:** 1
 
 <details>
@@ -3616,7 +3616,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `disarm`
 
 
-**Definition:** A dexterity-based event response to remove a trap.
+**Definition:** A dexterity-based event response to remove a trap.  
 **Total Count:** 1
 
 <details>
@@ -3641,7 +3641,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `dive`
 
 
-**Definition:** A dexterity-based event response to plunge into water.
+**Definition:** A dexterity-based event response to plunge into water.  
 **Total Count:** 1
 
 <details>
@@ -3666,7 +3666,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `donate`
 
 
-**Definition:** An event response to give a donation, with no stat requirement but a coin cost.
+**Definition:** An event response to give a donation, with no stat requirement but a coin cost.  
 **Total Count:** 1
 
 <details>
@@ -3690,7 +3690,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `donate_10`
 
 
-**Definition:** An event response to donate 10 coins.
+**Definition:** An event response to donate 10 coins.  
 **Total Count:** 1
 
 <details>
@@ -3720,7 +3720,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `donate_15`
 
 
-**Definition:** An event response to donate 15 coins.
+**Definition:** An event response to donate 15 coins.  
 **Total Count:** 1
 
 <details>
@@ -3750,7 +3750,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `donate_20`
 
 
-**Definition:** An event response to donate 20 coins.
+**Definition:** An event response to donate 20 coins.  
 **Total Count:** 1
 
 <details>
@@ -3780,7 +3780,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `donate_5`
 
 
-**Definition:** An event response to donate 5 coins.
+**Definition:** An event response to donate 5 coins.  
 **Total Count:** 1
 
 <details>
@@ -3810,7 +3810,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `double`
 
 
-**Definition:** An event response that doubles something, with no stat requirement.
+**Definition:** An event response that doubles something, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3834,7 +3834,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `eat_meat`
 
 
-**Definition:** A constitution-based event response to consume meat.
+**Definition:** A constitution-based event response to consume meat.  
 **Total Count:** 1
 
 <details>
@@ -3859,7 +3859,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `enter_crater`
 
 
-**Definition:** A luck-based event response to enter a crater.
+**Definition:** A luck-based event response to enter a crater.  
 **Total Count:** 1
 
 <details>
@@ -3883,7 +3883,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `face`
 
 
-**Definition:** The face equipment item assigned to the unit.
+**Definition:** The face equipment item assigned to the unit.  
 **Total Count:** 1
 
 <details>
@@ -3905,7 +3905,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fiddle`
 
 
-**Definition:** A quest-based event response to tamper, requiring no specific quest token.
+**Definition:** A quest-based event response to tamper, requiring no specific quest token.  
 **Total Count:** 1
 
 <details>
@@ -3929,7 +3929,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fill_jar`
 
 
-**Definition:** A quest-based event response to fill a jar, with no stat requirement.
+**Definition:** A quest-based event response to fill a jar, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3954,7 +3954,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `find`
 
 
-**Definition:** An event response to search, with no stat requirement.
+**Definition:** An event response to search, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -3977,7 +3977,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fire`
 
 
-**Definition:** An event response that uses fire, with no stat requirement.
+**Definition:** An event response that uses fire, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4001,7 +4001,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `flush_yourself`
 
 
-**Definition:** An event response to flush oneself, requiring a minimum counter value.
+**Definition:** An event response to flush oneself, requiring a minimum counter value.  
 **Total Count:** 1
 
 <details>
@@ -4024,7 +4024,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `follow`
 
 
-**Definition:** A speed-based event response to pursue.
+**Definition:** A speed-based event response to pursue.  
 **Total Count:** 1
 
 <details>
@@ -4049,7 +4049,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `free`
 
 
-**Definition:** If true, this option requires no cost to activate.
+**Definition:** If true, this option requires no cost to activate.  
 **Total Count:** 1
 
 <details>
@@ -4074,7 +4074,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `future`
 
 
-**Definition:** Specifies the name, map flag, or connection for the Future area.
+**Definition:** Specifies the name, map flag, or connection for the Future area.  
 **Total Count:** 1
 
 <details>
@@ -4100,7 +4100,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `gain_clone_familiar`
 
 
-**Definition:** An object that triggers the gaining of a clone familiar, with a specified object name.
+**Definition:** An object that triggers the gaining of a clone familiar, with a specified object name.  
 **Total Count:** 1
 
 <details>
@@ -4121,7 +4121,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `give_parasite`
 
 
-**Definition:** An event response to give a parasite, requiring the cat to have a parasite.
+**Definition:** An event response to give a parasite, requiring the cat to have a parasite.  
 **Total Count:** 1
 
 <details>
@@ -4146,7 +4146,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hack`
 
 
-**Definition:** An intelligence-based event response to hack a system.
+**Definition:** An intelligence-based event response to hack a system.  
 **Total Count:** 1
 
 <details>
@@ -4170,7 +4170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `head`
 
 
-**Definition:** The catalog ID for the cat's head part.
+**Definition:** The catalog ID for the cat's head part.  
 **Total Count:** 1
 
 <details>
@@ -4192,7 +4192,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `holy`
 
 
-**Definition:** An event response that uses holy power, with no stat requirement.
+**Definition:** An event response that uses holy power, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4216,7 +4216,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hp`
 
 
-**Definition:** An event response that trades health, with no stat requirement.
+**Definition:** An event response that trades health, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4240,7 +4240,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ice`
 
 
-**Definition:** An event response that uses ice, with no stat requirement.
+**Definition:** An event response that uses ice, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4264,7 +4264,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `infinite`
 
 
-**Definition:** An event response to choose infinite, with a chapter exit hint and no stat requirement.
+**Definition:** An event response to choose infinite, with a chapter exit hint and no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4290,7 +4290,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `intcheck`
 
 
-**Definition:** An intelligence-based event response to test intellect.
+**Definition:** An intelligence-based event response to test intellect.  
 **Total Count:** 1
 
 <details>
@@ -4314,7 +4314,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `intimidation`
 
 
-**Definition:** An event response that intimidates, with no stat requirement.
+**Definition:** An event response that intimidates, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4338,7 +4338,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `itchies`
 
 
-**Definition:** An event response that causes itches, with no stat requirement.
+**Definition:** An event response that causes itches, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4363,7 +4363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `join`
 
 
-**Definition:** A charisma-based event response to join in.
+**Definition:** A charisma-based event response to join in.  
 **Total Count:** 1
 
 <details>
@@ -4388,7 +4388,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jump`
 
 
-**Definition:** A speed-based event response to leap.
+**Definition:** A speed-based event response to leap.  
 **Total Count:** 1
 
 <details>
@@ -4413,7 +4413,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jump_over`
 
 
-**Definition:** A dexterity-based event response to vault over.
+**Definition:** A dexterity-based event response to vault over.  
 **Total Count:** 1
 
 <details>
@@ -4438,7 +4438,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `keep_going`
 
 
-**Definition:** An event response to persevere, with no stat requirement.
+**Definition:** An event response to persevere, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4462,7 +4462,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `kiss_meat`
 
 
-**Definition:** A charisma-based event response to kiss meat.
+**Definition:** A charisma-based event response to kiss meat.  
 **Total Count:** 1
 
 <details>
@@ -4487,7 +4487,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `knife`
 
 
-**Definition:** An event response to obtain a knife, with no stat requirement.
+**Definition:** An event response to obtain a knife, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4511,7 +4511,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `leave_it_in`
 
 
-**Definition:** An event response to leave an object in place, with no stat requirement.
+**Definition:** An event response to leave an object in place, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4537,7 +4537,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `leg`
 
 
-**Definition:** A luck-based event response to use a leg.
+**Definition:** A luck-based event response to use a leg.  
 **Total Count:** 1
 
 <details>
@@ -4562,7 +4562,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lever`
 
 
-**Definition:** An event response to pull a lever, with a fixed chance and no stat requirement.
+**Definition:** An event response to pull a lever, with a fixed chance and no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4589,7 +4589,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lick_alt`
 
 
-**Definition:** A constitution-based event response to lick, restricted to specific chapters.
+**Definition:** A constitution-based event response to lick, restricted to specific chapters.  
 **Total Count:** 1
 
 <details>
@@ -4615,7 +4615,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lightning`
 
 
-**Definition:** An event response using lightning, with no stat requirement.
+**Definition:** An event response using lightning, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -4639,7 +4639,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `listen`
 
 
-**Definition:** An intelligence-based event response to listen.
+**Definition:** An intelligence-based event response to listen.  
 **Total Count:** 1
 
 <details>
@@ -4663,7 +4663,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `looks`
 
 
-**Definition:** The dialogue option for the Genie good event that selects the looks reward.
+**Definition:** The dialogue option for the Genie good event that selects the looks reward.  
 **Total Count:** 1
 
 <details>
@@ -4686,7 +4686,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `loot_heart`
 
 
-**Definition:** The dialogue option to take the heart from the Dead King as a quest action.
+**Definition:** The dialogue option to take the heart from the Dead King as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -4711,7 +4711,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `makeup`
 
 
-**Definition:** The dialogue option for the makeup event, associated with the Tink2 encounter.
+**Definition:** The dialogue option for the makeup event, associated with the Tink2 encounter.  
 **Total Count:** 1
 
 <details>
@@ -4735,7 +4735,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mind`
 
 
-**Definition:** The dialogue option for the Genie bad event that selects the curse mind reward.
+**Definition:** The dialogue option for the Genie bad event that selects the curse mind reward.  
 **Total Count:** 1
 
 <details>
@@ -4758,7 +4758,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `neck`
 
 
-**Definition:** The neck equipment item assigned to the unit.
+**Definition:** The neck equipment item assigned to the unit.  
 **Total Count:** 1
 
 <details>
@@ -4780,7 +4780,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `nothanks`
 
 
-**Definition:** The generic decline dialogue option that triggers a leave animation.
+**Definition:** The generic decline dialogue option that triggers a leave animation.  
 **Total Count:** 1
 
 <details>
@@ -4804,7 +4804,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `outsmart`
 
 
-**Definition:** The dialogue option that uses the int stat to outsmart the tutorial encounter.
+**Definition:** The dialogue option that uses the int stat to outsmart the tutorial encounter.  
 **Total Count:** 1
 
 <details>
@@ -4827,7 +4827,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `patch_up`
 
 
-**Definition:** The dialogue option that uses the int stat to patch up the dying fetus.
+**Definition:** The dialogue option that uses the int stat to patch up the dying fetus.  
 **Total Count:** 1
 
 <details>
@@ -4852,7 +4852,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pick_lock`
 
 
-**Definition:** The dialogue option that uses the dex stat to pick a lock on a crate.
+**Definition:** The dialogue option that uses the dex stat to pick a lock on a crate.  
 **Total Count:** 1
 
 <details>
@@ -4877,7 +4877,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pilfer`
 
 
-**Definition:** The dialogue option that uses the lck stat to pilfer from a pile of skulls.
+**Definition:** The dialogue option that uses the lck stat to pilfer from a pile of skulls.  
 **Total Count:** 1
 
 <details>
@@ -4902,7 +4902,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pirouette`
 
 
-**Definition:** The dialogue option for the Tink1 encounter that performs a pirouette.
+**Definition:** The dialogue option for the Tink1 encounter that performs a pirouette.  
 **Total Count:** 1
 
 <details>
@@ -4926,7 +4926,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `place_gristle`
 
 
-**Definition:** The dialogue option to place gristle on the Wall of Flesh as a quest action.
+**Definition:** The dialogue option to place gristle on the Wall of Flesh as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -4951,7 +4951,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `power`
 
 
-**Definition:** The dialogue option for the Genie good event that selects the power reward.
+**Definition:** The dialogue option for the Genie good event that selects the power reward.  
 **Total Count:** 1
 
 <details>
@@ -4974,7 +4974,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pull`
 
 
-**Definition:** The dialogue option that uses the str stat to pull a knife from a wall.
+**Definition:** The dialogue option that uses the str stat to pull a knife from a wall.  
 **Total Count:** 1
 
 <details>
@@ -4999,7 +4999,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pull_it_out`
 
 
-**Definition:** The dialogue option to pull out a stalactite from the Jagged Pathway.
+**Definition:** The dialogue option to pull out a stalactite from the Jagged Pathway.  
 **Total Count:** 1
 
 <details>
@@ -5024,7 +5024,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pull_lever`
 
 
-**Definition:** The dialogue option to pull the lever on the Odd Device.
+**Definition:** The dialogue option to pull the lever on the Odd Device.  
 **Total Count:** 1
 
 <details>
@@ -5048,7 +5048,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purify`
 
 
-**Definition:** The dialogue option that uses the lck stat to purify the Mysterious Chamber.
+**Definition:** The dialogue option that uses the lck stat to purify the Mysterious Chamber.  
 **Total Count:** 1
 
 <details>
@@ -5073,7 +5073,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `push_buttons`
 
 
-**Definition:** The dialogue option to push buttons on the Odd Device.
+**Definition:** The dialogue option to push buttons on the Odd Device.  
 **Total Count:** 1
 
 <details>
@@ -5097,7 +5097,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `push_through`
 
 
-**Definition:** The dialogue option that uses the str stat to push through the Jagged Pathway.
+**Definition:** The dialogue option that uses the str stat to push through the Jagged Pathway.  
 **Total Count:** 1
 
 <details>
@@ -5122,7 +5122,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `put_in_coins`
 
 
-**Definition:** The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins.
+**Definition:** The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins.  
 **Total Count:** 1
 
 <details>
@@ -5151,7 +5151,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `put_out_of_misery`
 
 
-**Definition:** The dialogue option that uses the str stat to put the dying fetus out of its misery.
+**Definition:** The dialogue option that uses the str stat to put the dying fetus out of its misery.  
 **Total Count:** 1
 
 <details>
@@ -5176,7 +5176,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `reach_inside`
 
 
-**Definition:** The dialogue option that uses the spd stat to reach inside a Small Black Hole.
+**Definition:** The dialogue option that uses the spd stat to reach inside a Small Black Hole.  
 **Total Count:** 1
 
 <details>
@@ -5199,7 +5199,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `read`
 
 
-**Definition:** The dialogue option that uses the int stat to read the Mysterious Manual.
+**Definition:** The dialogue option that uses the int stat to read the Mysterious Manual.  
 **Total Count:** 1
 
 <details>
@@ -5224,7 +5224,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `receive`
 
 
-**Definition:** The dialogue option to receive an item from a legacy event.
+**Definition:** The dialogue option to receive an item from a legacy event.  
 **Total Count:** 1
 
 <details>
@@ -5249,7 +5249,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `red`
 
 
-**Definition:** Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event.
+**Definition:** Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event.  
 **Total Count:** 1
 
 <details>
@@ -5276,7 +5276,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `red_needle`
 
 
-**Definition:** The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token.
+**Definition:** The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token.  
 **Total Count:** 1
 
 <details>
@@ -5302,7 +5302,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `reflect`
 
 
-**Definition:** The dialogue option for the StacyMutant4 encounter that chooses to reflect.
+**Definition:** The dialogue option for the StacyMutant4 encounter that chooses to reflect.  
 **Total Count:** 1
 
 <details>
@@ -5326,7 +5326,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `remove`
 
 
-**Definition:** The dialogue option that uses the str stat to remove a stuck corpse.
+**Definition:** The dialogue option that uses the str stat to remove a stuck corpse.  
 **Total Count:** 1
 
 <details>
@@ -5351,7 +5351,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `remove_the_nail`
 
 
-**Definition:** The dialogue option that uses the dex stat to remove the nail from a big toe.
+**Definition:** The dialogue option that uses the dex stat to remove the nail from a big toe.  
 **Total Count:** 1
 
 <details>
@@ -5376,7 +5376,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `repair_quest`
 
 
-**Definition:** The dialogue option to repair the broken time machine as a quest action.
+**Definition:** The dialogue option to repair the broken time machine as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -5400,7 +5400,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `rest`
 
 
-**Definition:** The dialogue option that uses the lck stat to rest on a cat bed.
+**Definition:** The dialogue option that uses the lck stat to rest on a cat bed.  
 **Total Count:** 1
 
 <details>
@@ -5424,7 +5424,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `revive`
 
 
-**Definition:** The dialogue option that uses the lck stat to revive the Dead Mammoth.
+**Definition:** The dialogue option that uses the lck stat to revive the Dead Mammoth.  
 **Total Count:** 1
 
 <details>
@@ -5448,7 +5448,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `rub`
 
 
-**Definition:** The dialogue option that uses the lck stat to rub the Genie Lamp.
+**Definition:** The dialogue option that uses the lck stat to rub the Genie Lamp.  
 **Total Count:** 1
 
 <details>
@@ -5472,7 +5472,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `run_again`
 
 
-**Definition:** The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet.
+**Definition:** The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet.  
 **Total Count:** 1
 
 <details>
@@ -5499,7 +5499,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `run_away`
 
 
-**Definition:** The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark.
+**Definition:** The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark.  
 **Total Count:** 1
 
 <details>
@@ -5524,7 +5524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sacrifice_full_favor`
 
 
-**Definition:** The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action.
+**Definition:** The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -5549,7 +5549,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sacrifice_normal`
 
 
-**Definition:** The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped.
+**Definition:** The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped.  
 **Total Count:** 1
 
 <details>
@@ -5574,7 +5574,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sacrifice_partial_favor`
 
 
-**Definition:** The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action.
+**Definition:** The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -5601,7 +5601,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sacrifice_quest`
 
 
-**Definition:** The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped.
+**Definition:** The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped.  
 **Total Count:** 1
 
 <details>
@@ -5626,7 +5626,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `scream`
 
 
-**Definition:** The dialogue option to scream at the Meat Golem with no stat requirement.
+**Definition:** The dialogue option to scream at the Meat Golem with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -5649,7 +5649,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `shake`
 
 
-**Definition:** The dialogue option that uses the str stat to shake the Vending Machine.
+**Definition:** The dialogue option that uses the str stat to shake the Vending Machine.  
 **Total Count:** 1
 
 <details>
@@ -5673,7 +5673,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `slip_through`
 
 
-**Definition:** The dialogue option that uses the dex stat to slip through a Barbed Wire Fence.
+**Definition:** The dialogue option that uses the dex stat to slip through a Barbed Wire Fence.  
 **Total Count:** 1
 
 <details>
@@ -5698,7 +5698,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sneak_by`
 
 
-**Definition:** The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark.
+**Definition:** The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark.  
 **Total Count:** 1
 
 <details>
@@ -5723,7 +5723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sneak_past_alt`
 
 
-**Definition:** The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters.
+**Definition:** The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters.  
 **Total Count:** 1
 
 <details>
@@ -5749,7 +5749,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `soul`
 
 
-**Definition:** The dialogue option for the Genie bad event that selects the curse soul reward.
+**Definition:** The dialogue option for the Genie bad event that selects the curse soul reward.  
 **Total Count:** 1
 
 <details>
@@ -5772,7 +5772,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `speed`
 
 
-**Definition:** The speed of the projectile or move, can be a value or a range.
+**Definition:** The speed of the projectile or move, can be a value or a range.  
 **Total Count:** 1
 
 <details>
@@ -5796,7 +5796,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `surprise`
 
 
-**Definition:** The dialogue option for the Butch2 encounter that surprises the target.
+**Definition:** The dialogue option for the Butch2 encounter that surprises the target.  
 **Total Count:** 1
 
 <details>
@@ -5820,7 +5820,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sweet_talk`
 
 
-**Definition:** The dialogue option that uses the cha stat to sweet-talk Death.
+**Definition:** The dialogue option that uses the cha stat to sweet-talk Death.  
 **Total Count:** 1
 
 <details>
@@ -5845,7 +5845,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `swim`
 
 
-**Definition:** The dialogue option that uses the str stat to swim through a Strong Current.
+**Definition:** The dialogue option that uses the str stat to swim through a Strong Current.  
 **Total Count:** 1
 
 <details>
@@ -5870,7 +5870,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tail`
 
 
-**Definition:** The catalog ID for the cat's tail part.
+**Definition:** The catalog ID for the cat's tail part.  
 **Total Count:** 1
 
 <details>
@@ -5895,7 +5895,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `take_blood`
 
 
-**Definition:** The dialogue option to drain blood from the Dead King as a quest action.
+**Definition:** The dialogue option to drain blood from the Dead King as a quest action.  
 **Total Count:** 1
 
 <details>
@@ -5920,7 +5920,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `talk`
 
 
-**Definition:** The dialogue option that uses the cha stat to talk to a Spookie Apparation.
+**Definition:** The dialogue option that uses the cha stat to talk to a Spookie Apparation.  
 **Total Count:** 1
 
 <details>
@@ -5945,7 +5945,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `talk_to`
 
 
-**Definition:** The dialogue option that uses the cha stat to talk to someone during a Dust Storm.
+**Definition:** The dialogue option that uses the cha stat to talk to someone during a Dust Storm.  
 **Total Count:** 1
 
 <details>
@@ -5970,7 +5970,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tappytoes`
 
 
-**Definition:** The dialogue option for the Tink1 encounter that performs a tappytoes action.
+**Definition:** The dialogue option for the Tink1 encounter that performs a tappytoes action.  
 **Total Count:** 1
 
 <details>
@@ -5994,7 +5994,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `teleport`
 
 
-**Definition:** Defines a dialogue option that transports the unit to an alternative location in the event.
+**Definition:** Defines a dialogue option that transports the unit to an alternative location in the event.  
 **Total Count:** 1
 
 <details>
@@ -6019,7 +6019,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `thorns`
 
 
-**Definition:** Defines a dialogue option that applies a thorns effect to the unit.
+**Definition:** Defines a dialogue option that applies a thorns effect to the unit.  
 **Total Count:** 1
 
 <details>
@@ -6043,7 +6043,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `throw`
 
 
-**Definition:** Defines a dialogue option that allows the unit to throw an object.
+**Definition:** Defines a dialogue option that allows the unit to throw an object.  
 **Total Count:** 1
 
 <details>
@@ -6067,7 +6067,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `timemachine`
 
 
-**Definition:** Defines a dialogue option that triggers a time travel sequence.
+**Definition:** Defines a dialogue option that triggers a time travel sequence.  
 **Total Count:** 1
 
 <details>
@@ -6090,7 +6090,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `traverse`
 
 
-**Definition:** Defines a dialogue option that moves the unit through a traversal area.
+**Definition:** Defines a dialogue option that moves the unit through a traversal area.  
 **Total Count:** 1
 
 <details>
@@ -6113,7 +6113,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_yourself`
 
 
-**Definition:** Defines a dialogue option that upgrades the unit's attributes or abilities.
+**Definition:** Defines a dialogue option that upgrades the unit's attributes or abilities.  
 **Total Count:** 1
 
 <details>
@@ -6138,7 +6138,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_item`
 
 
-**Definition:** Defines a dialogue option that prompts the unit to use an item from their inventory.
+**Definition:** Defines a dialogue option that prompts the unit to use an item from their inventory.  
 **Total Count:** 1
 
 <details>
@@ -6163,7 +6163,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_toilet_con`
 
 
-**Definition:** Defines a dialogue option that interacts with a toilet using the Constitution stat.
+**Definition:** Defines a dialogue option that interacts with a toilet using the Constitution stat.  
 **Total Count:** 1
 
 <details>
@@ -6188,7 +6188,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_toilet_str`
 
 
-**Definition:** Defines a dialogue option that interacts with a toilet using the Strength stat.
+**Definition:** Defines a dialogue option that interacts with a toilet using the Strength stat.  
 **Total Count:** 1
 
 <details>
@@ -6213,7 +6213,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_weapon`
 
 
-**Definition:** Defines a dialogue option that prompts the unit to use their equipped weapon.
+**Definition:** Defines a dialogue option that prompts the unit to use their equipped weapon.  
 **Total Count:** 1
 
 <details>
@@ -6237,7 +6237,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w1`
 
 
-**Definition:** Defines a dialogue option for the first weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the first weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6261,7 +6261,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w2`
 
 
-**Definition:** Defines a dialogue option for the second weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the second weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6285,7 +6285,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w3`
 
 
-**Definition:** Defines a dialogue option for the third weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the third weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6309,7 +6309,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w4`
 
 
-**Definition:** Defines a dialogue option for the fourth weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the fourth weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6333,7 +6333,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w5`
 
 
-**Definition:** Defines a dialogue option for the fifth weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the fifth weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6357,7 +6357,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `w6`
 
 
-**Definition:** Defines a dialogue option for the sixth weather choice in the Crater Weather event.
+**Definition:** Defines a dialogue option for the sixth weather choice in the Crater Weather event.  
 **Total Count:** 1
 
 <details>
@@ -6381,7 +6381,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wealth`
 
 
-**Definition:** Defines a dialogue option that grants the unit money or valuable items.
+**Definition:** Defines a dialogue option that grants the unit money or valuable items.  
 **Total Count:** 1
 
 <details>
@@ -6404,7 +6404,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wheezies`
 
 
-**Definition:** Defines a dialogue option that triggers a wheezing effect or condition.
+**Definition:** Defines a dialogue option that triggers a wheezing effect or condition.  
 **Total Count:** 1
 
 <details>
@@ -6429,7 +6429,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wish_genes`
 
 
-**Definition:** Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics.
+**Definition:** Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics.  
 **Total Count:** 1
 
 <details>
@@ -6453,7 +6453,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wish_items`
 
 
-**Definition:** Defines a dialogue option in the Monkey Paw event that grants items.
+**Definition:** Defines a dialogue option in the Monkey Paw event that grants items.  
 **Total Count:** 1
 
 <details>
@@ -6477,7 +6477,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wish_levelups`
 
 
-**Definition:** Defines a dialogue option in the Monkey Paw event that grants level-ups.
+**Definition:** Defines a dialogue option in the Monkey Paw event that grants level-ups.  
 **Total Count:** 1
 
 <details>
@@ -6501,7 +6501,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `wish_strength`
 
 
-**Definition:** Defines a dialogue option in the Monkey Paw event that increases Strength.
+**Definition:** Defines a dialogue option in the Monkey Paw event that increases Strength.  
 **Total Count:** 1
 
 <details>
@@ -6525,7 +6525,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `withstand`
 
 
-**Definition:** Defines a dialogue option that allows the unit to withstand a hazard using Constitution.
+**Definition:** Defines a dialogue option that allows the unit to withstand a hazard using Constitution.  
 **Total Count:** 1
 
 <details>
@@ -6550,7 +6550,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `yank_it_out`
 
 
-**Definition:** Defines a dialogue option that yanks out an object using Strength.
+**Definition:** Defines a dialogue option that yanks out an object using Strength.  
 **Total Count:** 1
 
 <details>
@@ -6575,7 +6575,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `yellow_needle`
 
 
-**Definition:** Defines a dialogue option to interact with a yellow needle.
+**Definition:** Defines a dialogue option to interact with a yellow needle.  
 **Total Count:** 1
 
 <details>

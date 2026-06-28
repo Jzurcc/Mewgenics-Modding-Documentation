@@ -355,7 +355,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_ActiveWeather_Any`
 
 
-**Definition:** An object containing effects that execute only if any of the specified weather types are active.
+**Definition:** An object containing effects that execute only if any of the specified weather types are active.  
 **Total Count:** 1
 
 <details>
@@ -400,7 +400,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_AffectedByElement`
 
 
-**Definition:** Container for effects applied if the target is affected by a specified element, with optional Else block.
+**Definition:** Container for effects applied if the target is affected by a specified element, with optional Else block.  
 **Total Count:** 3
 
 <details>
@@ -425,7 +425,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Ally`
 
 
-**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.
+**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.  
 **Total Count:** 37
 
 <details>
@@ -449,7 +449,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Backstab`
 
 
-**Definition:** An object containing effects that execute only if the attack lands on the target's back.
+**Definition:** An object containing effects that execute only if the attack lands on the target's back.  
 **Total Count:** 1
 
 <details>
@@ -473,7 +473,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_BadRoll`
 
 
-**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.
+**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.  
 **Total Count:** 8
 
 <details>
@@ -498,7 +498,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Boss`
 
 
-**Definition:** Contains effects that apply only if the target is a boss enemy.
+**Definition:** Contains effects that apply only if the target is a boss enemy.  
 **Total Count:** 21
 
 <details>
@@ -583,7 +583,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Corpse`
 
 
-**Definition:** Contains an inner effect block that only executes if the target is a corpse.
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.  
 **Total Count:** 11
 
 <details>
@@ -667,7 +667,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Enemy`
 
 
-**Definition:** An object containing status effects or actions applied only if the target is an enemy.
+**Definition:** An object containing status effects or actions applied only if the target is an enemy.  
 **Total Count:** 44
 
 <details>
@@ -691,7 +691,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Familiar`
 
 
-**Definition:** Container for effects applied if the unit has a familiar, with an optional Else block.
+**Definition:** Container for effects applied if the unit has a familiar, with an optional Else block.  
 **Total Count:** 4
 
 <details>
@@ -715,7 +715,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_FirstApplicationThisTurn`
 
 
-**Definition:** Container for effects applied only on the first application of this ability during the turn.
+**Definition:** Container for effects applied only on the first application of this ability during the turn.  
 **Total Count:** 8
 
 <details>
@@ -760,7 +760,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_GoodRoll`
 
 
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
 **Total Count:** 37
 
 <details>
@@ -785,7 +785,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_HasKnockback`
 
 
-**Definition:** An object containing actions that execute if the incoming damage has knockback.
+**Definition:** An object containing actions that execute if the incoming damage has knockback.  
 **Total Count:** 1
 
 <details>
@@ -809,7 +809,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_HasStatus`
 
 
-**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.
+**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.  
 **Total Count:** 20
 
 <details>
@@ -834,7 +834,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_HasTag`
 
 
-**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.  
 **Total Count:** 47
 
 <details>
@@ -859,7 +859,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_HealthThreshold`
 
 
-**Definition:** Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`.
+**Definition:** Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`.  
 **Total Count:** 7
 
 <details>
@@ -886,7 +886,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_InForm`
 
 
-**Definition:** Contains effects that apply only if the target is in the specified form.
+**Definition:** Contains effects that apply only if the target is in the specified form.  
 **Total Count:** 7
 
 <details>
@@ -911,7 +911,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_IsPhysicalAttack`
 
 
-**Definition:** A conditional block that executes its child actions only if the triggering event is a physical attack.
+**Definition:** A conditional block that executes its child actions only if the triggering event is a physical attack.  
 **Total Count:** 1
 
 <details>
@@ -975,7 +975,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_LastHit`
 
 
-**Definition:** Container for effects applied only on the final hit of a multi-hit attack, with optional Else block.
+**Definition:** Container for effects applied only on the final hit of a multi-hit attack, with optional Else block.  
 **Total Count:** 3
 
 <details>
@@ -1019,7 +1019,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_ManaThreshold`
 
 
-**Definition:** Defines a conditional block that applies effects only if a unit's mana meets a specified threshold.
+**Definition:** Defines a conditional block that applies effects only if a unit's mana meets a specified threshold.  
 **Total Count:** 1
 
 <details>
@@ -1044,7 +1044,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_NotAlly`
 
 
-**Definition:** An object containing effects that are only applied if the target is not an ally of the source.
+**Definition:** An object containing effects that are only applied if the target is not an ally of the source.  
 **Total Count:** 2
 
 <details>
@@ -1128,7 +1128,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_NotShielded`
 
 
-**Definition:** An object containing effects that are only applied if the target does not have a shield active.
+**Definition:** An object containing effects that are only applied if the target does not have a shield active.  
 **Total Count:** 2
 
 <details>
@@ -1152,7 +1152,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Object`
 
 
-**Definition:** Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block.
+**Definition:** Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block.  
 **Total Count:** 6
 
 <details>
@@ -1176,7 +1176,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_OncePerBattle`
 
 
-**Definition:** An object containing effects that can only trigger once per battle, preventing double-activation.
+**Definition:** An object containing effects that can only trigger once per battle, preventing double-activation.  
 **Total Count:** 4
 
 <details>
@@ -1221,7 +1221,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_PlayerCat`
 
 
-**Definition:** Defines effects that only apply if the target is a player-controlled cat.
+**Definition:** Defines effects that only apply if the target is a player-controlled cat.  
 **Total Count:** 7
 
 <details>
@@ -1285,7 +1285,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_SourceAbilityHasTag`
 
 
-**Definition:** An object containing effects that execute only if the source ability has the specified tag.
+**Definition:** An object containing effects that execute only if the source ability has the specified tag.  
 **Total Count:** 1
 
 <details>
@@ -1310,7 +1310,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_SourceHasStatus`
 
 
-**Definition:** An object containing effects that execute only if the source unit has the specified status.
+**Definition:** An object containing effects that execute only if the source unit has the specified status.  
 **Total Count:** 1
 
 <details>
@@ -1335,7 +1335,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_SourceHasTag`
 
 
-**Definition:** Defines a conditional block that applies effects only if the source of the effect has a specified tag.
+**Definition:** Defines a conditional block that applies effects only if the source of the effect has a specified tag.  
 **Total Count:** 1
 
 <details>
@@ -1360,7 +1360,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 #### ``Conditional_Speculative`
 
 
-**Definition:** Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts.
+**Definition:** Evaluates AI-only speculative conditions (like health thresholds) without affecting the main action in PvP or direct casts.  
 **Total Count:** 12
 
 <details>
@@ -8312,7 +8312,7 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 </details>#### ``Conditional_HasCleansableDebuffs`
 
 
-**Definition:** An object containing effects that execute only if the unit has cleansable debuffs.
+**Definition:** An object containing effects that execute only if the unit has cleansable debuffs.  
 **Total Count:** 2
 
 <details>

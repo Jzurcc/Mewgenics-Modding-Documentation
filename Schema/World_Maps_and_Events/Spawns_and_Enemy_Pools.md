@@ -58,7 +58,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `editor`
 
 
-**Definition:** An object containing metadata for the level editor, such as category, image, and name.
+**Definition:** An object containing metadata for the level editor, such as category, image, and name.  
 **Total Count:** 578
 
 <details>
@@ -80,7 +80,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `weather_element_alt`
 
 
-**Definition:** Defines an alternative weather element, specifying its element type and associated object.
+**Definition:** Defines an alternative weather element, specifying its element type and associated object.  
 **Total Count:** 1
 
 <details>

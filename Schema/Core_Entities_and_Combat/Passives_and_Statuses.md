@@ -179,7 +179,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `passives`
 
 
-**Definition:** A container object listing passive effects granted to the unit.
+**Definition:** A container object listing passive effects granted to the unit.  
 **Total Count:** 884
 
 <details>
@@ -636,7 +636,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `stats`
 
 
-**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).
+**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).  
 **Total Count:** 97
 
 <details>
@@ -663,7 +663,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Contains status effects to add to the basic attack.
+**Definition:** Contains status effects to add to the basic attack.  
 **Total Count:** 92
 
 <details>
@@ -727,7 +727,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `effects`
 
 
-**Definition:** Applies a list of status effects or visual effects to targets.
+**Definition:** Applies a list of status effects or visual effects to targets.  
 **Total Count:** 30
 
 <details>
@@ -765,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddPassivesToMinions`
 
 
-**Definition:** An object containing passives that are granted to all minions spawned by the unit.
+**Definition:** An object containing passives that are granted to all minions spawned by the unit.  
 **Total Count:** 29
 
 <details>
@@ -813,7 +813,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnOnBattleStart`
 
 
-**Definition:** Specifies the object that spawns adjacent to the unit at the start of battle.
+**Definition:** Specifies the object that spawns adjacent to the unit at the start of battle.  
 **Total Count:** 21
 
 <details>
@@ -835,7 +835,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamage`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit takes damage.
+**Definition:** Specifies status effects or actions triggered when the unit takes damage.  
 **Total Count:** 21
 
 <details>
@@ -874,7 +874,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEnd`
 
 
-**Definition:** Specifies status effects applied to the unit at the end of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the end of each of its turns.  
 **Total Count:** 20
 
 <details>
@@ -906,7 +906,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lock_item_slot`
 
 
-**Definition:** An object that restricts which equipment slots can be used.
+**Definition:** An object that restricts which equipment slots can be used.  
 **Total Count:** 16
 
 <details>
@@ -928,7 +928,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.  
 **Total Count:** 16
 
 <details>
@@ -959,7 +959,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnKill`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.
+**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.  
 **Total Count:** 16
 
 <details>
@@ -993,7 +993,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnStanceSwitch`
 
 
-**Definition:** Applies the contained status effects when the unit changes stances.
+**Definition:** Applies the contained status effects when the unit changes stances.  
 **Total Count:** 14
 
 <details>
@@ -1021,7 +1021,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpreadDisease`
 
 
-**Definition:** Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target.
+**Definition:** Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target.  
 **Total Count:** 12
 
 <details>
@@ -1044,7 +1044,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnBegin`
 
 
-**Definition:** Specifies status effects applied to the unit at the start of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the start of each of its turns.  
 **Total Count:** 12
 
 <details>
@@ -1072,7 +1072,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Ally`
 
 
-**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.
+**Definition:** Defines effects that apply only if the target is an ally, with an optional else block for non-allies.  
 **Total Count:** 11
 
 <details>
@@ -1103,7 +1103,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CritsApplyStatus`
 
 
-**Definition:** An object containing statuses applied to the target when the unit lands a critical hit.
+**Definition:** An object containing statuses applied to the target when the unit lands a critical hit.  
 **Total Count:** 11
 
 <details>
@@ -1133,7 +1133,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Temporary`
 
 
-**Definition:** Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions.
+**Definition:** Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions.  
 **Total Count:** 11
 
 <details>
@@ -1158,7 +1158,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveAtStatThreshold`
 
 
-**Definition:** An object defining passives granted when a unit's stat meets a specified threshold.
+**Definition:** An object defining passives granted when a unit's stat meets a specified threshold.  
 **Total Count:** 10
 
 <details>
@@ -1182,7 +1182,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `threshold`
 
 
-**Definition:** The health threshold value, either as a formula using X (max health) or a fixed integer.
+**Definition:** The health threshold value, either as a formula using X (max health) or a fixed integer.  
 **Total Count:** 10
 
 <details>
@@ -1205,7 +1205,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RevengeDamage`
 
 
-**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.  
 **Total Count:** 9
 
 <details>
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.  
 **Total Count:** 8
 
 <details>
@@ -1256,7 +1256,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveIfAllArmorEmpty`
 
 
-**Definition:** Grants the contained passive effects when no armor is equipped in any slot.
+**Definition:** Grants the contained passive effects when no armor is equipped in any slot.  
 **Total Count:** 8
 
 <details>
@@ -1284,7 +1284,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
 **Total Count:** 8
 
 <details>
@@ -1342,7 +1342,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnCrit`
 
 
-**Definition:** An object containing statuses applied to the unit when it lands a critical hit.
+**Definition:** An object containing statuses applied to the unit when it lands a critical hit.  
 **Total Count:** 8
 
 <details>
@@ -1369,7 +1369,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Enemy`
 
 
-**Definition:** An object containing status effects or actions applied only if the target is an enemy.
+**Definition:** An object containing status effects or actions applied only if the target is an enemy.  
 **Total Count:** 7
 
 <details>
@@ -1395,7 +1395,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageNeighborsOnEndMove`
 
 
-**Definition:** Deals damage and knockback to units on neighboring tiles when the unit finishes moving.
+**Definition:** Deals damage and knockback to units on neighboring tiles when the unit finishes moving.  
 **Total Count:** 7
 
 <details>
@@ -1421,7 +1421,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ForceUseAbility`
 
 
-**Definition:** The name of the ability the source is forced to use, optionally with a chance.
+**Definition:** The name of the ability the source is forced to use, optionally with a chance.  
 **Total Count:** 7
 
 <details>
@@ -1446,7 +1446,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveIfEmptyFace`
 
 
-**Definition:** Grants the contained passive effects when the face armor slot is empty.
+**Definition:** Grants the contained passive effects when the face armor slot is empty.  
 **Total Count:** 7
 
 <details>
@@ -1472,7 +1472,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveIfEmptyHead`
 
 
-**Definition:** Grants the contained passive effects when the head armor slot is empty.
+**Definition:** Grants the contained passive effects when the head armor slot is empty.  
 **Total Count:** 7
 
 <details>
@@ -1498,7 +1498,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveIfEmptyNeck`
 
 
-**Definition:** Grants the contained passive effects when the neck armor slot is empty.
+**Definition:** Grants the contained passive effects when the neck armor slot is empty.  
 **Total Count:** 7
 
 <details>
@@ -1524,7 +1524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesOnDeath`
 
 
-**Definition:** Applies the contained status effects to all allies when the unit dies.
+**Definition:** Applies the contained status effects to all allies when the unit dies.  
 **Total Count:** 7
 
 <details>
@@ -1552,7 +1552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnUseAbilityWithTag`
 
 
-**Definition:** Applies the contained status effects when the unit uses an ability with the specified tag.
+**Definition:** Applies the contained status effects when the unit uses an ability with the specified tag.  
 **Total Count:** 7
 
 <details>
@@ -1580,7 +1580,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToElementAbilities`
 
 
-**Definition:** Adds the contained status effects to all abilities with the specified element.
+**Definition:** Adds the contained status effects to all abilities with the specified element.  
 **Total Count:** 6
 
 <details>
@@ -1606,7 +1606,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToWeapons`
 
 
-**Definition:** Specifies status effects to add to the unit's weapon attacks, with their stack counts.
+**Definition:** Specifies status effects to add to the unit's weapon attacks, with their stack counts.  
 **Total Count:** 6
 
 <details>
@@ -1631,7 +1631,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CureDisease`
 
 
-**Definition:** Attempts to cure the specified disease with the given chance.
+**Definition:** Attempts to cure the specified disease with the given chance.  
 **Total Count:** 6
 
 <details>
@@ -1654,7 +1654,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Else`
 
 
-**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
 **Total Count:** 6
 
 <details>
@@ -1682,7 +1682,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `keyword_tooltips`
 
 
-**Definition:** Associates keyword tooltips with the ability, often used for status effects.
+**Definition:** Associates keyword tooltips with the ability, often used for status effects.  
 **Total Count:** 6
 
 <details>
@@ -1704,7 +1704,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ManaCostReductionTagged`
 
 
-**Definition:** Reduces the mana cost of abilities with the specified tag by the given reduction amount.
+**Definition:** Reduces the mana cost of abilities with the specified tag by the given reduction amount.  
 **Total Count:** 6
 
 <details>
@@ -1726,7 +1726,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnEachTurn`
 
 
-**Definition:** Specifies an object that spawns on a random adjacent tile each turn, with optional chance.
+**Definition:** Specifies an object that spawns on a random adjacent tile each turn, with optional chance.  
 **Total Count:** 6
 
 <details>
@@ -1750,7 +1750,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnThingOnDamage`
 
 
-**Definition:** Specifies an object that spawns on the tile when the unit takes damage.
+**Definition:** Specifies an object that spawns on the tile when the unit takes damage.  
 **Total Count:** 6
 
 <details>
@@ -1774,7 +1774,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToAllDamage`
 
 
-**Definition:** Adds the contained status effects to all damage dealt by the unit.
+**Definition:** Adds the contained status effects to all damage dealt by the unit.  
 **Total Count:** 5
 
 <details>
@@ -1794,7 +1794,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicMeleeAttack`
 
 
-**Definition:** An object listing status effects applied by the unit's basic melee attack.
+**Definition:** An object listing status effects applied by the unit's basic melee attack.  
 **Total Count:** 5
 
 <details>
@@ -1820,7 +1820,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnCastSpell`
 
 
-**Definition:** An object listing status effects applied to the unit whenever it casts a spell.
+**Definition:** An object listing status effects applied to the unit whenever it casts a spell.  
 **Total Count:** 5
 
 <details>
@@ -1845,7 +1845,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnOverHealed`
 
 
-**Definition:** An object that applies a status effect to the unit whenever it receives overhealing (healing beyond max health).
+**Definition:** An object that applies a status effect to the unit whenever it receives overhealing (healing beyond max health).  
 **Total Count:** 5
 
 <details>
@@ -1870,7 +1870,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddDamageToElementDamage`
 
 
-**Definition:** Defines additional damage of a specific element added to the unit's attacks.
+**Definition:** Defines additional damage of a specific element added to the unit's attacks.  
 **Total Count:** 4
 
 <details>
@@ -1892,7 +1892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddPassivesToCharmed`
 
 
-**Definition:** Grants the contained passive effects to units under the charm status.
+**Definition:** Grants the contained passive effects to units under the charm status.  
 **Total Count:** 4
 
 <details>
@@ -1917,7 +1917,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToElementDamage`
 
 
-**Definition:** An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply.
+**Definition:** An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply.  
 **Total Count:** 4
 
 <details>
@@ -1942,7 +1942,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToExplosions`
 
 
-**Definition:** An object whose nested keys define statuses applied to explosion damage.
+**Definition:** An object whose nested keys define statuses applied to explosion damage.  
 **Total Count:** 4
 
 <details>
@@ -1965,7 +1965,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllyBonusAbilityAura`
 
 
-**Definition:** Specifies an ability name granted to adjacent allies in an aura, optionally with a square radius.
+**Definition:** Specifies an ability name granted to adjacent allies in an aura, optionally with a square radius.  
 **Total Count:** 4
 
 <details>
@@ -1987,7 +1987,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllyManaRegenAura`
 
 
-**Definition:** An object granting a mana regeneration aura to allies, with sub-keys for stacks and range.
+**Definition:** An object granting a mana regeneration aura to allies, with sub-keys for stacks and range.  
 **Total Count:** 4
 
 <details>
@@ -2009,7 +2009,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AmplifyStatus`
 
 
-**Definition:** Specifies the status effect to amplify, or an object with the status and number of stacks to add.
+**Definition:** Specifies the status effect to amplify, or an object with the status and number of stacks to add.  
 **Total Count:** 4
 
 <details>
@@ -2031,7 +2031,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AutocastEachRound`
 
 
-**Definition:** Contains an ability name and optional 'even_if_stunned' flag to autocast each round.
+**Definition:** Contains an ability name and optional 'even_if_stunned' flag to autocast each round.  
 **Total Count:** 4
 
 <details>
@@ -2054,7 +2054,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
-**Definition:** Container for effects applied only on the first application of this ability during the turn.
+**Definition:** Container for effects applied only on the first application of this ability during the turn.  
 **Total Count:** 4
 
 <details>
@@ -2079,7 +2079,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DistanceBonusDamage`
 
 
-**Definition:** An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range.
+**Definition:** An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range.  
 **Total Count:** 4
 
 <details>
@@ -2101,7 +2101,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `EMP`
 
 
-**Definition:** Defines the EMP effect, including spell graphics override for pulsed area damage.
+**Definition:** Defines the EMP effect, including spell graphics override for pulsed area damage.  
 **Total Count:** 4
 
 <details>
@@ -2123,7 +2123,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `empty_armor_scaled_stats`
 
 
-**Definition:** Defines the stat bonuses applied when no armor is equipped in a slot.
+**Definition:** Defines the stat bonuses applied when no armor is equipped in a slot.  
 **Total Count:** 4
 
 <details>
@@ -2146,7 +2146,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveAtHealthThreshold`
 
 
-**Definition:** An object that grants additional passives when the unit's health meets a specified threshold, with sub-keys for threshold, mode, and passives.
+**Definition:** An object that grants additional passives when the unit's health meets a specified threshold, with sub-keys for threshold, mode, and passives.  
 **Total Count:** 4
 
 <details>
@@ -2170,7 +2170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenAffectedByElement`
 
 
-**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.
+**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.  
 **Total Count:** 4
 
 <details>
@@ -2193,7 +2193,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenAtFullMana`
 
 
-**Definition:** An object listing passive effects that are active only while the unit's mana is full.
+**Definition:** An object listing passive effects that are active only while the unit's mana is full.  
 **Total Count:** 4
 
 <details>
@@ -2219,7 +2219,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `spell_graphics_override`
 
 
-**Definition:** An object defining custom particle effects and palette for the EMP spell.
+**Definition:** An object defining custom particle effects and palette for the EMP spell.  
 **Total Count:** 4
 
 <details>
@@ -2243,7 +2243,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesOnKill`
 
 
-**Definition:** An object containing status effects to apply to all allies when any ally kills an enemy.
+**Definition:** An object containing status effects to apply to all allies when any ally kills an enemy.  
 **Total Count:** 4
 
 <details>
@@ -2267,7 +2267,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusIfUnusedMovePoints`
 
 
-**Definition:** Specifies status effects applied if the unit ends its turn with unused movement points.
+**Definition:** Specifies status effects applied if the unit ends its turn with unused movement points.  
 **Total Count:** 4
 
 <details>
@@ -2295,7 +2295,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTurnEndIfCastNSpells`
 
 
-**Definition:** An object that applies a status effect at the end of the turn if the unit has cast a specified number of spells.
+**Definition:** An object that applies a status effect at the end of the turn if the unit has cast a specified number of spells.  
 **Total Count:** 4
 
 <details>
@@ -2321,7 +2321,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTurnEndIfManaExact`
 
 
-**Definition:** An object that applies a status effect at the end of the turn if the unit's mana is exactly a specified value.
+**Definition:** An object that applies a status effect at the end of the turn if the unit's mana is exactly a specified value.  
 **Total Count:** 4
 
 <details>
@@ -2348,7 +2348,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTurnEndIfManaOrHealthExact`
 
 
-**Definition:** An object that applies a status effect at the end of the turn if the unit's mana or health is exactly a specified value.
+**Definition:** An object that applies a status effect at the end of the turn if the unit's mana or health is exactly a specified value.  
 **Total Count:** 4
 
 <details>
@@ -2377,7 +2377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityReaction`
 
 
-**Definition:** Specifies the ability used as a reaction when the unit is targeted by an ability.
+**Definition:** Specifies the ability used as a reaction when the unit is targeted by an ability.  
 **Total Count:** 3
 
 <details>
@@ -2400,7 +2400,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddSelfStatusToBasicAttack`
 
 
-**Definition:** Applies the contained status effects to the unit when it uses its basic attack.
+**Definition:** Applies the contained status effects to the unit when it uses its basic attack.  
 **Total Count:** 3
 
 <details>
@@ -2422,7 +2422,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
-**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.
+**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.  
 **Total Count:** 3
 
 <details>
@@ -2444,7 +2444,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_BadRoll`
 
 
-**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.
+**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.  
 **Total Count:** 3
 
 <details>
@@ -2467,7 +2467,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_HasStatus`
 
 
-**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.
+**Definition:** Contains an inner effect block that only executes if the target has the specified status effect.  
 **Total Count:** 3
 
 <details>
@@ -2490,7 +2490,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DeathRattle`
 
 
-**Definition:** Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag.
+**Definition:** Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag.  
 **Total Count:** 3
 
 <details>
@@ -2512,7 +2512,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ElementalManaCostReduction`
 
 
-**Definition:** An object that reduces the mana cost of spells of specified elements, with sub-keys for element and reduction amount.
+**Definition:** An object that reduces the mana cost of spells of specified elements, with sub-keys for element and reduction amount.  
 **Total Count:** 3
 
 <details>
@@ -2534,7 +2534,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FindItemFromPool`
 
 
-**Definition:** Specifies the loot pool from which to find an item, with an optional chance.
+**Definition:** Specifies the loot pool from which to find an item, with an optional chance.  
 **Total Count:** 3
 
 <details>
@@ -2556,7 +2556,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveTowardsDamageSource`
 
 
-**Definition:** Determines the movement behavior when moving towards the unit that dealt damage to it.
+**Definition:** Determines the movement behavior when moving towards the unit that dealt damage to it.  
 **Total Count:** 3
 
 <details>
@@ -2578,7 +2578,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ObjectOnHitCharacter`
 
 
-**Definition:** Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit.
+**Definition:** Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit.  
 **Total Count:** 3
 
 <details>
@@ -2601,7 +2601,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnCatCopyOnBattleStart`
 
 
-**Definition:** An object that spawns a copy of the unit's cat at the start of battle, with sub-keys for the copy object and chain-prevention tag.
+**Definition:** An object that spawns a copy of the unit's cat at the start of battle, with sub-keys for the copy object and chain-prevention tag.  
 **Total Count:** 3
 
 <details>
@@ -2623,7 +2623,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
 
 
-**Definition:** Specifies an object that spawns on a random empty tile at the start of battle.
+**Definition:** Specifies an object that spawns on a random empty tile at the start of battle.  
 **Total Count:** 3
 
 <details>
@@ -2645,7 +2645,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `statuses`
 
 
-**Definition:** Defines the status effects applied when the parent trigger event occurs.
+**Definition:** Defines the status effects applied when the parent trigger event occurs.  
 **Total Count:** 3
 
 <details>
@@ -2670,7 +2670,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEveryXSpellCasts`
 
 
-**Definition:** An object with `stacks` (number of spell casts) and status effects to apply after that many spell casts.
+**Definition:** An object with `stacks` (number of spell casts) and status effects to apply after that many spell casts.  
 **Total Count:** 3
 
 <details>
@@ -2697,7 +2697,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusGroup`
 
 
-**Definition:** A container grouping multiple status effects to be applied simultaneously.
+**Definition:** A container grouping multiple status effects to be applied simultaneously.  
 **Total Count:** 3
 
 <details>
@@ -2722,7 +2722,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusKilledCharacters`
 
 
-**Definition:** An object listing status effects applied to the unit when it kills a character.
+**Definition:** An object listing status effects applied to the unit when it kills a character.  
 **Total Count:** 3
 
 <details>
@@ -2742,7 +2742,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnAllyCatDeath`
 
 
-**Definition:** An object listing status effects applied to the unit when an allied cat dies.
+**Definition:** An object listing status effects applied to the unit when an allied cat dies.  
 **Total Count:** 3
 
 <details>
@@ -2769,7 +2769,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBattleStart`
 
 
-**Definition:** An object containing status effects to apply to the unit at the start of every battle.
+**Definition:** An object containing status effects to apply to the unit at the start of every battle.  
 **Total Count:** 3
 
 <details>
@@ -2792,7 +2792,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEatFood`
 
 
-**Definition:** An object listing status effects applied to the unit when it eats food.
+**Definition:** An object listing status effects applied to the unit when it eats food.  
 **Total Count:** 3
 
 <details>
@@ -2817,7 +2817,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnGainCoins`
 
 
-**Definition:** Specifies status effects applied when this unit gains coins.
+**Definition:** Specifies status effects applied when this unit gains coins.  
 **Total Count:** 3
 
 <details>
@@ -2841,7 +2841,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnHealed`
 
 
-**Definition:** An object that applies a status effect to the unit whenever it is healed.
+**Definition:** An object that applies a status effect to the unit whenever it is healed.  
 **Total Count:** 3
 
 <details>
@@ -2866,7 +2866,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnKillEnemy`
 
 
-**Definition:** Specifies the effects applied when the unit kills an enemy.
+**Definition:** Specifies the effects applied when the unit kills an enemy.  
 **Total Count:** 3
 
 <details>
@@ -2892,7 +2892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamageFromAbility`
 
 
-**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).
+**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).  
 **Total Count:** 3
 
 <details>
@@ -2915,7 +2915,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
-**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.
+**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.  
 **Total Count:** 2
 
 <details>
@@ -2938,7 +2938,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddPassivesToSummonAbilityMinions`
 
 
-**Definition:** An object whose nested keys define passives applied to minions summoned by abilities.
+**Definition:** An object whose nested keys define passives applied to minions summoned by abilities.  
 **Total Count:** 2
 
 <details>
@@ -2963,7 +2963,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddPassiveToSpawnedRocks`
 
 
-**Definition:** An object whose nested keys define passives applied to rocks spawned by the unit.
+**Definition:** An object whose nested keys define passives applied to rocks spawned by the unit.  
 **Total Count:** 2
 
 <details>
@@ -2985,7 +2985,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddSelfStatusToWeapons`
 
 
-**Definition:** An object whose nested keys define status effects applied to the unit's own weapons.
+**Definition:** An object whose nested keys define status effects applied to the unit's own weapons.  
 **Total Count:** 2
 
 <details>
@@ -3005,7 +3005,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToAllDamageAbilities`
 
 
-**Definition:** Adds the contained status effects to all damaging abilities (spells and attacks).
+**Definition:** Adds the contained status effects to all damaging abilities (spells and attacks).  
 **Total Count:** 2
 
 <details>
@@ -3029,7 +3029,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicAttackWithCooldown`
 
 
-**Definition:** An object whose nested keys define statuses applied to basic attacks, subject to a cooldown.
+**Definition:** An object whose nested keys define statuses applied to basic attacks, subject to a cooldown.  
 **Total Count:** 2
 
 <details>
@@ -3051,7 +3051,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToFirstBasicAttack`
 
 
-**Definition:** An object whose nested keys define statuses applied only to the unit's first basic attack.
+**Definition:** An object whose nested keys define statuses applied only to the unit's first basic attack.  
 **Total Count:** 2
 
 <details>
@@ -3071,7 +3071,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToMeleeDamage`
 
 
-**Definition:** An object whose nested keys define statuses applied to melee damage.
+**Definition:** An object whose nested keys define statuses applied to melee damage.  
 **Total Count:** 2
 
 <details>
@@ -3094,7 +3094,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToTrampleDamage`
 
 
-**Definition:** An object whose nested keys define statuses applied to trample damage.
+**Definition:** An object whose nested keys define statuses applied to trample damage.  
 **Total Count:** 2
 
 <details>
@@ -3114,7 +3114,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllyHealthRegenAura`
 
 
-**Definition:** An object defining an aura that grants health regeneration to allies, typically with 'stacks' and 'range' fields.
+**Definition:** An object defining an aura that grants health regeneration to allies, typically with 'stacks' and 'range' fields.  
 **Total Count:** 2
 
 <details>
@@ -3136,7 +3136,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AlternateCraftingPools`
 
 
-**Definition:** An object mapping crafting pool categories to alternate pools for the unit.
+**Definition:** An object mapping crafting pool categories to alternate pools for the unit.  
 **Total Count:** 2
 
 <details>
@@ -3158,7 +3158,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ApplyStatusesToRandomEnemiesEachTurn`
 
 
-**Definition:** An object specifying statuses to apply to random enemies each turn, with an optional 'count' field.
+**Definition:** An object specifying statuses to apply to random enemies each turn, with an optional 'count' field.  
 **Total Count:** 2
 
 <details>
@@ -3181,7 +3181,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ApplyStatusIfCrit`
 
 
-**Definition:** Defines effects that are applied only when the attack scores a critical hit.
+**Definition:** Defines effects that are applied only when the attack scores a critical hit.  
 **Total Count:** 2
 
 <details>
@@ -3203,7 +3203,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ApplyToSource`
 
 
-**Definition:** An object of effects that are applied to the source of the ability (the caster).
+**Definition:** An object of effects that are applied to the source of the ability (the caster).  
 **Total Count:** 2
 
 <details>
@@ -3226,7 +3226,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AutocastEachTurnBegin`
 
 
-**Definition:** Specifies the ability automatically cast at the start of each turn, optionally with chance and polarity.
+**Definition:** Specifies the ability automatically cast at the start of each turn, optionally with chance and polarity.  
 **Total Count:** 2
 
 <details>
@@ -3249,7 +3249,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BoobyTrapItems`
 
 
-**Definition:** An object defining effects to apply when items are thrown or broken.
+**Definition:** An object defining effects to apply when items are thrown or broken.  
 **Total Count:** 2
 
 <details>
@@ -3271,7 +3271,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BoostWeaponDamage`
 
 
-**Definition:** The amount of bonus weapon damage applied, or an object with `damage` and `crit_chance` fields.
+**Definition:** The amount of bonus weapon damage applied, or an object with `damage` and `crit_chance` fields.  
 **Total Count:** 2
 
 <details>
@@ -3294,7 +3294,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BouncyProjectiles`
 
 
-**Definition:** An object with 'max_bounces' and 'max_range' defining projectile bounciness behavior.
+**Definition:** An object with 'max_bounces' and 'max_range' defining projectile bounciness behavior.  
 **Total Count:** 2
 
 <details>
@@ -3316,7 +3316,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CatAPultAnimation`
 
 
-**Definition:** An object specifying the ability and animation used for the CatAPult passive.
+**Definition:** An object specifying the ability and animation used for the CatAPult passive.  
 **Total Count:** 2
 
 <details>
@@ -3338,7 +3338,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CatchProjectiles`
 
 
-**Definition:** An object defining chance to catch projectiles and optionally apply statuses.
+**Definition:** An object defining chance to catch projectiles and optionally apply statuses.  
 **Total Count:** 2
 
 <details>
@@ -3363,7 +3363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToBackflip`
 
 
-**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.
+**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.  
 **Total Count:** 2
 
 <details>
@@ -3384,7 +3384,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChangeTile`
 
 
-**Definition:** Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect).
+**Definition:** Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect).  
 **Total Count:** 2
 
 <details>
@@ -3406,7 +3406,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ClassManaCostReduction`
 
 
-**Definition:** Defines a reduction in mana cost for abilities of a specific class.
+**Definition:** Defines a reduction in mana cost for abilities of a specific class.  
 **Total Count:** 2
 
 <details>
@@ -3428,7 +3428,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Adjacent`
 
 
-**Definition:** An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit.
+**Definition:** An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit.  
 **Total Count:** 2
 
 <details>
@@ -3453,7 +3453,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Boss`
 
 
-**Definition:** Contains effects that apply only if the target is a boss enemy.
+**Definition:** Contains effects that apply only if the target is a boss enemy.  
 **Total Count:** 2
 
 <details>
@@ -3476,7 +3476,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Corpse`
 
 
-**Definition:** Contains an inner effect block that only executes if the target is a corpse.
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.  
 **Total Count:** 2
 
 <details>
@@ -3505,7 +3505,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_HasTag`
 
 
-**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.  
 **Total Count:** 2
 
 <details>
@@ -3530,7 +3530,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_NotBoss`
 
 
-**Definition:** Contains effects that apply only if the target is not a boss enemy.
+**Definition:** Contains effects that apply only if the target is not a boss enemy.  
 **Total Count:** 2
 
 <details>
@@ -3552,7 +3552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_PartyMember`
 
 
-**Definition:** A conditional block that executes its child actions only if the target is a party member.
+**Definition:** A conditional block that executes its child actions only if the target is a party member.  
 **Total Count:** 2
 
 <details>
@@ -3574,7 +3574,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Shielded`
 
 
-**Definition:** An object containing effects that are only applied if the target has a shield active.
+**Definition:** An object containing effects that are only applied if the target has a shield active.  
 **Total Count:** 2
 
 <details>
@@ -3596,7 +3596,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Craft`
 
 
-**Definition:** Specifies the loot pool and slot to craft an item for the source.
+**Definition:** Specifies the loot pool and slot to craft an item for the source.  
 **Total Count:** 2
 
 <details>
@@ -3618,7 +3618,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageNeighborsAfterMove`
 
 
-**Definition:** Defines the spell damage and effects applied to neighboring tiles after the unit moves.
+**Definition:** Defines the spell damage and effects applied to neighboring tiles after the unit moves.  
 **Total Count:** 2
 
 <details>
@@ -3644,7 +3644,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageNeighborTilesWhenCastSpell`
 
 
-**Definition:** Defines the spell damage and effects applied to neighbor tiles when a spell is cast.
+**Definition:** Defines the spell damage and effects applied to neighbor tiles when a spell is cast.  
 **Total Count:** 2
 
 <details>
@@ -3668,7 +3668,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageReductionAura`
 
 
-**Definition:** Defines an aura that reduces incoming damage, with range, ally-only, and stack settings.
+**Definition:** Defines an aura that reduces incoming damage, with range, ally-only, and stack settings.  
 **Total Count:** 2
 
 <details>
@@ -3691,7 +3691,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Earth`
 
 
-**Definition:** Defines the Earth element effects, including damage value.
+**Definition:** Defines the Earth element effects, including damage value.  
 **Total Count:** 2
 
 <details>
@@ -3712,7 +3712,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Electric`
 
 
-**Definition:** Applies a Stun status effect with specified stacks and probability based on variable X.
+**Definition:** Applies a Stun status effect with specified stacks and probability based on variable X.  
 **Total Count:** 2
 
 <details>
@@ -3732,7 +3732,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ElementalAttunement`
 
 
-**Definition:** Defines the elemental effects (Fire, Ice, etc.) applied by the attunement.
+**Definition:** Defines the elemental effects (Fire, Ice, etc.) applied by the attunement.  
 **Total Count:** 2
 
 <details>
@@ -3762,7 +3762,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `EscapeSequence`
 
 
-**Definition:** Defines an escape sequence with safe explosion displacement and random distance displacement.
+**Definition:** Defines an escape sequence with safe explosion displacement and random distance displacement.  
 **Total Count:** 2
 
 <details>
@@ -3785,7 +3785,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Eternal`
 
 
-**Definition:** Defines the Eternal revival effect, setting stacks and the health percentage restored.
+**Definition:** Defines the Eternal revival effect, setting stacks and the health percentage restored.  
 **Total Count:** 2
 
 <details>
@@ -3811,7 +3811,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ExtraStatusWhenDealingDamage`
 
 
-**Definition:** Defines additional statuses applied to the target or source when dealing damage, with conditionals.
+**Definition:** Defines additional statuses applied to the target or source when dealing damage, with conditionals.  
 **Total Count:** 2
 
 <details>
@@ -3831,7 +3831,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Fire`
 
 
-**Definition:** Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack.
+**Definition:** Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack.  
 **Total Count:** 2
 
 <details>
@@ -3853,7 +3853,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Grass`
 
 
-**Definition:** Specifies the status effects applied to allies standing on grass tiles.
+**Definition:** Specifies the status effects applied to allies standing on grass tiles.  
 **Total Count:** 2
 
 <details>
@@ -3875,7 +3875,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Gravity`
 
 
-**Definition:** An object defining the effects granted by Gravity elemental attunement.
+**Definition:** An object defining the effects granted by Gravity elemental attunement.  
 **Total Count:** 2
 
 <details>
@@ -3895,7 +3895,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GravityWell`
 
 
-**Definition:** Specifies the damage and effect applied to units pulled into a gravity well.
+**Definition:** Specifies the damage and effect applied to units pulled into a gravity well.  
 **Total Count:** 2
 
 <details>
@@ -3921,7 +3921,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HealAlliesEachTurn`
 
 
-**Definition:** An object defining how much health and mana are healed to all allies each turn.
+**Definition:** An object defining how much health and mana are healed to all allies each turn.  
 **Total Count:** 2
 
 <details>
@@ -3944,7 +3944,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Holy`
 
 
-**Definition:** Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives.
+**Definition:** Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives.  
 **Total Count:** 2
 
 <details>
@@ -3967,7 +3967,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HolyDamageBlessing`
 
 
-**Definition:** An object defining the damage multiplier and status effects applied as a holy damage blessing.
+**Definition:** An object defining the damage multiplier and status effects applied as a holy damage blessing.  
 **Total Count:** 2
 
 <details>
@@ -3989,7 +3989,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Ice`
 
 
-**Definition:** Applies the Slow status effect to targets hit by ice-element abilities.
+**Definition:** Applies the Slow status effect to targets hit by ice-element abilities.  
 **Total Count:** 2
 
 <details>
@@ -4009,7 +4009,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `InfiniteRebirth`
 
 
-**Definition:** Specifies the health and effects for unlimited rebirth upon death.
+**Definition:** Specifies the health and effects for unlimited rebirth upon death.  
 **Total Count:** 2
 
 <details>
@@ -4033,7 +4033,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LateBloomer`
 
 
-**Definition:** Specifies the stats gained after a set number of turns or stacks.
+**Definition:** Specifies the stats gained after a set number of turns or stacks.  
 **Total Count:** 2
 
 <details>
@@ -4056,7 +4056,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LightningRod`
 
 
-**Definition:** Specifies the unit tags and conditions that cause lightning strikes.
+**Definition:** Specifies the unit tags and conditions that cause lightning strikes.  
 **Total Count:** 2
 
 <details>
@@ -4078,7 +4078,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LowHealthAllyDodgeChanceAura`
 
 
-**Definition:** Specifies the health threshold and dodge chance granted to nearby low-health allies.
+**Definition:** Specifies the health threshold and dodge chance granted to nearby low-health allies.  
 **Total Count:** 2
 
 <details>
@@ -4100,7 +4100,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MovementReaction`
 
 
-**Definition:** Specifies an ability to cast when a unit moves within range, with options for targeting and conditions.
+**Definition:** Specifies an ability to cast when a unit moves within range, with options for targeting and conditions.  
 **Total Count:** 2
 
 <details>
@@ -4122,7 +4122,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NextBattleStatus`
 
 
-**Definition:** A set of status effects (e.g., stat buffs, full heal) automatically applied to the unit at the start of the next battle.
+**Definition:** A set of status effects (e.g., stat buffs, full heal) automatically applied to the unit at the start of the next battle.  
 **Total Count:** 2
 
 <details>
@@ -4142,7 +4142,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `on_break`
 
 
-**Definition:** An object defining effects that trigger when the item is broken.
+**Definition:** An object defining effects that trigger when the item is broken.  
 **Total Count:** 2
 
 <details>
@@ -4163,7 +4163,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `on_throw`
 
 
-**Definition:** An object defining effects that trigger when the item is thrown.
+**Definition:** An object defining effects that trigger when the item is thrown.  
 **Total Count:** 2
 
 <details>
@@ -4185,7 +4185,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveAfterXKills`
 
 
-**Definition:** Activates a set of passive effects (e.g., extra attacks, stat boosts) after the unit achieves a certain number of kills defined by the 'stacks' sub-key.
+**Definition:** Activates a set of passive effects (e.g., extra attacks, stat boosts) after the unit achieves a certain number of kills defined by the 'stacks' sub-key.  
 **Total Count:** 2
 
 <details>
@@ -4208,7 +4208,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveAtFullHealth`
 
 
-**Definition:** Applies a set of passive effects (e.g., mana cost reduction, extra damage taken) only while the unit is at maximum health.
+**Definition:** Applies a set of passive effects (e.g., mana cost reduction, extra damage taken) only while the unit is at maximum health.  
 **Total Count:** 2
 
 <details>
@@ -4231,7 +4231,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveAtInjuryThreshold`
 
 
-**Definition:** Applies a set of passive effects when the unit's injury level ('injury' sub-key) meets or exceeds the specified 'threshold' using the comparison 'mode'.
+**Definition:** Applies a set of passive effects when the unit's injury level ('injury' sub-key) meets or exceeds the specified 'threshold' using the comparison 'mode'.  
 **Total Count:** 2
 
 <details>
@@ -4257,7 +4257,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveGroup`
 
 
-**Definition:** A group of passive abilities that can be randomly assigned.
+**Definition:** A group of passive abilities that can be randomly assigned.  
 **Total Count:** 2
 
 <details>
@@ -4283,7 +4283,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveUntilCastSpell`
 
 
-**Definition:** Applies a set of passive effects (e.g., healing allies each turn) that remain active until the unit casts a spell.
+**Definition:** Applies a set of passive effects (e.g., healing allies each turn) that remain active until the unit casts a spell.  
 **Total Count:** 2
 
 <details>
@@ -4306,7 +4306,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveUntilGetKill`
 
 
-**Definition:** Applies a set of passive effects (e.g., Holy Damage Blessing with burn) that remain active until the unit scores a kill.
+**Definition:** Applies a set of passive effects (e.g., Holy Damage Blessing with burn) that remain active until the unit scores a kill.  
 **Total Count:** 2
 
 <details>
@@ -4327,7 +4327,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenTheAlpha`
 
 
-**Definition:** Activates a set of passive effects (e.g., TogglableRoundEndExtraTurn) only while the unit holds the Alpha status on the team.
+**Definition:** Activates a set of passive effects (e.g., TogglableRoundEndExtraTurn) only while the unit holds the Alpha status on the team.  
 **Total Count:** 2
 
 <details>
@@ -4348,7 +4348,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileInMonkMeleeStance`
 
 
-**Definition:** Applies specific passive effects (e.g., Brace, HealthRegenUp) while the unit is in the Monk's melee combat stance.
+**Definition:** Applies specific passive effects (e.g., Brace, HealthRegenUp) while the unit is in the Monk's melee combat stance.  
 **Total Count:** 2
 
 <details>
@@ -4371,7 +4371,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileInMonkRangedStance`
 
 
-**Definition:** Applies specific passive effects (e.g., AddBonusRange, AddSpellDamage) while the unit is in the Monk's ranged combat stance.
+**Definition:** Applies specific passive effects (e.g., AddBonusRange, AddSpellDamage) while the unit is in the Monk's ranged combat stance.  
 **Total Count:** 2
 
 <details>
@@ -4395,7 +4395,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhilePreviewingMonkRangedStance`
 
 
-**Definition:** Applies specific passive effects (e.g., AddBonusRange) while the unit is previewing the Monk's ranged stance before committing to it.
+**Definition:** Applies specific passive effects (e.g., AddBonusRange) while the unit is previewing the Monk's ranged stance before committing to it.  
 **Total Count:** 2
 
 <details>
@@ -4417,7 +4417,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileWearingMetal`
 
 
-**Definition:** Applies a set of passive effects (e.g., AddElementsToWeapon with Electric) while the unit is equipped with metal armor or accessories.
+**Definition:** Applies a set of passive effects (e.g., AddElementsToWeapon with Electric) while the unit is equipped with metal armor or accessories.  
 **Total Count:** 2
 
 <details>
@@ -4438,7 +4438,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RepressedMemoriesMetronome`
 
 
-**Definition:** An object defining the metronome status effect and its pool triggered on mana spend.
+**Definition:** An object defining the metronome status effect and its pool triggered on mana spend.  
 **Total Count:** 2
 
 <details>
@@ -4460,7 +4460,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ScaledStatusOnOverMana`
 
 
-**Definition:** An object containing status effect definitions to apply when the unit gains mana that exceeds its maximum mana, with the number of stacks scaled by the amount of over-mana.
+**Definition:** An object containing status effect definitions to apply when the unit gains mana that exceeds its maximum mana, with the number of stacks scaled by the amount of over-mana.  
 **Total Count:** 2
 
 <details>
@@ -4483,7 +4483,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ScaledStatusOnSpendMana`
 
 
-**Definition:** An object containing status effect definitions to apply when the unit spends mana, with the number of stacks scaled by the amount of mana spent.
+**Definition:** An object containing status effect definitions to apply when the unit spends mana, with the number of stacks scaled by the amount of mana spent.  
 **Total Count:** 2
 
 <details>
@@ -4504,7 +4504,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `schadenfreude_scaled_stats`
 
 
-**Definition:** Defines the stat bonuses (str, dex, con, int, cha) applied by the Schadenfreude trait at a given level.
+**Definition:** Defines the stat bonuses (str, dex, con, int, cha) applied by the Schadenfreude trait at a given level.  
 **Total Count:** 2
 
 <details>
@@ -4526,7 +4526,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SecurityBotProtect`
 
 
-**Definition:** Specifies the ability and movement used by a security bot to protect allies.
+**Definition:** Specifies the ability and movement used by a security bot to protect allies.  
 **Total Count:** 2
 
 <details>
@@ -4548,7 +4548,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Shadow`
 
 
-**Definition:** An object defining the effects granted by Shadow elemental attunement.
+**Definition:** An object defining the effects granted by Shadow elemental attunement.  
 **Total Count:** 2
 
 <details>
@@ -4570,7 +4570,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmiteEnemiesWhoKill`
 
 
-**Definition:** An object defining a smite effect applied to enemies who kill another unit, typically dealing damage and applying a stun.
+**Definition:** An object defining a smite effect applied to enemies who kill another unit, typically dealing damage and applying a stun.  
 **Total Count:** 2
 
 <details>
@@ -4596,7 +4596,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpecialFriends`
 
 
-**Definition:** An object containing a set of status effects applied to allied units that are considered 'special friends' (e.g., granted by a passive).
+**Definition:** An object containing a set of status effects applied to allied units that are considered 'special friends' (e.g., granted by a passive).  
 **Total Count:** 2
 
 <details>
@@ -4619,7 +4619,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatsAtLowHealth`
 
 
-**Definition:** An object containing a 'threshold' (health value) and stat bonuses (e.g., 'strength', 'speed') that are applied when the unit's health is below the threshold.
+**Definition:** An object containing a 'threshold' (health value) and stat bonuses (e.g., 'strength', 'speed') that are applied when the unit's health is below the threshold.  
 **Total Count:** 2
 
 <details>
@@ -4643,7 +4643,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAfterCastSpell`
 
 
-**Definition:** An object containing status effects to apply to the unit immediately after it casts any spell.
+**Definition:** An object containing status effects to apply to the unit immediately after it casts any spell.  
 **Total Count:** 2
 
 <details>
@@ -4666,7 +4666,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesOnBattleStart`
 
 
-**Definition:** An object containing status effects to apply to all allies at the start of battle.
+**Definition:** An object containing status effects to apply to all allies at the start of battle.  
 **Total Count:** 2
 
 <details>
@@ -4688,7 +4688,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesOnGainCoins`
 
 
-**Definition:** An object containing status effects to apply to allies when the unit gains coins, with an optional 'scaled' boolean to scale stacks.
+**Definition:** An object containing status effects to apply to allies when the unit gains coins, with an optional 'scaled' boolean to scale stacks.  
 **Total Count:** 2
 
 <details>
@@ -4715,7 +4715,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAllyWhenAllySpendsMana`
 
 
-**Definition:** An object with a 'threshold' (mana amount) and status effects to apply to an ally whenever any ally spends at least that much mana.
+**Definition:** An object with a 'threshold' (mana amount) and status effects to apply to an ally whenever any ally spends at least that much mana.  
 **Total Count:** 2
 
 <details>
@@ -4741,7 +4741,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAnyCatAllyWhoKills`
 
 
-**Definition:** An object containing status effects to apply to any cat ally who kills an enemy.
+**Definition:** An object containing status effects to apply to any cat ally who kills an enemy.  
 **Total Count:** 2
 
 <details>
@@ -4761,7 +4761,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusDamagers`
 
 
-**Definition:** An object defining status effects that damage the unit, with parameters for each status.
+**Definition:** An object defining status effects that damage the unit, with parameters for each status.  
 **Total Count:** 2
 
 <details>
@@ -4784,7 +4784,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEndForEachTurn`
 
 
-**Definition:** Statuses applied at the end of each turn, with the number of turns as nested values.
+**Definition:** Statuses applied at the end of each turn, with the number of turns as nested values.  
 **Total Count:** 2
 
 <details>
@@ -4806,7 +4806,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEndPerEnemyKill`
 
 
-**Definition:** An object containing status effects to apply at the end of each turn for each enemy killed during that turn.
+**Definition:** An object containing status effects to apply at the end of each turn for each enemy killed during that turn.  
 **Total Count:** 2
 
 <details>
@@ -4828,7 +4828,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEnemiesOnDeath`
 
 
-**Definition:** An object containing status effects to apply to all enemies when the unit dies.
+**Definition:** An object containing status effects to apply to all enemies when the unit dies.  
 **Total Count:** 2
 
 <details>
@@ -4848,7 +4848,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEveryXTurnBegins`
 
 
-**Definition:** An object with a 'turns' value defining status effects applied every X turns at the start of the turn.
+**Definition:** An object with a 'turns' value defining status effects applied every X turns at the start of the turn.  
 **Total Count:** 2
 
 <details>
@@ -4871,7 +4871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusKillers`
 
 
-**Definition:** An object containing nested conditionals that apply status effects when the unit kills an enemy.
+**Definition:** An object containing nested conditionals that apply status effects when the unit kills an enemy.  
 **Total Count:** 2
 
 <details>
@@ -4891,7 +4891,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnAnyDeath`
 
 
-**Definition:** An object containing status effects to apply whenever any unit (ally or enemy) dies.
+**Definition:** An object containing status effects to apply whenever any unit (ally or enemy) dies.  
 **Total Count:** 2
 
 <details>
@@ -4913,7 +4913,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBattleEndIfKillThresholdMet`
 
 
-**Definition:** An object containing a 'kills' threshold and status effects to apply at the end of battle if the unit's kill count meets or exceeds the threshold.
+**Definition:** An object containing a 'kills' threshold and status effects to apply at the end of battle if the unit's kill count meets or exceeds the threshold.  
 **Total Count:** 2
 
 <details>
@@ -4935,7 +4935,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBreakItem`
 
 
-**Definition:** An object containing status effects to apply when the unit breaks a weapon or armor item.
+**Definition:** An object containing status effects to apply when the unit breaks a weapon or armor item.  
 **Total Count:** 2
 
 <details>
@@ -4959,7 +4959,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnCollectPickup`
 
 
-**Definition:** An object containing status effects to apply when the unit collects a pickup item.
+**Definition:** An object containing status effects to apply when the unit collects a pickup item.  
 **Total Count:** 2
 
 <details>
@@ -4981,7 +4981,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnDealtDamage`
 
 
-**Definition:** An object containing status effects to apply to the unit whenever it deals damage to an enemy.
+**Definition:** An object containing status effects to apply to the unit whenever it deals damage to an enemy.  
 **Total Count:** 2
 
 <details>
@@ -5005,7 +5005,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnDealtDamageThreshold`
 
 
-**Definition:** Specifies the effects applied when the unit deals damage equal to or exceeding the defined threshold.
+**Definition:** Specifies the effects applied when the unit deals damage equal to or exceeding the defined threshold.  
 **Total Count:** 2
 
 <details>
@@ -5033,7 +5033,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEndMove`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit finishes moving.
+**Definition:** Specifies status effects or actions triggered when the unit finishes moving.  
 **Total Count:** 2
 
 <details>
@@ -5053,7 +5053,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnGainShield`
 
 
-**Definition:** Specifies the effects applied when the unit gains a shield.
+**Definition:** Specifies the effects applied when the unit gains a shield.  
 **Total Count:** 2
 
 <details>
@@ -5076,7 +5076,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnHeal`
 
 
-**Definition:** Specifies the effects applied when the unit receives healing.
+**Definition:** Specifies the effects applied when the unit receives healing.  
 **Total Count:** 2
 
 <details>
@@ -5099,7 +5099,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnOverMana`
 
 
-**Definition:** Specifies the effects applied when the unit's mana exceeds its maximum.
+**Definition:** Specifies the effects applied when the unit's mana exceeds its maximum.  
 **Total Count:** 2
 
 <details>
@@ -5123,7 +5123,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnPickupCoins`
 
 
-**Definition:** Specifies the effects applied when the unit picks up coins.
+**Definition:** Specifies the effects applied when the unit picks up coins.  
 **Total Count:** 2
 
 <details>
@@ -5148,7 +5148,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnPopCorpse`
 
 
-**Definition:** Specifies the effects applied when the unit pops a corpse.
+**Definition:** Specifies the effects applied when the unit pops a corpse.  
 **Total Count:** 2
 
 <details>
@@ -5170,7 +5170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamageFromEnemyAbility`
 
 
-**Definition:** Specifies the effects applied when the unit takes damage from an enemy ability.
+**Definition:** Specifies the effects applied when the unit takes damage from an enemy ability.  
 **Total Count:** 2
 
 <details>
@@ -5193,7 +5193,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTriggerTrap`
 
 
-**Definition:** Specifies the effects applied when the unit triggers a trap.
+**Definition:** Specifies the effects applied when the unit triggers a trap.  
 **Total Count:** 2
 
 <details>
@@ -5216,7 +5216,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnUseBasicAttack`
 
 
-**Definition:** Specifies the effects applied when the unit performs a basic attack.
+**Definition:** Specifies the effects applied when the unit performs a basic attack.  
 **Total Count:** 2
 
 <details>
@@ -5238,7 +5238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnUseElementAbility`
 
 
-**Definition:** Specifies the effects applied when the unit uses an ability matching the specified element.
+**Definition:** Specifies the effects applied when the unit uses an ability matching the specified element.  
 **Total Count:** 2
 
 <details>
@@ -5261,7 +5261,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusPerInjury`
 
 
-**Definition:** Specifies the effects granted per injury the unit has, up to an optional cap.
+**Definition:** Specifies the effects granted per injury the unit has, up to an optional cap.  
 **Total Count:** 2
 
 <details>
@@ -5288,7 +5288,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusThingsKnockedBack`
 
 
-**Definition:** Specifies the effects applied when the unit knocks back another unit.
+**Definition:** Specifies the effects applied when the unit knocks back another unit.  
 **Total Count:** 2
 
 <details>
@@ -5309,7 +5309,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusWhenAllySpendsMana`
 
 
-**Definition:** Specifies the effects applied when an ally spends mana.
+**Definition:** Specifies the effects applied when an ally spends mana.  
 **Total Count:** 2
 
 <details>
@@ -5333,7 +5333,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TaggedPickupEffectReplacement`
 
 
-**Definition:** Specifies a replacement effect for picking up items with a given tag.
+**Definition:** Specifies a replacement effect for picking up items with a given tag.  
 **Total Count:** 2
 
 <details>
@@ -5356,7 +5356,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TowerDefense`
 
 
-**Definition:** Specifies the range and damage of the Tower Defense counterattack.
+**Definition:** Specifies the range and damage of the Tower Defense counterattack.  
 **Total Count:** 2
 
 <details>
@@ -5378,7 +5378,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Water`
 
 
-**Definition:** Form state for water element, applying a puddle or movement bonus.
+**Definition:** Form state for water element, applying a puddle or movement bonus.  
 **Total Count:** 2
 
 <details>
@@ -5399,7 +5399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Wind`
 
 
-**Definition:** Defines the properties for the Wind element, such as knockback amount.
+**Definition:** Defines the properties for the Wind element, such as knockback amount.  
 **Total Count:** 2
 
 <details>
@@ -5420,7 +5420,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityChargeRefundChance`
 
 
-**Definition:** An object containing a percentage chance to refund an ability charge, with an advantage softcap.
+**Definition:** An object containing a percentage chance to refund an ability charge, with an advantage softcap.  
 **Total Count:** 1
 
 <details>
@@ -5442,7 +5442,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusesIfPersistentWeatherElement`
 
 
-**Definition:** Specifies statuses applied if the persistent weather matches the given elements.
+**Definition:** Specifies statuses applied if the persistent weather matches the given elements.  
 **Total Count:** 1
 
 <details>
@@ -5465,7 +5465,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusesToReceivedElementalDamage`
 
 
-**Definition:** An object defining statuses applied to the unit when it takes elemental damage of the specified types.
+**Definition:** An object defining statuses applied to the unit when it takes elemental damage of the specified types.  
 **Total Count:** 1
 
 <details>
@@ -5488,7 +5488,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToKnockbackDamage`
 
 
-**Definition:** An object whose nested keys define statuses applied to damage caused by knockback.
+**Definition:** An object whose nested keys define statuses applied to damage caused by knockback.  
 **Total Count:** 1
 
 <details>
@@ -5508,7 +5508,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToReceivedDamage_ExcludeStatuses`
 
 
-**Definition:** An object defining statuses applied to the attacking unit when the owner receives damage, excluding damage from sources carrying the specified statuses.
+**Definition:** An object defining statuses applied to the attacking unit when the owner receives damage, excluding damage from sources carrying the specified statuses.  
 **Total Count:** 1
 
 <details>
@@ -5528,7 +5528,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToSpells`
 
 
-**Definition:** Specifies status effects added to all spell attacks used by this unit.
+**Definition:** Specifies status effects added to all spell attacks used by this unit.  
 **Total Count:** 1
 
 <details>
@@ -5548,7 +5548,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddTemporaryEffectsToEquipment`
 
 
-**Definition:** An object whose nested keys define temporary status effects added to equipment.
+**Definition:** An object whose nested keys define temporary status effects added to equipment.  
 **Total Count:** 1
 
 <details>
@@ -5569,7 +5569,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Autism`
 
 
-**Definition:** An object defining the Autism disorder, including its name, description, class, and stat modifications for innate and learned levels.
+**Definition:** An object defining the Autism disorder, including its name, description, class, and stat modifications for innate and learned levels.  
 **Total Count:** 1
 
 <details>
@@ -5591,7 +5591,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToRevive`
 
 
-**Definition:** The percentage chance or an object defining chance, health, and statuses on revival.
+**Definition:** The percentage chance or an object defining chance, health, and statuses on revival.  
 **Total Count:** 1
 
 <details>
@@ -5613,7 +5613,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CollectPickupsOnBattleEnd`
 
 
-**Definition:** The number of pickups automatically collected from corpses on the battlefield when the battle ends.
+**Definition:** The number of pickups automatically collected from corpses on the battlefield when the battle ends.  
 **Total Count:** 1
 
 <details>
@@ -5634,7 +5634,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_DoesDamage`
 
 
-**Definition:** An object defining status effects and their probabilities to apply when the unit deals damage.
+**Definition:** An object defining status effects and their probabilities to apply when the unit deals damage.  
 **Total Count:** 1
 
 <details>
@@ -5656,7 +5656,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
 **Total Count:** 1
 
 <details>
@@ -5680,7 +5680,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_SourceHasTag`
 
 
-**Definition:** Defines a conditional block that applies effects only if the source of the effect has a specified tag.
+**Definition:** Defines a conditional block that applies effects only if the source of the effect has a specified tag.  
 **Total Count:** 1
 
 <details>
@@ -5704,7 +5704,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageIfDidntUseSpecificAbility`
 
 
-**Definition:** Deals a specified amount of damage if the unit did not use a designated ability on its previous turn.
+**Definition:** Deals a specified amount of damage if the unit did not use a designated ability on its previous turn.  
 **Total Count:** 1
 
 <details>
@@ -5726,7 +5726,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DelayedWind`
 
 
-**Definition:** Defines the properties for a delayed wind effect applied on melee damage.
+**Definition:** Defines the properties for a delayed wind effect applied on melee damage.  
 **Total Count:** 1
 
 <details>
@@ -5747,7 +5747,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DelayedWindCone`
 
 
-**Definition:** An object containing parameters for a delayed wind cone, such as damage and distance.
+**Definition:** An object containing parameters for a delayed wind cone, such as damage and distance.  
 **Total Count:** 1
 
 <details>
@@ -5768,7 +5768,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Diabetes`
 
 
-**Definition:** Defines the Diabetes disorder, including its name, description, and associated passive effects.
+**Definition:** Defines the Diabetes disorder, including its name, description, and associated passive effects.  
 **Total Count:** 1
 
 <details>
@@ -5791,7 +5791,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `EnergyStorm`
 
 
-**Definition:** The period or definition for the Energy Storm, dealing periodic damage in an area.
+**Definition:** The period or definition for the Energy Storm, dealing periodic damage in an area.  
 **Total Count:** 1
 
 <details>
@@ -5813,7 +5813,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fire`
 
 
-**Definition:** An event response that uses fire, with no stat requirement.
+**Definition:** An event response that uses fire, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -5839,7 +5839,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ForceMoveAway`
 
 
-**Definition:** The distance to force the target away from the source.
+**Definition:** The distance to force the target away from the source.  
 **Total Count:** 1
 
 <details>
@@ -5860,7 +5860,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FurnitureStats`
 
 
-**Definition:** Defines the Comfort, Stimulation, and Appeal stats of furniture.
+**Definition:** Defines the Comfort, Stimulation, and Appeal stats of furniture.  
 **Total Count:** 1
 
 <details>
@@ -5883,7 +5883,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ice`
 
 
-**Definition:** An event response that uses ice, with no stat requirement.
+**Definition:** An event response that uses ice, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -5909,7 +5909,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `lightning`
 
 
-**Definition:** An event response using lightning, with no stat requirement.
+**Definition:** An event response using lightning, with no stat requirement.  
 **Total Count:** 1
 
 <details>
@@ -5935,7 +5935,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MegaMinions`
 
 
-**Definition:** The number of extra minions spawned or maximum minion count.
+**Definition:** The number of extra minions spawned or maximum minion count.  
 **Total Count:** 1
 
 <details>
@@ -5957,7 +5957,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveWhenDamaged`
 
 
-**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.
+**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.  
 **Total Count:** 1
 
 <details>
@@ -5978,7 +5978,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveLevelScaledStatus`
 
 
-**Definition:** An object containing status effects whose values scale with the unit's level, using X as the level variable.
+**Definition:** An object containing status effects whose values scale with the unit's level, using X as the level variable.  
 **Total Count:** 1
 
 <details>
@@ -6002,7 +6002,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomPassivePool`
 
 
-**Definition:** A pool of random passives from which one is chosen for this unit.
+**Definition:** A pool of random passives from which one is chosen for this unit.  
 **Total Count:** 1
 
 <details>
@@ -6027,7 +6027,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ReplaceBrain`
 
 
-**Definition:** Defines a replacement AI brain and behavior pattern for the mutant.
+**Definition:** Defines a replacement AI brain and behavior pattern for the mutant.  
 **Total Count:** 1
 
 <details>
@@ -6050,7 +6050,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Robot`
 
 
-**Definition:** If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties.
+**Definition:** If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties.  
 **Total Count:** 1
 
 <details>
@@ -6071,7 +6071,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ScaledStatusOnBleedDamage`
 
 
-**Definition:** An object that applies a scaled status (e.g., Charge) on the unit when they take bleed damage.
+**Definition:** An object that applies a scaled status (e.g., Charge) on the unit when they take bleed damage.  
 **Total Count:** 1
 
 <details>
@@ -6094,7 +6094,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 
 `damage_instance`<br>`spell`<br>`self_damage`
-**Definition:** Applies a scaled status effect (e.g., Thorns proportional to shield lost) when the unit loses shield points. Value includes a 'shield' sub-key for threshold.
+**Definition:** Applies a scaled status effect (e.g., Thorns proportional to shield lost) when the unit loses shield points. Value includes a 'shield' sub-key for threshold.  
 **Total Count:** 1
 
 <details>
@@ -6116,7 +6116,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ScaledStatusOnOverHealed`
 
 
-**Definition:** An object containing status effect definitions to apply when the unit receives healing that exceeds its maximum health, with the number of stacks scaled by the amount of over-healing.
+**Definition:** An object containing status effect definitions to apply when the unit receives healing that exceeds its maximum health, with the number of stacks scaled by the amount of over-healing.  
 **Total Count:** 1
 `damage_instance`<br>`spell`<br>`self_damage`
 
@@ -6138,7 +6138,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SelfDamageWhenDealDamage`
 
 
-**Definition:** An object defining the damage the unit takes to itself whenever it deals damage to an enemy.
+**Definition:** An object defining the damage the unit takes to itself whenever it deals damage to an enemy.  
 **Total Count:** 1
 
 <details>
@@ -6160,7 +6160,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StackingDodgeChanceOnTookDamage`
 
 
-**Definition:** An object with 'amount' (percent) and 'cap' (percent) defining a stacking dodge chance buff that increases each time the unit takes damage, up to a maximum.
+**Definition:** An object with 'amount' (percent) and 'cap' (percent) defining a stacking dodge chance buff that increases each time the unit takes damage, up to a maximum.  
 **Total Count:** 1
 
 <details>
@@ -6182,7 +6182,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAdjacentOnTheirTurnBegin`
 
 
-**Definition:** Defines a status effect applied to adjacent units when their turn begins, such as forcing them to move away.
+**Definition:** Defines a status effect applied to adjacent units when their turn begins, such as forcing them to move away.  
 **Total Count:** 1
 
 <details>
@@ -6202,7 +6202,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesEachTurn`
 
 
-**Definition:** Defines a status effect applied to all allies each turn, with an optional exclusion of the owner and conditional checks.
+**Definition:** Defines a status effect applied to all allies each turn, with an optional exclusion of the owner and conditional checks.  
 **Total Count:** 1
 
 <details>
@@ -6225,7 +6225,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesOnSpendMana`
 
 
-**Definition:** An object containing status effects to apply to allies when the unit spends mana.
+**Definition:** An object containing status effects to apply to allies when the unit spends mana.  
 **Total Count:** 1
 
 <details>
@@ -6245,7 +6245,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAlliesScaledByCursedOnDeath`
 
 
-**Definition:** An object containing status effects to apply to allies when the unit dies, with stacks scaled by the number of Cursed stacks the unit had.
+**Definition:** An object containing status effects to apply to allies when the unit dies, with stacks scaled by the number of Cursed stacks the unit had.  
 **Total Count:** 1
 
 <details>
@@ -6267,7 +6267,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusIfBattleAlreadyBegan`
 
 
-**Definition:** Defines a status effect that is applied only if the battle has already started (not on the first turn).
+**Definition:** Defines a status effect that is applied only if the battle has already started (not on the first turn).  
 **Total Count:** 1
 
 <details>
@@ -6289,7 +6289,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEatPill`
 
 
-**Definition:** Specifies the effects applied when the unit consumes a pill item.
+**Definition:** Specifies the effects applied when the unit consumes a pill item.  
 **Total Count:** 1
 
 <details>
@@ -6309,7 +6309,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnLoseShield`
 
 
-**Definition:** Defines a status effect applied to the unit each time it loses a shield point.
+**Definition:** Defines a status effect applied to the unit each time it loses a shield point.  
 **Total Count:** 1
 
 <details>
@@ -6331,7 +6331,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTakeHealthDamage`
 
 
-**Definition:** Defines a status effect applied to the unit each time it takes health damage, such as a permanent stat reduction.
+**Definition:** Defines a status effect applied to the unit each time it takes health damage, such as a permanent stat reduction.  
 **Total Count:** 1
 
 <details>
@@ -6353,7 +6353,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTurnEndIfDidntCastAbilityTypes`
 
 
-**Definition:** Applies the contained status effects at turn end if the unit did not cast an ability of the specified type(s).
+**Definition:** Applies the contained status effects at turn end if the unit did not cast an ability of the specified type(s).  
 **Total Count:** 1
 
 <details>
@@ -6377,7 +6377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StrengthInNumbersAura`
 
 
-**Definition:** The amount of strength gained per nearby ally within the aura.
+**Definition:** The amount of strength gained per nearby ally within the aura.  
 **Total Count:** 1
 
 <details>
@@ -6399,7 +6399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Study`
 
 
-**Definition:** The number of stacks of the Study status applied.
+**Definition:** The number of stacks of the Study status applied.  
 **Total Count:** 1
 
 <details>
@@ -6421,7 +6421,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TakeBonusTurnWithStatus`
 
 
-**Definition:** Container for status effects applied when taking a bonus turn.
+**Definition:** Container for status effects applied when taking a bonus turn.  
 **Total Count:** 1
 
 <details>
@@ -6443,7 +6443,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TheHunger`
 
 
-**Definition:** Defines the Hunger passive, which applies Madness or other effects each turn, representing a disorder.
+**Definition:** Defines the Hunger passive, which applies Madness or other effects each turn, representing a disorder.  
 **Total Count:** 1
 
 <details>
@@ -6465,7 +6465,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TileDamageMultiplier`
 
 
-**Definition:** Multiplier for damage dealt to environmental tiles.
+**Definition:** Multiplier for damage dealt to environmental tiles.  
 **Total Count:** 1
 
 <details>
@@ -6487,7 +6487,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TourettesMeows`
 
 
-**Definition:** Defines a passive that triggers random vocalizations (hiss, hit, normal) at random cooldown intervals.
+**Definition:** Defines a passive that triggers random vocalizations (hiss, hit, normal) at random cooldown intervals.  
 **Total Count:** 1
 
 <details>
@@ -6509,7 +6509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `triattack`
 
 
-**Definition:** An object defining the properties of a triangular attack that damages neighbor tiles when casting a spell.
+**Definition:** An object defining the properties of a triangular attack that damages neighbor tiles when casting a spell.  
 **Total Count:** 1
 
 <details>

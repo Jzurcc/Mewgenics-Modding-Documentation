@@ -540,7 +540,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `states`
 
 
-**Definition:** Defines named animation states and their associated animation clips.
+**Definition:** Defines named animation states and their associated animation clips.  
 **Total Count:** 12
 
 <details>
@@ -576,7 +576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `transitions`
 
 
-**Definition:** Defines named transitions between animation states.
+**Definition:** Defines named transitions between animation states.  
 **Total Count:** 12
 
 <details>
@@ -618,7 +618,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted`
 
 
-**Definition:** Defines sequences of unprompted dialog events.
+**Definition:** Defines sequences of unprompted dialog events.  
 **Total Count:** 9
 
 <details>
@@ -643,7 +643,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `also`
 
 
-**Definition:** Defines an additional dialog sequence that plays alongside the main one.
+**Definition:** Defines an additional dialog sequence that plays alongside the main one.  
 **Total Count:** 8
 
 <details>
@@ -664,7 +664,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unknown`
 
 
-**Definition:** A generic object container for dialog and rewards, often used for unprompted sequences.
+**Definition:** A generic object container for dialog and rewards, often used for unprompted sequences.  
 **Total Count:** 8
 
 <details>
@@ -689,7 +689,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hide_text`
 
 
-**Definition:** Defines a sequence that hides text dialogs and autopasses to the next step.
+**Definition:** Defines a sequence that hides text dialogs and autopasses to the next step.  
 **Total Count:** 4
 
 <details>
@@ -711,7 +711,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item`
 
 
-**Definition:** Defines the dialog sequence for purchasing an item from an NPC.
+**Definition:** Defines the dialog sequence for purchasing an item from an NPC.  
 **Total Count:** 4
 
 <details>
@@ -735,7 +735,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tooltip`
 
 
-**Definition:** The localization string key used for the tooltip displayed on hover.
+**Definition:** The localization string key used for the tooltip displayed on hover.  
 **Total Count:** 4
 
 <details>
@@ -758,7 +758,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_a`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the first variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the first variant.  
 **Total Count:** 4
 
 <details>
@@ -780,7 +780,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_b`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the second variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the second variant.  
 **Total Count:** 4
 
 <details>
@@ -802,7 +802,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_c`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the third variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the third variant.  
 **Total Count:** 4
 
 <details>
@@ -824,7 +824,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_d`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fourth variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fourth variant.  
 **Total Count:** 4
 
 <details>
@@ -846,7 +846,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_e`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fifth variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the fifth variant.  
 **Total Count:** 4
 
 <details>
@@ -868,7 +868,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_f`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the sixth variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the sixth variant.  
 **Total Count:** 4
 
 <details>
@@ -890,7 +890,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_g`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the seventh variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the seventh variant.  
 **Total Count:** 4
 
 <details>
@@ -912,7 +912,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_h`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the eighth variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the eighth variant.  
 **Total Count:** 4
 
 <details>
@@ -934,7 +934,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted_i`
 
 
-**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the ninth variant.
+**Definition:** Defines a dialog sequence that plays when the player approaches the NPC without a prompt, labeled as the ninth variant.  
 **Total Count:** 4
 
 <details>
@@ -956,7 +956,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford`
 
 
-**Definition:** Defines the dialog sequence that plays when the player attempts to purchase an item they cannot afford.
+**Definition:** Defines the dialog sequence that plays when the player attempts to purchase an item they cannot afford.  
 **Total Count:** 3
 
 <details>
@@ -980,7 +980,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `forward_to_tips`
 
 
-**Definition:** Defines a dialog sequence that forwards the player to a random tip dialog for the current NPC.
+**Definition:** Defines a dialog sequence that forwards the player to a random tip dialog for the current NPC.  
 **Total Count:** 3
 
 <details>
@@ -1001,7 +1001,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `out_of_stock`
 
 
-**Definition:** Defines the dialog sequence that plays when a shop item is out of stock.
+**Definition:** Defines the dialog sequence that plays when a shop item is out of stock.  
 **Total Count:** 3
 
 <details>
@@ -1023,7 +1023,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_begin_accepting_cats`
 
 
-**Definition:** A cutscene sequence where Beanies begins accepting cats, playing dialogue and adjusting camera states.
+**Definition:** A cutscene sequence where Beanies begins accepting cats, playing dialogue and adjusting camera states.  
 **Total Count:** 1
 
 <details>
@@ -1046,7 +1046,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_2`
 
 
-**Definition:** Defines the dialog sequence for Beanies' bomb quest step 2.
+**Definition:** Defines the dialog sequence for Beanies' bomb quest step 2.  
 **Total Count:** 1
 
 <details>
@@ -1068,7 +1068,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_3`
 
 
-**Definition:** Defines the dialog sequence for the third stage of Beanies' bomb quest.
+**Definition:** Defines the dialog sequence for the third stage of Beanies' bomb quest.  
 **Total Count:** 1
 
 <details>
@@ -1091,7 +1091,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_amnesia`
 
 
-**Definition:** Defines the dialog sequence for Dr. Beanies' amnesia after a successful nuke quest.
+**Definition:** Defines the dialog sequence for Dr. Beanies' amnesia after a successful nuke quest.  
 **Total Count:** 1
 
 <details>
@@ -1114,7 +1114,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_begin`
 
 
-**Definition:** Defines the dialog sequence for Dr. Beanies beginning the final bomb quest.
+**Definition:** Defines the dialog sequence for Dr. Beanies beginning the final bomb quest.  
 **Total Count:** 1
 
 <details>
@@ -1137,7 +1137,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_fail_jarofblood`
 
 
-**Definition:** Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of blood.
+**Definition:** Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of blood.  
 **Total Count:** 1
 
 <details>
@@ -1160,7 +1160,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_fail_jarofchaos`
 
 
-**Definition:** Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of chaos.
+**Definition:** Defines the dialog sequence for failing the bomb quest by losing or misusing the jar of chaos.  
 **Total Count:** 1
 
 <details>
@@ -1183,7 +1183,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_fail_jarofradiation`
 
 
-**Definition:** Defines the dialog sequence for failing the bomb quest during the Act 1 jar-of-radiation stage.
+**Definition:** Defines the dialog sequence for failing the bomb quest during the Act 1 jar-of-radiation stage.  
 **Total Count:** 1
 
 <details>
@@ -1206,7 +1206,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_bombquest_fail_nuke`
 
 
-**Definition:** Defines the dialog sequence for failing the bomb quest during the Act 3 nuke stage.
+**Definition:** Defines the dialog sequence for failing the bomb quest during the Act 3 nuke stage.  
 **Total Count:** 1
 
 <details>
@@ -1229,7 +1229,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_future_intro`
 
 
-**Definition:** Defines the dialog sequence where Dr. Beanies sends the player to the future.
+**Definition:** Defines the dialog sequence where Dr. Beanies sends the player to the future.  
 **Total Count:** 1
 
 <details>
@@ -1251,7 +1251,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_hitler3`
 
 
-**Definition:** A cutscene sequence where Beanies reveals that Hitler has been sending robots back in time, introducing Hitler as the final boss.
+**Definition:** A cutscene sequence where Beanies reveals that Hitler has been sending robots back in time, introducing Hitler as the final boss.  
 **Total Count:** 1
 
 <details>
@@ -1273,7 +1273,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_hitler3_defeat`
 
 
-**Definition:** A cutscene sequence where Beanies provides the final piece of tech to unlock the infinite after defeating Hitler.
+**Definition:** A cutscene sequence where Beanies provides the final piece of tech to unlock the infinite after defeating Hitler.  
 **Total Count:** 1
 
 <details>
@@ -1296,7 +1296,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_iloveyou`
 
 
-**Definition:** A cutscene sequence where Beanies expresses love to the player through dialogue.
+**Definition:** A cutscene sequence where Beanies expresses love to the player through dialogue.  
 **Total Count:** 1
 
 <details>
@@ -1317,7 +1317,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_infinite_intro`
 
 
-**Definition:** A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator.
+**Definition:** A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator.  
 **Total Count:** 1
 
 <details>
@@ -1341,7 +1341,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_jurassic_intro`
 
 
-**Definition:** Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area.
+**Definition:** Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area.  
 **Total Count:** 1
 
 <details>
@@ -1363,7 +1363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_lab_intro`
 
 
-**Definition:** Defines the dialog sequence where Dr. Beanies is homeless and credits roll.
+**Definition:** Defines the dialog sequence where Dr. Beanies is homeless and credits roll.  
 **Total Count:** 1
 
 <details>
@@ -1388,7 +1388,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quest_complete`
 
 
-**Definition:** A cutscene sequence that triggers upon successfully completing Beanies' side quest.
+**Definition:** A cutscene sequence that triggers upon successfully completing Beanies' side quest.  
 **Total Count:** 1
 
 <details>
@@ -1410,7 +1410,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quest_fail`
 
 
-**Definition:** A cutscene sequence that triggers upon failing Beanies' side quest.
+**Definition:** A cutscene sequence that triggers upon failing Beanies' side quest.  
 **Total Count:** 1
 
 <details>
@@ -1432,7 +1432,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quests_intro`
 
 
-**Definition:** Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests.
+**Definition:** Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests.  
 **Total Count:** 1
 
 <details>
@@ -1457,7 +1457,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quests_repeat`
 
 
-**Definition:** Defines the repeatable quest dialog or generator for Dr. Beanies.
+**Definition:** Defines the repeatable quest dialog or generator for Dr. Beanies.  
 **Total Count:** 1
 
 <details>
@@ -1482,7 +1482,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_rift_intro`
 
 
-**Definition:** A cutscene sequence where Beanies comments on the chaos realm.
+**Definition:** A cutscene sequence where Beanies comments on the chaos realm.  
 **Total Count:** 1
 
 <details>
@@ -1506,7 +1506,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_screenshake_test`
 
 
-**Definition:** A cutscene sequence with a dialog followed by a screen shake effect.
+**Definition:** A cutscene sequence with a dialog followed by a screen shake effect.  
 **Total Count:** 1
 
 <details>
@@ -1529,7 +1529,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_seefuture`
 
 
-**Definition:** A cutscene sequence where Beanies reacts to the player seeing the future.
+**Definition:** A cutscene sequence where Beanies reacts to the player seeing the future.  
 **Total Count:** 1
 
 <details>
@@ -1551,7 +1551,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_seetheend`
 
 
-**Definition:** A cutscene sequence where Beanies responds to the player seeing the far future.
+**Definition:** A cutscene sequence where Beanies responds to the player seeing the far future.  
 **Total Count:** 1
 
 <details>
@@ -1573,7 +1573,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_terminator1_defeat`
 
 
-**Definition:** A cutscene sequence that plays when the first terminator is killed.
+**Definition:** A cutscene sequence that plays when the first terminator is killed.  
 **Total Count:** 1
 
 <details>
@@ -1596,7 +1596,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_terminator2_defeat`
 
 
-**Definition:** A cutscene sequence where Beanies invents more time-bending tech after the second terminator is defeated.
+**Definition:** A cutscene sequence where Beanies invents more time-bending tech after the second terminator is defeated.  
 **Total Count:** 1
 
 <details>
@@ -1619,7 +1619,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_theend_intro`
 
 
-**Definition:** Defines the dialog sequence where Dr. Beanies responds to you killing Hitler.
+**Definition:** Defines the dialog sequence where Dr. Beanies responds to you killing Hitler.  
 **Total Count:** 1
 
 <details>
@@ -1641,7 +1641,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_timemachine_2`
 
 
-**Definition:** A cutscene sequence where a frustrated Beanies sends the player into the future to gather information.
+**Definition:** A cutscene sequence where a frustrated Beanies sends the player into the future to gather information.  
 **Total Count:** 1
 
 <details>
@@ -1663,7 +1663,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_timemachine_intro`
 
 
-**Definition:** A cutscene sequence where Beanies explains how the time machine works and the butterfly effect.
+**Definition:** A cutscene sequence where Beanies explains how the time machine works and the butterfly effect.  
 **Total Count:** 1
 
 <details>
@@ -1686,7 +1686,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_vscreator1`
 
 
-**Definition:** A cutscene sequence where Beanies tells the player to detonate the nuke against the creator.
+**Definition:** A cutscene sequence where Beanies tells the player to detonate the nuke against the creator.  
 **Total Count:** 1
 
 <details>
@@ -1709,7 +1709,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_vscreator2`
 
 
-**Definition:** A cutscene sequence where Beanies attempts to convince the player to detonate the nuke if they refuse.
+**Definition:** A cutscene sequence where Beanies attempts to convince the player to detonate the nuke if they refuse.  
 **Total Count:** 1
 
 <details>
@@ -1732,7 +1732,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_vscreator3`
 
 
-**Definition:** A cutscene sequence where an angry Beanies continues to try to convince the player to end it.
+**Definition:** A cutscene sequence where an angry Beanies continues to try to convince the player to end it.  
 **Total Count:** 1
 
 <details>
@@ -1755,7 +1755,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_vscreator4`
 
 
-**Definition:** A cutscene sequence where Beanies sets off the nuke himself after the player's refusal.
+**Definition:** A cutscene sequence where Beanies sets off the nuke himself after the player's refusal.  
 **Total Count:** 1
 
 <details>
@@ -1779,7 +1779,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_vscreatorintro`
 
 
-**Definition:** A cutscene sequence where Beanies explains how to end everything.
+**Definition:** A cutscene sequence where Beanies explains how to end everything.  
 **Total Count:** 1
 
 <details>
@@ -1802,7 +1802,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_AI`
 
 
-**Definition:** A cutscene sequence that plays upon completing the AI-related portion of Beanies' quest.
+**Definition:** A cutscene sequence that plays upon completing the AI-related portion of Beanies' quest.  
 **Total Count:** 1
 
 <details>
@@ -1825,7 +1825,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_AirHorn`
 
 
-**Definition:** A cutscene sequence that plays upon completing the AirHorn-related portion of Beanies' quest.
+**Definition:** A cutscene sequence that plays upon completing the AirHorn-related portion of Beanies' quest.  
 **Total Count:** 1
 
 <details>
@@ -1848,7 +1848,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_AngryFace`
 
 
-**Definition:** The completion dialogue sequence for the AngryFace sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the AngryFace sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1871,7 +1871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_AnimalHands`
 
 
-**Definition:** The completion dialogue sequence for the AnimalHands sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the AnimalHands sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1894,7 +1894,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_BubbleBoy`
 
 
-**Definition:** The completion dialogue sequence for the BubbleBoy sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the BubbleBoy sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1917,7 +1917,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_ChadImplant`
 
 
-**Definition:** The completion dialogue sequence for the ChadImplant sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the ChadImplant sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1940,7 +1940,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_ChaosDevice`
 
 
-**Definition:** The completion dialogue sequence for the ChaosDevice sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the ChaosDevice sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1963,7 +1963,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_DimensionalDivider`
 
 
-**Definition:** The completion dialogue sequence for the DimensionalDivider sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the DimensionalDivider sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -1986,7 +1986,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_DiseaseJar`
 
 
-**Definition:** The completion dialogue sequence for the DiseaseJar sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the DiseaseJar sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2009,7 +2009,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_ExperimentalTreatment`
 
 
-**Definition:** The completion dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2032,7 +2032,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_FartFace`
 
 
-**Definition:** The completion dialogue sequence for the FartFace sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the FartFace sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2055,7 +2055,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_FigLeaf`
 
 
-**Definition:** The completion dialogue sequence for the FigLeaf sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the FigLeaf sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2078,7 +2078,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_Generic`
 
 
-**Definition:** The completion dialogue sequence for a generic sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for a generic sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2100,7 +2100,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_GlassCannon`
 
 
-**Definition:** The completion dialogue sequence for the GlassCannon sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the GlassCannon sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2123,7 +2123,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_HardPill`
 
 
-**Definition:** The completion dialogue sequence for the HardPill sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the HardPill sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2146,7 +2146,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_HiveMind`
 
 
-**Definition:** The completion dialogue sequence for the HiveMind sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the HiveMind sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2169,7 +2169,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_MagicMirror`
 
 
-**Definition:** The completion dialogue sequence for the MagicMirror sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the MagicMirror sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2192,7 +2192,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_MeStone`
 
 
-**Definition:** The completion dialogue sequence for the MeStone sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the MeStone sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2215,7 +2215,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_MultilinkCable`
 
 
-**Definition:** The completion dialogue sequence for the MultilinkCable sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the MultilinkCable sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2238,7 +2238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_MysteriousDice`
 
 
-**Definition:** The completion dialogue sequence for the MysteriousDice sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the MysteriousDice sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2261,7 +2261,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_MysteriousGlasses`
 
 
-**Definition:** The completion dialogue sequence for the MysteriousGlasses sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the MysteriousGlasses sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2284,7 +2284,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_NDEDevice`
 
 
-**Definition:** The completion dialogue sequence for the NDEDevice sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the NDEDevice sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2307,7 +2307,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_NuclearKnife`
 
 
-**Definition:** The completion dialogue sequence for the NuclearKnife sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the NuclearKnife sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2330,7 +2330,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_PartialLobotomy`
 
 
-**Definition:** The completion dialogue sequence for the PartialLobotomy sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the PartialLobotomy sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2353,7 +2353,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_PartyDetonator`
 
 
-**Definition:** The completion dialogue sequence for the PartyDetonator sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the PartyDetonator sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2376,7 +2376,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_PersonalHeater`
 
 
-**Definition:** The completion dialogue sequence for the PersonalHeater sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the PersonalHeater sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2399,7 +2399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_PersuasionDevice`
 
 
-**Definition:** The completion dialogue sequence for the PersuasionDevice sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the PersuasionDevice sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2422,7 +2422,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_PrincessHat`
 
 
-**Definition:** The completion dialogue sequence for the PrincessHat sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the PrincessHat sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2445,7 +2445,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_RealityScrambler`
 
 
-**Definition:** The completion dialogue sequence for the RealityScrambler sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the RealityScrambler sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2468,7 +2468,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_Redacted`
 
 
-**Definition:** The completion dialogue sequence for the Redacted sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the Redacted sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2491,7 +2491,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_SpiderInjector`
 
 
-**Definition:** The completion dialogue sequence for the SpiderInjector sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the SpiderInjector sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2514,7 +2514,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_Stopwatch`
 
 
-**Definition:** The completion dialogue sequence for the Stopwatch sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the Stopwatch sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2537,7 +2537,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_StorageLocker`
 
 
-**Definition:** The completion dialogue sequence for the StorageLocker sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the StorageLocker sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2560,7 +2560,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_TheIOU`
 
 
-**Definition:** The completion dialogue sequence for the TheIOU sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the TheIOU sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2583,7 +2583,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_TheLoner`
 
 
-**Definition:** The completion dialogue sequence for the TheLoner sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the TheLoner sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2606,7 +2606,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_Trapfest99`
 
 
-**Definition:** The completion dialogue sequence for the Trapfest99 sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the Trapfest99 sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2629,7 +2629,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_complete_UltraVision3000`
 
 
-**Definition:** The completion dialogue sequence for the UltraVision3000 sidequest, triggered when the quest is fulfilled.
+**Definition:** The completion dialogue sequence for the UltraVision3000 sidequest, triggered when the quest is fulfilled.  
 **Total Count:** 1
 
 <details>
@@ -2652,7 +2652,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_AI`
 
 
-**Definition:** The failure dialogue sequence for the AI sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the AI sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2675,7 +2675,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_AirHorn`
 
 
-**Definition:** The failure dialogue sequence for the AirHorn sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the AirHorn sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2698,7 +2698,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_AngryFace`
 
 
-**Definition:** The failure dialogue sequence for the AngryFace sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the AngryFace sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2721,7 +2721,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_AnimalHands`
 
 
-**Definition:** The failure dialogue sequence for the AnimalHands sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the AnimalHands sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2743,7 +2743,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_BubbleBoy`
 
 
-**Definition:** The failure dialogue sequence for the BubbleBoy sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the BubbleBoy sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2766,7 +2766,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_ChadImplant`
 
 
-**Definition:** The failure dialogue sequence for the ChadImplant sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the ChadImplant sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2789,7 +2789,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_ChaosDevice`
 
 
-**Definition:** The failure dialogue sequence for the ChaosDevice sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the ChaosDevice sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2812,7 +2812,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_DimensionalDivider`
 
 
-**Definition:** The failure dialogue sequence for the DimensionalDivider sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the DimensionalDivider sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2835,7 +2835,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_DiseaseJar`
 
 
-**Definition:** The failure dialogue sequence for the DiseaseJar sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the DiseaseJar sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2858,7 +2858,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_ExperimentalTreatment`
 
 
-**Definition:** The failure dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the ExperimentalTreatment sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2881,7 +2881,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_FartFace`
 
 
-**Definition:** The failure dialogue sequence for the FartFace sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the FartFace sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2904,7 +2904,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_FigLeaf`
 
 
-**Definition:** The failure dialogue sequence for the FigLeaf sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the FigLeaf sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2927,7 +2927,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_Generic`
 
 
-**Definition:** The failure dialogue sequence for a generic sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for a generic sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2949,7 +2949,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_GlassCannon`
 
 
-**Definition:** The failure dialogue sequence for the GlassCannon sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the GlassCannon sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2972,7 +2972,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_HardPill`
 
 
-**Definition:** The failure dialogue sequence for the HardPill sidequest, triggered when the quest fails.
+**Definition:** The failure dialogue sequence for the HardPill sidequest, triggered when the quest fails.  
 **Total Count:** 1
 
 <details>
@@ -2995,7 +2995,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_HiveMind`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3018,7 +3018,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_MagicMirror`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3041,7 +3041,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_MeStone`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3064,7 +3064,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_MultilinkCable`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3087,7 +3087,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_MysteriousDice`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3110,7 +3110,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_MysteriousGlasses`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3133,7 +3133,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_NDEDevice`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3156,7 +3156,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_NuclearKnife`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3179,7 +3179,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_PartialLobotomy`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3202,7 +3202,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_PartyDetonator`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3225,7 +3225,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_PersonalHeater`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3248,7 +3248,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_PersuasionDevice`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3271,7 +3271,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_PrincessHat`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3294,7 +3294,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_RealityScrambler`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3317,7 +3317,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_Redacted`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3340,7 +3340,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_SpiderInjector`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3363,7 +3363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_Stopwatch`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3386,7 +3386,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_StorageLocker`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3409,7 +3409,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_TheIOU`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3432,7 +3432,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_TheLoner`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3455,7 +3455,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_Trapfest99`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3478,7 +3478,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_fail_UltraVision3000`
 
 
-**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.
+**Definition:** The dialogue and camera sequence played upon failure of the quest for this item.  
 **Total Count:** 1
 
 <details>
@@ -3501,7 +3501,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_AI`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3523,7 +3523,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_AirHorn`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3545,7 +3545,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_AngryFace`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3567,7 +3567,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_AnimalHands`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3589,7 +3589,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_BubbleBoy`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3611,7 +3611,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_ChadImplant`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3633,7 +3633,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_ChaosDevice`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3655,7 +3655,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_DimensionalDivider`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3677,7 +3677,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_DiseaseJar`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3699,7 +3699,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_ExperimentalTreatment`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3721,7 +3721,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_FartFace`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3743,7 +3743,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_FigLeaf`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3765,7 +3765,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_Generic`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3786,7 +3786,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_GlassCannon`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3808,7 +3808,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_HardPill`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3830,7 +3830,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_HiveMind`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3852,7 +3852,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_MagicMirror`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3874,7 +3874,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_MeStone`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3896,7 +3896,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_MultilinkCable`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3918,7 +3918,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_MysteriousDice`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3940,7 +3940,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_MysteriousGlasses`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3962,7 +3962,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_NDEDevice`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -3984,7 +3984,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_NuclearKnife`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4006,7 +4006,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_PartialLobotomy`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4028,7 +4028,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_PartyDetonator`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4050,7 +4050,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_PersonalHeater`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4072,7 +4072,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_PersuasionDevice`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4094,7 +4094,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_PrincessHat`
 
 
-**Definition:** The dialogue and camera sequence played during the introduction of this quest item.
+**Definition:** The dialogue and camera sequence played during the introduction of this quest item.  
 **Total Count:** 1
 
 <details>
@@ -4116,7 +4116,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_RealityScrambler`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Reality Scrambler item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Reality Scrambler item.  
 **Total Count:** 1
 
 <details>
@@ -4138,7 +4138,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_Redacted`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Redacted item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Redacted item.  
 **Total Count:** 1
 
 <details>
@@ -4160,7 +4160,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_SpiderInjector`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Spider Injector item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Spider Injector item.  
 **Total Count:** 1
 
 <details>
@@ -4182,7 +4182,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_Stopwatch`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Stopwatch item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Stopwatch item.  
 **Total Count:** 1
 
 <details>
@@ -4204,7 +4204,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_StorageLocker`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Storage Locker item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Storage Locker item.  
 **Total Count:** 1
 
 <details>
@@ -4226,7 +4226,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_TheIOU`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving The IOU item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving The IOU item.  
 **Total Count:** 1
 
 <details>
@@ -4248,7 +4248,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_TheLoner`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving The Loner item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving The Loner item.  
 **Total Count:** 1
 
 <details>
@@ -4269,7 +4269,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_Trapfest99`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Trapfest99 item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the Trapfest99 item.  
 **Total Count:** 1
 
 <details>
@@ -4291,7 +4291,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beaniesquest_intro_UltraVision3000`
 
 
-**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the UltraVision3000 item.
+**Definition:** A sequence of dialog and state changes for Beanie's quest intro involving the UltraVision3000 item.  
 **Total Count:** 1
 
 <details>
@@ -4313,7 +4313,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `boss_fight_intro`
 
 
-**Definition:** A sequence of dialog and state changes for the boss fight introduction cutscene.
+**Definition:** A sequence of dialog and state changes for the boss fight introduction cutscene.  
 **Total Count:** 1
 
 <details>
@@ -4337,7 +4337,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `boss_fight_round2`
 
 
-**Definition:** A sequence of dialog and state changes for the boss fight round 2 cutscene.
+**Definition:** A sequence of dialog and state changes for the boss fight round 2 cutscene.  
 **Total Count:** 1
 
 <details>
@@ -4360,7 +4360,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_begin_accepting_cats`
 
 
-**Definition:** A sequence of dialog and state changes when Butch begins accepting cats into the shelter.
+**Definition:** A sequence of dialog and state changes when Butch begins accepting cats into the shelter.  
 **Total Count:** 1
 
 <details>
@@ -4383,7 +4383,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_boneyard_intro`
 
 
-**Definition:** Defines the dialog sequence for Butch's introduction in the boneyard.
+**Definition:** Defines the dialog sequence for Butch's introduction in the boneyard.  
 **Total Count:** 1
 
 <details>
@@ -4405,7 +4405,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_first_house_boss_beat`
 
 
-**Definition:** A sequence of dialog and state changes after defeating the first house boss.
+**Definition:** A sequence of dialog and state changes after defeating the first house boss.  
 **Total Count:** 1
 
 <details>
@@ -4427,7 +4427,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_pyro`
 
 
-**Definition:** A sequence of dialog and state changes discussing Butch's pyro character.
+**Definition:** A sequence of dialog and state changes discussing Butch's pyro character.  
 **Total Count:** 1
 
 <details>
@@ -4449,7 +4449,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tina1`
 
 
-**Definition:** A sequence of dialog and state changes related to Butch and Tina's first interaction.
+**Definition:** A sequence of dialog and state changes related to Butch and Tina's first interaction.  
 **Total Count:** 1
 
 <details>
@@ -4471,7 +4471,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_backstab`
 
 
-**Definition:** A tutorial tip sequence explaining the backstab mechanic.
+**Definition:** A tutorial tip sequence explaining the backstab mechanic.  
 **Total Count:** 1
 
 <details>
@@ -4492,7 +4492,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_charisma`
 
 
-**Definition:** A tutorial tip sequence explaining the charisma stat.
+**Definition:** A tutorial tip sequence explaining the charisma stat.  
 **Total Count:** 1
 
 <details>
@@ -4513,7 +4513,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_combat`
 
 
-**Definition:** A tutorial tip sequence covering basic combat mechanics.
+**Definition:** A tutorial tip sequence covering basic combat mechanics.  
 **Total Count:** 1
 
 <details>
@@ -4534,7 +4534,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_disorders`
 
 
-**Definition:** A tutorial tip sequence explaining disorders in cats.
+**Definition:** A tutorial tip sequence explaining disorders in cats.  
 **Total Count:** 1
 
 <details>
@@ -4555,7 +4555,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_drafting`
 
 
-**Definition:** A tutorial tip sequence explaining the drafting system.
+**Definition:** A tutorial tip sequence explaining the drafting system.  
 **Total Count:** 1
 
 <details>
@@ -4576,7 +4576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_elements`
 
 
-**Definition:** A tutorial tip sequence covering elemental damage types.
+**Definition:** A tutorial tip sequence covering elemental damage types.  
 **Total Count:** 1
 
 <details>
@@ -4597,7 +4597,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_hard`
 
 
-**Definition:** A tutorial tip sequence about playing on hard difficulty.
+**Definition:** A tutorial tip sequence about playing on hard difficulty.  
 **Total Count:** 1
 
 <details>
@@ -4618,7 +4618,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_headhome`
 
 
-**Definition:** A tutorial tip sequence about returning to the home base.
+**Definition:** A tutorial tip sequence about returning to the home base.  
 **Total Count:** 1
 
 <details>
@@ -4639,7 +4639,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_houseboss`
 
 
-**Definition:** A tutorial tip sequence explaining house bosses.
+**Definition:** A tutorial tip sequence explaining house bosses.  
 **Total Count:** 1
 
 <details>
@@ -4660,7 +4660,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_info`
 
 
-**Definition:** A tutorial tip sequence about viewing information on units.
+**Definition:** A tutorial tip sequence about viewing information on units.  
 **Total Count:** 1
 
 <details>
@@ -4681,7 +4681,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_intelligence`
 
 
-**Definition:** A tutorial tip sequence explaining the intelligence stat.
+**Definition:** A tutorial tip sequence explaining the intelligence stat.  
 **Total Count:** 1
 
 <details>
@@ -4702,7 +4702,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_intro`
 
 
-**Definition:** The initial tutorial tip sequence that introduces Butch's tips.
+**Definition:** The initial tutorial tip sequence that introduces Butch's tips.  
 **Total Count:** 1
 
 <details>
@@ -4724,7 +4724,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_items`
 
 
-**Definition:** A tutorial tip sequence about using items in combat.
+**Definition:** A tutorial tip sequence about using items in combat.  
 **Total Count:** 1
 
 <details>
@@ -4745,7 +4745,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_lesscats`
 
 
-**Definition:** A tutorial tip sequence about managing with fewer cats.
+**Definition:** A tutorial tip sequence about managing with fewer cats.  
 **Total Count:** 1
 
 <details>
@@ -4766,7 +4766,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_magicdamage`
 
 
-**Definition:** A tutorial tip sequence explaining magic damage.
+**Definition:** A tutorial tip sequence explaining magic damage.  
 **Total Count:** 1
 
 <details>
@@ -4787,7 +4787,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_passives`
 
 
-**Definition:** A tutorial tip sequence covering passive abilities.
+**Definition:** A tutorial tip sequence covering passive abilities.  
 **Total Count:** 1
 
 <details>
@@ -4808,7 +4808,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_reorient`
 
 
-**Definition:** A tutorial tip sequence explaining the reorient mechanic.
+**Definition:** A tutorial tip sequence explaining the reorient mechanic.  
 **Total Count:** 1
 
 <details>
@@ -4829,7 +4829,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_rewards`
 
 
-**Definition:** A tutorial tip sequence about earning rewards.
+**Definition:** A tutorial tip sequence about earning rewards.  
 **Total Count:** 1
 
 <details>
@@ -4850,7 +4850,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_tacticalview`
 
 
-**Definition:** A tutorial tip sequence about using tactical view.
+**Definition:** A tutorial tip sequence about using tactical view.  
 **Total Count:** 1
 
 <details>
@@ -4871,7 +4871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_turnorder`
 
 
-**Definition:** A tutorial tip sequence explaining turn order.
+**Definition:** A tutorial tip sequence explaining turn order.  
 **Total Count:** 1
 
 <details>
@@ -4892,7 +4892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `butch_tips_wellrounded`
 
 
-**Definition:** A tutorial tip sequence about building well-rounded teams.
+**Definition:** A tutorial tip sequence about building well-rounded teams.  
 **Total Count:** 1
 
 <details>
@@ -4913,7 +4913,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `can_still_use_attack`
 
 
-**Definition:** A sequence of dialog and state changes when a unit can still use an attack ability.
+**Definition:** A sequence of dialog and state changes when a unit can still use an attack ability.  
 **Total Count:** 1
 
 <details>
@@ -4940,7 +4940,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `can_still_use_attack_didntspell`
 
 
-**Definition:** A sequence of dialog and state changes when a unit didn't use a spell but can still attack.
+**Definition:** A sequence of dialog and state changes when a unit didn't use a spell but can still attack.  
 **Total Count:** 1
 
 <details>
@@ -4967,7 +4967,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_a`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford item A.
+**Definition:** A sequence showing dialog when the player cannot afford item A.  
 **Total Count:** 1
 
 <details>
@@ -4990,7 +4990,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_b`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford item B.
+**Definition:** A sequence showing dialog when the player cannot afford item B.  
 **Total Count:** 1
 
 <details>
@@ -5013,7 +5013,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_c`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford item C.
+**Definition:** A sequence showing dialog when the player cannot afford item C.  
 **Total Count:** 1
 
 <details>
@@ -5036,7 +5036,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_d`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford item D.
+**Definition:** A sequence showing dialog when the player cannot afford item D.  
 **Total Count:** 1
 
 <details>
@@ -5059,7 +5059,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_iceage`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford the Ice Age item. Can also be a boolean flag.
+**Definition:** A sequence showing dialog when the player cannot afford the Ice Age item. Can also be a boolean flag.  
 **Total Count:** 1
 
 <details>
@@ -5082,7 +5082,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_jurassic`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford the Jurassic item. Can also be a boolean flag.
+**Definition:** A sequence showing dialog when the player cannot afford the Jurassic item. Can also be a boolean flag.  
 **Total Count:** 1
 
 <details>
@@ -5105,7 +5105,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_moon`
 
 
-**Definition:** A sequence showing dialog when the player cannot afford the Moon item. Can also be a boolean flag.
+**Definition:** A sequence showing dialog when the player cannot afford the Moon item. Can also be a boolean flag.  
 **Total Count:** 1
 
 <details>
@@ -5128,7 +5128,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `cant_afford_theend`
 
 
-**Definition:** Defines the sequence for when the player cannot afford the End purchase, optionally cancelable with a dialog and autopass.
+**Definition:** Defines the sequence for when the player cannot afford the End purchase, optionally cancelable with a dialog and autopass.  
 **Total Count:** 1
 
 <details>
@@ -5151,7 +5151,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_butcher`
 
 
-**Definition:** Defines the sequence for unlocking the Butcher class, including dialogs and camera state changes.
+**Definition:** Defines the sequence for unlocking the Butcher class, including dialogs and camera state changes.  
 **Total Count:** 1
 
 <details>
@@ -5174,7 +5174,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_druid`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Druid class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Druid class.  
 **Total Count:** 1
 
 <details>
@@ -5196,7 +5196,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_jester`
 
 
-**Definition:** Defines the dialog sequence for unlocking the Jester class.
+**Definition:** Defines the dialog sequence for unlocking the Jester class.  
 **Total Count:** 1
 
 <details>
@@ -5219,7 +5219,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_medic`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Medic class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Medic class.  
 **Total Count:** 1
 
 <details>
@@ -5242,7 +5242,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_monk`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Monk class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Monk class.  
 **Total Count:** 1
 
 <details>
@@ -5265,7 +5265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_necromancer`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Necromancer class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Necromancer class.  
 **Total Count:** 1
 
 <details>
@@ -5288,7 +5288,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_psychic`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Psychic class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Psychic class.  
 **Total Count:** 1
 
 <details>
@@ -5311,7 +5311,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_thief`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Thief class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Thief class.  
 **Total Count:** 1
 
 <details>
@@ -5334,7 +5334,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `class_unlock_tinkerer`
 
 
-**Definition:** Defines the dialog sequence that plays when unlocking the Tinkerer class.
+**Definition:** Defines the dialog sequence that plays when unlocking the Tinkerer class.  
 **Total Count:** 1
 
 <details>
@@ -5357,7 +5357,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `collected_new_items`
 
 
-**Definition:** Defines the dialog sequence that plays when the player has collected new items after an adventure.
+**Definition:** Defines the dialog sequence that plays when the player has collected new items after an adventure.  
 **Total Count:** 1
 
 <details>
@@ -5383,7 +5383,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `collected_nothing`
 
 
-**Definition:** Defines the dialog sequence that plays when the player collected nothing (e.g., died in first combat).
+**Definition:** Defines the dialog sequence that plays when the player collected nothing (e.g., died in first combat).  
 **Total Count:** 1
 
 <details>
@@ -5408,7 +5408,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `do_not_end_turn`
 
 
-**Definition:** Defines a dialog sequence warning the player not to end their turn.
+**Definition:** Defines a dialog sequence warning the player not to end their turn.  
 **Total Count:** 1
 
 <details>
@@ -5432,7 +5432,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `done_spitting_fail_ally`
 
 
-**Definition:** Defines a dialog sequence that plays when a spitting action fails on an ally.
+**Definition:** Defines a dialog sequence that plays when a spitting action fails on an ally.  
 **Total Count:** 1
 
 <details>
@@ -5455,7 +5455,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `done_spitting_fail_miss`
 
 
-**Definition:** Defines a dialog sequence that plays when a spitting action misses.
+**Definition:** Defines a dialog sequence that plays when a spitting action misses.  
 **Total Count:** 1
 
 <details>
@@ -5478,7 +5478,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `done_spitting_fail_rat`
 
 
-**Definition:** Defines a dialog sequence that plays when a spitting action fails on a rat.
+**Definition:** Defines a dialog sequence that plays when a spitting action fails on a rat.  
 **Total Count:** 1
 
 <details>
@@ -5501,7 +5501,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `done_spitting_success`
 
 
-**Definition:** Defines a dialog sequence that plays when a spitting action succeeds.
+**Definition:** Defines a dialog sequence that plays when a spitting action succeeds.  
 **Total Count:** 1
 
 <details>
@@ -5524,7 +5524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ending`
 
 
-**Definition:** Defines the ending dialog sequence with Dr. Beanies after saving the player in the time machine.
+**Definition:** Defines the ending dialog sequence with Dr. Beanies after saving the player in the time machine.  
 **Total Count:** 1
 
 <details>
@@ -5547,7 +5547,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `finish_adventure`
 
 
-**Definition:** Defines a dialog sequence that plays when the player finishes an adventure.
+**Definition:** Defines a dialog sequence that plays when the player finishes an adventure.  
 **Total Count:** 1
 
 <details>
@@ -5570,7 +5570,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `first_fight_intro`
 
 
-**Definition:** Defines the intro dialog sequence for the first fight.
+**Definition:** Defines the intro dialog sequence for the first fight.  
 **Total Count:** 1
 
 <details>
@@ -5598,7 +5598,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `first_house_boss_tomorrow`
 
 
-**Definition:** Defines a dialog sequence about a boss arriving tomorrow in the first house.
+**Definition:** Defines a dialog sequence about a boss arriving tomorrow in the first house.  
 **Total Count:** 1
 
 <details>
@@ -5621,7 +5621,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `first_house_hint_retired`
 
 
-**Definition:** Defines a dialog sequence giving a hint about a retired cat in the first house.
+**Definition:** Defines a dialog sequence giving a hint about a retired cat in the first house.  
 **Total Count:** 1
 
 <details>
@@ -5644,7 +5644,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_caves_intro`
 
 
-**Definition:** Defines the dialog sequence for Frank's introduction in the caves.
+**Definition:** Defines the dialog sequence for Frank's introduction in the caves.  
 **Total Count:** 1
 
 <details>
@@ -5666,7 +5666,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_ending`
 
 
-**Definition:** Defines the dialog sequence for Frank's new intro after the nuke ending.
+**Definition:** Defines the dialog sequence for Frank's new intro after the nuke ending.  
 **Total Count:** 1
 
 <details>
@@ -5688,7 +5688,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max1`
 
 
-**Definition:** Defines a dialog sequence for Frank at maximum affinity level 1.
+**Definition:** Defines a dialog sequence for Frank at maximum affinity level 1.  
 **Total Count:** 1
 
 <details>
@@ -5711,7 +5711,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max2`
 
 
-**Definition:** Defines a dialog sequence for Frank at maximum affinity level 2.
+**Definition:** Defines a dialog sequence for Frank at maximum affinity level 2.  
 **Total Count:** 1
 
 <details>
@@ -5734,7 +5734,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max3`
 
 
-**Definition:** Defines a dialog sequence for Frank at maximum affinity level 3.
+**Definition:** Defines a dialog sequence for Frank at maximum affinity level 3.  
 **Total Count:** 1
 
 <details>
@@ -5757,7 +5757,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max4`
 
 
-**Definition:** Defines a dialog sequence for Frank at maximum affinity level 4.
+**Definition:** Defines a dialog sequence for Frank at maximum affinity level 4.  
 **Total Count:** 1
 
 <details>
@@ -5780,7 +5780,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max5`
 
 
-**Definition:** Defines a dialog sequence for Frank at maximum affinity level 5.
+**Definition:** Defines a dialog sequence for Frank at maximum affinity level 5.  
 **Total Count:** 1
 
 <details>
@@ -5803,7 +5803,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Frank.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Frank.  
 **Total Count:** 1
 
 <details>
@@ -5826,7 +5826,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Frank at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Frank at max favor.  
 **Total Count:** 1
 
 <details>
@@ -5847,7 +5847,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_terminator2`
 
 
-**Definition:** Defines a dialog sequence for Frank's 'terminator' event (likely a special encounter).
+**Definition:** Defines a dialog sequence for Frank's 'terminator' event (likely a special encounter).  
 **Total Count:** 1
 
 <details>
@@ -5869,7 +5869,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_1`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #1).
+**Definition:** Defines a tips dialog sequence from Frank (tip #1).  
 **Total Count:** 1
 
 <details>
@@ -5890,7 +5890,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_10`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #10).
+**Definition:** Defines a tips dialog sequence from Frank (tip #10).  
 **Total Count:** 1
 
 <details>
@@ -5911,7 +5911,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_2`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #2).
+**Definition:** Defines a tips dialog sequence from Frank (tip #2).  
 **Total Count:** 1
 
 <details>
@@ -5932,7 +5932,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_3`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #3).
+**Definition:** Defines a tips dialog sequence from Frank (tip #3).  
 **Total Count:** 1
 
 <details>
@@ -5953,7 +5953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_4`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #4).
+**Definition:** Defines a tips dialog sequence from Frank (tip #4).  
 **Total Count:** 1
 
 <details>
@@ -5974,7 +5974,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_5`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #5).
+**Definition:** Defines a tips dialog sequence from Frank (tip #5).  
 **Total Count:** 1
 
 <details>
@@ -5995,7 +5995,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_6`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #6).
+**Definition:** Defines a tips dialog sequence from Frank (tip #6).  
 **Total Count:** 1
 
 <details>
@@ -6016,7 +6016,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_7`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #7).
+**Definition:** Defines a tips dialog sequence from Frank (tip #7).  
 **Total Count:** 1
 
 <details>
@@ -6037,7 +6037,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_8`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #8).
+**Definition:** Defines a tips dialog sequence from Frank (tip #8).  
 **Total Count:** 1
 
 <details>
@@ -6058,7 +6058,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_tips_9`
 
 
-**Definition:** Defines a tips dialog sequence from Frank (tip #9).
+**Definition:** Defines a tips dialog sequence from Frank (tip #9).  
 **Total Count:** 1
 
 <details>
@@ -6079,7 +6079,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `gone`
 
 
-**Definition:** Sets the NPC state to 'gone', making them disappear from the scene.
+**Definition:** Sets the NPC state to 'gone', making them disappear from the scene.  
 **Total Count:** 1
 
 <details>
@@ -6100,7 +6100,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_intro`
 
 
-**Definition:** Defines the intro dialog sequence that plays when entering a house.
+**Definition:** Defines the intro dialog sequence that plays when entering a house.  
 **Total Count:** 1
 
 <details>
@@ -6127,7 +6127,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_kitten_box`
 
 
-**Definition:** Defines a dialog sequence about a kitten box in the house.
+**Definition:** Defines a dialog sequence about a kitten box in the house.  
 **Total Count:** 1
 
 <details>
@@ -6150,7 +6150,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_pass_day`
 
 
-**Definition:** A sequence that plays dialog and animations when a day passes in the house.
+**Definition:** A sequence that plays dialog and animations when a day passes in the house.  
 **Total Count:** 1
 
 <details>
@@ -6173,7 +6173,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_pass_day2`
 
 
-**Definition:** A sequence that plays extended dialog and animations when a day passes in the house.
+**Definition:** A sequence that plays extended dialog and animations when a day passes in the house.  
 **Total Count:** 1
 
 <details>
@@ -6196,7 +6196,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_pipe`
 
 
-**Definition:** A sequence that plays dialog and animations related to the house pipe.
+**Definition:** A sequence that plays dialog and animations related to the house pipe.  
 **Total Count:** 1
 
 <details>
@@ -6219,7 +6219,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_retired_cat_box`
 
 
-**Definition:** A sequence that plays dialog and animations for the retired cat box.
+**Definition:** A sequence that plays dialog and animations for the retired cat box.  
 **Total Count:** 1
 
 <details>
@@ -6242,7 +6242,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_starred_box`
 
 
-**Definition:** A sequence that plays dialog and animations for the starred box.
+**Definition:** A sequence that plays dialog and animations for the starred box.  
 **Total Count:** 1
 
 <details>
@@ -6265,7 +6265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_strays`
 
 
-**Definition:** A sequence that plays dialog and animations for stray cats in the house.
+**Definition:** A sequence that plays dialog and animations for stray cats in the house.  
 **Total Count:** 1
 
 <details>
@@ -6293,7 +6293,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_4throom`
 
 
-**Definition:** Defines the dialog and house upgrade for unlocking the 4th room.
+**Definition:** Defines the dialog and house upgrade for unlocking the 4th room.  
 **Total Count:** 1
 
 <details>
@@ -6316,7 +6316,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_attic`
 
 
-**Definition:** Defines the dialog and house upgrade for the attic.
+**Definition:** Defines the dialog and house upgrade for the attic.  
 **Total Count:** 1
 
 <details>
@@ -6339,7 +6339,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_basement`
 
 
-**Definition:** A sequence that triggers dialog and a reward for the first basement upgrade.
+**Definition:** A sequence that triggers dialog and a reward for the first basement upgrade.  
 **Total Count:** 1
 
 <details>
@@ -6361,7 +6361,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_basement2`
 
 
-**Definition:** A sequence that triggers the second basement upgrade and awards favor.
+**Definition:** A sequence that triggers the second basement upgrade and awards favor.  
 **Total Count:** 1
 
 <details>
@@ -6383,7 +6383,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_basement3`
 
 
-**Definition:** A sequence that triggers the third basement upgrade and awards favor.
+**Definition:** A sequence that triggers the third basement upgrade and awards favor.  
 **Total Count:** 1
 
 <details>
@@ -6405,7 +6405,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_basement4`
 
 
-**Definition:** A sequence that triggers the fourth basement upgrade and awards favor.
+**Definition:** A sequence that triggers the fourth basement upgrade and awards favor.  
 **Total Count:** 1
 
 <details>
@@ -6427,7 +6427,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_basement5`
 
 
-**Definition:** A sequence that triggers the fifth basement upgrade and awards favor.
+**Definition:** A sequence that triggers the fifth basement upgrade and awards favor.  
 **Total Count:** 1
 
 <details>
@@ -6449,7 +6449,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_largehouse`
 
 
-**Definition:** Defines the dialog and house upgrade for the large house.
+**Definition:** Defines the dialog and house upgrade for the large house.  
 **Total Count:** 1
 
 <details>
@@ -6472,7 +6472,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_mediumhouse`
 
 
-**Definition:** Defines the dialog and house upgrade for the medium house.
+**Definition:** Defines the dialog and house upgrade for the medium house.  
 **Total Count:** 1
 
 <details>
@@ -6495,7 +6495,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `intro`
 
 
-**Definition:** An object defining the introductory cutscene for the event, including title, cat selection, and visuals.
+**Definition:** An object defining the introductory cutscene for the event, including title, cat selection, and visuals.  
 **Total Count:** 1
 
 <details>
@@ -6524,7 +6524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `introduce_hard_path`
 
 
-**Definition:** A sequence that plays dialog and animations to introduce the hard path.
+**Definition:** A sequence that plays dialog and animations to introduce the hard path.  
 **Total Count:** 1
 
 <details>
@@ -6547,7 +6547,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_begin_accepting_cats`
 
 
-**Definition:** A sequence that shows Jack's introductory dialog for accepting cats, locking player controls.
+**Definition:** A sequence that shows Jack's introductory dialog for accepting cats, locking player controls.  
 **Total Count:** 1
 
 <details>
@@ -6572,7 +6572,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_desert_intro`
 
 
-**Definition:** Defines the dialog sequence for Jack's introduction in the desert.
+**Definition:** Defines the dialog sequence for Jack's introduction in the desert.  
 **Total Count:** 1
 
 <details>
@@ -6596,7 +6596,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Jack_Gainaltfurniture`
 
 
-**Definition:** A sequence that plays Jack's dialog explaining rare alt furniture and the Nona cat, locking controls.
+**Definition:** A sequence that plays Jack's dialog explaining rare alt furniture and the Nona cat, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6620,7 +6620,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_introduction`
 
 
-**Definition:** A sequence that plays Jack's initial introduction dialog and animation.
+**Definition:** A sequence that plays Jack's initial introduction dialog and animation.  
 **Total Count:** 1
 
 <details>
@@ -6648,7 +6648,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max1`
 
 
-**Definition:** A sequence that plays Jack's first max favor dialog sequence, locking controls.
+**Definition:** A sequence that plays Jack's first max favor dialog sequence, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6673,7 +6673,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max2`
 
 
-**Definition:** A sequence that plays Jack's second max favor dialog sequence, locking controls.
+**Definition:** A sequence that plays Jack's second max favor dialog sequence, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6698,7 +6698,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max3`
 
 
-**Definition:** A sequence that plays Jack's third max favor dialog sequence, locking controls.
+**Definition:** A sequence that plays Jack's third max favor dialog sequence, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6723,7 +6723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max4`
 
 
-**Definition:** A sequence that plays Jack's fourth max favor dialog sequence, locking controls.
+**Definition:** A sequence that plays Jack's fourth max favor dialog sequence, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6748,7 +6748,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max5`
 
 
-**Definition:** A sequence that plays Jack's fifth max favor dialog sequence, locking controls.
+**Definition:** A sequence that plays Jack's fifth max favor dialog sequence, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6773,7 +6773,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Jack.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Jack.  
 **Total Count:** 1
 
 <details>
@@ -6798,7 +6798,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Jack at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Jack at max favor.  
 **Total Count:** 1
 
 <details>
@@ -6819,7 +6819,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade1`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's first shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's first shop upgrade.  
 **Total Count:** 1
 
 <details>
@@ -6844,7 +6844,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade2`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's second shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's second shop upgrade.  
 **Total Count:** 1
 
 <details>
@@ -6869,7 +6869,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade3`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's third shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's third shop upgrade.  
 **Total Count:** 1
 
 <details>
@@ -6894,7 +6894,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade4`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's fourth shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's fourth shop upgrade.  
 **Total Count:** 1
 
 <details>
@@ -6919,7 +6919,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_zara`
 
 
-**Definition:** A sequence that plays Jack's dialog about Zara, locking controls.
+**Definition:** A sequence that plays Jack's dialog about Zara, locking controls.  
 **Total Count:** 1
 
 <details>
@@ -6943,7 +6943,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `level_up_didnt_select_sunburn`
 
 
-**Definition:** A sequence that plays dialog when the player did not select the Sunburn level-up option.
+**Definition:** A sequence that plays dialog when the player did not select the Sunburn level-up option.  
 **Total Count:** 1
 
 <details>
@@ -6966,7 +6966,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `level_up_intro`
 
 
-**Definition:** A sequence that plays the introductory dialog and animation for the level-up UI.
+**Definition:** A sequence that plays the introductory dialog and animation for the level-up UI.  
 **Total Count:** 1
 
 <details>
@@ -6994,7 +6994,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `level_up_selected_sunburn`
 
 
-**Definition:** A sequence that plays dialog when the player selected the Sunburn level-up option.
+**Definition:** A sequence that plays dialog when the player selected the Sunburn level-up option.  
 **Total Count:** 1
 
 <details>
@@ -7017,7 +7017,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `low_on_food`
 
 
-**Definition:** A sequence that plays a dialog and animation warning the player that they are low on food.
+**Definition:** A sequence that plays a dialog and animation warning the player that they are low on food.  
 **Total Count:** 1
 
 <details>
@@ -7040,7 +7040,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `map_click_node`
 
 
-**Definition:** A sequence that teaches the player to click a map node, then unlocks controls.
+**Definition:** A sequence that teaches the player to click a map node, then unlocks controls.  
 **Total Count:** 1
 
 <details>
@@ -7065,7 +7065,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `map_equip_items`
 
 
-**Definition:** A sequence that teaches the player to equip items on the map.
+**Definition:** A sequence that teaches the player to equip items on the map.  
 **Total Count:** 1
 
 <details>
@@ -7091,7 +7091,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `map_equip_items2`
 
 
-**Definition:** A sequence that provides a secondary reminder to equip items, clearing its own token.
+**Definition:** A sequence that provides a secondary reminder to equip items, clearing its own token.  
 **Total Count:** 1
 
 <details>
@@ -7117,7 +7117,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_attack_rat`
 
 
-**Definition:** A tutorial sequence that demonstrates how to perform a melee attack on a rat.
+**Definition:** A tutorial sequence that demonstrates how to perform a melee attack on a rat.  
 **Total Count:** 1
 
 <details>
@@ -7144,7 +7144,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit`
 
 
-**Definition:** A tutorial sequence that demonstrates how to use the cat spit ability.
+**Definition:** A tutorial sequence that demonstrates how to use the cat spit ability.  
 **Total Count:** 1
 
 <details>
@@ -7170,7 +7170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit_fail_ally`
 
 
-**Definition:** A tutorial sequence that plays when the cat spit fails due to targeting an ally.
+**Definition:** A tutorial sequence that plays when the cat spit fails due to targeting an ally.  
 **Total Count:** 1
 
 <details>
@@ -7196,7 +7196,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit_fail_miss`
 
 
-**Definition:** A tutorial sequence that plays when the cat spit fails due to a miss.
+**Definition:** A tutorial sequence that plays when the cat spit fails due to a miss.  
 **Total Count:** 1
 
 <details>
@@ -7222,7 +7222,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit_fail_rat`
 
 
-**Definition:** A tutorial sequence that plays when the cat spit fails to hit a rat.
+**Definition:** A tutorial sequence that plays when the cat spit fails to hit a rat.  
 **Total Count:** 1
 
 <details>
@@ -7248,7 +7248,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit_ignore`
 
 
-**Definition:** A tutorial sequence that plays when the player ignores the cat spit prompt.
+**Definition:** A tutorial sequence that plays when the player ignores the cat spit prompt.  
 **Total Count:** 1
 
 <details>
@@ -7275,7 +7275,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_cat_spit_success`
 
 
-**Definition:** A tutorial sequence that plays when the cat spit is successfully used.
+**Definition:** A tutorial sequence that plays when the cat spit is successfully used.  
 **Total Count:** 1
 
 <details>
@@ -7301,7 +7301,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_killed_rat`
 
 
-**Definition:** A tutorial sequence that plays after the player kills a rat with a melee attack.
+**Definition:** A tutorial sequence that plays after the player kills a rat with a melee attack.  
 **Total Count:** 1
 
 <details>
@@ -7327,7 +7327,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_move2`
 
 
-**Definition:** A tutorial sequence that teaches the player to use movement actions.
+**Definition:** A tutorial sequence that teaches the player to use movement actions.  
 **Total Count:** 1
 
 <details>
@@ -7354,7 +7354,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `melee_out_of_actions`
 
 
-**Definition:** A tutorial sequence that explains when the player is out of actions in melee.
+**Definition:** A tutorial sequence that explains when the player is out of actions in melee.  
 **Total Count:** 1
 
 <details>
@@ -7380,7 +7380,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `new_adventure`
 
 
-**Definition:** A sequence that plays dialog and animation when starting a new adventure.
+**Definition:** A sequence that plays dialog and animation when starting a new adventure.  
 **Total Count:** 1
 
 <details>
@@ -7403,7 +7403,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_boneyard_intro`
 
 
-**Definition:** Defines the dialog sequence for Organ Grinder's introduction in the boneyard.
+**Definition:** Defines the dialog sequence for Organ Grinder's introduction in the boneyard.  
 **Total Count:** 1
 
 <details>
@@ -7427,7 +7427,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_intro`
 
 
-**Definition:** Sequence of events for the Organ Grinder's introductory dialogue.
+**Definition:** Sequence of events for the Organ Grinder's introductory dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7454,7 +7454,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max1`
 
 
-**Definition:** Sequence of events for the Organ Grinder's first max favor dialogue.
+**Definition:** Sequence of events for the Organ Grinder's first max favor dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7479,7 +7479,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max2`
 
 
-**Definition:** Sequence of events for the Organ Grinder's second max favor dialogue.
+**Definition:** Sequence of events for the Organ Grinder's second max favor dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7504,7 +7504,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max3`
 
 
-**Definition:** Sequence of events for the Organ Grinder's third max favor dialogue.
+**Definition:** Sequence of events for the Organ Grinder's third max favor dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7529,7 +7529,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max4`
 
 
-**Definition:** Sequence of events for the Organ Grinder's fourth max favor dialogue.
+**Definition:** Sequence of events for the Organ Grinder's fourth max favor dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7554,7 +7554,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max5`
 
 
-**Definition:** Sequence of events for the Organ Grinder's fifth max favor dialogue.
+**Definition:** Sequence of events for the Organ Grinder's fifth max favor dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7579,7 +7579,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Organ Grinder.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Organ Grinder.  
 **Total Count:** 1
 
 <details>
@@ -7604,7 +7604,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor.  
 **Total Count:** 1
 
 <details>
@@ -7625,7 +7625,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_rename`
 
 
-**Definition:** Sequence of events for the Organ Grinder's rename dialogue.
+**Definition:** Sequence of events for the Organ Grinder's rename dialogue.  
 **Total Count:** 1
 
 <details>
@@ -7650,7 +7650,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_throbbingdomain_intro`
 
 
-**Definition:** Defines the dialog sequence for Organ Grinder's introduction in the throbbing domain.
+**Definition:** Defines the dialog sequence for Organ Grinder's introduction in the throbbing domain.  
 **Total Count:** 1
 
 <details>
@@ -7674,7 +7674,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_tina3`
 
 
-**Definition:** Sequence of events for the Organ Grinder's dialogue with Tina (stage 3).
+**Definition:** Sequence of events for the Organ Grinder's dialogue with Tina (stage 3).  
 **Total Count:** 1
 
 <details>
@@ -7698,7 +7698,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_unlock`
 
 
-**Definition:** Defines the dialog and shop level up for unlocking Organ Grinder.
+**Definition:** Defines the dialog and shop level up for unlocking Organ Grinder.  
 **Total Count:** 1
 
 <details>
@@ -7723,7 +7723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade1`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's first upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's first upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7748,7 +7748,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade2`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's second upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's second upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7773,7 +7773,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade3`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's third upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's third upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7798,7 +7798,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade4`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's fourth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's fourth upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7823,7 +7823,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade5`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's fifth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's fifth upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7848,7 +7848,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade6`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's sixth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's sixth upgrade.  
 **Total Count:** 1
 
 <details>
@@ -7873,7 +7873,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_a`
 
 
-**Definition:** Sequence of events for purchasing shop item A from Tracy.
+**Definition:** Sequence of events for purchasing shop item A from Tracy.  
 **Total Count:** 1
 
 <details>
@@ -7896,7 +7896,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_b`
 
 
-**Definition:** Sequence of events for purchasing shop item B from Tracy.
+**Definition:** Sequence of events for purchasing shop item B from Tracy.  
 **Total Count:** 1
 
 <details>
@@ -7919,7 +7919,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_c`
 
 
-**Definition:** Sequence of events for purchasing shop item C from Tracy.
+**Definition:** Sequence of events for purchasing shop item C from Tracy.  
 **Total Count:** 1
 
 <details>
@@ -7942,7 +7942,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_d`
 
 
-**Definition:** Sequence of events for purchasing shop item D from Tracy.
+**Definition:** Sequence of events for purchasing shop item D from Tracy.  
 **Total Count:** 1
 
 <details>
@@ -7965,7 +7965,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_iceage`
 
 
-**Definition:** Sequence of events for purchasing the Ice Age shop item. When set to true, indicates the purchase has already occurred.
+**Definition:** Sequence of events for purchasing the Ice Age shop item. When set to true, indicates the purchase has already occurred.  
 **Total Count:** 1
 
 <details>
@@ -7988,7 +7988,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_jurassic`
 
 
-**Definition:** Sequence of events for purchasing the Jurassic shop item. When set to true, indicates the purchase has already occurred.
+**Definition:** Sequence of events for purchasing the Jurassic shop item. When set to true, indicates the purchase has already occurred.  
 **Total Count:** 1
 
 <details>
@@ -8011,7 +8011,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_moon`
 
 
-**Definition:** Sequence of events for purchasing the Moon shop item. When set to true, indicates the purchase has already occurred.
+**Definition:** Sequence of events for purchasing the Moon shop item. When set to true, indicates the purchase has already occurred.  
 **Total Count:** 1
 
 <details>
@@ -8034,7 +8034,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `purchase_item_theend`
 
 
-**Definition:** Sequence of events for purchasing The End shop item. When set to true, indicates the purchase has already occurred.
+**Definition:** Sequence of events for purchasing The End shop item. When set to true, indicates the purchase has already occurred.  
 **Total Count:** 1
 
 <details>
@@ -8057,7 +8057,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_attack_tomtom`
 
 
-**Definition:** Sequence of events for TomTom's ranged attack.
+**Definition:** Sequence of events for TomTom's ranged attack.  
 **Total Count:** 1
 
 <details>
@@ -8080,7 +8080,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_attack_tomtom_fail_ally`
 
 
-**Definition:** Sequence of events for when TomTom's ranged attack fails due to an ally in the way.
+**Definition:** Sequence of events for when TomTom's ranged attack fails due to an ally in the way.  
 **Total Count:** 1
 
 <details>
@@ -8103,7 +8103,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_attack_tomtom_fail_miss`
 
 
-**Definition:** Sequence of events for when TomTom's ranged attack misses.
+**Definition:** Sequence of events for when TomTom's ranged attack misses.  
 **Total Count:** 1
 
 <details>
@@ -8126,7 +8126,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_attack_tomtom_fail_rat`
 
 
-**Definition:** Sequence of events for when TomTom's ranged attack fails due to a rat.
+**Definition:** Sequence of events for when TomTom's ranged attack fails due to a rat.  
 **Total Count:** 1
 
 <details>
@@ -8149,7 +8149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_attack`
 
 
-**Definition:** Sequence of events for the cat's ranged attack.
+**Definition:** Sequence of events for the cat's ranged attack.  
 **Total Count:** 1
 
 <details>
@@ -8174,7 +8174,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack2_ally`
 
 
-**Definition:** Sequence of events for the cat's second early ranged attack failing due to an ally.
+**Definition:** Sequence of events for the cat's second early ranged attack failing due to an ally.  
 **Total Count:** 1
 
 <details>
@@ -8197,7 +8197,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack2_miss`
 
 
-**Definition:** Sequence of events for the cat's second early ranged attack missing.
+**Definition:** Sequence of events for the cat's second early ranged attack missing.  
 **Total Count:** 1
 
 <details>
@@ -8220,7 +8220,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack2_rat`
 
 
-**Definition:** Sequence of events for the cat's second early ranged attack failing due to a rat.
+**Definition:** Sequence of events for the cat's second early ranged attack failing due to a rat.  
 **Total Count:** 1
 
 <details>
@@ -8243,7 +8243,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack_ally`
 
 
-**Definition:** Sequence of events for the cat's first early ranged attack failing due to an ally.
+**Definition:** Sequence of events for the cat's first early ranged attack failing due to an ally.  
 **Total Count:** 1
 
 <details>
@@ -8266,7 +8266,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack_miss`
 
 
-**Definition:** Sequence of events for the cat's first early ranged attack missing.
+**Definition:** Sequence of events for the cat's first early ranged attack missing.  
 **Total Count:** 1
 
 <details>
@@ -8289,7 +8289,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_early_attack_rat`
 
 
-**Definition:** Sequence of events for the cat's first early ranged attack failing due to a rat.
+**Definition:** Sequence of events for the cat's first early ranged attack failing due to a rat.  
 **Total Count:** 1
 
 <details>
@@ -8312,7 +8312,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_failmove`
 
 
-**Definition:** Sequence of events for the cat's failed ranged attack move.
+**Definition:** Sequence of events for the cat's failed ranged attack move.  
 **Total Count:** 1
 
 <details>
@@ -8335,7 +8335,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_intro`
 
 
-**Definition:** Sequence of events for the cat's ranged attack introduction.
+**Definition:** Sequence of events for the cat's ranged attack introduction.  
 **Total Count:** 1
 
 <details>
@@ -8361,7 +8361,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_roll`
 
 
-**Definition:** Sequence of events for the cat's ranged attack roll animation.
+**Definition:** Sequence of events for the cat's ranged attack roll animation.  
 **Total Count:** 1
 
 <details>
@@ -8387,7 +8387,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ranged_cat_rolled_first`
 
 
-**Definition:** Sequence of events for when the cat rolls first.
+**Definition:** Sequence of events for when the cat rolls first.  
 **Total Count:** 1
 
 <details>
@@ -8413,7 +8413,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_100`
 
 
-**Definition:** Sequence of events for Steven's 100% completion dialogue.
+**Definition:** Sequence of events for Steven's 100% completion dialogue.  
 **Total Count:** 1
 
 <details>
@@ -8437,7 +8437,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_introduction`
 
 
-**Definition:** Sequence of events for Steven's introduction dialogue.
+**Definition:** Sequence of events for Steven's introduction dialogue.  
 **Total Count:** 1
 
 <details>
@@ -8462,7 +8462,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_milliontrashed`
 
 
-**Definition:** A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor.
+**Definition:** A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor.  
 **Total Count:** 1
 
 <details>
@@ -8485,7 +8485,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_postendgame`
 
 
-**Definition:** A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending.
+**Definition:** A dialogue sequence for Steven that plays after the player has beaten the game and seen the final ending.  
 **Total Count:** 1
 
 <details>
@@ -8509,7 +8509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_resummon`
 
 
-**Definition:** A sequence triggered after beating the final boss, unlocking the ability to resummon house bosses.
+**Definition:** A sequence triggered after beating the final boss, unlocking the ability to resummon house bosses.  
 **Total Count:** 1
 
 <details>
@@ -8532,7 +8532,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_1`
 
 
-**Definition:** A sequence that plays a random warning sequence for the first savescum event.
+**Definition:** A sequence that plays a random warning sequence for the first savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8553,7 +8553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_100`
 
 
-**Definition:** A secret sequence for the 100th savescum event.
+**Definition:** A secret sequence for the 100th savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8576,7 +8576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_1alt1`
 
 
-**Definition:** One of the random alternative warning sequences for the first savescum event.
+**Definition:** One of the random alternative warning sequences for the first savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8599,7 +8599,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_1alt2`
 
 
-**Definition:** One of the random alternative warning sequences for the first savescum event.
+**Definition:** One of the random alternative warning sequences for the first savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8622,7 +8622,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_1alt3`
 
 
-**Definition:** One of the random alternative warning sequences for the first savescum event.
+**Definition:** One of the random alternative warning sequences for the first savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8645,7 +8645,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_2`
 
 
-**Definition:** A sequence that plays a random sequence for the second savescum event (1 cat deja vu 10%).
+**Definition:** A sequence that plays a random sequence for the second savescum event (1 cat deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8666,7 +8666,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_2alt1`
 
 
-**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).
+**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8689,7 +8689,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_2alt2`
 
 
-**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).
+**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8712,7 +8712,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_2alt3`
 
 
-**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).
+**Definition:** One of the random alternative sequences for the second savescum event (1 cat deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8735,7 +8735,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_3`
 
 
-**Definition:** A sequence that plays a random sequence for the third savescum event (all cats deja vu 10%).
+**Definition:** A sequence that plays a random sequence for the third savescum event (all cats deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8756,7 +8756,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_3alt1`
 
 
-**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).
+**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8779,7 +8779,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_3alt2`
 
 
-**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).
+**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8802,7 +8802,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_3alt3`
 
 
-**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).
+**Definition:** One of the random alternative sequences for the third savescum event (all cats deja vu 10%).  
 **Total Count:** 1
 
 <details>
@@ -8825,7 +8825,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_4`
 
 
-**Definition:** A sequence that plays a random sequence for the fourth savescum event (deja vu level up 25%).
+**Definition:** A sequence that plays a random sequence for the fourth savescum event (deja vu level up 25%).  
 **Total Count:** 1
 
 <details>
@@ -8846,7 +8846,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_4alt1`
 
 
-**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).
+**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).  
 **Total Count:** 1
 
 <details>
@@ -8869,7 +8869,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_4alt2`
 
 
-**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).
+**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).  
 **Total Count:** 1
 
 <details>
@@ -8892,7 +8892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_4alt3`
 
 
-**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).
+**Definition:** One of the random alternative sequences for the fourth savescum event (deja vu level up 25%, steven takes over).  
 **Total Count:** 1
 
 <details>
@@ -8915,7 +8915,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_houseboss_1`
 
 
-**Definition:** A warning sequence for the first house boss savescum event.
+**Definition:** A warning sequence for the first house boss savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8938,7 +8938,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_houseboss_100`
 
 
-**Definition:** A secret sequence for the 100th house boss savescum event.
+**Definition:** A secret sequence for the 100th house boss savescum event.  
 **Total Count:** 1
 
 <details>
@@ -8961,7 +8961,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_houseboss_2`
 
 
-**Definition:** A sequence for the second house boss savescum event (all cats 10% deja vu).
+**Definition:** A sequence for the second house boss savescum event (all cats 10% deja vu).  
 **Total Count:** 1
 
 <details>
@@ -8984,7 +8984,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_houseboss_3`
 
 
-**Definition:** A sequence for the third house boss savescum event (all cats deja vu 25% and onward).
+**Definition:** A sequence for the third house boss savescum event (all cats deja vu 25% and onward).  
 **Total Count:** 1
 
 <details>
@@ -9007,7 +9007,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_intro`
 
 
-**Definition:** A sequence that replaces the first savescum event sequences if it is the first time savescumming.
+**Definition:** A sequence that replaces the first savescum event sequences if it is the first time savescumming.  
 **Total Count:** 1
 
 <details>
@@ -9030,7 +9030,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_savescum_intro_houseboss`
 
 
-**Definition:** A sequence that replaces the first house boss savescum event sequences if it is the first time savescumming.
+**Definition:** A sequence that replaces the first house boss savescum event sequences if it is the first time savescumming.  
 **Total Count:** 1
 
 <details>
@@ -9053,7 +9053,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act1_crazy`
 
 
-**Definition:** A sequence triggered when beating Act 1 and its house bosses on Hard, unlocking Crazy difficulty.
+**Definition:** A sequence triggered when beating Act 1 and its house bosses on Hard, unlocking Crazy difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9077,7 +9077,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act1_impossible`
 
 
-**Definition:** A sequence triggered when beating Act 1 house bosses on Crazy, unlocking Impossible difficulty.
+**Definition:** A sequence triggered when beating Act 1 house bosses on Crazy, unlocking Impossible difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9101,7 +9101,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act2_crazy`
 
 
-**Definition:** A sequence for unlocking Act 2 Crazy difficulty.
+**Definition:** A sequence for unlocking Act 2 Crazy difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9125,7 +9125,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act2_hard`
 
 
-**Definition:** A sequence triggered when beating Act 2 for the first time, unlocking Hard difficulty.
+**Definition:** A sequence triggered when beating Act 2 for the first time, unlocking Hard difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9149,7 +9149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act2_impossible`
 
 
-**Definition:** A sequence for unlocking Act 2 Impossible difficulty.
+**Definition:** A sequence for unlocking Act 2 Impossible difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9173,7 +9173,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act3_crazy`
 
 
-**Definition:** A sequence for unlocking Act 3 Crazy difficulty.
+**Definition:** A sequence for unlocking Act 3 Crazy difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9197,7 +9197,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act3_hard`
 
 
-**Definition:** A sequence triggered when beating Act 3 for the first time, unlocking Hard difficulty.
+**Definition:** A sequence triggered when beating Act 3 for the first time, unlocking Hard difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9221,7 +9221,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_unlock_act3_impossible`
 
 
-**Definition:** A sequence for unlocking Act 3 Impossible difficulty.
+**Definition:** A sequence for unlocking Act 3 Impossible difficulty.  
 **Total Count:** 1
 
 <details>
@@ -9245,7 +9245,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `take_cats_inside`
 
 
-**Definition:** A sequence for taking cats inside the house.
+**Definition:** A sequence for taking cats inside the house.  
 **Total Count:** 1
 
 <details>
@@ -9269,7 +9269,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `test_gamepad_prompts`
 
 
-**Definition:** A sequence that shows gamepad binding prompts.
+**Definition:** A sequence that shows gamepad binding prompts.  
 **Total Count:** 1
 
 <details>
@@ -9290,7 +9290,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_aggression`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat.  
 **Total Count:** 1
 
 <details>
@@ -9313,7 +9313,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_basestats`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications.  
 **Total Count:** 1
 
 <details>
@@ -9336,7 +9336,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_begin_accepting_cats`
 
 
-**Definition:** A sequence for when Tink begins accepting cats.
+**Definition:** A sequence for when Tink begins accepting cats.  
 **Total Count:** 1
 
 <details>
@@ -9359,7 +9359,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_inbreeding`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree.  
 **Total Count:** 1
 
 <details>
@@ -9382,7 +9382,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max1`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (1 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (1 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9405,7 +9405,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max10`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (10 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (10 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9428,7 +9428,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max2`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (2 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (2 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9451,7 +9451,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max3`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (3 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (3 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9474,7 +9474,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max4`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (4 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (4 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9497,7 +9497,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max5`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (5 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (5 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9520,7 +9520,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max6`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (6 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (6 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9542,7 +9542,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max7`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (7 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (7 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9565,7 +9565,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max8`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (8 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (8 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9588,7 +9588,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max9`
 
 
-**Definition:** One of the sequences played when Tink is at max favor (9 of 10).
+**Definition:** One of the sequences played when Tink is at max favor (9 of 10).  
 **Total Count:** 1
 
 <details>
@@ -9611,7 +9611,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max_intro`
 
 
-**Definition:** The first dialogue sequence and favor reward that plays when Tink reaches maximum favor.
+**Definition:** The first dialogue sequence and favor reward that plays when Tink reaches maximum favor.  
 **Total Count:** 1
 
 <details>
@@ -9634,7 +9634,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max_repeating`
 
 
-**Definition:** A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences.
+**Definition:** A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences.  
 **Total Count:** 1
 
 <details>
@@ -9655,7 +9655,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_prettybow`
 
 
-**Definition:** A dialogue sequence and favor reward that grants the gift item TinksBow.
+**Definition:** A dialogue sequence and favor reward that grants the gift item TinksBow.  
 **Total Count:** 1
 
 <details>
@@ -9678,7 +9678,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_relationships`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates).
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates).  
 **Total Count:** 1
 
 <details>
@@ -9701,7 +9701,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_sexuality`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags.  
 **Total Count:** 1
 
 <details>
@@ -9724,7 +9724,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tags`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name.
+**Definition:** A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name.  
 **Total Count:** 1
 
 <details>
@@ -9747,7 +9747,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_terminator`
 
 
-**Definition:** A sequence for Tink's terminator event.
+**Definition:** A sequence for Tink's terminator event.  
 **Total Count:** 1
 
 <details>
@@ -9769,7 +9769,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tina2`
 
 
-**Definition:** A sequence for Tink and Tina interaction 2.
+**Definition:** A sequence for Tink and Tina interaction 2.  
 **Total Count:** 1
 
 <details>
@@ -9791,7 +9791,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_appeal`
 
 
-**Definition:** A sequence for Tink's tips on appeal.
+**Definition:** A sequence for Tink's tips on appeal.  
 **Total Count:** 1
 
 <details>
@@ -9812,7 +9812,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_basestats`
 
 
-**Definition:** A sequence for Tink's tips on base stats.
+**Definition:** A sequence for Tink's tips on base stats.  
 **Total Count:** 1
 
 <details>
@@ -9833,7 +9833,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_cleaning`
 
 
-**Definition:** A sequence for Tink's tips on cleaning.
+**Definition:** A sequence for Tink's tips on cleaning.  
 **Total Count:** 1
 
 <details>
@@ -9854,7 +9854,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_comfort`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on cat comfort.
+**Definition:** A sequence of dialogs providing Tink's tips on cat comfort.  
 **Total Count:** 1
 
 <details>
@@ -9875,7 +9875,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_health`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on cat health.
+**Definition:** A sequence of dialogs providing Tink's tips on cat health.  
 **Total Count:** 1
 
 <details>
@@ -9896,7 +9896,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_inbreeding`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on inbreeding.
+**Definition:** A sequence of dialogs providing Tink's tips on inbreeding.  
 **Total Count:** 1
 
 <details>
@@ -9917,7 +9917,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_intro`
 
 
-**Definition:** A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence.
+**Definition:** A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence.  
 **Total Count:** 1
 
 <details>
@@ -9939,7 +9939,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_multiclassing`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on multiclassing.
+**Definition:** A sequence of dialogs providing Tink's tips on multiclassing.  
 **Total Count:** 1
 
 <details>
@@ -9960,7 +9960,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_mutation`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on mutations.
+**Definition:** A sequence of dialogs providing Tink's tips on mutations.  
 **Total Count:** 1
 
 <details>
@@ -9981,7 +9981,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tips_stimulation`
 
 
-**Definition:** A sequence of dialogs providing Tink's tips on stimulation.
+**Definition:** A sequence of dialogs providing Tink's tips on stimulation.  
 **Total Count:** 1
 
 <details>
@@ -10002,7 +10002,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10027,7 +10027,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10052,7 +10052,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10077,7 +10077,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodbonus1`
 
 
-**Definition:** A sequence showing Tracy explaining a food bonus reward.
+**Definition:** A sequence showing Tracy explaining a food bonus reward.  
 **Total Count:** 1
 
 <details>
@@ -10102,7 +10102,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10127,7 +10127,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage10`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10152,7 +10152,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10177,7 +10177,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10202,7 +10202,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage4`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10227,7 +10227,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage5`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10252,7 +10252,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage6`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10277,7 +10277,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage7`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10302,7 +10302,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage8`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10327,7 +10327,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage9`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10352,7 +10352,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10377,7 +10377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10402,7 +10402,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10427,7 +10427,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol4`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10452,7 +10452,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol5`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10477,7 +10477,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol6`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10502,7 +10502,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol7`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 1
 
 <details>
@@ -10527,7 +10527,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_introduction`
 
 
-**Definition:** A sequence introducing Tracy to the player.
+**Definition:** A sequence introducing Tracy to the player.  
 **Total Count:** 1
 
 <details>
@@ -10552,7 +10552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_kaijufight`
 
 
-**Definition:** A sequence where Tracy discusses a kaiju fight.
+**Definition:** A sequence where Tracy discusses a kaiju fight.  
 **Total Count:** 1
 
 <details>
@@ -10576,7 +10576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max1`
 
 
-**Definition:** A sequence for Tracy at max favor (part 1).
+**Definition:** A sequence for Tracy at max favor (part 1).  
 **Total Count:** 1
 
 <details>
@@ -10601,7 +10601,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max2`
 
 
-**Definition:** A sequence for Tracy at max favor (part 2).
+**Definition:** A sequence for Tracy at max favor (part 2).  
 **Total Count:** 1
 
 <details>
@@ -10626,7 +10626,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max3`
 
 
-**Definition:** A sequence for Tracy at max favor (part 3).
+**Definition:** A sequence for Tracy at max favor (part 3).  
 **Total Count:** 1
 
 <details>
@@ -10651,7 +10651,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max4`
 
 
-**Definition:** A sequence for Tracy at max favor (part 4).
+**Definition:** A sequence for Tracy at max favor (part 4).  
 **Total Count:** 1
 
 <details>
@@ -10676,7 +10676,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max5`
 
 
-**Definition:** A sequence for Tracy at max favor (part 5).
+**Definition:** A sequence for Tracy at max favor (part 5).  
 **Total Count:** 1
 
 <details>
@@ -10701,7 +10701,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max_intro`
 
 
-**Definition:** The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor.
+**Definition:** The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor.  
 **Total Count:** 1
 
 <details>
@@ -10726,7 +10726,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max_repeating`
 
 
-**Definition:** A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences.
+**Definition:** A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences.  
 **Total Count:** 1
 
 <details>
@@ -10747,7 +10747,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `try_again_attack_rat`
 
 
-**Definition:** A tutorial sequence prompting the player to try attacking the rat again.
+**Definition:** A tutorial sequence prompting the player to try attacking the rat again.  
 **Total Count:** 1
 
 <details>
@@ -10775,7 +10775,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `try_again_melee_move`
 
 
-**Definition:** A tutorial sequence prompting the player to try a melee move again.
+**Definition:** A tutorial sequence prompting the player to try a melee move again.  
 **Total Count:** 1
 
 <details>
@@ -10800,7 +10800,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tutorial_cat_dies`
 
 
-**Definition:** A tutorial sequence explaining what happens when a cat dies.
+**Definition:** A tutorial sequence explaining what happens when a cat dies.  
 **Total Count:** 1
 
 <details>
@@ -10823,7 +10823,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted1`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 1).
+**Definition:** An unprompted dialogue sequence from Beanies (part 1).  
 **Total Count:** 1
 
 <details>
@@ -10844,7 +10844,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted2`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 2).
+**Definition:** An unprompted dialogue sequence from Beanies (part 2).  
 **Total Count:** 1
 
 <details>
@@ -10865,7 +10865,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted3`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 3).
+**Definition:** An unprompted dialogue sequence from Beanies (part 3).  
 **Total Count:** 1
 
 <details>
@@ -10886,7 +10886,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted4`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 4).
+**Definition:** An unprompted dialogue sequence from Beanies (part 4).  
 **Total Count:** 1
 
 <details>
@@ -10907,7 +10907,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted5`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 5).
+**Definition:** An unprompted dialogue sequence from Beanies (part 5).  
 **Total Count:** 1
 
 <details>
@@ -10928,7 +10928,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `unprompted6`
 
 
-**Definition:** An unprompted dialogue sequence from Beanies (part 6).
+**Definition:** An unprompted dialogue sequence from Beanies (part 6).  
 **Total Count:** 1
 
 <details>
@@ -10949,7 +10949,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_1`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0.  
 **Total Count:** 1
 
 <details>
@@ -10972,7 +10972,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_2`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2.  
 **Total Count:** 1
 
 <details>
@@ -10995,7 +10995,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_3`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3.  
 **Total Count:** 1
 
 <details>
@@ -11018,7 +11018,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_4`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2.  
 **Total Count:** 1
 
 <details>
@@ -11041,7 +11041,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_5`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3.  
 **Total Count:** 1
 
 <details>
@@ -11064,7 +11064,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_6`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2.  
 **Total Count:** 1
 
 <details>
@@ -11087,7 +11087,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_7`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3.  
 **Total Count:** 1
 
 <details>
@@ -11110,7 +11110,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_max1`
 
 
-**Definition:** A dialogue popup for the first storage space upgrade.
+**Definition:** A dialogue popup for the first storage space upgrade.  
 **Total Count:** 1
 
 <details>
@@ -11133,7 +11133,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_max2`
 
 
-**Definition:** A dialogue popup for the second storage space upgrade, including a reward.
+**Definition:** A dialogue popup for the second storage space upgrade, including a reward.  
 **Total Count:** 1
 
 <details>
@@ -11155,7 +11155,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_max3`
 
 
-**Definition:** A dialogue popup for the third storage space upgrade.
+**Definition:** A dialogue popup for the third storage space upgrade.  
 **Total Count:** 1
 
 <details>
@@ -11178,7 +11178,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_max4`
 
 
-**Definition:** A dialogue popup for the fourth storage space upgrade.
+**Definition:** A dialogue popup for the fourth storage space upgrade.  
 **Total Count:** 1
 
 <details>
@@ -11201,7 +11201,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_max5`
 
 
-**Definition:** A dialogue popup for the fifth storage space upgrade.
+**Definition:** A dialogue popup for the fifth storage space upgrade.  
 **Total Count:** 1
 
 <details>
@@ -11224,7 +11224,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_crazy`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion.  
 **Total Count:** 1
 
 <details>
@@ -11245,7 +11245,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_hard`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion.  
 **Total Count:** 1
 
 <details>
@@ -11266,7 +11266,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_impossible`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion.  
 **Total Count:** 1
 
 <details>
@@ -11287,7 +11287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_intro`
 
 
-**Definition:** The introductory dialogue sequence and reward when Butch maxes out storage capacity.
+**Definition:** The introductory dialogue sequence and reward when Butch maxes out storage capacity.  
 **Total Count:** 1
 
 <details>
@@ -11310,7 +11310,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_normal`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion.  
 **Total Count:** 1
 
 <details>
@@ -11331,7 +11331,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_attack_after_used_weapon`
 
 
-**Definition:** A tutorial sequence teaching the player to use an attack after using a weapon.
+**Definition:** A tutorial sequence teaching the player to use an attack after using a weapon.  
 **Total Count:** 1
 
 <details>
@@ -11358,7 +11358,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `use_weapon`
 
 
-**Definition:** Defines a dialogue option that prompts the unit to use their equipped weapon.
+**Definition:** Defines a dialogue option that prompts the unit to use their equipped weapon.  
 **Total Count:** 1
 
 <details>
@@ -11385,7 +11385,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome`
 
 
-**Definition:** A cancelable welcome sequence for Tracy's shop.
+**Definition:** A cancelable welcome sequence for Tracy's shop.  
 **Total Count:** 1
 
 <details>
@@ -11410,7 +11410,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_boneyard`
 
 
-**Definition:** A cancelable welcome sequence for the boneyard biome shop.
+**Definition:** A cancelable welcome sequence for the boneyard biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11435,7 +11435,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_bunker`
 
 
-**Definition:** A cancelable welcome sequence for the bunker biome shop.
+**Definition:** A cancelable welcome sequence for the bunker biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11460,7 +11460,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_caves`
 
 
-**Definition:** A cancelable welcome sequence for the caves biome shop.
+**Definition:** A cancelable welcome sequence for the caves biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11485,7 +11485,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_core`
 
 
-**Definition:** A cancelable welcome sequence for the core biome shop.
+**Definition:** A cancelable welcome sequence for the core biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11509,7 +11509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_crater`
 
 
-**Definition:** A cancelable welcome sequence for the crater biome shop.
+**Definition:** A cancelable welcome sequence for the crater biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11534,7 +11534,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_desert`
 
 
-**Definition:** A cancelable welcome sequence for the desert biome shop.
+**Definition:** A cancelable welcome sequence for the desert biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11558,7 +11558,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_future`
 
 
-**Definition:** A cancelable welcome sequence for the future biome shop.
+**Definition:** A cancelable welcome sequence for the future biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11582,7 +11582,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_iceage`
 
 
-**Definition:** A cancelable welcome sequence for the ice age biome shop.
+**Definition:** A cancelable welcome sequence for the ice age biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11607,7 +11607,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_junkyard`
 
 
-**Definition:** A cancelable welcome sequence for the junkyard biome shop.
+**Definition:** A cancelable welcome sequence for the junkyard biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11631,7 +11631,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_jurassic`
 
 
-**Definition:** A cancelable welcome sequence for the jurassic biome shop.
+**Definition:** A cancelable welcome sequence for the jurassic biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11656,7 +11656,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_lab`
 
 
-**Definition:** A cancelable welcome sequence for the lab biome shop.
+**Definition:** A cancelable welcome sequence for the lab biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11681,7 +11681,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_moon`
 
 
-**Definition:** A cancelable welcome sequence for the moon biome shop.
+**Definition:** A cancelable welcome sequence for the moon biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11705,7 +11705,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_sewers`
 
 
-**Definition:** A cancelable welcome sequence for the sewers biome shop.
+**Definition:** A cancelable welcome sequence for the sewers biome shop.  
 **Total Count:** 1
 
 <details>
@@ -11730,7 +11730,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_theend`
 
 
-**Definition:** A cancelable welcome sequence for the theend biome shop, with Beanies' voice.
+**Definition:** A cancelable welcome sequence for the theend biome shop, with Beanies' voice.  
 **Total Count:** 1
 
 <details>
@@ -11756,7 +11756,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_water`
 
 
-**Definition:** Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1.
+**Definition:** Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1.  
 **Total Count:** 1
 
 <details>
@@ -11780,7 +11780,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `welcome_water_cheap`
 
 
-**Definition:** Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1.
+**Definition:** Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1.  
 **Total Count:** 1
 
 <details>

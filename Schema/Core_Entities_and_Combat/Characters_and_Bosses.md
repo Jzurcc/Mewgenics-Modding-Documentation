@@ -170,7 +170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `graphics`
 
 
-**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.
+**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.  
 **Total Count:** 2609
 
 <details>
@@ -221,7 +221,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `damage_instance`
 
 
-**Definition:** Defines damage properties, effects, and healing for the ability's direct damage.
+**Definition:** Defines damage properties, effects, and healing for the ability's direct damage.  
 **Total Count:** 2346
 
 <details>
@@ -244,7 +244,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `passives`
 
 
-**Definition:** A container object listing passive effects granted to the unit.
+**Definition:** A container object listing passive effects granted to the unit.  
 **Total Count:** 733
 
 <details>
@@ -616,7 +616,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `properties`
 
 
-**Definition:** A container object defining a character's base attributes, tags, faction, health, movement, and other core properties.
+**Definition:** A container object defining a character's base attributes, tags, faction, health, movement, and other core properties.  
 **Total Count:** 600
 
 <details>
@@ -736,7 +736,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ai`
 
 
-**Definition:** A container object defining the character's artificial intelligence brain and decision weights.
+**Definition:** A container object defining the character's artificial intelligence brain and decision weights.  
 **Total Count:** 583
 
 <details>
@@ -783,7 +783,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `stats`
 
 
-**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).
+**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).  
 **Total Count:** 497
 
 <details>
@@ -810,7 +810,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `abilities`
 
 
-**Definition:** A container object defining a character's move, attack, and spell abilities.
+**Definition:** A container object defining a character's move, attack, and spell abilities.  
 **Total Count:** 460
 
 <details>
@@ -834,7 +834,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pattern`
 
 
-**Definition:** Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one.
+**Definition:** Defines a sequence of actions the AI will execute in order, with optional priority or all-in-one.  
 **Total Count:** 296
 
 <details>
@@ -868,7 +868,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Normal`
 
 
-**Definition:** The normal form configuration, used as a baseline state for shape-shifting units.
+**Definition:** The normal form configuration, used as a baseline state for shape-shifting units.  
 **Total Count:** 231
 
 <details>
@@ -894,7 +894,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Angry`
 
 
-**Definition:** Defines the 'Angry' form, an enraged state with its own AI.
+**Definition:** Defines the 'Angry' form, an enraged state with its own AI.  
 **Total Count:** 221
 
 <details>
@@ -916,7 +916,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChanger`
 
 
-**Definition:** Defines the unit's form-changing data, including multiple form definitions and their sub-properties.
+**Definition:** Defines the unit's form-changing data, including multiple form definitions and their sub-properties.  
 **Total Count:** 106
 
 <details>
@@ -1095,7 +1095,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnOnDeath`
 
 
-**Definition:** Specifies an object and its faction to spawn when the unit dies.
+**Definition:** Specifies an object and its faction to spawn when the unit dies.  
 **Total Count:** 79
 
 <details>
@@ -1118,7 +1118,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `sound`
 
 
-**Definition:** A container object defining audio configurations, including alternate sound lists.
+**Definition:** A container object defining audio configurations, including alternate sound lists.  
 **Total Count:** 62
 
 <details>
@@ -1140,7 +1140,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Robot`
 
 
-**Definition:** If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties.
+**Definition:** If an integer 1, the unit is robotic and affected by electric/energized effects. If an object, contains further robot-specific properties.  
 **Total Count:** 46
 
 <details>
@@ -1161,7 +1161,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `turns`
 
 
-**Definition:** Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`.
+**Definition:** Specifies the duration of a temporary effect, either as a number of turns or an object with fields like `takes_turns` and `dispersed_bonus_turns`.  
 **Total Count:** 45
 
 <details>
@@ -1188,7 +1188,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `equipment`
 
 
-**Definition:** A container object defining the character's equipped items (head, face, neck, weapon, etc.).
+**Definition:** A container object defining the character's equipped items (head, face, neck, weapon, etc.).  
 **Total Count:** 44
 
 <details>
@@ -1212,7 +1212,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mainturn_pattern`
 
 
-**Definition:** Specifies the AI behavior pattern used during main turns.
+**Definition:** Specifies the AI behavior pattern used during main turns.  
 **Total Count:** 44
 
 <details>
@@ -1237,7 +1237,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Default`
 
 
-**Definition:** The default form configuration for a unit, containing its standard stats and abilities.
+**Definition:** The default form configuration for a unit, containing its standard stats and abilities.  
 **Total Count:** 38
 
 <details>
@@ -1264,7 +1264,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeWhileHasStatus`
 
 
-**Definition:** Defines a form change condition that activates while the unit has a specific status effect.
+**Definition:** Defines a form change condition that activates while the unit has a specific status effect.  
 **Total Count:** 35
 
 <details>
@@ -1287,7 +1287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `keyword_tooltips`
 
 
-**Definition:** Associates keyword tooltips with the ability, often used for status effects.
+**Definition:** Associates keyword tooltips with the ability, often used for status effects.  
 **Total Count:** 35
 
 <details>
@@ -1311,7 +1311,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `virtual_abilities`
 
 
-**Definition:** Defines virtual abilities and their movement weights for AI decision-making.
+**Definition:** Defines virtual abilities and their movement weights for AI decision-making.  
 **Total Count:** 35
 
 <details>
@@ -1360,7 +1360,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Contains status effects to add to the basic attack.
+**Definition:** Contains status effects to add to the basic attack.  
 **Total Count:** 32
 
 <details>
@@ -1400,7 +1400,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DeathRattle`
 
 
-**Definition:** Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag.
+**Definition:** Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag.  
 **Total Count:** 29
 
 <details>
@@ -1427,7 +1427,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `bonusturn_pattern`
 
 
-**Definition:** The action sequence the AI follows during a bonus turn.
+**Definition:** The action sequence the AI follows during a bonus turn.  
 **Total Count:** 27
 
 <details>
@@ -1452,7 +1452,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CatPartsTransform`
 
 
-**Definition:** Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs.
+**Definition:** Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs.  
 **Total Count:** 25
 
 <details>
@@ -1485,7 +1485,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `fallback`
 
 
-**Definition:** The action sequence the AI uses when its main pattern cannot execute.
+**Definition:** The action sequence the AI uses when its main pattern cannot execute.  
 **Total Count:** 23
 
 <details>
@@ -1512,7 +1512,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BossRewards`
 
 
-**Definition:** Defines the common and rare item rewards dropped by a boss on defeat.
+**Definition:** Defines the common and rare item rewards dropped by a boss on defeat.  
 **Total Count:** 20
 
 <details>
@@ -1535,7 +1535,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityReaction`
 
 
-**Definition:** Specifies the ability used as a reaction when the unit is targeted by an ability.
+**Definition:** Specifies the ability used as a reaction when the unit is targeted by an ability.  
 **Total Count:** 19
 
 <details>
@@ -1566,7 +1566,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.  
 **Total Count:** 19
 
 <details>
@@ -1593,7 +1593,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ally_rewards`
 
 
-**Definition:** Defines the rewards granted to the ally when the BirdRewards passive triggers.
+**Definition:** Defines the rewards granted to the ally when the BirdRewards passive triggers.  
 **Total Count:** 18
 
 <details>
@@ -1618,7 +1618,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `alt_spawn_pool`
 
 
-**Definition:** An alternative spawn pool defining possible objects to spawn with their weights.
+**Definition:** An alternative spawn pool defining possible objects to spawn with their weights.  
 **Total Count:** 18
 
 <details>
@@ -1684,7 +1684,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BirdRewards`
 
 
-**Definition:** Defines the rewards and statuses applied when a bird allies with the unit.
+**Definition:** Defines the rewards and statuses applied when a bird allies with the unit.  
 **Total Count:** 18
 
 <details>
@@ -1706,7 +1706,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CharacterLightSource`
 
 
-**Definition:** Defines a dynamic light source attached to the unit, including color, glow, and size.
+**Definition:** Defines a dynamic light source attached to the unit, including color, glow, and size.  
 **Total Count:** 16
 
 <details>
@@ -1729,7 +1729,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HealthPickup`
 
 
-**Definition:** Defines properties for a health pickup object, such as healing amount and visual frame range.
+**Definition:** Defines properties for a health pickup object, such as healing amount and visual frame range.  
 **Total Count:** 16
 
 <details>
@@ -1754,7 +1754,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `statuses`
 
 
-**Definition:** Defines the status effects applied when the parent trigger event occurs.
+**Definition:** Defines the status effects applied when the parent trigger event occurs.  
 **Total Count:** 14
 
 <details>
@@ -1778,7 +1778,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `default`
 
 
-**Definition:** The default configuration or value used when no specific override is provided.
+**Definition:** The default configuration or value used when no specific override is provided.  
 **Total Count:** 13
 
 <details>
@@ -1798,7 +1798,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `effects`
 
 
-**Definition:** Applies a list of status effects or visual effects to targets.
+**Definition:** Applies a list of status effects or visual effects to targets.  
 **Total Count:** 13
 
 <details>
@@ -1827,7 +1827,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ImmediateAbilityReaction`
 
 
-**Definition:** Specifies an ability or list of abilities used immediately in reaction to a triggering event.
+**Definition:** Specifies an ability or list of abilities used immediately in reaction to a triggering event.  
 **Total Count:** 13
 
 <details>
@@ -1854,7 +1854,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityHealthThreshold`
 
 
-**Definition:** Defines an ability and conditions for its activation when the unit's health reaches a threshold.
+**Definition:** Defines an ability and conditions for its activation when the unit's health reaches a threshold.  
 **Total Count:** 12
 
 <details>
@@ -1882,7 +1882,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveGroup`
 
 
-**Definition:** A group of passive abilities that can be randomly assigned.
+**Definition:** A group of passive abilities that can be randomly assigned.  
 **Total Count:** 12
 
 <details>
@@ -1910,7 +1910,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `round_end_bonusturn_pattern`
 
 
-**Definition:** The action sequence the AI executes at the end of the round as a bonus turn.
+**Definition:** The action sequence the AI executes at the end of the round as a bonus turn.  
 **Total Count:** 12
 
 <details>
@@ -1936,7 +1936,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnThingOnDamage`
 
 
-**Definition:** Specifies an object that spawns on the tile when the unit takes damage.
+**Definition:** Specifies an object that spawns on the tile when the unit takes damage.  
 **Total Count:** 12
 
 <details>
@@ -1964,7 +1964,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DeathRattleRevive`
 
 
-**Definition:** Specifies an ability or effect that revives the unit upon death, with options for stunning behavior.
+**Definition:** Specifies an ability or effect that revives the unit upon death, with options for stunning behavior.  
 **Total Count:** 10
 
 <details>
@@ -1986,7 +1986,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveWhenDamaged`
 
 
-**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.
+**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.  
 **Total Count:** 10
 
 <details>
@@ -2008,7 +2008,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Rage`
 
 
-**Definition:** The rage form configuration, applied when the unit enters an enraged state.
+**Definition:** The rage form configuration, applied when the unit enters an enraged state.  
 **Total Count:** 10
 
 <details>
@@ -2036,7 +2036,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeOnElementInfluence`
 
 
-**Definition:** Defines the element that triggers a form change, optional visual effects, and the target form.
+**Definition:** Defines the element that triggers a form change, optional visual effects, and the target form.  
 **Total Count:** 9
 
 <details>
@@ -2061,7 +2061,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ReflectProjectiles`
 
 
-**Definition:** The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage.
+**Definition:** The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage.  
 **Total Count:** 9
 
 <details>
@@ -2081,7 +2081,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusCollector`
 
 
-**Definition:** Specifies the status effects and their stack counts that the unit collects to trigger transformations.
+**Definition:** Specifies the status effects and their stack counts that the unit collects to trigger transformations.  
 **Total Count:** 9
 
 <details>
@@ -2106,7 +2106,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TransformInXTurns`
 
 
-**Definition:** Defines a delayed transformation after a set number of turns, with optional target object and initiative handling.
+**Definition:** Defines a delayed transformation after a set number of turns, with optional target object and initiative handling.  
 **Total Count:** 9
 
 <details>
@@ -2131,7 +2131,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TransformOnElementInfluence`
 
 
-**Definition:** Defines the element that triggers a transformation and the object to transform into.
+**Definition:** Defines the element that triggers a transformation and the object to transform into.  
 **Total Count:** 9
 
 <details>
@@ -2153,7 +2153,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeOffMap`
 
 
-**Definition:** Specifies the unit's form when off the map and when on the map.
+**Definition:** Specifies the unit's form when off the map and when on the map.  
 **Total Count:** 8
 
 <details>
@@ -2175,7 +2175,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmallRockBehavior`
 
 
-**Definition:** Defines the damage, knockback, and chain properties of small rocks spawned from this unit when destroyed.
+**Definition:** Defines the damage, knockback, and chain properties of small rocks spawned from this unit when destroyed.  
 **Total Count:** 8
 
 <details>
@@ -2198,7 +2198,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToSpitOnDamage`
 
 
-**Definition:** Configures the chance to use a spit ability when taking damage, including base chance and per-damage bonus.
+**Definition:** Configures the chance to use a spit ability when taking damage, including base chance and per-damage bonus.  
 **Total Count:** 7
 
 <details>
@@ -2223,7 +2223,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MovementReaction`
 
 
-**Definition:** Specifies an ability to cast when a unit moves within range, with options for targeting and conditions.
+**Definition:** Specifies an ability to cast when a unit moves within range, with options for targeting and conditions.  
 **Total Count:** 7
 
 <details>
@@ -2250,7 +2250,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveFamilyEnrage`
 
 
-**Definition:** Specifies the ability used when the number of family members with a given tag falls below a threshold.
+**Definition:** Specifies the ability used when the number of family members with a given tag falls below a threshold.  
 **Total Count:** 6
 
 <details>
@@ -2273,7 +2273,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeWhilePrimingAbility`
 
 
-**Definition:** Defines the form changes when a specific ability is being primed and when it is not.
+**Definition:** Defines the form changes when a specific ability is being primed and when it is not.  
 **Total Count:** 6
 
 <details>
@@ -2295,7 +2295,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveTowardsDamageSource`
 
 
-**Definition:** Determines the movement behavior when moving towards the unit that dealt damage to it.
+**Definition:** Determines the movement behavior when moving towards the unit that dealt damage to it.  
 **Total Count:** 6
 
 <details>
@@ -2325,7 +2325,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SecurityBotProtect`
 
 
-**Definition:** Specifies the ability and movement used by a security bot to protect allies.
+**Definition:** Specifies the ability and movement used by a security bot to protect allies.  
 **Total Count:** 6
 
 <details>
@@ -2350,7 +2350,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HasCat`
 
 
-**Definition:** The form configuration applied when the unit is holding or has swallowed a cat.
+**Definition:** The form configuration applied when the unit is holding or has swallowed a cat.  
 **Total Count:** 5
 
 <details>
@@ -2377,7 +2377,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveTowardsKillers`
 
 
-**Definition:** Determines the movement behavior when moving towards units that have killed an ally.
+**Definition:** Determines the movement behavior when moving towards units that have killed an ally.  
 **Total Count:** 5
 
 <details>
@@ -2399,7 +2399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileHasStatus`
 
 
-**Definition:** An object containing `status` and `passives` that grants the listed passives while the unit has the specified status.
+**Definition:** An object containing `status` and `passives` that grants the listed passives while the unit has the specified status.  
 **Total Count:** 5
 
 <details>
@@ -2422,7 +2422,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TransformOnDeathImmediately`
 
 
-**Definition:** The object to transform into immediately upon death, with optional turn handling.
+**Definition:** The object to transform into immediately upon death, with optional turn handling.  
 **Total Count:** 5
 
 <details>
@@ -2444,7 +2444,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BaitAura`
 
 
-**Definition:** The range of the bait aura that draws enemies towards the unit.
+**Definition:** The range of the bait aura that draws enemies towards the unit.  
 **Total Count:** 4
 
 <details>
@@ -2465,7 +2465,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Big`
 
 
-**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.
+**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.  
 **Total Count:** 4
 
 <details>
@@ -2489,7 +2489,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Consumed`
 
 
-**Definition:** An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`.
+**Definition:** An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`.  
 **Total Count:** 4
 
 <details>
@@ -2517,7 +2517,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ForceUseAbility`
 
 
-**Definition:** The name of the ability the source is forced to use, optionally with a chance.
+**Definition:** The name of the ability the source is forced to use, optionally with a chance.  
 **Total Count:** 4
 
 <details>
@@ -2539,7 +2539,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Holy`
 
 
-**Definition:** Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives.
+**Definition:** Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives.  
 **Total Count:** 4
 
 <details>
@@ -2562,7 +2562,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hot`
 
 
-**Definition:** The form configuration applied when the unit is in a hot state, granting fire element.
+**Definition:** The form configuration applied when the unit is in a hot state, granting fire element.  
 **Total Count:** 4
 
 <details>
@@ -2586,7 +2586,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveAway`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit away from its current target using the specified ability and move weights.
+**Definition:** Defines an AI virtual ability that moves the unit away from its current target using the specified ability and move weights.  
 **Total Count:** 4
 
 <details>
@@ -2608,7 +2608,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveClose`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit close to its target using the specified ability and move weights.
+**Definition:** Defines an AI virtual ability that moves the unit close to its target using the specified ability and move weights.  
 **Total Count:** 4
 
 <details>
@@ -2631,7 +2631,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `OffMap`
 
 
-**Definition:** The form configuration applied when the unit is off the battlefield map.
+**Definition:** The form configuration applied when the unit is off the battlefield map.  
 **Total Count:** 4
 
 <details>
@@ -2653,7 +2653,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `passive`
 
 
-**Definition:** Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive.
+**Definition:** Defines the passive form, where the unit does nothing (uses DoNothing attack) and is inactive.  
 **Total Count:** 4
 
 <details>
@@ -2674,7 +2674,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEnd`
 
 
-**Definition:** Specifies status effects applied to the unit at the end of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the end of each of its turns.  
 **Total Count:** 4
 
 <details>
@@ -2700,7 +2700,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnKill`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.
+**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.  
 **Total Count:** 4
 
 <details>
@@ -2723,7 +2723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamageFromAbility`
 
 
-**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).
+**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).  
 **Total Count:** 4
 
 <details>
@@ -2748,7 +2748,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StunImmunity`
 
 
-**Definition:** If 1, the unit is immune to stun. The optional object configures whether to cleanse stun on apply.
+**Definition:** If 1, the unit is immune to stun. The optional object configures whether to cleanse stun on apply.  
 **Total Count:** 4
 
 <details>
@@ -2769,7 +2769,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Trapper`
 
 
-**Definition:** Specifies a trap-placing ability and its targeting parameters.
+**Definition:** Specifies a trap-placing ability and its targeting parameters.  
 **Total Count:** 4
 
 <details>
@@ -2793,7 +2793,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllAlive`
 
 
-**Definition:** The form configuration applied when all family members are alive.
+**Definition:** The form configuration applied when all family members are alive.  
 **Total Count:** 3
 
 <details>
@@ -2813,7 +2813,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ArmorPickup`
 
 
-**Definition:** The amount of armor stacks and the frame range for the pickup animation.
+**Definition:** The amount of armor stacks and the frame range for the pickup animation.  
 **Total Count:** 3
 
 <details>
@@ -2835,7 +2835,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Bomb`
 
 
-**Definition:** Defines the 'Bomb' form, an explosive state that triggers an ability on death.
+**Definition:** Defines the 'Bomb' form, an explosive state that triggers an ability on death.  
 **Total Count:** 3
 
 <details>
@@ -2858,7 +2858,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Buddy`
 
 
-**Definition:** Specifies a buddy unit that accompanies or is spawned alongside the unit, with optional reclaim and targeting properties.
+**Definition:** Specifies a buddy unit that accompanies or is spawned alongside the unit, with optional reclaim and targeting properties.  
 **Total Count:** 3
 
 <details>
@@ -2879,7 +2879,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Cat`
 
 
-**Definition:** Defines the behavior and form change for captured cat units.
+**Definition:** Defines the behavior and form change for captured cat units.  
 **Total Count:** 3
 
 <details>
@@ -2902,7 +2902,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveMan`
 
 
-**Definition:** Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives.
+**Definition:** Defines the 'CaveMan' form of a CavePerson enemy, including its animation, attack, and passives.  
 **Total Count:** 3
 
 <details>
@@ -2929,7 +2929,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Down`
 
 
-**Definition:** The form configuration applied when the unit is in a knocked-down or prone state.
+**Definition:** The form configuration applied when the unit is in a knocked-down or prone state.  
 **Total Count:** 3
 
 <details>
@@ -2955,7 +2955,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Fire`
 
 
-**Definition:** Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack.
+**Definition:** Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack.  
 **Total Count:** 3
 
 <details>
@@ -2979,7 +2979,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeHealthThreshold`
 
 
-**Definition:** Specifies health thresholds that trigger form changes, with form_below for health at or below and form_above for health above.
+**Definition:** Specifies health thresholds that trigger form changes, with form_below for health at or below and form_above for health above.  
 **Total Count:** 3
 
 <details>
@@ -3004,7 +3004,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Full`
 
 
-**Definition:** The form configuration applied when the unit is in a full state.
+**Definition:** The form configuration applied when the unit is in a full state.  
 **Total Count:** 3
 
 <details>
@@ -3030,7 +3030,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ManaPickup`
 
 
-**Definition:** The amount of mana stacks and the frame range for the pickup animation.
+**Definition:** The amount of mana stacks and the frame range for the pickup animation.  
 **Total Count:** 3
 
 <details>
@@ -3052,7 +3052,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NonCat`
 
 
-**Definition:** Defines the behavior and form change for captured non-cat units.
+**Definition:** Defines the behavior and form change for captured non-cat units.  
 **Total Count:** 3
 
 <details>
@@ -3075,7 +3075,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `OneAlive`
 
 
-**Definition:** The form configuration applied when only one family member remains alive.
+**Definition:** The form configuration applied when only one family member remains alive.  
 **Total Count:** 3
 
 <details>
@@ -3098,7 +3098,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomPassivePool`
 
 
-**Definition:** A pool of random passives from which one is chosen for this unit.
+**Definition:** A pool of random passives from which one is chosen for this unit.  
 **Total Count:** 3
 
 <details>
@@ -3122,7 +3122,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ReplaceBrain`
 
 
-**Definition:** Defines a replacement AI brain and behavior pattern for the mutant.
+**Definition:** Defines a replacement AI brain and behavior pattern for the mutant.  
 **Total Count:** 3
 
 <details>
@@ -3146,7 +3146,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SquirrelForm`
 
 
-**Definition:** Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses.
+**Definition:** Defines the 'SquirrelForm', a transformation used by units like DeathMetal, granting melee attack and speed bonuses.  
 **Total Count:** 3
 
 <details>
@@ -3171,7 +3171,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SupportFormChangeInsteadOfRun`
 
 
-**Definition:** Specifies a form change to trigger instead of fleeing, either as a passive object with ability details or a direct form name.
+**Definition:** Specifies a form change to trigger instead of fleeing, either as a passive object with ability details or a direct form name.  
 **Total Count:** 3
 
 <details>
@@ -3193,7 +3193,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TwoAlive`
 
 
-**Definition:** A form that activates when two specific units are alive, granting the contained passives and abilities.
+**Definition:** A form that activates when two specific units are alive, granting the contained passives and abilities.  
 **Total Count:** 3
 
 <details>
@@ -3216,7 +3216,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Up`
 
 
-**Definition:** Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior.
+**Definition:** Defines the 'Up' form, including its animation, AI behavior, and passives such as UpTireBehavior.  
 **Total Count:** 3
 
 <details>
@@ -3241,7 +3241,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Water`
 
 
-**Definition:** Form state for water element, applying a puddle or movement bonus.
+**Definition:** Form state for water element, applying a puddle or movement bonus.  
 **Total Count:** 3
 
 <details>
@@ -3264,7 +3264,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityOnRoundEnd`
 
 
-**Definition:** Specifies an ability that is automatically executed at the end of each round.
+**Definition:** Specifies an ability that is automatically executed at the end of each round.  
 **Total Count:** 2
 
 <details>
@@ -3286,7 +3286,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
-**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.
+**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.  
 **Total Count:** 2
 
 <details>
@@ -3309,7 +3309,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `active`
 
 
-**Definition:** Defines the active form, containing passives and abilities that are active while in this form.
+**Definition:** Defines the active form, containing passives and abilities that are active while in this form.  
 **Total Count:** 2
 
 <details>
@@ -3329,7 +3329,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
-**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.
+**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.  
 **Total Count:** 2
 
 <details>
@@ -3350,7 +3350,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `alternate_energized_effect`
 
 
-**Definition:** Effects applied when the robot becomes energized, such as form changes or stat boosts.
+**Definition:** Effects applied when the robot becomes energized, such as form changes or stat boosts.  
 **Total Count:** 2
 
 <details>
@@ -3374,7 +3374,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AutocastEachRound`
 
 
-**Definition:** Contains an ability name and optional 'even_if_stunned' flag to autocast each round.
+**Definition:** Contains an ability name and optional 'even_if_stunned' flag to autocast each round.  
 **Total Count:** 2
 
 <details>
@@ -3396,7 +3396,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Bishop`
 
 
-**Definition:** Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation.
+**Definition:** Defines the 'Bishop' form for Cultist enemies, with its own attack (BBXLightning) and animation.  
 **Total Count:** 2
 
 <details>
@@ -3425,7 +3425,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BlackHole`
 
 
-**Definition:** Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name.
+**Definition:** Defines the 'BlackHole' form, a variant of NeutronStar with its own animation and name.  
 **Total Count:** 2
 
 <details>
@@ -3451,7 +3451,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Boris`
 
 
-**Definition:** Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives.
+**Definition:** Specifies the 'Boris' form within FormChanger, with its own animation suffix and passives.  
 **Total Count:** 2
 
 <details>
@@ -3474,7 +3474,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BungaEntrance`
 
 
-**Definition:** Specifies the entrance animation, ability, and conditions for this unit's dramatic battle entrance.
+**Definition:** Specifies the entrance animation, ability, and conditions for this unit's dramatic battle entrance.  
 **Total Count:** 2
 
 <details>
@@ -3498,7 +3498,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveBaby`
 
 
-**Definition:** Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack.
+**Definition:** Defines the 'CaveBaby' form of a CavePerson enemy, with reduced health and baby attack.  
 **Total Count:** 2
 
 <details>
@@ -3525,7 +3525,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveManSpear`
 
 
-**Definition:** Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation.
+**Definition:** Defines the 'CaveManSpear' form of a CavePerson enemy, with a spear attack and corresponding animation.  
 **Total Count:** 2
 
 <details>
@@ -3552,7 +3552,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveWoman`
 
 
-**Definition:** Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health.
+**Definition:** Defines the 'CaveWoman' form of a CavePerson enemy, with kick attack and higher health.  
 **Total Count:** 2
 
 <details>
@@ -3579,7 +3579,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CherubimReaction`
 
 
-**Definition:** Specifies the abilities used when this unit leaves or returns to the battlefield.
+**Definition:** Specifies the abilities used when this unit leaves or returns to the battlefield.  
 **Total Count:** 2
 
 <details>
@@ -3601,7 +3601,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
 **Total Count:** 2
 
 <details>
@@ -3625,7 +3625,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Cultist`
 
 
-**Definition:** Defines the 'Cultist' form, a basic melee form with its own name and tooltip.
+**Definition:** Defines the 'Cultist' form, a basic melee form with its own name and tooltip.  
 **Total Count:** 2
 
 <details>
@@ -3652,7 +3652,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DashRandomly`
 
 
-**Definition:** Defines an AI virtual ability that causes the unit to dash in a random direction using the specified ability and decision weights.
+**Definition:** Defines an AI virtual ability that causes the unit to dash in a random direction using the specified ability and decision weights.  
 **Total Count:** 2
 
 <details>
@@ -3674,7 +3674,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DiesToElement`
 
 
-**Definition:** Specifies the element that instantly kills this unit, optionally with an instant flag.
+**Definition:** Specifies the element that instantly kills this unit, optionally with an instant flag.  
 **Total Count:** 2
 
 <details>
@@ -3697,7 +3697,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `dispersed_bonusturn_pattern`
 
 
-**Definition:** The action sequence used when bonus turns are evenly distributed among multiple units.
+**Definition:** The action sequence used when bonus turns are evenly distributed among multiple units.  
 **Total Count:** 2
 
 <details>
@@ -3718,7 +3718,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Empty`
 
 
-**Definition:** Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach).
+**Definition:** Defines the 'Empty' form, typically indicating a state with no content (e.g., empty stomach).  
 **Total Count:** 2
 
 <details>
@@ -3739,7 +3739,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Escape`
 
 
-**Definition:** Defines an AI virtual ability that causes the unit to escape using the specified ability and move weights.
+**Definition:** Defines an AI virtual ability that causes the unit to escape using the specified ability and move weights.  
 **Total Count:** 2
 
 <details>
@@ -3761,7 +3761,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Explosive`
 
 
-**Definition:** Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives.
+**Definition:** Specifies the 'Explosive' form within FormChanger, with its own animation suffix and passives.  
 **Total Count:** 2
 
 <details>
@@ -3784,7 +3784,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FaceLastDamage`
 
 
-**Definition:** If set to 1, the unit turns to face the direction of the last damage received; an object can specify animation settings.
+**Definition:** If set to 1, the unit turns to face the direction of the last damage received; an object can specify animation settings.  
 **Total Count:** 2
 
 <details>
@@ -3805,7 +3805,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FireFull`
 
 
-**Definition:** Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo.
+**Definition:** Defines the 'FireFull' form, a fully charged fire state with its own animation and visual combo.  
 **Total Count:** 2
 
 <details>
@@ -3830,7 +3830,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Flush`
 
 
-**Definition:** Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name.
+**Definition:** Defines a form that executes a sequence of actions (FlushX, side switch, form switch) and has a spell with a localized name.  
 **Total Count:** 2
 
 <details>
@@ -3851,7 +3851,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FormChangeDuringWeatherElement`
 
 
-**Definition:** Specifies a form change that triggers when the weather matches a given element.
+**Definition:** Specifies a form change that triggers when the weather matches a given element.  
 **Total Count:** 2
 
 <details>
@@ -3873,7 +3873,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Holding`
 
 
-**Definition:** Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors.
+**Definition:** Defines the 'Holding' form, used when the unit is holding an object, with associated movement and form change behaviors.  
 **Total Count:** 2
 
 <details>
@@ -3898,7 +3898,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Johnny`
 
 
-**Definition:** Defines a form that executes a mega blast, side switch, and form switch in sequence.
+**Definition:** Defines a form that executes a mega blast, side switch, and form switch in sequence.  
 **Total Count:** 2
 
 <details>
@@ -3919,7 +3919,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `KnockUpAndAway`
 
 
-**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.
+**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.  
 **Total Count:** 2
 
 <details>
@@ -3944,7 +3944,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LastHit`
 
 
-**Definition:** Defines a form that grants 2 dispersed bonus turns after the last hit.
+**Definition:** Defines a form that grants 2 dispersed bonus turns after the last hit.  
 **Total Count:** 2
 
 <details>
@@ -3965,7 +3965,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MotherTumorSpawnInCapture`
 
 
-**Definition:** Specifies the form changes and statuses applied when the mother tumor spawns after capturing a cat or non-cat.
+**Definition:** Specifies the form changes and statuses applied when the mother tumor spawns after capturing a cat or non-cat.  
 **Total Count:** 2
 
 <details>
@@ -3988,7 +3988,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveCenter`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit toward the center of the map using the specified ability and move weights.
+**Definition:** Defines an AI virtual ability that moves the unit toward the center of the map using the specified ability and move weights.  
 **Total Count:** 2
 
 <details>
@@ -4010,7 +4010,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForThrow`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit into position for a throw ability.
+**Definition:** Defines an AI virtual ability that moves the unit into position for a throw ability.  
 **Total Count:** 2
 
 <details>
@@ -4033,7 +4033,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Mutant`
 
 
-**Definition:** As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight.
+**Definition:** As an object, defines the mutant form with reduced move speed and custom name. As an integer, defines spawn weight.  
 **Total Count:** 2
 
 <details>
@@ -4062,7 +4062,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NeutronStar`
 
 
-**Definition:** Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode).
+**Definition:** Defines the neutron star form with custom graphics and a random pattern AI (rumble or explode).  
 **Total Count:** 2
 
 <details>
@@ -4085,7 +4085,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NotPriming`
 
 
-**Definition:** Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns.
+**Definition:** Defines the 'NotPriming' form, which allows the unit to take main turns and grants bonus turns.  
 **Total Count:** 2
 
 <details>
@@ -4108,7 +4108,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Nuke`
 
 
-**Definition:** Defines a nuke form with no attack or movement options.
+**Definition:** Defines a nuke form with no attack or movement options.  
 **Total Count:** 2
 
 <details>
@@ -4135,7 +4135,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileNotHasStatus`
 
 
-**Definition:** Specifies a set of passives that are active only when this unit does not have the given status.
+**Definition:** Specifies a set of passives that are active only when this unit does not have the given status.  
 **Total Count:** 2
 
 <details>
@@ -4158,7 +4158,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Priming`
 
 
-**Definition:** Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end.
+**Definition:** Defines the 'Priming' form, where the unit does not take main turns but gains bonus turns at round end.  
 **Total Count:** 2
 
 <details>
@@ -4181,7 +4181,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ProtectTargetedAllies`
 
 
-**Definition:** Specifies the ability used to protect targeted allies, including an optional target filter.
+**Definition:** Specifies the ability used to protect targeted allies, including an optional target filter.  
 **Total Count:** 2
 
 <details>
@@ -4203,7 +4203,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Rain`
 
 
-**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.
+**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.  
 **Total Count:** 2
 
 <details>
@@ -4224,7 +4224,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RemoveStatusStacks`
 
 
-**Definition:** An object specifying a status name and the number of stacks to remove from the target.
+**Definition:** An object specifying a status name and the number of stacks to remove from the target.  
 **Total Count:** 2
 
 <details>
@@ -4247,7 +4247,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SlotMachineRollPool`
 
 
-**Definition:** Defines the weighted pool of possible slot machine roll results.
+**Definition:** Defines the weighted pool of possible slot machine roll results.  
 **Total Count:** 2
 
 <details>
@@ -4271,7 +4271,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Small`
 
 
-**Definition:** Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation.
+**Definition:** Defines the 'Small' form, typically used for smaller size variants, with its own attack and animation.  
 **Total Count:** 2
 
 <details>
@@ -4293,7 +4293,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpearRun`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit to run with a spear and pick it up.
+**Definition:** Defines an AI virtual ability that moves the unit to run with a spear and pick it up.  
 **Total Count:** 2
 
 <details>
@@ -4316,7 +4316,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `statuses_on_enter_form`
 
 
-**Definition:** Statuses or abilities applied when entering this form.
+**Definition:** Statuses or abilities applied when entering this form.  
 **Total Count:** 2
 
 <details>
@@ -4336,7 +4336,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusGroup`
 
 
-**Definition:** A container grouping multiple status effects to be applied simultaneously.
+**Definition:** A container grouping multiple status effects to be applied simultaneously.  
 **Total Count:** 2
 
 <details>
@@ -4358,7 +4358,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnSpawnIn`
 
 
-**Definition:** Applies statuses or actions upon the unit spawning into the battlefield.
+**Definition:** Applies statuses or actions upon the unit spawning into the battlefield.  
 **Total Count:** 2
 
 <details>
@@ -4378,7 +4378,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamage`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit takes damage.
+**Definition:** Specifies status effects or actions triggered when the unit takes damage.  
 **Total Count:** 2
 
 <details>
@@ -4402,7 +4402,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TempPassiveUntilSettled`
 
 
-**Definition:** An object containing a temporary passive that is applied until the character's position is settled.
+**Definition:** An object containing a temporary passive that is applied until the character's position is settled.  
 **Total Count:** 2
 
 <details>
@@ -4424,7 +4424,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TinkererBasicAttackSwitching`
 
 
-**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.
+**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.  
 **Total Count:** 2
 
 <details>
@@ -4446,7 +4446,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TransformOnElementInfluencex`
 
 
-**Definition:** Transforms into a specified object when influenced by a given element.
+**Definition:** Transforms into a specified object when influenced by a given element.  
 **Total Count:** 2
 
 <details>
@@ -4468,7 +4468,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Turtled`
 
 
-**Definition:** Defines the 'Turtled' form, a defensive state where the unit cannot attack or move.
+**Definition:** Defines the 'Turtled' form, a defensive state where the unit cannot attack or move.  
 **Total Count:** 2
 
 <details>
@@ -4494,7 +4494,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `WereMan`
 
 
-**Definition:** Form state for the were-man transformation, with fury swipe attack and sabertooth faction.
+**Definition:** Form state for the were-man transformation, with fury swipe attack and sabertooth faction.  
 **Total Count:** 2
 
 <details>
@@ -4521,7 +4521,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Zealot`
 
 
-**Definition:** Form state for the zealot variant of a cultist, with a stabbing attack.
+**Definition:** Form state for the zealot variant of a cultist, with a stabbing attack.  
 **Total Count:** 2
 
 <details>
@@ -4548,7 +4548,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `additional_statuses`
 
 
-**Definition:** Additional status effects applied to the spawned unit on death.
+**Definition:** Additional status effects applied to the spawned unit on death.  
 **Total Count:** 1
 
 <details>
@@ -4570,7 +4570,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToReceivedDamage`
 
 
-**Definition:** Applies a status effect to the attacker when the unit takes damage.
+**Definition:** Applies a status effect to the attacker when the unit takes damage.  
 **Total Count:** 1
 
 <details>
@@ -4590,7 +4590,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToSpells`
 
 
-**Definition:** Specifies status effects added to all spell attacks used by this unit.
+**Definition:** Specifies status effects added to all spell attacks used by this unit.  
 **Total Count:** 1
 
 <details>
@@ -4610,7 +4610,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToTrampleDamage`
 
 
-**Definition:** An object whose nested keys define statuses applied to trample damage.
+**Definition:** An object whose nested keys define statuses applied to trample damage.  
 **Total Count:** 1
 
 <details>
@@ -4630,7 +4630,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToWeapons`
 
 
-**Definition:** Specifies status effects to add to the unit's weapon attacks, with their stack counts.
+**Definition:** Specifies status effects to add to the unit's weapon attacks, with their stack counts.  
 **Total Count:** 1
 
 <details>
@@ -4652,7 +4652,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AdventureTokenPassivePool`
 
 
-**Definition:** A pool of passive definitions granted to the unit when picked up as an adventure token.
+**Definition:** A pool of passive definitions granted to the unit when picked up as an adventure token.  
 **Total Count:** 1
 
 <details>
@@ -4685,7 +4685,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AggroTargetIsGovernedByHitEffect`
 
 
-**Definition:** If set, the aggro target is determined by the unit's hit effect, with a sub-key for enemies_only.
+**Definition:** If set, the aggro target is determined by the unit's hit effect, with a sub-key for enemies_only.  
 **Total Count:** 1
 
 <details>
@@ -4706,7 +4706,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ai_if_spawned_as_enemy`
 
 
-**Definition:** Overrides the unit's AI settings when it is spawned as an enemy rather than an ally.
+**Definition:** Overrides the unit's AI settings when it is spawned as an enemy rather than an ally.  
 **Total Count:** 1
 
 <details>
@@ -4730,7 +4730,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Alert`
 
 
-**Definition:** Defines the 'Alert' form, an alerted state with a pattern brain AI.
+**Definition:** Defines the 'Alert' form, an alerted state with a pattern brain AI.  
 **Total Count:** 1
 
 <details>
@@ -4754,7 +4754,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllStatsAura`
 
 
-**Definition:** An aura that grants bonus stacks of all stats to allies within range.
+**Definition:** An aura that grants bonus stacks of all stats to allies within range.  
 **Total Count:** 1
 
 <details>
@@ -4777,7 +4777,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Attacker`
 
 
-**Definition:** Defines the 'Attacker' form, focusing on offensive actions like attacking and charging.
+**Definition:** Defines the 'Attacker' form, focusing on offensive actions like attacking and charging.  
 **Total Count:** 1
 
 <details>
@@ -4798,7 +4798,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BackflipWhenTargeted`
 
 
-**Definition:** The number of backflip charges, or an object defining its ability.
+**Definition:** The number of backflip charges, or an object defining its ability.  
 **Total Count:** 1
 
 <details>
@@ -4820,7 +4820,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BattlefieldUniqueRandomPassive`
 
 
-**Definition:** A pool of unique random passives that can be applied to each battlefield instance.
+**Definition:** A pool of unique random passives that can be applied to each battlefield instance.  
 **Total Count:** 1
 
 <details>
@@ -4845,7 +4845,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BellyFull`
 
 
-**Definition:** Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation.
+**Definition:** Defines the 'BellyFull' form, used when the unit has the Consuming status, with appropriate animation.  
 **Total Count:** 1
 
 <details>
@@ -4869,7 +4869,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BigHolding`
 
 
-**Definition:** Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status.
+**Definition:** Defines the 'BigHolding' form, a larger variant while holding an object, triggered by the Consuming status.  
 **Total Count:** 1
 
 <details>
@@ -4892,7 +4892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BigHoldingCat`
 
 
-**Definition:** Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming.
+**Definition:** Defines the 'BigHoldingCat' form, a cat-sized variant of the holding form while Consuming.  
 **Total Count:** 1
 
 <details>
@@ -4915,7 +4915,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Bully`
 
 
-**Definition:** Defines the 'Bully' form, which allows the unit to take turns and enables its passives.
+**Definition:** Defines the 'Bully' form, which allows the unit to take turns and enables its passives.  
 **Total Count:** 1
 
 <details>
@@ -4939,7 +4939,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BungaCheers`
 
 
-**Definition:** Defines cheer particle effects and sounds triggered by ally or enemy actions.
+**Definition:** Defines cheer particle effects and sounds triggered by ally or enemy actions.  
 **Total Count:** 1
 
 <details>
@@ -4964,7 +4964,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CaveWomanHasCat`
 
 
-**Definition:** Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap.
+**Definition:** Defines the 'CaveWomanHasCat' form, a variant of CaveWoman that attacks with a cat slap.  
 **Total Count:** 1
 
 <details>
@@ -4991,7 +4991,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CerberubsAggroTargetBehavior`
 
 
-**Definition:** Defines the default and alert forms used by Cerberubs when changing aggro behavior.
+**Definition:** Defines the default and alert forms used by Cerberubs when changing aggro behavior.  
 **Total Count:** 1
 
 <details>
@@ -5013,7 +5013,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CerberubsJumpBlind`
 
 
-**Definition:** Defines an AI virtual ability that makes Cerberubs jump with blind decision weights.
+**Definition:** Defines an AI virtual ability that makes Cerberubs jump with blind decision weights.  
 **Total Count:** 1
 
 <details>
@@ -5035,7 +5035,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CerberubsJumpNormal`
 
 
-**Definition:** Defines an AI virtual ability that makes Cerberubs jump with default decision weights.
+**Definition:** Defines an AI virtual ability that makes Cerberubs jump with default decision weights.  
 **Total Count:** 1
 
 <details>
@@ -5057,7 +5057,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToBackflip`
 
 
-**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.
+**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.  
 **Total Count:** 1
 
 <details>
@@ -5079,7 +5079,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToFormChangeOnAbilityDamage`
 
 
-**Definition:** A chance to transform into a different form when damaged by an ability.
+**Definition:** A chance to transform into a different form when damaged by an ability.  
 **Total Count:** 1
 
 <details>
@@ -5101,7 +5101,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChaosBossFormChangeGuide`
 
 
-**Definition:** Defines active and passive piece sets and a health threshold for the Chaos boss's form change pattern.
+**Definition:** Defines active and passive piece sets and a health threshold for the Chaos boss's form change pattern.  
 **Total Count:** 1
 
 <details>
@@ -5124,7 +5124,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChaosBossPieces`
 
 
-**Definition:** Defines the list of active and passive piece tags for the Chaos boss fight.
+**Definition:** Defines the list of active and passive piece tags for the Chaos boss fight.  
 **Total Count:** 1
 
 <details>
@@ -5146,7 +5146,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChaosHeadDropIn`
 
 
-**Definition:** Defines the tag, spawn ability, and music for the Chaos head's drop-in sequence.
+**Definition:** Defines the tag, spawn ability, and music for the Chaos head's drop-in sequence.  
 **Total Count:** 1
 
 <details>
@@ -5169,7 +5169,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Charging`
 
 
-**Definition:** Defines the 'Charging' form, a wind-up state for a powerful attack.
+**Definition:** Defines the 'Charging' form, a wind-up state for a powerful attack.  
 **Total Count:** 1
 
 <details>
@@ -5194,7 +5194,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Close`
 
 
-**Definition:** Defines the 'Close' form, which triggers GSOpen ability upon reaction.
+**Definition:** Defines the 'Close' form, which triggers GSOpen ability upon reaction.  
 **Total Count:** 1
 
 <details>
@@ -5216,7 +5216,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CloseConvert`
 
 
-**Definition:** Defines an AI virtual ability that moves close and uses the MarshmallowConvert ability.
+**Definition:** Defines an AI virtual ability that moves close and uses the MarshmallowConvert ability.  
 **Total Count:** 1
 
 <details>
@@ -5238,7 +5238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_BadRoll`
 
 
-**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.
+**Definition:** An object containing an `odds` value and effects that are applied when a random roll succeeds.  
 **Total Count:** 1
 
 <details>
@@ -5261,7 +5261,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_HasKnockback`
 
 
-**Definition:** An object containing actions that execute if the incoming damage has knockback.
+**Definition:** An object containing actions that execute if the incoming damage has knockback.  
 **Total Count:** 1
 
 <details>
@@ -5286,7 +5286,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_IsPhysicalAttack`
 
 
-**Definition:** A conditional block that executes its child actions only if the triggering event is a physical attack.
+**Definition:** A conditional block that executes its child actions only if the triggering event is a physical attack.  
 **Total Count:** 1
 
 <details>
@@ -5311,7 +5311,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CounterAttack`
 
 
-**Definition:** Specifies the ability used when the unit counterattacks after being hit.
+**Definition:** Specifies the ability used when the unit counterattacks after being hit.  
 **Total Count:** 1
 
 <details>
@@ -5331,7 +5331,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CreateGlobalModifiers`
 
 
-**Definition:** Defines global gameplay modifiers to activate.
+**Definition:** Defines global gameplay modifiers to activate.  
 **Total Count:** 1
 
 <details>
@@ -5354,7 +5354,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Damaged`
 
 
-**Definition:** Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack.
+**Definition:** Defines the 'Damaged' form, an injured state with a specific AI pattern to drink and attack.  
 **Total Count:** 1
 
 <details>
@@ -5375,7 +5375,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Default_Ceiling`
 
 
-**Definition:** Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders.
+**Definition:** Defines the 'Default_Ceiling' form for SpiderQueen, with AI pattern to spawn spiders.  
 **Total Count:** 1
 
 <details>
@@ -5399,7 +5399,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Default_Ground`
 
 
-**Definition:** Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack.
+**Definition:** Defines the 'Default_Ground' form for SpiderQueen, with AI pattern to web and attack.  
 **Total Count:** 1
 
 <details>
@@ -5423,7 +5423,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DelayedAutoRevive`
 
 
-**Definition:** Configures an automatic revival after a delay, with specified rounds and health percentage.
+**Definition:** Configures an automatic revival after a delay, with specified rounds and health percentage.  
 **Total Count:** 1
 
 <details>
@@ -5445,7 +5445,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DesireMech`
 
 
-**Definition:** Defines the 'DesireMech' form, a mech suit form with its own AI pattern.
+**Definition:** Defines the 'DesireMech' form, a mech suit form with its own AI pattern.  
 **Total Count:** 1
 
 <details>
@@ -5466,7 +5466,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DiceBehavior`
 
 
-**Definition:** Defines the dice size and knockback damage for the Dice enemy.
+**Definition:** Defines the dice size and knockback damage for the Dice enemy.  
 **Total Count:** 1
 
 <details>
@@ -5488,7 +5488,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Die`
 
 
-**Definition:** If set, kills the target immediately.
+**Definition:** If set, kills the target immediately.  
 **Total Count:** 1
 
 <details>
@@ -5511,7 +5511,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DiesToPiercingAndSpikes`
 
 
-**Definition:** Makes the unit take lethal damage from piercing attacks and spike terrain.
+**Definition:** Makes the unit take lethal damage from piercing attacks and spike terrain.  
 **Total Count:** 1
 
 <details>
@@ -5532,7 +5532,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DodgeWhenTargeted`
 
 
-**Definition:** An object defining the ability and effects triggered when the unit is targeted for an attack.
+**Definition:** An object defining the ability and effects triggered when the unit is targeted for an attack.  
 **Total Count:** 1
 
 <details>
@@ -5553,7 +5553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Drunker`
 
 
-**Definition:** Defines the 'Drunker' form, a drunken state with altered animation.
+**Definition:** Defines the 'Drunker' form, a drunken state with altered animation.  
 **Total Count:** 1
 
 <details>
@@ -5574,7 +5574,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DualSword`
 
 
-**Definition:** Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack.
+**Definition:** Defines the 'DualSword' form of TheDestroyer, increasing move speed and using a dual sword attack.  
 **Total Count:** 1
 
 <details>
@@ -5601,7 +5601,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DualSword_Primed`
 
 
-**Definition:** Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation.
+**Definition:** Defines the 'DualSword_Primed' form, a powered-up dual sword state with holy animation.  
 **Total Count:** 1
 
 <details>
@@ -5628,7 +5628,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Dumb`
 
 
-**Definition:** Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV.
+**Definition:** Defines the 'Dumb' form, which can be either a numeric value or an object with passives that disable spells and turn off TV.  
 **Total Count:** 1
 
 <details>
@@ -5651,7 +5651,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DybbukPossessionFallback`
 
 
-**Definition:** An object specifying the fallback form and exit ability used when possession fails.
+**Definition:** An object specifying the fallback form and exit ability used when possession fails.  
 **Total Count:** 1
 
 <details>
@@ -5673,7 +5673,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `eat_damage`
 
 
-**Definition:** An object defining the damage properties of the eat attack.
+**Definition:** An object defining the damage properties of the eat attack.  
 **Total Count:** 1
 
 <details>
@@ -5700,7 +5700,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Else`
 
 
-**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
 **Total Count:** 1
 
 <details>
@@ -5723,7 +5723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `exit_animations`
 
 
-**Definition:** An object mapping exit conditions to their corresponding animation names.
+**Definition:** An object mapping exit conditions to their corresponding animation names.  
 **Total Count:** 1
 
 <details>
@@ -5744,7 +5744,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Explody`
 
 
-**Definition:** Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move.
+**Definition:** Defines the 'Explody' form, an explosive state that uses ToxExplode attack and cannot move.  
 **Total Count:** 1
 
 <details>
@@ -5770,7 +5770,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FaceAwayLastDamage`
 
 
-**Definition:** An object defining animation overrides for the last damage event when the unit faces away.
+**Definition:** An object defining animation overrides for the last damage event when the unit faces away.  
 **Total Count:** 1
 
 <details>
@@ -5793,7 +5793,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FightPhase`
 
 
-**Definition:** Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns.
+**Definition:** Defines the 'FightPhase' form, a combat form with float move and shoot attack, taking turns.  
 **Total Count:** 1
 
 <details>
@@ -5819,7 +5819,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossBeamQueue`
 
 
-**Definition:** An object defining the queue of beam ability actions for the final boss form.
+**Definition:** An object defining the queue of beam ability actions for the final boss form.  
 **Total Count:** 1
 
 <details>
@@ -5842,7 +5842,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossBecomeTheChild`
 
 
-**Definition:** An object defining the transformation and environment changes when the boss becomes TheChild.
+**Definition:** An object defining the transformation and environment changes when the boss becomes TheChild.  
 **Total Count:** 1
 
 <details>
@@ -5866,7 +5866,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossHitCountdownBoris`
 
 
-**Definition:** An object defining the countdown status effect properties for the Boris phase, including stacks, icons, and forced abilities.
+**Definition:** An object defining the countdown status effect properties for the Boris phase, including stacks, icons, and forced abilities.  
 **Total Count:** 1
 
 <details>
@@ -5891,7 +5891,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossHitCountdownExplosive`
 
 
-**Definition:** An object defining the countdown status effect properties for the Explosive phase, including stacks, icons, and forced abilities.
+**Definition:** An object defining the countdown status effect properties for the Explosive phase, including stacks, icons, and forced abilities.  
 **Total Count:** 1
 
 `damage_instance`<br>`spell`<br>`self_damage`
@@ -5917,7 +5917,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossHitCountdownHoly`
 
 
-**Definition:** An object defining the countdown status effect properties for the Holy phase, including stacks and icons.
+**Definition:** An object defining the countdown status effect properties for the Holy phase, including stacks and icons.  
 **Total Count:** 1
 
 <details>
@@ -5940,7 +5940,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossPupils`
 
 
-**Definition:** An object configuring the visual tracking of the final boss's pupils, including radius, head position, and teleport tracking.
+**Definition:** An object configuring the visual tracking of the final boss's pupils, including radius, head position, and teleport tracking.  
 **Total Count:** 1
 
 <details>
@@ -5967,7 +5967,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossShieldHealth`
 
 
-**Definition:** An object defining the shield health thresholds per visual state for the final boss.
+**Definition:** An object defining the shield health thresholds per visual state for the final boss.  
 **Total Count:** 1
 
 <details>
@@ -5989,7 +5989,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FinalBossSyncAnimations`
 
 
-**Definition:** An object defining animation synchronization with another character, including form change abilities.
+**Definition:** An object defining animation synchronization with another character, including form change abilities.  
 **Total Count:** 1
 
 <details>
@@ -6011,7 +6011,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Flop`
 
 
-**Definition:** Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit.
+**Definition:** Defines the initial flopped down state, using animation suffix 'Down' and a pattern AI that requires 4 wiggles to exit.  
 **Total Count:** 1
 
 <details>
@@ -6035,7 +6035,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Flop2`
 
 
-**Definition:** Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover.
+**Definition:** Defines a subsequent flopped down state triggered on hit, with variable wiggles (2-6) to recover.  
 **Total Count:** 1
 
 <details>
@@ -6059,7 +6059,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FlushBubs`
 
 
-**Definition:** Defines a form granting an immediate ability reaction for Cerberubs shotgun.
+**Definition:** Defines a form granting an immediate ability reaction for Cerberubs shotgun.  
 **Total Count:** 1
 
 <details>
@@ -6082,7 +6082,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FlushHost`
 
 
-**Definition:** Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage.
+**Definition:** Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage.  
 **Total Count:** 1
 
 <details>
@@ -6106,7 +6106,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FlushNettle`
 
 
-**Definition:** Defines a form that gains thorns and kinetic spikes after an enemy casts a spell.
+**Definition:** Defines a form that gains thorns and kinetic spikes after an enemy casts a spell.  
 **Total Count:** 1
 
 <details>
@@ -6129,7 +6129,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FoodMove`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit toward food using the CaveBabyFoodMove ability.
+**Definition:** Defines an AI virtual ability that moves the unit toward food using the CaveBabyFoodMove ability.  
 **Total Count:** 1
 
 <details>
@@ -6151,7 +6151,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ForceTrample`
 
 
-**Definition:** Defines an AI virtual ability that forces the unit to trample carelessly using the BirthwortTrample ability.
+**Definition:** Defines an AI virtual ability that forces the unit to trample carelessly using the BirthwortTrample ability.  
 **Total Count:** 1
 
 <details>
@@ -6173,7 +6173,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GainDisorderFromPool`
 
 
-**Definition:** Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance.
+**Definition:** Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance.  
 **Total Count:** 1
 
 <details>
@@ -6195,7 +6195,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Grappling`
 
 
-**Definition:** Defines a grappling form with a specific animation suffix and exit animations.
+**Definition:** Defines a grappling form with a specific animation suffix and exit animations.  
 **Total Count:** 1
 
 <details>
@@ -6217,7 +6217,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Grown`
 
 
-**Definition:** Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold.
+**Definition:** Defines the grown form with a custom attack, name, UI floater offset, and a health weak threshold.  
 **Total Count:** 1
 
 <details>
@@ -6245,7 +6245,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GuaranteedJackpot`
 
 
-**Definition:** Defines a form that guarantees a jackpot coin result from slot machine rolls.
+**Definition:** Defines a form that guarantees a jackpot coin result from slot machine rolls.  
 **Total Count:** 1
 
 <details>
@@ -6265,7 +6265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Guarding`
 
 
-**Definition:** Defines a guarding form with a high brace passive.
+**Definition:** Defines a guarding form with a high brace passive.  
 **Total Count:** 1
 
 <details>
@@ -6289,7 +6289,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HalfDead`
 
 
-**Definition:** Defines the half-dead form with reduced movement and a dash attack.
+**Definition:** Defines the half-dead form with reduced movement and a dash attack.  
 **Total Count:** 1
 
 <details>
@@ -6314,7 +6314,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HasDeadCat`
 
 
-**Definition:** Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active.
+**Definition:** Defines a form when Lenny's cat is dead, with a slap attack and conditional form change while the status is active.  
 **Total Count:** 1
 
 <details>
@@ -6339,7 +6339,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HasRock`
 
 
-**Definition:** Defines a form where the unit has a rock, with a bash attack.
+**Definition:** Defines a form where the unit has a rock, with a bash attack.  
 **Total Count:** 1
 
 <details>
@@ -6362,7 +6362,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Headless`
 
 
-**Definition:** Defines a headless form with increased movement.
+**Definition:** Defines a headless form with increased movement.  
 **Total Count:** 1
 
 <details>
@@ -6386,7 +6386,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HealNeighborsEachTurn`
 
 
-**Definition:** An object defining the amount and target filtering for healing adjacent units each turn.
+**Definition:** An object defining the amount and target filtering for healing adjacent units each turn.  
 **Total Count:** 1
 
 <details>
@@ -6408,7 +6408,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Hint_CrackedVisuals`
 
 
-**Definition:** Defines a visual state with cracked animation suffix.
+**Definition:** Defines a visual state with cracked animation suffix.  
 **Total Count:** 1
 
 <details>
@@ -6429,7 +6429,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Hint_CrackedVisuals2`
 
 
-**Definition:** Defines a visual state with charging cracked animation.
+**Definition:** Defines a visual state with charging cracked animation.  
 **Total Count:** 1
 
 <details>
@@ -6450,7 +6450,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Hint_CrackedVisuals3`
 
 
-**Definition:** Defines a visual state with swallowed cracked animation.
+**Definition:** Defines a visual state with swallowed cracked animation.  
 **Total Count:** 1
 
 <details>
@@ -6471,7 +6471,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HitlerExecute`
 
 
-**Definition:** An object defining the tag, ability, and health threshold for executing a clone.
+**Definition:** An object defining the tag, ability, and health threshold for executing a clone.  
 **Total Count:** 1
 
 <details>
@@ -6495,7 +6495,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HPAltStates`
 
 
-**Definition:** An object defining alternate visual frames based on current HP thresholds.
+**Definition:** An object defining alternate visual frames based on current HP thresholds.  
 **Total Count:** 1
 
 <details>
@@ -6517,7 +6517,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `HumanDead`
 
 
-**Definition:** Defines a form when the human half is dead, with a spin attack and custom tooltip.
+**Definition:** Defines a form when the human half is dead, with a spin attack and custom tooltip.  
 **Total Count:** 1
 
 <details>
@@ -6540,7 +6540,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `InfiniteRebirth`
 
 
-**Definition:** Specifies the health and effects for unlimited rebirth upon death.
+**Definition:** Specifies the health and effects for unlimited rebirth upon death.  
 **Total Count:** 1
 
 <details>
@@ -6563,7 +6563,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `InitialPhase`
 
 
-**Definition:** Defines the initial phase form with a float move, shoot attack, and the ability to take turns.
+**Definition:** Defines the initial phase form with a float move, shoot attack, and the ability to take turns.  
 **Total Count:** 1
 
 <details>
@@ -6589,7 +6589,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Insane_Ceiling`
 
 
-**Definition:** Defines the insane ceiling form with pattern AI and animation suffix.
+**Definition:** Defines the insane ceiling form with pattern AI and animation suffix.  
 **Total Count:** 1
 
 <details>
@@ -6614,7 +6614,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Insane_Ground`
 
 
-**Definition:** Defines the insane ground form with pattern AI and animation suffix.
+**Definition:** Defines the insane ground form with pattern AI and animation suffix.  
 **Total Count:** 1
 
 <details>
@@ -6639,7 +6639,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JohnnyBubs`
 
 
-**Definition:** Defines a form granting an immediate ability reaction for Cerberubs shotgun.
+**Definition:** Defines a form granting an immediate ability reaction for Cerberubs shotgun.  
 **Total Count:** 1
 
 <details>
@@ -6662,7 +6662,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JohnnyHost`
 
 
-**Definition:** Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage.
+**Definition:** Defines a host form with a partial animation suffix and a reflect projectiles passive that deals 2 self-damage.  
 **Total Count:** 1
 
 <details>
@@ -6686,7 +6686,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JohnnyNeedsWashing`
 
 
-**Definition:** An object specifying the form names for washed and unwashed states.
+**Definition:** An object specifying the form names for washed and unwashed states.  
 **Total Count:** 1
 
 <details>
@@ -6708,7 +6708,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `JohnnyNettle`
 
 
-**Definition:** Defines a form that gains thorns and kinetic spikes after an enemy casts a spell.
+**Definition:** Defines a form that gains thorns and kinetic spikes after an enemy casts a spell.  
 **Total Count:** 1
 
 <details>
@@ -6731,7 +6731,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Joystick`
 
 
-**Definition:** Defines a form with joystick animation and an immediate ability reaction (fumble even/odd).
+**Definition:** Defines a form with joystick animation and an immediate ability reaction (fumble even/odd).  
 **Total Count:** 1
 
 <details>
@@ -6754,7 +6754,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LeapClose`
 
 
-**Definition:** Defines an AI virtual ability that makes the unit leap toward its aggro target.
+**Definition:** Defines an AI virtual ability that makes the unit leap toward its aggro target.  
 **Total Count:** 1
 
 <details>
@@ -6776,7 +6776,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Lifted`
 
 
-**Definition:** Defines a lifted form with no attack or movement options.
+**Definition:** Defines a lifted form with no attack or movement options.  
 **Total Count:** 1
 
 <details>
@@ -6802,7 +6802,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Lit`
 
 
-**Definition:** Defines a lit form that changes when wind element influence is applied.
+**Definition:** Defines a lit form that changes when wind element influence is applied.  
 **Total Count:** 1
 
 <details>
@@ -6825,7 +6825,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LowerAmbientLight`
 
 
-**Definition:** If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly.
+**Definition:** If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly.  
 **Total Count:** 1
 
 <details>
@@ -6847,7 +6847,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MegaDinoDropController`
 
 
-**Definition:** An object defining the abilities and stable leg count for the Mega Dino's leg drop sequence.
+**Definition:** An object defining the abilities and stable leg count for the Mega Dino's leg drop sequence.  
 **Total Count:** 1
 
 <details>
@@ -6871,7 +6871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ModularPickup`
 
 
-**Definition:** An object defining the effects and sounds triggered when the unit is picked up.
+**Definition:** An object defining the effects and sounds triggered when the unit is picked up.  
 **Total Count:** 1
 
 <details>
@@ -6894,7 +6894,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MonkCatReactionAbilities`
 
 
-**Definition:** A set of mappings from action types (move, attack, spell, trinket) to the corresponding ability IDs the MonkCat will use for reactions.
+**Definition:** A set of mappings from action types (move, attack, spell, trinket) to the corresponding ability IDs the MonkCat will use for reactions.  
 **Total Count:** 1
 
 <details>
@@ -6919,7 +6919,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MotherGrowController`
 
 
-**Definition:** Controls the growth of tumors on The Mother, including the tumor object, damage type, damage amount, and whether it pierces defense when eating damage.
+**Definition:** Controls the growth of tumors on The Mother, including the tumor object, damage type, damage amount, and whether it pierces defense when eating damage.  
 **Total Count:** 1
 
 <details>
@@ -6941,7 +6941,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MotherTumorPassive`
 
 
-**Definition:** Defines the passive behavior for a MotherTumor, including the forms considered for pass/receive, the pass and receive animations, and the grow ability.
+**Definition:** Defines the passive behavior for a MotherTumor, including the forms considered for pass/receive, the pass and receive animations, and the grow ability.  
 **Total Count:** 1
 
 <details>
@@ -6967,7 +6967,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Mount`
 
 
-**Definition:** Defines the entering and ejecting abilities for a mountable unit, along with its death rattle ability.
+**Definition:** Defines the entering and ejecting abilities for a mountable unit, along with its death rattle ability.  
 **Total Count:** 1
 
 <details>
@@ -6989,7 +6989,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Mounted`
 
 
-**Definition:** Defines a mounted form with 'Cat' animation suffix.
+**Definition:** Defines a mounted form with 'Cat' animation suffix.  
 **Total Count:** 1
 
 <details>
@@ -7010,7 +7010,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MouthFull`
 
 
-**Definition:** Defines a form with mouth full animation that changes while the Consuming status is active.
+**Definition:** Defines a form with mouth full animation that changes while the Consuming status is active.  
 **Total Count:** 1
 
 <details>
@@ -7034,7 +7034,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveAfterAnyAttemptedAttack`
 
 
-**Definition:** Defines the movement behavior (weights and abilities) used after any attempted attack.
+**Definition:** Defines the movement behavior (weights and abilities) used after any attempted attack.  
 **Total Count:** 1
 
 <details>
@@ -7055,7 +7055,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveAwayFromDamageSource`
 
 
-**Definition:** Specifies the move ability used to flee from the source of damage, or an object with `move_ability`.
+**Definition:** Specifies the move ability used to flee from the source of damage, or an object with `move_ability`.  
 **Total Count:** 1
 
 <details>
@@ -7076,7 +7076,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveAwayWhenEnemyAdjacent`
 
 
-**Definition:** Defines the movement behavior (move_ability, weights, and whether it triggers once per turn) when an enemy is adjacent.
+**Definition:** Defines the movement behavior (move_ability, weights, and whether it triggers once per turn) when an enemy is adjacent.  
 **Total Count:** 1
 
 <details>
@@ -7099,7 +7099,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForBarrage`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit to a position suitable for a barrage ability.
+**Definition:** Defines an AI virtual ability that moves the unit to a position suitable for a barrage ability.  
 **Total Count:** 1
 
 <details>
@@ -7122,7 +7122,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForDash`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit into position for a dash attack.
+**Definition:** Defines an AI virtual ability that moves the unit into position for a dash attack.  
 **Total Count:** 1
 
 <details>
@@ -7145,7 +7145,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForGrass`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit to stomp and eat grass.
+**Definition:** Defines an AI virtual ability that moves the unit to stomp and eat grass.  
 **Total Count:** 1
 
 <details>
@@ -7168,7 +7168,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForPounce`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit into position for a pounce attack.
+**Definition:** Defines an AI virtual ability that moves the unit into position for a pounce attack.  
 **Total Count:** 1
 
 <details>
@@ -7191,7 +7191,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveForSpin`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit to set up a spin throw.
+**Definition:** Defines an AI virtual ability that moves the unit to set up a spin throw.  
 **Total Count:** 1
 
 <details>
@@ -7214,7 +7214,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveOneForPuke`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit one step for a puke ability.
+**Definition:** Defines an AI virtual ability that moves the unit one step for a puke ability.  
 **Total Count:** 1
 
 <details>
@@ -7237,7 +7237,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveSpaced`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit while maintaining a specific distance.
+**Definition:** Defines an AI virtual ability that moves the unit while maintaining a specific distance.  
 **Total Count:** 1
 
 <details>
@@ -7259,7 +7259,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveToHead`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit to the head of a target to grab it.
+**Definition:** Defines an AI virtual ability that moves the unit to the head of a target to grab it.  
 **Total Count:** 1
 
 <details>
@@ -7282,7 +7282,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveTowards`
 
 
-**Definition:** Defines an AI virtual ability that moves the unit toward its target.
+**Definition:** Defines an AI virtual ability that moves the unit toward its target.  
 **Total Count:** 1
 
 <details>
@@ -7305,7 +7305,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MultiSpawnOnDeath`
 
 
-**Definition:** Specifies the object to spawn and the range of number of objects to spawn on death.
+**Definition:** Specifies the object to spawn and the range of number of objects to spawn on death.  
 **Total Count:** 1
 
 <details>
@@ -7327,7 +7327,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NCGravecrawlFAR`
 
 
-**Definition:** Defines an AI virtual ability that makes a NecroCat gravecrawl while staying far from enemies.
+**Definition:** Defines an AI virtual ability that makes a NecroCat gravecrawl while staying far from enemies.  
 **Total Count:** 1
 
 <details>
@@ -7349,7 +7349,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NoEyes`
 
 
-**Definition:** Defines a form with no eyes animation.
+**Definition:** Defines a form with no eyes animation.  
 **Total Count:** 1
 
 <details>
@@ -7370,7 +7370,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NormalFull`
 
 
-**Definition:** As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index.
+**Definition:** As an object, defines the normal full form with a spit attack and conditional form change. As an integer, specifies alt graphics index.  
 **Total Count:** 1
 
 <details>
@@ -7395,7 +7395,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `NoStick`
 
 
-**Definition:** Defines a form without a stick, using a jab attack with pattern AI.
+**Definition:** Defines a form without a stick, using a jab attack with pattern AI.  
 **Total Count:** 1
 
 <details>
@@ -7417,7 +7417,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Nothing`
 
 
-**Definition:** Defines the behavior when nothing is captured, typically just an animation.
+**Definition:** Defines the behavior when nothing is captured, typically just an animation.  
 **Total Count:** 1
 
 <details>
@@ -7438,7 +7438,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Obey`
 
 
-**Definition:** As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count).
+**Definition:** As an object, defines an obey form that disables attacks and reacts with TV off. As an integer, defines a value (e.g., weight or count).  
 **Total Count:** 1
 
 <details>
@@ -7461,7 +7461,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Off`
 
 
-**Definition:** Defines an off form with a 'Off' animation suffix.
+**Definition:** Defines an off form with a 'Off' animation suffix.  
 **Total Count:** 1
 
 <details>
@@ -7482,7 +7482,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `OffScreen`
 
 
-**Definition:** Defines an off-screen form that does not take turns and drops in chaos heads.
+**Definition:** Defines an off-screen form that does not take turns and drops in chaos heads.  
 **Total Count:** 1
 
 <details>
@@ -7505,7 +7505,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `OneEye`
 
 
-**Definition:** Defines a form with one eye that triggers an ability at 40% health threshold.
+**Definition:** Defines a form with one eye that triggers an ability at 40% health threshold.  
 **Total Count:** 1
 
 <details>
@@ -7528,7 +7528,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Open`
 
 
-**Definition:** Defines an open form with increased movement and a specific attack.
+**Definition:** Defines an open form with increased movement and a specific attack.  
 **Total Count:** 1
 
 <details>
@@ -7553,7 +7553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `OpenCat`
 
 
-**Definition:** Defines an open cat form that changes when the Consuming status is active.
+**Definition:** Defines an open cat form that changes when the Consuming status is active.  
 **Total Count:** 1
 
 <details>
@@ -7576,7 +7576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `other_form_change_abilities`
 
 
-**Definition:** An object mapping form names to the other character's form change abilities.
+**Definition:** An object mapping form names to the other character's form change abilities.  
 **Total Count:** 1
 
 <details>
@@ -7599,7 +7599,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Out`
 
 
-**Definition:** Defines a form that is 'out' with a ground flopper movement passive.
+**Definition:** Defines a form that is 'out' with a ground flopper movement passive.  
 **Total Count:** 1
 
 <details>
@@ -7621,7 +7621,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenAffectedByElement`
 
 
-**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.
+**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.  
 **Total Count:** 1
 
 <details>
@@ -7644,7 +7644,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenDead`
 
 
-**Definition:** Passive effects that remain active while the unit is dead.
+**Definition:** Passive effects that remain active while the unit is dead.  
 **Total Count:** 1
 
 <details>
@@ -7664,7 +7664,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Possessing`
 
 
-**Definition:** Form state when the unit is possessing another entity.
+**Definition:** Form state when the unit is possessing another entity.  
 **Total Count:** 1
 
 <details>
@@ -7688,7 +7688,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Primed`
 
 
-**Definition:** Form state representing the unit being primed, with specific attack and AI behavior.
+**Definition:** Form state representing the unit being primed, with specific attack and AI behavior.  
 **Total Count:** 1
 
 <details>
@@ -7713,7 +7713,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp2`
 
 
-**Definition:** Form state for the second stage of pulping, with no attacks or movement.
+**Definition:** Form state for the second stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7741,7 +7741,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp3`
 
 
-**Definition:** Form state for the third stage of pulping, with no attacks or movement.
+**Definition:** Form state for the third stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7769,7 +7769,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp4`
 
 
-**Definition:** Form state for the fourth stage of pulping, with no attacks or movement.
+**Definition:** Form state for the fourth stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7797,7 +7797,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp5`
 
 
-**Definition:** Form state for the fifth stage of pulping, with no attacks or movement.
+**Definition:** Form state for the fifth stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7825,7 +7825,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp6`
 
 
-**Definition:** Form state for the sixth stage of pulping, with no attacks or movement.
+**Definition:** Form state for the sixth stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7853,7 +7853,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Pulp7`
 
 
-**Definition:** Form state for the seventh stage of pulping, with no attacks or movement.
+**Definition:** Form state for the seventh stage of pulping, with no attacks or movement.  
 **Total Count:** 1
 
 <details>
@@ -7881,7 +7881,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
 **Total Count:** 1
 
 <details>
@@ -7903,7 +7903,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ReturnA`
 
 
-**Definition:** Defines an AI virtual ability that makes a HangerBot return to a close position.
+**Definition:** Defines an AI virtual ability that makes a HangerBot return to a close position.  
 **Total Count:** 1
 
 <details>
@@ -7925,7 +7925,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RevengeDamage`
 
 
-**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.  
 **Total Count:** 1
 
 <details>
@@ -7948,7 +7948,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `round_start_bonusturn_pattern`
 
 
-**Definition:** The action sequence the AI executes at the start of the round as a bonus turn.
+**Definition:** The action sequence the AI executes at the start of the round as a bonus turn.  
 **Total Count:** 1
 
 <details>
@@ -8041,7 +8041,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RunFar`
 
 
-**Definition:** Defines an AI virtual ability that makes the unit run far away.
+**Definition:** Defines an AI virtual ability that makes the unit run far away.  
 **Total Count:** 1
 
 <details>
@@ -8063,7 +8063,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RunWhenLastPlayerCatIsCharmed`
 
 
-**Definition:** Defines the behavior (including mid-turn decision allowance and legacy save key) for fleeing when the last player cat is charmed.
+**Definition:** Defines the behavior (including mid-turn decision allowance and legacy save key) for fleeing when the last player cat is charmed.  
 **Total Count:** 1
 
 <details>
@@ -8085,7 +8085,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ScalingAttackAnimation`
 
 
-**Definition:** Maps attack animations to damage thresholds; when the unit's attack stat reaches a threshold, the corresponding animation overrides the default.
+**Definition:** Maps attack animations to damage thresholds; when the unit's attack stat reaches a threshold, the corresponding animation overrides the default.  
 **Total Count:** 1
 
 <details>
@@ -8107,7 +8107,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SharePickups`
 
 
-**Definition:** If 1 or an object with include_coins, makes the unit share pickups with nearby allies.
+**Definition:** If 1 or an object with include_coins, makes the unit share pickups with nearby allies.  
 **Total Count:** 1
 
 <details>
@@ -8128,7 +8128,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Sitting`
 
 
-**Definition:** Form state where the unit is sitting, with no movement or attack.
+**Definition:** Form state where the unit is sitting, with no movement or attack.  
 **Total Count:** 1
 
 <details>
@@ -8155,7 +8155,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SkipFirstRounds`
 
 
-**Definition:** Determines the number of initial rounds to skip and the chance per round of 'popping' (becoming active).
+**Definition:** Determines the number of initial rounds to skip and the chance per round of 'popping' (becoming active).  
 **Total Count:** 1
 
 <details>
@@ -8177,7 +8177,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmallHolding`
 
 
-**Definition:** Form state when the unit is holding a small object, triggering a form change while consuming.
+**Definition:** Form state when the unit is holding a small object, triggering a form change while consuming.  
 **Total Count:** 1
 
 <details>
@@ -8200,7 +8200,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmallHoldingCat`
 
 
-**Definition:** Form state when the unit is holding a cat, triggering a form change while consuming.
+**Definition:** Form state when the unit is holding a cat, triggering a form change while consuming.  
 **Total Count:** 1
 
 <details>
@@ -8223,7 +8223,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawningPhase`
 
 
-**Definition:** Form state for the spawning phase, where the unit is immobile and cannot take turns.
+**Definition:** Form state for the spawning phase, where the unit is immobile and cannot take turns.  
 **Total Count:** 1
 
 <details>
@@ -8246,7 +8246,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpewerAltGraphics`
 
 
-**Definition:** Maps different Spewer liquid types (Normal, Fire, Tar) to their corresponding alternate graphic indices.
+**Definition:** Maps different Spewer liquid types (Normal, Fire, Tar) to their corresponding alternate graphic indices.  
 **Total Count:** 1
 
 <details>
@@ -8272,7 +8272,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Brace`
 
 
-**Definition:** A passive group granting the Brace ability and cosmetic changes.
+**Definition:** A passive group granting the Brace ability and cosmetic changes.  
 **Total Count:** 1
 
 <details>
@@ -8296,7 +8296,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Counter`
 
 
-**Definition:** A passive group granting a counter attack and a bleed effect on basic attacks.
+**Definition:** A passive group granting a counter attack and a bleed effect on basic attacks.  
 **Total Count:** 1
 
 <details>
@@ -8321,7 +8321,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Damage`
 
 
-**Definition:** A passive group increasing damage and decreasing max health with cosmetic changes.
+**Definition:** A passive group increasing damage and decreasing max health with cosmetic changes.  
 **Total Count:** 1
 
 <details>
@@ -8346,7 +8346,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_DoubleHead`
 
 
-**Definition:** A passive group granting an extra dispersed turn and cosmetic changes.
+**Definition:** A passive group granting an extra dispersed turn and cosmetic changes.  
 **Total Count:** 1
 
 <details>
@@ -8370,7 +8370,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Fire`
 
 
-**Definition:** A passive group granting fire immunity and a lava shot basic attack.
+**Definition:** A passive group granting fire immunity and a lava shot basic attack.  
 **Total Count:** 1
 
 <details>
@@ -8396,7 +8396,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Health`
 
 
-**Definition:** A passive group increasing max health, reducing speed, and scaling size.
+**Definition:** A passive group increasing max health, reducing speed, and scaling size.  
 **Total Count:** 1
 
 <details>
@@ -8422,7 +8422,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Holy`
 
 
-**Definition:** A passive group granting a divine shield and cosmetic changes.
+**Definition:** A passive group granting a divine shield and cosmetic changes.  
 **Total Count:** 1
 
 <details>
@@ -8446,7 +8446,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Ice`
 
 
-**Definition:** A passive group granting ice immunity and an ice breath basic attack.
+**Definition:** A passive group granting ice immunity and an ice breath basic attack.  
 **Total Count:** 1
 
 <details>
@@ -8473,7 +8473,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Lightning`
 
 
-**Definition:** A passive group granting electric immunity and a lightning dash basic attack.
+**Definition:** A passive group granting electric immunity and a lightning dash basic attack.  
 **Total Count:** 1
 
 <details>
@@ -8499,7 +8499,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Mirror`
 
 
-**Definition:** A passive group granting projectile reflection and random magic missile each turn.
+**Definition:** A passive group granting projectile reflection and random magic missile each turn.  
 **Total Count:** 1
 
 <details>
@@ -8524,7 +8524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Speed`
 
 
-**Definition:** A passive group increasing speed, reducing damage, and scaling size.
+**Definition:** A passive group increasing speed, reducing damage, and scaling size.  
 **Total Count:** 1
 
 <details>
@@ -8550,7 +8550,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StacyMutant_Thorns`
 
 
-**Definition:** A passive group granting thorns damage and cosmetic changes.
+**Definition:** A passive group granting thorns damage and cosmetic changes.  
 **Total Count:** 1
 
 <details>
@@ -8574,7 +8574,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Standing`
 
 
-**Definition:** Form state where the unit is standing, with default movement and attack.
+**Definition:** Form state where the unit is standing, with default movement and attack.  
 **Total Count:** 1
 
 <details>
@@ -8600,7 +8600,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Standing2`
 
 
-**Definition:** Form state where the unit is standing with a jumping movement ability.
+**Definition:** Form state where the unit is standing with a jumping movement ability.  
 **Total Count:** 1
 
 <details>
@@ -8626,7 +8626,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Start_Ceiling`
 
 
-**Definition:** Form state for starting on the ceiling, with a form change trigger when entering the map.
+**Definition:** Form state for starting on the ceiling, with a form change trigger when entering the map.  
 **Total Count:** 1
 
 <details>
@@ -8648,7 +8648,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAfterXTurns`
 
 
-**Definition:** Applies a status effect or forces an ability usage after a set number of turns.
+**Definition:** Applies a status effect or forces an ability usage after a set number of turns.  
 **Total Count:** 1
 
 <details>
@@ -8671,7 +8671,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnBeginIfHasStatus`
 
 
-**Definition:** Defines a status effect to apply (and optionally consume) at the start of each turn if the character already has a specific status, with a specified animation.
+**Definition:** Defines a status effect to apply (and optionally consume) at the start of each turn if the character already has a specific status, with a specified animation.  
 **Total Count:** 1
 
 <details>
@@ -8699,7 +8699,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEndForEachTurn`
 
 
-**Definition:** Statuses applied at the end of each turn, with the number of turns as nested values.
+**Definition:** Statuses applied at the end of each turn, with the number of turns as nested values.  
 **Total Count:** 1
 
 <details>
@@ -8721,7 +8721,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEndIfEnabledAtStartOfTurn`
 
 
-**Definition:** Defines an ability to force-use at the end of each turn if the character was in the specified form at the start of the turn.
+**Definition:** Defines an ability to force-use at the end of each turn if the character was in the specified form at the start of the turn.  
 **Total Count:** 1
 
 <details>
@@ -8743,7 +8743,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnDie`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit dies.
+**Definition:** Specifies status effects or actions triggered when the unit dies.  
 **Total Count:** 1
 
 <details>
@@ -8766,7 +8766,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEndMove`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit finishes moving.
+**Definition:** Specifies status effects or actions triggered when the unit finishes moving.  
 **Total Count:** 1
 
 <details>
@@ -8786,7 +8786,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEnemyConfused`
 
 
-**Definition:** Defines an ability to immediately use when an enemy becomes confused.
+**Definition:** Defines an ability to immediately use when an enemy becomes confused.  
 **Total Count:** 1
 
 <details>
@@ -8806,7 +8806,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnGainCoins`
 
 
-**Definition:** Specifies status effects applied when this unit gains coins.
+**Definition:** Specifies status effects applied when this unit gains coins.  
 **Total Count:** 1
 
 <details>
@@ -8829,7 +8829,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOverlappingCharactersAndDie`
 
 
-**Definition:** Defines a status effect applied to overlapping characters, after which the character dies.
+**Definition:** Defines a status effect applied to overlapping characters, after which the character dies.  
 **Total Count:** 1
 
 <details>
@@ -8851,7 +8851,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusWhenStatusCompletelyRemoved`
 
 
-**Definition:** Defines a status to apply and an ability to use when a specific status is completely removed from the character.
+**Definition:** Defines a status to apply and an ability to use when a specific status is completely removed from the character.  
 **Total Count:** 1
 
 <details>
@@ -8875,7 +8875,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Stop`
 
 
-**Definition:** If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state.
+**Definition:** If an integer, the number of turns the unit is stopped. If an object, the form configuration for the stopped state.  
 **Total Count:** 1
 
 <details>
@@ -8898,7 +8898,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SuckMF`
 
 
-**Definition:** Defines an AI virtual ability that makes a Tormentor suck enemies carelessly while keeping distance.
+**Definition:** Defines an AI virtual ability that makes a Tormentor suck enemies carelessly while keeping distance.  
 **Total Count:** 1
 
 <details>
@@ -8921,7 +8921,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SupportDieInsteadOfRun`
 
 
-**Definition:** Configures alternative dying and dead animations for support units that die instead of fleeing.
+**Definition:** Configures alternative dying and dead animations for support units that die instead of fleeing.  
 **Total Count:** 1
 
 <details>
@@ -8943,7 +8943,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SwimmingFormChange`
 
 
-**Definition:** Defines the form names to switch to when in water and when exiting water.
+**Definition:** Defines the form names to switch to when in water and when exiting water.  
 **Total Count:** 1
 
 <details>
@@ -8965,7 +8965,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SwitchMusic`
 
 
-**Definition:** Defines a new song or layer for the background music.
+**Definition:** Defines a new song or layer for the background music.  
 **Total Count:** 1
 
 <details>
@@ -8987,7 +8987,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SwordAndShield`
 
 
-**Definition:** Form state with sword and shield, using the DestroyerAttack ability.
+**Definition:** Form state with sword and shield, using the DestroyerAttack ability.  
 **Total Count:** 1
 
 <details>
@@ -9011,7 +9011,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SwordAndShield_Primed`
 
 
-**Definition:** Primed form state of SwordAndShield with holy animation and no final boss shield.
+**Definition:** Primed form state of SwordAndShield with holy animation and no final boss shield.  
 **Total Count:** 1
 
 <details>
@@ -9036,7 +9036,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SyncFormsWithBuddy`
 
 
-**Definition:** Specifies the form to revert to if the character has no buddy, ensuring form synchronization.
+**Definition:** Specifies the form to revert to if the character has no buddy, ensuring form synchronization.  
 **Total Count:** 1
 
 <details>
@@ -9057,7 +9057,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `T3HitlerSpawningPhase`
 
 
-**Definition:** Defines weighted groups of spawn abilities used during the T3Hitler boss's spawning phase.
+**Definition:** Defines weighted groups of spawn abilities used during the T3Hitler boss's spawning phase.  
 **Total Count:** 1
 
 <details>
@@ -9078,7 +9078,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Tar`
 
 
-**Definition:** If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit.
+**Definition:** If an integer, the number of tar stacks. If an object, the form state for the tar-covered unit.  
 **Total Count:** 1
 
 <details>
@@ -9102,7 +9102,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TarFull`
 
 
-**Definition:** If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit.
+**Definition:** If an integer, the number of full tar stacks. If an object, the form state for the fully tar-covered unit.  
 **Total Count:** 1
 
 <details>
@@ -9127,7 +9127,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Terminator2Run`
 
 
-**Definition:** Defines the movement ability and movement weights used by Terminator2 when running away.
+**Definition:** Defines the movement ability and movement weights used by Terminator2 when running away.  
 **Total Count:** 1
 
 <details>
@@ -9149,7 +9149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TerminatorChase`
 
 
-**Definition:** Defines the movement ability and reaction ability used by Terminator1 when chasing a target, plus whether it prioritizes player cats.
+**Definition:** Defines the movement ability and reaction ability used by Terminator1 when chasing a target, plus whether it prioritizes player cats.  
 **Total Count:** 1
 
 <details>
@@ -9171,7 +9171,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TerminatorSkin`
 
 
-**Definition:** Defines the status effect and groups of stacks applied by the Terminator's skin passive.
+**Definition:** Defines the status effect and groups of stacks applied by the Terminator's skin passive.  
 **Total Count:** 1
 
 <details>
@@ -9193,7 +9193,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TF_TargetAllies`
 
 
-**Definition:** Defines an AI virtual ability that casts Twisting Flames targeting allies.
+**Definition:** Defines an AI virtual ability that casts Twisting Flames targeting allies.  
 **Total Count:** 1
 
 <details>
@@ -9215,7 +9215,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TF_TargetEnemies`
 
 
-**Definition:** Defines an AI virtual ability that casts Twisting Flames targeting enemies.
+**Definition:** Defines an AI virtual ability that casts Twisting Flames targeting enemies.  
 **Total Count:** 1
 
 <details>
@@ -9237,7 +9237,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Throb`
 
 
-**Definition:** Form state for the Chaos unit's throb behavior, with a spread pattern.
+**Definition:** Form state for the Chaos unit's throb behavior, with a spread pattern.  
 **Total Count:** 1
 
 <details>
@@ -9258,7 +9258,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ThrobBubs`
 
 
-**Definition:** Form state for Chaos unit throb that reacts with a shotgun attack.
+**Definition:** Form state for Chaos unit throb that reacts with a shotgun attack.  
 **Total Count:** 1
 
 <details>
@@ -9281,7 +9281,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ThrobHost`
 
 
-**Definition:** Form state for Chaos unit acting as host, reflecting projectiles.
+**Definition:** Form state for Chaos unit acting as host, reflecting projectiles.  
 **Total Count:** 1
 
 <details>
@@ -9305,7 +9305,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ThrobNettle`
 
 
-**Definition:** Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells.
+**Definition:** Form state for Chaos unit with thorns and kinetic spikes that stack after enemy spells.  
 **Total Count:** 1
 
 <details>
@@ -9328,7 +9328,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Transformed`
 
 
-**Definition:** Form state after transformation, ending the turn on form switch.
+**Definition:** Form state after transformation, ending the turn on form switch.  
 **Total Count:** 1
 
 <details>
@@ -9351,7 +9351,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TransformOnStatusThreshold`
 
 
-**Definition:** Defines the status effect, the stack threshold at which to transform, and the object to transform into.
+**Definition:** Defines the status effect, the stack threshold at which to transform, and the object to transform into.  
 **Total Count:** 1
 
 <details>
@@ -9375,7 +9375,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TVBotScreen`
 
 
-**Definition:** Maps TVBot screen channel names to their corresponding form indices.
+**Definition:** Maps TVBot screen channel names to their corresponding form indices.  
 **Total Count:** 1
 
 <details>
@@ -9402,7 +9402,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TwisterFling`
 
 
-**Definition:** Defines the minimum distance, maximum distance, and damage for the TwisterFling ability.
+**Definition:** Defines the minimum distance, maximum distance, and damage for the TwisterFling ability.  
 **Total Count:** 1
 
 <details>
@@ -9425,7 +9425,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TwoEyes`
 
 
-**Definition:** Form state with two eyes, triggering ability at a health threshold.
+**Definition:** Form state with two eyes, triggering ability at a health threshold.  
 **Total Count:** 1
 
 <details>
@@ -9445,7 +9445,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Unflip`
 
 
-**Definition:** Defines an AI virtual ability that teleports the unit to flip up and spin an enemy.
+**Definition:** Defines an AI virtual ability that teleports the unit to flip up and spin an enemy.  
 **Total Count:** 1
 
 <details>
@@ -9468,7 +9468,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `UnlimitedDeathRattleRevive`
 
 
-**Definition:** Configures an unlimited revive effect, including the ability to use and whether it works even when stunned.
+**Definition:** Configures an unlimited revive effect, including the ability to use and whether it works even when stunned.  
 **Total Count:** 1
 
 <details>
@@ -9490,7 +9490,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Unlit`
 
 
-**Definition:** Form state for an unlit candle, muting demonic glyph display.
+**Definition:** Form state for an unlit candle, muting demonic glyph display.  
 **Total Count:** 1
 
 <details>
@@ -9513,7 +9513,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Unwashed`
 
 
-**Definition:** Form state for the unwashed version of Johnny, with its own AI pattern.
+**Definition:** Form state for the unwashed version of Johnny, with its own AI pattern.  
 **Total Count:** 1
 
 <details>
@@ -9535,7 +9535,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `UseAbility`
 
 
-**Definition:** The name of the ability the target is forced to use.
+**Definition:** The name of the ability the target is forced to use.  
 **Total Count:** 1
 
 <details>
@@ -9557,7 +9557,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `UseAbilityWhenOutOfStatus`
 
 
-**Definition:** Defines an ability to execute when the unit no longer has a specified status.
+**Definition:** Defines an ability to execute when the unit no longer has a specified status.  
 **Total Count:** 1
 
 <details>
@@ -9579,7 +9579,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Washed`
 
 
-**Definition:** Form state for the washed version of Johnny, with a blast attack.
+**Definition:** Form state for the washed version of Johnny, with a blast attack.  
 **Total Count:** 1
 
 <details>
@@ -9602,7 +9602,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Washer`
 
 
-**Definition:** Form state for the washer variant of a cultist, with basic melee attack.
+**Definition:** Form state for the washer variant of a cultist, with basic melee attack.  
 **Total Count:** 1
 
 <details>
@@ -9629,7 +9629,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ZealotBomb`
 
 
-**Definition:** Form state for the bomb zealot variant, with an explosion attack.
+**Definition:** Form state for the bomb zealot variant, with an explosion attack.  
 **Total Count:** 1
 
 <details>

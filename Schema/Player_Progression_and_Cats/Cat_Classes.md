@@ -275,7 +275,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `graphics`
 
 
-**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.
+**Definition:** An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects.  
 **Total Count:** 2609
 
 <details>
@@ -300,7 +300,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `meta`
 
 
-**Definition:** Contains metadata for the ability including name, description, class, and type icon.
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
 **Total Count:** 2374
 
 <details>
@@ -322,7 +322,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `stat_mods`
 
 
-**Definition:** An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values.
+**Definition:** An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values.  
 **Total Count:** 13
 
 <details>
@@ -349,7 +349,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ability_groups`
 
 
-**Definition:** An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection.
+**Definition:** An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection.  
 **Total Count:** 12
 
 <details>
@@ -373,7 +373,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `innate_passives`
 
 
-**Definition:** An object defining innate passive abilities or effects that the class always possesses.
+**Definition:** An object defining innate passive abilities or effects that the class always possesses.  
 **Total Count:** 4
 
 <details>
@@ -398,7 +398,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `innate_items`
 
 
-**Definition:** An object specifying the class's starting equipment, with item slot names as keys.
+**Definition:** An object specifying the class's starting equipment, with item slot names as keys.  
 **Total Count:** 2
 
 <details>
@@ -420,7 +420,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `TinkererBasicAttackSwitching`
 
 
-**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.
+**Definition:** Defines the abilities used for the Tinkerer's basic attack switching mechanic.  
 **Total Count:** 1
 
 <details>

@@ -61,7 +61,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `arm1`
 
 
-**Definition:** The catalog ID for the cat's first arm part.
+**Definition:** The catalog ID for the cat's first arm part.  
 **Total Count:** 2
 
 <details>
@@ -80,7 +80,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `arm2`
 
 
-**Definition:** The catalog ID for the cat's second arm part.
+**Definition:** The catalog ID for the cat's second arm part.  
 **Total Count:** 2
 
 <details>

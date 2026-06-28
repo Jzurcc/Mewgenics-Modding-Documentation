@@ -170,7 +170,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `popup`
 
 
-**Definition:** An object defining a popup notification with prompt and optional unlock.
+**Definition:** An object defining a popup notification with prompt and optional unlock.  
 **Total Count:** 266
 
 <details>
@@ -193,7 +193,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_special_item`
 
 
-**Definition:** An object defining a special item offered by Tracy, including its type, cost, and associated reward text.
+**Definition:** An object defining a special item offered by Tracy, including its type, cost, and associated reward text.  
 **Total Count:** 22
 
 <details>
@@ -215,7 +215,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quests_intro`
 
 
-**Definition:** Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests.
+**Definition:** Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests.  
 **Total Count:** 2
 
 <details>
@@ -238,7 +238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `beanies_quests_repeat`
 
 
-**Definition:** Defines the repeatable quest dialog or generator for Dr. Beanies.
+**Definition:** Defines the repeatable quest dialog or generator for Dr. Beanies.  
 **Total Count:** 2
 
 <details>
@@ -263,7 +263,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Frank.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Frank.  
 **Total Count:** 2
 
 <details>
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `frank_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Frank at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Frank at max favor.  
 **Total Count:** 2
 
 <details>
@@ -312,7 +312,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_4throom`
 
 
-**Definition:** Defines the dialog and house upgrade for unlocking the 4th room.
+**Definition:** Defines the dialog and house upgrade for unlocking the 4th room.  
 **Total Count:** 2
 
 <details>
@@ -335,7 +335,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_attic`
 
 
-**Definition:** Defines the dialog and house upgrade for the attic.
+**Definition:** Defines the dialog and house upgrade for the attic.  
 **Total Count:** 2
 
 <details>
@@ -358,7 +358,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_largehouse`
 
 
-**Definition:** Defines the dialog and house upgrade for the large house.
+**Definition:** Defines the dialog and house upgrade for the large house.  
 **Total Count:** 2
 
 <details>
@@ -381,7 +381,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `house_upgrade_mediumhouse`
 
 
-**Definition:** Defines the dialog and house upgrade for the medium house.
+**Definition:** Defines the dialog and house upgrade for the medium house.  
 **Total Count:** 2
 
 <details>
@@ -404,7 +404,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Jack.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Jack.  
 **Total Count:** 2
 
 <details>
@@ -428,7 +428,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Jack at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Jack at max favor.  
 **Total Count:** 2
 
 <details>
@@ -453,7 +453,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade1`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's first shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's first shop upgrade.  
 **Total Count:** 2
 
 <details>
@@ -476,7 +476,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade2`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's second shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's second shop upgrade.  
 **Total Count:** 2
 
 <details>
@@ -499,7 +499,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade3`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's third shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's third shop upgrade.  
 **Total Count:** 2
 
 <details>
@@ -522,7 +522,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `jack_shopupgrade4`
 
 
-**Definition:** Defines the dialog and shop level up for Jack's fourth shop upgrade.
+**Definition:** Defines the dialog and shop level up for Jack's fourth shop upgrade.  
 **Total Count:** 2
 
 <details>
@@ -545,7 +545,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max_intro`
 
 
-**Definition:** Defines the dialog sequence and rewards for reaching max favor with Organ Grinder.
+**Definition:** Defines the dialog sequence and rewards for reaching max favor with Organ Grinder.  
 **Total Count:** 2
 
 <details>
@@ -569,7 +569,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_max_repeating`
 
 
-**Definition:** Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor.
+**Definition:** Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor.  
 **Total Count:** 2
 
 <details>
@@ -594,7 +594,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_unlock`
 
 
-**Definition:** Defines the dialog and shop level up for unlocking Organ Grinder.
+**Definition:** Defines the dialog and shop level up for unlocking Organ Grinder.  
 **Total Count:** 2
 
 <details>
@@ -617,7 +617,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade1`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's first upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's first upgrade.  
 **Total Count:** 2
 
 <details>
@@ -640,7 +640,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade2`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's second upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's second upgrade.  
 **Total Count:** 2
 
 <details>
@@ -663,7 +663,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade3`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's third upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's third upgrade.  
 **Total Count:** 2
 
 <details>
@@ -686,7 +686,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade4`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's fourth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's fourth upgrade.  
 **Total Count:** 2
 
 <details>
@@ -709,7 +709,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade5`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's fifth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's fifth upgrade.  
 **Total Count:** 2
 
 <details>
@@ -732,7 +732,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `organ_upgrade6`
 
 
-**Definition:** Defines the dialog and shop level up for Organ Grinder's sixth upgrade.
+**Definition:** Defines the dialog and shop level up for Organ Grinder's sixth upgrade.  
 **Total Count:** 2
 
 <details>
@@ -755,7 +755,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `steven_milliontrashed`
 
 
-**Definition:** A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor.
+**Definition:** A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor.  
 **Total Count:** 2
 
 <details>
@@ -778,7 +778,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_aggression`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat.  
 **Total Count:** 2
 
 <details>
@@ -801,7 +801,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_basestats`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications.  
 **Total Count:** 2
 
 <details>
@@ -824,7 +824,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_inbreeding`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree.  
 **Total Count:** 2
 
 <details>
@@ -847,7 +847,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max_intro`
 
 
-**Definition:** The first dialogue sequence and favor reward that plays when Tink reaches maximum favor.
+**Definition:** The first dialogue sequence and favor reward that plays when Tink reaches maximum favor.  
 **Total Count:** 2
 
 <details>
@@ -871,7 +871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_max_repeating`
 
 
-**Definition:** A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences.
+**Definition:** A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences.  
 **Total Count:** 2
 
 <details>
@@ -896,7 +896,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_prettybow`
 
 
-**Definition:** A dialogue sequence and favor reward that grants the gift item TinksBow.
+**Definition:** A dialogue sequence and favor reward that grants the gift item TinksBow.  
 **Total Count:** 2
 
 <details>
@@ -919,7 +919,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_relationships`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates).
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates).  
 **Total Count:** 2
 
 <details>
@@ -942,7 +942,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_sexuality`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags.
+**Definition:** A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags.  
 **Total Count:** 2
 
 <details>
@@ -965,7 +965,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tink_tags`
 
 
-**Definition:** A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name.
+**Definition:** A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name.  
 **Total Count:** 2
 
 <details>
@@ -988,7 +988,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1013,7 +1013,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1038,7 +1038,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_blankcollar3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1063,7 +1063,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1088,7 +1088,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage10`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1113,7 +1113,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1138,7 +1138,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1163,7 +1163,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage4`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1188,7 +1188,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage5`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1213,7 +1213,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage6`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1238,7 +1238,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage7`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1263,7 +1263,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage8`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1288,7 +1288,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_foodstorage9`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1313,7 +1313,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol1`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1338,7 +1338,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol2`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1363,7 +1363,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol3`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1388,7 +1388,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol4`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1413,7 +1413,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol5`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1438,7 +1438,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol6`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1463,7 +1463,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_idol7`
 
 
-**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.
+**Definition:** A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level.  
 **Total Count:** 2
 
 <details>
@@ -1488,7 +1488,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max_intro`
 
 
-**Definition:** The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor.
+**Definition:** The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor.  
 **Total Count:** 2
 
 <details>
@@ -1513,7 +1513,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `tracy_max_repeating`
 
 
-**Definition:** A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences.
+**Definition:** A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences.  
 **Total Count:** 2
 
 <details>
@@ -1539,7 +1539,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_1`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0.  
 **Total Count:** 2
 
 <details>
@@ -1564,7 +1564,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_2`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2.  
 **Total Count:** 2
 
 <details>
@@ -1589,7 +1589,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_3`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3.  
 **Total Count:** 2
 
 <details>
@@ -1614,7 +1614,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_4`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2.  
 **Total Count:** 2
 
 <details>
@@ -1639,7 +1639,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_5`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3.  
 **Total Count:** 2
 
 <details>
@@ -1664,7 +1664,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_6`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2.  
 **Total Count:** 2
 
 <details>
@@ -1689,7 +1689,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_7`
 
 
-**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3.
+**Definition:** A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3.  
 **Total Count:** 2
 
 <details>
@@ -1714,7 +1714,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_crazy`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion.  
 **Total Count:** 2
 
 <details>
@@ -1742,7 +1742,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_hard`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion.  
 **Total Count:** 2
 
 <details>
@@ -1770,7 +1770,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_impossible`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion.  
 **Total Count:** 2
 
 <details>
@@ -1798,7 +1798,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_intro`
 
 
-**Definition:** The introductory dialogue sequence and reward when Butch maxes out storage capacity.
+**Definition:** The introductory dialogue sequence and reward when Butch maxes out storage capacity.  
 **Total Count:** 2
 
 <details>
@@ -1825,7 +1825,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `upgrade_storage_repeating_normal`
 
 
-**Definition:** A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion.
+**Definition:** A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion.  
 **Total Count:** 2
 
 <details>
@@ -1853,7 +1853,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `destinations`
 
 
-**Definition:** Specifies the list of areas and their associated coin rewards for Beanie's quest destinations.
+**Definition:** Specifies the list of areas and their associated coin rewards for Beanie's quest destinations.  
 **Total Count:** 1
 
 <details>
@@ -1882,7 +1882,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `prereqs`
 
 
-**Definition:** Object mapping quest or unlock names to their prerequisite mapflags or conditions.
+**Definition:** Object mapping quest or unlock names to their prerequisite mapflags or conditions.  
 **Total Count:** 1
 
 <details>

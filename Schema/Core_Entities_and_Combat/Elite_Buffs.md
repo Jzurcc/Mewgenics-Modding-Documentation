@@ -69,7 +69,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `passives`
 
 
-**Definition:** A container object listing passive effects granted to the unit.
+**Definition:** A container object listing passive effects granted to the unit.  
 **Total Count:** 2805
 
 <details>
@@ -92,7 +92,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `effects`
 
 
-**Definition:** Applies a list of status effects or visual effects to targets.
+**Definition:** Applies a list of status effects or visual effects to targets.  
 **Total Count:** 2166
 
 <details>
@@ -117,7 +117,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Contains status effects to add to the basic attack.
+**Definition:** Contains status effects to add to the basic attack.  
 **Total Count:** 248
 
 <details>
@@ -137,7 +137,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.  
 **Total Count:** 73
 
 <details>
@@ -160,7 +160,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEnd`
 
 
-**Definition:** Specifies status effects applied to the unit at the end of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the end of each of its turns.  
 **Total Count:** 57
 
 <details>
@@ -180,7 +180,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnKill`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.
+**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.  
 **Total Count:** 40
 
 <details>
@@ -244,7 +244,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnOnBattleStart`
 
 
-**Definition:** Specifies the object that spawns adjacent to the unit at the start of battle.
+**Definition:** Specifies the object that spawns adjacent to the unit at the start of battle.  
 **Total Count:** 38
 
 <details>
@@ -266,7 +266,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RevengeDamage`
 
 
-**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.  
 **Total Count:** 31
 
 <details>
@@ -287,7 +287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `statuses`
 
 
-**Definition:** Defines the status effects applied when the parent trigger event occurs.
+**Definition:** Defines the status effects applied when the parent trigger event occurs.  
 **Total Count:** 14
 
 <details>
@@ -308,7 +308,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnDie`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit dies.
+**Definition:** Specifies status effects or actions triggered when the unit dies.  
 **Total Count:** 9
 
 <details>
@@ -328,7 +328,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ReflectProjectiles`
 
 
-**Definition:** The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage.
+**Definition:** The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage.  
 **Total Count:** 8
 
 <details>
@@ -348,7 +348,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachRoundBegin`
 
 
-**Definition:** Applies the contained status effects at the beginning of each round.
+**Definition:** Applies the contained status effects at the beginning of each round.  
 **Total Count:** 8
 
 <details>
@@ -369,7 +369,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToRevive`
 
 
-**Definition:** The percentage chance or an object defining chance, health, and statuses on revival.
+**Definition:** The percentage chance or an object defining chance, health, and statuses on revival.  
 **Total Count:** 5
 
 <details>
@@ -392,7 +392,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DepressionAura`
 
 
-**Definition:** The number of stacks of Depression status applied to nearby enemies each turn; can be an object with range and ally settings.
+**Definition:** The number of stacks of Depression status applied to nearby enemies each turn; can be an object with range and ally settings.  
 **Total Count:** 5
 
 <details>
@@ -415,7 +415,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `DamageNeighborsAfterMove`
 
 
-**Definition:** Defines the spell damage and effects applied to neighboring tiles after the unit moves.
+**Definition:** Defines the spell damage and effects applied to neighboring tiles after the unit moves.  
 **Total Count:** 4
 
 <details>
@@ -439,7 +439,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachRoundEnd`
 
 
-**Definition:** An object listing status effects applied to the unit at the end of each round.
+**Definition:** An object listing status effects applied to the unit at the end of each round.  
 **Total Count:** 3
 
 <details>`damage_instance`<br>`spell`<br>`self_damage`
@@ -460,7 +460,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEnemyCastSpell`
 
 
-**Definition:** Defines a status effect applied to the unit each time an enemy casts a spell.
+**Definition:** Defines a status effect applied to the unit each time an enemy casts a spell.  
 **Total Count:** 1
 
 <details>

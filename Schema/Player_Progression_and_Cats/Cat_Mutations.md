@@ -515,7 +515,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `passives`
 
 
-**Definition:** A container object listing passive effects granted to the unit.
+**Definition:** A container object listing passive effects granted to the unit.  
 **Total Count:** 284
 
 <details>
@@ -629,7 +629,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicAttack`
 
 
-**Definition:** Contains status effects to add to the basic attack.
+**Definition:** Contains status effects to add to the basic attack.  
 **Total Count:** 52
 
 <details>
@@ -673,7 +673,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenAffectedByElement`
 
 
-**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.
+**Definition:** An object containing `element` and `passives` that grants the listed passives while the unit is affected by the specified element.  
 **Total Count:** 12
 
 <details>
@@ -696,7 +696,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `effects`
 
 
-**Definition:** Applies a list of status effects or visual effects to targets.
+**Definition:** Applies a list of status effects or visual effects to targets.  
 **Total Count:** 10
 
 <details>
@@ -723,7 +723,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RevengeDamage`
 
 
-**Definition:** An object defining the damage and effects that trigger when the unit is attacked.
+**Definition:** An object defining the damage and effects that trigger when the unit is attacked.  
 **Total Count:** 9
 
 <details>
@@ -746,7 +746,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MeleeRevengeDamage`
 
 
-**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.
+**Definition:** Defines the damage and effects applied back to a melee attacker upon being hit.  
 **Total Count:** 7
 
 <details>
@@ -774,7 +774,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnThingOnDamage`
 
 
-**Definition:** Specifies an object that spawns on the tile when the unit takes damage.
+**Definition:** Specifies an object that spawns on the tile when the unit takes damage.  
 **Total Count:** 7
 
 <details>
@@ -797,7 +797,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddStatusToBasicMeleeAttack`
 
 
-**Definition:** An object listing status effects applied by the unit's basic melee attack.
+**Definition:** An object listing status effects applied by the unit's basic melee attack.  
 **Total Count:** 6
 
 <details>
@@ -822,7 +822,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamage`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit takes damage.
+**Definition:** Specifies status effects or actions triggered when the unit takes damage.  
 **Total Count:** 6
 
 <details>
@@ -846,7 +846,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnBegin`
 
 
-**Definition:** Specifies status effects applied to the unit at the start of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the start of each of its turns.  
 **Total Count:** 5
 
 <details>
@@ -871,7 +871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
 **Total Count:** 4
 
 <details>
@@ -903,7 +903,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnEachTurn`
 
 
-**Definition:** Specifies an object that spawns on a random adjacent tile each turn, with optional chance.
+**Definition:** Specifies an object that spawns on a random adjacent tile each turn, with optional chance.  
 **Total Count:** 4
 
 <details>
@@ -926,7 +926,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachTurnEnd`
 
 
-**Definition:** Specifies status effects applied to the unit at the end of each of its turns.
+**Definition:** Specifies status effects applied to the unit at the end of each of its turns.  
 **Total Count:** 4
 
 <details>
@@ -952,7 +952,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnOnBattleStartRandomEmptyTile`
 
 
-**Definition:** Specifies an object that spawns on a random empty tile at the start of battle.
+**Definition:** Specifies an object that spawns on a random empty tile at the start of battle.  
 **Total Count:** 3
 
 <details>
@@ -974,7 +974,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_RandomChance`
 
 
-**Definition:** An object containing effects that execute only if a random roll succeeds, with an odds value defined inside.
+**Definition:** An object containing effects that execute only if a random roll succeeds, with an odds value defined inside.  
 **Total Count:** 2
 
 <details>
@@ -997,7 +997,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEveryXSpellCasts`
 
 
-**Definition:** An object with `stacks` (number of spell casts) and status effects to apply after that many spell casts.
+**Definition:** An object with `stacks` (number of spell casts) and status effects to apply after that many spell casts.  
 **Total Count:** 2
 
 <details>
@@ -1021,7 +1021,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusKilledCharacters`
 
 
-**Definition:** An object listing status effects applied to the unit when it kills a character.
+**Definition:** An object listing status effects applied to the unit when it kills a character.  
 **Total Count:** 2
 
 <details>
@@ -1041,7 +1041,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.  
 **Total Count:** 2
 
 <details>
@@ -1064,7 +1064,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEndMove`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit finishes moving.
+**Definition:** Specifies status effects or actions triggered when the unit finishes moving.  
 **Total Count:** 2
 
 <details>
@@ -1084,7 +1084,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnTookDamageFromAbility`
 
 
-**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).
+**Definition:** Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental).  
 **Total Count:** 2
 
 <details>
@@ -1107,7 +1107,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AbilityWhenTaggedCharacterMovesNear`
 
 
-**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.
+**Definition:** An object containing `ability`, `tag`, and `range` that triggers the specified ability when a character with the given tag moves within range.  
 **Total Count:** 1
 
 <details>
@@ -1130,7 +1130,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddDamageToElementDamage`
 
 
-**Definition:** Defines additional damage of a specific element added to the unit's attacks.
+**Definition:** Defines additional damage of a specific element added to the unit's attacks.  
 **Total Count:** 1
 
 <details>
@@ -1152,7 +1152,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddTemporaryEffectsToBasicAttack`
 
 
-**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.
+**Definition:** A container object that lists temporary status effects applied to the unit's basic attack.  
 **Total Count:** 1
 
 <details>
@@ -1173,7 +1173,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BackflipWhenTargeted`
 
 
-**Definition:** The number of backflip charges, or an object defining its ability.
+**Definition:** The number of backflip charges, or an object defining its ability.  
 **Total Count:** 1
 
 <details>
@@ -1195,7 +1195,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ChanceToBackflip`
 
 
-**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.
+**Definition:** An object specifying the ability to use and the percentage chance to perform a backflip dodge when hit.  
 **Total Count:** 1
 
 <details>
@@ -1217,7 +1217,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ClassManaCostReduction`
 
 
-**Definition:** Defines a reduction in mana cost for abilities of a specific class.
+**Definition:** Defines a reduction in mana cost for abilities of a specific class.  
 **Total Count:** 1
 
 <details>
@@ -1239,7 +1239,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_FirstApplicationThisTurn`
 
 
-**Definition:** Container for effects applied only on the first application of this ability during the turn.
+**Definition:** Container for effects applied only on the first application of this ability during the turn.  
 **Total Count:** 1
 
 <details>
@@ -1262,7 +1262,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
 **Total Count:** 1
 
 <details>
@@ -1286,7 +1286,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CounterAttack`
 
 
-**Definition:** Specifies the ability used when the unit counterattacks after being hit.
+**Definition:** Specifies the ability used when the unit counterattacks after being hit.  
 **Total Count:** 1
 
 <details>
@@ -1308,7 +1308,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `KnockUpAndAway`
 
 
-**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.
+**Definition:** Contains parameters for launching the target upward and away from the source, including stacks and distance.  
 **Total Count:** 1
 
 <details>
@@ -1330,7 +1330,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MoveWhenDamaged`
 
 
-**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.
+**Definition:** Defines movement behavior when the unit takes damage, such as weights and move ability.  
 **Total Count:** 1
 
 <details>
@@ -1352,7 +1352,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhenAtFullMana`
 
 
-**Definition:** An object listing passive effects that are active only while the unit's mana is full.
+**Definition:** An object listing passive effects that are active only while the unit's mana is full.  
 **Total Count:** 1
 
 <details>
@@ -1374,7 +1374,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `PassiveWhileHasStatus`
 
 
-**Definition:** An object containing `status` and `passives` that grants the listed passives while the unit has the specified status.
+**Definition:** An object containing `status` and `passives` that grants the listed passives while the unit has the specified status.  
 **Total Count:** 1
 
 <details>
@@ -1397,7 +1397,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
-**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.
+**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.  
 **Total Count:** 1
 
 <details>
@@ -1419,7 +1419,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEachRoundEnd`
 
 
-**Definition:** An object listing status effects applied to the unit at the end of each round.
+**Definition:** An object listing status effects applied to the unit at the end of each round.  
 **Total Count:** 1
 
 <details>
@@ -1441,7 +1441,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusEveryXSpellCastsEachTurn`
 
 
-**Definition:** An object with a 'stacks' value defining status effects applied every X spell casts within a single turn.
+**Definition:** An object with a 'stacks' value defining status effects applied every X spell casts within a single turn.  
 **Total Count:** 1
 
 <details>
@@ -1464,7 +1464,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusIfDidntMove`
 
 
-**Definition:** An object containing status effects to apply to the unit if it did not move during its turn.
+**Definition:** An object containing status effects to apply to the unit if it did not move during its turn.  
 **Total Count:** 1
 
 <details>
@@ -1486,7 +1486,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusIfUnusedMovePoints`
 
 
-**Definition:** Specifies status effects applied if the unit ends its turn with unused movement points.
+**Definition:** Specifies status effects applied if the unit ends its turn with unused movement points.  
 **Total Count:** 1
 
 <details>
@@ -1509,7 +1509,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnAllyCatDeath`
 
 
-**Definition:** An object listing status effects applied to the unit when an allied cat dies.
+**Definition:** An object listing status effects applied to the unit when an allied cat dies.  
 **Total Count:** 1
 
 <details>
@@ -1531,7 +1531,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnCastSpell`
 
 
-**Definition:** An object listing status effects applied to the unit whenever it casts a spell.
+**Definition:** An object listing status effects applied to the unit whenever it casts a spell.  
 **Total Count:** 1
 
 <details>
@@ -1553,7 +1553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnDie`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit dies.
+**Definition:** Specifies status effects or actions triggered when the unit dies.  
 **Total Count:** 1
 
 <details>
@@ -1575,7 +1575,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnEatFood`
 
 
-**Definition:** An object listing status effects applied to the unit when it eats food.
+**Definition:** An object listing status effects applied to the unit when it eats food.  
 **Total Count:** 1
 
 <details>
@@ -1597,7 +1597,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnKill`
 
 
-**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.
+**Definition:** Specifies status effects or actions triggered when the unit kills an enemy.  
 **Total Count:** 1
 
 <details>

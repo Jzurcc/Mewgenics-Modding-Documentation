@@ -408,7 +408,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `boss`
 
 
-**Definition:** An object defining the properties of a boss encounter, such as rewards or level.
+**Definition:** An object defining the properties of a boss encounter, such as rewards or level.  
 **Total Count:** 33
 
 <details>
@@ -432,7 +432,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hard`
 
 
-**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.
+**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
 **Total Count:** 21
 
 <details>
@@ -456,7 +456,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `miniboss`
 
 
-**Definition:** An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances.
+**Definition:** An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances.  
 **Total Count:** 13
 
 <details>
@@ -480,7 +480,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `normal`
 
 
-**Definition:** An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances.
+**Definition:** An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances.  
 **Total Count:** 12
 
 <details>

@@ -59,7 +59,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `hard`
 
 
-**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.
+**Definition:** Configuration for hard difficulty, including elite/champ budgets and rewards.  
 **Total Count:** 21
 
 <details>
@@ -79,7 +79,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `easy`
 
 
-**Definition:** Configuration for easy difficulty, including elite/champ budgets and rewards.
+**Definition:** Configuration for easy difficulty, including elite/champ budgets and rewards.  
 **Total Count:** 8
 
 <details>

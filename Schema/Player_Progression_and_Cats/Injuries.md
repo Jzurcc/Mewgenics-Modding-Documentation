@@ -79,7 +79,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `stats`
 
 
-**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).
+**Definition:** A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.).  
 **Total Count:** 497
 
 <details>
@@ -106,7 +106,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `scars`
 
 
-**Definition:** An object mapping body parts to ranges of scar texture indices applied on injury.
+**Definition:** An object mapping body parts to ranges of scar texture indices applied on injury.  
 **Total Count:** 10
 
 <details>

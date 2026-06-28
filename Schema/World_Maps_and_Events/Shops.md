@@ -130,7 +130,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Item`
 
 
-**Definition:** An object defining the item pool, cost, weight, and mandatory flag used in an item group.
+**Definition:** An object defining the item pool, cost, weight, and mandatory flag used in an item group.  
 **Total Count:** 37
 
 <details>
@@ -155,7 +155,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `meta`
 
 
-**Definition:** Contains metadata for the ability including name, description, class, and type icon.
+**Definition:** Contains metadata for the ability including name, description, class, and type icon.  
 **Total Count:** 25
 
 <details>
@@ -184,7 +184,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `breakdown`
 
 
-**Definition:** Defines the breakdown of item pools or rewards for a shop or event.
+**Definition:** Defines the breakdown of item pools or rewards for a shop or event.  
 **Total Count:** 24
 
 <details>
@@ -213,7 +213,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `item_groups`
 
 
-**Definition:** Defines groups of items that can appear in a shop or loot.
+**Definition:** Defines groups of items that can appear in a shop or loot.  
 **Total Count:** 24
 
 <details>
@@ -243,7 +243,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `treasure`
 
 
-**Definition:** Defines a treasure node containing items or item pools.
+**Definition:** Defines a treasure node containing items or item pools.  
 **Total Count:** 14
 
 <details>
@@ -264,7 +264,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `item_rarity_costs`
 
 
-**Definition:** Defines the cost multipliers for each item rarity tier in a shop.
+**Definition:** Defines the cost multipliers for each item rarity tier in a shop.  
 **Total Count:** 9
 
 <details>
@@ -293,7 +293,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `button_nav`
 
 
-**Definition:** Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons.
+**Definition:** Defines the directional navigation grid for UI button selection, with each button having connections to adjacent buttons.  
 **Total Count:** 7
 
 <details>
@@ -314,7 +314,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `pool`
 
 
-**Definition:** Specifies the name of the pool from which an ability is learned or an item is crafted.
+**Definition:** Specifies the name of the pool from which an ability is learned or an item is crafted.  
 **Total Count:** 6
 
 <details>
@@ -335,7 +335,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mandatory`
 
 
-**Definition:** The number of guaranteed items to generate from this group, or an object specifying mandatory selection.
+**Definition:** The number of guaranteed items to generate from this group, or an object specifying mandatory selection.  
 **Total Count:** 5
 
 <details>
@@ -357,7 +357,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Food`
 
 
-**Definition:** The number of food pickups spawned.
+**Definition:** The number of food pickups spawned.  
 **Total Count:** 4
 
 <details>
@@ -382,7 +382,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LevelUp`
 
 
-**Definition:** Defines the cost and pool for leveling up an item.
+**Definition:** Defines the cost and pool for leveling up an item.  
 **Total Count:** 3
 
 <details>
@@ -403,7 +403,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `levelup`
 
 
-**Definition:** The number of level-up rewards offered, or an object defining their cost and pool.
+**Definition:** The number of level-up rewards offered, or an object defining their cost and pool.  
 **Total Count:** 3
 
 <details>
@@ -424,7 +424,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `breakdown2`
 
 
-**Definition:** A loot table defining guaranteed item drops for player levels 5 to 9.
+**Definition:** A loot table defining guaranteed item drops for player levels 5 to 9.  
 **Total Count:** 2
 
 <details>
@@ -449,7 +449,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `breakdown3`
 
 
-**Definition:** A loot table defining guaranteed item drops for player levels 10 to 14.
+**Definition:** A loot table defining guaranteed item drops for player levels 10 to 14.  
 **Total Count:** 2
 
 <details>
@@ -473,7 +473,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `breakdown4`
 
 
-**Definition:** A loot table defining guaranteed item drops for player levels 15 and above.
+**Definition:** A loot table defining guaranteed item drops for player levels 15 and above.  
 **Total Count:** 2
 
 <details>
@@ -497,7 +497,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `common_item`
 
 
-**Definition:** The number of common items offered, or an object defining their pool and cost.
+**Definition:** The number of common items offered, or an object defining their pool and cost.  
 **Total Count:** 2
 
 <details>
@@ -518,7 +518,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `consumable`
 
 
-**Definition:** If true, the item is consumed on use. Can also specify a number of uses or an item pool.
+**Definition:** If true, the item is consumed on use. Can also specify a number of uses or an item pool.  
 **Total Count:** 2
 
 <details>
@@ -539,7 +539,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `guaranteed_food`
 
 
-**Definition:** The number of guaranteed food items, or an object defining their amount, cost, and duplication rules.
+**Definition:** The number of guaranteed food items, or an object defining their amount, cost, and duplication rules.  
 **Total Count:** 2
 
 <details>
@@ -560,7 +560,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `item`
 
 
-**Definition:** Specifies the item to transform into, either by name, a nested item object, or a numeric value.
+**Definition:** Specifies the item to transform into, either by name, a nested item object, or a numeric value.  
 **Total Count:** 2
 
 <details>
@@ -581,7 +581,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `mostly_food`
 
 
-**Definition:** The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules.
+**Definition:** The number of mostly-food items offered, or an object defining their amount, cost, weight, and duplication rules.  
 **Total Count:** 2
 
 <details>
@@ -603,7 +603,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `empty`
 
 
-**Definition:** The number of empty items offered, or an object defining their pool and cost.
+**Definition:** The number of empty items offered, or an object defining their pool and cost.  
 **Total Count:** 1
 
 <details>

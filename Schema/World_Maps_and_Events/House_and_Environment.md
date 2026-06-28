@@ -134,7 +134,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `effects`
 
 
-**Definition:** Applies a list of status effects or visual effects to targets.
+**Definition:** Applies a list of status effects or visual effects to targets.  
 **Total Count:** 2166
 
 <details>
@@ -161,7 +161,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Else`
 
 
-**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.
+**Definition:** Contains the fallback effects to apply when a preceding conditional check fails.  
 **Total Count:** 85
 
 <details>
@@ -183,7 +183,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusOnBattleEnd`
 
 
-**Definition:** An object containing status effects or passives applied to the unit when the battle ends.
+**Definition:** An object containing status effects or passives applied to the unit when the battle ends.  
 **Total Count:** 53
 
 <details>
@@ -203,7 +203,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_HasTag`
 
 
-**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.
+**Definition:** Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block.  
 **Total Count:** 47
 
 <details>
@@ -230,7 +230,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Default`
 
 
-**Definition:** The default form configuration for a unit, containing its standard stats and abilities.
+**Definition:** The default form configuration for a unit, containing its standard stats and abilities.  
 **Total Count:** 38
 
 <details>
@@ -252,7 +252,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_GoodRoll`
 
 
-**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.
+**Definition:** Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability.  
 **Total Count:** 37
 
 <details>
@@ -275,7 +275,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `RandomStatusFromPool`
 
 
-**Definition:** A collection of status effects; one is randomly chosen and applied to the target.
+**Definition:** A collection of status effects; one is randomly chosen and applied to the target.  
 **Total Count:** 35
 
 <details>
@@ -295,7 +295,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnExtraThingsOnBattleStart`
 
 
-**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.
+**Definition:** An object with `object` and `number` (or range) defining what and how many objects to spawn at battle start.  
 **Total Count:** 32
 
 <details>
@@ -319,7 +319,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `ApplyPassives`
 
 
-**Definition:** Specifies the passives or status effects to apply to the unit.
+**Definition:** Specifies the passives or status effects to apply to the unit.  
 **Total Count:** 13
 
 <details>
@@ -340,7 +340,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_Corpse`
 
 
-**Definition:** Contains an inner effect block that only executes if the target is a corpse.
+**Definition:** Contains an inner effect block that only executes if the target is a corpse.  
 **Total Count:** 11
 
 <details>
@@ -362,7 +362,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `reverb_empty`
 
 
-**Definition:** Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment.
+**Definition:** Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment.  
 **Total Count:** 11
 
 <details>
@@ -385,7 +385,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `reverb_full`
 
 
-**Definition:** Defines the audio reverb settings for a full room, including preset and amount.
+**Definition:** Defines the audio reverb settings for a full room, including preset and amount.  
 **Total Count:** 11
 
 <details>
@@ -407,7 +407,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `CharacterTypeGainsStatusAtBattleStart`
 
 
-**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.
+**Definition:** Defines status effects applied to characters with a specific tag at the start of a battle.  
 **Total Count:** 8
 
 <details>
@@ -430,7 +430,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Conditional_PartyMember`
 
 
-**Definition:** A conditional block that executes its child actions only if the target is a party member.
+**Definition:** A conditional block that executes its child actions only if the target is a party member.  
 **Total Count:** 6
 
 <details>
@@ -452,7 +452,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Rain`
 
 
-**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.
+**Definition:** Defines the rain weather effect with associated particle, sound, and rendering settings.  
 **Total Count:** 6
 
 <details>
@@ -477,7 +477,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusAllCharactersOnSpawn`
 
 
-**Definition:** Defines status effects applied to all characters when they spawn into the battlefield.
+**Definition:** Defines status effects applied to all characters when they spawn into the battlefield.  
 **Total Count:** 5
 
 <details>
@@ -498,7 +498,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Big`
 
 
-**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.
+**Definition:** Defines the 'Big' form, including its animation, attack, passives, and positional data.  
 **Total Count:** 4
 
 <details>
@@ -520,7 +520,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `extra_statuses`
 
 
-**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.
+**Definition:** An object containing additional status effects (with stack counts) applied to the consumed unit.  
 **Total Count:** 4
 
 <details>
@@ -667,7 +667,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 `damage_instance`<br>`spell`<br>`self_damage`
 
-**Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.
+**Definition:** The number of snow particle instances or the integer value controlling snow intensity for weather effects.  
 **Total Count:** 4
 
 <details>
@@ -692,7 +692,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `aux_positions``damage_instance`<br>`spell`<br>`self_damage`
 
 
-**Definition:** An object containing named coordinates for auxiliary objects like spawn points within this house.
+**Definition:** An object containing named coordinates for auxiliary objects like spawn points within this house.  
 **Total Count:** 3
 
 <details>
@@ -718,7 +718,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `room_positions`
 
 
-**Definition:** An object containing named coordinates for each room's position within the house layout.
+**Definition:** An object containing named coordinates for each room's position within the house layout.  
 **Total Count:** 3
 
 <details>
@@ -749,7 +749,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnVolcanoOnBattleStart`
 
 
-**Definition:** An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle.
+**Definition:** An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle.  
 **Total Count:** 3
 
 <details>
@@ -774,7 +774,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusCharactersOnRoundEnd`
 
 
-**Definition:** An object whose nested keys define statuses or effects applied to characters at the end of each round.
+**Definition:** An object whose nested keys define statuses or effects applied to characters at the end of each round.  
 **Total Count:** 3
 
 <details>
@@ -796,7 +796,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Thunderstorm`
 
 
-**Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.
+**Definition:** Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect.  
 **Total Count:** 3
 
 <details>
@@ -822,7 +822,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AllyInfested`
 
 
-**Definition:** Defines the AllyInfested object, which spawns an infested ally under the player's control.
+**Definition:** Defines the AllyInfested object, which spawns an infested ally under the player's control.  
 **Total Count:** 2
 
 <details>
@@ -844,7 +844,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `GlobalSpawnOnRoundEnd`
 
 
-**Definition:** Specifies the object to spawn globally at the end of each round.
+**Definition:** Specifies the object to spawn globally at the end of each round.  
 **Total Count:** 2
 
 <details>
@@ -866,7 +866,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SolarFlare`
 
 
-**Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.
+**Definition:** Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn.  
 **Total Count:** 2
 
 <details>
@@ -889,7 +889,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpecialGodRays`
 
 
-**Definition:** An object defining visual god rays that follow a specific character tag, used for cinematic or boss effects.
+**Definition:** An object defining visual god rays that follow a specific character tag, used for cinematic or boss effects.  
 **Total Count:** 2
 
 <details>
@@ -910,7 +910,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `StatusCharactersOnRoundStart`
 
 
-**Definition:** An object containing status effects to apply to all characters on the battlefield at the start of each round.
+**Definition:** An object containing status effects to apply to all characters on the battlefield at the start of each round.  
 **Total Count:** 2
 
 <details>
@@ -930,7 +930,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Windy`
 
 
-**Definition:** The number representing the Windy weather intensity or whether it is active.
+**Definition:** The number representing the Windy weather intensity or whether it is active.  
 **Total Count:** 2
 
 <details>
@@ -955,7 +955,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddPostProcessEffect`
 
 
-**Definition:** Specifies a post-process shader effect to apply to the scene.
+**Definition:** Specifies a post-process shader effect to apply to the scene.  
 **Total Count:** 1
 
 <details>
@@ -977,7 +977,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `AddTilesetObjects`
 
 
-**Definition:** An object configuring the spawning of decorative debris or objects on the tileset for an effect.
+**Definition:** An object configuring the spawning of decorative debris or objects on the tileset for an effect.  
 **Total Count:** 1
 
 <details>
@@ -998,7 +998,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BasementUpgrade`
 
 
-**Definition:** An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met.
+**Definition:** An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met.  
 **Total Count:** 1
 
 <details>
@@ -1020,7 +1020,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BasementUpgrade2`
 
 
-**Definition:** An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met.
+**Definition:** An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met.  
 **Total Count:** 1
 
 <details>
@@ -1042,7 +1042,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BasementUpgrade3`
 
 
-**Definition:** An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met.
+**Definition:** An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met.  
 **Total Count:** 1
 
 <details>
@@ -1064,7 +1064,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BasementUpgrade4`
 
 
-**Definition:** An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met.
+**Definition:** An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met.  
 **Total Count:** 1
 
 <details>
@@ -1086,7 +1086,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `BasementUpgrade5`
 
 
-**Definition:** An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met.
+**Definition:** An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met.  
 **Total Count:** 1
 
 <details>
@@ -1108,7 +1108,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FactionUprising`
 
 
-**Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.
+**Definition:** Specifies which faction triggers a global uprising event, adding allied units of that faction.  
 **Total Count:** 1
 
 <details>
@@ -1128,7 +1128,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `FloatingDebris`
 
 
-**Definition:** An object defining parameters for spawning floating debris tileset objects.
+**Definition:** An object defining parameters for spawning floating debris tileset objects.  
 **Total Count:** 1
 
 <details>
@@ -1149,7 +1149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Floor1_Large`
 
 
-**Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.
+**Definition:** Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
 **Total Count:** 1
 
 <details>
@@ -1174,7 +1174,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `Floor1_Small`
 
 
-**Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.
+**Definition:** Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame.  
 **Total Count:** 1
 
 <details>
@@ -1199,7 +1199,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `House1`
 
 
-**Definition:** Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume.
+**Definition:** Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume.  
 **Total Count:** 1
 
 <details>
@@ -1225,7 +1225,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `House2`
 
 
-**Definition:** Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume.
+**Definition:** Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume.  
 **Total Count:** 1
 
 <details>
@@ -1251,7 +1251,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `House3`
 
 
-**Definition:** Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume.
+**Definition:** Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume.  
 **Total Count:** 1
 
 <details>
@@ -1277,7 +1277,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LargeHouse`
 
 
-**Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.
+**Definition:** An upgrade that requires MediumHouse as a prerequisite and sets the house to House3.  
 **Total Count:** 1
 
 <details>
@@ -1299,7 +1299,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LargeHouse_Floor2Large`
 
 
-**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Large room.
+**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Large room.  
 **Total Count:** 1
 
 <details>
@@ -1321,7 +1321,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `LargeHouse_Floor2Small`
 
 
-**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Small room.
+**Definition:** An upgrade that requires LargeHouse and unlocks the Floor2_Small room.  
 **Total Count:** 1
 
 <details>
@@ -1343,7 +1343,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MediumHouse`
 
 
-**Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.
+**Definition:** An upgrade that requires the Default house as a prerequisite and sets the house to House2.  
 **Total Count:** 1
 
 <details>
@@ -1365,7 +1365,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `MediumHouse_SmallRoom`
 
 
-**Definition:** An upgrade that requires MediumHouse and unlocks the Floor1_Small room.
+**Definition:** An upgrade that requires MediumHouse and unlocks the Floor1_Small room.  
 **Total Count:** 1
 
 <details>
@@ -1387,7 +1387,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmallAttic`
 
 
-**Definition:** Room definition for the Small Attic, including its dimensions and position.
+**Definition:** Room definition for the Small Attic, including its dimensions and position.  
 **Total Count:** 1
 
 <details>
@@ -1413,7 +1413,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SmallHouse_Attic`
 
 
-**Definition:** Upgrade that unlocks the Attic room in a small house.
+**Definition:** Upgrade that unlocks the Attic room in a small house.  
 **Total Count:** 1
 
 <details>
@@ -1435,7 +1435,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 ### Object: `SpawnTilePuddleOnBattleStart`
 
 
-**Definition:** Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range.
+**Definition:** Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range.  
 **Total Count:** 1
 
 <details>
