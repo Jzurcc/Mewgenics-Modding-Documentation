@@ -92,6 +92,7 @@ The schema documentation is divided logically by subsystem. Click on any file to
 | [Particles_and_VFX_Dictionary.md](./Particles_and_VFX_Dictionary.md) | Identifiers for spawning visual effects. |
 | [Damage_Text_Styles.md](./Damage_Text_Styles.md) | Configuration for floating combat text. |
 | [Localization_Guide.md](./Localization_Guide.md) | Best practices for translating and keying strings. |
+| [Text_Formatting_and_Effects.md](./Text_Formatting_and_Effects.md) | Special tags for text animation, sizing, coloring, and icons. |
 | [Strings.md](./Strings.md) | Internal engine string references. |
 
 ### Reference & Meta

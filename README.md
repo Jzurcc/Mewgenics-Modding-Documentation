@@ -13,13 +13,17 @@ Because the game uses a highly custom data format and engine architecture, the d
 
 ## Directory Overview
 
-Here is a breakdown of where to find what you need:
+Here is a breakdown of where to find what you need.
+
+> [!TIP]
+> **Navigation Tip:** When you click into any of the folders below (`Schema/`, `gon-docs/`, or `mewgenics/`), remember to **scroll down** past the file list to read the `README.md` file rendered at the bottom of the page!
 
 | Directory | Focus Area | Description |
 |-----------|------------|-------------|
 | [**`Schema/`**](./Schema/) | **Theory (What to write)** | The comprehensive semantic index of the engine. Look here if you want to know what properties (keys) are valid for an Item, Character, or Ability, and how the C++ engine uses them. |
 | [**`gon-docs/`**](./gon-docs/) | **Syntax (How to format)** | The formal specification for the `.gon` (Glaiel Object Notation) text format. Look here if your file is failing to parse or if you need to know the rules for arrays, strings, and objects. |
 | [**`mewgenics/`**](./mewgenics/) | **Practice (How to build)** | Practical modding tutorials. Look here for step-by-step guides on making your first mod, understanding file architecture, and heavily annotated examples of real base-game objects. |
+| [**`Directory/`**](./Directory/) | **Reference (What exists)** | An encyclopedia containing raw `.gon` dumps of all base-game Abilities, Classes, Enemies, Items, and more. Highly useful for referencing existing content or using the `variant_of` key. |
 
 ### Deprecated Documentation
 
