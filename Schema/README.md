@@ -13,33 +13,7 @@ For practical step-by-step tutorials on creating and injecting mods, refer to th
 
 ---
 
-## 1. Data Pipeline Overview
-
-To build robust mods, it is essential to understand how Mewgenics reads data. The `.gon` (Glaiel Object Notation) format does not have strict internal types—everything is parsed as text. The engine is responsible for casting these strings into concrete C++ variables.
-
-```mermaid
-flowchart LR
-    A["Mod .gon File<br>(Raw Text)"] --> B[GON Parser]
-    B --> C("Global String Dictionary")
-    C --> D{"Semantic Evaluator<br>(Engine)"}
-    D -- "Expects number" --> E[Float/Int Cast]
-    D -- "Expects enum" --> F[Enum Matching]
-    D -- "Expects formula" --> G[Math Equation Parsing]
-
-    style A fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
-    style B fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
-    style C fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
-    style D fill:#2d333b,stroke:#6d5dfc,color:#e6edf3
-    style E fill:#161b22,stroke:#30363d,color:#e6edf3
-    style F fill:#161b22,stroke:#30363d,color:#e6edf3
-    style G fill:#161b22,stroke:#30363d,color:#e6edf3
-```
-
-Because of this architecture, providing a valid string format (like `"1.5"`) to a property that the engine expects to be an Enum (like `"melee_attack"`) will not cause a parser error—it will simply be ignored or cause undefined runtime behavior when the engine tries to cast it. The files in this schema define those *engine expectations*.
-
----
-
-## 2. Type Reference Guidelines
+## 1. Type Reference Guidelines
 
 Throughout the schema markdown files, you will encounter a standard table format detailing the properties of an object:
 
@@ -64,7 +38,7 @@ Throughout the schema markdown files, you will encounter a standard table format
 
 ---
 
-## 3. Comprehensive File Index
+## 2. Comprehensive File Index
 
 The schema documentation is divided logically by subsystem. Click on any file to view the comprehensive list of properties and behaviors accepted by the engine for those objects.
 
