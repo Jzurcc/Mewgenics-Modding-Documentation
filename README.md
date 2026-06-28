@@ -5,7 +5,7 @@ Welcome to my personal compilation of references for Mewgenics modding! What sim
 > [!WARNING]
 > **Disclaimer:** There are thousands of keys and objects in Mewgenics, and I've decided to use AI to help define them. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. Furthermore, I will most likely not actively maintain this documentation for long, so treat it as a quick library of sort rather than the sole source of truth. You WILL have to study the base files on your own and verify these implementations within the game yourself.
 
-For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested before adding, they might not have a complete list of syntax and possible keys as of yet.
+For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested before adding, they might not have a complete list of syntax and possible keys as of yet (This has all 3,436 keys while they have about 1.3k verified as of June).
 
 To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, most developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
 
