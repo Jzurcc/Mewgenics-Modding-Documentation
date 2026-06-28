@@ -1,7 +1,26 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
+---
+title: "Miscellaneous Schema"
+description: "Assorted properties lacking clear subsystem alignment."
+---
+
+# Miscellaneous Schema
+
+## Overview
+This schema holds generic objects like `cost` or `target` that are used universally across enemies, cats, and items.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+GenericObject {
+    cost { mana 2 gold 50 }
+}
+```
+
+---
+
 > **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Miscellaneous
 

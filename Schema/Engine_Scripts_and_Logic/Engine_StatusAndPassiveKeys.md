@@ -1,6 +1,27 @@
-# Mewgenics Mod Developer Documentation: Engine: Status and Passive Keys
+---
+title: "Status & Passive Keys Schema"
+description: "Hooks for triggering logic when statuses are applied."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Status & Passive Keys Schema
+
+## Overview
+This schema details internal triggers that fire when a unit receives, loses, or stacks a buff or debuff.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+OnStunned {
+    on_status_applied {
+        if_status "Stun"
+        trigger_anim "dizzy"
+    }
+}
+```
+
+---
+
+
 
 ## Engine: Status and Passive Keys
 

@@ -1,7 +1,42 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Abilities & Spells Schema"
+description: "Defines the properties and engine hooks for combat abilities."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Abilities & Spells Schema
+
+## Overview
+This schema defines the behavior, targeting, cost, and visual effects of attacks and spells used by characters, enemies, and items.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Fireball {
+    damage_instance { 
+        amount 10 
+        element Fire 
+    }
+    cost { 
+        mana 2 
+    }
+    target { 
+        range 3 
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Ability_Pools.md`](../../Directory/Abilities/Ability_Pools.md)
+- [`Cat_Abilities.md`](../../Directory/Abilities/Cat_Abilities.md)
+- [`Enemy_and_Boss_Abilities.md`](../../Directory/Abilities/Enemy_and_Boss_Abilities.md)
+- [`System_and_Item_Abilities.md`](../../Directory/Abilities/System_and_Item_Abilities.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Abilities & Spells
 

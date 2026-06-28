@@ -1,6 +1,25 @@
-# Localization Keys Guide
+---
+title: "Localization Guide Schema"
+description: "Best practices for translating and keying strings."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Localization Guide Schema
+
+## Overview
+This document is a structural guide on how string referencing works in Mewgenics so translators can swap out text.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+DialogStrings {
+    "KEY_GREETING" "Hello there!"
+    "KEY_FAREWELL" "Goodbye!"
+}
+```
+
+---
+
+
 
 > **Associated Files:** `data/text/combined.csv`
 

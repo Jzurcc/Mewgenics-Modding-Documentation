@@ -1,7 +1,36 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Items & Equipment Schema"
+description: "Defines consumables, weapons, and wearable trinkets."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Items & Equipment Schema
+
+## Overview
+This schema is used for anything that can be equipped, consumed, or held in the inventory. It defines stat modifiers, activated abilities, and usage rules.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+RustySword {
+    type Weapon
+    rarity rare
+    stats { 
+        bonus_melee_damage 2 
+    }
+    ability CleaveAttack
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Items_and_Equipment.md`](../../Directory/Items_and_Passives/Items_and_Equipment.md)
+- [`Item_Set_Bonuses.md`](../../Directory/Items_and_Passives/Item_Set_Bonuses.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Items & Equipment
 

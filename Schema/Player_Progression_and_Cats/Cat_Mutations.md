@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Cat Mutations Schema"
+description: "Defines body part variations and their impacts."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Cat Mutations Schema
+
+## Overview
+This schema handles visual body mutations (like two tails or a cyclops eye) and the corresponding stat changes they apply to the cat.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+TwinTail {
+    part tail
+    visual "twin_tail.png"
+    stats { 
+        bonus_speed 1 
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Mutations.md`](../../Directory/Cats_and_Classes/Mutations.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Cat Mutations
 

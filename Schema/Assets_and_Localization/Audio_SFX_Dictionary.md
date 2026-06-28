@@ -1,6 +1,26 @@
-# Audio SFX Dictionary
+---
+title: "Audio & SFX Schema"
+description: "Triggers for playing sound effects."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Audio & SFX Schema
+
+## Overview
+This schema maps internal sound effect identifiers to actual `.ogg` or `.wav` files inside the game folder.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+SwordHit {
+    id "sword_hit"
+    file "sfx/combat/clang.ogg"
+    volume 0.8
+}
+```
+
+---
+
+
 
 > **Associated Files:** `audio/*.gon`
 

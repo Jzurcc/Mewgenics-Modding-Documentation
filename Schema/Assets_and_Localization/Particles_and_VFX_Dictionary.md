@@ -1,6 +1,30 @@
-# Particles and VFX Dictionary
+---
+title: "Particles & VFX Schema"
+description: "Identifiers for spawning visual effects."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Particles & VFX Schema
+
+## Overview
+This schema describes how to hook engine events up to the particle emitter systems for cool visual bursts.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+BloodSplat {
+    particle "blood_splat"
+    color { r 1.0 g 0.0 b 0.0 }
+    duration 0.5
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Particles_and_VFX_Dictionary.md`](../../Directory/System_and_Engine/Particles_and_VFX_Dictionary.md)
+
+---
+
+
 
 > **Associated Files:** `data/particles.gon`, `data/particles2d.gon`
 

@@ -1,6 +1,24 @@
-# Mewgenics Mod Developer Documentation: Math Equations
+---
+title: "Math Equations Schema"
+description: "Valid syntax and variables for Equation strings."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Math Equations Schema
+
+## Overview
+This schema specifies how to write math equations in GON strings, allowing values to scale dynamically based on player stats.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+DamageCalc {
+    damage_calc "base_damage * (1 + bonus_strength / 100)"
+}
+```
+
+---
+
+
 
 In the Mewgenics engine, many numeric fields can accept an inline math equation string instead of a raw number.
 

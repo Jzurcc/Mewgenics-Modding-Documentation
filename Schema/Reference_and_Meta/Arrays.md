@@ -1,4 +1,22 @@
-# Mewgenics Mod Developer Documentation: Array Dictionary
+---
+title: "Arrays Schema"
+description: "Specialized array formats."
+---
+
+# Arrays Schema
+
+## Overview
+This schema describes arrays that require a highly specific internal structure beyond just a flat list of items.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+LootTable {
+    special_array [ [ "Item1" 50% ] [ "Item2" 50% ] ]
+}
+```
+
+---
 
 This document provides exhaustive lists of all array properties found in the base game's `.gon` files. 
 

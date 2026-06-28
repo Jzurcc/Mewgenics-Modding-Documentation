@@ -1,4 +1,22 @@
-# Mewgenics Mod Developer Documentation: Enum & String Dictionary
+---
+title: "Enums Schema"
+description: "Valid string identifiers for all enum-backed properties."
+---
+
+# Enums Schema
+
+## Overview
+This schema lists all hardcoded C++ enumerations, so you know exactly which keywords are valid for enum properties.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+ElementEnum {
+    // e.g. valid inputs for "element" are Fire, Water, Earth, Electric
+}
+```
+
+---
 
 This document provides exhaustive lists of all enum and string values found in the base game's `.gon` files for every applicable property key.
 

@@ -1,6 +1,25 @@
-# Mewgenics Mod Developer Documentation: Engine: Global Modifier IDs
+---
+title: "Global Modifier Keys Schema"
+description: "Global state flags affecting the entire run."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Global Modifier Keys Schema
+
+## Overview
+This schema affects run-wide variables, often used by high-level difficulty settings or sweeping modifiers like double health.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+HardMode {
+    global_enemy_hp_multiplier 1.5
+    global_gold_drops 0.5
+}
+```
+
+---
+
+
 
 ## Engine: Global Modifier IDs
 

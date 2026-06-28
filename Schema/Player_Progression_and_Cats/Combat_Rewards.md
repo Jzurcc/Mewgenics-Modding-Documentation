@@ -1,7 +1,32 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Combat Rewards Schema"
+description: "Loot tables and combat reward generation logic."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Combat Rewards Schema
+
+## Overview
+This schema dictates what the player receives after finishing a battle, distributing gold, items, and experience based on the difficulty.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+StandardEncounter {
+    pool "StandardEncounter"
+    gold { min 10 max 25 }
+    item_chance 15%
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Combat_Rewards.md`](../../Directory/Enemies_and_Combat/Combat_Rewards.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Combat Rewards
 

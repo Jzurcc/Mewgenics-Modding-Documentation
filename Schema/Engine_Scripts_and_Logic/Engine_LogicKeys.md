@@ -1,6 +1,27 @@
-# Mewgenics Mod Developer Documentation: Engine: Logic Keys
+---
+title: "Logic Keys Schema"
+description: "Core conditionals, loops, and execution flow."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Logic Keys Schema
+
+## Overview
+This schema documents the low-level logic structures used by the engine to evaluate if/then statements inside GON files.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+CheckPoison {
+    if_has_status "Poison"
+    then {
+        damage 5
+    }
+}
+```
+
+---
+
+
 
 ## Engine: Logic Keys
 
@@ -8343,5 +8364,3 @@ The following objects all behave as `{Logic Keys}` containers. Each has its own 
 
 
 ---
-
-

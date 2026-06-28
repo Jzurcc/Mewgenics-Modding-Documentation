@@ -1,7 +1,31 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
+---
+title: "Item Pools Schema"
+description: "Identifiers for categorizing item drops."
+---
+
+# Item Pools Schema
+
+## Overview
+This schema describes all predefined collections of items used to generate random loot drops (e.g. "RareWeaponsPool").
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+RareWeaponsPool {
+    pool_name "RareWeaponsPool"
+    items [ "Excalibur" "Masamune" ]
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Item_Pools.md`](../../Directory/Items_and_Passives/Item_Pools.md)
+
+---
+
 > **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Item Pools
 

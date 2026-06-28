@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "NPC Scripts Schema"
+description: "Behavior logic for non-combat interactive NPCs."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# NPC Scripts Schema
+
+## Overview
+This schema hooks scripts to town NPCs to control their dialogue, quest-giving behavior, and idle animations.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Blacksmith {
+    npc "Blacksmith"
+    idle_anim "hammering"
+    on_talk {
+        script "open_upgrade_menu"
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`NPC_Scripts.md`](../../Directory/World_and_Events/NPC_Scripts.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## NPC Scripts
 

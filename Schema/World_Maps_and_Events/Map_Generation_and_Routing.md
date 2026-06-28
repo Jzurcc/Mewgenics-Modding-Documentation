@@ -1,7 +1,32 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Map Gen & Routing Schema"
+description: "Biome layout rules and node generation logic."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Map Gen & Routing Schema
+
+## Overview
+This schema feeds the procedural generator. It defines node types (combat, event, shop) and how they link together to form a playable map.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+ForestBiome {
+    biome "Forest"
+    node_density 15
+    boss_node "ForestGuardian"
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Map_Generation_and_Routing.md`](../../Directory/World_and_Events/Map_Generation_and_Routing.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Map Generation & Routing
 

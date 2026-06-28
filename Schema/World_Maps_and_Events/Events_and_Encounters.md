@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Events & Encounters Schema"
+description: "Dialogue encounters and choice nodes."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Events & Encounters Schema
+
+## Overview
+This schema handles narrative choice nodes where players are presented with text, make decisions, and receive outcomes like items or damage.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+ShrineEvent {
+    text "EVENT_SHRINE_TEXT"
+    choices [
+        { text "Pray" reward { heal 10 } }
+        { text "Steal" reward { item "Gold" } }
+    ]
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Events_and_Encounters.md`](../../Directory/World_and_Events/Events_and_Encounters.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Events & Encounters
 

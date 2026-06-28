@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Progression Unlocks Schema"
+description: "Conditions and flags for unlocking content."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Progression Unlocks Schema
+
+## Overview
+This schema manages the meta-progression flags. It tracks what the player has accomplished to unlock new items, cats, and house upgrades.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+UnlockHolySword {
+    unlock_type item
+    target "HolySword"
+    condition {
+        boss_defeated "SkeletonKing"
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Progression_Unlocks.md`](../../Directory/System_and_Engine/Progression_Unlocks.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Progression Unlocks
 

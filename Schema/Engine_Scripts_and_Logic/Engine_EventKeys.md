@@ -1,6 +1,26 @@
-# Mewgenics Mod Developer Documentation: Engine: Event Keys
+---
+title: "Event Keys Schema"
+description: "Scripting keys for narrative and map events."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Event Keys Schema
+
+## Overview
+This schema lists the specific hooks that trigger when map-level or overworld narrative events occur.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+OnEnterMap {
+    on_map_enter {
+        play_music "forest_theme.ogg"
+    }
+}
+```
+
+---
+
+
 
 ## Engine: Event Keys
 

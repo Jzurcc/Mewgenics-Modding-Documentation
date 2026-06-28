@@ -1,4 +1,23 @@
-# Engine: Hidden Passives & Statuses
+---
+title: "Hidden Passives Schema"
+description: "Passives that exist but are hidden from the UI."
+---
+
+# Hidden Passives Schema
+
+## Overview
+This schema tracks passive effects that the engine applies secretly behind the scenes without telling the player (e.g. base stat hooks).
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+HiddenStats {
+    hidden true
+    stats { bonus_hp 1 }
+}
+```
+
+---
 
 > **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 

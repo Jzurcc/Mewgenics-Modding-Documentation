@@ -1,7 +1,36 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Characters & Bosses Schema"
+description: "Defines the stats, properties, and visuals of units."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Characters & Bosses Schema
+
+## Overview
+This schema represents any living entity on the combat grid. This includes player cats, enemies, bosses, and summoned objects like barricades.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Goblin {
+    base_health 50
+    speed 2
+    ai_type melee
+    passives {
+        SpikedArmor
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Classes.md`](../../Directory/Cats_and_Classes/Classes.md)
+- [`Enemies_and_Characters.md`](../../Directory/Enemies_and_Combat/Enemies_and_Characters.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Characters & Bosses
 

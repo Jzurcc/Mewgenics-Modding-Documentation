@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Furniture & Metaprogression Schema"
+description: "Placeable furniture and permanent upgrades."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Furniture & Metaprogression Schema
+
+## Overview
+This schema controls cosmetic and functional objects you can buy and place inside your house to grant global meta-progression bonuses.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Altar {
+    name "Altar"
+    type furniture
+    bonus { 
+        starting_gold 50 
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Furniture_and_Metaprogression.md`](../../Directory/World_and_Events/Furniture_and_Metaprogression.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Furniture & Metaprogression
 

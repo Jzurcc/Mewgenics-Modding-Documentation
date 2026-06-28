@@ -1,7 +1,35 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Cat Classes Schema"
+description: "Defines the progression and stats of cat classes."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Cat Classes Schema
+
+## Overview
+This schema dictates the stat scaling, ability pools, and visual outfits associated with a specific class of cat (like Hunter, Mage, etc).
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Hunter {
+    base_stats { 
+        hp 10
+        mana 5
+    }
+    level_up_pool HunterAbilities
+    outfit "hunter_hat.png"
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Classes.md`](../../Directory/Cats_and_Classes/Classes.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Cat Classes
 

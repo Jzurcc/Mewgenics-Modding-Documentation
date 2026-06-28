@@ -1,7 +1,35 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Enemy AI Schema"
+description: "Defines behavior trees and targeting priorities for the AI."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Enemy AI Schema
+
+## Overview
+This schema acts as the brain for enemies. It assigns weights to different actions (like attacking vs moving) so the engine can determine the best move.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+UseHeavyAttack {
+    weight 100
+    condition {
+        target_in_range true
+        has_mana true
+    }
+    action UseAbility
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Enemy_AI.md`](../../Directory/Enemies_and_Combat/Enemy_AI.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Enemy AI
 

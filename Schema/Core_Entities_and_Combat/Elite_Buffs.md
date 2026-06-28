@@ -1,7 +1,32 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Elite Buffs Schema"
+description: "Defines modifiers applied to elite enemy variants."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Elite Buffs Schema
+
+## Overview
+This schema determines how standard enemies are modified when they spawn as an "Elite", including stat multipliers and bonus abilities.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+HeavyBrute {
+    health_multiplier 1.5
+    bonus_abilities [ HeavySlam ]
+    color { r 1.0 g 0.2 b 0.2 }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Elite_Buffs.md`](../../Directory/Enemies_and_Combat/Elite_Buffs.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Elite Buffs
 

@@ -1,7 +1,34 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "House & Environment Schema"
+description: "Overworld tiles and intractable house objects."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# House & Environment Schema
+
+## Overview
+This schema covers physical objects the player can interact with outside of combat, particularly inside the customizable house hub.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+Bed {
+    object "Bed"
+    interactable true
+    on_interact {
+        trigger_event "SleepMenu"
+    }
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`House_and_Environment.md`](../../Directory/World_and_Events/House_and_Environment.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## House & Environment
 

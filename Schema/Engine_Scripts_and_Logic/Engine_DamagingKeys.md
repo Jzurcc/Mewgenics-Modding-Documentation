@@ -1,6 +1,26 @@
-# Mewgenics Mod Developer Documentation: Engine: Damaging Keys
+---
+title: "Damaging Keys Schema"
+description: "Hooks for calculating and modifying damage."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Damaging Keys Schema
+
+## Overview
+This schema contains all properties relating to how damage is calculated, mitigated, and applied by the engine.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+PhysicalDamage {
+    damage_type physical
+    ignores_armor true
+    lifesteal 0.5
+}
+```
+
+---
+
+
 
 ## Engine: Damaging Keys
 

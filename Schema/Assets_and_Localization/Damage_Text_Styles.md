@@ -1,7 +1,33 @@
-# Mewgenics Mod Developer Documentation: Master Schema Dictionary
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+---
+title: "Damage Text Styles Schema"
+description: "Configuration for floating combat text."
+---
 
-This document is an exhaustive, auto-generated dictionary of every `.gon` property found across all 8 major engine systems. Due to the sheer volume of properties, you will need to infer their exact engine functionality through testing or context clues.
+# Damage Text Styles Schema
+
+## Overview
+This schema customizes how numbers look when they pop out of enemies, differentiating normal hits, crits, and healing.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+CriticalHitStyle {
+    style "critical_hit"
+    color { r 1.0 g 0.8 b 0.0 }
+    scale 1.5
+    shake true
+}
+```
+
+## Associated Directory Files
+To see extracted instances of this schema in the base game, refer to:
+- [`Damage_Text_Styles.md`](../../Directory/System_and_Engine/Damage_Text_Styles.md)
+
+---
+
+
+
+This document is an exhaustive, auto-generated dictionary of `.gon` properties relevant to this subsystem. While the overview above provides high-level context, you may still need to infer exact engine execution rules through testing or context clues.
 
 ## Damage Text Styles
 

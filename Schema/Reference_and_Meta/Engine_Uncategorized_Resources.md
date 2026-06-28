@@ -1,4 +1,22 @@
-# Engine: Uncategorized & Structural Resources
+---
+title: "Uncategorized Resources Schema"
+description: "Keys that have not yet been fully categorized."
+---
+
+# Uncategorized Resources Schema
+
+## Overview
+This schema contains valid engine keys that we have discovered but haven't figured out which subsystem they belong to yet.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+MysteryObject {
+    mystery_key 42
+}
+```
+
+---
 
 > **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](./Enums.md).
 

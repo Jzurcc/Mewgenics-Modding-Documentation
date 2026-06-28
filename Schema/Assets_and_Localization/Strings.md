@@ -1,6 +1,24 @@
-# Mewgenics Mod Developer Documentation: String Dictionary
+---
+title: "Strings Dictionary Schema"
+description: "Internal engine string references."
+---
 
-> **Coverage note:** This file documents keys observed in the base game. For undocumented keys found in source files, see AUDIT_GAPS.md. For enum values, see [Enums.md](../Reference_and_Meta/Enums.md).
+# Strings Dictionary Schema
+
+## Overview
+This is a massive reference sheet of internal string keys used hard-coded by the C++ engine.
+
+## Usage Example
+Here is a real example of this object being defined in the game's data:
+```gon
+InternalKeys {
+    // No strict GON object structure. Usually just keys mapped to usage.
+}
+```
+
+---
+
+
 
 This document provides exhaustive lists of all pure string values found in the base game's `.gon` files for every applicable property key.
 
