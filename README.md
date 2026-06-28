@@ -10,27 +10,25 @@ This repository serves as an **unofficial** documentation and reference index fo
 > [!WARNING]
 > **Disclaimer:** This documentation is an individual, fan-made resource and is not foolproof. While heavily cross-referenced against the base game files, it may contain incorrect information, outdated assumptions, or incomplete schemas.
 
-Mewgenics utilizes a proprietary engine architecture and data serialization format (GON). To accommodate this, the documentation is divided into three functional areas: **Theory**, **Syntax**, and **Practice**. Of these, the [**`Schema/`**](./Schema/) directory serves as the primary technical reference and is where you will spend the majority of your time during mod development.
+Mewgenics utilizes a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, the [**`Schema/`**](./Schema/) directory serves as your primary technical reference and is where you will likely spend the majority of your time during mod development.
 
 ---
 
-## Where Should I Start?
+## Suggested Entry Points
 
-Select a path below based on your immediate objective:
-
-### I am new to modding Mewgenics
+### For New Developers
 - Read the [**Step-by-Step Modding Guide**](./mewgenics/modding-guide.md) to understand project structure and how to load a mod into the runtime.
 - Review the [**GON Format Overview**](./gon-docs/spec/01-overview.md) for a primer on how the engine parses data files.
 
-### I need to implement a new Item or Weapon
+### Implementing Items and Equipment
 - Consult the [**Items & Equipment Schema**](./Schema/Core_Entities_and_Combat/Items_and_Equipment.md) for the complete list of valid object properties.
 - Reference the [**Items Directory**](./Directory/Items_and_Passives/Items_and_Equipment.md) to analyze how base-game weapons are constructed.
 
-### I need to implement a custom Cat Class or Mutation
+### Implementing Classes and Mutations
 - Consult the [**Cat Classes Schema**](./Schema/Player_Progression_and_Cats/Cat_Classes.md) to understand base stat initialization and level-up pools.
 - Reference the [**Cat Abilities Directory**](./Directory/Abilities/Cat_Abilities.md) to analyze ability balance and targeting logic.
 
-### My mod is crashing or failing to load
+### Troubleshooting and Debugging
 - Refer to the [**GON Error Reference**](./gon-docs/reference/error-reference.md) to diagnose common parsing failures.
 - Review the [**Syntax Cheat Sheet**](./gon-docs/reference/cheat-sheet.md) to verify your file formatting.
 
@@ -40,7 +38,7 @@ Select a path below based on your immediate objective:
 
 Mod development in Mewgenics generally follows a strict four-step pipeline:
 
-1. **Conceive:** Identify a base-game object in the [**`Directory/`**](./Directory/) that closely matches your intended logic.
+1. **Identify:** Locate a base-game object within the [**`Directory/`**](./Directory/) that most closely approximates your intended functionality.
 2. **Define:** Cross-reference that object type in the [**`Schema/`**](./Schema/) to discover which engine properties and hooks are available for modification.
 3. **Format:** Construct your object in a `.gon` file. Ensure compliance with the parser rules outlined in the [**`gon-docs/`**](./gon-docs/).
 4. **Test:** Execute the game, monitor the developer console for parsing errors, and validate the logic in combat.
@@ -57,7 +55,7 @@ Mod development in Mewgenics generally follows a strict four-step pipeline:
 | [**`Schema/`**](./Schema/) | **Theory (Engine Semantics)** | The exhaustive dictionary of the engine. Defines valid properties, keys, and values for all objects (Items, Characters, Abilities, etc). |
 | [**`gon-docs/`**](./gon-docs/) | **Syntax (File Formatting)** | The formal language specification for Glaiel Object Notation (`.gon`). Contains syntax rules, format comparisons, and troubleshooting. |
 | [**`mewgenics/`**](./mewgenics/) | **Practice (Implementation)** | Practical implementation guides. Includes step-by-step tutorials and annotated case studies of base-game objects. |
-| [**`Directory/`**](./Directory/) | **Reference (Base Game Data)** | An encyclopedia containing raw `.gon` data dumps of all base-game content. Required for referencing existing structure or utilizing the `variant_of` key. |
+| [**`Directory/`**](./Directory/) | **Reference (Base Game Data)** | A comprehensive reference index containing raw `.gon` extracts of base-game content. Essential for referencing existing architectural structures and utilizing the `variant_of` inheritance key. |
 
 ---
 
@@ -79,4 +77,4 @@ Ensure your development environment is properly configured before writing code:
 
 | Directory | Description |
 |-----------|-------------|
-| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | Legacy documentation files from previous engine versions. Superseded by the `Schema/` directory. Retained solely for historical reference. |
+| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | Legacy documentation files that I initially started with. Superseded by the `Schema/` directory. Retained solely for historical reference. |
