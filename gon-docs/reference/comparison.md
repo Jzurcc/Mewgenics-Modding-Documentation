@@ -21,7 +21,7 @@ GON was designed as "JSON without the crap"—optimizing exclusively for human r
 
 ## Transitioning from JSON
 
-If you are writing a script to generate `.gon` files, **you can just write standard JSON.** 
+If you want to, **you can just write standard JSON.** 
 
 Because the GON parser treats commas `,` and colons `:` as ignorable whitespace, a perfectly formatted JSON file is completely valid GON. 
 

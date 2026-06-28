@@ -7,7 +7,7 @@ Objects (sometimes called blocks) map string keys to values, arrays, or other ob
 ## Syntax
 An object is defined by a key, followed by a set of curly braces `{ }`. 
 
-- **No Separators:** There is no colon `:` or equals sign `=` between the key and the opening brace.
+- **Optional Separators:** While conventionally omitted, you *can* use a colon `:` or equals sign `=` between the key and the opening brace. The parser ignores them as whitespace.
 - **Closing Braces:** You must provide exactly one closing brace `}` for every opening brace `{`.
 
 ### ✅ Valid: Object Definition

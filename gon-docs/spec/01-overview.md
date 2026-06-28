@@ -21,6 +21,9 @@ A `.gon` file is fundamentally an **implicit list of nodes**.
 
 Unlike JSON, which requires exactly one root element (usually `{ }` or `[ ]`), a GON file can contain multiple top-level scalars, objects, or arrays sitting side-by-side.
 
+> **Note on JSON Compatibility:**
+> While GON's primary goal is "JSON without the crap", it explicitly supports standard JSON syntax. You can take a fully compliant `.json` file (complete with commas, colons, equals signs, and quoted keys) and feed it directly into the GON parser, and it will read it perfectly. GON treats those extra symbols as optional whitespace.
+
 ### ✅ Valid: Multiple Top-Level Objects
 *(Source evidence: `data/tiles.gon`)*
 

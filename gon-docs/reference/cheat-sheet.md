@@ -3,7 +3,7 @@
 A dense, visual reminder of how to format `.gon` files for Mewgenics.
 
 ## Core Rules
-1. **No colons `:` or equals signs `=`**. Space is the only separator.
+1. **Colons `:` and equals signs `=` are ignored**. You can use them for readability (or to support JSON), but space works fine.
 2. **No root wrapper needed**. Multiple top-level objects can coexist.
 3. **Typeless parser**. `true` is a boolean, `1` is an integer, `WaterTile` is an enum, but to the GON parser, they are all just strings.
 
@@ -83,9 +83,8 @@ image_tint [[0 .5 0] [0 .5 0]]
 
 ## What NOT to do
 ```gon
-key: value            // ❌ No colons
-key = value           // ❌ No equals signs
-"my key" { }          // ❌ No quoted keys
+key: value            // ✅ Valid (colon ignored)
+key = value           // ✅ Valid (equals ignored)
 boolean True          // ❌ Must be lowercase 'true'
 desc "Multi
 line"                 // ❌ No multi-line strings

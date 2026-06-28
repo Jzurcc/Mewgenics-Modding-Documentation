@@ -8,7 +8,7 @@ A key is the identifier on the left side of a node mapping.
 
 - Keys are **bare words** consisting of alphanumeric characters, underscores (`_`), and sometimes hyphens (`-`).
 - Keys are **case-sensitive** (`Meta` is not the same as `meta`).
-- No colons `:` or equals signs `=` are used to separate a key from its value. The separator is simply **whitespace**.
+- While colons `:` and equals signs `=` are conventionally omitted, they are explicitly ignored by the parser. A key can be separated from its value by whitespace, colons, or equals signs interchangeably.
 
 ### ✅ Valid: Standard Keys
 *(Source evidence: `data/abilities/basic_attacks.gon`)*
@@ -28,12 +28,12 @@ Keys do not need to start with a letter. Pure numbers are fully valid as keys.
 }
 ```
 
-### ❌ Invalid: Quoted Keys
-*(Source evidence: No instances observed in `data/`)*
-You cannot use spaces in keys by quoting them.
+### ✅ Valid: Quoted Keys (JSON Compatibility)
+*(Source evidence: Standard JSON structure)*
+While rarely seen in the game's actual data files, keys **can** be quoted to support standard JSON format or to include whitespace within the key name itself.
 ```gon
-"my key" {      // ❌ Invalid
-    value 1
+"my key": {      
+    "value": 1
 }
 ```
 
