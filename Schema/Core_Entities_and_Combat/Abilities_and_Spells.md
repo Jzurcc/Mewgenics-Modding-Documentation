@@ -912,13 +912,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 ---
 
-
----
-
-
-## Auto-Discovered Objects
-
-
 ### Object: `cost`
 
 
