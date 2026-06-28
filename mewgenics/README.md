@@ -1,7 +1,7 @@
 # Mewgenics Practical Modding Guides
 
 > **What is this folder?**
-> If the `Schema/` folder explains **what** the game expects, and `gon-docs/` explains **how to format** the text, this folder explains **how to actually make a mod**.
+> If the [`Schema/`](../Schema/) folder explains **what** the game expects, and [`gon-docs/`](../gon-docs/) explains **how to format** the text, this folder explains **how to actually make a mod**.
 
 Welcome to the practical guide to Mewgenics modding. Here you will find step-by-step tutorials, file conventions, and heavily annotated examples of real game objects.
 

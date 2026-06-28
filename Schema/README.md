@@ -3,8 +3,8 @@
 > **What is this folder?**
 > This folder contains **semantic documentation** for the `.gon` files used in Mewgenics. It describes what keys are valid inside specific game objects (like Abilities, Characters, Items) and what the engine expects those keys to mean.
 
-If you are looking for how to format a `.gon` file (the *syntax* rules like comments, braces, and arrays), see the `gon-docs/spec/` folder.
-
+For syntax rules and formatting, refer to the [`gon-docs/`](../gon-docs/) directory.  
+For practical tutorials on creating mods, refer to the [`mewgenics/`](../mewgenics/) directory.
 
 ---
 
@@ -29,12 +29,6 @@ They use tables structured like this:
 Some keys expect a specific identifier from a fixed list (an Enum). `Enums.md` lists the confirmed valid string values for every enum-type key.
 - Values marked as "Confirmed" mean they appear in the base game files.
 - The engine may support additional values that aren't used in the vanilla game; you'll need to test these to discover them.
-
-### 3. Gap Audits (`AUDIT_GAPS.md`)
-Because the game updates and new keys are discovered, `AUDIT_GAPS.md` lists keys that have been found in the game's source files but haven't yet been fully documented in the Schema files. Always check this file if you're looking for an undocumented feature!
-
-> **Note:** `Master_Schema_Dictionary.md` and `MASTER_SYNC_AUDIT.md` are legacy/abandoned files and may contain outdated information. Stick to the specific markdown files.
-
 
 ---
 
@@ -77,4 +71,3 @@ Because the game updates and new keys are discovered, `AUDIT_GAPS.md` lists keys
 | `Engine_EventKeys.md` | Event scripting engine keys |
 | `Engine_DamagingKeys.md` | Damage calculation engine keys |
 | `Enums.md` | Valid values for every enum-type property |
-| `AUDIT_GAPS.md` | Undocumented keys found in source files |

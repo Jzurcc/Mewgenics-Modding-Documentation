@@ -16,7 +16,8 @@ GON was designed with a core philosophy: **make it as easy as possible for a hum
 
 | Goal | Destination |
 |------|-------------|
-| **I need to know what properties are valid for an Ability/Item/etc.** | Go to `../Schema/README.md` |
+| **I want a tutorial on making a mod from scratch.** | [`../mewgenics/README.md`](../mewgenics/README.md) |
+| **I need to know what properties are valid for an object.** | [`../Schema/README.md`](../Schema/README.md) |
 | **I need a quick reminder of how to format arrays or objects.** | [Cheat Sheet](reference/cheat-sheet.md) |
 | **My file won't parse and I don't know why.** | [Error Reference](reference/error-reference.md) |
 | **I know JSON/TOML/YAML. How is GON different?** | [Format Comparison](reference/comparison.md) |
