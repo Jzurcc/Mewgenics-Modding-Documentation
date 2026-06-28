@@ -414,7 +414,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
+> **Referenced by:** [`1`](./Combat_Rewards.md#object-1), [`2`](./Combat_Rewards.md#object-2), [`3`](./Combat_Rewards.md#object-3), [`4`](./Combat_Rewards.md#object-4)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -438,7 +438,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
+> **Referenced by:** [`1`](./Combat_Rewards.md#object-1), [`2`](./Combat_Rewards.md#object-2), [`3`](./Combat_Rewards.md#object-3), [`4`](./Combat_Rewards.md#object-4)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -462,7 +462,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
+> **Referenced by:** [`1`](./Combat_Rewards.md#object-1), [`2`](./Combat_Rewards.md#object-2), [`3`](./Combat_Rewards.md#object-3), [`4`](./Combat_Rewards.md#object-4)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -486,7 +486,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`1`](#object-1), [`2`](#object-2), [`3`](#object-3), [`4`](#object-4)
+> **Referenced by:** [`1`](./Combat_Rewards.md#object-1), [`2`](./Combat_Rewards.md#object-2), [`3`](./Combat_Rewards.md#object-3), [`4`](./Combat_Rewards.md#object-4)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

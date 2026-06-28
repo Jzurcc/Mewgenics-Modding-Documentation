@@ -20143,9 +20143,9 @@ MysteryObject {
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`cWaggle`](./Miscellaneous.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 3 | `{ . . . }` |
-| [`cWaggle2x2`](./Miscellaneous.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 3 | `{ . . . }` |
-| [`cWaggle3x3`](./Miscellaneous.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 2 | `{ . . . }` |
+| [`cWaggle`](./Engine_Uncategorized_Resources.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 3 | `{ . . . }` |
+| [`cWaggle2x2`](./Engine_Uncategorized_Resources.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 3 | `{ . . . }` |
+| [`cWaggle3x3`](./Engine_Uncategorized_Resources.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 2 | `{ . . . }` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 234 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 
 </details>

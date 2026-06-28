@@ -177,7 +177,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -200,7 +200,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`tracy_blankcollar1`](#object-tracy_blankcollar1), [`tracy_blankcollar2`](#object-tracy_blankcollar2), [`tracy_blankcollar3`](#object-tracy_blankcollar3), [`tracy_foodstorage1`](#object-tracy_foodstorage1), [`tracy_foodstorage10`](#object-tracy_foodstorage10), [`tracy_foodstorage2`](#object-tracy_foodstorage2), [`tracy_foodstorage3`](#object-tracy_foodstorage3), [`tracy_foodstorage4`](#object-tracy_foodstorage4), [`tracy_foodstorage5`](#object-tracy_foodstorage5), [`tracy_foodstorage6`](#object-tracy_foodstorage6), [`tracy_foodstorage7`](#object-tracy_foodstorage7), [`tracy_foodstorage8`](#object-tracy_foodstorage8), [`tracy_foodstorage9`](#object-tracy_foodstorage9), [`tracy_idol1`](#object-tracy_idol1), [`tracy_idol2`](#object-tracy_idol2), [`tracy_idol3`](#object-tracy_idol3), [`tracy_idol4`](#object-tracy_idol4), [`tracy_idol5`](#object-tracy_idol5), [`tracy_idol6`](#object-tracy_idol6), [`tracy_idol7`](#object-tracy_idol7), [`tracy_max_intro`](#object-tracy_max_intro), [`tracy_max_repeating`](#object-tracy_max_repeating)
+> **Referenced by:** [`tracy_blankcollar1`](./Progression_Unlocks.md#object-tracy_blankcollar1), [`tracy_blankcollar2`](./Progression_Unlocks.md#object-tracy_blankcollar2), [`tracy_blankcollar3`](./Progression_Unlocks.md#object-tracy_blankcollar3), [`tracy_foodstorage1`](./Progression_Unlocks.md#object-tracy_foodstorage1), [`tracy_foodstorage10`](./Progression_Unlocks.md#object-tracy_foodstorage10), [`tracy_foodstorage2`](./Progression_Unlocks.md#object-tracy_foodstorage2), [`tracy_foodstorage3`](./Progression_Unlocks.md#object-tracy_foodstorage3), [`tracy_foodstorage4`](./Progression_Unlocks.md#object-tracy_foodstorage4), [`tracy_foodstorage5`](./Progression_Unlocks.md#object-tracy_foodstorage5), [`tracy_foodstorage6`](./Progression_Unlocks.md#object-tracy_foodstorage6), [`tracy_foodstorage7`](./Progression_Unlocks.md#object-tracy_foodstorage7), [`tracy_foodstorage8`](./Progression_Unlocks.md#object-tracy_foodstorage8), [`tracy_foodstorage9`](./Progression_Unlocks.md#object-tracy_foodstorage9), [`tracy_idol1`](./Progression_Unlocks.md#object-tracy_idol1), [`tracy_idol2`](./Progression_Unlocks.md#object-tracy_idol2), [`tracy_idol3`](./Progression_Unlocks.md#object-tracy_idol3), [`tracy_idol4`](./Progression_Unlocks.md#object-tracy_idol4), [`tracy_idol5`](./Progression_Unlocks.md#object-tracy_idol5), [`tracy_idol6`](./Progression_Unlocks.md#object-tracy_idol6), [`tracy_idol7`](./Progression_Unlocks.md#object-tracy_idol7), [`tracy_max_intro`](./Progression_Unlocks.md#object-tracy_max_intro), [`tracy_max_repeating`](./Progression_Unlocks.md#object-tracy_max_repeating)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -222,7 +222,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -250,7 +250,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -277,7 +277,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -305,7 +305,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -333,7 +333,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -361,7 +361,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -386,7 +386,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -411,7 +411,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -436,7 +436,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -461,7 +461,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -486,7 +486,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -511,7 +511,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -536,7 +536,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -562,7 +562,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -587,7 +587,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -612,7 +612,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -637,7 +637,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -662,7 +662,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -687,7 +687,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -712,7 +712,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -737,7 +737,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -762,7 +762,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -787,7 +787,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -812,7 +812,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -837,7 +837,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -862,7 +862,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -887,7 +887,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -912,7 +912,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -937,7 +937,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -962,7 +962,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -987,7 +987,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1012,7 +1012,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1037,7 +1037,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1062,7 +1062,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1087,7 +1087,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1110,7 +1110,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1133,7 +1133,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1156,7 +1156,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1179,7 +1179,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1204,7 +1204,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1251,7 +1251,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1274,7 +1274,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1297,7 +1297,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1320,7 +1320,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1343,7 +1343,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1366,7 +1366,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1389,7 +1389,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1412,7 +1412,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1435,7 +1435,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1458,7 +1458,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1481,7 +1481,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1506,7 +1506,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1530,7 +1530,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1553,7 +1553,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1576,7 +1576,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1599,7 +1599,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1622,7 +1622,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1647,7 +1647,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1671,7 +1671,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1694,7 +1694,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1717,7 +1717,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1740,7 +1740,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1763,7 +1763,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1788,7 +1788,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1812,7 +1812,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1837,7 +1837,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1860,7 +1860,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1884,7 +1884,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Progression_Unlocks.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

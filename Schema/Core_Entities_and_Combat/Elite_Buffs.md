@@ -75,7 +75,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Elite_Buffs.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -98,7 +98,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`DamageNeighborsAfterMove`](#object-damageneighborsaftermove), [`MeleeRevengeDamage`](#object-meleerevengedamage), [`RevengeDamage`](#object-revengedamage)
+> **Referenced by:** [`DamageNeighborsAfterMove`](./Elite_Buffs.md#object-damageneighborsaftermove), [`MeleeRevengeDamage`](./Elite_Buffs.md#object-meleerevengedamage), [`RevengeDamage`](./Elite_Buffs.md#object-revengedamage)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -124,7 +124,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -145,7 +145,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -169,7 +169,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -190,7 +190,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -212,7 +212,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -233,7 +233,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -254,7 +254,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -274,7 +274,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ChanceToRevive`](#object-chancetorevive)
+> **Referenced by:** [`ChanceToRevive`](./Elite_Buffs.md#object-chancetorevive)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -296,7 +296,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -320,7 +320,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -341,13 +341,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `health` | Integer | The maximum hit points of the unit. | 2 | `0`<br>`1`<br>`10` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`statuses`](./Passives_and_Statuses.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
+| [`statuses`](./Elite_Buffs.md#object-statuses) | Object  | Defines the status effects applied when the parent trigger event occurs. | 2 | `{ . . . }` |
 
 </details>
 
@@ -364,7 +364,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -385,7 +385,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -409,7 +409,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>`damage_instance`<br>`spell`<br>`self_damage`
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -446,7 +446,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 `damage_instance`<br>`spell`<br>`self_damage`
-> **Referenced by:** [`passives`](#object-passives)
+> **Referenced by:** [`passives`](./Elite_Buffs.md#object-passives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

@@ -803,9 +803,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -820,19 +820,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 0 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
-| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 0 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 1 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
 
 </details>
 
@@ -847,10 +847,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -865,19 +865,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 0 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
-| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 0 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 1 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
 
 </details>
 
@@ -892,15 +892,15 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -915,14 +915,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 2 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
 
 </details>
 
@@ -937,11 +937,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -956,13 +956,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 0 | `0`<br>`1`<br>`10` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -977,14 +977,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 0 | `0`<br>`1`<br>`10` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -999,10 +999,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -1017,17 +1017,17 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1042,10 +1042,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -1060,18 +1060,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| `failable` | Boolean | If true, the event or action has a chance to fail. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
 
 </details>
 
@@ -1086,8 +1086,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1102,10 +1102,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -1120,12 +1120,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`lock_item_slot`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-lock_item_slot) | Object  | An object that restricts which equipment slots can be used. | 0 | `{ . . . }` |
-| [`bonus_items`](../Reference_and_Meta/Arrays.md#array-bonus_items) | Array   | An array of item names granted as bonus rewards. | 0 | `[Eyeball]`<br>`[FoodBig FoodBig FoodBig FoodBig]`<br>`[Pipe]` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`lock_item_slot`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-lock_item_slot) | Object  | An object that restricts which equipment slots can be used. | 1 | `{ . . . }` |
+| [`bonus_items`](../Reference_and_Meta/Arrays.md#array-bonus_items) | Array   | An array of item names granted as bonus rewards. | 1 | `[Eyeball]`<br>`[FoodBig FoodBig FoodBig FoodBig]`<br>`[Pipe]` |
 
 </details>
 
@@ -1140,13 +1140,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
 
@@ -1161,18 +1161,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| `failable` | Boolean | If true, the event or action has a chance to fail. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
 
 </details>
 
@@ -1187,17 +1187,17 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
 
 </details>
 
@@ -1212,18 +1212,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1238,11 +1238,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| `id` | Number | The unique numerical identifier for this injury or status effect. | 0 | `-1`<br>`0`<br>`1` |
-| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 0 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
-| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 0 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
-| [`scars`](../Reference_and_Meta/Miscellaneous.md#object-scars) | Object  | An object mapping body parts to ranges of scar texture indices applied on injury. | 0 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
+| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
+| [`scars`](../Reference_and_Meta/Miscellaneous.md#object-scars) | Object  | An object mapping body parts to ranges of scar texture indices applied on injury. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1257,20 +1257,20 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 0 | `true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| `prevent_level_up` | Boolean | If true, the cat cannot gain experience or level up. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| `prevent_level_up` | Boolean | If true, the cat cannot gain experience or level up. | 1 | `true` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 </details>
@@ -1286,20 +1286,20 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 0 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
-| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 0 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 1 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
 
 </details>
 
@@ -1314,18 +1314,18 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 0 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
-| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
+| [`global_passives`](../Reference_and_Meta/Miscellaneous.md#object-global_passives) | Object  | An object containing global passive modifiers that apply to the entire run. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1340,10 +1340,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `current_chapter_rare` | Number | A variable controlling the number of rare item drops for the current chapter. | 0 | `10`<br>`auto` |
-| `current_chapter_common` | Number | A variable controlling the number of common item drops for the current chapter. | 0 | `55`<br>`auto` |
-| `current_chapter_uncommon` | Number | The weight or value for uncommon items specific to the current chapter. | 0 | `35`<br>`auto` |
-| `current_chapter_very_rare` | Number | The weight or value for very rare items specific to the current chapter. | 0 | `1`<br>`auto` |
+| `current_chapter_rare` | Number | A variable controlling the number of rare item drops for the current chapter. | 1 | `10`<br>`auto` |
+| `current_chapter_common` | Number | A variable controlling the number of common item drops for the current chapter. | 1 | `55`<br>`auto` |
+| `current_chapter_uncommon` | Number | The weight or value for uncommon items specific to the current chapter. | 1 | `35`<br>`auto` |
+| `current_chapter_very_rare` | Number | The weight or value for very rare items specific to the current chapter. | 1 | `1`<br>`auto` |
 
 </details>
 
@@ -1358,14 +1358,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `int` | Integer | The Intelligence stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
-| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 0 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `int` | Integer | The Intelligence stat value or modifier. | 1 | `-1`<br>`-10`<br>`-2` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1380,19 +1380,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 0 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| `hint_prerequisite_flag` | String | Defines a map flag that must be set for the hint to appear. | 1 | `mapflag_BothObelisksUnlocked`<br>`mapflag_DimensionXUnlocked`<br>`mapflag_MeatWorldUnlocked` |
 
 </details>
 
@@ -1407,9 +1407,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1424,19 +1424,19 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 0 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 0 | `boneyard`<br>`caves`<br>`core` |
-| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 0 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `hint_destination` | String | Specifies the map destination hinted by this item or event. | 1 | `boneyard`<br>`caves`<br>`core` |
+| [`global_tags`](../Reference_and_Meta/Arrays.md#array-global_tags) | Array   | A list of global tags that modify the run's behavior. | 1 | `[`<br>`[all_cats_are_jester]`<br>`[all_normal_events_are_weather]` |
 
 </details>
 
@@ -1451,12 +1451,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1471,21 +1471,21 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 0 | `0`<br>`1`<br>`10` |
-| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 0 | `1`<br>`2`<br>`true` |
-| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 0 | `false`<br>`true` |
-| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 0 | `true` |
-| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 0 | `true` |
-| `dont_destroy_on_0` | Boolean | If true, the item is not destroyed when its charges reach zero. | 0 | `true` |
-| `failable` | Boolean | If true, the event or action has a chance to fail. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `0`<br>`1`<br>`10` |
+| `consumable` | Boolean | If true, the item is consumed on use. Can also specify a number of uses or an item pool. | 1 | `1`<br>`2`<br>`true` |
+| `quest_item` | Boolean | If true, this item is a quest item and cannot be sold or destroyed. | 1 | `false`<br>`true` |
+| `indestructible` | Boolean | If true, the item cannot be destroyed or removed. | 1 | `true` |
+| `legacy_quest` | Boolean | If true, this item is part of a legacy quest. | 1 | `true` |
+| `dont_destroy_on_0` | Boolean | If true, the item is not destroyed when its charges reach zero. | 1 | `true` |
+| `failable` | Boolean | If true, the event or action has a chance to fail. | 1 | `true` |
 
 </details>
 
@@ -1500,12 +1500,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
 
 </details>
 
@@ -1520,8 +1520,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1536,11 +1536,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -1555,10 +1555,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -1573,14 +1573,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `cha` | Number | The Charisma stat value or modifier. | 0 | `+1`<br>`-1`<br>`-2` |
-| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 0 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `cha` | Number | The Charisma stat value or modifier. | 1 | `+1`<br>`-1`<br>`-2` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1595,14 +1595,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `cha` | Number | The Charisma stat value or modifier. | 0 | `+1`<br>`-1`<br>`-2` |
-| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 0 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `cha` | Number | The Charisma stat value or modifier. | 1 | `+1`<br>`-1`<br>`-2` |
+| `shield` | Equation | The shield value granted by this mutation, or 'aux' to use the unit's auxiliary stat. | 1 | `"max((aux-1)*2, 0)"`<br>`1`<br>`10` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1617,13 +1617,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `set` | String | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
 
@@ -1638,9 +1638,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1655,10 +1655,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -1673,8 +1673,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1689,8 +1689,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1705,7 +1705,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 0 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
 
@@ -1720,10 +1720,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -1738,7 +1738,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 0 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
+| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 1 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 
 </details>
 
@@ -1753,9 +1753,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1770,9 +1770,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1787,8 +1787,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`intro`](../World_Maps_and_Events/NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 0 | `{ . . . }` |
-| [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 0 | `{ . . . }` |
+| [`intro`](../World_Maps_and_Events/NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 1 | `{ . . . }` |
+| [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1803,8 +1803,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`intro`](../World_Maps_and_Events/NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 0 | `{ . . . }` |
-| [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 0 | `{ . . . }` |
+| [`intro`](../World_Maps_and_Events/NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 1 | `{ . . . }` |
+| [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1819,8 +1819,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`popup`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-popup) | Object  | An object defining a popup notification with prompt and optional unlock. | 0 | `{ . . . }` |
-| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 0 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
+| [`popup`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-popup) | Object  | An object defining a popup notification with prompt and optional unlock. | 1 | `{ . . . }` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
 
@@ -1835,7 +1835,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 0 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
 
@@ -1850,8 +1850,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`popup`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-popup) | Object  | An object defining a popup notification with prompt and optional unlock. | 0 | `{ . . . }` |
-| `unlock_item` | String | The name of the item unlocked by this event. | 0 | `MomsKnife` |
+| [`popup`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-popup) | Object  | An object defining a popup notification with prompt and optional unlock. | 1 | `{ . . . }` |
+| `unlock_item` | String | The name of the item unlocked by this event. | 1 | `MomsKnife` |
 
 </details>
 
@@ -1866,9 +1866,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1883,14 +1883,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `attack` | String | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 0 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
-| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `attack` | String | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 1 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
 
 </details>
 
@@ -1905,12 +1905,12 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
 
@@ -1925,14 +1925,14 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| `rarity` | String | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
 
 </details>
 
@@ -1947,13 +1947,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
-| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
 
 </details>
 
@@ -1968,8 +1968,8 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1984,11 +1984,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| `id` | Number | The unique numerical identifier for this injury or status effect. | 0 | `-1`<br>`0`<br>`1` |
-| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 0 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
-| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 0 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
-| [`scars`](../Reference_and_Meta/Miscellaneous.md#object-scars) | Object  | An object mapping body parts to ranges of scar texture indices applied on injury. | 0 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
+| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
+| [`scars`](../Reference_and_Meta/Miscellaneous.md#object-scars) | Object  | An object mapping body parts to ranges of scar texture indices applied on injury. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2003,10 +2003,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| `id` | Number | The unique numerical identifier for this injury or status effect. | 0 | `-1`<br>`0`<br>`1` |
-| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 0 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
-| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 0 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| `id` | Number | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
+| [`text`](../Assets_and_Localization/Strings.md#string-text) | String | The localization key for the name of this injury. | 1 | `""`<br>`"COMBAT_POPUP_RECHARGED"`<br>`"INJURY_NAME_BROKENLEG"` |
+| `deathsound` | String | The name of the sound effect played when the unit dies from this injury. | 1 | `Injury_Bleed`<br>`Injury_BrokenLeg`<br>`Injury_BrokenPaw` |
 
 </details>
 
@@ -2021,13 +2021,13 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 0 | `true` |
-| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 0 | `true` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `cursed` | Boolean | If true, the item is cursed and may have negative effects when equipped or used. | 1 | `true` |
+| `parasite` | Boolean | If true, the item is a parasite that attaches to a unit and cannot be removed normally. | 1 | `true` |
 
 </details>
 
@@ -2042,9 +2042,9 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2059,10 +2059,10 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 </details>
 
@@ -2077,7 +2077,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 0 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
+| `trigger_npc_sequence` | String | The name of an NPC dialogue sequence to trigger. | 1 | `beanies_begin_accepting_cats`<br>`beanies_bombquest_2`<br>`beanies_bombquest_3` |
 
 </details>
 ### Object: `meat_world_open`
@@ -2090,7 +2090,7 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 0 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
+| `set_mapgen_flag` | String | The name of a map generation flag to set when this event triggers. | 1 | `BoneyardUnlocked`<br>`BothObelisksUnlocked`<br>`BunkerUnlocked` |
 
 </details>
 
@@ -2105,11 +2105,11 @@ The following objects all behave as `{Event Keys}` containers. Each has its own 
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 

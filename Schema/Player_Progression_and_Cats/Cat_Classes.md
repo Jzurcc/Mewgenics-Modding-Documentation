@@ -248,20 +248,20 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 14 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 14 | `{ . . . }` |
+| [`graphics`](./Cat_Classes.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 14 | `{ . . . }` |
+| [`meta`](./Cat_Classes.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 14 | `{ . . . }` |
 | [`ability_pool`](../Reference_and_Meta/Arrays.md#array-ability_pool) | Array | An array of ability names available in the class's ability pool. | 14 | `[` |
 | [`attack_pool`](../Reference_and_Meta/Arrays.md#array-attack_pool) | Array | An array of attack ability names available in the class's attack pool. | 14 | `[` |
 | [`levelup_stats`](../Reference_and_Meta/Arrays.md#array-levelup_stats) | Array | An array of stat abbreviations that are randomly increased upon leveling up. | 14 | `[cha int con]`<br>`[cha int str]`<br>`[con str lck]` |
 | [`passive_pool`](../Reference_and_Meta/Arrays.md#array-passive_pool) | Array | An array of passive ability names available in the class's passive pool. | 14 | `[` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 14 | `{ . . . }` |
-| [`stat_mods`](../Reference_and_Meta/Miscellaneous.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. | 13 | `{ . . . }` |
-| [`ability_groups`](../Reference_and_Meta/Miscellaneous.md#object-ability_groups) | Object  | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. | 12 | `{ . . . }` |
+| [`stat_mods`](./Cat_Classes.md#object-stat_mods) | Object  | An object defining base stat modifiers for the class, with stat names as keys and integer adjustments as values. | 13 | `{ . . . }` |
+| [`ability_groups`](./Cat_Classes.md#object-ability_groups) | Object  | An object grouping ability names into categories (e.g., attack, passive) for the class's ability selection. | 12 | `{ . . . }` |
 | [`starter_abilities`](../Reference_and_Meta/Arrays.md#array-starter_abilities) | Array | An array of ability names that the class starts with at level 1. | 12 | `[` |
 | [`complicated_abilities`](../Reference_and_Meta/Arrays.md#array-complicated_abilities) | Array | An array of ability names flagged as complicated, possibly for UI filtering or tutorial. | 6 | `[` |
 | [`complicated_passives`](../Reference_and_Meta/Arrays.md#array-complicated_passives) | Array | An array of passive ability names flagged as complicated. | 6 | `[` |
 | [`innate_passives`](../Reference_and_Meta/Miscellaneous.md#object-innate_passives) | Object  | An object defining innate passive abilities or effects that the class always possesses. | 4 | `{ . . . }` |
-| [`innate_items`](../Reference_and_Meta/Miscellaneous.md#object-innate_items) | Object  | An object specifying the class's starting equipment, with item slot names as keys. | 2 | `{ . . . }` |
+| [`innate_items`](./Cat_Classes.md#object-innate_items) | Object  | An object specifying the class's starting equipment, with item slot names as keys. | 2 | `{ . . . }` |
 | [`move_pool`](../Reference_and_Meta/Arrays.md#array-move_pool) | Array | An array of movement ability names available to the class. | 1 | `[` |
 | [`tutorial_levelup_active_pool`](../Reference_and_Meta/Arrays.md#array-tutorial_levelup_active_pool) | Array | An array of active ability names presented during tutorial level-up. | 1 | `[` |
 | [`tutorial_levelup_active_pool_2`](../Reference_and_Meta/Arrays.md#array-tutorial_levelup_active_pool_2) | Array | An array of active ability names presented in a second tutorial level-up. | 1 | `[` |
@@ -389,7 +389,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
 | [`SpawnOnBattleStart`](../Reference_and_Meta/Enums.md#enum-spawnonbattlestart) | Enum  | Specifies the object that spawns adjacent to the unit at the start of battle. | 1 | `BeefyCharmedLeech`<br>`BuffCharmedKitten`<br>`CharmedCultist` |
 | `AddStartingMana` | Integer | The amount of bonus mana the unit starts each battle with. | 1 | `20`<br>`5` |
-| [`TinkererBasicAttackSwitching`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
+| [`TinkererBasicAttackSwitching`](./Cat_Classes.md#object-tinkererbasicattackswitching) | Object  | Defines the abilities used for the Tinkerer's basic attack switching mechanic. | 1 | `{ . . . }` |
 | [`MonkStances`](../Reference_and_Meta/Arrays.md#array-monkstances) | Array | An array of stance ability names the Monk can switch between. | 1 | `[BasicMonkMelee BasicMonkRanged]` |
 
 </details>

@@ -49,14 +49,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 62 | `common`<br>`rare`<br>`cha` |
-| [`boss`](../Reference_and_Meta/Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 60 | `{ . . . }` |
+| [`boss`](./Map_Generation_and_Routing.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 60 | `{ . . . }` |
 | [`easy`](../Reference_and_Meta/Arrays.md#array-easy) | Array | Configuration for easy difficulty, including elite/champ budgets and rewards. | 59 | `[easy bigsharklevels]`<br>`[easy]` |
-| [`miniboss`](../Reference_and_Meta/Arrays.md#array-miniboss) | Array | An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances. | 41 | `[miniboss]` |
+| [`miniboss`](../Reference_and_Meta/Arrays.md#array-miniboss) | Array | An array or object defining the reward table for miniboss encounters, including coin ranges, food ranges, and loot chances. | 42 | `[miniboss]` |
 | `rare` | `Array`  | Defines the rare reward block for a boss encounter. | 40 | `1`<br>`10`<br>`15` |
 | [`special`](../Reference_and_Meta/Arrays.md#array-special) | Array | An array or boolean indicating that an item or entry is a special container or category. | 38 | `[special]`<br>`true` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 34 | `{ . . . }` |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 27 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`hard`](../Reference_and_Meta/Arrays.md#array-hard) | Array | Configuration for hard difficulty, including elite/champ budgets and rewards. | 23 | `[easy bigsharklevels]`<br>`[easy]`<br>`[hard]` |
+| [`hard`](../Reference_and_Meta/Arrays.md#array-hard) | Array | Configuration for hard difficulty, including elite/champ budgets and rewards. | 24 | `[easy bigsharklevels]`<br>`[easy]`<br>`[hard]` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 22 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`normal`](../Reference_and_Meta/Arrays.md#array-normal) | Array | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 20 | `[` |
 | [`folder`](../Reference_and_Meta/Enums.md#enum-folder) | Enum | The subdirectory or group name used to organize related levels or content. | 20 | `alley`<br>`boneyard`<br>`bunker` |
 | [`small`](../Reference_and_Meta/Arrays.md#array-small) | Array | An array of enemy unit identifiers used as the small enemy pool for an area or boss encounter. | 19 | `[Amoeba]`<br>`[Flea Wisp Fly Maggot]`<br>`[Maggot Fly Flea Pinky]` |
@@ -64,46 +64,46 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`large`](../Reference_and_Meta/Arrays.md#array-large) | Array | An array of enemy unit identifiers used as the large enemy pool for an area or boss encounter. | 19 | `[Carnibulb]`<br>`[KillDozer]`<br>`[MegaFetus]` |
 | [`chapter_item_pool`](../Reference_and_Meta/Enums.md#enum-chapter_item_pool) | Enum | Specifies the item pool identifier used by a chapter or boss to determine which items can be found. | 19 | `alleyitems`<br>`boneyarditems`<br>`bunkeritems` |
 | `include` | String | Specifies the path to another file to include and merge into the current schema definition. | 19 ||
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 15 | `{ . . . }` |
-| [`treasure`](./Shops.md#object-treasure) | Object | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 15 | `{ . . . }` |
+| [`treasure`](./Map_Generation_and_Routing.md#object-treasure) | Object | Defines a treasure node containing items or item pools. | 14 | `{ . . . }` |
 | [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 12 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 | [`override_art`](../Reference_and_Meta/Enums.md#enum-override_art) | Enum | Specifies the visual art key used to override the default node appearance on the map. | 12 | `MapNodeExit_Bunker`<br>`MapNodeExit_Core`<br>`MapNodeExit_Crater` |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 9 | `{ . . . }` |
-| [`time_machine`](../Reference_and_Meta/Miscellaneous.md#object-time_machine) | Object | Defines a special event node that leads to a time machine quest level. | 4 | `{ . . . }` |
-| [`alley`](../Reference_and_Meta/Miscellaneous.md#object-alley) | Object | Specifies the name, map flag, or connection for the Alley area. | 3 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 9 | `{ . . . }` |
+| [`alley`](./Map_Generation_and_Routing.md#object-alley) | Object | Specifies the name, map flag, or connection for the Alley area. | 7 | `{ . . . }` |
+| [`jurassic`](./Map_Generation_and_Routing.md#object-jurassic) | Object | Specifies the name, map flag, or connection for the Jurassic area. | 7 | `{ . . . }` |
+| [`caves`](./Map_Generation_and_Routing.md#object-caves) | Object | Specifies the name, map flag, or connection for the Caves area. | 7 | `{ . . . }` |
+| [`bunker`](./Map_Generation_and_Routing.md#object-bunker) | Object | Specifies the name, map flag, or connection for the Bunker area. | 7 | `{ . . . }` |
+| [`crater`](./Map_Generation_and_Routing.md#object-crater) | Object | Specifies the name, map flag, or connection for the Crater area. | 7 | `{ . . . }` |
+| [`junkyard`](./Map_Generation_and_Routing.md#object-junkyard) | Object | Specifies the name, map flag, or connection for the Junkyard area. | 7 | `{ . . . }` |
+| [`theend`](./Map_Generation_and_Routing.md#object-theend) | Object | Specifies the name, map flag, or connection for The End area. | 6 | `{ . . . }` |
+| [`meatworld`](./Map_Generation_and_Routing.md#object-meatworld) | Object | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 6 | `{ . . . }` |
+| [`boneyard`](./Map_Generation_and_Routing.md#object-boneyard) | Object | Specifies the name, map flag, or connection for the Boneyard area. | 6 | `{ . . . }` |
+| [`core`](./Map_Generation_and_Routing.md#object-core) | Object | Specifies the name, map flag, or connection for the Core area. | 6 | `{ . . . }` |
+| [`moon`](./Map_Generation_and_Routing.md#object-moon) | Object | Specifies the name, map flag, or connection for the Moon area. | 6 | `{ . . . }` |
+| [`iceage`](./Map_Generation_and_Routing.md#object-iceage) | Object | Specifies the name, map flag, or connection for the Ice Age area. | 6 | `{ . . . }` |
+| [`future`](./Map_Generation_and_Routing.md#object-future) | Object | Specifies the name, map flag, or connection for the Future area. | 6 | `{ . . . }` |
+| [`desert`](./Map_Generation_and_Routing.md#object-desert) | Object | Specifies the name, map flag, or connection for the Desert area. | 6 | `{ . . . }` |
+| [`sewers`](./Map_Generation_and_Routing.md#object-sewers) | Object | Specifies the name, map flag, or connection for the Sewers area. | 6 | `{ . . . }` |
+| [`lab`](./Map_Generation_and_Routing.md#object-lab) | Object | Specifies the name, map flag, or connection for the Lab area. | 5 | `{ . . . }` |
+| [`time_machine`](./Map_Generation_and_Routing.md#object-time_machine) | Object | Defines a special event node that leads to a time machine quest level. | 4 | `{ . . . }` |
+| [`dimensionx`](./Map_Generation_and_Routing.md#object-dimensionx) | Object | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 4 | `{ . . . }` |
 | [`jestercat`](../Reference_and_Meta/Enums.md#enum-jestercat) | Enum | Specifies the boss or miniboss configuration for JesterCat, often set to "auto" for procedural generation. | 3 | `auto` |
-| [`exit1`](../Reference_and_Meta/Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 3 | `{ . . . }` |
-| [`jurassic`](../Reference_and_Meta/Miscellaneous.md#object-jurassic) | Object | Specifies the name, map flag, or connection for the Jurassic area. | 2 | `{ . . . }` |
-| [`caves`](../Reference_and_Meta/Miscellaneous.md#object-caves) | Object | Specifies the name, map flag, or connection for the Caves area. | 2 | `{ . . . }` |
-| [`bunker`](../Reference_and_Meta/Miscellaneous.md#object-bunker) | Object | Specifies the name, map flag, or connection for the Bunker area. | 2 | `{ . . . }` |
-| [`crater`](../Reference_and_Meta/Miscellaneous.md#object-crater) | Object | Specifies the name, map flag, or connection for the Crater area. | 2 | `{ . . . }` |
-| [`junkyard`](../Reference_and_Meta/Miscellaneous.md#object-junkyard) | Object | Specifies the name, map flag, or connection for the Junkyard area. | 2 | `{ . . . }` |
-| [`theend`](../Reference_and_Meta/Miscellaneous.md#object-theend) | Object | Specifies the name, map flag, or connection for The End area. | 2 | `{ . . . }` |
-| [`meatworld`](../Reference_and_Meta/Miscellaneous.md#object-meatworld) | Object | An enum specifying the Meatworld chapter area, or an object with its specific properties. | 2 | `{ . . . }` |
-| [`boneyard`](../Reference_and_Meta/Miscellaneous.md#object-boneyard) | Object | Specifies the name, map flag, or connection for the Boneyard area. | 2 | `{ . . . }` |
-| [`core`](../Reference_and_Meta/Miscellaneous.md#object-core) | Object | Specifies the name, map flag, or connection for the Core area. | 2 | `{ . . . }` |
-| [`moon`](../Reference_and_Meta/Miscellaneous.md#object-moon) | Object | Specifies the name, map flag, or connection for the Moon area. | 2 | `{ . . . }` |
-| [`iceage`](../Reference_and_Meta/Miscellaneous.md#object-iceage) | Object | Specifies the name, map flag, or connection for the Ice Age area. | 2 | `{ . . . }` |
-| [`future`](../Reference_and_Meta/Miscellaneous.md#object-future) | Object | Specifies the name, map flag, or connection for the Future area. | 2 | `{ . . . }` |
-| [`desert`](../Reference_and_Meta/Miscellaneous.md#object-desert) | Object | Specifies the name, map flag, or connection for the Desert area. | 2 | `{ . . . }` |
-| [`lab`](../Reference_and_Meta/Miscellaneous.md#object-lab) | Object | Specifies the name, map flag, or connection for the Lab area. | 2 | `{ . . . }` |
-| [`dimensionx`](../Reference_and_Meta/Miscellaneous.md#object-dimensionx) | Object | An enum specifying the Dimension X chapter area, or an object with its specific properties. | 2 | `{ . . . }` |
-| [`battle`](../Reference_and_Meta/Miscellaneous.md#object-battle) | Object | Defines a battle encounter by preset, level file path, or reverb settings. | 2 | `{ . . . }` |
-| [`home`](../Reference_and_Meta/Miscellaneous.md#object-home) | Object | Specifies the option to go home (exit to the main hub). | 2 | `{ . . . }` |
+| [`exit1`](./Map_Generation_and_Routing.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 3 | `{ . . . }` |
+| [`start`](../Reference_and_Meta/Enums.md#enum-start) | Enum | Specifies the initial animation state played at the beginning of an ability. | 3 | `attack`<br>`lickAttack`<br>`monkAttack` |
+| [`nemesis`](../Reference_and_Meta/Arrays.md#array-nemesis) | Array | A list of nemesis definitions to use for this level. | 3 | `[nemesis]` |
+| [`endoftime`](./Map_Generation_and_Routing.md#object-endoftime) | Object | Configures various attributes of the End of Time area, depending on context. | 3 | `{ . . . }` |
+| [`battle`](./Map_Generation_and_Routing.md#object-battle) | Object | Defines a battle encounter by preset, level file path, or reverb settings. | 2 | `{ . . . }` |
+| [`home`](./Map_Generation_and_Routing.md#object-home) | Object | Specifies the option to go home (exit to the main hub). | 2 | `{ . . . }` |
 | [`event`](../Reference_and_Meta/Enums.md#enum-event) | Enum | Specifies the event to force, either by name or by a nested object defining its type and level. | 2 | `Blessing`<br>`Death`<br>`Tragedy` |
-| [`start`](../Reference_and_Meta/Enums.md#enum-start) | Enum | Specifies the initial animation state played at the beginning of an ability. | 2 | `attack`<br>`lickAttack`<br>`monkAttack` |
-| [`nemesis`](../Reference_and_Meta/Arrays.md#array-nemesis) | Array | A list of nemesis definitions to use for this level. | 2 | `[nemesis]` |
-| [`BothObelisksUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-bothobelisksunlocked) | Object  | Configures the map event and art when both obelisks have been unlocked. | 2 | `{ . . . }` |
-| [`hard_initial`](../Reference_and_Meta/Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
-| [`MeatWorldUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-meatworldunlocked) | Object  | Configures the map event and routes when MeatWorld is initially unlocked. | 2 | `{ . . . }` |
-| [`DimensionXUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-dimensionxunlocked) | Object  | Configures the map event and art when Dimension X is unlocked. | 2 | `{ . . . }` |
-| [`EndOfTimeUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-endoftimeunlocked) | Object  | Configures the map event and route visibility when End of Time is unlocked. | 2 | `{ . . . }` |
-| [`HardPathUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-hardpathunlocked) | Object  | Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false. | 2 | `{ . . . }` |
-| [`VolcanoAntennaAttached`](../Reference_and_Meta/Miscellaneous.md#object-volcanoantennaattached) | Object  | Configures the map event and art when the Volcano Antenna has been attached. | 2 | `{ . . . }` |
-| [`GenFlag_Boss_Spewer`](../Reference_and_Meta/Miscellaneous.md#object-genflag_boss_spewer) | Object  | Configures the boss encounter event for the Spewer boss on the map. | 2 | `{ . . . }` |
-| [`GenFlag_Boss_Stacy`](../Reference_and_Meta/Miscellaneous.md#object-genflag_boss_stacy) | Object  | Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map. | 2 | `{ . . . }` |
-| [`sewers`](../Reference_and_Meta/Miscellaneous.md#object-sewers) | Object | Specifies the name, map flag, or connection for the Sewers area. | 1 | `{ . . . }` |
-| [`endoftime`](../Reference_and_Meta/Miscellaneous.md#object-endoftime) | Object | Configures various attributes of the End of Time area, depending on context. | 1 | `{ . . . }` |
+| [`BothObelisksUnlocked`](./Map_Generation_and_Routing.md#object-bothobelisksunlocked) | Object  | Configures the map event and art when both obelisks have been unlocked. | 2 | `{ . . . }` |
+| [`hard_initial`](./Map_Generation_and_Routing.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
+| [`MeatWorldUnlocked`](./Map_Generation_and_Routing.md#object-meatworldunlocked) | Object  | Configures the map event and routes when MeatWorld is initially unlocked. | 2 | `{ . . . }` |
+| [`DimensionXUnlocked`](./Map_Generation_and_Routing.md#object-dimensionxunlocked) | Object  | Configures the map event and art when Dimension X is unlocked. | 2 | `{ . . . }` |
+| [`EndOfTimeUnlocked`](./Map_Generation_and_Routing.md#object-endoftimeunlocked) | Object  | Configures the map event and route visibility when End of Time is unlocked. | 2 | `{ . . . }` |
+| [`HardPathUnlocked`](./Map_Generation_and_Routing.md#object-hardpathunlocked) | Object  | Unlocks the hard difficulty path on the map, usually by setting a node's locked state to false. | 2 | `{ . . . }` |
+| [`VolcanoAntennaAttached`](./Map_Generation_and_Routing.md#object-volcanoantennaattached) | Object  | Configures the map event and art when the Volcano Antenna has been attached. | 2 | `{ . . . }` |
+| [`GenFlag_Boss_Spewer`](./Map_Generation_and_Routing.md#object-genflag_boss_spewer) | Object  | Configures the boss encounter event for the Spewer boss on the map. | 2 | `{ . . . }` |
+| [`GenFlag_Boss_Stacy`](./Map_Generation_and_Routing.md#object-genflag_boss_stacy) | Object  | Configures the miniboss and boss encounter events for the Stacy Mutant boss on the map. | 2 | `{ . . . }` |
 | [`repeat`](../Reference_and_Meta/Enums.md#enum-repeat) | Enum | Determines how many times an event, song, or unlock can be triggered. Accepts a positive integer or the string "infinite". | 1 | `1`<br>`2`<br>`20` |
 | `locked` | Boolean | If true, this exit is locked and cannot be used until unlocked by a condition. | 1 | `false`<br>`true` |
 | [`bumblefoot`](../Reference_and_Meta/Enums.md#enum-bumblefoot) | Enum | Specifies the Bumblefoot miniboss encounter. | 1 | `auto` |
@@ -114,8 +114,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`drmangler`](../Reference_and_Meta/Enums.md#enum-drmangler) | Enum | Specifies the Dr. Mangler miniboss encounter. | 1 | `auto` |
 | [`infestedduo`](../Reference_and_Meta/Enums.md#enum-infestedduo) | Enum | Specifies the Infested Duo miniboss encounter. | 1 | `auto` |
 | [`ratking`](../Reference_and_Meta/Enums.md#enum-ratking) | Enum | Specifies the Rat King miniboss encounter. | 1 | `auto` |
-| [`CoreObeliskUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-coreobeliskunlocked) | Object  | Configures the map event and art when the Core Obelisk is raised and unlocked. | 1 | `{ . . . }` |
-| [`MoonObeliskUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-moonobeliskunlocked) | Object  | Configures the map event and art when the Moon Obelisk is raised and unlocked. | 1 | `{ . . . }` |
+| [`CoreObeliskUnlocked`](./Map_Generation_and_Routing.md#object-coreobeliskunlocked) | Object  | Configures the map event and art when the Core Obelisk is raised and unlocked. | 1 | `{ . . . }` |
+| [`MoonObeliskUnlocked`](./Map_Generation_and_Routing.md#object-moonobeliskunlocked) | Object  | Configures the map event and art when the Moon Obelisk is raised and unlocked. | 1 | `{ . . . }` |
 | [`butchercat`](../Reference_and_Meta/Enums.md#enum-butchercat) | Enum | Specifies the miniboss configuration for ButcherCat, typically set to "auto". | 1 | `auto` |
 | [`fightercat`](../Reference_and_Meta/Enums.md#enum-fightercat) | Enum | Specifies the miniboss configuration for FighterCat, typically set to "auto". | 1 | `auto` |
 | [`magecat`](../Reference_and_Meta/Enums.md#enum-magecat) | Enum | Specifies the miniboss configuration for MageCat, typically set to "auto". | 1 | `auto` |
@@ -139,46 +139,46 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tankcat`](../Reference_and_Meta/Enums.md#enum-tankcat) | Enum | Specifies the Tank Cat miniboss encounter. | 1 | `auto` |
 | [`trampy`](../Reference_and_Meta/Enums.md#enum-trampy) | Enum | Specifies the Trampy miniboss encounter. | 1 | `auto` |
 | [`psychiccat`](../Reference_and_Meta/Enums.md#enum-psychiccat) | Enum | Specifies the miniboss configuration for PsychicCat, typically set to "auto". | 1 | `auto` |
-| [`BoneyardUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-boneyardunlocked) | Object  | Unlocks an exit route to the Boneyard on the map. | 1 | `{ . . . }` |
-| [`BunkerUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-bunkerunlocked) | Object  | Unlocks an exit route to the Bunker on the map. | 1 | `{ . . . }` |
+| [`BoneyardUnlocked`](./Map_Generation_and_Routing.md#object-boneyardunlocked) | Object  | Unlocks an exit route to the Boneyard on the map. | 1 | `{ . . . }` |
+| [`BunkerUnlocked`](./Map_Generation_and_Routing.md#object-bunkerunlocked) | Object  | Unlocks an exit route to the Bunker on the map. | 1 | `{ . . . }` |
 | [`cavecatfamily`](../Reference_and_Meta/Enums.md#enum-cavecatfamily) | Enum | Specifies the Cave Cat Family miniboss encounter. | 1 | `auto` |
-| [`CavesUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-cavesunlocked) | Object  | Unlocks an exit route to the Caves on the map. | 1 | `{ . . . }` |
-| [`CoreUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-coreunlocked) | Object  | Unlocks an exit route to the Core on the map. | 1 | `{ . . . }` |
-| [`CraterUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-craterunlocked) | Object  | Unlocks an exit route to the Crater on the map. | 1 | `{ . . . }` |
+| [`CavesUnlocked`](./Map_Generation_and_Routing.md#object-cavesunlocked) | Object  | Unlocks an exit route to the Caves on the map. | 1 | `{ . . . }` |
+| [`CoreUnlocked`](./Map_Generation_and_Routing.md#object-coreunlocked) | Object  | Unlocks an exit route to the Core on the map. | 1 | `{ . . . }` |
+| [`CraterUnlocked`](./Map_Generation_and_Routing.md#object-craterunlocked) | Object  | Unlocks an exit route to the Crater on the map. | 1 | `{ . . . }` |
 | [`dinocouple`](../Reference_and_Meta/Enums.md#enum-dinocouple) | Enum | Specifies the Dino Couple miniboss encounter. | 1 | `auto` |
-| [`FutureUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-futureunlocked) | Object  | Configures the map event and art when the Future is unlocked. | 1 | `{ . . . }` |
-| [`IceAgeUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-iceageunlocked) | Object  | Configures the map event and art when Ice Age is unlocked. | 1 | `{ . . . }` |
+| [`FutureUnlocked`](./Map_Generation_and_Routing.md#object-futureunlocked) | Object  | Configures the map event and art when the Future is unlocked. | 1 | `{ . . . }` |
+| [`IceAgeUnlocked`](./Map_Generation_and_Routing.md#object-iceageunlocked) | Object  | Configures the map event and art when Ice Age is unlocked. | 1 | `{ . . . }` |
 | [`iceelemental`](../Reference_and_Meta/Enums.md#enum-iceelemental) | Enum | Specifies the Ice Elemental miniboss encounter. | 1 | `auto` |
-| [`JunkyardUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-junkyardunlocked) | Object  | Unlocks an exit route to the Junkyard on the map. | 1 | `{ . . . }` |
-| [`JurassicUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-jurassicunlocked) | Object  | Unlocks an exit route to the Jurassic area on the map. | 1 | `{ . . . }` |
+| [`JunkyardUnlocked`](./Map_Generation_and_Routing.md#object-junkyardunlocked) | Object  | Unlocks an exit route to the Junkyard on the map. | 1 | `{ . . . }` |
+| [`JurassicUnlocked`](./Map_Generation_and_Routing.md#object-jurassicunlocked) | Object  | Unlocks an exit route to the Jurassic area on the map. | 1 | `{ . . . }` |
 | [`lightningelemental`](../Reference_and_Meta/Enums.md#enum-lightningelemental) | Enum | Specifies the Lightning Elemental miniboss encounter. | 1 | `auto` |
-| [`MeatWorldUnlockedFull`](../Reference_and_Meta/Miscellaneous.md#object-meatworldunlockedfull) | Object  | Unlocks hidden battle and hard nodes within the MeatWorld area on the map. | 1 | `{ . . . }` |
-| [`miniboss_event`](../Reference_and_Meta/Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
-| [`MoonUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-moonunlocked) | Object  | Unlocks an exit route to the Moon on the map. | 1 | `{ . . . }` |
+| [`MeatWorldUnlockedFull`](./Map_Generation_and_Routing.md#object-meatworldunlockedfull) | Object  | Unlocks hidden battle and hard nodes within the MeatWorld area on the map. | 1 | `{ . . . }` |
+| [`miniboss_event`](./Map_Generation_and_Routing.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
+| [`MoonUnlocked`](./Map_Generation_and_Routing.md#object-moonunlocked) | Object  | Unlocks an exit route to the Moon on the map. | 1 | `{ . . . }` |
 | [`musiclayer`](../Reference_and_Meta/Enums.md#enum-musiclayer) | Enum | Specifies the music layer to play for this node (e.g., 'boss'). | 1 | `boss` |
-| [`mw_battle1`](../Reference_and_Meta/Miscellaneous.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
-| [`mw_boss`](../Reference_and_Meta/Miscellaneous.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
-| [`mw_earlyhome`](../Reference_and_Meta/Miscellaneous.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
-| [`mw_event1`](../Reference_and_Meta/Miscellaneous.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
-| [`mw_hard1`](../Reference_and_Meta/Miscellaneous.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
-| [`mw_home`](../Reference_and_Meta/Miscellaneous.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
-| [`mw_quest_event`](../Reference_and_Meta/Miscellaneous.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
-| [`mw_treasure`](../Reference_and_Meta/Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
-| [`SewersUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-sewersunlocked) | Object  | Unlocks an exit route to the Sewers on the map. | 1 | `{ . . . }` |
+| [`mw_battle1`](./Map_Generation_and_Routing.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
+| [`mw_boss`](./Map_Generation_and_Routing.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
+| [`mw_earlyhome`](./Map_Generation_and_Routing.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
+| [`mw_event1`](./Map_Generation_and_Routing.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
+| [`mw_hard1`](./Map_Generation_and_Routing.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
+| [`mw_home`](./Map_Generation_and_Routing.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
+| [`mw_quest_event`](./Map_Generation_and_Routing.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
+| [`mw_treasure`](./Map_Generation_and_Routing.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
+| [`SewersUnlocked`](./Map_Generation_and_Routing.md#object-sewersunlocked) | Object  | Unlocks an exit route to the Sewers on the map. | 1 | `{ . . . }` |
 | [`thebloat`](../Reference_and_Meta/Enums.md#enum-thebloat) | Enum | Specifies The Bloat miniboss encounter. | 1 | `auto` |
-| [`TheEndUnlocked`](../Reference_and_Meta/Miscellaneous.md#object-theendunlocked) | Object  | An object that stores flags related to unlocking the 'The End' chapter. | 1 | `{ . . . }` |
+| [`TheEndUnlocked`](./Map_Generation_and_Routing.md#object-theendunlocked) | Object  | An object that stores flags related to unlocking the 'The End' chapter. | 1 | `{ . . . }` |
 | `advance` | Number | The number of levels the nemesis advances when triggered. | 1 | `1` |
-| [`ChaosAntennaAttached`](../Reference_and_Meta/Miscellaneous.md#object-chaosantennaattached) | Object  | Configures the map event and art when the Chaos Antenna has been attached. | 1 | `{ . . . }` |
-| [`exit_desert`](../Reference_and_Meta/Miscellaneous.md#object-exit_desert) | Object | Defines the exit node properties for the desert map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
-| [`exit_lab`](../Reference_and_Meta/Miscellaneous.md#object-exit_lab) | Object | Defines the exit node properties for the lab map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
+| [`ChaosAntennaAttached`](./Map_Generation_and_Routing.md#object-chaosantennaattached) | Object  | Configures the map event and art when the Chaos Antenna has been attached. | 1 | `{ . . . }` |
+| [`exit_desert`](./Map_Generation_and_Routing.md#object-exit_desert) | Object | Defines the exit node properties for the desert map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
+| [`exit_lab`](./Map_Generation_and_Routing.md#object-exit_lab) | Object | Defines the exit node properties for the lab map, including type, next map, lock state, and art. | 1 | `{ . . . }` |
 | `head_start` | Number | The initial number of turns the nemesis has before the player can act. | 1 | `99` |
-| [`mw_altar`](../Reference_and_Meta/Miscellaneous.md#object-mw_altar) | Object | A map node that represents a Meat World special event altar with custom art. | 1 | `{ . . . }` |
-| [`shop_cheapwater`](../Reference_and_Meta/Miscellaneous.md#object-shop_cheapwater) | Object | Node definition for a cheap water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
-| [`shop_water`](../Reference_and_Meta/Miscellaneous.md#object-shop_water) | Object | Node definition for a water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
+| [`mw_altar`](./Map_Generation_and_Routing.md#object-mw_altar) | Object | A map node that represents a Meat World special event altar with custom art. | 1 | `{ . . . }` |
+| [`shop_cheapwater`](./Map_Generation_and_Routing.md#object-shop_cheapwater) | Object | Node definition for a cheap water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
+| [`shop_water`](./Map_Generation_and_Routing.md#object-shop_water) | Object | Node definition for a water shop, specifying its type, level, and override art. | 1 | `{ . . . }` |
 | [`spawn_node`](../Reference_and_Meta/Enums.md#enum-spawn_node) | Enum | The name of the node where the nemesis first spawns on the map. | 1 | `start` |
-| [`ThrobbingArteryDone`](../Reference_and_Meta/Miscellaneous.md#object-throbbingarterydone) | Object  | An object that stores flags related to completing the Throbbing Artery quest. | 1 | `{ . . . }` |
-| [`WallOfFleshDone`](../Reference_and_Meta/Miscellaneous.md#object-walloffleshdone) | Object  | An object that stores flags related to completing the Wall of Flesh quest. | 1 | `{ . . . }` |
-| [`weather_event`](../Reference_and_Meta/Miscellaneous.md#object-weather_event) | Object | Defines a special event that triggers a crater weather level. | 1 | `{ . . . }` |
+| [`ThrobbingArteryDone`](./Map_Generation_and_Routing.md#object-throbbingarterydone) | Object  | An object that stores flags related to completing the Throbbing Artery quest. | 1 | `{ . . . }` |
+| [`WallOfFleshDone`](./Map_Generation_and_Routing.md#object-walloffleshdone) | Object  | An object that stores flags related to completing the Wall of Flesh quest. | 1 | `{ . . . }` |
+| [`weather_event`](./Map_Generation_and_Routing.md#object-weather_event) | Object | Defines a special event that triggers a crater weather level. | 1 | `{ . . . }` |
 | [`choose_one`](../Reference_and_Meta/Arrays.md#array-choose_one) | Array | A list of generation flags from which exactly one is randomly selected. | 1 | `[GenFlag_Boss_Stacy, GenFlag_Boss_Spewer]` |
 | :--- | :--- | :--- | 0 | :--- |
 
@@ -270,7 +270,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 
 </details>
@@ -404,7 +404,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
 
@@ -583,7 +583,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
 
@@ -632,7 +632,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`level`](../Reference_and_Meta/Enums.md#enum-level) | Enum | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
 
 </details>
@@ -654,7 +654,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
+| [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 2 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
 
@@ -744,7 +744,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -765,7 +765,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -786,8 +786,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -808,7 +808,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`hard_initial`](../Reference_and_Meta/Miscellaneous.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
+| [`hard_initial`](./Map_Generation_and_Routing.md#object-hard_initial) | Object  | An object defining the properties of the initial hard path node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -829,7 +829,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 2 | `{ . . . }` |
 
 </details>
 
@@ -850,7 +850,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -871,7 +871,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -892,7 +892,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 2 | `{ . . . }` |
 
 </details>
 
@@ -913,7 +913,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -934,7 +934,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1136,7 +1136,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1179,14 +1179,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`mw_battle1`](../Reference_and_Meta/Miscellaneous.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
-| [`mw_boss`](../Reference_and_Meta/Miscellaneous.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
-| [`mw_earlyhome`](../Reference_and_Meta/Miscellaneous.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
-| [`mw_event1`](../Reference_and_Meta/Miscellaneous.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
-| [`mw_hard1`](../Reference_and_Meta/Miscellaneous.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
-| [`mw_home`](../Reference_and_Meta/Miscellaneous.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
-| [`mw_quest_event`](../Reference_and_Meta/Miscellaneous.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
-| [`mw_treasure`](../Reference_and_Meta/Miscellaneous.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
+| [`mw_battle1`](./Map_Generation_and_Routing.md#object-mw_battle1) | Object  | An object defining the properties of the first MeatWorld battle node. | 1 | `{ . . . }` |
+| [`mw_boss`](./Map_Generation_and_Routing.md#object-mw_boss) | Object  | An object defining the properties of the MeatWorld boss node. | 1 | `{ . . . }` |
+| [`mw_earlyhome`](./Map_Generation_and_Routing.md#object-mw_earlyhome) | Object  | An object defining the properties of the MeatWorld early home node. | 1 | `{ . . . }` |
+| [`mw_event1`](./Map_Generation_and_Routing.md#object-mw_event1) | Object  | An object defining the properties of the first MeatWorld event node. | 1 | `{ . . . }` |
+| [`mw_hard1`](./Map_Generation_and_Routing.md#object-mw_hard1) | Object  | An object defining the properties of the first MeatWorld hard path node. | 1 | `{ . . . }` |
+| [`mw_home`](./Map_Generation_and_Routing.md#object-mw_home) | Object  | An object defining the properties of the MeatWorld home node. | 1 | `{ . . . }` |
+| [`mw_quest_event`](./Map_Generation_and_Routing.md#object-mw_quest_event) | Object  | An object defining the properties of the MeatWorld quest event node. | 1 | `{ . . . }` |
+| [`mw_treasure`](./Map_Generation_and_Routing.md#object-mw_treasure) | Object  | An object defining the properties of the MeatWorld treasure node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1207,7 +1207,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1228,7 +1228,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](../Reference_and_Meta/Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
+| [`exit1`](./Map_Generation_and_Routing.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1249,7 +1249,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1270,8 +1270,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](../Reference_and_Meta/Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
-| [`miniboss_event`](../Reference_and_Meta/Miscellaneous.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
+| [`boss`](./Map_Generation_and_Routing.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
+| [`miniboss_event`](./Map_Generation_and_Routing.md#object-miniboss_event) | Object  | An object defining the properties of a mini-boss event at this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1292,7 +1292,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`boss`](../Reference_and_Meta/Miscellaneous.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
+| [`boss`](./Map_Generation_and_Routing.md#object-boss) | Object  | An object defining the properties of a boss encounter, such as rewards or level. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1313,7 +1313,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1334,7 +1334,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit1`](../Reference_and_Meta/Miscellaneous.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
+| [`exit1`](./Map_Generation_and_Routing.md#object-exit1) | Object  | An object defining the properties of the second exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1355,7 +1355,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1376,7 +1376,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1397,7 +1397,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1418,7 +1418,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`exit0`](../Reference_and_Meta/Miscellaneous.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
+| [`exit0`](./Map_Generation_and_Routing.md#object-exit0) | Object  | An object defining the properties of the first exit from this node. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1467,7 +1467,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1488,7 +1488,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1628,7 +1628,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`quest_event`](../Reference_and_Meta/Miscellaneous.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
+| [`quest_event`](./Map_Generation_and_Routing.md#object-quest_event) | Object  | An object defining the properties of a quest-related event at this node, such as its level and art. | 1 | `{ . . . }` |
 
 </details>
 

@@ -74,31 +74,31 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2418 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2343 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2333 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 2174 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2037 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1862 | `{ . . . }` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1851 | `{ . . . }` |
+| [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 2337 | `{ . . . }` |
+| [`meta`](./Abilities_and_Spells.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 2328 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 2168 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](./Abilities_and_Spells.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 2032 | `{ . . . }` |
+| [`target`](./Abilities_and_Spells.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1859 | `{ . . . }` |
+| [`cost`](./Abilities_and_Spells.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1845 | `{ . . . }` |
 | [`variant_of`](../Reference_and_Meta/Enums.md#enum-variant_of) | Enum | Indicates this ability is a variant of another named ability, inheriting its properties. | 900 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 414 | `{ . . . }` |
-| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 346 | `{ . . . }` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 238 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 218 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
-| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 136 | `{ . . . }` |
+| [`spawn`](./Abilities_and_Spells.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 346 | `{ . . . }` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 236 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`self_damage`](./Abilities_and_Spells.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 218 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`bonus_passives`](./Abilities_and_Spells.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 136 | `{ . . . }` |
 | [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum | Specifies the class that this ability belongs to, used for categorization and restrictions. | 90 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`temporary_effects`](../Reference_and_Meta/Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 88 | `{ . . . }` |
-| [`sounds`](../Reference_and_Meta/Miscellaneous.md#object-sounds) | Object  | Defines sound effects played at various points of the ability (e.g., ontrigger, oncastpoint). | 39 | `{ . . . }` |
-| [`splash_damage`](../Reference_and_Meta/Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 34 | `{ . . . }` |
+| [`temporary_effects`](./Abilities_and_Spells.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 88 | `{ . . . }` |
+| [`sounds`](./Abilities_and_Spells.md#object-sounds) | Object  | Defines sound effects played at various points of the ability (e.g., ontrigger, oncastpoint). | 39 | `{ . . . }` |
+| [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 34 | `{ . . . }` |
 | [`ai_ability`](../Reference_and_Meta/Enums.md#enum-ai_ability) | Enum | Specifies the ability to use as the AI's behavior for this ability. | 29 | `AZ_Jump_AI`<br>`BasicBigMelee`<br>`BasicMelee` |
-| [`keyword_tooltips`](./Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 23 | `{ . . . }` |
+| [`keyword_tooltips`](./Abilities_and_Spells.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 23 | `{ . . . }` |
 | [`chain_ability`](../Reference_and_Meta/Enums.md#enum-chain_ability) | Enum | Specifies the ability to chain into after this ability is used. | 15 | `BoyDinoDash`<br>`ChaosStacyAttackChain`<br>`ControlPlantsPartTwo` |
 | [`sub_ability`](../Reference_and_Meta/Enums.md#enum-sub_ability) | Enum | Specifies a sub-ability that is part of this ability, often used for multi-part abilities. | 8 | `CollectiveCounterImpl`<br>`CollectiveSpinImpl`<br>`HomingBlasts2_sub` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [`cloned_ability`](../Reference_and_Meta/Enums.md#enum-cloned_ability) | Enum | Specifies an ability that is cloned from another. | 2 | `attack` |
-| [`empty_self_damage`](../Reference_and_Meta/Miscellaneous.md#object-empty_self_damage) | Object  | Defines self-damage or effects when the ability is used with no target (empty). | 2 | `{ . . . }` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`bonk_damage`](../Reference_and_Meta/Miscellaneous.md#object-bonk_damage) | Object  | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 1 | `{ . . . }` |
+| [`empty_self_damage`](./Abilities_and_Spells.md#object-empty_self_damage) | Object  | Defines self-damage or effects when the ability is used with no target (empty). | 2 | `{ . . . }` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`bonk_damage`](./Abilities_and_Spells.md#object-bonk_damage) | Object  | Defines damage and effects applied when a dash or move hits a wall or obstacle. | 1 | `{ . . . }` |
 | [`layer`](../Reference_and_Meta/Enums.md#enum-layer) | Enum  | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 0 | `2`<br>`all`<br>`characters` |
 | [`chapter`](../Reference_and_Meta/Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 0 | `1`<br>`alley` |
 
@@ -117,7 +117,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./Abilities_and_Spells.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -188,7 +188,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `detatched_animation_reach` | Integer | The tile range at which the detached animation is displayed. | 5 | `20`<br>`3`<br>`4` |
 | [`empty_animation`](../Reference_and_Meta/Enums.md#enum-empty_animation) | Enum | Specifies the character animation that plays when the unit's ability has no charges remaining. | 5 | `empty` |
 | `fixed_jump_height` | Float | The fixed height (in tiles) the unit reaches during a jump, overriding default arc calculations. | 4 | `1`<br>`3.5` |
-| [`rocket_swirl`](../Reference_and_Meta/Miscellaneous.md#object-rocket_swirl) | Object  | An object defining the spiral rotation parameters for a rocket-style projectile. | 4 | `{ . . . }` |
+| [`rocket_swirl`](./Abilities_and_Spells.md#object-rocket_swirl) | Object  | An object defining the spiral rotation parameters for a rocket-style projectile. | 4 | `{ . . . }` |
 | `sync_frames` | Integer | The total number of animation frames used to synchronize a looping ability sequence. | 4 | `26`<br>`34` |
 | [`dash_decelerating_animation`](../Reference_and_Meta/Enums.md#enum-dash_decelerating_animation) | Enum | Specifies the character animation that plays when the unit begins slowing down during a dash. | 3 | `dashslow` |
 | `decelerate` | Integer | The number of frames over which the unit's dash movement decelerates to a stop. | 3 | `5` |
@@ -223,7 +223,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `apex_distance` | Float | The distance from the start point to the apex of a jump or lob arc. | 1 | `0.875` |
 | `apex_time` | Float | The time (in seconds) to reach the apex of a jump or lob arc. | 1 | `.35` |
 | `bypass_combatspeed` | Boolean | If true, the ability animation ignores the combat speed setting. | 1 | `true` |
-| [`damage_threshold_altanimations`](../Reference_and_Meta/Miscellaneous.md#object-damage_threshold_altanimations) | Object  | A mapping of damage threshold values to alternate animation names, triggering different animations based on damage dealt. | 1 | `{ . . . }` |
+| [`damage_threshold_altanimations`](./Abilities_and_Spells.md#object-damage_threshold_altanimations) | Object  | A mapping of damage threshold values to alternate animation names, triggering different animations based on damage dealt. | 1 | `{ . . . }` |
 | [`dash_bonk_animation`](../Reference_and_Meta/Enums.md#enum-dash_bonk_animation) | Enum | Specifies the animation played when the unit collides with an obstacle during a dash. | 1 | `bonk` |
 | `delay_from_map_center` | Boolean | If true, the animation delay is calculated based on distance from the center of the map. | 1 | `true` |
 | `delay_from_reverse_map_edge` | Boolean | If true, the animation delay is calculated based on distance from the opposite edge of the map. | 1 | `true` |
@@ -299,9 +299,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2342 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1785 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1785 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1554 | passives<br>class<br>tag |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1446 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1446 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 358 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 352 | `[`<br>`[Heat Fire]` |
 | `knockback` | Equation | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 254 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
@@ -361,30 +361,30 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 976 | passives<br>class<br>tag |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 510 | Default<br>FormChange<br>Druid |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 102 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 102 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 89 | `1`<br>`2`<br>`3` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 77 | `1`<br>`10`<br>`2` |
 | `IgnoreSelf` | `Number` | If set to 1 or true, the damage instance ignores the source unit (does not affect itself). | 75 | `1`<br>`true` |
 | [`Bruise`](../Reference_and_Meta/Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 70 | `1`<br>`2`<br>`3` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 66 | `1`<br>`10`<br>`2` |
 | `ChangeTile` | `String` | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 62 | `BlankTile`<br>`BrambleTile`<br>`CreepTile` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 59 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 59 | `{ . . . }` |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 55 | `1`<br>`10`<br>`2` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 49 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 44 | `0`<br>`1` |
-| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
+| [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 38 | `{ . . . }` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 35 | `1`<br>`10`<br>`2` |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
+| [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 35 | `{ . . . }` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 34 | `-1`<br>`-2`<br>`-4` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 34 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 34 | `{ . . . }` |
 | `BounceObject` | `String` | Specifies the object or projectile to spawn and bounce from the target. | 31 | `AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 29 | `-1`<br>`-2`<br>`1` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 28 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `TransformAbility` | `String` | Specifies the ability that replaces the current ability. | 28 | `BerserkDash`<br>`BerserkDash2`<br>`BirthSquirrel` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 27 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 27 | `{ . . . }` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 26 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 25 | `-1`<br>`1`<br>`2` |
-| [`Conditional_Ally`](./Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
+| [`Conditional_Ally`](./Abilities_and_Spells.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 25 | `{ . . . }` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 23 | `1`<br>`10`<br>`2` |
 | [`Weakness`](../Reference_and_Meta/Arrays.md#array-weakness) | Array / Integer  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 23 | `1`<br>`2`<br>`3` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 22 | `"max(int, 0)"`<br>`-1`<br>`-2` |
@@ -398,14 +398,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `EvolveAbilityFromPool` | `String` | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 21 | `Butcher`<br>`Druid`<br>`Fighter` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 20 | `1`<br>`2`<br>`3` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 20 | `1`<br>`20` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 19 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 19 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 18 | `1`<br>`10`<br>`2` |
 | `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 17 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 17 | `{ . . . }` |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 17 | `{ . . . }` |
 | `CollectsPickups` | `Number` | If set to 1 or greater, the unit collects pickups (e.g., items) on contact. | 17 | `1`<br>`2` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 16 | `1`<br>`2`<br>`[1 .01]` |
 | `OverrideKnockbackDamage` | `Equation` | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 16 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
-| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 15 | `{ . . . }` |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 15 | `{ . . . }` |
 | `VaporizeCorpse` | `Number` | If set, vaporizes the target's corpse, preventing revival. | 15 | `1` |
 | `DivineShield` | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 14 | `1`<br>`2`<br>`4` |
 | `TakeExtraTurn` | `Number` | The number of extra turns granted to the source. | 14 | `1` |
@@ -414,21 +414,21 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ChangeCatClass` | `String` | Specifies the new class to assign to the unit. | 14 | `Butcher`<br>`Colorless`<br>`Druid` |
 | `EndTurn` | `Number` | If set to 1, ends the current unit's turn immediately after this effect. | 14 | `1` |
 | `TransformBasicAttack` | `String` | Specifies the ability that replaces the unit's basic attack. | 14 | `AntlerSwipe`<br>`AntlerSwipe2`<br>`Chitter` |
-| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 13 | `{ . . . }` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 13 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 13 | `{ . . . }` |
+| [`RandomMagicMissile`](./Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 13 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Petrify`](../Reference_and_Meta/Arrays.md#array-petrify) | Array / Integer  | The amount of petrify stacks applied, or an [stacks, probability] array. | 13 | `1`<br>`[1 .15]`<br>`[1 .1]` |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 13 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 13 | `{ . . . }` |
 | `Leeches` | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 13 | `1`<br>`2`<br>`3` |
-| [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
+| [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 13 | `{ . . . }` |
 | `GenericDebuff` | `Number` | The number of stacks of a generic, untooltipped debuff applied to the target. | 13 | `1`<br>`10`<br>`100` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 12 | `-1`<br>`-2`<br>`-4` |
 | `Displace` | `Number` | If set to 1, the unit is displaced to another location (e.g., teleport). | 12 | `1` |
-| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 11 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 11 | `{ . . . }` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 11 | `0`<br>`1` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 11 | `{ . . . }`<br>`1` |
-| [`ApplyToSourceOnKill`](../Reference_and_Meta/Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 11 | `{ . . . }` |
-| [`DoScreenShake`](../Reference_and_Meta/Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 11 | `{ . . . }`<br>`1` |
-| [`ChanceToBreakFree`](../Reference_and_Meta/Miscellaneous.md#object-chancetobreakfree) | Object  | Defines the chance and ability used for a grappled or restrained unit to break free. | 11 | `{ . . . }` |
+| [`Cleave`](./Abilities_and_Spells.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 11 | `{ . . . }`<br>`1` |
+| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 11 | `{ . . . }` |
+| [`DoScreenShake`](./Abilities_and_Spells.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 11 | `{ . . . }`<br>`1` |
+| [`ChanceToBreakFree`](./Abilities_and_Spells.md#object-chancetobreakfree) | Object  | Defines the chance and ability used for a grappled or restrained unit to break free. | 11 | `{ . . . }` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 10 | `1`<br>`2`<br>`3` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 10 | `-1`<br>`1`<br>`2` |
 | `RefreshActPoints` | `Number` | The amount of action points restored to the source. | 10 | `1` |
@@ -440,12 +440,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Marked`](../Reference_and_Meta/Arrays.md#array-marked) | Array / Integer  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 9 | `1`<br>`3`<br>`5` |
 | `Ammo` | Integer | The amount of ammo to add or remove (negative values subtract). | 9 | `-1`<br>`-99999`<br>`1` |
 | `VisualFX` | `String` | Specifies the name of the visual effect to play. | 9 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
-| [`ApplyPassives`](../Reference_and_Meta/Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 9 | `{ . . . }` |
+| [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 9 | `{ . . . }` |
 | `DeferVaporize` | `Number` | If set to 1, the unit's vaporize (instant death) is delayed until the end of the current action. | 9 | `1` |
 | `SpawnCreep` | `Number` | If set to 1, spawns a creep tile under the target. | 9 | `1` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 8 | `1`<br>`2`<br>`3` |
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 8 | `-999999`<br>`1`<br>`2` |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 8 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 8 | `{ . . . }` |
 | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 8 | `100`<br>`15`<br>`20` |
 | `OverrideChainKnockback` | `Number` | The custom number of tiles for chain knockback, overriding the default. | 8 | `0`<br>`1`<br>`10` |
 | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 7 | `1` |
@@ -453,38 +453,38 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Instakill` | `Number` | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 7 | `25`<br>`50`<br>`999` |
 | `ForceAttack` | `Number` | If set to 1, forces the target to perform an attack against a random or specified target. | 7 | `1` |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | If non-zero, makes the target immune to damage from knockback until they stop moving. | 7 | `1` |
-| [`ApplyStatusIfCrit`](./Passives_and_Statuses.md#object-applystatusifcrit) | Object  | Defines effects that are applied only when the attack scores a critical hit. | 7 | `{ . . . }` |
+| [`ApplyStatusIfCrit`](./Abilities_and_Spells.md#object-applystatusifcrit) | Object  | Defines effects that are applied only when the attack scores a critical hit. | 7 | `{ . . . }` |
 | `TempRangeUp` | Integer | The amount of temporary range increase applied. | 7 | `1`<br>`2`<br>`20` |
 | `BramblesOnHit` | `Number` | If set to 1, spawns bramble tiles on the target's location on hit. | 7 | `1` |
 | `ContextualHeal` | `Number` | The amount of healing applied contextually (e.g., to allies). | 7 | `1` |
 | `ManaSteal` | `Number` | The amount of mana stolen (negative values may drain instead). | 7 | `-1`<br>`5` |
 | `TriggerWerewolfTransform` | `Array`  | The number of stacks and probability of triggering the werewolf transformation. | 7 | `.5`<br>`[1 .15]`<br>`[1 .20]` |
-| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 6 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 6 | `{ . . . }` |
+| [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 6 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 6 | `{ . . . }` |
 | [`Tarred`](../Reference_and_Meta/Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`2`<br>`[1 .1]` |
 | `Metronome` | `Number` | The number of times Metronome triggers, or an object with stacks and banned abilities. | 6 | `1`<br>`2` |
 | `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 6 | `-1`<br>`-2`<br>`1` |
 | `RemoveStatus` | `String` | The name of the status effect to remove from the source. | 6 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
-| [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
+| [`BackflipWhenTargeted`](./Abilities_and_Spells.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 6 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 6 | `1`<br>`8` |
-| [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
+| [`Conditional_Corpse`](./Abilities_and_Spells.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 6 | `{ . . . }` |
 | `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 6 | `1`<br>`2`<br>`4` |
 | `SpawnThingIfHitKills` | `String` | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 6 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | `SetHealth` | `Number` | Sets the target's health to a specific flat value or percentage. | 6 | `1`<br>`100%`<br>`50%` |
 | `ConjureBonusAbility` | `String` | Specifies the name of the bonus ability to conjure. | 6 | `Class`<br>`Colorless`<br>`Mage` |
 | `RandomInjury` | Integer | The number of random injuries applied. | 6 | `1` |
 | `ClearStarving` | `Number` | The number of stacks of Starving cleared. | 6 | `1` |
-| [`DoDistortionRing`](../Reference_and_Meta/Miscellaneous.md#object-dodistortionring) | Object  | Configuration for a distortion ring visual effect, with speed, intensity, and radius. | 6 | `{ . . . }` |
+| [`DoDistortionRing`](./Abilities_and_Spells.md#object-dodistortionring) | Object  | Configuration for a distortion ring visual effect, with speed, intensity, and radius. | 6 | `{ . . . }` |
 | `SetDistanceDisplace` | `Number` | The fixed distance to displace the target. | 6 | `5` |
 | `TeamCastAbility` | `String` | Specifies the ability name for the team to cast, with optional tag restriction and same orientation. | 6 | `Huddle_Impl`<br>`Spin`<br>`TeamFlex_Impl` |
-| [`TwisterDisplaceWithDamage`](../Reference_and_Meta/Miscellaneous.md#object-twisterdisplacewithdamage) | Object  | Configuration for a twister displacement that deals damage, with min/max distance and damage value. | 6 | `{ . . . }` |
+| [`TwisterDisplaceWithDamage`](./Abilities_and_Spells.md#object-twisterdisplacewithdamage) | Object  | Configuration for a twister displacement that deals damage, with min/max distance and damage value. | 6 | `{ . . . }` |
 | `BounceRock` | `String` | Specifies the rock object to bounce. | 6 | `LavaBoulder`<br>`SmallLavaRock`<br>`SmallRock` |
 | `ScatterHeldCoin` | `Number` | The number of coins scattered, with an optional probability as a second element. | 6 | `1`<br>`[1 .3]`<br>`[1 .5]` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 5 | `1`<br>`10`<br>`100` |
 | `Revive` | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 5 | `1`<br>`100%`<br>`50%` |
-| [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 5 | `{ . . . }` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 5 | `1`<br>`2`<br>`[1 .1]` |
-| [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 5 | `{ . . . }` |
 | `SoulLink` | Integer | The number of soul link stacks applied. | 5 | `1` |
 | `MovementUp` | Integer | The amount of movement increase or decrease applied. | 5 | `-2`<br>`1`<br>`2` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 5 | `-1`<br>`1`<br>`2` |
@@ -492,7 +492,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Stealth` | Integer | The number of stealth stacks applied. | 5 | `1`<br>`2`<br>`[1 .1]` |
 | `Purge` | `Number` | The number of status effects to purge from the target. | 5 | `0`<br>`3` |
 | `FlatLeech` | `Number` | The flat amount of health restored to the source when dealing damage, applied after the hit. | 5 | `1`<br>`10`<br>`2` |
-| [`Conditional_PlayerCat`](./Items_and_Equipment.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Abilities_and_Spells.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 5 | `{ . . . }` |
 | `ForceMoveAway` | `Number` | The distance to force the target away from the source. | 5 | `1` |
 | `ForceMoveTowards` | `Number` | The number of tiles to force the target to move toward the caster. | 5 | `1` |
 | `HitExplosion` | `Number` | The radius of the explosion triggered on hit. | 5 | `10`<br>`5`<br>`X` |
@@ -503,7 +503,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 5 | `{ . . . }` |
 | `Imprison` | `String` | Specifies the type of unit or object to summon as a prison. | 5 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` |
 | `PopAndSpawn` | `String` | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 5 | `Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
-| [`CollectsPickupsWithAltEffects`](../Reference_and_Meta/Miscellaneous.md#object-collectspickupswithalteffects) | Object  | Contains alternative effects that are applied when collecting pickups. | 5 | `{ . . . }` |
+| [`CollectsPickupsWithAltEffects`](./Abilities_and_Spells.md#object-collectspickupswithalteffects) | Object  | Contains alternative effects that are applied when collecting pickups. | 5 | `{ . . . }` |
 | `KnockbackDirectionIsFacingDirection` | `String` | Specifies how to alter knockback direction relative to the unit's facing: 1 (same), flip (opposite), rotate_right. | 5 | `1`<br>`flip`<br>`rotate_right` |
 | `MonkStanceSwitch` | `Number` | The number of times to switch monk stance. | 5 | `1` |
 | `ObjectOnHitEmpty` | `String` | Specifies the object to spawn on hitting an empty cell. | 5 | `AnimalEgg`<br>`AnimalEgg2`<br>`HeadTumor` |
@@ -518,20 +518,20 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Die` | `Number` | If set, kills the target immediately. | 4 | `1`<br>`6` |
 | `Grappled` | Integer | The number of stacks and probability of applying the Grappled status, in format [stacks, probability] or just stacks. | 4 | `1`<br>`[1, .50]`<br>`[1, .75]` |
 | `VaporizeInanimate` | `Number` | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 4 | `1` |
-| [`SwitchMusic`](../Reference_and_Meta/Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 4 | `{ . . . }` |
+| [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 4 | `{ . . . }` |
 | `BurgleCoin` | `Number` | The number of coins stolen from the target, or an array of `[number, probability]`. | 4 | `1`<br>`3`<br>`[1 .5]` |
 | `FaceCamera` | `Number` | If non-zero, forces the character to rotate and face the camera. | 4 | `1` |
 | `SpecificInjury` | `String` | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 4 | `int`<br>`spd`<br>`str` |
-| [`TakeBonusTurnWithStatus`](./Passives_and_Statuses.md#object-takebonusturnwithstatus) | Object  | Container for status effects applied when taking a bonus turn. | 4 | `{ . . . }` |
-| [`ApplyToConsumed`](../Reference_and_Meta/Miscellaneous.md#object-applytoconsumed) | Object  | Container for effects that are applied to the consumed object. | 4 | `{ . . . }` |
-| [`ArcLightning`](../Reference_and_Meta/Miscellaneous.md#object-arclightning) | Object  | Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag. | 4 | `{ . . . }` |
+| [`TakeBonusTurnWithStatus`](./Abilities_and_Spells.md#object-takebonusturnwithstatus) | Object  | Container for status effects applied when taking a bonus turn. | 4 | `{ . . . }` |
+| [`ApplyToConsumed`](./Abilities_and_Spells.md#object-applytoconsumed) | Object  | Container for effects that are applied to the consumed object. | 4 | `{ . . . }` |
+| [`ArcLightning`](./Abilities_and_Spells.md#object-arclightning) | Object  | Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag. | 4 | `{ . . . }` |
 | [`Conditional_Familiar`](./Abilities_and_Spells.md#object-conditional_familiar) | Object  | Container for effects applied if the unit has a familiar, with an optional Else block. | 4 | `{ . . . }` |
 | `EnableWeather` | `String` | Specifies the weather effect to enable. | 4 | `KaijuFirestorm`<br>`KaijuMeteornado`<br>`KaijuMeteornadoSolo` |
 | `ExplosionIfHitSomething` | `Number` | The radius of explosion triggered if the attack hits an entity. | 4 | `5` |
-| [`LateStatusApplication`](../Reference_and_Meta/Miscellaneous.md#object-latestatusapplication) | Object  | Container for status effects that are applied late after the main effect. | 4 | `{ . . . }` |
+| [`LateStatusApplication`](./Abilities_and_Spells.md#object-latestatusapplication) | Object  | Container for status effects that are applied late after the main effect. | 4 | `{ . . . }` |
 | `RemoveActPoints` | `Number` | The number of action points removed from the target. | 4 | `1` |
 | `SendRock` | `Number` | The number of rocks to send as projectiles. | 4 | `1` |
-| [`TimeDelayStatusApplication`](../Reference_and_Meta/Miscellaneous.md#object-timedelaystatusapplication) | Object  | Container for status effects applied after a specified delay. | 4 | `{ . . . }` |
+| [`TimeDelayStatusApplication`](./Abilities_and_Spells.md#object-timedelaystatusapplication) | Object  | Container for status effects applied after a specified delay. | 4 | `{ . . . }` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 3 | `1`<br>`2`<br>`3` |
 | `SpellDamageUp` | Integer | The number of stacks of SpellDamageUp applied, increasing spell damage. | 3 | `1`<br>`3` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 3 | `1`<br>`2`<br>`[1, 0.1]` |
@@ -540,15 +540,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Reflect` | Integer | The amount of reflect stacks applied. | 3 | `1`<br>`5` |
 | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 3 | `1`<br>`2`<br>`3` |
 | `PoisonLace` | Enum / Equation | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 3 | `"X/3"`<br>`"X/5"`<br>`1` |
-| [`Tangled`](../Reference_and_Meta/Miscellaneous.md#object-tangled) | Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| [`Tangled`](./Abilities_and_Spells.md#object-tangled) | Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 3 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 3 | `1`<br>`3`<br>`5` |
 | `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 3 | `10`<br>`4`<br>`X` |
-| [`Conditional_FirstApplicationThisTurn`](./Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](./Abilities_and_Spells.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 3 | `{ . . . }` |
 | `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 3 | `1` |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 3 | `1` |
 | `ExtraBasicAttacks_Status` | Integer | The number of additional basic attacks the unit can perform each turn. | 3 | `1` |
 | `TempStrengthUp` | Enum | The number of stacks of temporary Strength Up applied to the unit. | 3 | `1`<br>`2`<br>`X` |
-| [`ReviveNextRound`](../Reference_and_Meta/Miscellaneous.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 3 | `{ . . . }`<br>`2` |
+| [`ReviveNextRound`](./Abilities_and_Spells.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 3 | `{ . . . }`<br>`2` |
 | `DestroyTrinket` | `Number` | The number of trinkets destroyed. | 3 | `1` |
 | `DisplaceTowardsSource` | `Number` | If set, displaces the target towards the source of the effect. | 3 | `1` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 3 | `0`<br>`1` |
@@ -556,23 +556,23 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `PullSourceToTarget` | `Number` | The amount of tiles the source is pulled towards the target after the attack. | 3 | `1` |
 | `RefreshWeaponAbility` | `Number` | The number of times the weapon's ability is refreshed. | 3 | `1` |
 | `NextAttackBonusRange` | Integer | The added range for the unit's next basic attack. | 3 | `1`<br>`3`<br>`5` |
-| [`CatPartsSizeScaleStatus`](../Reference_and_Meta/Miscellaneous.md#object-catpartssizescalestatus) | Object  | Configures scale multipliers for individual cat body parts (body, arms, mouth). | 3 | `{ . . . }` |
+| [`CatPartsSizeScaleStatus`](./Abilities_and_Spells.md#object-catpartssizescalestatus) | Object  | Configures scale multipliers for individual cat body parts (body, arms, mouth). | 3 | `{ . . . }` |
 | `CollideWithConsumed` | `String` | Damage formula for collision with consumed objects, e.g., '4+bonus_melee_damage'. | 3 | `1+bonus_melee_damage`<br>`4+bonus_melee_damage`<br>`5+bonus_melee_damage` |
 | [`Conditional_AffectedByElement`](./Abilities_and_Spells.md#object-conditional_affectedbyelement) | Object  | Container for effects applied if the target is affected by a specified element, with optional Else block. | 3 | `{ . . . }` |
 | [`Conditional_LastHit`](./Abilities_and_Spells.md#object-conditional_lasthit) | Object  | Container for effects applied only on the final hit of a multi-hit attack, with optional Else block. | 3 | `{ . . . }` |
 | `CorpseVaporizer` | `Number` | The number of corpses vaporized on hit. | 3 | `1` |
 | `DestroyWeapon` | `Number` | The number of weapons destroyed. | 3 | `1` |
 | `DestroyWeaponThrow` | `Number` | The number of weapons destroyed after being thrown. | 3 | `1` |
-| [`DustOnHit`](../Reference_and_Meta/Miscellaneous.md#object-dustonhit) | Object  | Configuration for a dust object spawned on hit. | 3 | `{ . . . }` |
+| [`DustOnHit`](./Abilities_and_Spells.md#object-dustonhit) | Object  | Configuration for a dust object spawned on hit. | 3 | `{ . . . }` |
 | `ForceDisplace` | `Number` | The distance the target is forced to displace. | 3 | `1` |
 | `ForceMoveTowardsEnemies` | `Number` | Specifies the ability or distance to force the target to move towards enemies. | 3 | `1`<br>`DumbMove_Impl`<br>`MoveOne` |
 | `InstantMaxHealthUp` | `Number` | The amount of permanent maximum health increase. | 3 | `20`<br>`4` |
 | `RepairOnKill` | `Number` | The number of charges restored to the ability upon killing a target. | 3 | `1`<br>`2` |
-| [`SetCrazyEyeBackgroundWeights`](../Reference_and_Meta/Miscellaneous.md#object-setcrazyeyebackgroundweights) | Object  | An object containing a `weights` array that sets the weighting for which Crazy Eye background variant is displayed. | 3 | `{ . . . }` |
+| [`SetCrazyEyeBackgroundWeights`](./Abilities_and_Spells.md#object-setcrazyeyebackgroundweights) | Object  | An object containing a `weights` array that sets the weighting for which Crazy Eye background variant is displayed. | 3 | `{ . . . }` |
 | `SpawnCustomTrap` | `String` | Specifies the name of a custom trap blueprint to spawn at the target location. | 3 | `CharmTrap`<br>`EggSackTrap`<br>`SpikeTrap` |
 | `SpawnNeutralWebTrapOnMiss` | `Number` | The number of neutral web traps spawned on the tile if the attack misses. | 3 | `1` |
 | `VaporizeTarget` | `Number` | If non-zero, instantly destroys the target, leaving no corpse. | 3 | `1` |
-| [`ApplyMultipleTimes`](../Reference_and_Meta/Miscellaneous.md#object-applymultipletimes) | Object  | An object containing a `stacks` value that specifies how many times the nested effects are applied. | 3 | `{ . . . }` |
+| [`ApplyMultipleTimes`](./Abilities_and_Spells.md#object-applymultipletimes) | Object  | An object containing a `stacks` value that specifies how many times the nested effects are applied. | 3 | `{ . . . }` |
 | `DoubleStatus` | `String` | The name of a status effect whose stacks are doubled when applied. | 3 | `Bleed`<br>`Burn`<br>`Poison` |
 | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 2 | `1`<br>`3`<br>`4` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 2 | `1`<br>`10`<br>`100` |
@@ -582,28 +582,28 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ImmediateUseAbility` | `String` | Specifies the name of an ability to be triggered instantly from this effect. | 2 | `FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `IgnoreDamage` | `Number` | If set, the target ignores all damage for the duration. | 2 | `1` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 2 | `1`<br>`9999` |
-| [`Conditional_BadRoll`](./Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Abilities_and_Spells.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 2 | `{ . . . }` |
 | `SmartMetronome` | `Number` | The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag. | 2 | `20` |
-| [`BodyGuard`](../Reference_and_Meta/Miscellaneous.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 2 | `{ . . . }` |
+| [`BodyGuard`](./Abilities_and_Spells.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 2 | `{ . . . }` |
 | `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 2 | `1`<br>`2` |
-| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
 | `RepairWeapon` | Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 2 | `1`<br>`6`<br>`99` |
 | `ShortCircuit` | Integer | The number of stacks of the ShortCircuit status effect. | 2 | `1` |
 | [`SpawnCoinAnywhere`](../Reference_and_Meta/Arrays.md#array-spawncoinanywhere) | Array / Integer  | The number of coins to spawn. If an array, the second value is the probability of spawning them anywhere. | 2 | `1`<br>`[1 .5]` |
 | [`Conditional_IsSelf`](./Abilities_and_Spells.md#object-conditional_isself) | Object  | An object containing effects that are only applied if the target is the source unit itself. | 2 | `{ . . . }` |
 | `Counterspell` | `Number` | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 2 | `1` |
-| [`DestroyEquipmentAndAttachParasite`](../Reference_and_Meta/Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 2 | `{ . . . }` |
-| [`Math`](../Reference_and_Meta/Miscellaneous.md#object-math) | Object  | An object containing a `stacks` value that determines how many times the nested effects are applied. | 2 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 2 | `{ . . . }` |
+| [`Math`](./Abilities_and_Spells.md#object-math) | Object  | An object containing a `stacks` value that determines how many times the nested effects are applied. | 2 | `{ . . . }` |
 | `TradeLife` | `Number` | The amount of health life traded, or a template for a TradeLife ability. | 2 | `1` |
 | `DoubleCastSpell` | Integer | The number of times the next spell cast is doubled, or a template with name and tooltip. | 2 | `1`<br>`2` |
 | `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 2 | `1` |
 | `Lifesteal` | Integer | The amount of lifesteal stacks applied. | 2 | `1`<br>`3` |
 | `RangeUp` | Integer | The number of stacks of bonus attack range applied. | 2 | `1` |
-| [`Conditional_Shielded`](./Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
+| [`Conditional_Shielded`](./Abilities_and_Spells.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 2 | `{ . . . }` |
 | `PermanentStrength` | `Number` | The amount of permanent bonus strength (physical damage modifier) granted. | 2 | `1`<br>`2` |
 | `Shatter` | `Number` | The amount of damage dealt when a frozen or petrified status is shattered, or a template definition for a Shatter ability. | 2 | `15` |
 | `DoubleLoot` | Integer | The multiplier for loot drops, where 1 or 2 doubles the loot. | 2 | `1`<br>`2` |
-| [`KnockOutCoin`](../Reference_and_Meta/Miscellaneous.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 2 | `{ . . . }`<br>`1`<br>`[1 .5]` |
+| [`KnockOutCoin`](./Abilities_and_Spells.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 2 | `{ . . . }`<br>`1`<br>`[1 .5]` |
 | `ManaLeeches` | Integer | The number of mana leech stacks applied. | 2 | `1`<br>`2` |
 | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 2 | `2`<br>`X` |
 | `TempInitiativeChange` | Integer | The flat change to the unit's initiative value. | 2 | `-100`<br>`-999`<br>`100` |
@@ -611,7 +611,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TrailBlazer` | Enum / Integer | The number of trail blazer stacks applied, or a string alias like 'mov'. | 2 | `1`<br>`mov` |
 | `BonusKnockbackDamage` | `Number` | The extra damage dealt per tile of knockback. | 2 | `2`<br>`3`<br>`5` |
 | `CharmedForceAttack` | `Number` | If non-zero, forces the charmed target to use its basic attack on a random nearby unit. | 2 | `1` |
-| [`Conditional_OncePerBattle`](./Items_and_Equipment.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
+| [`Conditional_OncePerBattle`](./Abilities_and_Spells.md#object-conditional_onceperbattle) | Object  | An object containing effects that can only trigger once per battle, preventing double-activation. | 2 | `{ . . . }` |
 | `LeaveBehindRockOnKnockback` | `Number` | If non-zero, leaves behind a rock on each tile the target is knocked through. | 2 | `1` |
 | `PullSourceToKnockbackImmuneTarget` | `Number` | The amount of pull force applied to the source toward a knockback-immune target. | 2 | `1` |
 | `RandomDistanceDisplace` | `Number` | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 2 | `20` |
@@ -623,7 +623,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `SetShield` | `Number` | Sets the target's shield value to a specific flat amount. | 2 | `0`<br>`88` |
 | `SpeculativeMoveSelfCorpseOffMap` | `Number` | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 2 | `1` |
 | `StanceSwitchToMelee` | `Number` | If set, switches the source to melee stance. | 2 | `1` |
-| [`TakeBonusTurnWithAIControl`](../Reference_and_Meta/Miscellaneous.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 2 | `{ . . . }` |
+| [`TakeBonusTurnWithAIControl`](./Abilities_and_Spells.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 2 | `{ . . . }` |
 | `TempTrampleUntilSettled` | `Number` | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 2 | `3` |
 | `TempCritChanceUp` | Integer | The amount of temporary critical hit chance (in percentage points) added. | 2 | `100`<br>`30` |
 | `AddSpiritBombCharges` | `Number` | The number of charges added to the Spirit Bomb ability. | 2 | `1`<br>`2` |
@@ -646,15 +646,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `DisplaceToOriginalPosition` | `Number` | If non-zero, returns the unit to its original position after the effect resolves. | 2 | `1` |
 | `FlowersOnHit` | `Number` | The number of flowers spawned on the tile upon hitting the target. | 2 | `1` |
 | `ForceMoveNonAlliesInRangeTowardsTile` | `Number` | The tile range within which non-allied units are forcibly moved towards a specified tile. | 2 | `3`<br>`4` |
-| [`ForceMoveTowardsTaggedObject`](../Reference_and_Meta/Miscellaneous.md#object-forcemovetowardstaggedobject) | Object  | An object specifying the `ability` and optional `tag` used to forcibly move the unit towards a tagged object. | 2 | `{ . . . }` |
+| [`ForceMoveTowardsTaggedObject`](./Abilities_and_Spells.md#object-forcemovetowardstaggedobject) | Object  | An object specifying the `ability` and optional `tag` used to forcibly move the unit towards a tagged object. | 2 | `{ . . . }` |
 | `ImmediateUseDirectionalAbility` | `String` | Specifies the name of a directional ability to be used immediately by the unit. | 2 | `BowlDash`<br>`BowlDash2` |
 | `JohnnyCriesForWashers` | `Number` | The number of washers (currency) requested by the Johnny NPC. | 2 | `1`<br>`2` |
 | `MaxHPUp` | `Number` | The amount of maximum health permanently increased. | 2 | `100` |
 | `NextAttackSpecialCrit` | `Number` | The number of charges for a special crit on the next attack, or an object defining its bonus properties. | 2 | `1` |
-| [`OverHealToStatuses`](../Reference_and_Meta/Miscellaneous.md#object-overhealtostatuses) | Object  | Specifies a set of statuses applied to the target based on the amount of over-healing dealt. | 2 | `{ . . . }` |
+| [`OverHealToStatuses`](./Abilities_and_Spells.md#object-overhealtostatuses) | Object  | Specifies a set of statuses applied to the target based on the amount of over-healing dealt. | 2 | `{ . . . }` |
 | `PermanentUpgradeRandomActive` | `Number` | The number of random active abilities permanently upgraded. | 2 | `1`<br>`4` |
-| [`QuakeAreaChance`](../Reference_and_Meta/Miscellaneous.md#object-quakeareachance) | Object  | An object containing a radius and a chance to trigger a quake area effect. | 2 | `{ . . . }` |
-| [`RandomKnockback`](../Reference_and_Meta/Miscellaneous.md#object-randomknockback) | Object  | An object defining the minimum and maximum distance in tiles for a random knockback. | 2 | `{ . . . }` |
+| [`QuakeAreaChance`](./Abilities_and_Spells.md#object-quakeareachance) | Object  | An object containing a radius and a chance to trigger a quake area effect. | 2 | `{ . . . }` |
+| [`RandomKnockback`](./Abilities_and_Spells.md#object-randomknockback) | Object  | An object defining the minimum and maximum distance in tiles for a random knockback. | 2 | `{ . . . }` |
 | `RebukeDamage` | `Number` | The amount of damage dealt by a rebuke backlash effect. | 2 | `1`<br>`2` |
 | `RepairArmorCondition` | `Number` | The amount of armor condition restored. | 2 | `1` |
 | `ResetArmorShield` | `Number` | The amount of armor shield restored. | 2 | `1` |
@@ -666,8 +666,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`SpawnFlames`](../Reference_and_Meta/Arrays.md#array-spawnflames) | Array  | An array containing the number of flame tiles to spawn and the chance per tile. | 2 | `[1, .20+.1*level]`<br>`[1, .20]` |
 | [`ForceUseAbility`](../Reference_and_Meta/Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `Infested` | Integer | The number of stacks of Infested applied. | 1 | `1` |
-| [`SpreadDisease`](./Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 1 | `{ . . . }` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
+| [`SpreadDisease`](./Abilities_and_Spells.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 1 | `{ . . . }` |
+| [`GainCoinsRange`](./Abilities_and_Spells.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
 | `RandomPermanentStat` | Integer | The amount of a random permanent stat change (positive or negative). | 1 | `-1`<br>`-2`<br>`-3` |
 | `NonStackingDivineShield` | Integer | The number of Divine Shield stacks that do not stack with duplicates. | 1 | `1` |
 | [`ChangeTilesUnder`](../Reference_and_Meta/Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 1 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
@@ -679,19 +679,19 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 1 | `1` |
 | `FireArmor` | Integer | The number of Fire Armor stacks providing damage reflection. | 1 | `1` |
 | `PermanentIntelligence` | Integer | The permanent amount of intelligence added or removed. | 1 | `-1`<br>`1`<br>`2` |
-| [`StatusGroup`](./Passives_and_Statuses.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. | 1 | `{ . . . }` |
+| [`StatusGroup`](./Abilities_and_Spells.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. | 1 | `{ . . . }` |
 | `SmellBlood` | `Number` | If non-zero, activates the Smell Blood ability which reveals nearby injured units. | 1 | `1` |
-| [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
+| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
 | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 1 | `1`<br>`2` |
 | `PermanentSpeed` | Integer | The permanent amount of speed added or removed. | 1 | `-1`<br>`1`<br>`2` |
 | `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 1 | `1`<br>`2` |
 | `Regurge` | Integer | The number of regurgitation triggers. | 1 | `1` |
 | `Switcheroo` | Integer | The number of stacks of the Switcheroo status effect. | 1 | `1` |
 | `BombRatTurtle` | `Number` | The number of bomb rat turtle spawns triggered. | 1 | `1` |
-| [`Conditional_RandomChance`](./Items_and_Equipment.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
+| [`Conditional_RandomChance`](./Abilities_and_Spells.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 1 | `{ . . . }` |
 | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
-| [`RemoveStatusStacks`](../Reference_and_Meta/Miscellaneous.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 1 | `{ . . . }` |
-| [`WaggleClone`](../Reference_and_Meta/Miscellaneous.md#object-waggleclone) | Object  | Defines a waggle clone ability with health thresholds and object sizes. | 1 | `{ . . . }` |
+| [`RemoveStatusStacks`](./Abilities_and_Spells.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 1 | `{ . . . }` |
+| [`WaggleClone`](./Abilities_and_Spells.md#object-waggleclone) | Object  | Defines a waggle clone ability with health thresholds and object sizes. | 1 | `{ . . . }` |
 | `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 1 | `1` |
 | `FireArmor2` | Integer | The number of Fire Armor2 stacks (likely a variant). | 1 | `1` |
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
@@ -699,7 +699,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Enlarge` | `Number` | The number of turns the unit is enlarged, increasing its size and stats. | 1 | `3` |
 | `FlatAIBonus` | `Number` | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 1 | `-999999`<br>`100`<br>`999999` |
 | [`GlobalSpawnCharacter`](../Reference_and_Meta/Enums.md#enum-globalspawncharacter) | Enum  | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
-| [`NextBasicAttackCritsThisTurn`](../Reference_and_Meta/Miscellaneous.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 1 | `{ . . . }` |
+| [`NextBasicAttackCritsThisTurn`](./Abilities_and_Spells.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 1 | `{ . . . }` |
 | `PermanentCharisma` | `Number` | The amount of permanent Charisma added to the unit's base stats. | 1 | `1`<br>`2` |
 | `PermanentLuck` | `Number` | The amount of permanent Luck added to the unit's base stats. | 1 | `1`<br>`2` |
 | `TriggerGameEnding` | `Number` | If set to 1, triggers the game's ending sequence; 0 disables it. | 1 | `0`<br>`1` |
@@ -718,9 +718,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`TilesMovedToNeighborHeal`](../Reference_and_Meta/Enums.md#enum-tilesmovedtoneighborheal) | Enum  | Specifies the scaling type for healing neighbors based on tiles moved (e.g., 'level'). | 1 | `level` |
 | `TilesMovedToStrength` | Integer | The number of stacks of a status that grants strength based on tiles moved. | 1 | `1` |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
-| [`Conditional_HasCleansableDebuffs`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
-| [`DelayCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
-| [`DelayedWindCone`](./Passives_and_Statuses.md#object-delayedwindcone) | Object  | An object containing parameters for a delayed wind cone, such as damage and distance. | 1 | `{ . . . }` |
+| [`Conditional_HasCleansableDebuffs`](./Abilities_and_Spells.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 1 | `{ . . . }` |
+| [`DelayCastAbility`](./Abilities_and_Spells.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 1 | `{ . . . }`<br>`HitlerNuke` |
+| [`DelayedWindCone`](./Abilities_and_Spells.md#object-delayedwindcone) | Object  | An object containing parameters for a delayed wind cone, such as damage and distance. | 1 | `{ . . . }` |
 | `Disguised` | `Number` | If true, the unit is disguised, appearing as a different faction or model. | 1 | `1` |
 | `DoubleCastSpellsEachTurn_Status` | `Number` | The number of turns the unit gains Double Cast for spells each turn. | 1 | `1` |
 | `EnterMount` | `String` | Specifies the name of the mount status to apply to the unit. | 1 | `enter` |
@@ -737,7 +737,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TempLuckUp` | `Number` | The amount of temporary luck increase. | 1 | `2`<br>`99` |
 | `ThornsDamageImmuneUntilSettled` | `Number` | The number of turns the target is immune to thorns damage until it settles. | 1 | `1` |
 | `TileDamageImmuneUntilSettled` | `Number` | The number of turns the target is immune to tile damage until it settles. | 1 | `1` |
-| [`TransformEquipment`](../Reference_and_Meta/Miscellaneous.md#object-transformequipment) | Object  | Defines an equipment transformation from one item to another, with 'from' and 'to' sub-keys. | 1 | `{ . . . }` |
+| [`TransformEquipment`](./Abilities_and_Spells.md#object-transformequipment) | Object  | Defines an equipment transformation from one item to another, with 'from' and 'to' sub-keys. | 1 | `{ . . . }` |
 | `Bloodzerked` | Integer | The number of Bloodzerk stacks applied. | 1 | `1` |
 | `ChampionUpgradeNextMinion` | Integer | The number of champion upgrades applied to the next spawned minion. | 1 | `1` |
 | `EliteUpgradeNextMinion` | Integer | The number of elite upgrades applied to the next spawned minion. | 1 | `1` |
@@ -760,9 +760,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `AlliesTakeExtraTurn` | `Number` | The number of extra turns granted to allies. | 1 | `1` |
 | `AlternateIdleAnimation` | `String` | Specifies the name of an alternative idle animation to play. | 1 | `berserkIdle` |
 | `ApplyShieldToApplierBasedOnMaxHealth` | `Number` | The amount of shield applied to the applier based on a fraction of their max health. | 1 | `1` |
-| [`ApplyStatusesNextTurnBegin`](../Reference_and_Meta/Miscellaneous.md#object-applystatusesnextturnbegin) | Object  | Specifies a set of statuses to apply to the target at the beginning of their next turn. | 1 | `{ . . . }` |
-| [`ApplyToOthersWithSharedTagAndFaction`](../Reference_and_Meta/Miscellaneous.md#object-applytootherswithsharedtagandfaction) | Object  | Specifies statuses to apply to other units that share a tag and faction with the target. | 1 | `{ . . . }` |
-| [`ApplyToRandomClosestAlly`](../Reference_and_Meta/Miscellaneous.md#object-applytorandomclosestally) | Object  | Specifies statuses to apply to a random ally closest to the target. | 1 | `{ . . . }` |
+| [`ApplyStatusesNextTurnBegin`](./Abilities_and_Spells.md#object-applystatusesnextturnbegin) | Object  | Specifies a set of statuses to apply to the target at the beginning of their next turn. | 1 | `{ . . . }` |
+| [`ApplyToOthersWithSharedTagAndFaction`](./Abilities_and_Spells.md#object-applytootherswithsharedtagandfaction) | Object  | Specifies statuses to apply to other units that share a tag and faction with the target. | 1 | `{ . . . }` |
+| [`ApplyToRandomClosestAlly`](./Abilities_and_Spells.md#object-applytorandomclosestally) | Object  | Specifies statuses to apply to a random ally closest to the target. | 1 | `{ . . . }` |
 | `BonusDamageBasedOnMana` | `Number` | The amount of bonus damage dealt, scaled by the target's current mana. | 1 | `1` |
 | `BypassRockKnockback` | `Number` | If set to a non-zero number, bypasses normal rock knockback behavior. | 1 | `1` |
 | `CanceledQueuedInput` | `Number` | If set to a non-zero number, cancels any queued input from the target. | 1 | `1` |
@@ -806,7 +806,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `HealPercentMaxHP` | `Number` | The percentage of max HP healed (e.g., 100 for full heal). | 1 | `100` |
 | `HealTo` | `Number` | The target HP percentage to heal the unit to (e.g., '50%' for half max HP). | 1 | `50%` |
 | `IgnoreDebuffs` | `Number` | If true, the effect ignores debuffs on the target. | 1 | `1` |
-| [`IncAuxCounterCycle`](../Reference_and_Meta/Miscellaneous.md#object-incauxcountercycle) | Object  | An object containing parameters for incrementing an auxiliary counter with a change and maximum value. | 1 | `{ . . . }` |
+| [`IncAuxCounterCycle`](./Abilities_and_Spells.md#object-incauxcountercycle) | Object  | An object containing parameters for incrementing an auxiliary counter with a change and maximum value. | 1 | `{ . . . }` |
 | `IncreaseCumulativeBlastDamage` | `Number` | If true, increases the cumulative blast damage counter. | 1 | `1` |
 | `IncreaseItemAuxOnKill` | `Number` | If true, increases the item's aux counter on kill. | 1 | `1` |
 | `InterchangeMoveActPoints` | `Number` | If true, swaps the unit's remaining move points and action points. | 1 | `1` |
@@ -817,11 +817,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `MassAttackThis` | `Number` | The number of additional targets this attack hits via the Mass Attack mechanic. | 1 | `1` |
 | `MimicMetronome` | `Number` | The number of random abilities the Metronome effect selects from this unit's ability pool. | 1 | `1` |
 | `MotherTumorDebugForcePass` | `Number` | If non-zero, forces the Mother Tumor boss to pass its turn, skipping its normal action. | 1 | `1` |
-| [`NextBattleStatusStacks`](../Reference_and_Meta/Miscellaneous.md#object-nextbattlestatusstacks) | Object  | An object specifying status effects and their stacks to be applied at the start of the next battle. Contains a "fights" counter and nested status keys. | 1 | `{ . . . }` |
+| [`NextBattleStatusStacks`](./Abilities_and_Spells.md#object-nextbattlestatusstacks) | Object  | An object specifying status effects and their stacks to be applied at the start of the next battle. Contains a "fights" counter and nested status keys. | 1 | `{ . . . }` |
 | `ObjectOnHitFullyEmpty` | `String` | Specifies the object (e.g., RandomArmorPickup) to spawn on the target when the attacker's inventory is completely empty. | 1 | `RandomArmorPickup` |
 | `OverHealToShield` | `Number` | The amount of excess healing converted into temporary shield points. | 1 | `1` |
 | `PermanentUpgradeRandomActiveOrPassive` | `Number` | The number of random active or passive abilities permanently upgraded. | 1 | `1` |
-| [`PoolMetronome`](../Reference_and_Meta/Miscellaneous.md#object-poolmetronome) | Object  | An object containing a "pool" array of ability names that the Metronome effect can randomly select from. | 1 | `{ . . . }` |
+| [`PoolMetronome`](./Abilities_and_Spells.md#object-poolmetronome) | Object  | An object containing a "pool" array of ability names that the Metronome effect can randomly select from. | 1 | `{ . . . }` |
 | `QueueUseAbility` | `String` | Specifies the ability ID to be used immediately after the current action resolves. | 1 | `Spider_GoInsane` |
 | `RandomKnockbackDirection` | `Number` | The number of random directions the target can be knocked back (e.g., 4 selects from 4 cardinal directions). | 1 | `4` |
 | `ReformMoonHead` | `Number` | If non-zero, triggers the Moon Head's reformation mechanic (e.g., after it eats a cat). | 1 | `1` |
@@ -832,7 +832,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `RerollEnemy` | `Number` | The number of times the target enemy is re-rolled (transformed into a new random enemy). | 1 | `1` |
 | `ReturnDinoLegs` | `Number` | If non-zero, returns the Dino Legs ability to the unit after it is consumed. | 1 | `1` |
 | `RNGCannonRandomDamage` | `Number` | The maximum random damage value for the RNG Cannon attack. | 1 | `100` |
-| [`ScrambleLastUsedSpell`](../Reference_and_Meta/Miscellaneous.md#object-scramblelastusedspell) | Object  | An object containing a "permanent" boolean. If true, permanently scrambles (randomizes) the last used spell. | 1 | `{ . . . }` |
+| [`ScrambleLastUsedSpell`](./Abilities_and_Spells.md#object-scramblelastusedspell) | Object  | An object containing a "permanent" boolean. If true, permanently scrambles (randomizes) the last used spell. | 1 | `{ . . . }` |
 | `ShadowCrit` | `Number` | If non-zero, enables the Shadow Crit mechanic, granting bonus critical hit chance or damage from stealth. | 1 | `1` |
 | `ShootHereCommand` | `Number` | If non-zero, commands an allied unit to shoot at this unit's target. | 1 | `1` |
 | `ShootHereReceiver` | `Number` | If non-zero, marks this unit as the receiver of a Shoot Here command. | 1 | `1` |
@@ -846,7 +846,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `StealEquipment` | `String` | Specifies the type of equipment to steal (e.g., "any") from the target. | 1 | `any` |
 | `StealthCritChance` | `Number` | The percentage chance to critically hit while stealthed. | 1 | `100` |
 | `StealTurn` | `Number` | The number of turns stolen from the target to grant to the attacker. | 1 | `1` |
-| [`SwapWeapon`](../Reference_and_Meta/Miscellaneous.md#object-swapweapon) | Object  | An object containing a "pool" array of weapon names to randomly swap to. | 1 | `{ . . . }` |
+| [`SwapWeapon`](./Abilities_and_Spells.md#object-swapweapon) | Object  | An object containing a "pool" array of weapon names to randomly swap to. | 1 | `{ . . . }` |
 | `T3HitlerTriggerInitialSpawns` | `Number` | If non-zero, triggers the initial spawn sequence for the T3 Hitler boss. | 1 | `1` |
 | `TagMetronome` | `String` | Specifies a tag (e.g., "musical") used to filter which abilities the Metronome effect can pick. | 1 | `musical` |
 | `TakeExtraTurnEndOfRound` | `Number` | The number of extra turns taken at the end of the round. | 1 | `1` |
@@ -868,11 +868,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TurnControlDelay` | `String` | Specifies the delay in seconds before the unit regains turn control. | 1 | `.25` |
 | `TurnRight` | `Number` | The number of times the unit turns to the right. | 1 | `1` |
 | `UndoDamage` | `Number` | The amount of damage reversed. | 1 | `1` |
-| [`UseMoveAbilityWithAI`](../Reference_and_Meta/Miscellaneous.md#object-usemoveabilitywithai) | Object  | Defines a move ability to execute with AI-controlled movement weights. | 1 | `{ . . . }` |
+| [`UseMoveAbilityWithAI`](./Abilities_and_Spells.md#object-usemoveabilitywithai) | Object  | Defines a move ability to execute with AI-controlled movement weights. | 1 | `{ . . . }` |
 | `VaporizeDice` | `Number` | The number of dice vaporized. | 1 | `1` |
-| [`VisualCountDownThenApplyStatus`](../Reference_and_Meta/Miscellaneous.md#object-visualcountdownthenapplystatus) | Object  | Contains a visual countdown sequence that culminates in applying a status effect, optionally forcing an ability use. | 1 | `{ . . . }` |
+| [`VisualCountDownThenApplyStatus`](./Abilities_and_Spells.md#object-visualcountdownthenapplystatus) | Object  | Contains a visual countdown sequence that culminates in applying a status effect, optionally forcing an ability use. | 1 | `{ . . . }` |
 | [`VaporizeCorpseFlipAdvantage`](../Reference_and_Meta/Arrays.md#array-vaporizecorpseflipadvantage) | Array  | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 1 | `[1 .33]` |
-| [`LowerAmbientLight`](../Reference_and_Meta/Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 0 | `{ . . . }` |
+| [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 0 | `{ . . . }` |
 
 </details>
 
@@ -1082,7 +1082,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 1 | `[attack move spell]`<br>`attack`<br>`battle` |
 
 </details>
@@ -1108,14 +1108,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 83 | `damage_instance`<br>`spell`<br>`self_damage` |
 | [`faction`](../Reference_and_Meta/Enums.md#enum-faction) | Enum | Specifies the faction of a spawned unit or projectile, determining its team allegiance and AI behavior. | 59 | `allies`<br>`auto`<br>`birds` |
 | `ai_base_score` | Integer | The base priority score the AI assigns to using this damage instance, with higher values indicating greater preference. | 31 | `-99999`<br>`-999999`<br>`1` |
-| [`additional_passives`](../Reference_and_Meta/Miscellaneous.md#object-additional_passives) | Object  | Additional passive abilities applied to the spawned unit. | 20 | `{ . . . }` |
+| [`additional_passives`](./Abilities_and_Spells.md#object-additional_passives) | Object  | Additional passive abilities applied to the spawned unit. | 20 | `{ . . . }` |
 | [`first_turn`](../Reference_and_Meta/Enums.md#enum-first_turn) | Enum | Determines when the spawned unit takes its first turn relative to the spawn event. | 17 | `end_of_round`<br>`initiative`<br>`keep_turns` |
 | `layer` | `String` | Specifies the layer on which the ability's effect operates (e.g., characters, tiles, gas). | 14 | `2`<br>`all`<br>`characters` |
 | [`catdata`](../Reference_and_Meta/Enums.md#enum-catdata) | Enum  | Specifies the cat data identifier for the spawned unit, linking to a character template. | 13 | `Beaver`<br>`Bigfoot`<br>`Bunny` |
 | `clone_items` | Boolean | If true, the spawned unit clones the items of the original unit. | 12 | `false`<br>`true` |
 | `size` | Integer | The scale factor (size multiplier) of the spawned unit. | 4 | `.2`<br>`.5`<br>`1` |
 | `lob` | Boolean | If true, the projectile follows a lobbed trajectory. | 4 | `false`<br>`true` |
-| [`post_spawn_statuses`](../Reference_and_Meta/Miscellaneous.md#object-post_spawn_statuses) | Object  | Status effects applied to the spawned unit immediately after it appears. | 4 | `{ . . . }` |
+| [`post_spawn_statuses`](./Abilities_and_Spells.md#object-post_spawn_statuses) | Object  | Status effects applied to the spawned unit immediately after it appears. | 4 | `{ . . . }` |
 | `face_camera` | Boolean | If true, the spawned unit always faces the camera. | 2 | `1000`<br>`true` |
 | `inherit_elite_buffs` | Boolean | If true, the spawned unit inherits elite buffs from the original unit. | 2 | `false` |
 | `start_dead` | Boolean | If true, the spawned unit starts the battle dead (e.g., for revival effects). | 2 | `true` |
@@ -1148,8 +1148,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 220 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 200 | `{ . . . }` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 47 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 200 | `{ . . . }` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 47 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `piercing` | `Boolean` | If true, the damage instance ignores armor or damage reduction effects on the target. | 12 | `true` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 11 | `[attack move spell]`<br>`attack`<br>`battle` |
 | [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 10 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
@@ -1239,27 +1239,27 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `AbilityInheritsWeaponEffects` | Integer | If set, the ability inherits properties from the unit's weapon, with higher values indicating different inheritance modes. | 3 | `1`<br>`2` |
 | `MoonHeadFinisherEnabler` | Integer | Determines the finisher state for MoonHead abilities; negative values may disable. | 3 | `-1`<br>`0`<br>`1` |
 | [`XIsMultipliedPercentHealth`](../Reference_and_Meta/Arrays.md#array-xismultipliedpercenthealth) | Array  | The [stacks, probability] for multiplying health by a percentage. | 3 | `[1 12]`<br>`[14 1]`<br>`[6 2]` |
-| [`AutocastEachRound`](./Passives_and_Statuses.md#object-autocasteachround) | Object  | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 2 | `{ . . . }` |
+| [`AutocastEachRound`](./Abilities_and_Spells.md#object-autocasteachround) | Object  | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 2 | `{ . . . }` |
 | [`AbilityEnabledIfHasStatus`](../Reference_and_Meta/Enums.md#enum-abilityenabledifhasstatus) | Enum  | Specifies the status effect that must be present on the unit for the ability to be enabled. | 2 | `DemonicGlyph_Bite`<br>`DemonicGlyph_Summon` |
 | [`ChargeSpiritBombAura`](../Reference_and_Meta/Enums.md#enum-chargespiritbombaura) | Enum  | Specifies the ability to charge for spirit bomb aura. | 2 | `DonateEnergy`<br>`DonateEnergy2` |
 | `CopyCatPassive_Initializer` | Integer | The number of copies of this passive to initialize. | 2 | `1`<br>`2` |
-| [`NukeQuestFinalBossModifications`](../Reference_and_Meta/Miscellaneous.md#object-nukequestfinalbossmodifications) | Object  | Contains modifications for the nuke quest final boss, such as damage_instance effects. | 2 | `{ . . . }` |
+| [`NukeQuestFinalBossModifications`](./Abilities_and_Spells.md#object-nukequestfinalbossmodifications) | Object  | Contains modifications for the nuke quest final boss, such as damage_instance effects. | 2 | `{ . . . }` |
 | `ReloadOnKill` | Integer | If set, this ability's reload charge is restored on kill (any kill). | 2 | `1` |
 | `ReloadOnKillEnemy` | Integer | If set, this ability's reload charge is restored only when killing an enemy. | 2 | `1` |
 | `ReloadOnTotalDamageReceived` | Integer | The threshold of total damage received to restore a reload charge. | 2 | `15`<br>`25` |
 | [`XIsLivingCharactersWithTag`](../Reference_and_Meta/Enums.md#enum-xislivingcharacterswithtag) | Enum  | Specifies the tag that living characters must have for this passive to affect them. | 2 | `husk`<br>`rock` |
 | `XIsOtherHealsThisTurn` | Integer | If set, tracks other heals this turn for some effect. | 2 | `1` |
-| [`XIsSpellStormRampAndReset`](../Reference_and_Meta/Miscellaneous.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
+| [`XIsSpellStormRampAndReset`](./Abilities_and_Spells.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
 | `XIsTimesDamageTaken` | Integer | If set, multiplier for damage taken to apply some effect. | 2 | `1` |
-| [`AddStatusToBasicAttack`](./Passives_and_Statuses.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
+| [`AddStatusToBasicAttack`](./Abilities_and_Spells.md#object-addstatustobasicattack) | Object  | Contains status effects to add to the basic attack. | 1 | `{ . . . }` |
 | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 1 | `1`<br>`3`<br>`4` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 1 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| [`RevengeDamage`](./Passives_and_Statuses.md#object-revengedamage) | Object  | An object defining the damage and effects that trigger when the unit is attacked. | 1 | `{ . . . }` |
+| [`RevengeDamage`](./Abilities_and_Spells.md#object-revengedamage) | Object  | An object defining the damage and effects that trigger when the unit is attacked. | 1 | `{ . . . }` |
 | `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 1 | `1` |
 | `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 1 | `1` |
-| [`StatusKillers`](./Passives_and_Statuses.md#object-statuskillers) | Object  | An object containing nested conditionals that apply status effects when the unit kills an enemy. | 1 | `{ . . . }` |
+| [`StatusKillers`](./Abilities_and_Spells.md#object-statuskillers) | Object  | An object containing nested conditionals that apply status effects when the unit kills an enemy. | 1 | `{ . . . }` |
 | `AlphaDodgeChance` | Integer | The dodge chance granted to the alpha (leader) unit. | 1 | `50%` |
 | `CapTechSpent` | Integer | The maximum amount of tech that can be spent on this ability per turn. | 1 | `0`<br>`1` |
 | `AbilityDisableIfLivingCrow` | Integer | If set, disables the ability if there is a living crow on the field. | 1 | `1` |
@@ -1271,14 +1271,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`AbilityEnabledIfSpecificItemEquipped`](../Reference_and_Meta/Enums.md#enum-abilityenabledifspecificitemequipped) | Enum  | Specifies the item that must be equipped for ability to be enabled. | 1 | `Neverstone` |
 | `AbsorbManaFromOtherSpells` | Integer | If set, this ability absorbs mana from other spells when cast. | 1 | `1` |
 | [`AddElementsToSpells`](../Reference_and_Meta/Enums.md#enum-addelementstospells) | Enum  | Specifies which element to add to spells. | 1 | `Earth` |
-| [`AlphaStatusOnTurnBegin`](../Reference_and_Meta/Miscellaneous.md#object-alphastatusonturnbegin) | Object  | Specifies status effects applied to the alpha at the start of each turn. | 1 | `{ . . . }` |
+| [`AlphaStatusOnTurnBegin`](./Abilities_and_Spells.md#object-alphastatusonturnbegin) | Object  | Specifies status effects applied to the alpha at the start of each turn. | 1 | `{ . . . }` |
 | [`BonusAbility_DelayedApplication`](../Reference_and_Meta/Enums.md#enum-bonusability_delayedapplication) | Enum  | Specifies the name of a bonus ability to apply with a delay. | 1 | `Slap` |
 | `CaveWomanBirthControl` | Integer | If true, restricts or controls the spawning of additional units via birth mechanics. | 1 | `1` |
 | `FistOfFateUniqueEnemyTracker` | Integer | Increases the damage tracking counter for unique enemies hit by Fist of Fate. | 1 | `1` |
 | `FreeFirstCastAndAfterSpendMana` | Integer | If set to 1, the first cast of the ability and each cast after spending mana costs no resources. | 1 | `1` |
 | `FreeFirstCastEachMatch` | Integer | If set to 1, the first cast of the ability each match costs no resources. | 1 | `1` |
 | `InterchangeDisabler` | Integer | If set to 1, prevents the unit from being interchanged with another unit. | 1 | `1` |
-| [`PassiveWhileNotTakingTurn`](../Reference_and_Meta/Miscellaneous.md#object-passivewhilenottakingturn) | Object  | A nested passive object that is active only while the unit is not currently taking its turn. | 1 | `{ . . . }` |
+| [`PassiveWhileNotTakingTurn`](./Abilities_and_Spells.md#object-passivewhilenottakingturn) | Object  | A nested passive object that is active only while the unit is not currently taking its turn. | 1 | `{ . . . }` |
 | `ReloadOnAllyCatDies` | Integer | If set to 1, restores a charge when an allied cat dies. | 1 | `1` |
 | `ReloadOnAllyDies` | Integer | If set to 1, restores a charge when any ally dies. | 1 | `1` |
 | `ReloadOnAnyDamage` | Integer | If set to 1, restores a charge when any damage is taken. | 1 | `1` |
@@ -1326,10 +1326,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Fury` | Integer | The amount of Fury (bonus damage or charges) gained. | 7 | `10`<br>`55`<br>`75` |
 | [`TileTrail`](../Reference_and_Meta/Enums.md#enum-tiletrail) | Enum  | Specifies the type of tile left behind as the unit moves. | 6 | `BrambleTile`<br>`CreepTile`<br>`FireTile` |
 | `JustInCaseTrample` | Integer | If set to a non-zero value, applies a trample effect as a fallback. | 5 | `0` |
-| [`LeaveBehind`](../Reference_and_Meta/Miscellaneous.md#object-leavebehind) | Enum / Object  | Specifies the object or entity to spawn after the unit leaves a tile. | 5 | `{ . . . }`<br>`Bait` |
+| [`LeaveBehind`](./Abilities_and_Spells.md#object-leavebehind) | Enum / Object  | Specifies the object or entity to spawn after the unit leaves a tile. | 5 | `{ . . . }`<br>`Bait` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 4 | Default<br>FormChange<br>Druid |
 | `DashFury` | Integer | The amount of Fury gained after dashing. | 3 | `4` |
-| [`AfterImage`](./Passives_and_Statuses.md#object-afterimage) | Object  | Specifies the object or skill used to create an afterimage of the unit. | 2 | `{ . . . }` |
+| [`AfterImage`](./Abilities_and_Spells.md#object-afterimage) | Object  | Specifies the object or skill used to create an afterimage of the unit. | 2 | `{ . . . }` |
 | `BearTrapTrail` | Integer | If set to 1, leaves bear traps behind as the unit moves. | 2 | `1` |
 | `KnockbackImmunity` | Integer | If set to 1, the unit cannot be knocked back. | 1 | `1` |
 | `DoubleLoot` | Integer | The multiplier for loot drops, where 1 or 2 doubles the loot. | 1 | `1`<br>`2` |
@@ -1360,41 +1360,41 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 13 | passives<br>class<br>tag |
 | `GainDisorderFromPool_PostCast` | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 7 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 6 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 3 | `1`<br>`20` |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 3 | `{ . . . }` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 3 | `{ . . . }` |
+| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 2 | `0`<br>`1` |
 | `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 2 | `0`<br>`1` |
 | `Revive` | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `1`<br>`100%`<br>`50%` |
-| [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 2 | `{ . . . }` |
 | [`RandomStatDown`](../Reference_and_Meta/Arrays.md#array-randomstatdown) | Array / Integer / String  | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 2 | `{ . . . }` |
+| [`GainCoinsRange`](./Abilities_and_Spells.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 2 | `{ . . . }` |
 | `SpawnThingIfHitKills` | `String` | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | `SpawnBearTrapIfHitKills` | `Number` | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 2 | `1` |
 | [`Bruise`](../Reference_and_Meta/Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `1`<br>`2`<br>`3` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 1 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 1 | `-1`<br>`-2`<br>`-4` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
-| [`CatPartsTransform`](./Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`CatPartsTransform`](./Abilities_and_Spells.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 1 | `{ . . . }` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
-| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`Conditional_GoodRoll`](./Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
-| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`Conditional_GoodRoll`](./Abilities_and_Spells.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
+| [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `Leeches` | Integer | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 1 | `1`<br>`2`<br>`3` |
-| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 1 | `{ . . . }`<br>`1` |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
+| [`Cleave`](./Abilities_and_Spells.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 1 | `{ . . . }`<br>`1` |
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 1 | `-10`<br>`0`<br>`1` |
 | `GenericDebuff` | `Number` | The number of stacks of a generic, untooltipped debuff applied to the target. | 1 | `1`<br>`10`<br>`100` |
 | `Instakill` | `Number` | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
@@ -1404,26 +1404,26 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `SetHealth` | `Number` | Sets the target's health to a specific flat value or percentage. | 1 | `1`<br>`100%`<br>`50%` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
 | `VaporizeInanimate` | `Number` | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 1 | `1` |
-| [`ScatterCoins`](../Reference_and_Meta/Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
-| [`DoDamage`](../Reference_and_Meta/Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 1 | `{ . . . }` |
-| [`DestroyEquipmentAndAttachParasite`](../Reference_and_Meta/Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
+| [`ScatterCoins`](./Abilities_and_Spells.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 1 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [`Conditional_Object`](./Abilities_and_Spells.md#object-conditional_object) | Object  | Evaluates whether the target is an object (vs a character); if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | `FaceCamera` | `Number` | If non-zero, forces the character to rotate and face the camera. | 1 | `1` |
 | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 1 | `1` |
-| [`ApplyToRandomPartyMemberIfPossible`](../Reference_and_Meta/Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
+| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | `FlatAIBonus` | `Number` | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 1 | `-999999`<br>`100`<br>`999999` |
 | `RemoveMovePoints` | `Number` | The number of move points to remove from the target, preventing them from moving. | 1 | `1` |
 | `SetShield` | `Number` | Sets the target's shield value to a specific flat amount. | 1 | `0`<br>`88` |
 | `SpeculativeMoveSelfCorpseOffMap` | `Number` | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 1 | `1` |
-| [`DybbukPossessed`](../Reference_and_Meta/Miscellaneous.md#object-dybbukpossessed) | Object  | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 | `{ . . . }` |
+| [`DybbukPossessed`](./Abilities_and_Spells.md#object-dybbukpossessed) | Object  | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 | `{ . . . }` |
 | [`Conditional_Displaceable`](./Abilities_and_Spells.md#object-conditional_displaceable) | Object  | Contains an inner effect block that only executes if the target can be displaced (knocked back). | 1 | `{ . . . }` |
 | `ExplodeCharacter` | `Number` | The radius (in tiles) of an explosion centered on the character. | 1 | `5` |
-| [`XIsTargetHealth`](../Reference_and_Meta/Miscellaneous.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 1 | `{ . . . }` |
+| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 1 | `{ . . . }` |
 | `ExplodeCharacter_Party` | `Number` | The radius (in tiles) of an explosion centered on the character that also damages party members. | 1 | `5` |
 | `ForceImmediateMove` | `Number` | If non-zero, forces the character to move instantly without waiting for normal action order. | 1 | `1` |
 | `RemoveTurnsThisRound` | `Number` | The number of turns to remove from the target's turn order this round. | 1 | `1` |
-| [`ShowFakeDamage`](../Reference_and_Meta/Miscellaneous.md#object-showfakedamage) | Object  | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 1 | `{ . . . }` |
+| [`ShowFakeDamage`](./Abilities_and_Spells.md#object-showfakedamage) | Object  | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 1 | `{ . . . }` |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 0 | `1` |
 | `FactionConversion` | Integer | Converts the target to the caster's faction. | 0 | `1` |
 
@@ -1468,7 +1468,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 </details>
@@ -1500,14 +1500,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 3 | `-1`<br>`-2`<br>`1` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 3 | `-1`<br>`-2`<br>`1` |
 | `RefreshActPoints` | `Number` | The amount of action points restored to the source. | 3 | `1` |
-| [`Craft`](./Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 3 | `{ . . . }` |
+| [`Craft`](./Abilities_and_Spells.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 3 | `{ . . . }` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 3 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 2 | `0`<br>`1` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
-| [`FindItemFromPool`](./Passives_and_Statuses.md#object-finditemfrompool) | Object  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `{ . . . }` |
+| [`FindItemFromPool`](./Abilities_and_Spells.md#object-finditemfrompool) | Object  | Specifies the loot pool from which to find an item, with an optional chance. | 2 | `{ . . . }` |
 | `RemoveStatus` | `String` | The name of the status effect to remove from the source. | 2 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 | `FreeSpell` | Integer | The number of stacks of Free Spell applied to the source, allowing the next spells to be cast without mana cost. | 2 | `1`<br>`2` |
-| [`DoDamage`](../Reference_and_Meta/Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 2 | `{ . . . }` |
+| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 2 | `{ . . . }` |
 | [`EquipPermanentItem`](../Reference_and_Meta/Enums.md#enum-equippermanentitem) | Enum  | The name of the item to permanently equip to the source. | 2 | `BoneClub`<br>`Kidney` |
 | `AddLeechesStatus` | `Number` | The number of stacks of Leech status applied to the source, healing when dealing damage. | 2 | `1` |
 | `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
@@ -1517,12 +1517,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 1 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`ForceUseAbility`](../Reference_and_Meta/Enums.md#enum-forceuseability) | Enum  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `TakeExtraTurn` | `Number` | The number of extra turns granted to the source. | 1 | `1` |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 1 | `{ . . . }` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | `RefreshMovePoints` | `Number` | The amount of movement points restored to the source. | 1 | `1` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`[1, 0.1]` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 1 | `1`<br>`3` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
+| [`GainCoinsRange`](./Abilities_and_Spells.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
 | `SpecificInjury` | `String` | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 1 | `int`<br>`spd`<br>`str` |
 | `StanceSwitchToMelee` | `Number` | If set, switches the source to melee stance. | 1 | `1` |
 | `TempTrampleUntilSettled` | `Number` | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 1 | `3` |
@@ -1641,17 +1641,17 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 41 | passives<br>class<br>tag |
 | [`tag`](../Reference_and_Meta/Enums.md#enum-tag) | Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 41 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 37 | Default<br>FormChange<br>Druid |
-| [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 6 | `{ . . . }` |
 | `FloatingRockTrap` | `Number` | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 6 | `1` |
-| [`Conditional_Boss`](./Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
+| [`Conditional_Boss`](./Abilities_and_Spells.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 4 | `{ . . . }` |
 | `IgnoreDamage` | `Number` | If set, the target ignores all damage for the duration. | 4 | `1` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `ImmediateUseAbility` | `String` | Specifies the name of an ability to be triggered instantly from this effect. | 3 | `FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 2 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 2 | `{ . . . }` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 2 | `1`<br>`20` |
-| [`ApplyToSourceOnKill`](../Reference_and_Meta/Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 2 | `{ . . . }` |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 2 | `{ . . . }` |
+| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 2 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 2 | `{ . . . }` |
 | `Die` | `Number` | If set, kills the target immediately. | 2 | `1`<br>`6` |
 | [`ChangeTilesUnder`](../Reference_and_Meta/Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 2 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
@@ -1663,14 +1663,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `Instakill` | `Number` | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | `DeleteObject` | `Number` | If set, deletes the target object from the map. | 1 | `1` |
-| [`PopAndSpawn`](../Reference_and_Meta/Miscellaneous.md#object-popandspawn) | Enum / Object  | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 1 | `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
+| [`PopAndSpawn`](./Abilities_and_Spells.md#object-popandspawn) | Enum / Object  | The object (enemy or entity) to spawn on the target's tile, optionally with visual effects. | 1 | `{ . . . }`<br>`Sprout`<br>`StemCat_HalfHealth`<br>`TheDestroyer` |
 | `DisplaceTowardsSource` | `Number` | If set, displaces the target towards the source of the effect. | 1 | `1` |
 | `ScatterRandomPickups` | `Number` | The number of random pickups scattered around the target's location. | 1 | `2`<br>`5` |
 | `SetKnockback` | `Number` | The knockback distance to set for the damage instance, overriding default. | 1 | `0` |
 | `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 1 | `5` |
 | `CrackMoonHead` | `Number` | If set, cracks the MoonHead's head, triggering its death sequence. | 1 | `1` |
-| [`MergeDamageInstance`](../Reference_and_Meta/Miscellaneous.md#object-mergedamageinstance) | Object  | Specifies parameters to merge multiple damage instances into one, controlling hit animation and instant pop behavior. | 1 | `{ . . . }` |
-| [`SetAnimationAlts`](../Reference_and_Meta/Miscellaneous.md#object-setanimationalts) | Object  | Specifies alternative animation names for the target's dying and dead states. | 1 | `{ . . . }` |
+| [`MergeDamageInstance`](./Abilities_and_Spells.md#object-mergedamageinstance) | Object  | Specifies parameters to merge multiple damage instances into one, controlling hit animation and instant pop behavior. | 1 | `{ . . . }` |
+| [`SetAnimationAlts`](./Abilities_and_Spells.md#object-setanimationalts) | Object  | Specifies alternative animation names for the target's dying and dead states. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1714,29 +1714,29 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 5 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
-| [`Conditional_NotBoss`](./Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 3 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Abilities_and_Spells.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 3 | `{ . . . }` |
 | `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 3 | `1` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Weakness`](../Reference_and_Meta/Arrays.md#array-weakness) | Array / Integer  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `TakeExtraTurn` | `Number` | The number of extra turns granted to the source. | 2 | `1` |
 | `Attraction` | Integer | The number of stacks of Attraction applied, drawing enemy units toward the target. | 2 | `1` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`Marked`](../Reference_and_Meta/Arrays.md#array-marked) | Array / Integer  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`3`<br>`5` |
-| [`ApplyToSourceOnKill`](../Reference_and_Meta/Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 1 | `{ . . . }` |
+| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 1 | `{ . . . }` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 1 | `-1`<br>`1`<br>`2` |
 | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 1 | `1`<br>`2`<br>`3` |
 | `ForceMoveTowards` | `Number` | The number of tiles to force the target to move toward the caster. | 1 | `1` |
 | `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 1 | `1` |
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 1 | `1` |
-| [`Conditional_FinishedSpawning`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
+| [`Conditional_FinishedSpawning`](./Abilities_and_Spells.md#object-conditional_finishedspawning) | Object  | Contains an inner effect block that only executes if the target has finished its spawning animation. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1847,10 +1847,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 12 | Default<br>FormChange<br>Druid |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 12 | `.1`<br>`.16666666`<br>`.3` |
 | `GainDisorderFromPool_PostCast` | `String` | Specifies the pool of disorders the unit can gain after the spell is cast. | 7 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | `ImmediateUseAbility` | `String` | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `RefreshWeaponAbility` | `Number` | The number of times the weapon's ability is refreshed. | 1 | `1` |
-| [`ApplyToRandomPartyMemberIfPossible`](../Reference_and_Meta/Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
+| [`ApplyToRandomPartyMemberIfPossible`](./Abilities_and_Spells.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 1 | `{ . . . }` |
 | `ShowText` | `String` | Specifies the localization key for a popup text displayed on the target. | 1 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
 | `GainDisorder` | `String` | Specifies the name of the disorder gained. | 1 | `Chungus`<br>`Psychosis` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>tag |
@@ -1878,22 +1878,22 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 4 | `-10`<br>`0`<br>`1` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 3 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 3 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 3 | `{ . . . }` |
 | `KnockbackDamageImmuneUntilSettled` | `Number` | If non-zero, makes the target immune to damage from knockback until they stop moving. | 3 | `1` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 2 | `1`<br>`10`<br>`2` |
 | `RandomStatUp` | Enum / Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 1 | `0`<br>`1` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
 | `BleedThorns` | Integer | The amount of bleed thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
-| [`ApplyToSourceOnKill`](../Reference_and_Meta/Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 1 | `{ . . . }` |
+| [`ApplyToSourceOnKill`](./Abilities_and_Spells.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 1 | `{ . . . }` |
 | `TempDamageUp` | Integer | The amount of temporary damage increase applied. | 1 | `-1`<br>`1`<br>`2` |
 | `ChanceToBreak` | `Number` | Specifies the percentage chance that the item breaks on use. | 1 | `100`<br>`15`<br>`20` |
-| [`Conditional_Corpse`](./Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
-| [`Conditional_PlayerCat`](./Items_and_Equipment.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
+| [`Conditional_Corpse`](./Abilities_and_Spells.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 1 | `{ . . . }` |
+| [`Conditional_PlayerCat`](./Abilities_and_Spells.md#object-conditional_playercat) | Object  | Defines effects that only apply if the target is a player-controlled cat. | 1 | `{ . . . }` |
 | `RepairAll` | `Number` | The amount of durability restored to all equipped items. | 1 | `1`<br>`10` |
 | `ShowText` | `String` | Specifies the localization key for a popup text displayed on the target. | 1 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` |
 | `ThornsDamageImmuneUntilSettled` | `Number` | The number of turns the target is immune to thorns damage until it settles. | 1 | `1` |
@@ -1920,8 +1920,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 35 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 17 | `{ . . . }` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 32 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 17 | `{ . . . }` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 13 | `[`<br>`[Heat Fire]` |
 | [`knockback`](../Reference_and_Meta/Enums.md#enum-knockback) | Enum / Integer  | The amount of knockback applied by the damage instance; positive values push away, negative values pull toward the source. | 13 | `"ceil(X*.25/5)"`<br>`-10`<br>`-2` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 12 | `[attack move spell]`<br>`attack`<br>`battle` |
@@ -1953,7 +1953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 14 | passives<br>class<br>tag |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 12 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 12 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 7 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `GainCoins` | Integer | The amount of coins gained, or a [min, max] range. | 7 | `-5`<br>`1`<br>`2` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 6 | `1`<br>`10`<br>`2` |
@@ -1973,14 +1973,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Weakness`](../Reference_and_Meta/Arrays.md#array-weakness) | Array / Integer  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`2`<br>`3` |
 | `Quivered` | Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`5` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 3 | `1`<br>`2`<br>`[1, 0.1]` |
-| [`IncAuxCounterClamped`](../Reference_and_Meta/Miscellaneous.md#object-incauxcounterclamped) | Object  | An object with `change` and `max` properties modifying the auxiliary counter by `change`, clamped to `max`. | 3 | `{ . . . }` |
+| [`IncAuxCounterClamped`](./Abilities_and_Spells.md#object-incauxcounterclamped) | Object  | An object with `change` and `max` properties modifying the auxiliary counter by `change`, clamped to `max`. | 3 | `{ . . . }` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 2 | `1`<br>`2`<br>`3` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 2 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 2 | `1`<br>`10`<br>`100` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 2 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 2 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Marked`](../Reference_and_Meta/Arrays.md#array-marked) | Array / Integer  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`3`<br>`5` |
@@ -1991,7 +1991,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 2 | `-999999`<br>`1`<br>`2` |
 | [`Tarred`](../Reference_and_Meta/Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 2 | `1`<br>`2`<br>`[1 .1]` |
 | `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 2 | `-1`<br>`-2`<br>`1` |
-| [`BackflipWhenTargeted`](./Passives_and_Statuses.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
+| [`BackflipWhenTargeted`](./Abilities_and_Spells.md#object-backflipwhentargeted) | Integer / Object  | The number of backflip charges, or an object defining its ability. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`X` |
 | `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. | 2 | `1`<br>`2`<br>`3` |
 | `Reflect` | Integer | The amount of reflect stacks applied. | 2 | `1`<br>`5` |
 | `PoisonLace` | Enum / Equation | Integer or fractional string (e.g., 'X/3') specifying the duration or intensity of the PoisonLace effect. | 2 | `"X/3"`<br>`"X/5"`<br>`1` |
@@ -2042,8 +2042,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`10`<br>`2` |
 | `Brace` | Array / Integer | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 1 | `1`<br>`10`<br>`2` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`RandomMagicMissile`](./Abilities_and_Spells.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .1]` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 1 | `1` |
 | `TemporaryItem` | Integer | The number of times a temporary item can be used before disappearing. | 1 ||
@@ -2069,7 +2069,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2165,7 +2165,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `wet` | `Boolean` | If true, the consumed unit is considered wet (e.g., for elemental interactions). | 8 | `false`<br>`true` |
 | `do_not_pop_corpse` | `Boolean` | If true, the consumed unit's corpse is not popped upon consumption. | 7 | `true` |
 | `drop_on_death` | `String` | Determines if and how the consumed unit is dropped on death; values include 'true', 'false', or 'deferred'. | 7 | `deferred`<br>`false`<br>`true` |
-| [`extra_statuses`](../Reference_and_Meta/Miscellaneous.md#object-extra_statuses) | Object  | An object containing additional status effects (with stack counts) applied to the consumed unit. | 3 | `{ . . . }` |
+| [`extra_statuses`](./Abilities_and_Spells.md#object-extra_statuses) | Object  | An object containing additional status effects (with stack counts) applied to the consumed unit. | 3 | `{ . . . }` |
 | `drop_on_self_death` | `Boolean` | If true, the consumed unit is dropped when the consumer dies. | 3 | `true` |
 | `use_placeholder` | Boolean | If true, renders the ability using a temporary placeholder animation instead of the final art. | 1 | `true` |
 | `drop_body_ability` | `String` | Specifies the ability used to drop the consumed body. | 1 | `MoonHandDrop` |
@@ -2191,8 +2191,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 6 | Default<br>FormChange<br>Druid |
-| [`Conditional_HasStatus`](./Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 4 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Abilities_and_Spells.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 6 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 4 | `{ . . . }` |
 | `OverrideDamage` | `Number` | Overrides the damage of the current action to this flat value (can be negative to heal). | 4 | `-10`<br>`0`<br>`1` |
 | `RemoveStatus` | `String` | The name of the status effect to remove from the source. | 4 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
 | `VisualFX` | `String` | Specifies the name of the visual effect to play. | 3 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` |
@@ -2205,7 +2205,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | `ExplodeCharacter_NoDie` | `Number` | The damage dealt when a character explodes without dying. | 1 | `1`<br>`5` |
-| [`XIsTargetHealth`](../Reference_and_Meta/Miscellaneous.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 1 | `{ . . . }` |
+| [`XIsTargetHealth`](./Abilities_and_Spells.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2253,12 +2253,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 13 | passives<br>class<br>tag |
 | [`status`](../Reference_and_Meta/Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 13 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 6 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 10 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 2 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 10 | Default<br>FormChange<br>Druid |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Slow`](../Reference_and_Meta/Arrays.md#array-slow) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `-1`<br>`1`<br>`2` |
 | [`RemoveStatus`](../Reference_and_Meta/Enums.md#enum-removestatus) | Enum  | The name of the status effect to remove from the source. | 2 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Abilities_and_Spells.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | `Quivered` | Integer | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 
@@ -2293,9 +2293,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 1 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 1 | `1` |
-| [`ReviveNextRound`](../Reference_and_Meta/Miscellaneous.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 1 | `{ . . . }`<br>`2` |
+| [`ReviveNextRound`](./Abilities_and_Spells.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 1 | `{ . . . }`<br>`2` |
 | [`HideEquipment`](../Reference_and_Meta/Enums.md#enum-hideequipment) | Enum  | Specifies which equipment slot is visually hidden. | 1 | `neck` |
-| [`ApplyPassivesToSpawnerWhileAlive`](../Reference_and_Meta/Miscellaneous.md#object-applypassivestospawnerwhilealive) | Object  | An object defining passives that are applied to the spawner while this unit is alive. | 1 | `{ . . . }` |
+| [`ApplyPassivesToSpawnerWhileAlive`](./Abilities_and_Spells.md#object-applypassivestospawnerwhilealive) | Object  | An object defining passives that are applied to the spawner while this unit is alive. | 1 | `{ . . . }` |
 | `SchizoIllusionAIModifier` | Integer | If non-zero, modifies the AI behavior for schizo illusions. | 1 | `1` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -2369,8 +2369,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `FactionConversion` | Integer | Converts the target to the caster's faction. | 2 | `1` |
 | `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 2 | `5`<br>`9` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
-| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 1 | `{ . . . }` |
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 1 | `1` |
 
 </details>
@@ -2392,14 +2392,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](./Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Abilities_and_Spells.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 5 | passives<br>class<br>tag |
 | [`BreakIntoRocks`](../Reference_and_Meta/Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 4 | `Coin`<br>`SmallRock` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 3 | `1`<br>`20` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 2 | `1` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 1 | `1` |
 
 </details>
@@ -2456,7 +2456,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `TakeExtraTurn` | `Number` | The number of extra turns granted to the source. | 1 | `1` |
 | `EvolveAbilityFromPool` | `String` | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 1 | `Butcher`<br>`Druid`<br>`Fighter` |
 | `RefreshActPoints` | `Number` | The amount of action points restored to the source. | 1 | `1` |
-| [`TransformWeapon`](../Reference_and_Meta/Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
+| [`TransformWeapon`](./Abilities_and_Spells.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 1 | `{ . . . }` |
 | `WeaponAuxMultiplier` | `String` | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 1 | `.5` |
 
 </details>
@@ -2534,7 +2534,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 10 | passives<br>class<br>tag |
-| [`StatusOnBattleEnd`](./Passives_and_Statuses.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 3 | `{ . . . }` |
+| [`StatusOnBattleEnd`](./Abilities_and_Spells.md#object-statusonbattleend) | Object  | An object containing status effects or passives applied to the unit when the battle ends. | 3 | `{ . . . }` |
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 2 | `1` |
 | `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 2 | `1` |
 | [`AddTag`](../Reference_and_Meta/Enums.md#enum-addtag) | Enum  | Specifies a gameplay tag (e.g., 'rock', 'plant') to add to the unit, used for interaction checks. | 2 | `bug`<br>`cat`<br>`fetus` |
@@ -2586,10 +2586,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `IgnoreDamage` | `Number` | If set, the target ignores all damage for the duration. | 3 | `1` |
-| [`Conditional_HealthThreshold`](./Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Abilities_and_Spells.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 2 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | `BonusDamageBasedOnDistance` | `Number` | The flat bonus damage added per tile of distance between the source and target. | 2 | `1` |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 1 | `1`<br>`10`<br>`2` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
@@ -2660,7 +2660,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | `Revive` | Integer | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 4 | `1`<br>`100%`<br>`50%` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
-| [`Conditional_Enemy`](./Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
+| [`Conditional_Enemy`](./Abilities_and_Spells.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 1 | `{ . . . }` |
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 1 | `1` |
 | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 1 | `1` |
 | `FlatAIBonus` | `Number` | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 1 | `-999999`<br>`100`<br>`999999` |
@@ -2797,7 +2797,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 | Default<br>FormChange<br>Druid |
+| [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 6 | `Default`<br>`FormChange`<br>`Druid` | [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object | An object of effects that are applied to the source of the ability (the caster). | 3 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`10`<br>`2` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 1 | `-1`<br>`-2`<br>`-4` |
@@ -2889,7 +2889,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | [`key`](../Reference_and_Meta/Enums.md#enum-key) | Enum | A unique string identifier used to track if an effect has been applied once per turn, preventing reapplication. | 3 | `EtherSoakedRag`<br>`JewelOfDrog`<br>`TaintedOffering` |
-| [`TempPassiveWhileHasStatus`](../Reference_and_Meta/Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 3 | `{ . . . }` |
+| [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 3 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
 
 </details>
@@ -3025,9 +3025,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 5 | passives<br>class<br>tag |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 5 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 5 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 5 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`type`](../Reference_and_Meta/Enums.md#enum-type) | Enum | Specifies the damage type classification (e.g., melee, spell_cost, enter) used for interactions with mods, statuses, and passives. | 5 | `[attack move spell]`<br>`attack`<br>`battle` |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 2 | `[`<br>`[Heat Fire]` |
 | [`damage_tiles`](../Reference_and_Meta/Enums.md#enum-damage_tiles) | Enum | Specifies whether the damage effect applies to tiles; 'all' damages every tile in the area. | 2 | `all` |
 
@@ -3054,7 +3054,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 1 | `0`<br>`1` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | `GenericDebuff` | `Number` | The number of stacks of a generic, untooltipped debuff applied to the target. | 1 | `1`<br>`10`<br>`100` |
 | `Scrambled` | Integer | The number of stacks of Scrambled applied. | 1 | `1`<br>`2` |
 | `Adrenaline` | Integer | The flat amount of Adrenaline (a resource or stat) granted to the unit. | 1 | `10` |
@@ -3089,7 +3089,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `CritChanceUp` | Integer | The amount of critical hit chance added as a flat percentage. | 1 | `1`<br>`10`<br>`100` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 | `UseAbility` | `String` | The name of the ability the target is forced to use. | 1 | `GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
-| [`ForceImmediateMoveAndAttack`](../Reference_and_Meta/Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
+| [`ForceImmediateMoveAndAttack`](./Abilities_and_Spells.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3115,7 +3115,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `SpawnThingIfHitKills` | `String` | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 2 | `Bait`<br>`BigFood`<br>`BiggestFood` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | `threshold_percent` | Integer | The percentage of max health below which the target must be for the conditional to trigger. | 2 | `25%`<br>`50%` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
@@ -3168,7 +3168,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 6 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 6 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `max_dist` | Integer | The maximum distance in tiles the target can be displaced by the knockback effect. | 6 | `2`<br>`20`<br>`3` |
 | `min_dist` | Integer | The minimum distance in tiles the target must be displaced by the knockback effect. | 2 | `2`<br>`3`<br>`4` |
 | [`exclude_prefix`](../Reference_and_Meta/Enums.md#enum-exclude_prefix) | Enum | Specifies a prefix string; units with a matching prefix in their ID are excluded from the displacement effect. | 1 | `Twister` |
@@ -3290,7 +3290,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -3355,11 +3355,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 3 | `{ . . . }` |
-| [`Conditional_HasTag`](./Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 3 | `{ . . . }` |
+| [`Conditional_HasTag`](./Abilities_and_Spells.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 3 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Abilities_and_Spells.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 1 | `{ . . . }` |
 | `RepairWeapon` | Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 1 | `1`<br>`6`<br>`99` |
 
 </details>
@@ -3405,7 +3405,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| [`Madness`](./Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
+| [`Madness`](./Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 2 | passives<br>class<br>tag |
 | `TempNoManaRegen` | Integer | The number of turns the unit cannot regenerate mana. | 2 | `1` |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
@@ -3475,7 +3475,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Global Modifier Keys}`](../Engine_Scripts_and_Logic/Engine_GlobalModifierKeys.md#valid-property-keys) | Variable | If true, activates a global modifier effect on the house environment. | 2 | `CreateGlobalModifiers`<br>`BloodRain`<br>`NextPlayerCatTakesExtraTurn` |
 | `BloodRain` | Integer | If non-zero, enables the blood rain visual effect. | 2 | `1` |
-| [`LowerAmbientLight`](../Reference_and_Meta/Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 | `{ . . . }` |
+| [`LowerAmbientLight`](./Abilities_and_Spells.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 2 | `{ . . . }` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | `passives`<br>`class`<br>`tag`
 
 </details>
@@ -3547,9 +3547,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`cWaggle`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
-| [`cWaggle2x2`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
-| [`cWaggle3x3`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle`](./Abilities_and_Spells.md#object-cwaggle) | Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
+| [`cWaggle2x2`](./Abilities_and_Spells.md#object-cwaggle2x2) | Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle3x3`](./Abilities_and_Spells.md#object-cwaggle3x3) | Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3572,15 +3572,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | `delay` | Float | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
-| [`SwitchMusic`](../Reference_and_Meta/Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
+| [`SwitchMusic`](./Abilities_and_Spells.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | `FormChange` | `String` | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `Cleanse` | Integer | The number of stacks of negative status effects removed from the target. | 1 | `0`<br>`1` |
 | `Vaporize` | `Number` | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 | `FullHeal` | `Number` | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
-| [`DoScreenShake`](../Reference_and_Meta/Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
+| [`DoScreenShake`](./Abilities_and_Spells.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
 | `PlayBackground` | `Number` | Specifies the background index to play. | 1 | `0`<br>`1` |
-| [`CreateGlobalModifiers`](./Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
+| [`CreateGlobalModifiers`](./Abilities_and_Spells.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
 | `GlobalSpawnCharacter` | `String` | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
 | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 1 | `.5`<br>`4` |
 
@@ -3603,10 +3603,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ReplaceSpell`](../Reference_and_Meta/Miscellaneous.md#object-replacespell) | Object  | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
+| [`ReplaceSpell`](./Abilities_and_Spells.md#object-replacespell) | Object  | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 4 | passives<br>class<br>tag |
 | [`status`](../Reference_and_Meta/Enums.md#enum-status) | Enum | Specifies the status effect to apply in a Temporary object. | 3 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` |
-| [`MeleeRevengeDamage`](./Passives_and_Statuses.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
+| [`MeleeRevengeDamage`](./Abilities_and_Spells.md#object-meleerevengedamage) | Object  | Defines the damage and effects applied back to a melee attacker upon being hit. | 2 | `{ . . . }` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 1 | `1`<br>`2`<br>`3` |
 | `AddManaRegen` | Integer | The flat amount of mana regenerated per turn. | 1 | `1`<br>`2`<br>`3` |
 
@@ -3719,7 +3719,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 3 | Default<br>FormChange<br>Druid |
-| [`DoDamage`](../Reference_and_Meta/Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 2 | `{ . . . }` |
+| [`DoDamage`](./Abilities_and_Spells.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 2 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | `VisualFXTile` | `String` | Specifies the name of the visual effect to play on the target tile. | 1 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
 | `EnterMount` | `String` | Specifies the name of the mount status to apply to the unit. | 1 | `enter` |
@@ -3803,7 +3803,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
-| [`ApplyPassives`](../Reference_and_Meta/Miscellaneous.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
+| [`ApplyPassives`](./Abilities_and_Spells.md#object-applypassives) | Object  | Specifies the passives or status effects to apply to the unit. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -4105,7 +4105,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
+| [`KnockUpAndAway`](./Abilities_and_Spells.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 2 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 2 | Default<br>FormChange<br>Druid |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`Bruise`](../Reference_and_Meta/Arrays.md#array-bruise) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `1`<br>`2`<br>`3` |
@@ -4201,7 +4201,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 3 | passives<br>class<br>tag |
 | `stacks` | Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 3 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 3 | `{ . . . }` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -4393,9 +4393,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 2 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
-| [`splash_damage`](../Reference_and_Meta/Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 1 | `{ . . . }` |
+| [`self_damage`](./Abilities_and_Spells.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 2 | `{ . . . }` |
+| [`damage_instance`](./Abilities_and_Spells.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`splash_damage`](./Abilities_and_Spells.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4459,7 +4459,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 2 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>
@@ -4481,7 +4481,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `distance` | Integer | The number of tiles the target is knocked back or pulled. | 1 | `-3`<br>`10`<br>`2` |
 
 </details>
@@ -4646,7 +4646,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Confusion`](../Reference_and_Meta/Arrays.md#array-confusion) | Array / Integer  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
-| [`Temporary`](./Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`Temporary`](./Abilities_and_Spells.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 0 | passives<br>class<br>tag |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
@@ -4683,7 +4683,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
-| [`RandomStatusFromPool`](./Passives_and_Statuses.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
+| [`RandomStatusFromPool`](./Abilities_and_Spells.md#object-randomstatusfrompool) | Object  | A collection of status effects; one is randomly chosen and applied to the target. | 1 | `{ . . . }` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
 | `GenericBuff` | `Number` | A generic buff value applied to the unit. | 1 | `100`<br>`5` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
@@ -4746,7 +4746,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | `VaporizeCorpse` | `Number` | If set, vaporizes the target's corpse, preventing revival. | 2 | `1` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 2 | passives<br>class<br>tag |
-| [`ApplyToTile`](../Reference_and_Meta/Miscellaneous.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
+| [`ApplyToTile`](./Abilities_and_Spells.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 
 </details>
@@ -4782,8 +4782,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-| [`Else`](./Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
-| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
+| [`Else`](./Abilities_and_Spells.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
 | [`Conditional_InForm`](./Abilities_and_Spells.md#object-conditional_inform) | Object  | Contains effects that apply only if the target is in the specified form. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
@@ -5213,8 +5213,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 | [`tag`](../Reference_and_Meta/Enums.md#enum-tag) | Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 1 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`ScatterCoins`](../Reference_and_Meta/Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`ScatterCoins`](./Abilities_and_Spells.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -5273,9 +5273,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 1 | Default<br>FormChange<br>Druid |
-| [`ApplyToSource`](./Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`Consumed`](./Passives_and_Statuses.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
-| [`TempPassiveWhileHasStatus`](../Reference_and_Meta/Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
+| [`ApplyToSource`](./Abilities_and_Spells.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`Consumed`](./Abilities_and_Spells.md#object-consumed) | Object  | An object configuring how the target is consumed (e.g., via swallow), with fields like `instant`, `wet`, `force_contact`, and `struggle_ability`. | 1 | `{ . . . }` |
+| [`TempPassiveWhileHasStatus`](./Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 1 | `{ . . . }` |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 1 | passives<br>class<br>tag |
 
 </details>
@@ -5383,7 +5383,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `odds` | Float | The probability of the effect occurring, expressed as a decimal or percentage. | 1 | `.1`<br>`.16666666`<br>`.3` |
-| [`DestroyEquipmentAndAttachParasite`](../Reference_and_Meta/Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid`
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | passives<br>class<br>tag |
 
@@ -5465,7 +5465,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DestroyEquipmentAndAttachParasite`](../Reference_and_Meta/Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Abilities_and_Spells.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 1 | `{ . . . }` |
 | [`weather`](../Reference_and_Meta/Arrays.md#array-weather) | Array | Specifies one or more weather types to check for. | 1 | `[FlySwarm FireflySwarm ButterflySwarm]` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 0 | Default<br>FormChange<br>Druid |
 
@@ -5488,8 +5488,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](./Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`effects`](./Abilities_and_Spells.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`damage`](./Abilities_and_Spells.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 1 | `damage_instance`<br>`spell`<br>`self_damage` |
 
 </details>

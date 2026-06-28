@@ -91,40 +91,40 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Logic Keys}`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 60 | Default<br>FormChange<br>Druid |
 | [`{Damaging Keys}`](../Engine_Scripts_and_Logic/Engine_DamagingKeys.md#valid-property-keys) | Variable | Parent object containing damage-related subkeys for revenge or retaliatory effects. | 58 | `damage_instance`<br>`spell`<br>`self_damage` |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 13 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 12 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 12 | `{ . . . }` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 9 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`reverb_empty`](./House_and_Environment.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 9 | `{ . . . }` |
+| [`reverb_full`](./House_and_Environment.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 9 | `{ . . . }` |
+| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array | A list of element types that remain persistent on the ground during this weather. | 8 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 | `height` | Integer | The height in tiles the target is launched into the air. | 8 | `0`<br>`1`<br>`2` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 8 | `16`<br>`18`<br>`33` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 7 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 7 | `{ . . . }` |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 4 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 4 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| [`Thunderstorm`](./House_and_Environment.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 5 | `{ . . . }` |
 | [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 3 | `attic`<br>`room1`<br>`room2` |
-| `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 2 | `[-1 -2]`<br>`[1 -2]` |
-| `p` | Array | A coordinate pair [x, y] representing a position. | 2 | `[18 0]`<br>`[35 0]` |
-| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 2 | `1.3`<br>`1.35`<br>`1.5` |
-| [`Thunderstorm`](../Reference_and_Meta/Miscellaneous.md#object-thunderstorm) | Object | Defines the Thunderstorm weather type, including ambient sound, particles, and lightning effect. | 1 | `{ . . . }` |
-| [`Default`](../Reference_and_Meta/Miscellaneous.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
+| `n` | Array | An array of [x, y] coordinates representing the north-facing connection point of a room. | 3 | `[-1 -2]`<br>`[1 -2]` |
+| `p` | Array | A coordinate pair [x, y] representing a position. | 3 | `[18 0]`<br>`[35 0]` |
+| [`Default`](./House_and_Environment.md#object-default) | Enum / Object | The default form configuration for a unit, containing its standard stats and abilities. | 1 | `{ . . . }`<br>`release` |
 | [`id`](../Reference_and_Meta/Enums.md#enum-id) | Enum | The unique numerical identifier for this injury or status effect. | 1 | `-1`<br>`0`<br>`1` |
-| [`Floor1_Large`](../Reference_and_Meta/Miscellaneous.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`MediumHouse`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
-| [`Floor1_Small`](../Reference_and_Meta/Miscellaneous.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
-| [`LargeHouse`](../Reference_and_Meta/Miscellaneous.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
-| [`BasementUpgrade`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade2`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade3`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`BasementUpgrade4`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
-| [`House1`](../Reference_and_Meta/Miscellaneous.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House2`](../Reference_and_Meta/Miscellaneous.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`House3`](../Reference_and_Meta/Miscellaneous.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Large`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
-| [`LargeHouse_Floor2Small`](../Reference_and_Meta/Miscellaneous.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
-| [`MediumHouse_SmallRoom`](../Reference_and_Meta/Miscellaneous.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
-| [`SmallAttic`](../Reference_and_Meta/Miscellaneous.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
-| [`SmallHouse_Attic`](../Reference_and_Meta/Miscellaneous.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
+| [`Floor1_Large`](./House_and_Environment.md#object-floor1_large) | Object | Defines a large room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`MediumHouse`](./House_and_Environment.md#object-mediumhouse) | Object | An upgrade that requires the Default house as a prerequisite and sets the house to House2. | 1 | `{ . . . }` |
+| [`Floor1_Small`](./House_and_Environment.md#object-floor1_small) | Object | Defines a small room on Floor 1, with dimensions (width 16, height 7) and associated movieclip and background frame. | 1 | `{ . . . }` |
+| [`LargeHouse`](./House_and_Environment.md#object-largehouse) | Object | An upgrade that requires MediumHouse as a prerequisite and sets the house to House3. | 1 | `{ . . . }` |
+| [`BasementUpgrade`](./House_and_Environment.md#object-basementupgrade) | Object | An upgrade object that unlocks the first basement room (Basement0) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade2`](./House_and_Environment.md#object-basementupgrade2) | Object | An upgrade object that unlocks the second basement room (Basement1) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade3`](./House_and_Environment.md#object-basementupgrade3) | Object | An upgrade object that unlocks the third basement room (Basement2) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`BasementUpgrade4`](./House_and_Environment.md#object-basementupgrade4) | Object | An upgrade object that unlocks the fourth basement room (Basement3) after its prerequisite is met. | 1 | `{ . . . }` |
+| [`House1`](./House_and_Environment.md#object-house1) | Object | Defines house 1 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House2`](./House_and_Environment.md#object-house2) | Object | Defines house 2 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`House3`](./House_and_Environment.md#object-house3) | Object | Defines house 3 with its background and foreground movieclips, placement frame, and zoom-out volume. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Large`](./House_and_Environment.md#object-largehouse_floor2large) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Large room. | 1 | `{ . . . }` |
+| [`LargeHouse_Floor2Small`](./House_and_Environment.md#object-largehouse_floor2small) | Object | An upgrade that requires LargeHouse and unlocks the Floor2_Small room. | 1 | `{ . . . }` |
+| [`MediumHouse_SmallRoom`](./House_and_Environment.md#object-mediumhouse_smallroom) | Object | An upgrade that requires MediumHouse and unlocks the Floor1_Small room. | 1 | `{ . . . }` |
+| [`SmallAttic`](./House_and_Environment.md#object-smallattic) | Object | Room definition for the Small Attic, including its dimensions and position. | 1 | `{ . . . }` |
+| [`SmallHouse_Attic`](./House_and_Environment.md#object-smallhouse_attic) | Object | Upgrade that unlocks the Attic room in a small house. | 1 | `{ . . . }` |
 | [`extra_bound_planes`](../Reference_and_Meta/Arrays.md#array-extra_bound_planes) | Array | A list of additional boundary planes for the room. | 1 | `[` |
 | [`BasementUpgrade5`](../Reference_and_Meta/Miscellaneous.md#object-basementupgrade5) | Object | An upgrade object that unlocks the fifth basement room (Basement4) after its prerequisite is met. | 1 | `{ . . . }` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 0 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 0 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 0 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
 
@@ -141,7 +141,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root), [`SolarFlare`](#object-solarflare)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root), [`SolarFlare`](./House_and_Environment.md#object-solarflare)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -168,7 +168,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
+> **Referenced by:** [`CharacterTypeGainsStatusAtBattleStart`](./House_and_Environment.md#object-charactertypegainsstatusatbattlestart), [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#object-statusallcharactersonspawn), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#object-statuscharactersonroundstart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -190,7 +190,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -212,7 +212,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`SpecialGodRays`](#object-specialgodrays)
+> **Referenced by:** [`SpecialGodRays`](./House_and_Environment.md#object-specialgodrays)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -234,7 +234,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ApplyPassives`](#object-applypassives)
+> **Referenced by:** [`ApplyPassives`](./House_and_Environment.md#object-applypassives)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -255,7 +255,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`extra_statuses`](#object-extra_statuses)
+> **Referenced by:** [`extra_statuses`](./House_and_Environment.md#object-extra_statuses)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -282,7 +282,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`StatusCharactersOnRoundEnd`](#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](#object-statuscharactersonroundstart)
+> **Referenced by:** [`StatusCharactersOnRoundEnd`](./House_and_Environment.md#object-statuscharactersonroundend), [`StatusCharactersOnRoundStart`](./House_and_Environment.md#object-statuscharactersonroundstart)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -305,7 +305,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll), [`Else`](#object-else)
+> **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#object-conditional_goodroll), [`Else`](./House_and_Environment.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -326,7 +326,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -350,11 +350,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 | `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
@@ -377,11 +377,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |`damage_instance`<br>`spell`<br>`self_damage`
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 | `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
@@ -402,7 +402,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Conditional_HasTag`](#object-conditional_hastag), [`Conditional_PartyMember`](#object-conditional_partymember)
+> **Referenced by:** [`Conditional_HasTag`](./House_and_Environment.md#object-conditional_hastag), [`Conditional_PartyMember`](./House_and_Environment.md#object-conditional_partymember)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -423,11 +423,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 | `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
@@ -448,12 +448,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
+> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#object-floor1_large), [`Floor1_Small`](./House_and_Environment.md#object-floor1_small), [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 9 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 9 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 11 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 11 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
 
 </details>
 
@@ -470,13 +470,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Floor1_Large`](#object-floor1_large), [`Floor1_Small`](#object-floor1_small), [`ROOT`](#object-root)
+> **Referenced by:** [`Floor1_Large`](./House_and_Environment.md#object-floor1_large), [`Floor1_Small`](./House_and_Environment.md#object-floor1_small), [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 9 | `.1`<br>`.25`<br>`.35` |
-| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 9 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
-| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 9 | `1.3`<br>`1.35`<br>`1.5` |
+| `amount` | Float | For ambient light, the target brightness value (as a float or percentage array for RGB). | 11 | `.1`<br>`.25`<br>`.35` |
+| [`preset`](../Reference_and_Meta/Enums.md#enum-preset) | Enum | Specifies the audio reverb preset to use. | 11 | `AUDITORIUM`<br>`Alley`<br>`Cave` |
+| `volume_adjustment` | Float | A multiplier for the volume of audio in a given room or reverb zone. | 11 | `1.3`<br>`1.35`<br>`1.5` |
 
 </details>
 
@@ -493,7 +493,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Conditional_GoodRoll`](#object-conditional_goodroll)
+> **Referenced by:** [`Conditional_GoodRoll`](./House_and_Environment.md#object-conditional_goodroll)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -515,11 +515,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`ambient_sound`](../Reference_and_Meta/Enums.md#enum-ambient_sound) | Enum | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
 | `prewarm` | Integer | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
@@ -541,7 +541,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -564,7 +564,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`StatusAllCharactersOnSpawn`](#object-statusallcharactersonspawn)
+> **Referenced by:** [`StatusAllCharactersOnSpawn`](./House_and_Environment.md#object-statusallcharactersonspawn)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -586,7 +586,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -607,7 +607,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -629,13 +629,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`reverb_empty`](./House_and_Environment.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./House_and_Environment.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 | [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
 
@@ -654,7 +654,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -677,7 +677,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -699,13 +699,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `height` | Integer | The height in tiles the target is launched into the air. | 1 | `0`<br>`1`<br>`2` |
-| [`reverb_empty`](../Reference_and_Meta/Miscellaneous.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
-| [`reverb_full`](../Reference_and_Meta/Miscellaneous.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
+| [`reverb_empty`](./House_and_Environment.md#object-reverb_empty) | Object  | Defines the audio reverb settings for an empty room, including preset, amount, and volume adjustment. | 1 | `{ . . . }` |
+| [`reverb_full`](./House_and_Environment.md#object-reverb_full) | Object  | Defines the audio reverb settings for a full room, including preset and amount. | 1 | `{ . . . }` |
 | `width` | Integer | The number of tiles the room spans horizontally. | 1 | `16`<br>`18`<br>`33` |
 | [`interstitial_bg_frame`](../Reference_and_Meta/Enums.md#enum-interstitial_bg_frame) | Enum | Specifies the background frame identifier used for the interstitial area of this room. | 1 | `attic`<br>`room1`<br>`room2` |
 
@@ -744,13 +744,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`FactionUprising`](#object-factionuprising)
+> **Referenced by:** [`FactionUprising`](./House_and_Environment.md#object-factionuprising)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 1 | `-1`<br>`-2`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 1 | `1`<br>`10`<br>`2` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
+| [`Conditional_HasTag`](./House_and_Environment.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 
 </details>
@@ -768,7 +768,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -805,7 +805,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -830,7 +830,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
+> **Referenced by:** [`House1`](./House_and_Environment.md#object-house1), [`House2`](./House_and_Environment.md#object-house2), [`House3`](./House_and_Environment.md#object-house3)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -861,7 +861,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`House1`](#object-house1), [`House2`](#object-house2), [`House3`](#object-house3)
+> **Referenced by:** [`House1`](./House_and_Environment.md#object-house1), [`House2`](./House_and_Environment.md#object-house2), [`House3`](./House_and_Environment.md#object-house3)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -887,7 +887,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 `damage_instance`<br>`spell`<br>`self_damage`
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -937,11 +937,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Big`](../Reference_and_Meta/Miscellaneous.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
+| [`Big`](./House_and_Environment.md#object-big) | Object | Defines the 'Big' form, including its animation, attack, passives, and positional data. | 2 | `{ . . . }` |
 
 </details>
 
@@ -958,7 +958,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -980,7 +980,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1020,7 +1020,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1042,7 +1042,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1064,7 +1064,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1086,15 +1086,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./House_and_Environment.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./House_and_Environment.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1112,15 +1112,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./House_and_Environment.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./House_and_Environment.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1138,15 +1138,15 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`aux_positions`](../Reference_and_Meta/Miscellaneous.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
+| [`aux_positions`](./House_and_Environment.md#object-aux_positions) | Object  | An object containing named coordinates for auxiliary objects like spawn points within this house. | 1 | `{ . . . }` |
 | [`bg_placements_frame`](../Reference_and_Meta/Enums.md#enum-bg_placements_frame) | Enum | Specifies the background frame identifier used for positioning background elements. | 1 | `large`<br>`small` |
 | [`movieclip_bg`](../Reference_and_Meta/Enums.md#enum-movieclip_bg) | Enum | Specifies the background movie clip asset for this house. | 1 | `HouseBackground1`<br>`HouseBackground2`<br>`HouseBackground3` |
 | [`movieclip_fg`](../Reference_and_Meta/Enums.md#enum-movieclip_fg) | Enum | Specifies the foreground movie clip asset for this house. | 1 | `HouseForeground1`<br>`HouseForeground2`<br>`HouseForeground3` |
-| [`room_positions`](../Reference_and_Meta/Miscellaneous.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
+| [`room_positions`](./House_and_Environment.md#object-room_positions) | Object  | An object containing named coordinates for each room's position within the house layout. | 1 | `{ . . . }` |
 | `zoomout_catvolume` | Float | A multiplier for the volume of cat sounds when the camera is zoomed out. | 1 | `.6`<br>`.7`<br>`.8` |
 
 </details>
@@ -1164,7 +1164,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1214,7 +1214,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1236,7 +1236,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1258,7 +1258,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1280,7 +1280,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1316,7 +1316,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`Else`](#object-else)
+> **Referenced by:** [`Else`](./House_and_Environment.md#object-else)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1358,7 +1358,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1379,7 +1379,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`AddTilesetObjects`](#object-addtilesetobjects)
+> **Referenced by:** [`AddTilesetObjects`](./House_and_Environment.md#object-addtilesetobjects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1444,7 +1444,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`ROOT`](#object-root)
+> **Referenced by:** [`ROOT`](./House_and_Environment.md#object-root)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
@@ -1466,11 +1466,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`FloatingDebris`](../Reference_and_Meta/Miscellaneous.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
+| [`FloatingDebris`](./House_and_Environment.md#object-floatingdebris) | Object | An object defining parameters for spawning floating debris tileset objects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1487,7 +1487,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 <details>
 <summary><b>Expand</b></summary
 
-> **Referenced by:** [`effects`](#object-effects)
+> **Referenced by:** [`effects`](./House_and_Environment.md#object-effects)
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |

@@ -56,41 +56,41 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 34 | `common`<br>`rare`<br>`cha` |
-| `rare` | Integer | Defines the rare reward block for a boss encounter. | 13 | `1`<br>`10`<br>`15` |
-| `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 12 | `10`<br>`20`<br>`30` |
-| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 11 | `.01`<br>`1`<br>`15` |
-| `common` | Integer | Defines the common reward block for a boss encounter. | 10 | `100`<br>`14`<br>`5` |
-| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Integer / Enum | A variable controlling the number of rare item drops for the current chapter. | 6 | `10`<br>`auto` |
-| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Integer / Enum | A variable controlling the number of common item drops for the current chapter. | 6 | `55`<br>`auto` |
-| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Integer / Enum | The weight or value for uncommon items specific to the current chapter. | 6 | `35`<br>`auto` |
-| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Integer / Enum | The weight or value for very rare items specific to the current chapter. | 6 | `1`<br>`auto` |
-| `chapter_rare` | Number | An integer or variable controlling the number of rare item drops for the current chapter. | 5 | `1` |
-| `Chicken` | Equation | The number of chicken pickups spawned. | 3 | `.01`<br>`.1`<br>`2` |
-| `consumables` | Number | The number of consumable items provided or available in this context. | 3 | `10`<br>`60` |
-| `chapter_common` | Number | The weight or probability for this entry to appear in the common loot pool for its chapter. | 3 | `1` |
-| [`chapter`](./Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 3 | `1`<br>`alley` |
-| [`FoodMedium`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-foodmedium) | Object  | Specifies the definition and weight for a medium food item in item pools. | 2 | `{ . . . }` |
-| [`FoodBig`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-foodbig) | Object  | Specifies the definition and weight for a large food item in item pools. | 2 | `{ . . . }` |
-| `shop_common` | Number | The number defining the weight or relative frequency for common shop items in a pool. | 2 | `1` |
-| `basic_consumables` | Number | The weight value for basic consumable items in a random pool distribution. | 2 | `100`<br>`90` |
-| [`CatnipBig`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-catnipbig) | Object  | Specifies the definition and weight for a large catnip item in item pools. | 1 | `{ . . . }` |
-| [`GlowingSeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-glowingseed) | Object  | Defines a Glowing Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`MagicSeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-magicseed) | Object  | Defines a Magic Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`WeirdEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-weirdegg) | Object  | Defines a Weird Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`BirdFeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-birdfeed) | Object  | Defines a Bird Feed trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| [`GoldenEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-goldenegg) | Object  | Defines a Golden Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 1 | `{ . . . }` |
-| `pills` | Number | The amount of pills granted as a consumable reward. | 1 | `7` |
-| [`Antidote`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-antidote) | Float / Object  | The multiplier for the number of antidote pickups spawned. | 1 | `{ . . . }`<br>`.5`<br>`1` |
-| [`Catnip`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-catnip) | Integer / Object  | The number of catnip pickups spawned. | 1 | `{ . . . }`<br>`20`<br>`3` |
-| [`Parousworm`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-parousworm) | Object  | Defines a Parousworm item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`Turkey`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-turkey) | Integer / Object  | The number of turkeys spawned. | 1 | `{ . . . }`<br>`1000`<br>`2` |
-| [`BirdPoopHat`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-birdpoophat) | Object  | Defines a Bird Poop Hat item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`RaptorEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-raptoregg) | Object  | An object defining a raptor egg item with a probability or weight. | 1 | `{ . . . }` |
-| [`LostSoul`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-lostsoul) | Object  | Defines a Lost Soul item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`PeaceSymbol`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-peacesymbol) | Object  | Defines a Peace Symbol item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`PeaceSymbolFacePaint`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-peacesymbolfacepaint) | Object  | Defines a Peace Symbol Face Paint item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`TieDyeBandana`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-tiedyebandana) | Object  | Defines a Tie Dye Bandana item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
-| [`WishBone`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-wishbone) | Object  | Defines a Wish Bone item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
+| `rare` | Integer | Defines the rare reward block for a boss encounter. | 14 | `1`<br>`10`<br>`15` |
+| `uncommon` | Number | The weight value for uncommon items in a random pool distribution. | 13 | `10`<br>`20`<br>`30` |
+| `very_rare` | Float | The weight value for very rare items in a random pool distribution. | 12 | `.01`<br>`1`<br>`15` |
+| `common` | Integer | Defines the common reward block for a boss encounter. | 11 | `100`<br>`14`<br>`5` |
+| [`current_chapter_rare`](./Enums.md#enum-current_chapter_rare) | Integer / Enum | A variable controlling the number of rare item drops for the current chapter. | 7 | `10`<br>`auto` |
+| [`current_chapter_common`](./Enums.md#enum-current_chapter_common) | Integer / Enum | A variable controlling the number of common item drops for the current chapter. | 7 | `55`<br>`auto` |
+| [`current_chapter_uncommon`](./Enums.md#enum-current_chapter_uncommon) | Integer / Enum | The weight or value for uncommon items specific to the current chapter. | 7 | `35`<br>`auto` |
+| [`current_chapter_very_rare`](./Enums.md#enum-current_chapter_very_rare) | Integer / Enum | The weight or value for very rare items specific to the current chapter. | 7 | `1`<br>`auto` |
+| `chapter_rare` | Number | An integer or variable controlling the number of rare item drops for the current chapter. | 6 | `1` |
+| `Chicken` | Equation | The number of chicken pickups spawned. | 5 | `.01`<br>`.1`<br>`2` |
+| `consumables` | Number | The number of consumable items provided or available in this context. | 4 | `10`<br>`60` |
+| `chapter_common` | Number | The weight or probability for this entry to appear in the common loot pool for its chapter. | 4 | `1` |
+| [`chapter`](./Enums.md#enum-chapter) | Enum  | Specifies which chapter or scenario this ability is available in. | 4 | `1`<br>`alley` |
+| [`FoodMedium`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-foodmedium) | Object  | Specifies the definition and weight for a medium food item in item pools. | 3 | `{ . . . }` |
+| [`FoodBig`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-foodbig) | Object  | Specifies the definition and weight for a large food item in item pools. | 3 | `{ . . . }` |
+| `shop_common` | Number | The number defining the weight or relative frequency for common shop items in a pool. | 3 | `1` |
+| `basic_consumables` | Number | The weight value for basic consumable items in a random pool distribution. | 3 | `100`<br>`90` |
+| [`CatnipBig`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-catnipbig) | Object  | Specifies the definition and weight for a large catnip item in item pools. | 3 | `{ . . . }` |
+| [`GlowingSeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-glowingseed) | Object  | Defines a Glowing Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 3 | `{ . . . }` |
+| [`MagicSeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-magicseed) | Object  | Defines a Magic Seed trinket entry in a loot pool, including optional custom properties and spawn weight. | 3 | `{ . . . }` |
+| [`WeirdEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-weirdegg) | Object  | Defines a Weird Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 3 | `{ . . . }` |
+| [`BirdFeed`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-birdfeed) | Object  | Defines a Bird Feed trinket entry in a loot pool, including optional custom properties and spawn weight. | 3 | `{ . . . }` |
+| [`GoldenEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-goldenegg) | Object  | Defines a Golden Egg trinket entry in a loot pool, including optional custom properties and spawn weight. | 3 | `{ . . . }` |
+| `pills` | Number | The amount of pills granted as a consumable reward. | 2 | `7` |
+| [`Antidote`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-antidote) | Float / Object  | The multiplier for the number of antidote pickups spawned. | 2 | `{ . . . }`<br>`.5`<br>`1` |
+| [`Catnip`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-catnip) | Integer / Object  | The number of catnip pickups spawned. | 2 | `{ . . . }`<br>`20`<br>`3` |
+| [`Parousworm`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-parousworm) | Object  | Defines a Parousworm item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`Turkey`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-turkey) | Integer / Object  | The number of turkeys spawned. | 2 | `{ . . . }`<br>`1000`<br>`2` |
+| [`BirdPoopHat`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-birdpoophat) | Object  | Defines a Bird Poop Hat item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`RaptorEgg`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-raptoregg) | Object  | An object defining a raptor egg item with a probability or weight. | 2 | `{ . . . }` |
+| [`LostSoul`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-lostsoul) | Object  | Defines a Lost Soul item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`PeaceSymbol`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-peacesymbol) | Object  | Defines a Peace Symbol item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`PeaceSymbolFacePaint`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-peacesymbolfacepaint) | Object  | Defines a Peace Symbol Face Paint item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`TieDyeBandana`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-tiedyebandana) | Object  | Defines a Tie Dye Bandana item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
+| [`WishBone`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-wishbone) | Object  | Defines a Wish Bone item entry in a loot pool, including its spawn weight. | 2 | `{ . . . }` |
 | [`BagOfSeeds`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-bagofseeds) | Object  | Defines a Bag of Seeds item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | [`DeadHummingbird`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-deadhummingbird) | Object  | Defines a Dead Hummingbird item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |
 | [`HarpysClaw`](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#object-harpysclaw) | Object  | Defines a Harpy's Claw item entry in a loot pool, including its spawn weight. | 1 | `{ . . . }` |

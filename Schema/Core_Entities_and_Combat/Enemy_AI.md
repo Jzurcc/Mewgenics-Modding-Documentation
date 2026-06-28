@@ -111,7 +111,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `flat_cast_bonus` | Number | A flat bonus added to the AI's cast chance evaluation. | 5 | `99999` |
 | `randomness` | Number | The amount of randomness added to AI decision-making to avoid predictability. | 5 | `4`<br>`50`<br>`6` |
 | `cap_distance_to_ally` | Number | The maximum distance the AI will maintain from ally units. | 4 | `2`<br>`4`<br>`7` |
-| `simple` | Boolean | If true, the AI uses simplified decision-making logic. | 3 | `true` |
+| `simple` | Boolean | If true, the AI uses simplified decision-making logic. | 4 | `true` |
 | `consider_aoe` | Boolean | If true, the AI considers area-of-effect damage when evaluating actions. | 3 | `false`<br>`true` |
 | `danger_avoidance` | Float | A weight multiplier for the AI's tendency to avoid dangerous positions. | 3 | `.1`<br>`1000`<br>`20` |
 | `distance_to_aggro_target` | Number | The preferred distance the AI tries to maintain from its aggro target. Negative values indicate behind. | 3 | `-1`<br>`-10` |

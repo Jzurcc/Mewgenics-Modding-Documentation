@@ -111,10 +111,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusOnKill`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonkill) | Object  | Specifies status effects or actions triggered when the unit kills an enemy. | 40 | `{ . . . }` |
 | [`AbilityOnBattleStart_Immediate`](../Reference_and_Meta/Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 17 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | `CollectsPickups` | Integer | If set to 1 or greater, the unit collects pickups (e.g., items) on contact. | 17 | `1`<br>`2` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | `OverrideKnockbackDamage` | Enum / Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 17 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `rat` | Variable | A variable representing the Rat element or material type. | 15 ||
 | [`AddStatusToBasicMeleeAttack`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustobasicmeleeattack) | Object  | An object listing status effects applied by the unit's basic melee attack. | 11 | `{ . . . }` |
 | [`CharacterLightSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-characterlightsource) | Object  | Defines a dynamic light source attached to the unit, including color, glow, and size. | 16 | `{ . . . }` |
@@ -127,7 +127,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusEachTurnEnd`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statuseachturnend) | Object  | Specifies status effects applied to the unit at the end of each of its turns. | 57 | `{ . . . }` |
 | [`zaratana`](./Engine_StatusAndPassiveKeys.md#object-zaratana) | Variable | A variable representing the Zaratana element or material type. | 19 ||
 | [`ApplyToSourceOnKill`](../Reference_and_Meta/Miscellaneous.md#object-applytosourceonkill) | Object  | Contains effects that are applied to the source when it kills the target. | 15 | `{ . . . }` |
-| [`CanApplyToInanimate`](../Reference_and_Meta/Miscellaneous.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 15 | `{ . . . }` |
+| [`CanApplyToInanimate`](./Engine_StatusAndPassiveKeys.md#object-canapplytoinanimate) | Object  | An object containing effects that can be applied to inanimate objects. | 15 | `{ . . . }` |
 | `HealthMultiplier` | Float | A multiplier applied to the unit's base health. | 15 | `.5`<br>`.8`<br>`1.5` |
 | [`Maggot`](./Engine_StatusAndPassiveKeys.md#object-maggot) | Object  | An object defining properties for the Maggot passive or status. | 46 | `{ . . . }` |
 | [`ReplaceSpawnedObjects`](../Reference_and_Meta/Arrays.md#array-replacespawnedobjects) | Array | An array of [original_object replacement_object] pairs for swapping spawned objects. | 15 | `[Boulder AnimatedBoulder]`<br>`[Boulder AnimatedLavaBoulder]`<br>`[Crow Crow2]` |
@@ -157,10 +157,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`EquipTemporaryItem`](../Reference_and_Meta/Enums.md#enum-equiptemporaryitem) | Enum | Specifies which temporary item is equipped. | 12 | `Bottles`<br>`ButcherHook_Temporary`<br>`FoodBig` |
 | `IgnoreTiles` | Integer | If set to 1, movement ignores tile-based penalties or restrictions. | 15 | `1` |
 | `NoHealthOnlyShield` | Integer | If set (e.g., 1), the unit has no health and only a shield for damage absorption. | 12 | `1` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [`SpawnEachTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spawneachturn) | Object  | Specifies an object that spawns on a random adjacent tile each turn, with optional chance. | 22 | `{ . . . }` |
-| [`ChanceToBreakFree`](../Reference_and_Meta/Miscellaneous.md#object-chancetobreakfree) | Object  | Defines the chance and ability used for a grappled or restrained unit to break free. | 11 | `{ . . . }` |
-| [`DoScreenShake`](../Reference_and_Meta/Miscellaneous.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 12 | `{ . . . }`<br>`1` |
+| [`ChanceToBreakFree`](./Engine_StatusAndPassiveKeys.md#object-chancetobreakfree) | Object  | Defines the chance and ability used for a grappled or restrained unit to break free. | 11 | `{ . . . }` |
+| [`DoScreenShake`](./Engine_StatusAndPassiveKeys.md#object-doscreenshake) | Integer / Object  | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 12 | `{ . . . }`<br>`1` |
 | [`EliteFlatTint`](../Reference_and_Meta/Arrays.md#array-eliteflattint) | Array | An RGB or RGBA tint multiplier applied uniformly to an elite unit's sprite. | 11 | `[.05 .05 .05 .75]`<br>`[.6 1 1]`<br>`[1.1 1.1 1.1]` |
 | [`Food`](../World_Maps_and_Events/Shops.md#object-food) | Integer / Object  | The number of food pickups spawned. | 35 | `{ . . . }`<br>`20` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 16 | `1` |
@@ -236,7 +236,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ContextualHeal` | Integer | The amount of healing applied contextually (e.g., to allies). | 7 | `1` |
 | [`DamageNeighborsOnEndMove`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-damageneighborsonendmove) | Object  | Deals damage and knockback to units on neighboring tiles when the unit finishes moving. | 7 | `{ . . . }` |
 | [`DurabilityTransform`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-durabilitytransform) | Object  | Transforms the item into another when durability reaches specified thresholds. | 7 | `{ . . . }` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 11 | `{ . . . }` |
+| [`GainCoinsRange`](./Engine_StatusAndPassiveKeys.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 11 | `{ . . . }` |
 | [`Ice`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-ice) | Object  | Applies the Slow status effect to targets hit by ice-element abilities. | 61 | `{ . . . }` |
 | `ManaSteal` | Integer | The amount of mana stolen (negative values may drain instead). | 7 | `-1`<br>`5` |
 | `MinimumKnockbackFromAllDamage` | Integer | The minimum knockback distance the unit will suffer from any damage source. | 7 | `1` |
@@ -264,13 +264,13 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`BounceRock`](../Reference_and_Meta/Arrays.md#array-bouncerock) | Array / Enum  | Specifies the rock object to bounce. | 6 | `LavaBoulder`<br>`SmallLavaRock`<br>`SmallRock` |
 | [`CaveFamilyEnrage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-cavefamilyenrage) | Object  | Specifies the ability used when the number of family members with a given tag falls below a threshold. | 6 | `{ . . . }` |
 | `ClearStarving` | Integer | The number of stacks of Starving cleared. | 6 | `1` |
-| [`Conditional_BadRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
-| [`CureDisease`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-curedisease) | Object  | Attempts to cure the specified disease with the given chance. | 6 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
+| [`CureDisease`](./Engine_StatusAndPassiveKeys.md#object-curedisease) | Object  | Attempts to cure the specified disease with the given chance. | 6 | `{ . . . }` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 113 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`DefaultMove`](./Engine_StatusAndPassiveKeys.md#object-defaultmove) | Object  | Defines the default movement ability for the unit. | 326 | `{ . . . }` |
 | [`DelayedAutoRevive`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-delayedautorevive) | Object  | Configures an automatic revival after a delay, with specified rounds and health percentage. | 6 | `{ . . . }` |
 | [`Divide4OnDeath`](../Reference_and_Meta/Enums.md#enum-divide4ondeath) | Enum | The object that spawns in four instances upon this unit's death. | 6 | `BiggestFood`<br>`Clot`<br>`MedSlime` |
-| [`DoDistortionRing`](../Reference_and_Meta/Miscellaneous.md#object-dodistortionring) | Object  | Configuration for a distortion ring visual effect, with speed, intensity, and radius. | 6 | `{ . . . }` |
+| [`DoDistortionRing`](./Engine_StatusAndPassiveKeys.md#object-dodistortionring) | Object  | Configuration for a distortion ring visual effect, with speed, intensity, and radius. | 6 | `{ . . . }` |
 | [`Electric`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-electric) | Object  | Applies a Stun status effect with specified stacks and probability based on variable X. | 78 | `{ . . . }` |
 | `ExtraBasicAttacks` | Integer | The number of additional basic attacks the unit can perform per turn. | 15 | `1`<br>`2` |
 | [`Fire`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-fire) | Integer / Object  | Defines the 'Fire' form, which may be a stack count or an object that applies burn or uses lava attack. | 168 | `{ . . . }`<br>`1` |
@@ -290,7 +290,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PoisonThorns` | Integer | The number of stacks of Poison applied to melee attackers when they hit this unit. | 15 | `1`<br>`2`<br>`3` |
 | [`ReplaceBasicAttackWhenCastable`](../Reference_and_Meta/Enums.md#enum-replacebasicattackwhencastable) | Enum | Replaces the basic attack with the specified ability when that ability can be cast. | 6 | `BasicSuplex`<br>`Hone`<br>`Hone2` |
 | [`ReplaceBasicMove_Mutation`](../Reference_and_Meta/Enums.md#enum-replacebasicmove_mutation) | Enum | Replaces the unit's basic movement with the specified mutation-based move. | 3 | `BasicDig`<br>`BasicJump` |
-| [`ScatterCoins`](../Reference_and_Meta/Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 8 | `{ . . . }` |
+| [`ScatterCoins`](./Engine_StatusAndPassiveKeys.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 8 | `{ . . . }` |
 | [`ScatterHeldCoin`](../Reference_and_Meta/Arrays.md#array-scatterheldcoin) | Array / Integer | The number of coins scattered, with an optional probability as a second element. | 6 | `1`<br>`[1 .3]`<br>`[1 .5]` |
 | [`SetBrittleImmune`](../Assets_and_Localization/Strings.md#string-setbrittleimmune) | String | Sets the unit's material to the specified type, granting immunity to the Brittle status. | 6 | `""`<br>`AdvancedAlloy`<br>`Alloy` |
 | `SetDistanceDisplace` | Integer | The fixed distance to displace the target. | 6 | `5` |
@@ -303,13 +303,13 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusOnTookDamageFromAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusontookdamagefromability) | Object  | Specifies status effects triggered when the unit takes damage specifically from an ability (not environmental). | 9 | `{ . . . }` |
 | [`StunImmunity`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stunimmunity) | Integer / Object  | If 1, the unit is immune to stun. The optional object configures whether to cleanse stun on apply. | 6 | `{ . . . }`<br>`1` |
 | [`TagGreed`](../Reference_and_Meta/Enums.md#enum-taggreed) | Enum | The tag of items that this unit will move towards to collect. | 6 | `bishop_hat`<br>`food`<br>`pickup` |
-| [`TeamCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-teamcastability) | Enum / Object  | Specifies the ability name for the team to cast, with optional tag restriction and same orientation. | 6 | `{ . . . }`<br>`Huddle_Impl`<br>`Spin`<br>`TeamFlex_Impl` |
-| [`TwisterDisplaceWithDamage`](../Reference_and_Meta/Miscellaneous.md#object-twisterdisplacewithdamage) | Object  | Configuration for a twister displacement that deals damage, with min/max distance and damage value. | 6 | `{ . . . }` |
+| [`TeamCastAbility`](./Engine_StatusAndPassiveKeys.md#object-teamcastability) | Enum / Object  | Specifies the ability name for the team to cast, with optional tag restriction and same orientation. | 6 | `{ . . . }`<br>`Huddle_Impl`<br>`Spin`<br>`TeamFlex_Impl` |
+| [`TwisterDisplaceWithDamage`](./Engine_StatusAndPassiveKeys.md#object-twisterdisplacewithdamage) | Object  | Configuration for a twister displacement that deals damage, with min/max distance and damage value. | 6 | `{ . . . }` |
 | `YOffset` | Float | The vertical offset applied to the unit's visual position, used for floating or hovering effects. | 11 | `-.18`<br>`.25`<br>`.35` |
 | `ally_chance` | Integer | The percentage chance for an ally to catch incoming projectiles. | 5 | `100%`<br>`15%` |
 | `Angel` | Integer | If 1, the unit is an angel type, which may affect behavior like reviving. | 7 | `1` |
 | [`ChangeTilesUnder`](../Reference_and_Meta/Enums.md#enum-changetilesunder) | Enum | The tile type to change the ground tiles under the target to. | 9 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
-| [`CollectsPickupsWithAltEffects`](../Reference_and_Meta/Miscellaneous.md#object-collectspickupswithalteffects) | Object  | Contains alternative effects that are applied when collecting pickups. | 5 | `{ . . . }` |
+| [`CollectsPickupsWithAltEffects`](./Engine_StatusAndPassiveKeys.md#object-collectspickupswithalteffects) | Object  | Contains alternative effects that are applied when collecting pickups. | 5 | `{ . . . }` |
 | `DamageOrHealConditionally` | Integer | The amount of conditional damage or healing applied, based on certain conditions (e.g., ally or enemy). | 8 | `1` |
 | `fetus` | Variable | A variable used in status effect calculations; specific usage depends on context. | 14 ||
 | [`FlySwarm`](./Engine_StatusAndPassiveKeys.md#object-flyswarm) | Object  | Summons a fly swarm with the given chance or intensity percentage. | 11 | `{ . . . }` |
@@ -320,7 +320,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MonkStanceSwitch` | Integer | The number of times to switch monk stance. | 5 | `1` |
 | [`MoveTowardsKillers`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-movetowardskillers) | Enum / Object  | Determines the movement behavior when moving towards units that have killed an ally. | 5 | `{ . . . }`<br>`ReaperRevenge` |
 | `NoHealthRegen` | Number | Prevents the unit from regenerating health normally. | 7 | `1` |
-| [`ObjectOnHit`](../Reference_and_Meta/Miscellaneous.md#object-objectonhit) | Enum / Object  | Specifies the object to spawn on the hit tile. | 7 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
+| [`ObjectOnHit`](./Engine_StatusAndPassiveKeys.md#object-objectonhit) | Enum / Object  | Specifies the object to spawn on the hit tile. | 7 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
 | [`ObjectOnHitEmpty`](../Reference_and_Meta/Enums.md#enum-objectonhitempty) | Enum | Specifies the object to spawn on hitting an empty cell. | 5 | `AnimalEgg`<br>`AnimalEgg2`<br>`HeadTumor` |
 | `RefreshMovePointsIfHit` | Integer | The amount of movement points restored on hit. | 5 | `1` |
 | `RepairTrinket` | Integer | The number of stacks of the Repair Trinket status effect to apply. | 6 | `1`<br>`99` |
@@ -330,7 +330,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StartOffMap` | Integer | If 1, the unit begins the encounter off the map. | 5 | `1` |
 | [`StatusGroup`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusgroup) | Object  | A container grouping multiple status effects to be applied simultaneously. | 6 | `{ . . . }` |
 | [`StatusOnTurnEndIfDidntCastAbilityTypes`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonturnendifdidntcastabilitytypes) | Object  | Applies the contained status effects at turn end if the unit did not cast an ability of the specified type(s). | 5 | `{ . . . }` |
-| [`Tangled`](../Reference_and_Meta/Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| [`Tangled`](./Engine_StatusAndPassiveKeys.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | [`TransformItemOnElementInfluence`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-transformitemonelementinfluence) | Object  | Transforms the item into the specified one when influenced by the given element, optionally fully repairing it. | 5 | `{ . . . }` |
 | [`TransformOnDeathImmediately`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-transformondeathimmediately) | Enum / Object  | The object to transform into immediately upon death, with optional turn handling. | 5 | `{ . . . }`<br>`NoHead` |
 | `UpgradeRandomAbility` | Integer | The number of random abilities upgraded upon effect. | 5 | `1` |
@@ -354,8 +354,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AmplifyKnockback` | Integer | The additional distance (in tiles) a unit is knocked back. | 5 | `10`<br>`2` |
 | `any` | Variable | A wildcard key that matches any property name, often used for generic or dynamic lookups. | 19 ||
 | `AOEPuddle` | Enum | Specifies the pattern or shape of an area-of-effect puddle left on the ground. | 2 | `X-1` |
-| [`ApplyToConsumed`](../Reference_and_Meta/Miscellaneous.md#object-applytoconsumed) | Object  | Container for effects that are applied to the consumed object. | 4 | `{ . . . }` |
-| [`ArcLightning`](../Reference_and_Meta/Miscellaneous.md#object-arclightning) | Object  | Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag. | 4 | `{ . . . }` |
+| [`ApplyToConsumed`](./Engine_StatusAndPassiveKeys.md#object-applytoconsumed) | Object  | Container for effects that are applied to the consumed object. | 4 | `{ . . . }` |
+| [`ArcLightning`](./Engine_StatusAndPassiveKeys.md#object-arclightning) | Object  | Configuration for arc lightning chain, with stacks, chance, max distance, and enemy-only flag. | 4 | `{ . . . }` |
 | [`AutocastEachRound`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-autocasteachround) | Enum / Object  | Contains an ability name and optional 'even_if_stunned' flag to autocast each round. | 10 | `{ . . . }`<br>`SpiderReturn` |
 | `BackstabAllDirections` | Integer | If 1, the unit deals backstab damage from all directions. | 4 | `1` |
 | [`BaitAura`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-baitaura) | Object  | The range of the bait aura that draws enemies towards the unit. | 4 | `{ . . . }` |
@@ -371,7 +371,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`CharmedTinySpider`](./Engine_StatusAndPassiveKeys.md#object-charmedtinyspider) | Object  | An object defining a charmed variant of the TinySpider familiar. | 16 | `{ . . . }` |
 | [`ClassManaCostReduction`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-classmanacostreduction) | Object  | Defines a reduction in mana cost for abilities of a specific class. | 7 | `{ . . . }` |
 | [`CobraReflex`](../Reference_and_Meta/Enums.md#enum-cobrareflex) | Enum | Specifies which basic attack or ability grants increased dodge or counterattack chance. | 3 | `BasicMonkMelee` |
-| [`Conditional_PartyMember`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
+| [`Conditional_PartyMember`](./Engine_StatusAndPassiveKeys.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
 | `ConsumablesInfiniteRange` | Integer | If non-zero, consumable items can be used at any range without distance restrictions. | 3 | `1` |
 | `CopyBasicAttackEffects` | Integer | If set, the ability copies the effects from the unit's basic attack. | 4 | `1` |
 | `CountAsCorpse` | Integer | If 1, the unit counts as a corpse for interactions like raising or necromancy. | 4 | `1` |
@@ -380,7 +380,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `crow` | Variable | A variable key likely representing a unit or effect related to the crow faction. | 6 ||
 | [`DisableAbilities`](../Reference_and_Meta/Enums.md#enum-disableabilities) | Enum | Specifies which category of abilities to disable, such as 'all_items' or 'basic_attack'. | 4 | `all_items`<br>`all_spells`<br>`basic_attack` |
 | [`DisplayDangerAOE`](../Reference_and_Meta/Enums.md#enum-displaydangeraoe) | Enum | The ability whose area of effect is displayed to warn players. | 4 | `GrenadeExplode`<br>`MoonHead_Blow`<br>`TheChild_Wrath` |
-| [`DistanceBonusDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-distancebonusdamage) | Object  | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 4 | `{ . . . }` |
+| [`DistanceBonusDamage`](./Engine_StatusAndPassiveKeys.md#object-distancebonusdamage) | Object  | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 4 | `{ . . . }` |
 | `DownRankAIIfWeaponUsable` | Float | A multiplier that reduces the AI's priority to use this ability if the unit has a usable weapon. | 4 | `.001` |
 | [`ElementalManaCostReduction`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-elementalmanacostreduction) | Object  | An object that reduces the mana cost of spells of specified elements, with sub-keys for element and reduction amount. | 5 | `{ . . . }` |
 | [`EnableWeather`](../Reference_and_Meta/Enums.md#enum-enableweather) | Enum | Specifies the weather effect to enable. | 4 | `KaijuFirestorm`<br>`KaijuMeteornado`<br>`KaijuMeteornadoSolo` |
@@ -398,14 +398,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`GroundFlopper`](../Reference_and_Meta/Enums.md#enum-groundflopper) | Enum | The movement ability used when this unit is on the ground. | 4 | `DefaultMove`<br>`MoveOne` |
 | `HouseFoodRequirementMultiplier` | Integer | A multiplier for the amount of food the house requires; 0 removes the food requirement. | 3 | `0` |
 | `IncreaseExplosionDamage` | Integer | The flat amount by which explosion damage is increased. | 10 | `1`<br>`2`<br>`3` |
-| [`LateStatusApplication`](../Reference_and_Meta/Miscellaneous.md#object-latestatusapplication) | Object  | Container for status effects that are applied late after the main effect. | 4 | `{ . . . }` |
+| [`LateStatusApplication`](./Engine_StatusAndPassiveKeys.md#object-latestatusapplication) | Object  | Container for status effects that are applied late after the main effect. | 4 | `{ . . . }` |
 | [`LevelUpClassOverride`](../Reference_and_Meta/Enums.md#enum-levelupclassoverride) | Enum | Specifies which class the unit gains upon leveling up, overriding the default class. | 6 | `Colorless`<br>`Jester` |
 | [`LoopingSoundWhileAlive`](../Reference_and_Meta/Enums.md#enum-loopingsoundwhilealive) | Enum | The looping sound effect played while the unit is alive. | 4 | `BigUFO_ambient_looping`<br>`Bomb_FuseLoop`<br>`Twister_loop` |
 | [`LowerAmbientLight`](../Reference_and_Meta/Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 7 | `{ . . . }` |
 | [`LowerAmbientLight`](../Reference_and_Meta/Miscellaneous.md#object-lowerambientlight) | Object  | If an object, defines the target light amount and transition speed; if a number, sets the ambient light level directly. | 7 | `{ . . . }` |
 | `ManaCostReduction` | Integer | The amount or percentage by which ability mana costs are reduced for this unit. | 13 | `-2`<br>`1`<br>`2` |
-| [`Metronome`](../Reference_and_Meta/Miscellaneous.md#object-metronome) | Integer / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 16 | `{ . . . }`<br>`1`<br>`2` |
-| [`Metronome`](../Reference_and_Meta/Miscellaneous.md#object-metronome) | Boolean (Flag) / Float / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 16 | `{ . . . }`<br>`1`<br>`2` |
+| [`Metronome`](./Engine_StatusAndPassiveKeys.md#object-metronome) | Integer / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 16 | `{ . . . }`<br>`1`<br>`2` |
+| [`Metronome`](./Engine_StatusAndPassiveKeys.md#object-metronome) | Boolean (Flag) / Float / Object  | The number of times Metronome triggers, or an object with stacks and banned abilities. | 16 | `{ . . . }`<br>`1`<br>`2` |
 | `musical` | Variable | A variable key likely related to musical abilities or sound effects. | 52 ||
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 9 | `1`<br>`9999` |
 | [`PassiveAtHealthThreshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passiveathealththreshold) | Object  | An object that grants additional passives when the unit's health meets a specified threshold, with sub-keys for threshold, mode, and passives. | 9 | `{ . . . }` |
@@ -418,11 +418,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ReflectProjectiles`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-reflectprojectiles) | Integer / Object  | The percentage chance to reflect projectiles back at the attacker; optionally includes self-damage. | 15 | `{ . . . }`<br>`1`<br>`10%`<br>`100%` |
 | `RemoveActPoints` | Integer | The number of action points removed from the target. | 4 | `1` |
 | [`RepairWeapon`](../Reference_and_Meta/Arrays.md#array-repairweapon) | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 7 | `1`<br>`6`<br>`99` |
-| [`ReplaceSpell`](../Reference_and_Meta/Miscellaneous.md#object-replacespell) | Object  | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
+| [`ReplaceSpell`](./Engine_StatusAndPassiveKeys.md#object-replacespell) | Object  | Defines which spell slot to replace and with which ability. | 4 | `{ . . . }` |
 | `SendRock` | Integer | The number of rocks to send as projectiles. | 4 | `1` |
 | `SizeScale` | Float | The multiplier applied to the unit's visual and hitbox size. | 20 | `.4`<br>`.6`<br>`.7` |
-| [`SmartMetronome`](../Reference_and_Meta/Miscellaneous.md#object-smartmetronome) | Integer / Object  | The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag. | 8 | `{ . . . }`<br>`20` |
-| [`SmartMetronome`](../Reference_and_Meta/Miscellaneous.md#object-smartmetronome) | Integer / Object  | The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag. | 8 | `{ . . . }`<br>`20` |
+| [`SmartMetronome`](./Engine_StatusAndPassiveKeys.md#object-smartmetronome) | Integer / Object  | The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag. | 8 | `{ . . . }`<br>`20` |
+| [`SmartMetronome`](./Engine_StatusAndPassiveKeys.md#object-smartmetronome) | Integer / Object  | The number of stacks of a buff that increases damage by a percentage, with an optional upgrade flag. | 8 | `{ . . . }`<br>`20` |
 | [`SpawnCatCopyOnBattleStart`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spawncatcopyonbattlestart) | Object  | An object that spawns a copy of the unit's cat at the start of battle, with sub-keys for the copy object and chain-prevention tag. | 4 | `{ . . . }` |
 | [`SpawnThingOnDeath`](../Reference_and_Meta/Enums.md#enum-spawnthingondeath) | Enum | Specifies the name of an object to spawn upon death. | 16 | `Boulder`<br>`CharmedDemonKitten`<br>`CharmedFlySwarm` |
 | [`StatusOnAllyCatDeath`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonallycatdeath) | Object  | An object listing status effects applied to the unit when an allied cat dies. | 6 | `{ . . . }` |
@@ -435,11 +435,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusOnTurnEndIfManaExact`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonturnendifmanaexact) | Object  | An object that applies a status effect at the end of the turn if the unit's mana is exactly a specified value. | 4 | `{ . . . }` |
 | [`StatusOnTurnEndIfManaOrHealthExact`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusonturnendifmanaorhealthexact) | Object  | An object that applies a status effect at the end of the turn if the unit's mana or health is exactly a specified value. | 4 | `{ . . . }` |
 | [`StatusRandomEnemiesOnBattleStart`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusrandomenemiesonbattlestart) | Object  | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 7 | `{ . . . }` |
-| [`SwitchMusic`](../Reference_and_Meta/Miscellaneous.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 7 | `{ . . . }` |
+| [`SwitchMusic`](./Engine_StatusAndPassiveKeys.md#object-switchmusic) | Object  | Defines a new song or layer for the background music. | 7 | `{ . . . }` |
 | `TauntAlways` | Integer | If non-zero, the unit is always taunted, forcing it to target the first enemy in range. | 4 | `1` |
 | [`TempPassiveWhileHasStatus`](../Reference_and_Meta/Miscellaneous.md#object-temppassivewhilehasstatus) | Object  | An object defining passives temporarily granted to the unit while it has a specific status effect. | 4 | `{ . . . }` |
 | [`TileTrail`](../Reference_and_Meta/Enums.md#enum-tiletrail) | Enum | Specifies the type of tile left behind as the unit moves. | 14 | `BrambleTile`<br>`CreepTile`<br>`FireTile` |
-| [`TimeDelayStatusApplication`](../Reference_and_Meta/Miscellaneous.md#object-timedelaystatusapplication) | Object  | Container for status effects applied after a specified delay. | 4 | `{ . . . }` |
+| [`TimeDelayStatusApplication`](./Engine_StatusAndPassiveKeys.md#object-timedelaystatusapplication) | Object  | Container for status effects applied after a specified delay. | 4 | `{ . . . }` |
 | [`ToadJump_BasicMove`](./Engine_StatusAndPassiveKeys.md#object-toadjump_basicmove) | Object  | An object defining a basic movement ability for a toad-like unit. | 4 | `{ . . . }` |
 | [`Trapper`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-trapper) | Object  | Specifies a trap-placing ability and its targeting parameters. | 5 | `{ . . . }` |
 | `UncappedMana` | Integer | If non-zero, the unit has no maximum mana limit. | 3 | `1` |
@@ -451,7 +451,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `AddEndOfCombatRegen` | Integer | The amount of health regenerated after combat ends. | 3 | `12`<br>`999999` |
 | `AggroTargetIsCurrentTurn` | Integer | If set to 1, the unit's aggro target is the unit currently taking its turn. | 3 | `1` |
 | `AllStatsUpPerDisorder` | Integer | The amount by which all stats increase for each disorder (negative status) the unit has. | 3 | `1` |
-| [`ApplyMultipleTimes`](../Reference_and_Meta/Miscellaneous.md#object-applymultipletimes) | Object  | An object containing a `stacks` value that specifies how many times the nested effects are applied. | 3 | `{ . . . }` |
+| [`ApplyMultipleTimes`](./Engine_StatusAndPassiveKeys.md#object-applymultipletimes) | Object  | An object containing a `stacks` value that specifies how many times the nested effects are applied. | 3 | `{ . . . }` |
 | `BaseStatMultiply` | Float | A multiplier applied to the unit's base stats. | 3 | `.25`<br>`.5`<br>`.666` |
 | `BasicAttackCritChance` | Float | A multiplier for the critical hit chance of basic attacks, either as a float or percentage. | 3 | `.1`<br>`100%` |
 | `bishop_hat` | Variable | A variable key referencing a specific item or graphical element (the bishop hat). | 5 ||
@@ -462,13 +462,13 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`CanMutateTo`](../Reference_and_Meta/Arrays.md#array-canmutateto) | Array / Enum  | Specifies the mutation forms this unit can transform into, either a single form or an array of possible forms. | 3 | `Hyde`<br>`[Lumpy, Leaper]`<br>`[TumorousMaggot, ChargeyMaggot, SwappyMaggot]` |
 | `CantCatchDiseases` | Integer | The number of stacks that prevent the unit from contracting diseases. | 3 | `1` |
 | `CantSpreadDiseases` | Integer | The number of stacks that prevent the unit from spreading diseases. | 3 | `1` |
-| [`CatPartsSizeScaleStatus`](../Reference_and_Meta/Miscellaneous.md#object-catpartssizescalestatus) | Object  | Configures scale multipliers for individual cat body parts (body, arms, mouth). | 3 | `{ . . . }` |
+| [`CatPartsSizeScaleStatus`](./Engine_StatusAndPassiveKeys.md#object-catpartssizescalestatus) | Object  | Configures scale multipliers for individual cat body parts (body, arms, mouth). | 3 | `{ . . . }` |
 | `ChanceToBlock` | Integer | The percentage chance to block incoming damage. | 3 | `10%` |
 | [`CharmedTinyTumor`](./Engine_StatusAndPassiveKeys.md#object-charmedtinytumor) | Object  | An object defining a specific variant of the TinyTumor status, typically with its own graphics scale. | 7 | `{ . . . }` |
 | `CollideWithConsumed` | Equation | Damage formula for collision with consumed objects, e.g., '4+bonus_melee_damage'. | 3 | `1+bonus_melee_damage`<br>`4+bonus_melee_damage`<br>`5+bonus_melee_damage` |
-| [`Conditional_Adjacent`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
+| [`Conditional_Adjacent`](./Engine_StatusAndPassiveKeys.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
 | [`Conditional_RandomChance`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 4 | `{ . . . }` |
-| [`Conditional_Shielded`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
+| [`Conditional_Shielded`](./Engine_StatusAndPassiveKeys.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
 | [`CookedChickenLeg`](./Engine_StatusAndPassiveKeys.md#object-cookedchickenleg) | Object  | An undefined object; no examples or paths found in the provided context. | 5 | `{ . . . }` |
 | `CopyPassiveSlot` | Integer | An index (0-based) specifying which equipment slot's passive to copy onto this unit. | 3 | `0`<br>`1` |
 | `CorpseVaporizer` | Integer | The number of corpses vaporized on hit. | 3 | `1` |
@@ -479,7 +479,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DigestDeadBodies`](../Reference_and_Meta/Enums.md#enum-digestdeadbodies) | Enum | Specifies the ability or animation used when digesting a dead body. | 3 | `Digest`<br>`LennyCatDies`<br>`MoonHead_Digest` |
 | [`DoubleStatus`](../Reference_and_Meta/Enums.md#enum-doublestatus) | Enum | The name of a status effect whose stacks are doubled when applied. | 3 | `Bleed`<br>`Burn`<br>`Poison` |
 | [`DropAsFamiliarOnArmorBreak`](../Reference_and_Meta/Enums.md#enum-dropasfamiliaronarmorbreak) | Enum | Specifies the familiar type to drop onto the tile when this status holder's armor breaks. | 3 | `FaceGrubFamiliar`<br>`HeadGrubFamiliar`<br>`NeckGrubFamiliar` |
-| [`DustOnHit`](../Reference_and_Meta/Miscellaneous.md#object-dustonhit) | Object  | Configuration for a dust object spawned on hit. | 3 | `{ . . . }` |
+| [`DustOnHit`](./Engine_StatusAndPassiveKeys.md#object-dustonhit) | Object  | Configuration for a dust object spawned on hit. | 3 | `{ . . . }` |
 | [`EquipPermanentItem`](../Reference_and_Meta/Enums.md#enum-equippermanentitem) | Enum | The name of the item to permanently equip to the source. | 5 | `BoneClub`<br>`Kidney` |
 | `ExtraBasicMoves_Status` | Integer | The number of extra basic moves per turn granted. | 6 | `1` |
 | `ForceDisplace` | Integer | The distance the target is forced to displace. | 3 | `1` |
@@ -487,10 +487,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`FormChangeHealthThreshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-formchangehealththreshold) | Object  | Specifies health thresholds that trigger form changes, with form_below for health at or below and form_above for health above. | 3 | `{ . . . }` |
 | [`Holy`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-holy) | Enum / Object  | Specifies the 'Holy' form within FormChanger, with its own animation suffix and passives. | 86 | `{ . . . }`<br>`MegaGuppy_TransformHoly` |
 | `IllusionTint` | Integer | If non-zero, applies an illusionary tint to the unit's sprite. | 3 | `1` |
-| [`IncAuxCounterClamped`](../Reference_and_Meta/Miscellaneous.md#object-incauxcounterclamped) | Object  | An object with `change` and `max` properties modifying the auxiliary counter by `change`, clamped to `max`. | 3 | `{ . . . }` |
+| [`IncAuxCounterClamped`](./Engine_StatusAndPassiveKeys.md#object-incauxcounterclamped) | Object  | An object with `change` and `max` properties modifying the auxiliary counter by `change`, clamped to `max`. | 3 | `{ . . . }` |
 | `include_spells` | Boolean | If true, the AI-controlled bonus turn includes spells as available actions. | 4 | `true` |
 | `InstantMaxHealthUp` | Integer | The amount of permanent maximum health increase. | 3 | `20`<br>`4` |
-| [`KnockOutCoin`](../Reference_and_Meta/Miscellaneous.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 5 | `{ . . . }`<br>`1`<br>`[1 .5]` |
+| [`KnockOutCoin`](./Engine_StatusAndPassiveKeys.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 5 | `{ . . . }`<br>`1`<br>`[1 .5]` |
 | [`Lava_Distortion`](./Engine_StatusAndPassiveKeys.md#object-lava_distortion) | Variable | A configuration object for a visual distortion effect, typically defining a movieclip and render settings. | 4 ||
 | `Lifesteal` | Integer | The amount of lifesteal stacks applied. | 6 | `1`<br>`3` |
 | [`ManaPickup`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-manapickup) | Object  | The amount of mana stacks and the frame range for the pickup animation. | 6 | `{ . . . }` |
@@ -512,16 +512,16 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `RepairOnKill` | Integer | The number of charges restored to the ability upon killing a target. | 3 | `1`<br>`2` |
 | `RockyArmorPassive` | Integer | The number of stacks of the Rocky Armor status effect granted. | 3 | `1` |
 | `RunInXTurns` | Integer | The number of turns after which this unit will flee the battle. | 3 | `1`<br>`2`<br>`3` |
-| [`SetCrazyEyeBackgroundWeights`](../Reference_and_Meta/Miscellaneous.md#object-setcrazyeyebackgroundweights) | Object  | An object containing a `weights` array that sets the weighting for which Crazy Eye background variant is displayed. | 3 | `{ . . . }` |
+| [`SetCrazyEyeBackgroundWeights`](./Engine_StatusAndPassiveKeys.md#object-setcrazyeyebackgroundweights) | Object  | An object containing a `weights` array that sets the weighting for which Crazy Eye background variant is displayed. | 3 | `{ . . . }` |
 | [`SetDefaultFacePassive`](../Reference_and_Meta/Enums.md#enum-setdefaultfacepassive) | Enum | Specifies the name of the default face passive to be assigned to this unit. | 3 | `euphoric`<br>`insane` |
 | `SharePickupsWithSpawner` | Integer | If set to 1, pickups collected by this unit are also given to its spawner. | 3 | `0`<br>`1` |
 | `SpawnCreepOnHit` | Integer | If set to 1, spawns creep on the tile when this unit takes damage. | 3 | `1` |
 | [`SpawnCustomTrap`](../Reference_and_Meta/Enums.md#enum-spawncustomtrap) | Enum | Specifies the name of a custom trap blueprint to spawn at the target location. | 3 | `CharmTrap`<br>`EggSackTrap`<br>`SpikeTrap` |
 | `SpawnNeutralWebTrapOnMiss` | Integer | The number of neutral web traps spawned on the tile if the attack misses. | 3 | `1` |
-| [`SpawnVolcanoOnBattleStart`](../Reference_and_Meta/Miscellaneous.md#object-spawnvolcanoonbattlestart) | Object  | An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle. | 3 | `{ . . . }` |
+| [`SpawnVolcanoOnBattleStart`](./Engine_StatusAndPassiveKeys.md#object-spawnvolcanoonbattlestart) | Object  | An object containing parameters (object type, tile, radius) for spawning a volcano effect at the start of battle. | 3 | `{ . . . }` |
 | [`StackingFlowerTrail`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stackingflowertrail) | Object  | An object defining how a flower trail status stacks (stacks count, stack key) when the unit moves. | 3 | `{ . . . }` |
 | [`StatusAllCharactersOnSpawn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusallcharactersonspawn) | Object  | Defines status effects applied to all characters when they spawn into the battlefield. | 5 | `{ . . . }` |
-| [`StatusCharactersOnRoundEnd`](../Reference_and_Meta/Miscellaneous.md#object-statuscharactersonroundend) | Object  | An object whose nested keys define statuses or effects applied to characters at the end of each round. | 3 | `{ . . . }` |
+| [`StatusCharactersOnRoundEnd`](./Engine_StatusAndPassiveKeys.md#object-statuscharactersonroundend) | Object  | An object whose nested keys define statuses or effects applied to characters at the end of each round. | 3 | `{ . . . }` |
 | [`SupportFormChangeInsteadOfRun`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-supportformchangeinsteadofrun) | Enum / Object  | Specifies a form change to trigger instead of fleeing, either as a passive object with ability details or a direct form name. | 3 | `{ . . . }`<br>`Attacker` |
 | [`tag_filter`](../Reference_and_Meta/Enums.md#enum-tag_filter) | Enum | Specifies a tag (e.g., 'crow', 'rock', 'grub_familiar') used to filter which units a status or effect applies to. | 4 | `crow`<br>`grub_familiar`<br>`rock` |
 | [`TakeBonusTurnWithAIControl`](../Reference_and_Meta/Miscellaneous.md#object-takebonusturnwithaicontrol) | Object  | An object configuring whether the bonus turn happens at the end of the round and whether spells are included. | 3 | `{ . . . }` |
@@ -586,7 +586,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Antidote` | Float | The multiplier for the number of antidote pickups spawned. | 25 | `.5`<br>`1` |
 | [`ApplyStatusesToRandomEnemiesEachTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applystatusestorandomenemieseachturn) | Object  | An object specifying statuses to apply to random enemies each turn, with an optional 'count' field. | 4 | `{ . . . }` |
 | [`ApplyStatusIfCrit`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applystatusifcrit) | Object  | Defines effects that are applied only when the attack scores a critical hit. | 9 | `{ . . . }` |
-| [`ApplyToTile`](../Reference_and_Meta/Miscellaneous.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
+| [`ApplyToTile`](./Engine_StatusAndPassiveKeys.md#object-applytotile) | Object  | Defines effects to apply to the target tile. | 2 | `{ . . . }` |
 | [`ArmorBreakOnHit`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-armorbreakonhit) | Object  | An object defining durability loss and chance for armor to break when hit. | 2 | `{ . . . }` |
 | `ArmorDodgeChance` | Integer | The percentage chance to dodge incoming attacks when wearing this armor. | 20 | `10%`<br>`15%`<br>`20%` |
 | [`AutocastEachTurn`](../Reference_and_Meta/Enums.md#enum-autocasteachturn) | Enum | Specifies the ability automatically cast at the end of each turn. | 2 | `DarkOneStrike`<br>`ViolentOutburst` |
@@ -600,8 +600,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`BasicMonkMelee`](./Engine_StatusAndPassiveKeys.md#object-basicmonkmelee) | Object  | An object defining the basic melee attack for a monk class. | 7 | `{ . . . }` |
 | [`BasicRanged`](./Engine_StatusAndPassiveKeys.md#object-basicranged) | Object  | An object defining the basic ranged attack for a unit. | 7 | `{ . . . }` |
 | [`BasicSuplex`](./Engine_StatusAndPassiveKeys.md#object-basicsuplex) | Object  | An object defining the basic suplex ability for a unit. | 3 | `{ . . . }` |
-| [`BodyGuard`](../Reference_and_Meta/Miscellaneous.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 8 | `{ . . . }` |
-| [`BodyGuard`](../Reference_and_Meta/Miscellaneous.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 8 | `{ . . . }` |
+| [`BodyGuard`](./Engine_StatusAndPassiveKeys.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 8 | `{ . . . }` |
+| [`BodyGuard`](./Engine_StatusAndPassiveKeys.md#object-bodyguard) | Object  | An object that applies a bodyguard status, optionally linking to a swap ability. | 8 | `{ . . . }` |
 | `BonusFoodEachBattle` | Integer | The amount of bonus food earned at the end of each battle. | 2 | `2`<br>`20` |
 | `BonusHealthRegenBasedOnDex` | Integer | The amount of bonus health regeneration per point of dexterity. | 1 | `5` |
 | `BonusRangeBasedOnDex` | Integer | The amount of bonus range per point of dexterity. | 1 | `5` |
@@ -657,7 +657,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ConjureCastSpellsForAllies` | Integer | The number of additional spells conjured for allies when casting. | 2 | `1`<br>`2` |
 | `ConsumableEffectsMultiplierBonus` | Integer | A multiplier bonus applied to the effects of consumable items. | 3 | `1` |
 | `CopyCatPassive_Initializer` | Integer | The number of copies of this passive to initialize. | 2 | `1`<br>`2` |
-| [`CopySpells`](../Reference_and_Meta/Miscellaneous.md#object-copyspells) | Integer / Object  | The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`. | 2 | `{ . . . }`<br>`1` |
+| [`CopySpells`](./Engine_StatusAndPassiveKeys.md#object-copyspells) | Integer / Object  | The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`. | 2 | `{ . . . }`<br>`1` |
 | [`Counterspell`](./Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object  | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 6 | `{ . . . }`<br>`1` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1684 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | `DamageBasedOnMissingHealth` | Integer | The percentage of the target's missing health dealt as additional damage. | 2 | `25`<br>`50` |
@@ -672,7 +672,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DeathRattle`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-deathrattle) | Enum / Object  | Specifies an ability or effect triggered when the unit dies, optionally with a pop_corpse flag. | 36 | `{ . . . }`<br>`BBExplode`<br>`BloatyExplodey`<br>`BombFlyExplode` |
 | `DebuffImmunity` | Integer | If 1, the unit is immune to debuffs. | 8 | `1` |
 | `DejaVu` | Integer | The percentage chance or definition for the DejaVu disorder, causing repeated events. | 3 | `10%` |
-| [`DelayCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
+| [`DelayCastAbility`](./Engine_StatusAndPassiveKeys.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
 | `DelayedFury` | Integer | The percentage of Fury damage that is stored and applied after a delay. | 2 | `0`<br>`75` |
 | `DemonicGlyph_Bite` | Integer | The weight for the demonic glyph of bite, or its configuration. | 4 | `1` |
 | `DemonicGlyph_Summon` | Integer | The weight for the demonic glyph of summon, or its configuration. | 4 | `1` |
@@ -733,7 +733,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Flying` | Integer | If set to 1, grants the unit the Flying passive, allowing movement over obstacles and ignoring terrain penalties. | 18 | `1` |
 | [`FollowUp`](../Reference_and_Meta/Enums.md#enum-followup) | Enum | Specifies the name of the follow-up ability triggered after an attack. | 4 | `FollowUpDash`<br>`FollowUpDash2` |
 | `ForceMoveNonAlliesInRangeTowardsTile` | Integer | The tile range within which non-allied units are forcibly moved towards a specified tile. | 2 | `3`<br>`4` |
-| [`ForceMoveTowardsTaggedObject`](../Reference_and_Meta/Miscellaneous.md#object-forcemovetowardstaggedobject) | Object  | An object specifying the `ability` and optional `tag` used to forcibly move the unit towards a tagged object. | 2 | `{ . . . }` |
+| [`ForceMoveTowardsTaggedObject`](./Engine_StatusAndPassiveKeys.md#object-forcemovetowardstaggedobject) | Object  | An object specifying the `ability` and optional `tag` used to forcibly move the unit towards a tagged object. | 2 | `{ . . . }` |
 | [`FormChangeDuringWeatherElement`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-formchangeduringweatherelement) | Object  | Specifies a form change that triggers when the weather matches a given element. | 2 | `{ . . . }` |
 | `FrontstabCritChance` | Integer | The percentage chance to critically hit when attacking from the front. | 1 | `100%` |
 | `FullHealthAllStatsUp` | Integer | The number of AllStatsUp stacks granted when at full health. | 1 | `1` |
@@ -743,7 +743,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `GainExtraShield` | Integer | The amount of shield gained on turn start. | 3 | `2`<br>`4` |
 | `GainManaWhenAnythingDies` | Integer | The amount of mana gained whenever any unit dies. | 1 | `1` |
 | `GlobalManaBurnAura` | Integer | The amount of mana burned from all enemies per turn. | 2 | `-1` |
-| [`GlobalSpawnOnRoundEnd`](../Reference_and_Meta/Miscellaneous.md#object-globalspawnonroundend) | Object  | Specifies the object to spawn globally at the end of each round. | 2 | `{ . . . }` |
+| [`GlobalSpawnOnRoundEnd`](./Engine_StatusAndPassiveKeys.md#object-globalspawnonroundend) | Object  | Specifies the object to spawn globally at the end of each round. | 2 | `{ . . . }` |
 | `GoopWalk` | Integer | If set to 1, this unit can move through goop tiles without being slowed or damaged. | 2 | `1` |
 | [`Grass`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-grass) | Object  | Specifies the status effects applied to allies standing on grass tiles. | 25 | `{ . . . }` |
 | `GrassTileHealing` | Integer | The amount of healing received per turn while on a grass tile. | 2 | `1` |
@@ -792,7 +792,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MakeSpellsRequireCharge` | Integer | If true, spells require a charge-up turn before casting. | 5 | `1` |
 | `MamaCatAnimations` | Integer | If set to 1, enables special mama cat animations. | 2 | `1` |
 | `ManaRegenMultiplierIfManaEmpty` | Integer | The multiplier applied to mana regen when mana is empty. | 2 | `2` |
-| [`Math`](../Reference_and_Meta/Miscellaneous.md#object-math) | Object  | An object containing a `stacks` value that determines how many times the nested effects are applied. | 6 | `{ . . . }` |
+| [`Math`](./Engine_StatusAndPassiveKeys.md#object-math) | Object  | An object containing a `stacks` value that determines how many times the nested effects are applied. | 6 | `{ . . . }` |
 | `MaxHPUp` | Integer | The amount of maximum health permanently increased. | 2 | `100` |
 | `MegaMinions` | Integer | The number of extra minions spawned or maximum minion count. | 4 | `3` |
 | `Metal` | Integer | The number of armor stacks or metal keyword effects. | 100 | `1` |
@@ -800,7 +800,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MinimumTech` | Integer | The minimum tech level guaranteed when crafting or upgrading. | 2 | `1` |
 | [`MiniVolcanoReaction`](../Reference_and_Meta/Enums.md#enum-minivolcanoreaction) | Enum | Specifies the ability triggered when a mini volcano erupts near this unit. | 2 | `MiniVolcano_Spurt`<br>`ThrobShot_Reaction` |
 | [`MockingbirdForm`](./Engine_StatusAndPassiveKeys.md#object-mockingbirdform) | Object  | Specifies the shape-shift ability that transforms the unit into a mockingbird. | 5 | `{ . . . }` |
-| [`ModifyAbility`](../Reference_and_Meta/Miscellaneous.md#object-modifyability) | Object  | Specifies the modifications to an ability's properties, such as cost or type. | 2 | `{ . . . }` |
+| [`ModifyAbility`](./Engine_StatusAndPassiveKeys.md#object-modifyability) | Object  | Specifies the modifications to an ability's properties, such as cost or type. | 2 | `{ . . . }` |
 | [`MotherTumorSpawnInCapture`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-mothertumorspawnincapture) | Object  | Specifies the form changes and statuses applied when the mother tumor spawns after capturing a cat or non-cat. | 2 | `{ . . . }` |
 | [`MoveAwayFromDamageSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-moveawayfromdamagesource) | Object  | Specifies the move ability used to flee from the source of damage, or an object with `move_ability`. | 3 | `{ . . . }` |
 | [`MovementReaction`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-movementreaction) | Object  | Specifies an ability to cast when a unit moves within range, with options for targeting and conditions. | 11 | `{ . . . }` |
@@ -812,17 +812,17 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`neck_NukeBonus`](./Engine_StatusAndPassiveKeys.md#object-neck_nukebonus) | Object  | A self-buff ability that grants the Nuke Explosion sub-ability, augmenting the unit's next weapon-based attack with a nuclear detonation. | 3 | `{ . . . }` |
 | [`neck_NukeExplode`](./Engine_StatusAndPassiveKeys.md#object-neck_nukeexplode) | Object  | A spell template ability representing the nuclear explosion triggered by Nuke Bonus, playing the NukeBlastLarge center particle and no animation. | 4 | `{ . . . }` |
 | [`Necro_SoulDagger_Uncharged`](./Engine_StatusAndPassiveKeys.md#object-necro_souldagger_uncharged) | Object  | The uncharged state of the Necromancer's Soul Dagger ability, dealing reduced damage or having a weaker effect compared to the charged version. | 5 | `{ . . . }` |
-| [`NextAttackSpecialCrit`](../Reference_and_Meta/Miscellaneous.md#object-nextattackspecialcrit) | Integer / Object  | The number of charges for a special crit on the next attack, or an object defining its bonus properties. | 2 | `{ . . . }`<br>`1` |
-| [`NextBattleStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-nextbattlestatus) | Object  | A set of status effects (e.g., stat buffs, full heal) automatically applied to the unit at the start of the next battle. | 2 | `{ . . . }` |
+| [`NextAttackSpecialCrit`](./Engine_StatusAndPassiveKeys.md#object-nextattackspecialcrit) | Integer / Object  | The number of charges for a special crit on the next attack, or an object defining its bonus properties. | 2 | `{ . . . }`<br>`1` |
+| [`NextBattleStatus`](./Engine_StatusAndPassiveKeys.md#object-nextbattlestatus) | Object  | A set of status effects (e.g., stat buffs, full heal) automatically applied to the unit at the start of the next battle. | 2 | `{ . . . }` |
 | `NoManaRegen` | Integer | The unit does not naturally regenerate mana per turn. Value indicates the stage or flag enabling this restriction. | 3 | `1` |
 | `NoReflection` | Integer | The unit's reflected damage effects are disabled. Value acts as a binary flag. | 2 | `1` |
 | [`NubbyToss`](./Engine_StatusAndPassiveKeys.md#object-nubbytoss) | Object  | An ability or action where the unit throws a stumpy or truncated projectile, typically dealing damage or applying a debuff. | 3 | `{ . . . }` |
 | `NubbyTossPriority` | Integer | Determines the priority order for the Nubby Toss action relative to other available actions. | 3 | `1` |
-| [`NukeQuestFinalBossModifications`](../Reference_and_Meta/Miscellaneous.md#object-nukequestfinalbossmodifications) | Object  | Contains modifications for the nuke quest final boss, such as damage_instance effects. | 2 | `{ . . . }` |
+| [`NukeQuestFinalBossModifications`](./Engine_StatusAndPassiveKeys.md#object-nukequestfinalbossmodifications) | Object  | Contains modifications for the nuke quest final boss, such as damage_instance effects. | 2 | `{ . . . }` |
 | `NumbingLeeches` | Integer | The number of leeches that apply a numbing effect, reducing the target's output or disabling certain actions. Also the name of a Necromancer passive. | 4 | `3` |
 | `OneUseSpellDamageUp` | Integer | Increases spell damage by the specified amount, but the effect is consumed after a single use. Alias for SpellDamageUp. | 3 | `2` |
 | `OverhealGainsBothShield` | Integer | Any healing beyond maximum health also grants shield points equal to the overheal amount. Value controls the conversion rate. | 2 | `1`<br>`2` |
-| [`OverHealToStatuses`](../Reference_and_Meta/Miscellaneous.md#object-overhealtostatuses) | Object  | Specifies a set of statuses applied to the target based on the amount of over-healing dealt. | 2 | `{ . . . }` |
+| [`OverHealToStatuses`](./Engine_StatusAndPassiveKeys.md#object-overhealtostatuses) | Object  | Specifies a set of statuses applied to the target based on the amount of over-healing dealt. | 2 | `{ . . . }` |
 | `ParasitesArentCursed` | Integer | Parasites attached to the unit are not considered cursed items, preventing negative curse effects. Value is a binary flag. | 2 | `1` |
 | `passive0` | Enum | Specifies the first passive ability assigned to the unit from a predefined list (e.g., SelfAssured, HotBlooded). | 2 | `HotBlooded`<br>`SelfAssured` |
 | [`PassiveAfterXKills`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passiveafterxkills) | Object  | Activates a set of passive effects (e.g., extra attacks, stat boosts) after the unit achieves a certain number of kills defined by the 'stacks' sub-key. | 4 | `{ . . . }` |
@@ -850,10 +850,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PrioritizePlayerCats` | Integer | A priority weight for targeting player-controlled cats. | 2 | `1` |
 | `PrioritizeWeakestEnemy` | Integer | A priority weight for targeting the weakest enemy unit. | 2 | `1` |
 | [`ProtectTargetedAllies`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-protecttargetedallies) | Object  | Specifies the ability used to protect targeted allies, including an optional target filter. | 4 | `{ . . . }` |
-| [`QuakeAreaChance`](../Reference_and_Meta/Miscellaneous.md#object-quakeareachance) | Object  | An object containing a radius and a chance to trigger a quake area effect. | 2 | `{ . . . }` |
+| [`QuakeAreaChance`](./Engine_StatusAndPassiveKeys.md#object-quakeareachance) | Object  | An object containing a radius and a chance to trigger a quake area effect. | 2 | `{ . . . }` |
 | `Quiver` | Integer | Grants additional ammunition capacity or reload charges for ranged weapon abilities, increasing how many times they can be fired. | 6 | `1`<br>`2` |
-| [`RandomDistanceDisplace`](../Reference_and_Meta/Miscellaneous.md#object-randomdistancedisplace) | Integer / Object  | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 4 | `{ . . . }`<br>`20` |
-| [`RandomKnockback`](../Reference_and_Meta/Miscellaneous.md#object-randomknockback) | Object  | An object defining the minimum and maximum distance in tiles for a random knockback. | 2 | `{ . . . }` |
+| [`RandomDistanceDisplace`](./Engine_StatusAndPassiveKeys.md#object-randomdistancedisplace) | Integer / Object  | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 4 | `{ . . . }`<br>`20` |
+| [`RandomKnockback`](./Engine_StatusAndPassiveKeys.md#object-randomknockback) | Object  | An object defining the minimum and maximum distance in tiles for a random knockback. | 2 | `{ . . . }` |
 | `RandomLightning` | Integer | Chance per turn or action for a random lightning strike to occur, expressed as a percentage (e.g., 50%). | 2 | `50%` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`RandomTaggedMutation`](../Reference_and_Meta/Enums.md#enum-randomtaggedmutation) | Enum | Specifies the tag to filter random mutations by. | 2 | `bird`<br>`melted` |
@@ -897,7 +897,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SelfStatusCarefulness` | Integer | The carefulness level when applying statuses to self, used to control stacking. | 2 | `1` |
 | [`SelfStun`](../Reference_and_Meta/Arrays.md#array-selfstun) | Array / Integer | The number of stacks of self-stun applied, with an optional probability as a second element. | 2 | `1`<br>`[1 .5]` |
 | [`SetDefaultFace`](../Reference_and_Meta/Enums.md#enum-setdefaultface) | Enum | Specifies the default facial expression, such as 'happy', 'sad', or 'insane'. | 3 | `happy`<br>`insane`<br>`sad` |
-| [`SetItemAux`](../Reference_and_Meta/Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 3 | `{ . . . }` |
+| [`SetItemAux`](./Engine_StatusAndPassiveKeys.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 3 | `{ . . . }` |
 | `SetSpellCosts` | Integer | Overrides the cost of all spells to this value. | 8 | `0`<br>`1`<br>`3` |
 | [`Shadowstep`](./Engine_StatusAndPassiveKeys.md#object-shadowstep) | Object  | An object defining the Shadowstep ability, which allows the unit to teleport behind a target before an attack. | 4 | `{ . . . }` |
 | `ShareHealthRegen` | Integer | The amount of health regeneration shared with nearby allies. | 2 | `1` |
@@ -923,7 +923,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpawnNearEnemies` | Integer | The number of units to spawn near each enemy at the start of battle. | 2 | `1` |
 | [`SpawnObjectOnPopCorpse`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spawnobjectonpopcorpse) | Enum / Object  | Specifies an object (as a string or an object with 'object', 'count', 'except_tiny' keys) to spawn on a corpse when it is popped. | 6 | `{ . . . }`<br>`Catnip`<br>`Coin`<br>`Food` |
 | [`SpecialFriends`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-specialfriends) | Object  | An object containing a set of status effects applied to allied units that are considered 'special friends' (e.g., granted by a passive). | 4 | `{ . . . }` |
-| [`SpecialGodRays`](../Reference_and_Meta/Miscellaneous.md#object-specialgodrays) | Object  | An object defining visual god rays that follow a specific character tag, used for cinematic or boss effects. | 2 | `{ . . . }` |
+| [`SpecialGodRays`](./Engine_StatusAndPassiveKeys.md#object-specialgodrays) | Object  | An object defining visual god rays that follow a specific character tag, used for cinematic or boss effects. | 2 | `{ . . . }` |
 | [`SpikeBuff`](./Engine_StatusAndPassiveKeys.md#object-spikebuff) | Variable | A variable defining a spike/bramble particle effect buffer for visual feedback. | 3 ||
 | `SplittableMove` | Integer | The number of times a move action can be split into smaller segments. | 2 | `1`<br>`3` |
 | [`Spook`](./Engine_StatusAndPassiveKeys.md#object-spook) | Object  | An object defining the Spook status, which causes the affected unit to flee or become frightened. | 3 | `{ . . . }` |
@@ -943,7 +943,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`StatusAllyWhenAllySpendsMana`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusallywhenallyspendsmana) | Object  | An object with a 'threshold' (mana amount) and status effects to apply to an ally whenever any ally spends at least that much mana. | 2 | `{ . . . }` |
 | [`StatusAnyCatAllyWhoKills`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusanycatallywhokills) | Object  | An object containing status effects to apply to any cat ally who kills an enemy. | 2 | `{ . . . }` |
 | `StatusCarefulness` | Integer | The carefulness level when applying statuses, used to control stacking behavior. | 3 | `1` |
-| [`StatusCharactersOnRoundStart`](../Reference_and_Meta/Miscellaneous.md#object-statuscharactersonroundstart) | Object  | An object containing status effects to apply to all characters on the battlefield at the start of each round. | 2 | `{ . . . }` |
+| [`StatusCharactersOnRoundStart`](./Engine_StatusAndPassiveKeys.md#object-statuscharactersonroundstart) | Object  | An object containing status effects to apply to all characters on the battlefield at the start of each round. | 2 | `{ . . . }` |
 | [`StatusDamagers`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusdamagers) | Object  | An object defining status effects that damage the unit, with parameters for each status. | 2 | `{ . . . }` |
 | [`StatusEachRoundEnd`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statuseachroundend) | Object  | An object listing status effects applied to the unit at the end of each round. | 3 | `{ . . . }` |
 | [`StatusEachTurnEndForEachTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statuseachturnendforeachturn) | Object  | Statuses applied at the end of each turn, with the number of turns as nested values. | 4 | `{ . . . }` |
@@ -1026,8 +1026,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `WeaponsDontLoseDurability` | Integer | If set to 1, weapons equipped by this unit do not lose durability. | 4 | `0`<br>`1` |
 | [`XIsLivingCharactersWithTag`](../Reference_and_Meta/Enums.md#enum-xislivingcharacterswithtag) | Enum | Specifies the tag that living characters must have for this passive to affect them. | 2 | `husk`<br>`rock` |
 | `XIsOtherHealsThisTurn` | Integer | If set, tracks other heals this turn for some effect. | 2 | `1` |
-| [`XIsSpellStormRampAndReset`](../Reference_and_Meta/Miscellaneous.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
-| [`XIsTargetHealth`](../Reference_and_Meta/Miscellaneous.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 2 | `{ . . . }` |
+| [`XIsSpellStormRampAndReset`](./Engine_StatusAndPassiveKeys.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
+| [`XIsTargetHealth`](./Engine_StatusAndPassiveKeys.md#object-xistargethealth) | Object  | Evaluates a bonus damage formula where X is the target's current health. | 2 | `{ . . . }` |
 | `XIsTimesDamageTaken` | Integer | If set, multiplier for damage taken to apply some effect. | 2 | `1` |
 | `Zombie` | Number | The number of stacks or value for the Zombie status. | 10 | `1` |
 | `AbilityDamageMultiplier` | Float | Multiplier for all ability damage dealt by the unit. | 1 | `1.5` |
@@ -1048,7 +1048,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AddElementsToSpells`](../Reference_and_Meta/Enums.md#enum-addelementstospells) | Enum | Specifies which element to add to spells. | 1 | `Earth` |
 | `AddExtraTurnsBeforeRun` | Integer | The number of additional turns added before the run ends. | 1 | `2` |
 | `AddLevelUpStatMultiplier` | Integer | Multiplier applied to stat gains on level up. | 1 | `1` |
-| [`AddPostProcessEffect`](../Reference_and_Meta/Miscellaneous.md#object-addpostprocesseffect) | Object  | Specifies a post-process shader effect to apply to the scene. | 1 | `{ . . . }` |
+| [`AddPostProcessEffect`](./Engine_StatusAndPassiveKeys.md#object-addpostprocesseffect) | Object  | Specifies a post-process shader effect to apply to the scene. | 1 | `{ . . . }` |
 | `AddRandomEliteBuff` | Integer | The number of random elite buffs to apply to the unit. | 1 | `1` |
 | [`AddStatusesIfPersistentWeatherElement`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatusesifpersistentweatherelement) | Object  | Specifies statuses applied if the persistent weather matches the given elements. | 1 | `{ . . . }` |
 | [`AddStatusesToReceivedElementalDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatusestoreceivedelementaldamage) | Object  | An object defining statuses applied to the unit when it takes elemental damage of the specified types. | 1 | `{ . . . }` |
@@ -1056,7 +1056,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AddStatusToFirstSpellEachTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustofirstspelleachturn) | Object  | An object defining statuses applied to the target after the first spell cast by the unit each turn. | 1 | `{ . . . }` |
 | [`AddStatusToReceivedDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustoreceiveddamage) | Object  | Applies a status effect to the attacker when the unit takes damage. | 1 | `{ . . . }` |
 | [`AddStatusToReceivedDamage_ExcludeStatuses`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-addstatustoreceiveddamage_excludestatuses) | Object  | An object defining statuses applied to the attacking unit when the owner receives damage, excluding damage from sources carrying the specified statuses. | 1 | `{ . . . }` |
-| [`AddTilesetObjects`](../Reference_and_Meta/Miscellaneous.md#object-addtilesetobjects) | Object  | An object configuring the spawning of decorative debris or objects on the tileset for an effect. | 1 | `{ . . . }` |
+| [`AddTilesetObjects`](./Engine_StatusAndPassiveKeys.md#object-addtilesetobjects) | Object  | An object configuring the spawning of decorative debris or objects on the tileset for an effect. | 1 | `{ . . . }` |
 | `Adrenaline` | Integer | The flat amount of Adrenaline (a resource or stat) granted to the unit. | 2 | `10` |
 | [`AdvancedTint`](../Reference_and_Meta/Arrays.md#array-advancedtint) | Array | An RGBA color array for advanced sprite tinting. | 1 | `[` |
 | [`AdventureTokenPassivePool`](../Reference_and_Meta/Miscellaneous.md#object-adventuretokenpassivepool) | Object  | A pool of passive definitions granted to the unit when picked up as an adventure token. | 1 | `{ . . . }` |
@@ -1079,15 +1079,15 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`AllyDodgeChanceAura`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-allydodgechanceaura) | Object  | An object granting allies within a specified range a percentage chance to dodge incoming attacks. | 2 | `{ . . . }` |
 | `AlphaAllStatsUp` | Integer | The amount by which all of the unit's stats are increased if it is the alpha (highest stat total or designated leader). | 2 | `1` |
 | `AlphaDodgeChance` | Integer | The dodge chance granted to the alpha (leader) unit. | 2 | `50%` |
-| [`AlphaStatusOnTurnBegin`](../Reference_and_Meta/Miscellaneous.md#object-alphastatusonturnbegin) | Object  | Specifies status effects applied to the alpha at the start of each turn. | 1 | `{ . . . }` |
+| [`AlphaStatusOnTurnBegin`](./Engine_StatusAndPassiveKeys.md#object-alphastatusonturnbegin) | Object  | Specifies status effects applied to the alpha at the start of each turn. | 1 | `{ . . . }` |
 | [`AlternateIdleAnimation`](../Reference_and_Meta/Enums.md#enum-alternateidleanimation) | Enum | Specifies the name of an alternative idle animation to play. | 1 | `berserkIdle` |
 | `AlwaysChosenForLevelUp` | Integer | If set to 1, this unit is always presented as a level-up option when gaining a level. | 1 | `1` |
 | `AOEBonus` | Integer | The bonus number of additional targets or tiles affected by an area-of-effect ability. | 1 | `1` |
-| [`ApplyPassivesToSpawnerWhileAlive`](../Reference_and_Meta/Miscellaneous.md#object-applypassivestospawnerwhilealive) | Object  | An object defining passives that are applied to the spawner while this unit is alive. | 1 | `{ . . . }` |
+| [`ApplyPassivesToSpawnerWhileAlive`](./Engine_StatusAndPassiveKeys.md#object-applypassivestospawnerwhilealive) | Object  | An object defining passives that are applied to the spawner while this unit is alive. | 1 | `{ . . . }` |
 | `ApplyShieldToApplierBasedOnMaxHealth` | Integer | The amount of shield applied to the applier based on a fraction of their max health. | 1 | `1` |
-| [`ApplyStatusesNextTurnBegin`](../Reference_and_Meta/Miscellaneous.md#object-applystatusesnextturnbegin) | Object  | Specifies a set of statuses to apply to the target at the beginning of their next turn. | 1 | `{ . . . }` |
-| [`ApplyToOthersWithSharedTagAndFaction`](../Reference_and_Meta/Miscellaneous.md#object-applytootherswithsharedtagandfaction) | Object  | Specifies statuses to apply to other units that share a tag and faction with the target. | 1 | `{ . . . }` |
-| [`ApplyToRandomClosestAlly`](../Reference_and_Meta/Miscellaneous.md#object-applytorandomclosestally) | Object  | Specifies statuses to apply to a random ally closest to the target. | 1 | `{ . . . }` |
+| [`ApplyStatusesNextTurnBegin`](./Engine_StatusAndPassiveKeys.md#object-applystatusesnextturnbegin) | Object  | Specifies a set of statuses to apply to the target at the beginning of their next turn. | 1 | `{ . . . }` |
+| [`ApplyToOthersWithSharedTagAndFaction`](./Engine_StatusAndPassiveKeys.md#object-applytootherswithsharedtagandfaction) | Object  | Specifies statuses to apply to other units that share a tag and faction with the target. | 1 | `{ . . . }` |
+| [`ApplyToRandomClosestAlly`](./Engine_StatusAndPassiveKeys.md#object-applytorandomclosestally) | Object  | Specifies statuses to apply to a random ally closest to the target. | 1 | `{ . . . }` |
 | [`Autism`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-autism) | Object  | An object defining the Autism disorder, including its name, description, class, and stat modifications for innate and learned levels. | 4 | `{ . . . }` |
 | `AvoidDamagingCharmedEnemies` | Integer | If 1, the unit avoids dealing damage to charmed enemies. | 1 | `1` |
 | `AwardCoinsOnDeath` | Integer | The amount of coins awarded to the killer when this unit dies. | 1 | `10` |
@@ -1176,7 +1176,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `CockroachSwarm` | Integer | If true, the unit spawns as a Cockroach Swarm, with its specific mechanics and effects. | 3 | `1` |
 | `CoinTossBounce` | Enum | Specifies the ability triggered when the coin lands on its edge after a bounce. | 1 | `X` |
 | `Conditional_Flying` | Object | Defines a conditional block that applies effects or actions only to flying units. | 1 | `{ . . . }` |
-| [`Conditional_ManaThreshold`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_manathreshold) | Object  | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
+| [`Conditional_ManaThreshold`](./Engine_StatusAndPassiveKeys.md#object-conditional_manathreshold) | Object  | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
 | [`Conditional_SourceHasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_sourcehastag) | Object  | Defines a conditional block that applies effects only if the source of the effect has a specified tag. | 1 | `{ . . . }` |
 | `Conditional_Tiny` | Object | Defines a conditional block that applies effects only to tiny-sized units. | 1 | `{ . . . }` |
 | [`ConfusionEffectOnTaggedAbilities`](../Reference_and_Meta/Enums.md#enum-confusioneffectontaggedabilities) | Enum | Specifies the type of ability tag (e.g., consumable) that triggers a confusion effect when used. | 1 | `consumable` |
@@ -1197,7 +1197,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`DecoyExplode`](./Engine_StatusAndPassiveKeys.md#object-decoyexplode) | Object  | Defines the explosion effect for a decoy unit. | 4 | `{ . . . }` |
 | `DecoySwapper` | Integer | If true, the decoy swaps places with the source when spawned. | 1 | `1` |
 | `DelayedPain` | Integer | The number of stacks of DelayedPain applied, dealing damage after a delay. | 3 | `1` |
-| [`DelayedWindCone`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-delayedwindcone) | Object  | An object containing parameters for a delayed wind cone, such as damage and distance. | 2 | `{ . . . }` |
+| [`DelayedWindCone`](./Engine_StatusAndPassiveKeys.md#object-delayedwindcone) | Object  | An object containing parameters for a delayed wind cone, such as damage and distance. | 2 | `{ . . . }` |
 | `DeleteInanimateObjectsChance` | Integer | The percentage chance per tick to delete all inanimate objects on the battlefield. | 1 | `25%` |
 | `DeleteTraps` | Integer | If true, removes all traps from the map. | 1 | `1` |
 | `DemonicGlyph_Bounce` | Integer | The weight for the demonic glyph of bounce, or its configuration. | 3 | `1` |
@@ -1282,10 +1282,10 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `Fog` | Integer | When an integer, the intensity of fog; when an object, defines the fog particle effect. | 5 | `1` |
 | `ForceCollectsPickups` | Integer | If true, the unit automatically collects nearby pickups. | 1 | `1` |
 | `ForceDodgeEverything` | Integer | If set to 1, the unit will always dodge all incoming attacks. | 1 | `1` |
-| [`ForceImmediateMoveAndAttack`](../Reference_and_Meta/Miscellaneous.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
+| [`ForceImmediateMoveAndAttack`](./Engine_StatusAndPassiveKeys.md#object-forceimmediatemoveandattack) | Object  | An object that forces the unit to instantly move toward the target and perform a specified ability attack. | 1 | `{ . . . }` |
 | `ForceMoveAndAttack` | Integer | If true, forces the target to move and attack its nearest enemy. | 1 | `1` |
 | `ForceTransferWeapon` | Integer | If true, forces the weapon to be transferred to the target. | 1 | `1` |
-| [`ForceUseAbilityOnTarget`](../Reference_and_Meta/Miscellaneous.md#object-forceuseabilityontarget) | Object  | Defines a chance to force the unit to use a specified ability on the target. | 1 | `{ . . . }` |
+| [`ForceUseAbilityOnTarget`](./Engine_StatusAndPassiveKeys.md#object-forceuseabilityontarget) | Object  | Defines a chance to force the unit to use a specified ability on the target. | 1 | `{ . . . }` |
 | [`FormChangeWhenBuddyDies`](../Reference_and_Meta/Enums.md#enum-formchangewhenbuddydies) | Enum | Specifies the form name the unit changes into when its buddy dies. | 1 | `Rage` |
 | [`FrankBolts`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-frankbolts) | Integer / Object  | The number of Frank Bolts applied or available. | 4 | `{ . . . }`<br>`1` |
 | `FreeFirstCastAndAfterSpendMana` | Integer | If set to 1, the first cast of the ability and each cast after spending mana costs no resources. | 1 | `1` |
@@ -1332,7 +1332,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `IceBlockBehavior` | Integer | An integer flag that controls the behavior mode of an ice block entity. | 1 | `1` |
 | [`IDSprout`](./Engine_StatusAndPassiveKeys.md#object-idsprout) | Object  | Defines the ID Sprout spawn ability. | 3 | `{ . . . }` |
 | `IgnoreDebuffs` | Integer | If true, the effect ignores debuffs on the target. | 1 | `1` |
-| [`IncAuxCounterCycle`](../Reference_and_Meta/Miscellaneous.md#object-incauxcountercycle) | Object  | An object containing parameters for incrementing an auxiliary counter with a change and maximum value. | 1 | `{ . . . }` |
+| [`IncAuxCounterCycle`](./Engine_StatusAndPassiveKeys.md#object-incauxcountercycle) | Object  | An object containing parameters for incrementing an auxiliary counter with a change and maximum value. | 1 | `{ . . . }` |
 | `IncreaseCumulativeBlastDamage` | Integer | If true, increases the cumulative blast damage counter. | 1 | `1` |
 | `IncreaseItemAuxOnKill` | Integer | If true, increases the item's aux counter on kill. | 1 | `1` |
 | `InheritSpawnerStats` | Integer | If set to 1, the unit inherits the stats of its spawner. | 1 | `1` |
@@ -1346,7 +1346,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`JohnnyNeedsWashing`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-johnnyneedswashing) | Object  | An object specifying the form names for washed and unwashed states. | 1 | `{ . . . }` |
 | [`JohnnyWasher`](../Reference_and_Meta/Enums.md#enum-johnnywasher) | Enum | Specifies the ability name used by the washer form to clean Johnny. | 1 | `BBTransformZealot` |
 | `JudgementDay` | Integer | When an integer, the turn count or damage for Judgement Day; when an object, defines the weather status. | 3 | `25` |
-| [`KnockbackIfCrit`](../Reference_and_Meta/Miscellaneous.md#object-knockbackifcrit) | Object  | Defines knockback properties applied when a critical hit occurs. | 1 | `{ . . . }` |
+| [`KnockbackIfCrit`](./Engine_StatusAndPassiveKeys.md#object-knockbackifcrit) | Object  | Defines knockback properties applied when a critical hit occurs. | 1 | `{ . . . }` |
 | [`LegacySpawnSavedCatIfExists`](../Reference_and_Meta/Enums.md#enum-legacyspawnsavedcatifexists) | Enum | Specifies the legacy saved cat ID to spawn if it exists in the save data. | 1 | `Legacy_Marshmallow_StolenCatID` |
 | [`LennyCatDies`](./Engine_StatusAndPassiveKeys.md#object-lennycatdies) | Object  | Defines the ability triggered when Lenny the cat dies. | 3 | `{ . . . }` |
 | [`LimitedTileTrail`](../Reference_and_Meta/Enums.md#enum-limitedtiletrail) | Enum | Specifies the type of tile left behind as a trail when the unit moves. | 1 | `FlowerTile` |
@@ -1356,7 +1356,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `LowGravityRangeBoost` | Integer | The increase in attack range under low gravity. | 1 | `2` |
 | `MadnessChanceOnTurnBegin` | Integer | The chance (as a multiplier) to inflict Madness status at the start of each turn in the next battle. | 2 | `2` |
 | `MakeWeaponUnbreakable` | Integer | If true, makes the equipped weapon unbreakable. | 1 | `1` |
-| [`ManaGainRange`](../Reference_and_Meta/Miscellaneous.md#object-managainrange) | Object  | Defines the minimum and maximum mana gained per turn. | 1 | `{ . . . }` |
+| [`ManaGainRange`](./Engine_StatusAndPassiveKeys.md#object-managainrange) | Object  | Defines the minimum and maximum mana gained per turn. | 1 | `{ . . . }` |
 | `ManaStealToHealth` | Integer | The amount of mana stolen and converted to health (negative values may drain health). | 1 | `-1` |
 | `ManglerAttack` | Integer | If true, the attack triggers the Mangler's attack pattern. | 1 | `1` |
 | [`ManglerEnrage`](./Engine_StatusAndPassiveKeys.md#object-manglerenrage) | Object  | Defines the enrage ability of the Mangler monster. | 3 | `{ . . . }` |
@@ -1372,7 +1372,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`MegaDinoDropController`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-megadinodropcontroller) | Object  | An object defining the abilities and stable leg count for the Mega Dino's leg drop sequence. | 1 | `{ . . . }` |
 | [`MegaFart`](./Engine_StatusAndPassiveKeys.md#object-megafart) | Object  | Defines the Mega Fart ability. | 2 | `{ . . . }` |
 | [`MegaGuppy_SummonTheChild`](./Engine_StatusAndPassiveKeys.md#object-megaguppy_summonthechild) | Object  | Defines the ability to summon the child from Mega Guppy. | 3 | `{ . . . }` |
-| [`MergeDamageInstance`](../Reference_and_Meta/Miscellaneous.md#object-mergedamageinstance) | Object  | Specifies parameters to merge multiple damage instances into one, controlling hit animation and instant pop behavior. | 1 | `{ . . . }` |
+| [`MergeDamageInstance`](./Engine_StatusAndPassiveKeys.md#object-mergedamageinstance) | Object  | Specifies parameters to merge multiple damage instances into one, controlling hit animation and instant pop behavior. | 1 | `{ . . . }` |
 | `MeteorShower` | Integer | The chance (as a percentage) for a meteor shower to occur on a given turn. | 4 | `25%` |
 | `MimicMetronome` | Integer | The number of random abilities the Metronome effect selects from this unit's ability pool. | 1 | `1` |
 | `ModelingClayPassive` | Integer | If set to 1, enables the passive that duplicates the equipped item on the unit. | 1 | `1` |
@@ -1395,8 +1395,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `MuteDemonicGlyphDisplay` | Integer | If set to 1, suppresses the display of demonic glyphs on the character. | 1 | `1` |
 | `NextAbilityHeals` | Integer | The number of stacks causing the next ability to heal instead of damage. | 3 | `1` |
 | `NextActionLuckUp` | Integer | The number of stacks increasing luck for the next action. | 2 | `99` |
-| [`NextBasicAttackCritsThisTurn`](../Reference_and_Meta/Miscellaneous.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 3 | `{ . . . }` |
-| [`NextBattleStatusStacks`](../Reference_and_Meta/Miscellaneous.md#object-nextbattlestatusstacks) | Object  | An object specifying status effects and their stacks to be applied at the start of the next battle. Contains a "fights" counter and nested status keys. | 1 | `{ . . . }` |
+| [`NextBasicAttackCritsThisTurn`](./Engine_StatusAndPassiveKeys.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 3 | `{ . . . }` |
+| [`NextBattleStatusStacks`](./Engine_StatusAndPassiveKeys.md#object-nextbattlestatusstacks) | Object  | An object specifying status effects and their stacks to be applied at the start of the next battle. Contains a "fights" counter and nested status keys. | 1 | `{ . . . }` |
 | `NextDamageReduceAndHealAllies` | Integer | The number of stacks reducing next damage and healing nearby allies. | 3 | `1` |
 | `NextTurnDoubleRangedDamage` | Integer | The number of stacks doubling ranged damage on the next turn. | 2 | `1` |
 | [`NoHead`](./Engine_StatusAndPassiveKeys.md#object-nohead) | Object  | An object that replaces the unit's head graphics with a headless cat model and sets the enemy name. | 7 | `{ . . . }` |
@@ -1416,7 +1416,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`Paranoia`](../Reference_and_Meta/Enums.md#enum-paranoia) | Enum | Specifies the type of paranoid melee attack the unit will use instead of their normal attack. | 8 | `ParanoiaBasicMelee` |
 | [`PassiveLevelScaledStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passivelevelscaledstatus) | Object  | An object containing status effects whose values scale with the unit's level, using X as the level variable. | 1 | `{ . . . }` |
 | [`PassiveWhileHasDurability`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passivewhilehasdurability) | Object  | An object containing passives that are active only while the item has remaining durability. | 1 | `{ . . . }` |
-| [`PassiveWhileNotTakingTurn`](../Reference_and_Meta/Miscellaneous.md#object-passivewhilenottakingturn) | Object  | A nested passive object that is active only while the unit is not currently taking its turn. | 1 | `{ . . . }` |
+| [`PassiveWhileNotTakingTurn`](./Engine_StatusAndPassiveKeys.md#object-passivewhilenottakingturn) | Object  | A nested passive object that is active only while the unit is not currently taking its turn. | 1 | `{ . . . }` |
 | [`PassiveWhileShielded`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passivewhileshielded) | Object  | An object containing passives that are active only while the unit has a shield. | 1 | `{ . . . }` |
 | `PercentHeal` | Integer | The percentage of max HP healed when this effect triggers. | 1 | `50` |
 | `PermanentConfusion` | Number | If set to 1, the unit is permanently confused and cannot be cured. | 3 | `1` |
@@ -1427,12 +1427,12 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `PhysicalAttacksMiss` | Integer | If set to 1, all physical attacks against the unit automatically miss. | 1 | `1` |
 | `pickup` | Variable | A variable that marks an object as a pickup item that can be collected on the battlefield. | 21 ||
 | `plant` | Variable | A variable that marks an object as a plantable item on the battlefield. | 10 ||
-| [`PoolMetronome`](../Reference_and_Meta/Miscellaneous.md#object-poolmetronome) | Object  | An object containing a "pool" array of ability names that the Metronome effect can randomly select from. | 1 | `{ . . . }` |
+| [`PoolMetronome`](./Engine_StatusAndPassiveKeys.md#object-poolmetronome) | Object  | An object containing a "pool" array of ability names that the Metronome effect can randomly select from. | 1 | `{ . . . }` |
 | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 2 | `1` |
 | `PreventSpecificInjury` | Enum | Specifies a body part tag (e.g., 'int' for head) that cannot receive injuries. | 1 | `int` |
 | [`QueueUseAbility`](../Reference_and_Meta/Enums.md#enum-queueuseability) | Enum | Specifies the ability ID to be used immediately after the current action resolves. | 1 | `Spider_GoInsane` |
 | `RandomKnockbackDirection` | Integer | The number of random directions the target can be knocked back (e.g., 4 selects from 4 cardinal directions). | 1 | `4` |
-| [`RandomPermanentStatsDistinct`](../Reference_and_Meta/Miscellaneous.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 1 | `{ . . . }` |
+| [`RandomPermanentStatsDistinct`](./Engine_StatusAndPassiveKeys.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 1 | `{ . . . }` |
 | [`RandomWeatherEachFight`](../Reference_and_Meta/Arrays.md#array-randomweathereachfight) | Array | An array of weather types from which one is randomly selected at the start of each battle. | 1 ||
 | `RealTimePressure_OneUnit` | Integer | The amount of real-time pressure (countdown) applied to the unit each turn. | 1 | `5` |
 | [`ReceivedStatusReplacement`](../Reference_and_Meta/Arrays.md#array-receivedstatusreplacement) | Array | An array specifying a status that replaces another status when it would be applied (e.g., Sleep becomes SleepParalysis). | 1 | `[Sleep SleepParalysis]` |
@@ -1476,11 +1476,11 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SchizoIllusionAIModifier` | Integer | If non-zero, modifies the AI behavior for schizo illusions. | 1 | `1` |
 | `SchrodingerDisorder` | Integer | A percentage chance for the unit to be simultaneously alive and dead (Schrödinger's cat) at the start of battle. | 4 | `50%` |
 | `Scleroderma` | Integer | If set to 1, the unit's skin becomes hard, reducing damage but also movement. | 5 | `1` |
-| [`ScrambleLastUsedSpell`](../Reference_and_Meta/Miscellaneous.md#object-scramblelastusedspell) | Object  | An object containing a "permanent" boolean. If true, permanently scrambles (randomizes) the last used spell. | 1 | `{ . . . }` |
+| [`ScrambleLastUsedSpell`](./Engine_StatusAndPassiveKeys.md#object-scramblelastusedspell) | Object  | An object containing a "permanent" boolean. If true, permanently scrambles (randomizes) the last used spell. | 1 | `{ . . . }` |
 | [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 199 | `{ . . . }` |
 | [`SelfDamageWhenDealDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-selfdamagewhendealdamage) | Object  | An object defining the damage the unit takes to itself whenever it deals damage to an enemy. | 1 | `{ . . . }` |
 | [`set_WitchJump`](./Engine_StatusAndPassiveKeys.md#object-set_witchjump) | Object  | An object that configures the unit's witch jump ability (teleport-like movement). | 2 | `{ . . . }` |
-| [`SetAnimationAlts`](../Reference_and_Meta/Miscellaneous.md#object-setanimationalts) | Object  | Specifies alternative animation names for the target's dying and dead states. | 1 | `{ . . . }` |
+| [`SetAnimationAlts`](./Engine_StatusAndPassiveKeys.md#object-setanimationalts) | Object  | Specifies alternative animation names for the target's dying and dead states. | 1 | `{ . . . }` |
 | [`SetFaction`](../Reference_and_Meta/Enums.md#enum-setfaction) | Enum | Specifies the faction the unit belongs to (e.g., 'enemies'). | 1 | `enemies` |
 | `ShadowCrit` | Integer | If non-zero, enables the Shadow Crit mechanic, granting bonus critical hit chance or damage from stealth. | 1 | `1` |
 | [`ShineBuff`](./Engine_StatusAndPassiveKeys.md#object-shinebuff) | Variable | A variable containing graphical settings (movieclip, render mode) for a sparkling visual effect on the unit. | 2 ||
@@ -1494,8 +1494,8 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`SmokeBuff`](./Engine_StatusAndPassiveKeys.md#object-smokebuff) | Variable | Defines a visual particle effect (SmokeBuff) for rendering smoke or fog around the unit. | 2 ||
 | [`Smough`](./Engine_StatusAndPassiveKeys.md#object-smough) | Object  | An object defining the Smough ability or template, likely a melee attack or passive with special properties. | 3 | `{ . . . }` |
 | `Snow` | Integer | The number of snow particle instances or the integer value controlling snow intensity for weather effects. | 17 | `1` |
-| [`Snow`](../Reference_and_Meta/Miscellaneous.md#object-snow) | Float / Object  | The number of snow particle instances or the integer value controlling snow intensity for weather effects. | 17 | `{ . . . }`<br>`1` |
-| [`SolarFlare`](../Reference_and_Meta/Miscellaneous.md#object-solarflare) | Object  | Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn. | 4 | `{ . . . }` |
+| [`Snow`](./Engine_StatusAndPassiveKeys.md#object-snow) | Float / Object  | The number of snow particle instances or the integer value controlling snow intensity for weather effects. | 17 | `{ . . . }`<br>`1` |
+| [`SolarFlare`](./Engine_StatusAndPassiveKeys.md#object-solarflare) | Object  | Defines the Solar Flare weather effect, which applies damage and status effects (burn, blind) to units each turn. | 4 | `{ . . . }` |
 | [`SoundEventOnHit`](../Reference_and_Meta/Enums.md#enum-soundeventonhit) | Enum | Specifies the sound event ID to play on hit (e.g., "Batterup_Connect"). | 1 | `Batterup_Connect` |
 | [`SourceSwapsBackEndOfTurn`](../Reference_and_Meta/Enums.md#enum-sourceswapsbackendofturn) | Enum | Specifies the ability ID to use to swap the source unit back at the end of the turn. | 1 | `ThiefSwapBack` |
 | `SpawnCatCloneOnCorpsePopped` | Integer | The number of cat clones spawned when a corpse is popped (destroyed) by the unit. | 1 | `1` |
@@ -1503,7 +1503,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `spawner` | Variable | A variable identifying the unit or object responsible for spawning other entities or effects. | 1 ||
 | `SpawnerCatDataReference` | Integer | A reference ID pointing to the spawner cat's data, used by minions to link back to their spawner. | 1 | `1` |
 | [`SpawnRandomPickupsOnTaggedUnitKilled`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spawnrandompickupsontaggedunitkilled) | Object  | Defines a pool of random pickups (items) spawned when a unit with a specific tag is killed, with a count range. | 1 | `{ . . . }` |
-| [`SpawnTilePuddleOnBattleStart`](../Reference_and_Meta/Miscellaneous.md#object-spawntilepuddleonbattlestart) | Object  | Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range. | 1 | `{ . . . }` |
+| [`SpawnTilePuddleOnBattleStart`](./Engine_StatusAndPassiveKeys.md#object-spawntilepuddleonbattlestart) | Object  | Defines a puddle of a specific tile type (e.g., OilTile) that is spawned on the battlefield at the start, with a radius range. | 1 | `{ . . . }` |
 | `SpawnWebTrap` | Integer | The number of web traps to spawn on the target tile. | 1 | `1` |
 | [`SpecialBossMultipartInstakill`](../Reference_and_Meta/Enums.md#enum-specialbossmultipartinstakill) | Enum | Specifies the boss ID (e.g., "moonboss") whose multipart instakill mechanic is triggered. | 1 | `moonboss` |
 | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 3 | `1` |
@@ -1514,24 +1514,24 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpreadWater` | Integer | If set to 1, causes the character to spread water onto adjacent tiles. | 1 | `1` |
 | `sprout` | Variable | A variable associated with plant-based growth or spawning mechanics, likely a seed or sprout identifier. | 2 ||
 | `SproutsGrantMovement` | Integer | If set to 1, sprouts on the character grant additional movement (aliases to MovementUp). | 2 | `1` |
-| [`StacyMutant_Brace`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_brace) | Object  | A passive group granting the Brace ability and cosmetic changes. | 2 | `{ . . . }` |
-| [`StacyMutant_Counter`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_counter) | Object  | A passive group granting a counter attack and a bleed effect on basic attacks. | 2 | `{ . . . }` |
-| [`StacyMutant_Damage`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_damage) | Object  | A passive group increasing damage and decreasing max health with cosmetic changes. | 2 | `{ . . . }` |
-| [`StacyMutant_DoubleHead`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_doublehead) | Object  | A passive group granting an extra dispersed turn and cosmetic changes. | 2 | `{ . . . }` |
-| [`StacyMutant_Fire`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_fire) | Object  | A passive group granting fire immunity and a lava shot basic attack. | 2 | `{ . . . }` |
-| [`StacyMutant_Health`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_health) | Object  | A passive group increasing max health, reducing speed, and scaling size. | 2 | `{ . . . }` |
-| [`StacyMutant_Holy`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_holy) | Object  | A passive group granting a divine shield and cosmetic changes. | 2 | `{ . . . }` |
-| [`StacyMutant_Ice`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_ice) | Object  | A passive group granting ice immunity and an ice breath basic attack. | 2 | `{ . . . }` |
-| [`StacyMutant_Lightning`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_lightning) | Object  | A passive group granting electric immunity and a lightning dash basic attack. | 2 | `{ . . . }` |
-| [`StacyMutant_Mirror`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_mirror) | Object  | A passive group granting projectile reflection and random magic missile each turn. | 2 | `{ . . . }` |
-| [`StacyMutant_Speed`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_speed) | Object  | A passive group increasing speed, reducing damage, and scaling size. | 2 | `{ . . . }` |
-| [`StacyMutant_Thorns`](../Reference_and_Meta/Miscellaneous.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 2 | `{ . . . }` |
+| [`StacyMutant_Brace`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_brace) | Object  | A passive group granting the Brace ability and cosmetic changes. | 2 | `{ . . . }` |
+| [`StacyMutant_Counter`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_counter) | Object  | A passive group granting a counter attack and a bleed effect on basic attacks. | 2 | `{ . . . }` |
+| [`StacyMutant_Damage`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_damage) | Object  | A passive group increasing damage and decreasing max health with cosmetic changes. | 2 | `{ . . . }` |
+| [`StacyMutant_DoubleHead`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_doublehead) | Object  | A passive group granting an extra dispersed turn and cosmetic changes. | 2 | `{ . . . }` |
+| [`StacyMutant_Fire`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_fire) | Object  | A passive group granting fire immunity and a lava shot basic attack. | 2 | `{ . . . }` |
+| [`StacyMutant_Health`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_health) | Object  | A passive group increasing max health, reducing speed, and scaling size. | 2 | `{ . . . }` |
+| [`StacyMutant_Holy`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_holy) | Object  | A passive group granting a divine shield and cosmetic changes. | 2 | `{ . . . }` |
+| [`StacyMutant_Ice`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_ice) | Object  | A passive group granting ice immunity and an ice breath basic attack. | 2 | `{ . . . }` |
+| [`StacyMutant_Lightning`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_lightning) | Object  | A passive group granting electric immunity and a lightning dash basic attack. | 2 | `{ . . . }` |
+| [`StacyMutant_Mirror`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_mirror) | Object  | A passive group granting projectile reflection and random magic missile each turn. | 2 | `{ . . . }` |
+| [`StacyMutant_Speed`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_speed) | Object  | A passive group increasing speed, reducing damage, and scaling size. | 2 | `{ . . . }` |
+| [`StacyMutant_Thorns`](./Engine_StatusAndPassiveKeys.md#object-stacymutant_thorns) | Object  | A passive group granting thorns damage and cosmetic changes. | 2 | `{ . . . }` |
 | `StartDead` | Integer | The percentage chance that the character starts the battle already dead. | 1 | `100%` |
 | `StatBounty` | Integer | The number of stacks of the StatBounty status effect. | 2 | `1` |
 | [`StatDependentPassive`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statdependentpassive) | Object  | An object containing formulas that dynamically modify passive effects based on the unit's stats (e.g., str, dex, int). | 1 | `{ . . . }` |
 | [`StatusAdjacentOnTheirTurnBegin`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusadjacentontheirturnbegin) | Object  | Defines a status effect applied to adjacent units when their turn begins, such as forcing them to move away. | 1 | `{ . . . }` |
 | [`StatusAdjacentOnTheirTurnEnd`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusadjacentontheirturnend) | Object  | Defines a status effect applied to adjacent units when their turn ends, such as forcing them to move away. | 1 | `{ . . . }` |
-| [`StatusAfterXStacks`](../Reference_and_Meta/Miscellaneous.md#object-statusafterxstacks) | Object  | Defines a condition that triggers a status effect when a specified stack key reaches a threshold, optionally expiring at turn end. | 2 | `{ . . . }` |
+| [`StatusAfterXStacks`](./Engine_StatusAndPassiveKeys.md#object-statusafterxstacks) | Object  | Defines a condition that triggers a status effect when a specified stack key reaches a threshold, optionally expiring at turn end. | 2 | `{ . . . }` |
 | [`StatusAlliesEachTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusallieseachturn) | Object  | Defines a status effect applied to all allies each turn, with an optional exclusion of the owner and conditional checks. | 2 | `{ . . . }` |
 | [`StatusEachTurnBeginIfHasStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statuseachturnbeginifhasstatus) | Object  | Defines a status effect to apply (and optionally consume) at the start of each turn if the character already has a specific status, with a specified animation. | 1 | `{ . . . }` |
 | [`StatusEachTurnEndIfEnabledAtStartOfTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statuseachturnendifenabledatstartofturn) | Object  | Defines an ability to force-use at the end of each turn if the character was in the specified form at the start of the turn. | 1 | `{ . . . }` |
@@ -1555,7 +1555,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `StrictLimitDamage` | Integer | The amount of damage strict limit applies, capping incoming damage to a fixed value per hit. | 1 | `1` |
 | `StripKnockback` | Integer | If non-zero, removes all knockback effects from the unit's attacks or abilities. | 1 | `1` |
 | [`SupportDieInsteadOfRun`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-supportdieinsteadofrun) | Object  | Configures alternative dying and dead animations for support units that die instead of fleeing. | 1 | `{ . . . }` |
-| [`SwapWeapon`](../Reference_and_Meta/Miscellaneous.md#object-swapweapon) | Object  | An object containing a "pool" array of weapon names to randomly swap to. | 1 | `{ . . . }` |
+| [`SwapWeapon`](./Engine_StatusAndPassiveKeys.md#object-swapweapon) | Object  | An object containing a "pool" array of weapon names to randomly swap to. | 1 | `{ . . . }` |
 | [`SwimmingFormChange`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-swimmingformchange) | Object  | Defines the form names to switch to when in water and when exiting water. | 1 | `{ . . . }` |
 | [`SyncFormsWithBuddy`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-syncformswithbuddy) | Object  | Specifies the form to revert to if the character has no buddy, ensuring form synchronization. | 1 | `{ . . . }` |
 | `T2CopyCatInternal` | Variable | An internal variable used by the T2 Copy Cat passive to track clone spawning state. | 2 ||
@@ -1614,7 +1614,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`ToxPuff`](./Engine_StatusAndPassiveKeys.md#object-toxpuff) | Object  | Defines a self-buff ability that creates a toxic puff visual effect around the unit. | 2 | `{ . . . }` |
 | [`TrackAmountKilledByPlayer`](../Reference_and_Meta/Enums.md#enum-trackamountkilledbyplayer) | Enum | Specifies the name of the counter used to track how many of this type the player has killed. | 1 | `BonusBirdsKilled` |
 | [`TransformBasicMove`](../Reference_and_Meta/Enums.md#enum-transformbasicmove) | Enum | Specifies the name of the basic move to transform into. | 1 | `BasicDashAttackMove_NoKnockback` |
-| [`TransformEquipment`](../Reference_and_Meta/Miscellaneous.md#object-transformequipment) | Object  | Defines an equipment transformation from one item to another, with 'from' and 'to' sub-keys. | 2 | `{ . . . }` |
+| [`TransformEquipment`](./Engine_StatusAndPassiveKeys.md#object-transformequipment) | Object  | Defines an equipment transformation from one item to another, with 'from' and 'to' sub-keys. | 2 | `{ . . . }` |
 | [`TransformNow`](../Reference_and_Meta/Enums.md#enum-transformnow) | Enum | Specifies the name of the form to immediately transform into. | 1 | `Hitler` |
 | [`TransformOnStatusThreshold`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-transformonstatusthreshold) | Object  | Defines the status effect, the stack threshold at which to transform, and the object to transform into. | 1 | `{ . . . }` |
 | `Trapper_Status` | Integer | The number of trap-related status stacks applied. | 1 | `1` |
@@ -1644,18 +1644,18 @@ This document lists every confirmed Status and Passive ID found across all game 
 | [`UseAbility_Madness`](../Reference_and_Meta/Enums.md#enum-useability_madness) | Enum | Determines which ability type (e.g., weapon) is forcibly used when Madness triggers. | 1 | `weapon` |
 | [`UseAbilityWhenOutOfStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-useabilitywhenoutofstatus) | Object  | Defines an ability to execute when the unit no longer has a specified status. | 1 | `{ . . . }` |
 | [`UseAbilityWhenShieldDepleted`](../Reference_and_Meta/Enums.md#enum-useabilitywhenshielddepleted) | Enum | The ability to use when the unit's shield is fully depleted. | 1 | `T3Pebbles_PrimeBoulderDrop` |
-| [`UseMoveAbilityWithAI`](../Reference_and_Meta/Miscellaneous.md#object-usemoveabilitywithai) | Object  | Defines a move ability to execute with AI-controlled movement weights. | 1 | `{ . . . }` |
+| [`UseMoveAbilityWithAI`](./Engine_StatusAndPassiveKeys.md#object-usemoveabilitywithai) | Object  | Defines a move ability to execute with AI-controlled movement weights. | 1 | `{ . . . }` |
 | `UseRandomSpell_Madness` | Integer | The number of random spells cast when Madness triggers. | 1 | `1` |
 | `VaporizeDice` | Integer | The number of dice vaporized. | 1 | `1` |
-| [`VisualCountDownThenApplyStatus`](../Reference_and_Meta/Miscellaneous.md#object-visualcountdownthenapplystatus) | Object  | Contains a visual countdown sequence that culminates in applying a status effect, optionally forcing an ability use. | 1 | `{ . . . }` |
-| [`WaggleClone`](../Reference_and_Meta/Miscellaneous.md#object-waggleclone) | Object  | Defines a waggle clone ability with health thresholds and object sizes. | 4 | `{ . . . }` |
+| [`VisualCountDownThenApplyStatus`](./Engine_StatusAndPassiveKeys.md#object-visualcountdownthenapplystatus) | Object  | Contains a visual countdown sequence that culminates in applying a status effect, optionally forcing an ability use. | 1 | `{ . . . }` |
+| [`WaggleClone`](./Engine_StatusAndPassiveKeys.md#object-waggleclone) | Object  | Defines a waggle clone ability with health thresholds and object sizes. | 4 | `{ . . . }` |
 | `Wall` | Integer | If 1, the unit is treated as an impassable wall. | 5 | `1` |
 | `Wet` | Integer | The number of stacks of the Wet status effect applied. | 2 | `1` |
 | [`WhitelistPickupType`](../Reference_and_Meta/Enums.md#enum-whitelistpickuptype) | Enum | Specifies the type of pickup that this unit is allowed to collect. | 1 | `food` |
 | `WideBackstab` | Integer | The additional width for backstab attacks, in tiles. | 1 | `1` |
 | [`Wind`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-wind) | Object  | Defines the properties for the Wind element, such as knockback amount. | 75 | `{ . . . }` |
 | `Windy` | Integer | The number representing the Windy weather intensity or whether it is active. | 12 | `1`<br>`10` |
-| [`Windy`](../Reference_and_Meta/Miscellaneous.md#object-windy) | Float / Object  | The number representing the Windy weather intensity or whether it is active. | 12 | `{ . . . }`<br>`1`<br>`10` |
+| [`Windy`](./Engine_StatusAndPassiveKeys.md#object-windy) | Float / Object  | The number representing the Windy weather intensity or whether it is active. | 12 | `{ . . . }`<br>`1`<br>`10` |
 | `WispDodge` | Integer | If 1, the unit gains the Wisp's dodge ability. | 1 | `1` |
 | `WobblyCat` | Integer | The chance (as a percentage) or stack count for the WobblyCat disorder. | 5 | `25%` |
 | `XIsConsumedCharacterMaxHP` | Integer | Specifies the multiplier used to set X to the maximum HP of the consumed character. | 1 | `3` |
@@ -1676,14 +1676,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `ChampionUpgradeNextMinion` | Integer | The number of champion upgrades applied to the next spawned minion. | 2 | `1` |
 | [`CockroachSwarm`](./Engine_StatusAndPassiveKeys.md#object-cockroachswarm) | Float / Object  | If true, the unit spawns as a Cockroach Swarm, with its specific mechanics and effects. | 3 | `{ . . . }`<br>`1` |
 | `CollideWithConsumed` | String | Damage formula for collision with consumed objects, e.g., '4+bonus_melee_damage'. | 3 | `1+bonus_melee_damage`<br>`4+bonus_melee_damage`<br>`5+bonus_melee_damage` |
-| [`CopySpells`](../Reference_and_Meta/Miscellaneous.md#object-copyspells) | Integer / Object  | The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`. | 2 | `{ . . . }`<br>`1` |
+| [`CopySpells`](./Engine_StatusAndPassiveKeys.md#object-copyspells) | Integer / Object  | The number of spells copied from the target, or an object specifying `stacks` and whether the copy is `upgraded`. | 2 | `{ . . . }`<br>`1` |
 | [`Counterspell`](./Engine_StatusAndPassiveKeys.md#object-counterspell) | Integer / Object  | If non-zero, negates the next incoming enemy spell and triggers the configured counterspell effects. | 6 | `{ . . . }`<br>`1` |
-| [`DelayCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
-| [`DelayCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
+| [`DelayCastAbility`](./Engine_StatusAndPassiveKeys.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
+| [`DelayCastAbility`](./Engine_StatusAndPassiveKeys.md#object-delaycastability) | Enum / Object  | Specifies the name of an ability to cast after a delay. | 2 | `{ . . . }`<br>`HitlerNuke` |
 | `DoubleCast` | Integer | The number of double-cast stacks, allowing a spell to be cast twice. | 3 | `1` |
 | `DoubleCastSpell` | Integer | The number of times the next spell cast is doubled, or a template with name and tooltip. | 6 | `1`<br>`2` |
 | `EliteUpgradeNextMinion` | Integer | The number of elite upgrades applied to the next spawned minion. | 2 | `1` |
-| [`FactionUprising`](../Reference_and_Meta/Miscellaneous.md#object-factionuprising) | Enum / Object  | Specifies which faction triggers a global uprising event, adding allied units of that faction. | 4 | `{ . . . }`<br>`alien`<br>`ghost`<br>`robot` |
+| [`FactionUprising`](./Engine_StatusAndPassiveKeys.md#object-factionuprising) | Enum / Object  | Specifies which faction triggers a global uprising event, adding allied units of that faction. | 4 | `{ . . . }`<br>`alien`<br>`ghost`<br>`robot` |
 | [`FireArmor`](./Engine_StatusAndPassiveKeys.md#object-firearmor) | Integer / Object  | The number of Fire Armor stacks providing damage reflection. | 6 | `{ . . . }`<br>`1` |
 | [`FireArmor2`](./Engine_StatusAndPassiveKeys.md#object-firearmor2) | Integer / Object  | The number of Fire Armor2 stacks (likely a variant). | 4 | `{ . . . }`<br>`1` |
 | [`FireflySwarm`](./Engine_StatusAndPassiveKeys.md#object-fireflyswarm) | Float / Object  | The number of fireflies in the swarm effect. | 4 | `{ . . . }`<br>`2` |
@@ -1704,14 +1704,14 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `NextAbilityHeals` | Integer | The number of stacks causing the next ability to heal instead of damage. | 3 | `1` |
 | `NextActionLuckUp` | Integer | The number of stacks increasing luck for the next action. | 2 | `99` |
 | `NextAttackBonusRange` | Integer | The added range for the unit's next basic attack. | 4 | `1`<br>`3`<br>`5` |
-| [`NextAttackSpecialCrit`](../Reference_and_Meta/Miscellaneous.md#object-nextattackspecialcrit) | Integer / Object  | The number of charges for a special crit on the next attack, or an object defining its bonus properties. | 2 | `{ . . . }`<br>`1` |
-| [`NextBasicAttackCritsThisTurn`](../Reference_and_Meta/Miscellaneous.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 3 | `{ . . . }` |
+| [`NextAttackSpecialCrit`](./Engine_StatusAndPassiveKeys.md#object-nextattackspecialcrit) | Integer / Object  | The number of charges for a special crit on the next attack, or an object defining its bonus properties. | 2 | `{ . . . }`<br>`1` |
+| [`NextBasicAttackCritsThisTurn`](./Engine_StatusAndPassiveKeys.md#object-nextbasicattackcritsthisturn) | Object  | An object or number configuring the next basic attack to be a critical hit this turn. An object may contain stack, cant_miss, or piercing sub-keys. | 3 | `{ . . . }` |
 | `NextDamageReduceAndHealAllies` | Integer | The number of stacks reducing next damage and healing nearby allies. | 3 | `1` |
 | `NextTurnDoubleRangedDamage` | Integer | The number of stacks doubling ranged damage on the next turn. | 2 | `1` |
 | `OverrideKnockbackDamage` | Enum / Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 17 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
 | `OverrideKnockbackDamage` | Enum / Equation | A formula or flat value that sets the damage dealt when knockback occurs, overriding default calculations. | 17 | `"max(5+bonus_melee_ability_damage, 1)"`<br>`0`<br>`2` |
 | `PermanentImmobile` | Integer | The permanent amount of immobility stacks applied. | 3 | `1` |
-| [`RandomDistanceDisplace`](../Reference_and_Meta/Miscellaneous.md#object-randomdistancedisplace) | Integer / Object  | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 4 | `{ . . . }`<br>`20` |
+| [`RandomDistanceDisplace`](./Engine_StatusAndPassiveKeys.md#object-randomdistancedisplace) | Integer / Object  | The number of stacks of a random distance displacement effect, or an object with stacks, min_dist, and chance. | 4 | `{ . . . }`<br>`20` |
 | `ReduceManaCostExcludeBrainstorm` | Integer | The number of stacks reducing mana cost, excluding Brainstorm. | 2 | `1` |
 | [`ScatterHeldCoin`](../Reference_and_Meta/Arrays.md#array-scatterheldcoin) | Array / Integer  | The number of coins scattered, with an optional probability as a second element. | 6 | `1`<br>`[1 .3]`<br>`[1 .5]` |
 | [`SelfStun`](../Reference_and_Meta/Arrays.md#array-selfstun) | Array / Integer  | The number of stacks of self-stun applied, with an optional probability as a second element. | 2 | `1`<br>`[1 .5]` |
@@ -1720,7 +1720,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `SpellShield` | Integer | The number of stacks of SpellShield, which blocks incoming spells. | 3 | `1` |
 | `StatBounty` | Integer | The number of stacks of the StatBounty status effect. | 2 | `1` |
 | `Taunting` | Integer | The number of stacks of Taunting, which forces enemies to target the unit. | 3 | `1` |
-| [`TeamCastAbility`](../Reference_and_Meta/Miscellaneous.md#object-teamcastability) | Enum / Object  | Specifies the ability name for the team to cast, with optional tag restriction and same orientation. | 6 | `{ . . . }`<br>`Huddle_Impl`<br>`Spin`<br>`TeamFlex_Impl` |
+| [`TeamCastAbility`](./Engine_StatusAndPassiveKeys.md#object-teamcastability) | Enum / Object  | Specifies the ability name for the team to cast, with optional tag restriction and same orientation. | 6 | `{ . . . }`<br>`Huddle_Impl`<br>`Spin`<br>`TeamFlex_Impl` |
 | `TempBackstab` | Integer | The amount of temporary backstab bonus, typically as a percentage. | 2 | `75` |
 | `TempBonusKnockback` | Integer | The number of stacks of temporary bonus knockback distance. | 2 | `1` |
 | `TempBonusKnockbackDamage` | Integer | The number of stacks of temporary bonus knockback damage. | 2 | `1` |
@@ -1740,7 +1740,7 @@ This document lists every confirmed Status and Passive ID found across all game 
 | `TurnControlDelay` | Float | Specifies the delay in seconds before the unit regains turn control. | 1 | `.25` |
 | [`VisualFlySwarm`](./Engine_StatusAndPassiveKeys.md#object-visualflyswarm) | Float / Object  | If non-zero, enables the visual fly swarm effect on the unit. | 3 | `{ . . . }`<br>`1` |
 
-| [`AddDamageToElementDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 9 | `{ . . . }` | `AddLeechesStatus` | Integer | The number of stacks of Leech status applied to the source, healing when dealing damage. | 0 | `1` | [`AddStatusesIfPersistentWeatherElement`](Miscellaneous.md#object-addstatusesifpersistentweatherelement) | Object | Specifies statuses applied if the persistent weather matches the given elements. | 0 | `{ . . . }` | [`AddStatusesToReceivedElementalDamage`](Miscellaneous.md#object-addstatusestoreceivedelementaldamage) | Object | An object defining statuses applied to the unit when it takes elemental damage of the specified types. | 0 | `{ . . . }` | [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 | `{ . . . }` | [`AddStatusToElementDamage`](Items_and_Equipment.md#object-addstatustoelementdamage) | Object | An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply. | 4 | `{ . . . }` | [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 0 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 0 | `-1`<br>`-2`<br>`1` | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` | [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` | `BigSplashDamage` | Integer | The additional tile radius of the splash damage effect applied by an attack. | 0 | `2` | `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` | `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` | [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` | `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 0 | `100`<br>`25`<br>`50` | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 0 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 0 | `1` | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` | `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 0 | `2` | `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 0 | `2` | `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 0 | `2` | `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 0 | `2` | `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 0 | `2` | `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 0 | `2` | `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 0 | `2` | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 0 | `1` | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 0 | `1` | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 0 | `100`<br>`15`<br>`20` | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 1 | `{ . . . }` | `Charge` | Integer | The number of charge stacks applied. | 0 | `1`<br>`2`<br>`3` | `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` | [`Cleanse`](#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` | `CompleteItemQuest` | Enum | Specifies the item quest ID to mark as complete on kill. | 0 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` | [`Conditional_HasStatus`](./Engine_LogicKeys.md#conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 0 | `{ . . . }` | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` | `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 0 | `1` | `CrackMoonHead` | Integer | If set, cracks the MoonHead's head, triggering its death sequence. | 0 | `1` | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 0 | `1`<br>`3`<br>`5` | `DeleteObject` | Integer | If set, deletes the target object from the map. | 0 | `1` | `DestroyTrinket` | Integer | The number of trinkets destroyed. | 0 | `1` | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 0 | `{ . . . }`<br>`1`<br>`6` | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 0 | `1` | `DisableWeapon` | Integer | If set, disables the source's weapon, preventing its use. | 0 | `1` | `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 0 | `true` | `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 0 | `1` | `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 0 | `1` | [`DistanceBonusDamage`](#object-distancebonusdamage) | Object | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 0 | `{ . . . }` | `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 0 | `1`<br>`2`<br>`4` | `DontHealEnemies` | Integer | If true, the healing effect does not affect enemy units. | 0 | `1` | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 0 | `1`<br>`2`<br>`3` | `EmptyMana` | Integer | If non-zero, sets the unit's mana to empty when applied. | 0 | `1` | `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 0 | `5` | `ExplodeCharacter` | Integer | The radius (in tiles) of an explosion centered on the character. | 0 | `5` | `ExplodeCharacter_NoDie` | Integer | The damage dealt when a character explodes without dying. | 0 | `1`<br>`5` | `ExplodeCharacter_Party` | Integer | The radius (in tiles) of an explosion centered on the character that also damages party members. | 0 | `5` | `ExplodeCharacter_PartyBoss` | Integer | The damage dealt to the party boss when it explodes. | 0 | `5` | `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 0 | `5`<br>`9` | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | The damage dealt when a petrified RockCrusher explodes. | 0 | `5`<br>`9` | `FaceAway` | Integer | If set, forces the target to face away from the source. | 0 | `1` | `FaceCamera` | Integer | If non-zero, forces the character to rotate and face the camera. | 0 | `1` | `FactionConversion` | Integer | Converts the target to the caster's faction. | 0 | `1` | `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`10`<br>`2` | `Fights` | Number | The number of fights this status or effect persists for. | 4 | `1`<br>`3`<br>`99` | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 0 | `1`<br>`[1 .10]`<br>`[1 .25]` | `FlatAIBonus` | Integer | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 0 | `-999999`<br>`100`<br>`999999` | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 0 | `1`<br>`10`<br>`2` | `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 0 | `1` | `ForceImmediateMove` | Integer | If non-zero, forces the character to move instantly without waiting for normal action order. | 0 | `1` | `ForceMoveAway` | Integer | The distance to force the target away from the source. | 0 | `1` | `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 0 | `1` | `ForceUseAbility_NonStack` | Enum | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 0 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` | [`ForceUseAbilityOnTarget`](#object-forceuseabilityontarget) | Object | Defines a chance to force the unit to use a specified ability on the target. | 0 | `{ . . . }` | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 0 | `0`<br>`1` | `GainDisorder` | Enum | Specifies the name of the disorder gained. | 0 | `Chungus`<br>`Psychosis` | `GainDisorderFromPool_PostCast` | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 0 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` | `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 0 | `1`<br>`10`<br>`100` | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 0 | `1` | `HealthGain` | Integer | The amount of health restored to the source. | 0 | `1`<br>`10`<br>`2` | `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 0 | `1` | [`ImmediateUseAbility`](#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 0 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` | `ImmediateUseAbility_Instant` | Enum | Specifies the name of an ability to use instantly as a passive effect. | 0 | `head_CrownOfHorns` | `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` | `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 0 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` | `InnateElement` | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 8 | `Earth`<br>`Electric`<br>`Fire` | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 0 | `25`<br>`50`<br>`999` | [`KnockbackIfCrit`](#object-knockbackifcrit) | Object | Defines knockback properties applied when a critical hit occurs. | 0 | `{ . . . }` | `KnockOutClone` | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 0 | `PlayerCat_MiniMiniMe` | `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 0 | `10+bonus_melee_ability_damage` | `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 0 | `1` | `LeaveBehindRockOnKnockback` | Integer | If non-zero, leaves behind a rock on each tile the target is knocked through. | 0 | `1` | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 0 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`Marked`](#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`3`<br>`5` | `NonLethal` | Integer | If set to 1, damage dealt by the unit cannot kill enemies; it leaves them at 1 HP. | 0 | `1` | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 0 | `-10`<br>`0`<br>`1` | [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 0 | `1` | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 0 | `1`<br>`2` | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 0 | `1` | `PurgeAll` | Integer | If non-zero, removes all temporary status effects (buffs, debuffs) from the target. | 0 | `1` | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 0 | `25` | `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 0 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` | `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 0 | `{ . . . }` | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 0 | `1` | `RefreshMovePoints` | Integer | The amount of movement points restored to the source. | 0 | `1` | `RefreshWeaponAbility` | Integer | The number of times the weapon's ability is refreshed. | 0 | `1` | `RemoteFlatLeech` | Integer | The flat amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoteLeech` | Integer | The amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 0 | `.5`<br>`4` | `RemoveGlobalModifiers` | Array | List of global modifier names to remove upon death. | 0 | `[BloodRain]` | `RemoveItem` | Enum | Specifies the item ID to remove from the source on kill. | 0 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 0 | `1` | `RemoveMovePoints` | Integer | The number of move points to remove from the target, preventing them from moving. | 0 | `1` | `RemoveStatus` | Enum | The name of the status effect to remove from the source. | 0 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` | [`RemoveStatusStacks`](Abilities_and_Spells.md#object-removestatusstacks) | Object | An object specifying a status name and the number of stacks to remove from the target. | 0 | `{ . . . }` | `RemoveTurnsThisRound` | Integer | The number of turns to remove from the target's turn order this round. | 0 | `1` | `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` | [`Revive`](#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` | `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 0 | `-999999`<br>`1`<br>`2` | `ScatterRandomPickups` | Integer | The number of random pickups scattered around the target's location. | 0 | `2`<br>`5` | `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 0 | `1`<br>`100%`<br>`50%` | [`SetItemAux`](#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 0 | `{ . . . }` | `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 0 | `0` | `SetShield` | Integer | Sets the target's shield value to a specific flat amount. | 0 | `0`<br>`88` | `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`ShowFakeDamage`](Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 0 | `{ . . . }` | `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 0 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` | [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 0 | `1` | `SpawnBearTrapIfHitKills` | Integer | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 0 | `1` | `SpawnBearTrapOnMiss` | Integer | The number of bear traps to spawn on the tile adjacent to the target when the unit misses an attack. | 0 | `1` | `SpawnFlames` | `Array` | An array containing the number of flame tiles to spawn and the chance per tile. | 0 | `[1, .20+.1*level]`<br>`[1, .20]` | `SpawnThingIfHitKills` | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 0 | `Bait`<br>`BigFood`<br>`BiggestFood` | `SpecificInjury` | Enum | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 0 | `int`<br>`spd`<br>`str` | `SpeculativeMoveSelfCorpseOffMap` | Integer | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 0 | `1` | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 0 | `1` | `StackingSandstorm` | Integer | If non-zero, enables the stacking sandstorm mechanic which increases damage per stack. | 0 | `1` | `StanceSwitchToMelee` | Integer | If set, switches the source to melee stance. | 0 | `1` | `StanceSwitchToRanged` | Integer | If set, switches the source to ranged stance. | 0 | `1` | `status` | Enum | Specifies the status effect to apply in a Temporary object. | 0 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` | [`StatusEachRoundEnd`](Cat_Mutations.md#object-statuseachroundend) | Object | An object listing status effects applied to the unit at the end of each round. | 2 | `{ . . . }` | `StatusImmunity` | Array / Enum | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` | [`StatusRandomEnemiesOnBattleStart`](Events_and_Encounters.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 0 | `{ . . . }` | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 0 | `"max(int, 0)"`<br>`-1`<br>`-2` | `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` | `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 0 | `1` | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 0 | `1` | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 0 | `2`<br>`X` | `TempLuckUp` | Integer | The amount of temporary luck increase. | 0 | `2`<br>`99` | [`Temporary`](Abilities_and_Spells.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 0 | `{ . . . }` | [`TempPassiveUntilSettled`](Characters_and_Bosses.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 0 | `{ . . . }` | [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 0 | `{ . . . }` | `TempStrengthUp` | Equation | The number of stacks of temporary Strength Up applied to the unit. | 0 | `1`<br>`2`<br>`X` | `TempTrampleUntilSettled` | Integer | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 0 | `3` | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` | `UseAbility_Madness` | Enum | Determines which ability type (e.g., weapon) is forcibly used when Madness triggers. | 0 | `weapon` | `UseAbility_NonStack` | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 0 | `1`<br>`20` | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 0 | `1` | `VaporizeCorpseFlipAdvantage` | `Array` | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 0 | `[1 .33]` | `VaporizeInanimate` | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 0 | `1` | `VisualFX` | Enum | Specifies the name of the visual effect to play. | 0 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` | [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `WeaponAuxMultiplier` | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 0 | `.5`
+| [`AddDamageToElementDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 9 | `{ . . . }` | `AddLeechesStatus` | Integer | The number of stacks of Leech status applied to the source, healing when dealing damage. | 0 | `1` | [`AddStatusesIfPersistentWeatherElement`](Miscellaneous.md#object-addstatusesifpersistentweatherelement) | Object | Specifies statuses applied if the persistent weather matches the given elements. | 0 | `{ . . . }` | [`AddStatusesToReceivedElementalDamage`](Miscellaneous.md#object-addstatusestoreceivedelementaldamage) | Object | An object defining statuses applied to the unit when it takes elemental damage of the specified types. | 0 | `{ . . . }` | [`AddStatusToBasicAttack`](Abilities_and_Spells.md#object-addstatustobasicattack) | Object | Contains status effects to add to the basic attack. | 178 | `{ . . . }` | [`AddStatusToElementDamage`](Items_and_Equipment.md#object-addstatustoelementdamage) | Object | An object that applies a specific status effect when dealing damage of a specified element. Contains sub-keys for the element and the status to apply. | 4 | `{ . . . }` | [`AddStatusToTrampleDamage`](Characters_and_Bosses.md#object-addstatustotrampledamage) | Object | An object whose nested keys define statuses applied to trample damage. | 2 | `{ . . . }` | `AddWeaponAux` | Integer / String | The amount or expression to add to the source's weapon auxiliary stat. | 0 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` | `AllStatsUp` | Enum / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 0 | `-1`<br>`-2`<br>`1` | `AlphaCat` | Integer | The number of AlphaCat stacks applied to the source on kill. | 2 | `1` | [`ApplyPassives`](Abilities_and_Spells.md#object-applypassives) | Object | Specifies the passives or status effects to apply to the unit. | 0 | `{ . . . }` | `BigSplashDamage` | Integer | The additional tile radius of the splash damage effect applied by an attack. | 0 | `2` | `Bleed` | Array / Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 9 | `1`<br>`10`<br>`2` | `Blind` | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 6 | `-1`<br>`1`<br>`2` | [`BloodRain`](Engine_GlobalModifierKeys.md#object-bloodrain) | Integer / Object | If non-zero, enables the blood rain visual effect. | 2 | `{ . . . }`<br>`1` | `BonusCritChance` | Integer | The flat percentage increase to critical hit chance. | 0 | `100`<br>`25`<br>`50` | `BonusDamage` | Enum / Integer | The amount of flat bonus damage added (negative values reduce damage). | 0 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` | `BonusDamageBasedOnDistance` | Integer | The flat bonus damage added per tile of distance between the source and target. | 0 | `1` | `BonusKnockbackDamage` | Integer | The extra damage dealt per tile of knockback. | 0 | `2`<br>`3`<br>`5` | `BrittleCharismaUp` | Integer | The number of stacks of temporary Charisma gained on kill. | 0 | `2` | `BrittleConstitutionUp` | Integer | The number of stacks of temporary Constitution gained on kill. | 0 | `2` | `BrittleDexterityUp` | Integer | The number of stacks of temporary Dexterity gained on kill. | 0 | `2` | `BrittleIntelligenceUp` | Integer | The number of stacks of temporary Intelligence gained on kill. | 0 | `2` | `BrittleLuckUp` | Integer | The number of stacks of temporary Luck gained on kill. | 0 | `2` | `BrittleSpeedUp` | Integer | The number of stacks of temporary Speed gained on kill. | 0 | `2` | `BrittleStrengthUp` | Integer | The number of stacks of temporary Strength gained on kill. | 0 | `2` | [`Bruise`](Passives_and_Statuses.md#object-bruise) | Array / Integer / Object | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 8 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `Burn` | Array / Enum / Integer | The amount of Burn applied, either as a fixed number or a formula string. | 1 | `1`<br>`10`<br>`2` | `CapDamage` | Integer | The maximum amount of damage dealt, capping the total after all modifiers are applied. | 0 | `1` | `CaptureFamiliar` | Integer | The number of times to attempt to capture the target as a familiar. | 0 | `1` | `ChanceToBreak` | Integer | Specifies the percentage chance that the item breaks on use. | 0 | `100`<br>`15`<br>`20` | [`CharacterTypeGainsStatusAtBattleStart`](Engine_LogicKeys.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 1 | `{ . . . }` | `Charge` | Integer | The number of charge stacks applied. | 0 | `1`<br>`2`<br>`3` | `Charmed` | Array / Enum / Integer | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 0 | `1`<br>`2`<br>`3` | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` | `CompleteItemQuest` | Enum | Specifies the item quest ID to mark as complete on kill. | 0 | `BlackShard`<br>`Nuke`<br>`ScaldingOrb` | [`Conditional_HasStatus`](./Engine_LogicKeys.md#conditional_hasstatus) | Object | Contains an inner effect block that only executes if the target has the specified status effect. | 0 | `{ . . . }` | [`Confusion`](Passives_and_Statuses.md#object-confusion) | Array / Integer / Object | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 6 | `{ . . . }`<br>`1`<br>`10`<br>`2` | `ConjureRandomAbilityFromCat` | Integer | The number of random abilities created or given to the cat unit from a pool of cat-themed abilities. | 0 | `1` | `CrackMoonHead` | Integer | If set, cracks the MoonHead's head, triggering its death sequence. | 0 | `1` | `CurrentWeaponDamageUp` | Integer | The amount of temporary damage increase to the current weapon. | 0 | `1`<br>`3`<br>`5` | `DeleteObject` | Integer | If set, deletes the target object from the map. | 0 | `1` | `DestroyTrinket` | Integer | The number of trinkets destroyed. | 0 | `1` | [`Die`](Characters_and_Bosses.md#object-die) | Integer / Object | If set, kills the target immediately. | 0 | `{ . . . }`<br>`1`<br>`6` | `DieViolently` | Integer | If true, causes the target to die with a violent, explosive visual effect. | 0 | `1` | `DisableWeapon` | Integer | If set, disables the source's weapon, preventing its use. | 0 | `1` | `disallow_modifications` | Boolean | If true, the damage instance cannot be modified by external effects (e.g., passives, statuses). | 0 | `true` | `DisplaceToAbilityTarget` | Integer | If set, displaces the source to the ability's target location. | 0 | `1` | `DisplaceTowardsSource` | Integer | If set, displaces the target towards the source of the effect. | 0 | `1` | [`DistanceBonusDamage`](./Engine_StatusAndPassiveKeys.md#object-distancebonusdamage) | Object | An object that adds bonus damage based on the distance from the target, with sub-keys for stacks and minimum range. | 0 | `{ . . . }` | `DivineShield` | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 0 | `1`<br>`2`<br>`4` | `DontHealEnemies` | Integer | If true, the healing effect does not affect enemy units. | 0 | `1` | `Doomed` | Integer | The number of stacks of Doomed applied, causing the target to die after a set number of turns. | 0 | `1`<br>`2`<br>`3` | `EmptyMana` | Integer | If non-zero, sets the unit's mana to empty when applied. | 0 | `1` | `EventBounty` | Integer | The number of stacks of Event Bounty applied, increasing event rewards. | 0 | `5` | `ExplodeCharacter` | Integer | The radius (in tiles) of an explosion centered on the character. | 0 | `5` | `ExplodeCharacter_NoDie` | Integer | The damage dealt when a character explodes without dying. | 0 | `1`<br>`5` | `ExplodeCharacter_Party` | Integer | The radius (in tiles) of an explosion centered on the character that also damages party members. | 0 | `5` | `ExplodeCharacter_PartyBoss` | Integer | The damage dealt to the party boss when it explodes. | 0 | `5` | `ExplodeCharacter_RockCrusher` | Integer | The number of RockCrusher explosion triggers applied to non-boss characters. | 0 | `5`<br>`9` | `ExplodeCharacter_RockCrusher_PetrifyBreak` | Integer | The damage dealt when a petrified RockCrusher explodes. | 0 | `5`<br>`9` | `FaceAway` | Integer | If set, forces the target to face away from the source. | 0 | `1` | `FaceCamera` | Integer | If non-zero, forces the character to rotate and face the camera. | 0 | `1` | `FactionConversion` | Integer | Converts the target to the caster's faction. | 0 | `1` | `Fear` | Array / Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`10`<br>`2` | `Fights` | Number | The number of fights this status or effect persists for. | 4 | `1`<br>`3`<br>`99` | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 0 | `1`<br>`[1 .10]`<br>`[1 .25]` | `FlatAIBonus` | Integer | A flat adjustment to the AI's evaluation score for this action; positive values encourage the AI to use it, negative values discourage it. | 0 | `-999999`<br>`100`<br>`999999` | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 0 | `1`<br>`10`<br>`2` | `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 0 | `1` | `ForceImmediateMove` | Integer | If non-zero, forces the character to move instantly without waiting for normal action order. | 0 | `1` | `ForceMoveAway` | Integer | The distance to force the target away from the source. | 0 | `1` | `ForceMoveTowards` | Integer | The number of tiles to force the target to move toward the caster. | 0 | `1` | `ForceUseAbility_NonStack` | Enum | Forces the unit to use a specific non-stackable ability when the conditional roll is successful. | 0 | `Endeavor_Auto`<br>`Indigestion_Fart`<br>`Indigestion_Fart2` | [`ForceUseAbilityOnTarget`](./Engine_StatusAndPassiveKeys.md#object-forceuseabilityontarget) | Object | Defines a chance to force the unit to use a specified ability on the target. | 0 | `{ . . . }` | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 0 | `0`<br>`1` | `GainDisorder` | Enum | Specifies the name of the disorder gained. | 0 | `Chungus`<br>`Psychosis` | `GainDisorderFromPool_PostCast` | Enum | Specifies the pool of disorders the unit can gain after the spell is cast. | 0 | `forbidden_spell_consequences`<br>`forbidden_spell_consequences_crippling` | `GenericDebuff` | Integer | The number of stacks of a generic, untooltipped debuff applied to the target. | 0 | `1`<br>`10`<br>`100` | `HealRandomInjury` | Integer | The number of random injuries healed on the target. | 0 | `1` | `HealthGain` | Integer | The amount of health restored to the source. | 0 | `1`<br>`10`<br>`2` | `IgnoreDamage` | Integer | If set, the target ignores all damage for the duration. | 0 | `1` | [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object | Specifies the name of an ability to be triggered instantly from this effect. | 0 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` | `ImmediateUseAbility_Instant` | Enum | Specifies the name of an ability to use instantly as a passive effect. | 0 | `head_CrownOfHorns` | `Immobile` | Array / Integer | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 4 | `0`<br>`1`<br>`10%` | `Imprison` | Enum | Specifies the type of unit or object to summon as a prison. | 0 | `BeefyCharmedLeech`<br>`CharmedLeech`<br>`Fly` | `InnateElement` | Enum | Specifies the innate elemental type of the unit (e.g., Fire, Ice, Electric). | 8 | `Earth`<br>`Electric`<br>`Fire` | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 0 | `25`<br>`50`<br>`999` | [`KnockbackIfCrit`](./Engine_StatusAndPassiveKeys.md#object-knockbackifcrit) | Object | Defines knockback properties applied when a critical hit occurs. | 0 | `{ . . . }` | `KnockOutClone` | Enum | Specifies the ability ID used to knock out or remove the player's clone unit from battle. | 0 | `PlayerCat_MiniMiniMe` | `LaunchOffScreen` | Equation | A formula string that determines the knockback force to launch the unit off-screen. | 0 | `10+bonus_melee_ability_damage` | `LaunchOffScreenInstakill` | Integer | If non-zero, the unit is instantly killed and launched off-screen. | 0 | `1` | `LeaveBehindRockOnKnockback` | Integer | If non-zero, leaves behind a rock on each tile the target is knocked through. | 0 | `1` | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 6 | `1`<br>`2` | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 0 | `50` | [`Madness`](Abilities_and_Spells.md#object-madness) | Array / Enum / Integer / Object | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `ManaGain` | Enum / Integer | The amount of mana restored to the source, which can be an expression. | 0 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 0 | `{ . . . }`<br>`1`<br>`3`<br>`5` | `NonLethal` | Integer | If set to 1, damage dealt by the unit cannot kill enemies; it leaves them at 1 HP. | 0 | `1` | `OverrideDamage` | Integer | Overrides the damage of the current action to this flat value (can be negative to heal). | 0 | `-10`<br>`0`<br>`1` | [`passives`](Cat_Mutations.md#object-passives) | Object | A container object listing passive effects granted to the unit. | 5118 | `{ . . . }` | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 0 | `1` | `PermanentDexterity` | Integer | The permanent amount of dexterity added or removed. | 0 | `1`<br>`2` | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 0 | `1` | `PurgeAll` | Integer | If non-zero, removes all temporary status effects (buffs, debuffs) from the target. | 0 | `1` | `RandomBonusDamage` | Integer | The maximum random bonus damage added to the base damage; the actual bonus is a random value between 0 and this number. | 0 | `25` | `RandomStatDown` | Array / Integer / String | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 0 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` | `RandomStatUp` | Integer / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` | [`RandomStatusFromPool`](Abilities_and_Spells.md#object-randomstatusfrompool) | Object | A collection of status effects; one is randomly chosen and applied to the target. | 0 | `{ . . . }` | `RefreshActPoints` | Integer | The amount of action points restored to the source. | 0 | `1` | `RefreshMovePoints` | Integer | The amount of movement points restored to the source. | 0 | `1` | `RefreshWeaponAbility` | Integer | The number of times the weapon's ability is refreshed. | 0 | `1` | `RemoteFlatLeech` | Integer | The flat amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoteLeech` | Integer | The amount of remote leech applied to the target on basic attack. | 0 | `1` | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 0 | `.5`<br>`4` | `RemoveGlobalModifiers` | Array | List of global modifier names to remove upon death. | 0 | `[BloodRain]` | `RemoveItem` | Enum | Specifies the item ID to remove from the source on kill. | 0 | `BlackShard`<br>`BlackShard_Glowing`<br>`ScaldingOrb` | `RemoveKnockback` | Integer | The number of knockback stacks removed from the received damage. | 0 | `1` | `RemoveMovePoints` | Integer | The number of move points to remove from the target, preventing them from moving. | 0 | `1` | `RemoveStatus` | Enum | The name of the status effect to remove from the source. | 0 | `AlphaCat`<br>`Brace`<br>`DodgeChance_Status` | [`RemoveStatusStacks`](./Engine_StatusAndPassiveKeys.md#object-removestatusstacks) | Object | An object specifying a status name and the number of stacks to remove from the target. | 0 | `{ . . . }` | `RemoveTurnsThisRound` | Integer | The number of turns to remove from the target's turn order this round. | 0 | `1` | `RepairWeapon` | Array / Integer | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 0 | `1`<br>`6`<br>`99` | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` | `Rot` | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 0 | `-999999`<br>`1`<br>`2` | `ScatterRandomPickups` | Integer | The number of random pickups scattered around the target's location. | 0 | `2`<br>`5` | `SetHealth` | Integer | Sets the target's health to a specific flat value or percentage. | 0 | `1`<br>`100%`<br>`50%` | [`SetItemAux`](./Engine_StatusAndPassiveKeys.md#object-setitemaux) | Object | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 0 | `{ . . . }` | `SetKnockback` | Integer | The knockback distance to set for the damage instance, overriding default. | 0 | `0` | `SetShield` | Integer | Sets the target's shield value to a specific flat amount. | 0 | `0`<br>`88` | `Shield` | Enum / Integer | The amount of shield granted to the source, absorbing incoming damage. | 422 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` | [`ShowFakeDamage`](Abilities_and_Spells.md#object-showfakedamage) | Object | Displays a fake damage number (with optional style) for visual effect without actually changing health. | 0 | `{ . . . }` | `ShowText` | String | Specifies the localization key for a popup text displayed on the target. | 0 | `"COMBAT_POPUP_BRAINSTORM"`<br>`"COMBAT_POPUP_RELOAD"`<br>`"COMBAT_POPUP_REPAIRED"` | [`Slow`](Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 4 | `{ . . . }`<br>`-1`<br>`1`<br>`2` | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 0 | `1` | `SpawnBearTrapIfHitKills` | Integer | If non-zero, spawns a bear trap at the target's location upon a killing blow. | 0 | `1` | `SpawnBearTrapOnMiss` | Integer | The number of bear traps to spawn on the tile adjacent to the target when the unit misses an attack. | 0 | `1` | `SpawnFlames` | `Array` | An array containing the number of flame tiles to spawn and the chance per tile. | 0 | `[1, .20+.1*level]`<br>`[1, .20]` | `SpawnThingIfHitKills` | Enum | The name of the thing (e.g., a food type) to spawn at the target's location upon a killing blow. | 0 | `Bait`<br>`BigFood`<br>`BiggestFood` | `SpecificInjury` | Enum | The stat (str, spd, int) to which a specific injury is applied, reducing that stat. | 0 | `int`<br>`spd`<br>`str` | `SpeculativeMoveSelfCorpseOffMap` | Integer | If true, attempts to remove the character's corpse from the map, used for speculative AI targeting. | 0 | `1` | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 0 | `-1`<br>`-2`<br>`-4` | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 0 | `1` | `StackingSandstorm` | Integer | If non-zero, enables the stacking sandstorm mechanic which increases damage per stack. | 0 | `1` | `StanceSwitchToMelee` | Integer | If set, switches the source to melee stance. | 0 | `1` | `StanceSwitchToRanged` | Integer | If set, switches the source to ranged stance. | 0 | `1` | `status` | Enum | Specifies the status effect to apply in a Temporary object. | 0 | `AddKnockbackToEverything`<br>`AllDamageCrits`<br>`AllDamageImmune` | [`StatusEachRoundEnd`](Cat_Mutations.md#object-statuseachroundend) | Object | An object listing status effects applied to the unit at the end of each round. | 2 | `{ . . . }` | `StatusImmunity` | Array / Enum | A list of status effect names the unit is immune to. | 0 | `Burn`<br>`Poison`<br>`Tarred` | [`StatusRandomEnemiesOnBattleStart`](Events_and_Encounters.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 0 | `{ . . . }` | `StrengthUp` | Enum / Integer | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 0 | `"max(int, 0)"`<br>`-1`<br>`-2` | `Stun` | Array / Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 0 | `1`<br>`2`<br>`3` | `T2CopyCat` | Integer | The number of T2 Clone copies created or applied to the target cat. | 0 | `1` | `TakeExtraTurn` | Integer | The number of extra turns granted to the source. | 0 | `1` | `TempDexterityUp` | Enum | The number of temporary dexterity stacks applied, or a string alias like 'X'. | 0 | `2`<br>`X` | `TempLuckUp` | Integer | The amount of temporary luck increase. | 0 | `2`<br>`99` | [`Temporary`](./Engine_StatusAndPassiveKeys.md#object-temporary) | Object | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 0 | `{ . . . }` | [`TempPassiveUntilSettled`](./Engine_StatusAndPassiveKeys.md#object-temppassiveuntilsettled) | Object | An object containing a temporary passive that is applied until the character's position is settled. | 0 | `{ . . . }` | [`TempPassiveWhileHasStatus`](Abilities_and_Spells.md#object-temppassivewhilehasstatus) | Object | An object defining passives temporarily granted to the unit while it has a specific status effect. | 0 | `{ . . . }` | `TempStrengthUp` | Equation | The number of stacks of temporary Strength Up applied to the unit. | 0 | `1`<br>`2`<br>`X` | `TempTrampleUntilSettled` | Integer | The number of stacks of temporary Trample applied to the source, allowing movement through enemies until the source ends its turn. | 0 | `3` | `Trample` | Integer | The amount of bonus damage dealt when moving through an enemy. | 14 | `1`<br>`3`<br>`4` | `UseAbility_Madness` | Enum | Determines which ability type (e.g., weapon) is forcibly used when Madness triggers. | 0 | `weapon` | `UseAbility_NonStack` | Enum | Specifies an ability to use on kill that does not stack with itself. | 0 | `BBTransformZealot`<br>`GenericRage` | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 0 | `1`<br>`20` | `VaporizeCorpse` | Integer | If set, vaporizes the target's corpse, preventing revival. | 0 | `1` | `VaporizeCorpseFlipAdvantage` | `Array` | The number of stacks and probability of vaporizing a corpse to gain loot flip advantage. | 0 | `[1 .33]` | `VaporizeInanimate` | Integer | If non-zero, instantly destroys inanimate objects (corpses, rocks) as if they were vaporized. | 0 | `1` | `VisualFX` | Enum | Specifies the name of the visual effect to play. | 0 | `BigMagicMissileBlast`<br>`Bolt`<br>`Cleanse` | [`Weakness`](Passives_and_Statuses.md#object-weakness) | Array / Integer / Object | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 4 | `{ . . . }`<br>`1`<br>`2`<br>`3` | `WeaponAuxMultiplier` | Number | A multiplier string (e.g., '.5') for the weapon's auxiliary counter on kill. | 0 | `.5`
 
 </details>
 
@@ -1788,7 +1788,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | [`Buddy`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-buddy) | Enum / Object  | Specifies a buddy unit that accompanies or is spawned alongside the unit, with optional reclaim and targeting properties. | 24 | `{ . . . }`<br>`BoyDino`<br>`CaveCatDad`<br>`Chubs` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
-| [`ForceAttack`](../Reference_and_Meta/Miscellaneous.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
+| [`ForceAttack`](./Engine_StatusAndPassiveKeys.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 
 </details>
@@ -1810,7 +1810,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Quivered`](../Reference_and_Meta/Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 36 | `1`<br>`2`<br>`5` |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 171 | `1`<br>`10`<br>`2` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
 
@@ -1848,11 +1848,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Blind`](../Reference_and_Meta/Arrays.md#array-blind) | Array / Integer  | The amount of blind stacks applied, or an [stacks, probability] array. | 43 | `-1`<br>`1`<br>`2` |
 | [`Blind`](../Reference_and_Meta/Arrays.md#array-blind) | Array / Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 43 | `-1`<br>`1`<br>`2` |
-| [`Conditional_HasStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Engine_StatusAndPassiveKeys.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
+| [`Conditional_HasTag`](./Engine_StatusAndPassiveKeys.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
 | `must_do_damage` | Boolean | If true, the status or effect will only be applied if the attack or ability actually deals damage. | 3 | `true` |
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 20 | `-999999`<br>`1`<br>`2` |
-| [`KnockbackIfCrit`](../Reference_and_Meta/Miscellaneous.md#object-knockbackifcrit) | Object  | Defines knockback properties applied when a critical hit occurs. | 1 | `{ . . . }` |
+| [`KnockbackIfCrit`](./Engine_StatusAndPassiveKeys.md#object-knockbackifcrit) | Object  | Defines knockback properties applied when a critical hit occurs. | 1 | `{ . . . }` |
 | `LeaveBehindRockOnKnockback` | Integer | If non-zero, leaves behind a rock on each tile the target is knocked through. | 4 | `1` |
 | `NonLethal` | Integer | If set to 1, damage dealt by the unit cannot kill enemies; it leaves them at 1 HP. | 1 | `1` |
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 20 | `-999999`<br>`1`<br>`2` |
@@ -1880,35 +1880,35 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 113 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 39 | `1`<br>`2` |
-| [`Conditional_Ally`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
+| [`Conditional_Ally`](./Engine_StatusAndPassiveKeys.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
 | [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 75 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
 | [`Weakness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 59 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_Enemy`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 44 | `{ . . . }` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
-| [`Conditional_Adjacent`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
-| [`Conditional_Shielded`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
+| [`Conditional_Enemy`](./Engine_StatusAndPassiveKeys.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 44 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_Adjacent`](./Engine_StatusAndPassiveKeys.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
+| [`Conditional_Shielded`](./Engine_StatusAndPassiveKeys.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
 | [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 25 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`MagicWeakness`](../Reference_and_Meta/Arrays.md#array-magicweakness) | Array / Integer  | The amount of magic weakness stacks applied, or an [stacks, probability] array. | 21 | `1`<br>`2`<br>`3` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`SoulLink`](./Engine_StatusAndPassiveKeys.md#object-soullink) | Integer / Object  | The number of soul link stacks applied. | 15 | `{ . . . }`<br>`1` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
+| [`Conditional_HasTag`](./Engine_StatusAndPassiveKeys.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
 | [`Conditional_SourceHasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_sourcehastag) | Object  | Defines a conditional block that applies effects only if the source of the effect has a specified tag. | 1 | `{ . . . }` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
-| [`ApplyToSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 59 | `{ . . . }` |
-| [`BounceObject`](../Reference_and_Meta/Miscellaneous.md#object-bounceobject) | Enum / Object  | Specifies the object or projectile to spawn and bounce from the target. | 39 | `{ . . . }`<br>`AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
+| [`ApplyToSource`](./Engine_StatusAndPassiveKeys.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 59 | `{ . . . }` |
+| [`BounceObject`](./Engine_StatusAndPassiveKeys.md#object-bounceobject) | Enum / Object  | Specifies the object or projectile to spawn and bounce from the target. | 39 | `{ . . . }`<br>`AllyRotFly`<br>`Amoeba`<br>`BeefyCharmedLeech` |
 | [`BurgleCoin`](../Reference_and_Meta/Arrays.md#array-burglecoin) | Array / Integer  | The number of coins stolen from the target, or an array of `[number, probability]`. | 6 | `1`<br>`3`<br>`[1 .5]` |
-| [`ChangeTile`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-changetile) | Enum / Object  | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 74 | `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
+| [`ChangeTile`](./Engine_StatusAndPassiveKeys.md#object-changetile) | Enum / Object  | Specifies the tile type to change to, or an object defining tile change parameters (tile type and area of effect). | 74 | `{ . . . }`<br>`BlankTile`<br>`BrambleTile`<br>`CreepTile` |
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 47 | `1`<br>`2`<br>`3` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
 | `FlatLeech` | Integer | The flat amount of health restored to the source when dealing damage, applied after the hit. | 9 | `1`<br>`10`<br>`2` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 51 | `1`<br>`2`<br>`[1 .01]` |
-| [`GainDisorderFromPool`](../Reference_and_Meta/Miscellaneous.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 3 | `{ . . . }`<br>`all_disorders` |
+| [`GainDisorderFromPool`](./Engine_StatusAndPassiveKeys.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 3 | `{ . . . }`<br>`all_disorders` |
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 12 | `25`<br>`50`<br>`999` |
 | `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 33 | `1`<br>`10`<br>`2` |
-| [`KnockOutCoin`](../Reference_and_Meta/Miscellaneous.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 5 | `{ . . . }`<br>`1`<br>`[1 .5]` |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 25 | `{ . . . }` |
+| [`KnockOutCoin`](./Engine_StatusAndPassiveKeys.md#object-knockoutcoin) | Integer / Object  | The number of coins knocked out, with an optional probability or an object with stacks and chance. | 5 | `{ . . . }`<br>`1`<br>`[1 .5]` |
+| [`KnockUpAndAway`](./Engine_StatusAndPassiveKeys.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 25 | `{ . . . }` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 45 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `ManaLeeches` | Integer | The number of mana leech stacks applied. | 5 | `1`<br>`2` |
@@ -1921,9 +1921,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Rot`](../Reference_and_Meta/Arrays.md#array-rot) | Array / Integer  | Integer, or an array [stacks, probability] specifying the amount of Rot stacks applied with the given probability. | 20 | `-999999`<br>`1`<br>`2` |
 | `SpiderInfested` | Integer | The number of spider infestation stacks applied. | 10 | `1`<br>`2`<br>`4` |
 | `SplashDamage` | Integer | The radius (in tiles) for splash damage applied to adjacent targets. | 2 | `1`<br>`2` |
-| [`SpreadDisease`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
+| [`SpreadDisease`](./Engine_StatusAndPassiveKeys.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
-| [`Tangled`](../Reference_and_Meta/Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| [`Tangled`](./Engine_StatusAndPassiveKeys.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | [`VisualFXTile`](../Reference_and_Meta/Enums.md#enum-visualfxtile) | Enum  | Specifies the name of the visual effect to play on the target tile. | 39 | `Bolt`<br>`BurnTrigger`<br>`Explosion` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 19 | `1`<br>`2`<br>`[1 .1]` |
 
@@ -1947,8 +1947,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
 | `Knockback` | Equation | The number of tiles the target is pushed away from the source on hit. | 33 | `1`<br>`10`<br>`2` |
-| [`KnockUpAndAway`](../Reference_and_Meta/Miscellaneous.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 25 | `{ . . . }` |
-| [`SpreadDisease`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
+| [`KnockUpAndAway`](./Engine_StatusAndPassiveKeys.md#object-knockupandaway) | Object  | Contains parameters for launching the target upward and away from the source, including stacks and distance. | 25 | `{ . . . }` |
+| [`SpreadDisease`](./Engine_StatusAndPassiveKeys.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -1967,7 +1967,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`AddDamageToElementDamage`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-adddamagetoelementdamage) | Object  | Defines additional damage of a specific element added to the unit's attacks. | 9 | `{ . . . }` |
-| [`Conditional_Corpse`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 11 | `{ . . . }` |
+| [`Conditional_Corpse`](./Engine_StatusAndPassiveKeys.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 11 | `{ . . . }` |
 | [`element`](../Reference_and_Meta/Arrays.md#array-element) | Array / Enum  | Specifies which element(s) the conditional checks against. | 80 | `Electric`<br>`Fire`<br>`Gravity` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
@@ -2009,7 +2009,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 39 | `1`<br>`2` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 39 | `1`<br>`2` |
-| [`Conditional_Enemy`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 44 | `{ . . . }` |
+| [`Conditional_Enemy`](./Engine_StatusAndPassiveKeys.md#object-conditional_enemy) | Object  | An object containing status effects or actions applied only if the target is an enemy. | 44 | `{ . . . }` |
 | `LeechPercent` | Integer | The percentage of damage dealt restored as health. | 2 | `50` |
 
 </details>
@@ -2029,8 +2029,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 133 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 133 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
+| [`Cleave`](./Engine_StatusAndPassiveKeys.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
+| [`Cleave`](./Engine_StatusAndPassiveKeys.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
 
 </details>
 
@@ -2049,7 +2049,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 171 | `1`<br>`10`<br>`2` |
 | `Leech` | Integer | The amount of health leeched from the target (heals the attacker). | 39 | `1`<br>`2` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
+| [`Cleave`](./Engine_StatusAndPassiveKeys.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 19 | `{ . . . }`<br>`1` |
 | `PullSourceToKnockbackImmuneTarget` | Integer | The amount of pull force applied to the source toward a knockback-immune target. | 4 | `1` |
 
 </details>
@@ -2103,7 +2103,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 171 | `1`<br>`10`<br>`2` |
 | [`Purge`](./Engine_StatusAndPassiveKeys.md#object-purge) | Integer / Object  | The number of status effects to purge from the target. | 10 | `{ . . . }`<br>`0`<br>`3` |
-| [`ApplyToSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 59 | `{ . . . }` |
+| [`ApplyToSource`](./Engine_StatusAndPassiveKeys.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 59 | `{ . . . }` |
 | `LuckUp` | Enum / Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 51 | `-1`<br>`-2`<br>`-4` |
 
 </details>
@@ -2165,7 +2165,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`tag`](../Reference_and_Meta/Arrays.md#array-tag) | Array / Enum  | Specifies the tag(s) to check on the target, used in conditional effects. | 990 | `[alien robot]`<br>`[alien rock]`<br>`[alien]` |
 | [`Stealth`](../Reference_and_Meta/Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 11 | `1`<br>`2`<br>`[1 .1]` |
 | `Conditional_Flying` | Object | Defines a conditional block that applies effects or actions only to flying units. | 1 | `{ . . . }` |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
@@ -2190,10 +2190,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 47 | `0`<br>`1`<br>`10%` |
 | [`Weakness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-weakness) | Array / Integer / Object  | The amount of Weakness applied, either as a fixed number or an array of [stacks, probability]. | 59 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_HasStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Engine_StatusAndPassiveKeys.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 138 | `1`<br>`2`<br>`3` |
 
 </details>
@@ -2211,8 +2211,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_PartyMember`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
-| [`Conditional_Ally`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
+| [`Conditional_PartyMember`](./Engine_StatusAndPassiveKeys.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
+| [`Conditional_Ally`](./Engine_StatusAndPassiveKeys.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
 
 </details>
 
@@ -2242,7 +2242,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `cant_miss` | Boolean | If true, the damage instance always hits its target regardless of accuracy or evasion. | 131 | `true` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 51 | `1`<br>`2`<br>`[1 .01]` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 414 | `[`<br>`[Heat Fire]` |
-| [`SpreadDisease`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
+| [`SpreadDisease`](./Engine_StatusAndPassiveKeys.md#object-spreaddisease) | Object  | Defines the parameters for spreading a disease, including chance, disease type, and whether it can apply to any target. | 13 | `{ . . . }` |
 | [`StatusImmunity`](../Reference_and_Meta/Arrays.md#array-statusimmunity) | Array / Enum  | A list of status effect names the unit is immune to. | 38 | `Burn`<br>`Poison`<br>`Tarred` |
 
 </details>
@@ -2319,7 +2319,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | [`CatPartsTransform`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-catpartstransform) | Object  | Transforms the target's visual cat parts (e.g., head, body, tail) using specified part IDs. | 55 | `{ . . . }` |
 | `CharismaUp` | Enum / Integer | The amount of charisma change, or a keyword like 'item_aux'. | 16 | `-1`<br>`-2`<br>`1` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
@@ -2487,7 +2487,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | `Drowsy` | Integer | The amount of drowsy stacks applied, or an [stacks, probability] array. | 12 | `1`<br>`8` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 140 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Freeze`](../Reference_and_Meta/Arrays.md#array-freeze) | Array / Integer  | The amount of freeze stacks applied, or an [stacks, probability] array. | 51 | `1`<br>`2`<br>`[1 .01]` |
 | [`GainCoins`](../Reference_and_Meta/Arrays.md#array-gaincoins) | Array / Integer  | The amount of coins gained, or a [min, max] range. | 10 | `-5`<br>`1`<br>`2` |
 | `Hex` | Integer | The number of stacks of Hex applied, causing the target to take increased damage from spells. | 6 | `1` |
@@ -2497,7 +2497,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 45 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
 | `ManaGain` | Equation | The amount of mana restored to the source, which can be an expression. | 40 | `"-ceil(X/2)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 27 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `Ostracized` | Integer | The number of stacks of Ostracized applied. | 4 | `1`<br>`2`<br>`4` |
 | `PermanentCharisma` | Integer | The amount of permanent Charisma added to the unit's base stats. | 3 | `1`<br>`2` |
 | `PermanentLuck` | Integer | The amount of permanent Luck added to the unit's base stats. | 3 | `1`<br>`2` |
@@ -2590,10 +2590,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 203 | `1`<br>`10`<br>`2` |
-| [`Conditional_Boss`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 21 | `{ . . . }` |
-| [`Conditional_PartyMember`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
+| [`Conditional_Boss`](./Engine_StatusAndPassiveKeys.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 21 | `{ . . . }` |
+| [`Conditional_PartyMember`](./Engine_StatusAndPassiveKeys.md#object-conditional_partymember) | Object  | A conditional block that executes its child actions only if the target is a party member. | 6 | `{ . . . }` |
 | `Conditional_Tiny` | Object | Defines a conditional block that applies effects only to tiny-sized units. | 1 | `{ . . . }` |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
 
 </details>
 
@@ -2612,7 +2612,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| [`Conditional_Adjacent`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
+| [`Conditional_Adjacent`](./Engine_StatusAndPassiveKeys.md#object-conditional_adjacent) | Object  | An object whose nested keys define statuses or effects applied to or by units that are adjacent to the unit. | 4 | `{ . . . }` |
 | `exclude_self` | Boolean | If true, the effect does not apply to the source unit itself. | 3 | `false` |
 
 </details>
@@ -2675,7 +2675,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`DoDamage`](../Reference_and_Meta/Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 7 | `{ . . . }` |
+| [`DoDamage`](./Engine_StatusAndPassiveKeys.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 7 | `{ . . . }` |
 | [`UseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-useability) | Enum / Object  | The name of the ability the target is forced to use. | 14 | `{ . . . }`<br>`GirlDinoPoop`<br>`KirbySpit`<br>`MD_PoopChain` |
 
 </details>
@@ -2696,10 +2696,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `MissChance` | Integer | The flat percentage chance that the unit's attacks will miss. | 24 | `10`<br>`15`<br>`20` |
 | [`Quivered`](../Reference_and_Meta/Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 36 | `1`<br>`2`<br>`5` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 22 | `1`<br>`2`<br>`[1, 0.1]` |
-| [`Conditional_BadRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 21 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | `BlessingOfPeace` | Integer | The number of stacks of the Blessing of Peace status applied to the unit each turn. | 2 | `1` |
 | `DoubleCastSpellThisTurn` | Integer | If non-zero, grants the unit a double cast effect for spells this turn. | 3 | `1` |
@@ -2728,13 +2728,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `KineticSpikes` | Integer | The number of stacks of Kinetic Spikes applied, dealing damage back to attackers. | 41 | `1`<br>`2`<br>`3` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 71 | `{ . . . }`<br>`0`<br>`1` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Stealth`](../Reference_and_Meta/Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 11 | `1`<br>`2`<br>`[1 .1]` |
-| [`Conditional_BadRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
+| [`Conditional_BadRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_badroll) | Object  | An object containing an `odds` value and effects that are applied when a random roll succeeds. | 8 | `{ . . . }` |
 | [`Conditional_HasCleansableDebuffs`](./Engine_StatusAndPassiveKeys.md#object-conditional_hascleansabledebuffs) | Object  | An object containing effects that execute only if the unit has cleansable debuffs. | 2 | `{ . . . }` |
-| [`Conditional_ManaThreshold`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_manathreshold) | Object  | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
+| [`Conditional_ManaThreshold`](./Engine_StatusAndPassiveKeys.md#object-conditional_manathreshold) | Object  | Defines a conditional block that applies effects only if a unit's mana meets a specified threshold. | 1 | `{ . . . }` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 5 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
@@ -2743,10 +2743,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
 | `NonStackingDivineShield` | Integer | The number of Divine Shield stacks that do not stack with duplicates. | 10 | `1` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 16 | `1` |
 | `PreEmptiveCounterNextAttacks` | Integer | The number of next incoming attacks that the unit will counter preemptively before they land. | 2 | `1` |
 | [`RandomStatDown`](../Reference_and_Meta/Arrays.md#array-randomstatdown) | Array / Integer / String  | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 12 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
@@ -2771,7 +2771,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 
 </details>
 
@@ -2792,8 +2792,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `ReduceManaCost` | Integer | The number of stacks reducing mana cost of abilities. | 5 | `1`<br>`2` |
 | [`RepairWeapon`](../Reference_and_Meta/Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 7 | `1`<br>`6`<br>`99` |
 | `RepairWeaponCondition` | Integer | The amount of weapon condition restored. | 3 | `1` |
@@ -2861,7 +2861,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 4 | `{ . . . }` |
-| [`Conditional_Ally`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
+| [`Conditional_Ally`](./Engine_StatusAndPassiveKeys.md#object-conditional_ally) | Object  | Defines effects that apply only if the target is an ally, with an optional else block for non-allies. | 37 | `{ . . . }` |
 | `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 4 | `100%`<br>`50%` |
 | `AutoReanimate` | Number | The percentage chance for the unit to automatically reanimate upon death. | 4 | `100%`<br>`50%` |
 
@@ -2882,8 +2882,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 86 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Conditional_Boss`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 21 | `{ . . . }` |
-| [`Conditional_NotBoss`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 16 | `{ . . . }` |
+| [`Conditional_Boss`](./Engine_StatusAndPassiveKeys.md#object-conditional_boss) | Object  | Contains effects that apply only if the target is a boss enemy. | 21 | `{ . . . }` |
+| [`Conditional_NotBoss`](./Engine_StatusAndPassiveKeys.md#object-conditional_notboss) | Object  | Contains effects that apply only if the target is not a boss enemy. | 16 | `{ . . . }` |
 
 </details>
 
@@ -2922,15 +2922,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `even_if_dead` | Boolean | If true, the effect triggers even if the unit is dead. | 25 | `true` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
-| [`Conditional_Corpse`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 11 | `{ . . . }` |
-| [`Conditional_Shielded`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_Corpse`](./Engine_StatusAndPassiveKeys.md#object-conditional_corpse) | Object  | Contains an inner effect block that only executes if the target is a corpse. | 11 | `{ . . . }` |
+| [`Conditional_Shielded`](./Engine_StatusAndPassiveKeys.md#object-conditional_shielded) | Object  | An object containing effects that are only applied if the target has a shield active. | 5 | `{ . . . }` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 43 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`GainCoins`](../Reference_and_Meta/Arrays.md#array-gaincoins) | Array / Integer  | The amount of coins gained, or a [min, max] range. | 10 | `-5`<br>`1`<br>`2` |
 | `PermanentStrength` | Integer | The amount of permanent bonus strength (physical damage modifier) granted. | 5 | `1`<br>`2` |
 | `RepairAll` | Integer | The amount of durability restored to all equipped items. | 5 | `1`<br>`10` |
 | [`RepairWeapon`](../Reference_and_Meta/Arrays.md#array-repairweapon) | Array / Integer  | The number of weapon durability points restored; an array [stacks, probability] applies a chance-based repair. | 7 | `1`<br>`6`<br>`99` |
-| [`TransformWeapon`](../Reference_and_Meta/Miscellaneous.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 2 | `{ . . . }` |
+| [`TransformWeapon`](./Engine_StatusAndPassiveKeys.md#object-transformweapon) | Object  | An object with `from` and `to` fields specifying the weapon transformation. | 2 | `{ . . . }` |
 
 </details>
 
@@ -2948,13 +2948,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Brace`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-brace) | Enum / Integer / Object  | The number of stacks of Brace applied to the source, reducing knockback and damage taken. | 169 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`Craft`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 20 | `{ . . . }` |
-| [`DestroyEquipmentAndAttachParasite`](../Reference_and_Meta/Miscellaneous.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 6 | `{ . . . }` |
+| [`Craft`](./Engine_StatusAndPassiveKeys.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 20 | `{ . . . }` |
+| [`DestroyEquipmentAndAttachParasite`](./Engine_StatusAndPassiveKeys.md#object-destroyequipmentandattachparasite) | Object  | Attempts to destroy a random piece of the target's equipment and attach a parasite from the specified pool. | 6 | `{ . . . }` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 43 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 33 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
-| [`ReviveNextRound`](../Reference_and_Meta/Miscellaneous.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 6 | `{ . . . }`<br>`2` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`ReviveNextRound`](./Engine_StatusAndPassiveKeys.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 6 | `{ . . . }`<br>`2` |
 | `SafeDie` | Integer | The number of times the unit can survive a fatal hit. | 7 | `1` |
 | [`Sleep`](../Reference_and_Meta/Arrays.md#array-sleep) | Array / Integer  | The amount of sleep stacks applied, or an [stacks, probability] array. | 35 | `1`<br>`2`<br>`3` |
 | `StealthUntilBasicAttack` | Integer | The number of stacks of Stealth that are removed when the unit performs a basic attack. | 2 | `1` |
@@ -2976,13 +2976,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 95 | `1`<br>`2`<br>`3` |
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 133 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`ApplyToRandomPartyMemberIfPossible`](../Reference_and_Meta/Miscellaneous.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 3 | `{ . . . }` |
+| [`ApplyToRandomPartyMemberIfPossible`](./Engine_StatusAndPassiveKeys.md#object-applytorandompartymemberifpossible) | Object  | Contains an inner effect block that is applied to a random living party member if one exists. | 3 | `{ . . . }` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 25 | `-1`<br>`1`<br>`2` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 43 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 71 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 
 </details>
@@ -3002,7 +3002,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 130 | `1`<br>`2`<br>`3` |
-| [`DoDamage`](../Reference_and_Meta/Miscellaneous.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 7 | `{ . . . }` |
+| [`DoDamage`](./Engine_StatusAndPassiveKeys.md#object-dodamage) | Object  | Contains damage parameters (amount, type, tile targets) to deal damage to the target. | 7 | `{ . . . }` |
 
 </details>
 
@@ -3057,9 +3057,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`Conditional_RandomChance`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_randomchance) | Object  | An object containing effects that execute only if a random roll succeeds, with an odds value defined inside. | 4 | `{ . . . }` |
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 43 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
-| [`RandomMagicMissile`](../Reference_and_Meta/Miscellaneous.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
+| [`RandomMagicMissile`](./Engine_StatusAndPassiveKeys.md#object-randommagicmissile) | Integer / Object  | The number of random magic missiles fired, or an object defining its properties. | 41 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | `RemoveAmbientLightEffects` | Float | The fade-out duration in seconds for ambient light effects. | 2 | `.5`<br>`4` |
-| [`ScatterCoins`](../Reference_and_Meta/Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 8 | `{ . . . }` |
+| [`ScatterCoins`](./Engine_StatusAndPassiveKeys.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 8 | `{ . . . }` |
 
 </details>
 
@@ -3099,7 +3099,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
-| [`RandomPermanentStatsDistinct`](../Reference_and_Meta/Miscellaneous.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 1 | `{ . . . }` |
+| [`RandomPermanentStatsDistinct`](./Engine_StatusAndPassiveKeys.md#object-randompermanentstatsdistinct) | Object  | An object defining a set of stat changes (positive and negative) that are randomly applied as permanent modifications. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3116,20 +3116,20 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Conditional_FirstApplicationThisTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 8 | `{ . . . }` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](./Engine_StatusAndPassiveKeys.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 8 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
-| [`ForceAttack`](../Reference_and_Meta/Miscellaneous.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ForceAttack`](./Engine_StatusAndPassiveKeys.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 3 | `1` |
-| [`RemoveStatusStacks`](../Reference_and_Meta/Miscellaneous.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 4 | `{ . . . }` |
+| [`RemoveStatusStacks`](./Engine_StatusAndPassiveKeys.md#object-removestatusstacks) | Object  | An object specifying a status name and the number of stacks to remove from the target. | 4 | `{ . . . }` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 11 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
 | `SpeedUp_WithoutInitiative` | Integer | The number of stacks of Speed Up that do not affect the unit's initiative (turn order) stat. | 3 | `1` |
-| [`ForceAttack`](../Reference_and_Meta/Miscellaneous.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
+| [`ForceAttack`](./Engine_StatusAndPassiveKeys.md#object-forceattack) | Integer / Object  | If set to 1, forces the target to perform an attack against a random or specified target. | 11 | `{ . . . }`<br>`1` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
 </details>
@@ -3169,7 +3169,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 130 | `1`<br>`2`<br>`3` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 31 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 
 </details>
 
@@ -3189,8 +3189,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 109 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 95 | `1`<br>`2`<br>`3` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 113 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
-| [`Conditional_FirstApplicationThisTurn`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 8 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 37 | `{ . . . }` |
+| [`Conditional_FirstApplicationThisTurn`](./Engine_StatusAndPassiveKeys.md#object-conditional_firstapplicationthisturn) | Object  | Container for effects applied only on the first application of this ability during the turn. | 8 | `{ . . . }` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [`Stealth`](../Reference_and_Meta/Arrays.md#array-stealth) | Array / Integer  | The number of stealth stacks applied. | 11 | `1`<br>`2`<br>`[1 .1]` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
@@ -3291,12 +3291,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 130 | `1`<br>`2`<br>`3` |
 | [`Bleed`](../Reference_and_Meta/Arrays.md#array-bleed) | Array / Integer  | The amount of bleed stacks applied, or an [stacks, probability] array. | 171 | `1`<br>`10`<br>`2` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 113 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
-| [`Conditional_HasStatus`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
-| [`Craft`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 20 | `{ . . . }` |
+| [`Conditional_HasStatus`](./Engine_StatusAndPassiveKeys.md#object-conditional_hasstatus) | Object  | Contains an inner effect block that only executes if the target has the specified status effect. | 20 | `{ . . . }` |
+| [`Craft`](./Engine_StatusAndPassiveKeys.md#object-craft) | Object  | Specifies the loot pool and slot to craft an item for the source. | 20 | `{ . . . }` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 26 | `1`<br>`10`<br>`100` |
 | `RandomStatUp` | Equation / String | The amount of random stat increase applied, either as a fixed number or a formula string. | 52 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
-| [`Conditional_HealthThreshold`](../Core_Entities_and_Combat/Items_and_Equipment.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 7 | `{ . . . }` |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
+| [`Conditional_HealthThreshold`](./Engine_StatusAndPassiveKeys.md#object-conditional_healththreshold) | Object  | Contains an inner effect block that only executes if the target's health is below a threshold, defined by `threshold_flat`, `threshold_percent`, or `threshold_expr`. | 7 | `{ . . . }` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 86 | `{ . . . }` |
 | `Charge` | Equation | The number of charge stacks applied. | 43 | `1`<br>`2`<br>`3` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 46 | `-1`<br>`-2`<br>`1` |
 | `DiminishingHealthRegen` | Integer | The number of diminishing health regen stacks applied. | 12 | `1`<br>`2`<br>`3` |
@@ -3465,7 +3465,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `FillMana` | Integer | The amount of mana restored, or an [amount, probability] array. | 11 | `1`<br>`[1 .10]`<br>`[1 .25]` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
 | `PermanentMadness` | Integer | The number of permanent madness stacks applied. | 16 | `1` |
-| [`ReviveNextRound`](../Reference_and_Meta/Miscellaneous.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 6 | `{ . . . }`<br>`2` |
+| [`ReviveNextRound`](./Engine_StatusAndPassiveKeys.md#object-revivenextround) | Integer / Object  | The number of revives granted, or an object defining revive properties. | 6 | `{ . . . }`<br>`2` |
 | [`SafeDoomed`](../Reference_and_Meta/Enums.md#enum-safedoomed) | Enum / Integer  | The number of SafeDoomed stacks applied, or 'level' to scale with character level. | 16 | `1`<br>`2`<br>`level` |
 | `SpeedUp` | Enum / Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 91 | `-1`<br>`-2`<br>`-4` |
 
@@ -3491,7 +3491,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `AlphaDodgeChance` | Integer | The dodge chance granted to the alpha (leader) unit. | 2 | `50%` |
 | `DownRankAIIfWeaponUsable` | Float | A multiplier that reduces the AI's priority to use this ability if the unit has a usable weapon. | 4 | `.001` |
 | `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 45 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| [`XIsSpellStormRampAndReset`](../Reference_and_Meta/Miscellaneous.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
+| [`XIsSpellStormRampAndReset`](./Engine_StatusAndPassiveKeys.md#object-xisspellstormrampandreset) | Integer / Object  | If integer 0, resets stacks; if object, contains 'stacks' and 'reset_percent' for spell storm ramp. | 2 | `{ . . . }`<br>`0` |
 
 </details>
 
@@ -3509,7 +3509,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 203 | `1`<br>`10`<br>`2` |
-| [`Conditional_HasTag`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
+| [`Conditional_HasTag`](./Engine_StatusAndPassiveKeys.md#object-conditional_hastag) | Object  | Evaluates whether the target has a specific tag; if true, applies the effects within; otherwise, runs the Else block. | 47 | `{ . . . }` |
 | [`Burn`](../Reference_and_Meta/Arrays.md#array-burn) | Array / Enum / Integer  | The amount of Burn applied, either as a fixed number or a formula string. | 154 | `1`<br>`10`<br>`2` |
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 125 | `-1`<br>`-2`<br>`1` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 63 | `1`<br>`10`<br>`2` |
@@ -3537,7 +3537,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 50 | `1`<br>`2`<br>`4` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 108 | `1`<br>`10`<br>`2` |
 | [`NoHealthRegen`](./Engine_StatusAndPassiveKeys.md#object-nohealthregen) | Array / Float / Object  | Prevents the unit from regenerating health normally. | 7 | `{ . . . }`<br>`1` |
-| [`Tangled`](../Reference_and_Meta/Miscellaneous.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
+| [`Tangled`](./Engine_StatusAndPassiveKeys.md#object-tangled) | Array / Integer / Object  | The number of stacks of the Tangled status effect applied, or an object defining its properties such as `stacks` and `alt_art`. | 10 | `{ . . . }`<br>`1`<br>`2`<br>`[1, .05]` |
 | [`Tarred`](../Reference_and_Meta/Arrays.md#array-tarred) | Array / Integer  | The amount of tarred stacks applied, or an [stacks, probability] array. | 17 | `1`<br>`2`<br>`[1 .1]` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 19 | `1`<br>`2`<br>`[1 .1]` |
 
@@ -3636,8 +3636,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -3652,10 +3652,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3670,12 +3670,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3690,10 +3690,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 0 | `3` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
 
@@ -3708,10 +3708,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 0 | `3` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
 
@@ -3726,8 +3726,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3742,22 +3742,22 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 0 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
-| `level` | String | The level or quest identifier to load. | 0 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 0 | `[` |
-| `act` | Number | The act number (game progression stage) in which this encounter or script takes place. | 0 | `1`<br>`2`<br>`3` |
-| `music` | String | Specifies the name of the music track to play during the encounter. | 0 | `alley`<br>`guillotina`<br>`hitler3` |
-| `arrival_unlock` | String | The name of the cutscene or event that is unlocked upon arrival. | 0 | `npc_houseboss_intro_guillotina_1`<br>`npc_houseboss_intro_guillotina_2`<br>`npc_houseboss_intro_guillotina_3` |
-| `index` | Number | The index used to order or identify this encounter within its list. | 0 | `1`<br>`2`<br>`3` |
-| [`initial_cooldown`](../Reference_and_Meta/Arrays.md#array-initial_cooldown) | Array   | A list of possible initial cooldown values (in turns) before the encounter can trigger. | 0 | `[0]`<br>`[3 7]` |
-| `lead_time` | Number | The number of turns before the event activates. | 0 | `7` |
-| [`rematch_cooldown`](../Reference_and_Meta/Arrays.md#array-rematch_cooldown) | Array   | The minimum and maximum number of days before a rematch becomes available. | 0 | `[3 7]` |
-| [`savefile_string`](../Assets_and_Localization/Strings.md#string-savefile_string) | String | A unique string identifier used to track the save file associated with this encounter. | 0 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
-| `initial_cutscene_day` | String | The name of the cutscene that plays on the first day the encounter appears. | 0 | `kaiju_fight`<br>`moonboss_intro`<br>`pyro_intro` |
-| `rematch_cutscene_day` | String | Specifies the cutscene to play on the day of the rematch. | 0 | `house_boss_returns_kaijufight`<br>`house_boss_returns_pyro`<br>`house_boss_returns_zara` |
-| `BOSS_ZARATANA_QUOTE_1` | String | A string for the first quote spoken by the boss Zara Tana. | 0 ||
-| `BOSS_ZARATANA_QUOTE_2` | String | A string for the second quote spoken by the boss Zara Tana. | 0 ||
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
+| `level` | String | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
+| `act` | Number | The act number (game progression stage) in which this encounter or script takes place. | 1 | `1`<br>`2`<br>`3` |
+| `music` | String | Specifies the name of the music track to play during the encounter. | 1 | `alley`<br>`guillotina`<br>`hitler3` |
+| `arrival_unlock` | String | The name of the cutscene or event that is unlocked upon arrival. | 1 | `npc_houseboss_intro_guillotina_1`<br>`npc_houseboss_intro_guillotina_2`<br>`npc_houseboss_intro_guillotina_3` |
+| `index` | Number | The index used to order or identify this encounter within its list. | 1 | `1`<br>`2`<br>`3` |
+| [`initial_cooldown`](../Reference_and_Meta/Arrays.md#array-initial_cooldown) | Array   | A list of possible initial cooldown values (in turns) before the encounter can trigger. | 1 | `[0]`<br>`[3 7]` |
+| `lead_time` | Number | The number of turns before the event activates. | 1 | `7` |
+| [`rematch_cooldown`](../Reference_and_Meta/Arrays.md#array-rematch_cooldown) | Array   | The minimum and maximum number of days before a rematch becomes available. | 1 | `[3 7]` |
+| [`savefile_string`](../Assets_and_Localization/Strings.md#string-savefile_string) | String | A unique string identifier used to track the save file associated with this encounter. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
+| `initial_cutscene_day` | String | The name of the cutscene that plays on the first day the encounter appears. | 1 | `kaiju_fight`<br>`moonboss_intro`<br>`pyro_intro` |
+| `rematch_cutscene_day` | String | Specifies the cutscene to play on the day of the rematch. | 1 | `house_boss_returns_kaijufight`<br>`house_boss_returns_pyro`<br>`house_boss_returns_zara` |
+| `BOSS_ZARATANA_QUOTE_1` | String | A string for the first quote spoken by the boss Zara Tana. | 1 ||
+| `BOSS_ZARATANA_QUOTE_2` | String | A string for the second quote spoken by the boss Zara Tana. | 1 ||
 
 </details>
 ### Object: `CharmedLeech`
@@ -3770,10 +3770,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3788,10 +3788,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 0 | `3` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
 
 </details>
 
@@ -3806,8 +3806,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3822,9 +3822,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 2 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 2 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3839,22 +3839,22 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 0 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
-| `level` | String | The level or quest identifier to load. | 0 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
-| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 0 | `[` |
-| `act` | Number | The act number (game progression stage) in which this encounter or script takes place. | 0 | `1`<br>`2`<br>`3` |
-| `music` | String | Specifies the name of the music track to play during the encounter. | 0 | `alley`<br>`guillotina`<br>`hitler3` |
-| `arrival_unlock` | String | The name of the cutscene or event that is unlocked upon arrival. | 0 | `npc_houseboss_intro_guillotina_1`<br>`npc_houseboss_intro_guillotina_2`<br>`npc_houseboss_intro_guillotina_3` |
-| `index` | Number | The index used to order or identify this encounter within its list. | 0 | `1`<br>`2`<br>`3` |
-| [`initial_cooldown`](../Reference_and_Meta/Arrays.md#array-initial_cooldown) | Array   | A list of possible initial cooldown values (in turns) before the encounter can trigger. | 0 | `[0]`<br>`[3 7]` |
-| `lead_time` | Number | The number of turns before the event activates. | 0 | `7` |
-| [`rematch_cooldown`](../Reference_and_Meta/Arrays.md#array-rematch_cooldown) | Array   | The minimum and maximum number of days before a rematch becomes available. | 0 | `[3 7]` |
-| [`savefile_string`](../Assets_and_Localization/Strings.md#string-savefile_string) | String | A unique string identifier used to track the save file associated with this encounter. | 0 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
-| `initial_cutscene_day` | String | The name of the cutscene that plays on the first day the encounter appears. | 0 | `kaiju_fight`<br>`moonboss_intro`<br>`pyro_intro` |
-| `rematch_cutscene_day` | String | Specifies the cutscene to play on the day of the rematch. | 0 | `house_boss_returns_kaijufight`<br>`house_boss_returns_pyro`<br>`house_boss_returns_zara` |
-| `BOSS_PYROPHINA_QUOTE_1` | String | Localization key for the first boss quote for Pyrophina. | 0 ||
-| `BOSS_PYROPHINA_QUOTE_2` | String | Localization key for the second boss quote for Pyrophina. | 0 ||
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| `frame_label` | String | Specifies the frame or cutscene animation label for the boss encounter. | 1 | `AlienBeast`<br>`ColorlessCat_Tutorial`<br>`DrMangler` |
+| `level` | String | The level or quest identifier to load. | 1 | `"house_bosses/guillotina1.lvl"`<br>`"house_bosses/guillotina2.lvl"`<br>`"house_bosses/guillotina3.lvl"` |
+| `quotes` | Array | An array of dialogue quotes for the boss cutscene. | 1 | `[` |
+| `act` | Number | The act number (game progression stage) in which this encounter or script takes place. | 1 | `1`<br>`2`<br>`3` |
+| `music` | String | Specifies the name of the music track to play during the encounter. | 1 | `alley`<br>`guillotina`<br>`hitler3` |
+| `arrival_unlock` | String | The name of the cutscene or event that is unlocked upon arrival. | 1 | `npc_houseboss_intro_guillotina_1`<br>`npc_houseboss_intro_guillotina_2`<br>`npc_houseboss_intro_guillotina_3` |
+| `index` | Number | The index used to order or identify this encounter within its list. | 1 | `1`<br>`2`<br>`3` |
+| [`initial_cooldown`](../Reference_and_Meta/Arrays.md#array-initial_cooldown) | Array   | A list of possible initial cooldown values (in turns) before the encounter can trigger. | 1 | `[0]`<br>`[3 7]` |
+| `lead_time` | Number | The number of turns before the event activates. | 1 | `7` |
+| [`rematch_cooldown`](../Reference_and_Meta/Arrays.md#array-rematch_cooldown) | Array   | The minimum and maximum number of days before a rematch becomes available. | 1 | `[3 7]` |
+| [`savefile_string`](../Assets_and_Localization/Strings.md#string-savefile_string) | String | A unique string identifier used to track the save file associated with this encounter. | 1 | `"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_1"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_2"`<br>`"SAVE_FILE_FIGHT_HOUSEBOSS_GUILLOTINA_3"` |
+| `initial_cutscene_day` | String | The name of the cutscene that plays on the first day the encounter appears. | 1 | `kaiju_fight`<br>`moonboss_intro`<br>`pyro_intro` |
+| `rematch_cutscene_day` | String | Specifies the cutscene to play on the day of the rematch. | 1 | `house_boss_returns_kaijufight`<br>`house_boss_returns_pyro`<br>`house_boss_returns_zara` |
+| `BOSS_PYROPHINA_QUOTE_1` | String | Localization key for the first boss quote for Pyrophina. | 1 ||
+| `BOSS_PYROPHINA_QUOTE_2` | String | Localization key for the second boss quote for Pyrophina. | 1 ||
 
 </details>
 
@@ -3869,10 +3869,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3887,11 +3887,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -3906,33 +3906,33 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
-| `head` | Float | The catalog ID for the cat's head part. | 0 | `-1`<br>`1`<br>`1.3` |
-| `mouth` | Number | The catalog ID for the cat's mouth part. | 0 | `-1`<br>`-2`<br>`1` |
-| `palette` | Number | Specifies the color palette index for the ability's visuals. | 0 | `-1`<br>`0`<br>`1` |
-| `texture` | Number | The catalog ID for the cat's texture. | 0 | `-1`<br>`1`<br>`1000` |
-| `tail` | Number | The catalog ID for the cat's tail part. | 0 | `-1`<br>`1000`<br>`1001` |
-| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 0 | `1`<br>`1000`<br>`1001` |
-| `arm2` | Number | The catalog ID for the cat's second arm part. | 0 | `-1`<br>`-2`<br>`1` |
-| `body` | Float | The catalog ID for the cat's body part. | 0 | `-1`<br>`1`<br>`1.1` |
-| `arm1` | Number | The catalog ID for the cat's first arm part. | 0 | `-1`<br>`-2`<br>`1` |
-| `righteye` | Number | The sprite frame index for the character's right eye. | 0 | `1`<br>`100`<br>`1001` |
-| `voice` | String | Determines which voice set or type is used for the character. | 0 | `ankylosaurus`<br>`female1`<br>`female10` |
-| `lefteye` | Number | The sprite frame index for the character's left eye. | 0 | `1`<br>`100`<br>`1001` |
-| `claws` | Number | The sprite frame index for the character's claws. | 0 | `1`<br>`1032`<br>`2` |
-| `leg1` | Number | The catalog ID for the cat's first leg part. | 0 | `-1`<br>`-2`<br>`1` |
-| `leg2` | Number | The catalog ID for the cat's second leg part. | 0 | `-1`<br>`1`<br>`10` |
-| `rightear` | Number | The sprite frame index for the character's right ear. | 0 | `1000`<br>`1001`<br>`1004` |
-| `leftear` | Number | The sprite frame index for the character's left ear. | 0 | `1`<br>`1000`<br>`1001` |
-| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `pitch` | Float | The sound pitch multiplier for the character's voice or sounds. | 0 | `.3`<br>`.5`<br>`.6` |
-| `default_face` | String | Specifies the default facial expression for the unit's portrait. | 0 | `angry`<br>`happy`<br>`mad` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| `head` | Float | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
+| `palette` | Number | Specifies the color palette index for the ability's visuals. | 1 | `-1`<br>`0`<br>`1` |
+| `texture` | Number | The catalog ID for the cat's texture. | 1 | `-1`<br>`1`<br>`1000` |
+| `tail` | Number | The catalog ID for the cat's tail part. | 1 | `-1`<br>`1000`<br>`1001` |
+| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 1 | `1`<br>`1000`<br>`1001` |
+| `arm2` | Number | The catalog ID for the cat's second arm part. | 1 | `-1`<br>`-2`<br>`1` |
+| `body` | Float | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
+| `arm1` | Number | The catalog ID for the cat's first arm part. | 1 | `-1`<br>`-2`<br>`1` |
+| `righteye` | Number | The sprite frame index for the character's right eye. | 1 | `1`<br>`100`<br>`1001` |
+| `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
+| `lefteye` | Number | The sprite frame index for the character's left eye. | 1 | `1`<br>`100`<br>`1001` |
+| `claws` | Number | The sprite frame index for the character's claws. | 1 | `1`<br>`1032`<br>`2` |
+| `leg1` | Number | The catalog ID for the cat's first leg part. | 1 | `-1`<br>`-2`<br>`1` |
+| `leg2` | Number | The catalog ID for the cat's second leg part. | 1 | `-1`<br>`1`<br>`10` |
+| `rightear` | Number | The sprite frame index for the character's right ear. | 1 | `1000`<br>`1001`<br>`1004` |
+| `leftear` | Number | The sprite frame index for the character's left ear. | 1 | `1`<br>`1000`<br>`1001` |
+| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `pitch` | Float | The sound pitch multiplier for the character's voice or sounds. | 1 | `.3`<br>`.5`<br>`.6` |
+| `default_face` | String | Specifies the default facial expression for the unit's portrait. | 1 | `angry`<br>`happy`<br>`mad` |
 
 </details>
 
@@ -3947,11 +3947,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3966,12 +3966,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3986,11 +3986,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 | [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
 
 </details>
@@ -4006,8 +4006,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4022,25 +4022,25 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
-| `head` | Float | The catalog ID for the cat's head part. | 0 | `-1`<br>`1`<br>`1.3` |
-| `mouth` | Number | The catalog ID for the cat's mouth part. | 0 | `-1`<br>`-2`<br>`1` |
-| `palette` | Number | Specifies the color palette index for the ability's visuals. | 0 | `-1`<br>`0`<br>`1` |
-| `texture` | Number | The catalog ID for the cat's texture. | 0 | `-1`<br>`1`<br>`1000` |
-| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 0 | `1`<br>`1000`<br>`1001` |
-| `righteye` | Number | The sprite frame index for the character's right eye. | 0 | `1`<br>`100`<br>`1001` |
-| `voice` | String | Determines which voice set or type is used for the character. | 0 | `ankylosaurus`<br>`female1`<br>`female10` |
-| `lefteye` | Number | The sprite frame index for the character's left eye. | 0 | `1`<br>`100`<br>`1001` |
-| `claws` | Number | The sprite frame index for the character's claws. | 0 | `1`<br>`1032`<br>`2` |
-| `rightear` | Number | The sprite frame index for the character's right ear. | 0 | `1000`<br>`1001`<br>`1004` |
-| `leftear` | Number | The sprite frame index for the character's left ear. | 0 | `1`<br>`1000`<br>`1001` |
-| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `pitch` | Float | The sound pitch multiplier for the character's voice or sounds. | 0 | `.3`<br>`.5`<br>`.6` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| `head` | Float | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
+| `palette` | Number | Specifies the color palette index for the ability's visuals. | 1 | `-1`<br>`0`<br>`1` |
+| `texture` | Number | The catalog ID for the cat's texture. | 1 | `-1`<br>`1`<br>`1000` |
+| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 1 | `1`<br>`1000`<br>`1001` |
+| `righteye` | Number | The sprite frame index for the character's right eye. | 1 | `1`<br>`100`<br>`1001` |
+| `voice` | String | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
+| `lefteye` | Number | The sprite frame index for the character's left eye. | 1 | `1`<br>`100`<br>`1001` |
+| `claws` | Number | The sprite frame index for the character's claws. | 1 | `1`<br>`1032`<br>`2` |
+| `rightear` | Number | The sprite frame index for the character's right ear. | 1 | `1000`<br>`1001`<br>`1004` |
+| `leftear` | Number | The sprite frame index for the character's left ear. | 1 | `1`<br>`1000`<br>`1001` |
+| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `pitch` | Float | The sound pitch multiplier for the character's voice or sounds. | 1 | `.3`<br>`.5`<br>`.6` |
 | [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
 
 </details>
@@ -4056,10 +4056,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4074,10 +4074,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4092,11 +4092,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4111,11 +4111,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 | [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
 
 </details>
@@ -4131,11 +4131,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4150,12 +4150,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4170,9 +4170,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4187,9 +4187,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4204,10 +4204,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4222,9 +4222,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4239,12 +4239,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4259,11 +4259,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 
 </details>
 
@@ -4278,12 +4278,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 </details>
 
@@ -4298,12 +4298,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4318,12 +4318,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4338,12 +4338,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4358,8 +4358,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -4374,11 +4374,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4393,9 +4393,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4410,9 +4410,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4427,12 +4427,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4447,11 +4447,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4466,11 +4466,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4485,11 +4485,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4504,11 +4504,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4523,12 +4523,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4543,9 +4543,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4560,14 +4560,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
-| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 0 | `{ . . . }` |
-| [`splash_damage`](../Reference_and_Meta/Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
+| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 1 | `{ . . . }` |
+| [`splash_damage`](../Reference_and_Meta/Miscellaneous.md#object-splash_damage) | Object  | Defines additional damage or effects applied to nearby targets around the primary target. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4582,12 +4582,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4602,27 +4602,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| `size_start` | Float | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array  | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 0 | `-90`<br>`90`<br>`[-10 10]` |
-| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 0 | `.005`<br>`.01`<br>`.03` |
-| `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 0 | `0` |
-| `render_layer` | String | The render layer on which the effect is drawn (e.g., background, top). | 0 | `background`<br>`sorted_distortions`<br>`splatters` |
-| `material` | String | The material shader name used for rendering the visual effect. | 0 | `distorter`<br>`mist` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| `size_start` | Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array  | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
+| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 1 | `0` |
+| `render_layer` | String | The render layer on which the effect is drawn (e.g., background, top). | 1 | `background`<br>`sorted_distortions`<br>`splatters` |
+| `material` | String | The material shader name used for rendering the visual effect. | 1 | `distorter`<br>`mist` |
 
 </details>
 
@@ -4637,12 +4637,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4657,12 +4657,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4677,12 +4677,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4697,12 +4697,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4717,12 +4717,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4737,11 +4737,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4756,10 +4756,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -4774,11 +4774,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -4793,11 +4793,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `ai_ability` | String | Specifies the ability to use as the AI's behavior for this ability. | 0 | `AZ_Jump_AI`<br>`BasicBigMelee`<br>`BasicMelee` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `ai_ability` | String | Specifies the ability to use as the AI's behavior for this ability. | 1 | `AZ_Jump_AI`<br>`BasicBigMelee`<br>`BasicMelee` |
 
 </details>
 
@@ -4812,12 +4812,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4832,12 +4832,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4852,10 +4852,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4870,10 +4870,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4888,12 +4888,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4908,12 +4908,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4928,10 +4928,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -4946,11 +4946,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 2 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 </details>
 
@@ -4965,11 +4965,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`temporary_effects`](../Reference_and_Meta/Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 0 | `{ . . . }` |
-| `ai_ability` | String | Specifies the ability to use as the AI's behavior for this ability. | 0 | `AZ_Jump_AI`<br>`BasicBigMelee`<br>`BasicMelee` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`temporary_effects`](../Reference_and_Meta/Miscellaneous.md#object-temporary_effects) | Object  | Applies temporary status effects on the caster upon using the ability. | 1 | `{ . . . }` |
+| `ai_ability` | String | Specifies the ability to use as the AI's behavior for this ability. | 1 | `AZ_Jump_AI`<br>`BasicBigMelee`<br>`BasicMelee` |
 
 </details>
 
@@ -4984,10 +4984,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5002,12 +5002,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5022,26 +5022,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| `size_start` | Float | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| `size_start` | Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -5056,26 +5056,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -5090,12 +5090,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5110,12 +5110,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 0 | `0`<br>`1`<br>`10` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -5130,12 +5130,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| `frame` | Number | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 0 | `0`<br>`1`<br>`10` |
+| [`name`](../Assets_and_Localization/Strings.md#string-name) | String | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Assets_and_Localization/Strings.md#string-desc) | String | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| `frame` | Number | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| `kind` | String | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| `ability` | String | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| `durability` | Number | The amount of durability consumed by this ability or required for its use. | 1 | `0`<br>`1`<br>`10` |
 
 </details>
 
@@ -5150,10 +5150,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5168,26 +5168,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| `size` | Float | The scale factor (size multiplier) of the spawned unit. | 0 | `.2`<br>`.5`<br>`1` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `rotation` | Number | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 0 | `-90`<br>`90`<br>`[-10 10]` |
-| [`force_start`](../Reference_and_Meta/Arrays.md#array-force_start) | Array   | The initial force applied to particles, as a scalar or 3D vector. | 0 | `0`<br>`[0 -10 0]`<br>`[0 -20 0]` |
-| `emit_radius` | Float | The radius from which particles or effects are emitted. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_out` | Float | The alpha (opacity) value at the end of the effect's outro animation. | 0 | `.2`<br>`.3`<br>`.5` |
-| `alpha_in` | Float | The alpha (opacity) value at the start of the effect's intro animation. | 0 | `.01`<br>`.05`<br>`.1` |
-| [`force_end`](../Reference_and_Meta/Arrays.md#array-force_end) | Array   | The final force applied to particles over time, as a scalar or 3D vector. | 0 | `200`<br>`500`<br>`[0 -1 0]` |
-| `size_in` | Float | The size of the effect at the beginning of its intro animation. | 0 | `.1`<br>`.3`<br>`.5` |
-| `spurt` | String | The name of the spurt particle effect to play. | 0 | `GibsBloodSpurt`<br>`GibsBloodSpurtHuge`<br>`PassiveTarSplat` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| `size` | Float | The scale factor (size multiplier) of the spawned unit. | 1 | `.2`<br>`.5`<br>`1` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `rotation` | Number | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
+| [`force_start`](../Reference_and_Meta/Arrays.md#array-force_start) | Array   | The initial force applied to particles, as a scalar or 3D vector. | 1 | `0`<br>`[0 -10 0]`<br>`[0 -20 0]` |
+| `emit_radius` | Float | The radius from which particles or effects are emitted. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_out` | Float | The alpha (opacity) value at the end of the effect's outro animation. | 1 | `.2`<br>`.3`<br>`.5` |
+| `alpha_in` | Float | The alpha (opacity) value at the start of the effect's intro animation. | 1 | `.01`<br>`.05`<br>`.1` |
+| [`force_end`](../Reference_and_Meta/Arrays.md#array-force_end) | Array   | The final force applied to particles over time, as a scalar or 3D vector. | 1 | `200`<br>`500`<br>`[0 -1 0]` |
+| `size_in` | Float | The size of the effect at the beginning of its intro animation. | 1 | `.1`<br>`.3`<br>`.5` |
+| `spurt` | String | The name of the spurt particle effect to play. | 1 | `GibsBloodSpurt`<br>`GibsBloodSpurtHuge`<br>`PassiveTarSplat` |
 
 </details>
 
@@ -5202,24 +5202,24 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`size`](../Reference_and_Meta/Arrays.md#array-size) | Array  | The scale factor (size multiplier) of the spawned unit. | 0 | `.2`<br>`.5`<br>`1` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 0 | `.1`<br>`.2`<br>`.5` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array  | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 0 | `-90`<br>`90`<br>`[-10 10]` |
-| `emit_radius` | Float | The radius from which particles or effects are emitted. | 0 | `.05`<br>`.1`<br>`.2` |
-| `size_in` | Float | The size of the effect at the beginning of its intro animation. | 0 | `.1`<br>`.3`<br>`.5` |
-| `unlit` | Boolean | If true, the effect is not affected by scene lighting. | 0 | `true` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`size`](../Reference_and_Meta/Arrays.md#array-size) | Array  | The scale factor (size multiplier) of the spawned unit. | 1 | `.2`<br>`.5`<br>`1` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array  | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
+| `emit_radius` | Float | The radius from which particles or effects are emitted. | 1 | `.05`<br>`.1`<br>`.2` |
+| `size_in` | Float | The size of the effect at the beginning of its intro animation. | 1 | `.1`<br>`.3`<br>`.5` |
+| `unlit` | Boolean | If true, the effect is not affected by scene lighting. | 1 | `true` |
 
 </details>
 
@@ -5234,12 +5234,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5254,11 +5254,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5273,12 +5273,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5293,12 +5293,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 0 | `{ . . . }` |
-| `sub_ability` | String | Specifies a sub-ability that is part of this ability, often used for multi-part abilities. | 0 | `CollectiveCounterImpl`<br>`CollectiveSpinImpl`<br>`HomingBlasts2_sub` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 1 | `{ . . . }` |
+| `sub_ability` | String | Specifies a sub-ability that is part of this ability, often used for multi-part abilities. | 1 | `CollectiveCounterImpl`<br>`CollectiveSpinImpl`<br>`HomingBlasts2_sub` |
 
 </details>
 
@@ -5313,12 +5313,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 2 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5333,10 +5333,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5351,9 +5351,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5368,13 +5368,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5389,12 +5389,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 2 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5409,10 +5409,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5427,9 +5427,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5444,9 +5444,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5461,23 +5461,23 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array  | The speed of the projectile or move, can be a value or a range. | 0 | `-30`<br>`-4`<br>`.5` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`size`](../Reference_and_Meta/Arrays.md#array-size) | Array  | The scale factor (size multiplier) of the spawned unit. | 0 | `.2`<br>`.5`<br>`1` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 0 | `.005`<br>`.01`<br>`.03` |
-| `emit_radius` | Float | The radius from which particles or effects are emitted. | 0 | `.05`<br>`.1`<br>`.2` |
-| `emit_timespread` | Float | The time spread over which emissions occur, controlling the duration of the emission burst. | 0 | `.1`<br>`.25`<br>`.75` |
-| `emit_timespread_curve` | String | The curve type (e.g., ease_out) that defines how emission rate changes over time. | 0 | `ease_out` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`size`](../Reference_and_Meta/Arrays.md#array-size) | Array  | The scale factor (size multiplier) of the spawned unit. | 1 | `.2`<br>`.5`<br>`1` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `alpha` | Float | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `emit_radius` | Float | The radius from which particles or effects are emitted. | 1 | `.05`<br>`.1`<br>`.2` |
+| `emit_timespread` | Float | The time spread over which emissions occur, controlling the duration of the emission burst. | 1 | `.1`<br>`.25`<br>`.75` |
+| `emit_timespread_curve` | String | The curve type (e.g., ease_out) that defines how emission rate changes over time. | 1 | `ease_out` |
 
 </details>
 
@@ -5492,14 +5492,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5514,12 +5514,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5534,8 +5534,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5550,9 +5550,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5567,11 +5567,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5586,8 +5586,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5602,10 +5602,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5620,13 +5620,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
-| [`equipment`](../Reference_and_Meta/Miscellaneous.md#object-equipment) | Object  | A container object defining the character's equipped items (head, face, neck, weapon, etc.). | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| [`equipment`](../Reference_and_Meta/Miscellaneous.md#object-equipment) | Object  | A container object defining the character's equipped items (head, face, neck, weapon, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -5641,11 +5641,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5660,9 +5660,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -5677,9 +5677,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5694,12 +5694,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5714,12 +5714,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5734,9 +5734,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5751,14 +5751,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `class` | String | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 </details>
 
@@ -5773,12 +5773,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 </details>
 
@@ -5793,26 +5793,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -5887,10 +5887,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5905,9 +5905,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 </details>
 
@@ -5922,20 +5922,20 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| [`emit_rate`](../Reference_and_Meta/Arrays.md#array-emit_rate) | Array   | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| [`emit_rate`](../Reference_and_Meta/Arrays.md#array-emit_rate) | Array   | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
 
 </details>
 
@@ -5950,26 +5950,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -5984,26 +5984,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| `size_start` | Float | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| `size_start` | Float | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -6018,8 +6018,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6034,26 +6034,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -6068,8 +6068,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6084,11 +6084,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6103,11 +6103,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6122,12 +6122,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6142,26 +6142,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | Float | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
-| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 0 | `local`<br>`local*/` |
+| `movieclip` | String | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| `render_mode` | String | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| `simulation_space` | String | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| `projection_matrix` | String | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | Float | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
+| `ownership` | String | The ownership scope for the effect, such as local to the caster. | 1 | `local`<br>`local*/` |
 
 </details>
 
@@ -6176,10 +6176,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6194,12 +6194,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object  | Grants temporary passive abilities to the caster for the duration of the ability. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6214,12 +6214,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6234,9 +6234,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6251,11 +6251,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6270,10 +6270,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
 
 </details>
 
@@ -6288,12 +6288,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6308,8 +6308,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6324,10 +6324,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6342,12 +6342,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| `template` | String | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6362,8 +6362,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 0 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| `variant_of` | String | Indicates this ability is a variant of another named ability, inheriting its properties. | 1 | `Absorb`<br>`AbsorbSoul`<br>`Adoubement` |
 
 </details>
 
@@ -6388,15 +6388,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum   | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
 | [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum   | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array  | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 0 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 1 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 
 
 ### Object: `Wet`
@@ -6404,8 +6404,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Webbed`
@@ -6413,8 +6413,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `WaggleClone`
@@ -6423,13 +6423,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`cWaggle`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle) | Boolean (Flag) / Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
-| [`cWaggle2x2`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle2x2) | Boolean (Flag) / Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
-| [`cWaggle3x3`](../Reference_and_Meta/Miscellaneous.md#object-cwaggle3x3) | Boolean (Flag) / Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`cWaggle`](./Engine_StatusAndPassiveKeys.md#object-cwaggle) | Boolean (Flag) / Object  | Defines a clone variant of the Waggle unit with its own graphics and properties. | 1 | `{ . . . }` |
+| [`cWaggle2x2`](./Engine_StatusAndPassiveKeys.md#object-cwaggle2x2) | Boolean (Flag) / Object  | Defines a larger 2x2 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`cWaggle3x3`](./Engine_StatusAndPassiveKeys.md#object-cwaggle3x3) | Boolean (Flag) / Object  | Defines an even larger 3x3 tile clone variant of the Waggle unit. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `VisualFlySwarm`
@@ -6437,10 +6437,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 0 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 
 
 ### Object: `VisualCountDownThenApplyStatus`
@@ -6486,8 +6486,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`to`](../Reference_and_Meta/Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 1 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
-| [`from`](../Reference_and_Meta/Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 1 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`to`](../Reference_and_Meta/Enums.md#enum-to) | Enum | Specifies the target equipment item after transformation. | 2 | `JarOfNothing`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
+| [`from`](../Reference_and_Meta/Enums.md#enum-from) | Enum | Specifies the source equipment item to be transformed. | 2 | `JarOfChaos`<br>`Necro_SoulDagger_Charged`<br>`Necro_SoulDagger_Uncharged` |
 
 
 ### Object: `TrailBlazer`
@@ -6495,13 +6495,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TradeLife`
@@ -6509,13 +6509,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`bonus_passives`](../Reference_and_Meta/Miscellaneous.md#object-bonus_passives) | Object | Grants temporary passive abilities to the caster for the duration of the ability. | 1 | `{ . . . }` |
 
 
 ### Object: `TowerDefenseStatus2`
@@ -6523,9 +6523,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TowerDefenseStatus`
@@ -6533,8 +6533,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TimeDelayStatusApplication`
@@ -6544,12 +6544,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `delay` | Float | The delay in seconds before the ability's effect triggers. | 4 | `.05`<br>`.1`<br>`.25` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>tag |
-| [`SwitchMusic`](../Reference_and_Meta/Miscellaneous.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`SwitchMusic`](./Engine_StatusAndPassiveKeys.md#object-switchmusic) | Object | Defines a new song or layer for the background music. | 2 | `{ . . . }` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 1 | `{ . . . }`<br>`0`<br>`1` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 1 | `1`<br>`20` |
 | `FullHeal` | Integer | If non-zero, fully restores the target's health. | 1 | `0`<br>`1` |
-| [`DoScreenShake`](../Reference_and_Meta/Miscellaneous.md#object-doscreenshake) | Integer / Object | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
+| [`DoScreenShake`](./Engine_StatusAndPassiveKeys.md#object-doscreenshake) | Integer / Object | If an integer, the number of screen shakes; if an object, defines the duration and intensity of the screen shake. | 1 | `{ . . . }`<br>`1` |
 | [`CreateGlobalModifiers`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-createglobalmodifiers) | Object  | Defines global gameplay modifiers to activate. | 1 | `{ . . . }` |
 | `PlayBackground` | Integer | Specifies the background index to play. | 1 | `0`<br>`1` |
 | [`GlobalSpawnCharacter`](../Reference_and_Meta/Enums.md#enum-globalspawncharacter) | Enum | Specifies the name of a character to spawn globally. | 1 | `MegaGuppy` |
@@ -6561,8 +6561,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TilesMovedToNeighborHeal`
@@ -6570,8 +6570,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TilesMovedToMana`
@@ -6579,8 +6579,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TilesMovedToCritChance`
@@ -6588,8 +6588,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TempStrengthUp`
@@ -6597,7 +6597,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -6606,7 +6606,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -6615,9 +6615,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TempPreEmptiveCounterAttack`
@@ -6625,8 +6625,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TempPassiveUntilSettled`
@@ -6644,9 +6644,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `Temporary`
@@ -6670,7 +6670,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -6679,9 +6679,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TempInjuryImmunity`
@@ -6689,10 +6689,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `TempDamageUp`
@@ -6700,7 +6700,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -6709,7 +6709,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -6718,8 +6718,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `TempBonusKnockbackDamage`
@@ -6727,9 +6727,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TempBonusKnockback`
@@ -6737,9 +6737,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TempBackstab`
@@ -6747,9 +6747,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `TeamCastAbility`
@@ -6767,8 +6767,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Tarred`
@@ -6776,9 +6776,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `Tangled`
@@ -6788,8 +6788,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`alt_art`](../Reference_and_Meta/Enums.md#enum-alt_art) | Enum | Specifies an alternative art asset name to use for the status. | 1 | `TangledMeat` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `SwitchMusic`
@@ -6807,13 +6807,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `SwapWeapon`
@@ -6829,9 +6829,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `StealthUntilBasicAttack`
@@ -6839,8 +6839,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `StatusCharactersOnRoundStart`
@@ -6848,9 +6848,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Else`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
+| [`Else`](./Engine_StatusAndPassiveKeys.md#object-else) | Object  | Contains the fallback effects to apply when a preceding conditional check fails. | 1 | `{ . . . }` |
 | [`Madness`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-madness) | Array / Enum / Integer / Object  | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
 
 
@@ -6861,7 +6861,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 3 | passives<br>class<br>tag |
 | `Thorns` | Integer | The amount of thorns damage dealt to attackers on hit. | 1 | `1`<br>`2`<br>`3` |
-| [`Conditional_GoodRoll`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
+| [`Conditional_GoodRoll`](./Engine_StatusAndPassiveKeys.md#object-conditional_goodroll) | Object  | Contains an inner effect block that only executes on a successful luck roll, with an `odds` field specifying the probability. | 1 | `{ . . . }` |
 | `FloatingRockTrap` | Integer | The number of stacks of Floating Rock Trap applied to the target, dealing damage when stepped on. | 1 | `1` |
 | [`tag_filter`](../Reference_and_Meta/Enums.md#enum-tag_filter) | Enum | Specifies a tag (e.g., 'crow', 'rock', 'grub_familiar') used to filter which units a status or effect applies to. | 1 | `crow`<br>`grub_familiar`<br>`rock` |
 
@@ -6884,9 +6884,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `StacyMutant_Thorns`
@@ -7030,8 +7030,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `SpellShield`
@@ -7039,8 +7039,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `SpeedUp_WithoutInitiative`
@@ -7048,7 +7048,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -7087,14 +7087,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `SolarFlare`
@@ -7102,11 +7102,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 2 | `{ . . . }` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Equation / Object | Specifies the amount of damage dealt, can be a number or expression. | 1 | `"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`elements`](../Reference_and_Meta/Arrays.md#array-elements) | Array  | An array of element tags (e.g., [Heat Fire]) that define the elemental types of the damage instance for resistances and interactions. | 1 | `[`<br>`[Heat Fire]` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
 
 
 ### Object: `Snow`
@@ -7114,35 +7114,35 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 2 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 | [`adventure_weather`](../Reference_and_Meta/Enums.md#enum-adventure_weather) | Enum   | Specifies the weather type on the adventure map, determining visual and gameplay effects. | 1 | `Rain`<br>`Snow`<br>`Thunderstorm` |
 | `prewarm` | Number | The number of seconds the particle system simulates forward before becoming visible. | 1 | `20`<br>`5` |
 | [`skybox_frame`](../Reference_and_Meta/Enums.md#enum-skybox_frame) | Enum   | Determines which skybox background frame is displayed for this weather. | 1 | `day_rain`<br>`day_snow`<br>`day_thunderstorm` |
 | [`particles`](../Reference_and_Meta/Arrays.md#array-particles) | Array  | A list of particle system identifiers used to render the weather effects. | 1 | `[Rain]`<br>`[Snow]`<br>`[Thunderstorm]` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 0 | `-90`<br>`90`<br>`[-10 10]` |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 0 | `.005`<br>`.01`<br>`.03` |
-| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 0 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
-| `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 0 | `0` |
-| [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 0 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
-| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 0 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| [`speed_start`](../Reference_and_Meta/Arrays.md#array-speed_start) | Array   | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `size_end` | Float | The size (scalar or 2D vector) of the effect at the end of its animation. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
+| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 1 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
+| `rotation_speed_end` | Number | The rotation speed (in degrees per second) of the effect at the end of its animation. | 1 | `0` |
+| [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 1 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
+| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 1 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 
 
 ### Object: `SmellBlood`
@@ -7150,11 +7150,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
 
 
 ### Object: `SmartMetronome`
@@ -7164,12 +7164,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `upgraded` | Boolean | If true, the evolved ability is the upgraded version. | 1 | `true` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 
 ### Object: `Sleep`
@@ -7177,9 +7177,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `ShortCircuit`
@@ -7187,14 +7187,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Shield`
@@ -7202,9 +7202,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
 
 ### Object: `Shatter`
@@ -7212,11 +7212,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
 
 
 ### Object: `SetItemAux`
@@ -7250,9 +7250,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `ScrambleLastUsedSpell`
@@ -7268,8 +7268,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `ScatterCoins`
@@ -7286,14 +7286,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 0 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 
 
 ### Object: `Rot`
@@ -7301,8 +7301,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `ReviveNextRound`
@@ -7316,10 +7316,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`AllStatsUp`](../Reference_and_Meta/Arrays.md#array-allstatsup) | Array / Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 2 | `-1`<br>`-2`<br>`1` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
 | [`DivineShield`](../Reference_and_Meta/Arrays.md#array-divineshield) | Array / Integer  | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `Revive`
@@ -7327,12 +7327,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `RepressedMemoriesMetronome`
@@ -7368,13 +7368,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 0 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`spawn`](../Reference_and_Meta/Miscellaneous.md#object-spawn) | Object  | Defines what object or unit is spawned when the ability is used. | 2 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 
 
 ### Object: `Reflect`
@@ -7382,14 +7382,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `ReduceManaCostExcludeBrainstorm`
@@ -7397,9 +7397,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `Reanimate`
@@ -7407,12 +7407,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `RangeUp`
@@ -7420,9 +7420,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `RandomPermanentStatsDistinct`
@@ -7440,9 +7440,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | `full_size` | Boolean | If true, the magic missile uses its full size instead of a reduced size. | 2 | `true` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `RandomKnockback`
@@ -7459,9 +7459,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `RandomDistanceDisplace`
@@ -7487,12 +7487,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `ProbeCharmed`
@@ -7500,9 +7500,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
 
 ### Object: `PreEmptiveCounterNextAttacks`
@@ -7510,10 +7510,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `Possessed`
@@ -7521,10 +7521,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `PoolMetronome`
@@ -7540,15 +7540,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `Petrify`
@@ -7556,10 +7556,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `PermanentConfusion`
@@ -7567,9 +7567,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `PassiveWhileNotTakingTurn`
@@ -7597,8 +7597,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `OneUseSpellDamageUp`
@@ -7606,7 +7606,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -7644,8 +7644,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `NextTurnDoubleRangedDamage`
@@ -7653,8 +7653,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `NextDamageReduceAndHealAllies`
@@ -7662,8 +7662,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `NextBattleStatusStacks`
@@ -7712,9 +7712,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `NextActionLuckUp`
@@ -7722,7 +7722,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -7731,8 +7731,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Muted`
@@ -7740,10 +7740,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `MovementUp`
@@ -7751,12 +7751,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
-| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
-| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 0 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
-| [`tooltip_stackless_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stackless_neg) | String | Localization key for the tooltip of the negative variant when not showing stack count. | 0 | `"KEYWORD_DAMAGEDOWN_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"`<br>`"KEYWORD_TEMPINITDOWN_DESC"` |
-| [`tooltip_stackless_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stackless_pos) | String | Localization key for the tooltip of the positive variant when not showing stack count. | 0 | `"KEYWORD_DAMAGEUP_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
+| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
+| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 1 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
+| [`tooltip_stackless_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stackless_neg) | String | Localization key for the tooltip of the negative variant when not showing stack count. | 1 | `"KEYWORD_DAMAGEDOWN_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTDOWN_DESC_STACKLESS"`<br>`"KEYWORD_TEMPINITDOWN_DESC"` |
+| [`tooltip_stackless_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stackless_pos) | String | Localization key for the tooltip of the positive variant when not showing stack count. | 1 | `"KEYWORD_DAMAGEUP_DESC_STACKLESS"`<br>`"KEYWORD_MOVEMENTUP_DESC_STACKLESS"` |
 
 
 ### Object: `ModifyAbility`
@@ -7776,19 +7776,19 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 1 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`banned_abilities`](../Reference_and_Meta/Arrays.md#array-banned_abilities) | Array   | A list of ability IDs that are excluded from random selection or usage in the Metronome effect. | 1 | `[BatteryNuke WeAreOne Metronome SmartMetronome BecomeEntropy ForbiddenFamine]` (Array) |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 1 | `{ . . . }` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| `frame` | Integer | The sprite frame index to display. | 0 | `1`<br>`10`<br>`100` |
-| [`kind`](../Reference_and_Meta/Enums.md#enum-kind) | Enum  | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 0 | `face`<br>`head`<br>`modifier` |
-| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 0 | `80s`<br>`90s`<br>`AdvancedAlloy` |
-| [`rarity`](../Reference_and_Meta/Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. | 0 | `common`<br>`consumable_common`<br>`consumable_rare` |
-| [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 0 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
-| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 0 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| `frame` | Integer | The sprite frame index to display. | 1 | `1`<br>`10`<br>`100` |
+| [`kind`](../Reference_and_Meta/Enums.md#enum-kind) | Enum  | Specifies the item category (e.g., face, weapon, neck, trinket, modifier). | 1 | `face`<br>`head`<br>`modifier` |
+| [`set`](../Reference_and_Meta/Arrays.md#array-set) | Array / Enum  | Specifies the set name(s) the item belongs to for set bonuses. | 1 | `80s`<br>`90s`<br>`AdvancedAlloy` |
+| [`rarity`](../Reference_and_Meta/Enums.md#enum-rarity) | Enum  | Determines the rarity tier of the item, affecting drop rates and item quality. | 1 | `common`<br>`consumable_common`<br>`consumable_rare` |
+| [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 1 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
+| [`tags`](../Reference_and_Meta/Arrays.md#array-tags) | Array / Enum  | A list of tags that categorize the ability (e.g., weapon_throw, musical, consumable). | 1 | `[cant_be_simulcast]`<br>`[cat robot]`<br>`[consumable shapeshift]` |
 
 
 ### Object: `MeteorShower`
@@ -7796,9 +7796,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 
 ### Object: `Meteornado`
@@ -7806,27 +7806,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 0 | `-90`<br>`90`<br>`[-10 10]` |
-| `alpha_out` | String | The alpha (opacity) value at the end of the effect's outro animation. | 0 | `.2`<br>`.3`<br>`.5` |
-| `alpha_in` | String | The alpha (opacity) value at the start of the effect's intro animation. | 0 | `.01`<br>`.05`<br>`.1` |
-| [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 0 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| [`rotation`](../Reference_and_Meta/Arrays.md#array-rotation) | Array | The rotation of the effect, specified as a single value or a random range [min, max] in degrees. | 1 | `-90`<br>`90`<br>`[-10 10]` |
+| `alpha_out` | String | The alpha (opacity) value at the end of the effect's outro animation. | 1 | `.2`<br>`.3`<br>`.5` |
+| `alpha_in` | String | The alpha (opacity) value at the start of the effect's intro animation. | 1 | `.01`<br>`.05`<br>`.1` |
+| [`rotation_speed`](../Reference_and_Meta/Arrays.md#array-rotation_speed) | Array | The minimum and maximum rotation speed for a particle or visual effect. | 1 | `[-10, 10]`<br>`[-100 100]`<br>`[-100, 100]` |
 
 
 ### Object: `MergeDamageInstance`
@@ -7843,8 +7843,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Math`
@@ -7855,13 +7855,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
-| [`ApplyToSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`ApplyToSource`](./Engine_StatusAndPassiveKeys.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 1 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `Marked`
@@ -7869,14 +7869,14 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `ManaLeeches`
@@ -7884,11 +7884,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`name_reference_applier`](../Assets_and_Localization/Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. | 0 | `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
-| [`tooltip_reference_applier`](../Assets_and_Localization/Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. | 0 | `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name_reference_applier`](../Assets_and_Localization/Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. | 1 | `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
+| [`tooltip_reference_applier`](../Assets_and_Localization/Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. | 1 | `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
 
 
 ### Object: `ManaGainRange`
@@ -7905,8 +7905,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Leeches`
@@ -7914,17 +7914,17 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`name_reference_applier`](../Assets_and_Localization/Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. | 0 | `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
-| [`tooltip_reference_applier`](../Assets_and_Localization/Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. | 0 | `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name_reference_applier`](../Assets_and_Localization/Strings.md#string-name_reference_applier) | String | A localization key for the name displayed to the applier of this status effect. | 1 | `"KEYWORD_ATTRACTION_REF"`<br>`"KEYWORD_LEECHES_NAME_APPLIER"`<br>`"KEYWORD_MANALEECHES_NAME_APPLIER"` |
+| [`tooltip_reference_applier`](../Assets_and_Localization/Strings.md#string-tooltip_reference_applier) | String | A localization key for the tooltip description displayed to the applier of this status effect. | 1 | `"KEYWORD_ATTRACTION_DESC_REF"`<br>`"KEYWORD_LEECHES_DESC_APPLIER"`<br>`"KEYWORD_MANALEECHES_DESC_APPLIER"` |
 
 
 ### Object: `Leech`
@@ -7932,12 +7932,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 0 | `3` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `pieces_required` | Number | The number of scrap pieces required to craft this item. | 1 | `3` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `LeaveBehind`
@@ -7995,8 +7995,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `KillEnemyOfTypeAtBattleStart`
@@ -8013,9 +8013,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 
 ### Object: `Invulnerable`
@@ -8023,8 +8023,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `IntelligenceUp`
@@ -8032,11 +8032,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
-| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
-| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 0 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
+| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
+| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 1 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
 
 ### Object: `Infested`
@@ -8044,28 +8044,28 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
-| `value` | Enum | The numeric value or formula associated with the buff. | 0 | `.5`<br>`0`<br>`1` |
-| `mouth` | Number | The catalog ID for the cat's mouth part. | 0 | `-1`<br>`-2`<br>`1` |
-| [`palette`](../Reference_and_Meta/Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 0 | `-1`<br>`0`<br>`1` |
-| `texture` | Integer | The catalog ID for the cat's texture. | 0 | `-1`<br>`1`<br>`1000` |
-| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 0 | `1`<br>`1000`<br>`1001` |
-| `righteye` | Number | The sprite frame index for the character's right eye. | 0 | `1`<br>`100`<br>`1001` |
-| [`voice`](../Reference_and_Meta/Enums.md#enum-voice) | Enum  | Determines which voice set or type is used for the character. | 0 | `ankylosaurus`<br>`female1`<br>`female10` |
-| `lefteye` | Number | The sprite frame index for the character's left eye. | 0 | `1`<br>`100`<br>`1001` |
-| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 0 | `1`<br>`1000`<br>`1001` |
-| `pitch` | String | The sound pitch multiplier for the character's voice or sounds. | 0 | `.3`<br>`.5`<br>`.6` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 2 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| `value` | Enum | The numeric value or formula associated with the buff. | 1 | `.5`<br>`0`<br>`1` |
+| `mouth` | Number | The catalog ID for the cat's mouth part. | 1 | `-1`<br>`-2`<br>`1` |
+| [`palette`](../Reference_and_Meta/Enums.md#enum-palette) | Enum / Integer  | Specifies the color palette index for the ability's visuals. | 1 | `-1`<br>`0`<br>`1` |
+| `texture` | Integer | The catalog ID for the cat's texture. | 1 | `-1`<br>`1`<br>`1000` |
+| `default_frame` | Number | The default sprite frame used for the character's portrait or body. | 1 | `1`<br>`1000`<br>`1001` |
+| `righteye` | Number | The sprite frame index for the character's right eye. | 1 | `1`<br>`100`<br>`1001` |
+| [`voice`](../Reference_and_Meta/Enums.md#enum-voice) | Enum  | Determines which voice set or type is used for the character. | 1 | `ankylosaurus`<br>`female1`<br>`female10` |
+| `lefteye` | Number | The sprite frame index for the character's left eye. | 1 | `1`<br>`100`<br>`1001` |
+| `righteyebrow` | Number | The sprite frame index for the character's right eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `lefteyebrow` | Number | The sprite frame index for the character's left eyebrow. | 1 | `1`<br>`1000`<br>`1001` |
+| `pitch` | String | The sound pitch multiplier for the character's voice or sounds. | 1 | `.3`<br>`.5`<br>`.6` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `IncAuxCounterCycle`
@@ -8100,15 +8100,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `HolyDamageBlessing`
@@ -8126,9 +8126,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `HeavyHits`
@@ -8136,9 +8136,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `HeatWave`
@@ -8146,12 +8146,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 0 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
-| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 0 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 1 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
+| [`hint_persistent_elements`](../Reference_and_Meta/Arrays.md#array-hint_persistent_elements) | Array   | A list of element types that remain persistent on the ground during this weather. | 1 | `[Fire]`<br>`[Heat]`<br>`[Holy]` |
 
 
 ### Object: `HealAlliesEachTurn`
@@ -8178,8 +8178,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `GlobalSpawnOnRoundEnd`
@@ -8214,8 +8214,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `FormChange`
@@ -8267,26 +8267,26 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 0 | `.1`<br>`.2`<br>`.5` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | String | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 0 | `.2`<br>`.5`<br>`0` |
-| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 0 | `-1`<br>`.5`<br>`.8` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| [`particle_lifetime`](../Reference_and_Meta/Arrays.md#array-particle_lifetime) | Array   | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| [`friction`](../Reference_and_Meta/Arrays.md#array-friction) | Array  | A scalar or 3D vector multiplier for velocity reduction applied over time. | 1 | `.1`<br>`.2`<br>`.5` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | String | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| [`size_start`](../Reference_and_Meta/Arrays.md#array-size_start) | Array   | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `alpha_end` | Float | The alpha (opacity) value at the end of the effect's duration or animation. | 1 | `.2`<br>`.5`<br>`0` |
+| `alpha_start` | Float | The alpha (opacity) value at the start of the effect's duration or animation. | 1 | `-1`<br>`.5`<br>`.8` |
 
 
 ### Object: `FlySwarm`
@@ -8294,16 +8294,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 0 | `{ . . . }` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 0 | `{ . . . }` |
-| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 0 | `{ . . . }` |
-| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 0 | `{ . . . }` |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 0 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
-| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 0 | `{ . . . }` |
+| [`passives`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-passives) | Object  | A container object listing passive effects granted to the unit. | 1 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`properties`](../Reference_and_Meta/Miscellaneous.md#object-properties) | Object  | A container object defining a character's base attributes, tags, faction, health, movement, and other core properties. | 1 | `{ . . . }` |
+| [`stats`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-stats) | Object  | A container object defining a character's primary statistics (strength, dexterity, constitution, intelligence, speed, etc.). | 1 | `{ . . . }` |
+| [`abilities`](../Reference_and_Meta/Miscellaneous.md#object-abilities) | Object  | A container object defining a character's move, attack, and spell abilities. | 1 | `{ . . . }` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`ai`](../Reference_and_Meta/Miscellaneous.md#object-ai) | Object  | A container object defining the character's artificial intelligence brain and decision weights. | 1 | `{ . . . }` |
 
 
 ### Object: `FireStorm`
@@ -8311,7 +8311,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 0 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
+| [`combo`](../Reference_and_Meta/Arrays.md#array-combo) | Array  | A list of particle effect names that are spawned together in sequence. | 1 | `[BloodPoof BloodBounce]`<br>`[BloodPoofCrit BloodBounceCrit BloodPopCrit]`<br>`[BloodPoof_Absorb BloodBounce_Absorb]` |
 
 
 ### Object: `FireflySwarm`
@@ -8319,9 +8319,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 
 ### Object: `FireArmor2`
@@ -8329,13 +8329,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `FireArmor`
@@ -8343,15 +8343,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 2 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Fear`
@@ -8359,8 +8359,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `FactionUprising`
@@ -8378,13 +8378,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 1 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
 
 
 ### Object: `EmptyMind`
@@ -8392,13 +8392,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Else`
@@ -8408,7 +8408,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 17 | `{ . . . }` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 6 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 2 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Cleanse`](./Engine_StatusAndPassiveKeys.md#object-cleanse) | Integer / Object  | The number of stacks of negative status effects removed from the target. | 2 | `{ . . . }`<br>`0`<br>`1` |
@@ -8416,7 +8416,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Marked`](./Engine_StatusAndPassiveKeys.md#object-marked) | Array / Integer / Object  | The amount of Marked applied, either as a fixed number or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`3`<br>`5` |
 | [`Revive`](./Engine_StatusAndPassiveKeys.md#object-revive) | Integer / Object  | Revives a dead target with the specified percentage of health (e.g., "50%", "100%") or a fixed number. | 2 | `{ . . . }`<br>`1`<br>`100%`<br>`50%` |
 | [`RandomStatDown`](../Reference_and_Meta/Arrays.md#array-randomstatdown) | Array / Integer / String  | The amount of random stat reduction applied, either as a fixed number, a formula string, or an array of [stacks, probability]. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`1` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 2 | `{ . . . }` |
+| [`GainCoinsRange`](./Engine_StatusAndPassiveKeys.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 2 | `{ . . . }` |
 | `PermanentCharm` | Integer | If non-zero, permanently charms the target, converting it to the caster's faction permanently. | 2 | `1` |
 | [`Poison`](../Reference_and_Meta/Arrays.md#array-poison) | Array / Integer  | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`10`<br>`2` |
 | [`Bruise`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-bruise) | Array / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
@@ -8428,16 +8428,16 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Charmed`](../Reference_and_Meta/Arrays.md#array-charmed) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of the Charmed status effect applied, making the target act as an ally. | 1 | `1`<br>`2`<br>`3` |
 | [`Immobile`](../Reference_and_Meta/Arrays.md#array-immobile) | Array / Integer  | The number of stacks (or [stacks, probability] array) of the Immobile debuff applied, preventing movement. | 1 | `0`<br>`1`<br>`10%` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 1 | `-1`<br>`-2`<br>`1` |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 1 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | `DodgeChance_Status` | Integer | The flat percentage increase to dodge chance applied as a status effect. | 1 | `1`<br>`10`<br>`100` |
 | [`Leeches`](./Engine_StatusAndPassiveKeys.md#object-leeches) | Integer / Object  | The number of stacks of the Leeches debuff applied, which deals damage over time and heals the applier. | 1 | `{ . . . }`<br>`1`<br>`2`<br>`3` |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 1 | `{ . . . }`<br>`1` |
+| [`Cleave`](./Engine_StatusAndPassiveKeys.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 1 | `{ . . . }`<br>`1` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`[1 .1]` |
 | `Instakill` | Integer | The amount of damage dealt to instantly kill the target; can be a flat value or a probability array (e.g., [damage, chance]). | 1 | `25`<br>`50`<br>`999` |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `PartialCleanse` | Integer | The number of stacks of temporary status effects to remove from the target. | 1 | `1`<br>`9999` |
 | `TempSpeedUp` | Enum / Integer | The number of stacks of temporary Speed Up applied to the unit. | 1 | `10`<br>`4`<br>`X` |
-| [`ScatterCoins`](../Reference_and_Meta/Miscellaneous.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
+| [`ScatterCoins`](./Engine_StatusAndPassiveKeys.md#object-scattercoins) | Object  | The number of coins (or [stacks, probability] array) to scatter on the ground; can also include stacking behavior and formula. | 1 | `{ . . . }` |
 | [`DybbukPossessed`](../Reference_and_Meta/Miscellaneous.md#object-dybbukpossessed) | Object  | Contains parameters for the Dybbuk possession status, specifying exit ability and self-punch ability. | 1 | `{ . . . }` |
 | [`AllyInfested`](../Reference_and_Meta/Miscellaneous.md#object-allyinfested) | Array / Float / Object  | Defines the AllyInfested object, which spawns an infested ally under the player's control. | 1 | `{ . . . }` |
 
@@ -8447,8 +8447,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `DustOnHit`
@@ -8464,8 +8464,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Drag`
@@ -8473,9 +8473,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 0 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`class`](../Reference_and_Meta/Enums.md#enum-class) | Enum  | Specifies the class that this ability belongs to, used for categorization and restrictions. | 1 | `AOESpellAbility`<br>`BounceDashAbility`<br>`Butcher` |
 
 
 ### Object: `DoubleLoot`
@@ -8483,11 +8483,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
 
 
 ### Object: `DoubleCastSpellThisTurn`
@@ -8495,8 +8495,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `DoubleCastSpell`
@@ -8504,8 +8504,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `DoubleCast`
@@ -8513,8 +8513,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `DoScreenShake`
@@ -8563,9 +8563,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `DexterityUp`
@@ -8573,11 +8573,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
-| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
-| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 0 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
+| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
+| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 1 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
 
 ### Object: `DestroyEquipmentAndAttachParasite`
@@ -8611,9 +8611,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `DelayCastAbility`
@@ -8631,9 +8631,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `CureDisease`
@@ -8655,12 +8655,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`slot`](../Reference_and_Meta/Enums.md#enum-slot) | Enum / Integer  | Specifies the equipment slot (e.g., 'head', 'trinket', 'random_empty') where the crafted item is placed. | 14 | `0`<br>`1`<br>`2` |
 | `temporary` | Boolean | If true, the crafted item is temporary and will be removed after the battle or a set duration. | 4 | `false` |
 | `works_with_tech` | Boolean | If true, the craft effect is compatible with tech-based interactions or abilities. | 4 | `true` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `Counterspell`
@@ -8668,10 +8668,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
 
 
 ### Object: `CopySpells`
@@ -8689,11 +8689,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
-| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
-| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 0 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
+| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
+| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 1 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
 
 ### Object: `Conditional_Shielded`
@@ -8701,10 +8701,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`Cleave`](../Reference_and_Meta/Miscellaneous.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 2 | `{ . . . }`<br>`1` |
+| [`Cleave`](./Engine_StatusAndPassiveKeys.md#object-cleave) | Integer / Object  | The number of additional targets hit; if an object, contains a chance parameter for each cleave attempt. | 2 | `{ . . . }`<br>`1` |
 | [`Stun`](../Reference_and_Meta/Arrays.md#array-stun) | Array / Integer  | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 | `BonusDamage` | Equation | The amount of flat bonus damage added (negative values reduce damage). | 1 | `"ceil(X/2)"`<br>`"max(0, floor(X/2)-1)"`<br>`"max(0, floor(X/6)-1)"` |
-| [`SetItemAux`](../Reference_and_Meta/Miscellaneous.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 1 | `{ . . . }` |
+| [`SetItemAux`](./Engine_StatusAndPassiveKeys.md#object-setitemaux) | Object  | Configures an item's auxiliary value by specifying a target slot and a formula for the new value. | 1 | `{ . . . }` |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 1 | passives<br>class<br>tag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 0 | Default<br>FormChange<br>Druid |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
@@ -8766,7 +8766,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](./Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | Inherits standard status effect and passive mechanics. You can inject any key from the Engine Status and Passive Keys list here to apply buffs, debuffs, or triggered behaviors. | 46 | passives<br>class<br>tag |
 | [`{Logic Keys}`](./Engine_LogicKeys.md#valid-property-keys) | Variable | Placeholder for logic keys used within the Conditional_Shielded object; no specific examples provided. | 41 | Default<br>FormChange<br>Druid |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 3 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 3 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | `DamageUp` | Array / Equation | The number of stacks (or a formula string) of a damage buff applied, increasing outgoing damage. | 2 | `"(-ceil(abs(X/2)))"`<br>`"(-ceil(abs(X/3)))"`<br>`-1` |
 | [`Die`](../Reference_and_Meta/Miscellaneous.md#object-die) | Integer / Object  | If set, kills the target immediately. | 2 | `{ . . . }`<br>`1`<br>`6` |
 | [`ChangeTilesUnder`](../Reference_and_Meta/Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 2 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
@@ -8791,7 +8791,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`Fear`](../Reference_and_Meta/Arrays.md#array-fear) | Array / Integer  | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`10`<br>`2` |
 | [`Confusion`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-confusion) | Array / Integer / Object  | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 2 | `{ . . . }`<br>`1`<br>`10`<br>`2` |
 | [`Slow`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-slow) | Array / Enum / Integer / Object  | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 2 | `{ . . . }`<br>`-1`<br>`1`<br>`2` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 1 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`Quivered`](../Reference_and_Meta/Arrays.md#array-quivered) | Array / Integer  | The amount of quivered stacks applied, or an [stacks, probability] array. | 1 | `1`<br>`2`<br>`5` |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
 
@@ -8822,7 +8822,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`FindItemFromPool`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-finditemfrompool) | Enum / Object  | Specifies the loot pool from which to find an item, with an optional chance. | 5 | `{ . . . }`<br>`blackbird_pool`<br>`chapter`<br>`chapter_common` |
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 3 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `RandomMutation` | Integer | The number of random mutations to apply. | 3 | `1`<br>`3` |
-| [`ImmediateUseAbility`](../Reference_and_Meta/Miscellaneous.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
+| [`ImmediateUseAbility`](./Engine_StatusAndPassiveKeys.md#object-immediateuseability) | Enum / Object  | Specifies the name of an ability to be triggered instantly from this effect. | 1 | `{ . . . }`<br>`FuzzerReact`<br>`HitlerCloneHeil`<br>`HitlerCloneTransform` |
 | [`ChangeTilesUnder`](../Reference_and_Meta/Enums.md#enum-changetilesunder) | Enum  | The tile type to change the ground tiles under the target to. | 1 | `DirtTile`<br>`GlassTile`<br>`LavaTile` |
 | [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
 
@@ -8971,9 +8971,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
 
 
 ### Object: `Cleave`
@@ -8982,9 +8982,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | `chance` | Float | A probability (decimal or percentage) for a form change or other effect to occur. | 1 | `.02`<br>`.1`<br>`.15` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| `icon_frame` | Number | The sprite frame index for the buff icon. | 0 | `141`<br>`148`<br>`149` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| `icon_frame` | Number | The sprite frame index for the buff icon. | 1 | `141`<br>`148`<br>`149` |
 
 
 ### Object: `Cleanse`
@@ -8992,12 +8992,12 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 0 | `{ . . . }` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`target`](../Reference_and_Meta/Miscellaneous.md#object-target) | Object  | Defines targeting parameters like range, AoE, restrictions, and multihit behavior. | 1 | `{ . . . }` |
 
 
 ### Object: `Charmed`
@@ -9005,9 +9005,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
 
 ### Object: `CharismaUp`
@@ -9015,11 +9015,11 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
-| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 0 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
-| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 0 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Reference_and_Meta/Enums.md#enum-tooltip_stackless) | Enum   | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks_neg`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_neg) | String | Localization key for the tooltip description of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_DESC"`<br>`"KEYWORD_CHADOWN_DESC"`<br>`"KEYWORD_CONDOWN_DESC"` |
+| [`name_stacks_neg`](../Assets_and_Localization/Strings.md#string-name_stacks_neg) | String | Localization key for the name of the negative variant (e.g., stat down) of this status effect. | 1 | `"KEYWORD_ALLSTATSDOWN_NAME"`<br>`"KEYWORD_CHADOWN_NAME"`<br>`"KEYWORD_CONDOWN_NAME"` |
+| [`tooltip_stacks_pos`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_pos) | String | Localization key for the tooltip description of the positive variant (e.g., stat up) of this status effect. | 1 | `"KEYWORD_ALLSTATSUP_DESC"`<br>`"KEYWORD_CHAUP_DESC"`<br>`"KEYWORD_CONUP_DESC"` |
 
 
 ### Object: `ChargeFists`
@@ -9027,15 +9027,15 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
-| [`keyword_tooltips`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 0 | `{ . . . }` |
-| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 0 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`keyword_tooltips`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-keyword_tooltips) | Object  | Associates keyword tooltips with the ability, often used for status effects. | 1 | `{ . . . }` |
+| [`tooltip_stacks_singular`](../Assets_and_Localization/Strings.md#string-tooltip_stacks_singular) | String | The localization key for the singular form of the stack count in the tooltip. | 1 | `"KEYWORD_AUTOREVIVE_DESC_SINGULAR"`<br>`"KEYWORD_BLIND_DESC_STACKLESS"`<br>`"KEYWORD_BONUSMOVE_DESC"` |
 
 
 ### Object: `ChangeTile`
@@ -9063,8 +9063,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `CatPartsSizeScaleStatus`
@@ -9093,13 +9093,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHitCharacter`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
+| [`ObjectOnHitCharacter`](./Engine_StatusAndPassiveKeys.md#object-objectonhitcharacter) | Enum / Object  | Specifies the name (or object with name and stacks) of an object/entity to spawn on the target's location when hit. | 10 | `{ . . . }`<br>`AllyRotFly`<br>`BeefyCharmedLeech`<br>`BestBud` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 5 | `{ . . . }` |
 | [`BreakIntoRocks`](../Reference_and_Meta/Enums.md#enum-breakintorocks) | Enum | Specifies the type of rock (e.g., 'Coin', 'SmallRock') to spawn when breaking an inanimate object. | 4 | `Coin`<br>`SmallRock` |
-| [`ApplyToSource`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
+| [`ApplyToSource`](./Engine_StatusAndPassiveKeys.md#object-applytosource) | Object  | An object of effects that are applied to the source of the ability (the caster). | 3 | `{ . . . }` |
 | `Vaporize` | Integer | Removes the target from play, preventing its corpse from being interacted with. | 3 | `1`<br>`20` |
 | `GetAggroTarget` | Integer | The number of aggro targets to acquire. | 2 | `1` |
-| [`Temporary`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
+| [`Temporary`](./Engine_StatusAndPassiveKeys.md#object-temporary) | Object  | Contains parameters for applying a temporary status effect with specific stacks, turns, and expiration conditions. | 1 | `{ . . . }` |
 | `PreventDeathTransforms` | Integer | Number of death transforms prevented for non-boss characters. | 1 | `1` |
 
 
@@ -9108,10 +9108,10 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 0 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 
 
 ### Object: `Bounty`
@@ -9119,9 +9119,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `BounceObject`
@@ -9139,9 +9139,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
 
 
 ### Object: `BodyGuard`
@@ -9151,13 +9151,13 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | :--- | :--- | :--- | :--- | :--- |
 | [`ability`](../Reference_and_Meta/Enums.md#enum-ability) | Enum  | Specifies the ability to be used or triggered when the parent condition is met. | 2 | `AZ_LoseHead`<br>`AlienBeam`<br>`AlienBeastGoop` |
 | `stacks` | Enum / Equation | Specifies the number of stacks for a temporary status effect, either as a fixed number, a formula string, or by referencing an item's auxiliary value. | 2 | `"floor(lck/4)"`<br>`"max(min(X+1, item_aux), 0)"`<br>`-2` |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 0 | `{ . . . }` |
-| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 0 | `{ . . . }` |
-| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 0 | `{ . . . }` |
-| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 0 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
-| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 0 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`graphics`](../Reference_and_Meta/Miscellaneous.md#object-graphics) | Object  | An object defining visual aspects of the ability, such as animation, particle, projectile, and other graphical effects. | 1 | `{ . . . }` |
+| [`meta`](../World_Maps_and_Events/Shops.md#object-meta) | Object  | Contains metadata for the ability including name, description, class, and type icon. | 1 | `{ . . . }` |
+| [`damage_instance`](../Reference_and_Meta/Miscellaneous.md#object-damage_instance) | Object  | Defines damage properties, effects, and healing for the ability's direct damage. | 1 | `{ . . . }` |
+| [`template`](../Reference_and_Meta/Enums.md#enum-template) | Enum  | Specifies the gameplay template of the ability (e.g., lobbed_attack, swap, ranged_attack). | 1 | `dash_attack`<br>`jump_attack`<br>`jump_move` |
+| [`cost`](../Reference_and_Meta/Miscellaneous.md#object-cost) | Object  | Defines the resource cost (e.g., mana) and other casting requirements. | 1 | `{ . . . }` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `Bloodzerked`
@@ -9165,8 +9165,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 0 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip_stacks`](../Assets_and_Localization/Strings.md#string-tooltip_stacks) | String | A localization key for the tooltip description of this status effect when displayed with its stack count. | 1 | `"KEYWORD_AMMO_DESC"`<br>`"KEYWORD_ATTRACTION_DESC"`<br>`"KEYWORD_AUTOREVIVE_DESC"` |
 
 
 ### Object: `BlessingOfPeace`
@@ -9174,9 +9174,9 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
-| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 0 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip_stackless`](../Assets_and_Localization/Strings.md#string-tooltip_stackless) | String | A localization key for the tooltip description of this status effect when it has no stack count. | 1 | `"KEYWORD_ALPHA_DESC_STACKLESS"`<br>`"KEYWORD_ATTRACTION_DESC_STACKLESS"`<br>`"KEYWORD_BLASTRESISTANCE_DESC_STACKLESS"` |
 
 
 ### Object: `ArcLightning`
@@ -9196,7 +9196,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ObjectOnHit`](../Reference_and_Meta/Miscellaneous.md#object-objectonhit) | Enum / Object | Specifies the object to spawn on the hit tile. | 2 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
+| [`ObjectOnHit`](./Engine_StatusAndPassiveKeys.md#object-objectonhit) | Enum / Object | Specifies the object to spawn on the hit tile. | 2 | `{ . . . }`<br>`Bait`<br>`BiggestFood`<br>`Carcus` |
 | `SpawnBearTrap` | Integer | If non-zero, spawns a bear trap on the tile. | 2 | `1` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2 | `{ . . . }` |
 
@@ -9211,7 +9211,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | `StrengthUp` | Enum / Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 6 | `"max(int, 0)"`<br>`-1`<br>`-2` |
 | `HealthGain` | Integer | The amount of health restored to the source. | 6 | `1`<br>`10`<br>`2` |
 | `Shield` | Enum / Equation | The amount of shield granted to the source, absorbing incoming damage. | 5 | `"2*(X-1)"`<br>`"max((X-1)*2, 0)"`<br>`"max(X*3, 0)"` |
-| [`FormChange`](../Reference_and_Meta/Miscellaneous.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 4 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
+| [`FormChange`](./Engine_StatusAndPassiveKeys.md#object-formchange) | Enum / Object  | Specifies the form the target transforms into, either as a string or an object with a `form` field. | 4 | `{ . . . }`<br>`Big`<br>`BigHolding`<br>`BigHoldingCat` |
 | [`EvolveAbilityFromPool`](../Reference_and_Meta/Miscellaneous.md#object-evolveabilityfrompool) | Enum / Object  | Specifies the ability pool from which to evolve an ability for the source, optionally upgrading it. | 4 | `{ . . . }`<br>`Butcher`<br>`Druid`<br>`Fighter` |
 | [`ConstitutionUp`](../Reference_and_Meta/Arrays.md#array-constitutionup) | Array / Enum / Integer  | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 3 | `-1`<br>`-2`<br>`1` |
 | `AddWeaponAux` | Equation | The amount or expression to add to the source's weapon auxiliary stat. | 3 | `"-max(min(X+1, item_aux), 0)"`<br>`-item_aux`<br>`1` |
@@ -9230,7 +9230,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 | [`ForceUseAbility`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-forceuseability) | Enum / Object  | The name of the ability the source is forced to use, optionally with a chance. | 1 | `{ . . . }`<br>`CancerExplode`<br>`DustDash`<br>`Hallucinate_Disorder` |
 | `MoveQuivered` | Float | The number of stacks of bonus movement points applied to the source. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`[1, 0.1]` |
 | `Tech` | Integer | The number of stacks of Tech applied, increasing the source's Tech stat. | 1 | `1`<br>`3` |
-| [`GainCoinsRange`](../Reference_and_Meta/Miscellaneous.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
+| [`GainCoinsRange`](./Engine_StatusAndPassiveKeys.md#object-gaincoinsrange) | Object  | An object with `min` and `max` fields specifying a range for the amount of coins gained. | 1 | `{ . . . }` |
 | [`FindItem`](../Reference_and_Meta/Enums.md#enum-finditem) | Enum  | The name of the specific item to find and add to the source's inventory. | 1 | `BoneClub`<br>`Molars`<br>`Pearl` |
 
 
@@ -9239,7 +9239,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`GainDisorderFromPool`](../Reference_and_Meta/Miscellaneous.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 2 | `{ . . . }`<br>`all_disorders` |
+| [`GainDisorderFromPool`](./Engine_StatusAndPassiveKeys.md#object-gaindisorderfrompool) | Enum / Object  | Specifies a pool of disorders from which one is randomly gained on basic attack, with an optional chance. | 2 | `{ . . . }`<br>`all_disorders` |
 
 
 ### Object: `ApplyToRandomClosestAlly`
@@ -9312,7 +9312,7 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 0 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
+| [`alias`](../Reference_and_Meta/Enums.md#enum-alias) | Enum  | Specifies the reference name of another status effect to alias or copy properties from. | 1 | `AllStatsUp`<br>`Brace`<br>`Brittle` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 0 | `{ . . . }` |
 
 
@@ -9321,8 +9321,8 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 0 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 1 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
 
 
 ### Object: `AddTilesetObjects`
@@ -9347,27 +9347,27 @@ The following objects all behave as `{Status and Passive Keys}` containers. Each
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 0 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
-| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 0 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
-| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 0 | `{ . . . }` |
-| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 0 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
-| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 0 | `default`<br>`separate` |
-| `emit_amount` | Number | The number of particles emitted per burst. | 0 | `1`<br>`10`<br>`100` |
-| `emit_rate` | Float | The rate of particle emission per second. | 0 | `.5`<br>`1`<br>`10` |
-| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 0 | `.`<br>`.025`<br>`.35` |
-| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 0 | `global`<br>`local` |
-| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 0 | `default` |
-| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 0 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
-| `emit_spread` | Number | The angle spread for particle emission direction. | 0 | `0`<br>`1`<br>`10` |
-| `speed_start` | Float | The initial speed of particles. | 0 | `-2`<br>`.001`<br>`.1` |
-| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 0 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
-| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 0 | `{ . . . }` |
-| `size_start` | String | The starting size of particles. | 0 | `.1`<br>`.2`<br>`.3` |
-| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 0 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
-| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 0 | `false`<br>`true` |
-| `speed_scale` | String | A multiplier for particle speed. | 0 | `.05`<br>`.1`<br>`.2` |
-| [`force`](../Reference_and_Meta/Arrays.md#array-force) | Array  | The force vector applied to particles. | 0 | `0`<br>`1`<br>`1.5` |
-| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 0 | `.005`<br>`.01`<br>`.03` |
-| `chain` | Boolean | Specifies the ability to chain into and execute. | 0 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
-| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 0 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
+| [`name`](../Reference_and_Meta/Enums.md#enum-name) | Enum  | Specifies the localized name string for the entity, item, or ability. | 1 | `""`<br>`"2x2 Static Cactus"`<br>`"ABIITY_FRIENDORFOE_NAME"` |
+| [`desc`](../Reference_and_Meta/Enums.md#enum-desc) | Enum  | Specifies the localized description string for the item or ability. | 1 | `""`<br>`"ABIITY_FRIENDORFOE2_DESC"`<br>`"ABIITY_FRIENDORFOE_DESC"` |
+| [`effects`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-effects) | Object  | Applies a list of status effects or visual effects to targets. | 1 | `{ . . . }` |
+| [`movieclip`](../Reference_and_Meta/Arrays.md#array-movieclip) | Array / Enum  | Specifies the visual movie clip or sprite asset used for the object. | 1 | `AcidOoze`<br>`AcidRainParticle`<br>`AcidRainSplashParticle` |
+| [`render_mode`](../Reference_and_Meta/Enums.md#enum-render_mode) | Enum   | The rendering mode for particles (e.g., 'default', 'separate'). | 1 | `default`<br>`separate` |
+| `emit_amount` | Number | The number of particles emitted per burst. | 1 | `1`<br>`10`<br>`100` |
+| `emit_rate` | Float | The rate of particle emission per second. | 1 | `.5`<br>`1`<br>`10` |
+| `particle_lifetime` | Float | The duration in seconds particles remain alive. | 1 | `.`<br>`.025`<br>`.35` |
+| [`simulation_space`](../Reference_and_Meta/Enums.md#enum-simulation_space) | Enum   | The coordinate space for particle simulation ('local' or 'global'). | 1 | `global`<br>`local` |
+| [`projection_matrix`](../Reference_and_Meta/Enums.md#enum-projection_matrix) | Enum   | The projection matrix mode for particle rendering (e.g., 'default'). | 1 | `default` |
+| [`emit_direction`](../Reference_and_Meta/Arrays.md#array-emit_direction) | Array   | The initial direction vector for emitted particles. | 1 | `[-.4, -.4, 0]`<br>`[-.5, -1, 0]`<br>`[.1, -1, .1]` |
+| `emit_spread` | Number | The angle spread for particle emission direction. | 1 | `0`<br>`1`<br>`10` |
+| `speed_start` | Float | The initial speed of particles. | 1 | `-2`<br>`.001`<br>`.1` |
+| [`live_bounds`](../Reference_and_Meta/Arrays.md#array-live_bounds) | Array   | The bounds within which particles can exist. | 1 | `[-.2 10 0 10 -.2 10]`<br>`[-0.5 999  -999 999 -0.5 999]`<br>`[-999 999  -999 999 -999 999]` |
+| [`scripts`](../Reference_and_Meta/Miscellaneous.md#object-scripts) | Object  | An object containing particle system scripts like forces or collisions. | 1 | `{ . . . }` |
+| `size_start` | String | The starting size of particles. | 1 | `.1`<br>`.2`<br>`.3` |
+| [`emit_box`](../Reference_and_Meta/Arrays.md#array-emit_box) | Array   | The spatial bounds (min x, max x, min y, max y, min z, max z) for particle emission. | 1 | `[-.02 .02 .1 0 -.02 .02]`<br>`[-.03 .03 .1 0 -.03 .03]`<br>`[-.1 .1 .2 .2 -.1 .1]` |
+| `face_moving_direction` | Boolean | If true, particles rotate to face their movement direction. | 1 | `false`<br>`true` |
+| `speed_scale` | String | A multiplier for particle speed. | 1 | `.05`<br>`.1`<br>`.2` |
+| [`force`](../Reference_and_Meta/Arrays.md#array-force) | Array  | The force vector applied to particles. | 1 | `0`<br>`1`<br>`1.5` |
+| `alpha` | String | The alpha transparency value for the particle system (e.g., '0.03'). | 1 | `.005`<br>`.01`<br>`.03` |
+| `chain` | Boolean | Specifies the ability to chain into and execute. | 1 | `AcidSplash`<br>`CaveSplash`<br>`FireFullSmall` |
+| `ambient_sound` | String | The filename of the ambient sound loop played during this weather type. | 1 | `amb_acidrain.ogg`<br>`amb_blizzard.ogg`<br>`amb_butterflyswarm.ogg` |
 

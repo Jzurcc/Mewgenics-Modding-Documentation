@@ -146,41 +146,41 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 305 | `common`<br>`rare`<br>`cha` |
-| [`intro`](./NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 214 | `{ . . . }` |
-| [`main`](../Reference_and_Meta/Miscellaneous.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 214 | `{ . . . }` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 45 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 44 | `cha`<br>`coins`<br>`con` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 37 | `false`<br>`true` |
+| [`intro`](./Events_and_Encounters.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 214 | `{ . . . }` |
+| [`main`](./Events_and_Encounters.md#object-main) | Object  | An object containing the primary prompt and options for an event. | 214 | `{ . . . }` |
+| [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 101 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 88 | `1`<br>`10`<br>`15` |
+| `weight` | `Number` | A multiplier or priority value for random selection or effect magnitude. | 63 | `.25`<br>`.5`<br>`1` |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 31 | `{ . . . }` |
-| [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 29 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 27 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`reward`](../Reference_and_Meta/Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 23 | `{ . . . }` |
-| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 22 | `1`<br>`10`<br>`15` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 20 | `{ . . . }` |
-| `get_item_from_pool` | String | Grants an item from the specified pool or a specific item name. | 20 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 8 | `-1`<br>`-2`<br>`-3` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 7 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 7 | `-1`<br>`-2`<br>`-3` |
-| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 7 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 7 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 7 | `1`<br>`10`<br>`15` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 6 | `-1`<br>`-2`<br>`-3` |
-| `weight` | `Number` | A multiplier or priority value for random selection or effect magnitude. | 5 | `.25`<br>`.5`<br>`1` |
-| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 3 | `+1`<br>`-1`<br>`-2` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 3 | `-1`<br>`-10`<br>`-2` |
-| [`rare`](../Reference_and_Meta/Enums.md#enum-rare) | Enum  | Defines the rare reward block for a boss encounter. | 2 | `1`<br>`10`<br>`15` |
-| [`smash`](../Reference_and_Meta/Miscellaneous.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 2 | `{ . . . }` |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 2 | `-1`<br>`-2`<br>`-3` |
-| [`destroy`](../Reference_and_Meta/Miscellaneous.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 2 | `{ . . . }` |
-| [`open`](../Reference_and_Meta/Miscellaneous.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 1 | `{ . . . }` |
-| [`pick`](../Reference_and_Meta/Miscellaneous.md#object-pick) | Object  | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 0 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 0 | `{ . . . }` |
-| [`common`](../Reference_and_Meta/Enums.md#enum-common) | Enum  | Defines the common reward block for a boss encounter. | 0 | `100`<br>`14`<br>`5` |
+| `get_item_from_pool` | String | Grants an item from the specified pool or a specific item name. | 27 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 12 | `{ . . . }` |
+| [`rare`](../Reference_and_Meta/Enums.md#enum-rare) | Enum  | Defines the rare reward block for a boss encounter. | 9 | `1`<br>`10`<br>`15` |
+| [`open`](./Events_and_Encounters.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 4 | `{ . . . }` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 3 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 3 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 3 | `1`<br>`10`<br>`15` |
+| [`pick`](./Events_and_Encounters.md#object-pick) | Object  | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 3 | `{ . . . }` |
+| [`smash`](./Events_and_Encounters.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 2 | `{ . . . }` |
+| [`destroy`](./Events_and_Encounters.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 2 | `{ . . . }` |
+| [`self_damage`](../Reference_and_Meta/Miscellaneous.md#object-self_damage) | Boolean / Integer / Object  | Defines damage or effects applied to the caster when using the ability. | 2 | `{ . . . }`<br>`1`<br>`10`<br>`100%` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 2 | `{ . . . }` |
+| [`common`](../Reference_and_Meta/Enums.md#enum-common) | Enum  | Defines the common reward block for a boss encounter. | 1 | `100`<br>`14`<br>`5` |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 0 | `{ . . . }` |
+| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
+| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
+| [`cha`](../Reference_and_Meta/Enums.md#enum-cha) | Enum / Integer  | The Charisma stat value or modifier. | 0 | `+1`<br>`-1`<br>`-2` |
+| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 0 | `-1`<br>`-10`<br>`-2` |
+| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 0 | `-1`<br>`-2`<br>`-3` |
 | [`cutscene`](../Assets_and_Localization/Strings.md#string-cutscene) | String | Specifies the name of a cutscene to play. | 0 | `"chaos_ending_bad"`<br>`"chaos_ending_good"`<br>`"chapterintros/bunker"` |
 | [`normal`](../Reference_and_Meta/Arrays.md#array-normal) | Array | An array or object defining the reward table for normal encounters, including coin ranges, food ranges, and loot chances. | 0 | `[` |
 | [`battle`](../Assets_and_Localization/Strings.md#string-battle) | String | Defines a battle encounter by preset, level file path, or reverb settings. | 0 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
-| [`mutation`](../Reference_and_Meta/Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 0 | `{ . . . }` |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 0 | `{ . . . }` |
 | `complete_item_quest` | String | Marks the specified item quest as completed. | 0 | `BlackShard`<br>`CryogenicTimeChamber_Empty`<br>`CryogenicTimeChamber_Full` |
 
 </details>
@@ -229,10 +229,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 633 | `common`<br>`rare`<br>`cha` |
 | `prompt` | `String` | The text or localization key for the popup or prompt displayed to the player. | 619 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 151 | `1`<br>`10`<br>`15` |
-| [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 98 | `{ . . . }` |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 98 | `{ . . . }` |
 | `get_item_from_pool` | `String` | Grants an item from the specified pool or a specific item name. | 78 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
-| [`permanent_stats`](../Reference_and_Meta/Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 46 | `{ . . . }` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 35 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 46 | `{ . . . }` |
+| [`damage`](./Events_and_Encounters.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 35 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
 | [`random_pool`](../Reference_and_Meta/Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 35 | `[` |
 | `gain_coins` | `Array` | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 32 | `1`<br>`10`<br>`15` |
 | `injury` | `String` | Specifies the type of injury applied, such as bleeding or stat reduction. | 28 | `bleeding`<br>`burned`<br>`cha` |
@@ -243,7 +243,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `event_now_same_cat` | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 23 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
 | `gain_food` | `Number` | An array specifying the minimum and maximum amount of food gained, or a single integer. | 22 | `-5`<br>`20`<br>`30` |
 | `gain_familiar` | `String` | Specifies which familiar type (by its class name) the unit gains. | 21 | `CharmedBear`<br>`CharmedDaddyShark`<br>`CharmedDustDevil` |
-| [`spawn_unit_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 19 | `{ . . . }` |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 19 | `{ . . . }` |
 | `get_item` | `String` | Specifies an item to add to the player's inventory when this event triggers. | 16 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
 | `party_heal` | `Number` | The amount of health healed for the entire party. | 16 | `1`<br>`10`<br>`100%` |
 | `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 15 | `1`<br>`10`<br>`2` |
@@ -251,29 +251,29 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `gain_disorder` | `String` | Specifies a disorder to add to the current cat when this event triggers. | 12 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
 | `clear_adventure_token` | `String` | Specifies an adventure token to clear (disable or mark as false) when this event triggers. | 12 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasTakenNeedle`<br>`AdventureToken_RedNeedle` |
 | `get_parasite_from_pool` | `String` | Specifies the pool name or explicit list of parasites to obtain from. | 11 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
-| [`party_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 11 | `{ . . . }` |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 11 | `{ . . . }` |
 | `full_heal` | `Number` | If set to 1, fully restores the unit's health. | 10 | `1` |
 | `ally_ambush_next_fights` | `Number` | The number of upcoming fights that will start with an ally ambush. | 10 | `1`<br>`2` |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 9 | `{ . . . }` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 9 | `{ . . . }` |
 | `set_adventure_token` | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 9 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
 | `override_end_option_prompt` | `String` | Specifies a custom prompt string to display for the end option of this event choice. | 9 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
 | `ambush_next_basic_fights` | `Number` | The number of basic fights to trigger as ambushes. | 9 | `1` |
-| [`random_mutation_from_set`](../Reference_and_Meta/Miscellaneous.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 | `{ . . . }` |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 8 | `{ . . . }` |
 | `get_parasite` | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 7 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
 | `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 7 | `-1`<br>`-2`<br>`1` |
 | `increment_legacy_counter` | `String` | Specifies a legacy counter to increment by one when this event triggers. | 6 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
-| [`global_effect_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 6 | `{ . . . }` |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 6 | `{ . . . }` |
 | `lose_item` | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 5 | `equipped`<br>`inventory`<br>`parasite` |
 | `kill` | `String` | Kills the specified target type (e.g., 'cat'). | 5 | `cat` |
 | `shop_now` | `String` | Triggers the specified shop to appear immediately. | 5 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
 | `add_weather` | `String` | Specifies a weather effect type to apply to the current map. | 4 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
 | `event_now` | `String` | Triggers the specified event immediately. | 3 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
-| [`mutation`](../Reference_and_Meta/Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 2 | `{ . . . }` |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 2 | `{ . . . }` |
 | `lose_specific_item` | `String` | Removes the specified item from the player's inventory. | 2 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
-| [`next_event_from_set`](../Reference_and_Meta/Miscellaneous.md#object-next_event_from_set) | Object  | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 2 | `{ . . . }` |
+| [`next_event_from_set`](./Events_and_Encounters.md#object-next_event_from_set) | Object  | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 2 | `{ . . . }` |
 | `spin` | `String` | Specifies an action to re-roll or spin again, such as for a random reward wheel. | 2 | `again` |
 | `party_heal_disorder` | `Number` | The number of disorders to heal from all party members. | 2 | `2` |
-| [`party_permanent_stats_exclude_self`](../Reference_and_Meta/Miscellaneous.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
 | `set_legacy_token` | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 | `heal_disorder` | `Number` | Specifies which disorder type to heal, or the number of disorders to heal. | 1 | `1`<br>`2`<br>`Anxiety` |
 | `decrement_legacy_counter` | `String` | Specifies which legacy counter or token to decrement by one. | 1 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyToken_StartDigging` |
@@ -304,32 +304,32 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 625 | `common`<br>`rare`<br>`cha` |
-| `prompt` | `String` | The text or localization key for the popup or prompt displayed to the player. | 606 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
-| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 177 | `1`<br>`10`<br>`15` |
+| `prompt` | `String` | The text or localization key for the popup or prompt displayed to the player. | 614 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 179 | `1`<br>`10`<br>`15` |
 | `get_item_from_pool` | `String` | Grants an item from the specified pool or a specific item name. | 130 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
-| [`permanent_stats`](../Reference_and_Meta/Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 85 | `{ . . . }` |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 86 | `{ . . . }` |
 | `gain_disorder` | `String` | Specifies a disorder to add to the current cat when this event triggers. | 67 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
 | `injury` | `String` | Specifies the type of injury applied, such as bleeding or stat reduction. | 53 | `bleeding`<br>`burned`<br>`cha` |
-| `gain_disorder_from_pool` | `String` | Specifies a pool of disorders from which one is randomly gained. | 50 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
+| `gain_disorder_from_pool` | `String` | Specifies a pool of disorders from which one is randomly gained. | 51 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
 | `get_item` | `String` | Specifies an item to add to the player's inventory when this event triggers. | 49 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
-| [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 40 | `{ . . . }` |
-| `random_mutation` | `Number` | The number of random mutations applied to the unit. | 37 | `1`<br>`10`<br>`2` |
-| `get_parasite` | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 34 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
-| `gain_familiar` | `String` | Specifies which familiar type (by its class name) the unit gains. | 31 | `CharmedBear`<br>`CharmedDaddyShark`<br>`CharmedDustDevil` |
-| `event_now_same_cat` | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 30 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 40 | `{ . . . }` |
+| `random_mutation` | `Number` | The number of random mutations applied to the unit. | 40 | `1`<br>`10`<br>`2` |
+| `get_parasite` | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 36 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
+| `gain_familiar` | `String` | Specifies which familiar type (by its class name) the unit gains. | 33 | `CharmedBear`<br>`CharmedDaddyShark`<br>`CharmedDustDevil` |
+| `event_now_same_cat` | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 31 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| [`random_pool`](../Reference_and_Meta/Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 28 | `[` |
 | `get_parasite_from_pool` | `String` | Specifies the pool name or explicit list of parasites to obtain from. | 25 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
-| [`random_pool`](../Reference_and_Meta/Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 24 | `[` |
 | [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 22 | `{ . . . }` |
 | `set_adventure_token` | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 21 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 18 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`mutation`](../Reference_and_Meta/Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 18 | `{ . . . }` |
+| [`damage`](./Events_and_Encounters.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 18 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 18 | `{ . . . }` |
 | `gain_coins` | `Array` | An array specifying the minimum and maximum amount of coins gained, or a single integer. | 17 | `1`<br>`10`<br>`15` |
-| [`spawn_unit_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 17 | `{ . . . }` |
-| `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 13 | `-1`<br>`-2`<br>`1` |
+| [`spawn_unit_next_fight`](./Events_and_Encounters.md#object-spawn_unit_next_fight) | Object  | An object defining a unit to spawn during the next fight, including its object, count, and spawn side. | 17 | `{ . . . }` |
+| `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 14 | `-1`<br>`-2`<br>`1` |
 | `self_damage` | `Number` | Defines damage or effects applied to the caster when using the ability. | 13 | `1`<br>`10`<br>`100%` |
-| [`random_mutation_from_set`](../Reference_and_Meta/Miscellaneous.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 13 | `{ . . . }` |
+| [`random_mutation_from_set`](./Events_and_Encounters.md#object-random_mutation_from_set) | Object  | Defines a set of mutation categories and their specific IDs to apply a random mutation from. | 13 | `{ . . . }` |
 | `play_animation` | `Array` | Specifies an animation to play, optionally as an array with a probability weight. | 12 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`party_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 12 | `{ . . . }` |
+| [`party_status_next_fight`](./Events_and_Encounters.md#object-party_status_next_fight) | Object  | An object defining status effects to apply to the party at the start of the next fight. | 12 | `{ . . . }` |
 | `party_heal` | `Number` | The amount of health healed for the entire party. | 11 | `1`<br>`10`<br>`100%` |
 | `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 10 | `1`<br>`10`<br>`2` |
 | `learn_passive` | `String` | Teaches the unit the specified passive ability. | 10 | `Blessed`<br>`CobraStyle`<br>`DeathProof` |
@@ -340,7 +340,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `gain_food` | `Array` | An array specifying the minimum and maximum amount of food gained, or a single integer. | 7 | `-5`<br>`20`<br>`30` |
 | `ambush_next_basic_fights` | `Number` | The number of basic fights to trigger as ambushes. | 7 | `1` |
 | `lose_item` | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 7 | `equipped`<br>`inventory`<br>`parasite` |
-| [`leave_party_temporarily`](../Reference_and_Meta/Miscellaneous.md#object-leave_party_temporarily) | Object  | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 | `{ . . . }` |
+| [`leave_party_temporarily`](./Events_and_Encounters.md#object-leave_party_temporarily) | Object  | Defines parameters for a unit leaving the party temporarily, such as skipped fights and return conditions. | 7 | `{ . . . }` |
 | `shop_now` | `String` | Triggers the specified shop to appear immediately. | 6 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
 | `hide_appearance_changes` | `Number` | If set to 1, visual appearance changes from status effects or mutations are not shown on the unit. | 6 | `1` |
 | `override_end_option_prompt` | `String` | Specifies a custom prompt string to display for the end option of this event choice. | 5 | `"EVENT_LOCKEDDOOR_PROMPT1"`<br>`"EVENT_LOCKEDDOOR_PROMPT2"`<br>`"EVENT_MYSTERIOUSSTRANGER_END_AGAIN"` |
@@ -351,7 +351,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `learn_ability` | `String` | Specifies which specific ability the target unit learns. | 4 | `BarfBall`<br>`FutureSight` |
 | `kill` | `String` | Kills the specified target type (e.g., 'cat'). | 3 | `cat` |
 | `level_up` | `String` | Specifies which units to level up, such as 'all' or 'self'. | 3 | `all`<br>`self` |
-| [`global_effect_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 3 | `{ . . . }` |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 3 | `{ . . . }` |
 | `next_event_from_set` | `String` | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 3 | `CatHole`<br>`Tragedy`<br>`WatchingHead2` |
 | `gain_cat_familiar` | `Number` | The number of cat familiars gained. | 3 | `1` |
 | `make_old` | `String` | Applies the 'old' status or age increase to the specified target, typically 'self'. | 3 | `self` |
@@ -362,7 +362,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `upgrade_ability` | `String` | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 2 | `random` |
 | `party_heal_disorder` | `Number` | The number of disorders to heal from all party members. | 2 | `2` |
 | `upgrade_passive` | `String` | Specifies which passive ability to upgrade, or 'random' for a random choice. | 2 | `random` |
-| [`party_permanent_stats_exclude_self`](../Reference_and_Meta/Miscellaneous.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
+| [`party_permanent_stats_exclude_self`](./Events_and_Encounters.md#object-party_permanent_stats_exclude_self) | Object  | An object specifying permanent stat bonuses (str, dex, con, int, spd) applied to all party members except the triggering unit. | 2 | `{ . . . }` |
 | `party_heal_injury` | `Number` | The amount of injury to heal for the entire party. | 2 | `99` |
 | `set_age` | `Number` | The age value to set for the target unit. | 2 | `1` |
 | `trigger_adventure_unlock` | `String` | Triggers the specified adventure or map unlock quest. | 1 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
@@ -372,12 +372,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `gain_immortal_familiar` | `String` | Specifies the immortal familiar to add to the party. | 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
 | `get_and_equip_item` | `String` | Specifies the item to obtain and immediately equip. | 1 | `Catnip`<br>`FlyLarva` |
 | `party_injury` | `String` | Specifies the type of injury to inflict on the party (e.g., 'random'). | 1 | `random` |
-| [`party_permanent_stats`](../Reference_and_Meta/Miscellaneous.md#object-party_permanent_stats) | Object  | An object defining permanent stat increases applied to the party. | 1 | `{ . . . }` |
+| [`party_permanent_stats`](./Events_and_Encounters.md#object-party_permanent_stats) | Object  | An object defining permanent stat increases applied to the party. | 1 | `{ . . . }` |
 | `scramble_abilities` | `String` | Specifies which abilities to randomize, such as 'all'. | 1 | `all` |
 | `ambush` | `String` | Specifies the path to a level file for an ambush encounter. | 1 | `"events/chupacabra.lvl"`<br>`putalevelhere.lvl` |
 | `clear_result_animation` | `Number` | The number of result animations to clear or skip. | 1 | `1` |
 | `lose_all_equipped_items` | `String` | Specifies the target (e.g., 'cat') from which to remove all currently equipped items. | 1 | `cat` |
-| [`party_random_mutation_from_set`](../Reference_and_Meta/Miscellaneous.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
 | `scramble_basic_attack` | `String` | Specifies which basic attacks to randomize or scramble. | 1 | `all` |
 | `play_result_animation` | `String` | Specifies which result animation to play (e.g., 'resultVeryGood'). | 1 | `resultVeryGood` |
 
@@ -404,7 +404,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 
 </details>
 
@@ -469,12 +469,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 546 | `common`<br>`rare`<br>`cha` |
-| [`reward`](../Reference_and_Meta/Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 326 | `{ . . . }` |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 326 | `{ . . . }` |
 | `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 289 | `1`<br>`10`<br>`15` |
 | [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 197 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | `play_animation` | String | Specifies an animation to play, optionally as an array with a probability weight. | 114 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
 | `increment_legacy_counter` | String | Specifies a legacy counter to increment by one when this event triggers. | 52 | `WorldEventLegacyCounter_CrackInTheWall`<br>`WorldEventLegacyCounter_CustomTokenString`<br>`WorldEventLegacyCounter_FooCounter` |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 35 | `{ . . . }` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 35 | `{ . . . }` |
 | `set_legacy_token` | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 26 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 | `get_item_from_pool` | String | Grants an item from the specified pool or a specific item name. | 26 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | `get_item` | String | Specifies an item to add to the player's inventory when this event triggers. | 22 | `AlienBlaster`<br>`BagOfGrass`<br>`BearTrapMask` |
@@ -491,7 +491,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `lose_specific_item` | String | Removes the specified item from the player's inventory. | 8 | `CryogenicTimeChamber_Full`<br>`PutridLeech`<br>`PyrophinasCollar` |
 | `trigger_adventure_unlock` | `String` | Triggers the specified adventure or map unlock quest. | 7 | `end_of_time_unlock`<br>`legacy_event_unlock_momsknife`<br>`map_unlock_dimensionx` |
 | `add_weather` | String | Specifies a weather effect type to apply to the current map. | 6 | `AlienOvergrowth`<br>`Birdemic`<br>`GeomagneticStorm` |
-| [`mutation`](../Reference_and_Meta/Miscellaneous.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 5 | `{ . . . }` |
+| [`mutation`](./Events_and_Encounters.md#object-mutation) | Object  | An object defining specific body part mutations applied to the unit. | 5 | `{ . . . }` |
 | `heal_disorder` | Number | Specifies which disorder type to heal, or the number of disorders to heal. | 5 | `1`<br>`2`<br>`Anxiety` |
 | `injury` | String | Specifies the type of injury applied, such as bleeding or stat reduction. | 4 | `bleeding`<br>`burned`<br>`cha` |
 | `level_up` | String | Specifies which units to level up, such as 'all' or 'self'. | 4 | `all`<br>`self` |
@@ -513,7 +513,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `ally_ambush_next_fights` | Number | The number of upcoming fights that will start with an ally ambush. | 1 | `1`<br>`2` |
 | `lose_item` | String | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 | `equipped`<br>`inventory`<br>`parasite` |
 | `shop_now` | `String` | Triggers the specified shop to appear immediately. | 1 | `Event_RareShop`<br>`Event_SmallShop`<br>`Shop` |
-| [`global_effect_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 1 | `{ . . . }` |
+| [`global_effect_next_fight`](./Events_and_Encounters.md#object-global_effect_next_fight) | Object  | Defines a global status effect or modifier to apply in the next fight. | 1 | `{ . . . }` |
 | `next_event_from_set` | String | Specifies the next event to trigger, or defines a set of events with count and category constraints. | 1 | `CatHole`<br>`Tragedy`<br>`WatchingHead2` |
 | `upgrade_ability` | `String` | Specifies which ability to upgrade. The value 'random' selects a random eligible ability. | 1 | `random` |
 | `upgrade_passive` | `String` | Specifies which passive ability to upgrade, or 'random' for a random choice. | 1 | `random` |
@@ -523,7 +523,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `clone_self_to_party` | `Number` | The number of clones of the unit added to the party. | 1 | `1` |
 | `copy_items_to_party` | `Number` | The number of times the unit's items are copied to the party. | 1 | `1` |
 | `copy_party_items` | `Number` | The number of times party items are copied to the unit. | 1 | `1` |
-| [`gain_clone_familiar`](../Reference_and_Meta/Miscellaneous.md#object-gain_clone_familiar) | Object  | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 | `{ . . . }` |
+| [`gain_clone_familiar`](./Events_and_Encounters.md#object-gain_clone_familiar) | Object  | An object that triggers the gaining of a clone familiar, with a specified object name. | 1 | `{ . . . }` |
 | `trigger_butterfly_effect` | `Number` | The number of times to trigger the butterfly effect event. | 1 | `1` |
 
 </details>
@@ -591,9 +591,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`pool`](../Reference_and_Meta/Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 50 | `2`<br>`3`<br>`4` |
+| [`pool`](../Reference_and_Meta/Arrays.md#array-pool) | Array / Enum  | Specifies the name of the pool from which an ability is learned or an item is crafted. | 52 | `2`<br>`3`<br>`4` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 49 | `common`<br>`rare`<br>`cha` |
-| [`restrict`](../Reference_and_Meta/Arrays.md#array-restrict) | Array | Limits the pool of items to specific categories such as weapon, armor, or consumables. | 37 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
+| [`restrict`](../Reference_and_Meta/Arrays.md#array-restrict) | Array | Limits the pool of items to specific categories such as weapon, armor, or consumables. | 39 | `[weapon armor]`<br>`[weapon consumables armor]`<br>`[weapon, trinket, armor]` |
 | `prompt` | `String` | The text or localization key for the popup or prompt displayed to the player. | 1 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
@@ -616,14 +616,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 310 | `common`<br>`rare`<br>`cha` |
-| [`reward`](../Reference_and_Meta/Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 286 | `{ . . . }` |
-| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 208 | `1`<br>`10`<br>`15` |
-| [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 29 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 307 | `{ . . . }` |
+| `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 224 | `1`<br>`10`<br>`15` |
+| [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 42 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | `injury` | String | Specifies the type of injury applied, such as bleeding or stat reduction. | 10 | `bleeding`<br>`burned`<br>`cha` |
-| `play_animation` | String | Specifies an animation to play, optionally as an array with a probability weight. | 9 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 9 | `{ . . . }` |
-| [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 5 | `{ . . . }` |
-| `event_now_same_cat` | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 5 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
+| `play_animation` | String | Specifies an animation to play, optionally as an array with a probability weight. | 10 | `[resultBlessing .5]`<br>`[resultGood .5]`<br>`[resultLeave 0]` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 9 | `{ . . . }` |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 7 | `{ . . . }` |
+| `event_now_same_cat` | `String` | Specifies a world event that will now occur for the same cat category as the current event. | 7 | `BigToe`<br>`Blessing`<br>`BodyOfGlorg_Gift` |
 | `get_parasite` | `String` | Specifies a parasite item to attach to a unit when this event triggers. | 5 | `AlluringDoodie`<br>`BadSplinters`<br>`Beepis` |
 | `gain_disorder_from_pool` | String | Specifies a pool of disorders from which one is randomly gained. | 4 | `Crazy_disorders`<br>`Steven_disorders`<br>`[BlackFetin OrangeFetin PurpleFetin]` |
 | `battle` | `String` | Defines a battle encounter by preset, level file path, or reverb settings. | 4 | `"desert/boss/dustdevil/DustDevil.lvl"`<br>`"events/Death.lvl"`<br>`"events/GlowingBear"` |
@@ -632,11 +632,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `get_parasite_from_pool` | String | Specifies the pool name or explicit list of parasites to obtain from. | 3 | `[AmoebaHat AmoebaNeck AmoebaFace]`<br>`barbed_armor`<br>`barbed_items` |
 | `event_now` | String | Triggers the specified event immediately. | 3 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
 | `next_event_bonus` | Number | A modifier to the next event's outcome roll or selection chance. | 2 | `-1`<br>`-2`<br>`1` |
-| [`permanent_stats`](../Reference_and_Meta/Miscellaneous.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 1 | `{ . . . }` |
+| [`permanent_stats`](./Events_and_Encounters.md#object-permanent_stats) | Object  | Defines permanent stat changes to apply to the unit (e.g., con, cha). | 1 | `{ . . . }` |
 | `set_legacy_token` | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 | `lose_item` | `String` | Specifies which item slot or type to lose (e.g., 'equipped', 'inventory'). | 1 | `equipped`<br>`inventory`<br>`parasite` |
 | `gain_immortal_familiar` | `String` | Specifies the immortal familiar to add to the party. | 1 | `CharmedFlea`<br>`CharmedFleaSpecial`<br>`CharmedPooter` |
-| [`party_random_mutation_from_set`](../Reference_and_Meta/Miscellaneous.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
+| [`party_random_mutation_from_set`](./Events_and_Encounters.md#object-party_random_mutation_from_set) | Object  | An object specifying the count and mutation parts to randomly apply to the party. | 1 | `{ . . . }` |
 | `select_item_from_pool_for_cutscene_only` | `String` | Selects an item from a named pool for display in a cutscene without granting it. | 1 | `glitched_items` |
 
 </details>
@@ -719,7 +719,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -743,19 +743,19 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 214 | `common`<br>`rare`<br>`cha` |
 | [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 210 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 | [`options`](../Reference_and_Meta/Arrays.md#array-options) | Array  | An array of named option objects within an event, each defining a possible action the player can take. | 210 | `[smash bash open]` |
-| [`setup`](../Reference_and_Meta/Miscellaneous.md#object-setup) | Object  | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 | `{ . . . }` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 | `{ . . . }` |
+| [`setup`](./Events_and_Encounters.md#object-setup) | Object  | Defines actions or checks to run before the main event logic, often setting up conditions or tokens. | 23 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 | `{ . . . }` |
 | `goto` | `String` | Determines which labeled point in the event's script to jump to next, controlling flow. | 4 | `end` |
-| [`outcome`](../Reference_and_Meta/Miscellaneous.md#object-outcome) | Object  | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 | `{ . . . }` |
+| [`outcome`](./Events_and_Encounters.md#object-outcome) | Object  | An object defining the possible outcomes of an event, typically containing a random pool or weighted lists of rewards and animations. | 4 | `{ . . . }` |
 | `max_options` | `Number` | The maximum number of event options presented to the player. | 3 | `2`<br>`3` |
 | `shuffle_options` | `Boolean` | If true, randomizes the order of event options presented to the player. | 3 | `true` |
-| [`open`](../Reference_and_Meta/Miscellaneous.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`ignore`](../Reference_and_Meta/Miscellaneous.md#object-ignore) | Object | An object defining the player action to ignore the event, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`examine`](../Reference_and_Meta/Miscellaneous.md#object-examine) | Object | An object defining the player action to examine an object, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`leave`](../Reference_and_Meta/Miscellaneous.md#object-leave) | Object  | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`pick`](../Reference_and_Meta/Miscellaneous.md#object-pick) | Object | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 0 | `{ . . . }` |
-| [`buy2`](../Reference_and_Meta/Miscellaneous.md#object-buy2) | Object | Defines an event option that allows the player to buy an item for 10 coins. | 0 | `{ . . . }` |
-| [`buy3`](../Reference_and_Meta/Miscellaneous.md#object-buy3) | Object | Defines an event option that allows the player to buy an item for 25 coins. | 0 | `{ . . . }` |
+| [`open`](./Events_and_Encounters.md#object-open) | Object | An object defining the player action to open a container, including its stat check and outcomes. | 0 | `{ . . . }` |
+| [`ignore`](./Events_and_Encounters.md#object-ignore) | Object | An object defining the player action to ignore the event, including its stat check and outcomes. | 0 | `{ . . . }` |
+| [`examine`](./Events_and_Encounters.md#object-examine) | Object | An object defining the player action to examine an object, including its stat check and outcomes. | 0 | `{ . . . }` |
+| [`leave`](./Events_and_Encounters.md#object-leave) | Object  | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 0 | `{ . . . }` |
+| [`pick`](./Events_and_Encounters.md#object-pick) | Object | An object defining the player action to pick or collect an object, including its stat check and outcomes. | 0 | `{ . . . }` |
+| [`buy2`](./Events_and_Encounters.md#object-buy2) | Object | Defines an event option that allows the player to buy an item for 10 coins. | 0 | `{ . . . }` |
+| [`buy3`](./Events_and_Encounters.md#object-buy3) | Object | Defines an event option that allows the player to buy an item for 25 coins. | 0 | `{ . . . }` |
 
 </details>
 
@@ -776,200 +776,200 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`ignore`](../Reference_and_Meta/Miscellaneous.md#object-ignore) | Object  | An object defining the player action to ignore the event, including its stat check and outcomes. | 47 | `{ . . . }` |
-| [`examine`](../Reference_and_Meta/Miscellaneous.md#object-examine) | Object  | An object defining the player action to examine an object, including its stat check and outcomes. | 39 | `{ . . . }` |
-| [`leave`](../Reference_and_Meta/Miscellaneous.md#object-leave) | Object  | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 24 | `{ . . . }` |
-| [`loot`](../Reference_and_Meta/Miscellaneous.md#object-loot) | Object  | An object defining the player action to loot a container or corpse, including its stat check and outcomes. | 24 | `{ . . . }` |
-| [`eat`](../Reference_and_Meta/Miscellaneous.md#object-eat) | Object  | An object defining the player action to consume something, including its stat check and outcomes. | 23 | `{ . . . }` |
+| [`ignore`](./Events_and_Encounters.md#object-ignore) | Object  | An object defining the player action to ignore the event, including its stat check and outcomes. | 47 | `{ . . . }` |
+| [`examine`](./Events_and_Encounters.md#object-examine) | Object  | An object defining the player action to examine an object, including its stat check and outcomes. | 39 | `{ . . . }` |
+| [`leave`](./Events_and_Encounters.md#object-leave) | Object  | An object defining the player action to leave or ignore the event, including its stat check and outcomes. | 24 | `{ . . . }` |
+| [`loot`](./Events_and_Encounters.md#object-loot) | Object  | An object defining the player action to loot a container or corpse, including its stat check and outcomes. | 24 | `{ . . . }` |
+| [`eat`](./Events_and_Encounters.md#object-eat) | Object  | An object defining the player action to consume something, including its stat check and outcomes. | 23 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 22 | `common`<br>`rare`<br>`cha` |
-| [`smash`](../Reference_and_Meta/Miscellaneous.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 14 | `{ . . . }` |
-| [`bash`](../Reference_and_Meta/Miscellaneous.md#object-bash) | Object  | An object defining the player action to bash open a container, including its stat check and outcomes. | 12 | `{ . . . }` |
-| [`destroy`](../Reference_and_Meta/Miscellaneous.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 12 | `{ . . . }` |
-| [`sneak`](../Reference_and_Meta/Miscellaneous.md#object-sneak) | Object  | An object defining the player action to sneak past a threat, including its stat check and outcomes. | 10 | `{ . . . }` |
+| [`smash`](./Events_and_Encounters.md#object-smash) | Object  | An object defining the player action to smash an object, including its stat check and outcomes. | 14 | `{ . . . }` |
+| [`bash`](./Events_and_Encounters.md#object-bash) | Object  | An object defining the player action to bash open a container, including its stat check and outcomes. | 12 | `{ . . . }` |
+| [`destroy`](./Events_and_Encounters.md#object-destroy) | Object  | An object defining the player action to destroy an object, including its stat check and outcomes. | 12 | `{ . . . }` |
+| [`sneak`](./Events_and_Encounters.md#object-sneak) | Object  | An object defining the player action to sneak past a threat, including its stat check and outcomes. | 10 | `{ . . . }` |
 | [`attack`](../Reference_and_Meta/Enums.md#enum-attack) | Enum  | Specifies the primary attack ability for the class, either as a string name or a detailed object. | 7 | `AZ_BreakNeck`<br>`AcidShot`<br>`AmoebaAttach` |
-| [`open`](../Reference_and_Meta/Miscellaneous.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 7 | `{ . . . }` |
-| [`take`](../Reference_and_Meta/Miscellaneous.md#object-take) | Object  | An object defining the player action to take an item, including its stat check and outcomes. | 7 | `{ . . . }` |
-| [`charm`](../Reference_and_Meta/Miscellaneous.md#object-charm) | Object  | Specifies the player character's attempt to charm or persuade the encounter. | 7 | `{ . . . }` |
-| [`a`](../Reference_and_Meta/Miscellaneous.md#object-a) | Object  | An object defining the first custom option in a test or debug event. | 7 | `{ . . . }` |
-| [`b`](../Reference_and_Meta/Miscellaneous.md#object-b) | Object  | An object defining the second custom option in a test or debug event. | 7 | `{ . . . }` |
-| [`c`](../Reference_and_Meta/Miscellaneous.md#object-c) | Object  | An object defining the third custom option in a test or debug event. | 7 | `{ . . . }` |
-| [`touch`](../Reference_and_Meta/Miscellaneous.md#object-touch) | Object  | Specifies the player character's attempt to physically touch or interact with the encounter. | 7 | `{ . . . }` |
-| [`enter`](../Reference_and_Meta/Miscellaneous.md#object-enter) | Object  | Specifies the player character's attempt to enter or go inside the encounter location. | 6 | `{ . . . }` |
-| [`fight`](../Reference_and_Meta/Miscellaneous.md#object-fight) | Object  | Specifies the player character's attempt to fight or force their way through the encounter. | 6 | `{ . . . }` |
-| [`lick`](../Reference_and_Meta/Miscellaneous.md#object-lick) | Object  | Specifies the player character's attempt to lick the encounter. | 6 | `{ . . . }` |
-| [`activate_p`](../Reference_and_Meta/Miscellaneous.md#object-activate_p) | Object  | Specifies the player character's attempt to activate the object (press a button/lever). | 6 | `{ . . . }` |
-| [`activate_z`](../Reference_and_Meta/Miscellaneous.md#object-activate_z) | Object  | Specifies the player character's attempt to activate the object (pull a lever/switch). | 6 | `{ . . . }` |
-| [`d`](../Reference_and_Meta/Miscellaneous.md#object-d) | Object  | Specifies a debug or test option for game development purposes. | 6 | `{ . . . }` |
-| [`inspect`](../Reference_and_Meta/Miscellaneous.md#object-inspect) | Object  | Specifies the player character's attempt to inspect or examine the encounter. | 6 | `{ . . . }` |
-| [`run`](../Reference_and_Meta/Miscellaneous.md#object-run) | Object  | Specifies the player character's attempt to run away or flee from the encounter. | 5 | `{ . . . }` |
-| [`drink`](../Reference_and_Meta/Miscellaneous.md#object-drink) | Object  | Specifies the player character's attempt to drink from or consume the encounter. | 5 | `{ . . . }` |
-| [`kiss`](../Reference_and_Meta/Miscellaneous.md#object-kiss) | Object  | Specifies the player character's attempt to kiss the encounter. | 5 | `{ . . . }` |
-| [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`home`](../Reference_and_Meta/Miscellaneous.md#object-home) | Object  | Specifies the option to go home (exit to the main hub). | 4 | `{ . . . }` |
-| [`bite`](../Reference_and_Meta/Miscellaneous.md#object-bite) | Object  | Specifies the player character's attempt to bite the encounter. | 4 | `{ . . . }` |
-| [`skip`](../Reference_and_Meta/Miscellaneous.md#object-skip) | Object  | Specifies the option to skip or decline the current encounter. | 4 | `{ . . . }` |
-| [`go_around`](../Reference_and_Meta/Miscellaneous.md#object-go_around) | Object  | Specifies the player character's attempt to go around or bypass the encounter. | 4 | `{ . . . }` |
-| [`past`](../Reference_and_Meta/Miscellaneous.md#object-past) | Object  | Specifies the option to travel to a past era (Ice Age, Jurassic, etc.). | 4 | `{ . . . }` |
-| [`investigate`](../Reference_and_Meta/Miscellaneous.md#object-investigate) | Object  | Specifies the player character's attempt to investigate the encounter. | 3 | `{ . . . }` |
-| [`repell`](../Reference_and_Meta/Miscellaneous.md#object-repell) | Object  | Specifies the player character's attempt to rappel down or climb into the encounter. | 3 | `{ . . . }` |
+| [`open`](./Events_and_Encounters.md#object-open) | Object  | An object defining the player action to open a container, including its stat check and outcomes. | 7 | `{ . . . }` |
+| [`take`](./Events_and_Encounters.md#object-take) | Object  | An object defining the player action to take an item, including its stat check and outcomes. | 7 | `{ . . . }` |
+| [`charm`](./Events_and_Encounters.md#object-charm) | Object  | Specifies the player character's attempt to charm or persuade the encounter. | 7 | `{ . . . }` |
+| [`a`](./Events_and_Encounters.md#object-a) | Object  | An object defining the first custom option in a test or debug event. | 7 | `{ . . . }` |
+| [`b`](./Events_and_Encounters.md#object-b) | Object  | An object defining the second custom option in a test or debug event. | 7 | `{ . . . }` |
+| [`c`](./Events_and_Encounters.md#object-c) | Object  | An object defining the third custom option in a test or debug event. | 7 | `{ . . . }` |
+| [`touch`](./Events_and_Encounters.md#object-touch) | Object  | Specifies the player character's attempt to physically touch or interact with the encounter. | 7 | `{ . . . }` |
+| [`enter`](./Events_and_Encounters.md#object-enter) | Object  | Specifies the player character's attempt to enter or go inside the encounter location. | 6 | `{ . . . }` |
+| [`fight`](./Events_and_Encounters.md#object-fight) | Object  | Specifies the player character's attempt to fight or force their way through the encounter. | 6 | `{ . . . }` |
+| [`lick`](./Events_and_Encounters.md#object-lick) | Object  | Specifies the player character's attempt to lick the encounter. | 6 | `{ . . . }` |
+| [`activate_p`](./Events_and_Encounters.md#object-activate_p) | Object  | Specifies the player character's attempt to activate the object (press a button/lever). | 6 | `{ . . . }` |
+| [`activate_z`](./Events_and_Encounters.md#object-activate_z) | Object  | Specifies the player character's attempt to activate the object (pull a lever/switch). | 6 | `{ . . . }` |
+| [`d`](./Events_and_Encounters.md#object-d) | Object  | Specifies a debug or test option for game development purposes. | 6 | `{ . . . }` |
+| [`inspect`](./Events_and_Encounters.md#object-inspect) | Object  | Specifies the player character's attempt to inspect or examine the encounter. | 6 | `{ . . . }` |
+| [`run`](./Events_and_Encounters.md#object-run) | Object  | Specifies the player character's attempt to run away or flee from the encounter. | 5 | `{ . . . }` |
+| [`drink`](./Events_and_Encounters.md#object-drink) | Object  | Specifies the player character's attempt to drink from or consume the encounter. | 5 | `{ . . . }` |
+| [`kiss`](./Events_and_Encounters.md#object-kiss) | Object  | Specifies the player character's attempt to kiss the encounter. | 5 | `{ . . . }` |
+| [`damage`](./Events_and_Encounters.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 4 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
+| [`home`](./Events_and_Encounters.md#object-home) | Object  | Specifies the option to go home (exit to the main hub). | 4 | `{ . . . }` |
+| [`bite`](./Events_and_Encounters.md#object-bite) | Object  | Specifies the player character's attempt to bite the encounter. | 4 | `{ . . . }` |
+| [`skip`](./Events_and_Encounters.md#object-skip) | Object  | Specifies the option to skip or decline the current encounter. | 4 | `{ . . . }` |
+| [`go_around`](./Events_and_Encounters.md#object-go_around) | Object  | Specifies the player character's attempt to go around or bypass the encounter. | 4 | `{ . . . }` |
+| [`past`](./Events_and_Encounters.md#object-past) | Object  | Specifies the option to travel to a past era (Ice Age, Jurassic, etc.). | 4 | `{ . . . }` |
+| [`investigate`](./Events_and_Encounters.md#object-investigate) | Object  | Specifies the player character's attempt to investigate the encounter. | 3 | `{ . . . }` |
+| [`repell`](./Events_and_Encounters.md#object-repell) | Object  | Specifies the player character's attempt to rappel down or climb into the encounter. | 3 | `{ . . . }` |
 | `scale` | Float | The scale multiplier applied to the unit's visual size. | 2 | `.5`<br>`.6`<br>`.7` |
-| [`poop`](../Reference_and_Meta/Miscellaneous.md#object-poop) | Object  | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
-| [`boogers`](../Reference_and_Meta/Miscellaneous.md#object-boogers) | Object  | Specifies the player character's attempt to pick or examine boogers. | 2 | `{ . . . }` |
-| [`copy`](../Reference_and_Meta/Miscellaneous.md#object-copy) | Object  | Specifies the player character's attempt to copy or replicate something from the encounter. | 2 | `{ . . . }` |
-| [`find_another_way`](../Reference_and_Meta/Miscellaneous.md#object-find_another_way) | Object  | Specifies the player character's attempt to find an alternative path around the encounter. | 2 | `{ . . . }` |
-| [`move_closer`](../Reference_and_Meta/Miscellaneous.md#object-move_closer) | Object  | Specifies the player character's attempt to move closer to the encounter. | 2 | `{ . . . }` |
-| [`play`](../Reference_and_Meta/Miscellaneous.md#object-play) | Object  | Specifies the player character's attempt to play or interact playfully with the encounter. | 2 | `{ . . . }` |
-| [`print`](../Reference_and_Meta/Miscellaneous.md#object-print) | Object  | Specifies the player character's attempt to print or output something from the encounter. | 2 | `{ . . . }` |
-| [`repair`](../Reference_and_Meta/Miscellaneous.md#object-repair) | Object  | Specifies the player character's attempt to repair the encounter object. | 2 | `{ . . . }` |
-| [`sacrifice`](../Reference_and_Meta/Miscellaneous.md#object-sacrifice) | Object  | Specifies the player character's attempt to make a sacrifice at the encounter. | 2 | `{ . . . }` |
+| [`poop`](./Events_and_Encounters.md#object-poop) | Object  | Defines a poop event or interaction, often part of a random encounter or response in dialogue. | 2 | `{ . . . }` |
+| [`boogers`](./Events_and_Encounters.md#object-boogers) | Object  | Specifies the player character's attempt to pick or examine boogers. | 2 | `{ . . . }` |
+| [`copy`](./Events_and_Encounters.md#object-copy) | Object  | Specifies the player character's attempt to copy or replicate something from the encounter. | 2 | `{ . . . }` |
+| [`find_another_way`](./Events_and_Encounters.md#object-find_another_way) | Object  | Specifies the player character's attempt to find an alternative path around the encounter. | 2 | `{ . . . }` |
+| [`move_closer`](./Events_and_Encounters.md#object-move_closer) | Object  | Specifies the player character's attempt to move closer to the encounter. | 2 | `{ . . . }` |
+| [`play`](./Events_and_Encounters.md#object-play) | Object  | Specifies the player character's attempt to play or interact playfully with the encounter. | 2 | `{ . . . }` |
+| [`print`](./Events_and_Encounters.md#object-print) | Object  | Specifies the player character's attempt to print or output something from the encounter. | 2 | `{ . . . }` |
+| [`repair`](./Events_and_Encounters.md#object-repair) | Object  | Specifies the player character's attempt to repair the encounter object. | 2 | `{ . . . }` |
+| [`sacrifice`](./Events_and_Encounters.md#object-sacrifice) | Object  | Specifies the player character's attempt to make a sacrifice at the encounter. | 2 | `{ . . . }` |
 | [`speed`](../Reference_and_Meta/Arrays.md#array-speed) | Array / Float  | The speed of the projectile or move, can be a value or a range. | 1 | `-30`<br>`-4`<br>`.5` |
 | [`head`](../Reference_and_Meta/Enums.md#enum-head) | Enum / Float  | The catalog ID for the cat's head part. | 1 | `-1`<br>`1`<br>`1.3` |
 | [`face`](../Reference_and_Meta/Enums.md#enum-face) | Enum  | The face equipment item assigned to the unit. | 1 | `1004`<br>`1019`<br>`AtomicMark` |
 | `tail` | Integer | The catalog ID for the cat's tail part. | 1 | `-1`<br>`1000`<br>`1001` |
 | [`neck`](../Reference_and_Meta/Enums.md#enum-neck) | Enum  | The neck equipment item assigned to the unit. | 1 | `AngelicAura`<br>`AngelicAura_Terminator`<br>`DruidNeck` |
 | `body` | Float | The catalog ID for the cat's body part. | 1 | `-1`<br>`1`<br>`1.1` |
-| [`cross`](../Reference_and_Meta/Miscellaneous.md#object-cross) | Object  | An event response to traverse an obstacle, with no stat requirement. | 1 | `{ . . . }` |
-| [`teleport`](../Reference_and_Meta/Miscellaneous.md#object-teleport) | Object  | Defines a dialogue option that transports the unit to an alternative location in the event. | 1 | `{ . . . }` |
-| [`future`](../Reference_and_Meta/Miscellaneous.md#object-future) | Object  | Specifies the name, map flag, or connection for the Future area. | 1 | `{ . . . }` |
-| [`throw`](../Reference_and_Meta/Miscellaneous.md#object-throw) | Object  | Defines a dialogue option that allows the unit to throw an object. | 1 | `{ . . . }` |
-| [`blue`](../Reference_and_Meta/Miscellaneous.md#object-blue) | Object  | Specifies the player character's attempt to choose the blue option. | 1 | `{ . . . }` |
-| [`red`](../Reference_and_Meta/Miscellaneous.md#object-red) | Object  | Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event. | 1 | `{ . . . }` |
-| [`infinite`](../Reference_and_Meta/Miscellaneous.md#object-infinite) | Object  | An event response to choose infinite, with a chapter exit hint and no stat requirement. | 1 | `{ . . . }` |
-| [`fire`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-fire) | Object  | An event response that uses fire, with no stat requirement. | 1 | `{ . . . }` |
-| [`brace`](../Reference_and_Meta/Miscellaneous.md#object-brace) | Object  | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
-| [`holy`](../Reference_and_Meta/Miscellaneous.md#object-holy) | Object  | An event response that uses holy power, with no stat requirement. | 1 | `{ . . . }` |
-| [`scream`](../Reference_and_Meta/Miscellaneous.md#object-scream) | Object  | The dialogue option to scream at the Meat Golem with no stat requirement. | 1 | `{ . . . }` |
-| [`ice`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-ice) | Object  | An event response that uses ice, with no stat requirement. | 1 | `{ . . . }` |
-| [`receive`](../Reference_and_Meta/Miscellaneous.md#object-receive) | Object  | The dialogue option to receive an item from a legacy event. | 1 | `{ . . . }` |
-| [`counter`](../Reference_and_Meta/Miscellaneous.md#object-counter) | Object  | An event response that uses a countering action, with no stat requirement. | 1 | `{ . . . }` |
-| [`dig`](../Reference_and_Meta/Miscellaneous.md#object-dig) | Object  | A strength-based event response to excavate, limited by a token counter maximum. | 1 | `{ . . . }` |
-| [`jump`](../Reference_and_Meta/Miscellaneous.md#object-jump) | Object  | A speed-based event response to leap. | 1 | `{ . . . }` |
-| [`power`](../Reference_and_Meta/Miscellaneous.md#object-power) | Object  | The dialogue option for the Genie good event that selects the power reward. | 1 | `{ . . . }` |
-| [`use_weapon`](./NPC_Scripts.md#object-use_weapon) | Object  | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 | `{ . . . }` |
-| [`attach_antenna`](../Reference_and_Meta/Miscellaneous.md#object-attach_antenna) | Object  | Specifies the player character's attempt to attach a device or antenna to the encounter. | 1 | `{ . . . }` |
-| [`protection`](../Reference_and_Meta/Miscellaneous.md#object-protection) | Object  | Specifies the player character's attempt to offer or ask for protection. | 1 | `{ . . . }` |
-| [`turnon`](../Reference_and_Meta/Miscellaneous.md#object-turnon) | Object  | Specifies the player character's attempt to turn on or activate the encounter. | 1 | `{ . . . }` |
-| [`catch`](../Reference_and_Meta/Miscellaneous.md#object-catch) | Object  | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
-| [`free`](../Reference_and_Meta/Miscellaneous.md#object-free) | Object  | If true, this option requires no cost to activate. | 1 | `{ . . . }` |
-| [`knife`](../Reference_and_Meta/Miscellaneous.md#object-knife) | Object  | An event response to obtain a knife, with no stat requirement. | 1 | `{ . . . }` |
-| [`lever`](../Reference_and_Meta/Miscellaneous.md#object-lever) | Object  | An event response to pull a lever, with a fixed chance and no stat requirement. | 1 | `{ . . . }` |
-| [`lightning`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-lightning) | Object  | An event response using lightning, with no stat requirement. | 1 | `{ . . . }` |
-| [`run_away`](../Reference_and_Meta/Miscellaneous.md#object-run_away) | Object  | The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark. | 1 | `{ . . . }` |
-| [`thorns`](../Reference_and_Meta/Miscellaneous.md#object-thorns) | Object  | Defines a dialogue option that applies a thorns effect to the unit. | 1 | `{ . . . }` |
-| [`altar_sacrifice`](../Reference_and_Meta/Miscellaneous.md#object-altar_sacrifice) | Object  | Specifies the player character's attempt to sacrifice a cat at the altar. | 1 | `{ . . . }` |
-| [`arm`](../Reference_and_Meta/Miscellaneous.md#object-arm) | Object  | Specifies the player character's attempt to put their arm inside the encounter. | 1 | `{ . . . }` |
-| [`attach_amplifier`](../Reference_and_Meta/Miscellaneous.md#object-attach_amplifier) | Object  | Specifies the player character's attempt to attach an amplifier to the encounter. | 1 | `{ . . . }` |
-| [`attach_leech`](../Reference_and_Meta/Miscellaneous.md#object-attach_leech) | Object  | Specifies the player character's attempt to attach a leech to the encounter. | 1 | `{ . . . }` |
-| [`bash_past_alt`](../Reference_and_Meta/Miscellaneous.md#object-bash_past_alt) | Object  | Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters). | 1 | `{ . . . }` |
-| [`bite_it_off`](../Reference_and_Meta/Miscellaneous.md#object-bite_it_off) | Object  | Specifies the player character's attempt to bite off part of the encounter. | 1 | `{ . . . }` |
-| [`book`](../Reference_and_Meta/Miscellaneous.md#object-book) | Object  | Specifies the player character's attempt to read or take the book. | 1 | `{ . . . }` |
-| [`break_ice`](../Reference_and_Meta/Miscellaneous.md#object-break_ice) | Object  | Specifies the player character's attempt to break the ice covering the encounter. | 1 | `{ . . . }` |
-| [`break_lock`](../Reference_and_Meta/Miscellaneous.md#object-break_lock) | Object  | Specifies the player character's attempt to break the lock on the encounter. | 1 | `{ . . . }` |
-| [`bribe`](../Reference_and_Meta/Miscellaneous.md#object-bribe) | Object  | Specifies the player character's attempt to bribe the encounter. | 1 | `{ . . . }` |
-| [`button`](../Reference_and_Meta/Miscellaneous.md#object-button) | Object  | Specifies the player character's attempt to push the button. | 1 | `{ . . . }` |
-| [`buy1`](../Reference_and_Meta/Miscellaneous.md#object-buy1) | Object  | Specifies the player character's attempt to buy one of the offered items. | 1 | `{ . . . }` |
-| [`challenge_to_game`](../Reference_and_Meta/Miscellaneous.md#object-challenge_to_game) | Object  | Specifies the player character's attempt to challenge the encounter to a game. | 1 | `{ . . . }` |
-| [`chaos_ending`](../Reference_and_Meta/Miscellaneous.md#object-chaos_ending) | Object  | Specifies the option to trigger the chaos ending cutscene. | 1 | `{ . . . }` |
-| [`chapter_cutscene`](../Reference_and_Meta/Miscellaneous.md#object-chapter_cutscene) | Object  | Specifies the option to trigger a chapter intro cutscene. | 1 | `{ . . . }` |
-| [`charm_past_alt`](../Reference_and_Meta/Miscellaneous.md#object-charm_past_alt) | Object  | Specifies the player character's attempt to charm the encounter (alternate version for specific chapters). | 1 | `{ . . . }` |
-| [`climb`](../Reference_and_Meta/Miscellaneous.md#object-climb) | Object  | Specifies the player character's attempt to climb over the encounter. | 1 | `{ . . . }` |
-| [`comfort`](../Reference_and_Meta/Miscellaneous.md#object-comfort) | Object  | A charisma-based event response that soothes the encounter subject. | 1 | `{ . . . }` |
-| [`communicate`](../Reference_and_Meta/Miscellaneous.md#object-communicate) | Object  | A charisma-based event response to establish communication. | 1 | `{ . . . }` |
-| [`concheck`](../Reference_and_Meta/Miscellaneous.md#object-concheck) | Object  | A constitution-based event response to test endurance. | 1 | `{ . . . }` |
-| [`cut_wires`](../Reference_and_Meta/Miscellaneous.md#object-cut_wires) | Object  | An intelligence-based event response to disable wires. | 1 | `{ . . . }` |
-| [`damage_1`](../Reference_and_Meta/Miscellaneous.md#object-damage_1) | Object  | A constitution-based event response that deals minor damage. | 1 | `{ . . . }` |
-| [`damage_full`](../Reference_and_Meta/Miscellaneous.md#object-damage_full) | Object  | A constitution-based event response that deals full damage. | 1 | `{ . . . }` |
-| [`damage_half`](../Reference_and_Meta/Miscellaneous.md#object-damage_half) | Object  | A constitution-based event response that deals halved damage. | 1 | `{ . . . }` |
-| [`desert_cutscene`](../Reference_and_Meta/Miscellaneous.md#object-desert_cutscene) | Object  | An event response that triggers a desert-themed cutscene, with no stat requirement. | 1 | `{ . . . }` |
-| [`dexcheck`](../Reference_and_Meta/Miscellaneous.md#object-dexcheck) | Object  | A dexterity-based event response to test agility. | 1 | `{ . . . }` |
-| [`disarm`](../Reference_and_Meta/Miscellaneous.md#object-disarm) | Object  | A dexterity-based event response to remove a trap. | 1 | `{ . . . }` |
-| [`dive`](../Reference_and_Meta/Miscellaneous.md#object-dive) | Object  | A dexterity-based event response to plunge into water. | 1 | `{ . . . }` |
-| [`donate`](../Reference_and_Meta/Miscellaneous.md#object-donate) | Object  | An event response to give a donation, with no stat requirement but a coin cost. | 1 | `{ . . . }` |
-| [`donate_5`](../Reference_and_Meta/Miscellaneous.md#object-donate_5) | Object  | An event response to donate 5 coins. | 1 | `{ . . . }` |
-| [`double`](../Reference_and_Meta/Miscellaneous.md#object-double) | Object  | An event response that doubles something, with no stat requirement. | 1 | `{ . . . }` |
-| [`eat_meat`](../Reference_and_Meta/Miscellaneous.md#object-eat_meat) | Object  | A constitution-based event response to consume meat. | 1 | `{ . . . }` |
-| [`enter_crater`](../Reference_and_Meta/Miscellaneous.md#object-enter_crater) | Object  | A luck-based event response to enter a crater. | 1 | `{ . . . }` |
-| [`fiddle`](../Reference_and_Meta/Miscellaneous.md#object-fiddle) | Object  | A quest-based event response to tamper, requiring no specific quest token. | 1 | `{ . . . }` |
-| [`fill_jar`](../Reference_and_Meta/Miscellaneous.md#object-fill_jar) | Object  | A quest-based event response to fill a jar, with no stat requirement. | 1 | `{ . . . }` |
-| [`find`](../Reference_and_Meta/Miscellaneous.md#object-find) | Object  | An event response to search, with no stat requirement. | 1 | `{ . . . }` |
-| [`flush_yourself`](../Reference_and_Meta/Miscellaneous.md#object-flush_yourself) | Object  | An event response to flush oneself, requiring a minimum counter value. | 1 | `{ . . . }` |
-| [`follow`](../Reference_and_Meta/Miscellaneous.md#object-follow) | Object  | A speed-based event response to pursue. | 1 | `{ . . . }` |
-| [`give_parasite`](../Reference_and_Meta/Miscellaneous.md#object-give_parasite) | Object  | An event response to give a parasite, requiring the cat to have a parasite. | 1 | `{ . . . }` |
-| [`hack`](../Reference_and_Meta/Miscellaneous.md#object-hack) | Object  | An intelligence-based event response to hack a system. | 1 | `{ . . . }` |
-| [`hp`](../Reference_and_Meta/Miscellaneous.md#object-hp) | Object  | An event response that trades health, with no stat requirement. | 1 | `{ . . . }` |
-| [`intcheck`](../Reference_and_Meta/Miscellaneous.md#object-intcheck) | Object  | An intelligence-based event response to test intellect. | 1 | `{ . . . }` |
-| [`intimidation`](../Reference_and_Meta/Miscellaneous.md#object-intimidation) | Object  | An event response that intimidates, with no stat requirement. | 1 | `{ . . . }` |
-| [`itchies`](../Reference_and_Meta/Miscellaneous.md#object-itchies) | Object  | An event response that causes itches, with no stat requirement. | 1 | `{ . . . }` |
-| [`join`](../Reference_and_Meta/Miscellaneous.md#object-join) | Object  | A charisma-based event response to join in. | 1 | `{ . . . }` |
-| [`jump_over`](../Reference_and_Meta/Miscellaneous.md#object-jump_over) | Object  | A dexterity-based event response to vault over. | 1 | `{ . . . }` |
-| [`keep_going`](../Reference_and_Meta/Miscellaneous.md#object-keep_going) | Object  | An event response to persevere, with no stat requirement. | 1 | `{ . . . }` |
-| [`kiss_meat`](../Reference_and_Meta/Miscellaneous.md#object-kiss_meat) | Object  | A charisma-based event response to kiss meat. | 1 | `{ . . . }` |
-| [`leave_it_in`](../Reference_and_Meta/Miscellaneous.md#object-leave_it_in) | Object  | An event response to leave an object in place, with no stat requirement. | 1 | `{ . . . }` |
-| [`leg`](../Reference_and_Meta/Miscellaneous.md#object-leg) | Object  | A luck-based event response to use a leg. | 1 | `{ . . . }` |
-| [`lick_alt`](../Reference_and_Meta/Miscellaneous.md#object-lick_alt) | Object  | A constitution-based event response to lick, restricted to specific chapters. | 1 | `{ . . . }` |
-| [`listen`](../Reference_and_Meta/Miscellaneous.md#object-listen) | Object  | An intelligence-based event response to listen. | 1 | `{ . . . }` |
-| [`looks`](../Reference_and_Meta/Miscellaneous.md#object-looks) | Object  | The dialogue option for the Genie good event that selects the looks reward. | 1 | `{ . . . }` |
-| [`loot_heart`](../Reference_and_Meta/Miscellaneous.md#object-loot_heart) | Object  | The dialogue option to take the heart from the Dead King as a quest action. | 1 | `{ . . . }` |
-| [`makeup`](../Reference_and_Meta/Miscellaneous.md#object-makeup) | Object  | The dialogue option for the makeup event, associated with the Tink2 encounter. | 1 | `{ . . . }` |
-| [`mind`](../Reference_and_Meta/Miscellaneous.md#object-mind) | Object  | The dialogue option for the Genie bad event that selects the curse mind reward. | 1 | `{ . . . }` |
-| [`nothanks`](../Reference_and_Meta/Miscellaneous.md#object-nothanks) | Object  | The generic decline dialogue option that triggers a leave animation. | 1 | `{ . . . }` |
-| [`outsmart`](../Reference_and_Meta/Miscellaneous.md#object-outsmart) | Object  | The dialogue option that uses the int stat to outsmart the tutorial encounter. | 1 | `{ . . . }` |
-| [`patch_up`](../Reference_and_Meta/Miscellaneous.md#object-patch_up) | Object  | The dialogue option that uses the int stat to patch up the dying fetus. | 1 | `{ . . . }` |
-| [`pick_lock`](../Reference_and_Meta/Miscellaneous.md#object-pick_lock) | Object  | The dialogue option that uses the dex stat to pick a lock on a crate. | 1 | `{ . . . }` |
-| [`pirouette`](../Reference_and_Meta/Miscellaneous.md#object-pirouette) | Object  | The dialogue option for the Tink1 encounter that performs a pirouette. | 1 | `{ . . . }` |
-| [`place_gristle`](../Reference_and_Meta/Miscellaneous.md#object-place_gristle) | Object  | The dialogue option to place gristle on the Wall of Flesh as a quest action. | 1 | `{ . . . }` |
-| [`pull`](../Reference_and_Meta/Miscellaneous.md#object-pull) | Object  | The dialogue option that uses the str stat to pull a knife from a wall. | 1 | `{ . . . }` |
-| [`pull_it_out`](../Reference_and_Meta/Miscellaneous.md#object-pull_it_out) | Object  | The dialogue option to pull out a stalactite from the Jagged Pathway. | 1 | `{ . . . }` |
-| [`pull_lever`](../Reference_and_Meta/Miscellaneous.md#object-pull_lever) | Object  | The dialogue option to pull the lever on the Odd Device. | 1 | `{ . . . }` |
-| [`purify`](../Reference_and_Meta/Miscellaneous.md#object-purify) | Object  | The dialogue option that uses the lck stat to purify the Mysterious Chamber. | 1 | `{ . . . }` |
-| [`push_buttons`](../Reference_and_Meta/Miscellaneous.md#object-push_buttons) | Object  | The dialogue option to push buttons on the Odd Device. | 1 | `{ . . . }` |
-| [`push_through`](../Reference_and_Meta/Miscellaneous.md#object-push_through) | Object  | The dialogue option that uses the str stat to push through the Jagged Pathway. | 1 | `{ . . . }` |
-| [`put_in_coins`](../Reference_and_Meta/Miscellaneous.md#object-put_in_coins) | Object  | The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins. | 1 | `{ . . . }` |
-| [`put_out_of_misery`](../Reference_and_Meta/Miscellaneous.md#object-put_out_of_misery) | Object  | The dialogue option that uses the str stat to put the dying fetus out of its misery. | 1 | `{ . . . }` |
-| [`reach_inside`](../Reference_and_Meta/Miscellaneous.md#object-reach_inside) | Object  | The dialogue option that uses the spd stat to reach inside a Small Black Hole. | 1 | `{ . . . }` |
-| [`read`](../Reference_and_Meta/Miscellaneous.md#object-read) | Object  | The dialogue option that uses the int stat to read the Mysterious Manual. | 1 | `{ . . . }` |
-| [`red_needle`](../Reference_and_Meta/Miscellaneous.md#object-red_needle) | Object  | The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token. | 1 | `{ . . . }` |
-| [`reflect`](../Reference_and_Meta/Miscellaneous.md#object-reflect) | Object  | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 | `{ . . . }` |
-| [`remove`](../Reference_and_Meta/Miscellaneous.md#object-remove) | Object  | The dialogue option that uses the str stat to remove a stuck corpse. | 1 | `{ . . . }` |
-| [`remove_the_nail`](../Reference_and_Meta/Miscellaneous.md#object-remove_the_nail) | Object  | The dialogue option that uses the dex stat to remove the nail from a big toe. | 1 | `{ . . . }` |
-| [`repair_quest`](../Reference_and_Meta/Miscellaneous.md#object-repair_quest) | Object  | The dialogue option to repair the broken time machine as a quest action. | 1 | `{ . . . }` |
-| [`rest`](../Reference_and_Meta/Miscellaneous.md#object-rest) | Object  | The dialogue option that uses the lck stat to rest on a cat bed. | 1 | `{ . . . }` |
-| [`rub`](../Reference_and_Meta/Miscellaneous.md#object-rub) | Object  | The dialogue option that uses the lck stat to rub the Genie Lamp. | 1 | `{ . . . }` |
-| [`run_again`](../Reference_and_Meta/Miscellaneous.md#object-run_again) | Object  | The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet. | 1 | `{ . . . }` |
-| [`sacrifice_full_favor`](../Reference_and_Meta/Miscellaneous.md#object-sacrifice_full_favor) | Object  | The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action. | 1 | `{ . . . }` |
-| [`sacrifice_normal`](../Reference_and_Meta/Miscellaneous.md#object-sacrifice_normal) | Object  | The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped. | 1 | `{ . . . }` |
-| [`sacrifice_partial_favor`](../Reference_and_Meta/Miscellaneous.md#object-sacrifice_partial_favor) | Object  | The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action. | 1 | `{ . . . }` |
-| [`sacrifice_quest`](../Reference_and_Meta/Miscellaneous.md#object-sacrifice_quest) | Object  | The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped. | 1 | `{ . . . }` |
-| [`slip_through`](../Reference_and_Meta/Miscellaneous.md#object-slip_through) | Object  | The dialogue option that uses the dex stat to slip through a Barbed Wire Fence. | 1 | `{ . . . }` |
-| [`sneak_by`](../Reference_and_Meta/Miscellaneous.md#object-sneak_by) | Object  | The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark. | 1 | `{ . . . }` |
-| [`sneak_past_alt`](../Reference_and_Meta/Miscellaneous.md#object-sneak_past_alt) | Object  | The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters. | 1 | `{ . . . }` |
-| [`soul`](../Reference_and_Meta/Miscellaneous.md#object-soul) | Object  | The dialogue option for the Genie bad event that selects the curse soul reward. | 1 | `{ . . . }` |
-| [`surprise`](../Reference_and_Meta/Miscellaneous.md#object-surprise) | Object  | The dialogue option for the Butch2 encounter that surprises the target. | 1 | `{ . . . }` |
-| [`sweet_talk`](../Reference_and_Meta/Miscellaneous.md#object-sweet_talk) | Object  | The dialogue option that uses the cha stat to sweet-talk Death. | 1 | `{ . . . }` |
-| [`swim`](../Reference_and_Meta/Miscellaneous.md#object-swim) | Object  | The dialogue option that uses the str stat to swim through a Strong Current. | 1 | `{ . . . }` |
-| [`take_blood`](../Reference_and_Meta/Miscellaneous.md#object-take_blood) | Object  | The dialogue option to drain blood from the Dead King as a quest action. | 1 | `{ . . . }` |
-| [`talk`](../Reference_and_Meta/Miscellaneous.md#object-talk) | Object  | The dialogue option that uses the cha stat to talk to a Spookie Apparation. | 1 | `{ . . . }` |
-| [`talk_to`](../Reference_and_Meta/Miscellaneous.md#object-talk_to) | Object  | The dialogue option that uses the cha stat to talk to someone during a Dust Storm. | 1 | `{ . . . }` |
-| [`tappytoes`](../Reference_and_Meta/Miscellaneous.md#object-tappytoes) | Object  | The dialogue option for the Tink1 encounter that performs a tappytoes action. | 1 | `{ . . . }` |
-| [`timemachine`](../Reference_and_Meta/Miscellaneous.md#object-timemachine) | Object  | Defines a dialogue option that triggers a time travel sequence. | 1 | `{ . . . }` |
-| [`traverse`](../Reference_and_Meta/Miscellaneous.md#object-traverse) | Object  | Defines a dialogue option that moves the unit through a traversal area. | 1 | `{ . . . }` |
-| [`upgrade_yourself`](../Reference_and_Meta/Miscellaneous.md#object-upgrade_yourself) | Object  | Defines a dialogue option that upgrades the unit's attributes or abilities. | 1 | `{ . . . }` |
-| [`use_item`](../Reference_and_Meta/Miscellaneous.md#object-use_item) | Object  | Defines a dialogue option that prompts the unit to use an item from their inventory. | 1 | `{ . . . }` |
-| [`use_toilet_con`](../Reference_and_Meta/Miscellaneous.md#object-use_toilet_con) | Object  | Defines a dialogue option that interacts with a toilet using the Constitution stat. | 1 | `{ . . . }` |
-| [`use_toilet_str`](../Reference_and_Meta/Miscellaneous.md#object-use_toilet_str) | Object  | Defines a dialogue option that interacts with a toilet using the Strength stat. | 1 | `{ . . . }` |
-| [`w1`](../Reference_and_Meta/Miscellaneous.md#object-w1) | Object  | Defines a dialogue option for the first weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`w2`](../Reference_and_Meta/Miscellaneous.md#object-w2) | Object  | Defines a dialogue option for the second weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`w3`](../Reference_and_Meta/Miscellaneous.md#object-w3) | Object  | Defines a dialogue option for the third weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`w4`](../Reference_and_Meta/Miscellaneous.md#object-w4) | Object  | Defines a dialogue option for the fourth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`w5`](../Reference_and_Meta/Miscellaneous.md#object-w5) | Object  | Defines a dialogue option for the fifth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`w6`](../Reference_and_Meta/Miscellaneous.md#object-w6) | Object  | Defines a dialogue option for the sixth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
-| [`wealth`](../Reference_and_Meta/Miscellaneous.md#object-wealth) | Object  | Defines a dialogue option that grants the unit money or valuable items. | 1 | `{ . . . }` |
-| [`wheezies`](../Reference_and_Meta/Miscellaneous.md#object-wheezies) | Object  | Defines a dialogue option that triggers a wheezing effect or condition. | 1 | `{ . . . }` |
-| [`wish_genes`](../Reference_and_Meta/Miscellaneous.md#object-wish_genes) | Object  | Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics. | 1 | `{ . . . }` |
-| [`wish_items`](../Reference_and_Meta/Miscellaneous.md#object-wish_items) | Object  | Defines a dialogue option in the Monkey Paw event that grants items. | 1 | `{ . . . }` |
-| [`wish_strength`](../Reference_and_Meta/Miscellaneous.md#object-wish_strength) | Object  | Defines a dialogue option in the Monkey Paw event that increases Strength. | 1 | `{ . . . }` |
-| [`withstand`](../Reference_and_Meta/Miscellaneous.md#object-withstand) | Object  | Defines a dialogue option that allows the unit to withstand a hazard using Constitution. | 1 | `{ . . . }` |
-| [`yank_it_out`](../Reference_and_Meta/Miscellaneous.md#object-yank_it_out) | Object  | Defines a dialogue option that yanks out an object using Strength. | 1 | `{ . . . }` |
+| [`cross`](./Events_and_Encounters.md#object-cross) | Object  | An event response to traverse an obstacle, with no stat requirement. | 1 | `{ . . . }` |
+| [`teleport`](./Events_and_Encounters.md#object-teleport) | Object  | Defines a dialogue option that transports the unit to an alternative location in the event. | 1 | `{ . . . }` |
+| [`future`](./Events_and_Encounters.md#object-future) | Object  | Specifies the name, map flag, or connection for the Future area. | 1 | `{ . . . }` |
+| [`throw`](./Events_and_Encounters.md#object-throw) | Object  | Defines a dialogue option that allows the unit to throw an object. | 1 | `{ . . . }` |
+| [`blue`](./Events_and_Encounters.md#object-blue) | Object  | Specifies the player character's attempt to choose the blue option. | 1 | `{ . . . }` |
+| [`red`](./Events_and_Encounters.md#object-red) | Object  | Configuration for one of the dialog options (label 'EVENT_RED_ANSW'), with a fixed chance and associated animation, in a choice event. | 1 | `{ . . . }` |
+| [`infinite`](./Events_and_Encounters.md#object-infinite) | Object  | An event response to choose infinite, with a chapter exit hint and no stat requirement. | 1 | `{ . . . }` |
+| [`fire`](./Events_and_Encounters.md#object-fire) | Object  | An event response that uses fire, with no stat requirement. | 1 | `{ . . . }` |
+| [`brace`](./Events_and_Encounters.md#object-brace) | Object  | Specifies the player character's attempt to brace themselves for the encounter. | 1 | `{ . . . }` |
+| [`holy`](./Events_and_Encounters.md#object-holy) | Object  | An event response that uses holy power, with no stat requirement. | 1 | `{ . . . }` |
+| [`scream`](./Events_and_Encounters.md#object-scream) | Object  | The dialogue option to scream at the Meat Golem with no stat requirement. | 1 | `{ . . . }` |
+| [`ice`](./Events_and_Encounters.md#object-ice) | Object  | An event response that uses ice, with no stat requirement. | 1 | `{ . . . }` |
+| [`receive`](./Events_and_Encounters.md#object-receive) | Object  | The dialogue option to receive an item from a legacy event. | 1 | `{ . . . }` |
+| [`counter`](./Events_and_Encounters.md#object-counter) | Object  | An event response that uses a countering action, with no stat requirement. | 1 | `{ . . . }` |
+| [`dig`](./Events_and_Encounters.md#object-dig) | Object  | A strength-based event response to excavate, limited by a token counter maximum. | 1 | `{ . . . }` |
+| [`jump`](./Events_and_Encounters.md#object-jump) | Object  | A speed-based event response to leap. | 1 | `{ . . . }` |
+| [`power`](./Events_and_Encounters.md#object-power) | Object  | The dialogue option for the Genie good event that selects the power reward. | 1 | `{ . . . }` |
+| [`use_weapon`](./Events_and_Encounters.md#object-use_weapon) | Object  | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 | `{ . . . }` |
+| [`attach_antenna`](./Events_and_Encounters.md#object-attach_antenna) | Object  | Specifies the player character's attempt to attach a device or antenna to the encounter. | 1 | `{ . . . }` |
+| [`protection`](./Events_and_Encounters.md#object-protection) | Object  | Specifies the player character's attempt to offer or ask for protection. | 1 | `{ . . . }` |
+| [`turnon`](./Events_and_Encounters.md#object-turnon) | Object  | Specifies the player character's attempt to turn on or activate the encounter. | 1 | `{ . . . }` |
+| [`catch`](./Events_and_Encounters.md#object-catch) | Object  | An object defining a response option for catching an entity, including stat checks and rewards. | 1 | `{ . . . }` |
+| [`free`](./Events_and_Encounters.md#object-free) | Object  | If true, this option requires no cost to activate. | 1 | `{ . . . }` |
+| [`knife`](./Events_and_Encounters.md#object-knife) | Object  | An event response to obtain a knife, with no stat requirement. | 1 | `{ . . . }` |
+| [`lever`](./Events_and_Encounters.md#object-lever) | Object  | An event response to pull a lever, with a fixed chance and no stat requirement. | 1 | `{ . . . }` |
+| [`lightning`](./Events_and_Encounters.md#object-lightning) | Object  | An event response using lightning, with no stat requirement. | 1 | `{ . . . }` |
+| [`run_away`](./Events_and_Encounters.md#object-run_away) | Object  | The dialogue option that uses the spd stat to run away from a Giant Sleeping Shark. | 1 | `{ . . . }` |
+| [`thorns`](./Events_and_Encounters.md#object-thorns) | Object  | Defines a dialogue option that applies a thorns effect to the unit. | 1 | `{ . . . }` |
+| [`altar_sacrifice`](./Events_and_Encounters.md#object-altar_sacrifice) | Object  | Specifies the player character's attempt to sacrifice a cat at the altar. | 1 | `{ . . . }` |
+| [`arm`](./Events_and_Encounters.md#object-arm) | Object  | Specifies the player character's attempt to put their arm inside the encounter. | 1 | `{ . . . }` |
+| [`attach_amplifier`](./Events_and_Encounters.md#object-attach_amplifier) | Object  | Specifies the player character's attempt to attach an amplifier to the encounter. | 1 | `{ . . . }` |
+| [`attach_leech`](./Events_and_Encounters.md#object-attach_leech) | Object  | Specifies the player character's attempt to attach a leech to the encounter. | 1 | `{ . . . }` |
+| [`bash_past_alt`](./Events_and_Encounters.md#object-bash_past_alt) | Object  | Specifies the player character's attempt to bash through the encounter (alternate version for specific chapters). | 1 | `{ . . . }` |
+| [`bite_it_off`](./Events_and_Encounters.md#object-bite_it_off) | Object  | Specifies the player character's attempt to bite off part of the encounter. | 1 | `{ . . . }` |
+| [`book`](./Events_and_Encounters.md#object-book) | Object  | Specifies the player character's attempt to read or take the book. | 1 | `{ . . . }` |
+| [`break_ice`](./Events_and_Encounters.md#object-break_ice) | Object  | Specifies the player character's attempt to break the ice covering the encounter. | 1 | `{ . . . }` |
+| [`break_lock`](./Events_and_Encounters.md#object-break_lock) | Object  | Specifies the player character's attempt to break the lock on the encounter. | 1 | `{ . . . }` |
+| [`bribe`](./Events_and_Encounters.md#object-bribe) | Object  | Specifies the player character's attempt to bribe the encounter. | 1 | `{ . . . }` |
+| [`button`](./Events_and_Encounters.md#object-button) | Object  | Specifies the player character's attempt to push the button. | 1 | `{ . . . }` |
+| [`buy1`](./Events_and_Encounters.md#object-buy1) | Object  | Specifies the player character's attempt to buy one of the offered items. | 1 | `{ . . . }` |
+| [`challenge_to_game`](./Events_and_Encounters.md#object-challenge_to_game) | Object  | Specifies the player character's attempt to challenge the encounter to a game. | 1 | `{ . . . }` |
+| [`chaos_ending`](./Events_and_Encounters.md#object-chaos_ending) | Object  | Specifies the option to trigger the chaos ending cutscene. | 1 | `{ . . . }` |
+| [`chapter_cutscene`](./Events_and_Encounters.md#object-chapter_cutscene) | Object  | Specifies the option to trigger a chapter intro cutscene. | 1 | `{ . . . }` |
+| [`charm_past_alt`](./Events_and_Encounters.md#object-charm_past_alt) | Object  | Specifies the player character's attempt to charm the encounter (alternate version for specific chapters). | 1 | `{ . . . }` |
+| [`climb`](./Events_and_Encounters.md#object-climb) | Object  | Specifies the player character's attempt to climb over the encounter. | 1 | `{ . . . }` |
+| [`comfort`](./Events_and_Encounters.md#object-comfort) | Object  | A charisma-based event response that soothes the encounter subject. | 1 | `{ . . . }` |
+| [`communicate`](./Events_and_Encounters.md#object-communicate) | Object  | A charisma-based event response to establish communication. | 1 | `{ . . . }` |
+| [`concheck`](./Events_and_Encounters.md#object-concheck) | Object  | A constitution-based event response to test endurance. | 1 | `{ . . . }` |
+| [`cut_wires`](./Events_and_Encounters.md#object-cut_wires) | Object  | An intelligence-based event response to disable wires. | 1 | `{ . . . }` |
+| [`damage_1`](./Events_and_Encounters.md#object-damage_1) | Object  | A constitution-based event response that deals minor damage. | 1 | `{ . . . }` |
+| [`damage_full`](./Events_and_Encounters.md#object-damage_full) | Object  | A constitution-based event response that deals full damage. | 1 | `{ . . . }` |
+| [`damage_half`](./Events_and_Encounters.md#object-damage_half) | Object  | A constitution-based event response that deals halved damage. | 1 | `{ . . . }` |
+| [`desert_cutscene`](./Events_and_Encounters.md#object-desert_cutscene) | Object  | An event response that triggers a desert-themed cutscene, with no stat requirement. | 1 | `{ . . . }` |
+| [`dexcheck`](./Events_and_Encounters.md#object-dexcheck) | Object  | A dexterity-based event response to test agility. | 1 | `{ . . . }` |
+| [`disarm`](./Events_and_Encounters.md#object-disarm) | Object  | A dexterity-based event response to remove a trap. | 1 | `{ . . . }` |
+| [`dive`](./Events_and_Encounters.md#object-dive) | Object  | A dexterity-based event response to plunge into water. | 1 | `{ . . . }` |
+| [`donate`](./Events_and_Encounters.md#object-donate) | Object  | An event response to give a donation, with no stat requirement but a coin cost. | 1 | `{ . . . }` |
+| [`donate_5`](./Events_and_Encounters.md#object-donate_5) | Object  | An event response to donate 5 coins. | 1 | `{ . . . }` |
+| [`double`](./Events_and_Encounters.md#object-double) | Object  | An event response that doubles something, with no stat requirement. | 1 | `{ . . . }` |
+| [`eat_meat`](./Events_and_Encounters.md#object-eat_meat) | Object  | A constitution-based event response to consume meat. | 1 | `{ . . . }` |
+| [`enter_crater`](./Events_and_Encounters.md#object-enter_crater) | Object  | A luck-based event response to enter a crater. | 1 | `{ . . . }` |
+| [`fiddle`](./Events_and_Encounters.md#object-fiddle) | Object  | A quest-based event response to tamper, requiring no specific quest token. | 1 | `{ . . . }` |
+| [`fill_jar`](./Events_and_Encounters.md#object-fill_jar) | Object  | A quest-based event response to fill a jar, with no stat requirement. | 1 | `{ . . . }` |
+| [`find`](./Events_and_Encounters.md#object-find) | Object  | An event response to search, with no stat requirement. | 1 | `{ . . . }` |
+| [`flush_yourself`](./Events_and_Encounters.md#object-flush_yourself) | Object  | An event response to flush oneself, requiring a minimum counter value. | 1 | `{ . . . }` |
+| [`follow`](./Events_and_Encounters.md#object-follow) | Object  | A speed-based event response to pursue. | 1 | `{ . . . }` |
+| [`give_parasite`](./Events_and_Encounters.md#object-give_parasite) | Object  | An event response to give a parasite, requiring the cat to have a parasite. | 1 | `{ . . . }` |
+| [`hack`](./Events_and_Encounters.md#object-hack) | Object  | An intelligence-based event response to hack a system. | 1 | `{ . . . }` |
+| [`hp`](./Events_and_Encounters.md#object-hp) | Object  | An event response that trades health, with no stat requirement. | 1 | `{ . . . }` |
+| [`intcheck`](./Events_and_Encounters.md#object-intcheck) | Object  | An intelligence-based event response to test intellect. | 1 | `{ . . . }` |
+| [`intimidation`](./Events_and_Encounters.md#object-intimidation) | Object  | An event response that intimidates, with no stat requirement. | 1 | `{ . . . }` |
+| [`itchies`](./Events_and_Encounters.md#object-itchies) | Object  | An event response that causes itches, with no stat requirement. | 1 | `{ . . . }` |
+| [`join`](./Events_and_Encounters.md#object-join) | Object  | A charisma-based event response to join in. | 1 | `{ . . . }` |
+| [`jump_over`](./Events_and_Encounters.md#object-jump_over) | Object  | A dexterity-based event response to vault over. | 1 | `{ . . . }` |
+| [`keep_going`](./Events_and_Encounters.md#object-keep_going) | Object  | An event response to persevere, with no stat requirement. | 1 | `{ . . . }` |
+| [`kiss_meat`](./Events_and_Encounters.md#object-kiss_meat) | Object  | A charisma-based event response to kiss meat. | 1 | `{ . . . }` |
+| [`leave_it_in`](./Events_and_Encounters.md#object-leave_it_in) | Object  | An event response to leave an object in place, with no stat requirement. | 1 | `{ . . . }` |
+| [`leg`](./Events_and_Encounters.md#object-leg) | Object  | A luck-based event response to use a leg. | 1 | `{ . . . }` |
+| [`lick_alt`](./Events_and_Encounters.md#object-lick_alt) | Object  | A constitution-based event response to lick, restricted to specific chapters. | 1 | `{ . . . }` |
+| [`listen`](./Events_and_Encounters.md#object-listen) | Object  | An intelligence-based event response to listen. | 1 | `{ . . . }` |
+| [`looks`](./Events_and_Encounters.md#object-looks) | Object  | The dialogue option for the Genie good event that selects the looks reward. | 1 | `{ . . . }` |
+| [`loot_heart`](./Events_and_Encounters.md#object-loot_heart) | Object  | The dialogue option to take the heart from the Dead King as a quest action. | 1 | `{ . . . }` |
+| [`makeup`](./Events_and_Encounters.md#object-makeup) | Object  | The dialogue option for the makeup event, associated with the Tink2 encounter. | 1 | `{ . . . }` |
+| [`mind`](./Events_and_Encounters.md#object-mind) | Object  | The dialogue option for the Genie bad event that selects the curse mind reward. | 1 | `{ . . . }` |
+| [`nothanks`](./Events_and_Encounters.md#object-nothanks) | Object  | The generic decline dialogue option that triggers a leave animation. | 1 | `{ . . . }` |
+| [`outsmart`](./Events_and_Encounters.md#object-outsmart) | Object  | The dialogue option that uses the int stat to outsmart the tutorial encounter. | 1 | `{ . . . }` |
+| [`patch_up`](./Events_and_Encounters.md#object-patch_up) | Object  | The dialogue option that uses the int stat to patch up the dying fetus. | 1 | `{ . . . }` |
+| [`pick_lock`](./Events_and_Encounters.md#object-pick_lock) | Object  | The dialogue option that uses the dex stat to pick a lock on a crate. | 1 | `{ . . . }` |
+| [`pirouette`](./Events_and_Encounters.md#object-pirouette) | Object  | The dialogue option for the Tink1 encounter that performs a pirouette. | 1 | `{ . . . }` |
+| [`place_gristle`](./Events_and_Encounters.md#object-place_gristle) | Object  | The dialogue option to place gristle on the Wall of Flesh as a quest action. | 1 | `{ . . . }` |
+| [`pull`](./Events_and_Encounters.md#object-pull) | Object  | The dialogue option that uses the str stat to pull a knife from a wall. | 1 | `{ . . . }` |
+| [`pull_it_out`](./Events_and_Encounters.md#object-pull_it_out) | Object  | The dialogue option to pull out a stalactite from the Jagged Pathway. | 1 | `{ . . . }` |
+| [`pull_lever`](./Events_and_Encounters.md#object-pull_lever) | Object  | The dialogue option to pull the lever on the Odd Device. | 1 | `{ . . . }` |
+| [`purify`](./Events_and_Encounters.md#object-purify) | Object  | The dialogue option that uses the lck stat to purify the Mysterious Chamber. | 1 | `{ . . . }` |
+| [`push_buttons`](./Events_and_Encounters.md#object-push_buttons) | Object  | The dialogue option to push buttons on the Odd Device. | 1 | `{ . . . }` |
+| [`push_through`](./Events_and_Encounters.md#object-push_through) | Object  | The dialogue option that uses the str stat to push through the Jagged Pathway. | 1 | `{ . . . }` |
+| [`put_in_coins`](./Events_and_Encounters.md#object-put_in_coins) | Object  | The dialogue option to put coins into the Vending Machine, requiring a minimum of 10 coins. | 1 | `{ . . . }` |
+| [`put_out_of_misery`](./Events_and_Encounters.md#object-put_out_of_misery) | Object  | The dialogue option that uses the str stat to put the dying fetus out of its misery. | 1 | `{ . . . }` |
+| [`reach_inside`](./Events_and_Encounters.md#object-reach_inside) | Object  | The dialogue option that uses the spd stat to reach inside a Small Black Hole. | 1 | `{ . . . }` |
+| [`read`](./Events_and_Encounters.md#object-read) | Object  | The dialogue option that uses the int stat to read the Mysterious Manual. | 1 | `{ . . . }` |
+| [`red_needle`](./Events_and_Encounters.md#object-red_needle) | Object  | The dialogue option that uses the lck stat to select the red needle, requiring not having the RedNeedle token. | 1 | `{ . . . }` |
+| [`reflect`](./Events_and_Encounters.md#object-reflect) | Object  | The dialogue option for the StacyMutant4 encounter that chooses to reflect. | 1 | `{ . . . }` |
+| [`remove`](./Events_and_Encounters.md#object-remove) | Object  | The dialogue option that uses the str stat to remove a stuck corpse. | 1 | `{ . . . }` |
+| [`remove_the_nail`](./Events_and_Encounters.md#object-remove_the_nail) | Object  | The dialogue option that uses the dex stat to remove the nail from a big toe. | 1 | `{ . . . }` |
+| [`repair_quest`](./Events_and_Encounters.md#object-repair_quest) | Object  | The dialogue option to repair the broken time machine as a quest action. | 1 | `{ . . . }` |
+| [`rest`](./Events_and_Encounters.md#object-rest) | Object  | The dialogue option that uses the lck stat to rest on a cat bed. | 1 | `{ . . . }` |
+| [`rub`](./Events_and_Encounters.md#object-rub) | Object  | The dialogue option that uses the lck stat to rub the Genie Lamp. | 1 | `{ . . . }` |
+| [`run_again`](./Events_and_Encounters.md#object-run_again) | Object  | The dialogue option that uses the spd stat to run away from Death again, requiring he hasn't chased you yet. | 1 | `{ . . . }` |
+| [`sacrifice_full_favor`](./Events_and_Encounters.md#object-sacrifice_full_favor) | Object  | The dialogue option to sacrifice a cat at the Volcano with full favor as a quest action. | 1 | `{ . . . }` |
+| [`sacrifice_normal`](./Events_and_Encounters.md#object-sacrifice_normal) | Object  | The dialogue option to perform a normal sacrifice at the Meat Altar, requiring the GuillotinasHead not equipped. | 1 | `{ . . . }` |
+| [`sacrifice_partial_favor`](./Events_and_Encounters.md#object-sacrifice_partial_favor) | Object  | The dialogue option to sacrifice a cat at the Volcano with partial favor as a quest action. | 1 | `{ . . . }` |
+| [`sacrifice_quest`](./Events_and_Encounters.md#object-sacrifice_quest) | Object  | The dialogue option to perform a quest sacrifice at the Meat Altar, requiring the GuillotinasHead equipped. | 1 | `{ . . . }` |
+| [`slip_through`](./Events_and_Encounters.md#object-slip_through) | Object  | The dialogue option that uses the dex stat to slip through a Barbed Wire Fence. | 1 | `{ . . . }` |
+| [`sneak_by`](./Events_and_Encounters.md#object-sneak_by) | Object  | The dialogue option that uses the dex stat to sneak by a Giant Sleeping Shark. | 1 | `{ . . . }` |
+| [`sneak_past_alt`](./Events_and_Encounters.md#object-sneak_past_alt) | Object  | The dialogue option using dex to sneak past a stray cat, available only in the Ice Age or Jurassic chapters. | 1 | `{ . . . }` |
+| [`soul`](./Events_and_Encounters.md#object-soul) | Object  | The dialogue option for the Genie bad event that selects the curse soul reward. | 1 | `{ . . . }` |
+| [`surprise`](./Events_and_Encounters.md#object-surprise) | Object  | The dialogue option for the Butch2 encounter that surprises the target. | 1 | `{ . . . }` |
+| [`sweet_talk`](./Events_and_Encounters.md#object-sweet_talk) | Object  | The dialogue option that uses the cha stat to sweet-talk Death. | 1 | `{ . . . }` |
+| [`swim`](./Events_and_Encounters.md#object-swim) | Object  | The dialogue option that uses the str stat to swim through a Strong Current. | 1 | `{ . . . }` |
+| [`take_blood`](./Events_and_Encounters.md#object-take_blood) | Object  | The dialogue option to drain blood from the Dead King as a quest action. | 1 | `{ . . . }` |
+| [`talk`](./Events_and_Encounters.md#object-talk) | Object  | The dialogue option that uses the cha stat to talk to a Spookie Apparation. | 1 | `{ . . . }` |
+| [`talk_to`](./Events_and_Encounters.md#object-talk_to) | Object  | The dialogue option that uses the cha stat to talk to someone during a Dust Storm. | 1 | `{ . . . }` |
+| [`tappytoes`](./Events_and_Encounters.md#object-tappytoes) | Object  | The dialogue option for the Tink1 encounter that performs a tappytoes action. | 1 | `{ . . . }` |
+| [`timemachine`](./Events_and_Encounters.md#object-timemachine) | Object  | Defines a dialogue option that triggers a time travel sequence. | 1 | `{ . . . }` |
+| [`traverse`](./Events_and_Encounters.md#object-traverse) | Object  | Defines a dialogue option that moves the unit through a traversal area. | 1 | `{ . . . }` |
+| [`upgrade_yourself`](./Events_and_Encounters.md#object-upgrade_yourself) | Object  | Defines a dialogue option that upgrades the unit's attributes or abilities. | 1 | `{ . . . }` |
+| [`use_item`](./Events_and_Encounters.md#object-use_item) | Object  | Defines a dialogue option that prompts the unit to use an item from their inventory. | 1 | `{ . . . }` |
+| [`use_toilet_con`](./Events_and_Encounters.md#object-use_toilet_con) | Object  | Defines a dialogue option that interacts with a toilet using the Constitution stat. | 1 | `{ . . . }` |
+| [`use_toilet_str`](./Events_and_Encounters.md#object-use_toilet_str) | Object  | Defines a dialogue option that interacts with a toilet using the Strength stat. | 1 | `{ . . . }` |
+| [`w1`](./Events_and_Encounters.md#object-w1) | Object  | Defines a dialogue option for the first weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`w2`](./Events_and_Encounters.md#object-w2) | Object  | Defines a dialogue option for the second weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`w3`](./Events_and_Encounters.md#object-w3) | Object  | Defines a dialogue option for the third weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`w4`](./Events_and_Encounters.md#object-w4) | Object  | Defines a dialogue option for the fourth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`w5`](./Events_and_Encounters.md#object-w5) | Object  | Defines a dialogue option for the fifth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`w6`](./Events_and_Encounters.md#object-w6) | Object  | Defines a dialogue option for the sixth weather choice in the Crater Weather event. | 1 | `{ . . . }` |
+| [`wealth`](./Events_and_Encounters.md#object-wealth) | Object  | Defines a dialogue option that grants the unit money or valuable items. | 1 | `{ . . . }` |
+| [`wheezies`](./Events_and_Encounters.md#object-wheezies) | Object  | Defines a dialogue option that triggers a wheezing effect or condition. | 1 | `{ . . . }` |
+| [`wish_genes`](./Events_and_Encounters.md#object-wish_genes) | Object  | Defines a dialogue option in the Monkey Paw event that modifies the unit's genetics. | 1 | `{ . . . }` |
+| [`wish_items`](./Events_and_Encounters.md#object-wish_items) | Object  | Defines a dialogue option in the Monkey Paw event that grants items. | 1 | `{ . . . }` |
+| [`wish_strength`](./Events_and_Encounters.md#object-wish_strength) | Object  | Defines a dialogue option in the Monkey Paw event that increases Strength. | 1 | `{ . . . }` |
+| [`withstand`](./Events_and_Encounters.md#object-withstand) | Object  | Defines a dialogue option that allows the unit to withstand a hazard using Constitution. | 1 | `{ . . . }` |
+| [`yank_it_out`](./Events_and_Encounters.md#object-yank_it_out) | Object  | Defines a dialogue option that yanks out an object using Strength. | 1 | `{ . . . }` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
@@ -977,17 +977,17 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
-| [`revive`](../Reference_and_Meta/Miscellaneous.md#object-revive) | Object  | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 0 | `{ . . . }` |
-| [`shake`](../Reference_and_Meta/Miscellaneous.md#object-shake) | Object  | The dialogue option that uses the str stat to shake the Vending Machine. | 0 | `{ . . . }` |
-| [`blue_needle`](../Reference_and_Meta/Miscellaneous.md#object-blue_needle) | Object  | Specifies the player character's attempt to take the blue needle. | 0 | `{ . . . }` |
-| [`crack_open`](../Reference_and_Meta/Miscellaneous.md#object-crack_open) | Object  | A strength-based event response to break something open. | 0 | `{ . . . }` |
-| [`donate_10`](../Reference_and_Meta/Miscellaneous.md#object-donate_10) | Object  | An event response to donate 10 coins. | 0 | `{ . . . }` |
-| [`donate_15`](../Reference_and_Meta/Miscellaneous.md#object-donate_15) | Object  | An event response to donate 15 coins. | 0 | `{ . . . }` |
-| [`donate_20`](../Reference_and_Meta/Miscellaneous.md#object-donate_20) | Object  | An event response to donate 20 coins. | 0 | `{ . . . }` |
-| [`pilfer`](../Reference_and_Meta/Miscellaneous.md#object-pilfer) | Object  | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 0 | `{ . . . }` |
-| [`wish_levelups`](../Reference_and_Meta/Miscellaneous.md#object-wish_levelups) | Object  | Defines a dialogue option in the Monkey Paw event that grants level-ups. | 0 | `{ . . . }` |
-| [`yellow_needle`](../Reference_and_Meta/Miscellaneous.md#object-yellow_needle) | Object  | Defines a dialogue option to interact with a yellow needle. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`revive`](./Events_and_Encounters.md#object-revive) | Object  | The dialogue option that uses the lck stat to revive the Dead Mammoth. | 0 | `{ . . . }` |
+| [`shake`](./Events_and_Encounters.md#object-shake) | Object  | The dialogue option that uses the str stat to shake the Vending Machine. | 0 | `{ . . . }` |
+| [`blue_needle`](./Events_and_Encounters.md#object-blue_needle) | Object  | Specifies the player character's attempt to take the blue needle. | 0 | `{ . . . }` |
+| [`crack_open`](./Events_and_Encounters.md#object-crack_open) | Object  | A strength-based event response to break something open. | 0 | `{ . . . }` |
+| [`donate_10`](./Events_and_Encounters.md#object-donate_10) | Object  | An event response to donate 10 coins. | 0 | `{ . . . }` |
+| [`donate_15`](./Events_and_Encounters.md#object-donate_15) | Object  | An event response to donate 15 coins. | 0 | `{ . . . }` |
+| [`donate_20`](./Events_and_Encounters.md#object-donate_20) | Object  | An event response to donate 20 coins. | 0 | `{ . . . }` |
+| [`pilfer`](./Events_and_Encounters.md#object-pilfer) | Object  | The dialogue option that uses the lck stat to pilfer from a pile of skulls. | 0 | `{ . . . }` |
+| [`wish_levelups`](./Events_and_Encounters.md#object-wish_levelups) | Object  | Defines a dialogue option in the Monkey Paw event that grants level-ups. | 0 | `{ . . . }` |
+| [`yellow_needle`](./Events_and_Encounters.md#object-yellow_needle) | Object  | Defines a dialogue option to interact with a yellow needle. | 0 | `{ . . . }` |
 
 </details>
 
@@ -1066,7 +1066,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -1089,30 +1089,30 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 115 | passives<br>class<br>tag |
-| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 32 | `1`<br>`10`<br>`2` |
-| `Fear` | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 29 | `1`<br>`10`<br>`2` |
-| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 22 | `1`<br>`10`<br>`2` |
+| `Poison` | Integer | The amount of Poison applied, either as a fixed number or an array of [stacks, probability]. | 35 | `1`<br>`10`<br>`2` |
+| `Fear` | Integer | The amount of Fear applied, either as a fixed number or an array of [stacks, probability]. | 32 | `1`<br>`10`<br>`2` |
+| `Bleed` | Integer | The amount of bleed stacks applied, or an [stacks, probability] array. | 24 | `1`<br>`10`<br>`2` |
 | [`AbilityOnBattleStart_Immediate`](../Reference_and_Meta/Enums.md#enum-abilityonbattlestart_immediate) | Enum | Specifies the ability triggered instantly at the start of battle. | 14 | `BrambleRandomTileEvent`<br>`FlowerEventSleep`<br>`Flush` |
 | `StrengthUp` | Equation | The number of stacks of Strength Up applied to the source, increasing its Strength stat. | 7 | `"max(int, 0)"`<br>`-1`<br>`-2` |
-| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 6 | `-1`<br>`-2`<br>`-4` |
+| `SpeedUp` | Integer | The number of stacks of a Speed buff applied, increasing the target's turn order priority. | 7 | `-1`<br>`-2`<br>`-4` |
 | `ConstitutionUp` | Integer | The number of stacks (or [stacks, probability] array) of a Constitution buff applied, increasing maximum health. | 6 | `-1`<br>`-2`<br>`1` |
-| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 4 | `-1`<br>`-2`<br>`1` |
+| `CharismaUp` | Integer | The amount of charisma change, or a keyword like 'item_aux'. | 5 | `-1`<br>`-2`<br>`1` |
+| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 5 | `1`<br>`10`<br>`2` |
+| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 5 | `1`<br>`10`<br>`2` |
 | `HealthRegenUp` | Integer | The amount of bonus health regeneration granted to a unit per turn, additive with existing regeneration. | 4 | `1`<br>`2`<br>`3` |
 | `DexterityUp` | Array / Equation | The amount of dexterity change, or a keyword like 'item_aux'. | 4 | `-1`<br>`1`<br>`2` |
-| `Confusion` | Integer | The amount of confusion applied, either as a fixed number or an array of [stacks, probability]. | 3 | `1`<br>`10`<br>`2` |
-| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 3 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
-| `Sleep` | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`3` |
+| `IntelligenceUp` | Array / Equation | The amount of Intelligence added as a flat bonus. | 4 | `"min(-int, 0)"`<br>`-1`<br>`-2` |
+| `Sleep` | Integer | The amount of sleep stacks applied, or an [stacks, probability] array. | 4 | `1`<br>`2`<br>`3` |
+| `Stun` | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 4 | `1`<br>`2`<br>`3` |
+| `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 4 | `1`<br>`2`<br>`3` |
+| `Blind` | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 4 | `-1`<br>`1`<br>`2` |
 | `Webbed` | Integer | The amount of webbed stacks applied, or an [stacks, probability] array. | 3 | `1`<br>`2`<br>`[1 .1]` |
 | `AddStartingMana` | Integer | The amount of bonus mana the unit starts each battle with. | 3 | `20`<br>`5` |
-| `Burn` | Equation | The amount of Burn applied, either as a fixed number or a formula string. | 2 | `1`<br>`10`<br>`2` |
-| `Stun` | Integer | The amount of Stun applied, either as a fixed number or an array of [stacks, probability]. | 2 | `1`<br>`2`<br>`3` |
-| `Bruise` | Integer | The number of stacks (or [stacks, probability] array) of the Bruise debuff applied, which increases damage taken. | 2 | `1`<br>`2`<br>`3` |
-| `Blind` | Integer | The amount of blind stacks applied, or an [stacks, probability] array. | 2 | `-1`<br>`1`<br>`2` |
-| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 2 | `-1`<br>`-2`<br>`-4` |
-| `NoHealthRegen` | Integer | Prevents the unit from regenerating health normally. | 2 | `1` |
+| `LuckUp` | Integer | The amount of Luck stat changed on the source, affecting random chance outcomes. | 3 | `-1`<br>`-2`<br>`-4` |
+| `NoHealthRegen` | Integer | Prevents the unit from regenerating health normally. | 3 | `1` |
+| `Madness` | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 3 | `1`<br>`2`<br>`3` |
 | `RandomStatUp` | Equation | The amount of random stat increase applied, either as a fixed number or a formula string. | 2 | `"ceil(X/2)"`<br>`"ceil(X/3)"`<br>`-1` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 1 | `Default`<br>`FormChange`<br>`Druid` | `AllStatsUp` | Integer | The number of stacks of a global stat increase applied to all stats (DamageUp, SpeedUp, ConstitutionUp, DodgeChance). | 13 | Default<br>FormChange<br>Druid |
-| `Madness` | Integer | The amount of Madness applied, either as a fixed number, a string like "level", or an array of [stacks, probability]. | 1 | `1`<br>`2`<br>`3` |
 | `Slow` | Integer | The number of stacks (or [stacks, probability] array) of the Slow debuff applied, reducing speed. | 1 | `-1`<br>`1`<br>`2` |
 | `DivineShield` | Integer | The number of stacks of Divine Shield applied, granting immunity to damage. Can be an array [stacks, probability]. | 1 | `1`<br>`2`<br>`4` |
 | `MissChance` | Integer | The flat percentage chance that the unit's attacks will miss. | 1 | `10`<br>`15`<br>`20` |
@@ -1170,14 +1170,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 36 | `-1`<br>`-2`<br>`-3` |
-| `random` | Number | A random value used for stat or attribute adjustment. | 25 | `-1`<br>`-2`<br>`1` |
-| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 22 | `-1`<br>`-10`<br>`-2` |
-| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 20 | `-1`<br>`-2`<br>`-3` |
-| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 19 | `-1`<br>`-2`<br>`-3` |
-| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 18 | `-1`<br>`-10`<br>`-2` |
-| `cha` | Integer | The Charisma stat value or modifier. | 14 | `+1`<br>`-1`<br>`-2` |
-| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 13 | `-1`<br>`-2`<br>`-3` |
+| [`con`](../Reference_and_Meta/Enums.md#enum-con) | Enum / Integer  | The Constitution stat value or modifier. | 38 | `-1`<br>`-2`<br>`-3` |
+| `random` | Number | A random value used for stat or attribute adjustment. | 26 | `-1`<br>`-2`<br>`1` |
+| [`int`](../Reference_and_Meta/Enums.md#enum-int) | Enum / Integer | The Intelligence stat value or modifier. | 25 | `-1`<br>`-10`<br>`-2` |
+| [`str`](../Reference_and_Meta/Enums.md#enum-str) | Enum / Integer | The Strength stat value or modifier. | 22 | `-1`<br>`-2`<br>`-3` |
+| [`lck`](../Reference_and_Meta/Enums.md#enum-lck) | Enum / Integer | The Luck stat value or modifier. | 21 | `-1`<br>`-2`<br>`-3` |
+| [`spd`](../Reference_and_Meta/Enums.md#enum-spd) | Enum / Integer  | The Speed stat value or modifier. | 20 | `-1`<br>`-10`<br>`-2` |
+| `cha` | Integer | The Charisma stat value or modifier. | 17 | `+1`<br>`-1`<br>`-2` |
+| [`dex`](../Reference_and_Meta/Enums.md#enum-dex) | Enum / Integer | The Dexterity stat value or modifier. | 14 | `-1`<br>`-2`<br>`-3` |
 
 </details>
 
@@ -1198,10 +1198,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`reward`](./Events_and_Encounters.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 124 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 124 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 122 | `common`<br>`rare`<br>`cha` |
-| [`reward`](../Reference_and_Meta/Miscellaneous.md#object-reward) | Object  | An object containing sub-objects defining the rewards for different rarity tiers (e.g., common, rare), each with their own set of actions and items. | 122 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 122 | `{ . . . }` |
-| [`else`](../Reference_and_Meta/Miscellaneous.md#object-else) | Object  | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 35 | `{ . . . }` |
+| [`else`](./Events_and_Encounters.md#object-else) | Object  | Specifies the fallback outcome when the primary condition in a conditional reward is not met. | 35 | `{ . . . }` |
 | [`prompt`](../Assets_and_Localization/Strings.md#string-prompt) | String | The text or localization key for the popup or prompt displayed to the player. | 2 | `"Donate 3 times before you can receive a reward!"`<br>`"EVENT_ABEGGAR_LEAVE"`<br>`"EVENT_ABEGGAR_QUES"` |
 
 </details>
@@ -1268,7 +1268,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -1290,12 +1290,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 8 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 8 | `cha`<br>`coins`<br>`con` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 11 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 7 | `common`<br>`rare`<br>`cha` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
-| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 1 | `examine`<br>`lever`<br>`open` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
+| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 4 | `examine`<br>`lever`<br>`open` |
 
 </details>
 
@@ -1316,13 +1316,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 57 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 57 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 56 | `cha`<br>`coins`<br>`con` |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 55 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 49 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 49 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 49 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 49 | `cha`<br>`coins`<br>`con` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 48 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 3 | `{ . . . }` |
 | [`hint_chapter_exit`](../Reference_and_Meta/Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 2 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
@@ -1348,7 +1348,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -1369,12 +1369,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 40 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 40 | `cha`<br>`coins`<br>`con` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 44 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 44 | `cha`<br>`coins`<br>`con` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 41 | `false`<br>`true` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 38 | `common`<br>`rare`<br>`cha` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 38 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 27 | `{ . . . }` |
-| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 2 | `examine`<br>`lever`<br>`open` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 28 | `{ . . . }` |
+| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 3 | `examine`<br>`lever`<br>`open` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -1419,10 +1419,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 40 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
-| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 34 | `0`<br>`1`<br>`10` |
+| [`object`](../Reference_and_Meta/Arrays.md#array-object) | Array / Enum | Specifies the object or unit to be spawned. | 41 | `AlbinoTomTom`<br>`AlbinoTomTom_Elite`<br>`AlienBeast` |
+| [`count`](../Reference_and_Meta/Arrays.md#array-count) | Array / Integer | The number of units to spawn or enrage, as a fixed number or a range [min max]. | 35 | `0`<br>`1`<br>`10` |
 | [`spawn_side`](../Reference_and_Meta/Enums.md#enum-spawn_side) | Enum | Specifies which side the spawned unit appears on. Possible values: "cats", "enemies", or "anywhere". | 32 | `"cats"`<br>`anywhere`<br>`cats` |
-| [`side`](../Reference_and_Meta/Enums.md#enum-side) | Enum | Determines the team the spawned unit belongs to. Possible values include "enemies". | 2 | `enemies` |
+| [`side`](../Reference_and_Meta/Enums.md#enum-side) | Enum | Determines the team the spawned unit belongs to. Possible values include "enemies". | 3 | `enemies` |
 
 </details>
 
@@ -1443,12 +1443,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 33 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 33 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 33 | `cha`<br>`coins`<br>`con` |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 31 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 25 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 25 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 25 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 25 | `cha`<br>`coins`<br>`con` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 23 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 
 </details>
 
@@ -1475,14 +1475,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `set_adventure_token` | `String` | Specifies an adventure token to set (enable or mark as true) when this event triggers. | 6 | `AdventureToken_BlueNeedle`<br>`AdventureToken_HasRunFromDeath`<br>`AdventureToken_HasTakenNeedle` |
 | `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 5 | `1`<br>`10`<br>`15` |
 | `party_damage` | `Number` | An array specifying the minimum and maximum damage dealt to the party, or a single integer or percentage. | 5 | `1`<br>`10`<br>`2` |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 4 | `{ . . . }` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object | An object defining a reward that is granted only if specified conditions are met. | 4 | `{ . . . }` |
 | `event_now` | `String` | Triggers the specified event immediately. | 4 | `MeatGolem`<br>`Mirage`<br>`MysteriousMachine_Bad` |
 | [`random_pool`](../Reference_and_Meta/Arrays.md#array-random_pool) | Array | An array of possible items or rewards from which one is randomly selected. | 3 | `[` |
 | `get_item_from_pool` | `Array`  | Grants an item from the specified pool or a specific item name. | 2 | `Bird_items`<br>`Coin_items`<br>`Eye_items` |
 | `gain_disorder` | `String` | Specifies a disorder to add to the current cat when this event triggers. | 2 | `AcidReflux`<br>`Albinism`<br>`Anxiety` |
 | [`damage`](../Reference_and_Meta/Miscellaneous.md#object-damage) | Enum / Integer / Object  | Specifies the amount of damage dealt, can be a number or expression. | 1 | `{ . . . }`<br>`"(15+bonus_melee_damage)*.5"`<br>`"(4+bonus_ranged_damage+1)/2"`<br>`"(5+bonus_melee_ability_damage)*.5"` |
-| [`self_status_next_fight`](../Reference_and_Meta/Miscellaneous.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 1 | `{ . . . }` |
-| [`random_mutation`](../Reference_and_Meta/Miscellaneous.md#object-random_mutation) | Object  | The number of random mutations applied to the unit. | 1 | `{ . . . }` |
+| [`self_status_next_fight`](./Events_and_Encounters.md#object-self_status_next_fight) | Object  | An object defining status effects applied to the unit at the start of the next fight. | 1 | `{ . . . }` |
+| [`random_mutation`](./Events_and_Encounters.md#object-random_mutation) | Object  | The number of random mutations applied to the unit. | 1 | `{ . . . }` |
 | `set_legacy_token` | `String` | Specifies a legacy token to set (enable or mark as true) when this event triggers. | 1 | `AlienOvergrowthUnlocked`<br>`AntennaQuest_Orb`<br>`AntennaQuest_Rift` |
 | `next_event_bonus` | `Number` | A modifier to the next event's outcome roll or selection chance. | 1 | `-1`<br>`-2`<br>`1` |
 
@@ -1544,7 +1544,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 | [`hint_chapter_exit`](../Reference_and_Meta/Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
@@ -1566,13 +1566,13 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 26 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 26 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 26 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 26 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 24 | `common`<br>`rare`<br>`cha` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 24 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 24 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 24 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 24 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 21 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 22 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 
 </details>
 
@@ -1597,7 +1597,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 23 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 23 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 23 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 23 | `{ . . . }` |
 
 </details>
 
@@ -1651,7 +1651,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`conditional_reward`](../Reference_and_Meta/Miscellaneous.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 42 | `{ . . . }` |
+| [`conditional_reward`](./Events_and_Encounters.md#object-conditional_reward) | Object  | An object defining a reward that is granted only if specified conditions are met. | 42 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 23 | `common`<br>`rare`<br>`cha` |
 | `set_frame` | `Number` | The specific animation frame to set for an object or UI element. | 3 | `1`<br>`10`<br>`15` |
 
@@ -1711,7 +1711,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1732,12 +1732,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 14 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 14 | `cha`<br>`coins`<br>`con` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 16 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 16 | `cha`<br>`coins`<br>`con` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 | `false`<br>`true` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 13 | `common`<br>`rare`<br>`cha` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 13 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
-| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 1 | `examine`<br>`lever`<br>`open` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 8 | `{ . . . }` |
+| [`copy_results`](../Reference_and_Meta/Enums.md#enum-copy_results) | Enum | Specifies the identifier of another option whose outcomes are replicated. | 2 | `examine`<br>`lever`<br>`open` |
 
 </details>
 
@@ -1837,7 +1837,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
 
 </details>
@@ -1863,8 +1863,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 12 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 12 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 12 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 12 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1889,7 +1889,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 14 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 14 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 14 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 13 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 13 | `{ . . . }` |
 
 </details>
 
@@ -1914,8 +1914,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 11 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 11 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 11 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 11 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -1938,9 +1938,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`{Status and Passive Keys}`](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md#valid-property-keys) | Variable | A generic key for defining a status effect or passive, where the key name is the identifier and the value is its configuration. | 8 | passives<br>class<br>tag |
 | `Fights` | Integer | The number of fights this status or effect persists for. | 6 | `1`<br>`3`<br>`99` |
-| [`CharacterTypeGainsStatusAtBattleStart`](../Reference_and_Meta/Miscellaneous.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 5 | `{ . . . }` |
-| [`StatusRandomEnemiesOnBattleStart`](../Core_Entities_and_Combat/Passives_and_Statuses.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 3 | `{ . . . }` |
-| [`KillEnemyOfTypeAtBattleStart`](../Reference_and_Meta/Miscellaneous.md#object-killenemyoftypeatbattlestart) | Object  | Specifies that a specific enemy type is killed at the start of the next battle. | 2 | `{ . . . }` |
+| [`CharacterTypeGainsStatusAtBattleStart`](./Events_and_Encounters.md#object-charactertypegainsstatusatbattlestart) | Object | Defines status effects applied to characters with a specific tag at the start of a battle. | 5 | `{ . . . }` |
+| [`StatusRandomEnemiesOnBattleStart`](./Events_and_Encounters.md#object-statusrandomenemiesonbattlestart) | Object | An object that applies a status effect to a random number of enemies at the start of battle, with sub-keys for count and the status. | 3 | `{ . . . }` |
+| [`KillEnemyOfTypeAtBattleStart`](./Events_and_Encounters.md#object-killenemyoftypeatbattlestart) | Object  | Specifies that a specific enemy type is killed at the start of the next battle. | 2 | `{ . . . }` |
 | [{Logic Keys}](../Engine_Scripts_and_Logic/Engine_LogicKeys.md#valid-property-keys) | Variable | Inherits core engine logic parameters. You can utilize any key from the Engine Logic Keys list here to handle special conditions, state tracking, or math formulas. | 0 | `Default`<br>`FormChange`<br>`Druid`
 
 </details>
@@ -1989,7 +1989,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 | [`hint_chapter_exit`](../Reference_and_Meta/Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
@@ -2015,7 +2015,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`hint_chapter_exit`](../Reference_and_Meta/Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 1 | `dimensionx`<br>`endoftime`<br>`future` |
 
@@ -2038,11 +2038,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 8 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 8 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 8 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 8 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 7 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -2091,7 +2091,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -2117,8 +2117,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
 </details>
@@ -2144,8 +2144,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 7 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2196,7 +2196,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 7 | `common`<br>`rare`<br>`cha` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 6 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
 
 </details>
 
@@ -2245,9 +2245,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2292,12 +2292,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 7 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 7 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 7 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 6 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 6 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2394,7 +2394,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 
 </details>
 
@@ -2419,7 +2419,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 6 | `common`<br>`rare`<br>`cha` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 
 </details>
 
@@ -2444,7 +2444,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 5 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 5 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 5 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 5 | `{ . . . }` |
 
 </details>
 
@@ -2493,7 +2493,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
 
 </details>
 
@@ -2518,7 +2518,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 6 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 6 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 6 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 6 | `{ . . . }` |
 
 </details>
 
@@ -2562,7 +2562,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 4 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -2658,7 +2658,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2683,7 +2683,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2708,7 +2708,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 4 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 4 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 4 | `{ . . . }` |
 | [`hint_chapter_exit`](../Reference_and_Meta/Enums.md#enum-hint_chapter_exit) | Enum | Specifies the chapter to which the exit hint points. | 4 | `dimensionx`<br>`endoftime`<br>`future` |
 
 </details>
@@ -2809,7 +2809,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 4 | `common`<br>`rare`<br>`cha` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 4 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 4 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 4 | `{ . . . }` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 2 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 
@@ -2834,8 +2834,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2860,7 +2860,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 
 </details>
 
@@ -2901,10 +2901,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `stat` | String | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| `copy_results` | String | Specifies the identifier of another option whose outcomes are replicated. | 0 | `examine`<br>`lever`<br>`open` |
+| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 3 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
+| `copy_results` | String | Specifies the identifier of another option whose outcomes are replicated. | 3 | `examine`<br>`lever`<br>`open` |
 
 </details>
 ### Object: `party_permanent_stats`
@@ -2945,7 +2945,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -2969,7 +2969,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 3 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 3 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 3 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 3 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 3 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -2995,8 +2995,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3041,10 +3041,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -3090,10 +3090,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3119,8 +3119,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3144,7 +3144,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -3170,8 +3170,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3265,7 +3265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3315,7 +3315,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3365,7 +3365,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | `fixed_chance` | Number | A fixed percentage chance for a specific outcome or option to occur. | 1 | `50%` |
 
 </details>
@@ -3437,7 +3437,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -3460,7 +3460,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 2 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 2 | `common`<br>`rare`<br>`cha` |
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
@@ -3510,7 +3510,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3559,7 +3559,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 2 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 2 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 2 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 2 | `{ . . . }` |
 
 </details>
 
@@ -3580,12 +3580,12 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 0 | `{ . . . }` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -3616,7 +3616,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3641,7 +3641,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3665,7 +3665,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3686,10 +3686,10 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 0 | `{ . . . }` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3713,7 +3713,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3737,7 +3737,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -3761,7 +3761,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -3953,7 +3953,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -3979,7 +3979,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4003,7 +4003,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4029,7 +4029,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4123,7 +4123,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4149,7 +4149,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4174,7 +4174,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4199,7 +4199,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4224,7 +4224,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4271,7 +4271,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4296,8 +4296,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4322,7 +4322,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4347,7 +4347,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4372,7 +4372,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4397,8 +4397,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4424,7 +4424,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4449,7 +4449,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4475,8 +4475,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4500,7 +4500,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4524,7 +4524,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4548,7 +4548,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4573,7 +4573,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4597,7 +4597,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4647,8 +4647,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -4672,7 +4672,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4720,7 +4720,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4750,7 +4750,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -4774,7 +4774,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -4799,7 +4799,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4824,7 +4824,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4848,7 +4848,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4873,7 +4873,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4898,7 +4898,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -4923,7 +4923,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -4968,11 +4968,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -4997,7 +4997,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5021,7 +5021,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -5092,7 +5092,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5141,7 +5141,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5188,7 +5188,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5213,8 +5213,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5239,7 +5239,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5265,7 +5265,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5290,7 +5290,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5313,7 +5313,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -5339,7 +5339,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5364,7 +5364,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5388,7 +5388,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -5437,7 +5437,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5485,7 +5485,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5509,8 +5509,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5556,7 +5556,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5579,7 +5579,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5627,7 +5627,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5651,7 +5651,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5675,7 +5675,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5700,7 +5700,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5750,11 +5750,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 | [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
 | `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5775,16 +5775,16 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 0 | `{ . . . }` |
-| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5805,16 +5805,16 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 0 | `{ . . . }` |
-| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5835,16 +5835,16 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`animation`](../Reference_and_Meta/Enums.md#enum-animation) | Enum | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 0 | `{ . . . }` |
-| [`animation_fail`](../Reference_and_Meta/Enums.md#enum-animation_fail) | Enum | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -5893,7 +5893,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5918,7 +5918,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -5942,7 +5942,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -5991,7 +5991,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6015,7 +6015,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -6041,7 +6041,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6066,7 +6066,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6087,11 +6087,11 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
+| `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 0 | `common`<br>`rare`<br>`cha` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `false`<br>`true` |
-| `stat` | Equation | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -6115,7 +6115,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -6141,7 +6141,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -6166,7 +6166,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6191,7 +6191,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6216,8 +6216,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6287,7 +6287,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -6306,14 +6306,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`good`](../Reference_and_Meta/Miscellaneous.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `{ . . . }` |
-| `stat` | String | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| `animation_fail` | String | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`good`](./Events_and_Encounters.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -6328,14 +6328,14 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
-| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 0 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
-| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 0 | `"1 injury"`<br>`"1"`<br>`"5"` |
-| [`good`](../Reference_and_Meta/Miscellaneous.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 0 | `{ . . . }` |
-| `stat` | String | Specifies the stat used for a success check in an event option. | 0 | `cha`<br>`coins`<br>`con` |
-| `animation_fail` | String | Specifies the animation to play when an action fails. | 0 | `choice_no_coins` |
-| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 0 | `1`<br>`10`<br>`15` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`animation`](../Assets_and_Localization/Strings.md#string-animation) | String | Specifies the animation played when the ability is used. | 1 | `"bat"`<br>`"rally"`<br>`ColorlessStartTurn` |
+| [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
+| [`good`](./Events_and_Encounters.md#object-good) | Object  | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `{ . . . }` |
+| `stat` | String | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
+| `animation_fail` | String | Specifies the animation to play when an action fails. | 1 | `choice_no_coins` |
+| `stat_max` | Number | The maximum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| `stat_min` | Number | The minimum stat value required for an event option to succeed. | 1 | `1`<br>`10`<br>`15` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -6410,7 +6410,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6434,7 +6434,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 | [`{Event Keys}`](../Engine_Scripts_and_Logic/Engine_EventKeys.md#valid-property-keys) | Variable | Represents a key for an event entry within an item pool. | 1 | `common`<br>`rare`<br>`cha` |
 
 </details>
@@ -6458,7 +6458,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | :--- | :--- | :--- | :--- | :--- |
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6507,8 +6507,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 0 | `{ . . . }` |
 
 </details>
 
@@ -6533,7 +6533,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6558,8 +6558,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6584,7 +6584,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6609,7 +6609,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Reference_and_Meta/Enums.md#enum-label) | Enum | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | [`stat`](../Reference_and_Meta/Enums.md#enum-stat) | Enum | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`requirements`](../Reference_and_Meta/Miscellaneous.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
+| [`requirements`](./Events_and_Encounters.md#object-requirements) | Object  | An object defining the conditions that must be met for a reward or event branch to be available. | 1 | `{ . . . }` |
 
 </details>
 
@@ -6634,7 +6634,7 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`label`](../Assets_and_Localization/Strings.md#string-label) | String | Specifies the localization key or display string for an event option. | 1 | `"1 injury"`<br>`"1"`<br>`"5"` |
 | `good` | Boolean | If true, indicates the positive outcome branch for events or spawning contexts. | 1 | `false`<br>`true` |
 | `stat` | Equation | Specifies the stat used for a success check in an event option. | 1 | `cha`<br>`coins`<br>`con` |
-| [`bad`](../Reference_and_Meta/Miscellaneous.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
+| [`bad`](./Events_and_Encounters.md#object-bad) | Object  | Defines the bad outcome branch of an event option, including its frame and rewards. | 1 | `{ . . . }` |
 
 </details>
 

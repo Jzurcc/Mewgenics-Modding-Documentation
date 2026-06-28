@@ -46,8 +46,8 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | Key | Type | Definition | Count | Example Inputs |
 | :--- | :--- | :--- | :--- | :--- |
 | [{Status and Passive Keys}](../Engine_Scripts_and_Logic/Engine_StatusAndPassiveKeys.md) | Object | Inherits standard status effect and passive mechanics. | 2761 | `{ . . . }` |
-| [`intro`](./NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 216 | `{ . . . }` |
-| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 161 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`tooltip`](../Reference_and_Meta/Enums.md#enum-tooltip) | Enum  | The localization string key used for the tooltip displayed on hover. | 594 | `""`<br>`"Bad miniboss. this needs to be redesigned."`<br>`"Beaver!"` |
+| [`intro`](./NPC_Scripts.md#object-intro) | Object  | An object defining the introductory cutscene for the event, including title, cat selection, and visuals. | 218 | `{ . . . }` |
 | [`states`](./NPC_Scripts.md#object-states) | Object  | Defines named animation states and their associated animation clips. | 12 | `{ . . . }` |
 | [`transitions`](./NPC_Scripts.md#object-transitions) | Object  | Defines named transitions between animation states. | 12 | `{ . . . }` |
 | [`unprompted`](./NPC_Scripts.md#object-unprompted) | Object  | Defines sequences of unprompted dialog events. | 9 | `{ . . . }` |
@@ -84,73 +84,73 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`class_unlock_psychic`](./NPC_Scripts.md#object-class_unlock_psychic) | Object  | Defines the dialog sequence that plays when unlocking the Psychic class. | 2 | `{ . . . }` |
 | [`class_unlock_thief`](./NPC_Scripts.md#object-class_unlock_thief) | Object  | Defines the dialog sequence that plays when unlocking the Thief class. | 2 | `{ . . . }` |
 | [`class_unlock_tinkerer`](./NPC_Scripts.md#object-class_unlock_tinkerer) | Object  | Defines the dialog sequence that plays when unlocking the Tinkerer class. | 2 | `{ . . . }` |
-| [`beanies_quests_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-beanies_quests_intro) | Object  | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 | `{ . . . }` |
-| [`beanies_quests_repeat`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-beanies_quests_repeat) | Object  | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 | `{ . . . }` |
-| [`frank_max_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-frank_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Frank. | 2 | `{ . . . }` |
-| [`frank_max_repeating`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-frank_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Frank at max favor. | 2 | `{ . . . }` |
-| [`house_upgrade_4throom`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-house_upgrade_4throom) | Object  | Defines the dialog and house upgrade for unlocking the 4th room. | 2 | `{ . . . }` |
-| [`house_upgrade_attic`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-house_upgrade_attic) | Object  | Defines the dialog and house upgrade for the attic. | 2 | `{ . . . }` |
-| [`house_upgrade_largehouse`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-house_upgrade_largehouse) | Object  | Defines the dialog and house upgrade for the large house. | 2 | `{ . . . }` |
-| [`house_upgrade_mediumhouse`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-house_upgrade_mediumhouse) | Object  | Defines the dialog and house upgrade for the medium house. | 2 | `{ . . . }` |
-| [`jack_max_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Jack. | 2 | `{ . . . }` |
-| [`jack_max_repeating`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Jack at max favor. | 2 | `{ . . . }` |
-| [`jack_shopupgrade1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_shopupgrade1) | Object  | Defines the dialog and shop level up for Jack's first shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_shopupgrade2) | Object  | Defines the dialog and shop level up for Jack's second shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_shopupgrade3) | Object  | Defines the dialog and shop level up for Jack's third shop upgrade. | 2 | `{ . . . }` |
-| [`jack_shopupgrade4`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-jack_shopupgrade4) | Object  | Defines the dialog and shop level up for Jack's fourth shop upgrade. | 2 | `{ . . . }` |
-| [`organ_max_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Organ Grinder. | 2 | `{ . . . }` |
-| [`organ_max_repeating`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor. | 2 | `{ . . . }` |
-| [`organ_unlock`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_unlock) | Object  | Defines the dialog and shop level up for unlocking Organ Grinder. | 2 | `{ . . . }` |
-| [`organ_upgrade1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade1) | Object  | Defines the dialog and shop level up for Organ Grinder's first upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade2) | Object  | Defines the dialog and shop level up for Organ Grinder's second upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade3) | Object  | Defines the dialog and shop level up for Organ Grinder's third upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade4`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade4) | Object  | Defines the dialog and shop level up for Organ Grinder's fourth upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade5`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade5) | Object  | Defines the dialog and shop level up for Organ Grinder's fifth upgrade. | 2 | `{ . . . }` |
-| [`organ_upgrade6`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-organ_upgrade6) | Object  | Defines the dialog and shop level up for Organ Grinder's sixth upgrade. | 2 | `{ . . . }` |
-| [`steven_milliontrashed`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-steven_milliontrashed) | Object  | A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor. | 2 | `{ . . . }` |
-| [`tink_aggression`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_aggression) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat. | 2 | `{ . . . }` |
-| [`tink_basestats`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_basestats) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications. | 2 | `{ . . . }` |
-| [`tink_inbreeding`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_inbreeding) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree. | 2 | `{ . . . }` |
-| [`tink_max_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_max_intro) | Object  | The first dialogue sequence and favor reward that plays when Tink reaches maximum favor. | 2 | `{ . . . }` |
-| [`tink_max_repeating`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
-| [`tink_prettybow`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_prettybow) | Object  | A dialogue sequence and favor reward that grants the gift item TinksBow. | 2 | `{ . . . }` |
-| [`tink_relationships`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_relationships) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates). | 2 | `{ . . . }` |
-| [`tink_sexuality`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_sexuality) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags. | 2 | `{ . . . }` |
-| [`tink_tags`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tink_tags) | Object  | A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name. | 2 | `{ . . . }` |
-| [`tracy_blankcollar1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_blankcollar1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_blankcollar2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_blankcollar2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_blankcollar3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_blankcollar3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage10`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage10) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage4`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage5`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage6`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage7`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage8`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage8) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_foodstorage9`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_foodstorage9) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol4`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol5`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol6`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_idol7`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_idol7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
-| [`tracy_max_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_max_intro) | Object  | The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor. | 2 | `{ . . . }` |
-| [`tracy_max_repeating`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-tracy_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
-| [`upgrade_storage_1`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_1) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0. | 2 | `{ . . . }` |
-| [`upgrade_storage_2`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_2) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_3`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_3) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_4`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_4) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_5`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_5) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_6`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_6) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2. | 2 | `{ . . . }` |
-| [`upgrade_storage_7`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_7) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_crazy`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_repeating_crazy) | Object  | A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_hard`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_repeating_hard) | Object  | A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_impossible`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_repeating_impossible) | Object  | A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_intro`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_repeating_intro) | Object  | The introductory dialogue sequence and reward when Butch maxes out storage capacity. | 2 | `{ . . . }` |
-| [`upgrade_storage_repeating_normal`](../Player_Progression_and_Cats/Progression_Unlocks.md#object-upgrade_storage_repeating_normal) | Object  | A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`beanies_quests_intro`](./NPC_Scripts.md#object-beanies_quests_intro) | Object  | Defines the initial dialog or quest-generation sequence for Dr. Beanies' quests. | 2 | `{ . . . }` |
+| [`beanies_quests_repeat`](./NPC_Scripts.md#object-beanies_quests_repeat) | Object  | Defines the repeatable quest dialog or generator for Dr. Beanies. | 2 | `{ . . . }` |
+| [`frank_max_intro`](./NPC_Scripts.md#object-frank_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Frank. | 2 | `{ . . . }` |
+| [`frank_max_repeating`](./NPC_Scripts.md#object-frank_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Frank at max favor. | 2 | `{ . . . }` |
+| [`house_upgrade_4throom`](./NPC_Scripts.md#object-house_upgrade_4throom) | Object  | Defines the dialog and house upgrade for unlocking the 4th room. | 2 | `{ . . . }` |
+| [`house_upgrade_attic`](./NPC_Scripts.md#object-house_upgrade_attic) | Object  | Defines the dialog and house upgrade for the attic. | 2 | `{ . . . }` |
+| [`house_upgrade_largehouse`](./NPC_Scripts.md#object-house_upgrade_largehouse) | Object  | Defines the dialog and house upgrade for the large house. | 2 | `{ . . . }` |
+| [`house_upgrade_mediumhouse`](./NPC_Scripts.md#object-house_upgrade_mediumhouse) | Object  | Defines the dialog and house upgrade for the medium house. | 2 | `{ . . . }` |
+| [`jack_max_intro`](./NPC_Scripts.md#object-jack_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Jack. | 2 | `{ . . . }` |
+| [`jack_max_repeating`](./NPC_Scripts.md#object-jack_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Jack at max favor. | 2 | `{ . . . }` |
+| [`jack_shopupgrade1`](./NPC_Scripts.md#object-jack_shopupgrade1) | Object  | Defines the dialog and shop level up for Jack's first shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade2`](./NPC_Scripts.md#object-jack_shopupgrade2) | Object  | Defines the dialog and shop level up for Jack's second shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade3`](./NPC_Scripts.md#object-jack_shopupgrade3) | Object  | Defines the dialog and shop level up for Jack's third shop upgrade. | 2 | `{ . . . }` |
+| [`jack_shopupgrade4`](./NPC_Scripts.md#object-jack_shopupgrade4) | Object  | Defines the dialog and shop level up for Jack's fourth shop upgrade. | 2 | `{ . . . }` |
+| [`organ_max_intro`](./NPC_Scripts.md#object-organ_max_intro) | Object  | Defines the dialog sequence and rewards for reaching max favor with Organ Grinder. | 2 | `{ . . . }` |
+| [`organ_max_repeating`](./NPC_Scripts.md#object-organ_max_repeating) | Object  | Defines the repeatable dialog sequence and rewards for Organ Grinder at max favor. | 2 | `{ . . . }` |
+| [`organ_unlock`](./NPC_Scripts.md#object-organ_unlock) | Object  | Defines the dialog and shop level up for unlocking Organ Grinder. | 2 | `{ . . . }` |
+| [`organ_upgrade1`](./NPC_Scripts.md#object-organ_upgrade1) | Object  | Defines the dialog and shop level up for Organ Grinder's first upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade2`](./NPC_Scripts.md#object-organ_upgrade2) | Object  | Defines the dialog and shop level up for Organ Grinder's second upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade3`](./NPC_Scripts.md#object-organ_upgrade3) | Object  | Defines the dialog and shop level up for Organ Grinder's third upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade4`](./NPC_Scripts.md#object-organ_upgrade4) | Object  | Defines the dialog and shop level up for Organ Grinder's fourth upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade5`](./NPC_Scripts.md#object-organ_upgrade5) | Object  | Defines the dialog and shop level up for Organ Grinder's fifth upgrade. | 2 | `{ . . . }` |
+| [`organ_upgrade6`](./NPC_Scripts.md#object-organ_upgrade6) | Object  | Defines the dialog and shop level up for Organ Grinder's sixth upgrade. | 2 | `{ . . . }` |
+| [`steven_milliontrashed`](./NPC_Scripts.md#object-steven_milliontrashed) | Object  | A dialogue sequence or favor reward configuration for the NPC Steven, triggered when the player has accumulated 1,000,000 favor. | 2 | `{ . . . }` |
+| [`tink_aggression`](./NPC_Scripts.md#object-tink_aggression) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's aggression stat. | 2 | `{ . . . }` |
+| [`tink_basestats`](./NPC_Scripts.md#object-tink_basestats) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's base stats and stat modifications. | 2 | `{ . . . }` |
+| [`tink_inbreeding`](./NPC_Scripts.md#object-tink_inbreeding) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's inbreeding level and family tree. | 2 | `{ . . . }` |
+| [`tink_max_intro`](./NPC_Scripts.md#object-tink_max_intro) | Object  | The first dialogue sequence and favor reward that plays when Tink reaches maximum favor. | 2 | `{ . . . }` |
+| [`tink_max_repeating`](./NPC_Scripts.md#object-tink_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tink is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
+| [`tink_prettybow`](./NPC_Scripts.md#object-tink_prettybow) | Object  | A dialogue sequence and favor reward that grants the gift item TinksBow. | 2 | `{ . . . }` |
+| [`tink_relationships`](./NPC_Scripts.md#object-tink_relationships) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's relationships (loves and hates). | 2 | `{ . . . }` |
+| [`tink_sexuality`](./NPC_Scripts.md#object-tink_sexuality) | Object  | A dialogue sequence or favor reward that unlocks the cat info panel for viewing a cat's libido and sexual orientation flags. | 2 | `{ . . . }` |
+| [`tink_tags`](./NPC_Scripts.md#object-tink_tags) | Object  | A dialogue sequence or favor reward that unlocks the ability to manually add symbols to a cat's name. | 2 | `{ . . . }` |
+| [`tracy_blankcollar1`](./NPC_Scripts.md#object-tracy_blankcollar1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_blankcollar2`](./NPC_Scripts.md#object-tracy_blankcollar2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_blankcollar3`](./NPC_Scripts.md#object-tracy_blankcollar3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage1`](./NPC_Scripts.md#object-tracy_foodstorage1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage10`](./NPC_Scripts.md#object-tracy_foodstorage10) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage2`](./NPC_Scripts.md#object-tracy_foodstorage2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage3`](./NPC_Scripts.md#object-tracy_foodstorage3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage4`](./NPC_Scripts.md#object-tracy_foodstorage4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage5`](./NPC_Scripts.md#object-tracy_foodstorage5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage6`](./NPC_Scripts.md#object-tracy_foodstorage6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage7`](./NPC_Scripts.md#object-tracy_foodstorage7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage8`](./NPC_Scripts.md#object-tracy_foodstorage8) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_foodstorage9`](./NPC_Scripts.md#object-tracy_foodstorage9) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol1`](./NPC_Scripts.md#object-tracy_idol1) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol2`](./NPC_Scripts.md#object-tracy_idol2) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol3`](./NPC_Scripts.md#object-tracy_idol3) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol4`](./NPC_Scripts.md#object-tracy_idol4) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol5`](./NPC_Scripts.md#object-tracy_idol5) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol6`](./NPC_Scripts.md#object-tracy_idol6) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_idol7`](./NPC_Scripts.md#object-tracy_idol7) | Object  | A dialogue sequence and shop upgrade reward for Tracy, requiring age 5 and increasing shop level. | 2 | `{ . . . }` |
+| [`tracy_max_intro`](./NPC_Scripts.md#object-tracy_max_intro) | Object  | The first dialogue sequence and bonus rare item reward that plays when Tracy reaches maximum favor. | 2 | `{ . . . }` |
+| [`tracy_max_repeating`](./NPC_Scripts.md#object-tracy_max_repeating) | Object  | A repeating dialogue sequence and favor reward that plays when Tracy is at maximum favor, cycling through random sub-sequences. | 2 | `{ . . . }` |
+| [`upgrade_storage_1`](./NPC_Scripts.md#object-upgrade_storage_1) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 0 and chapter 0. | 2 | `{ . . . }` |
+| [`upgrade_storage_2`](./NPC_Scripts.md#object-upgrade_storage_2) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_3`](./NPC_Scripts.md#object-upgrade_storage_3) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 1 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_4`](./NPC_Scripts.md#object-upgrade_storage_4) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_5`](./NPC_Scripts.md#object-upgrade_storage_5) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 2 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_6`](./NPC_Scripts.md#object-upgrade_storage_6) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 2. | 2 | `{ . . . }` |
+| [`upgrade_storage_7`](./NPC_Scripts.md#object-upgrade_storage_7) | Object  | A dialogue sequence and storage expansion reward for Butch, requiring act 3 and chapter 3. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_crazy`](./NPC_Scripts.md#object-upgrade_storage_repeating_crazy) | Object  | A repeating dialogue sequence for Butch's storage upgrade at crazy difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_hard`](./NPC_Scripts.md#object-upgrade_storage_repeating_hard) | Object  | A repeating dialogue sequence for Butch's storage upgrade at hard difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_impossible`](./NPC_Scripts.md#object-upgrade_storage_repeating_impossible) | Object  | A repeating dialogue sequence for Butch's storage upgrade at impossible difficulty, granting one storage expansion. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_intro`](./NPC_Scripts.md#object-upgrade_storage_repeating_intro) | Object  | The introductory dialogue sequence and reward when Butch maxes out storage capacity. | 2 | `{ . . . }` |
+| [`upgrade_storage_repeating_normal`](./NPC_Scripts.md#object-upgrade_storage_repeating_normal) | Object  | A repeating dialogue sequence for Butch's storage upgrade at normal difficulty, granting one storage expansion. | 2 | `{ . . . }` |
 | [`beanies_future_intro`](./NPC_Scripts.md#object-beanies_future_intro) | Object  | Defines the dialog sequence where Dr. Beanies sends the player to the future. | 2 | `{ . . . }` |
 | [`beanies_jurassic_intro`](./NPC_Scripts.md#object-beanies_jurassic_intro) | Object  | Defines the dialog sequence for Dr. Beanies' introduction to the Jurassic area. | 2 | `{ . . . }` |
 | [`beanies_lab_intro`](./NPC_Scripts.md#object-beanies_lab_intro) | Object  | Defines the dialog sequence where Dr. Beanies is homeless and credits roll. | 2 | `{ . . . }` |
@@ -193,6 +193,9 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`tink_tips_intro`](./NPC_Scripts.md#object-tink_tips_intro) | Object  | A sequence of dialogs introducing Tink's tips, then playing the comfort tips sequence. | 2 | `{ . . . }` |
 | [`tracy_introduction`](./NPC_Scripts.md#object-tracy_introduction) | Object  | A sequence introducing Tracy to the player. | 2 | `{ . . . }` |
 | [`tracy_kaijufight`](./NPC_Scripts.md#object-tracy_kaijufight) | Object  | A sequence where Tracy discusses a kaiju fight. | 2 | `{ . . . }` |
+| [`use_weapon`](./NPC_Scripts.md#object-use_weapon) | Object  | Defines a dialogue option that prompts the unit to use their equipped weapon. | 2 | `{ . . . }` |
+| [`welcome_water`](./NPC_Scripts.md#object-welcome_water) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1. | 2 | `{ . . . }` |
+| [`welcome_water_cheap`](./NPC_Scripts.md#object-welcome_water_cheap) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 2 | `{ . . . }` |
 | [`upgrade_storage_max1`](./NPC_Scripts.md#object-upgrade_storage_max1) | Object  | A dialogue popup for the first storage space upgrade. | 1 | `{ . . . }` |
 | [`upgrade_storage_max2`](./NPC_Scripts.md#object-upgrade_storage_max2) | Object  | A dialogue popup for the second storage space upgrade, including a reward. | 1 | `{ . . . }` |
 | [`upgrade_storage_max3`](./NPC_Scripts.md#object-upgrade_storage_max3) | Object  | A dialogue popup for the third storage space upgrade. | 1 | `{ . . . }` |
@@ -202,7 +205,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`gone`](./NPC_Scripts.md#object-gone) | Object  | Sets the NPC state to 'gone', making them disappear from the scene. | 1 | `{ . . . }` |
 | [`tink_tips_comfort`](./NPC_Scripts.md#object-tink_tips_comfort) | Object  | A sequence of dialogs providing Tink's tips on cat comfort. | 1 | `{ . . . }` |
 | [`tink_tips_stimulation`](./NPC_Scripts.md#object-tink_tips_stimulation) | Object  | A sequence of dialogs providing Tink's tips on stimulation. | 1 | `{ . . . }` |
-| [`use_weapon`](./NPC_Scripts.md#object-use_weapon) | Object  | Defines a dialogue option that prompts the unit to use their equipped weapon. | 1 | `{ . . . }` |
 | [`butch_tips_backstab`](./NPC_Scripts.md#object-butch_tips_backstab) | Object  | A tutorial tip sequence explaining the backstab mechanic. | 1 | `{ . . . }` |
 | [`butch_tips_charisma`](./NPC_Scripts.md#object-butch_tips_charisma) | Object  | A tutorial tip sequence explaining the charisma stat. | 1 | `{ . . . }` |
 | [`butch_tips_combat`](./NPC_Scripts.md#object-butch_tips_combat) | Object  | A tutorial tip sequence covering basic combat mechanics. | 1 | `{ . . . }` |
@@ -306,8 +308,6 @@ This document is an exhaustive, auto-generated dictionary of `.gon` properties r
 | [`unprompted5`](./NPC_Scripts.md#object-unprompted5) | Object  | An unprompted dialogue sequence from Beanies (part 5). | 1 | `{ . . . }` |
 | [`unprompted6`](./NPC_Scripts.md#object-unprompted6) | Object  | An unprompted dialogue sequence from Beanies (part 6). | 1 | `{ . . . }` |
 | [`use_attack_after_used_weapon`](./NPC_Scripts.md#object-use_attack_after_used_weapon) | Object  | A tutorial sequence teaching the player to use an attack after using a weapon. | 1 | `{ . . . }` |
-| [`welcome_water`](./NPC_Scripts.md#object-welcome_water) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_1. | 1 | `{ . . . }` |
-| [`welcome_water_cheap`](./NPC_Scripts.md#object-welcome_water_cheap) | Object  | Defines a cancelable sequence with a 0.5-second delay, auto-passing dialog NPC_TRACY_SHOP_WELCOME_WATER_CHEAP_1. | 1 | `{ . . . }` |
 | [`beanies_iloveyou`](./NPC_Scripts.md#object-beanies_iloveyou) | Object  | A cutscene sequence where Beanies expresses love to the player through dialogue. | 1 | `{ . . . }` |
 | [`beanies_infinite_intro`](./NPC_Scripts.md#object-beanies_infinite_intro) | Object  | A cutscene sequence where Beanies unlocks the infinite and urges the player to challenge the creator. | 1 | `{ . . . }` |
 | [`beanies_quest_complete`](./NPC_Scripts.md#object-beanies_quest_complete) | Object  | A cutscene sequence that triggers upon successfully completing Beanies' side quest. | 1 | `{ . . . }` |
