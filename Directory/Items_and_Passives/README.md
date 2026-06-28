@@ -6,7 +6,7 @@ description: "Extracted base game data for items, equipment, and passives"
 # Items & Passives
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for every base game consumable, piece of equipment, set bonus, and passive effect.
+> This directory contains raw game data extracts for every base game consumable, piece of equipment, set bonus, and passive effect.
 
 ## File Index
 

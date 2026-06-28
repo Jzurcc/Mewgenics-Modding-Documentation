@@ -1,9 +1,9 @@
 # Mewgenics Practical Modding Guides
 
 > **What is this folder?**
-> If the [`Schema/`](../Schema/) folder explains **what** the game expects, and [`gon-docs/`](../gon-docs/) explains **how to format** the text, this folder explains **how to actually make a mod**.
+> If the [`Schema/`](../Schema/) folder explains **what** the game expects, and [`gon-docs/`](../gon-docs/) explains **how to format** the text, this folder **details the practical implementation of modifications**.
 
-Welcome to the practical guide to Mewgenics modding. Here you will find step-by-step tutorials, file conventions, and heavily annotated examples of real game objects.
+This directory serves as the practical guide to Mewgenics modding. It contains comprehensive tutorials, architectural conventions, and detailed analyses of production game objects.
 
 ## Directory Index
 
@@ -14,7 +14,7 @@ Welcome to the practical guide to Mewgenics modding. Here you will find step-by-
 
 ## Real-World Examples
 
-Sometimes the easiest way to learn is by looking at code. We have taken real entities from the base game and annotated every single line to explain exactly what it does.
+Sometimes the easiest way to learn is by looking at code. Analyzing production code is a highly effective method for understanding engine conventions. We have taken real entities from the base game and annotated every single line to explain exactly what it does.
 
 - [Annotated Character: `Rat`](examples/character-example.md)
 - [Annotated Item: `GlassShard`](examples/item-example.md)

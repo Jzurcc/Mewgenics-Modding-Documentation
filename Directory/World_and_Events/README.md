@@ -6,7 +6,7 @@ description: "Extracted base game data for maps, rooms, and NPCs"
 # World & Events
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for the world maps, biomes, events, shops, and the intractable home hub.
+> This directory contains raw game data extracts for the world maps, biomes, events, shops, and the intractable home hub.
 
 ## File Index
 

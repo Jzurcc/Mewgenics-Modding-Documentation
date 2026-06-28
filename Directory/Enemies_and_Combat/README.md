@@ -6,7 +6,7 @@ description: "Extracted base game data for enemies and combat systems"
 # Enemies & Combat
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for all base game enemies, their AI rules, spawn pools, and combat rewards.
+> This directory contains raw game data extracts for all base game enemies, their AI rules, spawn pools, and combat rewards.
 
 ## File Index
 

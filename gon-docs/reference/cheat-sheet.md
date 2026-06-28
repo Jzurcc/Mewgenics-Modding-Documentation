@@ -1,6 +1,6 @@
 # GON Quick Reference Cheat Sheet
 
-A dense, visual reminder of how to format `.gon` files for Mewgenics.
+A condensed syntax reference for formatting `.gon` files for Mewgenics.
 
 ## Core Rules
 1. **Colons `:` and equals signs `=` are ignored**. You can use them for readability (or to support JSON), but space works fine.

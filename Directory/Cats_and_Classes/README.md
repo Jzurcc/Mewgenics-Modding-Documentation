@@ -6,7 +6,7 @@ description: "Extracted base game data for cat generation and classes"
 # Cats & Classes
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for the generation rules, stats, mutations, and quotes used by the base game cats.
+> This directory contains raw game data extracts for the generation rules, stats, mutations, and quotes used by the base game cats.
 
 ## File Index
 

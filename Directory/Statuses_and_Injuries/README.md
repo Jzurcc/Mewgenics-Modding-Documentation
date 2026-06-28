@@ -6,7 +6,7 @@ description: "Extracted base game data for status effects and disorders"
 # Statuses & Injuries
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for all base game status effects (buffs/debuffs), permanent disorders, and injuries.
+> This directory contains raw game data extracts for all base game status effects (buffs/debuffs), permanent disorders, and injuries.
 
 ## File Index
 

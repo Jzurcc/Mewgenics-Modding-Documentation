@@ -1,6 +1,6 @@
 # 00. Formal Grammar
 
-> **Purpose:** The ultimate syntactic truth for GON, expressed in Extended Backus-Naur Form (EBNF).
+> **Purpose:** The definitive syntactic specification for GON, expressed in Extended Backus-Naur Form (EBNF).
 
 This grammar defines the precise rules of the permissive parser used in Mewgenics `.gon` files.
 

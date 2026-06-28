@@ -2,7 +2,7 @@
 
 > **Purpose:** Understanding how the Mewgenics engine structures, loads, and manages `.gon` data files.
 
-To make mods that play nicely with the game (and with other mods), you need to understand the engine's architectural assumptions.
+To construct modifications that seamlessly integrate with the engine and maintain compatibility, you must understand the engine's architectural assumptions.
 
 ---
 
@@ -16,13 +16,13 @@ The base game data is stored in the `data/` folder, organized by semantic purpos
 
 When you create a mod, you should mirror this directory structure. If you are adding a new weapon, put your `.gon` file inside `data/items/`.
 
-## 2. File Architecture (The "Bucket" Concept)
-A `.gon` file is simply a bucket of objects.
-**The engine does not care what the file is named.** 
+## 2. File Architecture and Object Grouping
+A `.gon` file acts as an unstructured container for objects.
+**The engine does not evaluate the filename when loading data.** 
 
-If you put a character definition inside `data/items/my_weapon.gon`, the engine will likely load it just fine (though it's terrible practice). 
+If you put a character definition inside `data/items/my_weapon.gon`, the engine will likely load it successfully (though this violates standard architectural conventions). 
 
-You can define 100 items in a single file (`my_big_mod.gon`), or you can create 100 separate files with one item each. The base game usually groups related things (e.g., all weapons in `weapons.gon`).
+You can define 100 items in a single file (`my_big_mod.gon`), or you can create 100 separate files with one item each. The base game usually groups related objects (e.g., all weapons in `weapons.gon`).
 
 ## 3. Naming Conventions
 
@@ -35,7 +35,7 @@ By examining the base game, we can see clear casing conventions established by t
 - **Enums/Values:** Usually `lowercase` or `snake_case`
   - Examples: `common`, `weapon`, `melee_attack`
 
-## 4. Mod Namespacing (CRITICAL)
+## 4. Mod Namespacing (Critical Requirement)
 
 The Mewgenics engine loads all objects into a global pool, indexed by their Entity ID (the key).
 

@@ -2,7 +2,7 @@
 
 > **Purpose:** A quick mapping for modders familiar with standard data formats.
 
-GON was designed as "JSON without the crap"—optimizing exclusively for human readability and writability at the expense of strict typing and machine interchangeability.
+GON was designed as a streamlined alternative to JSON, optimizing exclusively for human readability and writability at the expense of strict typing and machine interchangeability.
 
 ## Feature Comparison
 
@@ -21,7 +21,7 @@ GON was designed as "JSON without the crap"—optimizing exclusively for human r
 
 ## Transitioning from JSON
 
-If you want to, **you can just write standard JSON.** 
+**Standard JSON syntax is natively supported.**
 
 Because the GON parser treats commas `,` and colons `:` as ignorable whitespace, a perfectly formatted JSON file is completely valid GON. 
 

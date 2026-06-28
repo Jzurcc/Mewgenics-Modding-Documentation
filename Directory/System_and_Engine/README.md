@@ -6,7 +6,7 @@ description: "Extracted base game data for logic, unlocks, and VFX"
 # System & Engine
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for core engine elements, text styling, and global progression unlocking conditions.
+> This directory contains raw game data extracts for core engine elements, text styling, and global progression unlocking conditions.
 
 ## File Index
 

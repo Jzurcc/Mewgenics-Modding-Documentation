@@ -9,7 +9,7 @@ description: "Semantic documentation index for Mewgenics .gon data files"
 > This directory serves as the **semantic reference index** for the `.gon` files used in Mewgenics. It describes exactly what properties (keys) are valid inside specific game objects (e.g., Abilities, Characters, Items) and how the C++ game engine interprets them at runtime.
 
 For rules regarding string parsing, arrays, and structural syntax, refer to the [GON Syntax Documentation](../gon-docs/README.md).  
-For practical step-by-step tutorials on creating and injecting mods, refer to the [Practical Modding Guides](../mewgenics/README.md).
+For tutorials on constructing and injecting modifications, refer to the [Practical Modding Guides](../mewgenics/README.md).
 
 ---
 

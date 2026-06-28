@@ -5,8 +5,8 @@
 ## What is GON?
 GON is a custom data serialization format created by Tyler Glaiel, designed specifically for human-to-computer configuration and data entry. It is used extensively in Mewgenics to define everything from characters and abilities to map generation rules.
 
-## First Principles: "JSON without the crap"
-GON was designed with a core philosophy: **make it as easy as possible for a human to type.**
+## First Principles: Streamlined Syntax
+GON was designed with a core philosophy: **optimize for human readability and writability.**
 - **Typeless:** GON has no native type system. Everything parses as a string, and the game engine determines how to interpret it.
 - **Permissive:** It ignores commas `,`, equals signs `=`, and colons `:`.
 - **Low Noise:** Quotes are only required if a string contains spaces or special characters.

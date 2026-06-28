@@ -6,7 +6,7 @@ description: "Extracted base game data for all ability objects"
 # Abilities
 
 > **What is this folder?**
-> This directory contains actual raw game data dumps for all spells, abilities, and attacks used by cats, enemies, bosses, and items in the base game.
+> This directory contains raw game data extracts for all spells, abilities, and attacks used by cats, enemies, bosses, and items in the base game.
 
 ## File Index
 
