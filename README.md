@@ -7,7 +7,7 @@ After days of gruesome struggling with the Mewgenics base resources, I welcome y
 
 For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested before adding, they might not have a complete list of syntax and possible keys as of yet (This has all 3,436 keys while they have about 1.3k verified as of June).
 
-To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, most developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
+To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, mod developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
 
 Also, be sure to open the outline in Github for easier navigation!
 <img width="1882" height="136" alt="image" src="https://github.com/user-attachments/assets/d0052a13-da26-45d1-a5fd-e72b44b277bf" />
