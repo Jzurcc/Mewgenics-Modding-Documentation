@@ -5,16 +5,14 @@ description: "Root index for all Mewgenics modding guides, schemas, and specific
 
 # Mewgenics Modding Documentation
 
-This repository serves as an **unofficial** reference index for Mewgenics modding. Rather than a rigorously tested technical manual, this project began as a personal compilation of notes that eventually grew into a comprehensive guide. 
+Welcome to my personal compilation of references for Mewgenics modding! What simply started as a simple list for my studies now became an exhaustive compilation of what is found in the game files.
 
 > [!WARNING]
-> **Disclaimer:** Many structural definitions within this repository were generated with AI assistance. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. 
-> 
-> Furthermore, this documentation is provided "as-is" and will not be actively maintained to track newly discovered engine quirks or undocumented behaviors. As a modder, you are encouraged to verify and test these implementations within the game yourself.
+> **Disclaimer:** There are thousands of keys and objects in Mewgenics, and I've decided to use AI to help define them. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. Furthermore, I will most likely not actively maintain this documentation for long, so treat it as a library of sort. You WILL have to study the base files on your own and verify these implementations within the game yourself.
 
-For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested, they might not have a complete list of syntax and possible keys as of yet.
+For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**. They actively test out engine resources, but because they are human-tested before adding, they might not have a complete list of syntax and possible keys as of yet.
 
-Mewgenics utilizes a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, the [**`Schema/`**](./Schema/) directory serves as your primary technical reference and is where you will likely spend the majority of your time during mod development.
+To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, most developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
 
 ---
 
@@ -40,7 +38,7 @@ Mewgenics utilizes a proprietary engine architecture and data serialization form
 
 ## The Core Modding Workflow
 
-Mod development in Mewgenics generally follows a strict four-step pipeline:
+If you want a modding workflow, you can follow this:
 
 1. **Identify:** Locate a base-game object within the [**`Directory/`**](./Directory/) that most closely approximates your intended functionality.
 2. **Define:** Cross-reference that object type in the [**`Schema/`**](./Schema/) to discover which engine properties and hooks are available for modification.
@@ -81,4 +79,4 @@ Ensure your development environment is properly configured before writing code:
 
 | Directory | Description |
 |-----------|-------------|
-| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | Legacy documentation files that I initially started with. Superseded by the `Schema/` directory. Retained solely for historical reference. |
+| [**`old-docs (deprecated)/`**](./old-docs%20%28deprecated%29/) | Legacy documentation files that I initially started with. Superseded by the `Schema/` directory. |
