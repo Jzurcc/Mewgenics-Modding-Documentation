@@ -9,6 +9,10 @@ For a more continuously updated resource on engine scripting, please refer to **
 
 To start, Mewgenics uses a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, most developers will probably be most interested in the [**`Schema/`**](./Schema/) directory, and is where you will spend the majority of your time during mod development.
 
+Also, be sure to open the outline in Github for easier navigation!
+<img width="1882" height="192" alt="image" src="https://github.com/user-attachments/assets/ca32bdb3-7190-45b9-b570-f416274c513b" />
+
+
 ---
 
 ## Suggested Entry Points
