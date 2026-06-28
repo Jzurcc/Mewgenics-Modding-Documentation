@@ -11,7 +11,7 @@ description: "Semantic documentation index for Mewgenics .gon data files"
 For rules regarding string parsing, arrays, and structural syntax, refer to the [GON Syntax Documentation](../gon-docs/README.md).  
 For tutorials on constructing and injecting modifications, refer to the [Practical Modding Guides](../mewgenics/README.md).
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > As a general consensus, these tables contain what is ALREADY in the game. I have done my attempt to unify some keys that may definitely be compatible with each other through Engine Keys, but it is likely possible that there are more properties that you can use for each object, with some obvious and others not so much. Please keep that in mind when reading the tables.
 
 ---
