@@ -1,6 +1,6 @@
 # Mewgenics Modding Documentation
 
-After a gruesome struggling with the Mewgenics base resources, I welcome you to my personal compilation of references for Mewgenics modding! What simply started as a simple list for my studies now became an exhaustive compilation of what is found in the game files.
+After days of gruesome struggling with the Mewgenics base resources, I welcome you to my personal compilation of references for Mewgenics modding! What simply started as a simple list for my studies now became an exhaustive compilation of what is found in the game files.
 
 > [!WARNING]
 > **Disclaimer:** There are thousands of keys and objects in Mewgenics, and I've decided to use AI to help define them. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. Furthermore, I will most likely not actively maintain this documentation for long, so treat it as a quick library of sort rather than the sole source of truth. You WILL have to study the base files on your own and verify these implementations within the game yourself.
