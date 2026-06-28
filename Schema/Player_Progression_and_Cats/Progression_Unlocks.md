@@ -6,7 +6,8 @@ description: "Conditions and flags for unlocking content."
 # Progression Unlocks Schema
 
 ## Overview
-This schema manages the meta-progression flags. It tracks what the player has accomplished to unlock new items, cats, and house upgrades.
+> [!NOTE]
+> This schema manages the meta-progression flags. It tracks what the player has accomplished to unlock new items, cats, and house upgrades.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

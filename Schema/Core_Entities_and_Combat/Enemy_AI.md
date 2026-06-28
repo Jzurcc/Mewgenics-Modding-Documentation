@@ -6,7 +6,8 @@ description: "Defines behavior trees and targeting priorities for the AI."
 # Enemy AI Schema
 
 ## Overview
-This schema acts as the brain for enemies. It assigns weights to different actions (like attacking vs moving) so the engine can determine the best move.
+> [!NOTE]
+> This schema acts as the brain for enemies. It assigns weights to different actions (like attacking vs moving) so the engine can determine the best move.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

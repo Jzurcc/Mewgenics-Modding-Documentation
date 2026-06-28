@@ -6,7 +6,8 @@ description: "Behavior logic for non-combat interactive NPCs."
 # NPC Scripts Schema
 
 ## Overview
-This schema hooks scripts to town NPCs to control their dialogue, quest-giving behavior, and idle animations.
+> [!NOTE]
+> This schema hooks scripts to town NPCs to control their dialogue, quest-giving behavior, and idle animations.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

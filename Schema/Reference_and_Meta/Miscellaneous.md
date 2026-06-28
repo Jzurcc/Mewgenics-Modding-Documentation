@@ -6,7 +6,8 @@ description: "Assorted properties lacking clear subsystem alignment."
 # Miscellaneous Schema
 
 ## Overview
-This schema holds generic objects like `cost` or `target` that are used universally across enemies, cats, and items.
+> [!NOTE]
+> This schema holds generic objects like `cost` or `target` that are used universally across enemies, cats, and items.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

@@ -6,7 +6,8 @@ description: "Defines consumables, weapons, and wearable trinkets."
 # Items & Equipment Schema
 
 ## Overview
-This schema is used for anything that can be equipped, consumed, or held in the inventory. It defines stat modifiers, activated abilities, and usage rules.
+> [!NOTE]
+> This schema is used for anything that can be equipped, consumed, or held in the inventory. It defines stat modifiers, activated abilities, and usage rules.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

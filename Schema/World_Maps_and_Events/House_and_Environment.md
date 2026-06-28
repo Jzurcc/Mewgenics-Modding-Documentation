@@ -6,7 +6,8 @@ description: "Overworld tiles and intractable house objects."
 # House & Environment Schema
 
 ## Overview
-This schema covers physical objects the player can interact with outside of combat, particularly inside the customizable house hub.
+> [!NOTE]
+> This schema covers physical objects the player can interact with outside of combat, particularly inside the customizable house hub.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

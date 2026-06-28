@@ -6,7 +6,8 @@ description: "Tables determining which enemies spawn per biome."
 # Spawns & Enemy Pools Schema
 
 ## Overview
-This schema dictates which enemies are allowed to appear in specific environments, ensuring you don't fight a lava boss in an ice biome.
+> [!NOTE]
+> This schema dictates which enemies are allowed to appear in specific environments, ensuring you don't fight a lava boss in an ice biome.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

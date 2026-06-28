@@ -6,7 +6,8 @@ description: "Best practices for translating and keying strings."
 # Localization Guide Schema
 
 ## Overview
-This document is a structural guide on how string referencing works in Mewgenics so translators can swap out text.
+> [!NOTE]
+> This document is a structural guide on how string referencing works in Mewgenics so translators can swap out text.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

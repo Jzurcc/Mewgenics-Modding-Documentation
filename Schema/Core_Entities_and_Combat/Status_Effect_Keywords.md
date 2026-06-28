@@ -6,7 +6,8 @@ description: "Defines standard keywords for tooltips."
 # Status Keywords Schema
 
 ## Overview
-This schema links specific status effects to tooltip text formats so players can easily read what an effect does when hovering over it.
+> [!NOTE]
+> This schema links specific status effects to tooltip text formats so players can easily read what an effect does when hovering over it.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

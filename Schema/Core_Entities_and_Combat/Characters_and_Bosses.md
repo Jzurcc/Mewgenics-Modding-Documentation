@@ -6,7 +6,8 @@ description: "Defines the stats, properties, and visuals of units."
 # Characters & Bosses Schema
 
 ## Overview
-This schema represents any living entity on the combat grid. This includes player cats, enemies, bosses, and summoned objects like barricades.
+> [!NOTE]
+> This schema represents any living entity on the combat grid. This includes player cats, enemies, bosses, and summoned objects like barricades.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

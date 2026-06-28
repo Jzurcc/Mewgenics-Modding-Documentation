@@ -6,7 +6,8 @@ description: "Loot tables and combat reward generation logic."
 # Combat Rewards Schema
 
 ## Overview
-This schema dictates what the player receives after finishing a battle, distributing gold, items, and experience based on the difficulty.
+> [!NOTE]
+> This schema dictates what the player receives after finishing a battle, distributing gold, items, and experience based on the difficulty.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

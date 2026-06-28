@@ -6,7 +6,8 @@ description: "Identifiers for categorizing item drops."
 # Item Pools Schema
 
 ## Overview
-This schema describes all predefined collections of items used to generate random loot drops (e.g. "RareWeaponsPool").
+> [!NOTE]
+> This schema describes all predefined collections of items used to generate random loot drops (e.g. "RareWeaponsPool").
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

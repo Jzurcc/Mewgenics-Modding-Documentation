@@ -6,7 +6,8 @@ description: "Defines post-combat injuries and permanent disorders."
 # Injuries Schema
 
 ## Overview
-This schema describes negative traits that cats acquire if they fall in combat, persisting until treated in the house.
+> [!NOTE]
+> This schema describes negative traits that cats acquire if they fall in combat, persisting until treated in the house.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

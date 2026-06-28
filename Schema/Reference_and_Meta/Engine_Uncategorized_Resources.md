@@ -6,7 +6,8 @@ description: "Keys that have not yet been fully categorized."
 # Uncategorized Resources Schema
 
 ## Overview
-This schema contains valid engine keys that we have discovered but haven't figured out which subsystem they belong to yet.
+> [!NOTE]
+> This schema contains valid engine keys that we have discovered but haven't figured out which subsystem they belong to yet.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

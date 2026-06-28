@@ -6,7 +6,8 @@ description: "Scaling multipliers across game difficulty settings."
 # Difficulties Schema
 
 ## Overview
-This schema lists the modifiers that are applied to the engine based on the difficulty tier the player selected.
+> [!NOTE]
+> This schema lists the modifiers that are applied to the engine based on the difficulty tier the player selected.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

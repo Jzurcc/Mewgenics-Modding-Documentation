@@ -6,7 +6,8 @@ description: "Hooks for triggering logic when statuses are applied."
 # Status & Passive Keys Schema
 
 ## Overview
-This schema details internal triggers that fire when a unit receives, loses, or stacks a buff or debuff.
+> [!NOTE]
+> This schema details internal triggers that fire when a unit receives, loses, or stacks a buff or debuff.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

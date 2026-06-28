@@ -6,7 +6,8 @@ description: "Specialized array formats."
 # Arrays Schema
 
 ## Overview
-This schema describes arrays that require a highly specific internal structure beyond just a flat list of items.
+> [!NOTE]
+> This schema describes arrays that require a highly specific internal structure beyond just a flat list of items.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

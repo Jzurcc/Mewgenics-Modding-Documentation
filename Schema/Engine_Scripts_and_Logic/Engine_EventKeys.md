@@ -6,7 +6,8 @@ description: "Scripting keys for narrative and map events."
 # Event Keys Schema
 
 ## Overview
-This schema lists the specific hooks that trigger when map-level or overworld narrative events occur.
+> [!NOTE]
+> This schema lists the specific hooks that trigger when map-level or overworld narrative events occur.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

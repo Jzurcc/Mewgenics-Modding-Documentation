@@ -6,7 +6,8 @@ description: "Camera and timing configuration for boss intros."
 # Boss Cutscene Info Schema
 
 ## Overview
-This schema triggers cinematic elements before a major battle, handling the camera panning, timing, and title cards.
+> [!NOTE]
+> This schema triggers cinematic elements before a major battle, handling the camera panning, timing, and title cards.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

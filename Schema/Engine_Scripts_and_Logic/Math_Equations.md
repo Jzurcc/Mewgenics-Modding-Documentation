@@ -6,7 +6,8 @@ description: "Valid syntax and variables for Equation strings."
 # Math Equations Schema
 
 ## Overview
-This schema specifies how to write math equations in GON strings, allowing values to scale dynamically based on player stats.
+> [!NOTE]
+> This schema specifies how to write math equations in GON strings, allowing values to scale dynamically based on player stats.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

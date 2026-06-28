@@ -6,7 +6,8 @@ description: "Defines the progression and stats of cat classes."
 # Cat Classes Schema
 
 ## Overview
-This schema dictates the stat scaling, ability pools, and visual outfits associated with a specific class of cat (like Hunter, Mage, etc).
+> [!NOTE]
+> This schema dictates the stat scaling, ability pools, and visual outfits associated with a specific class of cat (like Hunter, Mage, etc).
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

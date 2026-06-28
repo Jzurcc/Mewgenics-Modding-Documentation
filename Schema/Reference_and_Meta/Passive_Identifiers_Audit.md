@@ -6,7 +6,8 @@ description: "Deep-dive tracking of passive effect implementations."
 # Passive Identifiers Audit
 
 ## Overview
-This is a meta-document auditing the existence of certain passive implementations.
+> [!NOTE]
+> This is a meta-document auditing the existence of certain passive implementations.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

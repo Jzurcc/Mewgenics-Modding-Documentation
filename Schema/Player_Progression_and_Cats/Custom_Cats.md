@@ -6,7 +6,8 @@ description: "Properties for generating specific bespoke cats."
 # Custom Cats Schema
 
 ## Overview
-This schema forces the generation of a cat with exact properties, often used for tutorial or story-specific cats.
+> [!NOTE]
+> This schema forces the generation of a cat with exact properties, often used for tutorial or story-specific cats.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

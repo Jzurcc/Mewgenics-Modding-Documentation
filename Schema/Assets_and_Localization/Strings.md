@@ -6,7 +6,8 @@ description: "Internal engine string references."
 # Strings Dictionary Schema
 
 ## Overview
-This is a massive reference sheet of internal string keys used hard-coded by the C++ engine.
+> [!NOTE]
+> This is a massive reference sheet of internal string keys used hard-coded by the C++ engine.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

@@ -6,7 +6,8 @@ description: "Dialogue encounters and choice nodes."
 # Events & Encounters Schema
 
 ## Overview
-This schema handles narrative choice nodes where players are presented with text, make decisions, and receive outcomes like items or damage.
+> [!NOTE]
+> This schema handles narrative choice nodes where players are presented with text, make decisions, and receive outcomes like items or damage.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

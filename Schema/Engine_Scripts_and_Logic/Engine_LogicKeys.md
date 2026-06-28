@@ -6,7 +6,8 @@ description: "Core conditionals, loops, and execution flow."
 # Logic Keys Schema
 
 ## Overview
-This schema documents the low-level logic structures used by the engine to evaluate if/then statements inside GON files.
+> [!NOTE]
+> This schema documents the low-level logic structures used by the engine to evaluate if/then statements inside GON files.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

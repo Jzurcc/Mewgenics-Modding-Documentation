@@ -6,7 +6,8 @@ description: "Biome layout rules and node generation logic."
 # Map Gen & Routing Schema
 
 ## Overview
-This schema feeds the procedural generator. It defines node types (combat, event, shop) and how they link together to form a playable map.
+> [!NOTE]
+> This schema feeds the procedural generator. It defines node types (combat, event, shop) and how they link together to form a playable map.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

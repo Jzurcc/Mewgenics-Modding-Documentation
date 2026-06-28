@@ -6,7 +6,8 @@ description: "Identifiers for spawning visual effects."
 # Particles & VFX Schema
 
 ## Overview
-This schema describes how to hook engine events up to the particle emitter systems for cool visual bursts.
+> [!NOTE]
+> This schema describes how to hook engine events up to the particle emitter systems for cool visual bursts.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

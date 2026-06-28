@@ -6,7 +6,8 @@ description: "Defines modifiers applied to elite enemy variants."
 # Elite Buffs Schema
 
 ## Overview
-This schema determines how standard enemies are modified when they spawn as an "Elite", including stat multipliers and bonus abilities.
+> [!NOTE]
+> This schema determines how standard enemies are modified when they spawn as an "Elite", including stat multipliers and bonus abilities.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

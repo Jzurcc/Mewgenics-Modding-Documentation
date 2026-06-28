@@ -6,7 +6,8 @@ description: "Vendor inventories and pricing multipliers."
 # Shops Schema
 
 ## Overview
-This schema governs NPCs who sell items. It specifies which item pools they draw from and how heavily they mark up their prices.
+> [!NOTE]
+> This schema governs NPCs who sell items. It specifies which item pools they draw from and how heavily they mark up their prices.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

@@ -6,7 +6,8 @@ description: "Defines the properties and engine hooks for combat abilities."
 # Abilities & Spells Schema
 
 ## Overview
-This schema defines the behavior, targeting, cost, and visual effects of attacks and spells used by characters, enemies, and items.
+> [!NOTE]
+> This schema defines the behavior, targeting, cost, and visual effects of attacks and spells used by characters, enemies, and items.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

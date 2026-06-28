@@ -6,7 +6,8 @@ description: "Hooks for calculating and modifying damage."
 # Damaging Keys Schema
 
 ## Overview
-This schema contains all properties relating to how damage is calculated, mitigated, and applied by the engine.
+> [!NOTE]
+> This schema contains all properties relating to how damage is calculated, mitigated, and applied by the engine.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

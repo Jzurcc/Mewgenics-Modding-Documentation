@@ -6,7 +6,8 @@ description: "Defines body part variations and their impacts."
 # Cat Mutations Schema
 
 ## Overview
-This schema handles visual body mutations (like two tails or a cyclops eye) and the corresponding stat changes they apply to the cat.
+> [!NOTE]
+> This schema handles visual body mutations (like two tails or a cyclops eye) and the corresponding stat changes they apply to the cat.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

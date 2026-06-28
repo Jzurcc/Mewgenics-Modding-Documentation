@@ -6,7 +6,8 @@ description: "Valid string identifiers for all enum-backed properties."
 # Enums Schema
 
 ## Overview
-This schema lists all hardcoded C++ enumerations, so you know exactly which keywords are valid for enum properties.
+> [!NOTE]
+> This schema lists all hardcoded C++ enumerations, so you know exactly which keywords are valid for enum properties.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

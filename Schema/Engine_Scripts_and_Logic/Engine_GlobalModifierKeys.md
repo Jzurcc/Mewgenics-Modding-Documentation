@@ -6,7 +6,8 @@ description: "Global state flags affecting the entire run."
 # Global Modifier Keys Schema
 
 ## Overview
-This schema affects run-wide variables, often used by high-level difficulty settings or sweeping modifiers like double health.
+> [!NOTE]
+> This schema affects run-wide variables, often used by high-level difficulty settings or sweeping modifiers like double health.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

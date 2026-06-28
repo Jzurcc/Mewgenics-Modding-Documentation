@@ -6,7 +6,8 @@ description: "Triggers for playing sound effects."
 # Audio & SFX Schema
 
 ## Overview
-This schema maps internal sound effect identifiers to actual `.ogg` or `.wav` files inside the game folder.
+> [!NOTE]
+> This schema maps internal sound effect identifiers to actual `.ogg` or `.wav` files inside the game folder.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

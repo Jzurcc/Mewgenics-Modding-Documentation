@@ -6,7 +6,8 @@ description: "Configuration for floating combat text."
 # Damage Text Styles Schema
 
 ## Overview
-This schema customizes how numbers look when they pop out of enemies, differentiating normal hits, crits, and healing.
+> [!NOTE]
+> This schema customizes how numbers look when they pop out of enemies, differentiating normal hits, crits, and healing.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

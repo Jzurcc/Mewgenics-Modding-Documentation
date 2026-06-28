@@ -6,7 +6,8 @@ description: "Placeable furniture and permanent upgrades."
 # Furniture & Metaprogression Schema
 
 ## Overview
-This schema controls cosmetic and functional objects you can buy and place inside your house to grant global meta-progression bonuses.
+> [!NOTE]
+> This schema controls cosmetic and functional objects you can buy and place inside your house to grant global meta-progression bonuses.
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:

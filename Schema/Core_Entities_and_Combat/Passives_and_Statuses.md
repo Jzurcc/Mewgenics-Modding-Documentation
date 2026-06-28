@@ -6,7 +6,8 @@ description: "Defines buffs, debuffs, and permanent modifiers."
 # Passives & Statuses Schema
 
 ## Overview
-This schema controls passive effects (like permanent Poison immunity) and temporary status effects (like being On Fire for 3 turns).
+> [!NOTE]
+> This schema controls passive effects (like permanent Poison immunity) and temporary status effects (like being On Fire for 3 turns).
 
 ## Usage Example
 Here is a real example of this object being defined in the game's data:
