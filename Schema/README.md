@@ -19,9 +19,9 @@ To build robust mods, it is essential to understand how Mewgenics reads data. Th
 
 ```mermaid
 flowchart LR
-    A[Mod .gon File<br/>(Raw Text)] --> B[GON Parser]
+    A[Mod .gon File<br>(Raw Text)] --> B[GON Parser]
     B --> C(Global String Dictionary)
-    C --> D{Semantic Evaluator<br/>(Engine)}
+    C --> D{Semantic Evaluator<br>(Engine)}
     D -- "Expects number" --> E[Float/Int Cast]
     D -- "Expects enum" --> F[Enum Matching]
     D -- "Expects formula" --> G[Math Equation Parsing]
