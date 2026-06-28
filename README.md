@@ -5,10 +5,14 @@ description: "Root index for all Mewgenics modding guides, schemas, and specific
 
 # Mewgenics Modding Documentation
 
-This repository serves as an **unofficial** documentation and reference index for Mewgenics modding. It was originally compiled as a personal study resource, but has been shared to assist others in the modding community. It contains the structural schemas, syntax specifications, and practical guides required to implement custom classes, enemies, items, and abilities.
+This repository serves as an **unofficial** reference index for Mewgenics modding. Rather than a rigorously tested technical manual, this project began as a personal compilation of notes that eventually grew into a comprehensive guide. 
 
 > [!WARNING]
-> **Disclaimer:** This documentation is an individual, fan-made resource and is not foolproof. While heavily cross-referenced against the base game files, it may contain incorrect information, outdated assumptions, or incomplete schemas.
+> **Disclaimer:** Many structural definitions within this repository were generated with AI assistance. While provided with deep contextual data, they are not guaranteed to be perfectly accurate. 
+> 
+> Furthermore, this documentation is provided "as-is" and will not be actively maintained to track newly discovered engine quirks or undocumented behaviors. As a modder, you are encouraged to verify and test these implementations within the game yourself.
+
+For a more continuously updated resource on engine scripting, please refer to **[Ombrellus' GON Scripting Resources](https://github.com/ombrellus/MewgenicsScriptResources)**.
 
 Mewgenics utilizes a proprietary engine architecture and data serialization format known as Glaiel Object Notation (GON). To accommodate this, the documentation is divided into four functional areas: **Theory**, **Syntax**, **Practice**, and **Reference**. Of these, the [**`Schema/`**](./Schema/) directory serves as your primary technical reference and is where you will likely spend the majority of your time during mod development.
 
